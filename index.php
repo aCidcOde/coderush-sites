@@ -366,9 +366,6 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
             <a href="codafacil/" class="inline-flex items-center justify-center rounded-full border border-white/75 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10">
               Conhecer CodaFácil
             </a>
-            <a href="https://www.codafacil.dev/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-full border border-white/35 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10">
-              Abrir site oficial
-            </a>
           </div>
         </div>
 

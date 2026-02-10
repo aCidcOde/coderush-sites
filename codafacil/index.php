@@ -78,7 +78,7 @@
           <a href="#vantagens" class="text-sm opacity-90 hover:opacity-100">Vantagens</a>
           <a href="#stack" class="text-sm opacity-90 hover:opacity-100">Tecnologia</a>
           <a href="#clientes" class="text-sm opacity-90 hover:opacity-100">Clientes</a>
-          <a href="../#desenvolvimento-ia" class="text-sm opacity-90 hover:opacity-100">Sistema Venda Direta</a>
+          <a href="https://www.sistemavendadireta.com.br/" target="_blank" rel="noopener noreferrer" class="text-sm opacity-90 hover:opacity-100">Sistema Venda Direta</a>
         </div>
 
         <!-- CTA -->
@@ -116,7 +116,7 @@
               <strong class="text-white">acelerar</strong> e <strong class="text-white">refinar</strong> todo o processo.
             </p>
             <p class="mt-4 max-w-xl text-sm leading-relaxed text-white/75">
-              Subproduto da <a href="../#desenvolvimento-ia" class="font-semibold text-white underline underline-offset-4">Sistema Venda Direta</a>
+              Subproduto da <a href="https://www.sistemavendadireta.com.br/" target="_blank" rel="noopener noreferrer" class="font-semibold text-white underline underline-offset-4">Sistema Venda Direta</a>
               para projetos customizados e expansão tecnológica.
             </p>
 
@@ -685,7 +685,7 @@
           <a href="#processo" class="hover:text-white">Processo</a>
           <a href="#vantagens" class="hover:text-white">Vantagens</a>
           <a href="#contato" class="hover:text-white">Contato</a>
-          <a href="../#desenvolvimento-ia" class="hover:text-white">Sistema Venda Direta</a>
+          <a href="https://www.sistemavendadireta.com.br/" target="_blank" rel="noopener noreferrer" class="hover:text-white">Sistema Venda Direta</a>
         </div>
       </div>
     </div>
