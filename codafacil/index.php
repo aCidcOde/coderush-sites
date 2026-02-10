@@ -1,3 +1,14 @@
+<?php
+declare(strict_types=1);
+
+$siteBootstrap = __DIR__;
+while (!is_file($siteBootstrap . '/_site_bootstrap.php') && dirname($siteBootstrap) !== $siteBootstrap) {
+    $siteBootstrap = dirname($siteBootstrap);
+}
+if (is_file($siteBootstrap . '/_site_bootstrap.php')) {
+    require_once $siteBootstrap . '/_site_bootstrap.php';
+}
+?>
 <!DOCTYPE html>
 <html lang="pt-BR" class="h-full">
 <head>
@@ -28,7 +39,7 @@
   <meta name="twitter:site" content="@sistemavendadireta" />
 
   <!-- Tailwind CDN (rápido para protótipo) -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <script data-cfasync="false" src="https://cdn.tailwindcss.com"></script>
 
   <style>.hero-bg{background:radial-gradient(1200px 600px at 85% 30%,rgba(255,255,255,.1),rgba(255,255,255,0) 60%),radial-gradient(900px 500px at 75% 70%,rgba(255,255,255,.08),rgba(255,255,255,0) 55%),linear-gradient(180deg,#0b4db6 0%,#0a46aa 60%,#083e9a 100%)}.btn-outline{box-shadow:inset 0 0 0 1px rgba(255,255,255,.35)}.soft-shadow{box-shadow:0 18px 45px rgba(0,0,0,.25)}.logo-img{width:360px;height:auto;opacity:1!important;filter:none!important;mix-blend-mode:normal!important;image-rendering:-webkit-optimize-contrast;display:block}@media (max-width:640px){.logo-img{width:240px}}.services-tight{padding-top:0!important;margin-top:0!important}.icon-wrap{display:inline-flex;width:40px;height:40px;align-items:center;justify-content:center;border-radius:16px;background:rgba(255,255,255,.1);box-shadow:inset 0 0 0 1px rgba(255,255,255,.12)}</style>
 

@@ -1,3 +1,14 @@
+<?php
+declare(strict_types=1);
+
+$siteBootstrap = __DIR__;
+while (!is_file($siteBootstrap . '/_site_bootstrap.php') && dirname($siteBootstrap) !== $siteBootstrap) {
+    $siteBootstrap = dirname($siteBootstrap);
+}
+if (is_file($siteBootstrap . '/_site_bootstrap.php')) {
+    require_once $siteBootstrap . '/_site_bootstrap.php';
+}
+?>
 <!doctype html>
 <!--
 /*
@@ -34,14 +45,12 @@ Pagina de servicos WordPress/WooCommerce e Laravel com foco em conversao e quali
   <meta name="twitter:description" content="Desenvolvimento WordPress, WooCommerce e sistemas sob medida com PHP/Laravel. Projetos com foco em performance, conversão, integrações e estabilidade." />
   <meta name="twitter:image" content="https://www.sistemavendadireta.com.br/wp-content/uploads/2023/04/Screenshot-2023-04-26-at-14.38.02.png" />
   <meta name="twitter:site" content="@sistemavendadireta" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" />
-
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script data-cfasync="false" src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
   <style type="text/tailwindcss">@theme{--color-brand:#004AAD;--color-brand-dark:#003f91;--color-brand-soft:#215BA8;--font-heading:"Montserrat",sans-serif;--font-body:"Roboto",sans-serif;}</style>
+  <style>@media (max-width:1024px){html{font-size:15px}}@media (max-width:640px){html{font-size:14px}body{overflow-x:hidden}img{max-width:100%;height:auto}}</style>
 
   <script type="application/ld+json">
     {
@@ -53,7 +62,7 @@ Pagina de servicos WordPress/WooCommerce e Laravel com foco em conversao e quali
       "email": "contato@sistemavendadireta.com.br",
       "areaServed": "BR",
       "sameAs": [
-        "https://facebook.com/sistemavendadireta",
+        "https://www.facebook.com/sistemavendadireta/",
         "https://www.youtube.com/@andregomes8954"
       ],
       "serviceType": [
@@ -220,7 +229,7 @@ Pagina de servicos WordPress/WooCommerce e Laravel com foco em conversao e quali
       <p class="mt-3 max-w-2xl text-sm leading-relaxed text-white/85">Me conte rapidamente o que você precisa e eu te retorno com caminho técnico, prazo e próximo passo recomendado.</p>
       <div class="mt-6 flex flex-wrap gap-3">
         <a href="https://wa.me/+5511994566726" target="_blank" rel="noopener noreferrer" class="inline-flex rounded-full bg-white px-6 py-3 text-sm font-bold uppercase tracking-wide text-brand hover:bg-white/90">WhatsApp</a>
-        <a href="mailto:contato@sistemavendadireta.com.br" class="inline-flex rounded-full border border-white/70 px-6 py-3 text-sm font-bold uppercase tracking-wide hover:bg-white/10">Solicitar orçamento</a>
+        <!--email_off--><a href="mailto:contato@sistemavendadireta.com.br" class="inline-flex rounded-full border border-white/70 px-6 py-3 text-sm font-bold uppercase tracking-wide hover:bg-white/10">Solicitar orçamento</a><!--/email_off-->
       </div>
     </section>
   </main>
@@ -232,7 +241,7 @@ Pagina de servicos WordPress/WooCommerce e Laravel com foco em conversao e quali
           <img src="../index_svd_files/Logo-Branco-1.png" alt="Sistema Venda Direta" class="h-auto w-[180px]" width="1000" height="300" loading="lazy" />
           <p class="max-w-sm text-sm leading-relaxed text-white/85">A Sistema Venda Direta desenvolve soluções para operação comercial, vendas diretas e evolução tecnológica com IA aplicada ao negócio.</p>
           <p class="text-sm text-white/90">Telefone: <a href="tel:+5511994566726" class="font-semibold hover:underline">11 99456-6726</a></p>
-          <p class="text-sm text-white/90">Email: <a href="mailto:contato@sistemavendadireta.com.br" class="font-semibold hover:underline">contato@sistemavendadireta.com.br</a></p>
+          <p class="text-sm text-white/90">Email: <!--email_off--><a href="mailto:contato@sistemavendadireta.com.br" class="font-semibold hover:underline">contato@sistemavendadireta.com.br</a><!--/email_off--></p>
         </div>
 
         <div class="space-y-3">
@@ -250,7 +259,7 @@ Pagina de servicos WordPress/WooCommerce e Laravel com foco em conversao e quali
           <h4 class="font-[var(--font-heading)] text-lg font-semibold">25 anos de experiência desenvolvendo sistemas</h4>
           <a href="../#contato" class="inline-flex rounded-full border border-white/70 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10">Solicite um Orçamento</a>
           <div class="flex items-center gap-3">
-            <a href="https://facebook.com/sistemavendadireta" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#3b5998] text-sm font-bold">f</a>
+            <a href="https://www.facebook.com/sistemavendadireta/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#3b5998] text-sm font-bold">f</a>
             <a href="https://www.youtube.com/@andregomes8954" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#cd201f] text-sm font-bold">▶</a>
           </div>
         </div>
