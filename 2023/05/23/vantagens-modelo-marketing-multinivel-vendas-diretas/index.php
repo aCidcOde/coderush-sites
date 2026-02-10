@@ -1,14 +1,3 @@
-<?php
-declare(strict_types=1);
-
-$siteBootstrap = __DIR__;
-while (!is_file($siteBootstrap . '/_site_bootstrap.php') && dirname($siteBootstrap) !== $siteBootstrap) {
-    $siteBootstrap = dirname($siteBootstrap);
-}
-if (is_file($siteBootstrap . '/_site_bootstrap.php')) {
-    require_once $siteBootstrap . '/_site_bootstrap.php';
-}
-?>
 <!doctype html>
 <!--
 /*
@@ -47,11 +36,13 @@ Pagina estatica do post "O modelo de marketing multinível oferece várias vanta
   <meta name="twitter:description" content="Aqui estão algumas das principais vantagens desse modelo: Ao considerar o marketing multinível, é essencial avaliar essas vantagens e analisar se elas estão alinhadas aos seus objetivos e habilidades. Lembre-se de que o sucesso ne..." />
   <meta name="twitter:image" content="https://www.sistemavendadireta.com.br/wp-content/uploads/2023/05/O-MODELO-QUE.png" />
   <meta name="twitter:site" content="@sistemavendadireta" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" />
 
-  <script data-cfasync="false" src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" />
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <style type="text/tailwindcss">@theme{--color-brand:#004AAD;--color-brand-dark:#003F91;--font-heading:"Montserrat",sans-serif;--font-body:"Roboto",sans-serif;}</style>
-  <style>@media (max-width:1024px){html{font-size:15px}}@media (max-width:640px){html{font-size:14px}body{overflow-x:hidden}img{max-width:100%;height:auto}}</style>
 
   <script type="application/ld+json">
 {
@@ -193,7 +184,7 @@ Pagina estatica do post "O modelo de marketing multinível oferece várias vanta
             A Sistema Venda Direta desenvolve soluções para operação comercial, vendas diretas e evolução tecnológica com IA aplicada ao negócio.
           </p>
           <p class="text-sm text-white/90">Telefone: <a href="tel:+5511994566726" class="font-semibold hover:underline">11 99456-6726</a></p>
-          <p class="text-sm text-white/90">Email: <!--email_off--><a href="mailto:contato@sistemavendadireta.com.br" class="font-semibold hover:underline">contato@sistemavendadireta.com.br</a><!--/email_off--></p>
+          <p class="text-sm text-white/90">Email: <a href="mailto:contato@sistemavendadireta.com.br" class="font-semibold hover:underline">contato@sistemavendadireta.com.br</a></p>
         </div>
 
         <div class="space-y-3">
@@ -213,7 +204,7 @@ Pagina estatica do post "O modelo de marketing multinível oferece várias vanta
             Solicite um Orçamento
           </a>
           <div class="flex items-center gap-3">
-            <a href="https://www.facebook.com/sistemavendadireta/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#3b5998] text-sm font-bold">f</a>
+            <a href="https://facebook.com/sistemavendadireta" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#3b5998] text-sm font-bold">f</a>
             <a href="https://www.youtube.com/@andregomes8954" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#cd201f] text-sm font-bold">▶</a>
           </div>
         </div>

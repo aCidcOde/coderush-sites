@@ -218,24 +218,6 @@ Regra:
 - `robots.txt` publicado
 - `sitemap.xml` com 15 URLs públicas
 
-### 7.4 Canonicalização de URL/host
-- Bootstrap global: `_site_bootstrap.php`
-- Regra aplicada nas páginas públicas:
-- `sistemavendadireta.com.br` redireciona para `https://www.sistemavendadireta.com.br` (301)
-- URLs com `/index.php` redirecionam para formato diretório (`/.../`) (301)
-- Arquivo complementar para Apache: `.htaccess` com as mesmas regras
-
-### 7.5 Responsividade detectável por scanner
-- Além dos utilitários Tailwind, as páginas públicas possuem media queries explícitas em `<style>`:
-- `@media (max-width:1024px)` e `@media (max-width:640px)`
-- Objetivo: garantir detecção por ferramentas que não executam JS/Tailwind runtime
-
-### 7.6 Ajustes para evitar falso-positivo de link quebrado
-- Removidos `preconnect` para `fonts.googleapis.com` e `fonts.gstatic.com` (domínio raiz responde 404 em alguns validadores)
-- Links de Facebook padronizados para `https://www.facebook.com/sistemavendadireta/`
-- E-mails no HTML protegidos com `<!--email_off-->...<!--/email_off-->` para evitar reescrita do Cloudflare em `/cdn-cgi/l/email-protection`
-- Scripts de Tailwind com `data-cfasync=\"false\"` para reduzir interferência do Rocket Loader
-
 ---
 
 ## 8) Formulários e e-mail
@@ -314,3 +296,4 @@ Padrão recomendado:
 - O projeto foi limpo para manter foco em páginas públicas PHP e assets usados.
 - Existem posts com conteúdo legado originalmente importado; evitar refatorações globais nesses posts sem escopo explícito.
 - Para novas páginas, seguir padrão de `index.php` por diretório e incluir SEO completo desde o início.
+

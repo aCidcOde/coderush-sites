@@ -1,14 +1,3 @@
-<?php
-declare(strict_types=1);
-
-$siteBootstrap = __DIR__;
-while (!is_file($siteBootstrap . '/_site_bootstrap.php') && dirname($siteBootstrap) !== $siteBootstrap) {
-    $siteBootstrap = dirname($siteBootstrap);
-}
-if (is_file($siteBootstrap . '/_site_bootstrap.php')) {
-    require_once $siteBootstrap . '/_site_bootstrap.php';
-}
-?>
 <!doctype html>
 <!--
 /*
@@ -45,11 +34,13 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
   <meta name="twitter:description" content="Blog do Sistema Venda Direta com todos os posts sobre vendas diretas, marketing multinível e inteligência artificial aplicada ao negócio." />
   <meta name="twitter:image" content="https://www.sistemavendadireta.com.br/wp-content/uploads/2023/04/Screenshot-2023-04-26-at-14.38.02.png" />
   <meta name="twitter:site" content="@sistemavendadireta" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" />
 
-  <script data-cfasync="false" src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" />
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <style type="text/tailwindcss">@theme{--color-brand:#004AAD;--color-brand-dark:#003F91;--color-brand-soft:#215BA8;--font-heading:"Montserrat",sans-serif;--font-body:"Roboto",sans-serif;}</style>
-  <style>@media (max-width:1024px){html{font-size:15px}}@media (max-width:640px){html{font-size:14px}body{overflow-x:hidden}img{max-width:100%;height:auto}}</style>
 
   <script type="application/ld+json">
     {
