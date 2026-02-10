@@ -1,0 +1,487 @@
+card 1
+Você está trabalhando no projeto Laravel 12 chamado Emergency.
+
+Antes de qualquer coisa, LEIA:
+- docs/guidelines/00-master-guideline.md
+- docs/guidelines/10-certidoes-catalogo.md
+
+Confirme internamente que leu e entendeu esses arquivos e então execute a tarefa abaixo.
+
+Tarefa – Catálogo de certidões:
+
+1. Criar a migration da tabela `certificate_types` exatamente como descrito em 10-certidoes-catalogo.md:
+   - id, code, name, provider, description, base_price, is_active, timestamps.
+   - code deve ser único.
+
+2. Criar o model `App\Models\CertificateType`:
+   - Campos fillable coerentes (code, name, provider, description, base_price, is_active).
+   - Nenhuma lógica extra por enquanto.
+
+3. Criar um seeder para popular `certificate_types` com TODAS as certidões e valores definidos no guideline 10 (PGU, PGFN, CECT, CEATPF, etc.):
+   - Utilize um array único com todos os registros e faça insert em massa.
+   - Garantir que base_price seja decimal com duas casas.
+
+4. Registrar o seeder em `DatabaseSeeder` para que rode com `php artisan db:seed`.
+
+5. Criar testes PHPUnit:
+   - Teste 1: rodar as migrations e verificar se a tabela `certificate_types` existe e tem as colunas principais (code, base_price, is_active).
+   - Teste 2: rodar o seeder e garantir que o número de registros na tabela é igual ao número de certidões definidas no guideline (confira a contagem).
+
+Regras:
+- Não alterar nada relacionado às rotas `/` e `/dashboard`.
+- Seguir a stack descrita em 00-master-guideline.md (Laravel 12, etc.).
+- Use nomes de arquivos de migration padrão do Laravel.
+
+
+
+--------------------------------------------------
+card 2
+Projeto: Emergency.
+
+Leia ANTES:
+- docs/guidelines/00-master-guideline.md
+- docs/guidelines/10-certidoes-catalogo.md
+- docs/guidelines/20-pedidos-wizard.md
+
+Após ler, implemente:
+
+Tarefa – Modelagem básica de pedidos:
+
+1. Criar migrations para:
+   a) `subjects`
+      - Campos conforme 20-pedidos-wizard.md (type, name, document, state, city, extra_data, timestamps).
+   b) `orders`
+      - user_id (FK para users), subject_id (FK para subjects),
+      - status, total_amount, currency, requester_* (name, document, email, phone), meta (json), timestamps.
+   c) `order_items`
+      - order_id (FK), certificate_type_id (FK),
+      - quantity, unit_price, total_price, status, meta (json), timestamps.
+
+2. Criar models:
+   - `App\Models\Subject`
+   - `App\Models\Order`
+   - `App\Models\OrderItem`
+   - Configurar os relacionamentos Eloquent:
+     - Subject hasMany Orders.
+     - Order belongsTo Subject e belongsTo User.
+     - Order hasMany OrderItems.
+     - OrderItem belongsTo Order e belongsTo CertificateType.
+
+3. Criar factories para:
+   - Subject
+   - Order
+   - OrderItem
+   de forma mínima, mas funcional.
+
+4. Criar testes PHPUnit (Feature ou Unit) para:
+   - Verificar que `Subject` consegue ter múltiplos `Order`.
+   - Verificar que `Order` acessa corretamente `subject`, `user` e `items`.
+   - Verificar que `OrderItem` acessa corretamente `order` e `certificateType`.
+
+Regras:
+- Não alterar o modelo legado `App\Models\Certidao` ainda.
+- Manter nomes de tabelas e campos exatamente como definidos no guideline 20.
+
+
+--------------------------------------------------
+card 3
+Projeto: Emergency.
+
+Leia:
+- docs/guidelines/00-master-guideline.md
+- docs/guidelines/20-pedidos-wizard.md
+
+Tarefa – Wizard "Novo Pedido" – ETAPA 1:
+
+1. Criar uma rota protegida (auth + verified) para iniciar o wizard:
+   - Ex: GET `/orders/new`
+   - Usar um layout consistente com o dashboard (layouts/partials/dashboard-nav.blade.php e layouts em components/layouts).
+
+2. Criar um componente Livewire v3 ou Volt para o wizard (sugestão de caminho):
+   - `app/Livewire/Orders/NewOrderWizard.php`
+   - Ele deve controlar o "step atual" e armazenar o ID do `order` em construção.
+
+3. Implementar a **Etapa 1 (Solicitações)**:
+   - Formulário para escolher tipo de sujeito (PF/PJ/Imóvel).
+   - Campos básicos conforme guideline:
+     - Para PF: name, document (CPF), state (UF), city, data opcional, perfil.
+     - Para PJ/Imóvel, seguir campos mínimos descritos.
+   - Um card lateral com preview dos dados preenchidos (nome, documento, cidade/estado).
+
+4. Ao clicar em "Avançar":
+   - Validar campos obrigatórios (mínimo: name, document, state, city).
+   - Criar ou atualizar um `Subject`.
+   - Criar um `Order` com:
+     - `user_id = auth()->id()`
+     - `subject_id` definido
+     - `status = 'draft'`
+   - Armazenar o ID do order no estado do componente para uso nas próximas etapas.
+   - Avançar o "step" para Etapa 2 (sem implementar o layout da Etapa 2 ainda, apenas estruturar o controle de steps).
+
+5. Criar um teste de feature que:
+   - Autentica um usuário.
+   - Acessa `/orders/new`.
+   - Submete o formulário da Etapa 1 com dados válidos.
+   - Verifica se um `Subject` e um `Order` foram criados e se o `Order` tem status `draft`.
+
+Regras:
+- NÃO implementar ainda a seleção de certidões (Etapa 2) neste card; apenas preparar o wizard e a primeira etapa.
+- Usar o padrão de componentes e layouts já presente no projeto (ver 00-master-guideline.md).
+
+
+--------------------------------------------------
+card 4
+Projeto: Emergency.
+
+Leia:
+- docs/guidelines/00-master-guideline.md
+- docs/guidelines/10-certidoes-catalogo.md
+- docs/guidelines/20-pedidos-wizard.md
+
+Considere que o componente do wizard e a Etapa 1 já existem (Card 03).
+
+Tarefa – Wizard "Novo Pedido" – ETAPA 2 (Certidões):
+
+1. No mesmo componente de wizard usado na Etapa 1, implementar a Etapa 2:
+   - Listagem das certidões a partir da tabela `certificate_types`.
+   - Campo de Estado (UF) já preenchido com base no `Subject` do `Order`.
+   - Para v1, pode ser uma lista simples com:
+     - checkbox,
+     - nome,
+     - provider,
+     - preço base.
+
+2. Funcionalidade:
+   - Ao marcar/desmarcar uma certidão:
+     - Criar/atualizar/remover registros em `order_items` para o `order` em andamento.
+     - `unit_price` deve copiar `base_price` da certidão.
+     - `total_price = quantity * unit_price`, com quantity default 1.
+   - Botão "DESMARCAR TUDO" que remove todos os `order_items` do pedido.
+
+3. Botões:
+   - "Voltar" → retorna à Etapa 1 (sem perder dados).
+   - "Avançar" → valida que existe pelo menos um `order_item` associado ao `order` e então passa para a Etapa 3.
+
+4. Mostrar um resumo parcial do valor:
+   - Em algum lugar da UI, exibir `soma(order_items.total_price)` atual para o pedido.
+
+5. Criar testes de feature para:
+   - Dado um pedido `draft`, ao marcar N certidões, cria N registros em `order_items`.
+   - Não permitir avançar para Etapa 3 se nenhuma certidão estiver selecionada.
+
+Regras:
+- Não mexer ainda na parte de solicitante/pagamento (Etapa 3).
+- Não alterar rotas existentes `/` e `/dashboard`.
+
+
+--------------------------------------------------
+card 5
+Projeto: Emergency.
+
+Leia:
+- docs/guidelines/00-master-guideline.md
+- docs/guidelines/20-pedidos-wizard.md
+
+Considere que Etapas 1 e 2 do wizard já estão implementadas.
+
+Tarefa – Wizard "Novo Pedido" – ETAPA 3:
+
+1. No componente do wizard, implementar a Etapa 3 com o layout sugerido:
+   - Coluna esquerda: resumo das certidões do pedido:
+     - Listar os `order_items` com nome da certidão, quantidade e total.
+     - Mostrar o valor total do pedido (soma de `total_price`).
+   - Coluna direita:
+     - Bloco "Informações Complementares" (placeholder para agora, se necessário).
+     - Bloco "Dados do solicitante" com campos:
+       - requester_name (obrigatório),
+       - requester_document (opcional),
+       - requester_email (obrigatório),
+       - requester_phone (obrigatório ou recomendado).
+
+2. Ao clicar em "Concluir":
+   - Validar campos obrigatórios do solicitante.
+   - Calcular o `total_amount` do pedido:
+     - `orders.total_amount = soma(order_items.total_price)`.
+   - Preencher os campos de solicitante no `Order`.
+   - Atualizar o `status` do pedido para `awaiting_payment`.
+   - Redirecionar o usuário para uma rota de pagamento do pedido (ex.: `/orders/{order}/payment`) que você pode criar como stub agora.
+
+3. Criar a rota de pagamento:
+   - GET `/orders/{order}/payment` (auth + verified).
+   - View simples que:
+     - Exibe resumo do pedido.
+     - Mostra o total.
+     - Exibe texto placeholder "Tela de pagamento em construção" (integração real virá em outro card).
+
+4. Criar testes de feature para:
+   - Fluxo completo do wizard:
+     - Preenche Etapa 1, Etapa 2, Etapa 3.
+     - Ao concluir, o pedido fica com status `awaiting_payment` e total_amount correto.
+     - O redirect vai para `/orders/{order}/payment`.
+
+Regras:
+- Não implementar lógica real de pagamento aqui (isso será feito no card de pagamento/saldo).
+- Manter o wizard como um único componente Livewire/Volt, controlando o step atual.
+
+----------------------------------------
+Card 6
+Projeto: Emergency.
+
+Leia:
+- docs/guidelines/00-master-guideline.md
+- docs/guidelines/20-pedidos-wizard.md
+- docs/guidelines/30-pagamentos-pedido.md
+- docs/guidelines/40-saldo-carteira.md
+
+Tarefa – Carteira e pagamento com saldo:
+
+1. Criar migrations e models para:
+   a) `wallets`
+      - user_id, balance, timestamps.
+      - Garantir que cada user tenha no máximo uma carteira.
+   b) `wallet_transactions`
+      - wallet_id, type, source, amount, description, related_order_id, related_payment_id, timestamps.
+   c) `payments`
+      - order_id, user_id, method, amount, status, gateway_transaction_id, metadata (json), timestamps.
+
+2. Criar relacionamentos:
+   - User hasOne Wallet.
+   - Wallet belongsTo User, hasMany WalletTransactions.
+   - WalletTransaction belongsTo Wallet, belongsTo Order (opcional), belongsTo Payment (opcional).
+   - Order hasMany Payments.
+   - Payment belongsTo Order e belongsTo User.
+
+3. Implementar tela de "Saldo" simples:
+   - Rota protegida (auth): ex. GET `/saldo`.
+   - Mostrar saldo atual do usuário (criando carteira automaticamente se necessário).
+   - Listar transações recentes da carteira.
+
+4. Implementar pagamento do pedido com saldo na rota `/orders/{order}/payment`:
+   - Exibir saldo atual do usuário.
+   - Se `wallet.balance >= order.total_amount`, mostrar botão "Pagar com saldo".
+   - Ao clicar:
+     - Verificar saldo suficiente.
+     - Criar `payment` com:
+       - method = 'wallet',
+       - amount = order.total_amount,
+       - status = 'paid'.
+     - Criar `wallet_transaction` de débito:
+       - type = 'debit',
+       - source = 'order_payment',
+       - amount = order.total_amount,
+       - related_order_id e related_payment_id preenchidos.
+     - Atualizar `wallet.balance`.
+     - Atualizar `order.status` para 'paid' (ou 'in_progress', conforme guideline 30).
+
+5. Criar testes de feature:
+   - Cenário 1: usuário com carteira e saldo suficiente consegue pagar um pedido `awaiting_payment` com saldo.
+   - Cenário 2: usuário com saldo insuficiente não consegue pagar com saldo (boa mensagem de erro e nenhum payment/transaction inválido é criado).
+
+Regras:
+- Não implementar integração com gateways externos neste card (PIX, cartão, boleto só no futuro).
+- Não alterar as rotas `/` e `/dashboard`.
+
+---------------------------------------
+card 7
+Projeto: Emergency.
+
+Leia:
+- docs/guidelines/00-master-guideline.md
+- docs/guidelines/50-contato-suporte.md
+
+Tarefa – Módulo de contato/suporte:
+
+1. Criar migration e model `SupportTicket` para a tabela `support_tickets` conforme guideline:
+   - user_id (nullable), order_id (nullable),
+   - subject, name, email, phone, message, status, timestamps.
+
+2. Criar uma rota para a página de contato:
+   - Ex.: GET `/contato` (auth opcional; pode começar apenas para usuários logados, se for mais simples).
+   - Rota protegida por auth no v1 (para simplificar):
+     - `->middleware(['auth', 'verified'])`
+
+3. Criar uma view ou componente Livewire para o formulário:
+   - Campos: subject, name, email, phone, order_id (opcional), message.
+   - Se o usuário estiver autenticado:
+     - Preencher name/email automaticamente com dados do usuário.
+   - Permitir que `order_id` venha por query string (ex.: `/contato?order=123`) e pré-preencha o campo.
+
+4. Ao enviar o formulário:
+   - Validar campos obrigatórios (subject, name, email, message).
+   - Criar um registro em `support_tickets` com:
+     - user_id (se autenticado),
+     - order_id se informado,
+     - status inicial `open`.
+
+5. Criar um pequeno link/botão na tela de detalhes de pedido (se existir) para:
+   - "Falar com suporte sobre este pedido"
+   - Esse link deve apontar para `/contato?order={order_id}`.
+
+6. Criar testes de feature:
+   - Criar ticket autenticado: enviar formulário com dados válidos, verificar que o registro existe e status é `open`.
+   - Criar ticket a partir de pedido: acessar `/contato?order={id}` e verificar que o ticket salvo tem `order_id` correto.
+
+7. Adicionar os links das features no menu
+
+Regras:
+- Não é necessário implementar painel de atendimento administrativo neste card.
+- Manter o estilo visual consistente com o restante do app (layouts existentes).
+
+
+--------- 25/11/2025
+
+2) Prompt – migration + flag is_admin + Gate de acesso
+
+Tarefa:
+Implemente o suporte a admin no backend conforme 80-backend-admin-guidelines.md:
+
+Criar uma migration para adicionar o campo is_admin na tabela users:
+
+tipo boolean, default false, não nulo.
+
+Atualizar o User model com o cast adequado em casts().
+
+Me entregar o comando Artisan usando meu alias: pa make:migration ....
+
+Configurar um Gate access-backend em AuthServiceProvider, com a regra base:
+
+apenas User com is_admin === true podem acessar o backend.
+
+Se necessário, ajustar o seeder/factory de User para:
+
+permitir criar usuários admin facilmente (is_admin => true).
+
+Entregar também um teste PHPUnit de feature validando:
+
+usuário não autenticado não acessa /backend (redireciona para login).
+
+usuário autenticado com is_admin = false não acessa /backend (403 ou redirect adequado).
+
+usuário autenticado com is_admin = true acessa /backend normalmente.
+
+Mostre o comando sugerido para rodar apenas esses testes com pa test ....
+
+
+3) Prompt – rotas + estrutura básica do /backend
+
+Tarefa:
+Configure o grupo de rotas do backend conforme 80-backend-admin-guidelines.md:
+
+Em routes/web.php (ou arquivo de rotas apropriado conforme estrutura Laravel 12), crie o grupo:
+
+Prefixo: /backend.
+
+Nome: prefixo backend..
+
+Middlewares: auth, verified (se já usado) e can:access-backend.
+
+Dentro desse grupo crie rotas mínimas:
+
+GET /backend → backend.dashboard
+
+GET /backend/users → backend.users.index
+
+GET /backend/certificate-types → backend.certificate-types.index
+
+Crie controladores ou componentes Volt apropriados para essas rotas, mas apenas com esqueleto mínimo (sem lógica pesada ainda), só retornando views corretas:
+
+Dashboard simples.
+
+Título e descrição das páginas de usuários e catálogo.
+
+Garanta que essas views já usem o layout base do backend (que vamos criar em outro passo), mas pode apontar para ele mesmo que ainda não exista (vai ser criado depois).
+
+Inclua testes de rota básicos garantindo que:
+
+backend.dashboard está protegido por autenticação e gate.
+
+backend.users.index e backend.certificate-types.index também.
+
+#29/01/2025
+Prompt – Processo de Pedido v2 (3 telas + múltiplos clientes)
+
+Leia primeiro:
+
+00-master-guideline.md
+20-pedidos-wizard.md
+25-pedidos-processo-v2.md
+Tarefa:
+Implemente o novo fluxo de pedido v2 seguindo exatamente 25-pedidos-processo-v2.md.
+
+Requisitos principais:
+
+Criar 3 telas separadas:
+Fase 1: GET /orders/new
+Fase 2: GET /orders/{order}/certidoes
+Fase 3: GET /orders/{order}/configuracao
+Implementar breadcrumb e stepper em todas as fases (como nas imagens).
+Fase 1:
+Campo title do pedido.
+Adicionar múltiplos clientes com botão “+ Adicionar”.
+Campos iguais aos existentes.
+CNPJ preenche razão social via API pública (ou TODO se não houver integração).
+Fase 2:
+Lista de clientes à esquerda.
+Certidões à direita conforme cliente selecionado.
+“Desmarcar tudo” por cliente.
+Fase 3:
+Resumo por cliente e total geral.
+Link para tela de pagamento (stub).
+Ajustes de dados necessários:
+orders.title obrigatório.
+Nova relação pedido ↔ clientes (pivot order_subjects).
+order_items deve apontar order_subject_id.
+Criar/ajustar tests PHPUnit cobrindo:
+Fluxo básico das 3 fases.
+Múltiplos clientes.
+Seleção de certidões por cliente.
+Validações de avanço entre fases.
+Regras:
+
+Não quebrar / e /dashboard.
+Use Livewire v3 / Volt e Flux UI quando possível.
+Seguir padrões de nomenclatura e validação atuais.
+Rodar vendor/bin/pint --dirty e o(s) teste(s) afetado(s).
+
+
+--------------------------------------------------
+card 7
+Projeto: Emergency.
+
+Leia:
+00-master-guideline.md
+80-backend-admin-guidelines.md
+90-dados-necessarios.md
+
+Tarefa:
+Criar o módulo de Dados Necessários no admin.
+
+1. Banco:
+   - Migration `required_data_fields` (id, descricao, timestamps).
+   - Migration `certificate_type_required_data` (certificate_type_id, required_data_field_id, timestamps, unique).
+   - Model `RequiredDataField` com factory e relacionamento N:N com `CertificateType`.
+   - Atualizar `CertificateType` com `requiredDataFields()`.
+
+2. Seeder:
+   - `RequiredDataFieldsSeeder` com os registros do guideline 90 (preservar IDs).
+   - Registrar no `DatabaseSeeder` usando upsert.
+
+3. Admin:
+   - Rotas `backend.required-data-fields.*` (index/create/store/edit/update).
+   - Index com busca por ID/descrição e paginação no card.
+   - Create/Edit com campos ID e descrição.
+   - Edit mostra created_at/updated_at e ao salvar mantém na edição com mensagem.
+
+4. Menu:
+   - Certidões vira submenu:
+     - Listar
+     - Dados Necessários
+     - Categorias (placeholder sem ação).
+
+5. Testes PHPUnit:
+   - Criar e atualizar registros.
+   - Update retorna para edição com status.
+
+Regras:
+- Usar Livewire Volt e Form Requests.
+- Não alterar dependências.

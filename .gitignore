@@ -1,0 +1,6 @@
+.env
+.DS_Store
+output/
+tmp/
+site_svd/
+site_svd_repo/

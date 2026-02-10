@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="h-full bg-gray-50">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gordon AI - Emergency Documentação</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    .custom-scrollbar::-webkit-scrollbar { width: 4px; }
+    .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+    .custom-scrollbar::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 10px; }
+
+    /* Pequeno “polimento” chat-like sem mudar o seu visual */
+    .chat-bg {
+      background:
+        radial-gradient(1100px 420px at 10% 0%, rgba(245, 158, 11, 0.06), transparent 60%),
+        radial-gradient(900px 420px at 90% 10%, rgba(17, 24, 39, 0.04), transparent 60%),
+        #f9fafb;
+    }
+  </style>
+</head>
+
+<body class="h-full flex overflow-hidden font-sans">
+
+  <!-- Overlay (mobile drawer) -->
+  <div id="sidebarOverlay" class="fixed inset-0 bg-black/40 z-40 hidden md:hidden"></div>
+
+  <!-- Overlay + Modal de Configurações -->
+  <div id="settingsOverlay" class="fixed inset-0 bg-black/40 z-[60] hidden"></div>
+
+  <div id="settingsModal"
+       class="fixed left-1/2 top-1/2 z-[70] hidden w-[92%] max-w-lg -translate-x-1/2 -translate-y-1/2 rounded-2xl bg-white shadow-2xl border border-gray-200">
+    <div class="flex items-center justify-between px-5 py-4 border-b border-gray-100">
+      <div class="flex items-center gap-3">
+        <div class="h-9 w-9 rounded-xl bg-gray-900 text-white flex items-center justify-center">
+          <i class="fa-solid fa-gear"></i>
+        </div>
+        <div>
+          <p class="text-sm font-semibold text-gray-900">Configurações</p>
+          <p class="text-xs text-gray-500">Preferências da interface (somente UI)</p>
+        </div>
+      </div>
+      <button id="closeSettingsBtn" class="h-9 w-9 rounded-xl hover:bg-gray-100 text-gray-600 transition" aria-label="Fechar configurações">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="px-5 py-4 space-y-4">
+      <div class="rounded-xl border border-gray-200 p-4">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <p class="text-sm font-medium text-gray-900">Sugestões rápidas</p>
+            <p class="text-xs text-gray-500 mt-1">Exibir chips acima do campo de mensagem.</p>
+          </div>
+          <label class="inline-flex items-center cursor-pointer">
+            <input id="toggleChips" type="checkbox" class="sr-only" checked>
+            <span class="relative w-10 h-6 bg-amber-500 rounded-full transition">
+              <span id="toggleChipsDot" class="absolute left-1 top-1 w-4 h-4 bg-white rounded-full shadow transition"></span>
+            </span>
+          </label>
+        </div>
+      </div>
+
+      <div class="rounded-xl border border-gray-200 p-4">
+        <p class="text-sm font-medium text-gray-900">Tamanho do texto</p>
+        <p class="text-xs text-gray-500 mt-1">Ajusta apenas a visualização local.</p>
+        <div class="mt-3 flex flex-wrap gap-2">
+          <button data-font="sm" class="fontBtn px-3 py-2 rounded-xl border border-gray-200 text-sm hover:bg-gray-50 transition">Pequeno</button>
+          <button data-font="base" class="fontBtn px-3 py-2 rounded-xl border border-gray-200 text-sm hover:bg-gray-50 transition">Padrão</button>
+          <button data-font="lg" class="fontBtn px-3 py-2 rounded-xl border border-gray-200 text-sm hover:bg-gray-50 transition">Grande</button>
+        </div>
+      </div>
+
+      <div class="rounded-xl border border-gray-200 p-4">
+        <p class="text-sm font-medium text-gray-900">Atalhos</p>
+        <div class="mt-2 text-xs text-gray-600 space-y-1">
+          <p><span class="font-semibold">Enter</span> envia</p>
+          <p><span class="font-semibold">Shift + Enter</span> quebra linha</p>
+          <p><span class="font-semibold">Esc</span> fecha menus</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="px-5 py-4 border-t border-gray-100 flex items-center justify-end gap-2">
+      <button id="resetUiBtn" class="px-4 py-2 rounded-xl border border-gray-200 text-sm hover:bg-gray-50 transition">
+        Restaurar
+      </button>
+      <button id="closeSettingsBtn2" class="px-4 py-2 rounded-xl bg-amber-500 text-white text-sm hover:bg-amber-600 transition">
+        Fechar
+      </button>
+    </div>
+  </div>
+
+  <!-- Sidebar (Drawer on mobile, static on desktop) -->
+  <aside id="sidebar"
+         class="fixed md:static inset-y-0 left-0 z-50 w-72 bg-gray-900 flex flex-col shrink-0
+                transform -translate-x-full md:translate-x-0 transition-transform duration-200 ease-out
+                md:flex">
+
+    <!-- Top -->
+    <div class="p-4 flex items-center gap-2">
+      <!-- Close (mobile only) -->
+      <button id="closeSidebarBtn"
+              class="md:hidden text-gray-300 hover:text-white transition"
+              aria-label="Fechar menu">
+        <i class="fa-solid fa-xmark text-lg"></i>
+      </button>
+
+      <button id="newChatBtn"
+              class="w-full flex items-center justify-center gap-3 px-4 py-3 border border-gray-700 rounded-lg text-white hover:bg-gray-800 transition text-sm">
+        <i class="fa-solid fa-plus"></i> Nova Conversa
+      </button>
+    </div>
+
+    <!-- Recent list -->
+    <div class="flex-1 overflow-y-auto px-2 space-y-1 custom-scrollbar">
+      <p class="px-4 py-2 text-xs font-semibold text-gray-500 uppercase tracking-wider">Recentes</p>
+
+      <a href="#" class="flex items-center gap-3 px-4 py-3 rounded-lg bg-gray-800 text-white text-sm group">
+        <i class="fa-regular fa-message text-gray-400"></i>
+        <span class="truncate">Certidão de Nascimento...</span>
+      </a>
+
+      <a href="#" class="flex items-center gap-3 px-4 py-3 rounded-lg text-gray-400 hover:bg-gray-800 hover:text-white transition text-sm group">
+        <i class="fa-regular fa-message"></i>
+        <span class="truncate text-gray-300">Taxas de Divórcio 2024</span>
+      </a>
+
+      <a href="#" class="flex items-center gap-3 px-4 py-3 rounded-lg text-gray-400 hover:bg-gray-800 hover:text-white transition text-sm group">
+        <i class="fa-regular fa-message"></i>
+        <span class="truncate text-gray-300">Segunda via de RG</span>
+      </a>
+    </div>
+
+    <div class="p-4 border-t border-gray-800 space-y-2">
+      <!-- Configurações abre menu/modal -->
+      <button id="openSettingsBtn" class="w-full flex items-center gap-3 text-gray-400 hover:text-white hover:bg-gray-800 transition text-sm px-3 py-2 rounded-lg">
+        <i class="fa-solid fa-gear"></i> Configurações
+      </button>
+
+      <p class="px-3 text-[11px] text-gray-500">
+        Oferecido por <span class="text-gray-300">Emergency.com.br</span>
+      </p>
+    </div>
+  </aside>
+
+  <!-- Main -->
+  <div class="flex-1 flex flex-col min-w-0 chat-bg">
+
+    <!-- Header -->
+    <header class="bg-white border-b border-gray-200 py-4 px-4 md:px-6 flex justify-between items-center z-10">
+      <div class="flex items-center gap-3 md:gap-4 min-w-0">
+        <!-- Open drawer (mobile only) -->
+        <button id="openSidebarBtn" class="md:hidden text-gray-600 mr-1" aria-label="Abrir menu">
+          <i class="fa-solid fa-bars text-xl"></i>
+        </button>
+
+        <img src="https://app.planetacertidoes.com.br/emergency_logo_transparent_v2.png"
+             alt="Logo" class="h-8 md:h-10 shrink-0">
+
+        <div class="h-6 w-px bg-gray-300 hidden sm:block mx-2"></div>
+
+        <h1 class="text-lg md:text-xl font-semibold text-gray-700 hidden sm:block">
+          Gordon <span class="text-amber-600 font-light">AI</span>
+        </h1>
+      </div>
+
+      <!-- Avatar de usuário logado (substitui “Minha Conta”) -->
+      <div class="relative">
+        <button id="userMenuBtn"
+                class="flex items-center gap-3 rounded-full hover:bg-gray-100 transition p-1.5"
+                aria-label="Menu do usuário">
+          <div class="w-9 h-9 rounded-full bg-gray-800 text-white flex items-center justify-center text-xs font-semibold shadow-sm">
+            AG
+          </div>
+          <span class="hidden sm:inline text-sm text-gray-700 font-medium">André</span>
+          <i class="fa-solid fa-chevron-down text-gray-400 text-xs hidden sm:inline"></i>
+        </button>
+
+        <div id="userMenu"
+             class="absolute right-0 mt-2 w-56 rounded-xl bg-white border border-gray-200 shadow-xl overflow-hidden hidden z-50">
+          <a href="#" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-700 hover:bg-gray-50">
+            <i class="fa-regular fa-user"></i> Perfil
+          </a>
+          <a href="#" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-700 hover:bg-gray-50">
+            <i class="fa-regular fa-folder-open"></i> Meus pedidos
+          </a>
+          <button id="userOpenSettingsBtn" class="w-full text-left flex items-center gap-3 px-4 py-3 text-sm text-gray-700 hover:bg-gray-50">
+            <i class="fa-solid fa-gear"></i> Configurações
+          </button>
+          <div class="h-px bg-gray-100"></div>
+          <a href="#" class="flex items-center gap-3 px-4 py-3 text-sm text-red-600 hover:bg-red-50">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i> Sair
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Chat area -->
+    <main class="flex-1 overflow-y-auto p-4 md:p-8">
+      <div class="max-w-3xl mx-auto">
+
+        <!-- Empty state -->
+        <div id="emptyState" class="py-10 md:py-16 text-center">
+          <div class="mx-auto w-14 h-14 rounded-2xl bg-amber-500 text-white flex items-center justify-center shadow-md">
+            <i class="fa-solid fa-robot text-xl"></i>
+          </div>
+          <h2 class="mt-4 text-lg font-semibold text-gray-800">Comece um atendimento</h2>
+          <p class="mt-2 text-sm text-gray-500">
+            Escolha uma ação rápida abaixo ou descreva o que você precisa no campo de mensagem.
+          </p>
+
+          <div class="mt-6 flex flex-wrap justify-center gap-2">
+            <button data-prompt="Quero solicitar uma certidão de nascimento atualizada."
+                    class="empty-chip px-3 py-2 rounded-full bg-white border border-gray-200 text-sm text-gray-700 hover:border-amber-400 hover:text-amber-700 transition shadow-sm">
+              Certidão de Nascimento
+            </button>
+            <button data-prompt="Preciso consultar as taxas e prazos para emissão de certidão no meu estado."
+                    class="empty-chip px-3 py-2 rounded-full bg-white border border-gray-200 text-sm text-gray-700 hover:border-amber-400 hover:text-amber-700 transition shadow-sm">
+              Consultar taxas
+            </button>
+            <button data-prompt="Quero acompanhar o status do meu pedido."
+                    class="empty-chip px-3 py-2 rounded-full bg-white border border-gray-200 text-sm text-gray-700 hover:border-amber-400 hover:text-amber-700 transition shadow-sm">
+              Acompanhar pedido
+            </button>
+            <button data-prompt="Preciso falar com um atendente humano."
+                    class="empty-chip px-3 py-2 rounded-full bg-white border border-gray-200 text-sm text-gray-700 hover:border-amber-400 hover:text-amber-700 transition shadow-sm">
+              Falar com humano
+            </button>
+          </div>
+        </div>
+
+        <!-- Messages list -->
+        <div id="chatList" class="space-y-6"></div>
+
+      </div>
+    </main>
+
+    <!-- Footer / Composer -->
+    <footer class="p-4 bg-white border-t border-gray-200">
+      <div class="max-w-3xl mx-auto">
+
+        <!-- Quick actions (chips) -->
+        <div id="quickChipsRow" class="mb-2 flex flex-wrap gap-2">
+          <button data-prompt="Preciso de uma certidão de nascimento atualizada."
+                  class="quick-chip px-3 py-1.5 rounded-full bg-gray-100 text-gray-700 text-xs hover:bg-amber-50 hover:text-amber-700 transition">
+            Solicitar certidão
+          </button>
+          <button data-prompt="Quais são as taxas e prazos para emissão no meu estado?"
+                  class="quick-chip px-3 py-1.5 rounded-full bg-gray-100 text-gray-700 text-xs hover:bg-amber-50 hover:text-amber-700 transition">
+            Taxas e prazos
+          </button>
+          <button data-prompt="Quero acompanhar um pedido existente."
+                  class="quick-chip px-3 py-1.5 rounded-full bg-gray-100 text-gray-700 text-xs hover:bg-amber-50 hover:text-amber-700 transition">
+            Acompanhar pedido
+          </button>
+          <button data-prompt="Preciso de ajuda para entender quais dados do registro são necessários."
+                  class="quick-chip px-3 py-1.5 rounded-full bg-gray-100 text-gray-700 text-xs hover:bg-amber-50 hover:text-amber-700 transition">
+            Quais dados preciso?
+          </button>
+        </div>
+
+        <form id="composerForm" class="relative group">
+          <div class="absolute left-4 bottom-3.5 flex gap-2">
+            <label class="cursor-pointer text-gray-400 hover:text-amber-600 transition" title="Anexar">
+              <i class="fa-solid fa-paperclip text-lg"></i>
+              <input type="file" class="hidden">
+            </label>
+          </div>
+
+          <textarea id="composer"
+                    rows="1"
+                    placeholder="Escreva sua mensagem..."
+                    class="w-full pl-12 pr-14 py-3.5 bg-gray-100 border-none rounded-2xl focus:ring-2 focus:ring-amber-500 focus:bg-white transition resize-none shadow-inner text-sm leading-relaxed
+                           max-h-40 overflow-y-auto"></textarea>
+
+          <!-- Mantém o botão amarelo do seu prompt anterior -->
+          <button type="submit"
+                  class="absolute right-2.5 bottom-2 bg-amber-500 hover:bg-amber-600 text-white w-9 h-9 rounded-xl flex items-center justify-center transition shadow-lg"
+                  aria-label="Enviar">
+            <i class="fa-solid fa-paper-plane text-xs"></i>
+          </button>
+        </form>
+
+        <!-- Texto do rodapé atualizado + oferecido por -->
+        <div class="text-center mt-2 space-y-1">
+          <p class="text-center text-[9px] text-gray-400 uppercase tracking-widest">
+            Gordon AI - Inteligência Jurídica & Imobiliaria.
+          </p>
+          <p class="text-center text-[9px] text-gray-400 uppercase tracking-widest">
+            Oferecido por Emergency.com.br
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // -----------------------------
+    // (1) Mobile drawer sidebar
+    // -----------------------------
+    const sidebar = document.getElementById('sidebar');
+    const sidebarOverlay = document.getElementById('sidebarOverlay');
+    const openSidebarBtn = document.getElementById('openSidebarBtn');
+    const closeSidebarBtn = document.getElementById('closeSidebarBtn');
+
+    function openSidebar() {
+      sidebar.classList.remove('-translate-x-full');
+      sidebarOverlay.classList.remove('hidden');
+      document.body.classList.add('overflow-hidden');
+    }
+
+    function closeSidebar() {
+      sidebar.classList.add('-translate-x-full');
+      sidebarOverlay.classList.add('hidden');
+      document.body.classList.remove('overflow-hidden');
+    }
+
+    openSidebarBtn?.addEventListener('click', openSidebar);
+    closeSidebarBtn?.addEventListener('click', closeSidebar);
+    sidebarOverlay?.addEventListener('click', closeSidebar);
+
+    // -----------------------------
+    // Settings modal
+    // -----------------------------
+    const settingsOverlay = document.getElementById('settingsOverlay');
+    const settingsModal = document.getElementById('settingsModal');
+    const openSettingsBtn = document.getElementById('openSettingsBtn');
+    const userOpenSettingsBtn = document.getElementById('userOpenSettingsBtn');
+    const closeSettingsBtn = document.getElementById('closeSettingsBtn');
+    const closeSettingsBtn2 = document.getElementById('closeSettingsBtn2');
+
+    function openSettings() {
+      settingsOverlay.classList.remove('hidden');
+      settingsModal.classList.remove('hidden');
+      closeUserMenu();
+    }
+
+    function closeSettings() {
+      settingsOverlay.classList.add('hidden');
+      settingsModal.classList.add('hidden');
+    }
+
+    openSettingsBtn?.addEventListener('click', openSettings);
+    userOpenSettingsBtn?.addEventListener('click', openSettings);
+    closeSettingsBtn?.addEventListener('click', closeSettings);
+    closeSettingsBtn2?.addEventListener('click', closeSettings);
+    settingsOverlay?.addEventListener('click', closeSettings);
+
+    // -----------------------------
+    // User avatar menu (dropdown)
+    // -----------------------------
+    const userMenuBtn = document.getElementById('userMenuBtn');
+    const userMenu = document.getElementById('userMenu');
+
+    function toggleUserMenu() {
+      userMenu.classList.toggle('hidden');
+    }
+    function closeUserMenu() {
+      userMenu.classList.add('hidden');
+    }
+
+    userMenuBtn?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleUserMenu();
+    });
+
+    document.addEventListener('click', () => {
+      closeUserMenu();
+    });
+
+    // -----------------------------
+    // ESC fecha tudo
+    // -----------------------------
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeSidebar();
+        closeSettings();
+        closeUserMenu();
+      }
+    });
+
+    // -----------------------------
+    // Chat rendering helpers
+    // -----------------------------
+    const chatList = document.getElementById('chatList');
+    const emptyState = document.getElementById('emptyState');
+
+    function updateEmptyState() {
+      const hasMessages = chatList.children.length > 0;
+      emptyState.classList.toggle('hidden', hasMessages);
+    }
+
+    function scrollToBottom() {
+      const main = document.querySelector('main');
+      main.scrollTop = main.scrollHeight;
+    }
+
+    function wireCopyButtons(scope) {
+      const btns = scope.querySelectorAll('.copyBtn');
+      btns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const bubble = btn.closest('.group');
+          const textNode = bubble?.querySelector('p.text-sm');
+          const txt = textNode ? textNode.innerText : "";
+          navigator.clipboard.writeText(txt);
+          btn.innerHTML = '<i class="fa-solid fa-check mr-1"></i>Copiado';
+          setTimeout(() => {
+            btn.innerHTML = '<i class="fa-regular fa-copy mr-1"></i>Copiar';
+          }, 900);
+        });
+      });
+    }
+
+    function escapeHtml(str) {
+      return String(str)
+        .replaceAll('&', '&amp;')
+        .replaceAll('<', '&lt;')
+        .replaceAll('>', '&gt;')
+        .replaceAll('"', '&quot;')
+        .replaceAll("'", '&#039;');
+    }
+
+    // (4) Message types: assistant | user | info | warn | error | success
+    function addMessage(type, text) {
+      const wrapper = document.createElement('div');
+
+      const toolbar = `
+        <div class="absolute -top-3 right-2 opacity-0 group-hover:opacity-100 transition flex gap-1">
+          <button class="copyBtn bg-white border border-gray-200 text-gray-600 hover:text-gray-900 hover:border-gray-300 rounded-md px-2 py-1 text-[10px] shadow-sm">
+            <i class="fa-regular fa-copy mr-1"></i>Copiar
+          </button>
+        </div>
+      `;
+
+      if (type === 'assistant') {
+        wrapper.className = "flex items-start gap-4";
+        wrapper.innerHTML = `
+          <div class="w-9 h-9 rounded-full bg-amber-500 flex items-center justify-center text-white shrink-0 shadow-md text-sm">
+            <i class="fa-solid fa-robot"></i>
+          </div>
+          <div class="relative group bg-white p-4 rounded-2xl rounded-tl-none border border-gray-200 shadow-sm max-w-[85%] text-gray-800">
+            ${toolbar}
+            <p class="font-bold text-amber-600 text-[10px] mb-1 uppercase tracking-wider">Gordon</p>
+            <p class="text-sm leading-relaxed whitespace-pre-wrap">${escapeHtml(text)}</p>
+            <p class="mt-2 text-[10px] text-gray-400">agora</p>
+          </div>
+        `;
+      } else if (type === 'user') {
+        wrapper.className = "flex items-start gap-4 flex-row-reverse";
+        wrapper.innerHTML = `
+          <div class="w-9 h-9 rounded-full bg-gray-800 flex items-center justify-center text-white shrink-0 shadow-md text-sm">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <div class="relative group bg-amber-500 p-4 rounded-2xl rounded-tr-none shadow-sm max-w-[85%] text-white">
+            ${toolbar}
+            <p class="text-sm leading-relaxed whitespace-pre-wrap">${escapeHtml(text)}</p>
+            <p class="mt-2 text-[10px] text-white/70 text-right">agora</p>
+          </div>
+        `;
+      } else {
+        const map = {
+          info:   { icon: "fa-circle-info",  ring: "border-gray-200",   bg: "bg-white",      title: "Informação",  bar: "border-gray-400",  text: "text-gray-700" },
+          warn:   { icon: "fa-triangle-exclamation", ring: "border-amber-200", bg: "bg-amber-50", title: "Atenção",    bar: "border-amber-400", text: "text-amber-900" },
+          error:  { icon: "fa-circle-xmark", ring: "border-red-200",   bg: "bg-red-50",      title: "Erro",        bar: "border-red-400",    text: "text-red-900" },
+          success:{ icon: "fa-circle-check", ring: "border-emerald-200", bg: "bg-emerald-50", title: "Sucesso",     bar: "border-emerald-400", text: "text-emerald-900" },
+        };
+        const cfg = map[type] || map.info;
+
+        wrapper.className = "flex justify-center";
+        wrapper.innerHTML = `
+          <div class="relative group w-full max-w-[92%] md:max-w-[85%] ${cfg.bg} border ${cfg.ring} rounded-2xl shadow-sm p-4 border-l-4 ${cfg.bar}">
+            ${toolbar}
+            <div class="flex items-start gap-3">
+              <div class="mt-0.5 text-gray-500">
+                <i class="fa-solid ${cfg.icon}"></i>
+              </div>
+              <div class="min-w-0">
+                <p class="text-[11px] font-semibold uppercase tracking-wider ${cfg.text}">${cfg.title}</p>
+                <p class="mt-1 text-sm leading-relaxed ${cfg.text} whitespace-pre-wrap">${escapeHtml(text)}</p>
+              </div>
+            </div>
+          </div>
+        `;
+      }
+
+      chatList.appendChild(wrapper);
+      wireCopyButtons(wrapper);
+      updateEmptyState();
+      scrollToBottom();
+    }
+
+    // -----------------------------
+    // (2) Composer: auto-resize + Enter/Shift+Enter
+    // -----------------------------
+    const composerForm = document.getElementById('composerForm');
+    const composer = document.getElementById('composer');
+
+    function autoResize() {
+      composer.style.height = 'auto';
+      composer.style.height = Math.min(composer.scrollHeight, 160) + 'px';
+    }
+
+    composer.addEventListener('input', autoResize);
+
+    composer.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' && !e.shiftKey) {
+        e.preventDefault();
+        composerForm.requestSubmit();
+      }
+    });
+
+    composerForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const text = composer.value.trim();
+      if (!text) return;
+
+      addMessage('user', text);
+
+      // demo response (visual only)
+      setTimeout(() => {
+        addMessage('assistant', 'Entendi. Para seguir, me diga a UF e, se possível, o cartório/município do registro.');
+      }, 350);
+
+      composer.value = '';
+      autoResize();
+    });
+
+    // -----------------------------
+    // (3) Quick action chips
+    // -----------------------------
+    function applyPrompt(prompt) {
+      composer.value = prompt;
+      autoResize();
+      composer.focus();
+    }
+
+    document.querySelectorAll('.quick-chip, .empty-chip').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const prompt = btn.getAttribute('data-prompt') || '';
+        applyPrompt(prompt);
+      });
+    });
+
+    // -----------------------------
+    // New chat clears messages (demo)
+    // -----------------------------
+    document.getElementById('newChatBtn')?.addEventListener('click', () => {
+      chatList.innerHTML = '';
+      updateEmptyState();
+      closeSidebar();
+      composer.focus();
+    });
+
+    // -----------------------------
+    // Settings UI bindings (demo-only)
+    // -----------------------------
+    const quickChipsRow = document.getElementById('quickChipsRow');
+    const toggleChips = document.getElementById('toggleChips');
+    const toggleChipsDot = document.getElementById('toggleChipsDot');
+    const resetUiBtn = document.getElementById('resetUiBtn');
+
+    function syncToggleChipsUi() {
+      const on = toggleChips.checked;
+      quickChipsRow.classList.toggle('hidden', !on);
+      toggleChips.parentElement.classList.toggle('bg-amber-500', on);
+      toggleChips.parentElement.classList.toggle('bg-gray-200', !on);
+      toggleChipsDot.style.transform = on ? 'translateX(16px)' : 'translateX(0px)';
+    }
+
+    toggleChips?.addEventListener('change', syncToggleChipsUi);
+
+    document.querySelectorAll('.fontBtn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const font = btn.getAttribute('data-font');
+        // aplica no composer e nas mensagens futuras (demo)
+        composer.classList.remove('text-sm', 'text-base', 'text-lg');
+        if (font === 'sm') composer.classList.add('text-sm');
+        if (font === 'base') composer.classList.add('text-base');
+        if (font === 'lg') composer.classList.add('text-lg');
+      });
+    });
+
+    resetUiBtn?.addEventListener('click', () => {
+      toggleChips.checked = true;
+      syncToggleChipsUi();
+      composer.classList.remove('text-base', 'text-lg');
+      composer.classList.add('text-sm');
+    });
+
+    // Init
+    updateEmptyState();
+    autoResize();
+    syncToggleChipsUi();
+  </script>
+</body>
+</html>

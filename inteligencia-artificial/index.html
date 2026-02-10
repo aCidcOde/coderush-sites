@@ -1,0 +1,433 @@
+<!doctype html>
+<!--
+/*
+[Modulo Landing Page Comercial SVD v1 IA]
+@Author: Andre Gomes ( @acidcode )
+@since 2026-02-10
+Landing page v1 com a identidade visual SVD e novo posicionamento de negocio orientado por IA.
+*/
+-->
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sistema Venda Direta com IA | Reduza Custo e Escale Operacao</title>
+  <meta name="description" content="Sistema Venda Direta com abordagem orientada por IA: menos custo operacional, mais produtividade e evolucao continua com apoio do CodaFacil." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#004AAD" />
+  <link rel="canonical" href="https://www.sistemavendadireta.com.br/inteligencia-artificial/" />
+
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Sistema Venda Direta com IA" />
+  <meta property="og:description" content="Plataforma de venda direta com IA aplicada para reduzir custos e acelerar resultados." />
+  <meta property="og:url" content="https://www.sistemavendadireta.com.br/inteligencia-artificial/" />
+  <meta property="og:site_name" content="Sistema Venda Direta" />
+  <meta property="og:image" content="https://www.sistemavendadireta.com.br/wp-content/uploads/2023/04/Screenshot-2023-04-26-at-14.38.02.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" />
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <style type="text/tailwindcss">
+    @theme {
+      --color-brand: #004AAD;
+      --color-brand-dark: #003F91;
+      --color-brand-soft: #215BA8;
+      --font-heading: "Montserrat", sans-serif;
+      --font-body: "Roboto", sans-serif;
+    }
+  </style>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "name": "Sistema Venda Direta",
+          "url": "https://www.sistemavendadireta.com.br/",
+          "sameAs": [
+            "https://facebook.com/sistemavendadireta",
+            "https://www.youtube.com/@andregomes8954"
+          ]
+        },
+        {
+          "@type": "Service",
+          "name": "Sistema Venda Direta com IA",
+          "provider": {
+            "@type": "Organization",
+            "name": "Sistema Venda Direta"
+          },
+          "serviceType": "Plataforma de venda direta com automacao e desenvolvimento orientado por IA",
+          "areaServed": "BR"
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "A IA substitui meu processo atual?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Nao. A IA entra para automatizar tarefas repetitivas e apoiar decisoes, mantendo controle da operacao."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Qual a diferenca entre SVD e CodaFacil?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "SVD e a plataforma principal de venda direta. CodaFacil e o time de desenvolvimento para customizacoes e novos modulos."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Consigo reduzir custo operacional?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sim, com automacao de fluxo, menos retrabalho e maior produtividade da operacao."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Como comecar?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Solicite um diagnostico IA. Mapeamos seu cenario e indicamos a trilha ideal de implantacao."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  </script>
+</head>
+<body class="bg-brand text-white antialiased font-[var(--font-body)]">
+  <a href="#conteudo" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-white focus:px-4 focus:py-2 focus:text-brand focus:font-semibold">
+    Pular para o conteudo
+  </a>
+
+  <header class="sticky top-0 z-40 border-b border-white/10 bg-brand/95 backdrop-blur">
+    <div class="mx-auto max-w-[1140px] px-4 sm:px-6">
+      <nav class="flex items-center justify-between gap-4 py-3" aria-label="Menu principal">
+        <a href="#" class="block" aria-label="Sistema Venda Direta">
+          <img
+            src="../index_svd_files/Logo-Branco-1.png"
+            alt="Sistema Venda Direta"
+            class="h-auto w-[165px] sm:w-[210px] lg:w-[260px]"
+            width="1000"
+            height="300"
+          />
+        </a>
+
+        <ul class="hidden items-center gap-6 lg:flex">
+          <li><a href="#ia-operacao" class="rounded-md bg-white/15 px-3 py-2 text-sm font-medium">IA na Operacao</a></li>
+          <li><a href="#ofertas" class="text-sm font-medium text-white/90 hover:text-white">Planos</a></li>
+          <li><a href="#metodo" class="text-sm font-medium text-white/90 hover:text-white">Metodo</a></li>
+          <li><a href="#codafacil" class="text-sm font-medium text-white/90 hover:text-white">CodaFacil</a></li>
+          <li><a href="#contato" class="text-sm font-medium text-white/90 hover:text-white">Contato</a></li>
+        </ul>
+
+        <a href="#contato" class="hidden rounded-full border border-white/70 px-4 py-2 text-sm font-medium transition hover:bg-white/10 md:inline-flex">
+          Quero diagnostico IA
+        </a>
+      </nav>
+
+      <div class="pb-3 lg:hidden">
+        <details class="group rounded-2xl border border-white/20 bg-white/5 p-2">
+          <summary class="flex cursor-pointer list-none items-center justify-between rounded-xl px-3 py-2 text-sm font-semibold">
+            Navegacao
+            <svg class="h-4 w-4 transition-transform group-open:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path>
+            </svg>
+          </summary>
+
+          <div class="mt-2 grid gap-2 px-1 pb-1 text-sm font-medium">
+            <a href="#ia-operacao" class="rounded-lg border border-white/20 bg-white/5 px-3 py-2">IA na Operacao</a>
+            <a href="#ofertas" class="rounded-lg border border-white/20 bg-white/5 px-3 py-2">Planos</a>
+            <a href="#metodo" class="rounded-lg border border-white/20 bg-white/5 px-3 py-2">Metodo</a>
+            <a href="#codafacil" class="rounded-lg border border-white/20 bg-white/5 px-3 py-2">CodaFacil</a>
+            <a href="#contato" class="rounded-lg border border-white/65 px-3 py-2 text-center font-semibold">Quero diagnostico IA</a>
+          </div>
+        </details>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo" class="mx-auto max-w-[1140px] px-4 sm:px-6">
+    <section class="grid items-center gap-6 py-8 md:py-10 lg:grid-cols-2 lg:gap-10">
+      <div class="space-y-5">
+        <p class="inline-flex rounded-full border border-white/40 bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide">
+          Nova perspectiva SVD 2026
+        </p>
+        <h1 class="font-[var(--font-heading)] text-4xl font-bold leading-[1.1] sm:text-5xl lg:text-[52px]">
+          Venda Direta com IA para reduzir custo e acelerar crescimento
+        </h1>
+        <p class="max-w-[620px] text-base leading-relaxed text-white/90 sm:text-lg">
+          Mantemos a base robusta do Sistema Venda Direta e adicionamos uma abordagem orientada por IA:
+          automacao operacional, ganho de produtividade e evolucao continua com o time do CodaFacil.
+        </p>
+
+        <div class="grid gap-2 text-sm text-white/90 sm:grid-cols-2">
+          <div class="rounded-xl border border-white/20 bg-white/5 px-3 py-2">Menos retrabalho em processos criticos</div>
+          <div class="rounded-xl border border-white/20 bg-white/5 px-3 py-2">Mais velocidade de entrega e decisao</div>
+          <div class="rounded-xl border border-white/20 bg-white/5 px-3 py-2">Escalabilidade sem perder governanca</div>
+          <div class="rounded-xl border border-white/20 bg-white/5 px-3 py-2">Customizacao sob demanda com IA</div>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-3">
+          <a href="#contato" class="inline-flex items-center gap-2 rounded-full border border-white/70 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10">
+            Quero diagnostico IA
+          </a>
+          <a href="../codafacil/index.html" class="inline-flex items-center gap-2 rounded-full border border-white/35 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10">
+            Conhecer CodaFacil
+          </a>
+        </div>
+      </div>
+
+      <div class="mx-auto w-full max-w-[520px] rounded-2xl bg-brand-soft/25 p-2 ring-1 ring-white/15">
+        <div class="lottie-box h-[220px] w-full sm:h-[300px]" data-lottie-src="../index_svd_files/lottie-hero.json" aria-label="Animacao de crescimento com tecnologia"></div>
+      </div>
+    </section>
+
+    <section id="ia-operacao" class="scroll-mt-28 py-10">
+      <h2 class="font-[var(--font-heading)] text-3xl font-semibold sm:text-[42px]">IA aplicada na operacao</h2>
+      <div class="mt-2 h-1 w-[72px] rounded-full bg-white"></div>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-white/90">
+        A proposta e pragmatica: usar IA onde ela gera retorno financeiro real para a sua empresa.
+        Foco em reduzir custo operacional, remover gargalos e aumentar previsibilidade de resultado.
+      </p>
+
+      <div class="mt-8 grid gap-4 md:grid-cols-3">
+        <article class="rounded-[30px] border border-white/55 bg-brand p-6">
+          <h3 class="font-[var(--font-heading)] text-xl font-semibold">Reducao de custo</h3>
+          <p class="mt-3 text-sm text-white/90">Automacao de tarefas repetitivas, menos trabalho manual e menos horas improdutivas no backoffice.</p>
+        </article>
+        <article class="rounded-[30px] border border-white/55 bg-brand p-6">
+          <h3 class="font-[var(--font-heading)] text-xl font-semibold">Ganho de produtividade</h3>
+          <p class="mt-3 text-sm text-white/90">Fluxos mais claros, menos retrabalho e melhor capacidade de atendimento para o mesmo time.</p>
+        </article>
+        <article class="rounded-[30px] border border-white/55 bg-brand p-6">
+          <h3 class="font-[var(--font-heading)] text-xl font-semibold">Qualidade e controle</h3>
+          <p class="mt-3 text-sm text-white/90">Padroes de entrega, revisao de processos e evolucao continua com governanca tecnica.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="ofertas" class="scroll-mt-28 py-10">
+      <h2 class="font-[var(--font-heading)] text-3xl font-semibold sm:text-[42px]">Modelo de oferta</h2>
+      <div class="mt-2 h-1 w-[72px] rounded-full bg-white"></div>
+
+      <div class="mt-8 grid gap-4 lg:grid-cols-3">
+        <article class="rounded-3xl border border-white/25 bg-white/5 p-6">
+          <h3 class="font-[var(--font-heading)] text-xl font-semibold">SVD Core</h3>
+          <p class="mt-3 text-sm text-white/90">Plataforma principal para operacao de venda direta com implantacao padrao.</p>
+          <div class="mt-5 grid gap-2 text-sm text-white/90">
+            <div class="rounded-lg border border-white/20 bg-white/5 px-3 py-2">Operacao estruturada</div>
+            <div class="rounded-lg border border-white/20 bg-white/5 px-3 py-2">Fluxos validados</div>
+            <div class="rounded-lg border border-white/20 bg-white/5 px-3 py-2">Entrada rapida em producao</div>
+          </div>
+        </article>
+
+        <article class="rounded-3xl border border-white/25 bg-white/10 p-6 ring-1 ring-white/25">
+          <p class="inline-flex rounded-full border border-white/35 bg-white/10 px-2 py-1 text-[11px] font-semibold uppercase tracking-wide">Mais recomendado</p>
+          <h3 class="mt-3 font-[var(--font-heading)] text-xl font-semibold">SVD + IA Essentials</h3>
+          <p class="mt-3 text-sm text-white/90">Pacote de automacao e melhoria de processo para baixar custo e aumentar performance.</p>
+          <div class="mt-5 grid gap-2 text-sm text-white/90">
+            <div class="rounded-lg border border-white/20 bg-white/5 px-3 py-2">Diagnostico de gargalos</div>
+            <div class="rounded-lg border border-white/20 bg-white/5 px-3 py-2">Automacoes de alto impacto</div>
+            <div class="rounded-lg border border-white/20 bg-white/5 px-3 py-2">Plano de ganhos em 90 dias</div>
+          </div>
+        </article>
+
+        <article class="rounded-3xl border border-white/25 bg-white/5 p-6">
+          <h3 class="font-[var(--font-heading)] text-xl font-semibold">SVD + IA Custom</h3>
+          <p class="mt-3 text-sm text-white/90">Projeto sob medida com CodaFacil para novas frentes, integracoes e modulos especiais.</p>
+          <div class="mt-5 grid gap-2 text-sm text-white/90">
+            <div class="rounded-lg border border-white/20 bg-white/5 px-3 py-2">Desenvolvimento dedicado</div>
+            <div class="rounded-lg border border-white/20 bg-white/5 px-3 py-2">Arquitetura e consultoria</div>
+            <div class="rounded-lg border border-white/20 bg-white/5 px-3 py-2">Evolucao continua</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="metodo" class="scroll-mt-28 py-10">
+      <div class="grid items-center gap-6 lg:grid-cols-2">
+        <div>
+          <h2 class="font-[var(--font-heading)] text-3xl font-semibold sm:text-[42px]">Metodo de entrega</h2>
+          <div class="mt-2 h-1 w-[72px] rounded-full bg-white"></div>
+          <p class="mt-4 text-base leading-relaxed text-white/90">
+            Trabalhamos em uma esteira clara para gerar resultado pratico e reduzir risco de retrabalho.
+          </p>
+
+          <div class="mt-6 grid gap-2 text-sm">
+            <div class="rounded-xl border border-white/20 bg-white/5 px-4 py-3">1. Levantamento de requisitos e metas de negocio</div>
+            <div class="rounded-xl border border-white/20 bg-white/5 px-4 py-3">2. Engenharia de processos e desenho do fluxo ideal</div>
+            <div class="rounded-xl border border-white/20 bg-white/5 px-4 py-3">3. Desenvolvimento incremental com IA assistiva</div>
+            <div class="rounded-xl border border-white/20 bg-white/5 px-4 py-3">4. Revisao, testes e validacao com o time de negocio</div>
+            <div class="rounded-xl border border-white/20 bg-white/5 px-4 py-3">5. Deploy, monitoramento e ciclo de evolucao continua</div>
+          </div>
+        </div>
+
+        <div class="mx-auto w-full max-w-[420px] rounded-2xl bg-brand-soft/25 p-2 ring-1 ring-white/15">
+          <div class="lottie-box h-[240px] w-full sm:h-[320px]" data-lottie-src="../index_svd_files/lottie-porque.json" aria-label="Animacao de metodo de trabalho"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="codafacil" class="scroll-mt-28 py-10">
+      <div class="rounded-[30px] border border-white/30 bg-white/[0.06] p-6 sm:p-8">
+        <div class="grid items-center gap-6 lg:grid-cols-[1fr_auto]">
+          <div>
+            <h2 class="font-[var(--font-heading)] text-3xl font-semibold sm:text-[42px]">SVD + CodaFacil: sinergia direta</h2>
+            <div class="mt-2 h-1 w-[72px] rounded-full bg-white"></div>
+            <p class="mt-4 max-w-3xl text-base leading-relaxed text-white/90">
+              O Sistema Venda Direta segue como o produto principal para operacao de venda direta.
+              O CodaFacil entra como celula de engenharia para customizacoes, integracoes e novas iniciativas com IA.
+            </p>
+            <p class="mt-3 max-w-3xl text-base leading-relaxed text-white/85">
+              Resultado: voce tem uma base solida para operar hoje e um time tecnico para evoluir rapido sem trocar de plataforma.
+            </p>
+          </div>
+
+          <div class="flex flex-col items-stretch gap-3 sm:min-w-[280px]">
+            <a href="../codafacil/index.html" class="inline-flex items-center justify-center rounded-full border border-white/75 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10">
+              Abrir CodaFacil local
+            </a>
+            <a href="https://www.codafacil.dev/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-full border border-white/35 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10">
+              Abrir site oficial
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-10">
+      <h2 class="font-[var(--font-heading)] text-3xl font-semibold sm:text-[42px]">Resultados esperados em 90 dias</h2>
+      <div class="mt-2 h-1 w-[72px] rounded-full bg-white"></div>
+
+      <div class="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+        <article class="rounded-2xl border border-white/20 bg-white/5 p-5 text-center">
+          <p class="text-sm text-white/80">Reducao de retrabalho</p>
+          <p class="mt-2 font-[var(--font-heading)] text-3xl font-semibold">20% - 40%</p>
+        </article>
+        <article class="rounded-2xl border border-white/20 bg-white/5 p-5 text-center">
+          <p class="text-sm text-white/80">Ganho de produtividade</p>
+          <p class="mt-2 font-[var(--font-heading)] text-3xl font-semibold">15% - 35%</p>
+        </article>
+        <article class="rounded-2xl border border-white/20 bg-white/5 p-5 text-center">
+          <p class="text-sm text-white/80">Tempo de resposta</p>
+          <p class="mt-2 font-[var(--font-heading)] text-3xl font-semibold">Mais rapido</p>
+        </article>
+        <article class="rounded-2xl border border-white/20 bg-white/5 p-5 text-center">
+          <p class="text-sm text-white/80">Previsibilidade da operacao</p>
+          <p class="mt-2 font-[var(--font-heading)] text-3xl font-semibold">Mais controle</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="py-10">
+      <h2 class="font-[var(--font-heading)] text-3xl font-semibold sm:text-[42px]">Clientes e mercado</h2>
+      <div class="mt-2 h-1 w-[72px] rounded-full bg-white"></div>
+      <p class="mt-4 text-base leading-relaxed text-white/90">
+        Solucao para empresas que ja operam venda direta e querem evoluir com inteligencia artificial sem quebrar a base atual.
+      </p>
+
+      <img
+        src="../index_svd_files/Clientes.jpg"
+        alt="Empresas atendidas pelo Sistema Venda Direta"
+        class="mt-6 w-full rounded-2xl border border-white/20"
+        width="1200"
+        height="772"
+        loading="lazy"
+      />
+    </section>
+
+    <section id="contato" class="scroll-mt-28 py-10">
+      <h2 class="font-[var(--font-heading)] text-3xl font-semibold sm:text-[42px]">Solicite seu diagnostico IA</h2>
+      <div class="mt-2 h-1 w-[72px] rounded-full bg-white"></div>
+
+      <div class="mt-6 grid gap-6 lg:grid-cols-2">
+        <div class="space-y-3 text-base leading-relaxed text-white/90">
+          <p>Vamos mapear seu cenario e indicar a melhor trilha: SVD Core, IA Essentials ou IA Custom com CodaFacil.</p>
+          <p>Deixe seu telefone/WhatsApp e nosso time retorna com proposta objetiva.</p>
+          <p><b>Contato comercial: 11 99456-6726</b></p>
+        </div>
+
+        <form class="space-y-3 rounded-2xl border border-white/20 bg-white/5 p-5" method="post" action="../enviar-telefone.php" aria-label="Formulario de contato IA">
+          <label for="whatsapp" class="block text-sm font-medium">Seu telefone ou WhatsApp</label>
+          <input id="whatsapp" name="whatsapp" type="text" placeholder="(11) 99999-9999" required class="w-full rounded-lg border border-white/35 bg-white/10 px-3 py-2.5 text-sm placeholder:text-white/60 focus:border-white/70 focus:outline-none" />
+          <button type="submit" class="w-full rounded-full border border-white/70 px-4 py-2.5 text-sm font-semibold hover:bg-white/10">Quero receber o diagnostico IA</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="py-10">
+      <h2 class="font-[var(--font-heading)] text-[30px] font-semibold">Perguntas frequentes</h2>
+      <div class="mt-2 h-1 w-[72px] rounded-full bg-white"></div>
+
+      <div class="mt-6 grid gap-2">
+        <details class="rounded-lg border border-white/20 bg-white/5 p-4">
+          <summary class="cursor-pointer font-semibold">A IA substitui meu time?</summary>
+          <p class="mt-2 text-sm text-white/90">Nao. A IA apoia o time, reduz tarefas repetitivas e melhora a velocidade da operacao.</p>
+        </details>
+        <details class="rounded-lg border border-white/20 bg-white/5 p-4">
+          <summary class="cursor-pointer font-semibold">Posso manter meu processo atual?</summary>
+          <p class="mt-2 text-sm text-white/90">Sim. O trabalho comeca preservando o que funciona e ajustando apenas os pontos com maior impacto.</p>
+        </details>
+        <details class="rounded-lg border border-white/20 bg-white/5 p-4">
+          <summary class="cursor-pointer font-semibold">Quando o CodaFacil entra no projeto?</summary>
+          <p class="mt-2 text-sm text-white/90">Quando existe demanda de customizacao, integracao externa ou novos modulos estrategicos.</p>
+        </details>
+        <details class="rounded-lg border border-white/20 bg-white/5 p-4">
+          <summary class="cursor-pointer font-semibold">Qual o primeiro passo para comecar?</summary>
+          <p class="mt-2 text-sm text-white/90">Solicitar o diagnostico IA. Com isso, definimos escopo, ganhos esperados e plano de execucao.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="py-10 text-center">
+      <h3 class="font-[var(--font-heading)] text-2xl font-semibold sm:text-3xl">SVD + IA + CodaFacil para escalar seu negocio</h3>
+      <a href="#contato" class="mt-5 inline-flex rounded-full border border-white/70 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10">
+        Solicitar proposta
+      </a>
+
+      <div class="mt-6 flex items-center justify-center gap-3">
+        <a href="https://facebook.com/sistemavendadireta" target="_blank" rel="noopener noreferrer" class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#3b5998] text-sm font-bold">f</a>
+        <a href="https://www.youtube.com/@andregomes8954" target="_blank" rel="noopener noreferrer" class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#cd201f] text-sm font-bold">Y</a>
+      </div>
+    </section>
+  </main>
+
+  <a href="https://wa.me/+5511994566726" target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp" class="fixed bottom-3 right-3 z-[70] inline-flex items-center gap-2 rounded-full bg-[#25D366] px-4 py-3 text-sm font-bold text-white shadow-[0_10px_24px_rgba(0,0,0,0.35)] ring-2 ring-white/30 sm:bottom-4 sm:right-4 sm:h-14 sm:w-14 sm:justify-center sm:px-0">
+    <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-white/20 text-base leading-none">W</span>
+    <span class="sm:hidden">WhatsApp</span>
+  </a>
+
+  <script src="../index_svd_files/lottie.min.js" defer></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var containers = document.querySelectorAll(".lottie-box[data-lottie-src]");
+      containers.forEach(function (container) {
+        var src = container.getAttribute("data-lottie-src");
+        if (!src || !window.lottie) {
+          return;
+        }
+
+        window.lottie.loadAnimation({
+          container: container,
+          renderer: "svg",
+          loop: true,
+          autoplay: true,
+          path: src
+        });
+      });
+    });
+  </script>
+</body>
+</html>
