@@ -302,21 +302,26 @@
               Veja um resumo visual da proposta da Codafacil e da abordagem de desenvolvimento orientado por IA.
             </p>
           </div>
-          <a href="./Codafacil.mp4"
+          <a href="https://youtu.be/_FbHxB9So14"
              target="_blank"
              rel="noopener noreferrer"
              class="inline-flex items-center justify-center rounded-full bg-white/10 px-5 py-3 text-sm font-semibold btn-outline hover:bg-white/15">
-            Abrir video em nova aba
+            Assistir no YouTube
           </a>
         </div>
 
-        <video class="mt-6 w-full rounded-2xl bg-black ring-1 ring-white/20"
-               controls
-               preload="metadata"
-               playsinline>
-          <source src="./Codafacil.mp4" type="video/mp4" />
-          Seu navegador nao suporta o player de video.
-        </video>
+        <div class="mt-6 overflow-hidden rounded-2xl ring-1 ring-white/20">
+          <div class="relative w-full" style="padding-bottom:56.25%">
+            <iframe class="absolute left-0 top-0 h-full w-full"
+                    src="https://www.youtube.com/embed/_FbHxB9So14"
+                    title="Codafacil - Demonstracao"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+            </iframe>
+          </div>
+        </div>
       </div>
     </section>
 
