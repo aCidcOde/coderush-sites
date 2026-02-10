@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /enviar-contato.php
+Disallow: /enviar-telefone.php
+
+Sitemap: https://www.sistemavendadireta.com.br/sitemap.xml
