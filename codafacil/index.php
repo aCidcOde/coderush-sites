@@ -292,6 +292,34 @@
   </header>
 
   <main class="bg-[#083e9a]">
+    <!-- Video -->
+    <section id="video-demo" class="mx-auto max-w-7xl px-6 pb-16 pt-10 md:pb-20 md:pt-12">
+      <div class="soft-shadow rounded-3xl bg-white/10 p-6 ring-1 ring-white/15 md:p-8">
+        <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+          <div>
+            <h2 class="text-3xl font-extrabold md:text-4xl">Video de demonstracao</h2>
+            <p class="mt-3 max-w-3xl text-sm text-white/80 md:text-base">
+              Veja um resumo visual da proposta da Codafacil e da abordagem de desenvolvimento orientado por IA.
+            </p>
+          </div>
+          <a href="./Codafacil.mp4"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="inline-flex items-center justify-center rounded-full bg-white/10 px-5 py-3 text-sm font-semibold btn-outline hover:bg-white/15">
+            Abrir video em nova aba
+          </a>
+        </div>
+
+        <video class="mt-6 w-full rounded-2xl bg-black ring-1 ring-white/20"
+               controls
+               preload="metadata"
+               playsinline>
+          <source src="./Codafacil.mp4" type="video/mp4" />
+          Seu navegador nao suporta o player de video.
+        </video>
+      </div>
+    </section>
+
     <!-- Serviços (sem espaço “vão” com o topo) -->
     <section id="servicos" class="services-tight mx-auto max-w-7xl px-6 pb-16 md:pb-20">
       <div class="flex items-end justify-between gap-6">
