@@ -78,7 +78,7 @@ Post de blog estatico com foco em IA, vendas diretas e evolucao de operacao.
   <header class="sticky top-0 z-40 border-b border-white/10 bg-brand/95 backdrop-blur">
     <div class="mx-auto flex max-w-[1140px] items-center justify-between gap-4 px-4 py-3 sm:px-6">
       <a href="../../../../" aria-label="Sistema Venda Direta">
-        <img src="../../../../index_svd_files/Logo-Branco-1.png" alt="Sistema Venda Direta" class="h-auto w-[165px] sm:w-[210px] lg:w-[260px]" width="1000" height="300" />
+        <img decoding="async" src="../../../../index_svd_files/Logo-Branco-1.webp" alt="Sistema Venda Direta" class="h-auto w-[165px] sm:w-[210px] lg:w-[260px]" width="1000" height="300" />
       </a>
       <div class="hidden items-center gap-5 text-sm font-medium text-white/90 md:flex">
         <a href="../../../../" class="hover:text-white">Site Principal</a>
@@ -95,7 +95,7 @@ Post de blog estatico com foco em IA, vendas diretas e evolucao de operacao.
       <p class="text-xs font-medium uppercase tracking-wide text-white/70">Blog SVD • 10/02/2026</p>
       <h1 class="mt-2 font-[var(--font-heading)] text-3xl font-semibold leading-tight sm:text-4xl">A importância da IA no Marketing Multinível e Vendas Diretas</h1>
 
-      <img src="../../../../index_svd_files/posts/ia-mmn.jpg" alt="A importância da IA no Marketing Multinível e Vendas Diretas" class="mt-6 w-full rounded-2xl border border-white/20" width="1200" height="630" loading="lazy" />
+      <img decoding="async" src="../../../../index_svd_files/posts/ia-mmn.webp" alt="A importância da IA no Marketing Multinível e Vendas Diretas" class="mt-6 w-full rounded-2xl border border-white/20" width="1200" height="630" loading="lazy" />
 
       <div class="prose prose-invert mt-6 max-w-none prose-headings:font-[var(--font-heading)] prose-headings:text-white prose-a:text-white prose-strong:text-white prose-p:text-white/90 prose-li:text-white/90">
 <p>A aplicação de inteligência artificial no marketing multinível deixou de ser tendência e virou vantagem competitiva real para operações que precisam escalar com controle.</p>
@@ -138,7 +138,7 @@ Post de blog estatico com foco em IA, vendas diretas e evolucao de operacao.
       <div class="mt-5 grid gap-4 md:grid-cols-3">
         <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="../../../../2023/04/13/importancia-sistema-venda-direta-para-seu-negocio/">
-            <img src="../../../../index_svd_files/posts/importancia-sistema-venda-direta-para-seu-negocio.png" alt="A importância de um sistema vendas direta para seu negócio" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+            <img decoding="async" src="../../../../index_svd_files/posts/importancia-sistema-venda-direta-para-seu-negocio.webp" srcset="../../../../index_svd_files/posts/importancia-sistema-venda-direta-para-seu-negocio-480.webp 480w, ../../../../index_svd_files/posts/importancia-sistema-venda-direta-para-seu-negocio.webp 1200w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="A importância de um sistema vendas direta para seu negócio" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
           <div class="p-4">
             <h3 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../../../../2023/04/13/importancia-sistema-venda-direta-para-seu-negocio/" class="hover:underline">A importância de um sistema vendas direta para seu negócio</a></h3>
@@ -147,7 +147,7 @@ Post de blog estatico com foco em IA, vendas diretas e evolucao de operacao.
         </article>
         <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="../../../../2023/07/03/descubra-estrategias-de-venda-direta/">
-            <img src="../../../../index_svd_files/posts/descubra-estrategias-de-venda-direta.jpg" alt="Descubra Estratégias de Venda Direta" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+            <img decoding="async" src="../../../../index_svd_files/posts/descubra-estrategias-de-venda-direta.webp" srcset="../../../../index_svd_files/posts/descubra-estrategias-de-venda-direta-480.webp 480w, ../../../../index_svd_files/posts/descubra-estrategias-de-venda-direta.webp 1200w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="Descubra Estratégias de Venda Direta" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
           <div class="p-4">
             <h3 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../../../../2023/07/03/descubra-estrategias-de-venda-direta/" class="hover:underline">Descubra Estratégias de Venda Direta</a></h3>
@@ -156,7 +156,7 @@ Post de blog estatico com foco em IA, vendas diretas e evolucao de operacao.
         </article>
         <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="../../../../2026/02/10/codafacil-parceiro-tecnico-para-escalar-operacao-com-ia/">
-            <img src="../../../../index_svd_files/posts/codafacil-parceiro.jpg" alt="CodaFácil: parceiro técnico para escalar operação com IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+            <img decoding="async" src="../../../../index_svd_files/posts/codafacil-parceiro.webp" srcset="../../../../index_svd_files/posts/codafacil-parceiro-480.webp 480w, ../../../../index_svd_files/posts/codafacil-parceiro.webp 1200w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="CodaFácil: parceiro técnico para escalar operação com IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
           <div class="p-4">
             <h3 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../../../../2026/02/10/codafacil-parceiro-tecnico-para-escalar-operacao-com-ia/" class="hover:underline">CodaFácil: parceiro técnico para escalar operação com IA</a></h3>
@@ -174,7 +174,7 @@ Post de blog estatico com foco em IA, vendas diretas e evolucao de operacao.
     <div class="mx-auto max-w-[1140px] px-4 py-10 sm:px-6">
       <div class="grid gap-8 md:grid-cols-3">
         <div class="space-y-3">
-          <img src="../../../../index_svd_files/Logo-Branco-1.png" alt="Sistema Venda Direta" class="h-auto w-[180px]" width="1000" height="300" loading="lazy" />
+          <img decoding="async" src="../../../../index_svd_files/Logo-Branco-1.webp" alt="Sistema Venda Direta" class="h-auto w-[180px]" width="1000" height="300" loading="lazy" />
           <p class="max-w-sm text-sm leading-relaxed text-white/85">
             A Sistema Venda Direta desenvolve soluções para operação comercial, vendas diretas e evolução tecnológica com IA aplicada ao negócio.
           </p>

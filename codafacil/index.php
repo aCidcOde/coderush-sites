@@ -68,7 +68,7 @@
       <nav class="flex items-center justify-between py-6">
         <!-- Logo -->
         <a href="/" class="flex items-center gap-3">
-          <img src="logo.png" class="logo-img" alt="Codafacil.dev" />
+          <img decoding="async" src="logo.webp" class="logo-img" alt="Codafacil.dev" />
         </a>
 
         <!-- Menu (desktop) -->
@@ -542,7 +542,7 @@
       <div class="mt-10 grid gap-6 md:grid-cols-3">
         <div class="rounded-3xl bg-white/10 p-7 ring-1 ring-white/15">
           <div class="flex min-h-14 items-center">
-            <img src="https://app.planetacertidoes.com.br/logo-dark.png" alt="Emergency SAAS" class="max-h-12 w-auto object-contain" loading="lazy" />
+            <img decoding="async" src="https://app.planetacertidoes.com.br/logo-dark.png" alt="Emergency SAAS" class="max-h-12 w-auto object-contain" loading="lazy" />
           </div>
           <div class="mt-5 text-sm font-semibold">Emergency SAAS</div>
           <p class="mt-2 text-sm text-white/80">Soluções Completas para Documentação Imobiliária.</p>
@@ -556,7 +556,7 @@
 
         <div class="rounded-3xl bg-white/10 p-7 ring-1 ring-white/15">
           <div class="flex min-h-14 items-center">
-            <img src="https://orcamento.codafacil.dev/brand/logo-orcamento-facil.png" alt="Orçamento Fácil" class="max-h-12 w-auto object-contain" loading="lazy" />
+            <img decoding="async" src="https://orcamento.codafacil.dev/brand/logo-orcamento-facil.png" alt="Orçamento Fácil" class="max-h-12 w-auto object-contain" loading="lazy" />
           </div>
           <div class="mt-5 text-sm font-semibold">Orçamento Fácil</div>
           <p class="mt-3 text-sm text-white/80">

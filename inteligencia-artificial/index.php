@@ -115,8 +115,8 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
     <div class="mx-auto max-w-[1140px] px-4 sm:px-6">
       <nav class="flex items-center justify-between gap-4 py-3" aria-label="Menu principal">
         <a href="/" class="block" aria-label="Sistema Venda Direta">
-          <img
-            src="../index_svd_files/Logo-Branco-1.png"
+          <img decoding="async"
+            src="../index_svd_files/Logo-Branco-1.webp"
             alt="Sistema Venda Direta"
             class="h-auto w-[165px] sm:w-[210px] lg:w-[260px]"
             width="1000"
@@ -275,7 +275,7 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
         </div>
 
         <div class="mx-auto w-full max-w-[420px] rounded-2xl bg-brand-soft/25 p-2 ring-1 ring-white/15">
-          <div class="lottie-box h-[240px] w-full sm:h-[320px]" data-lottie-src="../index_svd_files/lottie-porque.json" aria-label="Animação de método de trabalho"></div>
+          <div class="lottie-box h-[240px] w-full sm:h-[320px]" data-lottie-src="../index_svd_files/lottie-porque.json" data-lottie-mobile="false" aria-label="Animação de método de trabalho"></div>
         </div>
       </div>
     </section>
@@ -338,8 +338,8 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
         Solução para empresas que já operam venda direta e querem evoluir com inteligência artificial sem quebrar a base atual.
       </p>
 
-      <img
-        src="../index_svd_files/Clientes.jpg"
+      <img decoding="async"
+        src="../index_svd_files/Clientes.webp"
         alt="Empresas atendidas pelo Sistema Venda Direta"
         class="mt-6 w-full rounded-2xl border border-white/20"
         width="1200"
@@ -424,7 +424,7 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
     <div class="mx-auto max-w-[1140px] px-4 py-10 sm:px-6">
       <div class="grid gap-8 md:grid-cols-3">
         <div class="space-y-3">
-          <img src="../index_svd_files/Logo-Branco-1.png" alt="Sistema Venda Direta" class="h-auto w-[180px]" width="1000" height="300" loading="lazy" />
+          <img decoding="async" src="../index_svd_files/Logo-Branco-1.webp" alt="Sistema Venda Direta" class="h-auto w-[180px]" width="1000" height="300" loading="lazy" />
           <p class="max-w-sm text-sm leading-relaxed text-white/85">
             A Sistema Venda Direta desenvolve soluções para operação comercial, vendas diretas e evolução tecnológica com IA aplicada ao negócio.
           </p>
@@ -476,6 +476,7 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
       }
 
       var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      var isSmallScreen = window.matchMedia && window.matchMedia("(max-width: 767px)").matches;
       var startAnimation = function (container) {
         if (container.dataset.lottieLoaded === "1") {
           return;
@@ -483,6 +484,10 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
 
         var src = container.getAttribute("data-lottie-src");
         if (!src) {
+          return;
+        }
+
+        if (container.getAttribute("data-lottie-mobile") === "false" && isSmallScreen) {
           return;
         }
 
