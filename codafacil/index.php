@@ -619,7 +619,7 @@
             Falar no WhatsApp
           </a>
           <p class="mt-4 text-xs text-[#0b4db6]/70">
-            Retorno em até 1 dia útil.
+            Atendimento humanizado de verdade: nada de robô no comando. Do outro lado tem uma pessoa do comercial, pronta para te atender.
           </p>
         </div>
       </div>
