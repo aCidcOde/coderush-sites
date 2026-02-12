@@ -38,10 +38,9 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" />
+  <link rel="stylesheet" href="../index_svd_files/site-tailwind.css" />
 
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-  <style type="text/tailwindcss">@theme{--color-brand:#004AAD;--color-brand-dark:#003F91;--color-brand-soft:#215BA8;--font-heading:"Montserrat",sans-serif;--font-body:"Roboto",sans-serif;}</style>
+  <link rel="stylesheet" href="../index_svd_files/site-optimizations.css" />
 
   <script type="application/ld+json">
     {
@@ -107,7 +106,7 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
     }
   </script>
 </head>
-<body class="bg-brand text-white antialiased font-[var(--font-body)]">
+<body class="bg-brand text-white antialiased font-[var(--font-body)] site-optimized">
   <a href="#conteudo" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-white focus:px-4 focus:py-2 focus:text-brand focus:font-semibold">
     Pular para o conteúdo
   </a>
@@ -511,19 +510,49 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       var containers = document.querySelectorAll(".lottie-box[data-lottie-src]");
-      containers.forEach(function (container) {
+      if (!containers.length || !window.lottie) {
+        return;
+      }
+
+      var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      var startAnimation = function (container) {
+        if (container.dataset.lottieLoaded === "1") {
+          return;
+        }
+
         var src = container.getAttribute("data-lottie-src");
-        if (!src || !window.lottie) {
+        if (!src) {
           return;
         }
 
         window.lottie.loadAnimation({
           container: container,
           renderer: "svg",
-          loop: true,
-          autoplay: true,
+          loop: !reduceMotion,
+          autoplay: !reduceMotion,
           path: src
         });
+
+        container.dataset.lottieLoaded = "1";
+      };
+
+      if (!("IntersectionObserver" in window)) {
+        containers.forEach(startAnimation);
+        return;
+      }
+
+      var observer = new IntersectionObserver(function (entries, currentObserver) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) {
+            return;
+          }
+          startAnimation(entry.target);
+          currentObserver.unobserve(entry.target);
+        });
+      }, { rootMargin: "120px 0px" });
+
+      containers.forEach(function (container) {
+        observer.observe(container);
       });
     });
   </script>

@@ -55,9 +55,9 @@ Arquivos SEO globais:
 
 ### 4.1 Home, Blog, IA, WordPress e Posts
 Stack principal:
-- Tailwind via CDN: `https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4`
+- Tailwind compilado localmente (arquivo estático gerado)
 - Fontes Google (Montserrat + Roboto)
-- Tema com variáveis em `@theme` minificado dentro de `<style type="text/tailwindcss">`
+- Tema com variáveis em `:root` dentro do CSS compilado
 
 Tokens de cor principais:
 - `--color-brand: #004AAD`
@@ -66,12 +66,24 @@ Tokens de cor principais:
 
 ### 4.2 Codafácil
 Stack específico:
-- Tailwind via CDN: `https://cdn.tailwindcss.com`
+- Tailwind compilado localmente (arquivo estático gerado)
 - CSS custom minificado em `<style>` para hero, cards e utilitários
 - Cor base visual: faixa de azul `#0b4db6` a `#083e9a`
 
 Observação:
 - Manter o padrão atual por página (não misturar stack da home com codafacil sem migração planejada).
+
+### 4.3 Build de CSS estático (Tailwind)
+Arquivos de build:
+- `tailwind.config.cjs`
+- `index_svd_files/site-tailwind.input.css`
+- `index_svd_files/site-tailwind.css` (compilado/minificado)
+
+Comando:
+- `npm run build:css`
+
+Regra operacional:
+- Sempre que criar/alterar classes Tailwind em `*.php`, rodar `npm run build:css` antes de publicar.
 
 ---
 
@@ -296,4 +308,3 @@ Padrão recomendado:
 - O projeto foi limpo para manter foco em páginas públicas PHP e assets usados.
 - Existem posts com conteúdo legado originalmente importado; evitar refatorações globais nesses posts sem escopo explícito.
 - Para novas páginas, seguir padrão de `index.php` por diretório e incluir SEO completo desde o início.
-
