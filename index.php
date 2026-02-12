@@ -492,7 +492,7 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
 
     <section class="py-10">
       <h4 class="font-[var(--font-heading)] text-[30px] font-semibold">
-        <a href="https://vantagensclube.com.br/" target="_blank" rel="noopener noreferrer" class="hover:underline">Empresas que nós já atendemos:</a>
+        Empresas que nós já atendemos:
       </h4>
       <div class="mt-2 h-1 w-[72px] rounded-full bg-white"></div>
       <img
