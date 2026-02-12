@@ -320,7 +320,7 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
       <h4 class="font-[var(--font-heading)] text-[30px] font-semibold">Aumente seus pedidos, automatize as vendas.</h4>
       <div class="mt-2 h-1 w-[72px] rounded-full bg-white"></div>
       <h2 class="mt-4 font-[var(--font-heading)] text-xl font-semibold sm:text-2xl">
-        <a href="https://vantagensclube.com.br/" target="_blank" rel="noopener noreferrer" class="hover:underline">São muitas vantagens usar o Sistema Venda Direta, veja mais algumas</a>
+        São muitas vantagens usar o Sistema Venda Direta, veja mais algumas
       </h2>
 
       <div class="mt-6 grid gap-4 md:grid-cols-3">
@@ -413,11 +413,11 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
 
     <section class="py-10">
       <h4 class="font-[var(--font-heading)] text-[30px] font-semibold">
-        <a href="https://vantagensclube.com.br/" target="_blank" rel="noopener noreferrer" class="hover:underline">Integrações com diversas tecnologias</a>
+        Integrações com diversas tecnologias</a>
       </h4>
       <div class="mt-2 h-1 w-[72px] rounded-full bg-white"></div>
       <h2 class="mt-4 font-[var(--font-heading)] text-xl font-semibold sm:text-2xl">
-        <a href="https://vantagensclube.com.br/" target="_blank" rel="noopener noreferrer" class="hover:underline">Não se preocupe com desenvolvimento, já temos todas as integrações que você vai precisar!​</a>
+        Não se preocupe com desenvolvimento, já temos todas as integrações que você vai precisar!​</a>
       </h2>
 
       <img
@@ -511,17 +511,24 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
 
       <div class="mt-6 grid gap-6 lg:grid-cols-2">
         <h2 class="text-base leading-relaxed text-white/90 sm:text-lg">
-          Deixe seu telefone ou whatsapp, iremos te enviar um orçamento junto com uma documentação do sistema.
-          Nessa documentação vai os acessos para teste de todos os ambientes.<br /><br />
-          Se você preferir, pode clicar no icone do whatspp e falar agora mesmo!<br /><br />
+          O atendimento agora é 100% pelo WhatsApp para acelerar o retorno e organizar melhor seu diagnóstico.
+          Assim conseguimos alinhar objetivo, prazo e próximos passos direto com você.<br /><br />
+          Clique no botão para falar com nosso time agora mesmo.<br /><br />
           <b>Telefone para Contato: 11 99456-6726</b>
         </h2>
 
-        <form class="space-y-3 rounded-2xl border border-white/20 bg-white/5 p-5" method="post" action="enviar-telefone.php" aria-label="Formulário de contato">
-          <label for="whatsapp" class="block text-sm font-medium">Deixe seu WhatsApp</label>
-          <input id="whatsapp" name="whatsapp" type="text" placeholder="Deixe seu WhatsApp" required class="w-full rounded-lg border border-white/35 bg-white/10 px-3 py-2.5 text-sm placeholder:text-white/60 focus:border-white/70 focus:outline-none" />
-          <button type="submit" class="w-full rounded-full border border-white/70 px-4 py-2.5 text-sm font-semibold hover:bg-white/10">Solicitar Orçamento e Acesso à Demonstração</button>
-        </form>
+        <div class="rounded-2xl border border-white/20 bg-white/5 p-5">
+          <h3 class="text-lg font-semibold">Contato imediato via WhatsApp</h3>
+          <p class="mt-2 text-sm text-white/85">Sem formulário. Clique e fale direto com nossa equipe comercial.</p>
+          <a
+            href="https://wa.me/5511994566726?text=Ol%C3%A1%2C%20quero%20um%20or%C3%A7amento%20e%20acesso%20%C3%A0%20demonstra%C3%A7%C3%A3o%20do%20Sistema%20Venda%20Direta."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mt-4 inline-flex w-full items-center justify-center rounded-full border border-white/70 px-4 py-2.5 text-sm font-semibold hover:bg-white/10"
+          >
+            Falar no WhatsApp
+          </a>
+        </div>
       </div>
     </section>
 

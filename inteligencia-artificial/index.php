@@ -372,60 +372,21 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
           </div>
         </div>
 
-        <form class="space-y-4" method="post" action="../enviar-contato.php" aria-label="Formulario de contato IA">
-          <input type="hidden" name="origem" value="inteligencia-artificial" />
-          <input type="hidden" name="redirect" value="/inteligencia-artificial/#contato" />
-
-          <div>
-            <label class="text-sm font-semibold">Nome</label>
-            <input name="nome"
-                   required
-                   class="mt-2 w-full rounded-2xl border border-[#0b4db6]/15 bg-white px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-[#0b4db6]/30"
-                   placeholder="Seu nome" />
-          </div>
-          <div>
-            <label class="text-sm font-semibold">WhatsApp</label>
-            <input name="telefone"
-                   required
-                   class="mt-2 w-full rounded-2xl border border-[#0b4db6]/15 bg-white px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-[#0b4db6]/30"
-                   placeholder="(11) 99999-9999" />
-          </div>
-          <div>
-            <label class="text-sm font-semibold">Email</label>
-            <input name="email"
-                   type="email"
-                   required
-                   class="mt-2 w-full rounded-2xl border border-[#0b4db6]/15 bg-white px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-[#0b4db6]/30"
-                   placeholder="voce@empresa.com" />
-          </div>
-          <div>
-            <label class="text-sm font-semibold">Serviço desejado</label>
-            <select name="servico"
-                    class="mt-2 w-full rounded-2xl border border-[#0b4db6]/15 bg-white px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-[#0b4db6]/30">
-              <option value="Diagnostico IA">Diagnóstico de IA</option>
-              <option value="Automacao operacional">Automação operacional</option>
-              <option value="Integracoes e customizacao">Integrações e customização</option>
-              <option value="Consultoria de processos">Consultoria de processos</option>
-            </select>
-          </div>
-          <div>
-            <label class="text-sm font-semibold">Mensagem</label>
-            <textarea name="mensagem"
-                      rows="4"
-                      required
-                      class="mt-2 w-full rounded-2xl border border-[#0b4db6]/15 bg-white px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-[#0b4db6]/30"
-                      placeholder="Conte sobre o projeto (objetivo, prazo, stack, integrações)..."></textarea>
-          </div>
-
-          <button type="submit"
-                  class="w-full rounded-full bg-[#0b4db6] px-6 py-4 text-sm font-bold text-white hover:bg-[#0a43a0]">
-            Enviar orçamento
-          </button>
-
-          <p class="text-xs text-[#0b4db6]/70">
+        <div class="rounded-2xl border border-[#0b4db6]/15 bg-[#0b4db6]/5 p-6">
+          <h3 class="text-xl font-bold">Atendimento direto no WhatsApp</h3>
+          <p class="mt-3 text-sm text-[#0b4db6]/80">
+            Formulário desativado. Nosso contato comercial acontece exclusivamente pelo WhatsApp.
+          </p>
+          <a href="https://wa.me/5511994566726?text=Ol%C3%A1%2C%20quero%20um%20diagn%C3%B3stico%20de%20IA%20para%20minha%20opera%C3%A7%C3%A3o."
+             target="_blank"
+             rel="noopener noreferrer"
+             class="mt-5 inline-flex w-full items-center justify-center rounded-full bg-[#25D366] px-6 py-4 text-sm font-bold text-white hover:bg-[#22c55e]">
+            Falar no WhatsApp
+          </a>
+          <p class="mt-4 text-xs text-[#0b4db6]/70">
             Retorno em até 1 dia útil.
           </p>
-        </form>
+        </div>
       </div>
     </section>
 
