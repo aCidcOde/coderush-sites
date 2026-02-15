@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-brand: #004AAD;
+  --color-brand-dark: #003F91;
+  --color-brand-soft: #215BA8;
+  --font-heading: "Montserrat", sans-serif;
+  --font-body: "Roboto", sans-serif;
+}
+
+@layer utilities {
+  .font-\[var\(--font-body\)\] {
+    font-family: var(--font-body);
+  }
+
+  .font-\[var\(--font-heading\)\] {
+    font-family: var(--font-heading);
+  }
+}

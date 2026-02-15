@@ -38,10 +38,9 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" />
+  <link rel="stylesheet" href="../index_svd_files/site-tailwind.css" />
 
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-  <style type="text/tailwindcss">@theme{--color-brand:#004AAD;--color-brand-dark:#003F91;--color-brand-soft:#215BA8;--font-heading:"Montserrat",sans-serif;--font-body:"Roboto",sans-serif;}</style>
+  <link rel="stylesheet" href="../index_svd_files/site-optimizations.css" />
 
   <script type="application/ld+json">
     {
@@ -107,7 +106,7 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
     }
   </script>
 </head>
-<body class="bg-brand text-white antialiased font-[var(--font-body)]">
+<body class="bg-brand text-white antialiased font-[var(--font-body)] site-optimized">
   <a href="#conteudo" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-white focus:px-4 focus:py-2 focus:text-brand focus:font-semibold">
     Pular para o conteúdo
   </a>
@@ -373,60 +372,21 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
           </div>
         </div>
 
-        <form class="space-y-4" method="post" action="../enviar-contato.php" aria-label="Formulario de contato IA">
-          <input type="hidden" name="origem" value="inteligencia-artificial" />
-          <input type="hidden" name="redirect" value="/inteligencia-artificial/#contato" />
-
-          <div>
-            <label class="text-sm font-semibold">Nome</label>
-            <input name="nome"
-                   required
-                   class="mt-2 w-full rounded-2xl border border-[#0b4db6]/15 bg-white px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-[#0b4db6]/30"
-                   placeholder="Seu nome" />
-          </div>
-          <div>
-            <label class="text-sm font-semibold">WhatsApp</label>
-            <input name="telefone"
-                   required
-                   class="mt-2 w-full rounded-2xl border border-[#0b4db6]/15 bg-white px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-[#0b4db6]/30"
-                   placeholder="(11) 99999-9999" />
-          </div>
-          <div>
-            <label class="text-sm font-semibold">Email</label>
-            <input name="email"
-                   type="email"
-                   required
-                   class="mt-2 w-full rounded-2xl border border-[#0b4db6]/15 bg-white px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-[#0b4db6]/30"
-                   placeholder="voce@empresa.com" />
-          </div>
-          <div>
-            <label class="text-sm font-semibold">Serviço desejado</label>
-            <select name="servico"
-                    class="mt-2 w-full rounded-2xl border border-[#0b4db6]/15 bg-white px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-[#0b4db6]/30">
-              <option value="Diagnostico IA">Diagnóstico de IA</option>
-              <option value="Automacao operacional">Automação operacional</option>
-              <option value="Integracoes e customizacao">Integrações e customização</option>
-              <option value="Consultoria de processos">Consultoria de processos</option>
-            </select>
-          </div>
-          <div>
-            <label class="text-sm font-semibold">Mensagem</label>
-            <textarea name="mensagem"
-                      rows="4"
-                      required
-                      class="mt-2 w-full rounded-2xl border border-[#0b4db6]/15 bg-white px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-[#0b4db6]/30"
-                      placeholder="Conte sobre o projeto (objetivo, prazo, stack, integrações)..."></textarea>
-          </div>
-
-          <button type="submit"
-                  class="w-full rounded-full bg-[#0b4db6] px-6 py-4 text-sm font-bold text-white hover:bg-[#0a43a0]">
-            Enviar orçamento
-          </button>
-
-          <p class="text-xs text-[#0b4db6]/70">
-            Retorno em até 1 dia útil.
+        <div class="rounded-2xl border border-[#0b4db6]/15 bg-[#0b4db6]/5 p-6">
+          <h3 class="text-xl font-bold">Atendimento direto no WhatsApp</h3>
+          <p class="mt-3 text-sm text-[#0b4db6]/80">
+            Formulário desativado. Nosso contato comercial acontece exclusivamente pelo WhatsApp.
           </p>
-        </form>
+          <a href="https://wa.me/5511994566726?text=Ol%C3%A1%2C%20quero%20um%20diagn%C3%B3stico%20de%20IA%20para%20minha%20opera%C3%A7%C3%A3o."
+             target="_blank"
+             rel="noopener noreferrer"
+             class="mt-5 inline-flex w-full items-center justify-center rounded-full bg-[#25D366] px-6 py-4 text-sm font-bold text-white hover:bg-[#22c55e]">
+            Falar no WhatsApp
+          </a>
+          <p class="mt-4 text-xs text-[#0b4db6]/70">
+            Atendimento humanizado de verdade: nada de robô no comando. Do outro lado tem uma pessoa do comercial, pronta para te atender.
+          </p>
+        </div>
       </div>
     </section>
 
@@ -511,19 +471,49 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       var containers = document.querySelectorAll(".lottie-box[data-lottie-src]");
-      containers.forEach(function (container) {
+      if (!containers.length || !window.lottie) {
+        return;
+      }
+
+      var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      var startAnimation = function (container) {
+        if (container.dataset.lottieLoaded === "1") {
+          return;
+        }
+
         var src = container.getAttribute("data-lottie-src");
-        if (!src || !window.lottie) {
+        if (!src) {
           return;
         }
 
         window.lottie.loadAnimation({
           container: container,
           renderer: "svg",
-          loop: true,
-          autoplay: true,
+          loop: !reduceMotion,
+          autoplay: !reduceMotion,
           path: src
         });
+
+        container.dataset.lottieLoaded = "1";
+      };
+
+      if (!("IntersectionObserver" in window)) {
+        containers.forEach(startAnimation);
+        return;
+      }
+
+      var observer = new IntersectionObserver(function (entries, currentObserver) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) {
+            return;
+          }
+          startAnimation(entry.target);
+          currentObserver.unobserve(entry.target);
+        });
+      }, { rootMargin: "120px 0px" });
+
+      containers.forEach(function (container) {
+        observer.observe(container);
       });
     });
   </script>

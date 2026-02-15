@@ -38,10 +38,9 @@ Pagina de servicos WordPress/WooCommerce e Laravel com foco em conversao e quali
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" />
+  <link rel="stylesheet" href="../index_svd_files/site-tailwind.css" />
 
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-  <style type="text/tailwindcss">@theme{--color-brand:#004AAD;--color-brand-dark:#003f91;--color-brand-soft:#215BA8;--font-heading:"Montserrat",sans-serif;--font-body:"Roboto",sans-serif;}</style>
+  <link rel="stylesheet" href="../index_svd_files/site-optimizations.css" />
 
   <script type="application/ld+json">
     {
@@ -65,7 +64,7 @@ Pagina de servicos WordPress/WooCommerce e Laravel com foco em conversao e quali
     }
   </script>
 </head>
-<body class="bg-brand font-[var(--font-body)] text-white antialiased selection:bg-white selection:text-brand">
+<body class="bg-brand font-[var(--font-body)] text-white antialiased selection:bg-white selection:text-brand site-optimized">
   <header class="border-b border-white/15 bg-brand-dark/30">
     <div class="mx-auto flex w-full max-w-[1140px] items-center justify-between px-4 py-4 sm:px-6">
       <a href="../" class="block" aria-label="Sistema Venda Direta">

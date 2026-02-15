@@ -26,11 +26,11 @@
   <meta name="twitter:description" content="Desenvolvimento de software com IA, integração e automação para empresas que precisam escalar com qualidade e previsibilidade." />
   <meta name="twitter:image" content="https://www.sistemavendadireta.com.br/codafacil/logo.png" />
   <meta name="twitter:site" content="@sistemavendadireta" />
-
-  <!-- Tailwind CDN (rápido para protótipo) -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../index_svd_files/site-tailwind.css" />
 
   <style>.hero-bg{background:radial-gradient(1200px 600px at 85% 30%,rgba(255,255,255,.1),rgba(255,255,255,0) 60%),radial-gradient(900px 500px at 75% 70%,rgba(255,255,255,.08),rgba(255,255,255,0) 55%),linear-gradient(180deg,#0b4db6 0%,#0a46aa 60%,#083e9a 100%)}.btn-outline{box-shadow:inset 0 0 0 1px rgba(255,255,255,.35)}.soft-shadow{box-shadow:0 18px 45px rgba(0,0,0,.25)}.logo-img{width:360px;height:auto;opacity:1!important;filter:none!important;mix-blend-mode:normal!important;image-rendering:-webkit-optimize-contrast;display:block}@media (max-width:640px){.logo-img{width:240px}}.services-tight{padding-top:0!important;margin-top:0!important}.icon-wrap{display:inline-flex;width:40px;height:40px;align-items:center;justify-content:center;border-radius:16px;background:rgba(255,255,255,.1);box-shadow:inset 0 0 0 1px rgba(255,255,255,.12)}</style>
+
+  <link rel="stylesheet" href="../index_svd_files/site-optimizations.css" />
 
   <script type="application/ld+json">
     {
@@ -61,7 +61,7 @@
   </script>
 </head>
 
-<body class="min-h-full bg-[#083e9a] text-white">
+<body class="min-h-full bg-[#083e9a] text-white site-optimized">
   <!-- Header / Hero -->
   <header class="hero-bg">
     <div class="mx-auto max-w-7xl px-6">
@@ -607,60 +607,21 @@
           </div>
         </div>
 
-        <form class="space-y-4" method="post" action="../enviar-contato.php" aria-label="Formulario de contato Codafacil">
-          <input type="hidden" name="origem" value="codafacil" />
-          <input type="hidden" name="redirect" value="/codafacil/#contato" />
-
-          <div>
-            <label class="text-sm font-semibold">Nome</label>
-            <input name="nome"
-                   required
-                   class="mt-2 w-full rounded-2xl border border-[#0b4db6]/15 bg-white px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-[#0b4db6]/30"
-                   placeholder="Seu nome" />
-          </div>
-          <div>
-            <label class="text-sm font-semibold">WhatsApp</label>
-            <input name="telefone"
-                   required
-                   class="mt-2 w-full rounded-2xl border border-[#0b4db6]/15 bg-white px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-[#0b4db6]/30"
-                   placeholder="(11) 99999-9999" />
-          </div>
-          <div>
-            <label class="text-sm font-semibold">Email</label>
-            <input name="email"
-                   type="email"
-                   required
-                   class="mt-2 w-full rounded-2xl border border-[#0b4db6]/15 bg-white px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-[#0b4db6]/30"
-                   placeholder="voce@empresa.com" />
-          </div>
-          <div>
-            <label class="text-sm font-semibold">Serviço desejado</label>
-            <select name="servico"
-                    class="mt-2 w-full rounded-2xl border border-[#0b4db6]/15 bg-white px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-[#0b4db6]/30">
-              <option value="Desenvolvimento sob medida">Desenvolvimento sob medida</option>
-              <option value="Evolucao de sistema">Evolução de sistema</option>
-              <option value="Integracoes e automacao">Integrações e automação</option>
-              <option value="Consultoria tecnica">Consultoria técnica</option>
-            </select>
-          </div>
-          <div>
-            <label class="text-sm font-semibold">Mensagem</label>
-            <textarea name="mensagem"
-                      rows="4"
-                      required
-                      class="mt-2 w-full rounded-2xl border border-[#0b4db6]/15 bg-white px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-[#0b4db6]/30"
-                      placeholder="Conte sobre o projeto (objetivo, prazo, stack, integrações)..."></textarea>
-          </div>
-
-          <button type="submit"
-                  class="w-full rounded-full bg-[#0b4db6] px-6 py-4 text-sm font-bold text-white hover:bg-[#0a43a0]">
-            Enviar orçamento
-          </button>
-
-          <p class="text-xs text-[#0b4db6]/70">
-            Retorno em até 1 dia útil.
+        <div class="rounded-2xl border border-[#0b4db6]/15 bg-[#0b4db6]/5 p-6">
+          <h3 class="text-xl font-bold">Atendimento direto no WhatsApp</h3>
+          <p class="mt-3 text-sm text-[#0b4db6]/80">
+            Formulário desativado. O contato comercial da CodaFácil agora é somente via WhatsApp.
           </p>
-        </form>
+          <a href="https://wa.me/5511994566726?text=Ol%C3%A1%2C%20quero%20um%20or%C3%A7amento%20para%20meu%20projeto%20com%20a%20Codafacil."
+             target="_blank"
+             rel="noopener noreferrer"
+             class="mt-5 inline-flex w-full items-center justify-center rounded-full bg-[#25D366] px-6 py-4 text-sm font-bold text-white hover:bg-[#22c55e]">
+            Falar no WhatsApp
+          </a>
+          <p class="mt-4 text-xs text-[#0b4db6]/70">
+            Atendimento humanizado de verdade: nada de robô no comando. Do outro lado tem uma pessoa do comercial, pronta para te atender.
+          </p>
+        </div>
       </div>
     </section>
   </main>

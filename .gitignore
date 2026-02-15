@@ -4,3 +4,4 @@ output/
 tmp/
 site_svd/
 site_svd_repo/
+node_modules/

@@ -40,9 +40,9 @@ Pagina estatica do post "Marketing multinível também apresenta algumas desvant
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" />
+  <link rel="stylesheet" href="../../../../index_svd_files/site-tailwind.css" />
 
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <style type="text/tailwindcss">@theme{--color-brand:#004AAD;--color-brand-dark:#003F91;--font-heading:"Montserrat",sans-serif;--font-body:"Roboto",sans-serif;}</style>
+  <link rel="stylesheet" href="../../../../index_svd_files/site-optimizations.css" />
 
   <script type="application/ld+json">
 {
@@ -74,7 +74,7 @@ Pagina estatica do post "Marketing multinível também apresenta algumas desvant
 }
   </script>
 </head>
-<body class="bg-brand text-white antialiased font-[var(--font-body)]">
+<body class="bg-brand text-white antialiased font-[var(--font-body)] site-optimized">
   <header class="sticky top-0 z-40 border-b border-white/10 bg-brand/95 backdrop-blur">
     <div class="mx-auto flex max-w-[1140px] items-center justify-between gap-4 px-4 py-3 sm:px-6">
       <a href="../../../../" aria-label="Sistema Venda Direta">
