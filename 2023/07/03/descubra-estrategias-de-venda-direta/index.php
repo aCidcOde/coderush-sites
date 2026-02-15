@@ -78,7 +78,7 @@ Pagina estatica do post "Descubra Estratégias de Venda Direta" espelhada do blo
   <header class="sticky top-0 z-40 border-b border-white/10 bg-brand/95 backdrop-blur">
     <div class="mx-auto flex max-w-[1140px] items-center justify-between gap-4 px-4 py-3 sm:px-6">
       <a href="../../../../" aria-label="Sistema Venda Direta">
-        <img src="../../../../index_svd_files/Logo-Branco-1.png" alt="Sistema Venda Direta" class="h-auto w-[165px] sm:w-[210px] lg:w-[260px]" width="1000" height="300" />
+        <img decoding="async" src="../../../../index_svd_files/Logo-Branco-1.webp" alt="Sistema Venda Direta" class="h-auto w-[165px] sm:w-[210px] lg:w-[260px]" width="1000" height="300" />
       </a>
       <div class="hidden items-center gap-5 text-sm font-medium text-white/90 md:flex">
         <a href="../../../../" class="hover:text-white">Site Principal</a>
@@ -95,7 +95,7 @@ Pagina estatica do post "Descubra Estratégias de Venda Direta" espelhada do blo
       <p class="text-xs font-medium uppercase tracking-wide text-white/70">Blog SVD • 03/07/2023</p>
       <h1 class="mt-2 font-[var(--font-heading)] text-3xl font-semibold leading-tight sm:text-4xl">Descubra Estratégias de Venda Direta</h1>
 
-      <img src="../../../../index_svd_files/posts/descubra-estrategias-de-venda-direta.jpg" alt="Descubra Estratégias de Venda Direta" class="mt-6 w-full rounded-2xl border border-white/20" width="1200" height="630" loading="lazy" />
+      <img decoding="async" src="../../../../index_svd_files/posts/descubra-estrategias-de-venda-direta.webp" alt="Descubra Estratégias de Venda Direta" class="mt-6 w-full rounded-2xl border border-white/20" width="1200" height="630" loading="lazy" />
 
       <div class="prose prose-invert mt-6 max-w-none prose-headings:font-[var(--font-heading)] prose-headings:text-white prose-a:text-white prose-strong:text-white prose-p:text-white/90 prose-li:text-white/90">
 <p>Descubra as Estratégias de Venda Direta que Farão seu Negócio Decolar!</p>
@@ -177,7 +177,7 @@ Pagina estatica do post "Descubra Estratégias de Venda Direta" espelhada do blo
       <div class="mt-5 grid gap-4 md:grid-cols-3">
         <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="../../../../2023/05/23/desvantagens-modelo-marketing-multinivel-vendas-diretas/">
-            <img src="../../../../index_svd_files/posts/desvantagens-modelo-marketing-multinivel-vendas-diretas.png" alt="Marketing multinível também apresenta algumas desvantagens que devem ser consideradas antes de ingressar nesse mercado." class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+            <img decoding="async" src="../../../../index_svd_files/posts/desvantagens-modelo-marketing-multinivel-vendas-diretas.webp" srcset="../../../../index_svd_files/posts/desvantagens-modelo-marketing-multinivel-vendas-diretas-480.webp 480w, ../../../../index_svd_files/posts/desvantagens-modelo-marketing-multinivel-vendas-diretas.webp 1200w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="Marketing multinível também apresenta algumas desvantagens que devem ser consideradas antes de ingressar nesse mercado." class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
           <div class="p-4">
             <h3 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../../../../2023/05/23/desvantagens-modelo-marketing-multinivel-vendas-diretas/" class="hover:underline">Marketing multinível também apresenta algumas desvantagens que devem ser consideradas antes de ingressar nesse mercado.</a></h3>
@@ -186,7 +186,7 @@ Pagina estatica do post "Descubra Estratégias de Venda Direta" espelhada do blo
         </article>
         <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="../../../../2023/04/13/importancia-sistema-venda-direta-para-seu-negocio/">
-            <img src="../../../../index_svd_files/posts/importancia-sistema-venda-direta-para-seu-negocio.png" alt="A importância de um sistema vendas direta para seu negócio" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+            <img decoding="async" src="../../../../index_svd_files/posts/importancia-sistema-venda-direta-para-seu-negocio.webp" srcset="../../../../index_svd_files/posts/importancia-sistema-venda-direta-para-seu-negocio-480.webp 480w, ../../../../index_svd_files/posts/importancia-sistema-venda-direta-para-seu-negocio.webp 1200w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="A importância de um sistema vendas direta para seu negócio" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
           <div class="p-4">
             <h3 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../../../../2023/04/13/importancia-sistema-venda-direta-para-seu-negocio/" class="hover:underline">A importância de um sistema vendas direta para seu negócio</a></h3>
@@ -195,7 +195,7 @@ Pagina estatica do post "Descubra Estratégias de Venda Direta" espelhada do blo
         </article>
         <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="../../../../2023/05/23/descubra-o-poder-do-marketing-multinivel-alavanque-seus-lucros-e-conquiste-o-sucesso/">
-            <img src="../../../../index_svd_files/posts/descubra-o-poder-do-marketing-multinivel-alavanque-seus-lucros-e-conquiste-o-sucesso.png" alt="Descubra o poder do marketing multinível: alavanque seus lucros e conquiste o sucesso!" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+            <img decoding="async" src="../../../../index_svd_files/posts/descubra-o-poder-do-marketing-multinivel-alavanque-seus-lucros-e-conquiste-o-sucesso.webp" srcset="../../../../index_svd_files/posts/descubra-o-poder-do-marketing-multinivel-alavanque-seus-lucros-e-conquiste-o-sucesso-480.webp 480w, ../../../../index_svd_files/posts/descubra-o-poder-do-marketing-multinivel-alavanque-seus-lucros-e-conquiste-o-sucesso.webp 1200w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="Descubra o poder do marketing multinível: alavanque seus lucros e conquiste o sucesso!" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
           <div class="p-4">
             <h3 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../../../../2023/05/23/descubra-o-poder-do-marketing-multinivel-alavanque-seus-lucros-e-conquiste-o-sucesso/" class="hover:underline">Descubra o poder do marketing multinível: alavanque seus lucros e conquiste o sucesso!</a></h3>
@@ -213,7 +213,7 @@ Pagina estatica do post "Descubra Estratégias de Venda Direta" espelhada do blo
     <div class="mx-auto max-w-[1140px] px-4 py-10 sm:px-6">
       <div class="grid gap-8 md:grid-cols-3">
         <div class="space-y-3">
-          <img src="../../../../index_svd_files/Logo-Branco-1.png" alt="Sistema Venda Direta" class="h-auto w-[180px]" width="1000" height="300" loading="lazy" />
+          <img decoding="async" src="../../../../index_svd_files/Logo-Branco-1.webp" alt="Sistema Venda Direta" class="h-auto w-[180px]" width="1000" height="300" loading="lazy" />
           <p class="max-w-sm text-sm leading-relaxed text-white/85">
             A Sistema Venda Direta desenvolve soluções para operação comercial, vendas diretas e evolução tecnológica com IA aplicada ao negócio.
           </p>
