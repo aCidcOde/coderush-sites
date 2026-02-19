@@ -595,7 +595,16 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
       </div>
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-<article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
+        <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
+          <a href="2026/02/19/openclaw-assistente-pessoal-de-ia/">
+            <img src="index_svd_files/posts/openclaw-assistente-ia.jpg" alt="OpenClaw: assistente pessoal de IA e produtividade real" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+          </a>
+          <div class="p-4">
+            <h2 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="2026/02/19/openclaw-assistente-pessoal-de-ia/" class="hover:underline">OpenClaw: assistente pessoal de IA e produtividade real</a></h2>
+            <p class="mt-2 text-sm text-white/85">Veja como o OpenClaw reforça a importância de software sob medida com IA para reduzir custo operacional e aumentar produtividade.</p>
+          </div>
+        </article>
+        <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="2026/02/10/importancia-da-ia-no-marketing-multinivel-e-vendas-diretas/">
             <img decoding="async" src="index_svd_files/posts/ia-mmn.webp" srcset="index_svd_files/posts/ia-mmn-480.webp 480w, index_svd_files/posts/ia-mmn.webp 1200w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="A importância da IA no Marketing Multinível e Vendas Diretas" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
@@ -604,22 +613,13 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
             <p class="mt-2 text-sm text-white/85">Entenda como a IA reduz custo operacional, melhora a produtividade da rede e aumenta previsibilidade em operações de marketing multinível e vendas diretas.</p>
           </div>
         </article>
-<article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
+        <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="2026/02/10/codafacil-parceiro-tecnico-para-escalar-operacao-com-ia/">
             <img decoding="async" src="index_svd_files/posts/codafacil-parceiro.webp" srcset="index_svd_files/posts/codafacil-parceiro-480.webp 480w, index_svd_files/posts/codafacil-parceiro.webp 1200w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="CodaFácil: parceiro técnico para escalar operação com IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
           <div class="p-4">
             <h2 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="2026/02/10/codafacil-parceiro-tecnico-para-escalar-operacao-com-ia/" class="hover:underline">CodaFácil: parceiro técnico para escalar operação com IA</a></h2>
             <p class="mt-2 text-sm text-white/85">Conheça como o CodaFácil acelera customizações, integrações e evolução contínua para empresas que já operam com venda direta e querem avançar com IA.</p>
-          </div>
-        </article>
-<article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
-          <a href="2026/02/10/mudancas-de-escopo-de-vendas-diretas-para-sistema-de-parceiros/">
-            <img decoding="async" src="index_svd_files/posts/mudancas-escopo-parceiros.webp" srcset="index_svd_files/posts/mudancas-escopo-parceiros-480.webp 480w, index_svd_files/posts/mudancas-escopo-parceiros.webp 1200w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="Mudanças de escopo: de Vendas Diretas para Sistema de Parceiros" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-          </a>
-          <div class="p-4">
-            <h2 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="2026/02/10/mudancas-de-escopo-de-vendas-diretas-para-sistema-de-parceiros/" class="hover:underline">Mudanças de escopo: de Vendas Diretas para Sistema de Parceiros</a></h2>
-            <p class="mt-2 text-sm text-white/85">Veja como conduzir mudanças de escopo com segurança ao evoluir projetos de vendas diretas para modelos de parceria e canais, sem perder controle operacional.</p>
           </div>
         </article>
       </div>
