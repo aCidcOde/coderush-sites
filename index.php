@@ -596,6 +596,15 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
+          <a href="2026/02/25/ia-conectada-a-ferramentas-o-que-muda-na-operacao/">
+            <img src="index_svd_files/posts/ia-conectada-a-ferramentas-o-que-muda-na-operacao.jpg" alt="IA conectada a ferramentas: o que muda na operação" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+          </a>
+          <div class="p-4">
+            <h2 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="2026/02/25/ia-conectada-a-ferramentas-o-que-muda-na-operacao/" class="hover:underline">IA conectada a ferramentas: o que muda na operação</a></h2>
+            <p class="mt-2 text-sm text-white/85">Entenda como conectores e plugins de IA permitem automação real em apps corporativos com governança.</p>
+          </div>
+        </article>
+        <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="2026/02/19/php-8-5-em-foco-guia-pratico-para-atualizacao/">
             <img src="index_svd_files/posts/php-8-5-em-foco-guia-pratico-para-atualizacao.jpg" alt="PHP 8.5 em foco: guia prático para atualizar seu backend" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
@@ -611,15 +620,6 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
           <div class="p-4">
             <h2 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="2026/02/19/openclaw-assistente-pessoal-de-ia/" class="hover:underline">OpenClaw: assistente pessoal de IA e produtividade real</a></h2>
             <p class="mt-2 text-sm text-white/85">Veja como o OpenClaw reforça a importância de software sob medida com IA para reduzir custo operacional e aumentar produtividade.</p>
-          </div>
-        </article>
-        <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
-          <a href="2026/02/10/importancia-da-ia-no-marketing-multinivel-e-vendas-diretas/">
-            <img decoding="async" src="index_svd_files/posts/ia-mmn.webp" srcset="index_svd_files/posts/ia-mmn-480.webp 480w, index_svd_files/posts/ia-mmn.webp 1200w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="A importância da IA no Marketing Multinível e Vendas Diretas" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-          </a>
-          <div class="p-4">
-            <h2 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="2026/02/10/importancia-da-ia-no-marketing-multinivel-e-vendas-diretas/" class="hover:underline">A importância da IA no Marketing Multinível e Vendas Diretas</a></h2>
-            <p class="mt-2 text-sm text-white/85">Entenda como a IA reduz custo operacional, melhora a produtividade da rede e aumenta previsibilidade em operações de marketing multinível e vendas diretas.</p>
           </div>
         </article>
       </div>
