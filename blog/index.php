@@ -85,6 +85,15 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
+          <a href="../2026/03/04/php-8-5-3-em-producao-checklist-para-atualizar-com-seguranca/">
+            <img src="../index_svd_files/posts/php-8-5-3-em-producao-checklist-para-atualizar-com-seguranca.jpg" alt="PHP 8.5.3 em producao: checklist para atualizar com seguranca" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+          </a>
+          <div class="p-4">
+            <h2 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../2026/03/04/php-8-5-3-em-producao-checklist-para-atualizar-com-seguranca/" class="hover:underline">PHP 8.5.3 em producao: checklist para atualizar com seguranca</a></h2>
+            <p class="mt-2 text-sm text-white/85">Checklist pratico para atualizar seu backend com base no ciclo oficial do PHP e reduzir risco operacional.</p>
+          </div>
+        </article>
+<article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="../2026/02/25/ia-conectada-a-ferramentas-o-que-muda-na-operacao/">
             <img src="../index_svd_files/posts/ia-conectada-a-ferramentas-o-que-muda-na-operacao.jpg" alt="IA conectada a ferramentas: o que muda na operação" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
