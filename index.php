@@ -596,6 +596,15 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
+          <a href="2026/03/11/soc-agentico-e-seguranca-multicloud-com-governanca-unificada/">
+            <img src="index_svd_files/posts/soc-agentico-e-seguranca-multicloud-com-governanca-unificada.jpg" alt="SOC agentico e seguranca multicloud: guia pratico de governanca em 2026" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+          </a>
+          <div class="p-4">
+            <h2 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="2026/03/11/soc-agentico-e-seguranca-multicloud-com-governanca-unificada/" class="hover:underline">SOC agentico e seguranca multicloud: guia pratico de governanca em 2026</a></h2>
+            <p class="mt-2 text-sm text-white/85">Guia pratico para unificar seguranca multicloud, acelerar resposta e reduzir risco operacional.</p>
+          </div>
+        </article>
+        <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="2026/03/04/php-8-5-3-em-producao-checklist-para-atualizar-com-seguranca/">
             <img src="index_svd_files/posts/php-8-5-3-em-producao-checklist-para-atualizar-com-seguranca.jpg" alt="PHP 8.5.3 em producao: checklist para atualizar com seguranca" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
@@ -606,20 +615,11 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
         </article>
         <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="2026/02/25/ia-conectada-a-ferramentas-o-que-muda-na-operacao/">
-            <img src="index_svd_files/posts/ia-conectada-a-ferramentas-o-que-muda-na-operacao.jpg" alt="IA conectada a ferramentas: o que muda na operação" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+            <img src="index_svd_files/posts/ia-conectada-a-ferramentas-o-que-muda-na-operacao.jpg" alt="IA conectada a ferramentas: o que muda na operacao" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
           <div class="p-4">
-            <h2 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="2026/02/25/ia-conectada-a-ferramentas-o-que-muda-na-operacao/" class="hover:underline">IA conectada a ferramentas: o que muda na operação</a></h2>
-            <p class="mt-2 text-sm text-white/85">Entenda como conectores e plugins de IA permitem automação real em apps corporativos com governança.</p>
-          </div>
-        </article>
-        <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
-          <a href="2026/02/19/php-8-5-em-foco-guia-pratico-para-atualizacao/">
-            <img src="index_svd_files/posts/php-8-5-em-foco-guia-pratico-para-atualizacao.jpg" alt="PHP 8.5 em foco: guia prático para atualizar seu backend" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-          </a>
-          <div class="p-4">
-            <h2 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="2026/02/19/php-8-5-em-foco-guia-pratico-para-atualizacao/" class="hover:underline">PHP 8.5 em foco: guia prático para atualizar seu backend</a></h2>
-            <p class="mt-2 text-sm text-white/85">Veja como planejar o upgrade para PHP 8.5 com base em fontes oficiais e foco em redução de risco operacional.</p>
+            <h2 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="2026/02/25/ia-conectada-a-ferramentas-o-que-muda-na-operacao/" class="hover:underline">IA conectada a ferramentas: o que muda na operacao</a></h2>
+            <p class="mt-2 text-sm text-white/85">Entenda como conectores e plugins de IA permitem automacao real em apps corporativos com governanca.</p>
           </div>
         </article>
       </div>
