@@ -596,6 +596,15 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
+          <a href="2026/03/18/agentes-de-ia-em-2026-mcp-stateful-e-governanca-para-operar-em-escala/">
+            <img src="index_svd_files/posts/agentes-de-ia-em-2026-mcp-stateful-e-governanca-para-operar-em-escala.jpg" alt="Agentes de IA em 2026: MCP stateful e governanca para operar em escala" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+          </a>
+          <div class="p-4">
+            <h2 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="2026/03/18/agentes-de-ia-em-2026-mcp-stateful-e-governanca-para-operar-em-escala/" class="hover:underline">Agentes de IA em 2026: MCP stateful e governanca para operar em escala</a></h2>
+            <p class="mt-2 text-sm text-white/85">Guia pratico para estruturar agentes com contexto persistente, governanca e previsibilidade de custo.</p>
+          </div>
+        </article>
+        <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="2026/03/11/soc-agentico-e-seguranca-multicloud-com-governanca-unificada/">
             <img src="index_svd_files/posts/soc-agentico-e-seguranca-multicloud-com-governanca-unificada.jpg" alt="SOC agentico e seguranca multicloud: guia pratico de governanca em 2026" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
@@ -611,15 +620,6 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
           <div class="p-4">
             <h2 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="2026/03/04/php-8-5-3-em-producao-checklist-para-atualizar-com-seguranca/" class="hover:underline">PHP 8.5.3 em producao: checklist para atualizar com seguranca</a></h2>
             <p class="mt-2 text-sm text-white/85">Checklist pratico para atualizar seu backend com base no ciclo oficial do PHP e reduzir risco operacional.</p>
-          </div>
-        </article>
-        <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
-          <a href="2026/02/25/ia-conectada-a-ferramentas-o-que-muda-na-operacao/">
-            <img src="index_svd_files/posts/ia-conectada-a-ferramentas-o-que-muda-na-operacao.jpg" alt="IA conectada a ferramentas: o que muda na operacao" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-          </a>
-          <div class="p-4">
-            <h2 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="2026/02/25/ia-conectada-a-ferramentas-o-que-muda-na-operacao/" class="hover:underline">IA conectada a ferramentas: o que muda na operacao</a></h2>
-            <p class="mt-2 text-sm text-white/85">Entenda como conectores e plugins de IA permitem automacao real em apps corporativos com governanca.</p>
           </div>
         </article>
       </div>
