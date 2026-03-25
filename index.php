@@ -596,6 +596,15 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
+          <a href="2026/03/25/php-8-5-4-e-laravel-13-checklist-de-upgrade-com-governanca/">
+            <img src="index_svd_files/posts/php-8-5-4-e-laravel-13-checklist-de-upgrade-com-governanca.jpg" alt="PHP 8.5.4 e Laravel 13: checklist de upgrade com governanca" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+          </a>
+          <div class="p-4">
+            <h2 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="2026/03/25/php-8-5-4-e-laravel-13-checklist-de-upgrade-com-governanca/" class="hover:underline">PHP 8.5.4 e Laravel 13: checklist de upgrade com governanca</a></h2>
+            <p class="mt-2 text-sm text-white/85">Guia pratico para atualizar backend em 2026 com suporte previsivel e menor risco operacional.</p>
+          </div>
+        </article>
+        <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="2026/03/18/agentes-de-ia-em-2026-mcp-stateful-e-governanca-para-operar-em-escala/">
             <img src="index_svd_files/posts/agentes-de-ia-em-2026-mcp-stateful-e-governanca-para-operar-em-escala.jpg" alt="Agentes de IA em 2026: MCP stateful e governanca para operar em escala" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
@@ -611,15 +620,6 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
           <div class="p-4">
             <h2 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="2026/03/11/soc-agentico-e-seguranca-multicloud-com-governanca-unificada/" class="hover:underline">SOC agentico e seguranca multicloud: guia pratico de governanca em 2026</a></h2>
             <p class="mt-2 text-sm text-white/85">Guia pratico para unificar seguranca multicloud, acelerar resposta e reduzir risco operacional.</p>
-          </div>
-        </article>
-        <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
-          <a href="2026/03/04/php-8-5-3-em-producao-checklist-para-atualizar-com-seguranca/">
-            <img src="index_svd_files/posts/php-8-5-3-em-producao-checklist-para-atualizar-com-seguranca.jpg" alt="PHP 8.5.3 em producao: checklist para atualizar com seguranca" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-          </a>
-          <div class="p-4">
-            <h2 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="2026/03/04/php-8-5-3-em-producao-checklist-para-atualizar-com-seguranca/" class="hover:underline">PHP 8.5.3 em producao: checklist para atualizar com seguranca</a></h2>
-            <p class="mt-2 text-sm text-white/85">Checklist pratico para atualizar seu backend com base no ciclo oficial do PHP e reduzir risco operacional.</p>
           </div>
         </article>
       </div>
