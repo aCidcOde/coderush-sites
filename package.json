@@ -1,5 +1,5 @@
 {
-  "name": "site_svd",
+  "name": "coderush-sites",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/acidcode/site_svd.git"
+    "url": "git+ssh://git@github.com:aCidcOde/coderush-sites.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://bitbucket.org/acidcode/site_svd/issues"
+    "url": "https://github.com/aCidcOde/coderush-sites/issues"
   },
-  "homepage": "https://bitbucket.org/acidcode/site_svd#readme",
+  "homepage": "https://github.com/aCidcOde/coderush-sites#readme",
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.15",
     "tailwindcss": "^3.4.17"
