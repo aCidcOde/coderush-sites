@@ -1,12 +1,12 @@
 module.exports = {
   content: [
-    "./index.php",
-    "./blog/**/*.php",
-    "./codafacil/**/*.php",
-    "./inteligencia-artificial/**/*.php",
-    "./wordpress/**/*.php",
-    "./2023/**/*.php",
-    "./2026/**/*.php"
+    "./sistemavendadireta/index.php",
+    "./sistemavendadireta/components/**/*.php",
+    "./sistemavendadireta/blog/**/*.php",
+    "./sistemavendadireta/inteligencia-artificial/**/*.php",
+    "./sistemavendadireta/wordpress/**/*.php",
+    "./sistemavendadireta/2023/**/*.php",
+    "./sistemavendadireta/2026/**/*.php"
   ],
   theme: {
     extend: {

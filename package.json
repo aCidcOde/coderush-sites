@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:css": "tailwindcss -c tailwind.config.cjs -i ./sistemavendadireta/index_svd_files/site-tailwind.input.css -o ./sistemavendadireta/index_svd_files/site-tailwind.css --minify"
+    "build:svd": "tailwindcss -c tailwind.config.cjs -i ./sistemavendadireta/index_svd_files/site-tailwind.input.css -o ./sistemavendadireta/index_svd_files/site-tailwind.css --minify",
+    "build:codafacil": "tailwindcss -c tailwind.codafacil.cjs -i ./codafacil/site-tailwind.input.css -o ./codafacil/site-tailwind.css --minify",
+    "build:css": "npm run build:svd && npm run build:codafacil"
   },
   "repository": {
     "type": "git",
