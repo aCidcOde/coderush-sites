@@ -6,8 +6,8 @@
   <title>CodeRush — Hub de Tecnologia</title>
   <meta name="description" content="CodeRush é um hub central de tecnologia que reúne múltiplas empresas e serviços especializados em vendas diretas, desenvolvimento de software, WordPress, automação com IA e design digital." />
   <meta name="robots" content="index, follow" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
+  <script src="https://cdn.tailwindcss.com" data-cfasync="false"></script>
+  <script data-cfasync="false">
     tailwind.config = {
       theme: {
         extend: {

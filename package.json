@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:css": "tailwindcss -c tailwind.config.cjs -i ./index_svd_files/site-tailwind.input.css -o ./index_svd_files/site-tailwind.css --minify"
+    "build:css": "tailwindcss -c tailwind.config.cjs -i ./sistemavendadireta/index_svd_files/site-tailwind.input.css -o ./sistemavendadireta/index_svd_files/site-tailwind.css --minify"
   },
   "repository": {
     "type": "git",
