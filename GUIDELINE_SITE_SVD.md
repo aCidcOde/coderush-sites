@@ -10,11 +10,11 @@ Guia tecnico para manutencao, expansao e atualizacao do hub CodeRush e seus sub-
 
 # Guideline Operacional — CodeRush Multi-site
 
-## 1) Visão geral do projeto
+## 1) Visão geral
 
 O **CodeRush** é um hub central de tecnologia que reúne múltiplas empresas. Cada empresa tem seu próprio diretório, domínio e assets auto-contidos. O Nginx aponta cada domínio diretamente para o diretório correspondente.
 
-### Empresas e domínios
+### Empresas ativas
 
 | Empresa | Domínio | Diretório | Stack |
 |---|---|---|---|
@@ -24,9 +24,9 @@ O **CodeRush** é um hub central de tecnologia que reúne múltiplas empresas. C
 | WordPress Consultoria | wordpressconsultoria.com.br | `wordpressconsultoria/` | HTML + Tailwind CDN |
 | FluxoInteligente IA | fluxointeligenteia.com.br | `fluxointeligenteia/` | HTML + Tailwind CDN |
 
-Empresas em stand-by (sem site ativo):
-- **Traço Creative Lab** — design e UX (diretório ainda não criado)
-- **No Sobrado Tech** — imobiliário (diretório ainda não criado)
+### Empresas em stand-by
+
+- **Traço Creative Lab** — design e UX (card no hub, sem site ainda)
 
 ---
 
@@ -45,201 +45,191 @@ docker logs coderush-nginx     # logs do nginx
 ```
 
 ### Virtual hosts — `docker/nginx/default.conf`
-Cada domínio tem seu próprio `server {}` block com `root` apontando para o diretório da empresa. Em dev local, todos os sites são acessíveis via subdirectório em `localhost:8081/nome-do-site/`.
+Cada domínio tem seu próprio `server {}` com `root` apontando para o diretório da empresa. Em dev, todos acessíveis via `localhost:8081/nome-do-diretorio/`.
 
 ---
 
 ## 3) Regra de assets — isolamento por site
 
-**Cada site deve ser 100% auto-contido.** Assets (CSS, JS, imagens, fontes) devem usar paths relativos dentro do próprio diretório:
+**Cada site é 100% auto-contido.** Assets devem usar paths relativos dentro do próprio diretório. Isso garante funcionamento tanto via subdiretório (dev) quanto via domínio próprio (produção).
 
 ```html
-<!-- Correto: relativo ao diretório do site -->
-<link rel="stylesheet" href="./assets/style.css" />
-<img src="./assets/logo.webp" />
+<!-- Sites com Tailwind CDN (hub, wordpressconsultoria, fluxointeligenteia) -->
+<script src="https://cdn.tailwindcss.com"></script>
 
-<!-- Correto para SVD (padrão legado) -->
+<!-- SVD: Tailwind compilado localmente -->
 <link rel="stylesheet" href="index_svd_files/site-tailwind.css" />
-```
 
-Isso garante que o site funcione tanto via subdiretório (`localhost:8081/sistemavendadireta/`) quanto via domínio próprio (`sistemavendadireta.com.br`).
+<!-- Codafacil: Tailwind compilado localmente -->
+<link rel="stylesheet" href="site-tailwind.css" />
+```
 
 ---
 
-## 4) Sistema Venda Direta (`sistemavendadireta/`)
+## 4) Identidade visual
 
-### 4.1 Mapa de rotas
-- `/` → `sistemavendadireta/index.php` (home SVD)
-- `/blog/` → `sistemavendadireta/blog/index.php`
-- `/wordpress/` → `sistemavendadireta/wordpress/index.php` (serviços WP do SVD)
-- `/inteligencia-artificial/` → `sistemavendadireta/inteligencia-artificial/index.php`
+### Paleta de cores base
+
+| Site | Background | Acento |
+|---|---|---|
+| CodeRush Hub | `#020b1a` | Azul `#004AAD` |
+| SVD | `bg-brand` (`#004AAD`) | Azul (é o brand) |
+| Codafacil | `#04110d` via `body,main,footer { background: #04110d !important }` | Violeta/azul |
+| WP Consultoria | `#06111a` | Sky `#21759b` |
+| FluxoInteligente IA | `#04110d` | Emerald `#059669` |
+
+### Fontes
+Todos os sites usam:
+- **Body:** Inter (via Google Fonts)
+- **Headings:** Montserrat (via Google Fonts)
+
+SVD: Inter declarado via `--font-body` em `site-optimizations.css`. Codafacil: declarado via `<style>` inline no head.
+
+**Importante para Codafacil:** o fundo dark é aplicado via CSS inline `body, main, footer { background: #04110d !important }` porque o Tailwind está compilado (classes arbitrárias `bg-[#04110d]` não existem no bundle). Não usar classes Tailwind arbitrárias de cor no Codafacil sem recompilar.
+
+### Rodapé — Ecossistema CodeRush
+Todos os sites têm seção no rodapé com links pill para os outros domínios do grupo:
+- Links estilo `rounded-full border border-white/15 px-3 py-1`
+- Hover: `hover:border-white/35 hover:text-white/80`
+- Cada site omite seu próprio domínio da lista
+
+---
+
+## 5) Sistema Venda Direta (`sistemavendadireta/`)
+
+### 5.1 Mapa de rotas
+- `/` → `index.php` (home SVD)
+- `/blog/` → `blog/index.php`
+- `/wordpress/` → `wordpress/index.php` (landing WP services do SVD)
+- `/inteligencia-artificial/` → `inteligencia-artificial/index.php`
 - `/2023/.../` e `/2026/.../` → posts individuais
 - `/enviar-contato.php` — handler de formulários
 - `/enviar-telefone.php` — wrapper de compatibilidade
 
-### 4.2 Estrutura de componentes PHP
+### 5.2 Estrutura de componentes PHP
 ```
 sistemavendadireta/
 ├── index.php
 ├── components/
 │   ├── layout/
-│   │   ├── head.php       (meta, CSS, fontes)
-│   │   ├── header.php     (nav sticky)
-│   │   ├── footer.php     (rodapé institucional)
+│   │   ├── head.php       (meta, CSS, fontes — Inter + Montserrat + Roboto)
+│   │   ├── header.php     (nav sticky com scroll compacto)
+│   │   ├── footer.php     (rodapé institucional + Ecossistema CodeRush)
 │   │   └── scripts.php    (JS inline, WhatsApp, Lottie)
 │   ├── sections/          (14 seções da home)
 │   └── ui/                (cta-button, section-title)
-├── index_svd_files/       (CSS, JS, logos, imagens, lottie, posts/)
+├── index_svd_files/       (CSS compilado, JS, logos, imagens, lottie, posts/)
 ├── .env                   (credenciais SMTP)
 └── ...
 ```
 
-### 4.3 Identidade visual SVD
-- Tailwind compilado localmente (`npm run build:css`)
-- Fontes: Montserrat + Roboto
-- Cor principal: `--color-brand: #004AAD`
-- Build: `tailwind.config.cjs` + `index_svd_files/site-tailwind.input.css` → `site-tailwind.css`
+### 5.3 Build de CSS
+```bash
+npm run build:css
+# Lê: tailwind.config.cjs + index_svd_files/site-tailwind.input.css
+# Gera: sistemavendadireta/index_svd_files/site-tailwind.css
+```
+Rodar sempre que adicionar classes Tailwind novas nos arquivos PHP do SVD.
 
-**Regra:** sempre rodar `npm run build:css` após alterar classes Tailwind em arquivos `.php` do SVD.
-
-### 4.4 Formulários e e-mail
-- Arquivo central: `sistemavendadireta/enviar-contato.php`
-- Lê credenciais de `sistemavendadireta/.env`
-- Fallback SMTP → `mail()`
+### 5.4 Formulários e e-mail
+- Arquivo: `sistemavendadireta/enviar-contato.php`
+- Config em `sistemavendadireta/.env`
 - Campos: nome, e-mail, telefone/whatsapp, serviço, mensagem, origem, redirect
 
-### 4.5 Assets de imagens
-- Logos e assets gerais: `sistemavendadireta/index_svd_files/`
-- Capas de posts: `sistemavendadireta/index_svd_files/posts/`
+### 5.5 Blog — adicionar novo post
+1. Criar diretório `2026/MM/DD/slug-do-post/index.php`
+2. Salvar capa em `index_svd_files/posts/`
+3. Atualizar card no `blog/index.php`
+4. Atualizar `components/sections/blog-destaques.php` (se for um dos 3 mais recentes)
+5. Incluir SEO completo e dados estruturados `BlogPosting`
 
-Ao adicionar novo post:
-1. Salvar capa em `index_svd_files/posts/`
-2. Atualizar card no `blog/index.php`
-3. Atualizar seção `blog-destaques.php` na home (se for um dos 3 mais recentes)
-4. Adicionar OG image no post
-
-### 4.6 SEO
-Todas as páginas públicas devem ter:
-- `title`, `meta description`, `meta robots` com diretivas completas
-- `canonical`, `hreflang` (pt-BR + x-default)
-- Open Graph e Twitter Cards completos
-- Dados estruturados (ver padrão por tipo de página na seção 4.7)
-
-### 4.7 Dados estruturados por página
-- Home: `Organization`, `WebSite`, `FAQPage`
-- Blog index: `Blog`
-- Inteligência Artificial: `Organization`, `Service`, `FAQPage`
-- WordPress: `ProfessionalService`
-- CodaFácil: `Organization`, `Service`
-- Posts: `BlogPosting` + `article:published_time` + `article:modified_time`
+### 5.6 SEO
+Todas as páginas públicas: `title`, `meta description`, `meta robots`, `canonical`, `hreflang`, Open Graph, Twitter Cards, dados estruturados.
 
 ---
 
-## 5) CodeRush Hub (`/` raiz)
+## 6) CodeRush Hub (`/` raiz)
 
-### 5.1 Arquivo
-- `index.php` — hub com cards de todas as empresas
+### Arquivo principal
+`index.php` — hub com cards de todas as empresas
 
-### 5.2 Stack
-- PHP (para `date('Y')` no footer)
-- Tailwind CDN Play (sem build local)
-- Fontes: Inter + Montserrat via Google Fonts
+### Grid de empresas
+- **Linha 1** (3 cards): SVD, Codafacil, WP Consultoria
+- **Linha 2** (2 cards centralizados, `lg:w-2/3 lg:mx-auto`): FluxoInteligente IA, Traço Creative Lab (em breve)
 
-### 5.3 Seções
-- Hero com CTA
-- Cards das empresas (`#empresas`) — 6 cards (4 ativos + 2 em breve)
-- Sobre o hub (`#sobre`)
-- Contato (`#contato`)
-
-### 5.4 Links dos cards
-Em dev: paths relativos (`/sistemavendadireta/`, `/codafacil/`, etc.)
-Em produção: atualizar para domínios reais quando disponíveis.
+### Ao adicionar nova empresa ao hub
+1. Criar diretório com `index.html` auto-contido
+2. Adicionar virtual host no `docker/nginx/default.conf`
+3. Adicionar card no `index.php` (ajustar grid conforme número de empresas)
+4. Adicionar link pill no rodapé de todos os outros sites
+5. Adicionar link pill no rodapé do novo site apontando para todos os outros
 
 ---
 
-## 6) Codafacil (`codafacil/`)
+## 7) Codafacil (`codafacil/`)
 
-Site auto-contido. **Não modificar** sem escopo explícito.
+Arquivo único: `codafacil/index.php`
 
-Assets locais:
+Assets locais (não alterar sem recompilar):
 - `codafacil/site-tailwind.css`
 - `codafacil/site-optimizations.css`
-- `codafacil/logo.webp`
+- `codafacil/logo.webp` / `logo.png`
 - `codafacil/Codafacil.mp4`
 
----
-
-## 7) WordPress Consultoria (`wordpressconsultoria/`)
-
-### 7.1 Arquivo
-- `wordpressconsultoria/index.html`
-
-### 7.2 Stack
-- HTML puro + Tailwind CDN Play
-- Fontes: Inter + Montserrat via Google Fonts
-- Cor principal: `#21759b` (azul WordPress)
-
-### 7.3 Seções
-- Hero com CTAs (`#servicos`, `#contato`)
-- Serviços em grid 6 cards (`#servicos`)
-- Diferenciais (`#diferenciais`)
-- Contato (`#contato`)
+Background dark aplicado via `<style>` inline — ver seção 4.
 
 ---
 
-## 8) FluxoInteligente IA (`fluxointeligenteia/`)
+## 8) WordPress Consultoria (`wordpressconsultoria/`)
 
-### 8.1 Arquivo
-- `fluxointeligenteia/index.html`
-
-### 8.2 Stack
-- HTML puro + Tailwind CDN Play
-- Fontes: Inter + Montserrat via Google Fonts
-- Cor principal: `#059669` (verde emerald)
-
-### 8.3 Seções
-- Hero com CTAs
-- Como funciona — 4 etapas em timeline (`#como-funciona`)
-- Soluções em grid 6 cards (`#solucoes`)
-- Resultados (métricas)
-- Contato (`#contato`)
+`wordpressconsultoria/index.html` — HTML puro + Tailwind CDN  
+Cor: `#21759b` (azul WordPress)  
+Seções: hero, serviços (6 cards), diferenciais (4 itens), contato
 
 ---
 
-## 9) Fluxo de publicação
+## 9) FluxoInteligente IA (`fluxointeligenteia/`)
+
+`fluxointeligenteia/index.html` — HTML puro + Tailwind CDN  
+Cor: `#059669` (emerald)  
+Seções: hero, como funciona (timeline 4 etapas), soluções (6 cards), resultados, contato
+
+---
+
+## 10) Fluxo de publicação
 
 ```
 1. Alterar arquivos do site correspondente
-2. Para SVD: validar PHP com `php -l arquivo.php`
-3. Para SVD com classes novas: `npm run build:css`
-4. Testar localmente via localhost:8081/[diretorio]/
-5. Commit: [FEAT], [FIX], [CHORE] + descrição
-6. Push → branch develop → PR → main
+2. SVD: validar com `php -l arquivo.php`
+3. SVD com classes novas: `npm run build:css`
+4. Testar: http://localhost:8081/[diretorio]/
+5. Commit: prefixo [FEAT] / [FIX] / [CHORE]
+6. Push → develop → PR → main
 ```
 
 ---
 
-## 10) Regras para alterações por prompt
+## 11) Regras para alterações por prompt
 
 Sempre informar:
 1. **Site alvo** — ex.: `sistemavendadireta`, `wordpressconsultoria`
-2. **Página/arquivo** — ex.: `sistemavendadireta/components/sections/hero.php`
-3. **Bloco alvo** — ex.: `#contato`, título da seção
+2. **Arquivo** — ex.: `sistemavendadireta/components/sections/hero.php`
+3. **Bloco alvo** — ex.: `#contato`, nome da seção
 4. **Objetivo** — ex.: "trocar copy", "adicionar card"
 5. **Restrições** — ex.: "não alterar layout", "manter SEO"
 
-Checklist mínimo:
-- Links em formato de diretório (`/rota/`)
+Checklist mínimo por alteração:
 - Assets com paths relativos ao diretório do site
+- Não usar classes Tailwind arbitrárias no Codafacil sem recompilar
 - Preservar tags SEO em páginas PHP
-- Manter rodapé institucional consistente
+- Manter rodapé Ecossistema CodeRush em todas as páginas públicas
 - Validar sintaxe PHP após edições
 
 ---
 
-## 11) Observações
+## 12) Observações
 
-- Posts legados em `sistemavendadireta/2023/` e `sistemavendadireta/2026/` têm conteúdo importado — evitar refatorações globais sem escopo explícito.
-- `tailwind.config.cjs` e `package.json` ficam na raiz do projeto mas o build é para o SVD (`sistemavendadireta/index_svd_files/`).
-- Sites com Tailwind CDN (hub, WP Consultoria, FluxoIA) não precisam de build local.
-- Ao criar novo site no hub: criar diretório, `index.html` auto-contido, adicionar virtual host no nginx, adicionar card no `index.php` da raiz.
+- Posts legados em `sistemavendadireta/2023/` têm conteúdo importado — evitar refatorações globais sem escopo explícito.
+- `tailwind.config.cjs` e `package.json` ficam na raiz mas o build é para `sistemavendadireta/index_svd_files/`.
+- Sites com Tailwind CDN não precisam de build local.
+- SVD mantém fundo azul brand (`#004AAD`) como identidade própria do produto.
