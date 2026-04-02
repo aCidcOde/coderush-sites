@@ -9,14 +9,8 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy via SSH
-        uses: appleboy/ssh-action@v1.0.3
-        with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.SSH_KEY }}
-          script: |
-            cd /data/coderush-sites
-            git pull origin main
-            npm run build:css
-            docker compose restart
+      - name: Trigger deploy webhook
+        run: |
+          curl -sf \
+            -X POST https://coderush.sistemavendadireta.com.br/deploy.php \
+            -H "X-Deploy-Token: ${{ secrets.DEPLOY_TOKEN }}"
