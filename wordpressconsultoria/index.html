@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WordPress Consultoria — Desenvolvimento WordPress Sob Medida</title>
+  <meta name="description" content="Desenvolvimento WordPress sob medida: plugins personalizados, gateways de pagamento, integrações com ERP, multi-lojas, marketplace e customização de templates." />
+  <meta name="robots" content="index, follow" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: '#21759b',
+            'brand-dark': '#0d4060',
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            heading: ['Montserrat', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    body { background: #06111a; color: #eef4f8; }
+    .card-hover { transition: transform 0.25s ease, box-shadow 0.25s ease; }
+    .card-hover:hover { transform: translateY(-5px); box-shadow: 0 16px 32px rgba(33,117,155,0.2); }
+    .gradient-text { background: linear-gradient(135deg, #38bdf8, #818cf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+  </style>
+</head>
+<body class="min-h-screen antialiased">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 border-b border-white/10 bg-[#06111a]/90 backdrop-blur-md">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+      <div class="flex items-center gap-3">
+        <div class="flex h-9 w-9 items-center justify-center rounded-lg bg-brand font-heading text-base font-bold text-white">WP</div>
+        <span class="font-heading text-lg font-bold tracking-tight">WordPress Consultoria</span>
+      </div>
+      <nav class="hidden items-center gap-6 text-sm text-white/75 md:flex">
+        <a href="#servicos" class="transition hover:text-white">Serviços</a>
+        <a href="#diferenciais" class="transition hover:text-white">Diferenciais</a>
+        <a href="#contato" class="rounded-full bg-brand px-4 py-1.5 text-white transition hover:bg-sky-600">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden px-6 py-24 text-center">
+    <div class="pointer-events-none absolute inset-0">
+      <div class="absolute left-1/2 top-0 h-[450px] w-[700px] -translate-x-1/2 rounded-full bg-brand/15 blur-[100px]"></div>
+    </div>
+    <div class="relative mx-auto max-w-3xl">
+      <span class="inline-block rounded-full border border-sky-500/30 bg-sky-500/10 px-4 py-1 text-xs font-semibold uppercase tracking-widest text-sky-300">WordPress Especializado</span>
+      <h1 class="mt-6 font-heading text-5xl font-extrabold leading-tight sm:text-6xl">
+        WordPress<br/><span class="gradient-text">do jeito certo</span>
+      </h1>
+      <p class="mt-6 text-lg leading-relaxed text-white/70">
+        Desenvolvimento WordPress sob medida para cenários complexos. Plugins personalizados, integrações com ERPs e gateways, multi-lojas, marketplace e identidade visual alinhada ao seu negócio.
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-4">
+        <a href="#contato" class="rounded-full bg-brand px-7 py-3 text-sm font-semibold text-white transition hover:bg-sky-600">Solicite um orçamento</a>
+        <a href="#servicos" class="rounded-full border border-white/25 px-7 py-3 text-sm font-semibold text-white/90 transition hover:border-white/60 hover:bg-white/5">Veja os serviços</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Serviços -->
+  <section id="servicos" class="px-6 py-20">
+    <div class="mx-auto max-w-6xl">
+      <div class="mb-12 text-center">
+        <p class="text-xs font-semibold uppercase tracking-widest text-sky-400">O que fazemos</p>
+        <h2 class="mt-2 font-heading text-4xl font-bold">Serviços</h2>
+      </div>
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+        <div class="card-hover rounded-2xl border border-white/10 bg-white/[0.04] p-6">
+          <div class="mb-4 text-3xl">🔌</div>
+          <h3 class="font-heading text-lg font-bold">Plugins Personalizados</h3>
+          <p class="mt-2 text-sm text-white/65">Desenvolvemos plugins do zero para atender regras de negócio específicas que soluções genéricas não cobrem.</p>
+        </div>
+
+        <div class="card-hover rounded-2xl border border-white/10 bg-white/[0.04] p-6">
+          <div class="mb-4 text-3xl">💳</div>
+          <h3 class="font-heading text-lg font-bold">Gateways de Pagamento</h3>
+          <p class="mt-2 text-sm text-white/65">Integração com os principais gateways do mercado brasileiro e internacional, com split de pagamentos e marketplace.</p>
+        </div>
+
+        <div class="card-hover rounded-2xl border border-white/10 bg-white/[0.04] p-6">
+          <div class="mb-4 text-3xl">🔗</div>
+          <h3 class="font-heading text-lg font-bold">Integração com ERP</h3>
+          <p class="mt-2 text-sm text-white/65">Sincronização bidirecional com ERPs via middleware próprio. Estoque, pedidos, clientes e financeiro em tempo real.</p>
+        </div>
+
+        <div class="card-hover rounded-2xl border border-white/10 bg-white/[0.04] p-6">
+          <div class="mb-4 text-3xl">🏪</div>
+          <h3 class="font-heading text-lg font-bold">Multi-lojas & Marketplace</h3>
+          <p class="mt-2 text-sm text-white/65">Arquitetura para operar múltiplas lojas em uma instalação, com comissões por vendedor e gestão centralizada.</p>
+        </div>
+
+        <div class="card-hover rounded-2xl border border-white/10 bg-white/[0.04] p-6">
+          <div class="mb-4 text-3xl">🚚</div>
+          <h3 class="font-heading text-lg font-bold">Frete & Logística</h3>
+          <p class="mt-2 text-sm text-white/65">Integração com Correios, transportadoras e plataformas de frete. Cálculo automático, rastreamento e automação de etiquetas.</p>
+        </div>
+
+        <div class="card-hover rounded-2xl border border-white/10 bg-white/[0.04] p-6">
+          <div class="mb-4 text-3xl">🎨</div>
+          <h3 class="font-heading text-lg font-bold">Templates & Layout</h3>
+          <p class="mt-2 text-sm text-white/65">Customização profunda de temas e criação de layouts sob medida. Identidade visual e UX perfeitamente ajustados ao negócio.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Diferenciais -->
+  <section id="diferenciais" class="px-6 py-20">
+    <div class="mx-auto max-w-4xl rounded-3xl border border-white/10 bg-white/[0.03] p-10">
+      <div class="mb-8 text-center">
+        <p class="text-xs font-semibold uppercase tracking-widest text-sky-400">Por que escolher</p>
+        <h2 class="mt-2 font-heading text-3xl font-bold">Nossos diferenciais</h2>
+      </div>
+      <div class="grid gap-6 sm:grid-cols-2">
+        <div class="flex gap-4">
+          <div class="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-sky-600/20 text-sky-400 text-sm font-bold">✓</div>
+          <div>
+            <p class="font-semibold">Cenários complexos</p>
+            <p class="mt-1 text-sm text-white/60">Experiência em projetos que vão além do WooCommerce padrão — multi-lojas, comissões e integrações críticas.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-sky-600/20 text-sky-400 text-sm font-bold">✓</div>
+          <div>
+            <p class="font-semibold">Middleware próprio</p>
+            <p class="mt-1 text-sm text-white/60">Camada de integração desenvolvida internamente para sincronizações robustas com ERPs e sistemas legados.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-sky-600/20 text-sky-400 text-sm font-bold">✓</div>
+          <div>
+            <p class="font-semibold">Performance e segurança</p>
+            <p class="mt-1 text-sm text-white/60">Código limpo, WordPress hardened, caching otimizado e monitoramento contínuo.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-sky-600/20 text-sky-400 text-sm font-bold">✓</div>
+          <div>
+            <p class="font-semibold">Sustentação contínua</p>
+            <p class="mt-1 text-sm text-white/60">Suporte pós-entrega, atualizações e evolução incremental do projeto conforme o negócio cresce.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="px-6 py-16 text-center">
+    <div class="mx-auto max-w-xl">
+      <h2 class="font-heading text-3xl font-bold">Vamos conversar?</h2>
+      <p class="mt-3 text-white/65">Conte seu projeto e veja como podemos resolver com WordPress.</p>
+      <a href="mailto:contato@wordpressconsultoria.com.br" class="mt-6 inline-block rounded-full bg-brand px-8 py-3 text-sm font-semibold text-white transition hover:bg-sky-600">contato@wordpressconsultoria.com.br</a>
+      <p class="mt-4 text-sm text-white/40">Parte do ecossistema <a href="/" class="underline hover:text-white/70">CodeRush</a></p>
+    </div>
+  </section>
+
+  <footer class="border-t border-white/10 px-6 py-8 text-center text-xs text-white/40">
+    <p>© 2026 WordPress Consultoria — Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>

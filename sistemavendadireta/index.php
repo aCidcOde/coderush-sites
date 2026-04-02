@@ -1,0 +1,20 @@
+<?php require __DIR__ . "/components/layout/head.php"; ?>
+<?php require __DIR__ . "/components/layout/header.php"; ?>
+  <main id="conteudo" class="mx-auto max-w-[1140px] px-4 sm:px-6">
+<?php require __DIR__ . "/components/sections/hero.php"; ?>
+<?php require __DIR__ . "/components/sections/funcionalidades.php"; ?>
+<?php require __DIR__ . "/components/sections/video-demo.php"; ?>
+<?php require __DIR__ . "/components/sections/porque-escolher.php"; ?>
+<?php require __DIR__ . "/components/sections/caracteristicas.php"; ?>
+<?php require __DIR__ . "/components/sections/vantagens.php"; ?>
+<?php require __DIR__ . "/components/sections/desenvolvimento-ia.php"; ?>
+<?php require __DIR__ . "/components/sections/ia-mmn.php"; ?>
+<?php require __DIR__ . "/components/sections/integracoes.php"; ?>
+<?php require __DIR__ . "/components/sections/clientes.php"; ?>
+<?php require __DIR__ . "/components/sections/empresas-atendidas.php"; ?>
+<?php require __DIR__ . "/components/sections/contato.php"; ?>
+<?php require __DIR__ . "/components/sections/faq.php"; ?>
+<?php require __DIR__ . "/components/sections/blog-destaques.php"; ?>
+  </main>
+<?php require __DIR__ . "/components/layout/footer.php"; ?>
+<?php require __DIR__ . "/components/layout/scripts.php"; ?>

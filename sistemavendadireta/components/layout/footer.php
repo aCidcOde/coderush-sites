@@ -42,7 +42,7 @@
             <nav class="grid gap-2 text-sm text-white/90" aria-label="Menu institucional">
               <a href="/" class="rounded-lg px-2 py-1 transition hover:bg-white/10 hover:underline">Sistema Venda Direta</a>
               <a href="wordpress/" class="rounded-lg px-2 py-1 transition hover:bg-white/10 hover:underline">WordPress</a>
-              <a href="codafacil/" class="rounded-lg px-2 py-1 transition hover:bg-white/10 hover:underline">Desenvolvimento com IA</a>
+              <a href="https://codafacil.dev" class="rounded-lg px-2 py-1 transition hover:bg-white/10 hover:underline">Desenvolvimento com IA</a>
               <a href="inteligencia-artificial/" class="rounded-lg px-2 py-1 transition hover:bg-white/10 hover:underline">Multinível com IA</a>
               <a href="blog/" class="rounded-lg px-2 py-1 transition hover:bg-white/10 hover:underline">Blog</a>
             </nav>
