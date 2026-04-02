@@ -7,7 +7,7 @@
       <nav class="flex items-center justify-between gap-4 py-3" aria-label="Menu principal">
         <a href="/" class="header-logo block" aria-label="Sistema Venda Direta">
           <img decoding="async"
-            src="index_svd_files/Logo-Branco-1.webp"
+            src="imagens/Logo-Branco-1.webp"
             alt="Sistema Venda Direta"
             class="h-auto"
             width="1000"

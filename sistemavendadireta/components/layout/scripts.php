@@ -41,7 +41,7 @@
     }
   </style>
 
-  <script src="index_svd_files/lottie.min.js" defer></script>
+  <script src="js/lottie.min.js" defer></script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       var siteHeader = document.getElementById("site-header");

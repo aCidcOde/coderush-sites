@@ -29,20 +29,20 @@ Post de blog estatico com foco em OpenClaw, IA aplicada e software sob medida.
   <meta property="og:description" content="OpenClaw é um assistente pessoal de IA open source. Veja como esse modelo se conecta com software sob medida para baixar custo operacional." />
   <meta property="og:url" content="https://www.sistemavendadireta.com.br/2026/02/19/openclaw-assistente-pessoal-de-ia/" />
   <meta property="og:site_name" content="Sistema Venda Direta" />
-  <meta property="og:image" content="https://www.sistemavendadireta.com.br/index_svd_files/posts/openclaw-assistente-ia.jpg" />
+  <meta property="og:image" content="https://www.sistemavendadireta.com.br/imagens/posts/openclaw-assistente-ia.jpg" />
   <meta property="og:image:alt" content="OpenClaw: assistente pessoal de IA e produtividade real | Sistema Venda Direta" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="OpenClaw: assistente pessoal de IA e produtividade real | Sistema Venda Direta" />
   <meta name="twitter:description" content="Entenda como o OpenClaw mostra, na prática, o potencial da IA integrada ao software sob medida." />
-  <meta name="twitter:image" content="https://www.sistemavendadireta.com.br/index_svd_files/posts/openclaw-assistente-ia.jpg" />
+  <meta name="twitter:image" content="https://www.sistemavendadireta.com.br/imagens/posts/openclaw-assistente-ia.jpg" />
   <meta name="twitter:site" content="@sistemavendadireta" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" />
-  <link rel="stylesheet" href="../../../../index_svd_files/site-tailwind.css" />
+  <link rel="stylesheet" href="../../../../css/site-tailwind.css" />
 
-  <link rel="stylesheet" href="../../../../index_svd_files/site-optimizations.css" />
+  <link rel="stylesheet" href="../../../../css/site-optimizations.css" />
 
   <script type="application/ld+json">
 {
@@ -57,7 +57,7 @@ Post de blog estatico com foco em OpenClaw, IA aplicada e software sob medida.
         "@id": "https://www.sistemavendadireta.com.br/2026/02/19/openclaw-assistente-pessoal-de-ia/"
     },
     "image": [
-        "https://www.sistemavendadireta.com.br/index_svd_files/posts/openclaw-assistente-ia.jpg"
+        "https://www.sistemavendadireta.com.br/imagens/posts/openclaw-assistente-ia.jpg"
     ],
     "author": {
         "@type": "Organization",
@@ -78,7 +78,7 @@ Post de blog estatico com foco em OpenClaw, IA aplicada e software sob medida.
   <header class="sticky top-0 z-40 border-b border-white/10 bg-brand/95 backdrop-blur">
     <div class="mx-auto flex max-w-[1140px] items-center justify-between gap-4 px-4 py-3 sm:px-6">
       <a href="../../../../" aria-label="Sistema Venda Direta">
-        <img src="../../../../index_svd_files/Logo-Branco-1.png" alt="Sistema Venda Direta" class="h-auto w-[165px] sm:w-[210px] lg:w-[260px]" width="1000" height="300" />
+        <img src="../../../../imagens/Logo-Branco-1.png" alt="Sistema Venda Direta" class="h-auto w-[165px] sm:w-[210px] lg:w-[260px]" width="1000" height="300" />
       </a>
       <div class="hidden items-center gap-5 text-sm font-medium text-white/90 md:flex">
         <a href="../../../../" class="hover:text-white">Site Principal</a>
@@ -95,7 +95,7 @@ Post de blog estatico com foco em OpenClaw, IA aplicada e software sob medida.
       <p class="text-xs font-medium uppercase tracking-wide text-white/70">Blog SVD • 19/02/2026</p>
       <h1 class="mt-2 font-[var(--font-heading)] text-3xl font-semibold leading-tight sm:text-4xl">OpenClaw: assistente pessoal de IA e produtividade real</h1>
 
-      <img src="../../../../index_svd_files/posts/openclaw-assistente-ia.jpg" alt="OpenClaw: assistente pessoal de IA e produtividade real" class="mt-6 w-full rounded-2xl border border-white/20" width="1200" height="630" loading="lazy" />
+      <img src="../../../../imagens/posts/openclaw-assistente-ia.jpg" alt="OpenClaw: assistente pessoal de IA e produtividade real" class="mt-6 w-full rounded-2xl border border-white/20" width="1200" height="630" loading="lazy" />
 
       <div class="prose prose-invert mt-6 max-w-none prose-headings:font-[var(--font-heading)] prose-headings:text-white prose-a:text-white prose-strong:text-white prose-p:text-white/90 prose-li:text-white/90">
 <p>O <strong>OpenClaw</strong> é um projeto open source focado em assistente pessoal de IA rodando nos seus próprios dispositivos. Na prática, ele junta automação, memória de contexto e canais de conversa que a equipe já usa no dia a dia.</p>
@@ -151,7 +151,7 @@ Post de blog estatico com foco em OpenClaw, IA aplicada e software sob medida.
       <div class="mt-5 grid gap-4 md:grid-cols-3">
         <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="../../../../2026/02/10/importancia-da-ia-no-marketing-multinivel-e-vendas-diretas/">
-            <img src="../../../../index_svd_files/posts/ia-mmn.jpg" alt="A importância da IA no Marketing Multinível e Vendas Diretas" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+            <img src="../../../../imagens/posts/ia-mmn.jpg" alt="A importância da IA no Marketing Multinível e Vendas Diretas" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
           <div class="p-4">
             <h3 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../../../../2026/02/10/importancia-da-ia-no-marketing-multinivel-e-vendas-diretas/" class="hover:underline">A importância da IA no Marketing Multinível e Vendas Diretas</a></h3>
@@ -160,7 +160,7 @@ Post de blog estatico com foco em OpenClaw, IA aplicada e software sob medida.
         </article>
         <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="../../../../2026/02/10/codafacil-parceiro-tecnico-para-escalar-operacao-com-ia/">
-            <img src="../../../../index_svd_files/posts/codafacil-parceiro.jpg" alt="CodaFácil: parceiro técnico para escalar operação com IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+            <img src="../../../../imagens/posts/codafacil-parceiro.jpg" alt="CodaFácil: parceiro técnico para escalar operação com IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
           <div class="p-4">
             <h3 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../../../../2026/02/10/codafacil-parceiro-tecnico-para-escalar-operacao-com-ia/" class="hover:underline">CodaFácil: parceiro técnico para escalar operação com IA</a></h3>
@@ -169,7 +169,7 @@ Post de blog estatico com foco em OpenClaw, IA aplicada e software sob medida.
         </article>
         <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="../../../../2023/07/03/descubra-estrategias-de-venda-direta/">
-            <img src="../../../../index_svd_files/posts/descubra-estrategias-de-venda-direta.jpg" alt="Descubra Estratégias de Venda Direta" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+            <img src="../../../../imagens/posts/descubra-estrategias-de-venda-direta.jpg" alt="Descubra Estratégias de Venda Direta" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
           <div class="p-4">
             <h3 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../../../../2023/07/03/descubra-estrategias-de-venda-direta/" class="hover:underline">Descubra Estratégias de Venda Direta</a></h3>
@@ -187,7 +187,7 @@ Post de blog estatico com foco em OpenClaw, IA aplicada e software sob medida.
     <div class="mx-auto max-w-[1140px] px-4 py-10 sm:px-6">
       <div class="grid gap-8 md:grid-cols-3">
         <div class="space-y-3">
-          <img src="../../../../index_svd_files/Logo-Branco-1.png" alt="Sistema Venda Direta" class="h-auto w-[180px]" width="1000" height="300" loading="lazy" />
+          <img src="../../../../imagens/Logo-Branco-1.png" alt="Sistema Venda Direta" class="h-auto w-[180px]" width="1000" height="300" loading="lazy" />
           <p class="max-w-sm text-sm leading-relaxed text-white/85">
             A Sistema Venda Direta desenvolve soluções para operação comercial, vendas diretas e evolução tecnológica com IA aplicada ao negócio.
           </p>
