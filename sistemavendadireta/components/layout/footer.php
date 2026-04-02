@@ -28,7 +28,7 @@
       <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
         <div class="footer-block rounded-3xl border border-white/15 bg-white/[0.04] p-5 transition hover:-translate-y-1 hover:bg-white/[0.08] lg:col-span-2">
           <div class="space-y-3">
-            <img decoding="async" src="index_svd_files/Logo-Branco-1.webp" alt="Sistema Venda Direta" class="h-auto w-[190px]" width="1000" height="300" loading="lazy" />
+            <img decoding="async" src="imagens/Logo-Branco-1.webp" alt="Sistema Venda Direta" class="h-auto w-[190px]" width="1000" height="300" loading="lazy" />
             <p class="max-w-md text-sm leading-relaxed text-white/85">A Sistema Venda Direta desenvolve soluções para operação comercial, vendas diretas e evolução tecnológica com IA aplicada ao negócio.</p>
             <div class="grid gap-1 text-sm text-white/90">
               <p>Telefone: <a href="tel:+5511994566726" class="font-semibold hover:underline">11 99456-6726</a></p>

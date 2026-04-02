@@ -29,20 +29,20 @@ Post de blog estatico com foco em PHP: update para PHP 8.5.4 com stack Laravel 1
   <meta property="og:description" content="Como atualizar backend PHP em 2026 com menos risco operacional e com janela de suporte previsivel." />
   <meta property="og:url" content="https://www.sistemavendadireta.com.br/2026/03/25/php-8-5-4-e-laravel-13-checklist-de-upgrade-com-governanca/" />
   <meta property="og:site_name" content="Sistema Venda Direta" />
-  <meta property="og:image" content="https://www.sistemavendadireta.com.br/index_svd_files/posts/php-8-5-4-e-laravel-13-checklist-de-upgrade-com-governanca.jpg" />
+  <meta property="og:image" content="https://www.sistemavendadireta.com.br/imagens/posts/php-8-5-4-e-laravel-13-checklist-de-upgrade-com-governanca.jpg" />
   <meta property="og:image:alt" content="PHP 8.5.4 e Laravel 13: checklist de upgrade com governanca | Sistema Venda Direta" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="PHP 8.5.4 e Laravel 13: checklist de upgrade com governanca | Sistema Venda Direta" />
   <meta name="twitter:description" content="Checklist objetivo para migrar stack PHP/Laravel em marco de 2026 sem travar a operacao." />
-  <meta name="twitter:image" content="https://www.sistemavendadireta.com.br/index_svd_files/posts/php-8-5-4-e-laravel-13-checklist-de-upgrade-com-governanca.jpg" />
+  <meta name="twitter:image" content="https://www.sistemavendadireta.com.br/imagens/posts/php-8-5-4-e-laravel-13-checklist-de-upgrade-com-governanca.jpg" />
   <meta name="twitter:site" content="@sistemavendadireta" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" />
-  <link rel="stylesheet" href="../../../../index_svd_files/site-tailwind.css" />
+  <link rel="stylesheet" href="../../../../css/site-tailwind.css" />
 
-  <link rel="stylesheet" href="../../../../index_svd_files/site-optimizations.css" />
+  <link rel="stylesheet" href="../../../../css/site-optimizations.css" />
 
   <script type="application/ld+json">
 {
@@ -57,7 +57,7 @@ Post de blog estatico com foco em PHP: update para PHP 8.5.4 com stack Laravel 1
         "@id": "https://www.sistemavendadireta.com.br/2026/03/25/php-8-5-4-e-laravel-13-checklist-de-upgrade-com-governanca/"
     },
     "image": [
-        "https://www.sistemavendadireta.com.br/index_svd_files/posts/php-8-5-4-e-laravel-13-checklist-de-upgrade-com-governanca.jpg"
+        "https://www.sistemavendadireta.com.br/imagens/posts/php-8-5-4-e-laravel-13-checklist-de-upgrade-com-governanca.jpg"
     ],
     "author": {
         "@type": "Organization",
@@ -78,7 +78,7 @@ Post de blog estatico com foco em PHP: update para PHP 8.5.4 com stack Laravel 1
   <header class="sticky top-0 z-40 border-b border-white/10 bg-brand/95 backdrop-blur">
     <div class="mx-auto flex max-w-[1140px] items-center justify-between gap-4 px-4 py-3 sm:px-6">
       <a href="../../../../" aria-label="Sistema Venda Direta">
-        <img src="../../../../index_svd_files/Logo-Branco-1.png" alt="Sistema Venda Direta" class="h-auto w-[165px] sm:w-[210px] lg:w-[260px]" width="1000" height="300" />
+        <img src="../../../../imagens/Logo-Branco-1.png" alt="Sistema Venda Direta" class="h-auto w-[165px] sm:w-[210px] lg:w-[260px]" width="1000" height="300" />
       </a>
       <div class="hidden items-center gap-5 text-sm font-medium text-white/90 md:flex">
         <a href="../../../../" class="hover:text-white">Site Principal</a>
@@ -95,7 +95,7 @@ Post de blog estatico com foco em PHP: update para PHP 8.5.4 com stack Laravel 1
       <p class="text-xs font-medium uppercase tracking-wide text-white/70">Blog SVD • 25/03/2026</p>
       <h1 class="mt-2 font-[var(--font-heading)] text-3xl font-semibold leading-tight sm:text-4xl">PHP 8.5.4 e Laravel 13: checklist de upgrade com governanca</h1>
 
-      <img src="../../../../index_svd_files/posts/php-8-5-4-e-laravel-13-checklist-de-upgrade-com-governanca.jpg" alt="PHP 8.5.4 e Laravel 13: checklist de upgrade com governanca" class="mt-6 w-full rounded-2xl border border-white/20" width="1200" height="630" loading="lazy" />
+      <img src="../../../../imagens/posts/php-8-5-4-e-laravel-13-checklist-de-upgrade-com-governanca.jpg" alt="PHP 8.5.4 e Laravel 13: checklist de upgrade com governanca" class="mt-6 w-full rounded-2xl border border-white/20" width="1200" height="630" loading="lazy" />
 
       <div class="prose prose-invert mt-6 max-w-none prose-headings:font-[var(--font-heading)] prose-headings:text-white prose-a:text-white prose-strong:text-white prose-p:text-white/90 prose-li:text-white/90">
 <p>Na semana de 25 de marco de 2026, o ecossistema PHP trouxe dois sinais fortes para times de produto e operacao: o patch oficial <strong>PHP 8.5.4</strong> (12/03) e o ciclo novo do <strong>Laravel 13</strong> (17/03). Para quem roda sistemas criticos, o ponto nao e apenas atualizar versao, e atualizar com previsibilidade de suporte e risco controlado.</p>
@@ -159,7 +159,7 @@ Post de blog estatico com foco em PHP: update para PHP 8.5.4 com stack Laravel 1
       <div class="mt-5 grid gap-4 md:grid-cols-3">
         <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="../../../../2026/03/18/agentes-de-ia-em-2026-mcp-stateful-e-governanca-para-operar-em-escala/">
-            <img src="../../../../index_svd_files/posts/agentes-de-ia-em-2026-mcp-stateful-e-governanca-para-operar-em-escala.jpg" alt="Agentes de IA em 2026: MCP stateful e governanca para operar em escala" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+            <img src="../../../../imagens/posts/agentes-de-ia-em-2026-mcp-stateful-e-governanca-para-operar-em-escala.jpg" alt="Agentes de IA em 2026: MCP stateful e governanca para operar em escala" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
           <div class="p-4">
             <h3 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../../../../2026/03/18/agentes-de-ia-em-2026-mcp-stateful-e-governanca-para-operar-em-escala/" class="hover:underline">Agentes de IA em 2026: MCP stateful e governanca para operar em escala</a></h3>
@@ -168,7 +168,7 @@ Post de blog estatico com foco em PHP: update para PHP 8.5.4 com stack Laravel 1
         </article>
         <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="../../../../2026/03/11/soc-agentico-e-seguranca-multicloud-com-governanca-unificada/">
-            <img src="../../../../index_svd_files/posts/soc-agentico-e-seguranca-multicloud-com-governanca-unificada.jpg" alt="SOC agentico e seguranca multicloud: guia pratico de governanca em 2026" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+            <img src="../../../../imagens/posts/soc-agentico-e-seguranca-multicloud-com-governanca-unificada.jpg" alt="SOC agentico e seguranca multicloud: guia pratico de governanca em 2026" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
           <div class="p-4">
             <h3 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../../../../2026/03/11/soc-agentico-e-seguranca-multicloud-com-governanca-unificada/" class="hover:underline">SOC agentico e seguranca multicloud: guia pratico de governanca em 2026</a></h3>
@@ -177,7 +177,7 @@ Post de blog estatico com foco em PHP: update para PHP 8.5.4 com stack Laravel 1
         </article>
         <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="../../../../2026/03/04/php-8-5-3-em-producao-checklist-para-atualizar-com-seguranca/">
-            <img src="../../../../index_svd_files/posts/php-8-5-3-em-producao-checklist-para-atualizar-com-seguranca.jpg" alt="PHP 8.5.3 em producao: checklist para atualizar com seguranca" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+            <img src="../../../../imagens/posts/php-8-5-3-em-producao-checklist-para-atualizar-com-seguranca.jpg" alt="PHP 8.5.3 em producao: checklist para atualizar com seguranca" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
           <div class="p-4">
             <h3 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../../../../2026/03/04/php-8-5-3-em-producao-checklist-para-atualizar-com-seguranca/" class="hover:underline">PHP 8.5.3 em producao: checklist para atualizar com seguranca</a></h3>
@@ -195,7 +195,7 @@ Post de blog estatico com foco em PHP: update para PHP 8.5.4 com stack Laravel 1
     <div class="mx-auto max-w-[1140px] px-4 py-10 sm:px-6">
       <div class="grid gap-8 md:grid-cols-3">
         <div class="space-y-3">
-          <img src="../../../../index_svd_files/Logo-Branco-1.png" alt="Sistema Venda Direta" class="h-auto w-[180px]" width="1000" height="300" loading="lazy" />
+          <img src="../../../../imagens/Logo-Branco-1.png" alt="Sistema Venda Direta" class="h-auto w-[180px]" width="1000" height="300" loading="lazy" />
           <p class="max-w-sm text-sm leading-relaxed text-white/85">
             A Sistema Venda Direta desenvolve solucoes para operacao comercial, vendas diretas e evolucao tecnologica com IA aplicada ao negocio.
           </p>

@@ -4,9 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:svd": "tailwindcss -c tailwind.config.cjs -i ./sistemavendadireta/index_svd_files/site-tailwind.input.css -o ./sistemavendadireta/index_svd_files/site-tailwind.css --minify",
-    "build:codafacil": "tailwindcss -c tailwind.codafacil.cjs -i ./codafacil/site-tailwind.input.css -o ./codafacil/site-tailwind.css --minify",
-    "build:css": "npm run build:svd && npm run build:codafacil"
+    "build:root": "tailwindcss -c tailwind.root.cjs -i ./css/site-tailwind.input.css -o ./css/site-tailwind.css --minify",
+    "build:svd": "tailwindcss -c tailwind.config.cjs -i ./sistemavendadireta/css/site-tailwind.input.css -o ./sistemavendadireta/css/site-tailwind.css --minify",
+    "build:codafacil": "tailwindcss -c tailwind.codafacil.cjs -i ./codafacil/site-tailwind.input.css -o ./codafacil/css/site-tailwind.css --minify",
+    "build:fluxointeligenteia": "tailwindcss -c tailwind.fluxointeligenteia.cjs -i ./fluxointeligenteia/site-tailwind.input.css -o ./fluxointeligenteia/css/site-tailwind.css --minify",
+    "build:wordpressconsultoria": "tailwindcss -c tailwind.wordpressconsultoria.cjs -i ./wordpressconsultoria/site-tailwind.input.css -o ./wordpressconsultoria/css/site-tailwind.css --minify",
+    "build:css": "npm run build:root && npm run build:svd && npm run build:codafacil && npm run build:fluxointeligenteia && npm run build:wordpressconsultoria"
   },
   "repository": {
     "type": "git",

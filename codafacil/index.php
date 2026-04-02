@@ -29,7 +29,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="site-tailwind.css" />
+  <link rel="stylesheet" href="css/site-tailwind.css" />
 
   <style>
     body, main, footer { background: #04110d !important; font-family: 'Inter', system-ui, sans-serif; }
@@ -43,7 +43,7 @@
     .icon-wrap{display:inline-flex;width:40px;height:40px;align-items:center;justify-content:center;border-radius:16px;background:rgba(255,255,255,.1);box-shadow:inset 0 0 0 1px rgba(255,255,255,.12)}
   </style>
 
-  <link rel="stylesheet" href="site-optimizations.css" />
+  <link rel="stylesheet" href="css/site-optimizations.css" />
 
   <script type="application/ld+json">
     {
@@ -81,7 +81,7 @@
       <nav class="flex items-center justify-between py-6">
         <!-- Logo -->
         <a href="/" class="flex items-center gap-3">
-          <img decoding="async" src="logo.webp" class="logo-img" alt="Codafacil.dev" />
+          <img decoding="async" src="imagens/logo.webp" class="logo-img" alt="Codafacil.dev" />
         </a>
 
         <!-- Menu (desktop) -->

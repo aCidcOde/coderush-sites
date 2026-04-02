@@ -38,9 +38,9 @@ Pagina de servicos WordPress/WooCommerce e Laravel com foco em conversao e quali
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" />
-  <link rel="stylesheet" href="../index_svd_files/site-tailwind.css" />
+  <link rel="stylesheet" href="../css/site-tailwind.css" />
 
-  <link rel="stylesheet" href="../index_svd_files/site-optimizations.css" />
+  <link rel="stylesheet" href="../css/site-optimizations.css" />
 
   <script type="application/ld+json">
     {
@@ -68,7 +68,7 @@ Pagina de servicos WordPress/WooCommerce e Laravel com foco em conversao e quali
   <header class="border-b border-white/15 bg-brand-dark/30">
     <div class="mx-auto flex w-full max-w-[1140px] items-center justify-between px-4 py-4 sm:px-6">
       <a href="../" class="block" aria-label="Sistema Venda Direta">
-        <img decoding="async" src="../index_svd_files/Logo-Branco-1.webp" alt="Sistema Venda Direta" class="h-auto w-[165px] sm:w-[210px]" width="1000" height="300" />
+        <img decoding="async" src="../imagens/Logo-Branco-1.webp" alt="Sistema Venda Direta" class="h-auto w-[165px] sm:w-[210px]" width="1000" height="300" />
       </a>
       <a href="https://wa.me/+5511994566726" target="_blank" rel="noopener noreferrer" class="hidden rounded-full border border-white/70 px-5 py-2 text-sm font-semibold uppercase tracking-wide hover:bg-white/10 sm:inline-flex">
         Falar no WhatsApp
@@ -228,7 +228,7 @@ Pagina de servicos WordPress/WooCommerce e Laravel com foco em conversao e quali
     <div class="mx-auto max-w-[1140px] px-4 py-10 sm:px-6">
       <div class="grid gap-8 md:grid-cols-3">
         <div class="space-y-3">
-          <img decoding="async" src="../index_svd_files/Logo-Branco-1.webp" alt="Sistema Venda Direta" class="h-auto w-[180px]" width="1000" height="300" loading="lazy" />
+          <img decoding="async" src="../imagens/Logo-Branco-1.webp" alt="Sistema Venda Direta" class="h-auto w-[180px]" width="1000" height="300" loading="lazy" />
           <p class="max-w-sm text-sm leading-relaxed text-white/85">A Sistema Venda Direta desenvolve soluções para operação comercial, vendas diretas e evolução tecnológica com IA aplicada ao negócio.</p>
           <p class="text-sm text-white/90">Telefone: <a href="tel:+5511994566726" class="font-semibold hover:underline">11 99456-6726</a></p>
           <p class="text-sm text-white/90">Email: <a href="mailto:contato@sistemavendadireta.com.br" class="font-semibold hover:underline">contato@sistemavendadireta.com.br</a></p>
