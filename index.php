@@ -79,6 +79,7 @@
         <p class="mt-3 text-white/60">Cada empresa com especialidade própria, integradas em um ecossistema tecnológico coeso.</p>
       </div>
 
+      <!-- Linha 1: 3 cards -->
       <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
 
         <!-- Sistema Venda Direta -->
@@ -105,6 +106,11 @@
           <span class="mt-4 inline-block text-xs font-semibold text-sky-400">wordpressconsultoria.com.br →</span>
         </a>
 
+      </div>
+
+      <!-- Linha 2: 2 cards centralizados -->
+      <div class="mt-6 grid grid-cols-2 gap-6 lg:mx-auto lg:w-2/3">
+
         <!-- FluxoInteligente IA -->
         <a href="/fluxointeligenteia/" class="card-hover group block rounded-2xl border border-white/10 bg-white/[0.04] p-6">
           <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-600/20 text-2xl">⚡</div>
@@ -114,18 +120,10 @@
         </a>
 
         <!-- Traço Creative Lab -->
-        <div class="card-hover group block rounded-2xl border border-white/10 bg-white/[0.04] p-6 opacity-75">
+        <div class="card-hover block rounded-2xl border border-white/10 bg-white/[0.04] p-6 opacity-75">
           <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-rose-600/20 text-2xl">🎨</div>
           <h3 class="font-heading text-lg font-bold text-white">Traço Creative Lab</h3>
           <p class="mt-2 text-sm leading-relaxed text-white/65">Experiências digitais completas: design e UX, prototipagem de interfaces e desenvolvimento front-end para web e mobile. Do conceito à implementação.</p>
-          <span class="mt-4 inline-block rounded-full border border-white/20 px-3 py-0.5 text-xs text-white/45">Em breve</span>
-        </div>
-
-        <!-- No Sobrado Tech -->
-        <div class="card-hover group block rounded-2xl border border-white/10 bg-white/[0.04] p-6 opacity-50">
-          <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-amber-600/20 text-2xl">🏠</div>
-          <h3 class="font-heading text-lg font-bold text-white">No Sobrado Tech</h3>
-          <p class="mt-2 text-sm leading-relaxed text-white/65">Consultoria em tecnologia para o setor imobiliário.</p>
           <span class="mt-4 inline-block rounded-full border border-white/20 px-3 py-0.5 text-xs text-white/45">Em breve</span>
         </div>
 
@@ -169,6 +167,13 @@
 
   <!-- Footer -->
   <footer class="border-t border-white/10 px-6 py-8 text-center text-xs text-white/40">
+    <p class="mb-3 text-white/30 text-[10px] uppercase tracking-widest">Ecossistema CodeRush</p>
+    <div class="mb-4 flex flex-wrap justify-center gap-2">
+      <a href="https://sistemavendadireta.com.br" target="_blank" rel="noopener noreferrer" class="rounded-full border border-white/15 px-3 py-1 transition hover:border-white/35 hover:text-white/80">sistemavendadireta.com.br</a>
+      <a href="https://codafacil.dev" target="_blank" rel="noopener noreferrer" class="rounded-full border border-white/15 px-3 py-1 transition hover:border-white/35 hover:text-white/80">codafacil.dev</a>
+      <a href="https://wordpressconsultoria.com.br" target="_blank" rel="noopener noreferrer" class="rounded-full border border-white/15 px-3 py-1 transition hover:border-white/35 hover:text-white/80">wordpressconsultoria.com.br</a>
+      <a href="https://fluxointeligenteia.com.br" target="_blank" rel="noopener noreferrer" class="rounded-full border border-white/15 px-3 py-1 transition hover:border-white/35 hover:text-white/80">fluxointeligenteia.com.br</a>
+    </div>
     <p>© <?= date('Y') ?> CodeRush — Todos os direitos reservados.</p>
   </footer>
 

@@ -26,9 +26,22 @@
   <meta name="twitter:description" content="Desenvolvimento de software com IA, integração e automação para empresas que precisam escalar com qualidade e previsibilidade." />
   <meta name="twitter:image" content="https://www.sistemavendadireta.com.br/codafacil/logo.png" />
   <meta name="twitter:site" content="@sistemavendadireta" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="site-tailwind.css" />
 
-  <style>.hero-bg{background:radial-gradient(1200px 600px at 85% 30%,rgba(255,255,255,.1),rgba(255,255,255,0) 60%),radial-gradient(900px 500px at 75% 70%,rgba(255,255,255,.08),rgba(255,255,255,0) 55%),linear-gradient(180deg,#0b4db6 0%,#0a46aa 60%,#083e9a 100%)}.btn-outline{box-shadow:inset 0 0 0 1px rgba(255,255,255,.35)}.soft-shadow{box-shadow:0 18px 45px rgba(0,0,0,.25)}.logo-img{width:360px;height:auto;opacity:1!important;filter:none!important;mix-blend-mode:normal!important;image-rendering:-webkit-optimize-contrast;display:block}@media (max-width:640px){.logo-img{width:240px}}.services-tight{padding-top:0!important;margin-top:0!important}.icon-wrap{display:inline-flex;width:40px;height:40px;align-items:center;justify-content:center;border-radius:16px;background:rgba(255,255,255,.1);box-shadow:inset 0 0 0 1px rgba(255,255,255,.12)}</style>
+  <style>
+    body, main, footer { background: #04110d !important; font-family: 'Inter', system-ui, sans-serif; }
+    h1,h2,h3,h4 { font-family: 'Montserrat', sans-serif; }
+    .hero-bg{background:radial-gradient(1200px 600px at 85% 30%,rgba(139,92,246,.15),rgba(139,92,246,0) 60%),radial-gradient(900px 500px at 15% 70%,rgba(59,130,246,.12),rgba(59,130,246,0) 55%),#04110d}
+    .btn-outline{box-shadow:inset 0 0 0 1px rgba(255,255,255,.35)}
+    .soft-shadow{box-shadow:0 18px 45px rgba(0,0,0,.45)}
+    .logo-img{width:360px;height:auto;opacity:1!important;filter:none!important;mix-blend-mode:normal!important;image-rendering:-webkit-optimize-contrast;display:block}
+    @media (max-width:640px){.logo-img{width:240px}}
+    .services-tight{padding-top:0!important;margin-top:0!important}
+    .icon-wrap{display:inline-flex;width:40px;height:40px;align-items:center;justify-content:center;border-radius:16px;background:rgba(255,255,255,.1);box-shadow:inset 0 0 0 1px rgba(255,255,255,.12)}
+  </style>
 
   <link rel="stylesheet" href="site-optimizations.css" />
 
@@ -61,7 +74,7 @@
   </script>
 </head>
 
-<body class="min-h-full bg-[#083e9a] text-white site-optimized">
+<body class="min-h-full bg-[#04110d] text-white site-optimized">
   <!-- Header / Hero -->
   <header class="hero-bg">
     <div class="mx-auto max-w-7xl px-6">
@@ -291,7 +304,7 @@
     </div>
   </header>
 
-  <main class="bg-[#083e9a]">
+  <main class="bg-[#04110d]">
     <!-- Video -->
     <section id="video-demo" class="mx-auto max-w-7xl px-6 pb-16 pt-10 md:pb-20 md:pt-12">
       <div class="soft-shadow rounded-3xl bg-white/10 p-6 ring-1 ring-white/15 md:p-8">
@@ -587,10 +600,10 @@
 
     <!-- Contato -->
     <section id="contato" class="mx-auto max-w-7xl px-6 pb-24">
-      <div class="grid gap-10 rounded-3xl bg-white p-10 text-[#0b4db6] md:grid-cols-2">
+      <div class="grid gap-10 rounded-3xl border border-white/10 bg-white/[0.04] p-10 md:grid-cols-2">
         <div>
           <h3 class="text-3xl font-extrabold">Solicite um Orçamento</h3>
-          <p class="mt-4 text-sm text-[#0b4db6]/80">
+          <p class="mt-4 text-sm text-white/70">
             Envie um resumo do projeto. Se preferir, chame no WhatsApp.
           </p>
           <a href="https://wa.me/5511994566726?text=Ol%C3%A1%2C%20quero%20um%20or%C3%A7amento%20para%20meu%20projeto%20com%20a%20Codafacil."
@@ -601,15 +614,15 @@
           </a>
 
           <div class="mt-6 space-y-3 text-sm">
-            <div class="rounded-2xl bg-[#0b4db6]/5 p-4">• Objetivo do produto e prioridade</div>
-            <div class="rounded-2xl bg-[#0b4db6]/5 p-4">• Stack atual (se existir) e integrações</div>
-            <div class="rounded-2xl bg-[#0b4db6]/5 p-4">• Prazo desejado e restrições</div>
+            <div class="rounded-2xl bg-white/[0.06] p-4 text-white/80">• Objetivo do produto e prioridade</div>
+            <div class="rounded-2xl bg-white/[0.06] p-4 text-white/80">• Stack atual (se existir) e integrações</div>
+            <div class="rounded-2xl bg-white/[0.06] p-4 text-white/80">• Prazo desejado e restrições</div>
           </div>
         </div>
 
-        <div class="rounded-2xl border border-[#0b4db6]/15 bg-[#0b4db6]/5 p-6">
+        <div class="rounded-2xl border border-white/10 bg-white/[0.06] p-6">
           <h3 class="text-xl font-bold">Atendimento direto no WhatsApp</h3>
-          <p class="mt-3 text-sm text-[#0b4db6]/80">
+          <p class="mt-3 text-sm text-white/70">
             Formulário desativado. O contato comercial da CodaFácil agora é somente via WhatsApp.
           </p>
           <a href="https://wa.me/5511994566726?text=Ol%C3%A1%2C%20quero%20um%20or%C3%A7amento%20para%20meu%20projeto%20com%20a%20Codafacil."
@@ -618,7 +631,7 @@
              class="mt-5 inline-flex w-full items-center justify-center rounded-full bg-[#25D366] px-6 py-4 text-sm font-bold text-white hover:bg-[#22c55e]">
             Falar no WhatsApp
           </a>
-          <p class="mt-4 text-xs text-[#0b4db6]/70">
+          <p class="mt-4 text-xs text-white/50">
             Atendimento humanizado de verdade: nada de robô no comando. Do outro lado tem uma pessoa do comercial, pronta para te atender.
           </p>
         </div>
@@ -637,7 +650,7 @@
     </svg>
   </a>
 
-  <footer class="border-t border-white/10 bg-[#083e9a]">
+  <footer class="border-t border-white/10 bg-[#04110d]">
     <div class="mx-auto max-w-7xl px-6 py-10">
       <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
         <div class="text-sm text-white/70">© <span id="year"></span> Codafacil.dev — Desenvolvimento orientado por IA</div>
@@ -646,7 +659,15 @@
           <a href="#processo" class="hover:text-white">Processo</a>
           <a href="#vantagens" class="hover:text-white">Vantagens</a>
           <a href="#contato" class="hover:text-white">Contato</a>
-          <a href="https://www.sistemavendadireta.com.br/" target="_blank" rel="noopener noreferrer" class="hover:text-white">Sistema Venda Direta</a>
+        </div>
+      </div>
+      <div class="mt-6 border-t border-white/10 pt-5">
+        <p class="mb-3 text-center text-[10px] uppercase tracking-widest text-white/30">Ecossistema CodeRush</p>
+        <div class="flex flex-wrap justify-center gap-2 text-xs text-white/45">
+          <a href="https://coderush.com.br" target="_blank" rel="noopener noreferrer" class="rounded-full border border-white/15 px-3 py-1 transition hover:border-white/35 hover:text-white/80">coderush.com.br</a>
+          <a href="https://sistemavendadireta.com.br" target="_blank" rel="noopener noreferrer" class="rounded-full border border-white/15 px-3 py-1 transition hover:border-white/35 hover:text-white/80">sistemavendadireta.com.br</a>
+          <a href="https://wordpressconsultoria.com.br" target="_blank" rel="noopener noreferrer" class="rounded-full border border-white/15 px-3 py-1 transition hover:border-white/35 hover:text-white/80">wordpressconsultoria.com.br</a>
+          <a href="https://fluxointeligenteia.com.br" target="_blank" rel="noopener noreferrer" class="rounded-full border border-white/15 px-3 py-1 transition hover:border-white/35 hover:text-white/80">fluxointeligenteia.com.br</a>
         </div>
       </div>
     </div>
