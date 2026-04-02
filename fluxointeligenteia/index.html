@@ -32,6 +32,8 @@
     .card-hover:hover { transform: translateY(-5px); box-shadow: 0 16px 32px rgba(5,150,105,0.2); }
     .gradient-text { background: linear-gradient(135deg, #34d399, #60a5fa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
     .flow-line { border-left: 2px dashed rgba(52,211,153,0.3); }
+    .setor-pill { transition: background 0.2s, color 0.2s, border-color 0.2s; }
+    .setor-pill:hover { background: rgba(5,150,105,0.2); border-color: rgba(52,211,153,0.5); color: #6ee7b7; }
   </style>
 </head>
 <body class="min-h-screen antialiased">
@@ -46,6 +48,8 @@
       <nav class="hidden items-center gap-6 text-sm text-white/75 md:flex">
         <a href="#como-funciona" class="transition hover:text-white">Como funciona</a>
         <a href="#solucoes" class="transition hover:text-white">Soluções</a>
+        <a href="#setores" class="transition hover:text-white">Setores</a>
+        <a href="#planos" class="transition hover:text-white">Planos</a>
         <a href="#contato" class="rounded-full bg-brand px-4 py-1.5 text-white transition hover:bg-emerald-500">Contato</a>
       </nav>
     </div>
@@ -67,6 +71,39 @@
       <div class="mt-8 flex flex-wrap justify-center gap-4">
         <a href="#contato" class="rounded-full bg-brand px-7 py-3 text-sm font-semibold text-white transition hover:bg-emerald-500">Automatize agora</a>
         <a href="#como-funciona" class="rounded-full border border-white/25 px-7 py-3 text-sm font-semibold text-white/90 transition hover:border-white/60 hover:bg-white/5">Como funciona</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Diferenciais -->
+  <section class="px-6 py-16">
+    <div class="mx-auto max-w-6xl">
+      <div class="mb-10 text-center">
+        <p class="text-xs font-semibold uppercase tracking-widest text-emerald-400">Por que a FluxoInteligente</p>
+        <h2 class="mt-2 font-heading text-4xl font-bold">Automação que realmente funciona</h2>
+        <p class="mt-3 text-white/60">Do diagnóstico ao agente em produção, com resultado mensurável.</p>
+      </div>
+      <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="card-hover rounded-2xl border border-white/10 bg-white/[0.04] p-6 text-center">
+          <div class="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-600/20 text-2xl">⚡</div>
+          <h3 class="font-heading text-base font-bold">Entrega rápida</h3>
+          <p class="mt-1 text-xs text-white/55">Primeiros fluxos em produção em até 2 semanas após o diagnóstico.</p>
+        </div>
+        <div class="card-hover rounded-2xl border border-white/10 bg-white/[0.04] p-6 text-center">
+          <div class="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-600/20 text-2xl">🔒</div>
+          <h3 class="font-heading text-base font-bold">LGPD em foco</h3>
+          <p class="mt-1 text-xs text-white/55">Fluxos desenhados com conformidade e proteção de dados desde o início.</p>
+        </div>
+        <div class="card-hover rounded-2xl border border-white/10 bg-white/[0.04] p-6 text-center">
+          <div class="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-600/20 text-2xl">🧩</div>
+          <h3 class="font-heading text-base font-bold">Multi-sistema</h3>
+          <p class="mt-1 text-xs text-white/55">Integração nativa com CRMs, ERPs, e-commerce, APIs e planilhas.</p>
+        </div>
+        <div class="card-hover rounded-2xl border border-white/10 bg-white/[0.04] p-6 text-center">
+          <div class="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-600/20 text-2xl">📈</div>
+          <h3 class="font-heading text-base font-bold">ROI mensurável</h3>
+          <p class="mt-1 text-xs text-white/55">Mapeamos KPIs antes e depois para provar o ganho real de cada automação.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -174,6 +211,27 @@
     </div>
   </section>
 
+  <!-- Setores -->
+  <section id="setores" class="px-6 py-20">
+    <div class="mx-auto max-w-4xl text-center">
+      <p class="text-xs font-semibold uppercase tracking-widest text-emerald-400">Mercados atendidos</p>
+      <h2 class="mt-2 font-heading text-4xl font-bold">Setores</h2>
+      <p class="mt-3 text-white/60 max-w-xl mx-auto">Levamos automação inteligente para empresas de diferentes segmentos. Cada setor tem seus próprios desafios — e nós conhecemos cada um deles.</p>
+      <div class="mt-10 flex flex-wrap justify-center gap-3">
+        <span class="setor-pill cursor-default rounded-full border border-white/15 bg-white/[0.04] px-5 py-2.5 text-sm font-medium text-white/75">🏦 Financeiro</span>
+        <span class="setor-pill cursor-default rounded-full border border-white/15 bg-white/[0.04] px-5 py-2.5 text-sm font-medium text-white/75">🛒 Varejo & E-commerce</span>
+        <span class="setor-pill cursor-default rounded-full border border-white/15 bg-white/[0.04] px-5 py-2.5 text-sm font-medium text-white/75">🏗️ Construção Civil</span>
+        <span class="setor-pill cursor-default rounded-full border border-white/15 bg-white/[0.04] px-5 py-2.5 text-sm font-medium text-white/75">⚙️ Indústria</span>
+        <span class="setor-pill cursor-default rounded-full border border-white/15 bg-white/[0.04] px-5 py-2.5 text-sm font-medium text-white/75">🎓 Educação</span>
+        <span class="setor-pill cursor-default rounded-full border border-white/15 bg-white/[0.04] px-5 py-2.5 text-sm font-medium text-white/75">🏥 Saúde</span>
+        <span class="setor-pill cursor-default rounded-full border border-white/15 bg-white/[0.04] px-5 py-2.5 text-sm font-medium text-white/75">⚖️ Jurídico</span>
+        <span class="setor-pill cursor-default rounded-full border border-white/15 bg-white/[0.04] px-5 py-2.5 text-sm font-medium text-white/75">👥 RH & Recrutamento</span>
+        <span class="setor-pill cursor-default rounded-full border border-white/15 bg-white/[0.04] px-5 py-2.5 text-sm font-medium text-white/75">🚚 Logística</span>
+        <span class="setor-pill cursor-default rounded-full border border-white/15 bg-white/[0.04] px-5 py-2.5 text-sm font-medium text-white/75">🏢 Serviços B2B</span>
+      </div>
+    </div>
+  </section>
+
   <!-- Resultados -->
   <section class="px-6 py-16">
     <div class="mx-auto max-w-4xl rounded-3xl border border-white/10 bg-white/[0.03] p-10 text-center">
@@ -192,6 +250,104 @@
           <p class="font-heading text-3xl font-extrabold text-emerald-400">100%</p>
           <p class="mt-1 text-sm text-white/60">Adaptado ao seu negócio</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Depoimentos -->
+  <section class="px-6 py-20">
+    <div class="mx-auto max-w-6xl">
+      <div class="mb-12 text-center">
+        <p class="text-xs font-semibold uppercase tracking-widest text-emerald-400">Clientes</p>
+        <h2 class="mt-2 font-heading text-4xl font-bold">O que dizem sobre nós</h2>
+      </div>
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+        <div class="card-hover rounded-2xl border border-white/10 bg-white/[0.04] p-6 flex flex-col gap-4">
+          <div class="flex gap-1 text-emerald-400 text-sm">★★★★★</div>
+          <p class="text-sm text-white/75 leading-relaxed">"Automatizamos toda a triagem de propostas comerciais. O que levava horas passou a acontecer em minutos, sem erro humano e com rastreabilidade completa."</p>
+          <div class="mt-auto pt-4 border-t border-white/10">
+            <p class="font-semibold text-sm">Diretor Comercial</p>
+            <p class="text-xs text-white/40">Empresa de Serviços B2B — São Paulo</p>
+          </div>
+        </div>
+
+        <div class="card-hover rounded-2xl border border-white/10 bg-white/[0.04] p-6 flex flex-col gap-4">
+          <div class="flex gap-1 text-emerald-400 text-sm">★★★★★</div>
+          <p class="text-sm text-white/75 leading-relaxed">"Nossa equipe de RH deixou de alimentar planilhas manualmente. Os agentes fazem a triagem, agendam entrevistas e notificam candidatos — tudo integrado ao nosso sistema."</p>
+          <div class="mt-auto pt-4 border-t border-white/10">
+            <p class="font-semibold text-sm">Gerente de RH</p>
+            <p class="text-xs text-white/40">Rede de Varejo — Minas Gerais</p>
+          </div>
+        </div>
+
+        <div class="card-hover rounded-2xl border border-white/10 bg-white/[0.04] p-6 flex flex-col gap-4">
+          <div class="flex gap-1 text-emerald-400 text-sm">★★★★★</div>
+          <p class="text-sm text-white/75 leading-relaxed">"Implantamos um agente de atendimento no WhatsApp em menos de duas semanas. Os clientes recebem resposta imediata e a equipe foca nos casos que realmente precisam de atenção humana."</p>
+          <div class="mt-auto pt-4 border-t border-white/10">
+            <p class="font-semibold text-sm">CEO</p>
+            <p class="text-xs text-white/40">Clínica de Saúde — Rio de Janeiro</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Planos -->
+  <section id="planos" class="px-6 py-20">
+    <div class="mx-auto max-w-6xl">
+      <div class="mb-12 text-center">
+        <p class="text-xs font-semibold uppercase tracking-widest text-emerald-400">Investimento</p>
+        <h2 class="mt-2 font-heading text-4xl font-bold">Planos</h2>
+        <p class="mt-3 text-white/60">Escolha a modalidade que faz mais sentido para o seu momento.</p>
+      </div>
+      <div class="grid gap-6 sm:grid-cols-3">
+
+        <!-- Diagnóstico -->
+        <div class="card-hover rounded-2xl border border-white/10 bg-white/[0.04] p-8 flex flex-col">
+          <p class="text-xs font-semibold uppercase tracking-widest text-emerald-400">Diagnóstico</p>
+          <h3 class="mt-2 font-heading text-2xl font-bold">Mapeamento</h3>
+          <p class="mt-3 text-sm text-white/60 flex-1">Análise 360° dos seus processos operacionais, identificação das maiores oportunidades de automação e entrega de um roadmap priorizado com estimativa de ROI.</p>
+          <ul class="mt-6 space-y-2 text-sm text-white/70">
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Entrevistas com times-chave</li>
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Mapa de processos atual</li>
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Roadmap de automação (90 dias)</li>
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Estimativa de ganho por processo</li>
+          </ul>
+          <a href="#contato" class="mt-8 block rounded-full border border-emerald-600 px-6 py-2.5 text-center text-sm font-semibold text-emerald-400 transition hover:bg-emerald-600 hover:text-white">Solicitar diagnóstico</a>
+        </div>
+
+        <!-- Implementação -->
+        <div class="card-hover rounded-2xl border border-emerald-600/50 bg-emerald-900/20 p-8 flex flex-col relative">
+          <div class="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-emerald-600 px-4 py-0.5 text-xs font-bold text-white uppercase tracking-wide">Mais popular</div>
+          <p class="text-xs font-semibold uppercase tracking-widest text-emerald-400">Implementação</p>
+          <h3 class="mt-2 font-heading text-2xl font-bold">Fluxo Completo</h3>
+          <p class="mt-3 text-sm text-white/60 flex-1">Construção e entrega de um ou mais fluxos automatizados em produção, com documentação, treinamento da equipe e suporte pós-go-live.</p>
+          <ul class="mt-6 space-y-2 text-sm text-white/70">
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Design e desenvolvimento do fluxo</li>
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Integração com seus sistemas</li>
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Testes e homologação</li>
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Treinamento da equipe</li>
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Suporte 30 dias pós-entrega</li>
+          </ul>
+          <a href="#contato" class="mt-8 block rounded-full bg-brand px-6 py-2.5 text-center text-sm font-semibold text-white transition hover:bg-emerald-500">Solicitar proposta</a>
+        </div>
+
+        <!-- Retainer -->
+        <div class="card-hover rounded-2xl border border-white/10 bg-white/[0.04] p-8 flex flex-col">
+          <p class="text-xs font-semibold uppercase tracking-widest text-emerald-400">Contínuo</p>
+          <h3 class="mt-2 font-heading text-2xl font-bold">Parceiro IA</h3>
+          <p class="mt-3 text-sm text-white/60 flex-1">Evolução contínua dos seus fluxos com squad dedicado. Ideal para empresas que querem escalar a automação mês a mês com agilidade e previsibilidade.</p>
+          <ul class="mt-6 space-y-2 text-sm text-white/70">
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Horas mensais dedicadas</li>
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Monitoramento e otimização</li>
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Novos fluxos a cada sprint</li>
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Relatório mensal de impacto</li>
+          </ul>
+          <a href="#contato" class="mt-8 block rounded-full border border-emerald-600 px-6 py-2.5 text-center text-sm font-semibold text-emerald-400 transition hover:bg-emerald-600 hover:text-white">Falar com especialista</a>
+        </div>
+
       </div>
     </div>
   </section>
