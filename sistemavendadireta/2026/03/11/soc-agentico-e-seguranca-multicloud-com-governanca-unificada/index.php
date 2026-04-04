@@ -29,20 +29,20 @@ Post de blog estatico com foco em tecnologia: SOC agentico e seguranca multiclou
   <meta property="og:description" content="Veja como combinar deteccao, remediacao e compliance para diminuir risco operacional em ambientes multicloud." />
   <meta property="og:url" content="https://www.sistemavendadireta.com.br/2026/03/11/soc-agentico-e-seguranca-multicloud-com-governanca-unificada/" />
   <meta property="og:site_name" content="Sistema Venda Direta" />
-  <meta property="og:image" content="https://www.sistemavendadireta.com.br/imagens/posts/soc-agentico-e-seguranca-multicloud-com-governanca-unificada.jpg" />
+  <meta property="og:image" content="https://www.sistemavendadireta.com.br/index_svd_files/posts/soc-agentico-e-seguranca-multicloud-com-governanca-unificada.jpg" />
   <meta property="og:image:alt" content="SOC agentico e seguranca multicloud: guia pratico de governanca em 2026 | Sistema Venda Direta" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="SOC agentico e seguranca multicloud: guia pratico de governanca em 2026 | Sistema Venda Direta" />
   <meta name="twitter:description" content="Guia pratico para estruturar governanca de seguranca multicloud com resposta mais rapida e menor risco." />
-  <meta name="twitter:image" content="https://www.sistemavendadireta.com.br/imagens/posts/soc-agentico-e-seguranca-multicloud-com-governanca-unificada.jpg" />
+  <meta name="twitter:image" content="https://www.sistemavendadireta.com.br/index_svd_files/posts/soc-agentico-e-seguranca-multicloud-com-governanca-unificada.jpg" />
   <meta name="twitter:site" content="@sistemavendadireta" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" />
-  <link rel="stylesheet" href="../../../../css/site-tailwind.css" />
+  <link rel="stylesheet" href="../../../../index_svd_files/site-tailwind.css" />
 
-  <link rel="stylesheet" href="../../../../css/site-optimizations.css" />
+  <link rel="stylesheet" href="../../../../index_svd_files/site-optimizations.css" />
 
   <script type="application/ld+json">
 {
@@ -57,7 +57,7 @@ Post de blog estatico com foco em tecnologia: SOC agentico e seguranca multiclou
         "@id": "https://www.sistemavendadireta.com.br/2026/03/11/soc-agentico-e-seguranca-multicloud-com-governanca-unificada/"
     },
     "image": [
-        "https://www.sistemavendadireta.com.br/imagens/posts/soc-agentico-e-seguranca-multicloud-com-governanca-unificada.jpg"
+        "https://www.sistemavendadireta.com.br/index_svd_files/posts/soc-agentico-e-seguranca-multicloud-com-governanca-unificada.jpg"
     ],
     "author": {
         "@type": "Organization",
@@ -78,7 +78,7 @@ Post de blog estatico com foco em tecnologia: SOC agentico e seguranca multiclou
   <header class="sticky top-0 z-40 border-b border-white/10 bg-brand/95 backdrop-blur">
     <div class="mx-auto flex max-w-[1140px] items-center justify-between gap-4 px-4 py-3 sm:px-6">
       <a href="../../../../" aria-label="Sistema Venda Direta">
-        <img src="../../../../imagens/Logo-Branco-1.png" alt="Sistema Venda Direta" class="h-auto w-[165px] sm:w-[210px] lg:w-[260px]" width="1000" height="300" />
+        <img src="../../../../index_svd_files/Logo-Branco-1.png" alt="Sistema Venda Direta" class="h-auto w-[165px] sm:w-[210px] lg:w-[260px]" width="1000" height="300" />
       </a>
       <div class="hidden items-center gap-5 text-sm font-medium text-white/90 md:flex">
         <a href="../../../../" class="hover:text-white">Site Principal</a>
@@ -95,7 +95,7 @@ Post de blog estatico com foco em tecnologia: SOC agentico e seguranca multiclou
       <p class="text-xs font-medium uppercase tracking-wide text-white/70">Blog SVD • 11/03/2026</p>
       <h1 class="mt-2 font-[var(--font-heading)] text-3xl font-semibold leading-tight sm:text-4xl">SOC agentico e seguranca multicloud: guia pratico de governanca em 2026</h1>
 
-      <img src="../../../../imagens/posts/soc-agentico-e-seguranca-multicloud-com-governanca-unificada.jpg" alt="SOC agentico e seguranca multicloud: guia pratico de governanca em 2026" class="mt-6 w-full rounded-2xl border border-white/20" width="1200" height="630" loading="lazy" />
+      <img src="../../../../index_svd_files/posts/soc-agentico-e-seguranca-multicloud-com-governanca-unificada.jpg" alt="SOC agentico e seguranca multicloud: guia pratico de governanca em 2026" class="mt-6 w-full rounded-2xl border border-white/20" width="1200" height="630" loading="lazy" />
 
       <div class="prose prose-invert mt-6 max-w-none prose-headings:font-[var(--font-heading)] prose-headings:text-white prose-a:text-white prose-strong:text-white prose-p:text-white/90 prose-li:text-white/90">
 <p>A agenda de tecnologia em 2026 esta acelerando um movimento claro: seguranca deixou de ser um conjunto isolado de ferramentas e virou camada central da operacao. Com mais empresas distribuindo carga entre provedores, o desafio mudou de "detectar" para "detectar e responder com governanca".</p>
@@ -158,7 +158,7 @@ Post de blog estatico com foco em tecnologia: SOC agentico e seguranca multiclou
       <div class="mt-5 grid gap-4 md:grid-cols-3">
         <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="../../../../2026/03/04/php-8-5-3-em-producao-checklist-para-atualizar-com-seguranca/">
-            <img src="../../../../imagens/posts/php-8-5-3-em-producao-checklist-para-atualizar-com-seguranca.jpg" alt="PHP 8.5.3 em producao: checklist para atualizar com seguranca" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+            <img src="../../../../index_svd_files/posts/php-8-5-3-em-producao-checklist-para-atualizar-com-seguranca.jpg" alt="PHP 8.5.3 em producao: checklist para atualizar com seguranca" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
           <div class="p-4">
             <h3 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../../../../2026/03/04/php-8-5-3-em-producao-checklist-para-atualizar-com-seguranca/" class="hover:underline">PHP 8.5.3 em producao: checklist para atualizar com seguranca</a></h3>
@@ -167,7 +167,7 @@ Post de blog estatico com foco em tecnologia: SOC agentico e seguranca multiclou
         </article>
         <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="../../../../2026/02/25/ia-conectada-a-ferramentas-o-que-muda-na-operacao/">
-            <img src="../../../../imagens/posts/ia-conectada-a-ferramentas-o-que-muda-na-operacao.jpg" alt="IA conectada a ferramentas: o que muda na operacao" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+            <img src="../../../../index_svd_files/posts/ia-conectada-a-ferramentas-o-que-muda-na-operacao.jpg" alt="IA conectada a ferramentas: o que muda na operacao" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
           <div class="p-4">
             <h3 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../../../../2026/02/25/ia-conectada-a-ferramentas-o-que-muda-na-operacao/" class="hover:underline">IA conectada a ferramentas: o que muda na operacao</a></h3>
@@ -176,7 +176,7 @@ Post de blog estatico com foco em tecnologia: SOC agentico e seguranca multiclou
         </article>
         <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="../../../../2026/02/19/php-8-5-em-foco-guia-pratico-para-atualizacao/">
-            <img src="../../../../imagens/posts/php-8-5-em-foco-guia-pratico-para-atualizacao.jpg" alt="PHP 8.5 em foco: guia pratico para atualizar seu backend" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+            <img src="../../../../index_svd_files/posts/php-8-5-em-foco-guia-pratico-para-atualizacao.jpg" alt="PHP 8.5 em foco: guia pratico para atualizar seu backend" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
           <div class="p-4">
             <h3 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../../../../2026/02/19/php-8-5-em-foco-guia-pratico-para-atualizacao/" class="hover:underline">PHP 8.5 em foco: guia pratico para atualizar seu backend</a></h3>
@@ -194,7 +194,7 @@ Post de blog estatico com foco em tecnologia: SOC agentico e seguranca multiclou
     <div class="mx-auto max-w-[1140px] px-4 py-10 sm:px-6">
       <div class="grid gap-8 md:grid-cols-3">
         <div class="space-y-3">
-          <img src="../../../../imagens/Logo-Branco-1.png" alt="Sistema Venda Direta" class="h-auto w-[180px]" width="1000" height="300" loading="lazy" />
+          <img src="../../../../index_svd_files/Logo-Branco-1.png" alt="Sistema Venda Direta" class="h-auto w-[180px]" width="1000" height="300" loading="lazy" />
           <p class="max-w-sm text-sm leading-relaxed text-white/85">
             A Sistema Venda Direta desenvolve solucoes para operacao comercial, vendas diretas e evolucao tecnologica com IA aplicada ao negocio.
           </p>

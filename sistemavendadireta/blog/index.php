@@ -38,9 +38,9 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" />
-  <link rel="stylesheet" href="../css/site-tailwind.css" />
+  <link rel="stylesheet" href="../index_svd_files/site-tailwind.css" />
 
-  <link rel="stylesheet" href="../css/site-optimizations.css" />
+  <link rel="stylesheet" href="../index_svd_files/site-optimizations.css" />
 
   <script type="application/ld+json">
     {
@@ -64,7 +64,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
     <div class="mx-auto max-w-[1140px] px-4 sm:px-6">
       <nav class="flex items-center justify-between gap-4 py-3" aria-label="Menu principal">
         <a href="../" class="block" aria-label="Sistema Venda Direta">
-          <img decoding="async" src="../imagens/Logo-Branco-1.webp" alt="Sistema Venda Direta" class="h-auto w-[165px] sm:w-[210px] lg:w-[260px]" width="1000" height="300" />
+          <img decoding="async" src="../index_svd_files/Logo-Branco-1.webp" alt="Sistema Venda Direta" class="h-auto w-[165px] sm:w-[210px] lg:w-[260px]" width="1000" height="300" />
         </a>
         <div class="hidden items-center gap-5 text-sm font-medium md:flex">
           <a href="../" class="text-white/90 hover:text-white">Site principal</a>
@@ -85,17 +85,8 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
-          <a href="../2026/03/25/php-8-5-4-e-laravel-13-checklist-de-upgrade-com-governanca/">
-            <img src="../imagens/posts/php-8-5-4-e-laravel-13-checklist-de-upgrade-com-governanca.jpg" alt="PHP 8.5.4 e Laravel 13: checklist de upgrade com governanca" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-          </a>
-          <div class="p-4">
-            <h2 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../2026/03/25/php-8-5-4-e-laravel-13-checklist-de-upgrade-com-governanca/" class="hover:underline">PHP 8.5.4 e Laravel 13: checklist de upgrade com governanca</a></h2>
-            <p class="mt-2 text-sm text-white/85">Guia pratico para atualizar backend em 2026 com suporte previsivel e menor risco operacional.</p>
-          </div>
-        </article>
-<article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="../2026/03/18/agentes-de-ia-em-2026-mcp-stateful-e-governanca-para-operar-em-escala/">
-            <img src="../imagens/posts/agentes-de-ia-em-2026-mcp-stateful-e-governanca-para-operar-em-escala.jpg" alt="Agentes de IA em 2026: MCP stateful e governanca para operar em escala" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+            <img src="../index_svd_files/posts/agentes-de-ia-em-2026-mcp-stateful-e-governanca-para-operar-em-escala.jpg" alt="Agentes de IA em 2026: MCP stateful e governanca para operar em escala" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
           <div class="p-4">
             <h2 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../2026/03/18/agentes-de-ia-em-2026-mcp-stateful-e-governanca-para-operar-em-escala/" class="hover:underline">Agentes de IA em 2026: MCP stateful e governanca para operar em escala</a></h2>
@@ -104,7 +95,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
         </article>
 <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="../2026/03/11/soc-agentico-e-seguranca-multicloud-com-governanca-unificada/">
-            <img src="../imagens/posts/soc-agentico-e-seguranca-multicloud-com-governanca-unificada.jpg" alt="SOC agentico e seguranca multicloud: guia pratico de governanca em 2026" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+            <img src="../index_svd_files/posts/soc-agentico-e-seguranca-multicloud-com-governanca-unificada.jpg" alt="SOC agentico e seguranca multicloud: guia pratico de governanca em 2026" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
           <div class="p-4">
             <h2 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../2026/03/11/soc-agentico-e-seguranca-multicloud-com-governanca-unificada/" class="hover:underline">SOC agentico e seguranca multicloud: guia pratico de governanca em 2026</a></h2>
@@ -113,7 +104,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
         </article>
 <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="../2026/03/04/php-8-5-3-em-producao-checklist-para-atualizar-com-seguranca/">
-            <img src="../imagens/posts/php-8-5-3-em-producao-checklist-para-atualizar-com-seguranca.jpg" alt="PHP 8.5.3 em producao: checklist para atualizar com seguranca" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+            <img src="../index_svd_files/posts/php-8-5-3-em-producao-checklist-para-atualizar-com-seguranca.jpg" alt="PHP 8.5.3 em producao: checklist para atualizar com seguranca" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
           <div class="p-4">
             <h2 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../2026/03/04/php-8-5-3-em-producao-checklist-para-atualizar-com-seguranca/" class="hover:underline">PHP 8.5.3 em producao: checklist para atualizar com seguranca</a></h2>
@@ -122,7 +113,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
         </article>
 <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="../2026/02/25/ia-conectada-a-ferramentas-o-que-muda-na-operacao/">
-            <img src="../imagens/posts/ia-conectada-a-ferramentas-o-que-muda-na-operacao.jpg" alt="IA conectada a ferramentas: o que muda na operação" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+            <img src="../index_svd_files/posts/ia-conectada-a-ferramentas-o-que-muda-na-operacao.jpg" alt="IA conectada a ferramentas: o que muda na operação" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
           <div class="p-4">
             <h2 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../2026/02/25/ia-conectada-a-ferramentas-o-que-muda-na-operacao/" class="hover:underline">IA conectada a ferramentas: o que muda na operação</a></h2>
@@ -131,7 +122,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
         </article>
 <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="../2026/02/19/php-8-5-em-foco-guia-pratico-para-atualizacao/">
-            <img src="../imagens/posts/php-8-5-em-foco-guia-pratico-para-atualizacao.jpg" alt="PHP 8.5 em foco: guia prático para atualizar seu backend" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+            <img src="../index_svd_files/posts/php-8-5-em-foco-guia-pratico-para-atualizacao.jpg" alt="PHP 8.5 em foco: guia prático para atualizar seu backend" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
           <div class="p-4">
             <h2 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../2026/02/19/php-8-5-em-foco-guia-pratico-para-atualizacao/" class="hover:underline">PHP 8.5 em foco: guia prático para atualizar seu backend</a></h2>
@@ -140,7 +131,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
         </article>
 <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="../2026/02/19/openclaw-assistente-pessoal-de-ia/">
-            <img src="../imagens/posts/openclaw-assistente-ia.jpg" alt="OpenClaw: assistente pessoal de IA e produtividade real" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+            <img src="../index_svd_files/posts/openclaw-assistente-ia.jpg" alt="OpenClaw: assistente pessoal de IA e produtividade real" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
           <div class="p-4">
             <h2 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../2026/02/19/openclaw-assistente-pessoal-de-ia/" class="hover:underline">OpenClaw: assistente pessoal de IA e produtividade real</a></h2>
@@ -149,7 +140,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
         </article>
 <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="../2026/02/10/importancia-da-ia-no-marketing-multinivel-e-vendas-diretas/">
-            <img decoding="async" src="../imagens/posts/ia-mmn.webp" srcset="../imagens/posts/ia-mmn-480.webp 480w, ../imagens/posts/ia-mmn.webp 1200w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="A importância da IA no Marketing Multinível e Vendas Diretas" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+            <img decoding="async" src="../index_svd_files/posts/ia-mmn.webp" srcset="../index_svd_files/posts/ia-mmn-480.webp 480w, ../index_svd_files/posts/ia-mmn.webp 1200w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="A importância da IA no Marketing Multinível e Vendas Diretas" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
           <div class="p-4">
             <h2 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../2026/02/10/importancia-da-ia-no-marketing-multinivel-e-vendas-diretas/" class="hover:underline">A importância da IA no Marketing Multinível e Vendas Diretas</a></h2>
@@ -158,7 +149,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
         </article>
 <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="../2026/02/10/codafacil-parceiro-tecnico-para-escalar-operacao-com-ia/">
-            <img decoding="async" src="../imagens/posts/codafacil-parceiro.webp" srcset="../imagens/posts/codafacil-parceiro-480.webp 480w, ../imagens/posts/codafacil-parceiro.webp 1200w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="CodaFácil: parceiro técnico para escalar operação com IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+            <img decoding="async" src="../index_svd_files/posts/codafacil-parceiro.webp" srcset="../index_svd_files/posts/codafacil-parceiro-480.webp 480w, ../index_svd_files/posts/codafacil-parceiro.webp 1200w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="CodaFácil: parceiro técnico para escalar operação com IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
           <div class="p-4">
             <h2 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../2026/02/10/codafacil-parceiro-tecnico-para-escalar-operacao-com-ia/" class="hover:underline">CodaFácil: parceiro técnico para escalar operação com IA</a></h2>
@@ -167,7 +158,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
         </article>
 <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="../2026/02/10/mudancas-de-escopo-de-vendas-diretas-para-sistema-de-parceiros/">
-            <img decoding="async" src="../imagens/posts/mudancas-escopo-parceiros.webp" srcset="../imagens/posts/mudancas-escopo-parceiros-480.webp 480w, ../imagens/posts/mudancas-escopo-parceiros.webp 1200w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="Mudanças de escopo: de Vendas Diretas para Sistema de Parceiros" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+            <img decoding="async" src="../index_svd_files/posts/mudancas-escopo-parceiros.webp" srcset="../index_svd_files/posts/mudancas-escopo-parceiros-480.webp 480w, ../index_svd_files/posts/mudancas-escopo-parceiros.webp 1200w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="Mudanças de escopo: de Vendas Diretas para Sistema de Parceiros" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
           <div class="p-4">
             <h2 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../2026/02/10/mudancas-de-escopo-de-vendas-diretas-para-sistema-de-parceiros/" class="hover:underline">Mudanças de escopo: de Vendas Diretas para Sistema de Parceiros</a></h2>
@@ -176,7 +167,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
         </article>
 <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="../2023/07/03/descubra-estrategias-de-venda-direta/">
-            <img decoding="async" src="../imagens/posts/descubra-estrategias-de-venda-direta.webp" srcset="../imagens/posts/descubra-estrategias-de-venda-direta-480.webp 480w, ../imagens/posts/descubra-estrategias-de-venda-direta.webp 1200w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="Descubra Estratégias de Venda Direta" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+            <img decoding="async" src="../index_svd_files/posts/descubra-estrategias-de-venda-direta.webp" srcset="../index_svd_files/posts/descubra-estrategias-de-venda-direta-480.webp 480w, ../index_svd_files/posts/descubra-estrategias-de-venda-direta.webp 1200w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="Descubra Estratégias de Venda Direta" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
           <div class="p-4">
             <h2 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../2023/07/03/descubra-estrategias-de-venda-direta/" class="hover:underline">Descubra Estratégias de Venda Direta</a></h2>
@@ -185,7 +176,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
         </article>
 <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="../2023/06/07/como-se-proteger-de-golpes-de-piramide-e-evitar-cair-em-armadilhas-financeiras/">
-            <img decoding="async" src="../imagens/posts/como-se-proteger-de-golpes-de-piramide-e-evitar-cair-em-armadilhas-financeiras.webp" srcset="../imagens/posts/como-se-proteger-de-golpes-de-piramide-e-evitar-cair-em-armadilhas-financeiras-480.webp 480w, ../imagens/posts/como-se-proteger-de-golpes-de-piramide-e-evitar-cair-em-armadilhas-financeiras.webp 1200w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="Como se proteger de golpes de pirâmide e evitar cair em armadilhas financeiras" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+            <img decoding="async" src="../index_svd_files/posts/como-se-proteger-de-golpes-de-piramide-e-evitar-cair-em-armadilhas-financeiras.webp" srcset="../index_svd_files/posts/como-se-proteger-de-golpes-de-piramide-e-evitar-cair-em-armadilhas-financeiras-480.webp 480w, ../index_svd_files/posts/como-se-proteger-de-golpes-de-piramide-e-evitar-cair-em-armadilhas-financeiras.webp 1200w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="Como se proteger de golpes de pirâmide e evitar cair em armadilhas financeiras" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
           <div class="p-4">
             <h2 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../2023/06/07/como-se-proteger-de-golpes-de-piramide-e-evitar-cair-em-armadilhas-financeiras/" class="hover:underline">Como se proteger de golpes de pirâmide e evitar cair em armadilhas financeiras</a></h2>
@@ -194,7 +185,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
         </article>
 <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="../2023/05/23/desvantagens-modelo-marketing-multinivel-vendas-diretas/">
-            <img decoding="async" src="../imagens/posts/desvantagens-modelo-marketing-multinivel-vendas-diretas.webp" srcset="../imagens/posts/desvantagens-modelo-marketing-multinivel-vendas-diretas-480.webp 480w, ../imagens/posts/desvantagens-modelo-marketing-multinivel-vendas-diretas.webp 1200w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="Marketing multinível também apresenta algumas desvantagens que devem ser consideradas antes de ingressar nesse mercado." class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+            <img decoding="async" src="../index_svd_files/posts/desvantagens-modelo-marketing-multinivel-vendas-diretas.webp" srcset="../index_svd_files/posts/desvantagens-modelo-marketing-multinivel-vendas-diretas-480.webp 480w, ../index_svd_files/posts/desvantagens-modelo-marketing-multinivel-vendas-diretas.webp 1200w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="Marketing multinível também apresenta algumas desvantagens que devem ser consideradas antes de ingressar nesse mercado." class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
           <div class="p-4">
             <h2 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../2023/05/23/desvantagens-modelo-marketing-multinivel-vendas-diretas/" class="hover:underline">Marketing multinível também apresenta algumas desvantagens que devem ser consideradas antes de ingressar nesse mercado.</a></h2>
@@ -203,7 +194,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
         </article>
 <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="../2023/05/23/vantagens-modelo-marketing-multinivel-vendas-diretas/">
-            <img decoding="async" src="../imagens/posts/vantagens-modelo-marketing-multinivel-vendas-diretas.webp" srcset="../imagens/posts/vantagens-modelo-marketing-multinivel-vendas-diretas-480.webp 480w, ../imagens/posts/vantagens-modelo-marketing-multinivel-vendas-diretas.webp 1200w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="O modelo de marketing multinível oferece várias vantagens que podem atrair pessoas interessadas em empreender." class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+            <img decoding="async" src="../index_svd_files/posts/vantagens-modelo-marketing-multinivel-vendas-diretas.webp" srcset="../index_svd_files/posts/vantagens-modelo-marketing-multinivel-vendas-diretas-480.webp 480w, ../index_svd_files/posts/vantagens-modelo-marketing-multinivel-vendas-diretas.webp 1200w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="O modelo de marketing multinível oferece várias vantagens que podem atrair pessoas interessadas em empreender." class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
           <div class="p-4">
             <h2 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../2023/05/23/vantagens-modelo-marketing-multinivel-vendas-diretas/" class="hover:underline">O modelo de marketing multinível oferece várias vantagens que podem atrair pessoas interessadas em empreender.</a></h2>
@@ -212,7 +203,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
         </article>
 <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="../2023/05/23/descubra-o-potencial-de-salario-e-carreira-na-area-de-marketing-de-rede/">
-            <img decoding="async" src="../imagens/posts/descubra-o-potencial-de-salario-e-carreira-na-area-de-marketing-de-rede.webp" srcset="../imagens/posts/descubra-o-potencial-de-salario-e-carreira-na-area-de-marketing-de-rede-480.webp 480w, ../imagens/posts/descubra-o-potencial-de-salario-e-carreira-na-area-de-marketing-de-rede.webp 1200w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="Descubra o potencial de salário e carreira na área de Marketing de Rede!" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+            <img decoding="async" src="../index_svd_files/posts/descubra-o-potencial-de-salario-e-carreira-na-area-de-marketing-de-rede.webp" srcset="../index_svd_files/posts/descubra-o-potencial-de-salario-e-carreira-na-area-de-marketing-de-rede-480.webp 480w, ../index_svd_files/posts/descubra-o-potencial-de-salario-e-carreira-na-area-de-marketing-de-rede.webp 1200w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="Descubra o potencial de salário e carreira na área de Marketing de Rede!" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
           <div class="p-4">
             <h2 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../2023/05/23/descubra-o-potencial-de-salario-e-carreira-na-area-de-marketing-de-rede/" class="hover:underline">Descubra o potencial de salário e carreira na área de Marketing de Rede!</a></h2>
@@ -221,7 +212,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
         </article>
 <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="../2023/05/23/descubra-o-poder-do-marketing-multinivel-alavanque-seus-lucros-e-conquiste-o-sucesso/">
-            <img decoding="async" src="../imagens/posts/descubra-o-poder-do-marketing-multinivel-alavanque-seus-lucros-e-conquiste-o-sucesso.webp" srcset="../imagens/posts/descubra-o-poder-do-marketing-multinivel-alavanque-seus-lucros-e-conquiste-o-sucesso-480.webp 480w, ../imagens/posts/descubra-o-poder-do-marketing-multinivel-alavanque-seus-lucros-e-conquiste-o-sucesso.webp 1200w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="Descubra o poder do marketing multinível: alavanque seus lucros e conquiste o sucesso!" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+            <img decoding="async" src="../index_svd_files/posts/descubra-o-poder-do-marketing-multinivel-alavanque-seus-lucros-e-conquiste-o-sucesso.webp" srcset="../index_svd_files/posts/descubra-o-poder-do-marketing-multinivel-alavanque-seus-lucros-e-conquiste-o-sucesso-480.webp 480w, ../index_svd_files/posts/descubra-o-poder-do-marketing-multinivel-alavanque-seus-lucros-e-conquiste-o-sucesso.webp 1200w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="Descubra o poder do marketing multinível: alavanque seus lucros e conquiste o sucesso!" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
           <div class="p-4">
             <h2 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../2023/05/23/descubra-o-poder-do-marketing-multinivel-alavanque-seus-lucros-e-conquiste-o-sucesso/" class="hover:underline">Descubra o poder do marketing multinível: alavanque seus lucros e conquiste o sucesso!</a></h2>
@@ -230,7 +221,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
         </article>
 <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="../2023/04/13/importancia-sistema-venda-direta-para-seu-negocio/">
-            <img decoding="async" src="../imagens/posts/importancia-sistema-venda-direta-para-seu-negocio.webp" srcset="../imagens/posts/importancia-sistema-venda-direta-para-seu-negocio-480.webp 480w, ../imagens/posts/importancia-sistema-venda-direta-para-seu-negocio.webp 1200w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="A importância de um sistema vendas direta para seu negócio" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+            <img decoding="async" src="../index_svd_files/posts/importancia-sistema-venda-direta-para-seu-negocio.webp" srcset="../index_svd_files/posts/importancia-sistema-venda-direta-para-seu-negocio-480.webp 480w, ../index_svd_files/posts/importancia-sistema-venda-direta-para-seu-negocio.webp 1200w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="A importância de um sistema vendas direta para seu negócio" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
           <div class="p-4">
             <h2 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../2023/04/13/importancia-sistema-venda-direta-para-seu-negocio/" class="hover:underline">A importância de um sistema vendas direta para seu negócio</a></h2>

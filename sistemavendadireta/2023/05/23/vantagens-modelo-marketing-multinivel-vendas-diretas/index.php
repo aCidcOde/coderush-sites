@@ -40,9 +40,9 @@ Pagina estatica do post "O modelo de marketing multinível oferece várias vanta
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" />
-  <link rel="stylesheet" href="../../../../css/site-tailwind.css" />
+  <link rel="stylesheet" href="../../../../index_svd_files/site-tailwind.css" />
 
-  <link rel="stylesheet" href="../../../../css/site-optimizations.css" />
+  <link rel="stylesheet" href="../../../../index_svd_files/site-optimizations.css" />
 
   <script type="application/ld+json">
 {
@@ -78,7 +78,7 @@ Pagina estatica do post "O modelo de marketing multinível oferece várias vanta
   <header class="sticky top-0 z-40 border-b border-white/10 bg-brand/95 backdrop-blur">
     <div class="mx-auto flex max-w-[1140px] items-center justify-between gap-4 px-4 py-3 sm:px-6">
       <a href="../../../../" aria-label="Sistema Venda Direta">
-        <img decoding="async" src="../../../../imagens/Logo-Branco-1.webp" alt="Sistema Venda Direta" class="h-auto w-[165px] sm:w-[210px] lg:w-[260px]" width="1000" height="300" />
+        <img decoding="async" src="../../../../index_svd_files/Logo-Branco-1.webp" alt="Sistema Venda Direta" class="h-auto w-[165px] sm:w-[210px] lg:w-[260px]" width="1000" height="300" />
       </a>
       <div class="hidden items-center gap-5 text-sm font-medium text-white/90 md:flex">
         <a href="../../../../" class="hover:text-white">Site Principal</a>
@@ -95,7 +95,7 @@ Pagina estatica do post "O modelo de marketing multinível oferece várias vanta
       <p class="text-xs font-medium uppercase tracking-wide text-white/70">Blog SVD • 23/05/2023</p>
       <h1 class="mt-2 font-[var(--font-heading)] text-3xl font-semibold leading-tight sm:text-4xl">O modelo de marketing multinível oferece várias vantagens que podem atrair pessoas interessadas em empreender.</h1>
 
-      <img decoding="async" src="../../../../imagens/posts/vantagens-modelo-marketing-multinivel-vendas-diretas.webp" alt="O modelo de marketing multinível oferece várias vantagens que podem atrair pessoas interessadas em empreender." class="mt-6 w-full rounded-2xl border border-white/20" width="1200" height="630" loading="lazy" />
+      <img decoding="async" src="../../../../index_svd_files/posts/vantagens-modelo-marketing-multinivel-vendas-diretas.webp" alt="O modelo de marketing multinível oferece várias vantagens que podem atrair pessoas interessadas em empreender." class="mt-6 w-full rounded-2xl border border-white/20" width="1200" height="630" loading="lazy" />
 
       <div class="prose prose-invert mt-6 max-w-none prose-headings:font-[var(--font-heading)] prose-headings:text-white prose-a:text-white prose-strong:text-white prose-p:text-white/90 prose-li:text-white/90">
 <p>Aqui estão algumas das principais vantagens desse modelo:</p>
@@ -143,7 +143,7 @@ Pagina estatica do post "O modelo de marketing multinível oferece várias vanta
       <div class="mt-5 grid gap-4 md:grid-cols-3">
         <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="../../../../2026/02/10/mudancas-de-escopo-de-vendas-diretas-para-sistema-de-parceiros/">
-            <img decoding="async" src="../../../../imagens/posts/mudancas-escopo-parceiros.webp" srcset="../../../../imagens/posts/mudancas-escopo-parceiros-480.webp 480w, ../../../../imagens/posts/mudancas-escopo-parceiros.webp 1200w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="Mudanças de escopo: de Vendas Diretas para Sistema de Parceiros" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+            <img decoding="async" src="../../../../index_svd_files/posts/mudancas-escopo-parceiros.webp" srcset="../../../../index_svd_files/posts/mudancas-escopo-parceiros-480.webp 480w, ../../../../index_svd_files/posts/mudancas-escopo-parceiros.webp 1200w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="Mudanças de escopo: de Vendas Diretas para Sistema de Parceiros" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
           <div class="p-4">
             <h3 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../../../../2026/02/10/mudancas-de-escopo-de-vendas-diretas-para-sistema-de-parceiros/" class="hover:underline">Mudanças de escopo: de Vendas Diretas para Sistema de Parceiros</a></h3>
@@ -152,7 +152,7 @@ Pagina estatica do post "O modelo de marketing multinível oferece várias vanta
         </article>
         <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="../../../../2023/05/23/descubra-o-poder-do-marketing-multinivel-alavanque-seus-lucros-e-conquiste-o-sucesso/">
-            <img decoding="async" src="../../../../imagens/posts/descubra-o-poder-do-marketing-multinivel-alavanque-seus-lucros-e-conquiste-o-sucesso.webp" srcset="../../../../imagens/posts/descubra-o-poder-do-marketing-multinivel-alavanque-seus-lucros-e-conquiste-o-sucesso-480.webp 480w, ../../../../imagens/posts/descubra-o-poder-do-marketing-multinivel-alavanque-seus-lucros-e-conquiste-o-sucesso.webp 1200w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="Descubra o poder do marketing multinível: alavanque seus lucros e conquiste o sucesso!" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+            <img decoding="async" src="../../../../index_svd_files/posts/descubra-o-poder-do-marketing-multinivel-alavanque-seus-lucros-e-conquiste-o-sucesso.webp" srcset="../../../../index_svd_files/posts/descubra-o-poder-do-marketing-multinivel-alavanque-seus-lucros-e-conquiste-o-sucesso-480.webp 480w, ../../../../index_svd_files/posts/descubra-o-poder-do-marketing-multinivel-alavanque-seus-lucros-e-conquiste-o-sucesso.webp 1200w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="Descubra o poder do marketing multinível: alavanque seus lucros e conquiste o sucesso!" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
           <div class="p-4">
             <h3 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../../../../2023/05/23/descubra-o-poder-do-marketing-multinivel-alavanque-seus-lucros-e-conquiste-o-sucesso/" class="hover:underline">Descubra o poder do marketing multinível: alavanque seus lucros e conquiste o sucesso!</a></h3>
@@ -161,7 +161,7 @@ Pagina estatica do post "O modelo de marketing multinível oferece várias vanta
         </article>
         <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="../../../../2023/06/07/como-se-proteger-de-golpes-de-piramide-e-evitar-cair-em-armadilhas-financeiras/">
-            <img decoding="async" src="../../../../imagens/posts/como-se-proteger-de-golpes-de-piramide-e-evitar-cair-em-armadilhas-financeiras.webp" srcset="../../../../imagens/posts/como-se-proteger-de-golpes-de-piramide-e-evitar-cair-em-armadilhas-financeiras-480.webp 480w, ../../../../imagens/posts/como-se-proteger-de-golpes-de-piramide-e-evitar-cair-em-armadilhas-financeiras.webp 1200w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="Como se proteger de golpes de pirâmide e evitar cair em armadilhas financeiras" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+            <img decoding="async" src="../../../../index_svd_files/posts/como-se-proteger-de-golpes-de-piramide-e-evitar-cair-em-armadilhas-financeiras.webp" srcset="../../../../index_svd_files/posts/como-se-proteger-de-golpes-de-piramide-e-evitar-cair-em-armadilhas-financeiras-480.webp 480w, ../../../../index_svd_files/posts/como-se-proteger-de-golpes-de-piramide-e-evitar-cair-em-armadilhas-financeiras.webp 1200w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="Como se proteger de golpes de pirâmide e evitar cair em armadilhas financeiras" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
           <div class="p-4">
             <h3 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../../../../2023/06/07/como-se-proteger-de-golpes-de-piramide-e-evitar-cair-em-armadilhas-financeiras/" class="hover:underline">Como se proteger de golpes de pirâmide e evitar cair em armadilhas financeiras</a></h3>
@@ -179,7 +179,7 @@ Pagina estatica do post "O modelo de marketing multinível oferece várias vanta
     <div class="mx-auto max-w-[1140px] px-4 py-10 sm:px-6">
       <div class="grid gap-8 md:grid-cols-3">
         <div class="space-y-3">
-          <img decoding="async" src="../../../../imagens/Logo-Branco-1.webp" alt="Sistema Venda Direta" class="h-auto w-[180px]" width="1000" height="300" loading="lazy" />
+          <img decoding="async" src="../../../../index_svd_files/Logo-Branco-1.webp" alt="Sistema Venda Direta" class="h-auto w-[180px]" width="1000" height="300" loading="lazy" />
           <p class="max-w-sm text-sm leading-relaxed text-white/85">
             A Sistema Venda Direta desenvolve soluções para operação comercial, vendas diretas e evolução tecnológica com IA aplicada ao negócio.
           </p>

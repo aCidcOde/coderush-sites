@@ -38,9 +38,9 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" />
-  <link rel="stylesheet" href="../css/site-tailwind.css" />
+  <link rel="stylesheet" href="../index_svd_files/site-tailwind.css" />
 
-  <link rel="stylesheet" href="../css/site-optimizations.css" />
+  <link rel="stylesheet" href="../index_svd_files/site-optimizations.css" />
 
   <script type="application/ld+json">
     {
@@ -116,7 +116,7 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
       <nav class="flex items-center justify-between gap-4 py-3" aria-label="Menu principal">
         <a href="/" class="block" aria-label="Sistema Venda Direta">
           <img decoding="async"
-            src="../imagens/Logo-Branco-1.webp"
+            src="../index_svd_files/Logo-Branco-1.webp"
             alt="Sistema Venda Direta"
             class="h-auto w-[165px] sm:w-[210px] lg:w-[260px]"
             width="1000"
@@ -190,7 +190,7 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
       </div>
 
       <div class="mx-auto w-full max-w-[520px] rounded-2xl bg-brand-soft/25 p-2 ring-1 ring-white/15">
-        <div class="lottie-box h-[220px] w-full sm:h-[300px]" data-lottie-src="../imagens/lottie-hero.json" aria-label="Animação de crescimento com tecnologia"></div>
+        <div class="lottie-box h-[220px] w-full sm:h-[300px]" data-lottie-src="../index_svd_files/lottie-hero.json" aria-label="Animação de crescimento com tecnologia"></div>
       </div>
     </section>
 
@@ -275,7 +275,7 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
         </div>
 
         <div class="mx-auto w-full max-w-[420px] rounded-2xl bg-brand-soft/25 p-2 ring-1 ring-white/15">
-          <div class="lottie-box h-[240px] w-full sm:h-[320px]" data-lottie-src="../imagens/lottie-porque.json" data-lottie-mobile="false" aria-label="Animação de método de trabalho"></div>
+          <div class="lottie-box h-[240px] w-full sm:h-[320px]" data-lottie-src="../index_svd_files/lottie-porque.json" data-lottie-mobile="false" aria-label="Animação de método de trabalho"></div>
         </div>
       </div>
     </section>
@@ -339,7 +339,7 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
       </p>
 
       <img decoding="async"
-        src="../imagens/Clientes.webp"
+        src="../index_svd_files/Clientes.webp"
         alt="Empresas atendidas pelo Sistema Venda Direta"
         class="mt-6 w-full rounded-2xl border border-white/20"
         width="1200"
@@ -424,7 +424,7 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
     <div class="mx-auto max-w-[1140px] px-4 py-10 sm:px-6">
       <div class="grid gap-8 md:grid-cols-3">
         <div class="space-y-3">
-          <img decoding="async" src="../imagens/Logo-Branco-1.webp" alt="Sistema Venda Direta" class="h-auto w-[180px]" width="1000" height="300" loading="lazy" />
+          <img decoding="async" src="../index_svd_files/Logo-Branco-1.webp" alt="Sistema Venda Direta" class="h-auto w-[180px]" width="1000" height="300" loading="lazy" />
           <p class="max-w-sm text-sm leading-relaxed text-white/85">
             A Sistema Venda Direta desenvolve soluções para operação comercial, vendas diretas e evolução tecnológica com IA aplicada ao negócio.
           </p>
@@ -467,7 +467,7 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
     <span class="sm:hidden">WhatsApp</span>
   </a>
 
-  <script src="../js/lottie.min.js" defer></script>
+  <script src="../index_svd_files/lottie.min.js" defer></script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       var containers = document.querySelectorAll(".lottie-box[data-lottie-src]");

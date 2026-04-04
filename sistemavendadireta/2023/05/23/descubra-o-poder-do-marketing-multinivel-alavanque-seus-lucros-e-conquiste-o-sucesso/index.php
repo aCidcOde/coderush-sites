@@ -40,9 +40,9 @@ Pagina estatica do post "Descubra o poder do marketing multinível: alavanque se
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" />
-  <link rel="stylesheet" href="../../../../css/site-tailwind.css" />
+  <link rel="stylesheet" href="../../../../index_svd_files/site-tailwind.css" />
 
-  <link rel="stylesheet" href="../../../../css/site-optimizations.css" />
+  <link rel="stylesheet" href="../../../../index_svd_files/site-optimizations.css" />
 
   <script type="application/ld+json">
 {
@@ -78,7 +78,7 @@ Pagina estatica do post "Descubra o poder do marketing multinível: alavanque se
   <header class="sticky top-0 z-40 border-b border-white/10 bg-brand/95 backdrop-blur">
     <div class="mx-auto flex max-w-[1140px] items-center justify-between gap-4 px-4 py-3 sm:px-6">
       <a href="../../../../" aria-label="Sistema Venda Direta">
-        <img decoding="async" src="../../../../imagens/Logo-Branco-1.webp" alt="Sistema Venda Direta" class="h-auto w-[165px] sm:w-[210px] lg:w-[260px]" width="1000" height="300" />
+        <img decoding="async" src="../../../../index_svd_files/Logo-Branco-1.webp" alt="Sistema Venda Direta" class="h-auto w-[165px] sm:w-[210px] lg:w-[260px]" width="1000" height="300" />
       </a>
       <div class="hidden items-center gap-5 text-sm font-medium text-white/90 md:flex">
         <a href="../../../../" class="hover:text-white">Site Principal</a>
@@ -95,7 +95,7 @@ Pagina estatica do post "Descubra o poder do marketing multinível: alavanque se
       <p class="text-xs font-medium uppercase tracking-wide text-white/70">Blog SVD • 23/05/2023</p>
       <h1 class="mt-2 font-[var(--font-heading)] text-3xl font-semibold leading-tight sm:text-4xl">Descubra o poder do marketing multinível: alavanque seus lucros e conquiste o sucesso!</h1>
 
-      <img decoding="async" src="../../../../imagens/posts/descubra-o-poder-do-marketing-multinivel-alavanque-seus-lucros-e-conquiste-o-sucesso.webp" alt="Descubra o poder do marketing multinível: alavanque seus lucros e conquiste o sucesso!" class="mt-6 w-full rounded-2xl border border-white/20" width="1200" height="630" loading="lazy" />
+      <img decoding="async" src="../../../../index_svd_files/posts/descubra-o-poder-do-marketing-multinivel-alavanque-seus-lucros-e-conquiste-o-sucesso.webp" alt="Descubra o poder do marketing multinível: alavanque seus lucros e conquiste o sucesso!" class="mt-6 w-full rounded-2xl border border-white/20" width="1200" height="630" loading="lazy" />
 
       <div class="prose prose-invert mt-6 max-w-none prose-headings:font-[var(--font-heading)] prose-headings:text-white prose-a:text-white prose-strong:text-white prose-p:text-white/90 prose-li:text-white/90">
 <p>O marketing multinível é um modelo de vendas diretas no qual você ganha comissões não apenas pelas suas próprias vendas, mas também pela rede de revendedores que você constrói. É uma oportunidade de crescimento pessoal e financeiro, onde você se torna um líder e amplia seus ganhos ao atrair e orientar uma equipe de revendedores. Junte-se a nós e transforme sua vida hoje mesmo!</p>
@@ -145,7 +145,7 @@ Pagina estatica do post "Descubra o poder do marketing multinível: alavanque se
       <div class="mt-5 grid gap-4 md:grid-cols-3">
         <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="../../../../2023/07/03/descubra-estrategias-de-venda-direta/">
-            <img decoding="async" src="../../../../imagens/posts/descubra-estrategias-de-venda-direta.webp" srcset="../../../../imagens/posts/descubra-estrategias-de-venda-direta-480.webp 480w, ../../../../imagens/posts/descubra-estrategias-de-venda-direta.webp 1200w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="Descubra Estratégias de Venda Direta" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+            <img decoding="async" src="../../../../index_svd_files/posts/descubra-estrategias-de-venda-direta.webp" srcset="../../../../index_svd_files/posts/descubra-estrategias-de-venda-direta-480.webp 480w, ../../../../index_svd_files/posts/descubra-estrategias-de-venda-direta.webp 1200w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="Descubra Estratégias de Venda Direta" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
           <div class="p-4">
             <h3 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../../../../2023/07/03/descubra-estrategias-de-venda-direta/" class="hover:underline">Descubra Estratégias de Venda Direta</a></h3>
@@ -154,7 +154,7 @@ Pagina estatica do post "Descubra o poder do marketing multinível: alavanque se
         </article>
         <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="../../../../2023/06/07/como-se-proteger-de-golpes-de-piramide-e-evitar-cair-em-armadilhas-financeiras/">
-            <img decoding="async" src="../../../../imagens/posts/como-se-proteger-de-golpes-de-piramide-e-evitar-cair-em-armadilhas-financeiras.webp" srcset="../../../../imagens/posts/como-se-proteger-de-golpes-de-piramide-e-evitar-cair-em-armadilhas-financeiras-480.webp 480w, ../../../../imagens/posts/como-se-proteger-de-golpes-de-piramide-e-evitar-cair-em-armadilhas-financeiras.webp 1200w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="Como se proteger de golpes de pirâmide e evitar cair em armadilhas financeiras" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+            <img decoding="async" src="../../../../index_svd_files/posts/como-se-proteger-de-golpes-de-piramide-e-evitar-cair-em-armadilhas-financeiras.webp" srcset="../../../../index_svd_files/posts/como-se-proteger-de-golpes-de-piramide-e-evitar-cair-em-armadilhas-financeiras-480.webp 480w, ../../../../index_svd_files/posts/como-se-proteger-de-golpes-de-piramide-e-evitar-cair-em-armadilhas-financeiras.webp 1200w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="Como se proteger de golpes de pirâmide e evitar cair em armadilhas financeiras" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
           <div class="p-4">
             <h3 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../../../../2023/06/07/como-se-proteger-de-golpes-de-piramide-e-evitar-cair-em-armadilhas-financeiras/" class="hover:underline">Como se proteger de golpes de pirâmide e evitar cair em armadilhas financeiras</a></h3>
@@ -163,7 +163,7 @@ Pagina estatica do post "Descubra o poder do marketing multinível: alavanque se
         </article>
         <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="../../../../2023/04/13/importancia-sistema-venda-direta-para-seu-negocio/">
-            <img decoding="async" src="../../../../imagens/posts/importancia-sistema-venda-direta-para-seu-negocio.webp" srcset="../../../../imagens/posts/importancia-sistema-venda-direta-para-seu-negocio-480.webp 480w, ../../../../imagens/posts/importancia-sistema-venda-direta-para-seu-negocio.webp 1200w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="A importância de um sistema vendas direta para seu negócio" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+            <img decoding="async" src="../../../../index_svd_files/posts/importancia-sistema-venda-direta-para-seu-negocio.webp" srcset="../../../../index_svd_files/posts/importancia-sistema-venda-direta-para-seu-negocio-480.webp 480w, ../../../../index_svd_files/posts/importancia-sistema-venda-direta-para-seu-negocio.webp 1200w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="A importância de um sistema vendas direta para seu negócio" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
           <div class="p-4">
             <h3 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../../../../2023/04/13/importancia-sistema-venda-direta-para-seu-negocio/" class="hover:underline">A importância de um sistema vendas direta para seu negócio</a></h3>
@@ -181,7 +181,7 @@ Pagina estatica do post "Descubra o poder do marketing multinível: alavanque se
     <div class="mx-auto max-w-[1140px] px-4 py-10 sm:px-6">
       <div class="grid gap-8 md:grid-cols-3">
         <div class="space-y-3">
-          <img decoding="async" src="../../../../imagens/Logo-Branco-1.webp" alt="Sistema Venda Direta" class="h-auto w-[180px]" width="1000" height="300" loading="lazy" />
+          <img decoding="async" src="../../../../index_svd_files/Logo-Branco-1.webp" alt="Sistema Venda Direta" class="h-auto w-[180px]" width="1000" height="300" loading="lazy" />
           <p class="max-w-sm text-sm leading-relaxed text-white/85">
             A Sistema Venda Direta desenvolve soluções para operação comercial, vendas diretas e evolução tecnológica com IA aplicada ao negócio.
           </p>
