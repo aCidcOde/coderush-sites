@@ -85,6 +85,16 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
+
+          <a href="../2026/04/04/seguranca-agentica-em-2026-checklist-com-nist-cyber-ai-profile-e-owasp/">
+            <img src="../index_svd_files/posts/seguranca-agentica-em-2026-checklist-com-nist-cyber-ai-profile-e-owasp.jpg" alt="Seguranca agentica em 2026: checklist com NIST Cyber AI Profile e OWASP" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+          </a>
+          <div class="p-4">
+            <h2 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../2026/04/04/seguranca-agentica-em-2026-checklist-com-nist-cyber-ai-profile-e-owasp/" class="hover:underline">Seguranca agentica em 2026: checklist com NIST Cyber AI Profile e OWASP</a></h2>
+            <p class="mt-2 text-sm text-white/85">Checklist pratico para proteger fluxos com agentes, MCP e dados criticos sem travar a operacao.</p>
+          </div>
+        </article>
+
           <a href="../2026/03/18/agentes-de-ia-em-2026-mcp-stateful-e-governanca-para-operar-em-escala/">
             <img src="../index_svd_files/posts/agentes-de-ia-em-2026-mcp-stateful-e-governanca-para-operar-em-escala.jpg" alt="Agentes de IA em 2026: MCP stateful e governanca para operar em escala" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
