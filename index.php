@@ -6,23 +6,7 @@
   <title>CodeRush — Hub de Tecnologia</title>
   <meta name="description" content="CodeRush é um hub central de tecnologia que reúne múltiplas empresas e serviços especializados em vendas diretas, desenvolvimento de software, WordPress, automação com IA e design digital." />
   <meta name="robots" content="index, follow" />
-  <script src="https://cdn.tailwindcss.com" data-cfasync="false"></script>
-  <script data-cfasync="false">
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            brand: '#004AAD',
-            'brand-dark': '#001f4d',
-          },
-          fontFamily: {
-            sans: ['Inter', 'system-ui', 'sans-serif'],
-            heading: ['Montserrat', 'sans-serif'],
-          }
-        }
-      }
-    }
-  </script>
+  <link rel="stylesheet" href="css/site-tailwind.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet" />

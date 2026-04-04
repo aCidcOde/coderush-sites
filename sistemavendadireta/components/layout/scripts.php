@@ -41,11 +41,18 @@
     }
   </style>
 
-  <script src="index_svd_files/lottie.min.js" defer></script>
+  <script src="js/lottie.min.js" defer></script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       var siteHeader = document.getElementById("site-header");
       var prefersReducedMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      var leadForm = document.getElementById("contact-lead-form");
+      var leadNameInput = document.getElementById("contact-nome");
+      var leadWhatsappInput = document.getElementById("contact-whatsapp");
+      var successWhatsappLink = document.getElementById("contact-success-whatsapp-link");
+      var leadStorageKey = "svd-contact-lead";
+      var urlParams = new URLSearchParams(window.location.search);
+      var mailStatus = urlParams.get("mail");
       var waPanel = document.getElementById("wa-chatbot-panel");
       var waToggle = document.getElementById("wa-float-toggle");
       var waClose = document.getElementById("wa-chatbot-close");
@@ -55,12 +62,90 @@
       var defaultWaMsg = "Olá, quero um orçamento e acesso à demonstração do Sistema Venda Direta.";
       var phone = "5511994566726";
 
+      function normalizePhone(value) {
+        return (value || "").replace(/\D+/g, "");
+      }
+
+      function getStoredLead() {
+        try {
+          var rawLead = window.sessionStorage.getItem(leadStorageKey);
+          return rawLead ? JSON.parse(rawLead) : null;
+        } catch (error) {
+          return null;
+        }
+      }
+
+      function buildLeadWhatsappUrl(lead) {
+        var safeLead = lead || {};
+        var messageTemplate = leadForm ? (leadForm.getAttribute("data-whatsapp-message-template") || defaultWaMsg) : defaultWaMsg;
+        var customPhone = leadForm ? (leadForm.getAttribute("data-whatsapp-phone") || phone) : phone;
+        if (!safeLead.nome && !safeLead.whatsapp) {
+          return "https://wa.me/" + customPhone + "?text=" + encodeURIComponent(defaultWaMsg);
+        }
+        var message = messageTemplate
+          .replace("{nome}", (safeLead.nome || "Nao informado").trim())
+          .replace("{whatsapp}", (safeLead.whatsapp || "Nao informado").trim());
+
+        return "https://wa.me/" + customPhone + "?text=" + encodeURIComponent(message);
+      }
+
       function updateWaLink(message) {
         if (!waLink) return;
         waLink.href = "https://wa.me/" + phone + "?text=" + encodeURIComponent(message || defaultWaMsg);
       }
 
       updateWaLink(defaultWaMsg);
+
+      if (leadForm) {
+        if (mailStatus !== "ok") {
+          var previousLead = getStoredLead();
+          if (previousLead) {
+            if (leadNameInput && !leadNameInput.value) {
+              leadNameInput.value = previousLead.nome || "";
+            }
+            if (leadWhatsappInput && !leadWhatsappInput.value) {
+              leadWhatsappInput.value = previousLead.whatsapp || "";
+            }
+          }
+        }
+
+        leadForm.addEventListener("submit", function () {
+          var payload = {
+            nome: leadNameInput ? leadNameInput.value.trim() : "",
+            whatsapp: leadWhatsappInput ? leadWhatsappInput.value.trim() : "",
+            whatsappDigits: normalizePhone(leadWhatsappInput ? leadWhatsappInput.value : "")
+          };
+
+          try {
+            window.sessionStorage.setItem(leadStorageKey, JSON.stringify(payload));
+          } catch (error) {
+          }
+        });
+      }
+
+      if (successWhatsappLink) {
+        var storedLead = getStoredLead();
+        successWhatsappLink.href = buildLeadWhatsappUrl(storedLead);
+
+        if (mailStatus === "ok") {
+          window.setTimeout(function () {
+            var popup = window.open(successWhatsappLink.href, "_blank", "noopener,noreferrer");
+            if (popup) {
+              popup.opener = null;
+            }
+          }, 250);
+
+          try {
+            window.sessionStorage.removeItem(leadStorageKey);
+          } catch (error) {
+          }
+        }
+      } else if (mailStatus === "erro") {
+        try {
+          window.sessionStorage.removeItem(leadStorageKey);
+        } catch (error) {
+        }
+      }
 
       if (waToggle && waPanel) {
         waToggle.addEventListener("mouseenter", function () {

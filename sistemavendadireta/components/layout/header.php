@@ -7,7 +7,7 @@
       <nav class="flex items-center justify-between gap-4 py-3" aria-label="Menu principal">
         <a href="/" class="header-logo block" aria-label="Sistema Venda Direta">
           <img decoding="async"
-            src="index_svd_files/Logo-Branco-1.webp"
+            src="imagens/Logo-Branco-1.webp"
             alt="Sistema Venda Direta"
             class="h-auto"
             width="1000"
@@ -16,7 +16,7 @@
         </a>
 
         <ul class="hidden items-center gap-6 lg:flex">
-          <li><a href="#funcionalidades" class="rounded-md bg-white/15 px-3 py-2 text-sm font-medium">Funcionalidades!</a></li>
+          <li><a href="#funcionalidades" class="rounded-md bg-white/15 px-3 py-2 text-sm font-medium">Funcionalidades</a></li>
           <li><a href="#porque" class="text-sm font-medium text-white/90 hover:text-white">Porque</a></li>
           <li><a href="#vantagens" class="text-sm font-medium text-white/90 hover:text-white">Vantagens</a></li>
           <li><a href="#desenvolvimento-ia" class="text-sm font-medium text-white/90 hover:text-white">Desenvolvimento com IA</a></li>

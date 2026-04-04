@@ -1,0 +1,122 @@
+/*
+[Modulo Site Optimizations SVD]
+@Author: Andre Gomes ( @acidcode )
+@since 2026-02-12
+Ajustes de responsividade e performance para paginas publicas estaticas.
+*/
+
+:root {
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-heading: 'Montserrat', sans-serif;
+}
+
+.site-optimized {
+  overflow-x: hidden;
+}
+
+.site-optimized img,
+.site-optimized video,
+.site-optimized iframe {
+  max-width: 100%;
+}
+
+.site-optimized .prose p,
+.site-optimized .prose li,
+.site-optimized .prose h1,
+.site-optimized .prose h2,
+.site-optimized .prose h3 {
+  overflow-wrap: anywhere;
+}
+
+.site-optimized main > section,
+.site-optimized main > article {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 700px;
+}
+
+@media (max-width: 1024px) {
+  .site-optimized main {
+    scroll-margin-top: 5rem;
+  }
+
+  .site-optimized h1,
+  .site-optimized h2,
+  .site-optimized h3,
+  .site-optimized h4 {
+    text-wrap: balance;
+  }
+}
+
+@media (max-width: 768px) {
+  .site-optimized main > section,
+  .site-optimized main > article {
+    contain-intrinsic-size: 1px 560px;
+  }
+
+  .site-optimized details > summary {
+    line-height: 1.35;
+  }
+
+  .site-optimized .lottie-box {
+    min-height: 200px;
+  }
+}
+
+@media (max-width: 640px) {
+  .site-optimized main h1 {
+    font-size: clamp(1.85rem, 8.4vw, 2.5rem);
+    line-height: 1.15;
+  }
+
+  .site-optimized main h2 {
+    font-size: clamp(1.35rem, 6.8vw, 2rem);
+    line-height: 1.2;
+  }
+
+  .site-optimized main h3,
+  .site-optimized main h4 {
+    line-height: 1.25;
+  }
+
+  .site-optimized main [class*="text-[30px]"],
+  .site-optimized main [class*="text-[26px]"] {
+    font-size: clamp(1.3rem, 6vw, 1.8rem);
+    line-height: 1.2;
+  }
+
+  .site-optimized main [class*="rounded-[30px]"],
+  .site-optimized main [class*="rounded-3xl"] {
+    border-radius: 1.15rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-optimized a[aria-label="Falar no WhatsApp"] {
+    bottom: 0.75rem;
+    right: 0.75rem;
+    padding: 0.7rem 0.85rem;
+    gap: 0.4rem;
+    font-size: 0.72rem;
+    line-height: 1;
+  }
+
+  .site-optimized a[aria-label="Falar no WhatsApp"] span:first-child {
+    width: 1.3rem;
+    height: 1.3rem;
+    font-size: 0.82rem;
+  }
+
+  .site-optimized .prose {
+    font-size: 0.98rem;
+    line-height: 1.65;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-optimized * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

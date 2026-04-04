@@ -41,8 +41,8 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700&family=Roboto+Slab:wght@400;600&display=swap" />
-  <link rel="stylesheet" href="index_svd_files/site-tailwind.css" />
-  <link rel="stylesheet" href="index_svd_files/site-optimizations.css" />
+  <link rel="stylesheet" href="css/site-tailwind.css" />
+  <link rel="stylesheet" href="css/site-optimizations.css" />
 
   <script type="application/ld+json">
     {

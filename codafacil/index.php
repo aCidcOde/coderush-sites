@@ -29,7 +29,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="site-tailwind.css" />
+  <link rel="stylesheet" href="css/site-tailwind.css" />
 
   <style>
     body, main, footer { background: #04110d !important; font-family: 'Inter', system-ui, sans-serif; }
@@ -43,7 +43,7 @@
     .icon-wrap{display:inline-flex;width:40px;height:40px;align-items:center;justify-content:center;border-radius:16px;background:rgba(255,255,255,.1);box-shadow:inset 0 0 0 1px rgba(255,255,255,.12)}
   </style>
 
-  <link rel="stylesheet" href="site-optimizations.css" />
+  <link rel="stylesheet" href="css/site-optimizations.css" />
 
   <script type="application/ld+json">
     {
@@ -81,7 +81,7 @@
       <nav class="flex items-center justify-between py-6">
         <!-- Logo -->
         <a href="/" class="flex items-center gap-3">
-          <img decoding="async" src="logo.webp" class="logo-img" alt="Codafacil.dev" />
+          <img decoding="async" src="imagens/logo.webp" class="logo-img" alt="Codafacil.dev" />
         </a>
 
         <!-- Menu (desktop) -->
@@ -128,15 +128,11 @@
               adaptado às demandas específicas de cada projeto, usando inteligência artificial para
               <strong class="text-white">acelerar</strong> e <strong class="text-white">refinar</strong> todo o processo.
             </p>
-            <p class="mt-4 max-w-xl text-sm leading-relaxed text-white/75">
-              Subproduto da <a href="https://www.sistemavendadireta.com.br/" target="_blank" rel="noopener noreferrer" class="font-semibold text-white underline underline-offset-4">Sistema Venda Direta</a>
-              para projetos customizados e expansão tecnológica.
-            </p>
 
             <div class="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
               <a href="#contato"
                  class="inline-flex items-center justify-center rounded-full bg-white px-6 py-4 text-sm font-bold text-[#0b4db6] hover:bg-white/95">
-                Quero conversar
+                Contato
                 <span class="ml-2 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#0b4db6]/10">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
                     <path d="M8 5l8 7-8 7" stroke="#0b4db6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -146,21 +142,21 @@
 
               <a href="#processo"
                  class="inline-flex items-center justify-center rounded-full bg-white/10 px-6 py-4 text-sm font-semibold btn-outline hover:bg-white/15">
-                Entender como entregamos
+                Como entregamos
               </a>
 
               <a href="./apresentacao_codafacil_desenvolvimento_com_ia.pdf"
                  target="_blank"
                  rel="noopener noreferrer"
                  class="inline-flex items-center justify-center rounded-full bg-white/10 px-6 py-4 text-sm font-semibold btn-outline hover:bg-white/15">
-                Ver apresentação (PDF)
+                Apresentação PDF
               </a>
             </div>
 
             <!-- Micro badges -->
             <div class="mt-8 flex flex-wrap gap-2">
               <span class="rounded-full bg-white/10 px-4 py-2 text-xs ring-1 ring-white/10">Entrega quinzenal</span>
-              <span class="rounded-full bg-white/10 px-4 py-2 text-xs ring-1 ring-white/10">Transparência total</span>
+              <span class="rounded-full bg-white/10 px-4 py-2 text-xs ring-1 ring-white/10">Transparência</span>
               <span class="rounded-full bg-white/10 px-4 py-2 text-xs ring-1 ring-white/10">IA + MCPs com governança</span>
             </div>
           </div>
@@ -310,7 +306,7 @@
       <div class="soft-shadow rounded-3xl bg-white/10 p-6 ring-1 ring-white/15 md:p-8">
         <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <div>
-            <h2 class="text-3xl font-extrabold md:text-4xl">Video de demonstracao</h2>
+            <h2 class="text-3xl font-extrabold md:text-4xl">Video de demonstração</h2>
             <p class="mt-3 max-w-3xl text-sm text-white/80 md:text-base">
               Veja um resumo visual da proposta da Codafacil e da abordagem de desenvolvimento orientado por IA.
             </p>
@@ -448,40 +444,7 @@
       </div>
     </section>
 
-    <!-- Processo -->
-    <section id="processo" class="mx-auto max-w-7xl px-6 pb-16 md:pb-20">
-      <div class="grid gap-10 rounded-3xl bg-white/10 p-10 ring-1 ring-white/15 md:grid-cols-2">
-        <div>
-          <h3 class="text-3xl font-extrabold">Como trabalhamos</h3>
-          <p class="mt-5 text-white/80">
-            Processo pragmático, com qualidade como política e transparência como padrão.
-            A IA é aplicada para otimizar tempo e recursos, reduzindo custos e melhorando o resultado final.
-          </p>
-
-          <div class="mt-7 grid gap-3 text-sm text-white/85">
-            <div class="rounded-2xl bg-white/10 p-4 ring-1 ring-white/10">
-              • Kickoff: objetivos, métricas, riscos e definição de pronto
-            </div>
-            <div class="rounded-2xl bg-white/10 p-4 ring-1 ring-white/10">
-              • Cadência quinzenal: demonstração, status, decisões e próximos passos
-            </div>
-            <div class="rounded-2xl bg-white/10 p-4 ring-1 ring-white/10">
-              • Transparência: registro de entregas, esforço e riscos
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <h4 class="text-xl font-bold">Qualidade com IA (na prática)</h4>
-          <ul class="mt-5 space-y-3 text-sm text-white/80">
-            <li class="rounded-2xl bg-white/10 p-4 ring-1 ring-white/10">Guardrails: padrões, checklist e definição de pronto</li>
-            <li class="rounded-2xl bg-white/10 p-4 ring-1 ring-white/10">Review assistido + documentação viva</li>
-            <li class="rounded-2xl bg-white/10 p-4 ring-1 ring-white/10">Testes mínimos por módulo + regressão</li>
-            <li class="rounded-2xl bg-white/10 p-4 ring-1 ring-white/10">MCPs para IA com contexto do projeto (repo, tickets e docs)</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+    
 
     <!-- Vantagens -->
     <section id="vantagens" class="mx-auto max-w-7xl px-6 pb-16 md:pb-20">
@@ -507,36 +470,7 @@
       </div>
     </section>
 
-    <!-- Tecnologia -->
-    <section id="stack" class="mx-auto max-w-7xl px-6 pb-16 md:pb-20">
-      <div class="rounded-3xl bg-white/10 p-10 ring-1 ring-white/15">
-        <h3 class="text-3xl font-extrabold">Tecnologia de ponta</h3>
-        <p class="mt-5 max-w-3xl text-white/80">
-          Stack moderna e sustentável para alta produtividade e manutenção fácil.
-          Usamos <strong class="text-white">Laravel</strong>, <strong class="text-white">Livewire</strong> e <strong class="text-white">Tailwind</strong>,
-          com apoio de <strong class="text-white">MCPs</strong> para integrar ferramentas e contexto em fluxos de IA com governança.
-        </p>
-
-        <div class="mt-8 grid gap-6 md:grid-cols-4">
-          <div class="rounded-2xl bg-white/10 p-6 ring-1 ring-white/10">
-            <div class="font-bold">Laravel</div>
-            <div class="mt-2 text-sm text-white/80">Back-end robusto, escalável e seguro.</div>
-          </div>
-          <div class="rounded-2xl bg-white/10 p-6 ring-1 ring-white/10">
-            <div class="font-bold">Livewire</div>
-            <div class="mt-2 text-sm text-white/80">Interfaces dinâmicas com alta produtividade.</div>
-          </div>
-          <div class="rounded-2xl bg-white/10 p-6 ring-1 ring-white/10">
-            <div class="font-bold">Tailwind</div>
-            <div class="mt-2 text-sm text-white/80">UI consistente e rápida de evoluir.</div>
-          </div>
-          <div class="rounded-2xl bg-white/10 p-6 ring-1 ring-white/10">
-            <div class="font-bold">MCPs</div>
-            <div class="mt-2 text-sm text-white/80">IA com contexto real (repo, tickets, docs) e trilha auditável.</div>
-          </div>
-        </div>
-      </div>
-    </section>
+    
 
     <!-- Clientes -->
     <section id="clientes" class="mx-auto max-w-7xl px-6 pb-16 md:pb-20">
