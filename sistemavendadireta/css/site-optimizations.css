@@ -5,11 +5,6 @@
 Ajustes de responsividade e performance para paginas publicas estaticas.
 */
 
-:root {
-  --font-body: 'Inter', system-ui, sans-serif;
-  --font-heading: 'Montserrat', sans-serif;
-}
-
 .site-optimized {
   overflow-x: hidden;
 }

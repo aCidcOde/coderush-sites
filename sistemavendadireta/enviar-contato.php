@@ -69,6 +69,41 @@ function safeRedirect(string $location, bool $success): void
     exit;
 }
 
+function appendLineToFile(string $filePath, string $line): bool
+{
+    $directory = dirname($filePath);
+    if (!is_dir($directory) && !mkdir($directory, 0775, true) && !is_dir($directory)) {
+        return false;
+    }
+
+    return file_put_contents($filePath, $line . PHP_EOL, FILE_APPEND | LOCK_EX) !== false;
+}
+
+function persistLeadLocally(string $baseDir, array $payload, string $reason): bool
+{
+    $storageDir = rtrim($baseDir, DIRECTORY_SEPARATOR) . DIRECTORY_SEPARATOR . 'storage';
+    $timestamp = date('c');
+
+    $record = [
+        'saved_at' => $timestamp,
+        'reason' => $reason,
+        'payload' => $payload,
+    ];
+
+    $jsonLine = json_encode($record, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
+    if ($jsonLine === false) {
+        return false;
+    }
+
+    $leadSaved = appendLineToFile($storageDir . DIRECTORY_SEPARATOR . 'contact-leads.ndjson', $jsonLine);
+    $logSaved = appendLineToFile(
+        $storageDir . DIRECTORY_SEPARATOR . 'contact-errors.log',
+        sprintf('[%s] %s', $timestamp, $reason)
+    );
+
+    return $leadSaved && $logSaved;
+}
+
 function smtpReadResponse($socket): string
 {
     $response = '';
@@ -86,16 +121,28 @@ function smtpReadResponse($socket): string
     return $response;
 }
 
-function smtpCommand($socket, string $command, array $expectedCodes): bool
+function smtpCommand($socket, string $command, array $expectedCodes, ?string &$failureReason = null): bool
 {
     fwrite($socket, $command . "\r\n");
     $response = smtpReadResponse($socket);
     $code = (int) substr($response, 0, 3);
 
-    return in_array($code, $expectedCodes, true);
+    if (in_array($code, $expectedCodes, true)) {
+        return true;
+    }
+
+    $failureReason = sprintf(
+        'SMTP command failed [%s], expected %s, got %d (%s)',
+        preg_replace('/\s+/', ' ', $command) ?? $command,
+        implode(',', $expectedCodes),
+        $code,
+        trim($response)
+    );
+
+    return false;
 }
 
-function sendMailViaSmtp(array $smtpConfig, string $fromEmail, string $fromName, string $toEmail, string $replyTo, string $subject, string $body): bool
+function sendMailViaSmtp(array $smtpConfig, string $fromEmail, string $fromName, string $toEmail, string $replyTo, string $subject, string $body, ?string &$failureReason = null): bool
 {
     $host = $smtpConfig['host'];
     $port = (int) $smtpConfig['port'];
@@ -104,12 +151,16 @@ function sendMailViaSmtp(array $smtpConfig, string $fromEmail, string $fromName,
     $encryption = strtolower($smtpConfig['encryption']);
 
     if ($host === '' || $port <= 0 || $username === '' || $password === '') {
+        $failureReason = 'SMTP config incomplete.';
+
         return false;
     }
 
     $scheme = $encryption === 'ssl' ? 'ssl://' : 'tcp://';
     $socket = @stream_socket_client($scheme . $host . ':' . $port, $errorCode, $errorMessage, 15);
     if ($socket === false) {
+        $failureReason = sprintf('SMTP connection failed: [%s] %s', (string) $errorCode, (string) $errorMessage);
+
         return false;
     }
 
@@ -117,20 +168,21 @@ function sendMailViaSmtp(array $smtpConfig, string $fromEmail, string $fromName,
 
     $greeting = smtpReadResponse($socket);
     if ((int) substr($greeting, 0, 3) !== 220) {
+        $failureReason = 'SMTP greeting invalid: ' . trim($greeting);
         fclose($socket);
 
         return false;
     }
 
     $hostname = gethostname() ?: 'localhost';
-    if (!smtpCommand($socket, 'EHLO ' . $hostname, [250])) {
+    if (!smtpCommand($socket, 'EHLO ' . $hostname, [250], $failureReason)) {
         fclose($socket);
 
         return false;
     }
 
     if ($encryption === 'tls') {
-        if (!smtpCommand($socket, 'STARTTLS', [220])) {
+        if (!smtpCommand($socket, 'STARTTLS', [220], $failureReason)) {
             fclose($socket);
 
             return false;
@@ -138,45 +190,46 @@ function sendMailViaSmtp(array $smtpConfig, string $fromEmail, string $fromName,
 
         $cryptoEnabled = stream_socket_enable_crypto($socket, true, STREAM_CRYPTO_METHOD_TLS_CLIENT);
         if ($cryptoEnabled !== true) {
+            $failureReason = 'SMTP STARTTLS negotiation failed.';
             fclose($socket);
 
             return false;
         }
 
-        if (!smtpCommand($socket, 'EHLO ' . $hostname, [250])) {
+        if (!smtpCommand($socket, 'EHLO ' . $hostname, [250], $failureReason)) {
             fclose($socket);
 
             return false;
         }
     }
 
-    if (!smtpCommand($socket, 'AUTH LOGIN', [334])) {
+    if (!smtpCommand($socket, 'AUTH LOGIN', [334], $failureReason)) {
         fclose($socket);
 
         return false;
     }
-    if (!smtpCommand($socket, base64_encode($username), [334])) {
+    if (!smtpCommand($socket, base64_encode($username), [334], $failureReason)) {
         fclose($socket);
 
         return false;
     }
-    if (!smtpCommand($socket, base64_encode($password), [235])) {
+    if (!smtpCommand($socket, base64_encode($password), [235], $failureReason)) {
         fclose($socket);
 
         return false;
     }
 
-    if (!smtpCommand($socket, 'MAIL FROM:<' . $fromEmail . '>', [250])) {
+    if (!smtpCommand($socket, 'MAIL FROM:<' . $fromEmail . '>', [250], $failureReason)) {
         fclose($socket);
 
         return false;
     }
-    if (!smtpCommand($socket, 'RCPT TO:<' . $toEmail . '>', [250, 251])) {
+    if (!smtpCommand($socket, 'RCPT TO:<' . $toEmail . '>', [250, 251], $failureReason)) {
         fclose($socket);
 
         return false;
     }
-    if (!smtpCommand($socket, 'DATA', [354])) {
+    if (!smtpCommand($socket, 'DATA', [354], $failureReason)) {
         fclose($socket);
 
         return false;
@@ -202,14 +255,17 @@ function sendMailViaSmtp(array $smtpConfig, string $fromEmail, string $fromName,
 
     $dataResponse = smtpReadResponse($socket);
     $ok = (int) substr($dataResponse, 0, 3) === 250;
+    if ($ok !== true) {
+        $failureReason = 'SMTP DATA failed: ' . trim($dataResponse);
+    }
 
-    smtpCommand($socket, 'QUIT', [221, 250]);
+    smtpCommand($socket, 'QUIT', [221, 250], $failureReason);
     fclose($socket);
 
     return $ok;
 }
 
-function sendMailViaPhpMail(string $toEmail, string $fromEmail, string $fromName, string $replyTo, string $subject, string $body): bool
+function sendMailViaPhpMail(string $toEmail, string $fromEmail, string $fromName, string $replyTo, string $subject, string $body, ?string &$failureReason = null): bool
 {
     $subjectLine = function_exists('mb_encode_mimeheader')
         ? mb_encode_mimeheader($subject, 'UTF-8')
@@ -221,7 +277,17 @@ function sendMailViaPhpMail(string $toEmail, string $fromEmail, string $fromName
     $headers[] = 'From: ' . $fromName . ' <' . $fromEmail . '>';
     $headers[] = 'Reply-To: ' . $replyTo;
 
-    return mail($toEmail, $subjectLine, $body, implode("\r\n", $headers));
+    if (function_exists('error_clear_last')) {
+        error_clear_last();
+    }
+
+    $sent = mail($toEmail, $subjectLine, $body, implode("\r\n", $headers));
+    if ($sent !== true) {
+        $lastError = error_get_last();
+        $failureReason = 'mail() fallback failed' . ($lastError !== null && isset($lastError['message']) ? ': ' . $lastError['message'] : '.');
+    }
+
+    return $sent;
 }
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
@@ -254,11 +320,7 @@ if ($telefone === '' && $email === '') {
     safeRedirect($redirect, false);
 }
 
-$toEmail = envValue(
-    $env,
-    ['CONTACT_EMAIL_TO', 'MAIL_TO_ADDRESS', 'MAIL_FROM_ADDRESS', 'MAIL_USERNAME'],
-    'contato@sistemavendadireta.com.br'
-);
+$toEmail = 'contato@sistemavendadireta.com.br';
 
 $defaultHost = $_SERVER['HTTP_HOST'] ?? 'localhost';
 $fromEmail = envValue($env, ['MAIL_FROM_ADDRESS', 'CONTACT_EMAIL_FROM'], 'no-reply@' . $defaultHost);
@@ -291,9 +353,40 @@ $smtpConfig = [
     'encryption' => envValue($env, ['MAIL_ENCRYPTION', 'SMTP_ENCRYPTION'], 'tls'),
 ];
 
-$sent = sendMailViaSmtp($smtpConfig, $fromEmail, $fromName, $toEmail, $replyTo, $subject, $body);
+$leadPayload = [
+    'origem' => $origem,
+    'nome' => $nome,
+    'email' => $email !== '' ? $email : null,
+    'telefone' => $telefone !== '' ? $telefone : null,
+    'servico' => $servico,
+    'mensagem' => $mensagem,
+    'ip' => $_SERVER['REMOTE_ADDR'] ?? 'desconhecido',
+    'user_agent' => $_SERVER['HTTP_USER_AGENT'] ?? 'desconhecido',
+];
+
+$transportFailureReason = '';
+$sent = sendMailViaSmtp($smtpConfig, $fromEmail, $fromName, $toEmail, $replyTo, $subject, $body, $transportFailureReason);
+$savedLocally = false;
 if ($sent === false) {
-    $sent = sendMailViaPhpMail($toEmail, $fromEmail, $fromName, $replyTo, $subject, $body);
+    $savedLocally = persistLeadLocally(
+        __DIR__,
+        $leadPayload,
+        'SMTP failed: ' . ($transportFailureReason !== '' ? $transportFailureReason : 'Unknown mail transport failure.')
+    );
+
+    $phpMailFailureReason = '';
+    $sent = sendMailViaPhpMail($toEmail, $fromEmail, $fromName, $replyTo, $subject, $body, $phpMailFailureReason);
+
+    if ($sent === false && $phpMailFailureReason !== '') {
+        if ($savedLocally === true) {
+            appendLineToFile(
+                __DIR__ . DIRECTORY_SEPARATOR . 'storage' . DIRECTORY_SEPARATOR . 'contact-errors.log',
+                sprintf('[%s] %s', date('c'), $phpMailFailureReason)
+            );
+        } else {
+            $savedLocally = persistLeadLocally(__DIR__, $leadPayload, $phpMailFailureReason);
+        }
+    }
 }
 
-safeRedirect($redirect, $sent);
+safeRedirect($redirect, $sent || $savedLocally);
