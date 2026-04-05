@@ -79,9 +79,13 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
     <a href="../" class="inline-flex rounded-full border border-white/60 px-4 py-2 text-xs font-semibold uppercase tracking-wide hover:bg-white/10">Voltar para o site principal</a>
 
     <section class="py-6">
-      <h1 class="font-[var(--font-heading)] text-3xl font-semibold sm:text-[42px]">Blog SVD</h1>
-      <div class="mt-2 h-1 w-[72px] rounded-full bg-white"></div>
-      <p class="mt-4 max-w-3xl text-sm leading-relaxed text-white/90">Todos os posts publicados no ambiente local, incluindo conteúdos novos de IA, CodaFácil e estratégia para vendas diretas e sistema de parceiros.</p>
+      <header class="svd-section-head max-w-3xl">
+        <p class="svd-section-head__eyebrow">Conteúdo</p>
+        <h1 class="svd-section-head__title">Blog SVD</h1>
+        <p class="svd-section-head__lead">
+          Todos os posts publicados no ambiente local, incluindo conteúdos novos de IA, CodaFácil e estratégia para vendas diretas e sistema de parceiros.
+        </p>
+      </header>
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
@@ -95,6 +99,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
           </div>
         </article>
 
+        <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="../2026/03/18/agentes-de-ia-em-2026-mcp-stateful-e-governanca-para-operar-em-escala/">
             <img src="../imagens/posts/agentes-de-ia-em-2026-mcp-stateful-e-governanca-para-operar-em-escala.jpg" alt="Agentes de IA em 2026: MCP stateful e governanca para operar em escala" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>

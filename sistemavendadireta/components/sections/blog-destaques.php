@@ -1,7 +1,11 @@
-    <section class="py-10">
-      <div class="flex items-end justify-between gap-4">
-        <div><h2 class="font-[var(--font-heading)] text-[30px] font-semibold">Blog SVD</h2><div class="mt-2 h-1 w-[72px] rounded-full bg-white"></div></div>
-        <a href="blog/" class="text-sm font-semibold text-white/85 hover:text-white">Ver todos os posts</a>
+    <section class="py-10" aria-labelledby="heading-blog-destaques">
+      <div class="flex flex-wrap items-end justify-between gap-4">
+        <header class="svd-section-head max-w-3xl">
+          <p class="svd-section-head__eyebrow">Conteúdo</p>
+          <h2 id="heading-blog-destaques" class="svd-section-head__title">Blog SVD</h2>
+          <p class="svd-section-head__lead">Artigos sobre produto, tecnologia e operação — MMN, venda direta e IA aplicada.</p>
+        </header>
+        <a href="blog/" class="shrink-0 text-sm font-semibold text-white/85 hover:text-white">Ver todos os posts</a>
       </div>
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5"><a href="2026/03/25/php-8-5-4-e-laravel-13-checklist-de-upgrade-com-governanca/"><img src="imagens/posts/php-8-5-4-e-laravel-13-checklist-de-upgrade-com-governanca.jpg" alt="PHP 8.5.4 e Laravel 13: checklist de upgrade com governanca" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a><div class="p-4"><h2 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="2026/03/25/php-8-5-4-e-laravel-13-checklist-de-upgrade-com-governanca/" class="hover:underline">PHP 8.5.4 e Laravel 13: checklist de upgrade com governanca</a></h2><p class="mt-2 text-sm text-white/85">Guia pratico para atualizar backend em 2026 com suporte previsivel e menor risco operacional.</p></div></article>

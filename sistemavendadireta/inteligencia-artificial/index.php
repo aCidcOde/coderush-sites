@@ -194,13 +194,15 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
       </div>
     </section>
 
-    <section id="ia-operacao" class="scroll-mt-28 py-10">
-      <h2 class="font-[var(--font-heading)] text-3xl font-semibold sm:text-[42px]">IA aplicada na operação</h2>
-      <div class="mt-2 h-1 w-[72px] rounded-full bg-white"></div>
-      <p class="mt-4 max-w-3xl text-base leading-relaxed text-white/90">
-        A proposta é pragmática: usar IA onde ela gera retorno financeiro real para a sua empresa.
-        Foco em reduzir custo operacional, remover gargalos e aumentar previsibilidade de resultado.
-      </p>
+    <section id="ia-operacao" class="scroll-mt-28 py-10" aria-labelledby="heading-ia-operacao">
+      <header class="svd-section-head max-w-3xl">
+        <p class="svd-section-head__eyebrow">Operação</p>
+        <h2 id="heading-ia-operacao" class="svd-section-head__title">IA aplicada na operação</h2>
+        <p class="svd-section-head__lead">
+          A proposta é pragmática: usar IA onde ela gera retorno financeiro real para a sua empresa.
+          Foco em reduzir custo operacional, remover gargalos e aumentar previsibilidade de resultado.
+        </p>
+      </header>
 
       <div class="mt-8 grid gap-4 md:grid-cols-3">
         <article class="rounded-[30px] border border-white/55 bg-brand p-6">
@@ -218,9 +220,12 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
       </div>
     </section>
 
-    <section id="ofertas" class="scroll-mt-28 py-10">
-      <h2 class="font-[var(--font-heading)] text-3xl font-semibold sm:text-[42px]">Modelo de oferta</h2>
-      <div class="mt-2 h-1 w-[72px] rounded-full bg-white"></div>
+    <section id="ofertas" class="scroll-mt-28 py-10" aria-labelledby="heading-ofertas">
+      <header class="svd-section-head max-w-3xl">
+        <p class="svd-section-head__eyebrow">Pacotes</p>
+        <h2 id="heading-ofertas" class="svd-section-head__title">Modelo de oferta</h2>
+        <p class="svd-section-head__lead">Escolha o nível de apoio à sua operação — da base SVD a projetos customizados com IA.</p>
+      </header>
 
       <div class="mt-8 grid gap-4 lg:grid-cols-3">
         <article class="rounded-3xl border border-white/25 bg-white/5 p-6">
@@ -259,11 +264,13 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
     <section id="metodo" class="scroll-mt-28 py-10">
       <div class="grid items-center gap-6 lg:grid-cols-2">
         <div>
-          <h2 class="font-[var(--font-heading)] text-3xl font-semibold sm:text-[42px]">Método de entrega</h2>
-          <div class="mt-2 h-1 w-[72px] rounded-full bg-white"></div>
-          <p class="mt-4 text-base leading-relaxed text-white/90">
-            Trabalhamos em uma esteira clara para gerar resultado prático e reduzir risco de retrabalho.
-          </p>
+          <header class="svd-section-head max-w-3xl">
+            <p class="svd-section-head__eyebrow">Processo</p>
+            <h2 class="svd-section-head__title">Método de entrega</h2>
+            <p class="svd-section-head__lead">
+              Trabalhamos em uma esteira clara para gerar resultado prático e reduzir risco de retrabalho.
+            </p>
+          </header>
 
           <div class="mt-6 grid gap-2 text-sm">
             <div class="rounded-xl border border-white/20 bg-white/5 px-4 py-3">1. Levantamento de requisitos e metas de negócio</div>
@@ -284,15 +291,17 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
       <div class="rounded-[30px] border border-white/30 bg-white/[0.06] p-6 sm:p-8">
         <div class="grid items-center gap-6 lg:grid-cols-[1fr_auto]">
           <div>
-            <h2 class="font-[var(--font-heading)] text-3xl font-semibold sm:text-[42px]">SVD + CodaFácil: sinergia direta</h2>
-            <div class="mt-2 h-1 w-[72px] rounded-full bg-white"></div>
-            <p class="mt-4 max-w-3xl text-base leading-relaxed text-white/90">
-              O Sistema Venda Direta segue como o produto principal para operação de venda direta.
-              O CodaFácil entra como célula de engenharia para customizações, integrações e novas iniciativas com IA.
-            </p>
-            <p class="mt-3 max-w-3xl text-base leading-relaxed text-white/85">
-              Resultado: você tem uma base sólida para operar hoje e um time técnico para evoluir rápido sem trocar de plataforma.
-            </p>
+            <header class="svd-section-head max-w-3xl">
+              <p class="svd-section-head__eyebrow">Parceria</p>
+              <h2 class="svd-section-head__title">SVD + CodaFácil: sinergia direta</h2>
+              <p class="svd-section-head__lead">
+                O Sistema Venda Direta segue como o produto principal para operação de venda direta.
+                O CodaFácil entra como célula de engenharia para customizações, integrações e novas iniciativas com IA.
+              </p>
+              <p class="svd-section-head__lead svd-section-head__lead--secondary">
+                Resultado: você tem uma base sólida para operar hoje e um time técnico para evoluir rápido sem trocar de plataforma.
+              </p>
+            </header>
           </div>
 
           <div class="flex flex-col items-stretch gap-3 sm:min-w-[280px]">
@@ -307,9 +316,12 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
       </div>
     </section>
 
-    <section class="py-10">
-      <h2 class="font-[var(--font-heading)] text-3xl font-semibold sm:text-[42px]">Resultados esperados em 90 dias</h2>
-      <div class="mt-2 h-1 w-[72px] rounded-full bg-white"></div>
+    <section class="scroll-mt-28 py-10" aria-labelledby="heading-resultados-90">
+      <header class="svd-section-head max-w-3xl">
+        <p class="svd-section-head__eyebrow">Métricas</p>
+        <h2 id="heading-resultados-90" class="svd-section-head__title">Resultados esperados em 90 dias</h2>
+        <p class="svd-section-head__lead">Indicativos de impacto observados em projetos com escopo e maturidade operacional alinhados.</p>
+      </header>
 
       <div class="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
         <article class="rounded-2xl border border-white/20 bg-white/5 p-5 text-center">
@@ -331,26 +343,28 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
       </div>
     </section>
 
-    <section class="py-10">
-      <h2 class="font-[var(--font-heading)] text-3xl font-semibold sm:text-[42px]">Clientes e mercado</h2>
-      <div class="mt-2 h-1 w-[72px] rounded-full bg-white"></div>
-      <p class="mt-4 text-base leading-relaxed text-white/90">
-        Solução para empresas que já operam venda direta e querem evoluir com inteligência artificial sem quebrar a base atual.
-      </p>
+    <section class="scroll-mt-28 py-10" aria-labelledby="heading-clientes-mercado">
+      <header class="svd-section-head max-w-3xl">
+        <p class="svd-section-head__eyebrow">Mercado</p>
+        <h2 id="heading-clientes-mercado" class="svd-section-head__title">Clientes e mercado</h2>
+        <p class="svd-section-head__lead">
+          Solução para empresas que já operam venda direta e querem evoluir com inteligência artificial sem quebrar a base atual.
+        </p>
+      </header>
 
-      <img decoding="async"
-        src="../imagens/Clientes.webp"
-        alt="Empresas atendidas pelo Sistema Venda Direta"
-        class="mt-6 w-full rounded-2xl border border-white/20"
-        width="1200"
-        height="772"
-        loading="lazy"
-      />
+      <?php
+      $svd_empresas_assets_prefix = '../index_svd_files';
+      $svd_empresas_include_header = false;
+      require __DIR__ . '/../components/sections/empresas-atendidas-grid.php';
+      ?>
     </section>
 
-    <section id="contato" class="scroll-mt-28 py-10">
-      <h2 class="font-[var(--font-heading)] text-3xl font-semibold sm:text-[42px]">Solicite seu diagnóstico de IA</h2>
-      <div class="mt-2 h-1 w-[72px] rounded-full bg-white"></div>
+    <section id="contato" class="scroll-mt-28 py-10" aria-labelledby="heading-contato-ia">
+      <header class="svd-section-head max-w-3xl mb-8">
+        <p class="svd-section-head__eyebrow">Contato</p>
+        <h2 id="heading-contato-ia" class="svd-section-head__title">Solicite seu diagnóstico de IA</h2>
+        <p class="svd-section-head__lead">Fale com o comercial pelo WhatsApp ou envie um resumo do que você precisa evoluir na operação.</p>
+      </header>
 
       <div class="mt-6 grid gap-10 rounded-3xl bg-white p-10 text-[#0b4db6] md:grid-cols-2">
         <div>
@@ -390,9 +404,12 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
       </div>
     </section>
 
-    <section class="py-10">
-      <h2 class="font-[var(--font-heading)] text-[30px] font-semibold">Perguntas frequentes</h2>
-      <div class="mt-2 h-1 w-[72px] rounded-full bg-white"></div>
+    <section class="scroll-mt-28 py-10" aria-labelledby="heading-faq-ia">
+      <header class="svd-section-head max-w-3xl mb-8">
+        <p class="svd-section-head__eyebrow">FAQ</p>
+        <h2 id="heading-faq-ia" class="svd-section-head__title">Perguntas frequentes</h2>
+        <p class="svd-section-head__lead">Respostas objetivas sobre como a IA entra no seu projeto com o time CodaFácil e o SVD.</p>
+      </header>
 
       <div class="mt-6 grid gap-2">
         <details class="rounded-lg border border-white/20 bg-white/5 p-4">
@@ -462,6 +479,18 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
   </footer>
   <!-- BLOG-FOOTER END -->
 
+  <noscript>
+    <style>
+      .svd-empresas .svd-empresas__intro,
+      .svd-empresas .svd-empresas__tags,
+      .svd-empresas .svd-empresas__marquees,
+      .svd-empresas .svd-empresas__cta {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+    </style>
+  </noscript>
+
   <a href="https://wa.me/+5511994566726" target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp" class="fixed bottom-3 right-3 z-[70] inline-flex items-center gap-2 rounded-full bg-[#25D366] px-4 py-3 text-sm font-bold text-white shadow-[0_10px_24px_rgba(0,0,0,0.35)] ring-2 ring-white/30 sm:bottom-4 sm:right-4 sm:h-14 sm:w-14 sm:justify-center sm:px-0">
     <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-white/20 text-base leading-none">W</span>
     <span class="sm:hidden">WhatsApp</span>
@@ -520,6 +549,29 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
       containers.forEach(function (container) {
         observer.observe(container);
       });
+
+      var empresasSection = document.querySelector("[data-svd-empresas-section]");
+      var prefersReducedMotionFeatures =
+        window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      if (empresasSection) {
+        if (prefersReducedMotionFeatures || !("IntersectionObserver" in window)) {
+          empresasSection.classList.add("svd-empresas--inview");
+        } else {
+          var empresasObserver = new IntersectionObserver(
+            function (entries, obs) {
+              entries.forEach(function (entry) {
+                if (!entry.isIntersecting) {
+                  return;
+                }
+                entry.target.classList.add("svd-empresas--inview");
+                obs.unobserve(entry.target);
+              });
+            },
+            { threshold: 0.1, rootMargin: "0px 0px -48px 0px" }
+          );
+          empresasObserver.observe(empresasSection);
+        }
+      }
     });
   </script>
 </body>
