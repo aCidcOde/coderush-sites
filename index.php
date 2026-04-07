@@ -7,7 +7,7 @@
   <meta name="description" content="CodeRush é um hub central de tecnologia que reúne múltiplas empresas e serviços especializados em vendas diretas, desenvolvimento de software, WordPress, automação com IA e design digital." />
   <meta name="keywords" content="CodeRush, cases de sucesso, software sob medida, vendas diretas, WordPress, automação com IA, Laravel, n8n, consultoria tecnológica, Brasil" />
   <meta name="robots" content="index, follow" />
-  <link rel="stylesheet" href="css/site-tailwind.css" />
+  <link rel="stylesheet" href="css/site-tailwind.css?v=<?= filemtime(__DIR__.'/css/site-tailwind.css') ?>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet" />
