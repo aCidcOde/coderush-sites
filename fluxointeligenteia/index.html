@@ -5,222 +5,469 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>FluxoInteligente IA — Automação com Agentes de IA</title>
   <meta name="description" content="Consultoria de automação que transforma processos complexos em fluxos inteligentes. Agentes de IA integrados ao n8n, automação comercial e fluxos sob medida." />
+  <meta name="keywords" content="FluxoInteligente, automação, n8n, agentes de IA, integração, CRM, ERP, LGPD, CodeRush, consultoria em automação" />
   <meta name="robots" content="index, follow" />
   <link rel="stylesheet" href="css/site-tailwind.css" />
+  <link rel="stylesheet" href="css/hub-parity.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet" />
-  <style>
-    body { background: #04110d; color: #eef8f4; }
-    .card-hover { transition: transform 0.25s ease, box-shadow 0.25s ease; }
-    .card-hover:hover { transform: translateY(-5px); box-shadow: 0 16px 32px rgba(5,150,105,0.2); }
-    .gradient-text { background: linear-gradient(135deg, #34d399, #60a5fa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-    .flow-line { border-left: 2px dashed rgba(52,211,153,0.3); }
-    .setor-pill { transition: background 0.2s, color 0.2s, border-color 0.2s; }
-    .setor-pill:hover { background: rgba(5,150,105,0.2); border-color: rgba(52,211,153,0.5); color: #6ee7b7; }
-  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "O que é a FluxoInteligente IA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "É uma consultoria especializada em automação de processos com n8n, integrações entre sistemas e agentes de IA aplicados ao negócio, com foco em resultado mensurável e governança."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quanto tempo leva para colocar o primeiro fluxo em produção?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Após o diagnóstico e alinhamento de escopo, os primeiros fluxos costumam entrar em produção em até duas semanas, dependendo da complexidade das integrações e dos sistemas envolvidos."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Vocês trabalham com n8n e outros middlewares?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sim. O n8n é a base principal para orquestração, mas avaliamos conectores, APIs e ferramentas complementares conforme a arquitetura do cliente."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Como fica LGPD e segurança dos dados?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Os fluxos são desenhados com minimização de dados, controle de acesso e trilhas de auditoria quando necessário. Detalhes contratuais e DPIA são tratados no discovery."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "A FluxoInteligente IA faz parte do ecossistema CodeRush?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sim. Somos uma das marcas do hub CodeRush, com site e time próprios, alinhados aos mesmos padrões de entrega do grupo."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Como entro em contato comercial?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Use o formulário nesta página ou o e-mail contato@fluxointeligenteia.com.br. Resposta humana, sem fila robótica genérica."
+        }
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Cases de automação — FluxoInteligente IA",
+    "description": "Exemplos de entregas em qualificação de leads, operações e atendimento com n8n e IA.",
+    "numberOfItems": 3,
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "item": { "@type": "CreativeWork", "name": "Qualificação de leads com agentes", "abstract": "Triagem automática de formulários e disparo por canal com CRM." } },
+      { "@type": "ListItem", "position": 2, "item": { "@type": "CreativeWork", "name": "Orquestração de pedidos e integrações", "abstract": "Fluxos entre e-commerce, ERP e notificações." } },
+      { "@type": "ListItem", "position": 3, "item": { "@type": "CreativeWork", "name": "Atendimento inteligente multicanal", "abstract": "Agentes em WhatsApp e e-mail com escalonamento humano." } }
+    ]
+  }
+  </script>
+  <noscript>
+    <style>
+      .cases-section .cases-reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
+      .contact-section .contact-reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
+      .faq-section .faq-reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
+      .testimonials-section .testimonials-reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
+    </style>
+  </noscript>
 </head>
-<body class="min-h-screen antialiased">
+<body id="top" class="min-h-screen antialiased">
 
-  <!-- Header -->
-  <header class="sticky top-0 z-50 border-b border-white/10 bg-[#04110d]/90 backdrop-blur-md">
-    <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-      <div class="flex items-center gap-3">
-        <div class="flex h-9 w-9 items-center justify-center rounded-lg bg-brand font-heading text-base font-bold text-white">FI</div>
-        <span class="font-heading text-lg font-bold tracking-tight">FluxoInteligente IA</span>
+  <header class="site-header" data-site-header>
+    <div class="site-header-pill">
+      <div class="site-header-inner mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-2.5 sm:gap-4 sm:px-6 sm:py-3 md:py-3.5">
+        <a href="#top" class="header-brand group flex shrink-0 items-center gap-2.5 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/55 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">
+          <span class="header-brand-mark" aria-hidden="true">FI</span>
+          <span class="header-brand-text">Fluxo<span>Inteligente IA</span></span>
+        </a>
+        <div class="hidden items-center gap-5 lg:gap-7 md:flex">
+          <nav class="flex flex-wrap items-center justify-end gap-x-1 gap-y-1 sm:gap-x-2 lg:gap-x-3 xl:gap-x-4" aria-label="Seções da página">
+            <a href="#clientes" class="header-nav-link focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">Ecossistema</a>
+            <a href="#sobre" class="header-nav-link focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">Sobre</a>
+            <a href="#solucoes" class="header-nav-link focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">Soluções</a>
+            <a href="#cases" class="header-nav-link focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">Cases</a>
+            <a href="#depoimentos" class="header-nav-link focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">Depoimentos</a>
+            <a href="#faq" class="header-nav-link focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">FAQ</a>
+            <a href="#contato" class="header-nav-link font-medium text-emerald-400/90 hover:text-emerald-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">Contato</a>
+          </nav>
+          <div class="flex items-center gap-2.5 pl-2 lg:border-l lg:border-white/[0.08] lg:pl-5">
+            <a href="#contato" class="header-btn-primary inline-flex items-center justify-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/55 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">
+              <span class="header-btn-primary-shine" aria-hidden="true"></span>
+              <span class="relative z-[1]">Fale conosco</span>
+            </a>
+          </div>
+        </div>
+        <button type="button" id="mobile-menu-btn" class="header-menu-btn relative z-[60] flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-white/14 bg-white/[0.03] text-white/90 md:hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menu de navegação">
+          <span class="sr-only">Alternar menu</span>
+          <svg id="mobile-menu-icon-open" class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" /></svg>
+          <svg id="mobile-menu-icon-close" class="hidden h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" /></svg>
+        </button>
       </div>
-      <nav class="hidden items-center gap-6 text-sm text-white/75 md:flex">
-        <a href="#como-funciona" class="transition hover:text-white">Como funciona</a>
-        <a href="#solucoes" class="transition hover:text-white">Soluções</a>
-        <a href="#setores" class="transition hover:text-white">Setores</a>
-        <a href="#planos" class="transition hover:text-white">Planos</a>
-        <a href="#contato" class="rounded-full bg-brand px-4 py-1.5 text-white transition hover:bg-emerald-500">Contato</a>
+    </div>
+    <div id="mobile-menu" class="header-mobile-panel hidden border border-white/[0.1] bg-[#04110d]/94 backdrop-blur-xl md:hidden">
+      <nav class="mx-auto flex max-w-6xl flex-col gap-0.5 px-6 py-4" aria-label="Menu mobile">
+        <a href="#clientes" class="header-mobile-link px-3 py-3 text-sm font-medium text-white/85 hover:bg-white/[0.05] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-inset">Stack</a>
+        <a href="#sobre" class="header-mobile-link px-3 py-3 text-sm font-medium text-white/85 hover:bg-white/[0.05] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-inset">Sobre</a>
+        <a href="#como-funciona" class="header-mobile-link px-3 py-3 text-sm font-medium text-white/85 hover:bg-white/[0.05] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-inset">Como funciona</a>
+        <a href="#solucoes" class="header-mobile-link px-3 py-3 text-sm font-medium text-white/85 hover:bg-white/[0.05] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-inset">Soluções</a>
+        <a href="#setores" class="header-mobile-link px-3 py-3 text-sm font-medium text-white/85 hover:bg-white/[0.05] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-inset">Setores</a>
+        <a href="#planos" class="header-mobile-link px-3 py-3 text-sm font-medium text-white/85 hover:bg-white/[0.05] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-inset">Planos</a>
+        <a href="#cases" class="header-mobile-link px-3 py-3 text-sm font-medium text-white/85 hover:bg-white/[0.05] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-inset">Cases</a>
+        <a href="#depoimentos" class="header-mobile-link px-3 py-3 text-sm font-medium text-white/85 hover:bg-white/[0.05] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-inset">Depoimentos</a>
+        <a href="#faq" class="header-mobile-link px-3 py-3 text-sm font-medium text-white/85 hover:bg-white/[0.05] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-inset">FAQ</a>
+        <a href="#contato" class="header-mobile-link px-3 py-3 text-sm font-semibold text-emerald-400/95 hover:bg-emerald-500/10 hover:text-emerald-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-inset">Contato</a>
+        <div class="mt-3 flex flex-col gap-2.5 border-t border-white/10 pt-4">
+          <a href="#contato" class="header-btn-primary flex w-full items-center justify-center px-4 py-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/55 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">
+            <span class="header-btn-primary-shine" aria-hidden="true"></span>
+            <span class="relative z-[1]">Fale conosco</span>
+          </a>
+        </div>
       </nav>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="relative overflow-hidden px-6 py-24 text-center">
-    <div class="pointer-events-none absolute inset-0">
-      <div class="absolute left-1/2 top-0 h-[450px] w-[700px] -translate-x-1/2 rounded-full bg-brand/15 blur-[100px]"></div>
+  <section class="hero-section relative overflow-hidden px-6 text-center" aria-labelledby="hero-heading">
+    <div class="hero-ambient" aria-hidden="true">
+      <div class="hero-grid"></div>
+      <div class="hero-blob hero-blob-1"></div>
+      <div class="hero-blob hero-blob-2"></div>
+      <div class="hero-blob hero-blob-3"></div>
+      <div class="hero-vignette"></div>
+      <div class="hero-noise"></div>
     </div>
-    <div class="relative mx-auto max-w-3xl">
-      <span class="inline-block rounded-full border border-emerald-500/30 bg-emerald-500/10 px-4 py-1 text-xs font-semibold uppercase tracking-widest text-emerald-300">Automação Inteligente</span>
-      <h1 class="mt-6 font-heading text-5xl font-extrabold leading-tight sm:text-6xl">
-        Processos complexos<br/><span class="gradient-text">em fluxos inteligentes</span>
+    <div class="relative z-10 mx-auto w-full max-w-3xl">
+      <div class="hero-reveal-item hero-delay-1">
+        <span class="hero-badge rounded-full px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-emerald-200">Automação inteligente</span>
+      </div>
+      <h1 id="hero-heading" class="hero-reveal-item hero-delay-2 mt-7 font-heading text-4xl font-extrabold leading-[1.12] tracking-tight text-white sm:text-5xl md:text-6xl md:leading-[1.1]">
+        <span class="block text-white">Processos complexos</span>
+        <span class="gradient-text mt-2 block sm:mt-3">em fluxos inteligentes</span>
       </h1>
-      <p class="mt-6 text-lg leading-relaxed text-white/70">
-        FluxoInteligente IA é uma consultoria de automação que usa agentes de IA integrados ao n8n para transformar operações manuais em fluxos comerciais eficientes e escaláveis.
+      <p class="hero-reveal-item hero-delay-3 mx-auto mt-7 max-w-2xl text-base leading-relaxed text-white/75 sm:text-lg">
+        Consultoria de automação com agentes de IA integrados ao n8n — da análise ao fluxo em produção, com ROI mensurável.
       </p>
-      <div class="mt-8 flex flex-wrap justify-center gap-4">
-        <a href="#contato" class="rounded-full bg-brand px-7 py-3 text-sm font-semibold text-white transition hover:bg-emerald-500">Automatize agora</a>
-        <a href="#como-funciona" class="rounded-full border border-white/25 px-7 py-3 text-sm font-semibold text-white/90 transition hover:border-white/60 hover:bg-white/5">Como funciona</a>
+      <div class="hero-reveal-item hero-delay-4 mt-10 flex flex-wrap items-center justify-center gap-4">
+        <a href="#contato" class="group relative inline-flex items-center justify-center overflow-hidden rounded-full bg-brand px-8 py-3.5 text-sm font-semibold text-white shadow-[0_0_0_1px_rgba(255,255,255,0.08),0_16px_40px_-12px_rgba(5,150,105,0.55)] transition duration-300 hover:-translate-y-0.5 hover:bg-emerald-500 hover:shadow-[0_0_0_1px_rgba(255,255,255,0.12),0_22px_48px_-8px_rgba(5,150,105,0.45)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">
+          <span class="relative z-10">Automatize agora</span>
+          <span class="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/15 to-transparent transition duration-700 group-hover:translate-x-full" aria-hidden="true"></span>
+        </a>
+        <a href="#como-funciona" class="inline-flex items-center justify-center rounded-full border border-white/25 bg-white/[0.03] px-8 py-3.5 text-sm font-semibold text-white/95 backdrop-blur-sm transition duration-300 hover:-translate-y-0.5 hover:border-white/45 hover:bg-white/[0.08] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">Como funciona</a>
+      </div>
+      <div class="hero-reveal-item hero-delay-5 mt-14 flex flex-col items-center gap-2 md:mt-20">
+        <a href="#clientes" class="hero-scroll-hint group inline-flex flex-col items-center gap-2 rounded-lg px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-white/45 transition hover:text-white/75 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">
+          <span>Explorar página</span>
+          <svg class="h-5 w-5 text-emerald-400/80 group-hover:text-emerald-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- Diferenciais -->
-  <section class="px-6 py-16">
-    <div class="mx-auto max-w-6xl">
-      <div class="mb-10 text-center">
-        <p class="text-xs font-semibold uppercase tracking-widest text-emerald-400">Por que a FluxoInteligente</p>
-        <h2 class="mt-2 font-heading text-4xl font-bold">Automação que realmente funciona</h2>
-        <p class="mt-3 text-white/60">Do diagnóstico ao agente em produção, com resultado mensurável.</p>
+  <section id="clientes" class="clients-strip border-t border-white/[0.06] bg-[#04110d] py-10 md:py-14" aria-label="Integrações e stack técnica">
+    <div class="mx-auto max-w-6xl px-6">
+      <p class="text-center text-[11px] font-semibold uppercase tracking-[0.2em] text-white/40">Ecossistema técnico</p>
+      <p class="mx-auto mt-2 max-w-xl text-center text-xs text-white/45">Integrações, ferramentas e padrões usados nas soluções da FluxoInteligente IA.</p>
+    </div>
+    <div class="clients-marquee mx-auto mt-8 max-w-[100vw]">
+      <div class="clients-track">
+        <div class="clients-group">
+          <span class="clients-logo">n8n</span>
+          <span class="clients-logo">OpenAI</span>
+          <span class="clients-logo">WhatsApp</span>
+          <span class="clients-logo">REST API</span>
+          <span class="clients-logo">PostgreSQL</span>
+          <span class="clients-logo">Google Sheets</span>
+          <span class="clients-logo">CRM</span>
+          <span class="clients-logo">ERP</span>
+        </div>
+        <div class="clients-group clients-group-dup" role="presentation" aria-hidden="true">
+          <span class="clients-logo">n8n</span>
+          <span class="clients-logo">OpenAI</span>
+          <span class="clients-logo">WhatsApp</span>
+          <span class="clients-logo">REST API</span>
+          <span class="clients-logo">PostgreSQL</span>
+          <span class="clients-logo">Google Sheets</span>
+          <span class="clients-logo">CRM</span>
+          <span class="clients-logo">ERP</span>
+        </div>
       </div>
-      <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-        <div class="card-hover rounded-2xl border border-white/10 bg-white/[0.04] p-6 text-center">
-          <div class="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-600/20 text-2xl">⚡</div>
-          <h3 class="font-heading text-base font-bold">Entrega rápida</h3>
-          <p class="mt-1 text-xs text-white/55">Primeiros fluxos em produção em até 2 semanas após o diagnóstico.</p>
+    </div>
+    <div class="clients-marquee mx-auto mt-5 max-w-[100vw]">
+      <div class="clients-track clients-track--alt">
+        <div class="clients-group">
+          <span class="clients-logo">Webhooks</span>
+          <span class="clients-logo">Make</span>
+          <span class="clients-logo">Slack</span>
+          <span class="clients-logo">E-mail</span>
+          <span class="clients-logo">HubSpot</span>
+          <span class="clients-logo">Pipedrive</span>
+          <span class="clients-logo">Shopify</span>
+          <span class="clients-logo">Woo</span>
         </div>
-        <div class="card-hover rounded-2xl border border-white/10 bg-white/[0.04] p-6 text-center">
-          <div class="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-600/20 text-2xl">🔒</div>
-          <h3 class="font-heading text-base font-bold">LGPD em foco</h3>
-          <p class="mt-1 text-xs text-white/55">Fluxos desenhados com conformidade e proteção de dados desde o início.</p>
-        </div>
-        <div class="card-hover rounded-2xl border border-white/10 bg-white/[0.04] p-6 text-center">
-          <div class="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-600/20 text-2xl">🧩</div>
-          <h3 class="font-heading text-base font-bold">Multi-sistema</h3>
-          <p class="mt-1 text-xs text-white/55">Integração nativa com CRMs, ERPs, e-commerce, APIs e planilhas.</p>
-        </div>
-        <div class="card-hover rounded-2xl border border-white/10 bg-white/[0.04] p-6 text-center">
-          <div class="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-600/20 text-2xl">📈</div>
-          <h3 class="font-heading text-base font-bold">ROI mensurável</h3>
-          <p class="mt-1 text-xs text-white/55">Mapeamos KPIs antes e depois para provar o ganho real de cada automação.</p>
+        <div class="clients-group clients-group-dup" aria-hidden="true">
+          <span class="clients-logo">Webhooks</span>
+          <span class="clients-logo">Make</span>
+          <span class="clients-logo">Slack</span>
+          <span class="clients-logo">E-mail</span>
+          <span class="clients-logo">HubSpot</span>
+          <span class="clients-logo">Pipedrive</span>
+          <span class="clients-logo">Shopify</span>
+          <span class="clients-logo">Woo</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Como funciona -->
-  <section id="como-funciona" class="px-6 py-20">
+  <section id="sobre" class="sobre-section relative border-t border-white/[0.06] px-6 py-20 md:py-28" aria-labelledby="sobre-heading">
+    <div class="sobre-ambient" aria-hidden="true"></div>
+    <div class="sobre-ring hidden lg:block" aria-hidden="true"></div>
+    <div class="pointer-events-none absolute inset-x-0 top-0 mx-auto h-px max-w-3xl bg-gradient-to-r from-transparent via-emerald-500/35 to-transparent" aria-hidden="true"></div>
+    <div class="relative mx-auto max-w-6xl">
+      <div class="grid gap-14 lg:grid-cols-12 lg:items-start lg:gap-12">
+        <div class="lg:col-span-5">
+          <p class="sobre-reveal sobre-d-1 font-heading text-[11px] font-semibold uppercase tracking-[0.22em] text-emerald-400/95">Quem somos</p>
+          <h2 id="sobre-heading" class="sobre-reveal sobre-d-2 mt-3 font-heading text-3xl font-bold tracking-tight text-white sm:text-4xl">Um núcleo de automação no ecossistema CodeRush</h2>
+          <p class="sobre-reveal sobre-d-3 mt-5 text-base leading-relaxed text-white/68">
+            A FluxoInteligente IA transforma processos complexos em fluxos inteligentes com <strong class="font-semibold text-white/90">n8n, integrações e agentes de IA</strong>, sempre com foco em resultado de negócio.
+          </p>
+          <p class="sobre-reveal sobre-d-4 mt-4 text-base leading-relaxed text-white/60">
+            Fazemos parte do <strong class="font-semibold text-white/85">hub CodeRush</strong>, mantendo identidade própria e o mesmo padrão de entrega das marcas do grupo.
+          </p>
+          <div class="sobre-reveal sobre-d-5 mt-8 flex flex-wrap gap-3">
+            <a href="#como-funciona" class="inline-flex items-center justify-center gap-2 rounded-full bg-brand px-6 py-3 text-sm font-semibold text-white shadow-[0_12px_36px_-12px_rgba(5,150,105,0.65)] transition hover:-translate-y-0.5 hover:bg-emerald-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">
+              <i data-lucide="git-branch" class="h-4 w-4" aria-hidden="true"></i>
+              Ver metodologia
+            </a>
+            <a href="#contato" class="inline-flex items-center justify-center gap-2 rounded-full border border-white/22 bg-white/[0.04] px-6 py-3 text-sm font-semibold text-white/92 backdrop-blur-sm transition hover:-translate-y-0.5 hover:border-white/40 hover:bg-white/[0.08] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">
+              <i data-lucide="message-square" class="h-4 w-4" aria-hidden="true"></i>
+              Falar com o time
+            </a>
+          </div>
+        </div>
+        <div class="lg:col-span-7">
+          <div class="grid grid-cols-3 gap-3 sm:gap-4">
+            <div class="sobre-reveal sobre-d-3 sobre-stat px-3 py-5 text-center sm:px-4 sm:py-6">
+              <p class="font-heading text-2xl font-extrabold tabular-nums text-emerald-400 sm:text-3xl">≤2</p>
+              <p class="mt-1.5 text-[11px] font-medium leading-snug text-white/55 sm:text-xs">Semanas p/ 1º fluxo*</p>
+            </div>
+            <div class="sobre-reveal sobre-d-4 sobre-stat px-3 py-5 text-center sm:px-4 sm:py-6">
+              <p class="font-heading text-2xl font-extrabold tabular-nums text-emerald-400 sm:text-3xl">n8n</p>
+              <p class="mt-1.5 text-[11px] font-medium leading-snug text-white/55 sm:text-xs">Orquestração central</p>
+            </div>
+            <div class="sobre-reveal sobre-d-5 sobre-stat px-3 py-5 text-center sm:px-4 sm:py-6">
+              <p class="font-heading text-2xl font-extrabold text-emerald-400 sm:text-3xl">LGPD</p>
+              <p class="mt-1.5 text-[11px] font-medium leading-snug text-white/55 sm:text-xs">Desde o desenho</p>
+            </div>
+          </div>
+          <p class="sobre-reveal sobre-d-3 mt-2 text-center text-[10px] text-white/35 sm:text-left">*Após diagnóstico aprovado; variável conforme integrações.</p>
+          <div class="mt-4 grid gap-3 sm:grid-cols-2">
+            <article class="sobre-reveal sobre-d-4 sobre-pillar flex gap-4 p-4 sm:p-5">
+              <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-emerald-500/15 text-emerald-200 ring-1 ring-emerald-400/20">
+                <i data-lucide="zap" class="h-5 w-5" aria-hidden="true"></i>
+              </span>
+              <div>
+                <h3 class="font-heading text-sm font-bold text-white">Entrega rápida</h3>
+                <p class="mt-1.5 text-xs leading-relaxed text-white/55">Primeiros fluxos em produção com cadência previsível após o diagnóstico.</p>
+              </div>
+            </article>
+            <article class="sobre-reveal sobre-d-5 sobre-pillar flex gap-4 p-4 sm:p-5">
+              <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-emerald-500/15 text-emerald-200 ring-1 ring-emerald-400/20">
+                <i data-lucide="shield-check" class="h-5 w-5" aria-hidden="true"></i>
+              </span>
+              <div>
+                <h3 class="font-heading text-sm font-bold text-white">LGPD em foco</h3>
+                <p class="mt-1.5 text-xs leading-relaxed text-white/55">Fluxos com conformidade e proteção de dados desde o início.</p>
+              </div>
+            </article>
+            <article class="sobre-reveal sobre-d-6 sobre-pillar flex gap-4 p-4 sm:p-5">
+              <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-emerald-500/15 text-emerald-200 ring-1 ring-emerald-400/20">
+                <i data-lucide="puzzle" class="h-5 w-5" aria-hidden="true"></i>
+              </span>
+              <div>
+                <h3 class="font-heading text-sm font-bold text-white">Multi-sistema</h3>
+                <p class="mt-1.5 text-xs leading-relaxed text-white/55">CRM, ERP, e-commerce, APIs e planilhas no mesmo fluxo.</p>
+              </div>
+            </article>
+            <article class="sobre-reveal sobre-d-7 sobre-pillar flex gap-4 p-4 sm:p-5">
+              <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-emerald-500/15 text-emerald-200 ring-1 ring-emerald-400/20">
+                <i data-lucide="trending-up" class="h-5 w-5" aria-hidden="true"></i>
+              </span>
+              <div>
+                <h3 class="font-heading text-sm font-bold text-white">ROI mensurável</h3>
+                <p class="mt-1.5 text-xs leading-relaxed text-white/55">KPIs antes e depois para provar o ganho de cada automação.</p>
+              </div>
+            </article>
+          </div>
+          <p class="sobre-reveal sobre-d-8 mt-6 text-center text-[11px] text-white/38 sm:text-left">Marca do ecossistema CodeRush — identidade e expertises próprias.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="border-t border-white/[0.06] px-6 py-12 md:py-16" aria-label="Ecossistema CodeRush">
+    <div class="relative mx-auto max-w-4xl">
+      <div class="pointer-events-none absolute inset-x-0 top-0 mx-auto h-px max-w-xl bg-gradient-to-r from-transparent via-emerald-500/40 to-transparent" aria-hidden="true"></div>
+      <div class="portfolio-card rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.07] to-white/[0.02] p-8 text-center shadow-lg shadow-black/25 backdrop-blur-sm">
+        <p class="text-xs font-semibold uppercase tracking-widest text-emerald-400">CodeRush</p>
+        <h3 class="mt-3 font-heading text-xl font-bold text-white md:text-2xl">CodeRush: um hub central de tecnologia</h3>
+        <p class="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-white/60">A FluxoInteligente IA integra um ecossistema com múltiplas especialidades em software, vendas diretas, WordPress e automação.</p>
+        <a href="/" class="mt-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/[0.05] px-6 py-3 text-sm font-semibold text-white/90 transition hover:border-emerald-500/40 hover:bg-white/[0.08] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">
+          Ir para o hub CodeRush
+          <i data-lucide="arrow-right" class="h-4 w-4" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="como-funciona" class="border-t border-white/[0.06] px-6 py-20 md:py-28">
     <div class="mx-auto max-w-3xl">
       <div class="mb-12 text-center">
         <p class="text-xs font-semibold uppercase tracking-widest text-emerald-400">Metodologia</p>
-        <h2 class="mt-2 font-heading text-4xl font-bold">Como funciona</h2>
-        <p class="mt-3 text-white/60">Da análise ao agente em produção, com governança em cada etapa.</p>
+        <h2 class="mt-2 font-heading text-3xl font-bold tracking-tight text-white sm:text-4xl">Como funciona</h2>
+        <p class="mt-3 text-base text-white/60">Da análise ao agente em produção, com governança em cada etapa.</p>
       </div>
-
       <div class="space-y-0">
-        <div class="flex gap-6 pb-8">
-          <div class="flex flex-col items-center">
-            <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-emerald-600 font-heading text-sm font-bold text-white">1</div>
-            <div class="mt-2 flow-line flex-1"></div>
+        <div class="flex gap-6 pb-8 md:border-l-2 md:border-dashed md:border-emerald-500/25 md:pl-8">
+          <div class="hidden w-10 shrink-0 flex-col items-center md:flex">
+            <div class="flex h-10 w-10 items-center justify-center rounded-full bg-emerald-600 font-heading text-sm font-bold text-white">1</div>
           </div>
-          <div class="pb-4">
-            <h3 class="font-heading text-lg font-bold">Mapeamento de processos</h3>
-            <p class="mt-1 text-sm text-white/65">Entendemos as entradas, saídas, regras de negócio e os gargalos do processo atual.</p>
-          </div>
-        </div>
-
-        <div class="flex gap-6 pb-8">
-          <div class="flex flex-col items-center">
-            <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-emerald-600 font-heading text-sm font-bold text-white">2</div>
-            <div class="mt-2 flow-line flex-1"></div>
-          </div>
-          <div class="pb-4">
-            <h3 class="font-heading text-lg font-bold">Design do fluxo inteligente</h3>
-            <p class="mt-1 text-sm text-white/65">Projetamos o fluxo no n8n com os agentes de IA adequados, conectores e lógica de decisão.</p>
+          <div class="w-full pb-4 md:-ml-0">
+            <span class="mb-2 inline-flex h-8 w-8 items-center justify-center rounded-full bg-emerald-600 font-heading text-xs font-bold text-white md:hidden">1</span>
+            <h3 class="font-heading text-lg font-bold text-white">Mapeamento de processos</h3>
+            <p class="mt-1 text-sm text-white/65">Entradas, saídas, regras de negócio e gargalos do processo atual.</p>
           </div>
         </div>
-
-        <div class="flex gap-6 pb-8">
-          <div class="flex flex-col items-center">
-            <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-emerald-600 font-heading text-sm font-bold text-white">3</div>
-            <div class="mt-2 flow-line flex-1"></div>
+        <div class="flex gap-6 pb-8 md:border-l-2 md:border-dashed md:border-emerald-500/25 md:pl-8">
+          <div class="hidden w-10 shrink-0 flex-col items-center md:flex">
+            <div class="flex h-10 w-10 items-center justify-center rounded-full bg-emerald-600 font-heading text-sm font-bold text-white">2</div>
           </div>
-          <div class="pb-4">
-            <h3 class="font-heading text-lg font-bold">Implementação e testes</h3>
-            <p class="mt-1 text-sm text-white/65">Construímos, validamos em ambiente controlado e ajustamos os modelos até atingir a qualidade esperada.</p>
+          <div class="w-full pb-4">
+            <span class="mb-2 inline-flex h-8 w-8 items-center justify-center rounded-full bg-emerald-600 font-heading text-xs font-bold text-white md:hidden">2</span>
+            <h3 class="font-heading text-lg font-bold text-white">Design do fluxo inteligente</h3>
+            <p class="mt-1 text-sm text-white/65">Fluxo no n8n com agentes, conectores e lógica de decisão.</p>
           </div>
         </div>
-
-        <div class="flex gap-6">
-          <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-emerald-600 font-heading text-sm font-bold text-white">4</div>
-          <div>
-            <h3 class="font-heading text-lg font-bold">Go-live e monitoramento</h3>
-            <p class="mt-1 text-sm text-white/65">Ativamos em produção com monitoramento contínuo, alertas e evolução iterativa do fluxo.</p>
+        <div class="flex gap-6 pb-8 md:border-l-2 md:border-dashed md:border-emerald-500/25 md:pl-8">
+          <div class="hidden w-10 shrink-0 flex-col items-center md:flex">
+            <div class="flex h-10 w-10 items-center justify-center rounded-full bg-emerald-600 font-heading text-sm font-bold text-white">3</div>
+          </div>
+          <div class="w-full pb-4">
+            <span class="mb-2 inline-flex h-8 w-8 items-center justify-center rounded-full bg-emerald-600 font-heading text-xs font-bold text-white md:hidden">3</span>
+            <h3 class="font-heading text-lg font-bold text-white">Implementação e testes</h3>
+            <p class="mt-1 text-sm text-white/65">Construção, validação em ambiente controlado e ajuste dos modelos.</p>
+          </div>
+        </div>
+        <div class="flex gap-6 md:border-l-2 md:border-dashed md:border-emerald-500/25 md:pl-8">
+          <div class="hidden w-10 shrink-0 items-start md:flex">
+            <div class="flex h-10 w-10 items-center justify-center rounded-full bg-emerald-600 font-heading text-sm font-bold text-white">4</div>
+          </div>
+          <div class="w-full">
+            <span class="mb-2 inline-flex h-8 w-8 items-center justify-center rounded-full bg-emerald-600 font-heading text-xs font-bold text-white md:hidden">4</span>
+            <h3 class="font-heading text-lg font-bold text-white">Go-live e monitoramento</h3>
+            <p class="mt-1 text-sm text-white/65">Produção com alertas, evolução iterativa e melhoria contínua.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Soluções -->
-  <section id="solucoes" class="px-6 py-20">
-    <div class="mx-auto max-w-6xl">
+  <section id="solucoes" class="relative border-t border-white/[0.06] px-6 py-20 md:py-24">
+    <div class="pointer-events-none absolute inset-x-0 top-0 mx-auto h-px max-w-3xl bg-gradient-to-r from-transparent via-emerald-500/35 to-transparent" aria-hidden="true"></div>
+    <div class="relative mx-auto max-w-6xl">
       <div class="mb-12 text-center">
         <p class="text-xs font-semibold uppercase tracking-widest text-emerald-400">Casos de uso</p>
-        <h2 class="mt-2 font-heading text-4xl font-bold">Soluções</h2>
+        <h2 class="mt-2 font-heading text-3xl font-bold tracking-tight text-white sm:text-4xl">Soluções</h2>
       </div>
       <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-
         <div class="card-hover rounded-2xl border border-white/10 bg-white/[0.04] p-6">
-          <div class="mb-4 text-3xl">📥</div>
-          <h3 class="font-heading text-lg font-bold">Qualificação de leads</h3>
-          <p class="mt-2 text-sm text-white/65">Agentes que interpretam respostas de formulários, classificam leads e disparam ações automáticas por canal.</p>
+          <div class="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-500/15 text-emerald-200 ring-1 ring-emerald-400/25">
+            <i data-lucide="inbox" class="h-5 w-5" aria-hidden="true"></i>
+          </div>
+          <h3 class="font-heading text-lg font-bold text-white">Qualificação de leads</h3>
+          <p class="mt-2 text-sm text-white/65">Agentes que interpretam formulários, classificam leads e disparam ações por canal.</p>
         </div>
-
         <div class="card-hover rounded-2xl border border-white/10 bg-white/[0.04] p-6">
-          <div class="mb-4 text-3xl">📦</div>
-          <h3 class="font-heading text-lg font-bold">Processamento de pedidos</h3>
-          <p class="mt-2 text-sm text-white/65">Automação do ciclo completo de pedidos: confirmação, separação, nota fiscal, rastreamento e pós-venda.</p>
+          <div class="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-500/15 text-emerald-200 ring-1 ring-emerald-400/25">
+            <i data-lucide="package" class="h-5 w-5" aria-hidden="true"></i>
+          </div>
+          <h3 class="font-heading text-lg font-bold text-white">Processamento de pedidos</h3>
+          <p class="mt-2 text-sm text-white/65">Confirmação, separação, nota fiscal, rastreamento e pós-venda.</p>
         </div>
-
         <div class="card-hover rounded-2xl border border-white/10 bg-white/[0.04] p-6">
-          <div class="mb-4 text-3xl">📊</div>
-          <h3 class="font-heading text-lg font-bold">Relatórios automáticos</h3>
-          <p class="mt-2 text-sm text-white/65">Coleta de dados de múltiplas fontes, consolidação e envio de relatórios periódicos para gestores.</p>
+          <div class="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-500/15 text-emerald-200 ring-1 ring-emerald-400/25">
+            <i data-lucide="bar-chart-3" class="h-5 w-5" aria-hidden="true"></i>
+          </div>
+          <h3 class="font-heading text-lg font-bold text-white">Relatórios automáticos</h3>
+          <p class="mt-2 text-sm text-white/65">Coleta em múltiplas fontes, consolidação e envio periódico para gestores.</p>
         </div>
-
         <div class="card-hover rounded-2xl border border-white/10 bg-white/[0.04] p-6">
-          <div class="mb-4 text-3xl">💬</div>
-          <h3 class="font-heading text-lg font-bold">Atendimento inteligente</h3>
-          <p class="mt-2 text-sm text-white/65">Agentes de IA no WhatsApp, e-mail e chat para responder dúvidas, abrir chamados e escalar para humanos.</p>
+          <div class="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-500/15 text-emerald-200 ring-1 ring-emerald-400/25">
+            <i data-lucide="message-circle" class="h-5 w-5" aria-hidden="true"></i>
+          </div>
+          <h3 class="font-heading text-lg font-bold text-white">Atendimento inteligente</h3>
+          <p class="mt-2 text-sm text-white/65">WhatsApp, e-mail e chat com escalação para humanos quando necessário.</p>
         </div>
-
         <div class="card-hover rounded-2xl border border-white/10 bg-white/[0.04] p-6">
-          <div class="mb-4 text-3xl">🔄</div>
-          <h3 class="font-heading text-lg font-bold">Sincronização de sistemas</h3>
-          <p class="mt-2 text-sm text-white/65">Integração entre CRM, ERP, e-commerce e plataformas SaaS com reconciliação automática de dados.</p>
+          <div class="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-500/15 text-emerald-200 ring-1 ring-emerald-400/25">
+            <i data-lucide="refresh-cw" class="h-5 w-5" aria-hidden="true"></i>
+          </div>
+          <h3 class="font-heading text-lg font-bold text-white">Sincronização de sistemas</h3>
+          <p class="mt-2 text-sm text-white/65">CRM, ERP, e-commerce e SaaS com reconciliação automática.</p>
         </div>
-
         <div class="card-hover rounded-2xl border border-white/10 bg-white/[0.04] p-6">
-          <div class="mb-4 text-3xl">🎯</div>
-          <h3 class="font-heading text-lg font-bold">Processo sob medida</h3>
-          <p class="mt-2 text-sm text-white/65">Automatizamos qualquer processo comercial recorrente. Se tem regra de negócio, pode ser automatizado.</p>
+          <div class="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-500/15 text-emerald-200 ring-1 ring-emerald-400/25">
+            <i data-lucide="crosshair" class="h-5 w-5" aria-hidden="true"></i>
+          </div>
+          <h3 class="font-heading text-lg font-bold text-white">Processo sob medida</h3>
+          <p class="mt-2 text-sm text-white/65">Automatizamos fluxos recorrentes com regras de negócio claras.</p>
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- Setores -->
-  <section id="setores" class="px-6 py-20">
+  <section id="setores" class="relative border-t border-white/[0.06] px-6 py-20 md:py-24">
     <div class="mx-auto max-w-4xl text-center">
       <p class="text-xs font-semibold uppercase tracking-widest text-emerald-400">Mercados atendidos</p>
-      <h2 class="mt-2 font-heading text-4xl font-bold">Setores</h2>
-      <p class="mt-3 text-white/60 max-w-xl mx-auto">Levamos automação inteligente para empresas de diferentes segmentos. Cada setor tem seus próprios desafios — e nós conhecemos cada um deles.</p>
+      <h2 class="mt-2 font-heading text-3xl font-bold tracking-tight text-white sm:text-4xl">Setores</h2>
+      <p class="mx-auto mt-3 max-w-xl text-base text-white/60">Levamos automação inteligente para diferentes segmentos.</p>
       <div class="mt-10 flex flex-wrap justify-center gap-3">
-        <span class="setor-pill cursor-default rounded-full border border-white/15 bg-white/[0.04] px-5 py-2.5 text-sm font-medium text-white/75">🏦 Financeiro</span>
-        <span class="setor-pill cursor-default rounded-full border border-white/15 bg-white/[0.04] px-5 py-2.5 text-sm font-medium text-white/75">🛒 Varejo & E-commerce</span>
-        <span class="setor-pill cursor-default rounded-full border border-white/15 bg-white/[0.04] px-5 py-2.5 text-sm font-medium text-white/75">🏗️ Construção Civil</span>
-        <span class="setor-pill cursor-default rounded-full border border-white/15 bg-white/[0.04] px-5 py-2.5 text-sm font-medium text-white/75">⚙️ Indústria</span>
-        <span class="setor-pill cursor-default rounded-full border border-white/15 bg-white/[0.04] px-5 py-2.5 text-sm font-medium text-white/75">🎓 Educação</span>
-        <span class="setor-pill cursor-default rounded-full border border-white/15 bg-white/[0.04] px-5 py-2.5 text-sm font-medium text-white/75">🏥 Saúde</span>
-        <span class="setor-pill cursor-default rounded-full border border-white/15 bg-white/[0.04] px-5 py-2.5 text-sm font-medium text-white/75">⚖️ Jurídico</span>
-        <span class="setor-pill cursor-default rounded-full border border-white/15 bg-white/[0.04] px-5 py-2.5 text-sm font-medium text-white/75">👥 RH & Recrutamento</span>
-        <span class="setor-pill cursor-default rounded-full border border-white/15 bg-white/[0.04] px-5 py-2.5 text-sm font-medium text-white/75">🚚 Logística</span>
-        <span class="setor-pill cursor-default rounded-full border border-white/15 bg-white/[0.04] px-5 py-2.5 text-sm font-medium text-white/75">🏢 Serviços B2B</span>
+        <span class="setor-pill cursor-default rounded-full border border-white/15 bg-white/[0.04] px-5 py-2.5 text-sm font-medium text-white/75">Financeiro</span>
+        <span class="setor-pill cursor-default rounded-full border border-white/15 bg-white/[0.04] px-5 py-2.5 text-sm font-medium text-white/75">Varejo &amp; E-commerce</span>
+        <span class="setor-pill cursor-default rounded-full border border-white/15 bg-white/[0.04] px-5 py-2.5 text-sm font-medium text-white/75">Construção Civil</span>
+        <span class="setor-pill cursor-default rounded-full border border-white/15 bg-white/[0.04] px-5 py-2.5 text-sm font-medium text-white/75">Indústria</span>
+        <span class="setor-pill cursor-default rounded-full border border-white/15 bg-white/[0.04] px-5 py-2.5 text-sm font-medium text-white/75">Educação</span>
+        <span class="setor-pill cursor-default rounded-full border border-white/15 bg-white/[0.04] px-5 py-2.5 text-sm font-medium text-white/75">Saúde</span>
+        <span class="setor-pill cursor-default rounded-full border border-white/15 bg-white/[0.04] px-5 py-2.5 text-sm font-medium text-white/75">Jurídico</span>
+        <span class="setor-pill cursor-default rounded-full border border-white/15 bg-white/[0.04] px-5 py-2.5 text-sm font-medium text-white/75">RH &amp; Recrutamento</span>
+        <span class="setor-pill cursor-default rounded-full border border-white/15 bg-white/[0.04] px-5 py-2.5 text-sm font-medium text-white/75">Logística</span>
+        <span class="setor-pill cursor-default rounded-full border border-white/15 bg-white/[0.04] px-5 py-2.5 text-sm font-medium text-white/75">Serviços B2B</span>
       </div>
     </div>
   </section>
 
-  <!-- Resultados -->
-  <section class="px-6 py-16">
+  <section id="resultados" class="border-t border-white/[0.06] px-6 py-16 md:py-20">
     <div class="mx-auto max-w-4xl rounded-3xl border border-white/10 bg-white/[0.03] p-10 text-center">
       <p class="text-xs font-semibold uppercase tracking-widest text-emerald-400">Impacto</p>
-      <h2 class="mt-2 font-heading text-3xl font-bold">O que você ganha</h2>
+      <h2 class="mt-2 font-heading text-3xl font-bold text-white">O que você ganha</h2>
       <div class="mt-8 grid gap-6 sm:grid-cols-3">
         <div>
           <p class="font-heading text-3xl font-extrabold text-emerald-400">-60%</p>
@@ -238,123 +485,527 @@
     </div>
   </section>
 
-  <!-- Depoimentos -->
-  <section class="px-6 py-20">
-    <div class="mx-auto max-w-6xl">
-      <div class="mb-12 text-center">
-        <p class="text-xs font-semibold uppercase tracking-widest text-emerald-400">Clientes</p>
-        <h2 class="mt-2 font-heading text-4xl font-bold">O que dizem sobre nós</h2>
-      </div>
-      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-
-        <div class="card-hover rounded-2xl border border-white/10 bg-white/[0.04] p-6 flex flex-col gap-4">
-          <div class="flex gap-1 text-emerald-400 text-sm">★★★★★</div>
-          <p class="text-sm text-white/75 leading-relaxed">"Automatizamos toda a triagem de propostas comerciais. O que levava horas passou a acontecer em minutos, sem erro humano e com rastreabilidade completa."</p>
-          <div class="mt-auto pt-4 border-t border-white/10">
-            <p class="font-semibold text-sm">Diretor Comercial</p>
-            <p class="text-xs text-white/40">Empresa de Serviços B2B — São Paulo</p>
-          </div>
-        </div>
-
-        <div class="card-hover rounded-2xl border border-white/10 bg-white/[0.04] p-6 flex flex-col gap-4">
-          <div class="flex gap-1 text-emerald-400 text-sm">★★★★★</div>
-          <p class="text-sm text-white/75 leading-relaxed">"Nossa equipe de RH deixou de alimentar planilhas manualmente. Os agentes fazem a triagem, agendam entrevistas e notificam candidatos — tudo integrado ao nosso sistema."</p>
-          <div class="mt-auto pt-4 border-t border-white/10">
-            <p class="font-semibold text-sm">Gerente de RH</p>
-            <p class="text-xs text-white/40">Rede de Varejo — Minas Gerais</p>
-          </div>
-        </div>
-
-        <div class="card-hover rounded-2xl border border-white/10 bg-white/[0.04] p-6 flex flex-col gap-4">
-          <div class="flex gap-1 text-emerald-400 text-sm">★★★★★</div>
-          <p class="text-sm text-white/75 leading-relaxed">"Implantamos um agente de atendimento no WhatsApp em menos de duas semanas. Os clientes recebem resposta imediata e a equipe foca nos casos que realmente precisam de atenção humana."</p>
-          <div class="mt-auto pt-4 border-t border-white/10">
-            <p class="font-semibold text-sm">CEO</p>
-            <p class="text-xs text-white/40">Clínica de Saúde — Rio de Janeiro</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Planos -->
-  <section id="planos" class="px-6 py-20">
-    <div class="mx-auto max-w-6xl">
+  <section id="planos" class="border-t border-white/[0.06] px-6 py-20 md:py-28">
+    <div class="relative mx-auto max-w-6xl">
       <div class="mb-12 text-center">
         <p class="text-xs font-semibold uppercase tracking-widest text-emerald-400">Investimento</p>
-        <h2 class="mt-2 font-heading text-4xl font-bold">Planos</h2>
-        <p class="mt-3 text-white/60">Escolha a modalidade que faz mais sentido para o seu momento.</p>
+        <h2 class="mt-2 font-heading text-3xl font-bold tracking-tight text-white sm:text-4xl">Planos</h2>
+        <p class="mt-3 text-base text-white/60">Escolha a modalidade que faz sentido para o seu momento.</p>
       </div>
       <div class="grid gap-6 sm:grid-cols-3">
-
-        <!-- Diagnóstico -->
-        <div class="card-hover rounded-2xl border border-white/10 bg-white/[0.04] p-8 flex flex-col">
+        <div class="card-hover flex flex-col rounded-2xl border border-white/10 bg-white/[0.04] p-8">
           <p class="text-xs font-semibold uppercase tracking-widest text-emerald-400">Diagnóstico</p>
-          <h3 class="mt-2 font-heading text-2xl font-bold">Mapeamento</h3>
-          <p class="mt-3 text-sm text-white/60 flex-1">Análise 360° dos seus processos operacionais, identificação das maiores oportunidades de automação e entrega de um roadmap priorizado com estimativa de ROI.</p>
+          <h3 class="mt-2 font-heading text-2xl font-bold text-white">Mapeamento</h3>
+          <p class="mt-3 flex-1 text-sm text-white/60">Análise dos processos, oportunidades de automação e roadmap priorizado com estimativa de ROI.</p>
           <ul class="mt-6 space-y-2 text-sm text-white/70">
             <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Entrevistas com times-chave</li>
             <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Mapa de processos atual</li>
-            <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Roadmap de automação (90 dias)</li>
-            <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Estimativa de ganho por processo</li>
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Roadmap (90 dias)</li>
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Estimativa de ganho</li>
           </ul>
           <a href="#contato" class="mt-8 block rounded-full border border-emerald-600 px-6 py-2.5 text-center text-sm font-semibold text-emerald-400 transition hover:bg-emerald-600 hover:text-white">Solicitar diagnóstico</a>
         </div>
-
-        <!-- Implementação -->
-        <div class="card-hover rounded-2xl border border-emerald-600/50 bg-emerald-900/20 p-8 flex flex-col relative">
-          <div class="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-emerald-600 px-4 py-0.5 text-xs font-bold text-white uppercase tracking-wide">Mais popular</div>
+        <div class="card-hover relative flex flex-col rounded-2xl border border-emerald-600/50 bg-emerald-900/20 p-8">
+          <div class="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-emerald-600 px-4 py-0.5 text-xs font-bold uppercase tracking-wide text-white">Mais popular</div>
           <p class="text-xs font-semibold uppercase tracking-widest text-emerald-400">Implementação</p>
-          <h3 class="mt-2 font-heading text-2xl font-bold">Fluxo Completo</h3>
-          <p class="mt-3 text-sm text-white/60 flex-1">Construção e entrega de um ou mais fluxos automatizados em produção, com documentação, treinamento da equipe e suporte pós-go-live.</p>
+          <h3 class="mt-2 font-heading text-2xl font-bold text-white">Fluxo completo</h3>
+          <p class="mt-3 flex-1 text-sm text-white/60">Entrega de fluxos em produção com documentação, treinamento e suporte pós-go-live.</p>
           <ul class="mt-6 space-y-2 text-sm text-white/70">
-            <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Design e desenvolvimento do fluxo</li>
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Design e desenvolvimento</li>
             <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Integração com seus sistemas</li>
             <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Testes e homologação</li>
             <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Treinamento da equipe</li>
-            <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Suporte 30 dias pós-entrega</li>
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Suporte 30 dias</li>
           </ul>
           <a href="#contato" class="mt-8 block rounded-full bg-brand px-6 py-2.5 text-center text-sm font-semibold text-white transition hover:bg-emerald-500">Solicitar proposta</a>
         </div>
-
-        <!-- Retainer -->
-        <div class="card-hover rounded-2xl border border-white/10 bg-white/[0.04] p-8 flex flex-col">
+        <div class="card-hover flex flex-col rounded-2xl border border-white/10 bg-white/[0.04] p-8">
           <p class="text-xs font-semibold uppercase tracking-widest text-emerald-400">Contínuo</p>
-          <h3 class="mt-2 font-heading text-2xl font-bold">Parceiro IA</h3>
-          <p class="mt-3 text-sm text-white/60 flex-1">Evolução contínua dos seus fluxos com squad dedicado. Ideal para empresas que querem escalar a automação mês a mês com agilidade e previsibilidade.</p>
+          <h3 class="mt-2 font-heading text-2xl font-bold text-white">Parceiro IA</h3>
+          <p class="mt-3 flex-1 text-sm text-white/60">Evolução contínua com squad dedicado e previsibilidade mensal.</p>
           <ul class="mt-6 space-y-2 text-sm text-white/70">
             <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Horas mensais dedicadas</li>
             <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Monitoramento e otimização</li>
-            <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Novos fluxos a cada sprint</li>
-            <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Relatório mensal de impacto</li>
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Novos fluxos por sprint</li>
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Relatório de impacto</li>
           </ul>
           <a href="#contato" class="mt-8 block rounded-full border border-emerald-600 px-6 py-2.5 text-center text-sm font-semibold text-emerald-400 transition hover:bg-emerald-600 hover:text-white">Falar com especialista</a>
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- Contato -->
-  <section id="contato" class="px-6 py-16 text-center">
-    <div class="mx-auto max-w-xl">
-      <h2 class="font-heading text-3xl font-bold">Pronto para automatizar?</h2>
-      <p class="mt-3 text-white/65">Conte qual processo quer transformar e montamos uma proposta.</p>
-      <a href="mailto:contato@fluxointeligenteia.com.br" class="mt-6 inline-block rounded-full bg-brand px-8 py-3 text-sm font-semibold text-white transition hover:bg-emerald-500">contato@fluxointeligenteia.com.br</a>
-      <p class="mt-4 text-sm text-white/40">Parte do ecossistema <a href="/" class="underline hover:text-white/70">CodeRush</a></p>
+  <section id="cases" class="cases-section relative border-t border-white/[0.06] px-6 py-20 md:py-28" aria-labelledby="cases-heading">
+    <div class="cases-ambient" aria-hidden="true"></div>
+    <div class="relative mx-auto max-w-6xl">
+      <header class="cases-reveal cases-d-1 mx-auto mb-12 max-w-3xl text-center md:mb-16">
+        <p class="text-xs font-semibold uppercase tracking-widest text-emerald-400/90">Cases</p>
+        <h2 id="cases-heading" class="mt-3 font-heading text-3xl font-bold tracking-tight text-white sm:text-4xl">Cases de sucesso em automação</h2>
+        <p class="mt-4 text-base leading-relaxed text-white/65">
+          Cenários típicos de entrega com <strong class="font-semibold text-white/85">n8n</strong>, integrações e <strong class="font-semibold text-white/85">IA aplicada</strong> — use como referência para briefing com nosso time.
+        </p>
+      </header>
+      <div class="mb-12 grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-4">
+        <div class="cases-reveal cases-d-2 rounded-2xl border border-white/10 bg-white/[0.04] p-4 text-center backdrop-blur-sm">
+          <p class="font-heading text-2xl font-extrabold text-emerald-400 md:text-3xl">≤2</p>
+          <p class="mt-1 text-[11px] font-medium uppercase tracking-wide text-white/50 md:text-xs">Semanas p/ go-live*</p>
+        </div>
+        <div class="cases-reveal cases-d-2 rounded-2xl border border-white/10 bg-white/[0.04] p-4 text-center backdrop-blur-sm">
+          <p class="font-heading text-2xl font-extrabold text-emerald-400 md:text-3xl">24/7</p>
+          <p class="mt-1 text-[11px] font-medium uppercase tracking-wide text-white/50 md:text-xs">Fluxos monitorados</p>
+        </div>
+        <div class="cases-reveal cases-d-2 rounded-2xl border border-white/10 bg-white/[0.04] p-4 text-center backdrop-blur-sm">
+          <p class="font-heading text-2xl font-extrabold text-emerald-400 md:text-3xl">LGPD</p>
+          <p class="mt-1 text-[11px] font-medium uppercase tracking-wide text-white/50 md:text-xs">Por desenho</p>
+        </div>
+        <div class="cases-reveal cases-d-2 rounded-2xl border border-white/10 bg-white/[0.04] p-4 text-center backdrop-blur-sm">
+          <p class="font-heading text-2xl font-extrabold text-emerald-400 md:text-3xl">Brasil</p>
+          <p class="mt-1 text-[11px] font-medium uppercase tracking-wide text-white/50 md:text-xs">Atuação nacional</p>
+        </div>
+      </div>
+      <p class="cases-reveal cases-d-2 mb-12 text-center text-[11px] text-white/35">*Prazo indicativo após diagnóstico; depende de escopo e sistemas.</p>
+
+      <article class="cases-reveal cases-d-3 cases-card group relative overflow-hidden rounded-3xl border border-emerald-500/25 bg-gradient-to-br from-emerald-950/40 via-[#04110d] to-[#04110d] p-6 shadow-xl shadow-emerald-950/30 sm:p-8 md:p-10">
+        <div class="cases-featured-bar absolute left-0 right-0 top-0 h-px opacity-80" aria-hidden="true"></div>
+        <div class="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
+          <div class="max-w-2xl">
+            <div class="inline-flex items-center gap-2 rounded-full border border-emerald-400/30 bg-emerald-500/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-emerald-200">
+              <i data-lucide="trending-up" class="h-3.5 w-3.5" aria-hidden="true"></i>
+              Case em destaque
+            </div>
+            <h3 class="mt-4 font-heading text-2xl font-bold text-white md:text-3xl">Triagem de propostas comerciais com agentes</h3>
+            <p class="mt-3 text-sm leading-relaxed text-white/70 md:text-base">
+              <strong class="text-white/90">Leitura de formulários e anexos</strong>, classificação automática de leads, atualização no CRM e disparos por e-mail ou WhatsApp — com <strong class="text-white/90">trilha de auditoria</strong> e supervisão humana nos pontos críticos.
+            </p>
+            <ul class="mt-5 flex flex-wrap gap-2" aria-label="Destaques do case">
+              <li class="rounded-full border border-white/15 bg-white/[0.05] px-3 py-1 text-xs font-medium text-white/75">Agentes de IA</li>
+              <li class="rounded-full border border-white/15 bg-white/[0.05] px-3 py-1 text-xs font-medium text-white/75">CRM</li>
+              <li class="rounded-full border border-white/15 bg-white/[0.05] px-3 py-1 text-xs font-medium text-white/75">n8n</li>
+              <li class="rounded-full border border-white/15 bg-white/[0.05] px-3 py-1 text-xs font-medium text-white/75">Mensageria</li>
+            </ul>
+          </div>
+          <div class="flex w-full shrink-0 flex-col gap-3 sm:flex-row sm:items-center lg:w-auto lg:flex-col">
+            <a href="#contato" class="inline-flex items-center justify-center gap-2 rounded-full bg-brand px-6 py-3 text-sm font-semibold text-white shadow-lg transition hover:bg-emerald-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">
+              Quero algo parecido
+              <i data-lucide="arrow-right" class="h-4 w-4 transition group-hover:translate-x-0.5" aria-hidden="true"></i>
+            </a>
+            <a href="#planos" class="inline-flex items-center justify-center rounded-full border border-white/25 px-6 py-3 text-sm font-semibold text-white/90 transition hover:border-white/50 hover:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">Ver planos</a>
+          </div>
+        </div>
+      </article>
+
+      <div class="mt-8 grid gap-6 lg:grid-cols-3">
+        <article class="cases-reveal cases-d-4 cases-card flex h-full flex-col rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.06] to-transparent p-6">
+          <div class="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-500/15 text-emerald-200 ring-1 ring-emerald-400/25">
+            <i data-lucide="shopping-cart" class="h-5 w-5" aria-hidden="true"></i>
+          </div>
+          <h3 class="font-heading text-lg font-bold text-white">Pedidos, ERP e notificações</h3>
+          <p class="mt-2 flex-grow text-sm leading-relaxed text-white/65">Do pedido à confirmação no ERP, alertas para operações e atualização de status para o cliente.</p>
+        </article>
+        <article class="cases-reveal cases-d-5 cases-card flex h-full flex-col rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.06] to-transparent p-6">
+          <div class="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-500/15 text-emerald-200 ring-1 ring-emerald-400/25">
+            <i data-lucide="smartphone" class="h-5 w-5" aria-hidden="true"></i>
+          </div>
+          <h3 class="font-heading text-lg font-bold text-white">Atendimento no WhatsApp</h3>
+          <p class="mt-2 flex-grow text-sm leading-relaxed text-white/65">Respostas imediatas, qualificação e escalação para humano quando o caso exige.</p>
+        </article>
+        <article class="cases-reveal cases-d-6 cases-card flex h-full flex-col rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.06] to-transparent p-6">
+          <div class="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-500/15 text-emerald-200 ring-1 ring-emerald-400/25">
+            <i data-lucide="file-spreadsheet" class="h-5 w-5" aria-hidden="true"></i>
+          </div>
+          <h3 class="font-heading text-lg font-bold text-white">Dados e relatórios automáticos</h3>
+          <p class="mt-2 flex-grow text-sm leading-relaxed text-white/65">Consolidação de planilhas, APIs e bases SQL com envio programado para gestores.</p>
+        </article>
+      </div>
+
+      <div class="cases-reveal cases-d-7 mt-10 rounded-2xl border border-white/10 bg-white/[0.03] p-6 md:p-8">
+        <p class="text-center text-xs font-semibold uppercase tracking-widest text-white/45">Linhas cobertas</p>
+        <div class="mt-4 flex flex-wrap justify-center gap-2 md:gap-3">
+          <span class="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5 text-xs text-white/75">Qualificação de leads</span>
+          <span class="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5 text-xs text-white/75">Operação &amp; backoffice</span>
+          <span class="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5 text-xs text-white/75">Integrações API</span>
+          <span class="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5 text-xs text-white/75">Agentes de IA</span>
+          <span class="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5 text-xs text-white/75">n8n</span>
+        </div>
+      </div>
+
+      <div class="cases-reveal cases-d-8 mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+        <a href="#contato" class="inline-flex w-full items-center justify-center rounded-full bg-brand px-8 py-3.5 text-sm font-semibold text-white shadow-lg transition hover:bg-emerald-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d] sm:w-auto">Falar com especialista</a>
+        <a href="#solucoes" class="inline-flex w-full items-center justify-center rounded-full border border-white/25 px-8 py-3.5 text-sm font-semibold text-white/90 transition hover:border-white/45 hover:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d] sm:w-auto">Ver soluções</a>
+      </div>
     </div>
   </section>
 
-  <footer class="border-t border-white/10 px-6 py-8 text-center text-xs text-white/40">
-    <p class="mb-3 text-white/30 text-[10px] uppercase tracking-widest">Ecossistema CodeRush</p>
-    <div class="mb-4 flex flex-wrap justify-center gap-2">
-      <a href="https://coderush.com.br" target="_blank" rel="noopener noreferrer" class="rounded-full border border-white/15 px-3 py-1 transition hover:border-white/35 hover:text-white/80">coderush.com.br</a>
-      <a href="https://sistemavendadireta.com.br" target="_blank" rel="noopener noreferrer" class="rounded-full border border-white/15 px-3 py-1 transition hover:border-white/35 hover:text-white/80">sistemavendadireta.com.br</a>
-      <a href="https://codafacil.dev" target="_blank" rel="noopener noreferrer" class="rounded-full border border-white/15 px-3 py-1 transition hover:border-white/35 hover:text-white/80">codafacil.dev</a>
-      <a href="https://wordpressconsultoria.com.br" target="_blank" rel="noopener noreferrer" class="rounded-full border border-white/15 px-3 py-1 transition hover:border-white/35 hover:text-white/80">wordpressconsultoria.com.br</a>
+  <section id="depoimentos" class="testimonials-section relative border-t border-white/[0.06] px-6 py-20 md:py-28" aria-labelledby="depoimentos-heading">
+    <div class="testimonials-ambient" aria-hidden="true"></div>
+    <div class="pointer-events-none absolute inset-x-0 top-0 mx-auto h-px max-w-2xl bg-gradient-to-r from-transparent via-amber-400/25 to-transparent" aria-hidden="true"></div>
+    <div class="relative mx-auto max-w-6xl">
+      <header class="testimonials-reveal t-d-1 mx-auto mb-12 max-w-3xl text-center md:mb-16">
+        <p class="font-heading text-[11px] font-semibold uppercase tracking-[0.2em] text-amber-400/95">Depoimentos</p>
+        <h2 id="depoimentos-heading" class="mt-3 font-heading text-3xl font-bold tracking-tight text-white sm:text-4xl">O que dizem sobre nós</h2>
+        <p class="mt-4 text-base leading-relaxed text-white/60">Experiências reais de formato e tom — substitua por depoimentos verificáveis quando desejar.</p>
+      </header>
+      <div class="testimonials-scroller -mx-4 px-4 sm:mx-0 sm:px-0">
+        <div class="testimonial-card-wrap">
+          <article class="testimonial-card testimonials-reveal t-d-2 flex h-full flex-col p-6 sm:p-7">
+            <span class="testimonial-quote-deco" aria-hidden="true">“</span>
+            <div class="relative flex items-center gap-1 text-amber-400/95" aria-label="5 de 5 estrelas">
+              <i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400/85" aria-hidden="true"></i>
+              <i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400/85" aria-hidden="true"></i>
+              <i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400/85" aria-hidden="true"></i>
+              <i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400/85" aria-hidden="true"></i>
+              <i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400/85" aria-hidden="true"></i>
+            </div>
+            <blockquote class="relative mt-4 flex-grow">
+              <p class="text-sm leading-relaxed text-white/78">Automatizamos toda a triagem de propostas comerciais. O que levava horas passou a acontecer em minutos, sem erro humano e com rastreabilidade completa.</p>
+            </blockquote>
+            <footer class="relative mt-6 flex items-center gap-3 border-t border-white/10 pt-5">
+              <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-emerald-500/30 to-emerald-600/10 font-heading text-sm font-bold text-emerald-100 ring-1 ring-emerald-400/25" aria-hidden="true">DC</span>
+              <div class="min-w-0">
+                <p class="truncate font-heading text-sm font-semibold text-white">Diretor Comercial</p>
+                <p class="truncate text-xs text-white/50">Empresa B2B · São Paulo</p>
+              </div>
+            </footer>
+          </article>
+        </div>
+        <div class="testimonial-card-wrap">
+          <article class="testimonial-card testimonials-reveal t-d-3 flex h-full flex-col p-6 sm:p-7">
+            <span class="testimonial-quote-deco" aria-hidden="true">“</span>
+            <div class="relative flex items-center gap-1 text-amber-400/95" aria-label="5 de 5 estrelas">
+              <i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400/85" aria-hidden="true"></i>
+              <i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400/85" aria-hidden="true"></i>
+              <i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400/85" aria-hidden="true"></i>
+              <i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400/85" aria-hidden="true"></i>
+              <i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400/85" aria-hidden="true"></i>
+            </div>
+            <blockquote class="relative mt-4 flex-grow">
+              <p class="text-sm leading-relaxed text-white/78">A equipe de RH deixou de alimentar planilhas manualmente. Os agentes fazem triagem, agendam entrevistas e notificam candidatos — tudo integrado ao nosso sistema.</p>
+            </blockquote>
+            <footer class="relative mt-6 flex items-center gap-3 border-t border-white/10 pt-5">
+              <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-emerald-500/30 to-teal-600/10 font-heading text-sm font-bold text-emerald-100 ring-1 ring-emerald-400/25" aria-hidden="true">RH</span>
+              <div class="min-w-0">
+                <p class="truncate font-heading text-sm font-semibold text-white">Gerente de RH</p>
+                <p class="truncate text-xs text-white/50">Rede de Varejo · Minas Gerais</p>
+              </div>
+            </footer>
+          </article>
+        </div>
+        <div class="testimonial-card-wrap">
+          <article class="testimonial-card testimonials-reveal t-d-4 flex h-full flex-col p-6 sm:p-7">
+            <span class="testimonial-quote-deco" aria-hidden="true">“</span>
+            <div class="relative flex items-center gap-1 text-amber-400/95" aria-label="5 de 5 estrelas">
+              <i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400/85" aria-hidden="true"></i>
+              <i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400/85" aria-hidden="true"></i>
+              <i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400/85" aria-hidden="true"></i>
+              <i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400/85" aria-hidden="true"></i>
+              <i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400/85" aria-hidden="true"></i>
+            </div>
+            <blockquote class="relative mt-4 flex-grow">
+              <p class="text-sm leading-relaxed text-white/78">Implantamos um agente de atendimento no WhatsApp em menos de duas semanas. Resposta imediata e a equipe foca nos casos que precisam de atenção humana.</p>
+            </blockquote>
+            <footer class="relative mt-6 flex items-center gap-3 border-t border-white/10 pt-5">
+              <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-teal-500/30 to-emerald-600/10 font-heading text-sm font-bold text-emerald-100 ring-1 ring-emerald-400/25" aria-hidden="true">CEO</span>
+              <div class="min-w-0">
+                <p class="truncate font-heading text-sm font-semibold text-white">CEO</p>
+                <p class="truncate text-xs text-white/50">Clínica de Saúde · Rio de Janeiro</p>
+              </div>
+            </footer>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="faq-section relative border-t border-white/[0.06] px-6 py-20 md:py-24" aria-labelledby="faq-heading">
+    <div class="relative mx-auto max-w-3xl">
+      <header class="mx-auto mb-10 text-center md:mb-12">
+        <p class="text-xs font-semibold uppercase tracking-widest text-emerald-400">Dúvidas</p>
+        <h2 id="faq-heading" class="mt-3 font-heading text-3xl font-bold tracking-tight text-white sm:text-4xl">Perguntas e respostas</h2>
+      </header>
+      <div class="space-y-3">
+        <details name="fluxo-faq" class="faq-item faq-reveal faq-d-1">
+          <summary class="faq-summary"><span>O que é a FluxoInteligente IA?</span><span class="faq-chevron"><i data-lucide="chevron-down" class="h-4 w-4" aria-hidden="true"></i></span></summary>
+          <div class="faq-panel"><div class="faq-panel-inner"><div class="faq-answer"><p>Consultoria focada em <strong class="font-medium text-white/90">automação com n8n</strong>, integrações e agentes de IA aplicados ao negócio, com métricas antes e depois.</p></div></div></div>
+        </details>
+        <details name="fluxo-faq" class="faq-item faq-reveal faq-d-2">
+          <summary class="faq-summary"><span>Quanto tempo até o primeiro fluxo em produção?</span><span class="faq-chevron"><i data-lucide="chevron-down" class="h-4 w-4" aria-hidden="true"></i></span></summary>
+          <div class="faq-panel"><div class="faq-panel-inner"><div class="faq-answer"><p>Em muitos projetos, entre <strong class="font-medium text-white/90">uma e duas semanas</strong> após o diagnóstico alinhado — dependendo de sistemas, permissões e complexidade.</p></div></div></div>
+        </details>
+        <details name="fluxo-faq" class="faq-item faq-reveal faq-d-3">
+          <summary class="faq-summary"><span>Trabalham apenas com n8n?</span><span class="faq-chevron"><i data-lucide="chevron-down" class="h-4 w-4" aria-hidden="true"></i></span></summary>
+          <div class="faq-panel"><div class="faq-panel-inner"><div class="faq-answer"><p>O <strong class="font-medium text-white/90">n8n</strong> é a base de orquestração; usamos APIs, webhooks e ferramentas complementares conforme a arquitetura.</p></div></div></div>
+        </details>
+        <details name="fluxo-faq" class="faq-item faq-reveal faq-d-4">
+          <summary class="faq-summary"><span>E quanto à LGPD?</span><span class="faq-chevron"><i data-lucide="chevron-down" class="h-4 w-4" aria-hidden="true"></i></span></summary>
+          <div class="faq-panel"><div class="faq-panel-inner"><div class="faq-answer"><p>Fluxos pensados para <strong class="font-medium text-white/90">minimização de dados</strong>, acessos e rastreabilidade; detalhes no discovery e contrato.</p></div></div></div>
+        </details>
+        <details name="fluxo-faq" class="faq-item faq-reveal faq-d-5">
+          <summary class="faq-summary"><span>Fazem parte do CodeRush?</span><span class="faq-chevron"><i data-lucide="chevron-down" class="h-4 w-4" aria-hidden="true"></i></span></summary>
+          <div class="faq-panel"><div class="faq-panel-inner"><div class="faq-answer"><p>Sim. Somos uma marca do <strong class="font-medium text-white/90">ecossistema CodeRush</strong>, com site e time dedicados à automação.</p></div></div></div>
+        </details>
+        <details name="fluxo-faq" class="faq-item faq-reveal faq-d-6">
+          <summary class="faq-summary"><span>Como falar com vocês?</span><span class="faq-chevron"><i data-lucide="chevron-down" class="h-4 w-4" aria-hidden="true"></i></span></summary>
+          <div class="faq-panel"><div class="faq-panel-inner"><div class="faq-answer"><p>Use o <strong class="font-medium text-white/90">formulário</strong> abaixo ou <a href="mailto:contato@fluxointeligenteia.com.br" class="font-semibold text-emerald-400 underline decoration-emerald-400/35 underline-offset-2 hover:text-emerald-300">contato@fluxointeligenteia.com.br</a>.</p></div></div></div>
+        </details>
+      </div>
+      <p class="mt-10 text-center text-sm text-white/45">Não encontrou? <a href="#contato" class="font-semibold text-emerald-400 underline decoration-emerald-400/35 underline-offset-2 hover:text-emerald-300">Fale conosco</a>.</p>
+    </div>
+  </section>
+
+  <section id="contato" class="contact-section border-t border-white/[0.06] px-6 py-20 md:py-28" aria-labelledby="contato-heading">
+    <div class="contact-ambient" aria-hidden="true"></div>
+    <div class="relative mx-auto max-w-6xl">
+      <div class="grid items-start gap-12 lg:grid-cols-12 lg:gap-16">
+        <div class="contact-reveal contact-form-delay-1 lg:col-span-5">
+          <p class="text-xs font-semibold uppercase tracking-widest text-emerald-400">Contato</p>
+          <h2 id="contato-heading" class="mt-3 font-heading text-3xl font-bold tracking-tight text-white sm:text-4xl">Vamos automatizar seu processo</h2>
+          <p class="mt-4 text-base leading-relaxed text-white/65">Descreva o processo, sistemas envolvidos e prazo desejado. Retornamos com próximos passos.</p>
+          <ul class="mt-8 space-y-4 text-sm text-white/70">
+            <li class="flex gap-3">
+              <span class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-emerald-500/15 text-emerald-400"><i data-lucide="check-circle-2" class="h-4 w-4" aria-hidden="true"></i></span>
+              <span><strong class="font-semibold text-white/85">Diagnóstico claro</strong> — alinhamos escopo antes de propor solução.</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-emerald-500/15 text-emerald-400"><i data-lucide="check-circle-2" class="h-4 w-4" aria-hidden="true"></i></span>
+              <span><strong class="font-semibold text-white/85">Dados protegidos</strong> — confira o consentimento no formulário.</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-emerald-500/15 text-emerald-400"><i data-lucide="check-circle-2" class="h-4 w-4" aria-hidden="true"></i></span>
+              <span><strong class="font-semibold text-white/85">E-mail direto</strong> — <a href="mailto:contato@fluxointeligenteia.com.br" class="text-emerald-400 underline decoration-emerald-400/40 underline-offset-2 hover:text-emerald-300">contato@fluxointeligenteia.com.br</a></span>
+            </li>
+          </ul>
+        </div>
+        <div class="contact-reveal contact-form-delay-2 lg:col-span-7">
+          <div id="form-feedback" class="mb-6 hidden rounded-2xl border p-4 text-sm" role="alert"></div>
+          <div class="relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-white/[0.08] to-white/[0.02] p-6 shadow-2xl shadow-black/40 backdrop-blur-md sm:p-8">
+            <div class="absolute -right-20 -top-20 h-56 w-56 rounded-full bg-brand/20 blur-3xl" aria-hidden="true"></div>
+            <form id="form-contato" class="relative space-y-5" action="/enviar-contato.php" method="post" novalidate>
+              <input type="hidden" name="redirect" value="/fluxointeligenteia/" />
+              <input type="hidden" name="origem" value="fluxointeligenteia" />
+              <div class="absolute left-[-9999px] top-auto h-0 w-0 overflow-hidden" aria-hidden="true">
+                <label for="website">Não preencha</label>
+                <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" />
+              </div>
+              <div class="grid gap-5 sm:grid-cols-2">
+                <div class="sm:col-span-2">
+                  <label class="contact-label" for="nome">Nome completo <abbr title="obrigatório" class="text-emerald-400 no-underline">*</abbr></label>
+                  <input class="contact-input mt-1.5" type="text" id="nome" name="nome" required autocomplete="name" placeholder="Seu nome" />
+                </div>
+                <div>
+                  <label class="contact-label" for="email">E-mail <abbr title="obrigatório" class="text-emerald-400 no-underline">*</abbr></label>
+                  <input class="contact-input mt-1.5" type="email" id="email" name="email" required autocomplete="email" inputmode="email" placeholder="voce@empresa.com.br" />
+                </div>
+                <div>
+                  <label class="contact-label" for="telefone">WhatsApp / telefone</label>
+                  <input class="contact-input mt-1.5" type="tel" id="telefone" name="telefone" autocomplete="tel" inputmode="tel" placeholder="(00) 00000-0000" />
+                </div>
+                <div class="sm:col-span-2">
+                  <label class="contact-label" for="empresa">Empresa / projeto</label>
+                  <input class="contact-input mt-1.5" type="text" id="empresa" name="empresa" autocomplete="organization" placeholder="Nome fantasia ou projeto" />
+                </div>
+                <div class="sm:col-span-2">
+                  <label class="contact-label" for="interesse">O que você busca? <abbr title="obrigatório" class="text-emerald-400 no-underline">*</abbr></label>
+                  <select class="contact-input mt-1.5 cursor-pointer" id="interesse" name="interesse" required>
+                    <option value="" disabled selected>Selecione uma opção</option>
+                    <option value="Diagnóstico / mapeamento">Diagnóstico / mapeamento</option>
+                    <option value="Implementação de fluxos">Implementação de fluxos</option>
+                    <option value="Parceiro IA (recorrente)">Parceiro IA (recorrente)</option>
+                    <option value="Outro / ainda não sei">Outro / ainda não sei</option>
+                  </select>
+                </div>
+                <div class="sm:col-span-2">
+                  <label class="contact-label" for="mensagem">Mensagem <abbr title="obrigatório" class="text-emerald-400 no-underline">*</abbr></label>
+                  <textarea class="contact-input mt-1.5 min-h-[8rem] resize-y" id="mensagem" name="mensagem" required minlength="10" rows="5" placeholder="Descreva processo, sistemas (CRM, ERP), prazo e volume. Mínimo 10 caracteres."></textarea>
+                </div>
+              </div>
+              <div class="flex gap-3 rounded-xl border border-white/10 bg-white/[0.03] p-4">
+                <input type="checkbox" id="consent" name="consent" value="1" required class="mt-1 h-4 w-4 shrink-0 rounded border-white/20 bg-white/10 text-brand focus:ring-emerald-500/40" />
+                <label for="consent" class="text-xs leading-relaxed text-white/60">Autorizo o uso dos dados para retorno sobre meu pedido, conforme a <strong class="text-white/75">política de privacidade</strong> do ecossistema. Não enviamos spam.</label>
+              </div>
+              <button type="submit" id="form-submit-btn" class="contact-submit-shine relative w-full overflow-hidden rounded-full bg-brand py-3.5 text-sm font-semibold text-white shadow-lg transition hover:bg-emerald-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a1f18] disabled:cursor-not-allowed disabled:opacity-70">
+                <span class="relative z-10 inline-flex items-center justify-center gap-2">
+                  <i data-lucide="send" class="h-4 w-4" aria-hidden="true"></i>
+                  Enviar mensagem
+                </span>
+              </button>
+              <p class="text-center text-[11px] text-white/35">Redirecionamento de volta com confirmação na URL.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="site-footer" class="footer-site relative px-6 pb-10 pt-14 md:pb-14 md:pt-16" aria-label="Rodapé">
+    <div class="footer-top-glow" aria-hidden="true"></div>
+    <div class="footer-ambient" aria-hidden="true"></div>
+    <div class="relative mx-auto max-w-6xl">
+      <div class="grid gap-12 md:grid-cols-12 md:gap-10 lg:gap-14">
+        <div class="footer-reveal md:col-span-5">
+          <p class="font-heading text-[10px] font-semibold uppercase tracking-[0.2em] text-white/35">Próximo passo</p>
+          <h2 class="mt-2 font-heading text-xl font-bold tracking-tight text-white md:text-2xl">Vamos conversar sobre seu projeto</h2>
+          <p class="mt-3 max-w-md text-sm leading-relaxed text-white/55">Resposta humana, sem fila genérica. Fale com o time da FluxoInteligente IA.</p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="#contato" class="footer-cta-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">
+              <i data-lucide="arrow-right" class="h-4 w-4" aria-hidden="true"></i>
+              Fale conosco
+            </a>
+          </div>
+          <a href="mailto:contato@fluxointeligenteia.com.br" class="mt-6 inline-flex items-center gap-2 text-sm font-medium text-emerald-400/90 transition hover:text-emerald-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">
+            <i data-lucide="mail" class="h-4 w-4 shrink-0" aria-hidden="true"></i>
+            contato@fluxointeligenteia.com.br
+          </a>
+        </div>
+        <nav class="footer-reveal footer-stagger-1 md:col-span-3" aria-label="Mapa do site">
+          <p class="font-heading text-[10px] font-semibold uppercase tracking-[0.2em] text-white/35">Navegação</p>
+          <ul class="mt-4 space-y-2.5 text-sm">
+            <li><a href="#clientes" class="footer-nav-link rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">Stack</a></li>
+            <li><a href="#sobre" class="footer-nav-link rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">Sobre</a></li>
+            <li><a href="#solucoes" class="footer-nav-link rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">Soluções</a></li>
+            <li><a href="#cases" class="footer-nav-link rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">Cases</a></li>
+            <li><a href="#depoimentos" class="footer-nav-link rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">Depoimentos</a></li>
+            <li><a href="#faq" class="footer-nav-link rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">FAQ</a></li>
+            <li><a href="#contato" class="footer-nav-link rounded-md font-medium text-emerald-400/90 hover:text-emerald-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">Contato</a></li>
+          </ul>
+        </nav>
+        <div class="footer-reveal footer-stagger-2 md:col-span-4">
+          <p class="font-heading text-[10px] font-semibold uppercase tracking-[0.2em] text-white/35">Ecossistema CodeRush</p>
+          <p class="mt-2 text-xs leading-relaxed text-white/45">Marcas do grupo.</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a href="https://coderush.com.br" target="_blank" rel="noopener noreferrer" class="footer-eco-pill focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">coderush.com.br<i data-lucide="external-link" class="h-3 w-3 shrink-0 opacity-70" aria-hidden="true"></i></a>
+            <a href="https://sistemavendadireta.com.br" target="_blank" rel="noopener noreferrer" class="footer-eco-pill focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]"><span class="max-w-[11rem] truncate sm:max-w-none">sistemavendadireta.com.br</span><i data-lucide="external-link" class="h-3 w-3 shrink-0 opacity-70" aria-hidden="true"></i></a>
+            <a href="https://codafacil.dev" target="_blank" rel="noopener noreferrer" class="footer-eco-pill focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">codafacil.dev<i data-lucide="external-link" class="h-3 w-3 shrink-0 opacity-70" aria-hidden="true"></i></a>
+            <a href="https://wordpressconsultoria.com.br" target="_blank" rel="noopener noreferrer" class="footer-eco-pill focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]"><span class="max-w-[12rem] truncate sm:max-w-none">wordpressconsultoria.com.br</span><i data-lucide="external-link" class="h-3 w-3 shrink-0 opacity-70" aria-hidden="true"></i></a>
+            <a href="https://fluxointeligenteia.com.br" target="_blank" rel="noopener noreferrer" class="footer-eco-pill focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]"><span class="max-w-[12rem] truncate sm:max-w-none">fluxointeligenteia.com.br</span><i data-lucide="external-link" class="h-3 w-3 shrink-0 opacity-70" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-reveal footer-stagger-3 mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-xs text-white/40 md:flex-row md:items-center">
+        <p>© <span id="year-copy"></span> FluxoInteligente IA — Todos os direitos reservados.</p>
+        <p class="text-center text-white/35 md:text-right"><a href="#contato" class="font-medium text-emerald-400/80 transition hover:text-emerald-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">Solicitar contato</a></p>
+      </div>
     </div>
   </footer>
 
+  <div id="chat-backdrop" class="chat-backdrop" aria-hidden="true" tabindex="-1"></div>
+  <div id="chat-panel" class="chat-panel flex flex-col" role="dialog" aria-modal="true" aria-labelledby="chat-widget-title" aria-hidden="true">
+    <div class="flex shrink-0 items-center justify-between rounded-t-[1.25rem] border-b border-white/10 bg-gradient-to-r from-emerald-950/60 via-[#0f172a]/90 to-slate-900/50 px-4 py-3">
+      <div class="min-w-0 pr-2">
+        <p id="chat-widget-title" class="font-heading text-sm font-bold tracking-tight text-white">Assistente FluxoInteligente</p>
+        <p class="truncate text-[10px] text-white/45">Roteiro rápido · humano no formulário</p>
+      </div>
+      <button type="button" id="chat-close" class="shrink-0 rounded-lg p-2 text-white/65 transition hover:bg-white/10 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/60" aria-label="Fechar assistente"><i data-lucide="x" class="h-5 w-5" aria-hidden="true"></i></button>
+    </div>
+    <div id="chat-messages" class="flex min-h-0 flex-1 flex-col gap-3 overflow-y-auto overscroll-contain p-4"></div>
+    <div class="shrink-0 border-t border-white/10 p-3">
+      <div id="chat-quick" class="mb-3 flex flex-wrap gap-2"></div>
+      <form id="chat-form" class="flex items-end gap-2">
+        <label for="chat-input" class="sr-only">Sua mensagem</label>
+        <textarea id="chat-input" class="chat-input" rows="1" placeholder="Ex.: preciso automatizar pedidos com ERP…" maxlength="600" autocomplete="off"></textarea>
+        <button type="submit" class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-brand text-white shadow-md transition hover:bg-emerald-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/60" aria-label="Enviar"><i data-lucide="send" class="h-4 w-4" aria-hidden="true"></i></button>
+      </form>
+    </div>
+  </div>
+  <div class="fab-dock" role="group" aria-label="Ações rápidas">
+    <button type="button" id="back-to-top" class="back-to-top-fab is-at-top" aria-label="Voltar ao topo"><i data-lucide="chevron-up" class="h-6 w-6" aria-hidden="true"></i></button>
+    <button type="button" id="chat-launcher" class="chat-launcher" aria-expanded="false" aria-controls="chat-panel" aria-haspopup="dialog">
+      <span id="chat-launcher-label-open" class="sr-only">Abrir assistente</span>
+      <span id="chat-launcher-label-close" class="sr-only hidden">Fechar assistente</span>
+      <i id="chat-launcher-icon-msg" data-lucide="message-circle" class="h-7 w-7" aria-hidden="true"></i>
+      <i id="chat-launcher-icon-x" class="hidden h-7 w-7" aria-hidden="true"></i>
+    </button>
+  </div>
+
+  <script>
+    (function(){var b=document.getElementById("back-to-top");if(!b)return;var t=120;function s(){var u=window.scrollY<t;b.classList.toggle("is-at-top",u);b.setAttribute("aria-disabled",u?"true":"false");if(u)b.setAttribute("tabindex","-1");else b.removeAttribute("tabindex");}b.addEventListener("click",function(){if(b.classList.contains("is-at-top"))return;if(window.matchMedia("(prefers-reduced-motion: reduce)").matches)window.scrollTo(0,0);else window.scrollTo({top:0,behavior:"smooth"});});window.addEventListener("scroll",s,{passive:true});s();})();
+  </script>
+  <script>
+    (function(){var h=document.querySelector("[data-site-header]");if(!h)return;function o(){h.classList.toggle("is-scrolled",window.scrollY>16);}o();window.addEventListener("scroll",o,{passive:true});})();
+  </script>
+  <script>
+    (function(){var b=document.getElementById("mobile-menu-btn"),m=document.getElementById("mobile-menu"),io=document.getElementById("mobile-menu-icon-open"),ic=document.getElementById("mobile-menu-icon-close");if(!b||!m)return;function setOpen(o){m.classList.toggle("hidden",!o);b.setAttribute("aria-expanded",o?"true":"false");b.setAttribute("aria-label",o?"Fechar menu de navegação":"Abrir menu de navegação");document.body.classList.toggle("overflow-hidden",o);if(io&&ic){io.classList.toggle("hidden",o);ic.classList.toggle("hidden",!o);}}b.addEventListener("click",function(e){e.stopPropagation();setOpen(m.classList.contains("hidden"));});m.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener("click",function(){setOpen(false);});});document.addEventListener("click",function(e){if(m.classList.contains("hidden"))return;if(!m.contains(e.target)&&!b.contains(e.target))setOpen(false);});document.addEventListener("keydown",function(e){if(e.key==="Escape")setOpen(false);});window.addEventListener("resize",function(){if(window.matchMedia("(min-width: 768px)").matches)setOpen(false);});})();
+  </script>
+  <script>
+    (function () {
+      function observeSection(selector, className, options) {
+        var el = document.querySelector(selector);
+        if (!el) return;
+        function rev() { el.classList.add(className); }
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) { rev(); return; }
+        if (typeof IntersectionObserver === 'undefined') { rev(); return; }
+        var obs = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) { rev(); obs.disconnect(); }
+          });
+        }, options);
+        obs.observe(el);
+      }
+      observeSection('#cases', 'cases-visible', { threshold: 0.1, rootMargin: '0px 0px -6% 0px' });
+      observeSection('#depoimentos', 'testimonials-visible', { threshold: 0.1, rootMargin: '0px 0px -7% 0px' });
+      observeSection('#faq', 'faq-visible', { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+      observeSection('#contato', 'contact-visible', { threshold: 0.08, rootMargin: '0px 0px -5% 0px' });
+      observeSection('#sobre', 'sobre-visible', { threshold: 0.1, rootMargin: '0px 0px -6% 0px' });
+      observeSection('#site-footer', 'footer-visible', { threshold: 0.08, rootMargin: '0px 0px -4% 0px' });
+    })();
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded",function(){
+      var y=document.getElementById("year-copy");if(y)y.textContent=new Date().getFullYear();
+      var params=new URLSearchParams(window.location.search);
+      var mail=params.get("mail");
+      var feedback=document.getElementById("form-feedback");
+      if(mail&&feedback){feedback.classList.remove("hidden");if(mail==="ok"){feedback.className="mb-6 rounded-2xl border border-emerald-500/40 bg-emerald-500/[0.12] p-4 text-sm text-emerald-100";feedback.textContent="Mensagem enviada com sucesso. Retornaremos em breve.";}else{feedback.className="mb-6 rounded-2xl border border-red-500/40 bg-red-500/[0.12] p-4 text-sm text-red-100";feedback.textContent="Não foi possível enviar. Tente novamente ou escreva para contato@fluxointeligenteia.com.br";}
+        if(window.location.hash!=="#contato")window.location.hash="#contato";
+        if(window.history&&window.history.replaceState)window.history.replaceState(null,"",window.location.pathname+"#contato");
+        feedback.scrollIntoView({behavior:"smooth",block:"nearest"});
+      }
+      var form=document.getElementById("form-contato");
+      var btn=document.getElementById("form-submit-btn");
+      if(form&&btn)form.addEventListener("submit",function(){btn.disabled=true;btn.setAttribute("aria-busy","true");});
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.469.0/dist/umd/lucide.min.js" crossorigin="anonymous"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded",function(){
+      if(typeof lucide!=="undefined"&&lucide.createIcons)lucide.createIcons();
+      (function(){
+        var backdrop=document.getElementById("chat-backdrop"),panel=document.getElementById("chat-panel"),launcher=document.getElementById("chat-launcher"),closeBtn=document.getElementById("chat-close"),messagesEl=document.getElementById("chat-messages"),quickEl=document.getElementById("chat-quick"),form=document.getElementById("chat-form"),input=document.getElementById("chat-input"),iconMsg=document.getElementById("chat-launcher-icon-msg"),iconX=document.getElementById("chat-launcher-icon-x"),labelOpen=document.getElementById("chat-launcher-label-open"),labelClose=document.getElementById("chat-launcher-label-close");
+        if(!backdrop||!panel||!launcher||!messagesEl||!quickEl||!form||!input)return;
+        var open=false,initialized=false,rm=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        function icons(){if(typeof lucide!=="undefined"&&lucide.createIcons)lucide.createIcons();}
+        function scrollB(){messagesEl.scrollTop=messagesEl.scrollHeight;}
+        function bot(t){var d=document.createElement("div");d.className="chat-msg chat-msg--bot";d.textContent=t;messagesEl.appendChild(d);scrollB();}
+        function user(t){var d=document.createElement("div");d.className="chat-msg chat-msg--user";d.textContent=t;messagesEl.appendChild(d);scrollB();}
+        function typing(then){var r=document.createElement("div");r.className="chat-msg chat-msg--bot chat-typing";r.setAttribute("aria-hidden","true");r.innerHTML="<span></span><span></span><span></span>";messagesEl.appendChild(r);scrollB();setTimeout(function(){if(r.parentNode)r.parentNode.removeChild(r);then();},rm?80:420);}        function ctaChip(){return{label:"Abrir formulário",onClick:function(){window.location.hash="#contato";setOpen(false);var el=document.getElementById("contato");if(el)el.scrollIntoView({behavior:rm?"auto":"smooth"});}};}
+        function renderQuick(arr){quickEl.innerHTML="";arr.forEach(function(item){var x=document.createElement("button");x.type="button";x.className="chat-chip";x.textContent=item.label;x.addEventListener("click",item.onClick);quickEl.appendChild(x);});}
+        function setOpen(v){
+          open=v;backdrop.classList.toggle("is-open",v);panel.classList.toggle("is-open",v);backdrop.setAttribute("aria-hidden",v?"false":"true");panel.setAttribute("aria-hidden",v?"false":"true");launcher.setAttribute("aria-expanded",v?"true":"false");launcher.classList.toggle("is-open",v);document.body.classList.toggle("overflow-hidden",v);
+          if(iconMsg&&iconX){iconMsg.classList.toggle("hidden",v);iconX.classList.toggle("hidden",!v);}
+          if(labelOpen&&labelClose){labelOpen.classList.toggle("hidden",v);labelClose.classList.toggle("hidden",!v);}
+          icons();
+          if(v&&!initialized){initialized=true;bot("Olá! Posso orientar sobre diagnóstico, implementação ou parceria recorrente — ou te levar ao formulário.");
+            renderQuick([
+              {label:"Diagnóstico",onClick:function(){user("Quero diagnóstico");typing(function(){bot("O diagnóstico mapeia processos e entrega roadmap com ROI. Use o formulário com essa opção.");renderQuick([ctaChip(),{label:"Menu",onClick:function(){renderQuick(menu());}}]);});}},
+              {label:"Implementação",onClick:function(){user("Implementação de fluxos");typing(function(){bot("Feito: desenho no n8n, integrações, testes e homologação. Peça proposta no formulário.");renderQuick([ctaChip(),{label:"Menu",onClick:function(){renderQuick(menu());}}]);});}},
+              {label:"Parceiro IA",onClick:function(){user("Parceiro IA recorrente");typing(function(){bot("Ideal para evolução contínua: horas mensais, novos fluxos e relatórios. Fale conosco no formulário.");renderQuick([ctaChip(),{label:"Menu",onClick:function(){renderQuick(menu());}}]);});}},
+              {label:"Hub CodeRush",onClick:function(){user("Ver ecossistema");typing(function(){bot("Somos parte do CodeRush — veja todas as marcas no hub.");var d=document.createElement("div");d.className="chat-msg chat-msg--bot mt-2";var a=document.createElement("a");a.href="/";a.className="font-semibold text-emerald-400 underline decoration-emerald-400/40 underline-offset-2 hover:text-emerald-300";a.textContent="Abrir hub CodeRush";d.appendChild(a);messagesEl.appendChild(d);scrollB();renderQuick([ctaChip(),{label:"Menu",onClick:function(){renderQuick(menu());}}]);});}}
+            ]);
+          }
+          if(v)setTimeout(function(){input.focus();},rm?0:200);
+        }
+        function menu(){return[
+          {label:"Diagnóstico",onClick:function(){user("Diagnóstico");typing(function(){bot("Use o formulário selecionando diagnóstico / mapeamento.");renderQuick([ctaChip()]);});}},
+          {label:"Implementação",onClick:function(){user("Implementação");typing(function(){bot("Descreva sistemas e prazo no formulário para uma proposta.");renderQuick([ctaChip()]);});}},
+          {label:"Parceiro IA",onClick:function(){user("Parceiro IA");typing(function(){bot("Indique volume mensal desejado no formulário.");renderQuick([ctaChip()]);});}},
+          {label:"Hub CodeRush",onClick:function(){user("CodeRush");typing(function(){bot("Acesse o hub para outras empresas do grupo.");var d=document.createElement("div");d.className="chat-msg chat-msg--bot mt-2";var a=document.createElement("a");a.href="/";a.className="font-semibold text-emerald-400 underline";a.textContent="coderush hub";d.appendChild(a);messagesEl.appendChild(d);scrollB();renderQuick([ctaChip()]);});}}
+        ];}
+        function freeText(raw){var t=raw.trim();if(t.length<2)return;user(t);input.value="";typing(function(){bot("Obrigado pelo contexto. Para retorno estruturado, use o formulário de contato — nossa equipe responde em nome da FluxoInteligente.");renderQuick([ctaChip(),{label:"Menu",onClick:function(){renderQuick(menu());}}]);});}
+        backdrop.addEventListener("click",function(){setOpen(false);});
+        closeBtn&&closeBtn.addEventListener("click",function(){setOpen(false);});
+        launcher.addEventListener("click",function(){setOpen(!open);});
+        form.addEventListener("submit",function(e){e.preventDefault();freeText(input.value);});
+      })();
+    });
+  </script>
 </body>
 </html>
