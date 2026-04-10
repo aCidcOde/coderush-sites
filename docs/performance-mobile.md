@@ -8,9 +8,9 @@ npm run build:css
 ```
 
 Arquivos que precisam subir junto:
-- `index_svd_files/site-tailwind.css`
-- `index_svd_files/site-optimizations.css`
-- imagens `.webp` novas em `index_svd_files/` e `index_svd_files/posts/`
+- `css/site-tailwind.css`
+- `css/site-optimizations.css`
+- imagens `.webp` novas em `imagens/` e `imagens/posts/`
 - páginas PHP atualizadas
 
 ## 2) Cache de estáticos (Nginx)

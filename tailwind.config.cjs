@@ -1,7 +1,6 @@
 module.exports = {
   content: [
     "./sistemavendadireta/index.php",
-    "./sistemavendadireta/components/**/*.php",
     "./sistemavendadireta/blog/**/*.php",
     "./sistemavendadireta/inteligencia-artificial/**/*.php",
     "./sistemavendadireta/wordpress/**/*.php",

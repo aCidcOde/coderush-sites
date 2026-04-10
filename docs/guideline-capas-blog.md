@@ -18,7 +18,7 @@ Esta guideline cobre:
 - Qualidade: `90`
 - Safe area: `60px` em todo o perimetro
 - Layout: texto a esquerda, imagem flutuante a direita
-- Caminho de saida padrao: `/Users/acidcode/data/svd_site/index_svd_files/posts/{slug}.jpg`
+- Caminho de saida padrao: `/Users/acidcode/data/coderush-sites/sistemavendadireta/imagens/posts/{slug}.jpg`
 
 ## Direcao Visual (Hitech SVD)
 ### Paleta
@@ -49,7 +49,7 @@ Esta guideline cobre:
 - Titulo: `PHP 8.5 EM FOCO`
 - Subtitulo: `Menos custo operacional com backend moderno`
 - Selo: `BLOG SVD - DESENVOLVIMENTO PHP`
-- Arquivo: `/Users/acidcode/data/svd_site/index_svd_files/posts/php-8-5-em-foco.jpg`
+- Arquivo: `/Users/acidcode/data/coderush-sites/sistemavendadireta/imagens/posts/php-8-5-em-foco-guia-pratico-para-atualizacao.jpg`
 
 ## Fluxo de Geracao
 ### Opcao A (preferencial): OpenAI Image API via skill imagegen
@@ -64,13 +64,13 @@ python3 /Users/acidcode/.codex/skills/imagegen/scripts/image_gen.py generate \
   --size 1536x1024 \
   --quality high \
   --output-format png \
-  --out /Users/acidcode/data/svd_site/tmp/imagegen/raw-cover.png
+  --out /Users/acidcode/data/coderush-sites/sistemavendadireta/tmp/imagegen/raw-cover.png
 ```
 
 Depois:
 - recortar/redimensionar para `1200x630`
 - aplicar copy final
-- exportar JPG progressivo em `index_svd_files/posts/`
+- exportar JPG progressivo em `sistemavendadireta/imagens/posts/`
 
 ### Opcao B (fallback local): composicao com Pillow
 Usar quando nao houver `OPENAI_API_KEY`:
@@ -96,9 +96,9 @@ Usar quando nao houver `OPENAI_API_KEY`:
 
 ## Integracao com Post
 Ao publicar post novo, atualizar:
-- `/Users/acidcode/data/svd_site/index.php` (3 posts mais recentes)
-- `/Users/acidcode/data/svd_site/blog/index.php` (novo card no topo)
-- `/Users/acidcode/data/svd_site/sitemap.xml` (nova URL e `lastmod`)
+- `/Users/acidcode/data/coderush-sites/sistemavendadireta/index.php` (3 posts mais recentes)
+- `/Users/acidcode/data/coderush-sites/sistemavendadireta/blog/index.php` (novo card no topo)
+- `/Users/acidcode/data/coderush-sites/sistemavendadireta/sitemap.xml` (nova URL e `lastmod`)
 
 ## Rotina Semanal de Execucao
 Janela padrao:
@@ -113,7 +113,7 @@ Passos:
 
 ## Controle de Versao do Design
 Versao oficial atual:
-- `/Users/acidcode/data/svd_site/index_svd_files/posts/php-8-5-em-foco.jpg`
+- `/Users/acidcode/data/coderush-sites/sistemavendadireta/imagens/posts/php-8-5-em-foco-guia-pratico-para-atualizacao.jpg`
 
 Regras:
 - qualquer variacao de teste nao deve substituir o padrao oficial sem aprovacao explicita

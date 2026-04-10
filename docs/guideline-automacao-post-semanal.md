@@ -23,8 +23,8 @@ Implementar uma rotina recorrente que, toda quarta-feira as 09:00, pesquisa um t
 - `slug`: kebab-case unico
 - `title`: titulo SEO em pt-BR
 - `description`: meta description de 140 a 160 chars
-- `cover_image`: `/Users/acidcode/data/svd_site/index_svd_files/posts/{slug}.jpg`
-- `path`: `/Users/acidcode/data/svd_site/YYYY/MM/DD/{slug}/index.php`
+- `cover_image`: `/Users/acidcode/data/coderush-sites/sistemavendadireta/imagens/posts/{slug}.jpg`
+- `path`: `/Users/acidcode/data/coderush-sites/sistemavendadireta/YYYY/MM/DD/{slug}/index.php`
 - `focus`: um de `ia|php|tecnologia`
 - `sources`: minimo de 2 links externos confiaveis
 
@@ -38,15 +38,15 @@ Implementar uma rotina recorrente que, toda quarta-feira as 09:00, pesquisa um t
 
 ## Arquivos que devem ser atualizados em toda execucao
 1. Novo post:
-`/Users/acidcode/data/svd_site/YYYY/MM/DD/{slug}/index.php`
+`/Users/acidcode/data/coderush-sites/sistemavendadireta/YYYY/MM/DD/{slug}/index.php`
 2. Nova capa:
-`/Users/acidcode/data/svd_site/index_svd_files/posts/{slug}.jpg`
+`/Users/acidcode/data/coderush-sites/sistemavendadireta/imagens/posts/{slug}.jpg`
 3. Home (bloco Blog SVD com apenas 3 mais recentes):
-`/Users/acidcode/data/svd_site/index.php`
+`/Users/acidcode/data/coderush-sites/sistemavendadireta/index.php`
 4. Listagem de blog (novo card no topo):
-`/Users/acidcode/data/svd_site/blog/index.php`
+`/Users/acidcode/data/coderush-sites/sistemavendadireta/blog/index.php`
 5. Sitemap (nova URL + `lastmod` de `/` e `/blog/`):
-`/Users/acidcode/data/svd_site/sitemap.xml`
+`/Users/acidcode/data/coderush-sites/sistemavendadireta/sitemap.xml`
 
 ## Fluxo de Implementacao
 ### 1) Preparacao
@@ -75,7 +75,7 @@ git pull --rebase origin main
 2. Aplicar layout padrao (fundo + painel escuro + titulo/subtitulo + elemento flutuante).
 3. Exportar em `1200x630` JPG otimizado.
 4. Seguir as regras de:
-`/Users/acidcode/data/svd_site/docs/guideline-capas-blog.md`
+`/Users/acidcode/data/coderush-sites/docs/guideline-capas-blog.md`
 
 ### 4) Geracao do post
 1. Criar novo arquivo de post no padrao atual de template local.
@@ -102,20 +102,20 @@ git pull --rebase origin main
 Comandos de referencia:
 ```bash
 # lint php (exemplo)
-php -l /Users/acidcode/data/svd_site/index.php
-php -l /Users/acidcode/data/svd_site/blog/index.php
-php -l /Users/acidcode/data/svd_site/YYYY/MM/DD/{slug}/index.php
+php -l /Users/acidcode/data/coderush-sites/sistemavendadireta/index.php
+php -l /Users/acidcode/data/coderush-sites/sistemavendadireta/blog/index.php
+php -l /Users/acidcode/data/coderush-sites/sistemavendadireta/YYYY/MM/DD/{slug}/index.php
 
 # dimensao da imagem
 python3 - << 'PY'
 from PIL import Image
-im = Image.open('/Users/acidcode/data/svd_site/index_svd_files/posts/{slug}.jpg')
+im = Image.open('/Users/acidcode/data/coderush-sites/sistemavendadireta/imagens/posts/{slug}.jpg')
 print(im.size)
 assert im.size == (1200, 630)
 PY
 
 # validacao XML
-xmllint --noout /Users/acidcode/data/svd_site/sitemap.xml
+xmllint --noout /Users/acidcode/data/coderush-sites/sistemavendadireta/sitemap.xml
 ```
 
 ### 7) Publicacao Git
