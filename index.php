@@ -1405,13 +1405,10 @@
 
       <div class="hidden items-center gap-5 lg:gap-7 md:flex">
         <nav class="flex flex-wrap items-center justify-end gap-x-1 gap-y-1 sm:gap-x-2 lg:gap-x-3 xl:gap-x-4" aria-label="Seções da página">
-          <a href="#clientes" class="header-nav-link focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#020b1a]">Marcas</a>
           <a href="#sobre" class="header-nav-link focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#020b1a]">Sobre</a>
           <a href="#empresas" class="header-nav-link focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#020b1a]">Empresas</a>
           <a href="#cases" class="header-nav-link focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#020b1a]">Cases</a>
-          <a href="#depoimentos" class="header-nav-link focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#020b1a]">Depoimentos</a>
           <a href="#faq" class="header-nav-link focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#020b1a]">FAQ</a>
-          <a href="#contato" class="header-nav-link font-medium text-blue-400/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#020b1a] hover:text-blue-300">Contato</a>
         </nav>
         <div class="flex items-center gap-2.5 pl-2 lg:border-l lg:border-white/[0.08] lg:pl-5">
           <a href="#contato" class="header-btn-primary inline-flex items-center justify-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400/55 focus-visible:ring-offset-2 focus-visible:ring-offset-[#020b1a]">
@@ -1431,13 +1428,10 @@
 
     <div id="mobile-menu" class="header-mobile-panel hidden border border-white/[0.1] bg-[#020b1a]/94 backdrop-blur-xl md:hidden">
       <nav class="mx-auto flex max-w-6xl flex-col gap-0.5 px-6 py-4" aria-label="Menu mobile">
-        <a href="#clientes" class="header-mobile-link px-3 py-3 text-sm font-medium text-white/85 hover:bg-white/[0.05] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400/50 focus-visible:ring-inset">Marcas</a>
         <a href="#sobre" class="header-mobile-link px-3 py-3 text-sm font-medium text-white/85 hover:bg-white/[0.05] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400/50 focus-visible:ring-inset">Sobre</a>
         <a href="#empresas" class="header-mobile-link px-3 py-3 text-sm font-medium text-white/85 hover:bg-white/[0.05] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400/50 focus-visible:ring-inset">Empresas</a>
         <a href="#cases" class="header-mobile-link px-3 py-3 text-sm font-medium text-white/85 hover:bg-white/[0.05] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400/50 focus-visible:ring-inset">Cases</a>
-        <a href="#depoimentos" class="header-mobile-link px-3 py-3 text-sm font-medium text-white/85 hover:bg-white/[0.05] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400/50 focus-visible:ring-inset">Depoimentos</a>
         <a href="#faq" class="header-mobile-link px-3 py-3 text-sm font-medium text-white/85 hover:bg-white/[0.05] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400/50 focus-visible:ring-inset">FAQ</a>
-        <a href="#contato" class="header-mobile-link px-3 py-3 text-sm font-semibold text-blue-400/95 hover:bg-blue-500/10 hover:text-blue-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400/50 focus-visible:ring-inset">Contato</a>
         <div class="mt-3 flex flex-col gap-2.5 border-t border-white/10 pt-4">
           <a href="#contato" class="header-btn-primary flex w-full items-center justify-center px-4 py-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400/55 focus-visible:ring-offset-2 focus-visible:ring-offset-[#020b1a]">
             <span class="header-btn-primary-shine" aria-hidden="true"></span>
@@ -1466,16 +1460,16 @@
 
       <h1 id="hero-heading" class="hero-reveal-item hero-delay-2 mt-7 font-heading text-4xl font-extrabold leading-[1.12] tracking-tight sm:text-5xl md:text-6xl md:leading-[1.1]">
         <span class="block text-white">Soluções digitais</span>
-        <span class="gradient-text mt-2 block sm:mt-3">que geram resultado</span>
+        <span class="gradient-text mt-2 block sm:mt-3">que geram resultados</span>
       </h1>
 
       <p class="hero-reveal-item hero-delay-3 mx-auto mt-7 max-w-2xl text-base leading-relaxed text-white/75 sm:text-lg">
-        CodeRush é um hub central de tecnologia que reúne empresas especializadas em vendas diretas, desenvolvimento de software, WordPress, automação com IA e design digital.
+        CodeRush é um hub central de tecnologia que reúne empresas especializadas em vendas diretas, parcerias, desenvolvimento de software, WordPress, automação com IA e design digital.
       </p>
 
       <div class="hero-reveal-item hero-delay-4 mt-10 flex flex-wrap items-center justify-center gap-4">
         <a href="#empresas" class="group relative inline-flex items-center justify-center overflow-hidden rounded-full bg-brand px-8 py-3.5 text-sm font-semibold text-white shadow-[0_0_0_1px_rgba(255,255,255,0.08),0_16px_40px_-12px_rgba(0,74,173,0.65)] transition duration-300 hover:-translate-y-0.5 hover:bg-blue-600 hover:shadow-[0_0_0_1px_rgba(255,255,255,0.12),0_22px_48px_-8px_rgba(0,74,173,0.55)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-[#020b1a]">
-          <span class="relative z-10">Conheça nossas empresas</span>
+          <span class="relative z-10">Areas de Atuação</span>
           <span class="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/15 to-transparent transition duration-700 group-hover:translate-x-full" aria-hidden="true"></span>
         </a>
         <a href="#contato" class="inline-flex items-center justify-center rounded-full border border-white/25 bg-white/[0.03] px-8 py-3.5 text-sm font-semibold text-white/95 backdrop-blur-sm transition duration-300 hover:-translate-y-0.5 hover:border-white/45 hover:bg-white/[0.08] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#020b1a]">Fale conosco</a>
@@ -1483,7 +1477,7 @@
 
       <div class="hero-reveal-item hero-delay-5 mt-14 flex flex-col items-center gap-2 md:mt-20">
         <a href="#sobre" class="hero-scroll-hint group inline-flex flex-col items-center gap-2 rounded-lg px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-white/45 transition hover:text-white/75 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#020b1a]">
-          <span>Explorar ecossistema</span>
+          <span>Saiba mais</span>
           <svg class="h-5 w-5 text-blue-400/80 group-hover:text-blue-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>
         </a>
       </div>
@@ -1494,56 +1488,32 @@
   <section id="clientes" class="clients-strip border-t border-white/[0.06] bg-[#020b1a] py-10 md:py-14" aria-label="Marcas parceiras do ecossistema">
     <div class="mx-auto max-w-6xl px-6">
       <p class="text-center text-[11px] font-semibold uppercase tracking-[0.2em] text-white/40">Confiam em soluções do grupo</p>
-      <p class="mx-auto mt-2 max-w-xl text-center text-xs text-white/45">Ilustração com marcas fictícias — substitua por logos reais quando disponível.</p>
+      <p class="mx-auto mt-2 max-w-xl text-center text-xs text-white/45">Cada desafio, uma solução inovadora.</p>
     </div>
     <div class="clients-marquee mx-auto mt-8 max-w-[100vw]">
       <div class="clients-track">
         <div class="clients-group">
-          <span class="clients-logo">Vértice</span>
-          <span class="clients-logo">Nexus Labs</span>
-          <span class="clients-logo">Atlas B2B</span>
-          <span class="clients-logo">Fluxo·One</span>
-          <span class="clients-logo">Ørbita</span>
-          <span class="clients-logo">Prime MMN</span>
-          <span class="clients-logo">Bluestack</span>
-          <span class="clients-logo">NeoVendas</span>
+          <span class="clients-logo">RAASA Advogados</span>
+          <span class="clients-logo">Emergency Documentação</span>
+          <span class="clients-logo">Top Pericias</span>
+          <span class="clients-logo">Lojas Leader</span>
+          <span class="clients-logo">Ecotrend Parceiros</span>
+          <span class="clients-logo">Avig360 Saúde Mental</span>
+          <span class="clients-logo">Game Station</span>
+          <span class="clients-logo">Haiflex</span>
         </div>
         <div class="clients-group clients-group-dup" role="presentation" aria-hidden="true">
-          <span class="clients-logo">Vértice</span>
-          <span class="clients-logo">Nexus Labs</span>
-          <span class="clients-logo">Atlas B2B</span>
-          <span class="clients-logo">Fluxo·One</span>
-          <span class="clients-logo">Ørbita</span>
-          <span class="clients-logo">Prime MMN</span>
-          <span class="clients-logo">Bluestack</span>
-          <span class="clients-logo">NeoVendas</span>
+          <span class="clients-logo">BBom</span>
+          <span class="clients-logo">Science Life World</span>
+          <span class="clients-logo">Forone Bolivia</span>
+          <span class="clients-logo">Mauabank </span>
+          <span class="clients-logo">Retech Engenharia</span>
+          <span class="clients-logo">Accenti</span>
+          <span class="clients-logo">Sublimity</span>
         </div>
       </div>
     </div>
-    <div class="clients-marquee mx-auto mt-5 max-w-[100vw]">
-      <div class="clients-track clients-track--alt">
-        <div class="clients-group">
-          <span class="clients-logo">Lumina</span>
-          <span class="clients-logo">Kairós</span>
-          <span class="clients-logo">Voltstack</span>
-          <span class="clients-logo">Meridian</span>
-          <span class="clients-logo">Sólis</span>
-          <span class="clients-logo">Quantex</span>
-          <span class="clients-logo">Gravity</span>
-          <span class="clients-logo">Apex IA</span>
-        </div>
-        <div class="clients-group clients-group-dup" aria-hidden="true">
-          <span class="clients-logo">Lumina</span>
-          <span class="clients-logo">Kairós</span>
-          <span class="clients-logo">Voltstack</span>
-          <span class="clients-logo">Meridian</span>
-          <span class="clients-logo">Sólis</span>
-          <span class="clients-logo">Quantex</span>
-          <span class="clients-logo">Gravity</span>
-          <span class="clients-logo">Apex IA</span>
-        </div>
-      </div>
-    </div>
+    
   </section>
 
   <!-- Quem somos -->
@@ -1562,7 +1532,7 @@
             O CodeRush reúne <strong class="font-semibold text-white/90">várias empresas e serviços</strong> sob um ecossistema coordenado. Cada marca mantém sua identidade e foco de mercado, com metodologias e qualidade de entrega alinhadas.
           </p>
           <p class="sobre-reveal sobre-d-4 mt-4 text-base leading-relaxed text-white/60">
-            Do MMN e vendas diretas ao desenvolvimento sob medida, WordPress, automação e IA aplicada — você encontra o time certo sem perder tempo em burocracia entre fornecedores soltos.
+            Do MMN e vendas diretas ao desenvolvimento sob medida, WordPress, automação e IA aplicada — você encontra o time certo sem perder tempo em burocracias.
           </p>
           <div class="sobre-reveal sobre-d-5 mt-8 flex flex-wrap gap-3">
             <a href="#empresas" class="inline-flex items-center justify-center gap-2 rounded-full bg-brand px-6 py-3 text-sm font-semibold text-white shadow-[0_12px_36px_-12px_rgba(0,74,173,0.65)] transition hover:-translate-y-0.5 hover:bg-blue-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-[#020b1a]">
@@ -1578,15 +1548,15 @@
         <div class="lg:col-span-7">
           <div class="grid grid-cols-3 gap-3 sm:gap-4">
             <div class="sobre-reveal sobre-d-3 sobre-stat px-3 py-5 text-center sm:px-4 sm:py-6">
-              <p class="font-heading text-2xl font-extrabold tabular-nums text-blue-400 sm:text-3xl">5</p>
-              <p class="mt-1.5 text-[11px] font-medium leading-snug text-white/55 sm:text-xs">Empresas no grupo</p>
+              <p class="font-heading text-2xl font-extrabold tabular-nums text-blue-400 sm:text-3xl">+40</p>
+              <p class="mt-1.5 text-[11px] font-medium leading-snug text-white/55 sm:text-xs">Projetos nos ultimos anos</p>
             </div>
             <div class="sobre-reveal sobre-d-4 sobre-stat px-3 py-5 text-center sm:px-4 sm:py-6">
-              <p class="font-heading text-2xl font-extrabold tabular-nums text-blue-400 sm:text-3xl">+20</p>
+              <p class="font-heading text-2xl font-extrabold tabular-nums text-blue-400 sm:text-3xl">+24</p>
               <p class="mt-1.5 text-[11px] font-medium leading-snug text-white/55 sm:text-xs">Anos de experiência</p>
             </div>
             <div class="sobre-reveal sobre-d-5 sobre-stat px-3 py-5 text-center sm:px-4 sm:py-6">
-              <p class="font-heading text-2xl font-extrabold text-blue-400 sm:text-3xl">IA</p>
+              <p class="font-heading text-2xl font-extrabold text-blue-400 sm:text-3xl">IA FIRST</p>
               <p class="mt-1.5 text-[11px] font-medium leading-snug text-white/55 sm:text-xs">No centro da operação</p>
             </div>
           </div>
@@ -1628,9 +1598,7 @@
               </div>
             </article>
           </div>
-          <p class="sobre-reveal sobre-d-8 mt-6 text-center text-[11px] text-white/38 sm:text-left">
-            Hub corporativo — cada empresa com site e time próprios, alinhados ao mesmo padrão de excelência.
-          </p>
+          
         </div>
       </div>
     </div>
@@ -1648,7 +1616,7 @@
 
       <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
         <!-- Sistema Venda Direta -->
-        <a href="/sistemavendadireta/" class="portfolio-card group relative flex h-full flex-col rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.07] to-white/[0.02] p-6 shadow-lg shadow-black/25 backdrop-blur-sm hover:border-blue-500/35">
+        <a href="https://sistemavendadireta.com.br" target="_blank" class="portfolio-card group relative flex h-full flex-col rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.07] to-white/[0.02] p-6 shadow-lg shadow-black/25 backdrop-blur-sm hover:border-blue-500/35">
           <div class="mb-5 flex items-start justify-between gap-3">
             <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-blue-500/15 ring-1 ring-blue-400/25 text-blue-300">
               <i data-lucide="store" class="h-6 w-6" aria-hidden="true"></i>
@@ -1667,7 +1635,7 @@
         </a>
 
         <!-- Codafacil -->
-        <a href="/codafacil/" class="portfolio-card group relative flex h-full flex-col rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.07] to-white/[0.02] p-6 shadow-lg shadow-black/25 backdrop-blur-sm hover:border-violet-500/35">
+        <a href="https://codafacil.dev" target="_blank" class="portfolio-card group relative flex h-full flex-col rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.07] to-white/[0.02] p-6 shadow-lg shadow-black/25 backdrop-blur-sm hover:border-violet-500/35">
           <div class="mb-5 flex items-start justify-between gap-3">
             <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-violet-500/15 ring-1 ring-violet-400/25 text-violet-200">
               <i data-lucide="code-xml" class="h-6 w-6" aria-hidden="true"></i>
@@ -1675,7 +1643,7 @@
             <span class="shrink-0 rounded-full bg-violet-500/10 px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-violet-200/90">Dev &amp; IA</span>
           </div>
           <h3 class="font-heading text-lg font-bold text-white transition group-hover:text-violet-200">Codafacil.dev</h3>
-          <p class="mt-3 flex-grow text-sm leading-relaxed text-white/65">Software sob medida com IA, entregas ágeis e stack moderna — Laravel, Livewire e Tailwind.</p>
+          <p class="mt-3 flex-grow text-sm leading-relaxed text-white/65">Desenvolvimento de Software sob medida com IA, entregas ágeis e stack moderna. Mobile, desktop e SAAS.</p>
           <div class="mt-6 flex items-center justify-between gap-3 border-t border-white/10 pt-5">
             <span class="truncate text-xs text-white/45" title="codafacil.dev">codafacil.dev</span>
             <span class="inline-flex shrink-0 items-center gap-1.5 text-sm font-semibold text-violet-400 transition group-hover:text-violet-300">
@@ -1686,28 +1654,7 @@
         </a>
 
         <!-- WordPress Consultoria -->
-        <a href="/wordpressconsultoria/" class="portfolio-card group relative flex h-full flex-col rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.07] to-white/[0.02] p-6 shadow-lg shadow-black/25 backdrop-blur-sm hover:border-sky-500/35">
-          <div class="mb-5 flex items-start justify-between gap-3">
-            <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-sky-500/15 ring-1 ring-sky-400/25 text-sky-200">
-              <i data-lucide="puzzle" class="h-6 w-6" aria-hidden="true"></i>
-            </span>
-            <span class="shrink-0 rounded-full bg-sky-500/10 px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-sky-200/90">WordPress</span>
-          </div>
-          <h3 class="font-heading text-lg font-bold text-white transition group-hover:text-sky-200">WordPress Consultoria</h3>
-          <p class="mt-3 flex-grow text-sm leading-relaxed text-white/65">Plugins sob medida, gateways, integrações com ERP, multi-lojas e temas personalizados.</p>
-          <div class="mt-6 flex items-center justify-between gap-3 border-t border-white/10 pt-5">
-            <span class="truncate text-xs text-white/45" title="wordpressconsultoria.com.br">wordpressconsultoria.com.br</span>
-            <span class="inline-flex shrink-0 items-center gap-1.5 text-sm font-semibold text-sky-400 transition group-hover:text-sky-300">
-              Visitar
-              <i data-lucide="arrow-right" class="h-4 w-4 transition group-hover:translate-x-0.5" aria-hidden="true"></i>
-            </span>
-          </div>
-        </a>
-      </div>
-
-      <div class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-auto lg:max-w-4xl">
-        <!-- FluxoInteligente IA -->
-        <a href="/fluxointeligenteia/" class="portfolio-card group relative flex h-full flex-col rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.07] to-white/[0.02] p-6 shadow-lg shadow-black/25 backdrop-blur-sm hover:border-emerald-500/35">
+        <a href="https://fluxointeligenteia.com.br" target="_blank " class="portfolio-card group relative flex h-full flex-col rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.07] to-white/[0.02] p-6 shadow-lg shadow-black/25 backdrop-blur-sm hover:border-emerald-500/35">
           <div class="mb-5 flex items-start justify-between gap-3">
             <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-emerald-500/15 ring-1 ring-emerald-400/25 text-emerald-200">
               <i data-lucide="workflow" class="h-6 w-6" aria-hidden="true"></i>
@@ -1715,7 +1662,7 @@
             <span class="shrink-0 rounded-full bg-emerald-500/10 px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-emerald-200/90">Automação</span>
           </div>
           <h3 class="font-heading text-lg font-bold text-white transition group-hover:text-emerald-200">FluxoInteligente IA</h3>
-          <p class="mt-3 flex-grow text-sm leading-relaxed text-white/65">Processos complexos viram fluxos inteligentes: n8n, agentes e IA aplicada ao negócio.</p>
+          <p class="mt-3 flex-grow text-sm leading-relaxed text-white/65">Processos complexos viram fluxos inteligentes: n8n, langchain, RAG, agentes e IA aplicada ao negócio.</p>
           <div class="mt-6 flex items-center justify-between gap-3 border-t border-white/10 pt-5">
             <span class="truncate text-xs text-white/45" title="fluxointeligenteia.com.br">fluxointeligenteia.com.br</span>
             <span class="inline-flex shrink-0 items-center gap-1.5 text-sm font-semibold text-emerald-400 transition group-hover:text-emerald-300">
@@ -1724,21 +1671,6 @@
             </span>
           </div>
         </a>
-
-        <!-- Traço Creative Lab -->
-        <div class="portfolio-card-static group relative flex h-full flex-col rounded-2xl border border-dashed border-white/15 bg-white/[0.02] p-6 opacity-90" role="group" aria-label="Traço Creative Lab — em breve">
-          <div class="mb-5 flex items-start justify-between gap-3">
-            <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-rose-500/12 ring-1 ring-rose-400/20 text-rose-200/90">
-              <i data-lucide="palette" class="h-6 w-6" aria-hidden="true"></i>
-            </span>
-            <span class="shrink-0 rounded-full border border-white/15 bg-white/[0.04] px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-white/50">Em breve</span>
-          </div>
-          <h3 class="font-heading text-lg font-bold text-white/95">Traço Creative Lab</h3>
-          <p class="mt-3 flex-grow text-sm leading-relaxed text-white/55">Design, UX, prototipagem e front-end para web e mobile — do conceito à implementação.</p>
-          <div class="mt-6 border-t border-white/10 pt-5">
-            <p class="text-xs text-white/40">Em breve no ecossistema CodeRush.</p>
-          </div>
-        </div>
       </div>
     </div>
   </section>
@@ -1749,32 +1681,12 @@
 
     <div class="relative mx-auto max-w-6xl">
       <header class="cases-reveal cases-d-1 mx-auto mb-12 max-w-3xl text-center md:mb-16">
-        <p class="text-xs font-semibold uppercase tracking-widest text-emerald-400/90">Resultados &amp; prova social</p>
+        <p class="text-xs font-semibold uppercase tracking-widest text-emerald-400/90">Resultados &amp; Casos de Sucesso</p>
         <h2 id="cases-heading" class="mt-3 font-heading text-3xl font-bold tracking-tight text-white sm:text-4xl">Cases de sucesso no ecossistema CodeRush</h2>
         <p class="mt-4 text-base leading-relaxed text-white/65">
           Selecionamos <strong class="font-semibold text-white/85">destaques reais</strong> de entregas feitas pelas empresas do grupo: <strong class="font-semibold text-white/85">performance</strong>, <strong class="font-semibold text-white/85">SEO técnico</strong>, integrações e foco em <strong class="font-semibold text-white/85">conversão</strong>. Use estes cenários para comparar com o seu próximo projeto.
         </p>
       </header>
-
-      <div class="mb-12 grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-4">
-        <div class="cases-reveal cases-d-2 rounded-2xl border border-white/10 bg-white/[0.04] p-4 text-center backdrop-blur-sm">
-          <p class="font-heading text-2xl font-extrabold text-blue-400 md:text-3xl">+120</p>
-          <p class="mt-1 text-[11px] font-medium uppercase tracking-wide text-white/50 md:text-xs">Projetos entregues</p>
-        </div>
-        <div class="cases-reveal cases-d-2 rounded-2xl border border-white/10 bg-white/[0.04] p-4 text-center backdrop-blur-sm">
-          <p class="font-heading text-2xl font-extrabold text-violet-400 md:text-3xl">+20</p>
-          <p class="mt-1 text-[11px] font-medium uppercase tracking-wide text-white/50 md:text-xs">Anos combinados</p>
-        </div>
-        <div class="cases-reveal cases-d-2 rounded-2xl border border-white/10 bg-white/[0.04] p-4 text-center backdrop-blur-sm">
-          <p class="font-heading text-2xl font-extrabold text-emerald-400 md:text-3xl">99,9%</p>
-          <p class="mt-1 text-[11px] font-medium uppercase tracking-wide text-white/50 md:text-xs">Meta de uptime*</p>
-        </div>
-        <div class="cases-reveal cases-d-2 rounded-2xl border border-white/10 bg-white/[0.04] p-4 text-center backdrop-blur-sm">
-          <p class="font-heading text-2xl font-extrabold text-sky-400 md:text-3xl">Brasil</p>
-          <p class="mt-1 text-[11px] font-medium uppercase tracking-wide text-white/50 md:text-xs">Atuação nacional</p>
-        </div>
-      </div>
-      <p class="cases-reveal cases-d-2 mb-12 text-center text-[11px] text-white/35">* Meta operacional em projetos de plataforma crítica; disponibilidade depende de infraestrutura do cliente.</p>
 
       <article class="cases-reveal cases-d-3 cases-card group relative overflow-hidden rounded-3xl border border-blue-500/25 bg-gradient-to-br from-blue-950/50 via-[#020b1a] to-[#020b1a] p-6 shadow-xl shadow-blue-950/40 sm:p-8 md:p-10">
         <div class="cases-featured-bar absolute left-0 right-0 top-0 h-px opacity-80" aria-hidden="true"></div>
@@ -1782,11 +1694,11 @@
           <div class="max-w-2xl">
             <div class="inline-flex items-center gap-2 rounded-full border border-blue-400/30 bg-blue-500/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-blue-200">
               <i data-lucide="trending-up" class="h-3.5 w-3.5" aria-hidden="true"></i>
-              Case em destaque
+              Vendas e Comissões em alta escala
             </div>
-            <h3 class="mt-4 font-heading text-2xl font-bold text-white md:text-3xl">Plataforma nacional de vendas diretas e MMN</h3>
+            <h3 class="mt-4 font-heading text-2xl font-bold text-white md:text-3xl">Plataforma vendas diretas,MMN e parcerias.</h3>
             <p class="mt-3 text-sm leading-relaxed text-white/70 md:text-base">
-              Operação com <strong class="text-white/90">milhões de pedidos</strong> processados, comissionamento multi-nível, lojas por consultor e <strong class="text-white/90">backoffice</strong> para franqueadora. Foco em <strong class="text-white/90">SEO técnico</strong> (Core Web Vitals), escalabilidade e relatórios gerenciais em tempo real.
+              Plataforma SaaS de gestão comercial para operações de venda direta e marketing multinível, cobrindo escritório virtual para a rede de distribuidores, loja com checkout integrado (PIX, cartão e boleto), planos de compensação configuráveis (binário, unilevel e híbrido), cálculo automático de comissões, sincronização com ERP e logística, relatórios financeiros e de performance em tempo real, e módulo de IA aplicada para automação de processos operacionais e tomada de decisão.
             </p>
             <ul class="mt-5 flex flex-wrap gap-2" aria-label="Destaques do case">
               <li class="rounded-full border border-white/15 bg-white/[0.05] px-3 py-1 text-xs font-medium text-white/75">Alta escala</li>
@@ -1797,7 +1709,63 @@
           </div>
           <div class="flex w-full shrink-0 flex-col gap-3 sm:flex-row sm:items-center lg:w-auto lg:flex-col">
             <a href="/sistemavendadireta/" class="inline-flex items-center justify-center gap-2 rounded-full bg-brand px-6 py-3 text-sm font-semibold text-white shadow-lg transition hover:bg-blue-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-[#020b1a]">
-              Ver solução SVD
+              Ver solução Sistema Venda Direta
+              <i data-lucide="arrow-right" class="h-4 w-4 transition group-hover:translate-x-0.5" aria-hidden="true"></i>
+            </a>
+            <a href="#contato" class="inline-flex items-center justify-center rounded-full border border-white/25 px-6 py-3 text-sm font-semibold text-white/90 transition hover:border-white/50 hover:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#020b1a]">Quero algo parecido</a>
+          </div>
+        </div>
+      </article>
+      <article class="mt-3 cases-reveal cases-d-3 cases-card group relative overflow-hidden rounded-3xl border border-blue-500/25 bg-gradient-to-br from-blue-950/50 via-[#020b1a] to-[#020b1a] p-6 shadow-xl shadow-blue-950/40 sm:p-8 md:p-10">
+        <div class="cases-featured-bar absolute left-0 right-0 top-0 h-px opacity-80" aria-hidden="true"></div>
+        <div class="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
+          <div class="max-w-2xl">
+            <div class="inline-flex items-center gap-2 rounded-full border border-blue-400/30 bg-blue-500/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-blue-200">
+              <i data-lucide="trending-up" class="h-3.5 w-3.5" aria-hidden="true"></i>
+              SAAS de Due Deligence e Análise de Risco
+            </div>
+            <h3 class="mt-4 font-heading text-2xl font-bold text-white md:text-3xl">Plataforma SAAS para vendas de serviço de Due Deligence.</h3>
+            <p class="mt-3 text-sm leading-relaxed text-white/70 md:text-base">
+              Plataforma SaaS desenvolvida para digitalizar e automatizar o ciclo completo de pedidos de certidões, desde o cadastro do cliente e escolha dos serviços até pagamento, emissão, acompanhamento e operação administrativa, com integrações externas, filas de processamento, auditoria e notificações automatizadas.
+            </p>
+            <ul class="mt-5 flex flex-wrap gap-2" aria-label="Destaques do case">
+              <li class="rounded-full border border-white/15 bg-white/[0.05] px-3 py-1 text-xs font-medium text-white/75">Alta Disponibilidade</li>
+              <li class="rounded-full border border-white/15 bg-white/[0.05] px-3 py-1 text-xs font-medium text-white/75">Integrações</li>
+              <li class="rounded-full border border-white/15 bg-white/[0.05] px-3 py-1 text-xs font-medium text-white/75">Inteligência Artificial</li>
+              <li class="rounded-full border border-white/15 bg-white/[0.05] px-3 py-1 text-xs font-medium text-white/75">UX & UI Friendly</li>
+            </ul>
+          </div>
+          <div class="flex w-full shrink-0 flex-col gap-3 sm:flex-row sm:items-center lg:w-auto lg:flex-col">
+            <a href="https://emergency.com.br" class="inline-flex items-center justify-center gap-2 rounded-full bg-brand px-6 py-3 text-sm font-semibold text-white shadow-lg transition hover:bg-blue-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-[#020b1a]">
+              Ver solução Emergency
+              <i data-lucide="arrow-right" class="h-4 w-4 transition group-hover:translate-x-0.5" aria-hidden="true"></i>
+            </a>
+            <a href="#contato" class="inline-flex items-center justify-center rounded-full border border-white/25 px-6 py-3 text-sm font-semibold text-white/90 transition hover:border-white/50 hover:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#020b1a]">Quero algo parecido</a>
+          </div>
+        </div>
+      </article>
+      <article class="mt-3 cases-reveal cases-d-3 cases-card group relative overflow-hidden rounded-3xl border border-blue-500/25 bg-gradient-to-br from-blue-950/50 via-[#020b1a] to-[#020b1a] p-6 shadow-xl shadow-blue-950/40 sm:p-8 md:p-10">
+        <div class="cases-featured-bar absolute left-0 right-0 top-0 h-px opacity-80" aria-hidden="true"></div>
+        <div class="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
+          <div class="max-w-2xl">
+            <div class="inline-flex items-center gap-2 rounded-full border border-blue-400/30 bg-blue-500/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-blue-200">
+              <i data-lucide="trending-up" class="h-3.5 w-3.5" aria-hidden="true"></i>
+              Lojas onlines Distribuidas e estoque Centralizado
+            </div>
+            <h3 class="mt-4 font-heading text-2xl font-bold text-white md:text-3xl">Plataforma centralizada com Multiplas integrações e rotinas</h3>
+            <p class="mt-3 text-sm leading-relaxed text-white/70 md:text-base">
+              O Middleware tem como responsabilidade integrar os sistemas de vendas, estoque e financeiro, garantindo que as informações estejam sempre atualizadas e sincronizadas entre as lojas online e o estoque centralizado. Ele é capaz de processar grandes volumes de dados em tempo real, permitindo que as lojas online tenham acesso a informações precisas sobre disponibilidade de produtos, preços e status dos pedidos.
+            </p>
+            <ul class="mt-5 flex flex-wrap gap-2" aria-label="Destaques do case">
+              <li class="rounded-full border border-white/15 bg-white/[0.05] px-3 py-1 text-xs font-medium text-white/75">Alta escala</li>
+              <li class="rounded-full border border-white/15 bg-white/[0.05] px-3 py-1 text-xs font-medium text-white/75">Comissionamento</li>
+              <li class="rounded-full border border-white/15 bg-white/[0.05] px-3 py-1 text-xs font-medium text-white/75">Multi-loja</li>
+              <li class="rounded-full border border-white/15 bg-white/[0.05] px-3 py-1 text-xs font-medium text-white/75">Relatórios</li>
+            </ul>
+          </div>
+          <div class="flex w-full shrink-0 flex-col gap-3 sm:flex-row sm:items-center lg:w-auto lg:flex-col">
+            <a href="https://middleware.isysistemas.com.br/" class="inline-flex items-center justify-center gap-2 rounded-full bg-brand px-6 py-3 text-sm font-semibold text-white shadow-lg transition hover:bg-blue-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-[#020b1a]">
+              Ver solução Isy Middleware
               <i data-lucide="arrow-right" class="h-4 w-4 transition group-hover:translate-x-0.5" aria-hidden="true"></i>
             </a>
             <a href="#contato" class="inline-flex items-center justify-center rounded-full border border-white/25 px-6 py-3 text-sm font-semibold text-white/90 transition hover:border-white/50 hover:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#020b1a]">Quero algo parecido</a>
@@ -1805,60 +1773,6 @@
         </div>
       </article>
 
-      <div class="mt-8 grid gap-6 lg:grid-cols-3">
-        <article class="cases-reveal cases-d-4 cases-card flex h-full flex-col rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.06] to-transparent p-6">
-          <div class="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-violet-500/15 text-violet-200 ring-1 ring-violet-400/25">
-            <i data-lucide="cpu" class="h-5 w-5" aria-hidden="true"></i>
-          </div>
-          <h3 class="font-heading text-lg font-bold text-white">Software sob medida com IA</h3>
-          <p class="mt-2 flex-grow text-sm leading-relaxed text-white/65">
-            Sistemas web com <strong class="font-medium text-white/80">Laravel</strong>, painéis administrativos, integrações via API e automações com IA. Entregas quinzenais e stack moderna (Livewire, Tailwind) para <strong class="font-medium text-white/80">time-to-market</strong> previsível.
-          </p>
-          <a href="/codafacil/" class="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-violet-400 transition hover:text-violet-300">
-            Codafacil.dev
-            <i data-lucide="external-link" class="h-4 w-4" aria-hidden="true"></i>
-          </a>
-        </article>
-
-        <article class="cases-reveal cases-d-5 cases-card flex h-full flex-col rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.06] to-transparent p-6">
-          <div class="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-sky-500/15 text-sky-200 ring-1 ring-sky-400/25">
-            <i data-lucide="shopping-bag" class="h-5 w-5" aria-hidden="true"></i>
-          </div>
-          <h3 class="font-heading text-lg font-bold text-white">WordPress &amp; loja com ERP</h3>
-          <p class="mt-2 flex-grow text-sm leading-relaxed text-white/65">
-            WooCommerce e catálogos <strong class="font-medium text-white/80">B2B</strong>, gateways de pagamento, plugins sob medida e <strong class="font-medium text-white/80">sincronização com ERP</strong>. SEO on-page, performance e segurança para conversão.
-          </p>
-          <a href="/wordpressconsultoria/" class="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-sky-400 transition hover:text-sky-300">
-            WordPress Consultoria
-            <i data-lucide="external-link" class="h-4 w-4" aria-hidden="true"></i>
-          </a>
-        </article>
-
-        <article class="cases-reveal cases-d-6 cases-card flex h-full flex-col rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.06] to-transparent p-6">
-          <div class="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-500/15 text-emerald-200 ring-1 ring-emerald-400/25">
-            <i data-lucide="git-branch" class="h-5 w-5" aria-hidden="true"></i>
-          </div>
-          <h3 class="font-heading text-lg font-bold text-white">Automação com n8n &amp; IA</h3>
-          <p class="mt-2 flex-grow text-sm leading-relaxed text-white/65">
-            Fluxos inteligentes ligando <strong class="font-medium text-white/80">CRM</strong>, mensageria e sistemas legados. Agentes e <strong class="font-medium text-white/80">IA aplicada</strong> ao funil comercial para reduzir tarefas manuais e aumentar resposta.
-          </p>
-          <a href="/fluxointeligenteia/" class="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-emerald-400 transition hover:text-emerald-300">
-            FluxoInteligente IA
-            <i data-lucide="external-link" class="h-4 w-4" aria-hidden="true"></i>
-          </a>
-        </article>
-      </div>
-
-      <div class="cases-reveal cases-d-7 mt-10 rounded-2xl border border-white/10 bg-white/[0.03] p-6 md:p-8">
-        <p class="text-center text-xs font-semibold uppercase tracking-widest text-white/45">Linhas de atuação cobertas pelos cases</p>
-        <div class="mt-4 flex flex-wrap justify-center gap-2 md:gap-3">
-          <span class="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5 text-xs text-white/75">Vendas diretas &amp; MMN</span>
-          <span class="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5 text-xs text-white/75">Desenvolvimento Laravel</span>
-          <span class="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5 text-xs text-white/75">WordPress &amp; WooCommerce</span>
-          <span class="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5 text-xs text-white/75">Automação &amp; n8n</span>
-          <span class="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5 text-xs text-white/75">IA aplicada ao negócio</span>
-        </div>
-      </div>
 
       <div class="cases-reveal cases-d-8 mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
         <a href="#contato" class="inline-flex w-full items-center justify-center rounded-full bg-brand px-8 py-3.5 text-sm font-semibold text-white shadow-lg transition hover:bg-blue-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-[#020b1a] sm:w-auto">
@@ -1872,109 +1786,6 @@
   </section>
 
   <!-- Depoimentos -->
-  <section id="depoimentos" class="testimonials-section relative border-t border-white/[0.06] px-6 py-20 md:py-28" aria-labelledby="depoimentos-heading">
-    <div class="testimonials-ambient" aria-hidden="true"></div>
-    <div class="pointer-events-none absolute inset-x-0 top-0 mx-auto h-px max-w-2xl bg-gradient-to-r from-transparent via-amber-400/25 to-transparent" aria-hidden="true"></div>
-    <div class="relative mx-auto max-w-6xl">
-      <header class="testimonials-reveal t-d-1 mx-auto mb-12 max-w-3xl text-center md:mb-16">
-        <p class="font-heading text-[11px] font-semibold uppercase tracking-[0.2em] text-amber-400/95">Depoimentos</p>
-        <h2 id="depoimentos-heading" class="mt-3 font-heading text-3xl font-bold tracking-tight text-white sm:text-4xl">Quem trabalhou com o ecossistema recomenda</h2>
-        <p class="mt-4 text-base leading-relaxed text-white/60">
-          Histórias de projetos reais — <span class="text-white/75">perfis ilustrativos</span> para demonstrar tom e formato; substitua por depoimentos verificáveis quando desejar.
-        </p>
-      </header>
-
-      <div class="testimonials-scroller -mx-4 px-4 sm:mx-0 sm:px-0">
-        <div class="testimonial-card-wrap">
-          <article class="testimonial-card testimonials-reveal t-d-2 flex h-full flex-col p-6 sm:p-7">
-            <span class="testimonial-quote-deco" aria-hidden="true">“</span>
-            <div class="relative flex items-center gap-1 text-amber-400/95" aria-label="5 de 5 estrelas">
-              <i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400/85" aria-hidden="true"></i>
-              <i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400/85" aria-hidden="true"></i>
-              <i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400/85" aria-hidden="true"></i>
-              <i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400/85" aria-hidden="true"></i>
-              <i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400/85" aria-hidden="true"></i>
-            </div>
-            <blockquote class="relative mt-4 flex-grow">
-              <p class="text-sm leading-relaxed text-white/78">
-                A plataforma de MMN saiu do papel em tempo recorde. O time entendeu regras de bonificação, performance sob carga e o que o campo precisa ver no app.
-              </p>
-            </blockquote>
-            <footer class="relative mt-6 flex items-center gap-3 border-t border-white/10 pt-5">
-              <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-blue-500/30 to-blue-600/10 font-heading text-sm font-bold text-blue-100 ring-1 ring-blue-400/25" aria-hidden="true">RC</span>
-              <div class="min-w-0">
-                <p class="truncate font-heading text-sm font-semibold text-white">Renata Costa</p>
-                <p class="truncate text-xs text-white/50">Diretora de Operações · marca fictícia</p>
-              </div>
-            </footer>
-          </article>
-        </div>
-        <div class="testimonial-card-wrap">
-          <article class="testimonial-card testimonials-reveal t-d-3 flex h-full flex-col p-6 sm:p-7">
-            <span class="testimonial-quote-deco" aria-hidden="true">“</span>
-            <div class="relative flex items-center gap-1 text-amber-400/95" aria-label="5 de 5 estrelas">
-              <i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400/85" aria-hidden="true"></i>
-              <i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400/85" aria-hidden="true"></i>
-              <i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400/85" aria-hidden="true"></i>
-              <i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400/85" aria-hidden="true"></i>
-              <i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400/85" aria-hidden="true"></i>
-            </div>
-            <blockquote class="relative mt-4 flex-grow">
-              <p class="text-sm leading-relaxed text-white/78">
-                Integração com ERP e CRM sem gambiarra. Documentação clara, deploy previsível e suporte quando a operação aperta — raro em fornecedor de software.
-              </p>
-            </blockquote>
-            <footer class="relative mt-6 flex items-center gap-3 border-t border-white/10 pt-5">
-              <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-violet-500/30 to-violet-600/10 font-heading text-sm font-bold text-violet-100 ring-1 ring-violet-400/25" aria-hidden="true">LM</span>
-              <div class="min-w-0">
-                <p class="truncate font-heading text-sm font-semibold text-white">Lucas Monteiro</p>
-                <p class="truncate text-xs text-white/50">CTO · startup B2B fictícia</p>
-              </div>
-            </footer>
-          </article>
-        </div>
-        <div class="testimonial-card-wrap">
-          <article class="testimonial-card testimonials-reveal t-d-4 flex h-full flex-col p-6 sm:p-7">
-            <span class="testimonial-quote-deco" aria-hidden="true">“</span>
-            <div class="relative flex items-center gap-1 text-amber-400/95" aria-label="5 de 5 estrelas">
-              <i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400/85" aria-hidden="true"></i>
-              <i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400/85" aria-hidden="true"></i>
-              <i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400/85" aria-hidden="true"></i>
-              <i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400/85" aria-hidden="true"></i>
-              <i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400/85" aria-hidden="true"></i>
-            </div>
-            <blockquote class="relative mt-4 flex-grow">
-              <p class="text-sm leading-relaxed text-white/78">
-                WooCommerce B2B com catálogos complexos e SEO técnico que realmente move agulha. O time entende conversão, não só tema bonito.
-              </p>
-            </blockquote>
-            <footer class="relative mt-6 flex items-center gap-3 border-t border-white/10 pt-5">
-              <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-emerald-500/30 to-emerald-600/10 font-heading text-sm font-bold text-emerald-100 ring-1 ring-emerald-400/25" aria-hidden="true">FS</span>
-              <div class="min-w-0">
-                <p class="truncate font-heading text-sm font-semibold text-white">Fernanda Souza</p>
-                <p class="truncate text-xs text-white/50">Head de E-commerce · distribuidora fictícia</p>
-              </div>
-            </footer>
-          </article>
-        </div>
-      </div>
-
-      <div class="testimonials-reveal t-d-5 mt-12 flex flex-col items-center justify-center gap-4 rounded-2xl border border-white/10 bg-white/[0.03] px-6 py-8 text-center md:flex-row md:justify-between md:text-left">
-        <div class="flex max-w-xl flex-col items-center gap-3 md:flex-row md:items-center md:gap-4">
-          <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-amber-500/15 text-amber-200 ring-1 ring-amber-400/25">
-            <i data-lucide="mic-2" class="h-6 w-6" aria-hidden="true"></i>
-          </span>
-          <p class="text-sm leading-relaxed text-white/65">
-            <span class="font-semibold text-white/85">Quer ver seu projeto aqui?</span> Envie o briefing e, com autorização, destacamos resultados no site e nos cases.
-          </p>
-        </div>
-        <a href="#contato" class="inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-brand px-6 py-3 text-sm font-semibold text-white shadow-lg transition hover:bg-blue-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-[#020b1a]">
-          Quero aparecer nos destaques
-          <i data-lucide="arrow-right" class="h-4 w-4" aria-hidden="true"></i>
-        </a>
-      </div>
-    </div>
-  </section>
 
   <!-- FAQ -->
   <section id="faq" class="faq-section relative border-t border-white/[0.06] px-6 py-20 md:py-24" aria-labelledby="faq-heading">
