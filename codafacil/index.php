@@ -1,76 +1,110 @@
+<?php
+$seoBase = 'https://codafacil.dev';
+$seoUrl = $seoBase . '/';
+$seoTitle = 'Codafacil.dev — Desenvolvimento orientado por IA';
+$seoDescription = 'Software sob medida orientado por IA: desenvolvimento ágil, integrações e automação para empresas que escalam com qualidade. Codafacil.dev, ecossistema CodeRush no Brasil.';
+$seoOgImage = $seoBase . '/imagens/logo.webp';
+$seoLogo = $seoBase . '/imagens/logo.webp';
+$seoLdGraph = [
+  '@context' => 'https://schema.org',
+  '@graph' => [
+    [
+      '@type' => 'Organization',
+      '@id' => $seoUrl . '#organization',
+      'name' => 'Codafacil.dev',
+      'url' => $seoUrl,
+      'logo' => [
+        '@type' => 'ImageObject',
+        'url' => $seoLogo,
+      ],
+      'areaServed' => 'Brasil',
+      'parentOrganization' => [
+        '@type' => 'Organization',
+        'name' => 'CodeRush',
+        'url' => 'https://coderush.com.br/',
+      ],
+      'sameAs' => [
+        $seoUrl,
+        'https://coderush.com.br/',
+        'https://www.sistemavendadireta.com.br/',
+        'https://www.sistemavendadireta.com.br/inteligencia-artificial/',
+      ],
+    ],
+    [
+      '@type' => 'WebSite',
+      '@id' => $seoUrl . '#website',
+      'url' => $seoUrl,
+      'name' => 'Codafacil.dev',
+      'publisher' => ['@id' => $seoUrl . '#organization'],
+    ],
+    [
+      '@type' => 'WebPage',
+      '@id' => $seoUrl . '#webpage',
+      'url' => $seoUrl,
+      'name' => $seoTitle,
+      'description' => $seoDescription,
+      'inLanguage' => 'pt-BR',
+      'isPartOf' => ['@id' => $seoUrl . '#website'],
+    ],
+    [
+      '@type' => 'Service',
+      '@id' => $seoUrl . '#service',
+      'name' => 'Desenvolvimento orientado por IA',
+      'provider' => ['@id' => $seoUrl . '#organization'],
+      'serviceType' => 'Desenvolvimento de software com IA, integração e automação',
+      'areaServed' => 'Brasil',
+    ],
+  ],
+];
+?>
 <!DOCTYPE html>
 <html lang="pt-BR" class="h-full">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Codafacil.dev — Desenvolvimento orientado por IA</title>
-  <meta name="description" content="Codafacil.dev: desenvolvimento de software sob medida orientado por IA para acelerar entregas, reduzir custos e aumentar qualidade em projetos digitais." />
+  <title><?= htmlspecialchars($seoTitle, ENT_QUOTES, 'UTF-8') ?></title>
+  <meta name="description" content="<?= htmlspecialchars($seoDescription, ENT_QUOTES, 'UTF-8') ?>" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="theme-color" content="#0b4db6" />
-  <meta name="author" content="Sistema Venda Direta" />
+  <meta name="author" content="Codafacil.dev" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
-  <link rel="canonical" href="https://www.sistemavendadireta.com.br/codafacil/" />
-  <link rel="alternate" hreflang="pt-BR" href="https://www.sistemavendadireta.com.br/codafacil/" />
-  <link rel="alternate" hreflang="x-default" href="https://www.sistemavendadireta.com.br/codafacil/" />
+  <link rel="canonical" href="<?= htmlspecialchars($seoUrl, ENT_QUOTES, 'UTF-8') ?>" />
+  <link rel="alternate" hreflang="pt-BR" href="<?= htmlspecialchars($seoUrl, ENT_QUOTES, 'UTF-8') ?>" />
+  <link rel="alternate" hreflang="x-default" href="<?= htmlspecialchars($seoUrl, ENT_QUOTES, 'UTF-8') ?>" />
 
   <meta property="og:locale" content="pt_BR" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Codafacil.dev — Desenvolvimento orientado por IA" />
-  <meta property="og:description" content="Software sob medida com IA aplicada para acelerar ciclos de desenvolvimento, reduzir custo operacional e aumentar previsibilidade de entrega." />
-  <meta property="og:url" content="https://www.sistemavendadireta.com.br/codafacil/" />
+  <meta property="og:title" content="<?= htmlspecialchars($seoTitle, ENT_QUOTES, 'UTF-8') ?>" />
+  <meta property="og:description" content="<?= htmlspecialchars($seoDescription, ENT_QUOTES, 'UTF-8') ?>" />
+  <meta property="og:url" content="<?= htmlspecialchars($seoUrl, ENT_QUOTES, 'UTF-8') ?>" />
   <meta property="og:site_name" content="Codafacil.dev" />
-  <meta property="og:image" content="https://www.sistemavendadireta.com.br/codafacil/logo.png" />
-  <meta property="og:image:alt" content="Codafacil.dev — Desenvolvimento orientado por IA" />
+  <meta property="og:image" content="<?= htmlspecialchars($seoOgImage, ENT_QUOTES, 'UTF-8') ?>" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Codafacil.dev — desenvolvimento de software orientado por IA" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Codafacil.dev — Desenvolvimento orientado por IA" />
-  <meta name="twitter:description" content="Desenvolvimento de software com IA, integração e automação para empresas que precisam escalar com qualidade e previsibilidade." />
-  <meta name="twitter:image" content="https://www.sistemavendadireta.com.br/codafacil/logo.png" />
-  <meta name="twitter:site" content="@sistemavendadireta" />
+  <meta name="twitter:title" content="<?= htmlspecialchars($seoTitle, ENT_QUOTES, 'UTF-8') ?>" />
+  <meta name="twitter:description" content="<?= htmlspecialchars($seoDescription, ENT_QUOTES, 'UTF-8') ?>" />
+  <meta name="twitter:image" content="<?= htmlspecialchars($seoOgImage, ENT_QUOTES, 'UTF-8') ?>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/site-tailwind.css" />
+  <link rel="stylesheet" href="css/site-tailwind.css?v=<?= filemtime(__DIR__.'/css/site-tailwind.css') ?>" />
   <link rel="stylesheet" href="css/styles.css" />
 
   <link rel="stylesheet" href="css/site-optimizations.css" />
 
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Organization",
-          "name": "Codafacil.dev",
-          "url": "https://www.sistemavendadireta.com.br/codafacil/",
-          "logo": "https://www.sistemavendadireta.com.br/codafacil/logo.png",
-          "sameAs": [
-            "https://www.sistemavendadireta.com.br/",
-            "https://www.sistemavendadireta.com.br/inteligencia-artificial/"
-          ]
-        },
-        {
-          "@type": "Service",
-          "name": "Desenvolvimento orientado por IA",
-          "provider": {
-            "@type": "Organization",
-            "name": "Codafacil.dev"
-          },
-          "serviceType": "Desenvolvimento de software com IA, integração e automação",
-          "areaServed": "BR"
-        }
-      ]
-    }
-  </script>
+  <script type="application/ld+json"><?= json_encode($seoLdGraph, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) ?></script>
 </head>
 
-<body class="min-h-full bg-[#04110d] text-white site-optimized">
+<body id="top" class="min-h-full bg-[#04110d] text-white site-optimized">
   <!-- Header / Hero -->
   <header class="hero-bg">
     <div class="mx-auto max-w-7xl px-6">
       <nav class="flex items-center justify-between py-6">
         <!-- Logo -->
-        <a href="/" class="flex items-center gap-3">
-          <img decoding="async" src="imagens/logo.webp" class="logo-img" alt="Codafacil.dev" />
+        <a href="#top" class="flex items-center gap-3">
+          <img decoding="async" src="imagens/logo.webp" class="logo-img" alt="Codafacil.dev" width="200" height="48" />
         </a>
 
         <!-- Menu (desktop) -->
@@ -134,7 +168,7 @@
                 Como entregamos
               </a>
 
-              <a href="./apresentacao_codafacil_desenvolvimento_com_ia.pdf"
+              <a href="<?= htmlspecialchars($seoBase . '/apresentacao_codafacil_desenvolvimento_com_ia.pdf', ENT_QUOTES, 'UTF-8') ?>"
                  target="_blank"
                  rel="noopener noreferrer"
                  class="inline-flex items-center justify-center rounded-full bg-white/10 px-6 py-4 text-sm font-semibold btn-outline hover:bg-white/15">
@@ -152,7 +186,7 @@
 
           <!-- Right -->
           <div class="relative">
-            <div class="soft-shadow rounded-3xl bg-white/10 p-6 ring-1 ring-white/15">
+            <div id="processo" class="soft-shadow scroll-mt-28 rounded-3xl bg-white/10 p-6 ring-1 ring-white/15">
 
               <!-- Processo ilustrado -->
               <div class=" grid gap-4 md:grid-cols-2">
@@ -290,12 +324,21 @@
   </header>
 
   <main class="bg-[#04110d]">
+    <section id="stack" class="scroll-mt-28 border-t border-white/10" aria-labelledby="stack-heading">
+      <div class="mx-auto max-w-7xl px-6 py-12 md:py-14">
+        <h2 id="stack-heading" class="text-2xl font-extrabold md:text-3xl">Tecnologia</h2>
+        <p class="mt-4 max-w-3xl text-sm text-white/80 md:text-base">
+          Stack moderna conforme o projeto: PHP/Laravel, APIs, integrações, pipelines de CI/CD e IA aplicada com governança — sem atalhos que viram dívida técnica.
+        </p>
+      </div>
+    </section>
+
     <!-- Video -->
     <section id="video-demo" class="mx-auto max-w-7xl px-6 pb-16 pt-10 md:pb-20 md:pt-12">
       <div class="soft-shadow rounded-3xl bg-white/10 p-6 ring-1 ring-white/15 md:p-8">
         <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <div>
-            <h2 class="text-3xl font-extrabold md:text-4xl">Video de demonstração</h2>
+            <h2 class="text-3xl font-extrabold md:text-4xl">Vídeo de demonstração</h2>
             <p class="mt-3 max-w-3xl text-sm text-white/80 md:text-base">
               Veja um resumo visual da proposta da Codafacil e da abordagem de desenvolvimento orientado por IA.
             </p>
@@ -481,7 +524,7 @@
             <img decoding="async" src="https://emergency.com.br/logo-dark.png" alt="Emergency SAAS" class="max-h-12 w-auto object-contain" loading="lazy" />
           </div>
           <div class="mt-5 text-sm font-semibold">Emergency SAAS</div>
-          <p class="mt-2 text-sm text-white/80">Soluções Completas para Documentação Imobiliária e Due Deligence.</p>
+          <p class="mt-2 text-sm text-white/80">Soluções completas para documentação imobiliária e due diligence.</p>
           <p class="mt-3 text-sm text-white/80">
             Infraestrutura com n8n, plataforma SaaS em Laravel.
           </p>
@@ -498,7 +541,7 @@
           <p class="mt-3 text-sm text-white/80">
             Sistema de gestão de pagamentos e conciliação financeira para empresas de médio e grande porte.
           </p>
-          <p class="mt-3 text-sm text-white/80">Multiplas tecnologias financeiras.</p>
+          <p class="mt-3 text-sm text-white/80">Múltiplas tecnologias financeiras.</p>
           <a href="https://isysistemas.com.br/" target="_blank" rel="noopener noreferrer" class="mt-5 inline-flex text-sm font-semibold text-white underline underline-offset-4">
             isysistemas.com.br
           </a>
@@ -530,13 +573,13 @@
       <div class="contact-layout">
         <div class="contact-copy">
           <h2 class="text-base leading-relaxed text-white/90 sm:text-lg">
-            Preencha seu nome e WhatsApp para nosso time comercial retornar o mais breve possivel.
+            Preencha seu nome e WhatsApp para nosso time comercial retornar o mais breve possível.
 
           </h2>
           <div class="contact-aside-card">
             <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/60">Atalho direto</p>
             <h3 class="mt-2 text-lg font-semibold">Prefere falar agora?</h3>
-            <p class="mt-2 text-sm text-white/85">Se quiser pular o formulario, fale direto com nossa equipe comercial no WhatsApp.</p>
+            <p class="mt-2 text-sm text-white/85">Se quiser pular o formulário, fale direto com nossa equipe comercial no WhatsApp.</p>
             <a href="https://wa.me/5511994566726?text=Ol%C3%A1%2C%20quero%20um%20or%C3%A7amento%20para%20meu%20projeto%20com%20a%20Codafacil." target="_blank" rel="noopener noreferrer" class="contact-direct-link mt-4">Falar no WhatsApp agora</a>
             <p class="mt-3 text-sm text-white/70"><b>Telefone para Contato:</b> 11 99456-6726</p>
           </div>
@@ -544,10 +587,10 @@
 
         <div class="contact-form-card">
           <h3 class="text-lg font-semibold">Receber contato comercial</h3>
-          <p class="mt-2 text-sm text-white/85">Entraremos em contato o mais breve possivel.</p>
+          <p class="mt-2 text-sm text-white/85">Entraremos em contato o mais breve possível.</p>
 
-          <form id="contact-lead-form" action="/enviar-contato.php" method="post" class="contact-form" data-whatsapp-phone="5511994566726" data-whatsapp-message-template="Ola, vim pelo site da Codafacil. Meu nome e {nome} e meu WhatsApp e {whatsapp}. Quero um orcamento para meu projeto.">
-            <input type="hidden" name="redirect" value="/codafacil/" />
+          <form id="contact-lead-form" action="/enviar-contato.php" method="post" class="contact-form" data-whatsapp-phone="5511994566726" data-whatsapp-message-template="Olá, vim pelo site da Codafacil. Meu nome é {nome} e meu WhatsApp é {whatsapp}. Quero um orçamento para meu projeto.">
+            <input type="hidden" name="redirect" value="/" />
             <input type="hidden" name="origem" value="codafacil" />
             <input type="hidden" name="servico" value="Codafacil" />
             <input type="hidden" name="mensagem" value="Lead enviado pela home" />
@@ -571,12 +614,12 @@
 
           <div id="contact-success-box" class="contact-status-card is-success hidden">
             <p class="text-sm font-semibold text-white">Lead enviado com sucesso.</p>
-            <p class="mt-1 text-sm text-white/80">Se o WhatsApp nao abrir automaticamente, use o botao abaixo.</p>
+            <p class="mt-1 text-sm text-white/80">Se o WhatsApp não abrir automaticamente, use o botão abaixo.</p>
             <a id="contact-success-whatsapp-link" href="https://wa.me/5511994566726" target="_blank" rel="noopener noreferrer" class="contact-status-action mt-3">Abrir WhatsApp agora</a>
           </div>
 
           <div id="contact-error-box" class="contact-status-card is-error hidden">
-            <p class="text-sm font-semibold text-white">Nao foi possivel concluir o envio.</p>
+            <p class="text-sm font-semibold text-white">Não foi possível concluir o envio.</p>
             <p class="mt-1 text-sm text-white/80">Tente novamente em instantes ou use o atalho direto para falar com nossa equipe.</p>
           </div>
         </div>
