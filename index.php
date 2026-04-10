@@ -1888,100 +1888,65 @@
   </section>
 
   <!-- Contato -->
-  <section id="contato" class="contact-section border-t border-white/[0.06] px-6 py-20 md:py-28" aria-labelledby="contato-heading">
+  <section id="contato" class="contact-section scroll-mt-28 border-t border-white/[0.06] px-6 py-20 md:py-28" aria-labelledby="contato-heading">
     <div class="contact-ambient" aria-hidden="true"></div>
     <div class="relative mx-auto max-w-6xl">
-      <div class="grid items-start gap-12 lg:grid-cols-12 lg:gap-16">
-        <div class="contact-reveal contact-form-delay-1 lg:col-span-5">
-          <p class="text-xs font-semibold uppercase tracking-widest text-blue-400">Contato comercial</p>
-          <h2 id="contato-heading" class="mt-3 font-heading text-3xl font-bold tracking-tight text-white sm:text-4xl">Vamos tirar seu projeto do papel</h2>
-          <p class="mt-4 text-base leading-relaxed text-white/65">
-            Conte o que você precisa: uma empresa do grupo ou o hub central pode direcionar a melhor equipe. Resposta humana, sem fila robótica.
-          </p>
-          <ul class="mt-8 space-y-4 text-sm text-white/70">
-            <li class="flex gap-3">
-              <span class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-emerald-500/15 text-emerald-400">
-                <i data-lucide="check-circle-2" class="h-4 w-4" aria-hidden="true"></i>
-              </span>
-              <span><strong class="font-semibold text-white/85">Briefing guiado</strong> — entendemos escopo, prazo e stack antes de propor solução.</span>
-            </li>
-            <li class="flex gap-3">
-              <span class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-emerald-500/15 text-emerald-400">
-                <i data-lucide="check-circle-2" class="h-4 w-4" aria-hidden="true"></i>
-              </span>
-              <span><strong class="font-semibold text-white/85">Dados protegidos</strong> — uso responsável das informações; confira a caixa de consentimento abaixo.</span>
-            </li>
-            <li class="flex gap-3">
-              <span class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-emerald-500/15 text-emerald-400">
-                <i data-lucide="check-circle-2" class="h-4 w-4" aria-hidden="true"></i>
-              </span>
-              <span><strong class="font-semibold text-white/85">Canal direto</strong> — prefere e-mail? <a href="mailto:contato@coderush.com.br" class="text-blue-400 underline decoration-blue-400/40 underline-offset-2 transition hover:text-blue-300">contato@coderush.com.br</a></span>
-            </li>
-          </ul>
+      <h4 id="contato-heading" class="font-heading text-[30px] font-semibold">Fale conosco</h4>
+      <div class="mt-2 h-1 w-[72px] rounded-full bg-white"></div>
+
+      <div id="contact-feedback" class="mt-6 hidden rounded-2xl border px-4 py-3 text-sm text-white/90" role="alert"></div>
+
+      <div class="mt-6 grid gap-6 lg:grid-cols-[1.05fr_0.95fr]">
+        <div class="space-y-5">
+          <h2 class="text-base leading-relaxed text-white/90 sm:text-lg">
+            Preencha seu nome e WhatsApp para nosso time comercial retornar com mais contexto sobre seu projeto.
+            Assim conseguimos alinhar objetivo, prazo e proximos passos sem perder tempo na primeira conversa.
+          </h2>
+          <div class="rounded-2xl border border-white/20 bg-white/5 p-5">
+            <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/60">Atalho direto</p>
+            <h3 class="mt-2 text-lg font-semibold">Prefere falar agora?</h3>
+            <p class="mt-2 text-sm text-white/85">Se quiser pular o formulario, fale direto com nossa equipe comercial no WhatsApp.</p>
+            <a href="https://wa.me/5511994566726?text=Ol%C3%A1%2C%20vim%20pelo%20site%20CodeRush%20e%20quero%20saber%20mais%20sobre%20as%20solu%C3%A7%C3%B5es%20do%20ecossistema." target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex w-full items-center justify-center rounded-full border border-white/70 px-4 py-2.5 text-sm font-semibold hover:bg-white/10">Falar no WhatsApp agora</a>
+            <p class="mt-3 text-sm text-white/70"><b>Telefone para Contato:</b> 11 99456-6726</p>
+          </div>
         </div>
 
-        <div class="contact-reveal contact-form-delay-2 lg:col-span-7">
-          <div id="form-feedback" class="mb-6 hidden rounded-2xl border p-4 text-sm" role="alert"></div>
+        <div class="rounded-[28px] border border-white/20 bg-white/5 p-5 sm:p-6">
+          <h3 class="text-lg font-semibold">Receber contato comercial</h3>
+          <p class="mt-2 text-sm text-white/85">Enviamos seu lead para a equipe e, na sequencia, abrimos o WhatsApp com uma mensagem pronta para acelerar o atendimento.</p>
 
-          <div class="relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-white/[0.08] to-white/[0.02] p-6 shadow-2xl shadow-black/40 backdrop-blur-md sm:p-8">
-            <div class="absolute -right-20 -top-20 h-56 w-56 rounded-full bg-brand/20 blur-3xl" aria-hidden="true"></div>
-            <form id="form-contato" class="relative space-y-5" action="/enviar-contato.php" method="post" novalidate>
-              <input type="hidden" name="redirect" value="/" />
-              <input type="hidden" name="origem" value="coderush-hub" />
-              <div class="absolute left-[-9999px] top-auto h-0 w-0 overflow-hidden" aria-hidden="true">
-                <label for="website">Não preencha</label>
-                <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" />
-              </div>
+          <form id="contact-lead-form" action="/enviar-contato.php" method="post" class="mt-5 space-y-4" data-whatsapp-phone="5511994566726" data-whatsapp-message-template="Ola, vim pelo site CodeRush. Meu nome e {nome} e meu WhatsApp e {whatsapp}. Quero saber mais sobre as solucoes do ecossistema.">
+            <input type="hidden" name="redirect" value="/" />
+            <input type="hidden" name="origem" value="coderush-hub" />
+            <input type="hidden" name="servico" value="CodeRush Hub" />
+            <input type="hidden" name="mensagem" value="Lead enviado pela home" />
 
-              <div class="grid gap-5 sm:grid-cols-2">
-                <div class="sm:col-span-2">
-                  <label class="contact-label" for="nome">Nome completo <abbr title="obrigatório" class="text-blue-400 no-underline">*</abbr></label>
-                  <input class="contact-input mt-1.5" type="text" id="nome" name="nome" required autocomplete="name" placeholder="Seu nome" />
-                </div>
-                <div>
-                  <label class="contact-label" for="email">E-mail corporativo <abbr title="obrigatório" class="text-blue-400 no-underline">*</abbr></label>
-                  <input class="contact-input mt-1.5" type="email" id="email" name="email" required autocomplete="email" inputmode="email" placeholder="voce@empresa.com.br" />
-                </div>
-                <div>
-                  <label class="contact-label" for="telefone">WhatsApp / telefone</label>
-                  <input class="contact-input mt-1.5" type="tel" id="telefone" name="telefone" autocomplete="tel" inputmode="tel" placeholder="(00) 00000-0000" />
-                </div>
-                <div class="sm:col-span-2">
-                  <label class="contact-label" for="empresa">Empresa / projeto</label>
-                  <input class="contact-input mt-1.5" type="text" id="empresa" name="empresa" autocomplete="organization" placeholder="Nome fantasia ou projeto" />
-                </div>
-                <div class="sm:col-span-2">
-                  <label class="contact-label" for="interesse">O que você busca? <abbr title="obrigatório" class="text-blue-400 no-underline">*</abbr></label>
-                  <select class="contact-input mt-1.5 cursor-pointer" id="interesse" name="interesse" required>
-                    <option value="" disabled selected>Selecione uma linha</option>
-                    <option value="Vendas diretas / MMN">Vendas diretas / MMN</option>
-                    <option value="Software sob medida &amp; IA">Software sob medida &amp; IA</option>
-                    <option value="WordPress &amp; e-commerce">WordPress &amp; e-commerce</option>
-                    <option value="Automação &amp; n8n / IA">Automação &amp; n8n / IA</option>
-                    <option value="Outro / ainda não sei">Outro / ainda não sei</option>
-                  </select>
-                </div>
-                <div class="sm:col-span-2">
-                  <label class="contact-label" for="mensagem">Mensagem <abbr title="obrigatório" class="text-blue-400 no-underline">*</abbr></label>
-                  <textarea class="contact-input mt-1.5 min-h-[8rem] resize-y" id="mensagem" name="mensagem" required minlength="10" rows="5" placeholder="Descreva objetivo, prazo desejado e qualquer integração (ERP, pagamento, etc.). Mínimo 10 caracteres."></textarea>
-                </div>
-              </div>
+            <div>
+              <label for="contact-nome" class="mb-2 block text-sm font-medium text-white/90">Nome</label>
+              <input id="contact-nome" name="nome" type="text" required autocomplete="name" placeholder="Seu nome" class="w-full rounded-2xl border border-white/20 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/45 focus:border-white/60 focus:outline-none focus:ring-2 focus:ring-white/20" />
+            </div>
 
-              <div class="flex gap-3 rounded-xl border border-white/10 bg-white/[0.03] p-4">
-                <input type="checkbox" id="consent" name="consent" value="1" required class="mt-1 h-4 w-4 shrink-0 rounded border-white/20 bg-white/10 text-brand focus:ring-blue-500/40" />
-                <label for="consent" class="text-xs leading-relaxed text-white/60">
-                  Autorizo o uso dos dados informados para retorno sobre meu pedido, conforme a <strong class="text-white/75">política de privacidade</strong> do ecossistema CodeRush. Não enviamos spam.
-                </label>
-              </div>
+            <div>
+              <label for="contact-whatsapp" class="mb-2 block text-sm font-medium text-white/90">WhatsApp</label>
+              <input id="contact-whatsapp" name="whatsapp" type="tel" required autocomplete="tel" inputmode="tel" placeholder="(11) 99999-9999" class="w-full rounded-2xl border border-white/20 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/45 focus:border-white/60 focus:outline-none focus:ring-2 focus:ring-white/20" />
+            </div>
 
-              <button type="submit" id="form-submit-btn" class="contact-submit-shine relative w-full overflow-hidden rounded-full bg-brand py-3.5 text-sm font-semibold text-white shadow-lg transition hover:bg-blue-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a1628] disabled:cursor-not-allowed disabled:opacity-70">
-                <span class="relative z-10 inline-flex items-center justify-center gap-2">
-                  <i data-lucide="send" class="h-4 w-4" aria-hidden="true"></i>
-                  Enviar mensagem
-                </span>
-              </button>
-              <p class="text-center text-[11px] text-white/35">Ao enviar, você será redirecionado de volta com a confirmação na página.</p>
-            </form>
+            <button type="submit" class="inline-flex w-full items-center justify-center rounded-full bg-white px-5 py-3 text-sm font-semibold uppercase tracking-wide text-[#004AAD] transition hover:-translate-y-0.5 hover:bg-white/90">Quero falar com o comercial</button>
+          </form>
+
+          <a href="https://wa.me/5511994566726?text=Ol%C3%A1%2C%20vim%20pelo%20site%20CodeRush%20e%20quero%20saber%20mais%20sobre%20as%20solu%C3%A7%C3%B5es%20do%20ecossistema." target="_blank" rel="noopener noreferrer" class="mt-3 inline-flex w-full items-center justify-center rounded-full border border-white/25 px-4 py-2.5 text-sm font-medium text-white/90 transition hover:border-white/45 hover:bg-white/10">Ou falar direto no WhatsApp</a>
+
+          <p class="mt-3 text-xs text-white/65">Usamos seus dados apenas para retorno comercial sobre o ecossistema CodeRush.</p>
+
+          <div id="contact-success-box" class="mt-4 hidden rounded-2xl border border-emerald-300/30 bg-emerald-500/10 p-4">
+            <p class="text-sm font-semibold text-white">Lead enviado com sucesso.</p>
+            <p class="mt-1 text-sm text-white/80">Se o WhatsApp nao abrir automaticamente, use o botao abaixo.</p>
+            <a id="contact-success-whatsapp-link" href="https://wa.me/5511994566726" target="_blank" rel="noopener noreferrer" class="mt-3 inline-flex w-full items-center justify-center rounded-full border border-emerald-200/45 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-white/10">Abrir WhatsApp agora</a>
+          </div>
+
+          <div id="contact-error-box" class="mt-4 hidden rounded-2xl border border-rose-300/30 bg-rose-500/10 p-4">
+            <p class="text-sm font-semibold text-white">Nao foi possivel concluir o envio.</p>
+            <p class="mt-1 text-sm text-white/80">Tente novamente em instantes ou use o atalho direto para falar com nossa equipe.</p>
           </div>
         </div>
       </div>
@@ -2387,37 +2352,63 @@
   </script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      var params = new URLSearchParams(window.location.search);
-      var mail = params.get('mail');
-      var feedback = document.getElementById('form-feedback');
-      if (mail && feedback) {
-        feedback.classList.remove('hidden');
-        if (mail === 'ok') {
-          feedback.className =
-            'mb-6 rounded-2xl border border-emerald-500/40 bg-emerald-500/[0.12] p-4 text-sm text-emerald-100';
-          feedback.textContent =
-            'Mensagem enviada com sucesso. Nossa equipe retornará em breve pelo e-mail ou telefone informados.';
-        } else {
-          feedback.className =
-            'mb-6 rounded-2xl border border-red-500/40 bg-red-500/[0.12] p-4 text-sm text-red-100';
-          feedback.textContent =
-            'Não foi possível concluir o envio. Tente novamente em instantes ou escreva para contato@coderush.com.br.';
-        }
-        if (window.location.hash !== '#contato') {
-          window.location.hash = '#contato';
-        }
-        if (window.history && window.history.replaceState) {
-          window.history.replaceState(null, '', window.location.pathname + '#contato');
-        }
-        feedback.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      var leadForm = document.getElementById('contact-lead-form');
+      var leadNameInput = document.getElementById('contact-nome');
+      var leadWhatsappInput = document.getElementById('contact-whatsapp');
+      var successBox = document.getElementById('contact-success-box');
+      var errorBox = document.getElementById('contact-error-box');
+      var successWhatsappLink = document.getElementById('contact-success-whatsapp-link');
+      var feedbackEl = document.getElementById('contact-feedback');
+      var leadStorageKey = 'coderush-contact-lead';
+      var urlParams = new URLSearchParams(window.location.search);
+      var mailStatus = urlParams.get('mail');
+      var defaultWaMsg = 'Ola, vim pelo site CodeRush e quero saber mais sobre as solucoes do ecossistema.';
+      var phone = '5511994566726';
+
+      function getStoredLead() {
+        try { var r = window.sessionStorage.getItem(leadStorageKey); return r ? JSON.parse(r) : null; } catch (e) { return null; }
       }
 
-      var form = document.getElementById('form-contato');
-      var btn = document.getElementById('form-submit-btn');
-      if (form && btn) {
-        form.addEventListener('submit', function () {
-          btn.disabled = true;
-          btn.setAttribute('aria-busy', 'true');
+      function buildLeadWhatsappUrl(lead) {
+        var s = lead || {};
+        var tpl = leadForm ? (leadForm.getAttribute('data-whatsapp-message-template') || defaultWaMsg) : defaultWaMsg;
+        var p = leadForm ? (leadForm.getAttribute('data-whatsapp-phone') || phone) : phone;
+        if (!s.nome && !s.whatsapp) return 'https://wa.me/' + p + '?text=' + encodeURIComponent(defaultWaMsg);
+        var msg = tpl.replace('{nome}', (s.nome || 'Nao informado').trim()).replace('{whatsapp}', (s.whatsapp || 'Nao informado').trim());
+        return 'https://wa.me/' + p + '?text=' + encodeURIComponent(msg);
+      }
+
+      if (mailStatus === 'ok' && successBox) {
+        successBox.classList.remove('hidden');
+        if (feedbackEl) { feedbackEl.classList.remove('hidden'); feedbackEl.className = 'mt-6 rounded-2xl border border-emerald-300/35 bg-emerald-500/10 px-4 py-3 text-sm text-white/90'; feedbackEl.textContent = 'Recebemos seus dados. Vamos abrir o WhatsApp com uma mensagem pronta para agilizar seu atendimento.'; }
+        var storedLead = getStoredLead();
+        if (successWhatsappLink) successWhatsappLink.href = buildLeadWhatsappUrl(storedLead);
+        window.setTimeout(function () {
+          var popup = window.open(buildLeadWhatsappUrl(storedLead), '_blank', 'noopener,noreferrer');
+          if (popup) popup.opener = null;
+        }, 250);
+        try { window.sessionStorage.removeItem(leadStorageKey); } catch (e) {}
+        if (window.location.hash !== '#contato') window.location.hash = '#contato';
+        if (window.history && window.history.replaceState) window.history.replaceState(null, '', window.location.pathname + '#contato');
+      } else if (mailStatus === 'erro' && errorBox) {
+        errorBox.classList.remove('hidden');
+        if (feedbackEl) { feedbackEl.classList.remove('hidden'); feedbackEl.className = 'mt-6 rounded-2xl border border-rose-300/35 bg-rose-500/10 px-4 py-3 text-sm text-white/90'; feedbackEl.textContent = 'Nao conseguimos enviar seus dados agora. Revise o WhatsApp informado ou use o atalho direto para falar com o comercial.'; }
+        try { window.sessionStorage.removeItem(leadStorageKey); } catch (e) {}
+        if (window.location.hash !== '#contato') window.location.hash = '#contato';
+        if (window.history && window.history.replaceState) window.history.replaceState(null, '', window.location.pathname + '#contato');
+      }
+
+      if (leadForm) {
+        if (mailStatus !== 'ok') {
+          var prev = getStoredLead();
+          if (prev) {
+            if (leadNameInput && !leadNameInput.value) leadNameInput.value = prev.nome || '';
+            if (leadWhatsappInput && !leadWhatsappInput.value) leadWhatsappInput.value = prev.whatsapp || '';
+          }
+        }
+        leadForm.addEventListener('submit', function () {
+          var payload = { nome: leadNameInput ? leadNameInput.value.trim() : '', whatsapp: leadWhatsappInput ? leadWhatsappInput.value.trim() : '' };
+          try { window.sessionStorage.setItem(leadStorageKey, JSON.stringify(payload)); } catch (e) {}
         });
       }
     });

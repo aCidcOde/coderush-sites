@@ -533,41 +533,64 @@
     </section>
 
     <!-- Contato -->
-    <section id="contato" class="mx-auto max-w-7xl px-6 pb-24">
-      <div class="grid gap-10 rounded-3xl border border-white/10 bg-white/[0.04] p-10 md:grid-cols-2">
-        <div>
-          <h3 class="text-3xl font-extrabold">Solicite um Orçamento</h3>
-          <p class="mt-4 text-sm text-white/70">
-            Envie um resumo do projeto. Se preferir, chame no WhatsApp.
-          </p>
-          <a href="https://wa.me/5511994566726?text=Ol%C3%A1%2C%20quero%20um%20or%C3%A7amento%20para%20meu%20projeto%20com%20a%20Codafacil."
-             target="_blank"
-             rel="noopener noreferrer"
-             class="mt-5 inline-flex items-center justify-center rounded-full bg-[#25D366] px-5 py-3 text-sm font-bold text-white hover:bg-[#22c55e]">
-            Falar no WhatsApp
-          </a>
+    <section id="contato" class="scroll-mt-28 mx-auto max-w-7xl px-6 pb-24">
+      <h4 class="text-[30px] font-semibold" style="font-family:'Montserrat',sans-serif">Fale conosco</h4>
+      <div class="mt-2 h-1 w-[72px] rounded-full bg-white"></div>
 
-          <div class="mt-6 space-y-3 text-sm">
-            <div class="rounded-2xl bg-white/[0.06] p-4 text-white/80">• Objetivo do produto e prioridade</div>
-            <div class="rounded-2xl bg-white/[0.06] p-4 text-white/80">• Stack atual (se existir) e integrações</div>
-            <div class="rounded-2xl bg-white/[0.06] p-4 text-white/80">• Prazo desejado e restrições</div>
+      <div id="contact-feedback" class="mt-6 hidden rounded-2xl border px-4 py-3 text-sm text-white/90" role="alert"></div>
+
+      <div class="mt-6 grid gap-6 lg:grid-cols-[1.05fr_0.95fr]">
+        <div class="space-y-5">
+          <h2 class="text-base leading-relaxed text-white/90 sm:text-lg">
+            Preencha seu nome e WhatsApp para nosso time comercial retornar com mais contexto sobre seu projeto.
+            Assim conseguimos alinhar objetivo, prazo e proximos passos sem perder tempo na primeira conversa.
+          </h2>
+          <div class="rounded-2xl border border-white/20 bg-white/5 p-5">
+            <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/60">Atalho direto</p>
+            <h3 class="mt-2 text-lg font-semibold">Prefere falar agora?</h3>
+            <p class="mt-2 text-sm text-white/85">Se quiser pular o formulario, fale direto com nossa equipe comercial no WhatsApp.</p>
+            <a href="https://wa.me/5511994566726?text=Ol%C3%A1%2C%20quero%20um%20or%C3%A7amento%20para%20meu%20projeto%20com%20a%20Codafacil." target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex w-full items-center justify-center rounded-full border border-white/70 px-4 py-2.5 text-sm font-semibold hover:bg-white/10">Falar no WhatsApp agora</a>
+            <p class="mt-3 text-sm text-white/70"><b>Telefone para Contato:</b> 11 99456-6726</p>
           </div>
         </div>
 
-        <div class="rounded-2xl border border-white/10 bg-white/[0.06] p-6">
-          <h3 class="text-xl font-bold">Atendimento direto no WhatsApp</h3>
-          <p class="mt-3 text-sm text-white/70">
-            Formulário desativado. O contato comercial da CodaFácil agora é somente via WhatsApp.
-          </p>
-          <a href="https://wa.me/5511994566726?text=Ol%C3%A1%2C%20quero%20um%20or%C3%A7amento%20para%20meu%20projeto%20com%20a%20Codafacil."
-             target="_blank"
-             rel="noopener noreferrer"
-             class="mt-5 inline-flex w-full items-center justify-center rounded-full bg-[#25D366] px-6 py-4 text-sm font-bold text-white hover:bg-[#22c55e]">
-            Falar no WhatsApp
-          </a>
-          <p class="mt-4 text-xs text-white/50">
-            Atendimento humanizado de verdade: nada de robô no comando. Do outro lado tem uma pessoa do comercial, pronta para te atender.
-          </p>
+        <div class="rounded-[28px] border border-white/20 bg-white/5 p-5 sm:p-6">
+          <h3 class="text-lg font-semibold">Receber contato comercial</h3>
+          <p class="mt-2 text-sm text-white/85">Enviamos seu lead para a equipe e, na sequencia, abrimos o WhatsApp com uma mensagem pronta para acelerar o atendimento.</p>
+
+          <form id="contact-lead-form" action="/enviar-contato.php" method="post" class="mt-5 space-y-4" data-whatsapp-phone="5511994566726" data-whatsapp-message-template="Ola, vim pelo site da Codafacil. Meu nome e {nome} e meu WhatsApp e {whatsapp}. Quero um orcamento para meu projeto.">
+            <input type="hidden" name="redirect" value="/codafacil/" />
+            <input type="hidden" name="origem" value="codafacil" />
+            <input type="hidden" name="servico" value="Codafacil" />
+            <input type="hidden" name="mensagem" value="Lead enviado pela home" />
+
+            <div>
+              <label for="contact-nome" class="mb-2 block text-sm font-medium text-white/90">Nome</label>
+              <input id="contact-nome" name="nome" type="text" required autocomplete="name" placeholder="Seu nome" class="w-full rounded-2xl border border-white/20 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/45 focus:border-white/60 focus:outline-none focus:ring-2 focus:ring-white/20" />
+            </div>
+
+            <div>
+              <label for="contact-whatsapp" class="mb-2 block text-sm font-medium text-white/90">WhatsApp</label>
+              <input id="contact-whatsapp" name="whatsapp" type="tel" required autocomplete="tel" inputmode="tel" placeholder="(11) 99999-9999" class="w-full rounded-2xl border border-white/20 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/45 focus:border-white/60 focus:outline-none focus:ring-2 focus:ring-white/20" />
+            </div>
+
+            <button type="submit" class="inline-flex w-full items-center justify-center rounded-full bg-white px-5 py-3 text-sm font-semibold uppercase tracking-wide text-[#0b4db6] transition hover:-translate-y-0.5 hover:bg-white/90">Quero falar com o comercial</button>
+          </form>
+
+          <a href="https://wa.me/5511994566726?text=Ol%C3%A1%2C%20quero%20um%20or%C3%A7amento%20para%20meu%20projeto%20com%20a%20Codafacil." target="_blank" rel="noopener noreferrer" class="mt-3 inline-flex w-full items-center justify-center rounded-full border border-white/25 px-4 py-2.5 text-sm font-medium text-white/90 transition hover:border-white/45 hover:bg-white/10">Ou falar direto no WhatsApp</a>
+
+          <p class="mt-3 text-xs text-white/65">Usamos seus dados apenas para retorno comercial sobre a Codafacil.</p>
+
+          <div id="contact-success-box" class="mt-4 hidden rounded-2xl border border-emerald-300/30 bg-emerald-500/10 p-4">
+            <p class="text-sm font-semibold text-white">Lead enviado com sucesso.</p>
+            <p class="mt-1 text-sm text-white/80">Se o WhatsApp nao abrir automaticamente, use o botao abaixo.</p>
+            <a id="contact-success-whatsapp-link" href="https://wa.me/5511994566726" target="_blank" rel="noopener noreferrer" class="mt-3 inline-flex w-full items-center justify-center rounded-full border border-emerald-200/45 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-white/10">Abrir WhatsApp agora</a>
+          </div>
+
+          <div id="contact-error-box" class="mt-4 hidden rounded-2xl border border-rose-300/30 bg-rose-500/10 p-4">
+            <p class="text-sm font-semibold text-white">Nao foi possivel concluir o envio.</p>
+            <p class="mt-1 text-sm text-white/80">Tente novamente em instantes ou use o atalho direto para falar com nossa equipe.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -609,6 +632,69 @@
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var leadForm = document.getElementById("contact-lead-form");
+      var leadNameInput = document.getElementById("contact-nome");
+      var leadWhatsappInput = document.getElementById("contact-whatsapp");
+      var successBox = document.getElementById("contact-success-box");
+      var errorBox = document.getElementById("contact-error-box");
+      var successWhatsappLink = document.getElementById("contact-success-whatsapp-link");
+      var feedbackEl = document.getElementById("contact-feedback");
+      var leadStorageKey = "codafacil-contact-lead";
+      var urlParams = new URLSearchParams(window.location.search);
+      var mailStatus = urlParams.get("mail");
+      var defaultWaMsg = "Ola, vim pelo site da Codafacil e quero um orcamento para meu projeto.";
+      var phone = "5511994566726";
+
+      function getStoredLead() {
+        try { var r = window.sessionStorage.getItem(leadStorageKey); return r ? JSON.parse(r) : null; } catch (e) { return null; }
+      }
+
+      function buildLeadWhatsappUrl(lead) {
+        var s = lead || {};
+        var tpl = leadForm ? (leadForm.getAttribute("data-whatsapp-message-template") || defaultWaMsg) : defaultWaMsg;
+        var p = leadForm ? (leadForm.getAttribute("data-whatsapp-phone") || phone) : phone;
+        if (!s.nome && !s.whatsapp) return "https://wa.me/" + p + "?text=" + encodeURIComponent(defaultWaMsg);
+        var msg = tpl.replace("{nome}", (s.nome || "Nao informado").trim()).replace("{whatsapp}", (s.whatsapp || "Nao informado").trim());
+        return "https://wa.me/" + p + "?text=" + encodeURIComponent(msg);
+      }
+
+      if (mailStatus === "ok" && successBox) {
+        successBox.classList.remove("hidden");
+        if (feedbackEl) { feedbackEl.classList.remove("hidden"); feedbackEl.className = "mt-6 rounded-2xl border border-emerald-300/35 bg-emerald-500/10 px-4 py-3 text-sm text-white/90"; feedbackEl.textContent = "Recebemos seus dados. Vamos abrir o WhatsApp com uma mensagem pronta para agilizar seu atendimento."; }
+        var storedLead = getStoredLead();
+        if (successWhatsappLink) successWhatsappLink.href = buildLeadWhatsappUrl(storedLead);
+        window.setTimeout(function () {
+          var popup = window.open(buildLeadWhatsappUrl(storedLead), "_blank", "noopener,noreferrer");
+          if (popup) popup.opener = null;
+        }, 250);
+        try { window.sessionStorage.removeItem(leadStorageKey); } catch (e) {}
+        if (window.location.hash !== "#contato") window.location.hash = "#contato";
+        if (window.history && window.history.replaceState) window.history.replaceState(null, "", window.location.pathname + "#contato");
+      } else if (mailStatus === "erro" && errorBox) {
+        errorBox.classList.remove("hidden");
+        if (feedbackEl) { feedbackEl.classList.remove("hidden"); feedbackEl.className = "mt-6 rounded-2xl border border-rose-300/35 bg-rose-500/10 px-4 py-3 text-sm text-white/90"; feedbackEl.textContent = "Nao conseguimos enviar seus dados agora. Revise o WhatsApp informado ou use o atalho direto para falar com o comercial."; }
+        try { window.sessionStorage.removeItem(leadStorageKey); } catch (e) {}
+        if (window.location.hash !== "#contato") window.location.hash = "#contato";
+        if (window.history && window.history.replaceState) window.history.replaceState(null, "", window.location.pathname + "#contato");
+      }
+
+      if (leadForm) {
+        if (mailStatus !== "ok") {
+          var prev = getStoredLead();
+          if (prev) {
+            if (leadNameInput && !leadNameInput.value) leadNameInput.value = prev.nome || "";
+            if (leadWhatsappInput && !leadWhatsappInput.value) leadWhatsappInput.value = prev.whatsapp || "";
+          }
+        }
+        leadForm.addEventListener("submit", function () {
+          var payload = { nome: leadNameInput ? leadNameInput.value.trim() : "", whatsapp: leadWhatsappInput ? leadWhatsappInput.value.trim() : "" };
+          try { window.sessionStorage.setItem(leadStorageKey, JSON.stringify(payload)); } catch (e) {}
+        });
+      }
+    });
   </script>
 </body>
 </html>
