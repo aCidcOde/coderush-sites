@@ -306,26 +306,24 @@ if ($honeypot !== '') {
     safeRedirect($redirect, true);
 }
 
-$consent = isset($_POST['consent']) && (string) $_POST['consent'] === '1';
-if ($consent !== true) {
-    safeRedirect($redirect, false);
-}
-
 $nome = trim((string) ($_POST['nome'] ?? ''));
 $emailRaw = trim((string) ($_POST['email'] ?? ''));
 $email = filter_var($emailRaw, FILTER_VALIDATE_EMAIL) ? $emailRaw : '';
-$telefone = trim((string) ($_POST['telefone'] ?? ''));
+$telefone = trim((string) ($_POST['telefone'] ?? ($_POST['whatsapp'] ?? '')));
 $empresa = trim((string) ($_POST['empresa'] ?? ''));
-$interesse = trim((string) ($_POST['interesse'] ?? 'Nao informado'));
+$interesse = trim((string) ($_POST['interesse'] ?? ($_POST['servico'] ?? 'Nao informado')));
 $mensagem = trim((string) ($_POST['mensagem'] ?? ''));
 $origem = trim((string) ($_POST['origem'] ?? 'coderush-hub'));
 
-if ($nome === '' || $email === '') {
-    safeRedirect($redirect, false);
+if ($nome === '') {
+    $nome = 'Nao informado';
 }
 
-$len = function_exists('mb_strlen') ? mb_strlen($mensagem) : strlen($mensagem);
-if ($len < 10) {
+if ($mensagem === '') {
+    $mensagem = 'Lead enviado pelo formulario de contato.';
+}
+
+if ($telefone === '' && $email === '') {
     safeRedirect($redirect, false);
 }
 
