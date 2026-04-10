@@ -5,7 +5,113 @@ $mailStatus = $_GET['mail'] ?? '';
 $mailStatus = in_array($mailStatus, ['ok', 'erro'], true) ? $mailStatus : '';
 
 $scriptDir = dirname($_SERVER['SCRIPT_NAME'] ?? '/');
-$contactRedirect = ($scriptDir === DIRECTORY_SEPARATOR ? '' : rtrim($scriptDir, '/')) . '/';
+$scriptDir = str_replace('\\', '/', is_string($scriptDir) ? $scriptDir : '/');
+$contactRedirect = ($scriptDir === '/' || $scriptDir === '') ? '/' : rtrim($scriptDir, '/') . '/';
+
+$seoBase = 'https://www.sistemavendadireta.com.br';
+$seoUrl = $seoBase . '/';
+$seoTitle = 'Sistema para Vendas Diretas e Marketing Multinível — MMN';
+$seoDescription = 'Plataforma MMN com planos binário e unilevel, gateways de pagamento e loja virtual integrada. Sistema Venda Direta desde 2002 — ecossistema CodeRush no Brasil.';
+$seoOgImage = $seoBase . '/imagens/og-sistema-venda-direta.jpg';
+$seoLogo = $seoBase . '/wp-content/uploads/2023/04/Logo-Azul-004AAD-1.png';
+
+$faqPairs = [
+    [
+        'JÁ POSSUO UM SISTEMA, POSSO MIGRAR OS DADOS?',
+        'Sim, podemos fazer a migração dos dados do seu antigo sistema, desde que tenhamos acesso a eles de forma organizada.',
+    ],
+    [
+        'JÁ TENHO UM SITE, POSSO USAR O SISTEMA VENDA DIRETA JUNTO COM MEU SITE, NO MESMO DOMÍNIO?',
+        'Pode sim, criamos um sub-domínio dentro do seu site, ficando por exemplo: painel.seusite.com.br. Basta nos informar depois da compra que deseja usar um domínio já existente.',
+    ],
+    [
+        'JÁ TENHO UM PLANO DE NEGÓCIOS, É POSSÍVEL USÁ-LO?',
+        'Sim, a instalação contempla a parametrização do seu plano de negócios.',
+    ],
+    [
+        'COMO EU VOU ADMINISTRAR O SISTEMA?',
+        'O sistema possui um painel administrativo com diversos relatórios financeiros e podemos customizar diversos modelos à necessidade apresentada.',
+    ],
+    [
+        'QUAL É A TECNOLOGIA USADA NO SISTEMA?',
+        'O sistema Venda Direta foi desenvolvido em PHP com banco MySQL. A solução é hospedada em infraestrutura dedicada (Linux, nginx) nos EUA, com atualizações de runtime alinhadas ao ciclo de manutenção do projeto.',
+    ],
+    [
+        'ALÉM DA MENSALIDADE, EXISTE OUTROS CUSTOS?',
+        'Não temos taxas extras, poderá existir cobranças novas na medida em que o cliente peça novas funcionalidades, para isso existirá um acordo prévio.',
+    ],
+    [
+        'TEM INTEGRAÇÃO COM ERP?',
+        'Nosso sistema de venda direta tem uma ótima flexibilidade para integrações, hoje temos um parceiro que é o Bling (sistema de gestão que descomplica o seu negócio), mas podemos integrar com o seu ERP.',
+    ],
+    [
+        'POSSO USAR MINHA MARCA E MEU DOMÍNIO?',
+        'Sim, um dos diferenciais deste sistema para venda direta é exatamente você utilizar o sistema personalizado com a marca de sua empresa.',
+    ],
+    [
+        'COMO É FEITO O SUPORTE',
+        'Oferecemos suporte direto pelo WhatsApp e telefone.',
+    ],
+];
+
+$faqMainEntity = [];
+foreach ($faqPairs as $pair) {
+    $faqMainEntity[] = [
+        '@type' => 'Question',
+        'name' => $pair[0],
+        'acceptedAnswer' => [
+            '@type' => 'Answer',
+            'text' => $pair[1],
+        ],
+    ];
+}
+
+$seoLdGraph = [
+    '@context' => 'https://schema.org',
+    '@graph' => [
+        [
+            '@type' => 'Organization',
+            '@id' => $seoUrl . '#organization',
+            'name' => 'Sistema Venda Direta',
+            'url' => $seoUrl,
+            'logo' => [
+                '@type' => 'ImageObject',
+                'url' => $seoLogo,
+            ],
+            'areaServed' => 'Brasil',
+            'parentOrganization' => [
+                '@type' => 'Organization',
+                'name' => 'CodeRush',
+                'url' => 'https://coderush.com.br/',
+            ],
+            'sameAs' => [
+                'https://facebook.com/sistemavendadireta',
+                'https://www.youtube.com/@andregomes8954',
+                'https://coderush.com.br/',
+            ],
+        ],
+        [
+            '@type' => 'WebSite',
+            '@id' => $seoUrl . '#website',
+            'url' => $seoUrl,
+            'name' => 'Sistema Venda Direta',
+            'publisher' => ['@id' => $seoUrl . '#organization'],
+        ],
+        [
+            '@type' => 'WebPage',
+            '@id' => $seoUrl . '#webpage',
+            'url' => $seoUrl,
+            'name' => $seoTitle,
+            'description' => $seoDescription,
+            'inLanguage' => 'pt-BR',
+            'isPartOf' => ['@id' => $seoUrl . '#website'],
+        ],
+        [
+            '@type' => 'FAQPage',
+            'mainEntity' => $faqMainEntity,
+        ],
+    ],
+];
 ?>
 <!doctype html>
 <!--
@@ -20,139 +126,42 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sistema para Vendas Diretas e Marketing Multinível - MMN</title>
-  <meta name="description" content="Sistema para Marketing Multinível. Módulos Binário, Unilevel, Gateways de Pagamento e Loja Virtual integrada. Desde 2002!" />
+  <title><?= htmlspecialchars($seoTitle, ENT_QUOTES, 'UTF-8') ?></title>
+  <meta name="description" content="<?= htmlspecialchars($seoDescription, ENT_QUOTES, 'UTF-8') ?>" />
+  <meta name="keywords" content="Sistema Venda Direta, MMN, marketing multinível, vendas diretas, plano binário, unilevel, loja virtual, gateway de pagamento, ERP, Brasil" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="theme-color" content="#004AAD" />
   <meta name="author" content="Sistema Venda Direta" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
-  <link rel="canonical" href="https://www.sistemavendadireta.com.br/" />
-  <link rel="alternate" hreflang="pt-BR" href="https://www.sistemavendadireta.com.br/" />
-  <link rel="alternate" hreflang="x-default" href="https://www.sistemavendadireta.com.br/" />
+  <link rel="canonical" href="<?= htmlspecialchars($seoUrl, ENT_QUOTES, 'UTF-8') ?>" />
+  <link rel="alternate" hreflang="pt-BR" href="<?= htmlspecialchars($seoUrl, ENT_QUOTES, 'UTF-8') ?>" />
+  <link rel="alternate" hreflang="x-default" href="<?= htmlspecialchars($seoUrl, ENT_QUOTES, 'UTF-8') ?>" />
 
   <meta property="og:locale" content="pt_BR" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Sistema para Vendas Diretas" />
-  <meta property="og:description" content="Sistema para Marketing Multinível. Módulos Binário, Unilevel, Gateways de Pagamento e Loja Virtual integrada. Desde 2002!" />
-  <meta property="og:url" content="https://www.sistemavendadireta.com.br/" />
+  <meta property="og:title" content="<?= htmlspecialchars($seoTitle, ENT_QUOTES, 'UTF-8') ?>" />
+  <meta property="og:description" content="<?= htmlspecialchars($seoDescription, ENT_QUOTES, 'UTF-8') ?>" />
+  <meta property="og:url" content="<?= htmlspecialchars($seoUrl, ENT_QUOTES, 'UTF-8') ?>" />
   <meta property="og:site_name" content="Sistema Venda Direta" />
-  <meta property="og:image" content="https://www.sistemavendadireta.com.br/wp-content/uploads/2023/04/Screenshot-2023-04-26-at-14.38.02.png" />
-  <meta property="og:image:alt" content="Sistema para Vendas Diretas e Marketing Multinível - MMN" />
-  <meta property="og:image:width" content="1888" />
-  <meta property="og:image:height" content="1190" />
-  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image" content="<?= htmlspecialchars($seoOgImage, ENT_QUOTES, 'UTF-8') ?>" />
+  <meta property="og:image:alt" content="<?= htmlspecialchars($seoTitle, ENT_QUOTES, 'UTF-8') ?>" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/jpeg" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Sistema para Vendas Diretas e Marketing Multinível - MMN" />
-  <meta name="twitter:description" content="Sistema para Marketing Multinível. Módulos Binário, Unilevel, Gateways de Pagamento e Loja Virtual integrada. Desde 2002!" />
-  <meta name="twitter:image" content="https://www.sistemavendadireta.com.br/wp-content/uploads/2023/04/Screenshot-2023-04-26-at-14.38.02.png" />
+  <meta name="twitter:title" content="<?= htmlspecialchars($seoTitle, ENT_QUOTES, 'UTF-8') ?>" />
+  <meta name="twitter:description" content="<?= htmlspecialchars($seoDescription, ENT_QUOTES, 'UTF-8') ?>" />
+  <meta name="twitter:image" content="<?= htmlspecialchars($seoOgImage, ENT_QUOTES, 'UTF-8') ?>" />
   <meta name="twitter:site" content="@sistemavendadireta" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Roboto:wght@300;400;500;700&amp;family=Roboto+Slab:wght@400;600&amp;display=swap" />
-  <link rel="stylesheet" href="css/site-tailwind.css" />
-  <link rel="stylesheet" href="css/site-optimizations.css" />
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/site-tailwind.css?v=<?= filemtime(__DIR__ . '/css/site-tailwind.css') ?>" />
+  <link rel="stylesheet" href="css/site-optimizations.css?v=<?= filemtime(__DIR__ . '/css/site-optimizations.css') ?>" />
+  <link rel="stylesheet" href="css/styles.css?v=<?= filemtime(__DIR__ . '/css/styles.css') ?>" />
 
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Organization",
-          "name": "Sistema Venda Direta",
-          "url": "https://www.sistemavendadireta.com.br/",
-          "logo": "https://www.sistemavendadireta.com.br/wp-content/uploads/2023/04/Logo-Azul-004AAD-1.png",
-          "sameAs": [
-            "https://facebook.com/sistemavendadireta",
-            "https://www.youtube.com/@andregomes8954"
-          ]
-        },
-        {
-          "@type": "WebSite",
-          "name": "Sistema Venda Direta",
-          "url": "https://www.sistemavendadireta.com.br/"
-        },
-        {
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "JÁ POSSUO UM SISTEMA, POSSO MIGRAR OS DADOS?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Sim, podemos fazer a migração dos dados do seu antigo sistema, desde que tenhamos acesso a eles de forma organizada."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "JÀ TENHO UM SITE, POSSO USAR O SISTEMA VENDA DIRETA JUNTO COM MEU SITE, NO MESMO DOMÍNIO?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Pode sim, criamos um sub-domínio dentro do seu seu site, ficando por exemplo: painel.seusite.com.br. Basta nos informar depois da compra que deseja usar um domínio já existente."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "JÁ TENHO UM PLANO DE NEGÓCIOS, É POSSÍVEL USÁ-LO?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Sim, a instalação contempla a parametrização do seu plano de negócios."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "COMO EU VOU ADMNISTRAR O SISTEMA?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "O sistema possui um painel adminstrativo com diversos relatórios financeiros e podemos customizar diversos modelos a necessidade apresentada."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "QUAL É A TECNOLOGIA USADA NO SISTEMA?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "O sistema venda direta foi desenvolvido em PHP usando banco de dados MYSQL. O sistema é hospedado nos USA em um servidor dedicado linux usando nginx e php 7.4."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "ALÉM DA MENSALIDADE, EXISTE OUTROS CUSTOS?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Não temos taxas extras, poderá existir cobranças novas na medida em que o cliente peça novas funcionalidades, para isso existirá um acordo prévio."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "TEM INTEGRAÇÃO COM ERP?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Nosso sistema de venda direta tem uma ótima flexibilidade para integrações, hoje temos um parceiro que é o Bling, mas podemos integrar com o seu ERP."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "POSSO USAR MINHA MARCA E MEU DOMINIO?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Sim, um dos diferenciais deste sistema para venda direta é exatamente você utilizar o sistema personalizado com a marca de sua empresa."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "COMO É FEITO O SUPORTE",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Oferecemos suporte direto pelo whatsapp e telefone."
-              }
-            }
-          ]
-        }
-      ]
-    }
-  </script>
+  <script type="application/ld+json"><?= json_encode($seoLdGraph, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) ?></script>
 </head>
 <body class="bg-brand text-white antialiased font-[var(--font-body)] site-optimized">
   <a href="#conteudo" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-white focus:px-4 focus:py-2 focus:text-brand focus:font-semibold">
@@ -589,7 +598,7 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
             </div>
           <?php elseif ($mailStatus === 'erro'): ?>
             <div class="mt-4 rounded-2xl border border-rose-300/30 bg-rose-500/10 p-4">
-              <p class="text-sm font-semibold text-white">Nao foi possivel concluir o envio.</p>
+              <p class="text-sm font-semibold text-white">Não foi possível concluir o envio.</p>
               <p class="mt-1 text-sm text-white/80">Tente novamente em instantes ou use o atalho direto para falar com nossa equipe.</p>
             </div>
           <?php endif; ?>
@@ -600,7 +609,7 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
     <section class="py-10">
       <h2 class="font-[var(--font-heading)] text-[30px] font-semibold">Precisa de ajuda?</h2>
       <h4 class="mt-2 font-[var(--font-heading)] text-[26px] font-semibold">Dúvidas frequentes</h4>
-      <h3 class="mt-2 text-base leading-relaxed">Abaixo as dúvidas mais frequentes, caso ainda persista a dúvida, entre em contato <b>clicando no icone do WhatsApp</b></h3>
+      <h3 class="mt-2 text-base leading-relaxed">Abaixo as dúvidas mais frequentes, caso ainda persista a dúvida, entre em contato <b>clicando no ícone do WhatsApp</b></h3>
 
       <div class="mt-6 space-y-2">
         <details class="rounded-lg border border-white/20 bg-white/5 p-4">
@@ -609,8 +618,8 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
         </details>
 
         <details class="rounded-lg border border-white/20 bg-white/5 p-4">
-          <summary class="cursor-pointer font-semibold">JÀ TENHO UM SITE, POSSO USAR O SISTEMA VENDA DIRETA JUNTO COM MEU SITE, NO MESMO DOMÍNIO?</summary>
-          <p class="mt-2 text-sm text-white/90">Pode sim, criamos um sub-domínio dentro do seu seu site, ficando por exemplo: painel.seusite.com.br. Basta nos informar depois da compra que deseja usar um domínio já existente.</p>
+          <summary class="cursor-pointer font-semibold">JÁ TENHO UM SITE, POSSO USAR O SISTEMA VENDA DIRETA JUNTO COM MEU SITE, NO MESMO DOMÍNIO?</summary>
+          <p class="mt-2 text-sm text-white/90">Pode sim, criamos um sub-domínio dentro do seu site, ficando por exemplo: painel.seusite.com.br. Basta nos informar depois da compra que deseja usar um domínio já existente.</p>
         </details>
 
         <details class="rounded-lg border border-white/20 bg-white/5 p-4">
@@ -619,14 +628,13 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
         </details>
 
         <details class="rounded-lg border border-white/20 bg-white/5 p-4">
-          <summary class="cursor-pointer font-semibold">COMO EU VOU ADMNISTRAR O SISTEMA?</summary>
-          <p class="mt-2 text-sm text-white/90">O sistema possui um painel adminstrativo com diversos relatórios financeiros e podemos customizar diversos modelos a necessidade apresentada.</p>
+          <summary class="cursor-pointer font-semibold">COMO EU VOU ADMINISTRAR O SISTEMA?</summary>
+          <p class="mt-2 text-sm text-white/90">O sistema possui um painel administrativo com diversos relatórios financeiros e podemos customizar diversos modelos à necessidade apresentada.</p>
         </details>
 
         <details class="rounded-lg border border-white/20 bg-white/5 p-4">
           <summary class="cursor-pointer font-semibold">QUAL É A TECNOLOGIA USADA NO SISTEMA?</summary>
-          <p class="mt-2 text-sm text-white/90">O sistema venda direta foi desenvolvido em PHP usando banco de dados MYSQL.</p>
-          <p class="mt-2 text-sm text-white/90">O sistema é hospedado nos USA em um servidor dedicado linux usando nginx e php 7.4.</p>
+          <p class="mt-2 text-sm text-white/90">O sistema Venda Direta foi desenvolvido em PHP com banco MySQL. A solução é hospedada em infraestrutura dedicada (Linux, nginx) nos EUA, com atualizações de runtime alinhadas ao ciclo de manutenção do projeto.</p>
         </details>
 
         <details class="rounded-lg border border-white/20 bg-white/5 p-4">
@@ -636,17 +644,17 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
 
         <details class="rounded-lg border border-white/20 bg-white/5 p-4">
           <summary class="cursor-pointer font-semibold">TEM INTEGRAÇÃO COM ERP?</summary>
-          <p class="mt-2 text-sm text-white/90">Nosso sistema de venda direta tem uma ótima flexibilidade para integrações, hoje temos um parceiro que é o Bling (sistema de gestão que descomplica o seu negócio.), mas podemos integrar com o seu ERP.</p>
+          <p class="mt-2 text-sm text-white/90">Nosso sistema de venda direta tem uma ótima flexibilidade para integrações, hoje temos um parceiro que é o Bling (sistema de gestão que descomplica o seu negócio), mas podemos integrar com o seu ERP.</p>
         </details>
 
         <details class="rounded-lg border border-white/20 bg-white/5 p-4">
-          <summary class="cursor-pointer font-semibold">POSSO USAR MINHA MARCA E MEU DOMINIO?</summary>
+          <summary class="cursor-pointer font-semibold">POSSO USAR MINHA MARCA E MEU DOMÍNIO?</summary>
           <p class="mt-2 text-sm text-white/90">Sim, um dos diferenciais deste sistema para venda direta é exatamente você utilizar o sistema personalizado com a marca de sua empresa.</p>
         </details>
 
         <details class="rounded-lg border border-white/20 bg-white/5 p-4">
           <summary class="cursor-pointer font-semibold">COMO É FEITO O SUPORTE</summary>
-          <p class="mt-2 text-sm text-white/90">Oferecemos suporte direto pelo whatsapp e telefone.</p>
+          <p class="mt-2 text-sm text-white/90">Oferecemos suporte direto pelo WhatsApp e telefone.</p>
         </details>
       </div>
     </section>
