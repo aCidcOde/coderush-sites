@@ -41,6 +41,38 @@
     @media (max-width:640px){.logo-img{width:240px}}
     .services-tight{padding-top:0!important;margin-top:0!important}
     .icon-wrap{display:inline-flex;width:40px;height:40px;align-items:center;justify-content:center;border-radius:16px;background:rgba(255,255,255,.1);box-shadow:inset 0 0 0 1px rgba(255,255,255,.12)}
+    .contact-layout{display:grid;gap:1.5rem;margin-top:1.5rem}
+    .contact-copy{display:grid;gap:1.25rem;align-content:start}
+    .contact-aside-card,.contact-form-card{border:1px solid rgba(255,255,255,.16);background:linear-gradient(145deg,rgba(255,255,255,.075),rgba(255,255,255,.03));box-shadow:0 18px 55px -32px rgba(11,77,182,.72),inset 0 1px 0 rgba(255,255,255,.08);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+    .contact-aside-card{border-radius:1rem;padding:1.25rem}
+    .contact-form-card{border-radius:1.25rem;padding:1.25rem}
+    .contact-form{display:grid;gap:1rem;margin-top:1.25rem}
+    .contact-label{display:block;margin-bottom:.5rem;font-size:.75rem;font-weight:600;letter-spacing:.02em;color:rgba(240,244,255,.62)}
+    .contact-input{width:100%;border-radius:.75rem;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.045);padding:.65rem 1rem;font-size:.9375rem;color:#f0f4ff;transition:border-color .2s ease,box-shadow .2s ease,background .2s ease}
+    .contact-input::placeholder{color:rgba(240,244,255,.36)}
+    .contact-input:hover{border-color:rgba(255,255,255,.22);background:rgba(255,255,255,.065)}
+    .contact-input:focus{outline:none;border-color:rgba(96,165,250,.6);box-shadow:0 0 0 3px rgba(59,130,246,.22)}
+    .contact-submit,.contact-direct-link,.contact-status-action{position:relative;display:inline-flex;width:100%;align-items:center;justify-content:center;overflow:hidden;border-radius:9999px;padding:.75rem 1rem;font-size:.875rem;font-weight:700;text-align:center;transition:transform .22s ease,border-color .22s ease,background .22s ease,box-shadow .22s ease}
+    .contact-submit{border:1px solid rgba(255,255,255,.78);background:#f8fbff;color:#0b4db6;text-transform:uppercase;letter-spacing:.04em;box-shadow:0 14px 36px -18px rgba(147,197,253,.9)}
+    .contact-submit:hover{transform:translateY(-2px);background:#fff;box-shadow:0 18px 44px -20px rgba(147,197,253,.95)}
+    .contact-submit>span{position:relative;z-index:1}
+    .contact-submit:focus-visible,.contact-direct-link:focus-visible,.contact-status-action:focus-visible{outline:none;box-shadow:0 0 0 3px rgba(96,165,250,.35)}
+    .contact-direct-link,.contact-status-action{border:1px solid rgba(255,255,255,.28);background:rgba(255,255,255,.04);color:rgba(240,244,255,.92);font-weight:600}
+    .contact-direct-link:hover,.contact-status-action:hover{transform:translateY(-1px);border-color:rgba(255,255,255,.48);background:rgba(255,255,255,.09)}
+    .contact-aside-card .contact-direct-link{margin-top:1rem}
+    .contact-form-card>.contact-direct-link,.contact-status-action{margin-top:.75rem}
+    .contact-privacy{margin-top:.75rem;font-size:.75rem;color:rgba(240,244,255,.62)}
+    .contact-feedback-alert{margin-top:1.5rem;border-radius:1rem;padding:.75rem 1rem;font-size:.875rem;color:rgba(240,244,255,.92)}
+    .contact-feedback-alert.is-success{border:1px solid rgba(110,231,183,.35);background:rgba(16,185,129,.1)}
+    .contact-feedback-alert.is-error{border:1px solid rgba(253,164,175,.35);background:rgba(244,63,94,.1)}
+    .contact-status-card{margin-top:1rem;border-radius:1rem;padding:1rem}
+    .contact-status-card.is-success{border:1px solid rgba(110,231,183,.34);background:rgba(16,185,129,.1)}
+    .contact-status-card.is-error{border:1px solid rgba(253,164,175,.34);background:rgba(244,63,94,.1)}
+    @keyframes contact-btn-shine{0%{transform:translateX(-100%)}100%{transform:translateX(100%)}}
+    .contact-submit-shine::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 40%,rgba(255,255,255,.12) 50%,transparent 60%);transform:translateX(-100%);animation:contact-btn-shine 2.5s ease-in-out infinite}
+    @media (min-width:640px){.contact-form-card{padding:1.5rem}}
+    @media (min-width:1024px){.contact-layout{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr)}}
+    @media (prefers-reduced-motion:reduce){.contact-submit,.contact-direct-link,.contact-status-action{transition:none}.contact-submit:hover,.contact-direct-link:hover,.contact-status-action:hover{transform:none}.contact-submit-shine::after{animation:none}}
   </style>
 
   <link rel="stylesheet" href="css/site-optimizations.css" />
@@ -492,11 +524,11 @@
             <img decoding="async" src="https://app.planetacertidoes.com.br/logo-dark.png" alt="Emergency SAAS" class="max-h-12 w-auto object-contain" loading="lazy" />
           </div>
           <div class="mt-5 text-sm font-semibold">Emergency SAAS</div>
-          <p class="mt-2 text-sm text-white/80">Soluções Completas para Documentação Imobiliária.</p>
+          <p class="mt-2 text-sm text-white/80">Soluções Completas para Documentação Imobiliária e Due Deligence.</p>
           <p class="mt-3 text-sm text-white/80">
-            Infraestrutura com n8n, plataforma SaaS em Laravel e aplicativos iPhone e Android.
+            Infraestrutura com n8n, plataforma SaaS em Laravel.
           </p>
-          <a href="https://app.emergency.com.br" target="_blank" rel="noopener noreferrer" class="mt-5 inline-flex text-sm font-semibold text-white underline underline-offset-4">
+          <a href="https://emergency.com.br" target="_blank" rel="noopener noreferrer" class="mt-5 inline-flex text-sm font-semibold text-white underline underline-offset-4">
             app.emergency.com.br
           </a>
         </div>
@@ -537,57 +569,57 @@
       <h4 class="text-[30px] font-semibold" style="font-family:'Montserrat',sans-serif">Fale conosco</h4>
       <div class="mt-2 h-1 w-[72px] rounded-full bg-white"></div>
 
-      <div id="contact-feedback" class="mt-6 hidden rounded-2xl border px-4 py-3 text-sm text-white/90" role="alert"></div>
+      <div id="contact-feedback" class="contact-feedback-alert hidden" role="alert"></div>
 
-      <div class="mt-6 grid gap-6 lg:grid-cols-[1.05fr_0.95fr]">
-        <div class="space-y-5">
+      <div class="contact-layout">
+        <div class="contact-copy">
           <h2 class="text-base leading-relaxed text-white/90 sm:text-lg">
-            Preencha seu nome e WhatsApp para nosso time comercial retornar com mais contexto sobre seu projeto.
-            Assim conseguimos alinhar objetivo, prazo e proximos passos sem perder tempo na primeira conversa.
+            Preencha seu nome e WhatsApp para nosso time comercial retornar o mais breve possivel.
+            
           </h2>
-          <div class="rounded-2xl border border-white/20 bg-white/5 p-5">
+          <div class="contact-aside-card">
             <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/60">Atalho direto</p>
             <h3 class="mt-2 text-lg font-semibold">Prefere falar agora?</h3>
             <p class="mt-2 text-sm text-white/85">Se quiser pular o formulario, fale direto com nossa equipe comercial no WhatsApp.</p>
-            <a href="https://wa.me/5511994566726?text=Ol%C3%A1%2C%20quero%20um%20or%C3%A7amento%20para%20meu%20projeto%20com%20a%20Codafacil." target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex w-full items-center justify-center rounded-full border border-white/70 px-4 py-2.5 text-sm font-semibold hover:bg-white/10">Falar no WhatsApp agora</a>
+            <a href="https://wa.me/5511994566726?text=Ol%C3%A1%2C%20quero%20um%20or%C3%A7amento%20para%20meu%20projeto%20com%20a%20Codafacil." target="_blank" rel="noopener noreferrer" class="contact-direct-link mt-4">Falar no WhatsApp agora</a>
             <p class="mt-3 text-sm text-white/70"><b>Telefone para Contato:</b> 11 99456-6726</p>
           </div>
         </div>
 
-        <div class="rounded-[28px] border border-white/20 bg-white/5 p-5 sm:p-6">
+        <div class="contact-form-card">
           <h3 class="text-lg font-semibold">Receber contato comercial</h3>
-          <p class="mt-2 text-sm text-white/85">Enviamos seu lead para a equipe e, na sequencia, abrimos o WhatsApp com uma mensagem pronta para acelerar o atendimento.</p>
+          <p class="mt-2 text-sm text-white/85">Entraremos em contato o mais breve possivel.</p>
 
-          <form id="contact-lead-form" action="/enviar-contato.php" method="post" class="mt-5 space-y-4" data-whatsapp-phone="5511994566726" data-whatsapp-message-template="Ola, vim pelo site da Codafacil. Meu nome e {nome} e meu WhatsApp e {whatsapp}. Quero um orcamento para meu projeto.">
+          <form id="contact-lead-form" action="/enviar-contato.php" method="post" class="contact-form" data-whatsapp-phone="5511994566726" data-whatsapp-message-template="Ola, vim pelo site da Codafacil. Meu nome e {nome} e meu WhatsApp e {whatsapp}. Quero um orcamento para meu projeto.">
             <input type="hidden" name="redirect" value="/codafacil/" />
             <input type="hidden" name="origem" value="codafacil" />
             <input type="hidden" name="servico" value="Codafacil" />
             <input type="hidden" name="mensagem" value="Lead enviado pela home" />
 
             <div>
-              <label for="contact-nome" class="mb-2 block text-sm font-medium text-white/90">Nome</label>
-              <input id="contact-nome" name="nome" type="text" required autocomplete="name" placeholder="Seu nome" class="w-full rounded-2xl border border-white/20 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/45 focus:border-white/60 focus:outline-none focus:ring-2 focus:ring-white/20" />
+              <label for="contact-nome" class="contact-label mb-2">Nome</label>
+              <input id="contact-nome" name="nome" type="text" required autocomplete="name" placeholder="Seu nome" class="contact-input" />
             </div>
 
             <div>
-              <label for="contact-whatsapp" class="mb-2 block text-sm font-medium text-white/90">WhatsApp</label>
-              <input id="contact-whatsapp" name="whatsapp" type="tel" required autocomplete="tel" inputmode="tel" placeholder="(11) 99999-9999" class="w-full rounded-2xl border border-white/20 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/45 focus:border-white/60 focus:outline-none focus:ring-2 focus:ring-white/20" />
+              <label for="contact-whatsapp" class="contact-label mb-2">WhatsApp</label>
+              <input id="contact-whatsapp" name="whatsapp" type="tel" required autocomplete="tel" inputmode="tel" placeholder="(11) 99999-9999" class="contact-input" />
             </div>
 
-            <button type="submit" class="inline-flex w-full items-center justify-center rounded-full bg-white px-5 py-3 text-sm font-semibold uppercase tracking-wide text-[#0b4db6] transition hover:-translate-y-0.5 hover:bg-white/90">Quero falar com o comercial</button>
+            <button type="submit" class="contact-submit contact-submit-shine"><span>Enviar contato</span></button>
           </form>
 
-          <a href="https://wa.me/5511994566726?text=Ol%C3%A1%2C%20quero%20um%20or%C3%A7amento%20para%20meu%20projeto%20com%20a%20Codafacil." target="_blank" rel="noopener noreferrer" class="mt-3 inline-flex w-full items-center justify-center rounded-full border border-white/25 px-4 py-2.5 text-sm font-medium text-white/90 transition hover:border-white/45 hover:bg-white/10">Ou falar direto no WhatsApp</a>
+          <a href="https://wa.me/5511994566726?text=Ol%C3%A1%2C%20quero%20um%20or%C3%A7amento%20para%20meu%20projeto%20com%20a%20Codafacil." target="_blank" rel="noopener noreferrer" class="contact-direct-link mt-3">Ou falar direto no WhatsApp</a>
 
-          <p class="mt-3 text-xs text-white/65">Usamos seus dados apenas para retorno comercial sobre a Codafacil.</p>
+          <p class="contact-privacy">Usamos seus dados apenas para retorno comercial sobre a Codafacil.</p>
 
-          <div id="contact-success-box" class="mt-4 hidden rounded-2xl border border-emerald-300/30 bg-emerald-500/10 p-4">
+          <div id="contact-success-box" class="contact-status-card is-success hidden">
             <p class="text-sm font-semibold text-white">Lead enviado com sucesso.</p>
             <p class="mt-1 text-sm text-white/80">Se o WhatsApp nao abrir automaticamente, use o botao abaixo.</p>
-            <a id="contact-success-whatsapp-link" href="https://wa.me/5511994566726" target="_blank" rel="noopener noreferrer" class="mt-3 inline-flex w-full items-center justify-center rounded-full border border-emerald-200/45 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-white/10">Abrir WhatsApp agora</a>
+            <a id="contact-success-whatsapp-link" href="https://wa.me/5511994566726" target="_blank" rel="noopener noreferrer" class="contact-status-action mt-3">Abrir WhatsApp agora</a>
           </div>
 
-          <div id="contact-error-box" class="mt-4 hidden rounded-2xl border border-rose-300/30 bg-rose-500/10 p-4">
+          <div id="contact-error-box" class="contact-status-card is-error hidden">
             <p class="text-sm font-semibold text-white">Nao foi possivel concluir o envio.</p>
             <p class="mt-1 text-sm text-white/80">Tente novamente em instantes ou use o atalho direto para falar com nossa equipe.</p>
           </div>
@@ -623,7 +655,6 @@
         <div class="flex flex-wrap justify-center gap-2 text-xs text-white/45">
           <a href="https://coderush.com.br" target="_blank" rel="noopener noreferrer" class="rounded-full border border-white/15 px-3 py-1 transition hover:border-white/35 hover:text-white/80">coderush.com.br</a>
           <a href="https://sistemavendadireta.com.br" target="_blank" rel="noopener noreferrer" class="rounded-full border border-white/15 px-3 py-1 transition hover:border-white/35 hover:text-white/80">sistemavendadireta.com.br</a>
-          <a href="https://wordpressconsultoria.com.br" target="_blank" rel="noopener noreferrer" class="rounded-full border border-white/15 px-3 py-1 transition hover:border-white/35 hover:text-white/80">wordpressconsultoria.com.br</a>
           <a href="https://fluxointeligenteia.com.br" target="_blank" rel="noopener noreferrer" class="rounded-full border border-white/15 px-3 py-1 transition hover:border-white/35 hover:text-white/80">fluxointeligenteia.com.br</a>
         </div>
       </div>
@@ -663,7 +694,7 @@
 
       if (mailStatus === "ok" && successBox) {
         successBox.classList.remove("hidden");
-        if (feedbackEl) { feedbackEl.classList.remove("hidden"); feedbackEl.className = "mt-6 rounded-2xl border border-emerald-300/35 bg-emerald-500/10 px-4 py-3 text-sm text-white/90"; feedbackEl.textContent = "Recebemos seus dados. Vamos abrir o WhatsApp com uma mensagem pronta para agilizar seu atendimento."; }
+        if (feedbackEl) { feedbackEl.classList.remove("hidden"); feedbackEl.className = "contact-feedback-alert is-success"; feedbackEl.textContent = "Recebemos seus dados. Vamos abrir o WhatsApp com uma mensagem pronta para agilizar seu atendimento."; }
         var storedLead = getStoredLead();
         if (successWhatsappLink) successWhatsappLink.href = buildLeadWhatsappUrl(storedLead);
         window.setTimeout(function () {
@@ -675,7 +706,7 @@
         if (window.history && window.history.replaceState) window.history.replaceState(null, "", window.location.pathname + "#contato");
       } else if (mailStatus === "erro" && errorBox) {
         errorBox.classList.remove("hidden");
-        if (feedbackEl) { feedbackEl.classList.remove("hidden"); feedbackEl.className = "mt-6 rounded-2xl border border-rose-300/35 bg-rose-500/10 px-4 py-3 text-sm text-white/90"; feedbackEl.textContent = "Nao conseguimos enviar seus dados agora. Revise o WhatsApp informado ou use o atalho direto para falar com o comercial."; }
+        if (feedbackEl) { feedbackEl.classList.remove("hidden"); feedbackEl.className = "contact-feedback-alert is-error"; feedbackEl.textContent = "Nao conseguimos enviar seus dados agora. Revise o WhatsApp informado ou use o atalho direto para falar com o comercial."; }
         try { window.sessionStorage.removeItem(leadStorageKey); } catch (e) {}
         if (window.location.hash !== "#contato") window.location.hash = "#contato";
         if (window.history && window.history.replaceState) window.history.replaceState(null, "", window.location.pathname + "#contato");

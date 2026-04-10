@@ -1777,7 +1777,7 @@
           </div>
         </a>
 
-        <!-- WordPress Consultoria -->
+        <!-- FluxoInteligente IA -->
         <a href="https://fluxointeligenteia.com.br" target="_blank " class="portfolio-card group relative flex h-full flex-col rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.07] to-white/[0.02] p-6 shadow-lg shadow-black/25 backdrop-blur-sm hover:border-emerald-500/35">
           <div class="mb-5 flex items-start justify-between gap-3">
             <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-emerald-500/15 ring-1 ring-emerald-400/25 text-emerald-200">
@@ -2671,12 +2671,6 @@
                   },
                 },
                 {
-                  label: 'WordPress & loja',
-                  onClick: function () {
-                    topicFlow('wp', 'Tenho projeto WordPress / e-commerce');
-                  },
-                },
-                {
                   label: 'Automação & n8n',
                   onClick: function () {
                     topicFlow('auto', 'Quero automação com IA / n8n');
@@ -2736,11 +2730,6 @@
                 'Para software sob medida, IA e integrações, a **Codafacil.dev** trabalha com Laravel, entregas ágeis e stack moderna. Deixe seu briefing no formulário para retorno técnico.',
               link: { href: '/codafacil/', label: 'Ver Codafacil.dev', external: false },
             },
-            wp: {
-              t:
-                'Para WordPress, WooCommerce e integrações (ERP, pagamentos), a **WordPress Consultoria** desenvolve plugins e lojas sob medida.',
-              link: { href: '/wordpressconsultoria/', label: 'Ver WordPress Consultoria', external: false },
-            },
             auto: {
               t:
                 'Para automação com **n8n**, agentes e IA aplicada ao negócio, o **FluxoInteligente IA** desenha fluxos e integrações.',
@@ -2787,12 +2776,6 @@
               label: 'Software & IA',
               onClick: function () {
                 topicFlow('dev', 'Preciso de software sob medida / IA');
-              },
-            },
-            {
-              label: 'WordPress & loja',
-              onClick: function () {
-                topicFlow('wp', 'Tenho projeto WordPress / e-commerce');
               },
             },
             {
