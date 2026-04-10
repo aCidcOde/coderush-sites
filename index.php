@@ -1,12 +1,68 @@
+<?php
+$seoBase = 'https://coderush.com.br';
+$seoUrl = $seoBase . '/';
+$seoTitle = 'CodeRush | Hub de tecnologia — software sob medida, IA e automação';
+$seoDescription = 'CodeRush é um hub de tecnologia com software sob medida, automação com IA, vendas diretas e MMN. Ecossistema de empresas no Brasil.';
+$seoOgImage = $seoBase . '/og-coderush.jpg';
+$seoLdGraph = [
+  '@context' => 'https://schema.org',
+  '@graph' => [
+    [
+      '@type' => 'Organization',
+      '@id' => $seoUrl . '#organization',
+      'name' => 'CodeRush',
+      'url' => $seoUrl,
+      'logo' => [
+        '@type' => 'ImageObject',
+        'url' => $seoOgImage,
+      ],
+      'areaServed' => 'Brasil',
+    ],
+    [
+      '@type' => 'WebSite',
+      '@id' => $seoUrl . '#website',
+      'url' => $seoUrl,
+      'name' => 'CodeRush',
+      'publisher' => ['@id' => $seoUrl . '#organization'],
+    ],
+    [
+      '@type' => 'WebPage',
+      '@id' => $seoUrl . '#webpage',
+      'url' => $seoUrl,
+      'name' => $seoTitle,
+      'description' => $seoDescription,
+      'inLanguage' => 'pt-BR',
+      'isPartOf' => ['@id' => $seoUrl . '#website'],
+    ],
+  ],
+];
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>CodeRush — Hub de Tecnologia</title>
-  <meta name="description" content="CodeRush é um hub central de tecnologia que reúne múltiplas empresas e serviços especializados em vendas diretas, desenvolvimento de software, WordPress, automação com IA e design digital." />
-  <meta name="keywords" content="CodeRush, cases de sucesso, software sob medida, vendas diretas, WordPress, automação com IA, Laravel, n8n, consultoria tecnológica, Brasil" />
+  <title><?= htmlspecialchars($seoTitle, ENT_QUOTES, 'UTF-8') ?></title>
+  <meta name="description" content="<?= htmlspecialchars($seoDescription, ENT_QUOTES, 'UTF-8') ?>" />
+  <link rel="canonical" href="<?= htmlspecialchars($seoUrl, ENT_QUOTES, 'UTF-8') ?>" />
+  <meta property="og:title" content="<?= htmlspecialchars($seoTitle, ENT_QUOTES, 'UTF-8') ?>" />
+  <meta property="og:description" content="<?= htmlspecialchars($seoDescription, ENT_QUOTES, 'UTF-8') ?>" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="<?= htmlspecialchars($seoUrl, ENT_QUOTES, 'UTF-8') ?>" />
+  <meta property="og:site_name" content="CodeRush" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:image" content="<?= htmlspecialchars($seoOgImage, ENT_QUOTES, 'UTF-8') ?>" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="CodeRush — hub de tecnologia" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="<?= htmlspecialchars($seoTitle, ENT_QUOTES, 'UTF-8') ?>" />
+  <meta name="twitter:description" content="<?= htmlspecialchars($seoDescription, ENT_QUOTES, 'UTF-8') ?>" />
+  <meta name="twitter:image" content="<?= htmlspecialchars($seoOgImage, ENT_QUOTES, 'UTF-8') ?>" />
+  <meta name="theme-color" content="#020b1a" />
+  <meta name="keywords" content="CodeRush, cases de sucesso, software sob medida, vendas diretas, automação com IA, Laravel, n8n, consultoria tecnológica, Brasil" />
   <meta name="robots" content="index, follow" />
+  <script type="application/ld+json"><?= json_encode($seoLdGraph, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) ?></script>
   <link rel="stylesheet" href="css/site-tailwind.css?v=<?= filemtime(__DIR__.'/css/site-tailwind.css') ?>" />
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
