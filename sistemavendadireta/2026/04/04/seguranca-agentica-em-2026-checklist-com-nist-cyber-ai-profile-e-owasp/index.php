@@ -29,12 +29,12 @@ Post de blog estatico com foco em Tecnologia: governanca de seguranca para IA ag
   <meta property="og:description" content="Como combinar NIST e OWASP para reduzir risco em fluxos de IA agentica e integracoes MCP." />
   <meta property="og:url" content="https://www.sistemavendadireta.com.br/2026/04/04/seguranca-agentica-em-2026-checklist-com-nist-cyber-ai-profile-e-owasp/" />
   <meta property="og:site_name" content="Sistema Venda Direta" />
-  <meta property="og:image" content="https://www.sistemavendadireta.com.br/index_svd_files/posts/seguranca-agentica-em-2026-checklist-com-nist-cyber-ai-profile-e-owasp.jpg" />
+  <meta property="og:image" content="https://www.sistemavendadireta.com.br/imagens/posts/seguranca-agentica-em-2026-checklist-com-nist-cyber-ai-profile-e-owasp.jpg" />
   <meta property="og:image:alt" content="Seguranca agentica em 2026: checklist com NIST Cyber AI Profile e OWASP | Sistema Venda Direta" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Seguranca agentica em 2026: checklist com NIST Cyber AI Profile e OWASP | Sistema Venda Direta" />
   <meta name="twitter:description" content="Checklist objetivo para proteger agentes, ferramentas MCP e dados criticos sem travar a operacao." />
-  <meta name="twitter:image" content="https://www.sistemavendadireta.com.br/index_svd_files/posts/seguranca-agentica-em-2026-checklist-com-nist-cyber-ai-profile-e-owasp.jpg" />
+  <meta name="twitter:image" content="https://www.sistemavendadireta.com.br/imagens/posts/seguranca-agentica-em-2026-checklist-com-nist-cyber-ai-profile-e-owasp.jpg" />
   <meta name="twitter:site" content="@sistemavendadireta" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -56,7 +56,7 @@ Post de blog estatico com foco em Tecnologia: governanca de seguranca para IA ag
         "@id": "https://www.sistemavendadireta.com.br/2026/04/04/seguranca-agentica-em-2026-checklist-com-nist-cyber-ai-profile-e-owasp/"
     },
     "image": [
-        "https://www.sistemavendadireta.com.br/index_svd_files/posts/seguranca-agentica-em-2026-checklist-com-nist-cyber-ai-profile-e-owasp.jpg"
+        "https://www.sistemavendadireta.com.br/imagens/posts/seguranca-agentica-em-2026-checklist-com-nist-cyber-ai-profile-e-owasp.jpg"
     ],
     "author": {
         "@type": "Organization",
@@ -94,7 +94,7 @@ Post de blog estatico com foco em Tecnologia: governanca de seguranca para IA ag
       <p class="text-xs font-medium uppercase tracking-wide text-white/70">Blog SVD • 04/04/2026</p>
       <h1 class="mt-2 font-[var(--font-heading)] text-3xl font-semibold leading-tight sm:text-4xl">Seguranca agentica em 2026: checklist com NIST Cyber AI Profile e OWASP</h1>
 
-      <img src="../../../../index_svd_files/posts/seguranca-agentica-em-2026-checklist-com-nist-cyber-ai-profile-e-owasp.jpg" alt="Seguranca agentica em 2026: checklist com NIST Cyber AI Profile e OWASP" class="mt-6 w-full rounded-2xl border border-white/20" width="1200" height="630" loading="lazy" />
+      <img src="../../../../imagens/posts/seguranca-agentica-em-2026-checklist-com-nist-cyber-ai-profile-e-owasp.jpg" alt="Seguranca agentica em 2026: checklist com NIST Cyber AI Profile e OWASP" class="mt-6 w-full rounded-2xl border border-white/20" width="1200" height="630" loading="lazy" />
 
       <div class="prose prose-invert mt-6 max-w-none prose-headings:font-[var(--font-heading)] prose-headings:text-white prose-a:text-white prose-strong:text-white prose-p:text-white/90 prose-li:text-white/90">
 <p>No rodizio de <strong>Tecnologia</strong> desta semana, o tema que mais ganhou tracao para times de produto e operacao foi a seguranca de aplicacoes agenticas. Entre dezembro de 2025 e o primeiro trimestre de 2026, NIST e OWASP consolidaram guias praticos para reduzir risco em fluxos que conectam modelos, ferramentas e dados de negocio.</p>
@@ -168,7 +168,7 @@ Post de blog estatico com foco em Tecnologia: governanca de seguranca para IA ag
         </article>
         <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="../../../../2026/03/18/agentes-de-ia-em-2026-mcp-stateful-e-governanca-para-operar-em-escala/">
-            <img src="../../../../index_svd_files/posts/agentes-de-ia-em-2026-mcp-stateful-e-governanca-para-operar-em-escala.jpg" alt="Agentes de IA em 2026: MCP stateful e governanca para operar em escala" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+            <img src="../../../../imagens/posts/agentes-de-ia-em-2026-mcp-stateful-e-governanca-para-operar-em-escala.jpg" alt="Agentes de IA em 2026: MCP stateful e governanca para operar em escala" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
           <div class="p-4">
             <h3 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../../../../2026/03/18/agentes-de-ia-em-2026-mcp-stateful-e-governanca-para-operar-em-escala/" class="hover:underline">Agentes de IA em 2026: MCP stateful e governanca para operar em escala</a></h3>
@@ -177,7 +177,7 @@ Post de blog estatico com foco em Tecnologia: governanca de seguranca para IA ag
         </article>
         <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="../../../../2026/03/25/php-8-5-4-e-laravel-13-checklist-de-upgrade-com-governanca/">
-            <img src="../../../../index_svd_files/posts/php-8-5-4-e-laravel-13-checklist-de-upgrade-com-governanca.jpg" alt="PHP 8.5.4 e Laravel 13: checklist de upgrade com governanca" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+            <img src="../../../../imagens/posts/php-8-5-4-e-laravel-13-checklist-de-upgrade-com-governanca.jpg" alt="PHP 8.5.4 e Laravel 13: checklist de upgrade com governanca" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
           <div class="p-4">
             <h3 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../../../../2026/03/25/php-8-5-4-e-laravel-13-checklist-de-upgrade-com-governanca/" class="hover:underline">PHP 8.5.4 e Laravel 13: checklist de upgrade com governanca</a></h3>

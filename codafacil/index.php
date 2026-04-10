@@ -30,50 +30,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/site-tailwind.css" />
-
-  <style>
-    body, main, footer { background: #04110d !important; font-family: 'Inter', system-ui, sans-serif; }
-    h1,h2,h3,h4 { font-family: 'Montserrat', sans-serif; }
-    .hero-bg{background:radial-gradient(1200px 600px at 85% 30%,rgba(139,92,246,.15),rgba(139,92,246,0) 60%),radial-gradient(900px 500px at 15% 70%,rgba(59,130,246,.12),rgba(59,130,246,0) 55%),#04110d}
-    .btn-outline{box-shadow:inset 0 0 0 1px rgba(255,255,255,.35)}
-    .soft-shadow{box-shadow:0 18px 45px rgba(0,0,0,.45)}
-    .logo-img{width:360px;height:auto;opacity:1!important;filter:none!important;mix-blend-mode:normal!important;image-rendering:-webkit-optimize-contrast;display:block}
-    @media (max-width:640px){.logo-img{width:240px}}
-    .services-tight{padding-top:0!important;margin-top:0!important}
-    .icon-wrap{display:inline-flex;width:40px;height:40px;align-items:center;justify-content:center;border-radius:16px;background:rgba(255,255,255,.1);box-shadow:inset 0 0 0 1px rgba(255,255,255,.12)}
-    .contact-layout{display:grid;gap:1.5rem;margin-top:1.5rem}
-    .contact-copy{display:grid;gap:1.25rem;align-content:start}
-    .contact-aside-card,.contact-form-card{border:1px solid rgba(255,255,255,.16);background:linear-gradient(145deg,rgba(255,255,255,.075),rgba(255,255,255,.03));box-shadow:0 18px 55px -32px rgba(11,77,182,.72),inset 0 1px 0 rgba(255,255,255,.08);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
-    .contact-aside-card{border-radius:1rem;padding:1.25rem}
-    .contact-form-card{border-radius:1.25rem;padding:1.25rem}
-    .contact-form{display:grid;gap:1rem;margin-top:1.25rem}
-    .contact-label{display:block;margin-bottom:.5rem;font-size:.75rem;font-weight:600;letter-spacing:.02em;color:rgba(240,244,255,.62)}
-    .contact-input{width:100%;border-radius:.75rem;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.045);padding:.65rem 1rem;font-size:.9375rem;color:#f0f4ff;transition:border-color .2s ease,box-shadow .2s ease,background .2s ease}
-    .contact-input::placeholder{color:rgba(240,244,255,.36)}
-    .contact-input:hover{border-color:rgba(255,255,255,.22);background:rgba(255,255,255,.065)}
-    .contact-input:focus{outline:none;border-color:rgba(96,165,250,.6);box-shadow:0 0 0 3px rgba(59,130,246,.22)}
-    .contact-submit,.contact-direct-link,.contact-status-action{position:relative;display:inline-flex;width:100%;align-items:center;justify-content:center;overflow:hidden;border-radius:9999px;padding:.75rem 1rem;font-size:.875rem;font-weight:700;text-align:center;transition:transform .22s ease,border-color .22s ease,background .22s ease,box-shadow .22s ease}
-    .contact-submit{border:1px solid rgba(255,255,255,.78);background:#f8fbff;color:#0b4db6;text-transform:uppercase;letter-spacing:.04em;box-shadow:0 14px 36px -18px rgba(147,197,253,.9)}
-    .contact-submit:hover{transform:translateY(-2px);background:#fff;box-shadow:0 18px 44px -20px rgba(147,197,253,.95)}
-    .contact-submit>span{position:relative;z-index:1}
-    .contact-submit:focus-visible,.contact-direct-link:focus-visible,.contact-status-action:focus-visible{outline:none;box-shadow:0 0 0 3px rgba(96,165,250,.35)}
-    .contact-direct-link,.contact-status-action{border:1px solid rgba(255,255,255,.28);background:rgba(255,255,255,.04);color:rgba(240,244,255,.92);font-weight:600}
-    .contact-direct-link:hover,.contact-status-action:hover{transform:translateY(-1px);border-color:rgba(255,255,255,.48);background:rgba(255,255,255,.09)}
-    .contact-aside-card .contact-direct-link{margin-top:1rem}
-    .contact-form-card>.contact-direct-link,.contact-status-action{margin-top:.75rem}
-    .contact-privacy{margin-top:.75rem;font-size:.75rem;color:rgba(240,244,255,.62)}
-    .contact-feedback-alert{margin-top:1.5rem;border-radius:1rem;padding:.75rem 1rem;font-size:.875rem;color:rgba(240,244,255,.92)}
-    .contact-feedback-alert.is-success{border:1px solid rgba(110,231,183,.35);background:rgba(16,185,129,.1)}
-    .contact-feedback-alert.is-error{border:1px solid rgba(253,164,175,.35);background:rgba(244,63,94,.1)}
-    .contact-status-card{margin-top:1rem;border-radius:1rem;padding:1rem}
-    .contact-status-card.is-success{border:1px solid rgba(110,231,183,.34);background:rgba(16,185,129,.1)}
-    .contact-status-card.is-error{border:1px solid rgba(253,164,175,.34);background:rgba(244,63,94,.1)}
-    @keyframes contact-btn-shine{0%{transform:translateX(-100%)}100%{transform:translateX(100%)}}
-    .contact-submit-shine::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 40%,rgba(255,255,255,.12) 50%,transparent 60%);transform:translateX(-100%);animation:contact-btn-shine 2.5s ease-in-out infinite}
-    @media (min-width:640px){.contact-form-card{padding:1.5rem}}
-    @media (min-width:1024px){.contact-layout{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr)}}
-    @media (prefers-reduced-motion:reduce){.contact-submit,.contact-direct-link,.contact-status-action{transition:none}.contact-submit:hover,.contact-direct-link:hover,.contact-status-action:hover{transform:none}.contact-submit-shine::after{animation:none}}
-  </style>
+  <link rel="stylesheet" href="css/styles.css" />
 
   <link rel="stylesheet" href="css/site-optimizations.css" />
 
@@ -476,7 +433,7 @@
       </div>
     </section>
 
-    
+
 
     <!-- Vantagens -->
     <section id="vantagens" class="mx-auto max-w-7xl px-6 pb-16 md:pb-20">
@@ -502,7 +459,7 @@
       </div>
     </section>
 
-    
+
 
     <!-- Clientes -->
     <section id="clientes" class="mx-auto max-w-7xl px-6 pb-16 md:pb-20">
@@ -521,7 +478,7 @@
       <div class="mt-10 grid gap-6 md:grid-cols-3">
         <div class="rounded-3xl bg-white/10 p-7 ring-1 ring-white/15">
           <div class="flex min-h-14 items-center">
-            <img decoding="async" src="https://app.planetacertidoes.com.br/logo-dark.png" alt="Emergency SAAS" class="max-h-12 w-auto object-contain" loading="lazy" />
+            <img decoding="async" src="https://emergency.com.br/logo-dark.png" alt="Emergency SAAS" class="max-h-12 w-auto object-contain" loading="lazy" />
           </div>
           <div class="mt-5 text-sm font-semibold">Emergency SAAS</div>
           <p class="mt-2 text-sm text-white/80">Soluções Completas para Documentação Imobiliária e Due Deligence.</p>
@@ -529,22 +486,21 @@
             Infraestrutura com n8n, plataforma SaaS em Laravel.
           </p>
           <a href="https://emergency.com.br" target="_blank" rel="noopener noreferrer" class="mt-5 inline-flex text-sm font-semibold text-white underline underline-offset-4">
-            app.emergency.com.br
+            emergency.com.br
           </a>
         </div>
 
         <div class="rounded-3xl bg-white/10 p-7 ring-1 ring-white/15">
           <div class="flex min-h-14 items-center">
-            <img decoding="async" src="https://orcamento.codafacil.dev/brand/logo-orcamento-facil.png" alt="Orçamento Fácil" class="max-h-12 w-auto object-contain" loading="lazy" />
+            <img decoding="async" src="https://hub-payments.isysistemas.com.br/logo-hub-payments.png" alt="hub Payments" class="max-h-12 w-auto object-contain" loading="lazy" />
           </div>
-          <div class="mt-5 text-sm font-semibold">Orçamento Fácil</div>
+          <div class="mt-5 text-sm font-semibold">Hub Payments</div>
           <p class="mt-3 text-sm text-white/80">
-            Um SaaS para equipes de venda e gestão que precisam calcular custos de rótulos e etiquetas com
-            segurança, padronização e rastreio.
+            Sistema de gestão de pagamentos e conciliação financeira para empresas de médio e grande porte.
           </p>
-          <p class="mt-3 text-sm text-white/80">Menos planilhas, mais controle.</p>
-          <a href="https://orcamento.codafacil.dev/" target="_blank" rel="noopener noreferrer" class="mt-5 inline-flex text-sm font-semibold text-white underline underline-offset-4">
-            orcamento.codafacil.dev
+          <p class="mt-3 text-sm text-white/80">Multiplas tecnologias financeiras.</p>
+          <a href="https://isysistemas.com.br/" target="_blank" rel="noopener noreferrer" class="mt-5 inline-flex text-sm font-semibold text-white underline underline-offset-4">
+            isysistemas.com.br
           </a>
         </div>
 
@@ -575,7 +531,7 @@
         <div class="contact-copy">
           <h2 class="text-base leading-relaxed text-white/90 sm:text-lg">
             Preencha seu nome e WhatsApp para nosso time comercial retornar o mais breve possivel.
-            
+
           </h2>
           <div class="contact-aside-card">
             <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/60">Atalho direto</p>
@@ -661,71 +617,7 @@
     </div>
   </footer>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      var leadForm = document.getElementById("contact-lead-form");
-      var leadNameInput = document.getElementById("contact-nome");
-      var leadWhatsappInput = document.getElementById("contact-whatsapp");
-      var successBox = document.getElementById("contact-success-box");
-      var errorBox = document.getElementById("contact-error-box");
-      var successWhatsappLink = document.getElementById("contact-success-whatsapp-link");
-      var feedbackEl = document.getElementById("contact-feedback");
-      var leadStorageKey = "codafacil-contact-lead";
-      var urlParams = new URLSearchParams(window.location.search);
-      var mailStatus = urlParams.get("mail");
-      var defaultWaMsg = "Ola, vim pelo site da Codafacil e quero um orcamento para meu projeto.";
-      var phone = "5511994566726";
 
-      function getStoredLead() {
-        try { var r = window.sessionStorage.getItem(leadStorageKey); return r ? JSON.parse(r) : null; } catch (e) { return null; }
-      }
-
-      function buildLeadWhatsappUrl(lead) {
-        var s = lead || {};
-        var tpl = leadForm ? (leadForm.getAttribute("data-whatsapp-message-template") || defaultWaMsg) : defaultWaMsg;
-        var p = leadForm ? (leadForm.getAttribute("data-whatsapp-phone") || phone) : phone;
-        if (!s.nome && !s.whatsapp) return "https://wa.me/" + p + "?text=" + encodeURIComponent(defaultWaMsg);
-        var msg = tpl.replace("{nome}", (s.nome || "Nao informado").trim()).replace("{whatsapp}", (s.whatsapp || "Nao informado").trim());
-        return "https://wa.me/" + p + "?text=" + encodeURIComponent(msg);
-      }
-
-      if (mailStatus === "ok" && successBox) {
-        successBox.classList.remove("hidden");
-        if (feedbackEl) { feedbackEl.classList.remove("hidden"); feedbackEl.className = "contact-feedback-alert is-success"; feedbackEl.textContent = "Recebemos seus dados. Vamos abrir o WhatsApp com uma mensagem pronta para agilizar seu atendimento."; }
-        var storedLead = getStoredLead();
-        if (successWhatsappLink) successWhatsappLink.href = buildLeadWhatsappUrl(storedLead);
-        window.setTimeout(function () {
-          var popup = window.open(buildLeadWhatsappUrl(storedLead), "_blank", "noopener,noreferrer");
-          if (popup) popup.opener = null;
-        }, 250);
-        try { window.sessionStorage.removeItem(leadStorageKey); } catch (e) {}
-        if (window.location.hash !== "#contato") window.location.hash = "#contato";
-        if (window.history && window.history.replaceState) window.history.replaceState(null, "", window.location.pathname + "#contato");
-      } else if (mailStatus === "erro" && errorBox) {
-        errorBox.classList.remove("hidden");
-        if (feedbackEl) { feedbackEl.classList.remove("hidden"); feedbackEl.className = "contact-feedback-alert is-error"; feedbackEl.textContent = "Nao conseguimos enviar seus dados agora. Revise o WhatsApp informado ou use o atalho direto para falar com o comercial."; }
-        try { window.sessionStorage.removeItem(leadStorageKey); } catch (e) {}
-        if (window.location.hash !== "#contato") window.location.hash = "#contato";
-        if (window.history && window.history.replaceState) window.history.replaceState(null, "", window.location.pathname + "#contato");
-      }
-
-      if (leadForm) {
-        if (mailStatus !== "ok") {
-          var prev = getStoredLead();
-          if (prev) {
-            if (leadNameInput && !leadNameInput.value) leadNameInput.value = prev.nome || "";
-            if (leadWhatsappInput && !leadWhatsappInput.value) leadWhatsappInput.value = prev.whatsapp || "";
-          }
-        }
-        leadForm.addEventListener("submit", function () {
-          var payload = { nome: leadNameInput ? leadNameInput.value.trim() : "", whatsapp: leadWhatsappInput ? leadWhatsappInput.value.trim() : "" };
-          try { window.sessionStorage.setItem(leadStorageKey, JSON.stringify(payload)); } catch (e) {}
-        });
-      }
-    });
-  </script>
+  <script src="js/scripts.js" defer></script>
 </body>
 </html>

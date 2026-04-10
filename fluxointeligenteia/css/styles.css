@@ -1,0 +1,7 @@
+/* Extracted from fluxointeligenteia/index.html block 1. */
+@media (scripting: none) {
+.cases-section .cases-reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
+      .contact-section .contact-reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
+      .faq-section .faq-reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
+      .testimonials-section .testimonials-reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
+}

@@ -52,6 +52,7 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Roboto:wght@300;400;500;700&amp;family=Roboto+Slab:wght@400;600&amp;display=swap" />
   <link rel="stylesheet" href="css/site-tailwind.css" />
   <link rel="stylesheet" href="css/site-optimizations.css" />
+  <link rel="stylesheet" href="css/styles.css" />
 
   <script type="application/ld+json">
     {
@@ -163,7 +164,7 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
       <nav class="flex items-center justify-between gap-4 py-3" aria-label="Menu principal">
         <a href="/" class="block" aria-label="Sistema Venda Direta">
           <img decoding="async"
-            src="index_svd_files/Logo-Branco-1.webp"
+            src="imagens/Logo-Branco-1.webp"
             alt="Sistema Venda Direta"
             class="h-auto w-[165px] sm:w-[210px] lg:w-[260px]"
             width="1000"
@@ -222,7 +223,7 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
         </a>
       </div>
       <div class="mx-auto w-full max-w-[520px] rounded-2xl bg-brand-soft/25 p-2 ring-1 ring-white/15">
-        <div class="lottie-box h-[220px] w-full sm:h-[300px]" data-lottie-src="index_svd_files/lottie-hero.json" aria-label="Animação demonstrativa do sistema"></div>
+        <div class="lottie-box h-[220px] w-full sm:h-[300px]" data-lottie-src="imagens/lottie-hero.json" aria-label="Animação demonstrativa do sistema"></div>
       </div>
     </section>
 
@@ -232,37 +233,37 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
 
       <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         <article class="rounded-[30px] border border-white/55 bg-brand p-5 text-center">
-          <img decoding="async" src="index_svd_files/pagamento-online.webp" alt="Integração com Meios de Pagamento" class="mx-auto h-14 w-14" width="512" height="512" loading="lazy" />
+          <img decoding="async" src="imagens/pagamento-online.webp" alt="Integração com Meios de Pagamento" class="mx-auto h-14 w-14" width="512" height="512" loading="lazy" />
           <h3 class="mt-3 font-[var(--font-heading)] text-base font-semibold">Integração com Meios de Pagamento</h3>
           <p class="mt-2 text-sm text-white/85">Diversas opções de pagamento disponíveis.</p>
         </article>
 
         <article class="rounded-[30px] border border-white/55 bg-brand p-5 text-center">
-          <img decoding="async" src="index_svd_files/erp.webp" alt="Integração com ERP" class="mx-auto h-14 w-14" width="128" height="128" loading="lazy" />
+          <img decoding="async" src="imagens/erp.webp" alt="Integração com ERP" class="mx-auto h-14 w-14" width="128" height="128" loading="lazy" />
           <h3 class="mt-3 font-[var(--font-heading)] text-base font-semibold">Integração com ERP</h3>
           <p class="mt-2 text-sm text-white/85">Integre seus dados em um só lugar.</p>
         </article>
 
         <article class="rounded-[30px] border border-white/55 bg-brand p-5 text-center">
-          <img decoding="async" src="index_svd_files/no-mundo-todo.webp" alt="Módulo Logistica 1" class="mx-auto h-14 w-14" width="512" height="512" loading="lazy" />
+          <img decoding="async" src="imagens/no-mundo-todo.webp" alt="Módulo Logistica 1" class="mx-auto h-14 w-14" width="512" height="512" loading="lazy" />
           <h3 class="mt-3 font-[var(--font-heading)] text-base font-semibold">Integração com Meios de Logística</h3>
           <p class="mt-2 text-sm text-white/85">Opções de envio para todo o país.</p>
         </article>
 
         <article class="rounded-[30px] border border-white/55 bg-brand p-5 text-center">
-          <img decoding="async" src="index_svd_files/grafico-de-barras.webp" alt="Relatórios Completos" class="mx-auto h-14 w-14" width="512" height="512" loading="lazy" />
+          <img decoding="async" src="imagens/grafico-de-barras.webp" alt="Relatórios Completos" class="mx-auto h-14 w-14" width="512" height="512" loading="lazy" />
           <h3 class="mt-3 font-[var(--font-heading)] text-base font-semibold">Relatórios Completos</h3>
           <p class="mt-2 text-sm text-white/85">Rede e Financeiros</p>
         </article>
 
         <article class="rounded-[30px] border border-white/55 bg-brand p-5 text-center">
-          <img decoding="async" src="index_svd_files/mapa-do-site.webp" alt="Qualquer Plano de Compensação" class="mx-auto h-14 w-14" width="512" height="512" loading="lazy" />
+          <img decoding="async" src="imagens/mapa-do-site.webp" alt="Qualquer Plano de Compensação" class="mx-auto h-14 w-14" width="512" height="512" loading="lazy" />
           <h3 class="mt-3 font-[var(--font-heading)] text-base font-semibold">Qualquer Plano de Compensação</h3>
           <p class="mt-2 text-sm text-white/85">Personalize o plano ideal para a sua empresa.</p>
         </article>
 
         <article class="rounded-[30px] border border-white/55 bg-brand p-5 text-center">
-          <img decoding="async" src="index_svd_files/trabalho-em-equipe.webp" alt="Responsivo no Mobile" class="mx-auto h-14 w-14" width="512" height="512" loading="lazy" />
+          <img decoding="async" src="imagens/trabalho-em-equipe.webp" alt="Responsivo no Mobile" class="mx-auto h-14 w-14" width="512" height="512" loading="lazy" />
           <h3 class="mt-3 font-[var(--font-heading)] text-base font-semibold">Mobile</h3>
           <p class="mt-2 text-sm text-white/85">Acesse o sistema de qualquer lugar.</p>
         </article>
@@ -289,7 +290,7 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
     <section id="porque" class="scroll-mt-28 py-10">
       <div class="grid items-center gap-6 lg:grid-cols-2">
         <div class="mx-auto w-full max-w-[420px] rounded-2xl bg-brand-soft/25 p-2 ring-1 ring-white/15">
-          <div class="lottie-box h-[240px] w-full sm:h-[320px]" data-lottie-src="index_svd_files/lottie-porque.json" data-lottie-mobile="false" aria-label="Animação de gestão"></div>
+          <div class="lottie-box h-[240px] w-full sm:h-[320px]" data-lottie-src="imagens/lottie-porque.json" data-lottie-mobile="false" aria-label="Animação de gestão"></div>
         </div>
 
         <div>
@@ -319,7 +320,7 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
           </p>
         </div>
         <div class="mx-auto w-full max-w-[420px] rounded-2xl bg-brand-soft/25 p-2 ring-1 ring-white/15">
-          <div class="lottie-box h-[240px] w-full sm:h-[320px]" data-lottie-src="index_svd_files/lottie-caracteristicas.json" aria-label="Animação de características"></div>
+          <div class="lottie-box h-[240px] w-full sm:h-[320px]" data-lottie-src="imagens/lottie-caracteristicas.json" aria-label="Animação de características"></div>
         </div>
       </div>
     </section>
@@ -429,7 +430,7 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
       </h2>
 
       <img decoding="async"
-        src="index_svd_files/Imagens-de-Tecnologias-Utilizadas-no-sistema-venda-direta.webp"
+        src="imagens/Imagens-de-Tecnologias-Utilizadas-no-sistema-venda-direta.webp"
         alt="Integrações com diversas tecnologias"
         class="mt-6 w-full rounded-2xl border border-white/20"
         width="1200"
@@ -451,7 +452,7 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
         <article class="rounded-2xl border border-white/20 bg-white/5 p-5">
           <p class="text-sm leading-relaxed text-white/90">Há mais de 8 anos usamos o sistema venda direta, que nos ajuda a gerenciar nossa rede de distribuidores e a aumentar nossas vendas com perfeição, eu recomendo! Já estamos a 8 anos aprimorando e crescendo, com um escritorio virtual simples para qualquer pessoa.</p>
           <div class="mt-4 flex items-center gap-3">
-            <img decoding="async" src="index_svd_files/logo@2x-q5j2vw22ajhto7ptb6lous0grda1y29olapc310134.webp" alt="Ecotrend South América" class="h-10 w-10 rounded-full bg-white/15 p-1" loading="lazy" />
+            <img decoding="async" src="imagens/logo@2x-q5j2vw22ajhto7ptb6lous0grda1y29olapc310134.webp" alt="Ecotrend South América" class="h-10 w-10 rounded-full bg-white/15 p-1" loading="lazy" />
             <div>
               <p class="font-semibold">Leandro Sato</p>
               <p class="text-sm text-white/80">Ecotrend South America</p>
@@ -463,7 +464,7 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
         <article class="rounded-2xl border border-white/20 bg-white/5 p-5">
           <p class="text-sm leading-relaxed text-white/90">Há 15 anos trabalhamos com a empresa SVD, manteve nosso sistema ERP legado de 2006 e reestruturou para novas versões, além de implementar novas funcionalidades. O sistema gerencia toda nossa operação, desde comercial ao faturamento.</p>
           <div class="mt-4 flex items-center gap-3">
-            <img decoding="async" src="index_svd_files/logo_sistema-q5j2yjxlnn52kfujrc1mx3thco5hr6uayh8v191vgg.webp" alt="Emergency Doc Imob" class="h-10 w-10 rounded-full bg-white/15 p-1" loading="lazy" />
+            <img decoding="async" src="imagens/logo_sistema-q5j2yjxlnn52kfujrc1mx3thco5hr6uayh8v191vgg.webp" alt="Emergency Doc Imob" class="h-10 w-10 rounded-full bg-white/15 p-1" loading="lazy" />
             <div>
               <p class="font-semibold">Carlos Lemos</p>
               <p class="text-sm text-white/80">Emergency Doc Imob</p>
@@ -475,7 +476,7 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
         <article class="rounded-2xl border border-white/20 bg-white/5 p-5">
           <p class="text-sm leading-relaxed text-white/90">O sistema de MMN da empresa nos ajuda a gerenciar nossos distribuidores em todo o mundo. Trabalhamos com vários idiomas e moedas, com centros de distribuição em diferentes países. O módulo de centro de distribuição nos auxilia muito.</p>
           <div class="mt-4 flex items-center gap-3">
-            <img decoding="async" src="index_svd_files/logo-1-q5j39t21h8jnkdi31p5u9rl5dqoowqim66f4vid6yo.webp" alt="Science Life" class="h-10 w-10 rounded-full bg-white/15 p-1" loading="lazy" />
+            <img decoding="async" src="imagens/logo-1-q5j39t21h8jnkdi31p5u9rl5dqoowqim66f4vid6yo.webp" alt="Science Life" class="h-10 w-10 rounded-full bg-white/15 p-1" loading="lazy" />
             <div>
               <p class="font-semibold">Alessandro</p>
               <p class="text-sm text-white/80">Science Life</p>
@@ -487,7 +488,7 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
         <article class="rounded-2xl border border-white/20 bg-white/5 p-5">
           <p class="text-sm leading-relaxed text-white/90">O sistema de Ecommerce da Sistema Venda Direta nos ajuda a gerenciar nossos clientes e vendas de vouchers. Contamos com módulos customizados de anti-fraude e controle de clientes. O sistema suporta o volume das promoções sem problemas.</p>
           <div class="mt-4 flex items-center gap-3">
-            <img decoding="async" src="index_svd_files/341249332_244034884767561_2785740054709534699_n-150x150.webp" alt="SP Diversoões" class="h-10 w-10 rounded-full" loading="lazy" />
+            <img decoding="async" src="imagens/341249332_244034884767561_2785740054709534699_n-150x150.webp" alt="SP Diversoões" class="h-10 w-10 rounded-full" loading="lazy" />
             <div>
               <p class="font-semibold">Yoshiaki Shinagawa</p>
               <p class="text-sm text-white/80">SP Diversões / Game Station</p>
@@ -504,7 +505,7 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
       </h4>
       <div class="mt-2 h-1 w-[72px] rounded-full bg-white"></div>
       <img decoding="async"
-        src="index_svd_files/Clientes.webp"
+        src="imagens/Clientes.webp"
         alt="Empresas que já atendemos"
         class="mt-6 w-full rounded-2xl border border-white/20"
         width="1200"
@@ -661,7 +662,7 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="2026/03/18/agentes-de-ia-em-2026-mcp-stateful-e-governanca-para-operar-em-escala/">
-            <img src="index_svd_files/posts/agentes-de-ia-em-2026-mcp-stateful-e-governanca-para-operar-em-escala.jpg" alt="Agentes de IA em 2026: MCP stateful e governanca para operar em escala" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+            <img src="imagens/posts/agentes-de-ia-em-2026-mcp-stateful-e-governanca-para-operar-em-escala.jpg" alt="Agentes de IA em 2026: MCP stateful e governanca para operar em escala" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
           <div class="p-4">
             <h2 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="2026/03/18/agentes-de-ia-em-2026-mcp-stateful-e-governanca-para-operar-em-escala/" class="hover:underline">Agentes de IA em 2026: MCP stateful e governanca para operar em escala</a></h2>
@@ -670,7 +671,7 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
         </article>
         <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="2026/03/11/soc-agentico-e-seguranca-multicloud-com-governanca-unificada/">
-            <img src="index_svd_files/posts/soc-agentico-e-seguranca-multicloud-com-governanca-unificada.jpg" alt="SOC agentico e seguranca multicloud: guia pratico de governanca em 2026" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+            <img src="imagens/posts/soc-agentico-e-seguranca-multicloud-com-governanca-unificada.jpg" alt="SOC agentico e seguranca multicloud: guia pratico de governanca em 2026" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
           <div class="p-4">
             <h2 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="2026/03/11/soc-agentico-e-seguranca-multicloud-com-governanca-unificada/" class="hover:underline">SOC agentico e seguranca multicloud: guia pratico de governanca em 2026</a></h2>
@@ -679,7 +680,7 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
         </article>
         <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="2026/03/04/php-8-5-3-em-producao-checklist-para-atualizar-com-seguranca/">
-            <img src="index_svd_files/posts/php-8-5-3-em-producao-checklist-para-atualizar-com-seguranca.jpg" alt="PHP 8.5.3 em producao: checklist para atualizar com seguranca" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+            <img src="imagens/posts/php-8-5-3-em-producao-checklist-para-atualizar-com-seguranca.jpg" alt="PHP 8.5.3 em producao: checklist para atualizar com seguranca" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
           <div class="p-4">
             <h2 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="2026/03/04/php-8-5-3-em-producao-checklist-para-atualizar-com-seguranca/" class="hover:underline">PHP 8.5.3 em producao: checklist para atualizar com seguranca</a></h2>
@@ -694,7 +695,7 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
     <div class="mx-auto max-w-[1140px] px-4 py-10 sm:px-6">
       <div class="grid gap-8 md:grid-cols-3">
         <div class="space-y-3">
-          <img decoding="async" src="index_svd_files/Logo-Branco-1.webp" alt="Sistema Venda Direta" class="h-auto w-[180px]" width="1000" height="300" loading="lazy" />
+          <img decoding="async" src="imagens/Logo-Branco-1.webp" alt="Sistema Venda Direta" class="h-auto w-[180px]" width="1000" height="300" loading="lazy" />
           <p class="max-w-sm text-sm leading-relaxed text-white/85">
             A Sistema Venda Direta desenvolve soluções para operação comercial, vendas diretas e evolução tecnológica com IA aplicada ao negócio.
           </p>
@@ -743,147 +744,8 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
     <span class="sm:hidden">WhatsApp</span>
   </a>
 
-  <script src="index_svd_files/lottie.min.js" defer></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      var containers = document.querySelectorAll(".lottie-box[data-lottie-src]");
-      var leadForm = document.getElementById("contact-lead-form");
-      var leadNameInput = document.getElementById("contact-nome");
-      var leadWhatsappInput = document.getElementById("contact-whatsapp");
-      var successWhatsappLink = document.getElementById("contact-success-whatsapp-link");
-      var leadStorageKey = "svd-contact-lead";
-      var urlParams = new URLSearchParams(window.location.search);
-      var mailStatus = urlParams.get("mail");
+  <script src="js/lottie.min.js" defer></script>
 
-      function normalizePhone(value) {
-        return (value || "").replace(/\D+/g, "");
-      }
-
-      function getStoredLead() {
-        try {
-          var rawLead = window.sessionStorage.getItem(leadStorageKey);
-          return rawLead ? JSON.parse(rawLead) : null;
-        } catch (error) {
-          return null;
-        }
-      }
-
-      function buildWhatsappUrl(lead) {
-        var fallbackMessage = "Ola, quero um orcamento e acesso a demonstracao do Sistema Venda Direta.";
-        var phone = leadForm ? (leadForm.getAttribute("data-whatsapp-phone") || "5511994566726") : "5511994566726";
-        var template = leadForm ? (leadForm.getAttribute("data-whatsapp-message-template") || fallbackMessage) : fallbackMessage;
-        var safeLead = lead || {};
-        if (!safeLead.nome && !safeLead.whatsapp) {
-          return "https://wa.me/" + phone + "?text=" + encodeURIComponent(fallbackMessage);
-        }
-        var message = template
-          .replace("{nome}", (safeLead.nome || "Nao informado").trim())
-          .replace("{whatsapp}", (safeLead.whatsapp || "Nao informado").trim());
-
-        return "https://wa.me/" + phone + "?text=" + encodeURIComponent(message);
-      }
-
-      if (leadForm) {
-        if (mailStatus !== "ok") {
-          var previousLead = getStoredLead();
-          if (previousLead) {
-            if (leadNameInput && !leadNameInput.value) {
-              leadNameInput.value = previousLead.nome || "";
-            }
-            if (leadWhatsappInput && !leadWhatsappInput.value) {
-              leadWhatsappInput.value = previousLead.whatsapp || "";
-            }
-          }
-        }
-
-        leadForm.addEventListener("submit", function () {
-          var payload = {
-            nome: leadNameInput ? leadNameInput.value.trim() : "",
-            whatsapp: leadWhatsappInput ? leadWhatsappInput.value.trim() : "",
-            whatsappDigits: normalizePhone(leadWhatsappInput ? leadWhatsappInput.value : "")
-          };
-
-          try {
-            window.sessionStorage.setItem(leadStorageKey, JSON.stringify(payload));
-          } catch (error) {
-          }
-        });
-      }
-
-      if (successWhatsappLink) {
-        var storedLead = getStoredLead();
-        successWhatsappLink.href = buildWhatsappUrl(storedLead);
-
-        if (mailStatus === "ok") {
-          window.setTimeout(function () {
-            var popup = window.open(successWhatsappLink.href, "_blank", "noopener,noreferrer");
-            if (popup) {
-              popup.opener = null;
-            }
-          }, 250);
-
-          try {
-            window.sessionStorage.removeItem(leadStorageKey);
-          } catch (error) {
-          }
-        }
-      } else if (mailStatus === "erro") {
-        try {
-          window.sessionStorage.removeItem(leadStorageKey);
-        } catch (error) {
-        }
-      }
-
-      if (!containers.length || !window.lottie) {
-        containers = [];
-      }
-
-      var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-      var isSmallScreen = window.matchMedia && window.matchMedia("(max-width: 767px)").matches;
-      var startAnimation = function (container) {
-        if (container.dataset.lottieLoaded === "1") {
-          return;
-        }
-
-        var src = container.getAttribute("data-lottie-src");
-        if (!src) {
-          return;
-        }
-
-        if (container.getAttribute("data-lottie-mobile") === "false" && isSmallScreen) {
-          return;
-        }
-
-        window.lottie.loadAnimation({
-          container: container,
-          renderer: "svg",
-          loop: !reduceMotion,
-          autoplay: !reduceMotion,
-          path: src
-        });
-
-        container.dataset.lottieLoaded = "1";
-      };
-
-      if (!containers.length) {
-      } else if (!("IntersectionObserver" in window)) {
-        containers.forEach(startAnimation);
-      } else {
-        var observer = new IntersectionObserver(function (entries, currentObserver) {
-          entries.forEach(function (entry) {
-            if (!entry.isIntersecting) {
-              return;
-            }
-            startAnimation(entry.target);
-            currentObserver.unobserve(entry.target);
-          });
-        }, { rootMargin: "120px 0px" });
-
-        containers.forEach(function (container) {
-          observer.observe(container);
-        });
-      }
-    });
-  </script>
+  <script src="js/scripts.js" defer></script>
 </body>
 </html>
