@@ -1,0 +1,53 @@
+{
+  "mode": "publish",
+  "date": "2026-04-14",
+  "timezone": "America/Sao_Paulo",
+  "focus": "ia",
+  "startedAt": "2026-04-14T18:23:16.614Z",
+  "sites": [
+    {
+      "siteId": "coderush",
+      "ok": true,
+      "lint": {
+        "ok": true,
+        "skipped": true
+      },
+      "aiUsed": false,
+      "warning": null,
+      "outputPath": "automation\\blog-bot\\out\\coderush\\2026-04-14\\coderush-ia-2026-04-14.json",
+      "markdownPath": "automation\\blog-bot\\out\\coderush\\2026-04-14\\coderush-ia-2026-04-14.md"
+    },
+    {
+      "siteId": "fluxointeligenteia",
+      "ok": true,
+      "lint": {
+        "ok": true,
+        "skipped": true
+      },
+      "aiUsed": false,
+      "warning": null,
+      "outputPath": "automation\\blog-bot\\out\\fluxointeligenteia\\2026-04-14\\fluxointeligenteia-ia-2026-04-14.json",
+      "markdownPath": "automation\\blog-bot\\out\\fluxointeligenteia\\2026-04-14\\fluxointeligenteia-ia-2026-04-14.md"
+    },
+    {
+      "siteId": "sistemavendadireta",
+      "ok": true,
+      "lint": {
+        "ok": true,
+        "skipped": false
+      },
+      "aiUsed": false,
+      "warning": null,
+      "outputPath": "automation\\blog-bot\\out\\sistemavendadireta\\2026-04-14\\sistemavendadireta-ia-2026-04-14.json",
+      "markdownPath": "automation\\blog-bot\\out\\sistemavendadireta\\2026-04-14\\sistemavendadireta-ia-2026-04-14.md",
+      "publishResult": {
+        "postPath": "sistemavendadireta\\2026\\04\\14\\sistemavendadireta-ia-2026-04-14\\index.php",
+        "homeUpdated": false,
+        "blogUpdated": false,
+        "sitemapUpdated": true
+      }
+    }
+  ],
+  "finishedAt": "2026-04-14T18:23:16.796Z",
+  "ok": true
+}

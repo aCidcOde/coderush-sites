@@ -8,7 +8,9 @@
     "build:svd": "tailwindcss -c tailwind.config.cjs -i ./sistemavendadireta/css/site-tailwind.input.css -o ./sistemavendadireta/css/site-tailwind.css --minify",
     "build:codafacil": "tailwindcss -c tailwind.codafacil.cjs -i ./codafacil/site-tailwind.input.css -o ./codafacil/css/site-tailwind.css --minify",
     "build:fluxointeligenteia": "tailwindcss -c tailwind.fluxointeligenteia.cjs -i ./fluxointeligenteia/site-tailwind.input.css -o ./fluxointeligenteia/css/site-tailwind.css --minify",
-    "build:css": "npm run build:root && npm run build:svd && npm run build:codafacil && npm run build:fluxointeligenteia"
+    "build:css": "npm run build:root && npm run build:svd && npm run build:codafacil && npm run build:fluxointeligenteia",
+    "blogbot:dry-run": "node automation/blog-bot/run.js --mode=dry-run",
+    "blogbot:publish": "node automation/blog-bot/run.js --mode=publish"
   },
   "repository": {
     "type": "git",
