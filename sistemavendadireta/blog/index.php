@@ -18,6 +18,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
   <meta name="author" content="Sistema Venda Direta" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
   <link rel="canonical" href="https://www.sistemavendadireta.com.br/blog/" />
+  <link rel="icon" type="image/png" href="../logo-icone.png" />
   <link rel="alternate" hreflang="pt-BR" href="https://www.sistemavendadireta.com.br/blog/" />
   <link rel="alternate" hreflang="x-default" href="https://www.sistemavendadireta.com.br/blog/" />
 

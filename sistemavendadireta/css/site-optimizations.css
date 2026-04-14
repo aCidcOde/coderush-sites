@@ -29,6 +29,96 @@ Ajustes de responsividade e performance para paginas publicas estaticas.
   contain-intrinsic-size: 1px 700px;
 }
 
+.integration-carousel {
+  overflow: hidden;
+  position: relative;
+  border-color: transparent;
+  background: transparent;
+  backdrop-filter: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.integration-row {
+  overflow: hidden;
+}
+
+.integration-carousel::before,
+.integration-carousel::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 4.2rem;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.integration-carousel::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(26, 71, 176, 1), rgba(26, 71, 176, 0));
+}
+
+.integration-carousel::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(26, 71, 176, 1), rgba(26, 71, 176, 0));
+}
+
+.integration-track {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  width: max-content;
+  animation: integration-scroll 42s linear infinite;
+  will-change: transform;
+}
+
+.integration-track-bottom {
+  animation-direction: reverse;
+  animation-duration: 46s;
+}
+
+.integration-carousel:hover .integration-track,
+.integration-carousel:focus-within .integration-track {
+  animation-play-state: paused;
+}
+
+.integration-name {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  color: rgba(219, 234, 254, 0.86);
+  font-size: 0.66rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  border: 1px solid rgba(191, 219, 254, 0.28);
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.2);
+  padding: 0.48rem 0.92rem;
+  transition: color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.integration-name:hover {
+  color: #ffffff;
+  border-color: rgba(219, 234, 254, 0.6);
+  background: rgba(30, 58, 138, 0.28);
+  box-shadow: 0 0 0 1px rgba(219, 234, 254, 0.24), 0 0 18px rgba(191, 219, 254, 0.22);
+}
+
+.integration-name::after {
+  content: none;
+}
+
+@keyframes integration-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 @media (max-width: 1024px) {
   .site-optimized main {
     scroll-margin-top: 5rem;
@@ -54,6 +144,16 @@ Ajustes de responsividade e performance para paginas publicas estaticas.
 
   .site-optimized .lottie-box {
     min-height: 200px;
+  }
+
+  .integration-track {
+    gap: 0.55rem;
+  }
+
+  .integration-name {
+    font-size: 0.58rem;
+    padding: 0.42rem 0.74rem;
+    letter-spacing: 0.065em;
   }
 }
 
@@ -113,5 +213,11 @@ Ajustes de responsividade e performance para paginas publicas estaticas.
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+
+  .integration-track {
+    animation: none;
+    width: 100%;
+    flex-wrap: wrap;
   }
 }

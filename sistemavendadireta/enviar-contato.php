@@ -320,7 +320,7 @@ if ($telefone === '' && $email === '') {
     safeRedirect($redirect, false);
 }
 
-$toEmail = 'contato@sistemavendadireta.com.br';
+$toEmail = 'contato@coderush.com.br';
 
 $defaultHost = $_SERVER['HTTP_HOST'] ?? 'localhost';
 $fromEmail = envValue($env, ['MAIL_FROM_ADDRESS', 'CONTACT_EMAIL_FROM'], 'no-reply@' . $defaultHost);
