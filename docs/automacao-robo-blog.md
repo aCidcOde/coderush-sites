@@ -176,6 +176,7 @@ Sem `OPENAI_API_KEY`, o robô continua rodando via fallback local.
 - Sintaxe PHP (`php -l`) em arquivos críticos do SVD.
 - Relatório consolidado por execução.
 - Publicação apenas com fluxo completo sem falha fatal.
+- Solicitação de aprovação por e-mail com links assinados para aprovar/reprovar PR automática.
 
 ---
 
@@ -184,6 +185,20 @@ Sem `OPENAI_API_KEY`, o robô continua rodando via fallback local.
 - Publicação real pronta apenas para `sistemavendadireta`.
 - `coderush` e `fluxointeligenteia` ainda estão no modo de artefato/rascunho.
 - Geração de capa ainda usa fallback de arquivo base quando necessário.
+- Aprovação por e-mail depende de endpoint público (`pr-approval.php`) e segredos corretamente configurados.
+
+---
+
+## Aprovação da PR por e-mail
+
+Após a etapa de criação da PR automática, o workflow envia e-mail para os aprovadores configurados.
+
+- Botão **Aprovar PR** -> registra review `APPROVE` no GitHub.
+- Botão **Reprovar PR** -> registra review `REQUEST_CHANGES` no GitHub.
+
+Detalhes técnicos e contrato do payload:
+
+- `docs/aprovacao-pr-email.md`
 
 ---
 
