@@ -1,6 +1,35 @@
 #!/usr/bin/env node
 
 const crypto = require("node:crypto");
+const fs = require("node:fs");
+const path = require("node:path");
+
+function loadDotEnv(filePath) {
+  if (!fs.existsSync(filePath)) {
+    return {};
+  }
+
+  const raw = fs.readFileSync(filePath, "utf8");
+  const env = {};
+  for (const line of raw.split(/\r?\n/)) {
+    const trimmed = line.trim();
+    if (!trimmed || trimmed.startsWith("#")) {
+      continue;
+    }
+
+    const sepIndex = trimmed.indexOf("=");
+    if (sepIndex <= 0) {
+      continue;
+    }
+
+    const key = trimmed.slice(0, sepIndex).trim();
+    let value = trimmed.slice(sepIndex + 1).trim();
+    value = value.replace(/^['"]|['"]$/g, "");
+    env[key] = value;
+  }
+
+  return env;
+}
 
 function base64UrlEncode(input) {
   return Buffer.from(input)
@@ -23,8 +52,25 @@ function toInt(value, fallback = 0) {
   return Number.isFinite(parsed) ? parsed : fallback;
 }
 
+const ROOT = path.resolve(__dirname, "..", "..");
+const DOT_ENV_VALUES = loadDotEnv(path.resolve(ROOT, ".env"));
+
+function readEnv(name) {
+  const runtime = process.env[name];
+  if (runtime && String(runtime).trim() !== "") {
+    return String(runtime).trim();
+  }
+
+  const fileValue = DOT_ENV_VALUES[name];
+  if (fileValue && String(fileValue).trim() !== "") {
+    return String(fileValue).trim();
+  }
+
+  return "";
+}
+
 function requiredEnv(name) {
-  const value = process.env[name];
+  const value = readEnv(name);
   if (!value || String(value).trim() === "") {
     throw new Error(`Variavel obrigatoria ausente: ${name}`);
   }
@@ -78,8 +124,8 @@ async function run() {
   const runId = requiredEnv("RUN_ID");
   const branch = requiredEnv("BRANCH_NAME");
   const commitSha = requiredEnv("COMMIT_SHA");
-  const prTitle = process.env.PR_TITLE?.trim() || "PR automatica do blog";
-  const ttlHours = Math.max(1, toInt(process.env.PR_APPROVAL_TTL_HOURS, 24));
+  const prTitle = readEnv("PR_TITLE") || "PR automatica do blog";
+  const ttlHours = Math.max(1, toInt(readEnv("PR_APPROVAL_TTL_HOURS"), 24));
   const now = Math.floor(Date.now() / 1000);
   const exp = now + ttlHours * 3600;
   const toEmails = normalizeEmailList(requiredEnv("PR_APPROVAL_TO_EMAILS"));
