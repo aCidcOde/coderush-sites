@@ -5,8 +5,14 @@ declare(strict_types=1);
 [Modulo Contato SVD]
 @Author: Andre Gomes ( @acidcode )
 @since 2026-02-10
-Endpoint para receber formularios de contato e enviar email usando credenciais do .env.
+Endpoint para receber formularios de contato do site SVD e enviar e-mail via SMTP
+usando PHPMailer. Reaproveita o autoload do Composer instalado na raiz do monorepo.
 */
+
+require_once __DIR__ . '/../vendor/autoload.php';
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception as PHPMailerException;
 
 function loadEnvFile(string $filePath): array
 {
@@ -32,8 +38,7 @@ function loadEnvFile(string $filePath): array
         }
 
         $key = trim($parts[0]);
-        $value = trim($parts[1]);
-        $value = trim($value, "\"'");
+        $value = trim(trim($parts[1]), "\"'");
         $env[$key] = $value;
     }
 
@@ -104,45 +109,7 @@ function persistLeadLocally(string $baseDir, array $payload, string $reason): bo
     return $leadSaved && $logSaved;
 }
 
-function smtpReadResponse($socket): string
-{
-    $response = '';
-    while (($line = fgets($socket, 515)) !== false) {
-        $response .= $line;
-        if (strlen($line) < 4) {
-            break;
-        }
-
-        if ($line[3] === ' ') {
-            break;
-        }
-    }
-
-    return $response;
-}
-
-function smtpCommand($socket, string $command, array $expectedCodes, ?string &$failureReason = null): bool
-{
-    fwrite($socket, $command . "\r\n");
-    $response = smtpReadResponse($socket);
-    $code = (int) substr($response, 0, 3);
-
-    if (in_array($code, $expectedCodes, true)) {
-        return true;
-    }
-
-    $failureReason = sprintf(
-        'SMTP command failed [%s], expected %s, got %d (%s)',
-        preg_replace('/\s+/', ' ', $command) ?? $command,
-        implode(',', $expectedCodes),
-        $code,
-        trim($response)
-    );
-
-    return false;
-}
-
-function sendMailViaSmtp(array $smtpConfig, string $fromEmail, string $fromName, string $toEmail, string $replyTo, string $subject, string $body, ?string &$failureReason = null): bool
+function sendMailWithPHPMailer(array $smtpConfig, string $fromEmail, string $fromName, string $toEmail, string $replyTo, string $subject, string $body, ?string &$failureReason = null): bool
 {
     $host = $smtpConfig['host'];
     $port = (int) $smtpConfig['port'];
@@ -151,143 +118,69 @@ function sendMailViaSmtp(array $smtpConfig, string $fromEmail, string $fromName,
     $encryption = strtolower($smtpConfig['encryption']);
 
     if ($host === '' || $port <= 0 || $username === '' || $password === '') {
-        $failureReason = 'SMTP config incomplete.';
-
+        $failureReason = 'SMTP config incompleto.';
         return false;
     }
 
-    $scheme = $encryption === 'ssl' ? 'ssl://' : 'tcp://';
-    $socket = @stream_socket_client($scheme . $host . ':' . $port, $errorCode, $errorMessage, 15);
-    if ($socket === false) {
-        $failureReason = sprintf('SMTP connection failed: [%s] %s', (string) $errorCode, (string) $errorMessage);
+    $mailer = new PHPMailer(true);
 
-        return false;
-    }
+    try {
+        $mailer->isSMTP();
+        $mailer->Host = $host;
+        $mailer->Port = $port;
+        $mailer->SMTPAuth = true;
+        $mailer->Username = $username;
+        $mailer->Password = $password;
+        $mailer->CharSet = PHPMailer::CHARSET_UTF8;
+        $mailer->Encoding = PHPMailer::ENCODING_8BIT;
+        $mailer->Timeout = 15;
 
-    stream_set_timeout($socket, 15);
-
-    $greeting = smtpReadResponse($socket);
-    if ((int) substr($greeting, 0, 3) !== 220) {
-        $failureReason = 'SMTP greeting invalid: ' . trim($greeting);
-        fclose($socket);
-
-        return false;
-    }
-
-    $hostname = gethostname() ?: 'localhost';
-    if (!smtpCommand($socket, 'EHLO ' . $hostname, [250], $failureReason)) {
-        fclose($socket);
-
-        return false;
-    }
-
-    if ($encryption === 'tls') {
-        if (!smtpCommand($socket, 'STARTTLS', [220], $failureReason)) {
-            fclose($socket);
-
-            return false;
+        if ($encryption === 'ssl') {
+            $mailer->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+        } elseif ($encryption === 'tls' || $encryption === 'starttls') {
+            $mailer->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+        } else {
+            $mailer->SMTPSecure = '';
+            $mailer->SMTPAutoTLS = false;
         }
 
-        $cryptoEnabled = stream_socket_enable_crypto($socket, true, STREAM_CRYPTO_METHOD_TLS_CLIENT);
-        if ($cryptoEnabled !== true) {
-            $failureReason = 'SMTP STARTTLS negotiation failed.';
-            fclose($socket);
+        $mailer->setFrom($fromEmail, $fromName);
+        $mailer->addAddress($toEmail);
+        $mailer->addReplyTo($replyTo);
 
-            return false;
-        }
+        $mailer->Subject = $subject;
+        $mailer->Body = $body;
+        $mailer->isHTML(false);
 
-        if (!smtpCommand($socket, 'EHLO ' . $hostname, [250], $failureReason)) {
-            fclose($socket);
-
-            return false;
-        }
-    }
-
-    if (!smtpCommand($socket, 'AUTH LOGIN', [334], $failureReason)) {
-        fclose($socket);
-
+        return $mailer->send();
+    } catch (PHPMailerException $exception) {
+        $failureReason = 'PHPMailer SMTP error: ' . trim($mailer->ErrorInfo !== '' ? $mailer->ErrorInfo : $exception->getMessage());
         return false;
     }
-    if (!smtpCommand($socket, base64_encode($username), [334], $failureReason)) {
-        fclose($socket);
-
-        return false;
-    }
-    if (!smtpCommand($socket, base64_encode($password), [235], $failureReason)) {
-        fclose($socket);
-
-        return false;
-    }
-
-    if (!smtpCommand($socket, 'MAIL FROM:<' . $fromEmail . '>', [250], $failureReason)) {
-        fclose($socket);
-
-        return false;
-    }
-    if (!smtpCommand($socket, 'RCPT TO:<' . $toEmail . '>', [250, 251], $failureReason)) {
-        fclose($socket);
-
-        return false;
-    }
-    if (!smtpCommand($socket, 'DATA', [354], $failureReason)) {
-        fclose($socket);
-
-        return false;
-    }
-
-    $subjectLine = function_exists('mb_encode_mimeheader')
-        ? mb_encode_mimeheader($subject, 'UTF-8')
-        : $subject;
-
-    $headers = [];
-    $headers[] = 'Date: ' . date(DATE_RFC2822);
-    $headers[] = 'From: ' . $fromName . ' <' . $fromEmail . '>';
-    $headers[] = 'Reply-To: ' . $replyTo;
-    $headers[] = 'To: <' . $toEmail . '>';
-    $headers[] = 'Subject: ' . $subjectLine;
-    $headers[] = 'MIME-Version: 1.0';
-    $headers[] = 'Content-Type: text/plain; charset=UTF-8';
-    $headers[] = 'Content-Transfer-Encoding: 8bit';
-
-    $dotSafeBody = preg_replace('/^\./m', '..', $body) ?? $body;
-    $message = implode("\r\n", $headers) . "\r\n\r\n" . $dotSafeBody . "\r\n.";
-    fwrite($socket, $message . "\r\n");
-
-    $dataResponse = smtpReadResponse($socket);
-    $ok = (int) substr($dataResponse, 0, 3) === 250;
-    if ($ok !== true) {
-        $failureReason = 'SMTP DATA failed: ' . trim($dataResponse);
-    }
-
-    smtpCommand($socket, 'QUIT', [221, 250], $failureReason);
-    fclose($socket);
-
-    return $ok;
 }
 
 function sendMailViaPhpMail(string $toEmail, string $fromEmail, string $fromName, string $replyTo, string $subject, string $body, ?string &$failureReason = null): bool
 {
-    $subjectLine = function_exists('mb_encode_mimeheader')
-        ? mb_encode_mimeheader($subject, 'UTF-8')
-        : $subject;
+    $mailer = new PHPMailer(true);
 
-    $headers = [];
-    $headers[] = 'MIME-Version: 1.0';
-    $headers[] = 'Content-Type: text/plain; charset=UTF-8';
-    $headers[] = 'From: ' . $fromName . ' <' . $fromEmail . '>';
-    $headers[] = 'Reply-To: ' . $replyTo;
+    try {
+        $mailer->isMail();
+        $mailer->CharSet = PHPMailer::CHARSET_UTF8;
+        $mailer->Encoding = PHPMailer::ENCODING_8BIT;
 
-    if (function_exists('error_clear_last')) {
-        error_clear_last();
+        $mailer->setFrom($fromEmail, $fromName);
+        $mailer->addAddress($toEmail);
+        $mailer->addReplyTo($replyTo);
+
+        $mailer->Subject = $subject;
+        $mailer->Body = $body;
+        $mailer->isHTML(false);
+
+        return $mailer->send();
+    } catch (PHPMailerException $exception) {
+        $failureReason = 'PHPMailer mail() fallback error: ' . trim($mailer->ErrorInfo !== '' ? $mailer->ErrorInfo : $exception->getMessage());
+        return false;
     }
-
-    $sent = mail($toEmail, $subjectLine, $body, implode("\r\n", $headers));
-    if ($sent !== true) {
-        $lastError = error_get_last();
-        $failureReason = 'mail() fallback failed' . ($lastError !== null && isset($lastError['message']) ? ': ' . $lastError['message'] : '.');
-    }
-
-    return $sent;
 }
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
@@ -365,7 +258,7 @@ $leadPayload = [
 ];
 
 $transportFailureReason = '';
-$sent = sendMailViaSmtp($smtpConfig, $fromEmail, $fromName, $toEmail, $replyTo, $subject, $body, $transportFailureReason);
+$sent = sendMailWithPHPMailer($smtpConfig, $fromEmail, $fromName, $toEmail, $replyTo, $subject, $body, $transportFailureReason);
 $savedLocally = false;
 if ($sent === false) {
     $savedLocally = persistLeadLocally(

@@ -1,0 +1,14 @@
+{
+    "name": "coderush/coderush-sites",
+    "description": "Monorepo dos sites do ecossistema CodeRush (hub, SVD, Codafacil, WordPress Consultoria e FluxoInteligente IA).",
+    "type": "project",
+    "license": "proprietary",
+    "require": {
+        "php": ">=8.1",
+        "phpmailer/phpmailer": "^6.9"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    }
+}

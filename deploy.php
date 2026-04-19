@@ -7,7 +7,7 @@ if (!hash_equals(DEPLOY_TOKEN, $token)) {
     exit('Forbidden');
 }
 
-$output = shell_exec('cd /data/coderush-sites && git pull origin main 2>&1 && npm run build:css 2>&1 && docker compose restart 2>&1');
+$output = shell_exec('cd /data/coderush-sites && git pull origin main 2>&1 && composer install --no-dev --no-interaction --optimize-autoloader --no-progress 2>&1 && npm run build:css 2>&1 && docker compose restart 2>&1');
 
 file_put_contents('/var/log/deploy-coderush.log', date('Y-m-d H:i:s') . "\n" . $output . "\n---\n", FILE_APPEND);
 
