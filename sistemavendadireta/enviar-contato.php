@@ -190,7 +190,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     exit;
 }
 
-$env = loadEnvFile(__DIR__ . '/.env');
+$env = loadEnvFile(__DIR__ . '/../.env');
 $redirect = trim((string) ($_POST['redirect'] ?? '/'));
 
 $nome = trim((string) ($_POST['nome'] ?? ''));
@@ -213,7 +213,7 @@ if ($telefone === '' && $email === '') {
     safeRedirect($redirect, false);
 }
 
-$toEmail = 'contato@coderush.com.br';
+$toEmail = envValue($env, ['MAIL_TO_ADDRESS', 'CONTACT_EMAIL_TO'], 'contato@coderush.com.br');
 
 $defaultHost = $_SERVER['HTTP_HOST'] ?? 'localhost';
 $fromEmail = envValue($env, ['MAIL_FROM_ADDRESS', 'CONTACT_EMAIL_FROM'], 'no-reply@' . $defaultHost);

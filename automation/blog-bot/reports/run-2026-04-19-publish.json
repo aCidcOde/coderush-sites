@@ -1,0 +1,112 @@
+{
+  "mode": "publish",
+  "date": "2026-04-19",
+  "timezone": "America/Sao_Paulo",
+  "focus": "php",
+  "startedAt": "2026-04-19T15:38:16.662Z",
+  "aiProvider": "openrouter",
+  "sites": [
+    {
+      "siteId": "coderush",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Falha ao gerar capa com OpenRouter: Command failed: python3 /data/coderush-sites/automation/blog-bot/scripts/compose_cover.py --source /tmp/blogbot-cover-coderush-php-2026-04-19-TQvRpB/coderush-php-2026-04-19.jpg --target /data/coderush-sites/imagens/posts/coderush-php-2026-04-19.jpg --title Governança de Tecnologia: O Caminho para o Crescimento Sustentável --site-name CodeRush --label Blog CodeRush --accent #60a5fa --accent-soft #a78bfa --background #020b1a --surface #0f172a --label-fill #0b4db6 --label-text #f8fbff --variant tech\nTraceback (most recent call last):\n  File \"/data/coderush-sites/automation/blog-bot/scripts/compose_cover.py\", line 6, in <module>\n    from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont, ImageOps\nModuleNotFoundError: No module named 'PIL' | Falha ao compor capa padrao: Command failed: python3 /data/coderush-sites/automation/blog-bot/scripts/compose_cover.py --source /data/coderush-sites/imagens/posts/coderush-cover-base.jpg --target /data/coderush-sites/imagens/posts/coderush-php-2026-04-19.jpg --title Governança de Tecnologia: O Caminho para o Crescimento Sustentável --site-name CodeRush --label Blog CodeRush --accent #60a5fa --accent-soft #a78bfa --background #020b1a --surface #0f172a --label-fill #0b4db6 --label-text #f8fbff --variant tech\nTraceback (most recent call last):\n  File \"/data/coderush-sites/automation/blog-bot/scripts/compose_cover.py\", line 6, in <module>\n    from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont, ImageOps\nModuleNotFoundError: No module named 'PIL'",
+      "outputPath": "automation/blog-bot/out/coderush/2026-04-19/coderush-php-2026-04-19.json",
+      "markdownPath": "automation/blog-bot/out/coderush/2026-04-19/coderush-php-2026-04-19.md",
+      "publishResult": {
+        "postPath": "2026/04/19/coderush-php-2026-04-19/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "fallback-raw"
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "index.php",
+          "blog/index.php",
+          "2026/04/19/coderush-php-2026-04-19/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "codafacil",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Falha ao gerar capa com OpenRouter: Command failed: python3 /data/coderush-sites/automation/blog-bot/scripts/compose_cover.py --source /tmp/blogbot-cover-codafacil-php-2026-04-19-PL9UoF/codafacil-php-2026-04-19.jpg --target /data/coderush-sites/codafacil/imagens/posts/codafacil-php-2026-04-19.jpg --title A Revolução do Software Sob Medida com IA: Como PHP Pode Transformar Seu Negócio --site-name Codafacil.dev --label Blog Codafacil.dev --accent #0b4db6 --accent-soft #8b5cf6 --background #04110d --surface #11211d --label-fill #f8fbff --label-text #0b4db6 --variant tech\nTraceback (most recent call last):\n  File \"/data/coderush-sites/automation/blog-bot/scripts/compose_cover.py\", line 6, in <module>\n    from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont, ImageOps\nModuleNotFoundError: No module named 'PIL' | Falha ao compor capa padrao: Command failed: python3 /data/coderush-sites/automation/blog-bot/scripts/compose_cover.py --source /data/coderush-sites/codafacil/imagens/posts/codafacil-cover-base.jpg --target /data/coderush-sites/codafacil/imagens/posts/codafacil-php-2026-04-19.jpg --title A Revolução do Software Sob Medida com IA: Como PHP Pode Transformar Seu Negócio --site-name Codafacil.dev --label Blog Codafacil.dev --accent #0b4db6 --accent-soft #8b5cf6 --background #04110d --surface #11211d --label-fill #f8fbff --label-text #0b4db6 --variant tech\nTraceback (most recent call last):\n  File \"/data/coderush-sites/automation/blog-bot/scripts/compose_cover.py\", line 6, in <module>\n    from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont, ImageOps\nModuleNotFoundError: No module named 'PIL'",
+      "outputPath": "automation/blog-bot/out/codafacil/2026-04-19/codafacil-php-2026-04-19.json",
+      "markdownPath": "automation/blog-bot/out/codafacil/2026-04-19/codafacil-php-2026-04-19.md",
+      "publishResult": {
+        "postPath": "codafacil/2026/04/19/codafacil-php-2026-04-19/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "fallback-raw"
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "codafacil/index.php",
+          "codafacil/blog/index.php",
+          "codafacil/2026/04/19/codafacil-php-2026-04-19/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "fluxointeligenteia",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Falha ao gerar capa com OpenRouter: Command failed: python3 /data/coderush-sites/automation/blog-bot/scripts/compose_cover.py --source /tmp/blogbot-cover-fluxointeligenteia-php-2026-04-19-pw9FWy/fluxointeligenteia-php-2026-04-19.jpg --target /data/coderush-sites/fluxointeligenteia/imagens/posts/fluxointeligenteia-php-2026-04-19.jpg --title Automação de Processos com LLMs: A Revolução na Gestão Empresarial --site-name FluxoInteligente IA --label Blog FluxoInteligente IA --accent #34d399 --accent-soft #38bdf8 --background #04110d --surface #0d1f1a --label-fill #05261e --label-text #d1fae5 --variant tech\nTraceback (most recent call last):\n  File \"/data/coderush-sites/automation/blog-bot/scripts/compose_cover.py\", line 6, in <module>\n    from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont, ImageOps\nModuleNotFoundError: No module named 'PIL' | Falha ao compor capa padrao: Command failed: python3 /data/coderush-sites/automation/blog-bot/scripts/compose_cover.py --source /data/coderush-sites/fluxointeligenteia/imagens/posts/fluxointeligenteia-cover-base.jpg --target /data/coderush-sites/fluxointeligenteia/imagens/posts/fluxointeligenteia-php-2026-04-19.jpg --title Automação de Processos com LLMs: A Revolução na Gestão Empresarial --site-name FluxoInteligente IA --label Blog FluxoInteligente IA --accent #34d399 --accent-soft #38bdf8 --background #04110d --surface #0d1f1a --label-fill #05261e --label-text #d1fae5 --variant tech\nTraceback (most recent call last):\n  File \"/data/coderush-sites/automation/blog-bot/scripts/compose_cover.py\", line 6, in <module>\n    from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont, ImageOps\nModuleNotFoundError: No module named 'PIL'",
+      "outputPath": "automation/blog-bot/out/fluxointeligenteia/2026-04-19/fluxointeligenteia-php-2026-04-19.json",
+      "markdownPath": "automation/blog-bot/out/fluxointeligenteia/2026-04-19/fluxointeligenteia-php-2026-04-19.md",
+      "publishResult": {
+        "postPath": "fluxointeligenteia/2026/04/19/fluxointeligenteia-php-2026-04-19/index.html",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "fallback-raw"
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    },
+    {
+      "siteId": "sistemavendadireta",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Falha ao gerar capa com OpenRouter: Command failed: python3 /data/coderush-sites/automation/blog-bot/scripts/compose_cover.py --source /tmp/blogbot-cover-sistemavendadireta-php-2026-04-19-kiTMPr/sistemavendadireta-php-2026-04-19.jpg --target /data/coderush-sites/sistemavendadireta/imagens/posts/sistemavendadireta-php-2026-04-19.jpg --title Governança Comercial: Potencializando Vendas Diretas com Dados e IA --site-name Sistema Venda Direta --label Blog SVD --accent #004aad --accent-soft #bfdafe --background #12356b --surface #1c4687 --label-fill #ffffff --label-text #004aad --variant institutional\nTraceback (most recent call last):\n  File \"/data/coderush-sites/automation/blog-bot/scripts/compose_cover.py\", line 6, in <module>\n    from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont, ImageOps\nModuleNotFoundError: No module named 'PIL' | Falha ao compor capa padrao: Command failed: python3 /data/coderush-sites/automation/blog-bot/scripts/compose_cover.py --source /data/coderush-sites/sistemavendadireta/imagens/posts/agentes-de-ia-em-2026-mcp-stateful-e-governanca-para-operar-em-escala.jpg --target /data/coderush-sites/sistemavendadireta/imagens/posts/sistemavendadireta-php-2026-04-19.jpg --title Governança Comercial: Potencializando Vendas Diretas com Dados e IA --site-name Sistema Venda Direta --label Blog SVD --accent #004aad --accent-soft #bfdafe --background #12356b --surface #1c4687 --label-fill #ffffff --label-text #004aad --variant institutional\nTraceback (most recent call last):\n  File \"/data/coderush-sites/automation/blog-bot/scripts/compose_cover.py\", line 6, in <module>\n    from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont, ImageOps\nModuleNotFoundError: No module named 'PIL'",
+      "outputPath": "automation/blog-bot/out/sistemavendadireta/2026-04-19/sistemavendadireta-php-2026-04-19.json",
+      "markdownPath": "automation/blog-bot/out/sistemavendadireta/2026-04-19/sistemavendadireta-php-2026-04-19.md",
+      "publishResult": {
+        "postPath": "sistemavendadireta/2026/04/19/sistemavendadireta-php-2026-04-19/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "fallback-raw"
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "sistemavendadireta/index.php",
+          "sistemavendadireta/blog/index.php",
+          "sistemavendadireta/2026/04/19/sistemavendadireta-php-2026-04-19/index.php"
+        ]
+      }
+    }
+  ],
+  "finishedAt": "2026-04-19T15:39:12.837Z",
+  "ok": true
+}
