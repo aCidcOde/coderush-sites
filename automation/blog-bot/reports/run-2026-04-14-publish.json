@@ -3,51 +3,110 @@
   "date": "2026-04-14",
   "timezone": "America/Sao_Paulo",
   "focus": "ia",
-  "startedAt": "2026-04-14T18:23:16.614Z",
+  "startedAt": "2026-04-19T14:27:17.912Z",
+  "aiProvider": "fallback",
   "sites": [
     {
       "siteId": "coderush",
       "ok": true,
+      "aiUsed": false,
+      "aiProvider": "existing-draft",
+      "warning": "Rascunho existente reutilizado para manter o seed consistente.",
+      "outputPath": "automation/blog-bot/out/coderush/2026-04-14/coderush-ia-2026-04-14.json",
+      "markdownPath": "automation/blog-bot/out/coderush/2026-04-14/coderush-ia-2026-04-14.md",
+      "publishResult": {
+        "postPath": "2026/04/14/coderush-ia-2026-04-14/index.php",
+        "homeUpdated": false,
+        "blogUpdated": false,
+        "sitemapUpdated": false,
+        "robotsUpdated": false,
+        "coverSource": "existing"
+      },
       "lint": {
         "ok": true,
-        "skipped": true
-      },
+        "skipped": false,
+        "targets": [
+          "index.php",
+          "blog/index.php",
+          "2026/04/14/coderush-ia-2026-04-14/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "codafacil",
+      "ok": true,
       "aiUsed": false,
-      "warning": null,
-      "outputPath": "automation\\blog-bot\\out\\coderush\\2026-04-14\\coderush-ia-2026-04-14.json",
-      "markdownPath": "automation\\blog-bot\\out\\coderush\\2026-04-14\\coderush-ia-2026-04-14.md"
+      "aiProvider": "existing-draft",
+      "warning": "Rascunho existente reutilizado para manter o seed consistente.",
+      "outputPath": "automation/blog-bot/out/codafacil/2026-04-14/codafacil-ia-2026-04-14.json",
+      "markdownPath": "automation/blog-bot/out/codafacil/2026-04-14/codafacil-ia-2026-04-14.md",
+      "publishResult": {
+        "postPath": "codafacil/2026/04/14/codafacil-ia-2026-04-14/index.php",
+        "homeUpdated": false,
+        "blogUpdated": false,
+        "sitemapUpdated": false,
+        "robotsUpdated": false,
+        "coverSource": "existing"
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "codafacil/index.php",
+          "codafacil/blog/index.php",
+          "codafacil/2026/04/14/codafacil-ia-2026-04-14/index.php"
+        ]
+      }
     },
     {
       "siteId": "fluxointeligenteia",
       "ok": true,
+      "aiUsed": false,
+      "aiProvider": "existing-draft",
+      "warning": "Rascunho existente reutilizado para manter o seed consistente.",
+      "outputPath": "automation/blog-bot/out/fluxointeligenteia/2026-04-14/fluxointeligenteia-ia-2026-04-14.json",
+      "markdownPath": "automation/blog-bot/out/fluxointeligenteia/2026-04-14/fluxointeligenteia-ia-2026-04-14.md",
+      "publishResult": {
+        "postPath": "fluxointeligenteia/2026/04/14/fluxointeligenteia-ia-2026-04-14/index.html",
+        "homeUpdated": false,
+        "blogUpdated": false,
+        "sitemapUpdated": false,
+        "robotsUpdated": false,
+        "coverSource": "existing"
+      },
       "lint": {
         "ok": true,
-        "skipped": true
-      },
-      "aiUsed": false,
-      "warning": null,
-      "outputPath": "automation\\blog-bot\\out\\fluxointeligenteia\\2026-04-14\\fluxointeligenteia-ia-2026-04-14.json",
-      "markdownPath": "automation\\blog-bot\\out\\fluxointeligenteia\\2026-04-14\\fluxointeligenteia-ia-2026-04-14.md"
+        "skipped": true,
+        "targets": []
+      }
     },
     {
       "siteId": "sistemavendadireta",
       "ok": true,
-      "lint": {
-        "ok": true,
-        "skipped": false
-      },
       "aiUsed": false,
-      "warning": null,
-      "outputPath": "automation\\blog-bot\\out\\sistemavendadireta\\2026-04-14\\sistemavendadireta-ia-2026-04-14.json",
-      "markdownPath": "automation\\blog-bot\\out\\sistemavendadireta\\2026-04-14\\sistemavendadireta-ia-2026-04-14.md",
+      "aiProvider": "existing-draft",
+      "warning": "Rascunho existente reutilizado para manter o seed consistente.",
+      "outputPath": "automation/blog-bot/out/sistemavendadireta/2026-04-14/sistemavendadireta-ia-2026-04-14.json",
+      "markdownPath": "automation/blog-bot/out/sistemavendadireta/2026-04-14/sistemavendadireta-ia-2026-04-14.md",
       "publishResult": {
-        "postPath": "sistemavendadireta\\2026\\04\\14\\sistemavendadireta-ia-2026-04-14\\index.php",
+        "postPath": "sistemavendadireta/2026/04/14/sistemavendadireta-ia-2026-04-14/index.php",
         "homeUpdated": false,
         "blogUpdated": false,
-        "sitemapUpdated": true
+        "sitemapUpdated": false,
+        "robotsUpdated": false,
+        "coverSource": "existing"
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "sistemavendadireta/index.php",
+          "sistemavendadireta/blog/index.php",
+          "sistemavendadireta/2026/04/14/sistemavendadireta-ia-2026-04-14/index.php"
+        ]
       }
     }
   ],
-  "finishedAt": "2026-04-14T18:23:16.796Z",
+  "finishedAt": "2026-04-19T14:27:18.187Z",
   "ok": true
 }

@@ -1,7 +1,9 @@
 module.exports = {
   content: [
     "./index.php",
-    "./index.html"
+    "./index.html",
+    "./blog/**/*.php",
+    "./20*/**/*.php"
   ],
   theme: {
     extend: {

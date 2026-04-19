@@ -1,8 +1,15 @@
+const crypto = require("node:crypto");
+
 const SITE_THEMES = {
   coderush: [
     "governanca de tecnologia para crescimento",
     "arquitetura de software para operacoes criticas",
     "produtividade de times com automacao inteligente"
+  ],
+  codafacil: [
+    "software sob medida com IA aplicada",
+    "integracoes e automacao para operacoes criticas",
+    "entrega de produtos digitais com governanca tecnica"
   ],
   fluxointeligenteia: [
     "agentes de ia para atendimento e operacao",
@@ -16,11 +23,11 @@ const SITE_THEMES = {
   ]
 };
 
-function pickSiteTheme(siteId, usedThemes) {
+function pickSiteTheme(siteId, seed) {
   const candidates = SITE_THEMES[siteId] || ["tecnologia aplicada a negocios"];
-  const available = candidates.filter((theme) => !usedThemes.has(theme));
-  const source = available.length > 0 ? available : candidates;
-  return source[Math.floor(Math.random() * source.length)];
+  const hash = crypto.createHash("sha1").update(`${siteId}:${seed}`).digest("hex");
+  const index = parseInt(hash.slice(0, 8), 16) % candidates.length;
+  return candidates[index];
 }
 
 function sitePromptStyle(site) {

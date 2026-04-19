@@ -564,6 +564,35 @@ $seoLdGraph = [
       </div>
     </section>
 
+    <section id="blog" class="mx-auto max-w-7xl px-6 pb-16 md:pb-20" aria-labelledby="blog-heading">
+      <div class="flex items-end justify-between gap-4">
+        <div>
+          <div class="text-sm font-semibold text-white/70">Conteudo</div>
+          <h2 id="blog-heading" class="mt-3 text-2xl font-extrabold md:text-3xl">Blog Codafacil.dev</h2>
+          <div class="mt-2 h-1 w-[72px] rounded-full bg-sky-300"></div>
+        </div>
+        <a href="blog/" class="text-sm font-semibold text-sky-300 transition hover:text-white">Ver todos os posts</a>
+      </div>
+
+      <p class="mt-5 max-w-3xl text-sm leading-relaxed text-white/75">
+        Conteudo sobre software sob medida, integracoes, automacao e entrega orientada por IA para operacoes criticas.
+      </p>
+
+      <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+<!-- BLOG-HOME-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/04/14/codafacil-ia-2026-04-14/" data-blog-image="imagens/posts/codafacil-ia-2026-04-14.jpg" data-blog-slug="codafacil-ia-2026-04-14" data-blog-date="2026-04-14">
+  <a href="2026/04/14/codafacil-ia-2026-04-14/">
+    <img src="imagens/posts/codafacil-ia-2026-04-14.jpg" alt="Codafacil.dev: como usar IA de forma pratica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="2026/04/14/codafacil-ia-2026-04-14/" class="hover:underline">Codafacil.dev: como usar IA de forma pratica</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre software sob medida com IA aplicada com foco em resultado operacional.</p>
+  </div>
+</article>
+<!-- BLOG-HOME-CARDS:END -->
+      </div>
+    </section>
+
     <!-- Contato -->
     <section id="contato" class="scroll-mt-28 mx-auto max-w-7xl px-6 pb-24">
       <h4 class="text-[30px] font-semibold" style="font-family:'Montserrat',sans-serif">Fale conosco</h4>
@@ -647,6 +676,7 @@ $seoLdGraph = [
           <a href="#servicos" class="hover:text-white">Serviços</a>
           <a href="#processo" class="hover:text-white">Processo</a>
           <a href="#vantagens" class="hover:text-white">Vantagens</a>
+          <a href="blog/" class="hover:text-white">Blog</a>
           <a href="#contato" class="hover:text-white">Contato</a>
         </div>
       </div>

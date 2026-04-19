@@ -4,19 +4,39 @@ const fs = require("node:fs");
 const path = require("node:path");
 const crypto = require("node:crypto");
 const { execSync } = require("node:child_process");
+const { loadEnvFiles } = require("./lib/env-loader");
 const { pickSiteTheme, sitePromptStyle } = require("./lib/site-strategy");
-const { generateWithOpenAI, generateFallbackContent } = require("./lib/ai-writer");
-const { publishSvdPost } = require("./lib/svd-publisher");
+const {
+  resolveAiConfig,
+  generateWithOpenAI,
+  generateWithOpenRouter,
+  generateFallbackContent
+} = require("./lib/ai-writer");
+const { publishSitePost } = require("./lib/publisher");
 
 const ROOT = path.resolve(__dirname, "..", "..");
 const CONFIG_PATH = path.resolve(__dirname, "config", "sites.json");
 const REPORTS_DIR = path.resolve(__dirname, "reports");
 
+loadEnvFiles(ROOT);
+
 function parseArgs() {
   const args = process.argv.slice(2);
   const modeArg = args.find((arg) => arg.startsWith("--mode="));
-  const mode = modeArg ? modeArg.split("=")[1] : process.env.BLOG_BOT_MODE || "dry-run";
-  return { mode };
+  const sitesArg = args.find((arg) => arg.startsWith("--sites="));
+  const dateArg = args.find((arg) => arg.startsWith("--date="));
+
+  return {
+    mode: modeArg ? modeArg.split("=")[1] : process.env.BLOG_BOT_MODE || "dry-run",
+    sites: sitesArg
+      ? sitesArg
+          .split("=")[1]
+          .split(",")
+          .map((item) => item.trim())
+          .filter(Boolean)
+      : [],
+    date: dateArg ? dateArg.split("=")[1] : ""
+  };
 }
 
 function ensureDir(dirPath) {
@@ -33,9 +53,8 @@ function nowInSaoPaulo() {
   return formatter.format(new Date());
 }
 
-function focusForWeek(rotation) {
-  const weekSeed = new Date().toISOString().slice(0, 10);
-  const hash = crypto.createHash("sha1").update(weekSeed).digest("hex");
+function focusForWeek(rotation, dateSeed) {
+  const hash = crypto.createHash("sha1").update(dateSeed).digest("hex");
   const index = parseInt(hash.slice(0, 8), 16) % rotation.length;
   return rotation[index];
 }
@@ -52,10 +71,11 @@ function slugify(value) {
 }
 
 function buildPostContract(site, focus, date) {
-  const theme = site.theme;
+  const theme = pickSiteTheme(site.id, date);
   const title = `${site.name}: ${focus.toUpperCase()} aplicado a resultado real`;
   const slug = slugify(`${site.id}-${focus}-${date}`);
   const description = `Atualizacao semanal de ${focus} para ${site.name}, com foco em ${theme}.`;
+
   return {
     date,
     siteId: site.id,
@@ -65,10 +85,7 @@ function buildPostContract(site, focus, date) {
     slug,
     title,
     description,
-    sources: [
-      "https://openai.com/news/",
-      "https://github.blog/"
-    ],
+    sources: ["https://openai.com/news/", "https://github.blog/"],
     status: "draft",
     generatedAt: new Date().toISOString()
   };
@@ -89,30 +106,6 @@ function buildAiPrompt({ site, contract }) {
     "Regras extras:",
     style.constraints.map((item) => `- ${item}`).join("\n")
   ].join("\n");
-}
-
-function lintPhpIfNeeded(site) {
-  if (!site.requiresPhpLint) {
-    return { ok: true, skipped: true };
-  }
-
-  const phpTargets = [
-    path.resolve(ROOT, "sistemavendadireta", "index.php"),
-    path.resolve(ROOT, "sistemavendadireta", "blog", "index.php")
-  ];
-
-  try {
-    for (const file of phpTargets) {
-      execSync(`php -l "${file}"`, { stdio: "pipe" });
-    }
-    return { ok: true, skipped: false };
-  } catch (error) {
-    return {
-      ok: false,
-      skipped: false,
-      error: String(error.stderr || error.message || error)
-    };
-  }
 }
 
 function writeDraft(site, contract) {
@@ -144,17 +137,110 @@ function writeDraft(site, contract) {
   return { jsonPath, markdownPath };
 }
 
+function loadExistingDraft(site, contract) {
+  const filePath = path.resolve(ROOT, site.outputRoot, contract.date, `${contract.slug}.json`);
+  if (!fs.existsSync(filePath)) {
+    return null;
+  }
+
+  try {
+    const draft = JSON.parse(fs.readFileSync(filePath, "utf8"));
+    if (draft?.content?.headline && Array.isArray(draft?.content?.sections)) {
+      return draft;
+    }
+  } catch (error) {
+    return null;
+  }
+
+  return null;
+}
+
+async function generateContent(aiConfig, site, prompt, contract) {
+  if (!aiConfig) {
+    return {
+      content: generateFallbackContent({
+        siteName: site.name,
+        theme: contract.theme,
+        focus: contract.focus
+      }),
+      aiUsed: false,
+      aiProvider: "fallback",
+      warning: null
+    };
+  }
+
+  try {
+    if (aiConfig.provider === "openrouter") {
+      return {
+        content: await generateWithOpenRouter({
+          apiKey: aiConfig.apiKey,
+          model: aiConfig.textModel,
+          prompt,
+          appUrl: aiConfig.appUrl,
+          appName: aiConfig.appName
+        }),
+        aiUsed: true,
+        aiProvider: "openrouter",
+        warning: null
+      };
+    }
+
+    return {
+      content: await generateWithOpenAI({
+        apiKey: aiConfig.apiKey,
+        model: aiConfig.textModel,
+        prompt
+      }),
+      aiUsed: true,
+      aiProvider: "openai",
+      warning: null
+    };
+  } catch (error) {
+    return {
+      content: generateFallbackContent({
+        siteName: site.name,
+        theme: contract.theme,
+        focus: contract.focus
+      }),
+      aiUsed: false,
+      aiProvider: "fallback",
+      warning: `Falha ao usar IA, fallback aplicado: ${String(error.message || error)}`
+    };
+  }
+}
+
+function lintPhpFiles(relativeTargets) {
+  const targets = [...new Set(relativeTargets || [])];
+  if (targets.length === 0) {
+    return { ok: true, skipped: true, targets: [] };
+  }
+
+  try {
+    for (const relativeTarget of targets) {
+      const filePath = path.resolve(ROOT, relativeTarget);
+      execSync(`php -l "${filePath}"`, { stdio: "pipe" });
+    }
+    return { ok: true, skipped: false, targets };
+  } catch (error) {
+    return {
+      ok: false,
+      skipped: false,
+      targets,
+      error: String(error.stderr || error.message || error)
+    };
+  }
+}
+
 async function run() {
-  const { mode } = parseArgs();
+  const { mode, sites: requestedSites, date: explicitDate } = parseArgs();
   if (!["dry-run", "publish"].includes(mode)) {
     throw new Error(`Modo invalido: ${mode}. Use dry-run ou publish.`);
   }
 
   const config = JSON.parse(fs.readFileSync(CONFIG_PATH, "utf8"));
-  const date = nowInSaoPaulo();
-  const focus = focusForWeek(config.rotation);
-  const apiKey = process.env.OPENAI_API_KEY;
-  const model = process.env.BLOG_BOT_OPENAI_MODEL || "gpt-4o-mini";
+  const date = explicitDate || nowInSaoPaulo();
+  const focus = focusForWeek(config.rotation, date);
+  const aiConfig = resolveAiConfig(process.env);
 
   ensureDir(REPORTS_DIR);
   const report = {
@@ -163,72 +249,76 @@ async function run() {
     timezone: config.timezone,
     focus,
     startedAt: new Date().toISOString(),
+    aiProvider: aiConfig?.provider || "fallback",
     sites: []
   };
 
-  const usedThemes = new Set();
-  for (const site of config.sites) {
+  const selectedSites = config.sites.filter((site) =>
+    requestedSites.length === 0 ? true : requestedSites.includes(site.id)
+  );
+
+  if (selectedSites.length === 0) {
+    throw new Error("Nenhum site selecionado para processamento.");
+  }
+
+  for (const site of selectedSites) {
     if (!site.enabled) {
       report.sites.push({ siteId: site.id, skipped: true, reason: "site disabled" });
       continue;
     }
 
-    site.theme = pickSiteTheme(site.id, usedThemes);
-    usedThemes.add(site.theme);
-    const contract = buildPostContract(site, focus, date);
-    const lint = lintPhpIfNeeded(site);
-    if (!lint.ok) {
-      report.sites.push({
-        siteId: site.id,
-        ok: false,
-        lint
-      });
-      continue;
-    }
+    let contract = buildPostContract(site, focus, date);
+    const existingDraft = loadExistingDraft(site, contract);
 
-    let content;
     let aiUsed = false;
+    let aiProvider = "fallback";
     let warning = null;
 
-    try {
-      if (apiKey) {
-        content = await generateWithOpenAI({
-          apiKey,
-          model,
-          prompt: buildAiPrompt({ site, contract })
-        });
-        aiUsed = true;
-      } else {
-        content = generateFallbackContent({
-          siteName: site.name,
-          theme: contract.theme,
-          focus: contract.focus
-        });
-      }
-    } catch (error) {
-      content = generateFallbackContent({
-        siteName: site.name,
-        theme: contract.theme,
-        focus: contract.focus
-      });
-      warning = `Falha ao usar IA, fallback aplicado: ${String(error.message || error)}`;
+    if (existingDraft) {
+      contract = existingDraft;
+      aiProvider = "existing-draft";
+      warning = "Rascunho existente reutilizado para manter o seed consistente.";
+    } else {
+      const generation = await generateContent(aiConfig, site, buildAiPrompt({ site, contract }), contract);
+      contract.content = generation.content;
+      aiUsed = generation.aiUsed;
+      aiProvider = generation.aiProvider;
+      warning = generation.warning;
     }
 
-    contract.content = content;
     const outputPath = writeDraft(site, contract);
     const siteResult = {
       siteId: site.id,
       ok: true,
-      lint,
       aiUsed,
+      aiProvider,
       warning,
-      outputPath: path.relative(ROOT, outputPath.jsonPath),
-      markdownPath: path.relative(ROOT, outputPath.markdownPath)
+      outputPath: path.relative(ROOT, outputPath.jsonPath).replace(/\\/g, "/"),
+      markdownPath: path.relative(ROOT, outputPath.markdownPath).replace(/\\/g, "/")
     };
 
-    if (mode === "publish" && site.id === "sistemavendadireta") {
-      const publishResult = publishSvdPost(ROOT, contract);
-      siteResult.publishResult = publishResult;
+    if (mode === "publish") {
+      const publishResult = await publishSitePost(ROOT, site, contract, aiConfig);
+      const lint = lintPhpFiles(publishResult.phpLintTargets);
+      siteResult.publishResult = {
+        postPath: publishResult.postPath,
+        homeUpdated: publishResult.homeUpdated,
+        blogUpdated: publishResult.blogUpdated,
+        sitemapUpdated: publishResult.sitemapUpdated,
+        robotsUpdated: publishResult.robotsUpdated,
+        coverSource: publishResult.coverSource
+      };
+      siteResult.lint = lint;
+
+      if (publishResult.warning) {
+        siteResult.warning = siteResult.warning
+          ? `${siteResult.warning} ${publishResult.warning}`
+          : publishResult.warning;
+      }
+
+      if (!lint.ok) {
+        siteResult.ok = false;
+      }
     }
 
     report.sites.push(siteResult);

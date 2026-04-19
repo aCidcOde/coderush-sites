@@ -672,6 +672,37 @@ $seoLdGraph = [
     </div>
   </section>
 
+  <section id="blog" class="border-t border-white/[0.06] px-6 py-20 md:py-24" aria-labelledby="blog-heading">
+    <div class="mx-auto max-w-6xl">
+      <div class="flex items-end justify-between gap-4">
+        <div>
+          <p class="text-[10px] font-semibold uppercase tracking-[0.2em] text-white/35">Conteudo</p>
+          <h2 id="blog-heading" class="mt-3 font-heading text-3xl font-bold tracking-tight text-white sm:text-4xl">Blog CodeRush</h2>
+          <div class="mt-3 h-1 w-[72px] rounded-full bg-blue-400"></div>
+        </div>
+        <a href="blog/" class="text-sm font-semibold text-blue-400/90 transition hover:text-blue-300">Ver todos os posts</a>
+      </div>
+
+      <p class="mt-5 max-w-3xl text-sm leading-relaxed text-white/65">
+        Conteudo sobre software sob medida, IA, automacao e governanca para empresas que precisam escalar com criterio.
+      </p>
+
+      <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+<!-- BLOG-HOME-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/04/14/coderush-ia-2026-04-14/" data-blog-image="imagens/posts/coderush-ia-2026-04-14.jpg" data-blog-slug="coderush-ia-2026-04-14" data-blog-date="2026-04-14">
+  <a href="2026/04/14/coderush-ia-2026-04-14/">
+    <img src="imagens/posts/coderush-ia-2026-04-14.jpg" alt="CodeRush: como usar IA de forma pratica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="2026/04/14/coderush-ia-2026-04-14/" class="hover:underline">CodeRush: como usar IA de forma pratica</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre governanca de tecnologia para crescimento com foco em resultado operacional.</p>
+  </div>
+</article>
+<!-- BLOG-HOME-CARDS:END -->
+      </div>
+    </div>
+  </section>
+
   <!-- Contato -->
   <section id="contato" class="contact-section scroll-mt-28 border-t border-white/[0.06] px-6 py-20 md:py-28" aria-labelledby="contato-heading">
     <div class="contact-ambient" aria-hidden="true"></div>
@@ -767,6 +798,7 @@ $seoLdGraph = [
             <li><a href="#empresas" class="footer-nav-link rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#020b1a]">Empresas</a></li>
             <li><a href="#cases" class="footer-nav-link rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#020b1a]">Cases</a></li>
             <li><a href="#faq" class="footer-nav-link rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#020b1a]">FAQ</a></li>
+            <li><a href="blog/" class="footer-nav-link rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#020b1a]">Blog</a></li>
           </ul>
         </nav>
         <div class="footer-reveal footer-stagger-2 md:col-span-4">

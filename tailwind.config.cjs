@@ -4,8 +4,7 @@ module.exports = {
     "./sistemavendadireta/blog/**/*.php",
     "./sistemavendadireta/inteligencia-artificial/**/*.php",
     "./sistemavendadireta/wordpress/**/*.php",
-    "./sistemavendadireta/2023/**/*.php",
-    "./sistemavendadireta/2026/**/*.php"
+    "./sistemavendadireta/20*/**/*.php"
   ],
   theme: {
     extend: {

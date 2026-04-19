@@ -750,33 +750,35 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
       </div>
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-        <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
+<!-- BLOG-HOME-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/04/14/sistemavendadireta-ia-2026-04-14/" data-blog-image="imagens/posts/sistemavendadireta-ia-2026-04-14.jpg" data-blog-slug="sistemavendadireta-ia-2026-04-14" data-blog-date="2026-04-14">
   <a href="2026/04/14/sistemavendadireta-ia-2026-04-14/">
     <img src="imagens/posts/sistemavendadireta-ia-2026-04-14.jpg" alt="Sistema Venda Direta: como usar IA de forma pratica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
   </a>
   <div class="p-4">
-    <h2 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="2026/04/14/sistemavendadireta-ia-2026-04-14/" class="hover:underline">Sistema Venda Direta: como usar IA de forma pratica</a></h2>
-    <p class="mt-2 text-sm text-white/85">Guia objetivo sobre governanca comercial com dados e ia com foco em resultado operacional.</p>
+    <h2 class="text-base font-semibold leading-snug"><a href="2026/04/14/sistemavendadireta-ia-2026-04-14/" class="hover:underline">Sistema Venda Direta: como usar IA de forma pratica</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre tecnologia para vendas diretas em escala com foco em resultado operacional.</p>
   </div>
 </article>
-<article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
-          <a href="2026/03/18/agentes-de-ia-em-2026-mcp-stateful-e-governanca-para-operar-em-escala/">
-            <img src="imagens/posts/agentes-de-ia-em-2026-mcp-stateful-e-governanca-para-operar-em-escala.jpg" alt="Agentes de IA em 2026: MCP stateful e governanca para operar em escala" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-          </a>
-          <div class="p-4">
-            <h2 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="2026/03/18/agentes-de-ia-em-2026-mcp-stateful-e-governanca-para-operar-em-escala/" class="hover:underline">Agentes de IA em 2026: MCP stateful e governanca para operar em escala</a></h2>
-            <p class="mt-2 text-sm text-white/85">Guia pratico para estruturar agentes com contexto persistente, governanca e previsibilidade de custo.</p>
-          </div>
-        </article>
-<article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
-          <a href="2026/03/11/soc-agentico-e-seguranca-multicloud-com-governanca-unificada/">
-            <img src="imagens/posts/soc-agentico-e-seguranca-multicloud-com-governanca-unificada.jpg" alt="SOC agentico e seguranca multicloud: guia pratico de governanca em 2026" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-          </a>
-          <div class="p-4">
-            <h2 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="2026/03/11/soc-agentico-e-seguranca-multicloud-com-governanca-unificada/" class="hover:underline">SOC agentico e seguranca multicloud: guia pratico de governanca em 2026</a></h2>
-            <p class="mt-2 text-sm text-white/85">Guia pratico para unificar seguranca multicloud, acelerar resposta e reduzir risco operacional.</p>
-          </div>
-        </article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/03/18/agentes-de-ia-em-2026-mcp-stateful-e-governanca-para-operar-em-escala/" data-blog-image="imagens/posts/agentes-de-ia-em-2026-mcp-stateful-e-governanca-para-operar-em-escala.jpg" data-blog-slug="agentes-de-ia-em-2026-mcp-stateful-e-governanca-para-operar-em-escala" data-blog-date="2026-03-18">
+  <a href="2026/03/18/agentes-de-ia-em-2026-mcp-stateful-e-governanca-para-operar-em-escala/">
+    <img src="imagens/posts/agentes-de-ia-em-2026-mcp-stateful-e-governanca-para-operar-em-escala.jpg" alt="Agentes de IA em 2026: MCP stateful e governanca para operar em escala" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="2026/03/18/agentes-de-ia-em-2026-mcp-stateful-e-governanca-para-operar-em-escala/" class="hover:underline">Agentes de IA em 2026: MCP stateful e governanca para operar em escala</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia pratico para estruturar agentes com contexto persistente, governanca e previsibilidade de custo.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/03/11/soc-agentico-e-seguranca-multicloud-com-governanca-unificada/" data-blog-image="imagens/posts/soc-agentico-e-seguranca-multicloud-com-governanca-unificada.jpg" data-blog-slug="soc-agentico-e-seguranca-multicloud-com-governanca-unificada" data-blog-date="2026-03-11">
+  <a href="2026/03/11/soc-agentico-e-seguranca-multicloud-com-governanca-unificada/">
+    <img src="imagens/posts/soc-agentico-e-seguranca-multicloud-com-governanca-unificada.jpg" alt="SOC agentico e seguranca multicloud: guia pratico de governanca em 2026" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="2026/03/11/soc-agentico-e-seguranca-multicloud-com-governanca-unificada/" class="hover:underline">SOC agentico e seguranca multicloud: guia pratico de governanca em 2026</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia pratico para unificar seguranca multicloud, acelerar resposta e reduzir risco operacional.</p>
+  </div>
+</article>
+<!-- BLOG-HOME-CARDS:END -->
       </div>
     </section>
   </main>

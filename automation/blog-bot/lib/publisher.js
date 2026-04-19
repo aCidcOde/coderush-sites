@@ -1,0 +1,925 @@
+const fs = require("node:fs");
+const os = require("node:os");
+const path = require("node:path");
+const { generateCoverWithOpenRouter } = require("./ai-writer");
+const { composeCoverImage } = require("./cover-composer");
+
+const HOME_MARKERS = {
+  start: "<!-- BLOG-HOME-CARDS:START -->",
+  end: "<!-- BLOG-HOME-CARDS:END -->"
+};
+
+const INDEX_MARKERS = {
+  start: "<!-- BLOG-INDEX-CARDS:START -->",
+  end: "<!-- BLOG-INDEX-CARDS:END -->"
+};
+
+const SITE_COPY = {
+  coderush: {
+    blogName: "Blog CodeRush",
+    coverDirection:
+      "Visual high-tech com arquitetura digital, profundidade cinematografica, brilho azul eletrico e violeta, linguagem premium de hub de tecnologia.",
+    homeSectionTitle: "Blog CodeRush",
+    homeSectionDescription:
+      "Conteudo sobre software sob medida, IA, automacao e governanca para empresas que precisam escalar com criterio.",
+    indexTitle: "Blog CodeRush | Todos os posts",
+    indexDescription:
+      "Artigos da CodeRush sobre software sob medida, IA, automacao e operacao de tecnologia.",
+    articleLabel: "Blog CodeRush",
+    footerBlurb:
+      "A CodeRush conecta software sob medida, IA e automacao ao objetivo do negocio com execucao pragmatica.",
+    ctaTitle: "Quer transformar tecnologia em resultado real?",
+    ctaBody:
+      "A CodeRush estrutura arquitetura, entrega e automacao para tirar iniciativas criticas do papel sem improviso.",
+    ctaPath: "#contato",
+    ctaLabel: "Fale com a CodeRush",
+    phone: "11 99456-6726",
+    email: "contato@coderush.com.br",
+    accentLinkClass: "text-blue-400 hover:text-blue-300",
+    headingBarClass: "bg-blue-400",
+    bodyClass: "min-h-screen bg-[#020b1a] text-white antialiased",
+    headerClass: "border-b border-white/10 bg-[#020b1a]/95 backdrop-blur",
+    footerClass: "border-t border-white/10 bg-[#020b1a]/80",
+    navLinks: [
+      { href: "", label: "Site principal" },
+      { href: "#empresas", label: "Empresas" },
+      { href: "blog/", label: "Blog" },
+      { href: "#contato", label: "Contato" }
+    ]
+  },
+  codafacil: {
+    blogName: "Blog Codafacil.dev",
+    coverDirection:
+      "Visual de engenharia aplicada com interface abstrata, elementos de produto digital, brilho azul e violeta sobre fundo escuro com leitura limpa.",
+    homeSectionTitle: "Blog Codafacil.dev",
+    homeSectionDescription:
+      "Conteudo sobre software sob medida, entrega orientada por IA, integracoes e automacao para times de produto e operacao.",
+    indexTitle: "Blog Codafacil.dev | Todos os posts",
+    indexDescription:
+      "Artigos da Codafacil.dev sobre desenvolvimento com IA, integracoes e software sob medida.",
+    articleLabel: "Blog Codafacil.dev",
+    footerBlurb:
+      "A Codafacil.dev acelera software sob medida com IA sem abrir mao de engenharia, testes e clareza de escopo.",
+    ctaTitle: "Precisa tirar um produto ou integracao do papel?",
+    ctaBody:
+      "A Codafacil.dev combina engenharia e IA aplicada para acelerar a entrega sem perder governanca tecnica.",
+    ctaPath: "#contato",
+    ctaLabel: "Fale com a Codafacil.dev",
+    phone: "11 99456-6726",
+    email: "",
+    accentLinkClass: "text-sky-300 hover:text-white",
+    headingBarClass: "bg-sky-300",
+    bodyClass: "min-h-screen bg-[#04110d] text-white antialiased",
+    headerClass: "border-b border-white/10 bg-[#04110d]/95 backdrop-blur",
+    footerClass: "border-t border-white/10 bg-[#04110d]/80",
+    navLinks: [
+      { href: "", label: "Site principal" },
+      { href: "#servicos", label: "Servicos" },
+      { href: "blog/", label: "Blog" },
+      { href: "#contato", label: "Contato" }
+    ]
+  },
+  fluxointeligenteia: {
+    blogName: "Blog FluxoInteligente IA",
+    coverDirection:
+      "Visual de automacao e agentes com fluxos conectados, sinais de dados, energia emerald e cyan, clima moderno e operacional.",
+    homeSectionTitle: "Blog FluxoInteligente IA",
+    homeSectionDescription:
+      "Conteudo sobre agentes, n8n, automacao de processos e IA aplicada a operacoes que precisam reduzir custo com governanca.",
+    indexTitle: "Blog FluxoInteligente IA | Todos os posts",
+    indexDescription:
+      "Artigos da FluxoInteligente IA sobre agentes, automacao, n8n e operacao assistida por IA.",
+    articleLabel: "Blog FluxoInteligente IA",
+    footerBlurb:
+      "A FluxoInteligente IA desenha automacoes com agentes, integra sistemas e leva fluxos complexos para producao.",
+    ctaTitle: "Quer colocar um fluxo inteligente em producao?",
+    ctaBody:
+      "A FluxoInteligente IA conecta agentes, n8n e integracoes reais para reduzir retrabalho e tempo operacional.",
+    ctaPath: "#contato",
+    ctaLabel: "Fale com a FluxoInteligente IA",
+    phone: "11 99456-6726",
+    email: "contato@fluxointeligenteia.com.br",
+    accentLinkClass: "text-emerald-400 hover:text-emerald-300",
+    headingBarClass: "bg-emerald-400",
+    bodyClass: "min-h-screen bg-[#04110d] text-white antialiased",
+    headerClass: "border-b border-white/10 bg-[#04110d]/95 backdrop-blur",
+    footerClass: "border-t border-white/10 bg-[#04110d]/80",
+    navLinks: [
+      { href: "", label: "Site principal" },
+      { href: "#solucoes", label: "Solucoes" },
+      { href: "blog/", label: "Blog" },
+      { href: "#contato", label: "Contato" }
+    ]
+  },
+  sistemavendadireta: {
+    blogName: "Blog SVD",
+    coverDirection:
+      "Visual institucional de tecnologia para operacao comercial, tons azul corporativo, branco e composicao mais solida e confiavel.",
+    homeSectionTitle: "Blog SVD",
+    homeSectionDescription:
+      "Conteudo sobre vendas diretas, software, IA aplicada ao negocio e evolucao operacional com foco em resultado.",
+    indexTitle: "Blog SVD | Todos os posts",
+    indexDescription:
+      "Artigos do Sistema Venda Direta sobre vendas diretas, MMN, software e IA aplicada ao negocio.",
+    articleLabel: "Blog SVD",
+    footerBlurb:
+      "A Sistema Venda Direta desenvolve solucoes para operacao comercial, vendas diretas e evolucao tecnologica com IA aplicada.",
+    ctaTitle: "Quer transformar IA em resultado operacional?",
+    ctaBody:
+      "A SVD estrutura arquitetura, integracao e governanca para levar automacao ao negocio com previsibilidade.",
+    ctaPath: "#contato",
+    ctaLabel: "Solicite um orcamento",
+    phone: "11 99456-6726",
+    email: "contato@sistemavendadireta.com.br",
+    accentLinkClass: "text-white hover:text-white/80",
+    headingBarClass: "bg-white",
+    bodyClass: "min-h-screen bg-brand text-white antialiased",
+    headerClass: "border-b border-white/10 bg-brand/95 backdrop-blur",
+    footerClass: "border-t border-white/15 bg-brand-dark/40",
+    navLinks: [
+      { href: "", label: "Site principal" },
+      { href: "inteligencia-artificial/", label: "IA para MMN" },
+      { href: "wordpress/", label: "WordPress" },
+      { href: "blog/", label: "Blog" }
+    ]
+  }
+};
+
+function esc(value) {
+  return String(value || "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
+function decodeEntities(value) {
+  return String(value || "")
+    .replace(/&quot;/g, '"')
+    .replace(/&#039;/g, "'")
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">");
+}
+
+function stripTags(value) {
+  return decodeEntities(String(value || "").replace(/<[^>]+>/g, " "))
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function formatDateParts(isoDate) {
+  const [year, month, day] = isoDate.split("-");
+  return { year, month, day };
+}
+
+function brDate(isoDate) {
+  const [year, month, day] = isoDate.split("-");
+  return `${day}/${month}/${year}`;
+}
+
+function escapeRegex(value) {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function normalizeSiteRelativePath(value) {
+  const cleaned = String(value || "").replace(/\\/g, "/");
+  if (!cleaned || cleaned === ".") {
+    return "";
+  }
+  return cleaned.replace(/^\/+/, "");
+}
+
+function relativeLink(prefix, sitePath) {
+  const normalized = normalizeSiteRelativePath(sitePath);
+  if (!normalized) {
+    return prefix || "./";
+  }
+  if (/^(https?:)?\/\//.test(normalized)) {
+    return normalized;
+  }
+  if (normalized.startsWith("#")) {
+    return `${prefix}${normalized}`;
+  }
+  return `${prefix}${normalized}`;
+}
+
+function joinUrl(baseUrl, sitePath) {
+  const normalized = normalizeSiteRelativePath(sitePath);
+  if (!normalized) {
+    return `${baseUrl}/`;
+  }
+  return `${baseUrl}/${normalized}`;
+}
+
+function relativeAssetPrefix(context) {
+  if (context === "home") {
+    return "";
+  }
+  if (context === "blog-index") {
+    return "../";
+  }
+  return "../../../../";
+}
+
+function normalizePostPath(candidate) {
+  const match = String(candidate || "").replace(/\\/g, "/").match(/(\d{4}\/\d{2}\/\d{2}\/[^/"'>]+\/)/);
+  return match ? match[1] : "";
+}
+
+function normalizeImagePath(candidate) {
+  const match = String(candidate || "").replace(/\\/g, "/").match(/(imagens\/posts\/[^?"'\s>]+)/);
+  return match ? match[1] : "";
+}
+
+function slugFromPostPath(postPath) {
+  const cleaned = normalizePostPath(postPath).replace(/\/$/, "");
+  const parts = cleaned.split("/");
+  return parts[parts.length - 1] || "";
+}
+
+function dateFromPostPath(postPath) {
+  const match = normalizePostPath(postPath).match(/^(\d{4})\/(\d{2})\/(\d{2})\//);
+  return match ? `${match[1]}-${match[2]}-${match[3]}` : "";
+}
+
+function ensureDir(dirPath) {
+  fs.mkdirSync(dirPath, { recursive: true });
+}
+
+function extractMarkedSegment(content, markers) {
+  const regex = new RegExp(`${escapeRegex(markers.start)}([\\s\\S]*?)${escapeRegex(markers.end)}`);
+  const match = content.match(regex);
+  return match ? match[1] : "";
+}
+
+function replaceMarkedSegment(content, markers, replacement) {
+  const regex = new RegExp(`${escapeRegex(markers.start)}[\\s\\S]*?${escapeRegex(markers.end)}`);
+  if (!regex.test(content)) {
+    throw new Error(`Marcadores nao encontrados: ${markers.start}`);
+  }
+  return content.replace(regex, `${markers.start}\n${replacement}\n${markers.end}`);
+}
+
+function extractArticles(markup) {
+  return String(markup || "").match(/<article\b[\s\S]*?<\/article>/g) || [];
+}
+
+function parseCard(articleHtml) {
+  const titleMatch =
+    articleHtml.match(/<h[23][^>]*>\s*<a[^>]*>([\s\S]*?)<\/a>\s*<\/h[23]>/i) ||
+    articleHtml.match(/<a[^>]*class="[^"]*hover:underline[^"]*"[^>]*>([\s\S]*?)<\/a>/i);
+  const excerptMatch = articleHtml.match(/<p[^>]*>([\s\S]*?)<\/p>/i);
+  const href =
+    articleHtml.match(/data-blog-path="([^"]+)"/i)?.[1] ||
+    articleHtml.match(/<a[^>]+href="([^"]+)"/i)?.[1] ||
+    "";
+  const image =
+    articleHtml.match(/data-blog-image="([^"]+)"/i)?.[1] ||
+    articleHtml.match(/<img[^>]+src="([^"]+)"/i)?.[1] ||
+    "";
+  const postPath = normalizePostPath(href);
+  if (!postPath) {
+    return null;
+  }
+
+  const title = stripTags(titleMatch?.[1] || "");
+  const excerpt = stripTags(excerptMatch?.[1] || "");
+  return {
+    postPath,
+    imagePath: normalizeImagePath(image) || `imagens/posts/${slugFromPostPath(postPath)}.jpg`,
+    title,
+    excerpt,
+    slug: slugFromPostPath(postPath),
+    date: dateFromPostPath(postPath)
+  };
+}
+
+function parseCards(markup) {
+  return extractArticles(markup).map(parseCard).filter(Boolean);
+}
+
+function sortCards(cards) {
+  return [...cards].sort((left, right) => {
+    const leftKey = `${left.date}|${left.postPath}`;
+    const rightKey = `${right.date}|${right.postPath}`;
+    return rightKey.localeCompare(leftKey);
+  });
+}
+
+function mergeCards(cards, maxItems = Infinity) {
+  const bySlug = new Map();
+  for (const card of sortCards(cards)) {
+    if (!card.slug) {
+      continue;
+    }
+    if (!bySlug.has(card.slug)) {
+      bySlug.set(card.slug, card);
+    }
+  }
+
+  return sortCards([...bySlug.values()]).slice(0, maxItems);
+}
+
+function truncate(value, maxLength = 180) {
+  const text = String(value || "").trim();
+  if (text.length <= maxLength) {
+    return text;
+  }
+
+  return `${text.slice(0, maxLength - 3).trim()}...`;
+}
+
+function buildCardRecord(contract) {
+  const { year, month, day } = formatDateParts(contract.date);
+  return {
+    date: contract.date,
+    slug: contract.slug,
+    title: contract.content.headline,
+    excerpt: truncate(contract.content.summary, 180),
+    imagePath: `imagens/posts/${contract.slug}.jpg`,
+    postPath: `${year}/${month}/${day}/${contract.slug}/`
+  };
+}
+
+function renderCard(card, context) {
+  const prefix = relativeAssetPrefix(context);
+  const href = `${prefix}${card.postPath}`;
+  const imageSrc = `${prefix}${card.imagePath}`;
+  const headingTag = context === "post-related" ? "h3" : "h2";
+
+  return [
+    `<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="${esc(
+      card.postPath
+    )}" data-blog-image="${esc(card.imagePath)}" data-blog-slug="${esc(card.slug)}" data-blog-date="${esc(card.date)}">`,
+    `  <a href="${href}">`,
+    `    <img src="${imageSrc}" alt="${esc(card.title)}" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />`,
+    "  </a>",
+    '  <div class="p-4">',
+    `    <${headingTag} class="text-base font-semibold leading-snug"><a href="${href}" class="hover:underline">${esc(
+      card.title
+    )}</a></${headingTag}>`,
+    `    <p class="mt-2 text-sm leading-relaxed text-white/80">${esc(card.excerpt)}</p>`,
+    "  </div>",
+    "</article>"
+  ].join("\n");
+}
+
+function stylesheetLinks(root, site, prefix) {
+  const candidateFiles = [
+    "css/site-tailwind.css",
+    "css/hub-parity.css",
+    "css/styles.css",
+    "css/site-optimizations.css"
+  ];
+
+  return candidateFiles
+    .filter((relativePath) => fs.existsSync(path.resolve(root, site.siteRoot, relativePath)))
+    .map((relativePath) => `  <link rel="stylesheet" href="${prefix}${relativePath}" />`)
+    .join("\n");
+}
+
+function renderNavLinks(copy, prefix) {
+  return copy.navLinks
+    .map(
+      (item) =>
+        `          <a href="${relativeLink(prefix, item.href)}" class="text-sm text-white/85 hover:text-white">${esc(
+          item.label
+        )}</a>`
+    )
+    .join("\n");
+}
+
+function renderFooterLinks(copy, prefix) {
+  return copy.navLinks
+    .map(
+      (item) =>
+        `            <a href="${relativeLink(prefix, item.href)}" class="hover:underline">${esc(item.label)}</a>`
+    )
+    .join("\n");
+}
+
+function buildJsonLd(site, contract, canonicalUrl, imageUrl) {
+  return JSON.stringify(
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      headline: `${contract.content.headline} | ${site.name}`,
+      description: contract.description,
+      datePublished: `${contract.date}T09:00:00-03:00`,
+      dateModified: `${contract.date}T09:00:00-03:00`,
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id": canonicalUrl
+      },
+      image: [imageUrl],
+      author: {
+        "@type": "Organization",
+        name: site.name
+      },
+      publisher: {
+        "@type": "Organization",
+        name: site.name
+      }
+    },
+    null,
+    2
+  );
+}
+
+function renderSections(contract) {
+  return (contract.content.sections || [])
+    .map((section) =>
+      [
+        '      <section class="mt-8">',
+        `        <h2 class="text-xl font-semibold text-white sm:text-2xl">${esc(section.title)}</h2>`,
+        `        <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">${esc(section.body)}</p>`,
+        "      </section>"
+      ].join("\n")
+    )
+    .join("\n");
+}
+
+function renderSources(contract) {
+  if (!Array.isArray(contract.sources) || contract.sources.length === 0) {
+    return "";
+  }
+
+  return [
+    '      <section class="mt-8">',
+    '        <h2 class="text-xl font-semibold text-white sm:text-2xl">Fontes oficiais</h2>',
+    '        <ul class="mt-4 space-y-2 text-sm leading-6 text-white/85">',
+    ...contract.sources.map(
+      (source) =>
+        `          <li><a href="${esc(source)}" target="_blank" rel="noopener noreferrer" class="underline decoration-white/25 underline-offset-4 hover:decoration-white/55">${esc(
+          source
+        )}</a></li>`
+    ),
+    "        </ul>",
+    "      </section>"
+  ].join("\n");
+}
+
+function renderRelatedSection(relatedCards) {
+  if (!relatedCards.length) {
+    return "";
+  }
+
+  return [
+    '    <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">',
+    '      <div class="flex items-end justify-between gap-4">',
+    '        <h2 class="text-2xl font-semibold text-white">Leia tambem</h2>',
+    '        <a href="../../../../blog/" class="text-sm font-semibold text-white/85 hover:text-white">Ver todos</a>',
+    "      </div>",
+    '      <div class="mt-5 grid gap-4 md:grid-cols-3">',
+    relatedCards.map((card) => renderCard(card, "post-related")).join("\n"),
+    "      </div>",
+    "    </section>"
+  ].join("\n");
+}
+
+function buildPostTemplate(root, site, contract, relatedCards) {
+  const copy = SITE_COPY[site.id];
+  const relativeRoot = "../../../../";
+  const canonicalPath = buildCardRecord(contract).postPath;
+  const canonicalUrl = `${site.baseUrl}/${canonicalPath}`;
+  const imageUrl = `${site.baseUrl}/imagens/posts/${contract.slug}.jpg`;
+  const styles = stylesheetLinks(root, site, relativeRoot);
+
+  const emailMarkup = copy.email
+    ? `        <p class="mt-3 text-sm text-white/80">Email: <a href="mailto:${esc(copy.email)}" class="font-semibold hover:underline">${esc(
+        copy.email
+      )}</a></p>`
+    : "";
+
+  return `<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>${esc(contract.content.headline)} | ${esc(site.name)}</title>
+  <meta name="description" content="${esc(contract.description)}" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <link rel="canonical" href="${canonicalUrl}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="${esc(contract.content.headline)} | ${esc(site.name)}" />
+  <meta property="og:description" content="${esc(contract.description)}" />
+  <meta property="og:url" content="${canonicalUrl}" />
+  <meta property="og:image" content="${imageUrl}" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="${esc(contract.content.headline)} | ${esc(site.name)}" />
+  <meta name="twitter:description" content="${esc(contract.description)}" />
+  <meta name="twitter:image" content="${imageUrl}" />
+${styles}
+  <script type="application/ld+json">
+${buildJsonLd(site, contract, canonicalUrl, imageUrl)}
+  </script>
+</head>
+<body class="${copy.bodyClass}">
+  <header class="${copy.headerClass}">
+    <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4 sm:px-6">
+      <a href="${relativeRoot}" class="text-lg font-semibold tracking-tight text-white">${esc(site.name)}</a>
+      <nav class="hidden items-center gap-5 md:flex">
+${renderNavLinks(copy, relativeRoot)}
+      </nav>
+    </div>
+  </header>
+
+  <main class="mx-auto max-w-4xl px-4 py-8 sm:px-6 sm:py-10">
+    <a href="${relativeRoot}" class="inline-flex rounded-full border border-white/40 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-white/85 hover:bg-white/10">
+      Voltar para o site principal
+    </a>
+
+    <article class="mt-5 rounded-3xl border border-white/15 bg-white/5 p-5 sm:p-8">
+      <p class="text-xs font-semibold uppercase tracking-[0.22em] text-white/55">${esc(copy.articleLabel)} • ${brDate(
+        contract.date
+      )}</p>
+      <h1 class="mt-3 text-3xl font-semibold leading-tight text-white sm:text-4xl">${esc(
+        contract.content.headline
+      )}</h1>
+      <p class="mt-5 text-base leading-7 text-white/80 sm:text-lg">${esc(contract.content.summary)}</p>
+
+      <img src="${relativeRoot}imagens/posts/${contract.slug}.jpg" alt="${esc(contract.content.headline)}" class="mt-6 w-full rounded-2xl border border-white/15" width="1200" height="630" loading="lazy" />
+
+${renderSections(contract)}
+${renderSources(contract)}
+    </article>
+
+    <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
+      <h2 class="text-xl font-semibold text-white">${esc(copy.ctaTitle)}</h2>
+      <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">${esc(copy.ctaBody)}</p>
+      <a href="${relativeLink(relativeRoot, copy.ctaPath)}" class="mt-4 inline-flex rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/10">
+        ${esc(copy.ctaLabel)}
+      </a>
+    </section>
+
+    <section class="mt-6 flex items-center justify-center">
+      <a href="${relativeRoot}blog/" class="inline-flex rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/10">
+        Veja mais no blog
+      </a>
+    </section>
+
+${renderRelatedSection(relatedCards)}
+  </main>
+
+  <footer class="${copy.footerClass}">
+    <div class="mx-auto max-w-6xl px-4 py-10 sm:px-6">
+      <div class="grid gap-8 md:grid-cols-3">
+        <div>
+          <h2 class="text-xl font-semibold text-white">${esc(site.name)}</h2>
+          <p class="mt-3 max-w-sm text-sm leading-7 text-white/80">${esc(copy.footerBlurb)}</p>
+          <p class="mt-3 text-sm text-white/80">Telefone: <a href="tel:+5511994566726" class="font-semibold hover:underline">${esc(
+            copy.phone
+          )}</a></p>
+${emailMarkup}
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold text-white">Navegacao</h3>
+          <nav class="mt-4 grid gap-2 text-sm text-white/85" aria-label="Mapa do site">
+${renderFooterLinks(copy, relativeRoot)}
+          </nav>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold text-white">Proximo passo</h3>
+          <p class="mt-3 text-sm leading-7 text-white/80">Resposta humana, sem fila generica. Fale com o time comercial do site.</p>
+          <a href="${relativeLink(relativeRoot, copy.ctaPath)}" class="mt-4 inline-flex rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/10">
+            ${esc(copy.ctaLabel)}
+          </a>
+        </div>
+      </div>
+      <div class="mt-8 border-t border-white/10 pt-4 text-xs text-white/45">© ${esc(site.name)} - Todos os direitos reservados.</div>
+    </div>
+  </footer>
+</body>
+</html>
+`;
+}
+
+function buildBlogIndexTemplate(root, site) {
+  const copy = SITE_COPY[site.id];
+  const styles = stylesheetLinks(root, site, "../");
+  return `<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>${esc(copy.indexTitle)}</title>
+  <meta name="description" content="${esc(copy.indexDescription)}" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <link rel="canonical" href="${site.baseUrl}/blog/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="${esc(copy.indexTitle)}" />
+  <meta property="og:description" content="${esc(copy.indexDescription)}" />
+  <meta property="og:url" content="${site.baseUrl}/blog/" />
+${styles}
+</head>
+<body class="${copy.bodyClass}">
+  <header class="${copy.headerClass}">
+    <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4 sm:px-6">
+      <a href="../" class="text-lg font-semibold tracking-tight text-white">${esc(site.name)}</a>
+      <nav class="hidden items-center gap-5 md:flex">
+${renderNavLinks(copy, "../")}
+      </nav>
+    </div>
+  </header>
+
+  <main class="mx-auto max-w-6xl px-4 py-8 sm:px-6 sm:py-10">
+    <a href="../" class="inline-flex rounded-full border border-white/40 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-white/85 hover:bg-white/10">
+      Voltar para o site principal
+    </a>
+
+    <section class="py-6">
+      <h1 class="text-3xl font-semibold text-white sm:text-4xl">${esc(copy.blogName)}</h1>
+      <div class="mt-2 h-1 w-[72px] rounded-full ${copy.headingBarClass}"></div>
+      <p class="mt-4 max-w-3xl text-sm leading-7 text-white/85">${esc(copy.homeSectionDescription)}</p>
+
+      <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+${INDEX_MARKERS.start}
+${INDEX_MARKERS.end}
+      </div>
+    </section>
+  </main>
+
+  <footer class="${copy.footerClass}">
+    <div class="mx-auto max-w-6xl px-4 py-8 sm:px-6">
+      <div class="flex flex-col gap-3 text-sm text-white/75 md:flex-row md:items-center md:justify-between">
+        <p>${esc(copy.footerBlurb)}</p>
+        <a href="../" class="font-semibold text-white hover:text-white/80">Voltar ao site</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+`;
+}
+
+function ensureBlogIndexFile(root, site) {
+  const filePath = path.resolve(root, site.siteRoot, site.blogIndexPath);
+  if (fs.existsSync(filePath)) {
+    return filePath;
+  }
+
+  ensureDir(path.dirname(filePath));
+  fs.writeFileSync(filePath, buildBlogIndexTemplate(root, site), "utf8");
+  return filePath;
+}
+
+function readCardsFromFile(filePath, markers) {
+  if (!fs.existsSync(filePath)) {
+    return [];
+  }
+
+  const content = fs.readFileSync(filePath, "utf8");
+  const markup = extractMarkedSegment(content, markers);
+  return parseCards(markup);
+}
+
+function updateCardsInFile(filePath, markers, cards, context, maxItems) {
+  const content = fs.readFileSync(filePath, "utf8");
+  const existingCards = readCardsFromFile(filePath, markers);
+  const nextCards = mergeCards([...cards, ...existingCards], maxItems);
+  const replacement = nextCards.map((card) => renderCard(card, context)).join("\n");
+  const updatedContent = replaceMarkedSegment(content, markers, replacement);
+  const updated = updatedContent !== content;
+
+  if (updated) {
+    fs.writeFileSync(filePath, updatedContent, "utf8");
+  }
+
+  return { updated, cards: nextCards };
+}
+
+function coverPrompt(site, contract) {
+  const copy = SITE_COPY[site.id];
+  return [
+    "Crie uma imagem principal para compor uma capa editorial de blog corporativo.",
+    `Marca: ${site.name}.`,
+    `Titulo do artigo: ${contract.content.headline}.`,
+    `Tema central: ${contract.theme}.`,
+    `Direcao visual da marca: ${copy?.coverDirection || "tecnologia corporativa premium"}.`,
+    "Estilo: moderno, tecnologico, limpo, profissional, com um unico elemento visual forte e area de respiro.",
+    "Regras: sem texto legivel, sem watermark, sem mockup de tela cheio de detalhes, sem pessoas em destaque, composicao 16:9."
+  ].join(" ");
+}
+
+function buildCoverWarning(...messages) {
+  return messages
+    .map((message) => String(message || "").trim())
+    .filter(Boolean)
+    .join(" | ");
+}
+
+function tempCoverSourcePath(slug) {
+  const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), `blogbot-cover-${slug}-`));
+  return {
+    tempDir,
+    filePath: path.resolve(tempDir, `${slug}.jpg`)
+  };
+}
+
+function composeStandardCover(root, site, contract, sourcePath, targetPath) {
+  const copy = SITE_COPY[site.id];
+  composeCoverImage({
+    root,
+    site,
+    blogName: copy?.blogName || site.name,
+    sourcePath,
+    targetPath,
+    title: contract.content.headline
+  });
+}
+
+async function ensureCoverImage(root, site, contract, aiConfig) {
+  const postsDir = path.resolve(root, site.siteRoot, site.assets.postsDir);
+  ensureDir(postsDir);
+
+  const targetPath = path.resolve(postsDir, `${contract.slug}.jpg`);
+  if (fs.existsSync(targetPath)) {
+    return { path: targetPath, source: "existing", warning: null };
+  }
+
+  let warning = null;
+  if (aiConfig?.provider === "openrouter" && aiConfig.imageModel) {
+    const tempSource = tempCoverSourcePath(contract.slug);
+    try {
+      await generateCoverWithOpenRouter({
+        apiKey: aiConfig.apiKey,
+        model: aiConfig.imageModel,
+        prompt: coverPrompt(site, contract),
+        targetPath: tempSource.filePath,
+        appUrl: aiConfig.appUrl,
+        appName: aiConfig.appName
+      });
+      composeStandardCover(root, site, contract, tempSource.filePath, targetPath);
+      return { path: targetPath, source: "openrouter-composed", warning: null };
+    } catch (error) {
+      warning = buildCoverWarning(
+        warning,
+        `Falha ao gerar capa com OpenRouter: ${String(error.message || error)}`
+      );
+    } finally {
+      fs.rmSync(tempSource.tempDir, { recursive: true, force: true });
+    }
+  }
+
+  const fallbackPath = path.resolve(root, site.siteRoot, site.assets.fallbackCover);
+  if (!fs.existsSync(fallbackPath)) {
+    throw new Error(`Capa fallback nao encontrada para ${site.id}: ${site.assets.fallbackCover}`);
+  }
+
+  try {
+    composeStandardCover(root, site, contract, fallbackPath, targetPath);
+    return { path: targetPath, source: "fallback-composed", warning };
+  } catch (error) {
+    warning = buildCoverWarning(
+      warning,
+      `Falha ao compor capa padrao: ${String(error.message || error)}`
+    );
+    fs.copyFileSync(fallbackPath, targetPath);
+    return { path: targetPath, source: "fallback-raw", warning };
+  }
+}
+
+function writePostFile(root, site, contract, relatedCards) {
+  const { year, month, day } = formatDateParts(contract.date);
+  const siteRelativeDir = path.join(year, month, day, contract.slug);
+  const dirPath = path.resolve(root, site.siteRoot, siteRelativeDir);
+  ensureDir(dirPath);
+
+  const fileName = `index.${site.renderExtension}`;
+  const filePath = path.resolve(dirPath, fileName);
+  fs.writeFileSync(filePath, buildPostTemplate(root, site, contract, relatedCards), "utf8");
+
+  return {
+    filePath,
+    relativePath: path.relative(root, filePath).replace(/\\/g, "/"),
+    siteRelativePath: path.join(siteRelativeDir, fileName).replace(/\\/g, "/")
+  };
+}
+
+function buildSitemapXml(site, cards) {
+  const latestDate = cards[0]?.date || new Date().toISOString().slice(0, 10);
+  const entries = [
+    {
+      url: `${site.baseUrl}/`,
+      lastmod: latestDate,
+      changefreq: "weekly",
+      priority: "1.0"
+    },
+    {
+      url: `${site.baseUrl}/blog/`,
+      lastmod: latestDate,
+      changefreq: "weekly",
+      priority: "0.9"
+    },
+    ...(site.seo?.extraPaths || []).map((entry) => ({
+      url: `${site.baseUrl}${entry.path}`,
+      lastmod: entry.lastmod,
+      changefreq: entry.changefreq,
+      priority: entry.priority
+    })),
+    ...cards.map((card) => ({
+      url: `${site.baseUrl}/${card.postPath}`,
+      lastmod: card.date,
+      changefreq: "monthly",
+      priority: "0.8"
+    }))
+  ];
+
+  return [
+    '<?xml version="1.0" encoding="UTF-8"?>',
+    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+    ...entries.map((entry) =>
+      [
+        "  <url>",
+        `    <loc>${entry.url}</loc>`,
+        `    <lastmod>${entry.lastmod}</lastmod>`,
+        `    <changefreq>${entry.changefreq}</changefreq>`,
+        `    <priority>${entry.priority}</priority>`,
+        "  </url>"
+      ].join("\n")
+    ),
+    "</urlset>",
+    ""
+  ].join("\n");
+}
+
+function updateSitemap(root, site, cards) {
+  const filePath = path.resolve(root, site.siteRoot, site.seo.sitemapPath);
+  const nextContent = buildSitemapXml(site, mergeCards(cards));
+  const currentContent = fs.existsSync(filePath) ? fs.readFileSync(filePath, "utf8") : "";
+  const updated = currentContent !== nextContent;
+
+  if (updated) {
+    fs.writeFileSync(filePath, nextContent, "utf8");
+  }
+
+  return { updated, filePath };
+}
+
+function updateRobots(root, site) {
+  const filePath = path.resolve(root, site.siteRoot, site.seo.robotsPath);
+  const nextContent = [
+    "User-agent: *",
+    "Allow: /",
+    "",
+    `Sitemap: ${site.baseUrl}/sitemap.xml`,
+    ""
+  ].join("\n");
+  const currentContent = fs.existsSync(filePath) ? fs.readFileSync(filePath, "utf8") : "";
+  const updated = currentContent !== nextContent;
+
+  if (updated) {
+    fs.writeFileSync(filePath, nextContent, "utf8");
+  }
+
+  return { updated, filePath };
+}
+
+function buildPhpLintTargets(root, site, postSiteRelativePath) {
+  if (!site.requiresPhpLint) {
+    return [];
+  }
+
+  const targets = [...(site.lintTargets || [])];
+  if (site.renderExtension === "php") {
+    targets.push(postSiteRelativePath);
+  }
+
+  return [...new Set(targets)].map((relativePath) =>
+    path.relative(root, path.resolve(root, site.siteRoot, relativePath)).replace(/\\/g, "/")
+  );
+}
+
+async function publishSitePost(root, site, contract, aiConfig) {
+  const blogIndexFile = ensureBlogIndexFile(root, site);
+  const existingBlogCards = readCardsFromFile(blogIndexFile, INDEX_MARKERS);
+  const newCard = buildCardRecord(contract);
+  const relatedCards = mergeCards(existingBlogCards.filter((card) => card.slug !== contract.slug), 3);
+
+  const cover = await ensureCoverImage(root, site, contract, aiConfig);
+  const post = writePostFile(root, site, contract, relatedCards);
+
+  const homeFile = path.resolve(root, site.siteRoot, site.homePath);
+  const home = updateCardsInFile(homeFile, HOME_MARKERS, [newCard], "home", 3);
+  const blog = updateCardsInFile(blogIndexFile, INDEX_MARKERS, [newCard], "blog-index", Infinity);
+  const sitemap = updateSitemap(root, site, blog.cards);
+  const robots = updateRobots(root, site);
+
+  return {
+    postPath: post.relativePath,
+    homeUpdated: home.updated,
+    blogUpdated: blog.updated,
+    sitemapUpdated: sitemap.updated,
+    robotsUpdated: robots.updated,
+    coverSource: cover.source,
+    warning: cover.warning,
+    phpLintTargets: buildPhpLintTargets(root, site, post.siteRelativePath)
+  };
+}
+
+module.exports = {
+  HOME_MARKERS,
+  INDEX_MARKERS,
+  publishSitePost
+};

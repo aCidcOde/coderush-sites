@@ -9,8 +9,52 @@
       "language": "pt-BR",
       "enabled": true,
       "baseUrl": "https://coderush.com.br",
+      "siteRoot": ".",
+      "renderExtension": "php",
+      "homePath": "index.php",
+      "blogIndexPath": "blog/index.php",
       "outputRoot": "automation/blog-bot/out/coderush",
-      "requiresPhpLint": false
+      "requiresPhpLint": true,
+      "lintTargets": [
+        "index.php",
+        "blog/index.php"
+      ],
+      "assets": {
+        "postsDir": "imagens/posts",
+        "fallbackCover": "imagens/posts/coderush-cover-base.jpg"
+      },
+      "seo": {
+        "robotsPath": "robots.txt",
+        "sitemapPath": "sitemap.xml",
+        "extraPaths": []
+      }
+    },
+    {
+      "id": "codafacil",
+      "name": "Codafacil.dev",
+      "postType": "software-sob-medida-ia",
+      "language": "pt-BR",
+      "enabled": true,
+      "baseUrl": "https://codafacil.dev",
+      "siteRoot": "codafacil",
+      "renderExtension": "php",
+      "homePath": "index.php",
+      "blogIndexPath": "blog/index.php",
+      "outputRoot": "automation/blog-bot/out/codafacil",
+      "requiresPhpLint": true,
+      "lintTargets": [
+        "index.php",
+        "blog/index.php"
+      ],
+      "assets": {
+        "postsDir": "imagens/posts",
+        "fallbackCover": "imagens/posts/codafacil-cover-base.jpg"
+      },
+      "seo": {
+        "robotsPath": "robots.txt",
+        "sitemapPath": "sitemap.xml",
+        "extraPaths": []
+      }
     },
     {
       "id": "fluxointeligenteia",
@@ -19,8 +63,22 @@
       "language": "pt-BR",
       "enabled": true,
       "baseUrl": "https://fluxointeligenteia.com.br",
+      "siteRoot": "fluxointeligenteia",
+      "renderExtension": "html",
+      "homePath": "index.html",
+      "blogIndexPath": "blog/index.html",
       "outputRoot": "automation/blog-bot/out/fluxointeligenteia",
-      "requiresPhpLint": false
+      "requiresPhpLint": false,
+      "lintTargets": [],
+      "assets": {
+        "postsDir": "imagens/posts",
+        "fallbackCover": "imagens/posts/fluxointeligenteia-cover-base.jpg"
+      },
+      "seo": {
+        "robotsPath": "robots.txt",
+        "sitemapPath": "sitemap.xml",
+        "extraPaths": []
+      }
     },
     {
       "id": "sistemavendadireta",
@@ -29,8 +87,44 @@
       "language": "pt-BR",
       "enabled": true,
       "baseUrl": "https://sistemavendadireta.com.br",
+      "siteRoot": "sistemavendadireta",
+      "renderExtension": "php",
+      "homePath": "index.php",
+      "blogIndexPath": "blog/index.php",
       "outputRoot": "automation/blog-bot/out/sistemavendadireta",
-      "requiresPhpLint": true
+      "requiresPhpLint": true,
+      "lintTargets": [
+        "index.php",
+        "blog/index.php"
+      ],
+      "assets": {
+        "postsDir": "imagens/posts",
+        "fallbackCover": "imagens/posts/agentes-de-ia-em-2026-mcp-stateful-e-governanca-para-operar-em-escala.jpg"
+      },
+      "seo": {
+        "robotsPath": "robots.txt",
+        "sitemapPath": "sitemap.xml",
+        "extraPaths": [
+          {
+            "path": "/codafacil/",
+            "lastmod": "2026-02-10",
+            "changefreq": "weekly",
+            "priority": "0.9"
+          },
+          {
+            "path": "/inteligencia-artificial/",
+            "lastmod": "2026-02-10",
+            "changefreq": "weekly",
+            "priority": "0.9"
+          },
+          {
+            "path": "/wordpress/",
+            "lastmod": "2026-02-10",
+            "changefreq": "weekly",
+            "priority": "0.9"
+          }
+        ]
+      }
     }
   ]
 }

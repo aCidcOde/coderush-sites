@@ -2,8 +2,8 @@ name: Blog Automation Weekly
 
 on:
   schedule:
-    # Quarta-feira 09:00 America/Sao_Paulo (UTC-3 -> 12:00 UTC)
-    - cron: "0 12 * * 3"
+    # Segunda-feira 07:00 America/Sao_Paulo (UTC-3 -> 10:00 UTC)
+    - cron: "0 10 * * 1"
   workflow_dispatch:
 
 permissions:
@@ -28,6 +28,9 @@ jobs:
 
       - name: Run weekly blog bot
         env:
+          API_OPENROUTER: ${{ secrets.API_OPENROUTER }}
+          BLOG_BOT_OPENROUTER_MODEL: openai/gpt-4o-mini
+          BLOG_BOT_OPENROUTER_IMAGE_MODEL: google/gemini-2.5-flash-image
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           BLOG_BOT_OPENAI_MODEL: gpt-4o-mini
         run: npm run blogbot:publish
@@ -36,14 +39,14 @@ jobs:
         id: create_pr
         uses: peter-evans/create-pull-request@v6
         with:
-          commit-message: "chore(blog): gerar rascunhos semanais automaticos"
+          commit-message: "chore(blog): publicar conteudo semanal multi-site"
           branch: "automation/blog-weekly-${{ github.run_id }}"
-          title: "Automacao semanal de posts: rascunhos multi-site"
+          title: "Automacao semanal de posts: publicacao multi-site"
           body: |
             ## Resumo
-            - Executa o robô semanal para `coderush`, `fluxointeligenteia` e `sistemavendadireta`
-            - Gera artefatos de rascunho por site em `automation/blog-bot/out/`
-            - Registra relatório de execução em `automation/blog-bot/reports/`
+            - Executa o robô semanal para `coderush`, `codafacil`, `fluxointeligenteia` e `sistemavendadireta`
+            - Publica posts, atualiza destaques nas homes e mantém `/blog/`, sitemap e robots por site
+            - Registra artefatos e relatório em `automation/blog-bot/`
 
             ## Aprovação manual
             Este PR foi aberto automaticamente e deve ser revisado antes do merge.
@@ -63,7 +66,7 @@ jobs:
           REPO: ${{ github.repository }}
           PR_NUMBER: ${{ steps.create_pr.outputs.pull-request-number }}
           PR_URL: ${{ steps.create_pr.outputs.pull-request-url }}
-          PR_TITLE: Automacao semanal de posts: rascunhos multi-site
+          PR_TITLE: Automacao semanal de posts: publicacao multi-site
           BRANCH_NAME: ${{ steps.create_pr.outputs.pull-request-branch }}
           COMMIT_SHA: ${{ github.sha }}
           RUN_ID: ${{ github.run_id }}

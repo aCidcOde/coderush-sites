@@ -2,216 +2,157 @@
 
 ## Objetivo
 
-Este documento descreve tudo que foi implementado no robô de automação de posts, com foco inicial no site `sistemavendadireta`, mantendo arquitetura preparada para expansão aos demais sites.
+O robô publica posts semanais gerados por IA para quatro sites do repositório:
 
----
+- `coderush` na raiz
+- `codafacil/`
+- `fluxointeligenteia/`
+- `sistemavendadireta/`
 
-## Escopo Implementado
+O fluxo é multi-site de verdade: gera o draft, publica o post em `YYYY/MM/DD/slug/`, atualiza os cards da home, mantém o índice `/blog/`, atualiza `sitemap.xml` e garante `robots.txt`.
 
-- Motor de automação com execução por modo:
-  - `dry-run` (simulação)
-  - `publish` (publicação)
-- Configuração multi-site com 3 alvos:
-  - `coderush`
-  - `fluxointeligenteia`
-  - `sistemavendadireta`
-- Geração de conteúdo por IA (quando houver chave) com fallback local.
-- Workflow semanal no GitHub Actions com abertura de PR automática.
-- Publicação real já ativa para `sistemavendadireta`.
+## Arquitetura atual
 
----
+### Configuração
 
-## Arquivos Criados/Atualizados
-
-### Scripts e configuração
-
-- `package.json`
-  - `blogbot:dry-run`
-  - `blogbot:publish`
 - `automation/blog-bot/config/sites.json`
-  - sites habilitados
-  - rotação de foco semanal
-  - parâmetros por site
-
-### Motor principal
-
+  - fonte de verdade dos sites
+  - diretório raiz, home, blog, extensão de render, base URL, branding, lint e SEO
 - `automation/blog-bot/run.js`
-  - carrega config
-  - define foco semanal
-  - gera contrato de post por site
-  - chama IA ou fallback
-  - gera artefatos e relatório
-  - em modo `publish`, publica SVD
-
-### Estratégia editorial
-
+  - aceita `--mode=`, `--sites=` e `--date=`
+  - carrega `.env` da raiz e `.env` dos sites conhecidos
+  - reaproveita draft existente quando a mesma data/slug já existe
 - `automation/blog-bot/lib/site-strategy.js`
-  - temas sugeridos por site
-  - estilo de prompt por site (`postType`, tom e restrições)
-
-### Geração de conteúdo com IA
-
+  - tema por site com escolha determinística por `site + data`
 - `automation/blog-bot/lib/ai-writer.js`
-  - integração com API OpenAI (`chat/completions`)
-  - retorno estruturado em JSON
-  - fallback local para manter o fluxo robusto
+  - usa `API_OPENROUTER` como provedor principal
+  - usa `OPENAI_API_KEY` como fallback opcional
+  - mantém fallback local quando nenhuma IA estiver disponível
+- `automation/blog-bot/lib/publisher.js`
+  - publisher compartilhado para todos os sites
+  - atualiza post, home, índice, sitemap, robots e capa
 
-### Publicação SVD
+### Publicação por site
 
-- `automation/blog-bot/lib/svd-publisher.js`
-  - cria novo post em `YYYY/MM/DD/slug/index.php`
-  - atualiza cards da home (`sistemavendadireta/index.php`)
-  - atualiza listagem do blog (`sistemavendadireta/blog/index.php`)
-  - atualiza `sitemap.xml` com nova URL e `lastmod`
-  - garante imagem de capa `.jpg` para o slug
+- `coderush`
+  - home: [`index.php`](/Users/acidcode/data/coderush-sites/index.php)
+  - índice: [`blog/index.php`](/Users/acidcode/data/coderush-sites/blog/index.php)
+- `codafacil`
+  - home: [`codafacil/index.php`](/Users/acidcode/data/coderush-sites/codafacil/index.php)
+  - índice: [`codafacil/blog/index.php`](/Users/acidcode/data/coderush-sites/codafacil/blog/index.php)
+- `fluxointeligenteia`
+  - home: [`fluxointeligenteia/index.html`](/Users/acidcode/data/coderush-sites/fluxointeligenteia/index.html)
+  - índice: [`fluxointeligenteia/blog/index.html`](/Users/acidcode/data/coderush-sites/fluxointeligenteia/blog/index.html)
+- `sistemavendadireta`
+  - home: [`sistemavendadireta/index.php`](/Users/acidcode/data/coderush-sites/sistemavendadireta/index.php)
+  - índice: [`sistemavendadireta/blog/index.php`](/Users/acidcode/data/coderush-sites/sistemavendadireta/blog/index.php)
 
-### Automação CI/CD
+## Agendamento
 
-- `.github/workflows/blog-automation.yml`
-  - execução semanal (quarta 09:00 BRT)
-  - execução manual via `workflow_dispatch`
-  - uso de `OPENAI_API_KEY`
-  - criação de PR automática para revisão/aprovação manual
+O workflow versionado está em [`.github/workflows/blog-automation.yml`](/Users/acidcode/data/coderush-sites/.github/workflows/blog-automation.yml).
 
----
+- frequência: semanal
+- dia e hora: segunda-feira às 07:00 em `America/Sao_Paulo`
+- cron do GitHub Actions: `0 10 * * 1`
+- execução manual: `workflow_dispatch`
 
-## Fluxo Atual do Robô
+Esse job roda `npm run blogbot:publish`, abre PR automática e envia o e-mail de aprovação.
 
-## 1) Execução
+## Variáveis de ambiente
 
-- `npm run blogbot:dry-run` -> apenas simula e gera artefatos.
-- `npm run blogbot:publish` -> simula + publica no SVD.
+### Prioridade de IA
 
-## 2) Planejamento de conteúdo
+1. `API_OPENROUTER`
+2. `OPENROUTER_API_KEY`
+3. `OPENAI_API_KEY`
+4. fallback local sem IA
 
-- escolhe foco semanal da rotação (`ia`, `php`, `tecnologia`)
-- escolhe tema por site
-- cria contrato de post (`slug`, `title`, `description`, `sources`, etc.)
+### Variáveis suportadas
 
-## 3) Escrita de conteúdo
+- `API_OPENROUTER`
+- `BLOG_BOT_OPENROUTER_MODEL`
+- `BLOG_BOT_OPENROUTER_IMAGE_MODEL`
+- `OPENAI_API_KEY`
+- `BLOG_BOT_OPENAI_MODEL`
 
-- com `OPENAI_API_KEY`: gera conteúdo com IA em JSON estruturado.
-- sem chave (ou erro): usa fallback local para não interromper execução.
+Exemplo base: [`.env.example`](/Users/acidcode/data/coderush-sites/.env.example)
 
-## 4) Artefatos gerados
+Observação importante:
 
-- JSON e Markdown por site em:
-  - `automation/blog-bot/out/<site>/<data>/`
-- relatório da execução em:
-  - `automation/blog-bot/reports/run-<data>-<mode>.json`
+- o robô agora também lê `sistemavendadireta/.env`, `codafacil/.env` e `fluxointeligenteia/.env` quando esses arquivos existirem
+- isso permite reaproveitar uma chave já cadastrada no projeto, sem exigir um `.env` novo na raiz
 
-## 5) Publicação (SVD)
+## Comandos
 
-No modo `publish`, para `sistemavendadireta`:
-
-- cria post novo
-- insere novo card no topo da listagem do blog
-- insere novo card na home e mantém apenas os 3 mais recentes
-- atualiza sitemap
-
----
-
-## Exemplo de Resultado já Gerado
-
-Na execução de teste em `2026-04-14`:
-
-- relatório:
-  - `automation/blog-bot/reports/run-2026-04-14-publish.json`
-- novo post:
-  - `sistemavendadireta/2026/04/14/sistemavendadireta-ia-2026-04-14/index.php`
-- nova imagem:
-  - `sistemavendadireta/imagens/posts/sistemavendadireta-ia-2026-04-14.jpg`
-- arquivos atualizados:
-  - `sistemavendadireta/index.php`
-  - `sistemavendadireta/blog/index.php`
-  - `sistemavendadireta/sitemap.xml`
-
----
-
-## Como Testar
-
-## Teste local (simulação)
+### Simular todos os sites
 
 ```bash
 npm run blogbot:dry-run
 ```
 
-Validar:
-
-- `automation/blog-bot/reports/`
-- `automation/blog-bot/out/`
-
-## Teste local (publicação)
+### Publicar todos os sites
 
 ```bash
 npm run blogbot:publish
 ```
 
-Validar:
+### Publicar subconjunto de sites
 
-- novo post em `sistemavendadireta/YYYY/MM/DD/slug/`
-- cards atualizados em home/blog
-- `sitemap.xml` atualizado
+```bash
+npm run blogbot:publish -- --sites=coderush,codafacil,fluxointeligenteia
+```
 
-## Teste CI (GitHub Actions)
+### Reproduzir uma data específica
 
-1. Abrir Actions.
-2. Executar workflow `Blog Automation Weekly` manualmente.
-3. Confirmar abertura de PR automática.
-4. Revisar e aprovar manualmente.
+```bash
+npm run blogbot:publish -- --date=2026-04-14
+```
 
----
+## Saídas geradas
 
-## Variáveis e Segredos
+- drafts por site:
+  - `automation/blog-bot/out/<site>/<data>/`
+- relatórios:
+  - `automation/blog-bot/reports/run-<data>-<mode>.json`
 
-- `OPENAI_API_KEY` (GitHub Secret): habilita geração por IA.
-- `BLOG_BOT_OPENAI_MODEL` (opcional): modelo usado pelo robô.
+No modo `publish`, cada site registra:
 
-Sem `OPENAI_API_KEY`, o robô continua rodando via fallback local.
+- `postPath`
+- `homeUpdated`
+- `blogUpdated`
+- `sitemapUpdated`
+- `robotsUpdated`
 
----
+## Validação aplicada
 
-## Validações já aplicadas
+Validações já executadas nesta implementação:
 
-- Sintaxe PHP (`php -l`) em arquivos críticos do SVD.
-- Relatório consolidado por execução.
-- Publicação apenas com fluxo completo sem falha fatal.
-- Solicitação de aprovação por e-mail com links assinados para aprovar/reprovar PR automática.
+- `npm run blogbot:publish -- --sites=coderush,codafacil,fluxointeligenteia --date=2026-04-14`
+- `npm run blogbot:publish -- --date=2026-04-14`
+- `npm run blogbot:publish -- --date=2026-04-14` novamente para checar idempotência
+- `npm run blogbot:dry-run`
+- `npm run build:css`
+- `php -l` automático em todos os arquivos PHP alterados pelo publisher
 
----
+Validação HTTP local confirmada dentro do container:
+
+- `http://127.0.0.1/blog/`
+- `http://127.0.0.1/codafacil/blog/`
+- `http://127.0.0.1/fluxointeligenteia/blog/`
+
+Os três endpoints responderam `HTTP 200` no `nginx` do compose.
+
+## Seed inicial publicado
+
+O seed inicial definido para a primeira entrega foi `2026-04-14`. Os seguintes posts já existem:
+
+- [`2026/04/14/coderush-ia-2026-04-14/index.php`](/Users/acidcode/data/coderush-sites/2026/04/14/coderush-ia-2026-04-14/index.php)
+- [`codafacil/2026/04/14/codafacil-ia-2026-04-14/index.php`](/Users/acidcode/data/coderush-sites/codafacil/2026/04/14/codafacil-ia-2026-04-14/index.php)
+- [`fluxointeligenteia/2026/04/14/fluxointeligenteia-ia-2026-04-14/index.html`](/Users/acidcode/data/coderush-sites/fluxointeligenteia/2026/04/14/fluxointeligenteia-ia-2026-04-14/index.html)
+- [`sistemavendadireta/2026/04/14/sistemavendadireta-ia-2026-04-14/index.php`](/Users/acidcode/data/coderush-sites/sistemavendadireta/2026/04/14/sistemavendadireta-ia-2026-04-14/index.php)
 
 ## Limitações atuais
 
-- Publicação real pronta apenas para `sistemavendadireta`.
-- `coderush` e `fluxointeligenteia` ainda estão no modo de artefato/rascunho.
-- Geração de capa ainda usa fallback de arquivo base quando necessário.
-- Aprovação por e-mail depende de endpoint público (`pr-approval.php`) e segredos corretamente configurados.
-
----
-
-## Aprovação da PR por e-mail
-
-Após a etapa de criação da PR automática, o workflow envia e-mail para os aprovadores configurados.
-
-- Botão **Aprovar PR** -> registra review `APPROVE` no GitHub.
-- Botão **Reprovar PR** -> registra review `REQUEST_CHANGES` no GitHub.
-
-Detalhes técnicos e contrato do payload:
-
-- `docs/aprovacao-pr-email.md`
-
----
-
-## Próximos Passos Recomendados
-
-1. Evoluir template do post SVD para ficar ainda mais aderente ao layout completo atual (header/footer/leia também dinâmico).
-2. Implementar descoberta real de tema em alta com fontes externas e score.
-3. Implementar geração de capa dedicada por IA no padrão visual oficial.
-4. Replicar publishers completos para `coderush` e `fluxointeligenteia`.
-5. Adicionar validação de links e XML como gate bloqueante antes da abertura do PR.
-
----
-
-## Resumo Executivo
-
-O robô já está operacional para iniciar publicação automática semanal com revisão humana via PR, com geração de conteúdo por IA quando disponível e fallback robusto. O piloto no `sistemavendadireta` foi implementado e validado, formando a base para escalar para os demais sites.
+- a geração de capa por IA depende de conectividade e crédito do provedor configurado
+- quando a IA falha, o texto continua via fallback local e a capa usa a imagem-base do site
+- a publicação automática continua passando por revisão humana via PR antes do merge
