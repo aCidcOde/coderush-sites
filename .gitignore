@@ -6,3 +6,4 @@ site_svd/
 site_svd_repo/
 node_modules/
 vendor/
+storage/
