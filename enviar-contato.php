@@ -327,7 +327,7 @@ if ($telefone === '' && $email === '') {
     safeRedirect($redirect, false);
 }
 
-$toEmail = envValue($env, ['MAIL_TO_ADDRESS', 'MAIL_NEW_ORDER_INTERNAL_TO', 'HUB_MAIL_TO'], 'contato@coderush.com.br');
+$toEmail = 'contato@coderush.com.br';
 
 $defaultHost = $_SERVER['HTTP_HOST'] ?? 'localhost';
 $fromEmail = envValue($env, ['MAIL_FROM_ADDRESS', 'CONTACT_EMAIL_FROM'], 'no-reply@' . $defaultHost);

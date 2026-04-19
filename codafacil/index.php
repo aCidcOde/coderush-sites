@@ -69,6 +69,7 @@ $seoLdGraph = [
   <meta name="author" content="Codafacil.dev" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
   <link rel="canonical" href="<?= htmlspecialchars($seoUrl, ENT_QUOTES, 'UTF-8') ?>" />
+  <link rel="icon" type="image/webp" href="imagens/logo.webp" />
   <link rel="alternate" hreflang="pt-BR" href="<?= htmlspecialchars($seoUrl, ENT_QUOTES, 'UTF-8') ?>" />
   <link rel="alternate" hreflang="x-default" href="<?= htmlspecialchars($seoUrl, ENT_QUOTES, 'UTF-8') ?>" />
 

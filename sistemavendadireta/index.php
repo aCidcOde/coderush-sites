@@ -66,6 +66,60 @@ foreach ($faqPairs as $pair) {
     ];
 }
 
+$integrationPartners = [
+    ['name' => 'PayPal'],
+    ['name' => 'Mercado Pago'],
+    ['name' => 'DocuSign'],
+    ['name' => 'Twilio'],
+    ['name' => 'SendGrid'],
+    ['name' => 'RD Station'],
+    ['name' => 'Itaú'],
+    ['name' => 'Bling'],
+    ['name' => 'Cielo'],
+    ['name' => 'Nuvemshop'],
+    ['name' => 'Asaas'],
+    ['name' => 'Pagar.me'],
+    ['name' => 'Getnet'],
+    ['name' => 'Melhor Envio'],
+    ['name' => 'Pepipost'],
+    ['name' => 'D4Sign'],
+    ['name' => 'Jadlog'],
+    ['name' => 'Gerencianet'],
+    ['name' => 'Rede'],
+    ['name' => 'PagSeguro'],
+];
+$integrationPartnersTop = array_slice($integrationPartners, 0, (int) ceil(count($integrationPartners) / 2));
+$integrationPartnersBottom = array_slice($integrationPartners, (int) ceil(count($integrationPartners) / 2));
+
+$clientCompanies = [
+    ['name' => 'Maua Bank S/A'],
+    ['name' => 'Game Station'],
+    ['name' => 'Aze Games'],
+    ['name' => 'Boliche Game Station'],
+    ['name' => 'Bolix Boliche'],
+    ['name' => 'SP Diversoes'],
+    ['name' => 'Telsan'],
+    ['name' => 'Moda do Chef'],
+    ['name' => 'Top Game'],
+    ['name' => 'Journey Bike'],
+    ['name' => 'HB Billions'],
+    ['name' => 'Ecotrend'],
+    ['name' => 'Elibell'],
+    ['name' => 'Organofoods'],
+    ['name' => 'Science Life World'],
+    ['name' => 'Emergency Doc Imob'],
+    ['name' => 'Haiflex'],
+    ['name' => 'Beoom+'],
+    ['name' => 'Sushitop'],
+    ['name' => 'Econ'],
+    ['name' => 'Uzi Natural Health'],
+    ['name' => 'Moove'],
+    ['name' => 'Clean Bit'],
+    ['name' => 'XLR Invest'],
+];
+$clientCompaniesTop = array_slice($clientCompanies, 0, (int) ceil(count($clientCompanies) / 2));
+$clientCompaniesBottom = array_slice($clientCompanies, (int) ceil(count($clientCompanies) / 2));
+
 $seoLdGraph = [
     '@context' => 'https://schema.org',
     '@graph' => [
@@ -134,6 +188,7 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
   <meta name="author" content="Sistema Venda Direta" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
   <link rel="canonical" href="<?= htmlspecialchars($seoUrl, ENT_QUOTES, 'UTF-8') ?>" />
+  <link rel="icon" type="image/png" href="logo-icone.png" />
   <link rel="alternate" hreflang="pt-BR" href="<?= htmlspecialchars($seoUrl, ENT_QUOTES, 'UTF-8') ?>" />
   <link rel="alternate" hreflang="x-default" href="<?= htmlspecialchars($seoUrl, ENT_QUOTES, 'UTF-8') ?>" />
 
@@ -431,21 +486,34 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
 
     <section class="py-10">
       <h4 class="font-[var(--font-heading)] text-[30px] font-semibold">
-        Integrações com diversas tecnologias</a>
+        Integrações com diversas tecnologias
       </h4>
       <div class="mt-2 h-1 w-[72px] rounded-full bg-white"></div>
       <h2 class="mt-4 font-[var(--font-heading)] text-xl font-semibold sm:text-2xl">
-        Não se preocupe com desenvolvimento, já temos todas as integrações que você vai precisar!​</a>
+        Não se preocupe com desenvolvimento, já temos todas as integrações que você vai precisar!
       </h2>
-
-      <img decoding="async"
-        src="imagens/Imagens-de-Tecnologias-Utilizadas-no-sistema-venda-direta.webp"
-        alt="Integrações com diversas tecnologias"
-        class="mt-6 w-full rounded-2xl border border-white/20"
-        width="1200"
-        height="698"
-        loading="lazy"
-      />
+      <div class="integration-carousel mt-6 rounded-2xl border border-white/25 bg-brand-dark/40 p-4 sm:p-5" aria-label="Parceiros integrados ao sistema">
+        <div class="integration-row">
+          <div class="integration-track integration-track-top">
+            <?php foreach ($integrationPartnersTop as $partner): ?>
+              <span class="integration-name"><?= htmlspecialchars($partner['name'], ENT_QUOTES, 'UTF-8') ?></span>
+            <?php endforeach; ?>
+            <?php foreach ($integrationPartnersTop as $partner): ?>
+              <span class="integration-name" aria-hidden="true"><?= htmlspecialchars($partner['name'], ENT_QUOTES, 'UTF-8') ?></span>
+            <?php endforeach; ?>
+          </div>
+        </div>
+        <div class="integration-row mt-3">
+          <div class="integration-track integration-track-bottom">
+            <?php foreach ($integrationPartnersBottom as $partner): ?>
+              <span class="integration-name"><?= htmlspecialchars($partner['name'], ENT_QUOTES, 'UTF-8') ?></span>
+            <?php endforeach; ?>
+            <?php foreach ($integrationPartnersBottom as $partner): ?>
+              <span class="integration-name" aria-hidden="true"><?= htmlspecialchars($partner['name'], ENT_QUOTES, 'UTF-8') ?></span>
+            <?php endforeach; ?>
+          </div>
+        </div>
+      </div>
 
       <a href="#form" class="mt-6 inline-flex rounded-full border border-white/70 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10">
         Solicite um Orçamento
@@ -513,14 +581,28 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
         Empresas que nós já atendemos:
       </h4>
       <div class="mt-2 h-1 w-[72px] rounded-full bg-white"></div>
-      <img decoding="async"
-        src="imagens/Clientes.webp"
-        alt="Empresas que já atendemos"
-        class="mt-6 w-full rounded-2xl border border-white/20"
-        width="1200"
-        height="772"
-        loading="lazy"
-      />
+      <div class="integration-carousel mt-6 rounded-2xl border border-white/25 bg-brand-dark/40 p-4 sm:p-5" aria-label="Empresas atendidas pela Sistema Venda Direta">
+        <div class="integration-row">
+          <div class="integration-track integration-track-top">
+            <?php foreach ($clientCompaniesTop as $company): ?>
+              <span class="integration-name"><?= htmlspecialchars($company['name'], ENT_QUOTES, 'UTF-8') ?></span>
+            <?php endforeach; ?>
+            <?php foreach ($clientCompaniesTop as $company): ?>
+              <span class="integration-name" aria-hidden="true"><?= htmlspecialchars($company['name'], ENT_QUOTES, 'UTF-8') ?></span>
+            <?php endforeach; ?>
+          </div>
+        </div>
+        <div class="integration-row mt-3">
+          <div class="integration-track integration-track-bottom">
+            <?php foreach ($clientCompaniesBottom as $company): ?>
+              <span class="integration-name"><?= htmlspecialchars($company['name'], ENT_QUOTES, 'UTF-8') ?></span>
+            <?php endforeach; ?>
+            <?php foreach ($clientCompaniesBottom as $company): ?>
+              <span class="integration-name" aria-hidden="true"><?= htmlspecialchars($company['name'], ENT_QUOTES, 'UTF-8') ?></span>
+            <?php endforeach; ?>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="form" class="scroll-mt-28 py-10">
@@ -669,6 +751,15 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
+  <a href="2026/04/14/sistemavendadireta-ia-2026-04-14/">
+    <img src="imagens/posts/sistemavendadireta-ia-2026-04-14.jpg" alt="Sistema Venda Direta: como usar IA de forma pratica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="2026/04/14/sistemavendadireta-ia-2026-04-14/" class="hover:underline">Sistema Venda Direta: como usar IA de forma pratica</a></h2>
+    <p class="mt-2 text-sm text-white/85">Guia objetivo sobre governanca comercial com dados e ia com foco em resultado operacional.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="2026/03/18/agentes-de-ia-em-2026-mcp-stateful-e-governanca-para-operar-em-escala/">
             <img src="imagens/posts/agentes-de-ia-em-2026-mcp-stateful-e-governanca-para-operar-em-escala.jpg" alt="Agentes de IA em 2026: MCP stateful e governanca para operar em escala" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
@@ -677,22 +768,13 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
             <p class="mt-2 text-sm text-white/85">Guia pratico para estruturar agentes com contexto persistente, governanca e previsibilidade de custo.</p>
           </div>
         </article>
-        <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
+<article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="2026/03/11/soc-agentico-e-seguranca-multicloud-com-governanca-unificada/">
             <img src="imagens/posts/soc-agentico-e-seguranca-multicloud-com-governanca-unificada.jpg" alt="SOC agentico e seguranca multicloud: guia pratico de governanca em 2026" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
           <div class="p-4">
             <h2 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="2026/03/11/soc-agentico-e-seguranca-multicloud-com-governanca-unificada/" class="hover:underline">SOC agentico e seguranca multicloud: guia pratico de governanca em 2026</a></h2>
             <p class="mt-2 text-sm text-white/85">Guia pratico para unificar seguranca multicloud, acelerar resposta e reduzir risco operacional.</p>
-          </div>
-        </article>
-        <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
-          <a href="2026/03/04/php-8-5-3-em-producao-checklist-para-atualizar-com-seguranca/">
-            <img src="imagens/posts/php-8-5-3-em-producao-checklist-para-atualizar-com-seguranca.jpg" alt="PHP 8.5.3 em producao: checklist para atualizar com seguranca" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-          </a>
-          <div class="p-4">
-            <h2 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="2026/03/04/php-8-5-3-em-producao-checklist-para-atualizar-com-seguranca/" class="hover:underline">PHP 8.5.3 em producao: checklist para atualizar com seguranca</a></h2>
-            <p class="mt-2 text-sm text-white/85">Checklist pratico para atualizar seu backend com base no ciclo oficial do PHP e reduzir risco operacional.</p>
           </div>
         </article>
       </div>

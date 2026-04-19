@@ -45,6 +45,7 @@ $seoLdGraph = [
   <title><?= htmlspecialchars($seoTitle, ENT_QUOTES, 'UTF-8') ?></title>
   <meta name="description" content="<?= htmlspecialchars($seoDescription, ENT_QUOTES, 'UTF-8') ?>" />
   <link rel="canonical" href="<?= htmlspecialchars($seoUrl, ENT_QUOTES, 'UTF-8') ?>" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23020b1a'/%3E%3Ctext x='50%25' y='56%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial,sans-serif' font-size='26' font-weight='700' fill='%23ffffff'%3ECR%3C/text%3E%3C/svg%3E" />
   <meta property="og:title" content="<?= htmlspecialchars($seoTitle, ENT_QUOTES, 'UTF-8') ?>" />
   <meta property="og:description" content="<?= htmlspecialchars($seoDescription, ENT_QUOTES, 'UTF-8') ?>" />
   <meta property="og:type" content="website" />
@@ -797,53 +798,6 @@ $seoLdGraph = [
     </div>
   </footer>
 
-  <!-- Chat flutuante (assistente guiado) -->
-  <div id="chat-backdrop" class="chat-backdrop" aria-hidden="true" tabindex="-1"></div>
-  <div
-    id="chat-panel"
-    class="chat-panel flex flex-col"
-    role="dialog"
-    aria-modal="true"
-    aria-labelledby="chat-widget-title"
-    aria-hidden="true"
-  >
-    <div class="flex shrink-0 items-center justify-between rounded-t-[1.25rem] border-b border-white/10 bg-gradient-to-r from-blue-950/60 via-[#0f172a]/90 to-slate-900/50 px-4 py-3">
-      <div class="min-w-0 pr-2">
-        <p id="chat-widget-title" class="font-heading text-sm font-bold tracking-tight text-white">Assistente CodeRush</p>
-        <p class="truncate text-[10px] text-white/45">Respostas instantâneas · time humano no formulário</p>
-      </div>
-      <button
-        type="button"
-        id="chat-close"
-        class="shrink-0 rounded-lg p-2 text-white/65 transition hover:bg-white/10 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400/60"
-        aria-label="Fechar assistente"
-      >
-        <i data-lucide="x" class="h-5 w-5" aria-hidden="true"></i>
-      </button>
-    </div>
-    <div id="chat-messages" class="flex min-h-0 flex-1 flex-col gap-3 overflow-y-auto overscroll-contain p-4"></div>
-    <div class="shrink-0 border-t border-white/10 p-3">
-      <div id="chat-quick" class="mb-3 flex flex-wrap gap-2"></div>
-      <form id="chat-form" class="flex items-end gap-2">
-        <label for="chat-input" class="sr-only">Sua mensagem para o assistente</label>
-        <textarea
-          id="chat-input"
-          class="chat-input"
-          rows="1"
-          placeholder="Ex.: preciso de um sistema com integração ERP…"
-          maxlength="600"
-          autocomplete="off"
-        ></textarea>
-        <button
-          type="submit"
-          class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-brand text-white shadow-md transition hover:bg-blue-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400/60"
-          aria-label="Enviar mensagem"
-        >
-          <i data-lucide="send" class="h-4 w-4" aria-hidden="true"></i>
-        </button>
-      </form>
-    </div>
-  </div>
   <div class="fab-dock" role="group" aria-label="Ações rápidas">
     <button
       type="button"
@@ -853,19 +807,15 @@ $seoLdGraph = [
     >
       <i data-lucide="chevron-up" class="h-6 w-6" aria-hidden="true"></i>
     </button>
-    <button
-      type="button"
-      id="chat-launcher"
+    <a
+      href="https://wa.me/5511994566726?text=Ol%C3%A1%2C%20vim%20pelo%20site%20CodeRush%20e%20quero%20falar%20com%20o%20time."
+      target="_blank"
+      rel="noopener noreferrer"
       class="chat-launcher"
-      aria-expanded="false"
-      aria-controls="chat-panel"
-      aria-haspopup="dialog"
+      aria-label="Falar no WhatsApp"
     >
-      <span id="chat-launcher-label-open" class="sr-only">Abrir assistente virtual CodeRush</span>
-      <span id="chat-launcher-label-close" class="sr-only hidden">Fechar assistente virtual</span>
-      <i id="chat-launcher-icon-msg" data-lucide="message-circle" class="h-7 w-7" aria-hidden="true"></i>
-      <i id="chat-launcher-icon-x" data-lucide="x" class="hidden h-7 w-7" aria-hidden="true"></i>
-    </button>
+      <i data-lucide="message-circle" class="h-7 w-7" aria-hidden="true"></i>
+    </a>
   </div>
 
 

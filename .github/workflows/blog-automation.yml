@@ -1,0 +1,70 @@
+name: Blog Automation Weekly
+
+on:
+  schedule:
+    # Quarta-feira 09:00 America/Sao_Paulo (UTC-3 -> 12:00 UTC)
+    - cron: "0 12 * * 3"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  generate-post-drafts:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run weekly blog bot
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          BLOG_BOT_OPENAI_MODEL: gpt-4o-mini
+        run: npm run blogbot:publish
+
+      - name: Create automated PR
+        id: create_pr
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "chore(blog): gerar rascunhos semanais automaticos"
+          branch: "automation/blog-weekly-${{ github.run_id }}"
+          title: "Automacao semanal de posts: rascunhos multi-site"
+          body: |
+            ## Resumo
+            - Executa o robô semanal para `coderush`, `fluxointeligenteia` e `sistemavendadireta`
+            - Gera artefatos de rascunho por site em `automation/blog-bot/out/`
+            - Registra relatório de execução em `automation/blog-bot/reports/`
+
+            ## Aprovação manual
+            Este PR foi aberto automaticamente e deve ser revisado antes do merge.
+          labels: |
+            automacao
+            blog
+
+      - name: Send PR approval email
+        if: steps.create_pr.outputs.pull-request-number != ''
+        env:
+          PR_APPROVAL_BASE_URL: ${{ secrets.PR_APPROVAL_BASE_URL }}
+          PR_APPROVAL_SIGNING_SECRET: ${{ secrets.PR_APPROVAL_SIGNING_SECRET }}
+          PR_APPROVAL_RESEND_API_KEY: ${{ secrets.PR_APPROVAL_RESEND_API_KEY }}
+          PR_APPROVAL_FROM_EMAIL: ${{ secrets.PR_APPROVAL_FROM_EMAIL }}
+          PR_APPROVAL_TO_EMAILS: ${{ secrets.PR_APPROVAL_TO_EMAILS }}
+          PR_APPROVAL_TTL_HOURS: ${{ vars.PR_APPROVAL_TTL_HOURS }}
+          REPO: ${{ github.repository }}
+          PR_NUMBER: ${{ steps.create_pr.outputs.pull-request-number }}
+          PR_URL: ${{ steps.create_pr.outputs.pull-request-url }}
+          PR_TITLE: Automacao semanal de posts: rascunhos multi-site
+          BRANCH_NAME: ${{ steps.create_pr.outputs.pull-request-branch }}
+          COMMIT_SHA: ${{ github.sha }}
+          RUN_ID: ${{ github.run_id }}
+        run: node automation/pr-approval/send-approval-email.js

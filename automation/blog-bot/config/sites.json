@@ -1,0 +1,36 @@
+{
+  "timezone": "America/Sao_Paulo",
+  "rotation": ["ia", "php", "tecnologia"],
+  "sites": [
+    {
+      "id": "coderush",
+      "name": "CodeRush",
+      "postType": "institucional-tecnologia",
+      "language": "pt-BR",
+      "enabled": true,
+      "baseUrl": "https://coderush.com.br",
+      "outputRoot": "automation/blog-bot/out/coderush",
+      "requiresPhpLint": false
+    },
+    {
+      "id": "fluxointeligenteia",
+      "name": "FluxoInteligente IA",
+      "postType": "ia-pratica-automacao",
+      "language": "pt-BR",
+      "enabled": true,
+      "baseUrl": "https://fluxointeligenteia.com.br",
+      "outputRoot": "automation/blog-bot/out/fluxointeligenteia",
+      "requiresPhpLint": false
+    },
+    {
+      "id": "sistemavendadireta",
+      "name": "Sistema Venda Direta",
+      "postType": "vendas-diretas-processos",
+      "language": "pt-BR",
+      "enabled": true,
+      "baseUrl": "https://sistemavendadireta.com.br",
+      "outputRoot": "automation/blog-bot/out/sistemavendadireta",
+      "requiresPhpLint": true
+    }
+  ]
+}
