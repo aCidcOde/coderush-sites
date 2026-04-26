@@ -1,8 +1,6 @@
 const fs = require("node:fs");
-const os = require("node:os");
 const path = require("node:path");
-const { generateCoverWithOpenRouter } = require("./ai-writer");
-const { composeCoverImage } = require("./cover-composer");
+const { generateCover: agentGenerateCover } = require("./cover-agent");
 
 const HOME_MARKERS = {
   start: "<!-- BLOG-HOME-CARDS:START -->",
@@ -689,46 +687,6 @@ function updateCardsInFile(filePath, markers, cards, context, maxItems) {
   return { updated, cards: nextCards };
 }
 
-function coverPrompt(site, contract) {
-  const copy = SITE_COPY[site.id];
-  return [
-    "Crie uma imagem principal para compor uma capa editorial de blog corporativo.",
-    `Marca: ${site.name}.`,
-    `Titulo do artigo: ${contract.content.headline}.`,
-    `Tema central: ${contract.theme}.`,
-    `Direcao visual da marca: ${copy?.coverDirection || "tecnologia corporativa premium"}.`,
-    "Estilo: moderno, tecnologico, limpo, profissional, com um unico elemento visual forte e area de respiro.",
-    "Regras: sem texto legivel, sem watermark, sem mockup de tela cheio de detalhes, sem pessoas em destaque, composicao 16:9."
-  ].join(" ");
-}
-
-function buildCoverWarning(...messages) {
-  return messages
-    .map((message) => String(message || "").trim())
-    .filter(Boolean)
-    .join(" | ");
-}
-
-function tempCoverSourcePath(slug) {
-  const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), `blogbot-cover-${slug}-`));
-  return {
-    tempDir,
-    filePath: path.resolve(tempDir, `${slug}.jpg`)
-  };
-}
-
-function composeStandardCover(root, site, contract, sourcePath, targetPath) {
-  const copy = SITE_COPY[site.id];
-  composeCoverImage({
-    root,
-    site,
-    blogName: copy?.blogName || site.name,
-    sourcePath,
-    targetPath,
-    title: contract.content.headline
-  });
-}
-
 async function ensureCoverImage(root, site, contract, aiConfig) {
   const postsDir = path.resolve(root, site.siteRoot, site.assets.postsDir);
   ensureDir(postsDir);
@@ -739,26 +697,12 @@ async function ensureCoverImage(root, site, contract, aiConfig) {
   }
 
   let warning = null;
-  if (aiConfig?.provider === "openrouter" && aiConfig.imageModel) {
-    const tempSource = tempCoverSourcePath(contract.slug);
+  if (aiConfig) {
     try {
-      await generateCoverWithOpenRouter({
-        apiKey: aiConfig.apiKey,
-        model: aiConfig.imageModel,
-        prompt: coverPrompt(site, contract),
-        targetPath: tempSource.filePath,
-        appUrl: aiConfig.appUrl,
-        appName: aiConfig.appName
-      });
-      composeStandardCover(root, site, contract, tempSource.filePath, targetPath);
-      return { path: targetPath, source: "openrouter-composed", warning: null };
+      const result = await agentGenerateCover({ aiConfig, site, contract, targetPath });
+      return { path: targetPath, source: result.source, warning: null };
     } catch (error) {
-      warning = buildCoverWarning(
-        warning,
-        `Falha ao gerar capa com OpenRouter: ${String(error.message || error)}`
-      );
-    } finally {
-      fs.rmSync(tempSource.tempDir, { recursive: true, force: true });
+      warning = `Cover agent falhou: ${String(error.message || error)}`;
     }
   }
 
@@ -767,17 +711,8 @@ async function ensureCoverImage(root, site, contract, aiConfig) {
     throw new Error(`Capa fallback nao encontrada para ${site.id}: ${site.assets.fallbackCover}`);
   }
 
-  try {
-    composeStandardCover(root, site, contract, fallbackPath, targetPath);
-    return { path: targetPath, source: "fallback-composed", warning };
-  } catch (error) {
-    warning = buildCoverWarning(
-      warning,
-      `Falha ao compor capa padrao: ${String(error.message || error)}`
-    );
-    fs.copyFileSync(fallbackPath, targetPath);
-    return { path: targetPath, source: "fallback-raw", warning };
-  }
+  fs.copyFileSync(fallbackPath, targetPath);
+  return { path: targetPath, source: "fallback-raw", warning };
 }
 
 function writePostFile(root, site, contract, relatedCards) {

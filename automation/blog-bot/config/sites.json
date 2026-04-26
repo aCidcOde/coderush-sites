@@ -1,6 +1,10 @@
 {
   "timezone": "America/Sao_Paulo",
-  "rotation": ["ia", "php", "tecnologia"],
+  "rotation": [
+    "ia",
+    "php",
+    "tecnologia"
+  ],
   "sites": [
     {
       "id": "coderush",
@@ -19,6 +23,13 @@
         "index.php",
         "blog/index.php"
       ],
+      "coverModel": {
+        "primary": "gpt-5-image",
+        "fallback": [
+          "gemini-3-pro",
+          "gemini-flash"
+        ]
+      },
       "assets": {
         "postsDir": "imagens/posts",
         "fallbackCover": "imagens/posts/coderush-cover-base.jpg"
@@ -46,6 +57,13 @@
         "index.php",
         "blog/index.php"
       ],
+      "coverModel": {
+        "primary": "gpt-5-image",
+        "fallback": [
+          "gemini-3-pro",
+          "gemini-flash"
+        ]
+      },
       "assets": {
         "postsDir": "imagens/posts",
         "fallbackCover": "imagens/posts/codafacil-cover-base.jpg"
@@ -70,6 +88,13 @@
       "outputRoot": "automation/blog-bot/out/fluxointeligenteia",
       "requiresPhpLint": false,
       "lintTargets": [],
+      "coverModel": {
+        "primary": "gemini-3-pro",
+        "fallback": [
+          "gpt-5-image",
+          "gemini-flash"
+        ]
+      },
       "assets": {
         "postsDir": "imagens/posts",
         "fallbackCover": "imagens/posts/fluxointeligenteia-cover-base.jpg"
@@ -97,6 +122,13 @@
         "index.php",
         "blog/index.php"
       ],
+      "coverModel": {
+        "primary": "gpt-5-image",
+        "fallback": [
+          "gemini-3-pro",
+          "gemini-flash"
+        ]
+      },
       "assets": {
         "postsDir": "imagens/posts",
         "fallbackCover": "imagens/posts/agentes-de-ia-em-2026-mcp-stateful-e-governanca-para-operar-em-escala.jpg"
