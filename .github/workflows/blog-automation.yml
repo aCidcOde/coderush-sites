@@ -2,8 +2,8 @@ name: Blog Automation Weekly
 
 on:
   schedule:
-    # Segunda-feira 07:00 America/Sao_Paulo (UTC-3 -> 10:00 UTC)
-    - cron: "0 10 * * 1"
+    # Domingo 07:00 America/Sao_Paulo (UTC-3 -> 10:00 UTC)
+    - cron: "0 10 * * 0"
   workflow_dispatch:
 
 permissions:
