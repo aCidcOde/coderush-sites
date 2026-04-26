@@ -12,5 +12,5 @@ jobs:
       - name: Trigger deploy webhook
         run: |
           curl -sf \
-            -X POST https://coderush.sistemavendadireta.com.br/deploy.php \
+            -X POST https://coderush.com.br/deploy.php \
             -H "X-Deploy-Token: ${{ secrets.DEPLOY_TOKEN }}"
