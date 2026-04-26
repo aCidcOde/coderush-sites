@@ -1,0 +1,10 @@
+[
+  {
+    "ok": true,
+    "siteId": "sistemavendadireta",
+    "slug": "sistemavendadireta-tecnologia-2026-04-26",
+    "headline": "Sistema Venda Direta: como usar TECNOLOGIA de forma pratica",
+    "model": "openai/gpt-5-image",
+    "targetPath": "sistemavendadireta/imagens/posts/sistemavendadireta-tecnologia-2026-04-26.jpg"
+  }
+]
