@@ -580,6 +580,15 @@ $seoLdGraph = [
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-HOME-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/04/26/codafacil-tecnologia-2026-04-26/" data-blog-image="imagens/posts/codafacil-tecnologia-2026-04-26.jpg" data-blog-slug="codafacil-tecnologia-2026-04-26" data-blog-date="2026-04-26">
+  <a href="2026/04/26/codafacil-tecnologia-2026-04-26/">
+    <img src="imagens/posts/codafacil-tecnologia-2026-04-26.jpg" alt="Codafacil.dev: como usar TECNOLOGIA de forma pratica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="2026/04/26/codafacil-tecnologia-2026-04-26/" class="hover:underline">Codafacil.dev: como usar TECNOLOGIA de forma pratica</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre software sob medida com IA aplicada com foco em resultado operacional.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/04/19/codafacil-php-2026-04-19/" data-blog-image="imagens/posts/codafacil-php-2026-04-19.jpg" data-blog-slug="codafacil-php-2026-04-19" data-blog-date="2026-04-19">
   <a href="2026/04/19/codafacil-php-2026-04-19/">
     <img src="imagens/posts/codafacil-php-2026-04-19.jpg" alt="A Revolução do Software Sob Medida com IA: Como PHP Pode Transformar Seu Negócio" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
