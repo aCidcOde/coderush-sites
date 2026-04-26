@@ -66,7 +66,7 @@ jobs:
           REPO: ${{ github.repository }}
           PR_NUMBER: ${{ steps.create_pr.outputs.pull-request-number }}
           PR_URL: ${{ steps.create_pr.outputs.pull-request-url }}
-          PR_TITLE: Automacao semanal de posts: publicacao multi-site
+          PR_TITLE: "Automacao semanal de posts: publicacao multi-site"
           BRANCH_NAME: ${{ steps.create_pr.outputs.pull-request-branch }}
           COMMIT_SHA: ${{ github.sha }}
           RUN_ID: ${{ github.run_id }}
