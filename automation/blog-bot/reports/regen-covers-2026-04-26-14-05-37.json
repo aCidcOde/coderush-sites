@@ -1,0 +1,74 @@
+[
+  {
+    "ok": true,
+    "siteId": "coderush",
+    "slug": "coderush-ia-2026-04-14",
+    "headline": "CodeRush: como usar IA de forma pratica",
+    "model": "openai/gpt-5-image",
+    "targetPath": "imagens/posts/coderush-ia-2026-04-14.jpg"
+  },
+  {
+    "ok": true,
+    "siteId": "coderush",
+    "slug": "coderush-php-2026-04-19",
+    "headline": "Governança de Tecnologia: O Caminho para o Crescimento Sustentável",
+    "model": "openai/gpt-5-image",
+    "targetPath": "imagens/posts/coderush-php-2026-04-19.jpg"
+  },
+  {
+    "ok": true,
+    "siteId": "coderush",
+    "slug": "coderush-tecnologia-2026-04-26",
+    "headline": "CodeRush: como usar TECNOLOGIA de forma pratica",
+    "model": "openai/gpt-5-image",
+    "targetPath": "imagens/posts/coderush-tecnologia-2026-04-26.jpg"
+  },
+  {
+    "ok": true,
+    "siteId": "codafacil",
+    "slug": "codafacil-ia-2026-04-14",
+    "headline": "Codafacil.dev: como usar IA de forma pratica",
+    "model": "openai/gpt-5-image",
+    "targetPath": "codafacil/imagens/posts/codafacil-ia-2026-04-14.jpg"
+  },
+  {
+    "ok": true,
+    "siteId": "codafacil",
+    "slug": "codafacil-php-2026-04-19",
+    "headline": "A Revolução do Software Sob Medida com IA: Como PHP Pode Transformar Seu Negócio",
+    "model": "openai/gpt-5-image",
+    "targetPath": "codafacil/imagens/posts/codafacil-php-2026-04-19.jpg"
+  },
+  {
+    "ok": true,
+    "siteId": "codafacil",
+    "slug": "codafacil-tecnologia-2026-04-26",
+    "headline": "Codafacil.dev: como usar TECNOLOGIA de forma pratica",
+    "model": "openai/gpt-5-image",
+    "targetPath": "codafacil/imagens/posts/codafacil-tecnologia-2026-04-26.jpg"
+  },
+  {
+    "ok": true,
+    "siteId": "fluxointeligenteia",
+    "slug": "fluxointeligenteia-ia-2026-04-14",
+    "headline": "FluxoInteligente IA: como usar IA de forma pratica",
+    "model": "google/gemini-3-pro-image-preview",
+    "targetPath": "fluxointeligenteia/imagens/posts/fluxointeligenteia-ia-2026-04-14.jpg"
+  },
+  {
+    "ok": true,
+    "siteId": "fluxointeligenteia",
+    "slug": "fluxointeligenteia-php-2026-04-19",
+    "headline": "Automação de Processos com LLMs: A Revolução na Gestão Empresarial",
+    "model": "google/gemini-3-pro-image-preview",
+    "targetPath": "fluxointeligenteia/imagens/posts/fluxointeligenteia-php-2026-04-19.jpg"
+  },
+  {
+    "ok": true,
+    "siteId": "fluxointeligenteia",
+    "slug": "fluxointeligenteia-tecnologia-2026-04-26",
+    "headline": "FluxoInteligente IA: como usar TECNOLOGIA de forma pratica",
+    "model": "google/gemini-3-pro-image-preview",
+    "targetPath": "fluxointeligenteia/imagens/posts/fluxointeligenteia-tecnologia-2026-04-26.jpg"
+  }
+]
