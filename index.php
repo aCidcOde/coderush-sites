@@ -689,6 +689,15 @@ $seoLdGraph = [
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-HOME-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/04/27/coderush-tecnologia-2026-04-27/" data-blog-image="imagens/posts/coderush-tecnologia-2026-04-27.jpg" data-blog-slug="coderush-tecnologia-2026-04-27" data-blog-date="2026-04-27">
+  <a href="2026/04/27/coderush-tecnologia-2026-04-27/">
+    <img src="imagens/posts/coderush-tecnologia-2026-04-27.jpg" alt="CodeRush: como usar TECNOLOGIA de forma pratica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="2026/04/27/coderush-tecnologia-2026-04-27/" class="hover:underline">CodeRush: como usar TECNOLOGIA de forma pratica</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre produtividade de times com automacao inteligente com foco em resultado operacional.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/04/26/coderush-tecnologia-2026-04-26/" data-blog-image="imagens/posts/coderush-tecnologia-2026-04-26.jpg" data-blog-slug="coderush-tecnologia-2026-04-26" data-blog-date="2026-04-26">
   <a href="2026/04/26/coderush-tecnologia-2026-04-26/">
     <img src="imagens/posts/coderush-tecnologia-2026-04-26.jpg" alt="CodeRush: como usar TECNOLOGIA de forma pratica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
@@ -705,15 +714,6 @@ $seoLdGraph = [
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="2026/04/19/coderush-php-2026-04-19/" class="hover:underline">Governança de Tecnologia: O Caminho para o Crescimento Sustentável</a></h2>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Neste artigo, abordaremos a importância da governança de tecnologia no crescimento das operações empresariais, com um foco especial em PHP e como a inteligência artificial pode...</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/04/14/coderush-ia-2026-04-14/" data-blog-image="imagens/posts/coderush-ia-2026-04-14.jpg" data-blog-slug="coderush-ia-2026-04-14" data-blog-date="2026-04-14">
-  <a href="2026/04/14/coderush-ia-2026-04-14/">
-    <img src="imagens/posts/coderush-ia-2026-04-14.jpg" alt="CodeRush: como usar IA de forma pratica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-  </a>
-  <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="2026/04/14/coderush-ia-2026-04-14/" class="hover:underline">CodeRush: como usar IA de forma pratica</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre governanca de tecnologia para crescimento com foco em resultado operacional.</p>
   </div>
 </article>
 <!-- BLOG-HOME-CARDS:END -->

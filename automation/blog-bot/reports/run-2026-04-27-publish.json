@@ -1,0 +1,112 @@
+{
+  "mode": "publish",
+  "date": "2026-04-27",
+  "timezone": "America/Sao_Paulo",
+  "focus": "tecnologia",
+  "startedAt": "2026-04-27T10:36:23.612Z",
+  "aiProvider": "openai",
+  "sites": [
+    {
+      "siteId": "coderush",
+      "ok": true,
+      "aiUsed": false,
+      "aiProvider": "fallback",
+      "warning": "Falha ao usar IA, fallback aplicado: OpenAI API error (401): {\n  \"error\": {\n    \"message\": \"Incorrect API key provided: sk-or-v1*************************************************************3171. You can find your API key at https://platform.openai.com/account/api-keys.\",\n    \"type\": \"invalid_request_error\",\n    \"code\": \"invalid_api_key\",\n    \"param\": null\n  },\n  \"status\": 401\n}",
+      "outputPath": "automation/blog-bot/out/coderush/2026-04-27/coderush-tecnologia-2026-04-27.json",
+      "markdownPath": "automation/blog-bot/out/coderush/2026-04-27/coderush-tecnologia-2026-04-27.md",
+      "publishResult": {
+        "postPath": "2026/04/27/coderush-tecnologia-2026-04-27/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "google/gemini-3-pro-image-preview"
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "index.php",
+          "blog/index.php",
+          "2026/04/27/coderush-tecnologia-2026-04-27/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "codafacil",
+      "ok": true,
+      "aiUsed": false,
+      "aiProvider": "fallback",
+      "warning": "Falha ao usar IA, fallback aplicado: OpenAI API error (401): {\n  \"error\": {\n    \"message\": \"Incorrect API key provided: sk-or-v1*************************************************************3171. You can find your API key at https://platform.openai.com/account/api-keys.\",\n    \"type\": \"invalid_request_error\",\n    \"code\": \"invalid_api_key\",\n    \"param\": null\n  },\n  \"status\": 401\n}",
+      "outputPath": "automation/blog-bot/out/codafacil/2026-04-27/codafacil-tecnologia-2026-04-27.json",
+      "markdownPath": "automation/blog-bot/out/codafacil/2026-04-27/codafacil-tecnologia-2026-04-27.md",
+      "publishResult": {
+        "postPath": "codafacil/2026/04/27/codafacil-tecnologia-2026-04-27/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "google/gemini-3-pro-image-preview"
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "codafacil/index.php",
+          "codafacil/blog/index.php",
+          "codafacil/2026/04/27/codafacil-tecnologia-2026-04-27/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "fluxointeligenteia",
+      "ok": true,
+      "aiUsed": false,
+      "aiProvider": "fallback",
+      "warning": "Falha ao usar IA, fallback aplicado: OpenAI API error (401): {\n  \"error\": {\n    \"message\": \"Incorrect API key provided: sk-or-v1*************************************************************3171. You can find your API key at https://platform.openai.com/account/api-keys.\",\n    \"type\": \"invalid_request_error\",\n    \"code\": \"invalid_api_key\",\n    \"param\": null\n  },\n  \"status\": 401\n}",
+      "outputPath": "automation/blog-bot/out/fluxointeligenteia/2026-04-27/fluxointeligenteia-tecnologia-2026-04-27.json",
+      "markdownPath": "automation/blog-bot/out/fluxointeligenteia/2026-04-27/fluxointeligenteia-tecnologia-2026-04-27.md",
+      "publishResult": {
+        "postPath": "fluxointeligenteia/2026/04/27/fluxointeligenteia-tecnologia-2026-04-27/index.html",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "google/gemini-3-pro-image-preview"
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    },
+    {
+      "siteId": "sistemavendadireta",
+      "ok": true,
+      "aiUsed": false,
+      "aiProvider": "fallback",
+      "warning": "Falha ao usar IA, fallback aplicado: OpenAI API error (401): {\n  \"error\": {\n    \"message\": \"Incorrect API key provided: sk-or-v1*************************************************************3171. You can find your API key at https://platform.openai.com/account/api-keys.\",\n    \"type\": \"invalid_request_error\",\n    \"code\": \"invalid_api_key\",\n    \"param\": null\n  },\n  \"status\": 401\n}",
+      "outputPath": "automation/blog-bot/out/sistemavendadireta/2026-04-27/sistemavendadireta-tecnologia-2026-04-27.json",
+      "markdownPath": "automation/blog-bot/out/sistemavendadireta/2026-04-27/sistemavendadireta-tecnologia-2026-04-27.md",
+      "publishResult": {
+        "postPath": "sistemavendadireta/2026/04/27/sistemavendadireta-tecnologia-2026-04-27/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "google/gemini-3-pro-image-preview"
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "sistemavendadireta/index.php",
+          "sistemavendadireta/blog/index.php",
+          "sistemavendadireta/2026/04/27/sistemavendadireta-tecnologia-2026-04-27/index.php"
+        ]
+      }
+    }
+  ],
+  "finishedAt": "2026-04-27T10:38:13.298Z",
+  "ok": true
+}
