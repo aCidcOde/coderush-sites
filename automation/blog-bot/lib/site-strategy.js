@@ -4,6 +4,7 @@ const SITE_PROFILES = {
   coderush: {
     persona:
       "fundadores e CTOs de empresas medias que precisam tirar iniciativas de tecnologia do papel sem improviso",
+    personaShort: "lideres de tecnologia",
     offering:
       "consultoria e execucao em arquitetura, software sob medida, IA aplicada e governanca tecnica",
     differentiators: [
@@ -15,6 +16,25 @@ const SITE_PROFILES = {
     bannedWords: ["revolucionario", "magico", "disruptivo", "no-code milagroso"],
     angleBias: ["arquitetura", "governanca", "decisao tecnica", "casos de empresa media"],
     cta: { label: "Fale com a CodeRush", path: "#contato" },
+    keywords: {
+      primary: [
+        "software sob medida",
+        "consultoria de tecnologia",
+        "arquitetura de software"
+      ],
+      secondary: [
+        "transformacao digital",
+        "IA para empresas",
+        "governanca de tecnologia",
+        "modernizacao de sistemas",
+        "integracao com sistemas legados"
+      ],
+      longTail: [
+        "consultoria de software sob medida para empresas",
+        "como integrar IA em sistemas legados",
+        "arquitetura de software para operacao critica"
+      ]
+    },
     themes: [
       "governanca de tecnologia para crescimento",
       "arquitetura de software para operacoes criticas",
@@ -25,6 +45,7 @@ const SITE_PROFILES = {
   codafacil: {
     persona:
       "lideres de produto e engenharia que precisam acelerar entrega sem perder qualidade",
+    personaShort: "times de produto e engenharia",
     offering:
       "fabrica de software sob medida com IA aplicada no ciclo de desenvolvimento",
     differentiators: [
@@ -36,6 +57,25 @@ const SITE_PROFILES = {
     bannedWords: ["plug and play", "low code milagroso", "100% automatico"],
     angleBias: ["engenharia", "DX", "tooling de IA para devs", "qualidade de codigo"],
     cta: { label: "Fale com a Codafacil.dev", path: "#contato" },
+    keywords: {
+      primary: [
+        "desenvolvimento de software sob medida",
+        "fabrica de software",
+        "desenvolvimento Laravel"
+      ],
+      secondary: [
+        "desenvolvimento PHP",
+        "engenharia de software com IA",
+        "sistemas web sob medida",
+        "GitHub Copilot",
+        "testes automatizados"
+      ],
+      longTail: [
+        "fabrica de software com IA aplicada",
+        "desenvolvimento Laravel sob medida para empresas",
+        "como usar IA no desenvolvimento de sistemas"
+      ]
+    },
     themes: [
       "software sob medida com IA aplicada",
       "integracoes e automacao para operacoes criticas",
@@ -46,6 +86,7 @@ const SITE_PROFILES = {
   fluxointeligenteia: {
     persona:
       "gerentes de operacao e atendimento que precisam reduzir custo e retrabalho com automacao",
+    personaShort: "times de operacao",
     offering:
       "agentes inteligentes (LangChain, LangGraph), automacao com n8n, integracao de sistemas e orquestracao de fluxos",
     differentiators: [
@@ -67,6 +108,27 @@ const SITE_PROFILES = {
       "tool-use"
     ],
     cta: { label: "Fale com a FluxoInteligente IA", path: "#contato" },
+    keywords: {
+      primary: [
+        "automacao com IA",
+        "agentes inteligentes",
+        "automacao de processos"
+      ],
+      secondary: [
+        "LangChain",
+        "n8n",
+        "agentes de IA",
+        "LLM para automacao",
+        "RPA com IA",
+        "automacao de atendimento"
+      ],
+      longTail: [
+        "como criar agentes de IA com LangChain",
+        "automacao de atendimento com IA",
+        "n8n auto-hospedado para empresas",
+        "agentes inteligentes em producao"
+      ]
+    },
     themes: [
       "agentes inteligentes com LangChain em producao",
       "orquestracao de agentes com LangGraph",
@@ -78,6 +140,7 @@ const SITE_PROFILES = {
   sistemavendadireta: {
     persona:
       "diretores comerciais e de tecnologia em empresas de venda direta e marketing multinivel",
+    personaShort: "diretores comerciais e de TI",
     offering:
       "software, integracoes, IA aplicada e processos para operacao comercial multinivel",
     differentiators: [
@@ -89,6 +152,25 @@ const SITE_PROFILES = {
     bannedWords: ["esquema de piramide", "ganhe dinheiro facil", "renda passiva garantida"],
     angleBias: ["MMN", "vendas diretas", "campo", "comissionamento", "CRM"],
     cta: { label: "Solicite um orcamento", path: "#contato" },
+    keywords: {
+      primary: [
+        "sistema de venda direta",
+        "software para MMN",
+        "marketing multinivel"
+      ],
+      secondary: [
+        "sistema de marketing multinivel",
+        "plano de carreira MMN",
+        "comissionamento MMN",
+        "CRM para venda direta",
+        "software para vendas diretas"
+      ],
+      longTail: [
+        "software para empresa de venda direta no Brasil",
+        "sistema de comissionamento para MMN",
+        "plataforma MMN sob medida"
+      ]
+    },
     themes: [
       "tecnologia para vendas diretas em escala",
       "crm e automacao para marketing multinivel",
@@ -127,12 +209,16 @@ function sitePromptStyle(site) {
     differentiators: profile.differentiators || [],
     bannedWords: profile.bannedWords || [],
     cta: profile.cta || { label: "Fale com o time", path: "#contato" },
+    keywords: profile.keywords || { primary: [], secondary: [], longTail: [] },
     constraints: [
       "Texto em pt-BR",
       "Evitar promessas absolutas e hype",
       "Trazer aplicacao pratica com exemplo concreto",
       "Usar dados ou referencias quando fornecidos",
-      "Fechar com CTA condizente com a oferta do site"
+      "Manter qualidade educacional sobre o tema acima de tudo",
+      "CTAs devem ser sutis e naturais, nunca interruptivas ou agressivas",
+      "Maximo 2 mencoes inline ao servico/empresa, sempre como transicao natural",
+      "Fechar a ultima secao com uma linha leve apontando para contato"
     ],
     postType: site.postType
   };
