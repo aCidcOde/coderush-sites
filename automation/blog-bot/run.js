@@ -131,6 +131,25 @@ function buildAiPrompt({ site, contract, research = [] }) {
     ? `Diferenciais a refletir no conteudo: ${style.differentiators.join("; ")}.`
     : "";
 
+  const keywords = style.keywords || { primary: [], secondary: [], longTail: [] };
+  const keywordsBlock = (keywords.primary?.length || keywords.secondary?.length || keywords.longTail?.length)
+    ? [
+        "",
+        "Palavras-chave SEO para usar com naturalidade (sem stuffing):",
+        keywords.primary?.length
+          ? `- Primarias (cada uma 2-4 vezes ao longo do post, incluindo headline e summary quando fizer sentido): ${keywords.primary.join("; ")}`
+          : "",
+        keywords.secondary?.length
+          ? `- Secundarias (cada uma 1-2 vezes): ${keywords.secondary.join("; ")}`
+          : "",
+        keywords.longTail?.length
+          ? `- Long-tail (use 1-2 destas como pergunta ou frase ao longo do texto): ${keywords.longTail.join("; ")}`
+          : ""
+      ]
+        .filter(Boolean)
+        .join("\n")
+    : "";
+
   const lines = [
     `Site: ${site.name}`,
     `Tipo de post: ${style.postType}`,
@@ -142,12 +161,19 @@ function buildAiPrompt({ site, contract, research = [] }) {
     `Foco rotativo: ${contract.focus}`,
     differentiatorsLine,
     bannedLine,
-    `CTA final do post: "${style.cta.label}" apontando para ${style.cta.path}.`,
+    keywordsBlock,
     "",
     "Estruture um post com JSON valido no formato:",
     '{ "headline": "...", "summary": "...", "sections": [{"title":"...", "body":"..."}] }',
     "Obrigatorio: 4 secoes com 80-160 palavras cada, incluindo uma secao chamada 'Software sob medida com IA'.",
     "Quando houver conteudo recente, cite ao menos 2 fontes em markdown ([texto](url)) integradas ao texto.",
+    "",
+    "Diretrizes de conversao (CTAs sutis, nunca interruptivas):",
+    "- O conteudo deve ser educacional/tecnico de qualidade, voltado ao tema. CTAs sao secundarios, nao podem dominar o texto.",
+    `- Inclua exatamente UMA mencao inline ao servico, na secao 2 ou 3, como transicao natural (ex: "quem precisa avaliar isso na pratica costuma ter beneficio em conversar com a ${site.name}", linkando para [${style.cta.label}](${style.cta.path})).`,
+    `- Feche a ultima secao com UMA linha leve de contato em markdown, sem hype, apontando para [${style.cta.label}](${style.cta.path}).`,
+    "- Nada de \"transforme ja\", \"nao perca\", \"clique aqui\" ou linguagem de copy agressivo.",
+    "- O headline deve ser informativo sobre o tema; nao escreva headline-pitch.",
     researchBlock,
     "",
     "Regras adicionais:",

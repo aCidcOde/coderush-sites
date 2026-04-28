@@ -246,40 +246,54 @@ function joinList(items, fallback = "") {
   return `${list.slice(0, -1).join(", ")} e ${list[list.length - 1]}`;
 }
 
+function capitalize(value) {
+  const text = String(value || "").trim();
+  return text ? text[0].toUpperCase() + text.slice(1) : text;
+}
+
 function generateFallbackContent({ siteName, theme, focus, profile = {}, angle = "", research = [] }) {
   const persona = profile.persona || "gestores de operacao";
+  const personaShort = profile.personaShort || persona;
   const offering = profile.offering || "tecnologia aplicada";
   const differentiators = joinList(profile.differentiators, "execucao com governanca");
   const ctaLabel = profile.cta?.label || "Fale com o time";
+  const ctaPath = profile.cta?.path || "#contato";
   const angleLabel = angle || (profile.angleBias && profile.angleBias[0]) || "aplicacao pratica";
+  const primaryKeyword = profile.keywords?.primary?.[0] || theme;
+  const secondaryKeyword = profile.keywords?.secondary?.[0] || focus;
+  const longTailKeyword = profile.keywords?.longTail?.[0] || "";
 
   const evidenceLine = research.length
     ? `Movimentos recentes do setor (${research
         .slice(0, 2)
         .map((item) => item.title)
         .filter(Boolean)
-        .join("; ")}) reforcam a urgencia.`
-    : `Movimentos do setor reforcam a urgencia de tratar ${focus} como capacidade, nao como projeto isolado.`;
+        .join("; ")}) reforcam a urgencia de tratar ${primaryKeyword} como capacidade.`
+    : `Movimentos do setor reforcam a urgencia de tratar ${primaryKeyword} como capacidade, nao como projeto isolado.`;
+
+  const longTailLine = longTailKeyword
+    ? ` Em conversas com ${personaShort}, ${longTailKeyword} aparece como pergunta recorrente.`
+    : "";
 
   return {
-    headline: `${siteName}: ${focus.toUpperCase()} aplicado com foco em ${angleLabel}`,
-    summary: `Como ${siteName} usa ${theme} para ${persona} obterem resultado consistente, sem hype, com base em ${differentiators}.`,
+    headline: `${capitalize(primaryKeyword)}: o que ${personaShort} precisam decidir sobre ${angleLabel}`,
+    summary: `Guia pratico sobre ${primaryKeyword} no contexto de ${theme}, com leitura de ${secondaryKeyword} e foco em ${differentiators}.`,
     sections: [
       {
-        title: `Contexto para ${persona}`,
-        body: `Quem atua com ${persona} ja sente o peso de adotar ${focus} sem criterio. ${evidenceLine} Antes de escalar, e preciso definir onde ${focus} cria valor real e onde ainda e ruido.`
+        title: `Contexto: ${primaryKeyword} no dia a dia`,
+        body: `${capitalize(personaShort)} ja sentem o peso de adotar ${secondaryKeyword} sem criterio. ${evidenceLine}${longTailLine} Antes de escalar, e preciso definir onde ${primaryKeyword} cria valor real e onde ainda e ruido.`
       },
       {
-        title: `Como ${siteName} aborda`,
-        body: `A oferta da ${siteName} (${offering}) parte do problema operacional, nao da tecnologia. Diferenciais aplicados aqui: ${differentiators}. O foco e construir uma capacidade reproduzivel de ${focus} dentro do contexto atual da empresa, sem reescrever tudo.`
+        title: `Como avaliar ${secondaryKeyword} sem reescrever tudo`,
+        body: `Tratar ${primaryKeyword} como projeto isolado costuma falhar. O caminho mais eficiente e mapear um fluxo critico, medir o impacto e replicar onde houver retorno. Quem precisa avaliar isso na pratica costuma ter beneficio em conversar com um time como o da ${siteName} ([${ctaLabel}](${ctaPath})), que ja aplicou ${differentiators} em contextos parecidos. Nada disso elimina a etapa interna de validacao com os times de operacao.`
       },
       {
         title: "Software sob medida com IA",
-        body: `Para ${angleLabel}, software sob medida com IA aplicada permite integrar sistemas existentes, manter regras de negocio e ganhar velocidade onde a operacao trava. A diferenca esta em escolher o ponto certo de automacao e medir efeito antes de generalizar.`
+        body: `Para ${angleLabel}, software sob medida com IA aplicada permite integrar sistemas existentes, manter regras de negocio e ganhar velocidade onde a operacao trava. A diferenca esta em escolher o ponto certo de automacao e medir efeito antes de generalizar. ${offering} entrega exatamente nessa fronteira.`
       },
       {
-        title: "Proximo passo",
-        body: `Comece com um recorte de ${focus} dentro de ${theme}: um fluxo critico, KPI claro, prazo curto. ${ctaLabel} para mapear esse recorte com a ${siteName} antes de comprometer roadmap.`
+        title: "Proximo passo concreto",
+        body: `Recomenda-se comecar com um recorte de ${primaryKeyword} dentro de ${theme}: um fluxo critico, KPI claro, prazo curto. Esse formato evita iniciativas longas sem retorno. Para discutir como esse recorte se aplica ao seu contexto, [${ctaLabel}](${ctaPath}).`
       }
     ]
   };
