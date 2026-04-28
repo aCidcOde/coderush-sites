@@ -5,18 +5,22 @@ const path = require("node:path");
 const crypto = require("node:crypto");
 const { execSync } = require("node:child_process");
 const { loadEnvFiles } = require("./lib/env-loader");
-const { pickSiteTheme, sitePromptStyle } = require("./lib/site-strategy");
+const { pickSiteTheme, pickAngle, siteProfile, sitePromptStyle } = require("./lib/site-strategy");
 const {
   resolveAiConfig,
   generateWithOpenAI,
   generateWithOpenRouter,
   generateFallbackContent
 } = require("./lib/ai-writer");
+const { gatherResearch, uniqueLinks } = require("./lib/research");
 const { publishSitePost } = require("./lib/publisher");
 
 const ROOT = path.resolve(__dirname, "..", "..");
 const CONFIG_PATH = path.resolve(__dirname, "config", "sites.json");
 const REPORTS_DIR = path.resolve(__dirname, "reports");
+
+const DEFAULT_SOURCES = ["https://openai.com/news/", "https://github.blog/"];
+const DUPLICATION_THRESHOLD = 0.6;
 
 loadEnvFiles(ROOT);
 
@@ -63,16 +67,17 @@ function slugify(value) {
   return value
     .toLowerCase()
     .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[̀-ͯ]/g, "")
     .replace(/[^a-z0-9\s-]/g, "")
     .trim()
     .replace(/\s+/g, "-")
     .replace(/-+/g, "-");
 }
 
-function buildPostContract(site, focus, date) {
+function buildPostContract(site, focus, date, angle) {
   const theme = pickSiteTheme(site.id, date);
-  const title = `${site.name}: ${focus.toUpperCase()} aplicado a resultado real`;
+  const angleLabel = angle || theme;
+  const title = `${site.name}: ${focus.toUpperCase()} aplicado a ${angleLabel}`;
   const slug = slugify(`${site.id}-${focus}-${date}`);
   const description = `Atualizacao semanal de ${focus} para ${site.name}, com foco em ${theme}.`;
 
@@ -82,30 +87,64 @@ function buildPostContract(site, focus, date) {
     postType: site.postType,
     focus,
     theme,
+    angle: angle || "",
     slug,
     title,
     description,
-    sources: ["https://openai.com/news/", "https://github.blog/"],
+    sources: [],
     status: "draft",
     generatedAt: new Date().toISOString()
   };
 }
 
-function buildAiPrompt({ site, contract }) {
+function buildAiPrompt({ site, contract, research = [] }) {
   const style = sitePromptStyle(site);
-  return [
+
+  const researchBlock = research.length
+    ? [
+        "",
+        "Conteudo recente do setor (use como referencia factual e cite ao menos 2 com link em markdown):",
+        ...research.map((item, idx) => {
+          const lines = [`${idx + 1}. ${item.title}`];
+          if (item.link) lines.push(`   Link: ${item.link}`);
+          if (item.summary) lines.push(`   Resumo: ${item.summary.slice(0, 240)}`);
+          return lines.join("\n");
+        })
+      ].join("\n")
+    : "";
+
+  const bannedLine = style.bannedWords?.length
+    ? `Evite estas palavras/expressoes: ${style.bannedWords.join(", ")}.`
+    : "";
+
+  const differentiatorsLine = style.differentiators?.length
+    ? `Diferenciais a refletir no conteudo: ${style.differentiators.join("; ")}.`
+    : "";
+
+  const lines = [
     `Site: ${site.name}`,
     `Tipo de post: ${style.postType}`,
     `Publico: ${style.audience}`,
+    `Oferta da empresa: ${style.offering}`,
     `Tom: ${style.tone}`,
-    `Tema: ${contract.theme}`,
-    `Foco da semana: ${contract.focus}`,
-    "Estruture um post com JSON no formato:",
+    `Tema da semana: ${contract.theme}`,
+    `Angulo desta edicao: ${contract.angle}`,
+    `Foco rotativo: ${contract.focus}`,
+    differentiatorsLine,
+    bannedLine,
+    `CTA final do post: "${style.cta.label}" apontando para ${style.cta.path}.`,
+    "",
+    "Estruture um post com JSON valido no formato:",
     '{ "headline": "...", "summary": "...", "sections": [{"title":"...", "body":"..."}] }',
-    "Obrigatorio: 4 secoes, incluindo uma secao chamada 'Software sob medida com IA'.",
-    "Regras extras:",
+    "Obrigatorio: 4 secoes com 80-160 palavras cada, incluindo uma secao chamada 'Software sob medida com IA'.",
+    "Quando houver conteudo recente, cite ao menos 2 fontes em markdown ([texto](url)) integradas ao texto.",
+    researchBlock,
+    "",
+    "Regras adicionais:",
     style.constraints.map((item) => `- ${item}`).join("\n")
-  ].join("\n");
+  ];
+
+  return lines.filter((line) => line !== "").join("\n");
 }
 
 function writeDraft(site, contract) {
@@ -125,7 +164,7 @@ function writeDraft(site, contract) {
     "",
     sectionsMarkdown,
     "",
-    "## Fontes sugeridas",
+    "## Fontes",
     "",
     ...(contract.sources || []).map((source) => `- ${source}`),
     "",
@@ -155,14 +194,20 @@ function loadExistingDraft(site, contract) {
   return null;
 }
 
-async function generateContent(aiConfig, site, prompt, contract) {
+async function generateContent(aiConfig, site, prompt, contract, researchItems) {
+  const profile = siteProfile(site.id) || {};
+  const fallbackArgs = {
+    siteName: site.name,
+    theme: contract.theme,
+    focus: contract.focus,
+    profile,
+    angle: contract.angle,
+    research: researchItems
+  };
+
   if (!aiConfig) {
     return {
-      content: generateFallbackContent({
-        siteName: site.name,
-        theme: contract.theme,
-        focus: contract.focus
-      }),
+      content: generateFallbackContent(fallbackArgs),
       aiUsed: false,
       aiProvider: "fallback",
       warning: null
@@ -197,11 +242,7 @@ async function generateContent(aiConfig, site, prompt, contract) {
     };
   } catch (error) {
     return {
-      content: generateFallbackContent({
-        siteName: site.name,
-        theme: contract.theme,
-        focus: contract.focus
-      }),
+      content: generateFallbackContent(fallbackArgs),
       aiUsed: false,
       aiProvider: "fallback",
       warning: `Falha ao usar IA, fallback aplicado: ${String(error.message || error)}`
@@ -229,6 +270,58 @@ function lintPhpFiles(relativeTargets) {
       error: String(error.stderr || error.message || error)
     };
   }
+}
+
+function bigrams(text) {
+  const tokens = String(text || "")
+    .toLowerCase()
+    .replace(/[^a-z0-9\sçáàâãéêíóôõúü]/giu, " ")
+    .split(/\s+/)
+    .filter(Boolean);
+  const grams = new Set();
+  for (let i = 0; i < tokens.length - 1; i++) {
+    grams.add(`${tokens[i]} ${tokens[i + 1]}`);
+  }
+  return grams;
+}
+
+function jaccard(a, b) {
+  if (a.size === 0 || b.size === 0) return 0;
+  let intersection = 0;
+  for (const item of a) {
+    if (b.has(item)) intersection++;
+  }
+  return intersection / (a.size + b.size - intersection);
+}
+
+function flattenContent(content) {
+  if (!content) return "";
+  return [
+    content.headline,
+    content.summary,
+    ...(content.sections || []).map((section) => `${section.title} ${section.body}`)
+  ].join(" ");
+}
+
+function detectDuplications(documents) {
+  const docs = documents
+    .filter((doc) => doc.content)
+    .map((doc) => ({ siteId: doc.siteId, grams: bigrams(flattenContent(doc.content)) }));
+
+  const findings = [];
+  for (let i = 0; i < docs.length; i++) {
+    for (let j = i + 1; j < docs.length; j++) {
+      const score = jaccard(docs[i].grams, docs[j].grams);
+      if (score >= DUPLICATION_THRESHOLD) {
+        findings.push({
+          a: docs[i].siteId,
+          b: docs[j].siteId,
+          similarity: Number(score.toFixed(3))
+        });
+      }
+    }
+  }
+  return findings;
 }
 
 async function run() {
@@ -261,38 +354,67 @@ async function run() {
     throw new Error("Nenhum site selecionado para processamento.");
   }
 
+  const documentsForDuplication = [];
+
   for (const site of selectedSites) {
     if (!site.enabled) {
       report.sites.push({ siteId: site.id, skipped: true, reason: "site disabled" });
       continue;
     }
 
-    let contract = buildPostContract(site, focus, date);
+    const angle = pickAngle(site.id, date);
+    let contract = buildPostContract(site, focus, date, angle);
     const existingDraft = loadExistingDraft(site, contract);
 
     let aiUsed = false;
     let aiProvider = "fallback";
     let warning = null;
+    let research = { items: [], errors: [], skipped: true };
 
     if (existingDraft) {
       contract = existingDraft;
       aiProvider = "existing-draft";
       warning = "Rascunho existente reutilizado para manter o seed consistente.";
     } else {
-      const generation = await generateContent(aiConfig, site, buildAiPrompt({ site, contract }), contract);
+      research = await gatherResearch({
+        feeds: site.research?.feeds || [],
+        focus,
+        maxItems: site.research?.maxItems || 6,
+        sinceDays: site.research?.sinceDays || 21
+      });
+
+      const generation = await generateContent(
+        aiConfig,
+        site,
+        buildAiPrompt({ site, contract, research: research.items }),
+        contract,
+        research.items
+      );
       contract.content = generation.content;
+      contract.sources = research.items.length
+        ? uniqueLinks(research.items, 5)
+        : DEFAULT_SOURCES;
       aiUsed = generation.aiUsed;
       aiProvider = generation.aiProvider;
       warning = generation.warning;
     }
 
     const outputPath = writeDraft(site, contract);
+    documentsForDuplication.push({ siteId: site.id, content: contract.content });
+
     const siteResult = {
       siteId: site.id,
       ok: true,
       aiUsed,
       aiProvider,
       warning,
+      angle: contract.angle,
+      theme: contract.theme,
+      research: {
+        used: research.items.length,
+        skipped: research.skipped,
+        errors: research.errors
+      },
       outputPath: path.relative(ROOT, outputPath.jsonPath).replace(/\\/g, "/"),
       markdownPath: path.relative(ROOT, outputPath.markdownPath).replace(/\\/g, "/")
     };
@@ -324,10 +446,35 @@ async function run() {
     report.sites.push(siteResult);
   }
 
+  const duplications = detectDuplications(documentsForDuplication);
+  report.duplications = duplications;
+  if (duplications.length > 0) {
+    console.warn(
+      `Atencao: ${duplications.length} par(es) de sites com similaridade >= ${DUPLICATION_THRESHOLD}.`
+    );
+  }
+
+  const generatedSites = report.sites.filter((site) => !site.skipped);
+  const fallbackSites = generatedSites.filter((site) => site.aiProvider === "fallback");
+  const allFallback =
+    aiConfig && generatedSites.length > 0 && fallbackSites.length === generatedSites.length;
+
+  report.fallbackCount = fallbackSites.length;
+  report.allFallback = Boolean(allFallback);
   report.finishedAt = new Date().toISOString();
-  report.ok = report.sites.every((site) => site.ok || site.skipped);
+  report.ok =
+    report.sites.every((site) => site.ok || site.skipped) && !allFallback;
+
   const reportPath = path.resolve(REPORTS_DIR, `run-${date}-${mode}.json`);
   fs.writeFileSync(reportPath, JSON.stringify(report, null, 2), "utf8");
+
+  if (allFallback) {
+    console.error(
+      "Todos os sites cairam em fallback (IA indisponivel). Abortando para nao publicar conteudo generico."
+    );
+    console.error("Relatorio:", path.relative(ROOT, reportPath));
+    process.exit(1);
+  }
 
   if (!report.ok) {
     console.error("Blog bot finalizou com falhas. Veja o relatorio:", path.relative(ROOT, reportPath));

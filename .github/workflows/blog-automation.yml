@@ -31,8 +31,6 @@ jobs:
           API_OPENROUTER: ${{ secrets.API_OPENROUTER }}
           BLOG_BOT_OPENROUTER_MODEL: openai/gpt-4o-mini
           BLOG_BOT_OPENROUTER_IMAGE_MODEL: google/gemini-2.5-flash-image
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          BLOG_BOT_OPENAI_MODEL: gpt-4o-mini
         run: npm run blogbot:publish
 
       - name: Create automated PR

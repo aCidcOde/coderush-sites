@@ -38,6 +38,17 @@
         "robotsPath": "robots.txt",
         "sitemapPath": "sitemap.xml",
         "extraPaths": []
+      },
+      "research": {
+        "maxItems": 6,
+        "sinceDays": 21,
+        "feeds": [
+          "https://martinfowler.com/feed.atom",
+          "https://aws.amazon.com/blogs/architecture/feed/",
+          "https://www.thoughtworks.com/insights/blog/rss.xml",
+          "https://stackoverflow.blog/feed/",
+          "https://cloud.google.com/blog/rss"
+        ]
       }
     },
     {
@@ -72,6 +83,17 @@
         "robotsPath": "robots.txt",
         "sitemapPath": "sitemap.xml",
         "extraPaths": []
+      },
+      "research": {
+        "maxItems": 6,
+        "sinceDays": 21,
+        "feeds": [
+          "https://github.blog/feed/",
+          "https://openai.com/blog/rss.xml",
+          "https://vercel.com/atom",
+          "https://blog.langchain.com/rss/",
+          "https://dev.to/feed"
+        ]
       }
     },
     {
@@ -103,6 +125,17 @@
         "robotsPath": "robots.txt",
         "sitemapPath": "sitemap.xml",
         "extraPaths": []
+      },
+      "research": {
+        "maxItems": 6,
+        "sinceDays": 21,
+        "feeds": [
+          "https://blog.langchain.com/rss/",
+          "https://blog.n8n.io/rss/",
+          "https://huggingface.co/blog/feed.xml",
+          "https://blog.crewai.com/rss/",
+          "https://openai.com/blog/rss.xml"
+        ]
       }
     },
     {
@@ -155,6 +188,17 @@
             "changefreq": "weekly",
             "priority": "0.9"
           }
+        ]
+      },
+      "research": {
+        "maxItems": 6,
+        "sinceDays": 21,
+        "feeds": [
+          "https://www.directsellingnews.com/feed/",
+          "https://blog.rdstation.com/feed/",
+          "https://blog.hubspot.com/sales/rss.xml",
+          "https://www.salesforce.com/blog/feed/",
+          "https://wfdsa.org/feed/"
         ]
       }
     }
