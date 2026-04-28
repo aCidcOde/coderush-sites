@@ -11,6 +11,7 @@
     "build:css": "npm run build:root && npm run build:svd && npm run build:codafacil && npm run build:fluxointeligenteia",
     "blogbot:dry-run": "node automation/blog-bot/run.js --mode=dry-run",
     "blogbot:publish": "node automation/blog-bot/run.js --mode=publish",
+    "blogbot:refresh-related": "node automation/blog-bot/scripts/refresh-related.js",
     "pr-approval:email:dry-run": "node automation/pr-approval/send-approval-email.js --dry-run"
   },
   "repository": {

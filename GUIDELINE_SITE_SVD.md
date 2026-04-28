@@ -212,6 +212,15 @@ node automation/blog-bot/run.js --mode=dry-run --date=2026-04-28
   - `BLOG_BOT_COVER_MODEL_PRIMARY` / `BLOG_BOT_COVER_MODEL_FALLBACK` — override opcional da cadeia de modelos por execucao.
 - O secret `OPENAI_API_KEY` foi removido e nao deve ser reintroduzido sem autorizacao explicita. Detalhes na secao 11.
 
+### Related cards dinamicos (`lib/related-refresher.js`)
+A secao "Leia tambem" e o novo bloco "Mais do hub CodeRush" em cada post sao **regenerados** a cada execucao do bot, nao mais congelados no momento da criacao.
+
+- Marcadores no HTML do post: `<!-- BLOG-LEIA-TAMBEM START/END -->` (cards do mesmo site) e `<!-- BLOG-CROSS-SITE START/END -->` (cards dos outros 3 sites do hub).
+- `lib/cross-site.js` indexa os 4 `blog/index.*` em runtime e retorna pools por site; `pickSameSiteRelated` e `pickRelatedFromOtherSites` selecionam por overlap de tokens com o titulo do post + recencia.
+- `lib/related-refresher.js` percorre todos os posts no disco e atualiza os blocos. Posts legados sem marcadores sao migrados (markers inseridos antes de `</main>` ou substituindo a antiga secao "Leia Tambem").
+- O `run.js` chama `refreshAllPosts` no fim do publish, garantindo que posts antigos passem a apontar para os mais novos.
+- Comando manual: `npm run blogbot:refresh-related`.
+
 ### Pipeline de capas (`lib/cover-agent.js`)
 A capa de cada post passa por 4 etapas:
 1. **Direcao visual unificada.** A direcao de arte (`coverArt`) vem de `SITE_PROFILES[siteId]` em `lib/site-strategy.js`. Inclui `paletteHex`, `paletteDescription`, `lighting`, `mood`, `visualMotifs`, `avoid`. Fonte de verdade unica — nao duplicar em `publisher.js` ou em outro lugar.

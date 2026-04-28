@@ -169,42 +169,71 @@ Pagina estatica do post "Descubra Estratégias de Venda Direta" espelhada do blo
     <!-- BLOG-VEJA-MAIS END -->
 
     <!-- BLOG-LEIA-TAMBEM START -->
-    <section class="mt-8 rounded-2xl border border-white/20 bg-white/5 p-5">
-      <div class="flex items-end justify-between gap-4">
-        <h2 class="font-[var(--font-heading)] text-2xl font-semibold">Leia Também</h2>
-        <a href="../../../../blog/" class="text-sm font-semibold text-white/85 hover:text-white">Ver todos</a>
-      </div>
-      <div class="mt-5 grid gap-4 md:grid-cols-3">
-        <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
-          <a href="../../../../2023/05/23/desvantagens-modelo-marketing-multinivel-vendas-diretas/">
-            <img decoding="async" src="../../../../imagens/posts/desvantagens-modelo-marketing-multinivel-vendas-diretas.webp" srcset="../../../../imagens/posts/desvantagens-modelo-marketing-multinivel-vendas-diretas-480.webp 480w, ../../../../imagens/posts/desvantagens-modelo-marketing-multinivel-vendas-diretas.webp 1200w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="Marketing multinível também apresenta algumas desvantagens que devem ser consideradas antes de ingressar nesse mercado." class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-          </a>
-          <div class="p-4">
-            <h3 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../../../../2023/05/23/desvantagens-modelo-marketing-multinivel-vendas-diretas/" class="hover:underline">Marketing multinível também apresenta algumas desvantagens que devem ser consideradas antes de ingressar nesse mercado.</a></h3>
-            <p class="mt-2 text-sm text-white/85">Ao considerar o marketing multinível, é importante avaliar essas desvantagens e ponderá-las em relação às suas metas, habilidades e recursos disponíveis. Pesquise e analise cuidadosamente a empresa, o plano de compensação, os prod...</p>
-          </div>
-        </article>
-        <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
-          <a href="../../../../2023/04/13/importancia-sistema-venda-direta-para-seu-negocio/">
-            <img decoding="async" src="../../../../imagens/posts/importancia-sistema-venda-direta-para-seu-negocio.webp" srcset="../../../../imagens/posts/importancia-sistema-venda-direta-para-seu-negocio-480.webp 480w, ../../../../imagens/posts/importancia-sistema-venda-direta-para-seu-negocio.webp 1200w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="A importância de um sistema vendas direta para seu negócio" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-          </a>
-          <div class="p-4">
-            <h3 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../../../../2023/04/13/importancia-sistema-venda-direta-para-seu-negocio/" class="hover:underline">A importância de um sistema vendas direta para seu negócio</a></h3>
-            <p class="mt-2 text-sm text-white/85">Compreender a importância de um sistema de vendas diretas é fundamental para quem busca crescimento e sucesso nesse mercado. Ao contrário do que muitos acreditam, vender diretamente para o cliente final requer organização, planeja...</p>
-          </div>
-        </article>
-        <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
-          <a href="../../../../2023/05/23/descubra-o-poder-do-marketing-multinivel-alavanque-seus-lucros-e-conquiste-o-sucesso/">
-            <img decoding="async" src="../../../../imagens/posts/descubra-o-poder-do-marketing-multinivel-alavanque-seus-lucros-e-conquiste-o-sucesso.webp" srcset="../../../../imagens/posts/descubra-o-poder-do-marketing-multinivel-alavanque-seus-lucros-e-conquiste-o-sucesso-480.webp 480w, ../../../../imagens/posts/descubra-o-poder-do-marketing-multinivel-alavanque-seus-lucros-e-conquiste-o-sucesso.webp 1200w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="Descubra o poder do marketing multinível: alavanque seus lucros e conquiste o sucesso!" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-          </a>
-          <div class="p-4">
-            <h3 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../../../../2023/05/23/descubra-o-poder-do-marketing-multinivel-alavanque-seus-lucros-e-conquiste-o-sucesso/" class="hover:underline">Descubra o poder do marketing multinível: alavanque seus lucros e conquiste o sucesso!</a></h3>
-            <p class="mt-2 text-sm text-white/85">O marketing multinível é um modelo de vendas diretas no qual você ganha comissões não apenas pelas suas próprias vendas, mas também pela rede de revendedores que você constrói. É uma oportunidade de crescimento pessoal e financeir...</p>
-          </div>
-        </article>
-      </div>
-    </section>
-    <!-- BLOG-LEIA-TAMBEM END -->
+<section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
+  <div class="flex items-end justify-between gap-4">
+    <h2 class="text-2xl font-semibold text-white">Leia tambem</h2>
+    <a href="../../../../blog/" class="text-sm font-semibold text-white/85 hover:text-white">Ver todos</a>
+  </div>
+  <div class="mt-5 grid gap-4 md:grid-cols-3">
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2023/04/13/importancia-sistema-venda-direta-para-seu-negocio/"><img src="../../../../imagens/posts/importancia-sistema-venda-direta-para-seu-negocio.webp" alt="A importância de um sistema vendas direta para seu negócio" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2023/04/13/importancia-sistema-venda-direta-para-seu-negocio/" class="hover:underline">A importância de um sistema vendas direta para seu negócio</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Compreender a importância de um sistema de vendas diretas é fundamental para quem busca crescimento e sucesso nesse mercado. Ao contrário do que muitos acred...</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2023/05/23/descubra-o-potencial-de-salario-e-carreira-na-area-de-marketing-de-rede/"><img src="../../../../imagens/posts/descubra-o-potencial-de-salario-e-carreira-na-area-de-marketing-de-rede.webp" alt="Descubra o potencial de salário e carreira na área de Marketing de Rede!" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2023/05/23/descubra-o-potencial-de-salario-e-carreira-na-area-de-marketing-de-rede/" class="hover:underline">Descubra o potencial de salário e carreira na área de Marketing de Rede!</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Se você está considerando uma carreira no campo do Marketing de Rede, é importante conhecer as perspectivas salariais e oportunidades de crescimento profissi...</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2023/05/23/descubra-o-poder-do-marketing-multinivel-alavanque-seus-lucros-e-conquiste-o-sucesso/"><img src="../../../../imagens/posts/descubra-o-poder-do-marketing-multinivel-alavanque-seus-lucros-e-conquiste-o-sucesso.webp" alt="Descubra o poder do marketing multinível: alavanque seus lucros e conquiste o sucesso!" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2023/05/23/descubra-o-poder-do-marketing-multinivel-alavanque-seus-lucros-e-conquiste-o-sucesso/" class="hover:underline">Descubra o poder do marketing multinível: alavanque seus lucros e conquiste o sucesso!</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">O marketing multinível é um modelo de vendas diretas no qual você ganha comissões não apenas pelas suas próprias vendas, mas também pela rede de revendedores...</p>
+  </div>
+</article>
+  </div>
+</section>
+<!-- BLOG-LEIA-TAMBEM END -->
+<!-- BLOG-CROSS-SITE START -->
+<section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
+  <div class="flex items-end justify-between gap-4">
+    <h2 class="text-2xl font-semibold text-white">Mais do hub CodeRush</h2>
+    <a href="https://coderush.com.br/" rel="noopener" target="_blank" class="text-sm font-semibold text-white/85 hover:text-white">Ver hub</a>
+  </div>
+  <p class="mt-2 text-sm text-white/70">Conteudo recente dos outros sites do ecossistema.</p>
+  <div class="mt-5 grid gap-4 md:grid-cols-3">
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="https://codafacil.dev/2026/04/19/codafacil-php-2026-04-19/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/codafacil-php-2026-04-19.jpg" alt="A Revolução do Software Sob Medida com IA: Como PHP Pode Transformar Seu Negócio" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/04/19/codafacil-php-2026-04-19/" rel="noopener" target="_blank" class="hover:underline">A Revolução do Software Sob Medida com IA: Como PHP Pode Transformar Seu Negócio</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como a combinação de software sob medida e inteligência artificial pode otimizar operações, melhorar a tomada de decisões e traz...</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="https://coderush.com.br/2026/04/19/coderush-php-2026-04-19/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/coderush-php-2026-04-19.jpg" alt="Governança de Tecnologia: O Caminho para o Crescimento Sustentável" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">CodeRush</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/04/19/coderush-php-2026-04-19/" rel="noopener" target="_blank" class="hover:underline">Governança de Tecnologia: O Caminho para o Crescimento Sustentável</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Neste artigo, abordaremos a importância da governança de tecnologia no crescimento das operações empresariais, com um foco especial em PH...</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="https://fluxointeligenteia.com.br/2026/04/19/fluxointeligenteia-php-2026-04-19/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/fluxointeligenteia-php-2026-04-19.jpg" alt="Automação de Processos com LLMs: A Revolução na Gestão Empresarial" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">FluxoInteligente IA</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/04/19/fluxointeligenteia-php-2026-04-19/" rel="noopener" target="_blank" class="hover:underline">Automação de Processos com LLMs: A Revolução na Gestão Empresarial</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como a automação de processos utilizando LLMs (Modelos de Linguagem de Grande Escala) pode transformar a eficiência operacional...</p>
+  </div>
+</article>
+  </div>
+</section>
+<!-- BLOG-CROSS-SITE END -->
 
   </main>
 

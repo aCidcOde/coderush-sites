@@ -150,42 +150,71 @@ Post de blog estatico com foco em conectores de IA e impacto operacional.
     <!-- BLOG-VEJA-MAIS END -->
 
     <!-- BLOG-LEIA-TAMBEM START -->
-    <section class="mt-8 rounded-2xl border border-white/20 bg-white/5 p-5">
-      <div class="flex items-end justify-between gap-4">
-        <h2 class="font-[var(--font-heading)] text-2xl font-semibold">Leia Também</h2>
-        <a href="../../../../blog/" class="text-sm font-semibold text-white/85 hover:text-white">Ver todos</a>
-      </div>
-      <div class="mt-5 grid gap-4 md:grid-cols-3">
-        <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
-          <a href="../../../../2026/02/19/openclaw-assistente-pessoal-de-ia/">
-            <img src="../../../../imagens/posts/openclaw-assistente-ia.jpg" alt="OpenClaw: assistente pessoal de IA e produtividade real" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-          </a>
-          <div class="p-4">
-            <h3 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../../../../2026/02/19/openclaw-assistente-pessoal-de-ia/" class="hover:underline">OpenClaw: assistente pessoal de IA e produtividade real</a></h3>
-            <p class="mt-2 text-sm text-white/85">Veja como o OpenClaw reforca a importancia de software sob medida com IA para reduzir custo operacional e aumentar produtividade.</p>
-          </div>
-        </article>
-        <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
-          <a href="../../../../2026/02/10/codafacil-parceiro-tecnico-para-escalar-operacao-com-ia/">
-            <img src="../../../../imagens/posts/codafacil-parceiro.jpg" alt="CodaFácil: parceiro técnico para escalar operação com IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-          </a>
-          <div class="p-4">
-            <h3 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../../../../2026/02/10/codafacil-parceiro-tecnico-para-escalar-operacao-com-ia/" class="hover:underline">CodaFácil: parceiro técnico para escalar operação com IA</a></h3>
-            <p class="mt-2 text-sm text-white/85">Conheca como o CodaFácil acelera customizacoes, integracoes e evolucao continua para empresas que querem avancar com IA.</p>
-          </div>
-        </article>
-        <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
-          <a href="../../../../2026/02/10/importancia-da-ia-no-marketing-multinivel-e-vendas-diretas/">
-            <img src="../../../../imagens/posts/ia-mmn.jpg" alt="A importância da IA no Marketing Multinível e Vendas Diretas" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-          </a>
-          <div class="p-4">
-            <h3 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../../../../2026/02/10/importancia-da-ia-no-marketing-multinivel-e-vendas-diretas/" class="hover:underline">A importância da IA no Marketing Multinível e Vendas Diretas</a></h3>
-            <p class="mt-2 text-sm text-white/85">Entenda como a IA reduz custo operacional, melhora a produtividade da rede e aumenta previsibilidade em operacoes de vendas diretas.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-    <!-- BLOG-LEIA-TAMBEM END -->
+<section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
+  <div class="flex items-end justify-between gap-4">
+    <h2 class="text-2xl font-semibold text-white">Leia tambem</h2>
+    <a href="../../../../blog/" class="text-sm font-semibold text-white/85 hover:text-white">Ver todos</a>
+  </div>
+  <div class="mt-5 grid gap-4 md:grid-cols-3">
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/04/26/sistemavendadireta-tecnologia-2026-04-26/"><img src="../../../../imagens/posts/sistemavendadireta-tecnologia-2026-04-26.jpg" alt="Sistema Venda Direta: como usar TECNOLOGIA de forma pratica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/04/26/sistemavendadireta-tecnologia-2026-04-26/" class="hover:underline">Sistema Venda Direta: como usar TECNOLOGIA de forma pratica</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre governanca comercial com dados e ia com foco em resultado operacional.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/04/04/seguranca-agentica-em-2026-checklist-com-nist-cyber-ai-profile-e-owasp/"><img src="../../../../imagens/posts/seguranca-agentica-em-2026-checklist-com-nist-cyber-ai-profile-e-owasp.jpg" alt="Seguranca agentica em 2026: checklist com NIST Cyber AI Profile e OWASP" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/04/04/seguranca-agentica-em-2026-checklist-com-nist-cyber-ai-profile-e-owasp/" class="hover:underline">Seguranca agentica em 2026: checklist com NIST Cyber AI Profile e OWASP</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Checklist pratico para proteger fluxos com agentes, MCP e dados criticos sem travar a operacao.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/03/11/soc-agentico-e-seguranca-multicloud-com-governanca-unificada/"><img src="../../../../imagens/posts/soc-agentico-e-seguranca-multicloud-com-governanca-unificada.jpg" alt="SOC agentico e seguranca multicloud: guia pratico de governanca em 2026" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/03/11/soc-agentico-e-seguranca-multicloud-com-governanca-unificada/" class="hover:underline">SOC agentico e seguranca multicloud: guia pratico de governanca em 2026</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia pratico para unificar seguranca multicloud, acelerar resposta e reduzir risco operacional.</p>
+  </div>
+</article>
+  </div>
+</section>
+<!-- BLOG-LEIA-TAMBEM END -->
+<!-- BLOG-CROSS-SITE START -->
+<section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
+  <div class="flex items-end justify-between gap-4">
+    <h2 class="text-2xl font-semibold text-white">Mais do hub CodeRush</h2>
+    <a href="https://coderush.com.br/" rel="noopener" target="_blank" class="text-sm font-semibold text-white/85 hover:text-white">Ver hub</a>
+  </div>
+  <p class="mt-2 text-sm text-white/70">Conteudo recente dos outros sites do ecossistema.</p>
+  <div class="mt-5 grid gap-4 md:grid-cols-3">
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="https://fluxointeligenteia.com.br/2026/04/19/fluxointeligenteia-php-2026-04-19/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/fluxointeligenteia-php-2026-04-19.jpg" alt="Automação de Processos com LLMs: A Revolução na Gestão Empresarial" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">FluxoInteligente IA</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/04/19/fluxointeligenteia-php-2026-04-19/" rel="noopener" target="_blank" class="hover:underline">Automação de Processos com LLMs: A Revolução na Gestão Empresarial</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como a automação de processos utilizando LLMs (Modelos de Linguagem de Grande Escala) pode transformar a eficiência operacional...</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="https://coderush.com.br/2026/04/14/coderush-ia-2026-04-14/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/coderush-ia-2026-04-14.jpg" alt="CodeRush: como usar IA de forma pratica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">CodeRush</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/04/14/coderush-ia-2026-04-14/" rel="noopener" target="_blank" class="hover:underline">CodeRush: como usar IA de forma pratica</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre governanca de tecnologia para crescimento com foco em resultado operacional.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="https://codafacil.dev/2026/04/26/codafacil-tecnologia-2026-04-26/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/codafacil-tecnologia-2026-04-26.jpg" alt="Codafacil.dev: como usar TECNOLOGIA de forma pratica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/04/26/codafacil-tecnologia-2026-04-26/" rel="noopener" target="_blank" class="hover:underline">Codafacil.dev: como usar TECNOLOGIA de forma pratica</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre software sob medida com IA aplicada com foco em resultado operacional.</p>
+  </div>
+</article>
+  </div>
+</section>
+<!-- BLOG-CROSS-SITE END -->
 
   </main>
 

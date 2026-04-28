@@ -14,6 +14,7 @@ const {
 } = require("./lib/ai-writer");
 const { gatherResearch, uniqueLinks } = require("./lib/research");
 const { publishSitePost } = require("./lib/publisher");
+const { refreshAllPosts } = require("./lib/related-refresher");
 
 const ROOT = path.resolve(__dirname, "..", "..");
 const CONFIG_PATH = path.resolve(__dirname, "config", "sites.json");
@@ -490,6 +491,19 @@ async function run() {
     console.warn(
       `Atencao: ${duplications.length} par(es) de sites com similaridade >= ${DUPLICATION_THRESHOLD}.`
     );
+  }
+
+  if (mode === "publish") {
+    try {
+      const refresh = refreshAllPosts(ROOT, config);
+      report.relatedRefresh = refresh;
+      if (refresh.errors.length > 0) {
+        console.warn(`Refresher de related encontrou ${refresh.errors.length} erro(s).`);
+      }
+    } catch (error) {
+      report.relatedRefresh = { error: error.message || String(error) };
+      console.warn(`Refresher de related falhou: ${error.message || error}`);
+    }
   }
 
   const generatedSites = report.sites.filter((site) => !site.skipped);

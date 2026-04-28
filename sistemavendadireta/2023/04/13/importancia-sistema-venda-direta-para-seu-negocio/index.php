@@ -304,42 +304,71 @@ Pagina estatica do post "A importância de um sistema vendas direta para seu neg
     <!-- BLOG-VEJA-MAIS END -->
 
     <!-- BLOG-LEIA-TAMBEM START -->
-    <section class="mt-8 rounded-2xl border border-white/20 bg-white/5 p-5">
-      <div class="flex items-end justify-between gap-4">
-        <h2 class="font-[var(--font-heading)] text-2xl font-semibold">Leia Também</h2>
-        <a href="../../../../blog/" class="text-sm font-semibold text-white/85 hover:text-white">Ver todos</a>
-      </div>
-      <div class="mt-5 grid gap-4 md:grid-cols-3">
-        <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
-          <a href="../../../../2023/05/23/desvantagens-modelo-marketing-multinivel-vendas-diretas/">
-            <img decoding="async" src="../../../../imagens/posts/desvantagens-modelo-marketing-multinivel-vendas-diretas.webp" srcset="../../../../imagens/posts/desvantagens-modelo-marketing-multinivel-vendas-diretas-480.webp 480w, ../../../../imagens/posts/desvantagens-modelo-marketing-multinivel-vendas-diretas.webp 1200w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="Marketing multinível também apresenta algumas desvantagens que devem ser consideradas antes de ingressar nesse mercado." class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-          </a>
-          <div class="p-4">
-            <h3 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../../../../2023/05/23/desvantagens-modelo-marketing-multinivel-vendas-diretas/" class="hover:underline">Marketing multinível também apresenta algumas desvantagens que devem ser consideradas antes de ingressar nesse mercado.</a></h3>
-            <p class="mt-2 text-sm text-white/85">Ao considerar o marketing multinível, é importante avaliar essas desvantagens e ponderá-las em relação às suas metas, habilidades e recursos disponíveis. Pesquise e analise cuidadosamente a empresa, o plano de compensação, os prod...</p>
-          </div>
-        </article>
-        <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
-          <a href="../../../../2023/07/03/descubra-estrategias-de-venda-direta/">
-            <img decoding="async" src="../../../../imagens/posts/descubra-estrategias-de-venda-direta.webp" srcset="../../../../imagens/posts/descubra-estrategias-de-venda-direta-480.webp 480w, ../../../../imagens/posts/descubra-estrategias-de-venda-direta.webp 1200w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="Descubra Estratégias de Venda Direta" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-          </a>
-          <div class="p-4">
-            <h3 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../../../../2023/07/03/descubra-estrategias-de-venda-direta/" class="hover:underline">Descubra Estratégias de Venda Direta</a></h3>
-            <p class="mt-2 text-sm text-white/85">Descubra as Estratégias de Venda Direta que Farão seu Negócio Decolar! A venda direta é um mercado em constante crescimento e transformação. Com o avanço tecnológico, surgiram inúmeras oportunidades para alcançar o sucesso nesse s...</p>
-          </div>
-        </article>
-        <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
-          <a href="../../../../2023/05/23/vantagens-modelo-marketing-multinivel-vendas-diretas/">
-            <img decoding="async" src="../../../../imagens/posts/vantagens-modelo-marketing-multinivel-vendas-diretas.webp" srcset="../../../../imagens/posts/vantagens-modelo-marketing-multinivel-vendas-diretas-480.webp 480w, ../../../../imagens/posts/vantagens-modelo-marketing-multinivel-vendas-diretas.webp 1200w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="O modelo de marketing multinível oferece várias vantagens que podem atrair pessoas interessadas em empreender." class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-          </a>
-          <div class="p-4">
-            <h3 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../../../../2023/05/23/vantagens-modelo-marketing-multinivel-vendas-diretas/" class="hover:underline">O modelo de marketing multinível oferece várias vantagens que podem atrair pessoas interessadas em empreender.</a></h3>
-            <p class="mt-2 text-sm text-white/85">Aqui estão algumas das principais vantagens desse modelo: Ao considerar o marketing multinível, é essencial avaliar essas vantagens e analisar se elas estão alinhadas aos seus objetivos e habilidades. Lembre-se de que o sucesso ne...</p>
-          </div>
-        </article>
-      </div>
-    </section>
-    <!-- BLOG-LEIA-TAMBEM END -->
+<section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
+  <div class="flex items-end justify-between gap-4">
+    <h2 class="text-2xl font-semibold text-white">Leia tambem</h2>
+    <a href="../../../../blog/" class="text-sm font-semibold text-white/85 hover:text-white">Ver todos</a>
+  </div>
+  <div class="mt-5 grid gap-4 md:grid-cols-3">
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2023/07/03/descubra-estrategias-de-venda-direta/"><img src="../../../../imagens/posts/descubra-estrategias-de-venda-direta.webp" alt="Descubra Estratégias de Venda Direta" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2023/07/03/descubra-estrategias-de-venda-direta/" class="hover:underline">Descubra Estratégias de Venda Direta</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra as Estratégias de Venda Direta que Farão seu Negócio Decolar! A venda direta é um mercado em constante crescimento e transformação. Com o avanço tec...</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/04/14/sistemavendadireta-ia-2026-04-14/"><img src="../../../../imagens/posts/sistemavendadireta-ia-2026-04-14.jpg" alt="Sistema Venda Direta: como usar IA de forma pratica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/04/14/sistemavendadireta-ia-2026-04-14/" class="hover:underline">Sistema Venda Direta: como usar IA de forma pratica</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre tecnologia para vendas diretas em escala com foco em resultado operacional.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2023/05/23/descubra-o-poder-do-marketing-multinivel-alavanque-seus-lucros-e-conquiste-o-sucesso/"><img src="../../../../imagens/posts/descubra-o-poder-do-marketing-multinivel-alavanque-seus-lucros-e-conquiste-o-sucesso.webp" alt="Descubra o poder do marketing multinível: alavanque seus lucros e conquiste o sucesso!" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2023/05/23/descubra-o-poder-do-marketing-multinivel-alavanque-seus-lucros-e-conquiste-o-sucesso/" class="hover:underline">Descubra o poder do marketing multinível: alavanque seus lucros e conquiste o sucesso!</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">O marketing multinível é um modelo de vendas diretas no qual você ganha comissões não apenas pelas suas próprias vendas, mas também pela rede de revendedores...</p>
+  </div>
+</article>
+  </div>
+</section>
+<!-- BLOG-LEIA-TAMBEM END -->
+<!-- BLOG-CROSS-SITE START -->
+<section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
+  <div class="flex items-end justify-between gap-4">
+    <h2 class="text-2xl font-semibold text-white">Mais do hub CodeRush</h2>
+    <a href="https://coderush.com.br/" rel="noopener" target="_blank" class="text-sm font-semibold text-white/85 hover:text-white">Ver hub</a>
+  </div>
+  <p class="mt-2 text-sm text-white/70">Conteudo recente dos outros sites do ecossistema.</p>
+  <div class="mt-5 grid gap-4 md:grid-cols-3">
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="https://coderush.com.br/2026/04/19/coderush-php-2026-04-19/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/coderush-php-2026-04-19.jpg" alt="Governança de Tecnologia: O Caminho para o Crescimento Sustentável" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">CodeRush</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/04/19/coderush-php-2026-04-19/" rel="noopener" target="_blank" class="hover:underline">Governança de Tecnologia: O Caminho para o Crescimento Sustentável</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Neste artigo, abordaremos a importância da governança de tecnologia no crescimento das operações empresariais, com um foco especial em PH...</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="https://codafacil.dev/2026/04/19/codafacil-php-2026-04-19/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/codafacil-php-2026-04-19.jpg" alt="A Revolução do Software Sob Medida com IA: Como PHP Pode Transformar Seu Negócio" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/04/19/codafacil-php-2026-04-19/" rel="noopener" target="_blank" class="hover:underline">A Revolução do Software Sob Medida com IA: Como PHP Pode Transformar Seu Negócio</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como a combinação de software sob medida e inteligência artificial pode otimizar operações, melhorar a tomada de decisões e traz...</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="https://fluxointeligenteia.com.br/2026/04/26/fluxointeligenteia-tecnologia-2026-04-26/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/fluxointeligenteia-tecnologia-2026-04-26.jpg" alt="FluxoInteligente IA: como usar TECNOLOGIA de forma pratica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">FluxoInteligente IA</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/04/26/fluxointeligenteia-tecnologia-2026-04-26/" rel="noopener" target="_blank" class="hover:underline">FluxoInteligente IA: como usar TECNOLOGIA de forma pratica</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre reducao de custo operacional com ia aplicada com foco em resultado operacional.</p>
+  </div>
+</article>
+  </div>
+</section>
+<!-- BLOG-CROSS-SITE END -->
 
   </main>
 

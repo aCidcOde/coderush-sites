@@ -131,42 +131,71 @@ Pagina estatica do post "Marketing multinível também apresenta algumas desvant
     <!-- BLOG-VEJA-MAIS END -->
 
     <!-- BLOG-LEIA-TAMBEM START -->
-    <section class="mt-8 rounded-2xl border border-white/20 bg-white/5 p-5">
-      <div class="flex items-end justify-between gap-4">
-        <h2 class="font-[var(--font-heading)] text-2xl font-semibold">Leia Também</h2>
-        <a href="../../../../blog/" class="text-sm font-semibold text-white/85 hover:text-white">Ver todos</a>
-      </div>
-      <div class="mt-5 grid gap-4 md:grid-cols-3">
-        <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
-          <a href="../../../../2026/02/10/importancia-da-ia-no-marketing-multinivel-e-vendas-diretas/">
-            <img decoding="async" src="../../../../imagens/posts/ia-mmn.webp" srcset="../../../../imagens/posts/ia-mmn-480.webp 480w, ../../../../imagens/posts/ia-mmn.webp 1200w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="A importância da IA no Marketing Multinível e Vendas Diretas" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-          </a>
-          <div class="p-4">
-            <h3 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../../../../2026/02/10/importancia-da-ia-no-marketing-multinivel-e-vendas-diretas/" class="hover:underline">A importância da IA no Marketing Multinível e Vendas Diretas</a></h3>
-            <p class="mt-2 text-sm text-white/85">Entenda como a IA reduz custo operacional, melhora a produtividade da rede e aumenta previsibilidade em operações de marketing multinível e vendas diretas.</p>
-          </div>
-        </article>
-        <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
-          <a href="../../../../2026/02/10/codafacil-parceiro-tecnico-para-escalar-operacao-com-ia/">
-            <img decoding="async" src="../../../../imagens/posts/codafacil-parceiro.webp" srcset="../../../../imagens/posts/codafacil-parceiro-480.webp 480w, ../../../../imagens/posts/codafacil-parceiro.webp 1200w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="CodaFácil: parceiro técnico para escalar operação com IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-          </a>
-          <div class="p-4">
-            <h3 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../../../../2026/02/10/codafacil-parceiro-tecnico-para-escalar-operacao-com-ia/" class="hover:underline">CodaFácil: parceiro técnico para escalar operação com IA</a></h3>
-            <p class="mt-2 text-sm text-white/85">Conheça como o CodaFácil acelera customizações, integrações e evolução contínua para empresas que já operam com venda direta e querem avançar com IA.</p>
-          </div>
-        </article>
-        <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
-          <a href="../../../../2023/06/07/como-se-proteger-de-golpes-de-piramide-e-evitar-cair-em-armadilhas-financeiras/">
-            <img decoding="async" src="../../../../imagens/posts/como-se-proteger-de-golpes-de-piramide-e-evitar-cair-em-armadilhas-financeiras.webp" srcset="../../../../imagens/posts/como-se-proteger-de-golpes-de-piramide-e-evitar-cair-em-armadilhas-financeiras-480.webp 480w, ../../../../imagens/posts/como-se-proteger-de-golpes-de-piramide-e-evitar-cair-em-armadilhas-financeiras.webp 1200w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="Como se proteger de golpes de pirâmide e evitar cair em armadilhas financeiras" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-          </a>
-          <div class="p-4">
-            <h3 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../../../../2023/06/07/como-se-proteger-de-golpes-de-piramide-e-evitar-cair-em-armadilhas-financeiras/" class="hover:underline">Como se proteger de golpes de pirâmide e evitar cair em armadilhas financeiras</a></h3>
-            <p class="mt-2 text-sm text-white/85">No mundo dos negócios, infelizmente, existem esquemas fraudulentos conhecidos como golpes de pirâmide que prometem retornos financeiros altos e rápidos. Esses golpes são ilegais e prejudiciais para os participantes, resultando em...</p>
-          </div>
-        </article>
-      </div>
-    </section>
-    <!-- BLOG-LEIA-TAMBEM END -->
+<section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
+  <div class="flex items-end justify-between gap-4">
+    <h2 class="text-2xl font-semibold text-white">Leia tambem</h2>
+    <a href="../../../../blog/" class="text-sm font-semibold text-white/85 hover:text-white">Ver todos</a>
+  </div>
+  <div class="mt-5 grid gap-4 md:grid-cols-3">
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2023/05/23/vantagens-modelo-marketing-multinivel-vendas-diretas/"><img src="../../../../imagens/posts/vantagens-modelo-marketing-multinivel-vendas-diretas.webp" alt="O modelo de marketing multinível oferece várias vantagens que podem atrair pessoas interessadas em empreender." class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2023/05/23/vantagens-modelo-marketing-multinivel-vendas-diretas/" class="hover:underline">O modelo de marketing multinível oferece várias vantagens que podem atrair pessoas interessadas em empreender.</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Aqui estão algumas das principais vantagens desse modelo: Ao considerar o marketing multinível, é essencial avaliar essas vantagens e analisar se elas estão...</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2023/05/23/descubra-o-potencial-de-salario-e-carreira-na-area-de-marketing-de-rede/"><img src="../../../../imagens/posts/descubra-o-potencial-de-salario-e-carreira-na-area-de-marketing-de-rede.webp" alt="Descubra o potencial de salário e carreira na área de Marketing de Rede!" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2023/05/23/descubra-o-potencial-de-salario-e-carreira-na-area-de-marketing-de-rede/" class="hover:underline">Descubra o potencial de salário e carreira na área de Marketing de Rede!</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Se você está considerando uma carreira no campo do Marketing de Rede, é importante conhecer as perspectivas salariais e oportunidades de crescimento profissi...</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/02/10/importancia-da-ia-no-marketing-multinivel-e-vendas-diretas/"><img src="../../../../imagens/posts/ia-mmn.webp" alt="A importância da IA no Marketing Multinível e Vendas Diretas" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/02/10/importancia-da-ia-no-marketing-multinivel-e-vendas-diretas/" class="hover:underline">A importância da IA no Marketing Multinível e Vendas Diretas</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a IA reduz custo operacional, melhora a produtividade da rede e aumenta previsibilidade em operações de marketing multinível e vendas diretas.</p>
+  </div>
+</article>
+  </div>
+</section>
+<!-- BLOG-LEIA-TAMBEM END -->
+<!-- BLOG-CROSS-SITE START -->
+<section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
+  <div class="flex items-end justify-between gap-4">
+    <h2 class="text-2xl font-semibold text-white">Mais do hub CodeRush</h2>
+    <a href="https://coderush.com.br/" rel="noopener" target="_blank" class="text-sm font-semibold text-white/85 hover:text-white">Ver hub</a>
+  </div>
+  <p class="mt-2 text-sm text-white/70">Conteudo recente dos outros sites do ecossistema.</p>
+  <div class="mt-5 grid gap-4 md:grid-cols-3">
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="https://fluxointeligenteia.com.br/2026/04/19/fluxointeligenteia-php-2026-04-19/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/fluxointeligenteia-php-2026-04-19.jpg" alt="Automação de Processos com LLMs: A Revolução na Gestão Empresarial" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">FluxoInteligente IA</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/04/19/fluxointeligenteia-php-2026-04-19/" rel="noopener" target="_blank" class="hover:underline">Automação de Processos com LLMs: A Revolução na Gestão Empresarial</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como a automação de processos utilizando LLMs (Modelos de Linguagem de Grande Escala) pode transformar a eficiência operacional...</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="https://coderush.com.br/2026/04/26/coderush-tecnologia-2026-04-26/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/coderush-tecnologia-2026-04-26.jpg" alt="CodeRush: como usar TECNOLOGIA de forma pratica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">CodeRush</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/04/26/coderush-tecnologia-2026-04-26/" rel="noopener" target="_blank" class="hover:underline">CodeRush: como usar TECNOLOGIA de forma pratica</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre produtividade de times com automacao inteligente com foco em resultado operacional.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="https://codafacil.dev/2026/04/26/codafacil-tecnologia-2026-04-26/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/codafacil-tecnologia-2026-04-26.jpg" alt="Codafacil.dev: como usar TECNOLOGIA de forma pratica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/04/26/codafacil-tecnologia-2026-04-26/" rel="noopener" target="_blank" class="hover:underline">Codafacil.dev: como usar TECNOLOGIA de forma pratica</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre software sob medida com IA aplicada com foco em resultado operacional.</p>
+  </div>
+</article>
+  </div>
+</section>
+<!-- BLOG-CROSS-SITE END -->
 
   </main>
 

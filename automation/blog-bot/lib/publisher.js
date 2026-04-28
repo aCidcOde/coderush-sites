@@ -450,21 +450,12 @@ function renderSources(contract) {
   ].join("\n");
 }
 
-function renderRelatedSection(relatedCards) {
-  if (!relatedCards.length) {
-    return "";
-  }
-
+function renderRelatedSection() {
   return [
-    '    <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">',
-    '      <div class="flex items-end justify-between gap-4">',
-    '        <h2 class="text-2xl font-semibold text-white">Leia tambem</h2>',
-    '        <a href="../../../../blog/" class="text-sm font-semibold text-white/85 hover:text-white">Ver todos</a>',
-    "      </div>",
-    '      <div class="mt-5 grid gap-4 md:grid-cols-3">',
-    relatedCards.map((card) => renderCard(card, "post-related")).join("\n"),
-    "      </div>",
-    "    </section>"
+    "    <!-- BLOG-LEIA-TAMBEM START -->",
+    "    <!-- BLOG-LEIA-TAMBEM END -->",
+    "    <!-- BLOG-CROSS-SITE START -->",
+    "    <!-- BLOG-CROSS-SITE END -->"
   ].join("\n");
 }
 
@@ -549,7 +540,7 @@ ${renderSources(contract)}
       </a>
     </section>
 
-${renderRelatedSection(relatedCards)}
+${renderRelatedSection()}
   </main>
 
   <footer class="${copy.footerClass}">
