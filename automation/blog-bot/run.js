@@ -22,6 +22,16 @@ const REPORTS_DIR = path.resolve(__dirname, "reports");
 const DEFAULT_SOURCES = ["https://openai.com/news/", "https://github.blog/"];
 const DUPLICATION_THRESHOLD = 0.6;
 
+const FOCUS_SYNONYMS = {
+  ia: "ia ai inteligencia artificial machine learning llm gpt claude agente agent",
+  php: "php laravel symfony composer phpunit",
+  tecnologia: "tecnologia technology engineering platform cloud devops automacao automation"
+};
+
+function expandFocus(focus) {
+  return FOCUS_SYNONYMS[focus] || focus;
+}
+
 loadEnvFiles(ROOT);
 
 function parseArgs() {
@@ -378,7 +388,7 @@ async function run() {
     } else {
       research = await gatherResearch({
         feeds: site.research?.feeds || [],
-        focus,
+        focus: expandFocus(focus),
         maxItems: site.research?.maxItems || 6,
         sinceDays: site.research?.sinceDays || 21
       });
