@@ -216,10 +216,10 @@ Pagina estatica do post "Descubra Estratégias de Venda Direta" espelhada do blo
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://fluxointeligenteia.com.br/2026/04/28/fluxointeligenteia-ia-2026-04-28/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/fluxointeligenteia-ia-2026-04-28.jpg" alt="Agentes Inteligentes com LangChain: A Automação de Processos na Prática" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://fluxointeligenteia.com.br/2026/04/28/agentes-inteligentes-langchain-automacao-processos-pratica/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/agentes-inteligentes-langchain-automacao-processos-pratica.jpg" alt="Agentes Inteligentes com LangChain: A Automação de Processos na Prática" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">FluxoInteligente IA</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/04/28/fluxointeligenteia-ia-2026-04-28/" rel="noopener" target="_blank" class="hover:underline">Agentes Inteligentes com LangChain: A Automação de Processos na Prática</a></h3>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/04/28/agentes-inteligentes-langchain-automacao-processos-pratica/" rel="noopener" target="_blank" class="hover:underline">Agentes Inteligentes com LangChain: A Automação de Processos na Prática</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como integrar agentes inteligentes em sua operação utilizando LangChain e n8n, potencializando a automação de processos e reduzi...</p>
   </div>
 </article>

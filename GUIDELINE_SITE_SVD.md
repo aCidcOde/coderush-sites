@@ -191,8 +191,15 @@ automation/blog-bot/
 npm run blogbot:dry-run                          # dry-run para todos os sites
 npm run blogbot:dry-run -- --sites=codafacil     # apenas um site
 npm run blogbot:publish                          # publica de fato (PR pelo CI)
+npm run blogbot:refresh-related                  # so atualiza related em todos os posts
 node automation/blog-bot/run.js --mode=dry-run --date=2026-04-28
+node automation/blog-bot/scripts/migrate-slugs.js --date=YYYY-MM-DD --dry-run
 ```
+
+### Slugs SEO-aware
+- Slug do post e derivado do `content.headline` apos a IA gerar o texto, em `slugFromHeadline()` em `run.js`.
+- Stop words em pt-BR (`a`, `o`, `de`, `para`, `com`, `que`, etc.) sao removidas, e o slug e truncado a 70 caracteres em limite de palavra.
+- Se um slug antigo precisar ser corrigido em massa, usar `scripts/migrate-slugs.js --date=YYYY-MM-DD` (com `--dry-run` para preview). Renomeia diretorio + capa, atualiza referencias internas no HTML, home, blog/index, sitemap e os arquivos JSON/MD em `out/`.
 
 ### Foco semanal e angulo
 - `config/sites.json:rotation` define a rotacao de foco: `["ia","php","tecnologia"]`. O foco da semana e escolhido por hash da data (deterministico).

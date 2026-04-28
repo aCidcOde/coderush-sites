@@ -85,9 +85,9 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/04/28/sistemavendadireta-ia-2026-04-28/"><img src="../../../../imagens/posts/sistemavendadireta-ia-2026-04-28.jpg" alt="CRM e Automação: Potencializando Vendas Diretas com Tecnologia Avançada" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/04/28/crm-automacao-potencializando-vendas-diretas-tecnologia-avancada/"><img src="../../../../imagens/posts/crm-automacao-potencializando-vendas-diretas-tecnologia-avancada.jpg" alt="CRM e Automação: Potencializando Vendas Diretas com Tecnologia Avançada" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/04/28/sistemavendadireta-ia-2026-04-28/" class="hover:underline">CRM e Automação: Potencializando Vendas Diretas com Tecnologia Avançada</a></h3>
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/04/28/crm-automacao-potencializando-vendas-diretas-tecnologia-avancada/" class="hover:underline">CRM e Automação: Potencializando Vendas Diretas com Tecnologia Avançada</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Neste artigo, exploramos como um sistema de venda direta e as ferramentas de CRM podem transformar a operação comercial em marketing multinível, utilizando I...</p>
   </div>
 </article>

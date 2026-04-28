@@ -74,6 +74,13 @@ function focusForWeek(rotation, dateSeed) {
   return rotation[index];
 }
 
+const SLUG_STOPWORDS = new Set([
+  "a","o","as","os","da","do","das","dos","de","e","em","na","no","nas","nos",
+  "ao","aos","um","uma","uns","umas","para","por","com","sem","sobre","entre",
+  "que","como","se","ou","esse","essa","esses","essas","este","esta","estes","estas",
+  "ja","ainda","sua","suas","seu","seus","ser","foi","sera","tambem"
+]);
+
 function slugify(value) {
   return value
     .toLowerCase()
@@ -83,6 +90,25 @@ function slugify(value) {
     .trim()
     .replace(/\s+/g, "-")
     .replace(/-+/g, "-");
+}
+
+function slugFromHeadline(headline, { maxLen = 70 } = {}) {
+  const base = slugify(headline);
+  if (!base) return "";
+  const filtered = base
+    .split("-")
+    .filter((part) => part && !SLUG_STOPWORDS.has(part))
+    .join("-");
+  const candidate = filtered || base;
+  if (candidate.length <= maxLen) return candidate;
+  const parts = candidate.split("-");
+  let result = "";
+  for (const part of parts) {
+    const next = result ? `${result}-${part}` : part;
+    if (next.length > maxLen) break;
+    result = next;
+  }
+  return result || candidate.slice(0, maxLen);
 }
 
 function buildPostContract(site, focus, date, angle) {
@@ -434,6 +460,11 @@ async function run() {
       aiUsed = generation.aiUsed;
       aiProvider = generation.aiProvider;
       warning = generation.warning;
+
+      const headlineSlug = slugFromHeadline(generation.content?.headline || "");
+      if (headlineSlug && headlineSlug !== contract.slug) {
+        contract.slug = headlineSlug;
+      }
     }
 
     const outputPath = writeDraft(site, contract);
