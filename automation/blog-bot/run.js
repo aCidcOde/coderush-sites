@@ -116,7 +116,7 @@ function buildPostContract(site, focus, date, angle) {
   const angleLabel = angle || theme;
   const title = `${site.name}: ${focus.toUpperCase()} aplicado a ${angleLabel}`;
   const slug = slugify(`${site.id}-${focus}-${date}`);
-  const description = `Atualizacao semanal de ${focus} para ${site.name}, com foco em ${theme}.`;
+  const description = `Atualização semanal de ${focus} para ${site.name}, com foco em ${theme}.`;
 
   return {
     date,

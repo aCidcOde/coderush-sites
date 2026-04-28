@@ -1,0 +1,31 @@
+{
+  "mode": "dry-run",
+  "date": "2026-04-28",
+  "timezone": "America/Sao_Paulo",
+  "focus": "ia",
+  "startedAt": "2026-04-28T23:22:22.304Z",
+  "aiProvider": "openrouter",
+  "sites": [
+    {
+      "siteId": "codafacil",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "engenharia",
+      "theme": "integracoes e automacao para operacoes criticas",
+      "research": {
+        "used": 6,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/codafacil/2026-04-28/integracoes-automacao-desenvolvimento-software-sob-medida-ia.json",
+      "markdownPath": "automation/blog-bot/out/codafacil/2026-04-28/integracoes-automacao-desenvolvimento-software-sob-medida-ia.md"
+    }
+  ],
+  "duplications": [],
+  "fallbackCount": 0,
+  "allFallback": false,
+  "finishedAt": "2026-04-28T23:22:37.684Z",
+  "ok": true
+}

@@ -137,7 +137,7 @@ Post de blog estatico com foco em IA: agentes em escala com MCP stateful e gover
     </article>
 
     <section class="mt-8 rounded-2xl border border-white/20 bg-white/5 p-5 text-center">
-      <h2 class="font-[var(--font-heading)] text-xl font-semibold">Quer transformar agentes de IA em resultado real?</h2>
+      <h2 class="font-[var(--font-heading)] text-xl font-semibold">Quer levar agentes de IA para producao com governanca?</h2>
       <p class="mt-2 text-sm text-white/85">A SVD estrutura arquitetura, integracao e governanca para voce operar IA com previsibilidade de custo e ganho operacional.</p>
       <a href="../../../../codafacil/" class="mt-4 inline-flex rounded-full border border-white/70 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10">Conhecer Desenvolvimento com IA</a>
     </section>

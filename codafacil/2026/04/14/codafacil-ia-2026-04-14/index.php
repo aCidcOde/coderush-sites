@@ -4,17 +4,17 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Codafacil.dev: como usar IA de forma pratica | Codafacil.dev</title>
-  <meta name="description" content="Atualizacao semanal de ia para Codafacil.dev, com foco em software sob medida com IA aplicada." />
+  <meta name="description" content="Atualização semanal de ia para Codafacil.dev, com foco em software sob medida com IA aplicada." />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <link rel="canonical" href="https://codafacil.dev/2026/04/14/codafacil-ia-2026-04-14/" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="Codafacil.dev: como usar IA de forma pratica | Codafacil.dev" />
-  <meta property="og:description" content="Atualizacao semanal de ia para Codafacil.dev, com foco em software sob medida com IA aplicada." />
+  <meta property="og:description" content="Atualização semanal de ia para Codafacil.dev, com foco em software sob medida com IA aplicada." />
   <meta property="og:url" content="https://codafacil.dev/2026/04/14/codafacil-ia-2026-04-14/" />
   <meta property="og:image" content="https://codafacil.dev/imagens/posts/codafacil-ia-2026-04-14.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Codafacil.dev: como usar IA de forma pratica | Codafacil.dev" />
-  <meta name="twitter:description" content="Atualizacao semanal de ia para Codafacil.dev, com foco em software sob medida com IA aplicada." />
+  <meta name="twitter:description" content="Atualização semanal de ia para Codafacil.dev, com foco em software sob medida com IA aplicada." />
   <meta name="twitter:image" content="https://codafacil.dev/imagens/posts/codafacil-ia-2026-04-14.jpg" />
   <link rel="stylesheet" href="../../../../css/site-tailwind.css" />
   <link rel="stylesheet" href="../../../../css/styles.css" />
@@ -24,7 +24,7 @@
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Codafacil.dev: como usar IA de forma pratica | Codafacil.dev",
-  "description": "Atualizacao semanal de ia para Codafacil.dev, com foco em software sob medida com IA aplicada.",
+  "description": "Atualização semanal de ia para Codafacil.dev, com foco em software sob medida com IA aplicada.",
   "datePublished": "2026-04-14T09:00:00-03:00",
   "dateModified": "2026-04-14T09:00:00-03:00",
   "mainEntityOfPage": {
@@ -132,9 +132,9 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/04/19/codafacil-php-2026-04-19/"><img src="../../../../imagens/posts/codafacil-php-2026-04-19.jpg" alt="A Revolução do Software Sob Medida com IA: Como PHP Pode Transformar Seu Negócio" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/04/19/codafacil-php-2026-04-19/"><img src="../../../../imagens/posts/codafacil-php-2026-04-19.jpg" alt="Software Sob Medida com IA: Como PHP Sustenta Entrega e Qualidade com Testes Automatizados" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/04/19/codafacil-php-2026-04-19/" class="hover:underline">A Revolução do Software Sob Medida com IA: Como PHP Pode Transformar Seu Negócio</a></h3>
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/04/19/codafacil-php-2026-04-19/" class="hover:underline">Software Sob Medida com IA: Como PHP Sustenta Entrega e Qualidade com Testes Automatizados</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como a combinação de software sob medida e inteligência artificial pode otimizar operações, melhorar a tomada de decisões e trazer resultados signif...</p>
   </div>
 </article>

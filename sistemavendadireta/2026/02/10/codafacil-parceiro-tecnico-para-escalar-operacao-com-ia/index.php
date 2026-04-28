@@ -11,8 +11,8 @@ Post de blog estatico com foco em IA, vendas diretas e evolucao de operacao.
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>CodaFácil: parceiro técnico para escalar operação com IA | Sistema Venda Direta</title>
-  <meta name="description" content="Conheça como o CodaFácil acelera customizações, integrações e evolução contínua para empresas que já operam com venda direta e querem avançar com IA." />
+  <title>Codafacil: parceiro técnico para escalar operação com IA | Sistema Venda Direta</title>
+  <meta name="description" content="Conheça como o Codafacil acelera customizações, integrações e evolução contínua para empresas que já operam com venda direta e querem avançar com IA." />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="theme-color" content="#004AAD" />
   <meta name="author" content="Sistema Venda Direta" />
@@ -25,15 +25,15 @@ Post de blog estatico com foco em IA, vendas diretas e evolucao de operacao.
   <meta property="og:type" content="article" />
   <meta property="article:published_time" content="2026-02-10T08:00:00-03:00" />
   <meta property="article:modified_time" content="2026-02-10T08:00:00-03:00" />
-  <meta property="og:title" content="CodaFácil: parceiro técnico para escalar operação com IA" />
-  <meta property="og:description" content="Conheça como o CodaFácil acelera customizações, integrações e evolução contínua para empresas que já operam com venda direta e querem avançar com IA." />
+  <meta property="og:title" content="Codafacil: parceiro técnico para escalar operação com IA" />
+  <meta property="og:description" content="Conheça como o Codafacil acelera customizações, integrações e evolução contínua para empresas que já operam com venda direta e querem avançar com IA." />
   <meta property="og:url" content="https://www.sistemavendadireta.com.br/2026/02/10/codafacil-parceiro-tecnico-para-escalar-operacao-com-ia/" />
   <meta property="og:site_name" content="Sistema Venda Direta" />
   <meta property="og:image" content="https://www.codafacil.dev/logo.png" />
-  <meta property="og:image:alt" content="CodaFácil: parceiro técnico para escalar operação com IA | Sistema Venda Direta" />
+  <meta property="og:image:alt" content="Codafacil: parceiro técnico para escalar operação com IA | Sistema Venda Direta" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="CodaFácil: parceiro técnico para escalar operação com IA | Sistema Venda Direta" />
-  <meta name="twitter:description" content="Conheça como o CodaFácil acelera customizações, integrações e evolução contínua para empresas que já operam com venda direta e querem avançar com IA." />
+  <meta name="twitter:title" content="Codafacil: parceiro técnico para escalar operação com IA | Sistema Venda Direta" />
+  <meta name="twitter:description" content="Conheça como o Codafacil acelera customizações, integrações e evolução contínua para empresas que já operam com venda direta e querem avançar com IA." />
   <meta name="twitter:image" content="https://www.codafacil.dev/logo.png" />
   <meta name="twitter:site" content="@sistemavendadireta" />
 
@@ -48,8 +48,8 @@ Post de blog estatico com foco em IA, vendas diretas e evolucao de operacao.
 {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "headline": "CodaFácil: parceiro técnico para escalar operação com IA | Sistema Venda Direta",
-    "description": "Conheça como o CodaFácil acelera customizações, integrações e evolução contínua para empresas que já operam com venda direta e querem avançar com IA.",
+    "headline": "Codafacil: parceiro técnico para escalar operação com IA | Sistema Venda Direta",
+    "description": "Conheça como o Codafacil acelera customizações, integrações e evolução contínua para empresas que já operam com venda direta e querem avançar com IA.",
     "datePublished": "2026-02-10T08:00:00-03:00",
     "dateModified": "2026-02-10T08:00:00-03:00",
     "mainEntityOfPage": {
@@ -83,7 +83,7 @@ Post de blog estatico com foco em IA, vendas diretas e evolucao de operacao.
       <div class="hidden items-center gap-5 text-sm font-medium text-white/90 md:flex">
         <a href="../../../../" class="hover:text-white">Site Principal</a>
         <a href="../../../../inteligencia-artificial/" class="hover:text-white">IA para MMN</a>
-        <a href="../../../../codafacil/" class="hover:text-white">CodaFácil</a>
+        <a href="../../../../codafacil/" class="hover:text-white">Codafacil</a>
       </div>
     </div>
   </header>
@@ -93,14 +93,14 @@ Post de blog estatico com foco em IA, vendas diretas e evolucao de operacao.
 
     <article class="mt-5 rounded-3xl border border-white/20 bg-white/5 p-5 sm:p-8">
       <p class="text-xs font-medium uppercase tracking-wide text-white/70">Blog SVD • 10/02/2026</p>
-      <h1 class="mt-2 font-[var(--font-heading)] text-3xl font-semibold leading-tight sm:text-4xl">CodaFácil: parceiro técnico para escalar operação com IA</h1>
+      <h1 class="mt-2 font-[var(--font-heading)] text-3xl font-semibold leading-tight sm:text-4xl">Codafacil: parceiro técnico para escalar operação com IA</h1>
 
-      <img decoding="async" src="../../../../imagens/posts/codafacil-parceiro.webp" alt="CodaFácil: parceiro técnico para escalar operação com IA" class="mt-6 w-full rounded-2xl border border-white/20" width="1200" height="630" loading="lazy" />
+      <img decoding="async" src="../../../../imagens/posts/codafacil-parceiro.webp" alt="Codafacil: parceiro técnico para escalar operação com IA" class="mt-6 w-full rounded-2xl border border-white/20" width="1200" height="630" loading="lazy" />
 
       <div class="prose prose-invert mt-6 max-w-none prose-headings:font-[var(--font-heading)] prose-headings:text-white prose-a:text-white prose-strong:text-white prose-p:text-white/90 prose-li:text-white/90">
-<p>O <strong>CodaFácil</strong> é a frente técnica da mesma estrutura de negócio da SVD, criada para projetos que exigem customização, velocidade e visão de produto orientada por IA.</p>
+<p>O <strong>Codafacil</strong> é a frente técnica da mesma estrutura de negócio da SVD, criada para projetos que exigem customização, velocidade e visão de produto orientada por IA.</p>
 
-<h2>O que o CodaFácil resolve</h2>
+<h2>O que o Codafacil resolve</h2>
 <ul>
   <li>Desenvolvimento sob medida para necessidades específicas da sua operação.</li>
   <li>Integrações com sistemas legados e plataformas parceiras.</li>
@@ -109,7 +109,7 @@ Post de blog estatico com foco em IA, vendas diretas e evolucao de operacao.
 </ul>
 
 <h2>Sinergia com o Sistema Venda Direta</h2>
-<p>Enquanto o SVD entrega uma base robusta para operar hoje, o CodaFácil atua como acelerador de inovação para manter o projeto evoluindo sem ruptura.</p>
+<p>Enquanto o SVD entrega uma base robusta para operar hoje, o Codafacil atua como acelerador de inovação para manter o projeto evoluindo sem ruptura.</p>
 
 <p>Na prática, isso reduz custo de retrabalho, melhora qualidade de entrega e dá previsibilidade para escalar operação com segurança.</p>
 </div>

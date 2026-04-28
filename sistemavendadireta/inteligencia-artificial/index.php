@@ -11,8 +11,8 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sistema Venda Direta com IA | Reduza Custo e Escale Operação</title>
-  <meta name="description" content="Sistema Venda Direta com abordagem orientada por IA: menos custo operacional, mais produtividade e evolução contínua com apoio do CodaFácil." />
+  <title>Sistema Venda Direta com IA | Custo Operacional Sob Controle e Operação Escalável</title>
+  <meta name="description" content="Sistema Venda Direta com abordagem orientada por IA: custo operacional controlado com governança, produtividade e evolução contínua com apoio do Codafacil." />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="theme-color" content="#004AAD" />
   <meta name="author" content="Sistema Venda Direta" />
@@ -25,14 +25,14 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
   <meta property="og:locale" content="pt_BR" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Sistema Venda Direta com IA" />
-  <meta property="og:description" content="Plataforma de venda direta com IA aplicada para reduzir custos e acelerar resultados." />
+  <meta property="og:description" content="Plataforma de venda direta com IA aplicada: custo operacional sob controle, governança e resultado previsível." />
   <meta property="og:url" content="https://www.sistemavendadireta.com.br/inteligencia-artificial/" />
   <meta property="og:site_name" content="Sistema Venda Direta" />
   <meta property="og:image" content="https://www.sistemavendadireta.com.br/wp-content/uploads/2023/04/Screenshot-2023-04-26-at-14.38.02.png" />
-  <meta property="og:image:alt" content="Sistema Venda Direta com IA | Reduza Custo e Escale Operação" />
+  <meta property="og:image:alt" content="Sistema Venda Direta com IA | Custo Operacional Sob Controle e Operação Escalável" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Sistema Venda Direta com IA | Reduza Custo e Escale Operação" />
-  <meta name="twitter:description" content="Sistema Venda Direta com abordagem orientada por IA: menos custo operacional, mais produtividade e evolução contínua com apoio do CodaFácil." />
+  <meta name="twitter:title" content="Sistema Venda Direta com IA | Custo Operacional Sob Controle e Operação Escalável" />
+  <meta name="twitter:description" content="Sistema Venda Direta com abordagem orientada por IA: custo operacional controlado com governança, produtividade e evolução contínua com apoio do Codafacil." />
   <meta name="twitter:image" content="https://www.sistemavendadireta.com.br/wp-content/uploads/2023/04/Screenshot-2023-04-26-at-14.38.02.png" />
   <meta name="twitter:site" content="@sistemavendadireta" />
 
@@ -80,10 +80,10 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
             },
             {
               "@type": "Question",
-              "name": "Qual a diferença entre SVD e CodaFácil?",
+              "name": "Qual a diferença entre SVD e Codafacil?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "SVD é a plataforma principal de venda direta. CodaFácil e o time de desenvolvimento para customizações e novos módulos."
+                "text": "SVD é a plataforma principal de venda direta. Codafacil é o time de desenvolvimento para customizações e novos módulos."
               }
             },
             {
@@ -130,7 +130,7 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
           <li><a href="#ia-operacao" class="rounded-md bg-white/15 px-3 py-2 text-sm font-medium">IA na Operação</a></li>
           <li><a href="#ofertas" class="text-sm font-medium text-white/90 hover:text-white">Planos</a></li>
           <li><a href="#metodo" class="text-sm font-medium text-white/90 hover:text-white">Método</a></li>
-          <li><a href="#codafacil" class="text-sm font-medium text-white/90 hover:text-white">CodaFácil</a></li>
+          <li><a href="#codafacil" class="text-sm font-medium text-white/90 hover:text-white">Codafacil</a></li>
           <li><a href="#contato" class="text-sm font-medium text-white/90 hover:text-white">Contato</a></li>
         </ul>
 
@@ -152,7 +152,7 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
             <a href="#ia-operacao" class="rounded-lg border border-white/20 bg-white/5 px-3 py-2">IA na Operação</a>
             <a href="#ofertas" class="rounded-lg border border-white/20 bg-white/5 px-3 py-2">Planos</a>
             <a href="#metodo" class="rounded-lg border border-white/20 bg-white/5 px-3 py-2">Método</a>
-            <a href="#codafacil" class="rounded-lg border border-white/20 bg-white/5 px-3 py-2">CodaFácil</a>
+            <a href="#codafacil" class="rounded-lg border border-white/20 bg-white/5 px-3 py-2">Codafacil</a>
             <a href="#contato" class="rounded-lg border border-white/65 px-3 py-2 text-center font-semibold">Quero diagnóstico de IA</a>
           </div>
         </details>
@@ -167,11 +167,11 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
           Nova perspectiva SVD 2026
         </p>
         <h1 class="font-[var(--font-heading)] text-4xl font-bold leading-[1.1] sm:text-5xl lg:text-[52px]">
-          Venda Direta com IA para reduzir custo e acelerar crescimento
+          Venda Direta com IA: custo operacional sob controle e crescimento com governança
         </h1>
         <p class="max-w-[620px] text-base leading-relaxed text-white/90 sm:text-lg">
           Mantemos a base robusta do Sistema Venda Direta e adicionamos uma abordagem orientada por IA:
-          automação operacional, ganho de produtividade e evolução contínua com o time do CodaFácil.
+          automação operacional, ganho de produtividade e evolução contínua com o time do Codafacil.
         </p>
 
         <div class="grid gap-2 text-sm text-white/90 sm:grid-cols-2">
@@ -186,7 +186,7 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
             Quero diagnóstico de IA
           </a>
           <a href="../codafacil/" class="inline-flex items-center gap-2 rounded-full border border-white/35 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10">
-            Conhecer CodaFácil
+            Conhecer Codafacil
           </a>
         </div>
       </div>
@@ -248,7 +248,7 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
 
         <article class="rounded-3xl border border-white/25 bg-white/5 p-6">
           <h3 class="font-[var(--font-heading)] text-xl font-semibold">SVD + IA Custom</h3>
-          <p class="mt-3 text-sm text-white/90">Projeto sob medida com CodaFácil para novas frentes, integrações e módulos especiais.</p>
+          <p class="mt-3 text-sm text-white/90">Projeto sob medida com Codafacil para novas frentes, integrações e módulos especiais.</p>
           <div class="mt-5 grid gap-2 text-sm text-white/90">
             <div class="rounded-lg border border-white/20 bg-white/5 px-3 py-2">Desenvolvimento dedicado</div>
             <div class="rounded-lg border border-white/20 bg-white/5 px-3 py-2">Arquitetura e consultoria</div>
@@ -286,11 +286,11 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
       <div class="rounded-[30px] border border-white/30 bg-white/[0.06] p-6 sm:p-8">
         <div class="grid items-center gap-6 lg:grid-cols-[1fr_auto]">
           <div>
-            <h2 class="font-[var(--font-heading)] text-3xl font-semibold sm:text-[42px]">SVD + CodaFácil: sinergia direta</h2>
+            <h2 class="font-[var(--font-heading)] text-3xl font-semibold sm:text-[42px]">SVD + Codafacil: sinergia direta</h2>
             <div class="mt-2 h-1 w-[72px] rounded-full bg-white"></div>
             <p class="mt-4 max-w-3xl text-base leading-relaxed text-white/90">
               O Sistema Venda Direta segue como o produto principal para operação de venda direta.
-              O CodaFácil entra como célula de engenharia para customizações, integrações e novas iniciativas com IA.
+              O Codafacil entra como célula de engenharia para customizações, integrações e novas iniciativas com IA.
             </p>
             <p class="mt-3 max-w-3xl text-base leading-relaxed text-white/85">
               Resultado: você tem uma base sólida para operar hoje e um time técnico para evoluir rápido sem trocar de plataforma.
@@ -299,7 +299,7 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
 
           <div class="flex flex-col items-stretch gap-3 sm:min-w-[280px]">
             <a href="../codafacil/" class="inline-flex items-center justify-center rounded-full border border-white/75 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10">
-              Abrir CodaFácil local
+              Abrir Codafacil local
             </a>
             <a href="https://www.codafacil.dev/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-full border border-white/35 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10">
               Abrir site oficial
@@ -406,7 +406,7 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
           <p class="mt-2 text-sm text-white/90">Sim. O trabalho começa preservando o que funciona e ajustando apenas os pontos com maior impacto.</p>
         </details>
         <details class="rounded-lg border border-white/20 bg-white/5 p-4">
-          <summary class="cursor-pointer font-semibold">Quando o CodaFácil entra no projeto?</summary>
+          <summary class="cursor-pointer font-semibold">Quando o Codafacil entra no projeto?</summary>
           <p class="mt-2 text-sm text-white/90">Quando existe demanda de customização, integração externa ou novos módulos estratégicos.</p>
         </details>
         <details class="rounded-lg border border-white/20 bg-white/5 p-4">
@@ -417,7 +417,7 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
     </section>
 
     <section class="py-10 text-center">
-      <h3 class="font-[var(--font-heading)] text-2xl font-semibold sm:text-3xl">SVD + IA + CodaFácil para escalar seu negócio</h3>
+      <h3 class="font-[var(--font-heading)] text-2xl font-semibold sm:text-3xl">SVD + IA + Codafacil para escalar seu negócio</h3>
     </section>
   </main>
 

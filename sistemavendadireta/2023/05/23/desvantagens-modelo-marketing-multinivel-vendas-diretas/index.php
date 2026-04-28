@@ -83,7 +83,7 @@ Pagina estatica do post "Marketing multinível também apresenta algumas desvant
       <div class="hidden items-center gap-5 text-sm font-medium text-white/90 md:flex">
         <a href="../../../../" class="hover:text-white">Site Principal</a>
         <a href="../../../../inteligencia-artificial/" class="hover:text-white">IA para MMN</a>
-        <a href="../../../../codafacil/" class="hover:text-white">CodaFácil</a>
+        <a href="../../../../codafacil/" class="hover:text-white">Codafacil</a>
       </div>
     </div>
   </header>
@@ -170,10 +170,10 @@ Pagina estatica do post "Marketing multinível também apresenta algumas desvant
   <p class="mt-2 text-sm text-white/70">Conteudo recente dos outros sites do ecossistema.</p>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://fluxointeligenteia.com.br/2026/04/19/fluxointeligenteia-php-2026-04-19/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/fluxointeligenteia-php-2026-04-19.jpg" alt="Automação de Processos com LLMs: A Revolução na Gestão Empresarial" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://fluxointeligenteia.com.br/2026/04/19/fluxointeligenteia-php-2026-04-19/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/fluxointeligenteia-php-2026-04-19.jpg" alt="Automação de Processos com LLMs: Custo, SLA e Fallback Humano em Operações Reais" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">FluxoInteligente IA</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/04/19/fluxointeligenteia-php-2026-04-19/" rel="noopener" target="_blank" class="hover:underline">Automação de Processos com LLMs: A Revolução na Gestão Empresarial</a></h3>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/04/19/fluxointeligenteia-php-2026-04-19/" rel="noopener" target="_blank" class="hover:underline">Automação de Processos com LLMs: Custo, SLA e Fallback Humano em Operações Reais</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como a automação de processos utilizando LLMs (Modelos de Linguagem de Grande Escala) pode transformar a eficiência operacional...</p>
   </div>
 </article>

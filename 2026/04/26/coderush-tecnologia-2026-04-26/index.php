@@ -4,17 +4,17 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>CodeRush: como usar TECNOLOGIA de forma pratica | CodeRush</title>
-  <meta name="description" content="Atualizacao semanal de tecnologia para CodeRush, com foco em produtividade de times com automacao inteligente." />
+  <meta name="description" content="Atualização semanal de tecnologia para CodeRush, com foco em produtividade de times com automacao inteligente." />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <link rel="canonical" href="https://coderush.com.br/2026/04/26/coderush-tecnologia-2026-04-26/" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="CodeRush: como usar TECNOLOGIA de forma pratica | CodeRush" />
-  <meta property="og:description" content="Atualizacao semanal de tecnologia para CodeRush, com foco em produtividade de times com automacao inteligente." />
+  <meta property="og:description" content="Atualização semanal de tecnologia para CodeRush, com foco em produtividade de times com automacao inteligente." />
   <meta property="og:url" content="https://coderush.com.br/2026/04/26/coderush-tecnologia-2026-04-26/" />
   <meta property="og:image" content="https://coderush.com.br/imagens/posts/coderush-tecnologia-2026-04-26.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="CodeRush: como usar TECNOLOGIA de forma pratica | CodeRush" />
-  <meta name="twitter:description" content="Atualizacao semanal de tecnologia para CodeRush, com foco em produtividade de times com automacao inteligente." />
+  <meta name="twitter:description" content="Atualização semanal de tecnologia para CodeRush, com foco em produtividade de times com automacao inteligente." />
   <meta name="twitter:image" content="https://coderush.com.br/imagens/posts/coderush-tecnologia-2026-04-26.jpg" />
   <link rel="stylesheet" href="../../../../css/site-tailwind.css" />
   <link rel="stylesheet" href="../../../../css/styles.css" />
@@ -23,7 +23,7 @@
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "CodeRush: como usar TECNOLOGIA de forma pratica | CodeRush",
-  "description": "Atualizacao semanal de tecnologia para CodeRush, com foco em produtividade de times com automacao inteligente.",
+  "description": "Atualização semanal de tecnologia para CodeRush, com foco em produtividade de times com automacao inteligente.",
   "datePublished": "2026-04-26T09:00:00-03:00",
   "dateModified": "2026-04-26T09:00:00-03:00",
   "mainEntityOfPage": {
@@ -157,7 +157,7 @@
     </article>
 
     <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
-      <h2 class="text-xl font-semibold text-white">Quer transformar tecnologia em resultado real?</h2>
+      <h2 class="text-xl font-semibold text-white">Quer destravar uma iniciativa de tecnologia com criterio?</h2>
       <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">A CodeRush estrutura arquitetura, entrega e automacao para tirar iniciativas criticas do papel sem improviso.</p>
       <a href="../../../../#contato" class="mt-4 inline-flex rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/10">
         Fale com a CodeRush

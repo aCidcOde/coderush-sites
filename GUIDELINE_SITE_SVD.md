@@ -3,7 +3,7 @@
 [Modulo Documentacao Operacional — CodeRush Multi-site]
 @Author: Andre Gomes ( @acidcode )
 @since 2026-02-10
-@updated 2026-04-28
+@updated 2026-04-28 (brand-review: bannedWords compartilhado, CTAs editoriais sem hype, meta editorializada)
 Guia tecnico para manutencao, expansao e atualizacao do hub CodeRush e seus sub-sites.
 */
 -->
@@ -292,9 +292,28 @@ Cada perfil contem:
 - Conteudo dos posts e 90% educacional/tecnico sobre o tema. CTAs sao secundarios.
 - Maximo 1 mencao inline ao servico no corpo (secao 2 ou 3) como transicao natural.
 - 1 fechamento leve em markdown na ultima secao apontando para `cta.path`.
-- Proibido copy agressivo: `"transforme ja"`, `"nao perca"`, `"clique aqui"`, `"ultima chance"`.
-- Headlines sao informativos sobre o tema, nao headline-pitch.
+- Headlines sao informativos sobre o tema, nao headline-pitch. Verbos de hype como "Revolução", "Revolucionário", "Transformar seu negócio" estão proibidos no título.
 - Texto em pt-BR. Evitar promessas absolutas. Trazer aplicacao pratica com exemplo concreto.
+- Claims de "redução de custo" sempre acompanhados de qualificador ("com automação", "sem perder governança", "com fallback humano"), nunca standalone.
+- Meta description deve ser editorializada por post (resumo do tema + foco), nunca template `Atualização semanal de X para Y`.
+
+#### Banned words (lint do blog-bot)
+
+A lista oficial vive em `automation/blog-bot/lib/site-strategy.js` na constante `SHARED_BANNED_WORDS` (compartilhada por todos os perfis via `mergeBanned()`). Conteúdo atual:
+
+- Hype editorial: `revolucao`, `revolucionario`, `revolucionária`, `revolução`, `revolucionário`, `transforme ja`, `transforme já`, `transformar seu negocio`, `transformar seu negócio`
+- CTAs agressivos: `nao perca`, `não perca`, `clique aqui`, `ultima chance`, `última chance`, `garantido`, `imperdivel`, `imperdível`
+
+Cada perfil ainda adiciona suas próprias proibições especificas (ex.: `esquema de piramide` no SVD, `plug and play` no Codafacil). Para incluir novas, edite `SHARED_BANNED_WORDS` (cobre os 4 sites de uma vez) ou o array `bannedWords` do perfil específico.
+
+#### CTAs editoriais ao final dos posts
+
+Vivem em `automation/blog-bot/lib/publisher.js` na chave `ctaTitle` de cada `SITE_COPY`. Devem seguir o tom do site, sem verbo de hype. Ex.:
+
+- CodeRush: "Quer destravar uma iniciativa de tecnologia com criterio?"
+- Codafacil: "Precisa tirar um produto ou integracao do papel?"
+- FluxoInteligente: "Quer colocar um fluxo inteligente em producao?"
+- SVD: "Quer aplicar IA na operacao comercial com previsibilidade?"
 
 ### Feeds RSS por site
 

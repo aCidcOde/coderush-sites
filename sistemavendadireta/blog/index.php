@@ -71,7 +71,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
         <div class="hidden items-center gap-5 text-sm font-medium md:flex">
           <a href="../" class="text-white/90 hover:text-white">Site principal</a>
           <a href="../inteligencia-artificial/" class="text-white/90 hover:text-white">IA para MMN</a>
-          <a href="../codafacil/" class="text-white/90 hover:text-white">CodaFácil</a>
+          <a href="../codafacil/" class="text-white/90 hover:text-white">Codafacil</a>
         </div>
       </nav>
     </div>
@@ -83,7 +83,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
     <section class="py-6">
       <h1 class="font-[var(--font-heading)] text-3xl font-semibold sm:text-[42px]">Blog SVD</h1>
       <div class="mt-2 h-1 w-[72px] rounded-full bg-white"></div>
-      <p class="mt-4 max-w-3xl text-sm leading-relaxed text-white/90">Todos os posts publicados no ambiente local, incluindo conteúdos novos de IA, CodaFácil e estratégia para vendas diretas e sistema de parceiros.</p>
+      <p class="mt-4 max-w-3xl text-sm leading-relaxed text-white/90">Todos os posts publicados no ambiente local, incluindo conteúdos novos de IA, Codafacil e estratégia para vendas diretas e sistema de parceiros.</p>
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-INDEX-CARDS:START -->
@@ -197,11 +197,11 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/02/10/codafacil-parceiro-tecnico-para-escalar-operacao-com-ia/" data-blog-image="imagens/posts/codafacil-parceiro.webp" data-blog-slug="codafacil-parceiro-tecnico-para-escalar-operacao-com-ia" data-blog-date="2026-02-10">
   <a href="../2026/02/10/codafacil-parceiro-tecnico-para-escalar-operacao-com-ia/">
-    <img src="../imagens/posts/codafacil-parceiro.webp" alt="CodaFácil: parceiro técnico para escalar operação com IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+    <img src="../imagens/posts/codafacil-parceiro.webp" alt="Codafacil: parceiro técnico para escalar operação com IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
   </a>
   <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="../2026/02/10/codafacil-parceiro-tecnico-para-escalar-operacao-com-ia/" class="hover:underline">CodaFácil: parceiro técnico para escalar operação com IA</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Conheça como o CodaFácil acelera customizações, integrações e evolução contínua para empresas que já operam com venda direta e querem avançar com IA.</p>
+    <h2 class="text-base font-semibold leading-snug"><a href="../2026/02/10/codafacil-parceiro-tecnico-para-escalar-operacao-com-ia/" class="hover:underline">Codafacil: parceiro técnico para escalar operação com IA</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Conheça como o Codafacil acelera customizações, integrações e evolução contínua para empresas que já operam com venda direta e querem avançar com IA.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2023/07/03/descubra-estrategias-de-venda-direta/" data-blog-image="imagens/posts/descubra-estrategias-de-venda-direta.webp" data-blog-slug="descubra-estrategias-de-venda-direta" data-blog-date="2023-07-03">
@@ -335,11 +335,11 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
         </article>
 <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="../2026/02/10/codafacil-parceiro-tecnico-para-escalar-operacao-com-ia/">
-            <img decoding="async" src="../imagens/posts/codafacil-parceiro.webp" srcset="../imagens/posts/codafacil-parceiro-480.webp 480w, ../imagens/posts/codafacil-parceiro.webp 1200w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="CodaFácil: parceiro técnico para escalar operação com IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+            <img decoding="async" src="../imagens/posts/codafacil-parceiro.webp" srcset="../imagens/posts/codafacil-parceiro-480.webp 480w, ../imagens/posts/codafacil-parceiro.webp 1200w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="Codafacil: parceiro técnico para escalar operação com IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
           <div class="p-4">
-            <h2 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../2026/02/10/codafacil-parceiro-tecnico-para-escalar-operacao-com-ia/" class="hover:underline">CodaFácil: parceiro técnico para escalar operação com IA</a></h2>
-            <p class="mt-2 text-sm text-white/85">Conheça como o CodaFácil acelera customizações, integrações e evolução contínua para empresas que já operam com venda direta e querem avançar com IA.</p>
+            <h2 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../2026/02/10/codafacil-parceiro-tecnico-para-escalar-operacao-com-ia/" class="hover:underline">Codafacil: parceiro técnico para escalar operação com IA</a></h2>
+            <p class="mt-2 text-sm text-white/85">Conheça como o Codafacil acelera customizações, integrações e evolução contínua para empresas que já operam com venda direta e querem avançar com IA.</p>
           </div>
         </article>
 <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">

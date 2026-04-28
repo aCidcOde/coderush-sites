@@ -83,7 +83,7 @@ Post de blog estatico com foco em OpenClaw, IA aplicada e software sob medida.
       <div class="hidden items-center gap-5 text-sm font-medium text-white/90 md:flex">
         <a href="../../../../" class="hover:text-white">Site Principal</a>
         <a href="../../../../inteligencia-artificial/" class="hover:text-white">IA para MMN</a>
-        <a href="../../../../codafacil/" class="hover:text-white">CodaFácil</a>
+        <a href="../../../../codafacil/" class="hover:text-white">Codafacil</a>
       </div>
     </div>
   </header>

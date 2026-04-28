@@ -24,7 +24,7 @@ const SITE_COPY = {
     articleLabel: "Blog CodeRush",
     footerBlurb:
       "A CodeRush conecta software sob medida, IA e automacao ao objetivo do negocio com execucao pragmatica.",
-    ctaTitle: "Quer transformar tecnologia em resultado real?",
+    ctaTitle: "Quer destravar uma iniciativa de tecnologia com criterio?",
     ctaBody:
       "A CodeRush estrutura arquitetura, entrega e automacao para tirar iniciativas criticas do papel sem improviso.",
     ctaPath: "#contato",
@@ -114,7 +114,7 @@ const SITE_COPY = {
     articleLabel: "Blog SVD",
     footerBlurb:
       "A Sistema Venda Direta desenvolve solucoes para operacao comercial, vendas diretas e evolucao tecnologica com IA aplicada.",
-    ctaTitle: "Quer transformar IA em resultado operacional?",
+    ctaTitle: "Quer aplicar IA na operacao comercial com previsibilidade?",
     ctaBody:
       "A SVD estrutura arquitetura, integracao e governanca para levar automacao ao negocio com previsibilidade.",
     ctaPath: "#contato",

@@ -430,13 +430,13 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
             </p>
             <p class="mt-3 max-w-3xl text-base leading-relaxed text-white/85">
               Isso cria sinergia direta com o Sistema Venda Direta: enquanto o SVD entrega o produto consolidado de MMN,
-              o CodaFácil acelera projetos customizados, integrações e novas frentes tecnológicas da sua empresa.
+              o Codafacil acelera projetos customizados, integrações e novas frentes tecnológicas da sua empresa.
             </p>
           </div>
 
           <div class="flex flex-col items-stretch gap-3 sm:min-w-[280px]">
             <a href="codafacil/" class="inline-flex items-center justify-center rounded-full border border-white/75 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10">
-              Conhecer CodaFácil
+              Conhecer Codafacil
             </a>
           </div>
         </div>
