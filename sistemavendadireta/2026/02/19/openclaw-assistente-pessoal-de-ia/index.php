@@ -119,12 +119,6 @@ Post de blog estatico com foco em OpenClaw, IA aplicada e software sob medida.
 <p>Em modelos de multinível e venda direta, o caminho mais seguro é começar com casos de uso objetivos: suporte inteligente, classificação de chamados, sugestões de próxima ação comercial e automações administrativas.</p>
 
 <p>Esse modelo reduz retrabalho e libera o time para foco em crescimento de rede, retenção e conversão.</p>
-
-<h2>Fontes oficiais (consultadas em 19/02/2026)</h2>
-<ul>
-  <li><a href="https://openclaw.ai" target="_blank" rel="noopener noreferrer">Site oficial do OpenClaw</a></li>
-  <li><a href="https://github.com/openclaw/openclaw" target="_blank" rel="noopener noreferrer">Repositório oficial no GitHub</a></li>
-</ul>
 </div>
     </article>
 

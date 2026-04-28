@@ -85,16 +85,6 @@
         <h2 class="text-xl font-semibold text-white sm:text-2xl">Integração com Sistemas Legados: Um Desafio Necessário</h2>
         <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">A integração com sistemas legados é um desafio que muitas empresas enfrentam ao considerar a construção de um software sob medida. Uma abordagem pragmática é vital para evitar grandes interrupções. O uso de técnicas de arquitetura orientadas a serviços pode ajudar a conectar novos sistemas com legados sem uma abordagem de big-bang. A literatura recente, como o artigo de Rahul Garg sobre a redução de atritos no desenvolvimento assistido por IA [revela](https://martinfowler.com/articles/reduce-friction-ai/feedback-flywheel.html) a importância de uma integração que minimize riscos. Para discutir como isso pode funcionar na sua empresa, fique à vontade para [falar com a CodeRush](#contato).</p>
       </section>
-      <section class="mt-8">
-        <h2 class="text-xl font-semibold text-white sm:text-2xl">Fontes oficiais</h2>
-        <ul class="mt-4 space-y-2 text-sm leading-6 text-white/85">
-          <li><a href="https://martinfowler.com/fragments/2026-04-21.html" target="_blank" rel="noopener noreferrer" class="underline decoration-white/25 underline-offset-4 hover:decoration-white/55">https://martinfowler.com/fragments/2026-04-21.html</a></li>
-          <li><a href="https://martinfowler.com/fragments/2026-04-09.html" target="_blank" rel="noopener noreferrer" class="underline decoration-white/25 underline-offset-4 hover:decoration-white/55">https://martinfowler.com/fragments/2026-04-09.html</a></li>
-          <li><a href="https://martinfowler.com/fragments/2026-04-14.html" target="_blank" rel="noopener noreferrer" class="underline decoration-white/25 underline-offset-4 hover:decoration-white/55">https://martinfowler.com/fragments/2026-04-14.html</a></li>
-          <li><a href="https://aws.amazon.com/blogs/architecture/modernizing-kyc-with-aws-serverless-solutions-and-agentic-ai-for-financial-services/" target="_blank" rel="noopener noreferrer" class="underline decoration-white/25 underline-offset-4 hover:decoration-white/55">https://aws.amazon.com/blogs/architecture/modernizing-kyc-with-aws-serverless-solutions-and-agentic-ai-for-financial-services/</a></li>
-          <li><a href="https://stackoverflow.blog/2026/04/15/human-input-needed-take-our-survey-on-ai-agents/" target="_blank" rel="noopener noreferrer" class="underline decoration-white/25 underline-offset-4 hover:decoration-white/55">https://stackoverflow.blog/2026/04/15/human-input-needed-take-our-survey-on-ai-agents/</a></li>
-        </ul>
-      </section>
     </article>
 
     <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">

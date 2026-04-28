@@ -147,13 +147,6 @@
         <h2 class="text-xl font-semibold text-white sm:text-2xl">Plano de execucao</h2>
         <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">Comece com piloto de 30 dias, defina KPIs, valide com usuarios reais e escale somente o que trouxer ganho comprovado.</p>
       </section>
-      <section class="mt-8">
-        <h2 class="text-xl font-semibold text-white sm:text-2xl">Fontes oficiais</h2>
-        <ul class="mt-4 space-y-2 text-sm leading-6 text-white/85">
-          <li><a href="https://openai.com/news/" target="_blank" rel="noopener noreferrer" class="underline decoration-white/25 underline-offset-4 hover:decoration-white/55">https://openai.com/news/</a></li>
-          <li><a href="https://github.blog/" target="_blank" rel="noopener noreferrer" class="underline decoration-white/25 underline-offset-4 hover:decoration-white/55">https://github.blog/</a></li>
-        </ul>
-      </section>
     </article>
 
     <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">

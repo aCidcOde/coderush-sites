@@ -148,13 +148,6 @@
         <h2 class="text-xl font-semibold text-white sm:text-2xl">PHP: A Linguagem Ideal para Soluções Personalizadas</h2>
         <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">PHP é uma linguagem robusta e versátil, amplamente utilizada para o desenvolvimento de softwares sob medida. Sua capacidade de integração com bibliotecas de IA e sua facilidade de uso tornam o PHP uma escolha popular entre desenvolvedores. Com ele, é possível construir sistemas que não apenas atendem às suas necessidades atuais, mas que também estão prontos para evoluir com sua empresa.</p>
       </section>
-      <section class="mt-8">
-        <h2 class="text-xl font-semibold text-white sm:text-2xl">Fontes oficiais</h2>
-        <ul class="mt-4 space-y-2 text-sm leading-6 text-white/85">
-          <li><a href="https://openai.com/news/" target="_blank" rel="noopener noreferrer" class="underline decoration-white/25 underline-offset-4 hover:decoration-white/55">https://openai.com/news/</a></li>
-          <li><a href="https://github.blog/" target="_blank" rel="noopener noreferrer" class="underline decoration-white/25 underline-offset-4 hover:decoration-white/55">https://github.blog/</a></li>
-        </ul>
-      </section>
     </article>
 
     <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">

@@ -125,13 +125,6 @@ Post de blog estatico com foco em PHP 8.5.3, suporte de versoes e plano de atual
 </ul>
 
 <p>Se voce quer evoluir stack e processos juntos, vale combinar esse plano com uma frente de <a href="../../../../codafacil/">desenvolvimento com IA sob medida</a> e com iniciativas de <a href="../../../../inteligencia-artificial/">IA aplicada ao negocio</a>, mantendo governanca em cada etapa.</p>
-
-<h2>Fontes oficiais (consultadas em 04/03/2026)</h2>
-<ul>
-  <li><a href="https://www.php.net/archive/2026.php" target="_blank" rel="noopener noreferrer">PHP: Archive 2026 (releases oficiais)</a></li>
-  <li><a href="https://www.php.net/ChangeLog-8.php#8.5.3" target="_blank" rel="noopener noreferrer">PHP: ChangeLog 8.x (detalhes da serie 8.5)</a></li>
-  <li><a href="https://www.php.net/supported-versions.php" target="_blank" rel="noopener noreferrer">PHP: Supported Versions</a></li>
-</ul>
 </div>
     </article>
 

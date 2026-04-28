@@ -430,26 +430,6 @@ function renderSections(contract) {
     .join("\n");
 }
 
-function renderSources(contract) {
-  if (!Array.isArray(contract.sources) || contract.sources.length === 0) {
-    return "";
-  }
-
-  return [
-    '      <section class="mt-8">',
-    '        <h2 class="text-xl font-semibold text-white sm:text-2xl">Fontes oficiais</h2>',
-    '        <ul class="mt-4 space-y-2 text-sm leading-6 text-white/85">',
-    ...contract.sources.map(
-      (source) =>
-        `          <li><a href="${esc(source)}" target="_blank" rel="noopener noreferrer" class="underline decoration-white/25 underline-offset-4 hover:decoration-white/55">${esc(
-          source
-        )}</a></li>`
-    ),
-    "        </ul>",
-    "      </section>"
-  ].join("\n");
-}
-
 function renderRelatedSection() {
   return [
     "    <!-- BLOG-LEIA-TAMBEM START -->",
@@ -523,7 +503,6 @@ ${renderNavLinks(copy, relativeRoot)}
       <img src="${relativeRoot}imagens/posts/${contract.slug}.jpg" alt="${esc(contract.coverAlt || contract.content.headline)}" class="mt-6 w-full rounded-2xl border border-white/15" width="1200" height="630" loading="lazy" />
 
 ${renderSections(contract)}
-${renderSources(contract)}
     </article>
 
     <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">

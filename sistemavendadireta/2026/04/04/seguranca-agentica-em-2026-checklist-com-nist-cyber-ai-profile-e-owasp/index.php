@@ -125,14 +125,6 @@ Post de blog estatico com foco em Tecnologia: governanca de seguranca para IA ag
 </ul>
 
 <p>Se voce quer estruturar essa base no seu ambiente, combine <a href="../../../../codafacil/">desenvolvimento com IA sob medida</a> com uma estrategia de <a href="../../../../inteligencia-artificial/">IA aplicada ao negocio</a> para escalar com governanca desde a arquitetura.</p>
-
-<h2>Fontes oficiais (consultadas em 04/04/2026)</h2>
-<ul>
-  <li><a href="https://www.nist.gov/node/1901136" target="_blank" rel="noopener noreferrer">NIST: Draft Guidelines Rethink Cybersecurity for the AI Era (16/12/2025)</a></li>
-  <li><a href="https://csrc.nist.gov/pubs/ir/8596/iprd" target="_blank" rel="noopener noreferrer">NISTIR 8596 (IPRD): Cybersecurity and AI Profile</a></li>
-  <li><a href="https://genai.owasp.org/resource/a-practical-guide-for-secure-mcp-server-development/" target="_blank" rel="noopener noreferrer">OWASP GenAI: A Practical Guide for Secure MCP Server Development</a></li>
-  <li><a href="https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/" target="_blank" rel="noopener noreferrer">OWASP GenAI: Top 10 for Agentic Applications for 2026</a></li>
-</ul>
 </div>
     </article>
 

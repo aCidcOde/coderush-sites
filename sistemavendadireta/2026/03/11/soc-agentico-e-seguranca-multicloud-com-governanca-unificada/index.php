@@ -125,13 +125,6 @@ Post de blog estatico com foco em tecnologia: SOC agentico e seguranca multiclou
 </ul>
 
 <p>Se voce quer aplicar esse modelo em produto e operacao, vale integrar essa frente com <a href="../../../../codafacil/">desenvolvimento com IA sob medida</a> e com iniciativas de <a href="../../../../inteligencia-artificial/">IA aplicada ao negocio</a>, mantendo governanca tecnica ponta a ponta.</p>
-
-<h2>Fontes oficiais (consultadas em 11/03/2026)</h2>
-<ul>
-  <li><a href="https://aws.amazon.com/about-aws/whats-new/2026/03/aws-security-hub-now-supports-security-findings-aws-shield/" target="_blank" rel="noopener noreferrer">AWS: Security Hub now supports security findings from AWS Shield</a></li>
-  <li><a href="https://aws.amazon.com/about-aws/whats-new/2026/02/aws-security-hub-expands-detection-and-remediation-capabilities-for-seventeen-additional-aws-services/" target="_blank" rel="noopener noreferrer">AWS: Security Hub expands detection and remediation capabilities</a></li>
-  <li><a href="https://www.microsoft.com/en-us/microsoft-cloud/blog/2026/03/09/accelerate-ai-transformation-with-security-and-compliance-in-microsoft-365-e7/" target="_blank" rel="noopener noreferrer">Microsoft: security and compliance updates in Microsoft 365 E7</a></li>
-</ul>
 </div>
     </article>
 

@@ -125,13 +125,6 @@ Post de blog estatico com foco em conectores de IA e impacto operacional.
 </ol>
 
 <p>Se sua operacao depende de varias ferramentas, vale avaliar uma estrategia de <a href="../../../../codafacil/">desenvolvimento com IA sob medida</a> para integrar dados e reduzir custo operacional com controle total.</p>
-
-<h2>Fontes oficiais (consultadas em 25/02/2026)</h2>
-<ul>
-  <li><a href="https://claude.com/blog/cowork-plugins-across-enterprise" target="_blank" rel="noopener noreferrer">Anthropic: Cowork plugins across the enterprise</a></li>
-  <li><a href="https://claude.com/docs/connectors/directory" target="_blank" rel="noopener noreferrer">Anthropic: Conectores oficiais (directory)</a></li>
-  <li><a href="https://investor.docusign.com/news-releases/news-release-details/docusign-partners-anthropic-bring-its-intelligent-contract-workflows-cowork" target="_blank" rel="noopener noreferrer">DocuSign: parceria com Anthropic para fluxos de contrato inteligentes</a></li>
-</ul>
 </div>
     </article>
 

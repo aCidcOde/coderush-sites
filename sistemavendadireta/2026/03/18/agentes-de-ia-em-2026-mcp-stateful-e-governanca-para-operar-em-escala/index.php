@@ -125,14 +125,6 @@ Post de blog estatico com foco em IA: agentes em escala com MCP stateful e gover
 </ul>
 
 <p>Para implementar esse desenho com velocidade e controle, vale combinar <a href="../../../../codafacil/">desenvolvimento com IA sob medida</a> com uma frente continua de <a href="../../../../inteligencia-artificial/">IA aplicada ao negocio</a>, conectando tecnologia, processo e metas operacionais.</p>
-
-<h2>Fontes oficiais (consultadas em 18/03/2026)</h2>
-<ul>
-  <li><a href="https://aws.amazon.com/about-aws/whats-new/2026/03/amazon-bedrock-agentcore-runtime-stateful-mcp/" target="_blank" rel="noopener noreferrer">AWS: Amazon Bedrock AgentCore Runtime now supports stateful MCP server features</a></li>
-  <li><a href="https://aws.amazon.com/about-aws/whats-new/2026/03/policy-amazon-bedrock-agentcore-generally-available/" target="_blank" rel="noopener noreferrer">AWS: Policy in Amazon Bedrock AgentCore is now generally available</a></li>
-  <li><a href="https://nvidianews.nvidia.com/news/nvidia-ceo-jensen-huang-and-global-technology-leaders-to-showcase-age-of-ai-at-gtc-2026" target="_blank" rel="noopener noreferrer">NVIDIA Newsroom: GTC 2026 highlights and agentic systems focus</a></li>
-  <li><a href="https://openai.com/index/introducing-agentkit/" target="_blank" rel="noopener noreferrer">OpenAI: Introducing AgentKit</a></li>
-</ul>
 </div>
     </article>
 

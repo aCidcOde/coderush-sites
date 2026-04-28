@@ -122,14 +122,6 @@ Post de blog estatico com foco em PHP 8.5, migracao segura e software sob medida
 
 <h2>Como transformar upgrade tecnico em ganho operacional</h2>
 <p>Para negocios de venda direta e operacoes com alto volume transacional, a migracao para PHP 8.5 deve ser tratada como iniciativa de eficiencia: menos incidentes em deploy, menor retrabalho de manutencao e mais previsibilidade para evoluir produto. O ganho nao vem so da versao nova, mas da forma como a atualizacao e conduzida.</p>
-
-<h2>Fontes oficiais (consultadas em 19/02/2026)</h2>
-<ul>
-  <li><a href="https://www.php.net/releases/8.5/en.php" target="_blank" rel="noopener noreferrer">PHP 8.5 Releases (oficial)</a></li>
-  <li><a href="https://www.php.net/manual/en/migration85.php" target="_blank" rel="noopener noreferrer">Guia oficial de migracao para PHP 8.5</a></li>
-  <li><a href="https://www.php.net/manual/en/migration85.new-features.php" target="_blank" rel="noopener noreferrer">Novidades do PHP 8.5 (manual oficial)</a></li>
-  <li><a href="https://www.php.net/manual/en/migration85.incompatible.php" target="_blank" rel="noopener noreferrer">Mudancas incompatíveis no PHP 8.5</a></li>
-</ul>
 </div>
     </article>
 
