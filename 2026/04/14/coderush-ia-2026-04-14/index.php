@@ -130,6 +130,13 @@
     <p class="mt-2 text-sm leading-relaxed text-white/80">Neste artigo, abordaremos a importância da governança de tecnologia no crescimento das operações empresariais, com um foco especial em PHP e como a inteligên...</p>
   </div>
 </article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/04/28/coderush-ia-2026-04-28/"><img src="../../../../imagens/posts/coderush-ia-2026-04-28.jpg" alt="Decidindo entre Comprar ou Construir Software: O Papel da Arquitetura" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/04/28/coderush-ia-2026-04-28/" class="hover:underline">Decidindo entre Comprar ou Construir Software: O Papel da Arquitetura</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Neste artigo, discutiremos a decisão crítica entre comprar ou construir software, focando na importância da arquitetura de software e na integração com siste...</p>
+  </div>
+</article>
   </div>
 </section>
 <!-- BLOG-LEIA-TAMBEM END -->

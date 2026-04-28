@@ -85,17 +85,17 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/04/28/sistemavendadireta-ia-2026-04-28/"><img src="../../../../imagens/posts/sistemavendadireta-ia-2026-04-28.jpg" alt="CRM e Automação: Potencializando Vendas Diretas com Tecnologia Avançada" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/04/28/sistemavendadireta-ia-2026-04-28/" class="hover:underline">CRM e Automação: Potencializando Vendas Diretas com Tecnologia Avançada</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Neste artigo, exploramos como um sistema de venda direta e as ferramentas de CRM podem transformar a operação comercial em marketing multinível, utilizando I...</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="../../../../2026/04/19/sistemavendadireta-php-2026-04-19/"><img src="../../../../imagens/posts/sistemavendadireta-php-2026-04-19.jpg" alt="Governança Comercial: Potencializando Vendas Diretas com Dados e IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/04/19/sistemavendadireta-php-2026-04-19/" class="hover:underline">Governança Comercial: Potencializando Vendas Diretas com Dados e IA</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Neste artigo, discutiremos como a governança comercial pode ser aprimorada através do uso de dados e inteligência artificial, focando em soluções práticas pa...</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/02/10/codafacil-parceiro-tecnico-para-escalar-operacao-com-ia/"><img src="../../../../imagens/posts/codafacil-parceiro.webp" alt="CodaFácil: parceiro técnico para escalar operação com IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/02/10/codafacil-parceiro-tecnico-para-escalar-operacao-com-ia/" class="hover:underline">CodaFácil: parceiro técnico para escalar operação com IA</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Conheça como o CodaFácil acelera customizações, integrações e evolução contínua para empresas que já operam com venda direta e querem avançar com IA.</p>
   </div>
 </article>
   </div>
