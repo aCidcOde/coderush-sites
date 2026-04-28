@@ -111,9 +111,9 @@
       "requiresPhpLint": false,
       "lintTargets": [],
       "coverModel": {
-        "primary": "gemini-3-pro",
+        "primary": "gpt-5-image",
         "fallback": [
-          "gpt-5-image",
+          "gemini-3-pro",
           "gemini-flash"
         ]
       },

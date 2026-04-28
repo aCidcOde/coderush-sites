@@ -464,7 +464,9 @@ async function run() {
         blogUpdated: publishResult.blogUpdated,
         sitemapUpdated: publishResult.sitemapUpdated,
         robotsUpdated: publishResult.robotsUpdated,
-        coverSource: publishResult.coverSource
+        coverSource: publishResult.coverSource,
+        coverAlt: publishResult.coverAlt,
+        coverLeakage: publishResult.coverLeakage
       };
       siteResult.lint = lint;
 

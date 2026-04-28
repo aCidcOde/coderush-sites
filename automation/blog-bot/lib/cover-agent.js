@@ -1,9 +1,11 @@
 const fs = require("node:fs");
-const { execFileSync } = require("node:child_process");
+const { execFileSync, execSync } = require("node:child_process");
 const { generateWithOpenAI, generateWithOpenRouter } = require("./ai-writer");
+const { siteProfile } = require("./site-strategy");
 
 const TARGET_WIDTH = 1200;
 const TARGET_HEIGHT = 630;
+const TEXT_LEAKAGE_ALPHANUMERIC_THRESHOLD = 8;
 
 const MODEL_CATALOG = {
   "gpt-5-image": "openai/gpt-5-image",
@@ -14,76 +16,144 @@ const MODEL_CATALOG = {
   "gemini-flash": "google/gemini-2.5-flash-image"
 };
 
-const SITE_STYLE = {
-  coderush:
-    "Visual editorial corporativo de tecnologia, paleta azul eletrico (#60a5fa) e violeta (#a78bfa) sobre fundo azul-marinho profundo (#020b1a), composicao cinematografica com profundidade, lighting volumetrico, sensacao de hub de tecnologia premium.",
-  codafacil:
-    "Visual de engenharia de software aplicada, abstrato com elementos de arquitetura digital, paleta azul royal (#0b4db6) e violeta (#8b5cf6) sobre fundo verde-petroleo escuro (#04110d), iluminacao suave com brilho frio, sensacao de precisao e clareza tecnica.",
-  fluxointeligenteia:
-    "Visual de automacao e fluxos conectados de agentes de IA, paleta verde esmeralda (#34d399) e ciano (#38bdf8) sobre fundo dark esmeralda (#04110d), particulas e linhas de dados, energia operacional moderna.",
-  sistemavendadireta:
-    "Visual institucional corporativo solido, paleta azul corporativo (#004aad) e branco sobre fundo azul profundo (#12356b), atmosfera confiavel e estavel, abstracoes geometricas limpas, sensacao de governanca e maturidade."
-};
+const DEFAULT_PROMPT_MODEL = "anthropic/claude-sonnet-4-6";
 
 function resolveModelId(name) {
-  if (!name) {
-    return "";
-  }
-  if (MODEL_CATALOG[name]) {
-    return MODEL_CATALOG[name];
-  }
-  return name;
+  if (!name) return "";
+  return MODEL_CATALOG[name] || name;
 }
 
-function buildPromptInstruction(site, contract, styleHint) {
+function joinList(items, fallback = "") {
+  const list = (items || []).filter(Boolean);
+  if (list.length === 0) return fallback;
+  if (list.length === 1) return list[0];
+  if (list.length === 2) return `${list[0]} e ${list[1]}`;
+  return `${list.slice(0, -1).join(", ")} e ${list[list.length - 1]}`;
+}
+
+function defaultCoverArt() {
+  return {
+    paletteHex: ["#0b1220", "#3b82f6", "#a78bfa"],
+    paletteDescription: "azul escuro com brilhos azul e violeta",
+    lighting: "iluminacao cinematografica suave",
+    mood: "premium, editorial, atmosfera de revista de tecnologia",
+    visualMotifs: ["abstracao tecnologica clara", "metafora visual unica e forte"],
+    avoid: ["texto", "logos", "telas de UI", "rostos em close"]
+  };
+}
+
+function buildPromptInstruction({ site, contract, coverArt }) {
+  const profile = siteProfile(site.id) || {};
+  const angle = contract.angle || "";
+  const personaShort = profile.personaShort || "leitores tecnicos";
+  const longTail = profile.keywords?.longTail?.[0] || contract.theme || "";
+
+  const motifs = joinList(coverArt.visualMotifs, "uma metafora visual unica");
+  const avoidList = joinList(coverArt.avoid, "texto, logos, telas, rostos em close");
+
   return [
-    "Voce e diretor de arte de uma revista de tecnologia. Sua tarefa: escrever UM unico paragrafo (4-6 frases) descrevendo uma imagem editorial 16:9 (1200x630px) que sera a capa de um post de blog corporativo.",
+    "Voce e diretor de arte de uma revista de tecnologia premium (referencia: capa Wired ou MIT Technology Review).",
+    "Sua tarefa: escrever UM unico paragrafo (4-6 frases, em ingles, denso e visual) descrevendo a capa 16:9 (1200x630px) de um post de blog corporativo.",
     "",
-    "Contexto do post:",
-    `- Titulo: "${contract.content.headline}"`,
-    `- Resumo: "${contract.content.summary}"`,
+    "Contexto editorial:",
     `- Marca: ${site.name}`,
-    `- Direcao visual da marca: ${styleHint}`,
+    `- Persona-alvo: ${personaShort}`,
+    `- Titulo do post: "${contract.content?.headline || contract.title || ""}"`,
+    `- Resumo do post: "${contract.content?.summary || contract.description || ""}"`,
+    `- Angulo da semana: ${angle || "n/a"}`,
+    `- Pergunta long-tail que orienta o tom: "${longTail}"`,
+    "",
+    "Direcao visual da marca (siga estritamente):",
+    `- Paleta: ${coverArt.paletteDescription}`,
+    `- Iluminacao: ${coverArt.lighting}`,
+    `- Mood: ${coverArt.mood}`,
+    `- Motivos visuais permitidos: ${motifs}`,
+    `- EVITAR sob qualquer circunstancia: ${avoidList}`,
     "",
     "REGRAS ABSOLUTAS:",
     "- A imagem NUNCA pode conter texto, palavras, letras, numeros, logotipos ou simbolos legiveis.",
     "- SEM mockup de tela cheia de UI, SEM watermark.",
-    "- SEM rosto humano em close (silhuetas distantes ou maos sao OK se for parte do conceito).",
+    "- SEM rosto humano em close (silhuetas distantes ou maos cortadas sao OK se servir ao conceito).",
     "- Uma unica metafora visual forte e clara, com area de respiro generosa.",
-    "- Estilo: cinematografico, editorial, alta producao, tipo capa de revista Wired ou MIT Technology Review.",
+    "- Composicao 16:9, com ponto focal claro e profundidade.",
     "",
-    "ESCREVA:",
-    "Inclua: assunto principal (a metafora visual concreta), composicao e enquadramento, paleta exata de cores, qualidade de luz (ex: rim light, volumetric fog), atmosfera/mood, nivel de detalhe (cinematografico, fotorrealista, ilustracao editorial), e camera/lente sugerida se relevante.",
+    "ESCREVA o paragrafo com:",
+    "1. Assunto principal (a metafora visual concreta, nao abstrata demais)",
+    "2. Composicao e enquadramento (regra dos tercos, lente, distancia)",
+    "3. Paleta exata de cores presentes",
+    "4. Qualidade de luz (rim light, volumetric fog, godrays etc.)",
+    "5. Atmosfera/mood",
+    "6. Estilo de render (cinematografico fotorrealista, ilustracao editorial 3D, painting digital, etc.)",
     "",
-    "Responda APENAS em JSON valido: { \"prompt\": \"<paragrafo unico>\" }"
+    "Responda APENAS em JSON valido: { \"prompt\": \"<paragrafo unico em ingles>\" }"
   ].join("\n");
 }
 
-async function buildVisualPrompt({ aiConfig, site, contract }) {
-  const styleHint = SITE_STYLE[site.id] || "Visual tecnologico premium, atmosfera profissional e moderna.";
-  const instruction = buildPromptInstruction(site, contract, styleHint);
+function buildAltTextInstruction({ site, contract, coverArt }) {
+  const personaShort = siteProfile(site.id)?.personaShort || "leitores";
+  return [
+    "Gere um alt-text descritivo em pt-BR para a capa de um artigo, com 90-140 caracteres, sem mencionar marca, sem aspas, sem ponto final.",
+    "O alt-text deve descrever objetivamente o que aparece na imagem (assunto visual + paleta dominante + atmosfera), util para acessibilidade e SEO.",
+    "Nao escreva 'imagem ilustrativa', 'foto de' nem o titulo do post — descreva o que se ve.",
+    "",
+    `Marca: ${site.name}`,
+    `Titulo do post: "${contract.content?.headline || contract.title || ""}"`,
+    `Persona-alvo: ${personaShort}`,
+    `Direcao visual: ${coverArt.paletteDescription}; ${coverArt.mood}`,
+    "",
+    "Responda APENAS em JSON valido: { \"alt\": \"<texto descritivo>\" }"
+  ].join("\n");
+}
 
+function resolvePromptAiConfig(aiConfig, env = process.env) {
+  const dedicatedModel = env.BLOG_BOT_PROMPT_MODEL || DEFAULT_PROMPT_MODEL;
+  if (!aiConfig) return null;
+  return { ...aiConfig, textModel: dedicatedModel };
+}
+
+async function callTextModel({ aiConfig, prompt }) {
   if (aiConfig.provider === "openrouter") {
-    const result = await generateWithOpenRouter({
+    return generateWithOpenRouter({
       apiKey: aiConfig.apiKey,
       model: aiConfig.textModel,
-      prompt: instruction,
+      prompt,
       appUrl: aiConfig.appUrl,
       appName: aiConfig.appName
     });
-    return result?.prompt || "";
   }
-
   if (aiConfig.provider === "openai") {
-    const result = await generateWithOpenAI({
+    return generateWithOpenAI({
       apiKey: aiConfig.apiKey,
       model: aiConfig.textModel,
-      prompt: instruction
+      prompt
     });
-    return result?.prompt || "";
   }
+  return null;
+}
 
-  return "";
+async function buildVisualPrompt({ aiConfig, site, contract, coverArt }) {
+  const promptAi = resolvePromptAiConfig(aiConfig);
+  if (!promptAi) return "";
+  const instruction = buildPromptInstruction({ site, contract, coverArt });
+  try {
+    const result = await callTextModel({ aiConfig: promptAi, prompt: instruction });
+    return result?.prompt?.trim() || "";
+  } catch (error) {
+    return "";
+  }
+}
+
+async function buildAltText({ aiConfig, site, contract, coverArt }) {
+  if (!aiConfig) return "";
+  const fastAi = { ...aiConfig, textModel: aiConfig.textModel || "openai/gpt-4o-mini" };
+  const instruction = buildAltTextInstruction({ site, contract, coverArt });
+  try {
+    const result = await callTextModel({ aiConfig: fastAi, prompt: instruction });
+    const alt = String(result?.alt || "").replace(/[\r\n]+/g, " ").trim();
+    return alt.slice(0, 160);
+  } catch (error) {
+    return "";
+  }
 }
 
 function normalizeImageUrl(candidate) {
@@ -107,38 +177,29 @@ function extractImageUrl(payload) {
     const url = normalizeImageUrl(image);
     if (url) return url;
   }
-
   const content = Array.isArray(message?.content) ? message.content : [];
   for (const item of content) {
     const url = normalizeImageUrl(item);
     if (url) return url;
   }
-
   const data = payload?.data || [];
   for (const item of data) {
     const url = normalizeImageUrl(item);
     if (url) return url;
   }
-
   return "";
 }
 
 async function writeImageFromUrl(imageUrl, targetPath) {
-  if (!imageUrl) {
-    throw new Error("URL de imagem vazia.");
-  }
-
+  if (!imageUrl) throw new Error("URL de imagem vazia.");
   if (imageUrl.startsWith("data:")) {
     const [, data] = imageUrl.split(",", 2);
     if (!data) throw new Error("Data URL invalida.");
     fs.writeFileSync(targetPath, Buffer.from(data, "base64"));
     return;
   }
-
   const response = await fetch(imageUrl);
-  if (!response.ok) {
-    throw new Error(`Falha ao baixar imagem (${response.status}).`);
-  }
+  if (!response.ok) throw new Error(`Falha ao baixar imagem (${response.status}).`);
   fs.writeFileSync(targetPath, Buffer.from(await response.arrayBuffer()));
 }
 
@@ -151,6 +212,42 @@ out = ImageOps.fit(img, (${TARGET_WIDTH}, ${TARGET_HEIGHT}), method=Image.Resamp
 out.save(sys.argv[2], format="JPEG", quality=92, subsampling=0)
 `;
   execFileSync("python3", ["-c", script, targetPath, targetPath], { stdio: "pipe" });
+}
+
+function tesseractAvailable() {
+  try {
+    execSync("which tesseract", { stdio: "pipe" });
+    return true;
+  } catch (error) {
+    return false;
+  }
+}
+
+function detectTextLeakage(targetPath) {
+  if (!tesseractAvailable()) {
+    return { skipped: true, reason: "tesseract not installed" };
+  }
+  try {
+    const output = execFileSync(
+      "tesseract",
+      [targetPath, "-", "--psm", "6"],
+      { stdio: ["ignore", "pipe", "pipe"], timeout: 15000 }
+    ).toString();
+    const alphanumericCount = (output.match(/[A-Za-z0-9]/g) || []).length;
+    const sample = output
+      .split(/\s+/)
+      .filter((word) => word.replace(/[^A-Za-z0-9]/g, "").length >= 3)
+      .slice(0, 5)
+      .join(" ");
+    return {
+      skipped: false,
+      leaked: alphanumericCount >= TEXT_LEAKAGE_ALPHANUMERIC_THRESHOLD,
+      alphanumericCount,
+      sample
+    };
+  } catch (error) {
+    return { skipped: true, reason: `tesseract error: ${error.message || error}` };
+  }
 }
 
 async function callOpenRouterImage({ apiKey, model, prompt, targetPath, appUrl, appName, aspectRatio }) {
@@ -185,23 +282,19 @@ async function callOpenRouterImage({ apiKey, model, prompt, targetPath, appUrl, 
       headers,
       body: JSON.stringify(body)
     });
-
     if (!response.ok) {
       lastError = new Error(`OpenRouter ${model} (${response.status}): ${await response.text()}`);
       continue;
     }
-
     const payload = await response.json();
     const imageUrl = extractImageUrl(payload);
     if (!imageUrl) {
       lastError = new Error(`OpenRouter ${model}: resposta sem imagem.`);
       continue;
     }
-
     await writeImageFromUrl(imageUrl, targetPath);
     return { ok: true };
   }
-
   throw lastError || new Error(`OpenRouter ${model}: falha desconhecida.`);
 }
 
@@ -212,38 +305,25 @@ async function callOpenAIImage({ apiKey, model, prompt, targetPath, size }) {
       Authorization: `Bearer ${apiKey}`,
       "Content-Type": "application/json"
     },
-    body: JSON.stringify({
-      model,
-      prompt,
-      size,
-      n: 1
-    })
+    body: JSON.stringify({ model, prompt, size, n: 1 })
   });
-
   if (!response.ok) {
     throw new Error(`OpenAI Images ${model} (${response.status}): ${await response.text()}`);
   }
-
   const payload = await response.json();
   const item = payload?.data?.[0];
   const imageUrl = item?.url || (item?.b64_json ? `data:image/png;base64,${item.b64_json}` : "");
-  if (!imageUrl) {
-    throw new Error(`OpenAI Images ${model}: resposta sem imagem.`);
-  }
-
+  if (!imageUrl) throw new Error(`OpenAI Images ${model}: resposta sem imagem.`);
   await writeImageFromUrl(imageUrl, targetPath);
   return { ok: true };
 }
 
 async function callImageModel({ aiConfig, modelId, prompt, targetPath }) {
-  if (modelId.startsWith("openai/") || modelId === "gpt-image-1" || modelId === "dall-e-3") {
-    if (aiConfig.provider === "openai") {
-      const cleaned = modelId.replace(/^openai\//, "");
-      const size = cleaned === "dall-e-3" ? "1792x1024" : "1536x1024";
-      return callOpenAIImage({ apiKey: aiConfig.apiKey, model: cleaned, prompt, targetPath, size });
-    }
+  if ((modelId.startsWith("openai/") || modelId === "gpt-image-1" || modelId === "dall-e-3") && aiConfig.provider === "openai") {
+    const cleaned = modelId.replace(/^openai\//, "");
+    const size = cleaned === "dall-e-3" ? "1792x1024" : "1536x1024";
+    return callOpenAIImage({ apiKey: aiConfig.apiKey, model: cleaned, prompt, targetPath, size });
   }
-
   return callOpenRouterImage({
     apiKey: aiConfig.apiKey,
     model: modelId,
@@ -259,10 +339,8 @@ function resolveModelChain(site, env = process.env) {
   const config = site.coverModel || {};
   const envPrimary = env.BLOG_BOT_COVER_MODEL_PRIMARY;
   const envFallback = env.BLOG_BOT_COVER_MODEL_FALLBACK;
-
-  const primary = envPrimary || config.primary || "flux-pro";
-  const fallback = (envFallback ? envFallback.split(",") : config.fallback) || ["flux-schnell", "gemini-flash"];
-
+  const primary = envPrimary || config.primary || "gemini-3-pro";
+  const fallback = (envFallback ? envFallback.split(",") : config.fallback) || ["gpt-5-image", "gemini-flash"];
   return [primary, ...(Array.isArray(fallback) ? fallback : [fallback])]
     .filter(Boolean)
     .map(resolveModelId);
@@ -273,25 +351,24 @@ async function generateCover({ aiConfig, site, contract, targetPath }) {
     throw new Error("aiConfig ausente para gerar capa.");
   }
 
-  let visualPrompt = "";
-  let promptError = null;
-  try {
-    visualPrompt = await buildVisualPrompt({ aiConfig, site, contract });
-  } catch (error) {
-    promptError = error.message || String(error);
-  }
+  const profile = siteProfile(site.id) || {};
+  const coverArt = profile.coverArt || defaultCoverArt();
 
+  let visualPrompt = await buildVisualPrompt({ aiConfig, site, contract, coverArt });
   if (!visualPrompt) {
-    const styleHint = SITE_STYLE[site.id] || "";
     visualPrompt = [
-      `Editorial cinematic 16:9 cover image for an article titled "${contract.content.headline}".`,
-      `Theme: ${contract.theme}. Brand direction: ${styleHint}`,
-      "Single strong visual metaphor, dramatic lighting, polished magazine quality, no text, no watermark, no UI mockups, no faces in close-up."
+      `Editorial cinematic 16:9 cover for an article titled "${contract.content?.headline || contract.title || ""}".`,
+      `Theme: ${contract.theme}. Angle: ${contract.angle || "n/a"}.`,
+      `Brand visual direction: palette ${coverArt.paletteDescription}; lighting ${coverArt.lighting}; mood ${coverArt.mood}.`,
+      `Visual motifs allowed: ${joinList(coverArt.visualMotifs, "single strong metaphor")}.`,
+      `Avoid: ${joinList(coverArt.avoid, "text, logos, UI mockups, faces in close-up")}.`,
+      "Single strong metaphor, dramatic lighting, polished magazine quality, no text, no watermark."
     ].join(" ");
   }
 
   const chain = resolveModelChain(site);
   const attempts = [];
+  let usedModel = null;
 
   for (const modelId of chain) {
     try {
@@ -299,25 +376,35 @@ async function generateCover({ aiConfig, site, contract, targetPath }) {
       try {
         normalizeToCover(targetPath);
       } catch (cropError) {
-        attempts.push({ model: modelId, error: `crop-fail: ${cropError.message || cropError}` });
+        attempts.push({ model: modelId, warning: `crop-fail: ${cropError.message || cropError}` });
       }
-      return {
-        source: modelId,
-        prompt: visualPrompt,
-        attempts,
-        promptError
-      };
+      usedModel = modelId;
+      break;
     } catch (error) {
       attempts.push({ model: modelId, error: error.message || String(error) });
     }
   }
 
-  const summary = attempts.map((a) => `${a.model}: ${a.error}`).join(" | ");
-  throw new Error(`Cover agent falhou em todos os modelos. ${summary}`);
+  if (!usedModel) {
+    const summary = attempts.map((a) => `${a.model}: ${a.error || a.warning}`).join(" | ");
+    throw new Error(`Cover agent falhou em todos os modelos. ${summary}`);
+  }
+
+  const altText = await buildAltText({ aiConfig, site, contract, coverArt });
+  const leakage = detectTextLeakage(targetPath);
+
+  return {
+    source: usedModel,
+    prompt: visualPrompt,
+    altText,
+    attempts,
+    leakage
+  };
 }
 
 module.exports = {
   generateCover,
   resolveModelChain,
-  MODEL_CATALOG
+  MODEL_CATALOG,
+  DEFAULT_PROMPT_MODEL
 };

@@ -26,11 +26,17 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Install image processing toolchain (Pillow + tesseract)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends python3-pil tesseract-ocr
+
       - name: Run weekly blog bot
         env:
           API_OPENROUTER: ${{ secrets.API_OPENROUTER }}
           BLOG_BOT_OPENROUTER_MODEL: openai/gpt-4o-mini
           BLOG_BOT_OPENROUTER_IMAGE_MODEL: google/gemini-2.5-flash-image
+          BLOG_BOT_PROMPT_MODEL: anthropic/claude-sonnet-4-6
         run: npm run blogbot:publish
 
       - name: Create automated PR

@@ -5,6 +5,19 @@ const SITE_PROFILES = {
     persona:
       "fundadores e CTOs de empresas medias que precisam tirar iniciativas de tecnologia do papel sem improviso",
     personaShort: "lideres de tecnologia",
+    coverArt: {
+      paletteHex: ["#020b1a", "#60a5fa", "#a78bfa"],
+      paletteDescription: "azul-marinho profundo (#020b1a) com brilho azul eletrico (#60a5fa) e violeta (#a78bfa)",
+      lighting: "lighting volumetrico cinematografico, rim light suave, profundidade com leve atmosferic fog",
+      mood: "premium, hub de tecnologia editorial, sensacao de capa de revista Wired",
+      visualMotifs: [
+        "arquitetura digital abstrata em isometria limpa",
+        "sistemas conectados por linhas de luz",
+        "blocos modulares como metafora de sistemas integrados",
+        "maos distantes ou silhuetas em segundo plano se houver figura humana"
+      ],
+      avoid: ["tela de UI cheia", "icones tecnologicos genericos", "engrenagens", "stock photography corporativa"]
+    },
     offering:
       "consultoria e execucao em arquitetura, software sob medida, IA aplicada e governanca tecnica",
     differentiators: [
@@ -46,6 +59,19 @@ const SITE_PROFILES = {
     persona:
       "lideres de produto e engenharia que precisam acelerar entrega sem perder qualidade",
     personaShort: "times de produto e engenharia",
+    coverArt: {
+      paletteHex: ["#04110d", "#0b4db6", "#8b5cf6"],
+      paletteDescription: "verde-petroleo escuro (#04110d) com azul royal (#0b4db6) e violeta tech (#8b5cf6)",
+      lighting: "iluminacao suave com brilho frio, contraste limpo, sem grande dramaticidade",
+      mood: "precisao, clareza tecnica, atmosfera de engenharia aplicada",
+      visualMotifs: [
+        "abstracao de codigo ou arquitetura de sistema, sem texto legivel",
+        "elementos de produto digital reduzidos a forma e cor",
+        "grafos, fluxos e camadas como metafora de software construido em iteracao",
+        "tipografia ZERO na imagem"
+      ],
+      avoid: ["screenshots de IDE", "letras visiveis", "logos", "stock de equipe corporativa"]
+    },
     offering:
       "fabrica de software sob medida com IA aplicada no ciclo de desenvolvimento",
     differentiators: [
@@ -87,6 +113,19 @@ const SITE_PROFILES = {
     persona:
       "gerentes de operacao e atendimento que precisam reduzir custo e retrabalho com automacao",
     personaShort: "times de operacao",
+    coverArt: {
+      paletteHex: ["#04110d", "#34d399", "#38bdf8"],
+      paletteDescription: "fundo dark esmeralda (#04110d) com verde esmeralda (#34d399) e ciano (#38bdf8)",
+      lighting: "particulas de dados em movimento, linhas conectivas com brilho leve, atmosfera de sala-de-controle moderna",
+      mood: "energia operacional, agentes inteligentes em fluxo, sensacao de processo em tempo real",
+      visualMotifs: [
+        "fluxos conectados por linhas de luz como metafora de agentes orquestrados",
+        "nos de processamento abstratos representando agentes ou ferramentas",
+        "particulas de dados pequenas e rapidas",
+        "camadas de profundidade sugerindo pipeline"
+      ],
+      avoid: ["robos antropomorficos", "cerebros eletronicos cliche", "engrenagens", "telas de chatbot"]
+    },
     offering:
       "agentes inteligentes (LangChain, LangGraph), automacao com n8n, integracao de sistemas e orquestracao de fluxos",
     differentiators: [
@@ -141,6 +180,19 @@ const SITE_PROFILES = {
     persona:
       "diretores comerciais e de tecnologia em empresas de venda direta e marketing multinivel",
     personaShort: "diretores comerciais e de TI",
+    coverArt: {
+      paletteHex: ["#12356b", "#004aad", "#ffffff"],
+      paletteDescription: "azul profundo (#12356b) com azul corporativo (#004aad) e acento branco (#ffffff)",
+      lighting: "iluminacao estavel e simetrica, sem drama excessivo, leve gradient suave de fundo",
+      mood: "institucional, confiavel, governanca, maturidade comercial",
+      visualMotifs: [
+        "abstracoes geometricas limpas representando rede e estrutura comercial",
+        "camadas em formato de hierarquia ou rede multinivel",
+        "metaforas visuais de fluxo comercial sem mostrar pessoas",
+        "cores solidas corporativas, baixo ruido visual"
+      ],
+      avoid: ["fotos de equipes em reuniao", "graficos com numeros", "moedas", "icones de dolar", "qualquer coisa que sugira esquema piramide"]
+    },
     offering:
       "software, integracoes, IA aplicada e processos para operacao comercial multinivel",
     differentiators: [

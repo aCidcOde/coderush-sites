@@ -15,8 +15,6 @@ const INDEX_MARKERS = {
 const SITE_COPY = {
   coderush: {
     blogName: "Blog CodeRush",
-    coverDirection:
-      "Visual high-tech com arquitetura digital, profundidade cinematografica, brilho azul eletrico e violeta, linguagem premium de hub de tecnologia.",
     homeSectionTitle: "Blog CodeRush",
     homeSectionDescription:
       "Conteudo sobre software sob medida, IA, automacao e governanca para empresas que precisam escalar com criterio.",
@@ -47,8 +45,6 @@ const SITE_COPY = {
   },
   codafacil: {
     blogName: "Blog Codafacil.dev",
-    coverDirection:
-      "Visual de engenharia aplicada com interface abstrata, elementos de produto digital, brilho azul e violeta sobre fundo escuro com leitura limpa.",
     homeSectionTitle: "Blog Codafacil.dev",
     homeSectionDescription:
       "Conteudo sobre software sob medida, entrega orientada por IA, integracoes e automacao para times de produto e operacao.",
@@ -79,8 +75,6 @@ const SITE_COPY = {
   },
   fluxointeligenteia: {
     blogName: "Blog FluxoInteligente IA",
-    coverDirection:
-      "Visual de automacao e agentes com fluxos conectados, sinais de dados, energia emerald e cyan, clima moderno e operacional.",
     homeSectionTitle: "Blog FluxoInteligente IA",
     homeSectionDescription:
       "Conteudo sobre agentes, n8n, automacao de processos e IA aplicada a operacoes que precisam reduzir custo com governanca.",
@@ -111,8 +105,6 @@ const SITE_COPY = {
   },
   sistemavendadireta: {
     blogName: "Blog SVD",
-    coverDirection:
-      "Visual institucional de tecnologia para operacao comercial, tons azul corporativo, branco e composicao mais solida e confiavel.",
     homeSectionTitle: "Blog SVD",
     homeSectionDescription:
       "Conteudo sobre vendas diretas, software, IA aplicada ao negocio e evolucao operacional com foco em resultado.",
@@ -537,7 +529,7 @@ ${renderNavLinks(copy, relativeRoot)}
       )}</h1>
       <p class="mt-5 text-base leading-7 text-white/80 sm:text-lg">${esc(contract.content.summary)}</p>
 
-      <img src="${relativeRoot}imagens/posts/${contract.slug}.jpg" alt="${esc(contract.content.headline)}" class="mt-6 w-full rounded-2xl border border-white/15" width="1200" height="630" loading="lazy" />
+      <img src="${relativeRoot}imagens/posts/${contract.slug}.jpg" alt="${esc(contract.coverAlt || contract.content.headline)}" class="mt-6 w-full rounded-2xl border border-white/15" width="1200" height="630" loading="lazy" />
 
 ${renderSections(contract)}
 ${renderSources(contract)}
@@ -693,14 +685,24 @@ async function ensureCoverImage(root, site, contract, aiConfig) {
 
   const targetPath = path.resolve(postsDir, `${contract.slug}.jpg`);
   if (fs.existsSync(targetPath)) {
-    return { path: targetPath, source: "existing", warning: null };
+    return { path: targetPath, source: "existing", warning: null, altText: "", leakage: null };
   }
 
   let warning = null;
   if (aiConfig) {
     try {
       const result = await agentGenerateCover({ aiConfig, site, contract, targetPath });
-      return { path: targetPath, source: result.source, warning: null };
+      const leakageWarning = result.leakage?.leaked
+        ? `Possivel texto vazado na capa (sample: "${result.leakage.sample}")`
+        : null;
+      return {
+        path: targetPath,
+        source: result.source,
+        warning: leakageWarning,
+        altText: result.altText || "",
+        leakage: result.leakage || null,
+        prompt: result.prompt || ""
+      };
     } catch (error) {
       warning = `Cover agent falhou: ${String(error.message || error)}`;
     }
@@ -712,7 +714,7 @@ async function ensureCoverImage(root, site, contract, aiConfig) {
   }
 
   fs.copyFileSync(fallbackPath, targetPath);
-  return { path: targetPath, source: "fallback-raw", warning };
+  return { path: targetPath, source: "fallback-raw", warning, altText: "", leakage: null };
 }
 
 function writePostFile(root, site, contract, relatedCards) {
@@ -833,6 +835,9 @@ async function publishSitePost(root, site, contract, aiConfig) {
   const relatedCards = mergeCards(existingBlogCards.filter((card) => card.slug !== contract.slug), 3);
 
   const cover = await ensureCoverImage(root, site, contract, aiConfig);
+  if (cover.altText) {
+    contract.coverAlt = cover.altText;
+  }
   const post = writePostFile(root, site, contract, relatedCards);
 
   const homeFile = path.resolve(root, site.siteRoot, site.homePath);
@@ -848,6 +853,8 @@ async function publishSitePost(root, site, contract, aiConfig) {
     sitemapUpdated: sitemap.updated,
     robotsUpdated: robots.updated,
     coverSource: cover.source,
+    coverAlt: cover.altText || "",
+    coverLeakage: cover.leakage || null,
     warning: cover.warning,
     phpLintTargets: buildPhpLintTargets(root, site, post.siteRelativePath)
   };

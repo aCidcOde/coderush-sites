@@ -204,8 +204,25 @@ node automation/blog-bot/run.js --mode=dry-run --date=2026-04-28
 - O ranqueador usa word-boundary para tokens curtos (`ia`, `ai`) e expansao de sinonimos via `FOCUS_SYNONYMS` em `run.js` para evitar falso-positivo.
 
 ### Provider de IA
-- Apenas **OpenRouter**. Variaveis: `API_OPENROUTER` (chave), `BLOG_BOT_OPENROUTER_MODEL` (texto, default `openai/gpt-4o-mini`), `BLOG_BOT_OPENROUTER_IMAGE_MODEL` (capa, default `google/gemini-2.5-flash-image`).
+- Apenas **OpenRouter**. Variaveis principais:
+  - `API_OPENROUTER` — chave (secret).
+  - `BLOG_BOT_OPENROUTER_MODEL` — texto do post (default `openai/gpt-4o-mini`).
+  - `BLOG_BOT_PROMPT_MODEL` — modelo dedicado para gerar prompt visual e alt-text da capa (default `anthropic/claude-sonnet-4-6`).
+  - `BLOG_BOT_OPENROUTER_IMAGE_MODEL` — fallback adicional de imagem (default `google/gemini-2.5-flash-image`).
+  - `BLOG_BOT_COVER_MODEL_PRIMARY` / `BLOG_BOT_COVER_MODEL_FALLBACK` — override opcional da cadeia de modelos por execucao.
 - O secret `OPENAI_API_KEY` foi removido e nao deve ser reintroduzido sem autorizacao explicita. Detalhes na secao 11.
+
+### Pipeline de capas (`lib/cover-agent.js`)
+A capa de cada post passa por 4 etapas:
+1. **Direcao visual unificada.** A direcao de arte (`coverArt`) vem de `SITE_PROFILES[siteId]` em `lib/site-strategy.js`. Inclui `paletteHex`, `paletteDescription`, `lighting`, `mood`, `visualMotifs`, `avoid`. Fonte de verdade unica — nao duplicar em `publisher.js` ou em outro lugar.
+2. **Prompt visual com modelo dedicado.** `buildVisualPrompt` chama o `BLOG_BOT_PROMPT_MODEL` (Claude Sonnet 4.6 por padrao), passando titulo, resumo, persona-alvo, angulo da semana, long-tail keyword, paleta e regras absolutas (sem texto, sem logos, sem rosto em close, etc). Devolve um paragrafo em ingles em JSON.
+3. **Geracao da imagem em cadeia.** `coverModel` em `config/sites.json` define `primary` + `fallback`. Os 4 sites usam `gpt-5-image` como primary e `[gemini-3-pro, gemini-flash]` como fallback. Se um modelo falha, o agente tenta o proximo.
+4. **Pos-processamento + validacao.**
+   - `normalizeToCover` (Python+Pillow) forca 1200x630px JPEG quality 92 com `ImageOps.fit` centralizado.
+   - `detectTextLeakage` roda `tesseract` (se disponivel) e marca `leaked: true` quando detecta >= 8 caracteres alfanumericos. Sem tesseract instalado, etapa e graciosamente pulada.
+   - `buildAltText` gera um alt-text em pt-BR com 90-140 caracteres, sem mencionar marca, salvo em `contract.coverAlt`. O `<img>` do post passa a usar esse alt-text em vez do headline.
+
+Resultado de cada execucao no relatorio: `publishResult.coverSource`, `coverAlt`, `coverLeakage` por site.
 
 ### Anti-duplicacao e fail-loud
 - Apos gerar os 4 posts, o run.js compara similaridade par-a-par via Jaccard de bigrams. Pares com `>= 0.6` aparecem em `report.duplications` para revisao.
