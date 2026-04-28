@@ -85,18 +85,35 @@ async function fetchFeed(url) {
   }
 }
 
-function rankItems(items, { sinceDays = 21, focus = "" } = {}) {
-  const cutoff = Date.now() - sinceDays * 24 * 60 * 60 * 1000;
-  const focusTokens = String(focus || "")
+function escapeRegex(value) {
+  return String(value).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function tokenizeFocus(focus) {
+  return String(focus || "")
     .toLowerCase()
     .split(/[^a-z0-9]+/i)
-    .filter(Boolean);
+    .filter((token) => token.length > 0);
+}
+
+function buildFocusMatchers(focus) {
+  return tokenizeFocus(focus).map((token) => {
+    if (token.length <= 3) {
+      return new RegExp(`\\b${escapeRegex(token)}\\b`, "i");
+    }
+    return new RegExp(escapeRegex(token), "i");
+  });
+}
+
+function rankItems(items, { sinceDays = 21, focus = "" } = {}) {
+  const cutoff = Date.now() - sinceDays * 24 * 60 * 60 * 1000;
+  const matchers = buildFocusMatchers(focus);
 
   return [...items]
     .filter((item) => !item.publishedAt || item.publishedAt.getTime() >= cutoff)
     .map((item) => {
-      const haystack = `${item.title} ${item.summary}`.toLowerCase();
-      const focusHits = focusTokens.reduce((acc, token) => acc + (haystack.includes(token) ? 1 : 0), 0);
+      const haystack = `${item.title} ${item.summary}`;
+      const focusHits = matchers.reduce((acc, matcher) => acc + (matcher.test(haystack) ? 1 : 0), 0);
       const recency = item.publishedAt ? item.publishedAt.getTime() : 0;
       return { ...item, _score: focusHits * 1e13 + recency };
     })
