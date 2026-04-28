@@ -337,10 +337,13 @@ Os inputs Tailwind simples e `site-optimizations.css` iguais entre sites foram m
 
 ## 12) Regras para o assistente de IA (Claude)
 
-### Pull Requests
-- **Nao abrir PR sem pedido explicito.** Comite localmente e empurre a branch quando fizer sentido, mas so rode `gh pr create` quando o usuario pedir ("abre PR", "manda PR", "faz o PR").
-- Apos empurrar uma branch, sinalize: "branch X empurrada, pronta para PR quando voce quiser".
-- Nunca usar `--no-verify` ou `--force` sem pedido explicito.
+### Workflow de versionamento (fase atual)
+- **Trabalhar direto na `main`.** Estamos na primeira versao do sistema; o usuario optou por evitar overhead de branches e PRs.
+- Comitar e empurrar diretamente para `origin/main` apos cada mudanca consistente, sem criar branch intermediaria nem abrir PR.
+- Mensagens de commit em pt-BR no imperativo, com escopo (`feat(blog-bot):`, `fix(ci):`, `docs:`).
+- Atencao: cada push em `main` dispara o webhook de deploy em `coderush.com.br/deploy.php` (workflow `.github/workflows/deploy.yml`). Validar localmente (`npm run build:css`, `php -l`, `node --check`, `npm run blogbot:dry-run`) antes de empurrar.
+- Quando precisar fazer mudancas grandes ou experimentais: confirmar com o usuario se cabe branch/PR ou se segue direto.
+- Nunca usar `--no-verify`, `--force` ou `git push --force` sem pedido explicito.
 
 ### Conteudo do blog-bot
 - Aplicar as diretrizes editoriais da secao 8.
