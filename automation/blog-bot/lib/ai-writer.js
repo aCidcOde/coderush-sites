@@ -238,26 +238,48 @@ async function generateCoverWithOpenRouter({
   throw lastError || new Error("Falha desconhecida ao gerar capa com OpenRouter.");
 }
 
-function generateFallbackContent({ siteName, theme, focus }) {
+function joinList(items, fallback = "") {
+  const list = (items || []).filter(Boolean);
+  if (list.length === 0) return fallback;
+  if (list.length === 1) return list[0];
+  if (list.length === 2) return `${list[0]} e ${list[1]}`;
+  return `${list.slice(0, -1).join(", ")} e ${list[list.length - 1]}`;
+}
+
+function generateFallbackContent({ siteName, theme, focus, profile = {}, angle = "", research = [] }) {
+  const persona = profile.persona || "gestores de operacao";
+  const offering = profile.offering || "tecnologia aplicada";
+  const differentiators = joinList(profile.differentiators, "execucao com governanca");
+  const ctaLabel = profile.cta?.label || "Fale com o time";
+  const angleLabel = angle || (profile.angleBias && profile.angleBias[0]) || "aplicacao pratica";
+
+  const evidenceLine = research.length
+    ? `Movimentos recentes do setor (${research
+        .slice(0, 2)
+        .map((item) => item.title)
+        .filter(Boolean)
+        .join("; ")}) reforcam a urgencia.`
+    : `Movimentos do setor reforcam a urgencia de tratar ${focus} como capacidade, nao como projeto isolado.`;
+
   return {
-    headline: `${siteName}: como usar ${focus.toUpperCase()} de forma pratica`,
-    summary: `Guia objetivo sobre ${theme} com foco em resultado operacional.`,
+    headline: `${siteName}: ${focus.toUpperCase()} aplicado com foco em ${angleLabel}`,
+    summary: `Como ${siteName} usa ${theme} para ${persona} obterem resultado consistente, sem hype, com base em ${differentiators}.`,
     sections: [
       {
-        title: "Contexto de mercado",
-        body: `Empresas estao acelerando a adocao de ${focus} para reduzir retrabalho, ganhar previsibilidade e melhorar a experiencia do cliente.`
+        title: `Contexto para ${persona}`,
+        body: `Quem atua com ${persona} ja sente o peso de adotar ${focus} sem criterio. ${evidenceLine} Antes de escalar, e preciso definir onde ${focus} cria valor real e onde ainda e ruido.`
       },
       {
-        title: "Aplicacao tecnica",
-        body: `A abordagem recomendada e iniciar com um fluxo critico, medir impacto e evoluir com governanca de dados e seguranca desde o inicio.`
+        title: `Como ${siteName} aborda`,
+        body: `A oferta da ${siteName} (${offering}) parte do problema operacional, nao da tecnologia. Diferenciais aplicados aqui: ${differentiators}. O foco e construir uma capacidade reproduzivel de ${focus} dentro do contexto atual da empresa, sem reescrever tudo.`
       },
       {
         title: "Software sob medida com IA",
-        body: "Solucoes personalizadas com IA permitem integrar sistemas legados, padronizar operacoes e manter controle sobre regras de negocio."
+        body: `Para ${angleLabel}, software sob medida com IA aplicada permite integrar sistemas existentes, manter regras de negocio e ganhar velocidade onde a operacao trava. A diferenca esta em escolher o ponto certo de automacao e medir efeito antes de generalizar.`
       },
       {
-        title: "Plano de execucao",
-        body: "Comece com piloto de 30 dias, defina KPIs, valide com usuarios reais e escale somente o que trouxer ganho comprovado."
+        title: "Proximo passo",
+        body: `Comece com um recorte de ${focus} dentro de ${theme}: um fluxo critico, KPI claro, prazo curto. ${ctaLabel} para mapear esse recorte com a ${siteName} antes de comprometer roadmap.`
       }
     ]
   };
