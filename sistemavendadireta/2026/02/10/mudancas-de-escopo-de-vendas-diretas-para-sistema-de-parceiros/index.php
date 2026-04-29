@@ -109,7 +109,7 @@ Post de blog estatico com foco em IA, vendas diretas e evolucao de operacao.
 </ul>
 
 <h2>Como reduzir risco</h2>
-<p>O caminho mais seguro é uma migração em fases: diagnóstico, piloto, validação operacional e escala. Com apoio de IA e dados históricos, a tomada de decisão fica mais assertiva.</p>
+<p>O caminho mais seguro é uma migração em fases: diagnóstico, piloto, válidação operacional e escala. Com apoio de IA e dados históricos, a tomada de decisão fica mais assertiva.</p>
 
 <p>Esse modelo evita ruptura no negócio e permite evoluir a operação mantendo governança e previsibilidade.</p>
 </div>
@@ -132,14 +132,14 @@ Post de blog estatico com foco em IA, vendas diretas e evolucao de operacao.
     <!-- BLOG-LEIA-TAMBEM START -->
 <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
   <div class="flex items-end justify-between gap-4">
-    <h2 class="text-2xl font-semibold text-white">Leia tambem</h2>
+    <h2 class="text-2xl font-semibold text-white">Leia também</h2>
     <a href="../../../../blog/" class="text-sm font-semibold text-white/85 hover:text-white">Ver todos</a>
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/04/14/sistemavendadireta-ia-2026-04-14/"><img src="../../../../imagens/posts/sistemavendadireta-ia-2026-04-14.jpg" alt="Sistema Venda Direta: como usar IA de forma pratica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/04/14/sistemavendadireta-ia-2026-04-14/"><img src="../../../../imagens/posts/sistemavendadireta-ia-2026-04-14.jpg" alt="Sistema Venda Direta: como usar IA de forma prática" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/04/14/sistemavendadireta-ia-2026-04-14/" class="hover:underline">Sistema Venda Direta: como usar IA de forma pratica</a></h3>
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/04/14/sistemavendadireta-ia-2026-04-14/" class="hover:underline">Sistema Venda Direta: como usar IA de forma prática</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre tecnologia para vendas diretas em escala com foco em resultado operacional.</p>
   </div>
 </article>
@@ -166,7 +166,7 @@ Post de blog estatico com foco em IA, vendas diretas e evolucao de operacao.
     <h2 class="text-2xl font-semibold text-white">Mais do hub CodeRush</h2>
     <a href="https://coderush.com.br/" rel="noopener" target="_blank" class="text-sm font-semibold text-white/85 hover:text-white">Ver hub</a>
   </div>
-  <p class="mt-2 text-sm text-white/70">Conteudo recente dos outros sites do ecossistema.</p>
+  <p class="mt-2 text-sm text-white/70">Conteúdo recente dos outros sites do ecossistema.</p>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="https://fluxointeligenteia.com.br/2026/04/19/fluxointeligenteia-php-2026-04-19/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/fluxointeligenteia-php-2026-04-19.jpg" alt="Automação de Processos com LLMs: Custo, SLA e Fallback Humano em Operações Reais" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
@@ -177,18 +177,18 @@ Post de blog estatico com foco em IA, vendas diretas e evolucao de operacao.
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://coderush.com.br/2026/04/26/coderush-tecnologia-2026-04-26/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/coderush-tecnologia-2026-04-26.jpg" alt="CodeRush: como usar TECNOLOGIA de forma pratica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://coderush.com.br/2026/04/26/coderush-tecnologia-2026-04-26/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/coderush-tecnologia-2026-04-26.jpg" alt="CodeRush: como usar TECNOLOGIA de forma prática" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">CodeRush</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/04/26/coderush-tecnologia-2026-04-26/" rel="noopener" target="_blank" class="hover:underline">CodeRush: como usar TECNOLOGIA de forma pratica</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre produtividade de times com automacao inteligente com foco em resultado operacional.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/04/26/coderush-tecnologia-2026-04-26/" rel="noopener" target="_blank" class="hover:underline">CodeRush: como usar TECNOLOGIA de forma prática</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre produtividade de times com automação inteligente com foco em resultado operacional.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://codafacil.dev/2026/04/26/codafacil-tecnologia-2026-04-26/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/codafacil-tecnologia-2026-04-26.jpg" alt="Codafacil.dev: como usar TECNOLOGIA de forma pratica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://codafacil.dev/2026/04/26/codafacil-tecnologia-2026-04-26/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/codafacil-tecnologia-2026-04-26.jpg" alt="Codafacil.dev: como usar TECNOLOGIA de forma prática" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/04/26/codafacil-tecnologia-2026-04-26/" rel="noopener" target="_blank" class="hover:underline">Codafacil.dev: como usar TECNOLOGIA de forma pratica</a></h3>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/04/26/codafacil-tecnologia-2026-04-26/" rel="noopener" target="_blank" class="hover:underline">Codafacil.dev: como usar TECNOLOGIA de forma prática</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre software sob medida com IA aplicada com foco em resultado operacional.</p>
   </div>
 </article>

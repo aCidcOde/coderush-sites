@@ -139,7 +139,7 @@ Post de blog estatico com foco em OpenClaw, IA aplicada e software sob medida.
     <!-- BLOG-LEIA-TAMBEM START -->
 <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
   <div class="flex items-end justify-between gap-4">
-    <h2 class="text-2xl font-semibold text-white">Leia tambem</h2>
+    <h2 class="text-2xl font-semibold text-white">Leia também</h2>
     <a href="../../../../blog/" class="text-sm font-semibold text-white/85 hover:text-white">Ver todos</a>
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
@@ -173,7 +173,7 @@ Post de blog estatico com foco em OpenClaw, IA aplicada e software sob medida.
     <h2 class="text-2xl font-semibold text-white">Mais do hub CodeRush</h2>
     <a href="https://coderush.com.br/" rel="noopener" target="_blank" class="text-sm font-semibold text-white/85 hover:text-white">Ver hub</a>
   </div>
-  <p class="mt-2 text-sm text-white/70">Conteudo recente dos outros sites do ecossistema.</p>
+  <p class="mt-2 text-sm text-white/70">Conteúdo recente dos outros sites do ecossistema.</p>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="https://codafacil.dev/2026/04/28/integracoes-automacao-operacoes-criticas-papel-ia-desenvolvimento/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/integracoes-automacao-operacoes-criticas-papel-ia-desenvolvimento.jpg" alt="Integrações e Automação em Operações Críticas: O Papel da IA no Desenvolvimento de Software Sob Medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>

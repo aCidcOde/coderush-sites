@@ -102,7 +102,7 @@ Post de blog estatico com foco em IA, vendas diretas e evolucao de operacao.
 
 <h2>Onde a IA gera impacto direto</h2>
 <ul>
-  <li><strong>Redução de custo operacional:</strong> automação de tarefas repetitivas de cadastro, validação e acompanhamento.</li>
+  <li><strong>Redução de custo operacional:</strong> automação de tarefas repetitivas de cadastro, válidação e acompanhamento.</li>
   <li><strong>Produtividade comercial:</strong> priorização de ações com base em dados, evitando esforço disperso.</li>
   <li><strong>Previsibilidade:</strong> leitura de comportamento da rede e monitoramento de gargalos operacionais.</li>
   <li><strong>Qualidade de decisão:</strong> relatórios mais claros para líderes de equipe e gestores.</li>
@@ -132,7 +132,7 @@ Post de blog estatico com foco em IA, vendas diretas e evolucao de operacao.
     <!-- BLOG-LEIA-TAMBEM START -->
 <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
   <div class="flex items-end justify-between gap-4">
-    <h2 class="text-2xl font-semibold text-white">Leia tambem</h2>
+    <h2 class="text-2xl font-semibold text-white">Leia também</h2>
     <a href="../../../../blog/" class="text-sm font-semibold text-white/85 hover:text-white">Ver todos</a>
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
@@ -166,22 +166,22 @@ Post de blog estatico com foco em IA, vendas diretas e evolucao de operacao.
     <h2 class="text-2xl font-semibold text-white">Mais do hub CodeRush</h2>
     <a href="https://coderush.com.br/" rel="noopener" target="_blank" class="text-sm font-semibold text-white/85 hover:text-white">Ver hub</a>
   </div>
-  <p class="mt-2 text-sm text-white/70">Conteudo recente dos outros sites do ecossistema.</p>
+  <p class="mt-2 text-sm text-white/70">Conteúdo recente dos outros sites do ecossistema.</p>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://coderush.com.br/2026/04/26/coderush-tecnologia-2026-04-26/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/coderush-tecnologia-2026-04-26.jpg" alt="CodeRush: como usar TECNOLOGIA de forma pratica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://coderush.com.br/2026/04/26/coderush-tecnologia-2026-04-26/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/coderush-tecnologia-2026-04-26.jpg" alt="CodeRush: como usar TECNOLOGIA de forma prática" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">CodeRush</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/04/26/coderush-tecnologia-2026-04-26/" rel="noopener" target="_blank" class="hover:underline">CodeRush: como usar TECNOLOGIA de forma pratica</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre produtividade de times com automacao inteligente com foco em resultado operacional.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/04/26/coderush-tecnologia-2026-04-26/" rel="noopener" target="_blank" class="hover:underline">CodeRush: como usar TECNOLOGIA de forma prática</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre produtividade de times com automação inteligente com foco em resultado operacional.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://fluxointeligenteia.com.br/2026/04/26/fluxointeligenteia-tecnologia-2026-04-26/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/fluxointeligenteia-tecnologia-2026-04-26.jpg" alt="FluxoInteligente IA: como usar TECNOLOGIA de forma pratica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://fluxointeligenteia.com.br/2026/04/26/fluxointeligenteia-tecnologia-2026-04-26/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/fluxointeligenteia-tecnologia-2026-04-26.jpg" alt="FluxoInteligente IA: como usar TECNOLOGIA de forma prática" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">FluxoInteligente IA</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/04/26/fluxointeligenteia-tecnologia-2026-04-26/" rel="noopener" target="_blank" class="hover:underline">FluxoInteligente IA: como usar TECNOLOGIA de forma pratica</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre reducao de custo operacional com ia aplicada com foco em resultado operacional.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/04/26/fluxointeligenteia-tecnologia-2026-04-26/" rel="noopener" target="_blank" class="hover:underline">FluxoInteligente IA: como usar TECNOLOGIA de forma prática</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre redução de custo operacional com ia aplicada com foco em resultado operacional.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">

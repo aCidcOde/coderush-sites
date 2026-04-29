@@ -17,16 +17,16 @@ const SITE_COPY = {
     blogName: "Blog CodeRush",
     homeSectionTitle: "Blog CodeRush",
     homeSectionDescription:
-      "Conteudo sobre software sob medida, IA, automacao e governanca para empresas que precisam escalar com criterio.",
+      "Conteúdo sobre software sob medida, IA, automação e governança para empresas que precisam escalar com critério.",
     indexTitle: "Blog CodeRush | Todos os posts",
     indexDescription:
-      "Artigos da CodeRush sobre software sob medida, IA, automacao e operacao de tecnologia.",
+      "Artigos da CodeRush sobre software sob medida, IA, automação e operação de tecnologia.",
     articleLabel: "Blog CodeRush",
     footerBlurb:
-      "A CodeRush conecta software sob medida, IA e automacao ao objetivo do negocio com execucao pragmatica.",
-    ctaTitle: "Quer destravar uma iniciativa de tecnologia com criterio?",
+      "A CodeRush conecta software sob medida, IA e automação ao objetivo do negócio com execução pragmática.",
+    ctaTitle: "Quer destravar uma iniciativa de tecnologia com critério?",
     ctaBody:
-      "A CodeRush estrutura arquitetura, entrega e automacao para tirar iniciativas criticas do papel sem improviso.",
+      "A CodeRush estrutura arquitetura, entrega e automação para tirar iniciativas críticas do papel sem improviso.",
     ctaPath: "#contato",
     ctaLabel: "Fale com a CodeRush",
     phone: "11 99456-6726",
@@ -47,16 +47,16 @@ const SITE_COPY = {
     blogName: "Blog Codafacil.dev",
     homeSectionTitle: "Blog Codafacil.dev",
     homeSectionDescription:
-      "Conteudo sobre software sob medida, entrega orientada por IA, integracoes e automacao para times de produto e operacao.",
+      "Conteúdo sobre software sob medida, entrega orientada por IA, integrações e automação para times de produto e operação.",
     indexTitle: "Blog Codafacil.dev | Todos os posts",
     indexDescription:
-      "Artigos da Codafacil.dev sobre desenvolvimento com IA, integracoes e software sob medida.",
+      "Artigos da Codafacil.dev sobre desenvolvimento com IA, integrações e software sob medida.",
     articleLabel: "Blog Codafacil.dev",
     footerBlurb:
-      "A Codafacil.dev acelera software sob medida com IA sem abrir mao de engenharia, testes e clareza de escopo.",
-    ctaTitle: "Precisa tirar um produto ou integracao do papel?",
+      "A Codafacil.dev acelera software sob medida com IA sem abrir mão de engenharia, testes e clareza de escopo.",
+    ctaTitle: "Precisa tirar um produto ou integração do papel?",
     ctaBody:
-      "A Codafacil.dev combina engenharia e IA aplicada para acelerar a entrega sem perder governanca tecnica.",
+      "A Codafacil.dev combina engenharia e IA aplicada para acelerar a entrega sem perder governança técnica.",
     ctaPath: "#contato",
     ctaLabel: "Fale com a Codafacil.dev",
     phone: "11 99456-6726",
@@ -68,7 +68,7 @@ const SITE_COPY = {
     footerClass: "border-t border-white/10 bg-[#04110d]/80",
     navLinks: [
       { href: "", label: "Site principal" },
-      { href: "#servicos", label: "Servicos" },
+      { href: "#servicos", label: "Serviços" },
       { href: "blog/", label: "Blog" },
       { href: "#contato", label: "Contato" }
     ]
@@ -77,16 +77,16 @@ const SITE_COPY = {
     blogName: "Blog FluxoInteligente IA",
     homeSectionTitle: "Blog FluxoInteligente IA",
     homeSectionDescription:
-      "Conteudo sobre agentes, n8n, automacao de processos e IA aplicada a operacoes que precisam reduzir custo com governanca.",
+      "Conteúdo sobre agentes, n8n, automação de processos e IA aplicada a operações que precisam reduzir custo com governança.",
     indexTitle: "Blog FluxoInteligente IA | Todos os posts",
     indexDescription:
-      "Artigos da FluxoInteligente IA sobre agentes, automacao, n8n e operacao assistida por IA.",
+      "Artigos da FluxoInteligente IA sobre agentes, automação, n8n e operação assistida por IA.",
     articleLabel: "Blog FluxoInteligente IA",
     footerBlurb:
-      "A FluxoInteligente IA desenha automacoes com agentes, integra sistemas e leva fluxos complexos para producao.",
-    ctaTitle: "Quer colocar um fluxo inteligente em producao?",
+      "A FluxoInteligente IA desenha automações com agentes, integra sistemas e leva fluxos complexos para produção.",
+    ctaTitle: "Quer colocar um fluxo inteligente em produção?",
     ctaBody:
-      "A FluxoInteligente IA conecta agentes, n8n e integracoes reais para reduzir retrabalho e tempo operacional.",
+      "A FluxoInteligente IA conecta agentes, n8n e integrações reais para reduzir retrabalho e tempo operacional.",
     ctaPath: "#contato",
     ctaLabel: "Fale com a FluxoInteligente IA",
     phone: "11 99456-6726",
@@ -98,7 +98,7 @@ const SITE_COPY = {
     footerClass: "border-t border-white/10 bg-[#04110d]/80",
     navLinks: [
       { href: "", label: "Site principal" },
-      { href: "#solucoes", label: "Solucoes" },
+      { href: "#solucoes", label: "Soluções" },
       { href: "blog/", label: "Blog" },
       { href: "#contato", label: "Contato" }
     ]
@@ -107,18 +107,18 @@ const SITE_COPY = {
     blogName: "Blog SVD",
     homeSectionTitle: "Blog SVD",
     homeSectionDescription:
-      "Conteudo sobre vendas diretas, software, IA aplicada ao negocio e evolucao operacional com foco em resultado.",
+      "Conteúdo sobre vendas diretas, software, IA aplicada ao negócio e evolução operacional com foco em resultado.",
     indexTitle: "Blog SVD | Todos os posts",
     indexDescription:
-      "Artigos do Sistema Venda Direta sobre vendas diretas, MMN, software e IA aplicada ao negocio.",
+      "Artigos do Sistema Venda Direta sobre vendas diretas, MMN, software e IA aplicada ao negócio.",
     articleLabel: "Blog SVD",
     footerBlurb:
-      "A Sistema Venda Direta desenvolve solucoes para operacao comercial, vendas diretas e evolucao tecnologica com IA aplicada.",
-    ctaTitle: "Quer aplicar IA na operacao comercial com previsibilidade?",
+      "A Sistema Venda Direta desenvolve soluções para operação comercial, vendas diretas e evolução tecnológica com IA aplicada.",
+    ctaTitle: "Quer aplicar IA na operação comercial com previsibilidade?",
     ctaBody:
-      "A SVD estrutura arquitetura, integracao e governanca para levar automacao ao negocio com previsibilidade.",
+      "A SVD estrutura arquitetura, integração e governança para levar automação ao negócio com previsibilidade.",
     ctaPath: "#contato",
-    ctaLabel: "Solicite um orcamento",
+    ctaLabel: "Solicite um orçamento",
     phone: "11 99456-6726",
     email: "contato@sistemavendadireta.com.br",
     accentLinkClass: "text-white hover:text-white/80",
@@ -246,7 +246,7 @@ function extractMarkedSegment(content, markers) {
 function replaceMarkedSegment(content, markers, replacement) {
   const regex = new RegExp(`${escapeRegex(markers.start)}[\\s\\S]*?${escapeRegex(markers.end)}`);
   if (!regex.test(content)) {
-    throw new Error(`Marcadores nao encontrados: ${markers.start}`);
+    throw new Error(`Marcadores não encontrados: ${markers.start}`);
   }
   return content.replace(regex, `${markers.start}\n${replacement}\n${markers.end}`);
 }
@@ -540,7 +540,7 @@ ${renderFooterLinks(copy, relativeRoot)}
           </nav>
         </div>
         <div>
-          <h3 class="text-lg font-semibold text-white">Proximo passo</h3>
+          <h3 class="text-lg font-semibold text-white">Próximo passo</h3>
           <p class="mt-3 text-sm leading-7 text-white/80">Resposta humana, sem fila generica. Fale com o time comercial do site.</p>
           <a href="${relativeLink(relativeRoot, copy.ctaPath)}" class="mt-4 inline-flex rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/10">
             ${esc(copy.ctaLabel)}
@@ -663,7 +663,7 @@ async function ensureCoverImage(root, site, contract, aiConfig) {
     try {
       const result = await agentGenerateCover({ aiConfig, site, contract, targetPath });
       const leakageWarning = result.leakage?.leaked
-        ? `Possivel texto vazado na capa (sample: "${result.leakage.sample}")`
+        ? `Possível texto vazado na capa (sample: "${result.leakage.sample}")`
         : null;
       return {
         path: targetPath,
@@ -680,7 +680,7 @@ async function ensureCoverImage(root, site, contract, aiConfig) {
 
   const fallbackPath = path.resolve(root, site.siteRoot, site.assets.fallbackCover);
   if (!fs.existsSync(fallbackPath)) {
-    throw new Error(`Capa fallback nao encontrada para ${site.id}: ${site.assets.fallbackCover}`);
+    throw new Error(`Capa fallback não encontrada para ${site.id}: ${site.assets.fallbackCover}`);
   }
 
   fs.copyFileSync(fallbackPath, targetPath);

@@ -11,8 +11,8 @@ Post de blog estatico com foco em Tecnologia: governanca de seguranca para IA ag
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Seguranca agentica em 2026: checklist com NIST Cyber AI Profile e OWASP | Sistema Venda Direta</title>
-  <meta name="description" content="NIST e OWASP publicaram guias chave para seguranca de IA agentica em 2026. Veja checklist pratico para proteger MCP, dados e operacao com governanca." />
+  <title>Seguranca agêntica em 2026: checklist com NIST Cyber AI Profile e OWASP | Sistema Venda Direta</title>
+  <meta name="description" content="NIST e OWASP publicaram guias chave para seguranca de IA agêntica em 2026. Veja checklist prático para proteger MCP, dados e operação com governança." />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="theme-color" content="#004AAD" />
   <meta name="author" content="Sistema Venda Direta" />
@@ -25,15 +25,15 @@ Post de blog estatico com foco em Tecnologia: governanca de seguranca para IA ag
   <meta property="og:type" content="article" />
   <meta property="article:published_time" content="2026-04-04T09:00:00-03:00" />
   <meta property="article:modified_time" content="2026-04-04T09:00:00-03:00" />
-  <meta property="og:title" content="Seguranca agentica em 2026: checklist com NIST Cyber AI Profile e OWASP" />
-  <meta property="og:description" content="Como combinar NIST e OWASP para reduzir risco em fluxos de IA agentica e integracoes MCP." />
+  <meta property="og:title" content="Seguranca agêntica em 2026: checklist com NIST Cyber AI Profile e OWASP" />
+  <meta property="og:description" content="Como combinar NIST e OWASP para reduzir risco em fluxos de IA agêntica e integrações MCP." />
   <meta property="og:url" content="https://www.sistemavendadireta.com.br/2026/04/04/seguranca-agentica-em-2026-checklist-com-nist-cyber-ai-profile-e-owasp/" />
   <meta property="og:site_name" content="Sistema Venda Direta" />
   <meta property="og:image" content="https://www.sistemavendadireta.com.br/imagens/posts/seguranca-agentica-em-2026-checklist-com-nist-cyber-ai-profile-e-owasp.jpg" />
-  <meta property="og:image:alt" content="Seguranca agentica em 2026: checklist com NIST Cyber AI Profile e OWASP | Sistema Venda Direta" />
+  <meta property="og:image:alt" content="Seguranca agêntica em 2026: checklist com NIST Cyber AI Profile e OWASP | Sistema Venda Direta" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Seguranca agentica em 2026: checklist com NIST Cyber AI Profile e OWASP | Sistema Venda Direta" />
-  <meta name="twitter:description" content="Checklist objetivo para proteger agentes, ferramentas MCP e dados criticos sem travar a operacao." />
+  <meta name="twitter:title" content="Seguranca agêntica em 2026: checklist com NIST Cyber AI Profile e OWASP | Sistema Venda Direta" />
+  <meta name="twitter:description" content="Checklist objetivo para proteger agentes, ferramentas MCP e dados críticos sem travar a operação." />
   <meta name="twitter:image" content="https://www.sistemavendadireta.com.br/imagens/posts/seguranca-agentica-em-2026-checklist-com-nist-cyber-ai-profile-e-owasp.jpg" />
   <meta name="twitter:site" content="@sistemavendadireta" />
 
@@ -92,54 +92,54 @@ Post de blog estatico com foco em Tecnologia: governanca de seguranca para IA ag
 
     <article class="mt-5 rounded-3xl border border-white/20 bg-white/5 p-5 sm:p-8">
       <p class="text-xs font-medium uppercase tracking-wide text-white/70">Blog SVD • 04/04/2026</p>
-      <h1 class="mt-2 font-[var(--font-heading)] text-3xl font-semibold leading-tight sm:text-4xl">Seguranca agentica em 2026: checklist com NIST Cyber AI Profile e OWASP</h1>
+      <h1 class="mt-2 font-[var(--font-heading)] text-3xl font-semibold leading-tight sm:text-4xl">Seguranca agêntica em 2026: checklist com NIST Cyber AI Profile e OWASP</h1>
 
-      <img src="../../../../imagens/posts/seguranca-agentica-em-2026-checklist-com-nist-cyber-ai-profile-e-owasp.jpg" alt="Seguranca agentica em 2026: checklist com NIST Cyber AI Profile e OWASP" class="mt-6 w-full rounded-2xl border border-white/20" width="1200" height="630" loading="lazy" />
+      <img src="../../../../imagens/posts/seguranca-agentica-em-2026-checklist-com-nist-cyber-ai-profile-e-owasp.jpg" alt="Seguranca agêntica em 2026: checklist com NIST Cyber AI Profile e OWASP" class="mt-6 w-full rounded-2xl border border-white/20" width="1200" height="630" loading="lazy" />
 
       <div class="prose prose-invert mt-6 max-w-none prose-headings:font-[var(--font-heading)] prose-headings:text-white prose-a:text-white prose-strong:text-white prose-p:text-white/90 prose-li:text-white/90">
-<p>No rodizio de <strong>Tecnologia</strong> desta semana, o tema que mais ganhou tracao para times de produto e operacao foi a seguranca de aplicacoes agenticas. Entre dezembro de 2025 e o primeiro trimestre de 2026, NIST e OWASP consolidaram guias praticos para reduzir risco em fluxos que conectam modelos, ferramentas e dados de negocio.</p>
+<p>No rodizio de <strong>Tecnologia</strong> desta semana, o tema que mais ganhou tracao para times de produto e operação foi a seguranca de aplicações agênticas. Entre dezembro de 2025 e o primeiro trimestre de 2026, NIST e OWASP consolidaram guias práticos para reduzir risco em fluxos que conectam modelos, ferramentas e dados de negócio.</p>
 
 <h2>O que esta em alta no foco Tecnologia</h2>
 <ul>
-  <li><strong>Cyber AI Profile do NIST:</strong> define tres frentes para operacao segura: proteger sistemas de IA, defender com IA e bloquear ataques habilitados por IA.</li>
+  <li><strong>Cyber AI Profile do NIST:</strong> define tres frentes para operação segura: proteger sistemas de IA, defender com IA e bloquear ataques habilitados por IA.</li>
   <li><strong>MCP sob lente de seguranca:</strong> OWASP publicou riscos e controles para servidores MCP, incluindo cadeia de confianca de ferramentas e resposta.</li>
-  <li><strong>Top 10 Agentic 2026:</strong> a comunidade OWASP consolidou um baseline para priorizar mitigacoes e governanca em sistemas autonomos.</li>
+  <li><strong>Top 10 Agentic 2026:</strong> a comunidade OWASP consolidou um baseline para priorizar mitigações e governança em sistemas autonomos.</li>
 </ul>
 
-<p>Nesse contexto, o ganho real vem de <strong>software sob medida com IA</strong>: combinar automacao de analise de risco, testes de seguranca e observabilidade orientada por politica acelera entrega sem abrir mao de controle operacional.</p>
+<p>Nesse contexto, o ganho real vem de <strong>software sob medida com IA</strong>: combinar automação de análise de risco, testes de seguranca e observabilidade orientada por política acelera entrega sem abrir mão de controle operacional.</p>
 
-<h2>Checklist pratico para adotar agora</h2>
+<h2>Checklist prático para adotar agora</h2>
 <ol>
-  <li><strong>Mapeie o inventario agentico:</strong> registre agentes, ferramentas MCP, fontes de dados e permissoes por fluxo.</li>
-  <li><strong>Defina fronteiras de confianca:</strong> separe contexto confiavel de entrada externa e aplique validacao em runtime de respostas de ferramentas.</li>
-  <li><strong>Implemente controles de execucao:</strong> limite escopo de tool calls, exija autorizacao para acoes sensiveis e mantenha trilha de auditoria.</li>
-  <li><strong>Teste ameacas recorrentes:</strong> simule prompt injection indireta, exfiltracao de dados e abuso de cadeia de ferramentas.</li>
-  <li><strong>Feche governanca continua:</strong> monitore eventos, atualize politicas e rode revisoes mensais com base em guias oficiais.</li>
+  <li><strong>Mapeie o inventario agêntico:</strong> registre agentes, ferramentas MCP, fontes de dados e permissoes por fluxo.</li>
+  <li><strong>Defina fronteiras de confianca:</strong> separe contexto confiavel de entrada externa e aplique validação em runtime de respostas de ferramentas.</li>
+  <li><strong>Implemente controles de execução:</strong> limite escopo de tool calls, exija autorização para acoes sensíveis e mantenha trilha de auditoria.</li>
+  <li><strong>Teste ameacas recorrentes:</strong> simule prompt injection indireta, exfiltração de dados e abuso de cadeia de ferramentas.</li>
+  <li><strong>Feche governança continua:</strong> monitore eventos, atualize políticas e rode revisoes mensais com base em guias oficiais.</li>
 </ol>
 
-<h2>Impacto para negocio e operacao</h2>
+<h2>Impacto para negócio e operação</h2>
 <ul>
   <li><strong>Menos incidente silencioso:</strong> controles de contexto e de ferramenta diminuem risco de acao indevida de agentes.</li>
-  <li><strong>Conformidade mais simples:</strong> trilhas de auditoria e politicas explicitas facilitam evidencias para cliente e regulacao.</li>
-  <li><strong>Entrega com previsibilidade:</strong> seguranca vira parte do pipeline, nao bloqueio tardio em producao.</li>
+  <li><strong>Conformidade mais simples:</strong> trilhas de auditoria e políticas explicitas facilitam evidências para cliente e regulação.</li>
+  <li><strong>Entrega com previsibilidade:</strong> seguranca vira parte do pipeline, não bloqueio tardio em produção.</li>
 </ul>
 
-<p>Se voce quer estruturar essa base no seu ambiente, combine <a href="../../../../codafacil/">desenvolvimento com IA sob medida</a> com uma estrategia de <a href="../../../../inteligencia-artificial/">IA aplicada ao negocio</a> para escalar com governanca desde a arquitetura.</p>
+<p>Se você quer estruturar essa base no seu ambiente, combine <a href="../../../../codafacil/">desenvolvimento com IA sob medida</a> com uma estratégia de <a href="../../../../inteligencia-artificial/">IA aplicada ao negócio</a> para escalar com governança desde a arquitetura.</p>
 </div>
     </article>
 
     <!-- BLOG-LEIA-TAMBEM START -->
 <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
   <div class="flex items-end justify-between gap-4">
-    <h2 class="text-2xl font-semibold text-white">Leia tambem</h2>
+    <h2 class="text-2xl font-semibold text-white">Leia também</h2>
     <a href="../../../../blog/" class="text-sm font-semibold text-white/85 hover:text-white">Ver todos</a>
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/03/11/soc-agentico-e-seguranca-multicloud-com-governanca-unificada/"><img src="../../../../imagens/posts/soc-agentico-e-seguranca-multicloud-com-governanca-unificada.jpg" alt="SOC agentico e seguranca multicloud: guia pratico de governanca em 2026" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/03/11/soc-agentico-e-seguranca-multicloud-com-governanca-unificada/"><img src="../../../../imagens/posts/soc-agentico-e-seguranca-multicloud-com-governanca-unificada.jpg" alt="SOC agêntico e seguranca multicloud: guia prático de governança em 2026" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/03/11/soc-agentico-e-seguranca-multicloud-com-governanca-unificada/" class="hover:underline">SOC agentico e seguranca multicloud: guia pratico de governanca em 2026</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia pratico para unificar seguranca multicloud, acelerar resposta e reduzir risco operacional.</p>
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/03/11/soc-agentico-e-seguranca-multicloud-com-governanca-unificada/" class="hover:underline">SOC agêntico e seguranca multicloud: guia prático de governança em 2026</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia prático para unificar seguranca multicloud, acelerar resposta e reduzir risco operacional.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
@@ -150,10 +150,10 @@ Post de blog estatico com foco em Tecnologia: governanca de seguranca para IA ag
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/03/04/php-8-5-3-em-producao-checklist-para-atualizar-com-seguranca/"><img src="../../../../imagens/posts/php-8-5-3-em-producao-checklist-para-atualizar-com-seguranca.jpg" alt="PHP 8.5.3 em producao: checklist para atualizar com seguranca" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/03/04/php-8-5-3-em-producao-checklist-para-atualizar-com-seguranca/"><img src="../../../../imagens/posts/php-8-5-3-em-producao-checklist-para-atualizar-com-seguranca.jpg" alt="PHP 8.5.3 em produção: checklist para atualizar com seguranca" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/03/04/php-8-5-3-em-producao-checklist-para-atualizar-com-seguranca/" class="hover:underline">PHP 8.5.3 em producao: checklist para atualizar com seguranca</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Checklist pratico para atualizar seu backend com base no ciclo oficial do PHP e reduzir risco operacional.</p>
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/03/04/php-8-5-3-em-producao-checklist-para-atualizar-com-seguranca/" class="hover:underline">PHP 8.5.3 em produção: checklist para atualizar com seguranca</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Checklist prático para atualizar seu backend com base no ciclo oficial do PHP e reduzir risco operacional.</p>
   </div>
 </article>
   </div>
@@ -165,7 +165,7 @@ Post de blog estatico com foco em Tecnologia: governanca de seguranca para IA ag
     <h2 class="text-2xl font-semibold text-white">Mais do hub CodeRush</h2>
     <a href="https://coderush.com.br/" rel="noopener" target="_blank" class="text-sm font-semibold text-white/85 hover:text-white">Ver hub</a>
   </div>
-  <p class="mt-2 text-sm text-white/70">Conteudo recente dos outros sites do ecossistema.</p>
+  <p class="mt-2 text-sm text-white/70">Conteúdo recente dos outros sites do ecossistema.</p>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="https://fluxointeligenteia.com.br/2026/04/28/agentes-inteligentes-langchain-automacao-processos-pratica/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/agentes-inteligentes-langchain-automacao-processos-pratica.jpg" alt="Agentes Inteligentes com LangChain: A Automação de Processos na Prática" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
@@ -206,35 +206,35 @@ Post de blog estatico com foco em Tecnologia: governanca de seguranca para IA ag
     <!-- BLOG-LEIA-TAMBEM START -->
     <section class="mt-8 rounded-2xl border border-white/20 bg-white/5 p-5">
       <div class="flex items-end justify-between gap-4">
-        <h2 class="font-[var(--font-heading)] text-2xl font-semibold">Leia Tambem</h2>
+        <h2 class="font-[var(--font-heading)] text-2xl font-semibold">Leia Também</h2>
         <a href="../../../../blog/" class="text-sm font-semibold text-white/85 hover:text-white">Ver todos</a>
       </div>
       <div class="mt-5 grid gap-4 md:grid-cols-3">
         <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="../../../../2026/03/11/soc-agentico-e-seguranca-multicloud-com-governanca-unificada/">
-            <img src="../../../../imagens/posts/soc-agentico-e-seguranca-multicloud-com-governanca-unificada.jpg" alt="SOC agentico e seguranca multicloud: guia pratico de governanca em 2026" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+            <img src="../../../../imagens/posts/soc-agentico-e-seguranca-multicloud-com-governanca-unificada.jpg" alt="SOC agêntico e seguranca multicloud: guia prático de governança em 2026" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
           <div class="p-4">
-            <h3 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../../../../2026/03/11/soc-agentico-e-seguranca-multicloud-com-governanca-unificada/" class="hover:underline">SOC agentico e seguranca multicloud: guia pratico de governanca em 2026</a></h3>
-            <p class="mt-2 text-sm text-white/85">Guia pratico para unificar seguranca multicloud, acelerar resposta e reduzir risco operacional.</p>
+            <h3 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../../../../2026/03/11/soc-agentico-e-seguranca-multicloud-com-governanca-unificada/" class="hover:underline">SOC agêntico e seguranca multicloud: guia prático de governança em 2026</a></h3>
+            <p class="mt-2 text-sm text-white/85">Guia prático para unificar seguranca multicloud, acelerar resposta e reduzir risco operacional.</p>
           </div>
         </article>
         <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="../../../../2026/03/18/agentes-de-ia-em-2026-mcp-stateful-e-governanca-para-operar-em-escala/">
-            <img src="../../../../imagens/posts/agentes-de-ia-em-2026-mcp-stateful-e-governanca-para-operar-em-escala.jpg" alt="Agentes de IA em 2026: MCP stateful e governanca para operar em escala" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+            <img src="../../../../imagens/posts/agentes-de-ia-em-2026-mcp-stateful-e-governanca-para-operar-em-escala.jpg" alt="Agentes de IA em 2026: MCP stateful e governança para operar em escala" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
           <div class="p-4">
-            <h3 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../../../../2026/03/18/agentes-de-ia-em-2026-mcp-stateful-e-governanca-para-operar-em-escala/" class="hover:underline">Agentes de IA em 2026: MCP stateful e governanca para operar em escala</a></h3>
-            <p class="mt-2 text-sm text-white/85">Guia pratico para estruturar agentes com contexto persistente, governanca e previsibilidade de custo.</p>
+            <h3 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../../../../2026/03/18/agentes-de-ia-em-2026-mcp-stateful-e-governanca-para-operar-em-escala/" class="hover:underline">Agentes de IA em 2026: MCP stateful e governança para operar em escala</a></h3>
+            <p class="mt-2 text-sm text-white/85">Guia prático para estruturar agentes com contexto persistente, governança e previsibilidade de custo.</p>
           </div>
         </article>
         <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
           <a href="../../../../2026/03/25/php-8-5-4-e-laravel-13-checklist-de-upgrade-com-governanca/">
-            <img src="../../../../imagens/posts/php-8-5-4-e-laravel-13-checklist-de-upgrade-com-governanca.jpg" alt="PHP 8.5.4 e Laravel 13: checklist de upgrade com governanca" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+            <img src="../../../../imagens/posts/php-8-5-4-e-laravel-13-checklist-de-upgrade-com-governanca.jpg" alt="PHP 8.5.4 e Laravel 13: checklist de upgrade com governança" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
           </a>
           <div class="p-4">
-            <h3 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../../../../2026/03/25/php-8-5-4-e-laravel-13-checklist-de-upgrade-com-governanca/" class="hover:underline">PHP 8.5.4 e Laravel 13: checklist de upgrade com governanca</a></h3>
-            <p class="mt-2 text-sm text-white/85">Guia pratico para atualizar backend em 2026 com suporte previsivel e menor risco operacional.</p>
+            <h3 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../../../../2026/03/25/php-8-5-4-e-laravel-13-checklist-de-upgrade-com-governanca/" class="hover:underline">PHP 8.5.4 e Laravel 13: checklist de upgrade com governança</a></h3>
+            <p class="mt-2 text-sm text-white/85">Guia prático para atualizar backend em 2026 com suporte previsível e menor risco operacional.</p>
           </div>
         </article>
       </div>
@@ -250,7 +250,7 @@ Post de blog estatico com foco em Tecnologia: governanca de seguranca para IA ag
         <div class="space-y-3">
           <img src="../../../../imagens/Logo-Branco-1.png" alt="Sistema Venda Direta" class="h-auto w-[180px]" width="1000" height="300" loading="lazy" />
           <p class="max-w-sm text-sm leading-relaxed text-white/85">
-            A Sistema Venda Direta desenvolve solucoes para operacao comercial, vendas diretas e evolucao tecnologica com IA aplicada ao negocio.
+            A Sistema Venda Direta desenvolve soluções para operação comercial, vendas diretas e evolução tecnológica com IA aplicada ao negócio.
           </p>
           <p class="text-sm text-white/90">Telefone: <a href="tel:+5511994566726" class="font-semibold hover:underline">11 99456-6726</a></p>
           <p class="text-sm text-white/90">Email: <a href="mailto:contato@sistemavendadireta.com.br" class="font-semibold hover:underline">contato@sistemavendadireta.com.br</a></p>
@@ -268,9 +268,9 @@ Post de blog estatico com foco em Tecnologia: governanca de seguranca para IA ag
         </div>
 
         <div class="space-y-4">
-          <h4 class="font-[var(--font-heading)] text-lg font-semibold">25 anos de experiencia desenvolvendo sistemas</h4>
+          <h4 class="font-[var(--font-heading)] text-lg font-semibold">25 anos de experiência desenvolvendo sistemas</h4>
           <a href="../../../../#contato" class="inline-flex rounded-full border border-white/70 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10">
-            Solicite um Orcamento
+            Solicite um Orçamento
           </a>
           <div class="flex items-center gap-3">
             <a href="https://facebook.com/sistemavendadireta" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#3b5998] text-sm font-bold">f</a>
