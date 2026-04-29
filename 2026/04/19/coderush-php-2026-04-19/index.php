@@ -73,7 +73,39 @@
 
       <img src="../../../../imagens/posts/coderush-php-2026-04-19.jpg" alt="Governança de Tecnologia: O Caminho para o Crescimento Sustentável" class="mt-6 w-full rounded-2xl border border-white/15" width="1200" height="630" loading="lazy" />
 
-      <!-- BLOG-LEIA-TAMBEM START -->
+      <section class="mt-8">
+        <h2 class="text-xl font-semibold text-white sm:text-2xl">O Papel da Governança de Tecnologia</h2>
+        <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">A governança de tecnologia é fundamental para garantir que os recursos tecnológicos de uma empresa sejam utilizados de forma eficaz e alinhada aos objetivos de negócios. Para gestores e donos de operação, isso significa implementar políticas e processos que maximizem o retorno sobre investimento em tecnologia. Isso não apenas ajuda a evitar desperdícios, mas também a identificar oportunidades de inovação que podem alavancar o crescimento.</p>
+      </section>
+      <section class="mt-8">
+        <h2 class="text-xl font-semibold text-white sm:text-2xl">PHP: Uma Ferramenta Estratégica para Desenvolvimento</h2>
+        <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">PHP se destaca como uma linguagem de programação versátil e amplamente utilizada para o desenvolvimento de aplicações web. Para negócios que buscam crescimento, investir em soluções baseadas em PHP pode proporcionar agilidade e escalabilidade. É crucial que as empresas adotem práticas de desenvolvimento ágil e contínuo, garantindo que as soluções estejam sempre alinhadas às necessidades do mercado e dos clientes.</p>
+      </section>
+      <section class="mt-8">
+        <h2 class="text-xl font-semibold text-white sm:text-2xl">Software Sob Medida com IA</h2>
+        <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">A integração da inteligência artificial no desenvolvimento de software sob medida representa uma grande oportunidade para empresas que desejam se destacar no mercado. Com a aplicação de IA, é possível criar sistemas que não apenas atendem às necessidades específicas do negócio, mas que também aprendem e se adaptam ao longo do tempo. Isso permite uma personalização que pode resultar em uma experiência do usuário muito mais rica e eficiente, além de otimizar processos internos.</p>
+      </section>
+      <section class="mt-8">
+        <h2 class="text-xl font-semibold text-white sm:text-2xl">Implementando uma Governança Eficaz</h2>
+        <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">Para que a governança de tecnologia seja eficaz, é essencial que os gestores estabeleçam um framework claro que envolva todos os stakeholders. Isso inclui definir responsabilidades, monitorar indicadores de desempenho e garantir a conformidade com regulamentos e melhores práticas. A adoção de ferramentas de gestão que facilitam essa governança pode ser um diferencial importante para a sua operação, contribuindo para um crescimento sustentável.</p>
+      </section>
+    </article>
+
+    <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
+      <h2 class="text-xl font-semibold text-white">Quer destravar uma iniciativa de tecnologia com critério?</h2>
+      <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">A CodeRush estrutura arquitetura, entrega e automação para tirar iniciativas críticas do papel sem improviso.</p>
+      <a href="../../../../#contato" class="mt-4 inline-flex rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/10">
+        Fale com a CodeRush
+      </a>
+    </section>
+
+    <section class="mt-6 flex items-center justify-center">
+      <a href="../../../../blog/" class="inline-flex rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/10">
+        Veja mais no blog
+      </a>
+    </section>
+
+    <!-- BLOG-LEIA-TAMBEM START -->
 <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
   <div class="flex items-end justify-between gap-4">
     <h2 class="text-2xl font-semibold text-white">Leia também sobre PHP e Laravel</h2>
@@ -139,52 +171,7 @@
   </div>
 </section>
 <!-- BLOG-CROSS-SITE END -->
-      <section class="mt-8">
-        <h2 class="text-xl font-semibold text-white sm:text-2xl">PHP: Uma Ferramenta Estratégica para Desenvolvimento</h2>
-        <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">PHP se destaca como uma linguagem de programação versátil e amplamente utilizada para o desenvolvimento de aplicações web. Para negócios que buscam crescimento, investir em soluções baseadas em PHP pode proporcionar agilidade e escalabilidade. É crucial que as empresas adotem práticas de desenvolvimento ágil e contínuo, garantindo que as soluções estejam sempre alinhadas às necessidades do mercado e dos clientes.</p>
-      </section>
-      <section class="mt-8">
-        <h2 class="text-xl font-semibold text-white sm:text-2xl">Software Sob Medida com IA</h2>
-        <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">A integração da inteligência artificial no desenvolvimento de software sob medida representa uma grande oportunidade para empresas que desejam se destacar no mercado. Com a aplicação de IA, é possível criar sistemas que não apenas atendem às necessidades específicas do negócio, mas que também aprendem e se adaptam ao longo do tempo. Isso permite uma personalização que pode resultar em uma experiência do usuário muito mais rica e eficiente, além de otimizar processos internos.</p>
-      </section>
-      <section class="mt-8">
-        <h2 class="text-xl font-semibold text-white sm:text-2xl">Implementando uma Governança Eficaz</h2>
-        <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">Para que a governança de tecnologia seja eficaz, é essencial que os gestores estabeleçam um framework claro que envolva todos os stakeholders. Isso inclui definir responsabilidades, monitorar indicadores de desempenho e garantir a conformidade com regulamentos e melhores práticas. A adoção de ferramentas de gestão que facilitam essa governança pode ser um diferencial importante para a sua operação, contribuindo para um crescimento sustentável.</p>
-      </section>
-    </article>
-
-    <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
-      <h2 class="text-xl font-semibold text-white">Quer destravar uma iniciativa de tecnologia com critério?</h2>
-      <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">A CodeRush estrutura arquitetura, entrega e automação para tirar iniciativas críticas do papel sem improviso.</p>
-      <a href="../../../../#contato" class="mt-4 inline-flex rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/10">
-        Fale com a CodeRush
-      </a>
-    </section>
-
-    <section class="mt-6 flex items-center justify-center">
-      <a href="../../../../blog/" class="inline-flex rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/10">
-        Veja mais no blog
-      </a>
-    </section>
-
-    <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
-      <div class="flex items-end justify-between gap-4">
-        <h2 class="text-2xl font-semibold text-white">Leia também</h2>
-        <a href="../../../../blog/" class="text-sm font-semibold text-white/85 hover:text-white">Ver todos</a>
-      </div>
-      <div class="mt-5 grid gap-4 md:grid-cols-3">
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/04/14/coderush-ia-2026-04-14/" data-blog-image="imagens/posts/coderush-ia-2026-04-14.jpg" data-blog-slug="coderush-ia-2026-04-14" data-blog-date="2026-04-14">
-  <a href="../../../../2026/04/14/coderush-ia-2026-04-14/">
-    <img src="../../../../imagens/posts/coderush-ia-2026-04-14.jpg" alt="CodeRush: como usar IA de forma prática" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-  </a>
-  <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/04/14/coderush-ia-2026-04-14/" class="hover:underline">CodeRush: como usar IA de forma prática</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre governança de tecnologia para crescimento com foco em resultado operacional.</p>
-  </div>
-</article>
-      </div>
-    </section>
-  </main>
+</main>
 
   <footer class="border-t border-white/10 bg-[#020b1a]/80">
     <div class="mx-auto max-w-6xl px-4 py-10 sm:px-6">

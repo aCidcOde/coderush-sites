@@ -104,9 +104,7 @@
       <a href="../../../../blog/" class="inline-flex rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/10">
         Veja mais no blog
       </a>
-    </section>
-
-    <!-- BLOG-LEIA-TAMBEM START -->
+    </section><!-- BLOG-LEIA-TAMBEM START -->
 <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
   <div class="flex items-end justify-between gap-4">
     <h2 class="text-2xl font-semibold text-white">Leia também sobre vendas diretas</h2>
@@ -114,17 +112,17 @@
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/04/14/sistemavendadireta-ia-2026-04-14/"><img src="../../../../imagens/posts/sistemavendadireta-ia-2026-04-14.jpg" alt="Sistema Venda Direta: como usar IA de forma pratica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/04/14/sistemavendadireta-ia-2026-04-14/" class="hover:underline">Sistema Venda Direta: como usar IA de forma pratica</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre tecnologia para vendas diretas em escala com foco em resultado operacional.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="../../../../2026/04/26/sistemavendadireta-tecnologia-2026-04-26/"><img src="../../../../imagens/posts/sistemavendadireta-tecnologia-2026-04-26.jpg" alt="Sistema Venda Direta: como usar TECNOLOGIA de forma pratica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/04/26/sistemavendadireta-tecnologia-2026-04-26/" class="hover:underline">Sistema Venda Direta: como usar TECNOLOGIA de forma pratica</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre governanca comercial com dados e ia com foco em resultado operacional.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/04/14/sistemavendadireta-ia-2026-04-14/"><img src="../../../../imagens/posts/sistemavendadireta-ia-2026-04-14.jpg" alt="Sistema Venda Direta: como usar IA de forma pratica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/04/14/sistemavendadireta-ia-2026-04-14/" class="hover:underline">Sistema Venda Direta: como usar IA de forma pratica</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre tecnologia para vendas diretas em escala com foco em resultado operacional.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
@@ -137,7 +135,7 @@
   </div>
 </section>
 <!-- BLOG-LEIA-TAMBEM END -->
-    <!-- BLOG-CROSS-SITE START -->
+<!-- BLOG-CROSS-SITE START -->
 <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
   <div class="flex items-end justify-between gap-4">
     <h2 class="text-2xl font-semibold text-white">Conheça também o hub CodeRush</h2>
@@ -145,14 +143,6 @@
   </div>
   <p class="mt-2 text-sm text-white/70">Conteúdo recente dos outros sites do ecossistema.</p>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://coderush.com.br/2026/04/26/coderush-tecnologia-2026-04-26/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/coderush-tecnologia-2026-04-26.jpg" alt="CodeRush: como usar TECNOLOGIA de forma pratica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">CodeRush</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/04/26/coderush-tecnologia-2026-04-26/" rel="noopener" target="_blank" class="hover:underline">CodeRush: como usar TECNOLOGIA de forma pratica</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre produtividade de times com automacao inteligente com foco em resultado operacional.</p>
-  </div>
-</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="https://fluxointeligenteia.com.br/2026/04/28/agentes-inteligentes-langchain-automacao-processos-pratica/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/agentes-inteligentes-langchain-automacao-processos-pratica.jpg" alt="Agentes Inteligentes com LangChain: A Automação de Processos na Prática" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
@@ -162,17 +152,25 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://codafacil.dev/2026/04/26/codafacil-tecnologia-2026-04-26/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/codafacil-tecnologia-2026-04-26.jpg" alt="Codafacil.dev: como usar TECNOLOGIA de forma pratica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://coderush.com.br/2026/04/26/coderush-tecnologia-2026-04-26/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/coderush-tecnologia-2026-04-26.jpg" alt="CodeRush: como usar TECNOLOGIA de forma pratica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">CodeRush</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/04/26/coderush-tecnologia-2026-04-26/" rel="noopener" target="_blank" class="hover:underline">CodeRush: como usar TECNOLOGIA de forma pratica</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre produtividade de times com automacao inteligente com foco em resultado operacional.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="https://codafacil.dev/2026/04/28/integracoes-automacao-operacoes-criticas-papel-ia-desenvolvimento/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/integracoes-automacao-operacoes-criticas-papel-ia-desenvolvimento.jpg" alt="Integrações e Automação em Operações Críticas: O Papel da IA no Desenvolvimento de Software Sob Medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/04/26/codafacil-tecnologia-2026-04-26/" rel="noopener" target="_blank" class="hover:underline">Codafacil.dev: como usar TECNOLOGIA de forma pratica</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre software sob medida com IA aplicada com foco em resultado operacional.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/04/28/integracoes-automacao-operacoes-criticas-papel-ia-desenvolvimento/" rel="noopener" target="_blank" class="hover:underline">Integrações e Automação em Operações Críticas: O Papel da IA no Desenvolvimento de Software Sob Medida</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Neste artigo, exploramos como a aplicação de IA nas integrações e automações pode acelerar o desenvolvimento de software sob medida, mant...</p>
   </div>
 </article>
   </div>
 </section>
 <!-- BLOG-CROSS-SITE END -->
-  </main>
+</main>
 
   <footer class="border-t border-white/15 bg-brand-dark/40">
     <div class="mx-auto max-w-6xl px-4 py-10 sm:px-6">

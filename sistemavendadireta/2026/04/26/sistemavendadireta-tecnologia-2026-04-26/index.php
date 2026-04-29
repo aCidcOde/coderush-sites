@@ -74,7 +74,39 @@
 
       <img src="../../../../imagens/posts/sistemavendadireta-tecnologia-2026-04-26.jpg" alt="Sistema Venda Direta: como usar TECNOLOGIA de forma prática" class="mt-6 w-full rounded-2xl border border-white/15" width="1200" height="630" loading="lazy" />
 
-      <!-- BLOG-LEIA-TAMBEM START -->
+      <section class="mt-8">
+        <h2 class="text-xl font-semibold text-white sm:text-2xl">Contexto de mercado</h2>
+        <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">Empresas estao acelerando a adocao de tecnologia para reduzir retrabalho, ganhar previsibilidade e melhorar a experiencia do cliente.</p>
+      </section>
+      <section class="mt-8">
+        <h2 class="text-xl font-semibold text-white sm:text-2xl">Aplicacao tecnica</h2>
+        <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">A abordagem recomendada e iniciar com um fluxo critico, medir impacto e evoluir com governanca de dados e seguranca desde o inicio.</p>
+      </section>
+      <section class="mt-8">
+        <h2 class="text-xl font-semibold text-white sm:text-2xl">Software sob medida com IA</h2>
+        <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">Solucoes personalizadas com IA permitem integrar sistemas legados, padronizar operacoes e manter controle sobre regras de negocio.</p>
+      </section>
+      <section class="mt-8">
+        <h2 class="text-xl font-semibold text-white sm:text-2xl">Plano de execucao</h2>
+        <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">Comece com piloto de 30 dias, defina KPIs, valide com usuarios reais e escale somente o que trouxer ganho comprovado.</p>
+      </section>
+    </article>
+
+    <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
+      <h2 class="text-xl font-semibold text-white">Quer aplicar IA na operação comercial com previsibilidade?</h2>
+      <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">A SVD estrutura arquitetura, integração e governança para levar automação ao negócio com previsibilidade.</p>
+      <a href="../../../../#contato" class="mt-4 inline-flex rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/10">
+        Solicite um orçamento
+      </a>
+    </section>
+
+    <section class="mt-6 flex items-center justify-center">
+      <a href="../../../../blog/" class="inline-flex rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/10">
+        Veja mais no blog
+      </a>
+    </section>
+
+    <!-- BLOG-LEIA-TAMBEM START -->
 <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
   <div class="flex items-end justify-between gap-4">
     <h2 class="text-2xl font-semibold text-white">Leia também sobre vendas diretas</h2>
@@ -140,70 +172,7 @@
   </div>
 </section>
 <!-- BLOG-CROSS-SITE END -->
-      <section class="mt-8">
-        <h2 class="text-xl font-semibold text-white sm:text-2xl">Aplicação técnica</h2>
-        <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">A abordagem recomendada e iniciar com um fluxo crítico, medir impacto e evoluir com governança de dados e seguranca desde o inicio.</p>
-      </section>
-      <section class="mt-8">
-        <h2 class="text-xl font-semibold text-white sm:text-2xl">Software sob medida com IA</h2>
-        <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">Soluções personalizadas com IA permitem integrar sistemas legados, padronizar operações e manter controle sobre regras de negócio.</p>
-      </section>
-      <section class="mt-8">
-        <h2 class="text-xl font-semibold text-white sm:text-2xl">Plano de execução</h2>
-        <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">Comece com piloto de 30 dias, defina KPIs, valide com usuários reais e escale somente o que trouxer ganho comprovado.</p>
-      </section>
-    </article>
-
-    <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
-      <h2 class="text-xl font-semibold text-white">Quer aplicar IA na operação comercial com previsibilidade?</h2>
-      <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">A SVD estrutura arquitetura, integração e governança para levar automação ao negócio com previsibilidade.</p>
-      <a href="../../../../#contato" class="mt-4 inline-flex rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/10">
-        Solicite um orçamento
-      </a>
-    </section>
-
-    <section class="mt-6 flex items-center justify-center">
-      <a href="../../../../blog/" class="inline-flex rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/10">
-        Veja mais no blog
-      </a>
-    </section>
-
-    <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
-      <div class="flex items-end justify-between gap-4">
-        <h2 class="text-2xl font-semibold text-white">Leia também</h2>
-        <a href="../../../../blog/" class="text-sm font-semibold text-white/85 hover:text-white">Ver todos</a>
-      </div>
-      <div class="mt-5 grid gap-4 md:grid-cols-3">
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/04/19/sistemavendadireta-php-2026-04-19/" data-blog-image="imagens/posts/sistemavendadireta-php-2026-04-19.jpg" data-blog-slug="sistemavendadireta-php-2026-04-19" data-blog-date="2026-04-19">
-  <a href="../../../../2026/04/19/sistemavendadireta-php-2026-04-19/">
-    <img src="../../../../imagens/posts/sistemavendadireta-php-2026-04-19.jpg" alt="Governança Comercial: Potencializando Vendas Diretas com Dados e IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-  </a>
-  <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/04/19/sistemavendadireta-php-2026-04-19/" class="hover:underline">Governança Comercial: Potencializando Vendas Diretas com Dados e IA</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Neste artigo, discutiremos como a governança comercial pode ser aprimorada através do uso de dados e inteligência artificial, focando em soluções práticas para gestores e donos...</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/04/14/sistemavendadireta-ia-2026-04-14/" data-blog-image="imagens/posts/sistemavendadireta-ia-2026-04-14.jpg" data-blog-slug="sistemavendadireta-ia-2026-04-14" data-blog-date="2026-04-14">
-  <a href="../../../../2026/04/14/sistemavendadireta-ia-2026-04-14/">
-    <img src="../../../../imagens/posts/sistemavendadireta-ia-2026-04-14.jpg" alt="Sistema Venda Direta: como usar IA de forma prática" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-  </a>
-  <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/04/14/sistemavendadireta-ia-2026-04-14/" class="hover:underline">Sistema Venda Direta: como usar IA de forma prática</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre tecnologia para vendas diretas em escala com foco em resultado operacional.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/04/04/seguranca-agentica-em-2026-checklist-com-nist-cyber-ai-profile-e-owasp/" data-blog-image="imagens/posts/seguranca-agentica-em-2026-checklist-com-nist-cyber-ai-profile-e-owasp.jpg" data-blog-slug="seguranca-agentica-em-2026-checklist-com-nist-cyber-ai-profile-e-owasp" data-blog-date="2026-04-04">
-  <a href="../../../../2026/04/04/seguranca-agentica-em-2026-checklist-com-nist-cyber-ai-profile-e-owasp/">
-    <img src="../../../../imagens/posts/seguranca-agentica-em-2026-checklist-com-nist-cyber-ai-profile-e-owasp.jpg" alt="Seguranca agêntica em 2026: checklist com NIST Cyber AI Profile e OWASP" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-  </a>
-  <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/04/04/seguranca-agentica-em-2026-checklist-com-nist-cyber-ai-profile-e-owasp/" class="hover:underline">Seguranca agêntica em 2026: checklist com NIST Cyber AI Profile e OWASP</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Checklist prático para proteger fluxos com agentes, MCP e dados críticos sem travar a operação.</p>
-  </div>
-</article>
-      </div>
-    </section>
-  </main>
+</main>
 
   <footer class="border-t border-white/15 bg-brand-dark/40">
     <div class="mx-auto max-w-6xl px-4 py-10 sm:px-6">

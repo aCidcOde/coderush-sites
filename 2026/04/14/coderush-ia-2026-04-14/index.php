@@ -103,10 +103,7 @@
       <a href="../../../../blog/" class="inline-flex rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/10">
         Veja mais no blog
       </a>
-    </section>
-
-
-  <!-- BLOG-LEIA-TAMBEM START -->
+    </section><!-- BLOG-LEIA-TAMBEM START -->
 <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
   <div class="flex items-end justify-between gap-4">
     <h2 class="text-2xl font-semibold text-white">Leia também sobre governança de tecnologia</h2>

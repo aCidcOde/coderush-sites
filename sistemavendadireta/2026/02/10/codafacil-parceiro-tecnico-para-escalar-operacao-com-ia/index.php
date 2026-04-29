@@ -130,9 +130,7 @@ Post de blog estatico com foco em IA, vendas diretas e evolucao de operacao.
         Veja mais no blog
       </a>
     </section>
-    <!-- BLOG-VEJA-MAIS END -->
-
-    <!-- BLOG-LEIA-TAMBEM START -->
+    <!-- BLOG-VEJA-MAIS END --><!-- BLOG-LEIA-TAMBEM START -->
 <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
   <div class="flex items-end justify-between gap-4">
     <h2 class="text-2xl font-semibold text-white">Leia também sobre vendas diretas</h2>
@@ -180,14 +178,6 @@ Post de blog estatico com foco em IA, vendas diretas e evolucao de operacao.
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://fluxointeligenteia.com.br/2026/04/28/agentes-inteligentes-langchain-automacao-processos-pratica/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/agentes-inteligentes-langchain-automacao-processos-pratica.jpg" alt="Agentes Inteligentes com LangChain: A Automação de Processos na Prática" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">FluxoInteligente IA</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/04/28/agentes-inteligentes-langchain-automacao-processos-pratica/" rel="noopener" target="_blank" class="hover:underline">Agentes Inteligentes com LangChain: A Automação de Processos na Prática</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como integrar agentes inteligentes em sua operação utilizando LangChain e n8n, potencializando a automação de processos e reduzi...</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="https://coderush.com.br/2026/04/28/decidindo-comprar-construir-software-papel-arquitetura/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/decidindo-comprar-construir-software-papel-arquitetura.jpg" alt="Decidindo entre Comprar ou Construir Software: O Papel da Arquitetura" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">CodeRush</p>
@@ -195,11 +185,18 @@ Post de blog estatico com foco em IA, vendas diretas e evolucao de operacao.
     <p class="mt-2 text-sm leading-relaxed text-white/80">Neste artigo, discutiremos a decisão crítica entre comprar ou construir software, focando na importância da arquitetura de software e na...</p>
   </div>
 </article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="https://fluxointeligenteia.com.br/2026/04/28/agentes-inteligentes-langchain-automacao-processos-pratica/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/agentes-inteligentes-langchain-automacao-processos-pratica.jpg" alt="Agentes Inteligentes com LangChain: A Automação de Processos na Prática" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">FluxoInteligente IA</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/04/28/agentes-inteligentes-langchain-automacao-processos-pratica/" rel="noopener" target="_blank" class="hover:underline">Agentes Inteligentes com LangChain: A Automação de Processos na Prática</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como integrar agentes inteligentes em sua operação utilizando LangChain e n8n, potencializando a automação de processos e reduzi...</p>
+  </div>
+</article>
   </div>
 </section>
 <!-- BLOG-CROSS-SITE END -->
-
-  </main>
+</main>
 
 <!-- BLOG-FOOTER START -->
   <footer class="mt-10 border-t border-white/15 bg-brand-dark/40">

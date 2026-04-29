@@ -130,8 +130,9 @@ Post de blog estatico com foco em Tecnologia: governanca de seguranca para IA ag
 <p>Se você quer estruturar essa base no seu ambiente, combine <a href="../../../../codafacil/">desenvolvimento com IA sob medida</a> com uma estratégia de <a href="../../../../inteligencia-artificial/">IA aplicada ao negócio</a> para escalar com governança desde a arquitetura.</p>
 </div>
     </article>
+    <!-- BLOG-VEJA-MAIS START --><!-- BLOG-VEJA-MAIS END -->    <!-- BLOG-LEIA-MAIS END -->
 
-    <!-- BLOG-LEIA-TAMBEM START -->
+  <!-- BLOG-LEIA-TAMBEM START -->
 <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
   <div class="flex items-end justify-between gap-4">
     <h2 class="text-2xl font-semibold text-white">Leia também sobre governança de tecnologia</h2>
@@ -197,54 +198,7 @@ Post de blog estatico com foco em Tecnologia: governanca de seguranca para IA ag
   </div>
 </section>
 <!-- BLOG-CROSS-SITE END -->
-
-    <!-- BLOG-VEJA-MAIS START -->
-    <section class="mt-6 flex items-center justify-center">
-      <a href="../../../../blog/" class="inline-flex rounded-full border border-white/70 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10">
-        Veja mais no blog
-      </a>
-    </section>
-    <!-- BLOG-VEJA-MAIS END -->
-
-    <!-- BLOG-LEIA-TAMBEM START -->
-    <section class="mt-8 rounded-2xl border border-white/20 bg-white/5 p-5">
-      <div class="flex items-end justify-between gap-4">
-        <h2 class="font-[var(--font-heading)] text-2xl font-semibold">Leia Também</h2>
-        <a href="../../../../blog/" class="text-sm font-semibold text-white/85 hover:text-white">Ver todos</a>
-      </div>
-      <div class="mt-5 grid gap-4 md:grid-cols-3">
-        <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
-          <a href="../../../../2026/03/11/soc-agentico-e-seguranca-multicloud-com-governanca-unificada/">
-            <img src="../../../../imagens/posts/soc-agentico-e-seguranca-multicloud-com-governanca-unificada.jpg" alt="SOC agêntico e seguranca multicloud: guia prático de governança em 2026" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-          </a>
-          <div class="p-4">
-            <h3 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../../../../2026/03/11/soc-agentico-e-seguranca-multicloud-com-governanca-unificada/" class="hover:underline">SOC agêntico e seguranca multicloud: guia prático de governança em 2026</a></h3>
-            <p class="mt-2 text-sm text-white/85">Guia prático para unificar seguranca multicloud, acelerar resposta e reduzir risco operacional.</p>
-          </div>
-        </article>
-        <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
-          <a href="../../../../2026/03/18/agentes-de-ia-em-2026-mcp-stateful-e-governanca-para-operar-em-escala/">
-            <img src="../../../../imagens/posts/agentes-de-ia-em-2026-mcp-stateful-e-governanca-para-operar-em-escala.jpg" alt="Agentes de IA em 2026: MCP stateful e governança para operar em escala" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-          </a>
-          <div class="p-4">
-            <h3 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../../../../2026/03/18/agentes-de-ia-em-2026-mcp-stateful-e-governanca-para-operar-em-escala/" class="hover:underline">Agentes de IA em 2026: MCP stateful e governança para operar em escala</a></h3>
-            <p class="mt-2 text-sm text-white/85">Guia prático para estruturar agentes com contexto persistente, governança e previsibilidade de custo.</p>
-          </div>
-        </article>
-        <article class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
-          <a href="../../../../2026/03/25/php-8-5-4-e-laravel-13-checklist-de-upgrade-com-governanca/">
-            <img src="../../../../imagens/posts/php-8-5-4-e-laravel-13-checklist-de-upgrade-com-governanca.jpg" alt="PHP 8.5.4 e Laravel 13: checklist de upgrade com governança" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-          </a>
-          <div class="p-4">
-            <h3 class="font-[var(--font-heading)] text-base font-semibold leading-snug"><a href="../../../../2026/03/25/php-8-5-4-e-laravel-13-checklist-de-upgrade-com-governanca/" class="hover:underline">PHP 8.5.4 e Laravel 13: checklist de upgrade com governança</a></h3>
-            <p class="mt-2 text-sm text-white/85">Guia prático para atualizar backend em 2026 com suporte previsível e menor risco operacional.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-    <!-- BLOG-LEIA-MAIS END -->
-
-  </main>
+</main>
 
   <!-- BLOG-FOOTER START -->
   <footer class="mt-10 border-t border-white/15 bg-brand-dark/40">

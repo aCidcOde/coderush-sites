@@ -104,9 +104,7 @@
       <a href="../../../../blog/" class="inline-flex rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/10">
         Veja mais no blog
       </a>
-    </section>
-
-    <!-- BLOG-LEIA-TAMBEM START -->
+    </section><!-- BLOG-LEIA-TAMBEM START -->
 <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
   <div class="flex items-end justify-between gap-4">
     <h2 class="text-2xl font-semibold text-white">Leia também sobre IA aplicada</h2>
@@ -137,7 +135,7 @@
   </div>
 </section>
 <!-- BLOG-LEIA-TAMBEM END -->
-    <!-- BLOG-CROSS-SITE START -->
+<!-- BLOG-CROSS-SITE START -->
 <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
   <div class="flex items-end justify-between gap-4">
     <h2 class="text-2xl font-semibold text-white">Mais do hub CodeRush</h2>
@@ -154,25 +152,25 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://sistemavendadireta.com.br/2026/02/19/openclaw-assistente-pessoal-de-ia/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/openclaw-assistente-ia.jpg" alt="OpenClaw: assistente pessoal de IA e produtividade real" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://coderush.com.br/2026/04/26/coderush-tecnologia-2026-04-26/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/coderush-tecnologia-2026-04-26.jpg" alt="CodeRush: como usar TECNOLOGIA de forma pratica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
-    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Sistema Venda Direta</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/02/19/openclaw-assistente-pessoal-de-ia/" rel="noopener" target="_blank" class="hover:underline">OpenClaw: assistente pessoal de IA e produtividade real</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda o que é o OpenClaw e por que software sob medida com IA é chave para produtividade e redução de custo operacional.</p>
+    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">CodeRush</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/04/26/coderush-tecnologia-2026-04-26/" rel="noopener" target="_blank" class="hover:underline">CodeRush: como usar TECNOLOGIA de forma pratica</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre produtividade de times com automacao inteligente com foco em resultado operacional.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://coderush.com.br/2026/04/28/decidindo-comprar-construir-software-papel-arquitetura/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/decidindo-comprar-construir-software-papel-arquitetura.jpg" alt="Decidindo entre Comprar ou Construir Software: O Papel da Arquitetura" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://sistemavendadireta.com.br/2026/02/10/codafacil-parceiro-tecnico-para-escalar-operacao-com-ia/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/codafacil-parceiro.webp" alt="Codafacil: parceiro técnico para escalar operação com IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
-    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">CodeRush</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/04/28/decidindo-comprar-construir-software-papel-arquitetura/" rel="noopener" target="_blank" class="hover:underline">Decidindo entre Comprar ou Construir Software: O Papel da Arquitetura</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Neste artigo, discutiremos a decisão crítica entre comprar ou construir software, focando na importância da arquitetura de software e na...</p>
+    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Sistema Venda Direta</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/02/10/codafacil-parceiro-tecnico-para-escalar-operacao-com-ia/" rel="noopener" target="_blank" class="hover:underline">Codafacil: parceiro técnico para escalar operação com IA</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Conheça como o Codafacil acelera customizações, integrações e evolução contínua para empresas que já operam com venda direta e querem ava...</p>
   </div>
 </article>
   </div>
 </section>
 <!-- BLOG-CROSS-SITE END -->
-  </main>
+</main>
 
   <footer class="border-t border-white/10 bg-[#04110d]/80">
     <div class="mx-auto max-w-6xl px-4 py-10 sm:px-6">

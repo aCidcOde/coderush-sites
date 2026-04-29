@@ -143,22 +143,13 @@ Post de blog estatico com foco em PHP 8.5.3, suporte de versoes e plano de atual
         Veja mais no blog
       </a>
     </section>
-    <!-- BLOG-VEJA-MAIS END -->
-
-    <!-- BLOG-LEIA-TAMBEM START -->
+    <!-- BLOG-VEJA-MAIS END --><!-- BLOG-LEIA-TAMBEM START -->
 <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
   <div class="flex items-end justify-between gap-4">
     <h2 class="text-2xl font-semibold text-white">Leia também sobre PHP e Laravel</h2>
     <a href="../../../../blog/" class="text-sm font-semibold text-white/85 hover:text-white">Ver todos os artigos do SVD</a>
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/02/19/php-8-5-em-foco-guia-pratico-para-atualizacao/"><img src="../../../../imagens/posts/php-8-5-em-foco-guia-pratico-para-atualizacao.jpg" alt="PHP 8.5 em foco: guia prático para atualizar seu backend" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/02/19/php-8-5-em-foco-guia-pratico-para-atualizacao/" class="hover:underline">PHP 8.5 em foco: guia prático para atualizar seu backend</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda o que mudou no PHP 8.5 e veja um checklist objetivo para atualizar com segurança e ganho operacional.</p>
-  </div>
-</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="../../../../2026/03/11/soc-agentico-e-seguranca-multicloud-com-governanca-unificada/"><img src="../../../../imagens/posts/soc-agentico-e-seguranca-multicloud-com-governanca-unificada.jpg" alt="SOC agentico e seguranca multicloud: guia pratico de governanca em 2026" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
@@ -167,10 +158,17 @@ Post de blog estatico com foco em PHP 8.5.3, suporte de versoes e plano de atual
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/04/04/seguranca-agentica-em-2026-checklist-com-nist-cyber-ai-profile-e-owasp/"><img src="../../../../imagens/posts/seguranca-agentica-em-2026-checklist-com-nist-cyber-ai-profile-e-owasp.jpg" alt="Seguranca agentica em 2026: checklist com NIST Cyber AI Profile e OWASP" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/02/19/php-8-5-em-foco-guia-pratico-para-atualizacao/"><img src="../../../../imagens/posts/php-8-5-em-foco-guia-pratico-para-atualizacao.jpg" alt="PHP 8.5 em foco: guia prático para atualizar seu backend" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/04/04/seguranca-agentica-em-2026-checklist-com-nist-cyber-ai-profile-e-owasp/" class="hover:underline">Seguranca agentica em 2026: checklist com NIST Cyber AI Profile e OWASP</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Checklist pratico para proteger fluxos com agentes, MCP e dados criticos sem travar a operacao.</p>
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/02/19/php-8-5-em-foco-guia-pratico-para-atualizacao/" class="hover:underline">PHP 8.5 em foco: guia prático para atualizar seu backend</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda o que mudou no PHP 8.5 e veja um checklist objetivo para atualizar com segurança e ganho operacional.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/02/19/openclaw-assistente-pessoal-de-ia/"><img src="../../../../imagens/posts/openclaw-assistente-ia.jpg" alt="OpenClaw: assistente pessoal de IA e produtividade real" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/02/19/openclaw-assistente-pessoal-de-ia/" class="hover:underline">OpenClaw: assistente pessoal de IA e produtividade real</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda o que é o OpenClaw e por que software sob medida com IA é chave para produtividade e redução de custo operacional.</p>
   </div>
 </article>
   </div>
@@ -211,8 +209,7 @@ Post de blog estatico com foco em PHP 8.5.3, suporte de versoes e plano de atual
   </div>
 </section>
 <!-- BLOG-CROSS-SITE END -->
-
-  </main>
+</main>
 
 <!-- BLOG-FOOTER START -->
   <footer class="mt-10 border-t border-white/15 bg-brand-dark/40">

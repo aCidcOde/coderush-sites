@@ -143,9 +143,7 @@ Post de blog estatico com foco em tecnologia: SOC agentico e seguranca multiclou
         Veja mais no blog
       </a>
     </section>
-    <!-- BLOG-VEJA-MAIS END -->
-
-    <!-- BLOG-LEIA-TAMBEM START -->
+    <!-- BLOG-VEJA-MAIS END --><!-- BLOG-LEIA-TAMBEM START -->
 <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
   <div class="flex items-end justify-between gap-4">
     <h2 class="text-2xl font-semibold text-white">Leia também sobre governança de tecnologia</h2>
@@ -153,17 +151,17 @@ Post de blog estatico com foco em tecnologia: SOC agentico e seguranca multiclou
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/02/25/ia-conectada-a-ferramentas-o-que-muda-na-operacao/"><img src="../../../../imagens/posts/ia-conectada-a-ferramentas-o-que-muda-na-operacao.jpg" alt="IA conectada a ferramentas: o que muda na operação" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/02/25/ia-conectada-a-ferramentas-o-que-muda-na-operacao/" class="hover:underline">IA conectada a ferramentas: o que muda na operação</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como conectores e plugins de IA permitem automação real em apps corporativos com governança.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="../../../../2026/04/04/seguranca-agentica-em-2026-checklist-com-nist-cyber-ai-profile-e-owasp/"><img src="../../../../imagens/posts/seguranca-agentica-em-2026-checklist-com-nist-cyber-ai-profile-e-owasp.jpg" alt="Seguranca agentica em 2026: checklist com NIST Cyber AI Profile e OWASP" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/04/04/seguranca-agentica-em-2026-checklist-com-nist-cyber-ai-profile-e-owasp/" class="hover:underline">Seguranca agentica em 2026: checklist com NIST Cyber AI Profile e OWASP</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Checklist pratico para proteger fluxos com agentes, MCP e dados criticos sem travar a operacao.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/02/19/php-8-5-em-foco-guia-pratico-para-atualizacao/"><img src="../../../../imagens/posts/php-8-5-em-foco-guia-pratico-para-atualizacao.jpg" alt="PHP 8.5 em foco: guia prático para atualizar seu backend" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/02/19/php-8-5-em-foco-guia-pratico-para-atualizacao/" class="hover:underline">PHP 8.5 em foco: guia prático para atualizar seu backend</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda o que mudou no PHP 8.5 e veja um checklist objetivo para atualizar com segurança e ganho operacional.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
@@ -185,22 +183,6 @@ Post de blog estatico com foco em tecnologia: SOC agentico e seguranca multiclou
   <p class="mt-2 text-sm text-white/70">Conteúdo recente dos outros sites do ecossistema.</p>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://fluxointeligenteia.com.br/2026/04/26/fluxointeligenteia-tecnologia-2026-04-26/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/fluxointeligenteia-tecnologia-2026-04-26.jpg" alt="FluxoInteligente IA: como usar TECNOLOGIA de forma pratica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">FluxoInteligente IA</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/04/26/fluxointeligenteia-tecnologia-2026-04-26/" rel="noopener" target="_blank" class="hover:underline">FluxoInteligente IA: como usar TECNOLOGIA de forma pratica</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre reducao de custo operacional com ia aplicada com foco em resultado operacional.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://coderush.com.br/2026/04/14/coderush-ia-2026-04-14/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/coderush-ia-2026-04-14.jpg" alt="CodeRush: como usar IA de forma pratica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">CodeRush</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/04/14/coderush-ia-2026-04-14/" rel="noopener" target="_blank" class="hover:underline">CodeRush: como usar IA de forma pratica</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre governanca de tecnologia para crescimento com foco em resultado operacional.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="https://codafacil.dev/2026/04/28/integracoes-automacao-operacoes-criticas-papel-ia-desenvolvimento/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/integracoes-automacao-operacoes-criticas-papel-ia-desenvolvimento.jpg" alt="Integrações e Automação em Operações Críticas: O Papel da IA no Desenvolvimento de Software Sob Medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
@@ -208,11 +190,26 @@ Post de blog estatico com foco em tecnologia: SOC agentico e seguranca multiclou
     <p class="mt-2 text-sm leading-relaxed text-white/80">Neste artigo, exploramos como a aplicação de IA nas integrações e automações pode acelerar o desenvolvimento de software sob medida, mant...</p>
   </div>
 </article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="https://fluxointeligenteia.com.br/2026/04/28/agentes-inteligentes-langchain-automacao-processos-pratica/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/agentes-inteligentes-langchain-automacao-processos-pratica.jpg" alt="Agentes Inteligentes com LangChain: A Automação de Processos na Prática" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">FluxoInteligente IA</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/04/28/agentes-inteligentes-langchain-automacao-processos-pratica/" rel="noopener" target="_blank" class="hover:underline">Agentes Inteligentes com LangChain: A Automação de Processos na Prática</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como integrar agentes inteligentes em sua operação utilizando LangChain e n8n, potencializando a automação de processos e reduzi...</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="https://coderush.com.br/2026/04/19/coderush-php-2026-04-19/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/coderush-php-2026-04-19.jpg" alt="Governança de Tecnologia: O Caminho para o Crescimento Sustentável" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">CodeRush</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/04/19/coderush-php-2026-04-19/" rel="noopener" target="_blank" class="hover:underline">Governança de Tecnologia: O Caminho para o Crescimento Sustentável</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Neste artigo, abordaremos a importância da governança de tecnologia no crescimento das operações empresariais, com um foco especial em PH...</p>
+  </div>
+</article>
   </div>
 </section>
 <!-- BLOG-CROSS-SITE END -->
-
-  </main>
+</main>
 
   <!-- BLOG-FOOTER START -->
   <footer class="mt-10 border-t border-white/15 bg-brand-dark/40">

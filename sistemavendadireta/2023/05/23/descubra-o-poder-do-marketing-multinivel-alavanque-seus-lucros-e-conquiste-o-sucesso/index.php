@@ -137,9 +137,7 @@ Pagina estatica do post "Descubra o poder do marketing multinível: alavanque se
         Veja mais no blog
       </a>
     </section>
-    <!-- BLOG-VEJA-MAIS END -->
-
-    <!-- BLOG-LEIA-TAMBEM START -->
+    <!-- BLOG-VEJA-MAIS END --><!-- BLOG-LEIA-TAMBEM START -->
 <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
   <div class="flex items-end justify-between gap-4">
     <h2 class="text-2xl font-semibold text-white">Leia também sobre vendas diretas</h2>
@@ -205,8 +203,7 @@ Pagina estatica do post "Descubra o poder do marketing multinível: alavanque se
   </div>
 </section>
 <!-- BLOG-CROSS-SITE END -->
-
-  </main>
+</main>
 
 <!-- BLOG-FOOTER START -->
   <footer class="mt-10 border-t border-white/15 bg-brand-dark/40">
