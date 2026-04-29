@@ -5,6 +5,8 @@ RUN docker-php-ext-install pdo pdo_mysql
 RUN apk add --no-cache git unzip \
  && curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
+COPY docker/php/expose-php.ini /usr/local/etc/php/conf.d/zz-expose-php.ini
+
 WORKDIR /var/www/html
 
 COPY . .

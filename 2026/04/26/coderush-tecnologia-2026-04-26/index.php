@@ -3,17 +3,21 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>CodeRush: como usar TECNOLOGIA de forma prática | CodeRush</title>
+  <title>CodeRush: como usar TECNOLOGIA de forma pratica | CodeRush</title>
   <meta name="description" content="Atualização semanal de tecnologia para CodeRush, com foco em produtividade de times com automação inteligente." />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <link rel="canonical" href="https://coderush.com.br/2026/04/26/coderush-tecnologia-2026-04-26/" />
+  <link rel="icon" type="image/svg+xml" href="../../../../favicon.svg" />
+  <link rel="alternate icon" href="../../../../favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../../../../apple-touch-icon.png" />
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="CodeRush: como usar TECNOLOGIA de forma prática | CodeRush" />
+  <meta property="og:title" content="CodeRush: como usar TECNOLOGIA de forma pratica | CodeRush" />
   <meta property="og:description" content="Atualização semanal de tecnologia para CodeRush, com foco em produtividade de times com automação inteligente." />
   <meta property="og:url" content="https://coderush.com.br/2026/04/26/coderush-tecnologia-2026-04-26/" />
+  <meta property="og:site_name" content="CodeRush" />
   <meta property="og:image" content="https://coderush.com.br/imagens/posts/coderush-tecnologia-2026-04-26.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="CodeRush: como usar TECNOLOGIA de forma prática | CodeRush" />
+  <meta name="twitter:title" content="CodeRush: como usar TECNOLOGIA de forma pratica | CodeRush" />
   <meta name="twitter:description" content="Atualização semanal de tecnologia para CodeRush, com foco em produtividade de times com automação inteligente." />
   <meta name="twitter:image" content="https://coderush.com.br/imagens/posts/coderush-tecnologia-2026-04-26.jpg" />
   <link rel="stylesheet" href="../../../../css/site-tailwind.css" />
@@ -73,14 +77,14 @@
 <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
   <div class="flex items-end justify-between gap-4">
     <h2 class="text-2xl font-semibold text-white">Leia também</h2>
-    <a href="../../../../blog/" class="text-sm font-semibold text-white/85 hover:text-white">Ver todos</a>
+    <a href="../../../../blog/" class="text-sm font-semibold text-white/85 hover:text-white">Ver todos os artigos da CodeRush</a>
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/04/14/coderush-ia-2026-04-14/"><img src="../../../../imagens/posts/coderush-ia-2026-04-14.jpg" alt="CodeRush: como usar IA de forma prática" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/04/14/coderush-ia-2026-04-14/"><img src="../../../../imagens/posts/coderush-ia-2026-04-14.jpg" alt="CodeRush: como usar IA de forma pratica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/04/14/coderush-ia-2026-04-14/" class="hover:underline">CodeRush: como usar IA de forma prática</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre governança de tecnologia para crescimento com foco em resultado operacional.</p>
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/04/14/coderush-ia-2026-04-14/" class="hover:underline">CodeRush: como usar IA de forma pratica</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre governanca de tecnologia para crescimento com foco em resultado operacional.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
@@ -103,33 +107,33 @@
 <!-- BLOG-CROSS-SITE START -->
 <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
   <div class="flex items-end justify-between gap-4">
-    <h2 class="text-2xl font-semibold text-white">Mais do hub CodeRush</h2>
-    <a href="https://coderush.com.br/" rel="noopener" target="_blank" class="text-sm font-semibold text-white/85 hover:text-white">Ver hub</a>
+    <h2 class="text-2xl font-semibold text-white">Outros sites do hub</h2>
+    <a href="https://coderush.com.br/" rel="noopener" target="_blank" class="text-sm font-semibold text-white/85 hover:text-white">Visitar a CodeRush</a>
   </div>
   <p class="mt-2 text-sm text-white/70">Conteúdo recente dos outros sites do ecossistema.</p>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://codafacil.dev/2026/04/26/codafacil-tecnologia-2026-04-26/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/codafacil-tecnologia-2026-04-26.jpg" alt="Codafacil.dev: como usar TECNOLOGIA de forma prática" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://codafacil.dev/2026/04/26/codafacil-tecnologia-2026-04-26/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/codafacil-tecnologia-2026-04-26.jpg" alt="Codafacil.dev: como usar TECNOLOGIA de forma pratica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/04/26/codafacil-tecnologia-2026-04-26/" rel="noopener" target="_blank" class="hover:underline">Codafacil.dev: como usar TECNOLOGIA de forma prática</a></h3>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/04/26/codafacil-tecnologia-2026-04-26/" rel="noopener" target="_blank" class="hover:underline">Codafacil.dev: como usar TECNOLOGIA de forma pratica</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre software sob medida com IA aplicada com foco em resultado operacional.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://fluxointeligenteia.com.br/2026/04/26/fluxointeligenteia-tecnologia-2026-04-26/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/fluxointeligenteia-tecnologia-2026-04-26.jpg" alt="FluxoInteligente IA: como usar TECNOLOGIA de forma prática" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://fluxointeligenteia.com.br/2026/04/26/fluxointeligenteia-tecnologia-2026-04-26/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/fluxointeligenteia-tecnologia-2026-04-26.jpg" alt="FluxoInteligente IA: como usar TECNOLOGIA de forma pratica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">FluxoInteligente IA</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/04/26/fluxointeligenteia-tecnologia-2026-04-26/" rel="noopener" target="_blank" class="hover:underline">FluxoInteligente IA: como usar TECNOLOGIA de forma prática</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre redução de custo operacional com ia aplicada com foco em resultado operacional.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/04/26/fluxointeligenteia-tecnologia-2026-04-26/" rel="noopener" target="_blank" class="hover:underline">FluxoInteligente IA: como usar TECNOLOGIA de forma pratica</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre reducao de custo operacional com ia aplicada com foco em resultado operacional.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://sistemavendadireta.com.br/2026/04/26/sistemavendadireta-tecnologia-2026-04-26/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/sistemavendadireta-tecnologia-2026-04-26.jpg" alt="Sistema Venda Direta: como usar TECNOLOGIA de forma prática" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://sistemavendadireta.com.br/2026/04/26/sistemavendadireta-tecnologia-2026-04-26/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/sistemavendadireta-tecnologia-2026-04-26.jpg" alt="Sistema Venda Direta: como usar TECNOLOGIA de forma pratica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Sistema Venda Direta</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/04/26/sistemavendadireta-tecnologia-2026-04-26/" rel="noopener" target="_blank" class="hover:underline">Sistema Venda Direta: como usar TECNOLOGIA de forma prática</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre governança comercial com dados e ia com foco em resultado operacional.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/04/26/sistemavendadireta-tecnologia-2026-04-26/" rel="noopener" target="_blank" class="hover:underline">Sistema Venda Direta: como usar TECNOLOGIA de forma pratica</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre governanca comercial com dados e ia com foco em resultado operacional.</p>
   </div>
 </article>
   </div>

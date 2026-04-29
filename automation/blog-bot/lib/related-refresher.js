@@ -12,6 +12,24 @@ function escapeRegex(value) {
   return String(value).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
+const FOCUS_LABELS = [
+  { match: /\b(langchain|langgraph|agentes? inteligentes?|agentes? de ia|agente)\b/i, label: "agentes de IA" },
+  { match: /\b(n8n|automação de processos?|orquestração)\b/i, label: "automação de processos" },
+  { match: /\b(php|laravel)\b/i, label: "PHP e Laravel" },
+  { match: /\b(arquitetura|sistemas? legados?|modernização)\b/i, label: "arquitetura de software" },
+  { match: /\b(crm|comissionamento|mmn|venda direta|vendas? diretas?|marketing multinível)\b/i, label: "vendas diretas" },
+  { match: /\b(governança|compliance|segurança)\b/i, label: "governança de tecnologia" },
+  { match: /\b(ia|inteligência artificial|llm|gpt|copilot)\b/i, label: "IA aplicada" }
+];
+
+function inferFocusLabel(title, text) {
+  const haystack = `${title || ""} ${text || ""}`;
+  for (const entry of FOCUS_LABELS) {
+    if (entry.match.test(haystack)) return entry.label;
+  }
+  return "";
+}
+
 function listPostFiles(rootDir, sitesConfig) {
   const files = [];
   for (const site of sitesConfig.sites) {
@@ -151,8 +169,12 @@ function refreshPostContent({ content, currentSite, currentPostPath, currentTitl
   const sitePathPrefix = "../../../../";
   const blogHref = `${sitePathPrefix}blog/`;
 
-  const sameSection = renderSameSiteSection(sameCards, sitePathPrefix, blogHref);
-  const crossSection = renderCrossSiteSection(crossCards);
+  const focusLabel = inferFocusLabel(currentTitle, currentText);
+  const sameSection = renderSameSiteSection(sameCards, sitePathPrefix, blogHref, {
+    currentSiteId: currentSite.id,
+    focusLabel
+  });
+  const crossSection = renderCrossSiteSection(crossCards, { currentSiteId: currentSite.id });
 
   let updated = content;
   updated = ensureSameSiteSection(updated, sameSection);

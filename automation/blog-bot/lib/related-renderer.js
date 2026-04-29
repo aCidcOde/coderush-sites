@@ -83,14 +83,40 @@ function renderCrossSiteCard(card) {
     .join("\n");
 }
 
-function renderSameSiteSection(cards, sitePathPrefix, blogIndexHref) {
+const SAME_SITE_BLOG_ANCHORS = {
+  coderush: "Ver todos os artigos da CodeRush",
+  codafacil: "Ver todos os artigos da Codafacil.dev",
+  fluxointeligenteia: "Ver todos os artigos da FluxoInteligente IA",
+  sistemavendadireta: "Ver todos os artigos do SVD"
+};
+
+const CROSS_HUB_HEADINGS = {
+  coderush: "Outros sites do hub",
+  codafacil: "Mais do hub CodeRush",
+  fluxointeligenteia: "Mais do hub CodeRush",
+  sistemavendadireta: "Conheça também o hub CodeRush"
+};
+
+const CROSS_HUB_ANCHORS = {
+  coderush: "Visitar a CodeRush",
+  codafacil: "Conhecer a CodeRush",
+  fluxointeligenteia: "Conhecer a CodeRush",
+  sistemavendadireta: "Visitar a CodeRush"
+};
+
+function renderSameSiteSection(cards, sitePathPrefix, blogIndexHref, options = {}) {
   if (!cards || cards.length === 0) return "";
+  const siteId = options.currentSiteId;
+  const anchorText = SAME_SITE_BLOG_ANCHORS[siteId] || "Ver mais artigos";
+  const heading = options.focusLabel
+    ? `Leia também sobre ${options.focusLabel}`
+    : "Leia também";
   return [
     SAME_SITE_MARKERS.start,
     '<section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">',
     '  <div class="flex items-end justify-between gap-4">',
-    '    <h2 class="text-2xl font-semibold text-white">Leia também</h2>',
-    `    <a href="${blogIndexHref}" class="text-sm font-semibold text-white/85 hover:text-white">Ver todos</a>`,
+    `    <h2 class="text-2xl font-semibold text-white">${heading}</h2>`,
+    `    <a href="${blogIndexHref}" class="text-sm font-semibold text-white/85 hover:text-white">${anchorText}</a>`,
     "  </div>",
     '  <div class="mt-5 grid gap-4 md:grid-cols-3">',
     cards.map((card) => renderSameSiteCard(card, sitePathPrefix)).filter(Boolean).join("\n"),
@@ -100,14 +126,17 @@ function renderSameSiteSection(cards, sitePathPrefix, blogIndexHref) {
   ].join("\n");
 }
 
-function renderCrossSiteSection(cards) {
+function renderCrossSiteSection(cards, options = {}) {
   if (!cards || cards.length === 0) return "";
+  const siteId = options.currentSiteId;
+  const heading = CROSS_HUB_HEADINGS[siteId] || "Mais do hub CodeRush";
+  const anchor = CROSS_HUB_ANCHORS[siteId] || "Visitar a CodeRush";
   return [
     CROSS_SITE_MARKERS.start,
     '<section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">',
     '  <div class="flex items-end justify-between gap-4">',
-    '    <h2 class="text-2xl font-semibold text-white">Mais do hub CodeRush</h2>',
-    '    <a href="https://coderush.com.br/" rel="noopener" target="_blank" class="text-sm font-semibold text-white/85 hover:text-white">Ver hub</a>',
+    `    <h2 class="text-2xl font-semibold text-white">${heading}</h2>`,
+    `    <a href="https://coderush.com.br/" rel="noopener" target="_blank" class="text-sm font-semibold text-white/85 hover:text-white">${anchor}</a>`,
     "  </div>",
     '  <p class="mt-2 text-sm text-white/70">Conteúdo recente dos outros sites do ecossistema.</p>',
     '  <div class="mt-5 grid gap-4 md:grid-cols-3">',

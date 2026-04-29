@@ -11,13 +11,16 @@ Post de blog estatico com foco em Tecnologia: governanca de seguranca para IA ag
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Seguranca agêntica em 2026: checklist com NIST Cyber AI Profile e OWASP | Sistema Venda Direta</title>
+  <title>Seguranca agêntica em 2026: checklist | Sistema Venda Direta</title>
   <meta name="description" content="NIST e OWASP publicaram guias chave para seguranca de IA agêntica em 2026. Veja checklist prático para proteger MCP, dados e operação com governança." />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="theme-color" content="#004AAD" />
   <meta name="author" content="Sistema Venda Direta" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
   <link rel="canonical" href="https://www.sistemavendadireta.com.br/2026/04/04/seguranca-agentica-em-2026-checklist-com-nist-cyber-ai-profile-e-owasp/" />
+  <link rel="icon" type="image/svg+xml" href="../../../../favicon.svg" />
+  <link rel="alternate icon" href="../../../../favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../../../../apple-touch-icon.png" />
   <link rel="alternate" hreflang="pt-BR" href="https://www.sistemavendadireta.com.br/2026/04/04/seguranca-agentica-em-2026-checklist-com-nist-cyber-ai-profile-e-owasp/" />
   <link rel="alternate" hreflang="x-default" href="https://www.sistemavendadireta.com.br/2026/04/04/seguranca-agentica-em-2026-checklist-com-nist-cyber-ai-profile-e-owasp/" />
 
@@ -25,14 +28,14 @@ Post de blog estatico com foco em Tecnologia: governanca de seguranca para IA ag
   <meta property="og:type" content="article" />
   <meta property="article:published_time" content="2026-04-04T09:00:00-03:00" />
   <meta property="article:modified_time" content="2026-04-04T09:00:00-03:00" />
-  <meta property="og:title" content="Seguranca agêntica em 2026: checklist com NIST Cyber AI Profile e OWASP" />
+  <meta property="og:title" content="Seguranca agêntica em 2026: checklist | Sistema Venda Direta" />
   <meta property="og:description" content="Como combinar NIST e OWASP para reduzir risco em fluxos de IA agêntica e integrações MCP." />
   <meta property="og:url" content="https://www.sistemavendadireta.com.br/2026/04/04/seguranca-agentica-em-2026-checklist-com-nist-cyber-ai-profile-e-owasp/" />
   <meta property="og:site_name" content="Sistema Venda Direta" />
   <meta property="og:image" content="https://www.sistemavendadireta.com.br/imagens/posts/seguranca-agentica-em-2026-checklist-com-nist-cyber-ai-profile-e-owasp.jpg" />
   <meta property="og:image:alt" content="Seguranca agêntica em 2026: checklist com NIST Cyber AI Profile e OWASP | Sistema Venda Direta" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Seguranca agêntica em 2026: checklist com NIST Cyber AI Profile e OWASP | Sistema Venda Direta" />
+  <meta name="twitter:title" content="Seguranca agêntica em 2026: checklist | Sistema Venda Direta" />
   <meta name="twitter:description" content="Checklist objetivo para proteger agentes, ferramentas MCP e dados críticos sem travar a operação." />
   <meta name="twitter:image" content="https://www.sistemavendadireta.com.br/imagens/posts/seguranca-agentica-em-2026-checklist-com-nist-cyber-ai-profile-e-owasp.jpg" />
   <meta name="twitter:site" content="@sistemavendadireta" />
@@ -131,15 +134,15 @@ Post de blog estatico com foco em Tecnologia: governanca de seguranca para IA ag
     <!-- BLOG-LEIA-TAMBEM START -->
 <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
   <div class="flex items-end justify-between gap-4">
-    <h2 class="text-2xl font-semibold text-white">Leia também</h2>
-    <a href="../../../../blog/" class="text-sm font-semibold text-white/85 hover:text-white">Ver todos</a>
+    <h2 class="text-2xl font-semibold text-white">Leia também sobre governança de tecnologia</h2>
+    <a href="../../../../blog/" class="text-sm font-semibold text-white/85 hover:text-white">Ver todos os artigos do SVD</a>
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/03/11/soc-agentico-e-seguranca-multicloud-com-governanca-unificada/"><img src="../../../../imagens/posts/soc-agentico-e-seguranca-multicloud-com-governanca-unificada.jpg" alt="SOC agêntico e seguranca multicloud: guia prático de governança em 2026" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/03/11/soc-agentico-e-seguranca-multicloud-com-governanca-unificada/"><img src="../../../../imagens/posts/soc-agentico-e-seguranca-multicloud-com-governanca-unificada.jpg" alt="SOC agentico e seguranca multicloud: guia pratico de governanca em 2026" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/03/11/soc-agentico-e-seguranca-multicloud-com-governanca-unificada/" class="hover:underline">SOC agêntico e seguranca multicloud: guia prático de governança em 2026</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia prático para unificar seguranca multicloud, acelerar resposta e reduzir risco operacional.</p>
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/03/11/soc-agentico-e-seguranca-multicloud-com-governanca-unificada/" class="hover:underline">SOC agentico e seguranca multicloud: guia pratico de governanca em 2026</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia pratico para unificar seguranca multicloud, acelerar resposta e reduzir risco operacional.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
@@ -150,10 +153,10 @@ Post de blog estatico com foco em Tecnologia: governanca de seguranca para IA ag
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/03/04/php-8-5-3-em-producao-checklist-para-atualizar-com-seguranca/"><img src="../../../../imagens/posts/php-8-5-3-em-producao-checklist-para-atualizar-com-seguranca.jpg" alt="PHP 8.5.3 em produção: checklist para atualizar com seguranca" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/03/04/php-8-5-3-em-producao-checklist-para-atualizar-com-seguranca/"><img src="../../../../imagens/posts/php-8-5-3-em-producao-checklist-para-atualizar-com-seguranca.jpg" alt="PHP 8.5.3 em producao: checklist para atualizar com seguranca" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/03/04/php-8-5-3-em-producao-checklist-para-atualizar-com-seguranca/" class="hover:underline">PHP 8.5.3 em produção: checklist para atualizar com seguranca</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Checklist prático para atualizar seu backend com base no ciclo oficial do PHP e reduzir risco operacional.</p>
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/03/04/php-8-5-3-em-producao-checklist-para-atualizar-com-seguranca/" class="hover:underline">PHP 8.5.3 em producao: checklist para atualizar com seguranca</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Checklist pratico para atualizar seu backend com base no ciclo oficial do PHP e reduzir risco operacional.</p>
   </div>
 </article>
   </div>
@@ -162,8 +165,8 @@ Post de blog estatico com foco em Tecnologia: governanca de seguranca para IA ag
 <!-- BLOG-CROSS-SITE START -->
 <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
   <div class="flex items-end justify-between gap-4">
-    <h2 class="text-2xl font-semibold text-white">Mais do hub CodeRush</h2>
-    <a href="https://coderush.com.br/" rel="noopener" target="_blank" class="text-sm font-semibold text-white/85 hover:text-white">Ver hub</a>
+    <h2 class="text-2xl font-semibold text-white">Conheça também o hub CodeRush</h2>
+    <a href="https://coderush.com.br/" rel="noopener" target="_blank" class="text-sm font-semibold text-white/85 hover:text-white">Visitar a CodeRush</a>
   </div>
   <p class="mt-2 text-sm text-white/70">Conteúdo recente dos outros sites do ecossistema.</p>
   <div class="mt-5 grid gap-4 md:grid-cols-3">

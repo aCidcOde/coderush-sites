@@ -11,13 +11,16 @@ Pagina estatica do post "Descubra o poder do marketing multinível: alavanque se
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Descubra o poder do marketing multinível: alavanque seus lucros e conquiste o sucesso! | Sistema Venda Direta</title>
+  <title>Descubra o poder do marketing | Sistema Venda Direta</title>
   <meta name="description" content="O marketing multinível é um modelo de vendas diretas no qual você ganha comissões não apenas pelas suas próprias vendas, mas também pela rede de revendedores que você constrói. É uma oportunidade de crescimento pessoal e financeir..." />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="theme-color" content="#004AAD" />
   <meta name="author" content="Sistema Venda Direta" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
   <link rel="canonical" href="https://www.sistemavendadireta.com.br/2023/05/23/descubra-o-poder-do-marketing-multinivel-alavanque-seus-lucros-e-conquiste-o-sucesso/" />
+  <link rel="icon" type="image/svg+xml" href="../../../../favicon.svg" />
+  <link rel="alternate icon" href="../../../../favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../../../../apple-touch-icon.png" />
   <link rel="alternate" hreflang="pt-BR" href="https://www.sistemavendadireta.com.br/2023/05/23/descubra-o-poder-do-marketing-multinivel-alavanque-seus-lucros-e-conquiste-o-sucesso/" />
   <link rel="alternate" hreflang="x-default" href="https://www.sistemavendadireta.com.br/2023/05/23/descubra-o-poder-do-marketing-multinivel-alavanque-seus-lucros-e-conquiste-o-sucesso/" />
 
@@ -25,14 +28,14 @@ Pagina estatica do post "Descubra o poder do marketing multinível: alavanque se
   <meta property="og:type" content="article" />
   <meta property="article:published_time" content="2023-05-23T08:00:00-03:00" />
   <meta property="article:modified_time" content="2023-05-23T08:00:00-03:00" />
-  <meta property="og:title" content="Descubra o poder do marketing multinível: alavanque seus lucros e conquiste o sucesso!" />
+  <meta property="og:title" content="Descubra o poder do marketing | Sistema Venda Direta" />
   <meta property="og:description" content="O marketing multinível é um modelo de vendas diretas no qual você ganha comissões não apenas pelas suas próprias vendas, mas também pela rede de revendedores que você constrói. É uma oportunidade de crescimento pessoal e financeir..." />
   <meta property="og:url" content="https://www.sistemavendadireta.com.br/2023/05/23/descubra-o-poder-do-marketing-multinivel-alavanque-seus-lucros-e-conquiste-o-sucesso/" />
   <meta property="og:site_name" content="Sistema Venda Direta" />
   <meta property="og:image" content="https://www.sistemavendadireta.com.br/wp-content/uploads/2023/05/Vendas-diretas1.png" />
   <meta property="og:image:alt" content="Descubra o poder do marketing multinível: alavanque seus lucros e conquiste o sucesso! | Sistema Venda Direta" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Descubra o poder do marketing multinível: alavanque seus lucros e conquiste o sucesso! | Sistema Venda Direta" />
+  <meta name="twitter:title" content="Descubra o poder do marketing | Sistema Venda Direta" />
   <meta name="twitter:description" content="O marketing multinível é um modelo de vendas diretas no qual você ganha comissões não apenas pelas suas próprias vendas, mas também pela rede de revendedores que você constrói. É uma oportunidade de crescimento pessoal e financeir..." />
   <meta name="twitter:image" content="https://www.sistemavendadireta.com.br/wp-content/uploads/2023/05/Vendas-diretas1.png" />
   <meta name="twitter:site" content="@sistemavendadireta" />
@@ -139,8 +142,8 @@ Pagina estatica do post "Descubra o poder do marketing multinível: alavanque se
     <!-- BLOG-LEIA-TAMBEM START -->
 <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
   <div class="flex items-end justify-between gap-4">
-    <h2 class="text-2xl font-semibold text-white">Leia também</h2>
-    <a href="../../../../blog/" class="text-sm font-semibold text-white/85 hover:text-white">Ver todos</a>
+    <h2 class="text-2xl font-semibold text-white">Leia também sobre vendas diretas</h2>
+    <a href="../../../../blog/" class="text-sm font-semibold text-white/85 hover:text-white">Ver todos os artigos do SVD</a>
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
@@ -170,8 +173,8 @@ Pagina estatica do post "Descubra o poder do marketing multinível: alavanque se
 <!-- BLOG-CROSS-SITE START -->
 <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
   <div class="flex items-end justify-between gap-4">
-    <h2 class="text-2xl font-semibold text-white">Mais do hub CodeRush</h2>
-    <a href="https://coderush.com.br/" rel="noopener" target="_blank" class="text-sm font-semibold text-white/85 hover:text-white">Ver hub</a>
+    <h2 class="text-2xl font-semibold text-white">Conheça também o hub CodeRush</h2>
+    <a href="https://coderush.com.br/" rel="noopener" target="_blank" class="text-sm font-semibold text-white/85 hover:text-white">Visitar a CodeRush</a>
   </div>
   <p class="mt-2 text-sm text-white/70">Conteúdo recente dos outros sites do ecossistema.</p>
   <div class="mt-5 grid gap-4 md:grid-cols-3">

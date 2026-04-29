@@ -7,6 +7,9 @@
   <meta name="description" content="Artigos da Codafacil.dev sobre desenvolvimento com IA, integracoes e software sob medida." />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <link rel="canonical" href="https://codafacil.dev/blog/" />
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+  <link rel="alternate icon" href="../favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Blog Codafacil.dev | Todos os posts" />
   <meta property="og:description" content="Artigos da Codafacil.dev sobre desenvolvimento com IA, integracoes e software sob medida." />

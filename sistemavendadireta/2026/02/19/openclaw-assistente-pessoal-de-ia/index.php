@@ -11,13 +11,16 @@ Post de blog estatico com foco em OpenClaw, IA aplicada e software sob medida.
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>OpenClaw: assistente pessoal de IA e produtividade real | Sistema Venda Direta</title>
+  <title>OpenClaw: assistente pessoal de IA | Sistema Venda Direta</title>
   <meta name="description" content="Entenda o que é OpenClaw, como ele funciona e por que o desenvolvimento de software sob medida com IA reduz custo e aumenta produtividade na operação." />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="theme-color" content="#004AAD" />
   <meta name="author" content="Sistema Venda Direta" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
   <link rel="canonical" href="https://www.sistemavendadireta.com.br/2026/02/19/openclaw-assistente-pessoal-de-ia/" />
+  <link rel="icon" type="image/svg+xml" href="../../../../favicon.svg" />
+  <link rel="alternate icon" href="../../../../favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../../../../apple-touch-icon.png" />
   <link rel="alternate" hreflang="pt-BR" href="https://www.sistemavendadireta.com.br/2026/02/19/openclaw-assistente-pessoal-de-ia/" />
   <link rel="alternate" hreflang="x-default" href="https://www.sistemavendadireta.com.br/2026/02/19/openclaw-assistente-pessoal-de-ia/" />
 
@@ -25,14 +28,14 @@ Post de blog estatico com foco em OpenClaw, IA aplicada e software sob medida.
   <meta property="og:type" content="article" />
   <meta property="article:published_time" content="2026-02-19T09:00:00-03:00" />
   <meta property="article:modified_time" content="2026-02-19T09:00:00-03:00" />
-  <meta property="og:title" content="OpenClaw: assistente pessoal de IA e produtividade real" />
+  <meta property="og:title" content="OpenClaw: assistente pessoal de IA | Sistema Venda Direta" />
   <meta property="og:description" content="OpenClaw é um assistente pessoal de IA open source. Veja como esse modelo se conecta com software sob medida para baixar custo operacional." />
   <meta property="og:url" content="https://www.sistemavendadireta.com.br/2026/02/19/openclaw-assistente-pessoal-de-ia/" />
   <meta property="og:site_name" content="Sistema Venda Direta" />
   <meta property="og:image" content="https://www.sistemavendadireta.com.br/imagens/posts/openclaw-assistente-ia.jpg" />
   <meta property="og:image:alt" content="OpenClaw: assistente pessoal de IA e produtividade real | Sistema Venda Direta" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="OpenClaw: assistente pessoal de IA e produtividade real | Sistema Venda Direta" />
+  <meta name="twitter:title" content="OpenClaw: assistente pessoal de IA | Sistema Venda Direta" />
   <meta name="twitter:description" content="Entenda como o OpenClaw mostra, na prática, o potencial da IA integrada ao software sob medida." />
   <meta name="twitter:image" content="https://www.sistemavendadireta.com.br/imagens/posts/openclaw-assistente-ia.jpg" />
   <meta name="twitter:site" content="@sistemavendadireta" />
@@ -139,8 +142,8 @@ Post de blog estatico com foco em OpenClaw, IA aplicada e software sob medida.
     <!-- BLOG-LEIA-TAMBEM START -->
 <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
   <div class="flex items-end justify-between gap-4">
-    <h2 class="text-2xl font-semibold text-white">Leia também</h2>
-    <a href="../../../../blog/" class="text-sm font-semibold text-white/85 hover:text-white">Ver todos</a>
+    <h2 class="text-2xl font-semibold text-white">Leia também sobre IA aplicada</h2>
+    <a href="../../../../blog/" class="text-sm font-semibold text-white/85 hover:text-white">Ver todos os artigos do SVD</a>
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
@@ -170,8 +173,8 @@ Post de blog estatico com foco em OpenClaw, IA aplicada e software sob medida.
 <!-- BLOG-CROSS-SITE START -->
 <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
   <div class="flex items-end justify-between gap-4">
-    <h2 class="text-2xl font-semibold text-white">Mais do hub CodeRush</h2>
-    <a href="https://coderush.com.br/" rel="noopener" target="_blank" class="text-sm font-semibold text-white/85 hover:text-white">Ver hub</a>
+    <h2 class="text-2xl font-semibold text-white">Conheça também o hub CodeRush</h2>
+    <a href="https://coderush.com.br/" rel="noopener" target="_blank" class="text-sm font-semibold text-white/85 hover:text-white">Visitar a CodeRush</a>
   </div>
   <p class="mt-2 text-sm text-white/70">Conteúdo recente dos outros sites do ecossistema.</p>
   <div class="mt-5 grid gap-4 md:grid-cols-3">

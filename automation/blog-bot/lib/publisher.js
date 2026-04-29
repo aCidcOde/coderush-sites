@@ -389,6 +389,49 @@ function renderFooterLinks(copy, prefix) {
     .join("\n");
 }
 
+const SEO_TITLE_PIXEL_BUDGET = 60; // total chars (~ 580px @ 16px Helvetica)
+const STOP_TAIL = new Set([
+  "a","o","as","os","de","da","do","das","dos","e","em","na","no","nas","nos",
+  "para","por","com","ao","aos","um","uma","uns","umas","sobre","entre","ja","só"
+]);
+
+function smartTruncate(text, max) {
+  const clean = String(text || "").trim();
+  if (clean.length <= max) return clean;
+  const minMeaningful = Math.max(28, Math.floor(max * 0.6));
+  // priorizar corte em pontuacao APENAS se gerar prefixo informativo
+  for (const sep of [": ", " — ", " - ", "; "]) {
+    const idx = clean.indexOf(sep);
+    if (idx >= minMeaningful && idx <= max) return clean.slice(0, idx);
+  }
+  // corte por palavra
+  const words = clean.split(/\s+/);
+  let out = "";
+  for (const w of words) {
+    const next = out ? `${out} ${w}` : w;
+    if (next.length > max) break;
+    out = next;
+  }
+  while (out) {
+    const lastSpace = out.lastIndexOf(" ");
+    if (lastSpace < 0) break;
+    const tail = out.slice(lastSpace + 1).toLowerCase();
+    if (!STOP_TAIL.has(tail)) break;
+    out = out.slice(0, lastSpace);
+  }
+  return out || clean.slice(0, max);
+}
+
+function buildSeoTitle(contract, site) {
+  const explicit = contract?.content?.seoTitle || contract?.seoTitle;
+  const suffix = ` | ${site.name}`;
+  const room = Math.max(20, SEO_TITLE_PIXEL_BUDGET - suffix.length);
+  const head = explicit && explicit.length <= room
+    ? explicit
+    : smartTruncate(contract.content.headline, room);
+  return `${head}${suffix}`;
+}
+
 function buildJsonLd(site, contract, canonicalUrl, imageUrl) {
   return JSON.stringify(
     {
@@ -453,22 +496,27 @@ function buildPostTemplate(root, site, contract, relatedCards) {
       )}</a></p>`
     : "";
 
+  const seoTitle = buildSeoTitle(contract, site);
   return `<!doctype html>
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>${esc(contract.content.headline)} | ${esc(site.name)}</title>
+  <title>${esc(seoTitle)}</title>
   <meta name="description" content="${esc(contract.description)}" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <link rel="canonical" href="${canonicalUrl}" />
+  <link rel="icon" type="image/svg+xml" href="${relativeRoot}favicon.svg" />
+  <link rel="alternate icon" href="${relativeRoot}favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="${relativeRoot}apple-touch-icon.png" />
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="${esc(contract.content.headline)} | ${esc(site.name)}" />
+  <meta property="og:title" content="${esc(seoTitle)}" />
   <meta property="og:description" content="${esc(contract.description)}" />
   <meta property="og:url" content="${canonicalUrl}" />
   <meta property="og:image" content="${imageUrl}" />
+  <meta property="og:site_name" content="${esc(site.name)}" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="${esc(contract.content.headline)} | ${esc(site.name)}" />
+  <meta name="twitter:title" content="${esc(seoTitle)}" />
   <meta name="twitter:description" content="${esc(contract.description)}" />
   <meta name="twitter:image" content="${imageUrl}" />
 ${styles}
@@ -833,5 +881,7 @@ async function publishSitePost(root, site, contract, aiConfig) {
 module.exports = {
   HOME_MARKERS,
   INDEX_MARKERS,
-  publishSitePost
+  publishSitePost,
+  buildSeoTitle,
+  smartTruncate
 };

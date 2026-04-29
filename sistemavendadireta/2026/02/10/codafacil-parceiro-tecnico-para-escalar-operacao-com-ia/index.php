@@ -11,13 +11,16 @@ Post de blog estatico com foco em IA, vendas diretas e evolucao de operacao.
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Codafacil: parceiro técnico para escalar operação com IA | Sistema Venda Direta</title>
+  <title>Codafacil: parceiro técnico | Sistema Venda Direta</title>
   <meta name="description" content="Conheça como o Codafacil acelera customizações, integrações e evolução contínua para empresas que já operam com venda direta e querem avançar com IA." />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="theme-color" content="#004AAD" />
   <meta name="author" content="Sistema Venda Direta" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
   <link rel="canonical" href="https://www.sistemavendadireta.com.br/2026/02/10/codafacil-parceiro-tecnico-para-escalar-operacao-com-ia/" />
+  <link rel="icon" type="image/svg+xml" href="../../../../favicon.svg" />
+  <link rel="alternate icon" href="../../../../favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../../../../apple-touch-icon.png" />
   <link rel="alternate" hreflang="pt-BR" href="https://www.sistemavendadireta.com.br/2026/02/10/codafacil-parceiro-tecnico-para-escalar-operacao-com-ia/" />
   <link rel="alternate" hreflang="x-default" href="https://www.sistemavendadireta.com.br/2026/02/10/codafacil-parceiro-tecnico-para-escalar-operacao-com-ia/" />
 
@@ -25,14 +28,14 @@ Post de blog estatico com foco em IA, vendas diretas e evolucao de operacao.
   <meta property="og:type" content="article" />
   <meta property="article:published_time" content="2026-02-10T08:00:00-03:00" />
   <meta property="article:modified_time" content="2026-02-10T08:00:00-03:00" />
-  <meta property="og:title" content="Codafacil: parceiro técnico para escalar operação com IA" />
+  <meta property="og:title" content="Codafacil: parceiro técnico | Sistema Venda Direta" />
   <meta property="og:description" content="Conheça como o Codafacil acelera customizações, integrações e evolução contínua para empresas que já operam com venda direta e querem avançar com IA." />
   <meta property="og:url" content="https://www.sistemavendadireta.com.br/2026/02/10/codafacil-parceiro-tecnico-para-escalar-operacao-com-ia/" />
   <meta property="og:site_name" content="Sistema Venda Direta" />
   <meta property="og:image" content="https://www.codafacil.dev/logo.png" />
   <meta property="og:image:alt" content="Codafacil: parceiro técnico para escalar operação com IA | Sistema Venda Direta" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Codafacil: parceiro técnico para escalar operação com IA | Sistema Venda Direta" />
+  <meta name="twitter:title" content="Codafacil: parceiro técnico | Sistema Venda Direta" />
   <meta name="twitter:description" content="Conheça como o Codafacil acelera customizações, integrações e evolução contínua para empresas que já operam com venda direta e querem avançar com IA." />
   <meta name="twitter:image" content="https://www.codafacil.dev/logo.png" />
   <meta name="twitter:site" content="@sistemavendadireta" />
@@ -132,8 +135,8 @@ Post de blog estatico com foco em IA, vendas diretas e evolucao de operacao.
     <!-- BLOG-LEIA-TAMBEM START -->
 <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
   <div class="flex items-end justify-between gap-4">
-    <h2 class="text-2xl font-semibold text-white">Leia também</h2>
-    <a href="../../../../blog/" class="text-sm font-semibold text-white/85 hover:text-white">Ver todos</a>
+    <h2 class="text-2xl font-semibold text-white">Leia também sobre vendas diretas</h2>
+    <a href="../../../../blog/" class="text-sm font-semibold text-white/85 hover:text-white">Ver todos os artigos do SVD</a>
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
@@ -144,16 +147,16 @@ Post de blog estatico com foco em IA, vendas diretas e evolucao de operacao.
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/04/26/sistemavendadireta-tecnologia-2026-04-26/"><img src="../../../../imagens/posts/sistemavendadireta-tecnologia-2026-04-26.jpg" alt="Sistema Venda Direta: como usar TECNOLOGIA de forma prática" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/04/26/sistemavendadireta-tecnologia-2026-04-26/"><img src="../../../../imagens/posts/sistemavendadireta-tecnologia-2026-04-26.jpg" alt="Sistema Venda Direta: como usar TECNOLOGIA de forma pratica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/04/26/sistemavendadireta-tecnologia-2026-04-26/" class="hover:underline">Sistema Venda Direta: como usar TECNOLOGIA de forma prática</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre governança comercial com dados e ia com foco em resultado operacional.</p>
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/04/26/sistemavendadireta-tecnologia-2026-04-26/" class="hover:underline">Sistema Venda Direta: como usar TECNOLOGIA de forma pratica</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre governanca comercial com dados e ia com foco em resultado operacional.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/04/14/sistemavendadireta-ia-2026-04-14/"><img src="../../../../imagens/posts/sistemavendadireta-ia-2026-04-14.jpg" alt="Sistema Venda Direta: como usar IA de forma prática" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/04/14/sistemavendadireta-ia-2026-04-14/"><img src="../../../../imagens/posts/sistemavendadireta-ia-2026-04-14.jpg" alt="Sistema Venda Direta: como usar IA de forma pratica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/04/14/sistemavendadireta-ia-2026-04-14/" class="hover:underline">Sistema Venda Direta: como usar IA de forma prática</a></h3>
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/04/14/sistemavendadireta-ia-2026-04-14/" class="hover:underline">Sistema Venda Direta: como usar IA de forma pratica</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre tecnologia para vendas diretas em escala com foco em resultado operacional.</p>
   </div>
 </article>
@@ -163,8 +166,8 @@ Post de blog estatico com foco em IA, vendas diretas e evolucao de operacao.
 <!-- BLOG-CROSS-SITE START -->
 <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
   <div class="flex items-end justify-between gap-4">
-    <h2 class="text-2xl font-semibold text-white">Mais do hub CodeRush</h2>
-    <a href="https://coderush.com.br/" rel="noopener" target="_blank" class="text-sm font-semibold text-white/85 hover:text-white">Ver hub</a>
+    <h2 class="text-2xl font-semibold text-white">Conheça também o hub CodeRush</h2>
+    <a href="https://coderush.com.br/" rel="noopener" target="_blank" class="text-sm font-semibold text-white/85 hover:text-white">Visitar a CodeRush</a>
   </div>
   <p class="mt-2 text-sm text-white/70">Conteúdo recente dos outros sites do ecossistema.</p>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
