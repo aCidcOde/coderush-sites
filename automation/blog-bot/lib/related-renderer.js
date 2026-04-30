@@ -105,7 +105,9 @@ const CROSS_HUB_ANCHORS = {
 };
 
 function renderSameSiteSection(cards, sitePathPrefix, blogIndexHref, options = {}) {
-  if (!cards || cards.length === 0) return "";
+  if (!cards || cards.length === 0) {
+    return `${SAME_SITE_MARKERS.start}\n${SAME_SITE_MARKERS.end}`;
+  }
   const siteId = options.currentSiteId;
   const anchorText = SAME_SITE_BLOG_ANCHORS[siteId] || "Ver mais artigos";
   const heading = options.focusLabel
@@ -127,7 +129,9 @@ function renderSameSiteSection(cards, sitePathPrefix, blogIndexHref, options = {
 }
 
 function renderCrossSiteSection(cards, options = {}) {
-  if (!cards || cards.length === 0) return "";
+  if (!cards || cards.length === 0) {
+    return `${CROSS_SITE_MARKERS.start}\n${CROSS_SITE_MARKERS.end}`;
+  }
   const siteId = options.currentSiteId;
   const heading = CROSS_HUB_HEADINGS[siteId] || "Mais do hub CodeRush";
   const anchor = CROSS_HUB_ANCHORS[siteId] || "Visitar a CodeRush";

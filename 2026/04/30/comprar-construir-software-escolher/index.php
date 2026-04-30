@@ -194,28 +194,6 @@
     </section>
 
     <!-- BLOG-LEIA-TAMBEM START -->
-<section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
-  <div class="flex items-end justify-between gap-4">
-    <h2 class="text-2xl font-semibold text-white">Leia também sobre arquitetura de software</h2>
-    <a href="../../../../blog/" class="text-sm font-semibold text-white/85 hover:text-white">Ver todos os artigos da CodeRush</a>
-  </div>
-  <div class="mt-5 grid gap-4 md:grid-cols-3">
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/04/28/decidindo-comprar-construir-software-papel-arquitetura/"><img src="../../../../imagens/posts/decidindo-comprar-construir-software-papel-arquitetura.jpg" alt="Decidindo entre Comprar ou Construir Software: O Papel da Arquitetura" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/04/28/decidindo-comprar-construir-software-papel-arquitetura/" class="hover:underline">Decidindo entre Comprar ou Construir Software: O Papel da Arquitetura</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Neste artigo, discutiremos a decisão crítica entre comprar ou construir software, focando na importância da arquitetura de software e na integração com siste...</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/04/19/coderush-php-2026-04-19/"><img src="../../../../imagens/posts/coderush-php-2026-04-19.jpg" alt="Governança de Tecnologia: O Caminho para o Crescimento Sustentável" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/04/19/coderush-php-2026-04-19/" class="hover:underline">Governança de Tecnologia: O Caminho para o Crescimento Sustentável</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Neste artigo, abordaremos a importância da governança de tecnologia no crescimento das operações empresariais, com um foco especial em PHP e como a inteligên...</p>
-  </div>
-</article>
-  </div>
-</section>
 <!-- BLOG-LEIA-TAMBEM END -->
     <!-- BLOG-CROSS-SITE START -->
 <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
