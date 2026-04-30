@@ -66,14 +66,19 @@
       Voltar para o site principal
     </a>
 
-    <article class="mt-5 rounded-3xl border border-white/15 bg-white/5 p-5 sm:p-8">
-      <p class="text-xs font-semibold uppercase tracking-[0.22em] text-white/55">Blog CodeRush • 19/04/2026</p>
-      <h1 class="mt-3 text-3xl font-semibold leading-tight text-white sm:text-4xl">Governança de Tecnologia: O Caminho para o Crescimento Sustentável</h1>
-      <p class="mt-5 text-base leading-7 text-white/80 sm:text-lg">Neste artigo, abordaremos a importância da governança de tecnologia no crescimento das operações empresariais, com um foco especial em PHP e como a inteligência artificial pode ser aplicada para criar soluções personalizadas que atendam às suas necessidades.</p>
-
-      <img src="../../../../imagens/posts/coderush-php-2026-04-19.jpg" alt="Governança de Tecnologia: O Caminho para o Crescimento Sustentável" class="mt-6 w-full rounded-2xl border border-white/15" width="1200" height="630" loading="lazy" />
-
-      <section class="mt-8">
+    <article class="mt-5 overflow-hidden rounded-3xl border border-white/15 bg-white/5">
+      <figure class="relative">
+        <img src="../../../../imagens/posts/coderush-php-2026-04-19.jpg" alt="Governança de Tecnologia: O Caminho para o Crescimento Sustentável" class="block w-full object-cover" style="aspect-ratio:1200/630" width="1200" height="630" loading="eager" decoding="async" />
+        <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/85 via-black/45 to-transparent" aria-hidden="true"></div>
+        <figcaption class="absolute inset-x-0 bottom-0 p-5 sm:p-8 lg:p-10">
+          <span class="block h-1 w-12 rounded-full bg-blue-400" aria-hidden="true"></span>
+          <p class="mt-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-white/85 sm:text-xs">Blog CodeRush • 19/04/2026</p>
+          <h1 class="mt-2 text-2xl font-semibold leading-tight text-white sm:text-3xl lg:text-4xl">Governança de Tecnologia: O Caminho para o Crescimento Sustentável</h1>
+          <p class="mt-3 max-w-3xl text-sm leading-6 text-white/90 sm:text-base sm:leading-7">Neste artigo, abordaremos a importância da governança de tecnologia no crescimento das operações empresariais, com um foco especial em PHP e como a inteligência artificial pode ser aplicada para criar soluções personalizadas que atendam às suas necessidades.</p>
+        </figcaption>
+      </figure>
+      <div class="p-5 sm:p-8">
+<section class="mt-8">
         <h2 class="text-xl font-semibold text-white sm:text-2xl">O Papel da Governança de Tecnologia</h2>
         <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">A governança de tecnologia é fundamental para garantir que os recursos tecnológicos de uma empresa sejam utilizados de forma eficaz e alinhada aos objetivos de negócios. Para gestores e donos de operação, isso significa implementar políticas e processos que maximizem o retorno sobre investimento em tecnologia. Isso não apenas ajuda a evitar desperdícios, mas também a identificar oportunidades de inovação que podem alavancar o crescimento.</p>
       </section>
@@ -89,6 +94,7 @@
         <h2 class="text-xl font-semibold text-white sm:text-2xl">Implementando uma Governança Eficaz</h2>
         <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">Para que a governança de tecnologia seja eficaz, é essencial que os gestores estabeleçam um framework claro que envolva todos os stakeholders. Isso inclui definir responsabilidades, monitorar indicadores de desempenho e garantir a conformidade com regulamentos e melhores práticas. A adoção de ferramentas de gestão que facilitam essa governança pode ser um diferencial importante para a sua operação, contribuindo para um crescimento sustentável.</p>
       </section>
+      </div>
     </article>
 
     <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">

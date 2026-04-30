@@ -94,41 +94,19 @@ Post de blog estatico com foco em tecnologia: SOC agentico e seguranca multiclou
   <main class="mx-auto max-w-[900px] px-4 py-8 sm:px-6 sm:py-10">
     <a href="../../../../" class="inline-flex rounded-full border border-white/60 px-4 py-2 text-xs font-semibold uppercase tracking-wide hover:bg-white/10">Voltar para o site principal</a>
 
-    <article class="mt-5 rounded-3xl border border-white/20 bg-white/5 p-5 sm:p-8">
-      <p class="text-xs font-medium uppercase tracking-wide text-white/70">Blog SVD • 11/03/2026</p>
-      <h1 class="mt-2 font-[var(--font-heading)] text-3xl font-semibold leading-tight sm:text-4xl">SOC agêntico e seguranca multicloud: guia prático de governança em 2026</h1>
-
-      <img src="../../../../imagens/posts/soc-agentico-e-seguranca-multicloud-com-governanca-unificada.jpg" alt="SOC agêntico e seguranca multicloud: guia prático de governança em 2026" class="mt-6 w-full rounded-2xl border border-white/20" width="1200" height="630" loading="lazy" />
-
-      <div class="prose prose-invert mt-6 max-w-none prose-headings:font-[var(--font-heading)] prose-headings:text-white prose-a:text-white prose-strong:text-white prose-p:text-white/90 prose-li:text-white/90">
-<p>A agenda de tecnologia em 2026 esta acelerando um movimento claro: seguranca deixou de ser um conjunto isolado de ferramentas e virou camada central da operação. Com mais empresas distribuindo carga entre provedores, o desafio mudou de "detectar" para "detectar e responder com governança".</p>
-
-<h2>Por que SOC agêntico e multicloud viraram prioridade</h2>
-<ul>
-  <li>Novos anuncios de plataforma mostram ganho em cobertura de detecção e automação de resposta em mais serviços cloud.</li>
-  <li>A consolidação de alertas em um hub unico reduz tempo de triagem e evita duplicidade entre times.</li>
-  <li>Compliance e seguranca passaram a ser requisitos de produto, não apenas de infraestrutura.</li>
-</ul>
-
-<p>No meio dessa transformação, o diferencial real continua sendo <strong>desenvolvimento de software sob medida com IA</strong>. Ferramenta pronta ajuda, mas o ganho operacional aparece quando regras de negócio, automação e governança são implementadas no fluxo da sua empresa, com integrações feitas para sua realidade.</p>
-
-<h2>Guia prático de implementação para operação</h2>
-<ol>
-  <li><strong>Unifique sinais:</strong> centralize findings de seguranca em uma camada comum para priorizar risco real.</li>
-  <li><strong>Defina playbooks:</strong> estabeleca respostas automáticas para incidentes repetitivos e escalonamento humano para casos críticos.</li>
-  <li><strong>Conecte compliance ao deploy:</strong> transforme requisitos de auditoria em checks de pipeline e gates de release.</li>
-  <li><strong>Meça o impacto:</strong> acompanhe MTTD/MTTR, custo por incidente e taxa de falso positivo por dominio.</li>
-</ol>
-
-<h2>Impacto para negócio e continuidade</h2>
-<ul>
-  <li><strong>Menor risco operacional:</strong> resposta mais rápida reduz janela de exposição em sistemas críticos.</li>
-  <li><strong>Custo previsível:</strong> menos retrabalho manual no SOC e melhor alocação de equipe.</li>
-  <li><strong>Escalabilidade real:</strong> operação segura mesmo com crescimento de produtos, integrações e parceiros.</li>
-</ul>
-
-<p>Se você quer aplicar esse modelo em produto e operação, vale integrar essa frente com <a href="../../../../codafacil/">desenvolvimento com IA sob medida</a> e com iniciativas de <a href="../../../../inteligencia-artificial/">IA aplicada ao negócio</a>, mantendo governança técnica ponta a ponta.</p>
-</div>
+    <article class="mt-5 overflow-hidden rounded-3xl border border-white/15 bg-white/5">
+      <figure class="relative">
+        <img src="../../../../imagens/posts/soc-agentico-e-seguranca-multicloud-com-governanca-unificada.jpg" alt="SOC agêntico e seguranca multicloud: guia prático de governança em 2026" class="block w-full object-cover" style="aspect-ratio:1200/630" width="1200" height="630" loading="eager" decoding="async" />
+        <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/85 via-black/45 to-transparent" aria-hidden="true"></div>
+        <figcaption class="absolute inset-x-0 bottom-0 p-5 sm:p-8 lg:p-10">
+          <span class="block h-1 w-12 rounded-full bg-white" aria-hidden="true"></span>
+          <p class="mt-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-white/85 sm:text-xs">Blog SVD • 11/03/2026</p>
+          <h1 class="mt-2 text-2xl font-semibold leading-tight text-white sm:text-3xl lg:text-4xl">SOC agêntico e seguranca multicloud: guia prático de governança em 2026</h1>
+          <p class="mt-3 max-w-3xl text-sm leading-6 text-white/90 sm:text-base sm:leading-7"></p>
+        </figcaption>
+      </figure>
+      <div class="p-5 sm:p-8">
+      </div>
     </article>
 
     <section class="mt-8 rounded-2xl border border-white/20 bg-white/5 p-5 text-center">

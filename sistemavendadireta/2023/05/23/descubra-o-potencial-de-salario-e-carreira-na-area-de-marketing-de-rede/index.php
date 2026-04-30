@@ -94,99 +94,19 @@ Pagina estatica do post "Descubra o potencial de salário e carreira na área de
   <main class="mx-auto max-w-[900px] px-4 py-8 sm:px-6 sm:py-10">
     <a href="../../../../" class="inline-flex rounded-full border border-white/60 px-4 py-2 text-xs font-semibold uppercase tracking-wide hover:bg-white/10">Voltar para o site principal</a>
 
-    <article class="mt-5 rounded-3xl border border-white/20 bg-white/5 p-5 sm:p-8">
-      <p class="text-xs font-medium uppercase tracking-wide text-white/70">Blog SVD • 23/05/2023</p>
-      <h1 class="mt-2 font-[var(--font-heading)] text-3xl font-semibold leading-tight sm:text-4xl">Descubra o potencial de salário e carreira na área de Marketing de Rede!</h1>
-
-      <img decoding="async" src="../../../../imagens/posts/descubra-o-potencial-de-salario-e-carreira-na-area-de-marketing-de-rede.webp" alt="Descubra o potencial de salário e carreira na área de Marketing de Rede!" class="mt-6 w-full rounded-2xl border border-white/20" width="1200" height="630" loading="lazy" />
-
-      <div class="prose prose-invert mt-6 max-w-none prose-headings:font-[var(--font-heading)] prose-headings:text-white prose-a:text-white prose-strong:text-white prose-p:text-white/90 prose-li:text-white/90">
-<p>Se você está considerando uma carreira no campo do Marketing de Rede, é importante conhecer as perspectivas salariais e oportunidades de crescimento profissional. Com base nas informações disponíveis, apresentamos uma tabela que mostra a média salarial para diferentes níveis de experiência em empresas de diversos portes:</p>
-
-
-
-<p><strong>Grande Empresa </strong></p>
-
-
-
-<p>Trainee: R$ 2.795,38 </p>
-
-
-
-<p>Junior: R$ 3.494,22 </p>
-
-
-
-<p>Pleno: R$ 4.367,77 </p>
-
-
-
-<p>Senior: R$ 5.459,71 </p>
-
-
-
-<p>Master: R$ 6.824,64 </p>
-
-
-
-<p><strong>Média Empresa </strong></p>
-
-
-
-<p>Trainee: R$ 2.150,29 </p>
-
-
-
-<p>Junior: R$ 2.687,86 </p>
-
-
-
-<p>Pleno: R$ 3.359,82 </p>
-
-
-
-<p>Senior: R$ 4.199,78 </p>
-
-
-
-<p>Master: R$ 5.249,73 </p>
-
-
-
-<p><strong>Pequena Empresa </strong></p>
-
-
-
-<p>Trainee: R$ 1.654,06 </p>
-
-
-
-<p>Junior: R$ 2.067,58 </p>
-
-
-
-<p>Pleno: R$ 2.584,48 </p>
-
-
-
-<p>Senior: R$ 3.230,60 </p>
-
-
-
-<p>Master: R$ 4.038,25</p>
-
-
-
-<p>Esses dados fornecem uma visão geral dos salários médios para profissionais formados em <strong>Marketing de Rede</strong>, levando em consideração a experiência e o porte da empresa. <strong>As informações foram obtidas no SINE &#8211; Site Nacional de Empregos, um serviço online de classificados de vagas de emprego</strong>.</p>
-
-
-
-<p>Para ter sucesso nessa área, é importante desenvolver habilidades e competências específicas. Um Tecnólogo em Marketing de Rede precisa ter conhecimento do negócio em que atua, habilidades de comunicação e relacionamento interpessoal, além de perfil de liderança. A capacidade de gestão e uma visão estratégica de negócios também são fundamentais para alinhar os processos da empresa com seus objetivos.</p>
-
-
-
-<p>Se você está em busca de uma carreira promissora e dinâmica, o Marketing de Rede pode oferecer um potencial significativo de salário e crescimento profissional. Aproveite as oportunidades!</p>
-</div>
+    <article class="mt-5 overflow-hidden rounded-3xl border border-white/15 bg-white/5">
+      <figure class="relative">
+        <img src="../../../../imagens/posts/agentes-inteligentes-langchain-automacao-processos-pratica.jpg" alt="Descubra o potencial de salário e carreira na área de Marketing de Rede!" class="block w-full object-cover" style="aspect-ratio:1200/630" width="1200" height="630" loading="eager" decoding="async" />
+        <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/85 via-black/45 to-transparent" aria-hidden="true"></div>
+        <figcaption class="absolute inset-x-0 bottom-0 p-5 sm:p-8 lg:p-10">
+          <span class="block h-1 w-12 rounded-full bg-white" aria-hidden="true"></span>
+          <p class="mt-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-white/85 sm:text-xs">Blog SVD • 23/05/2023</p>
+          <h1 class="mt-2 text-2xl font-semibold leading-tight text-white sm:text-3xl lg:text-4xl">Descubra o potencial de salário e carreira na área de Marketing de Rede!</h1>
+          <p class="mt-3 max-w-3xl text-sm leading-6 text-white/90 sm:text-base sm:leading-7"></p>
+        </figcaption>
+      </figure>
+      <div class="p-5 sm:p-8">
+      </div>
     </article>
 
     <section class="mt-8 rounded-2xl border border-white/20 bg-white/5 p-5 text-center">

@@ -94,28 +94,19 @@ Post de blog estatico com foco em IA, vendas diretas e evolucao de operacao.
   <main class="mx-auto max-w-[900px] px-4 py-8 sm:px-6 sm:py-10">
     <a href="../../../../" class="inline-flex rounded-full border border-white/60 px-4 py-2 text-xs font-semibold uppercase tracking-wide hover:bg-white/10">Voltar para o site principal</a>
 
-    <article class="mt-5 rounded-3xl border border-white/20 bg-white/5 p-5 sm:p-8">
-      <p class="text-xs font-medium uppercase tracking-wide text-white/70">Blog SVD • 10/02/2026</p>
-      <h1 class="mt-2 font-[var(--font-heading)] text-3xl font-semibold leading-tight sm:text-4xl">A importância da IA no Marketing Multinível e Vendas Diretas</h1>
-
-      <img decoding="async" src="../../../../imagens/posts/ia-mmn.webp" alt="A importância da IA no Marketing Multinível e Vendas Diretas" class="mt-6 w-full rounded-2xl border border-white/20" width="1200" height="630" loading="lazy" />
-
-      <div class="prose prose-invert mt-6 max-w-none prose-headings:font-[var(--font-heading)] prose-headings:text-white prose-a:text-white prose-strong:text-white prose-p:text-white/90 prose-li:text-white/90">
-<p>A aplicação de inteligência artificial no marketing multinível deixou de ser tendência e virou vantagem competitiva real para operações que precisam escalar com controle.</p>
-
-<h2>Onde a IA gera impacto direto</h2>
-<ul>
-  <li><strong>Redução de custo operacional:</strong> automação de tarefas repetitivas de cadastro, válidação e acompanhamento.</li>
-  <li><strong>Produtividade comercial:</strong> priorização de ações com base em dados, evitando esforço disperso.</li>
-  <li><strong>Previsibilidade:</strong> leitura de comportamento da rede e monitoramento de gargalos operacionais.</li>
-  <li><strong>Qualidade de decisão:</strong> relatórios mais claros para líderes de equipe e gestores.</li>
-</ul>
-
-<h2>IA com governança</h2>
-<p>O ponto central não é “fazer tudo com IA”, mas aplicar IA com método, responsabilidade e integração ao fluxo de negócio. Isso evita retrabalho, baixa ruído operacional e melhora resultado de ponta a ponta.</p>
-
-<p>No Sistema Venda Direta, essa visão conecta tecnologia, processo e operação comercial para sustentar crescimento com mais eficiência.</p>
-</div>
+    <article class="mt-5 overflow-hidden rounded-3xl border border-white/15 bg-white/5">
+      <figure class="relative">
+        <img src="../../../../imagens/posts/crm-automacao-potencializando-vendas-diretas-tecnologia-avancada.jpg" alt="A importância da IA no Marketing Multinível e Vendas Diretas" class="block w-full object-cover" style="aspect-ratio:1200/630" width="1200" height="630" loading="eager" decoding="async" />
+        <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/85 via-black/45 to-transparent" aria-hidden="true"></div>
+        <figcaption class="absolute inset-x-0 bottom-0 p-5 sm:p-8 lg:p-10">
+          <span class="block h-1 w-12 rounded-full bg-white" aria-hidden="true"></span>
+          <p class="mt-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-white/85 sm:text-xs">Blog SVD • 10/02/2026</p>
+          <h1 class="mt-2 text-2xl font-semibold leading-tight text-white sm:text-3xl lg:text-4xl">A importância da IA no Marketing Multinível e Vendas Diretas</h1>
+          <p class="mt-3 max-w-3xl text-sm leading-6 text-white/90 sm:text-base sm:leading-7"></p>
+        </figcaption>
+      </figure>
+      <div class="p-5 sm:p-8">
+      </div>
     </article>
 
     <section class="mt-8 rounded-2xl border border-white/20 bg-white/5 p-5 text-center">

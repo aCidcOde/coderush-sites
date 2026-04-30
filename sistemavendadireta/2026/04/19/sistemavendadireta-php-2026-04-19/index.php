@@ -67,14 +67,19 @@
       Voltar para o site principal
     </a>
 
-    <article class="mt-5 rounded-3xl border border-white/15 bg-white/5 p-5 sm:p-8">
-      <p class="text-xs font-semibold uppercase tracking-[0.22em] text-white/55">Blog SVD • 19/04/2026</p>
-      <h1 class="mt-3 text-3xl font-semibold leading-tight text-white sm:text-4xl">Governança Comercial: Potencializando Vendas Diretas com Dados e IA</h1>
-      <p class="mt-5 text-base leading-7 text-white/80 sm:text-lg">Neste artigo, discutiremos como a governança comercial pode ser aprimorada através do uso de dados e inteligência artificial, focando em soluções práticas para gestores e donos de operações de vendas diretas, especialmente no contexto do PHP.</p>
-
-      <img src="../../../../imagens/posts/sistemavendadireta-php-2026-04-19.jpg" alt="Governança Comercial: Potencializando Vendas Diretas com Dados e IA" class="mt-6 w-full rounded-2xl border border-white/15" width="1200" height="630" loading="lazy" />
-
-      <section class="mt-8">
+    <article class="mt-5 overflow-hidden rounded-3xl border border-white/15 bg-white/5">
+      <figure class="relative">
+        <img src="../../../../imagens/posts/sistemavendadireta-php-2026-04-19.jpg" alt="Governança Comercial: Potencializando Vendas Diretas com Dados e IA" class="block w-full object-cover" style="aspect-ratio:1200/630" width="1200" height="630" loading="eager" decoding="async" />
+        <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/85 via-black/45 to-transparent" aria-hidden="true"></div>
+        <figcaption class="absolute inset-x-0 bottom-0 p-5 sm:p-8 lg:p-10">
+          <span class="block h-1 w-12 rounded-full bg-white" aria-hidden="true"></span>
+          <p class="mt-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-white/85 sm:text-xs">Blog SVD • 19/04/2026</p>
+          <h1 class="mt-2 text-2xl font-semibold leading-tight text-white sm:text-3xl lg:text-4xl">Governança Comercial: Potencializando Vendas Diretas com Dados e IA</h1>
+          <p class="mt-3 max-w-3xl text-sm leading-6 text-white/90 sm:text-base sm:leading-7">Neste artigo, discutiremos como a governança comercial pode ser aprimorada através do uso de dados e inteligência artificial, focando em soluções práticas para gestores e donos de operações de vendas diretas, especialmente no contexto do PHP.</p>
+        </figcaption>
+      </figure>
+      <div class="p-5 sm:p-8">
+<section class="mt-8">
         <h2 class="text-xl font-semibold text-white sm:text-2xl">A Importância da Governança Comercial</h2>
         <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">A governança comercial é essencial para garantir que todas as operações de vendas sejam conduzidas de maneira eficiente e ética. Com a coleta e análise de dados, é possível identificar oportunidades e riscos, permitindo que gestores tomem decisões mais embasadas. Integrar uma cultura de governança dentro da sua equipe não apenas melhora a transparência, mas também ajuda a alinhar todos em torno de objetivos comuns e métricas de desempenho.</p>
       </section>
@@ -90,6 +95,7 @@
         <h2 class="text-xl font-semibold text-white sm:text-2xl">Software Sob Medida com IA</h2>
         <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">Desenvolver um software sob medida que incorpore inteligência artificial é um passo estratégico para qualquer operação de vendas diretas. Um sistema customizado pode integrar suas necessidades específicas com algoritmos de IA que analisam dados em tempo real, oferecendo insights valiosos. Por exemplo, um sistema desenvolvido em PHP pode ser otimizado para coletar dados de diferentes fontes e aplicar modelos preditivos, ajudando na tomada de decisões mais ágeis e precisas. Avalie as opções disponíveis e considere a personalização como uma estratégia para se destacar no mercado.</p>
       </section>
+      </div>
     </article>
 
     <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">

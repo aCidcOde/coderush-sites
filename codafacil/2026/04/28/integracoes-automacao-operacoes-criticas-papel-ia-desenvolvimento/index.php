@@ -67,14 +67,19 @@
       Voltar para o site principal
     </a>
 
-    <article class="mt-5 rounded-3xl border border-white/15 bg-white/5 p-5 sm:p-8">
-      <p class="text-xs font-semibold uppercase tracking-[0.22em] text-white/55">Blog Codafacil.dev • 28/04/2026</p>
-      <h1 class="mt-3 text-3xl font-semibold leading-tight text-white sm:text-4xl">Integrações e Automação em Operações Críticas: O Papel da IA no Desenvolvimento de Software Sob Medida</h1>
-      <p class="mt-5 text-base leading-7 text-white/80 sm:text-lg">Neste artigo, exploramos como a aplicação de IA nas integrações e automações pode acelerar o desenvolvimento de software sob medida, mantendo a qualidade e a eficiência nas operações críticas.</p>
-
-      <img src="../../../../imagens/posts/integracoes-automacao-operacoes-criticas-papel-ia-desenvolvimento.jpg" alt="Gráficos e diagramas técnicos em fundo verde-petróleo, destacando a automação e integração de software, com toques de azul royal e violeta tech" class="mt-6 w-full rounded-2xl border border-white/15" width="1200" height="630" loading="lazy" />
-
-      <section class="mt-8">
+    <article class="mt-5 overflow-hidden rounded-3xl border border-white/15 bg-white/5">
+      <figure class="relative">
+        <img src="../../../../imagens/posts/integracoes-automacao-operacoes-criticas-papel-ia-desenvolvimento.jpg" alt="Gráficos e diagramas técnicos em fundo verde-petróleo, destacando a automação e integração de software, com toques de azul royal e violeta tech" class="block w-full object-cover" style="aspect-ratio:1200/630" width="1200" height="630" loading="eager" decoding="async" />
+        <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/85 via-black/45 to-transparent" aria-hidden="true"></div>
+        <figcaption class="absolute inset-x-0 bottom-0 p-5 sm:p-8 lg:p-10">
+          <span class="block h-1 w-12 rounded-full bg-sky-300" aria-hidden="true"></span>
+          <p class="mt-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-white/85 sm:text-xs">Blog Codafacil.dev • 28/04/2026</p>
+          <h1 class="mt-2 text-2xl font-semibold leading-tight text-white sm:text-3xl lg:text-4xl">Integrações e Automação em Operações Críticas: O Papel da IA no Desenvolvimento de Software Sob Medida</h1>
+          <p class="mt-3 max-w-3xl text-sm leading-6 text-white/90 sm:text-base sm:leading-7">Neste artigo, exploramos como a aplicação de IA nas integrações e automações pode acelerar o desenvolvimento de software sob medida, mantendo a qualidade e a eficiência nas operações críticas.</p>
+        </figcaption>
+      </figure>
+      <div class="p-5 sm:p-8">
+<section class="mt-8">
         <h2 class="text-xl font-semibold text-white sm:text-2xl">Desenvolvimento de Software Sob Medida com IA</h2>
         <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">A criação de software sob medida é fundamental para atender às necessidades específicas de cada negócio. Com a integração da inteligência artificial (IA) no ciclo de desenvolvimento, é possível otimizar processos, reduzir retrabalho e melhorar a qualidade final do produto. Por exemplo, o uso de ferramentas como o GitHub Copilot pode auxiliar na escrita de código, promovendo um desenvolvimento mais ágil e eficiente. Segundo um artigo recente, o GitHub Copilot está mudando sua política de cobrança para um modelo baseado em uso, destacando sua importância no cenário atual de desenvolvimento de software ([GitHub Copilot is moving to usage-based billing](https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/)).</p>
       </section>
@@ -90,6 +95,7 @@
         <h2 class="text-xl font-semibold text-white sm:text-2xl">A Importância do Pareamento com IA Durante o Ciclo de Desenvolvimento</h2>
         <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">O pareamento com IA representa um avanço significativo na eficiência do desenvolvimento de software. Com a capacidade de analisar grandes volumes de dados e sugerir melhorias, a IA se torna uma parceira estratégica para os engenheiros de software. Por exemplo, ao utilizar técnicas de aprendizado de máquina em plataformas como Laravel, as equipes podem criar soluções mais inteligentes e adaptáveis ([Ship AI with Laravel: RAG with Embeddings and pgvector in Laravel 13](https://laravel-news.com/ship-ai-with-laravel-rag-with-embeddings-and-pgvector-in-laravel-13?utm_medium=feed&amp;utm_source=feedpress.me&amp;utm_campaign=Feed%3A+laravelnews)). Isso não apenas acelera o desenvolvimento, mas também garante que as entregas sejam curtas e com escopo claro, atendendo às demandas do mercado de maneira eficaz. Para quem precisa avaliar isso na prática, conversar com a Codafacil.dev pode trazer benefícios significativos.</p>
       </section>
+      </div>
     </article>
 
     <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">

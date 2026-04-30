@@ -94,38 +94,19 @@ Post de blog estatico com foco em PHP 8.5, migracao segura e software sob medida
   <main class="mx-auto max-w-[900px] px-4 py-8 sm:px-6 sm:py-10">
     <a href="../../../../" class="inline-flex rounded-full border border-white/60 px-4 py-2 text-xs font-semibold uppercase tracking-wide hover:bg-white/10">Voltar para o site principal</a>
 
-    <article class="mt-5 rounded-3xl border border-white/20 bg-white/5 p-5 sm:p-8">
-      <p class="text-xs font-medium uppercase tracking-wide text-white/70">Blog SVD • 19/02/2026</p>
-      <h1 class="mt-2 font-[var(--font-heading)] text-3xl font-semibold leading-tight sm:text-4xl">PHP 8.5 em foco: guia prático para atualizar seu backend</h1>
-
-      <img src="../../../../imagens/posts/php-8-5-em-foco-guia-pratico-para-atualizacao.jpg" alt="PHP 8.5 em foco: guia prático para atualizar seu backend" class="mt-6 w-full rounded-2xl border border-white/20" width="1200" height="630" loading="lazy" />
-
-      <div class="prose prose-invert mt-6 max-w-none prose-headings:font-[var(--font-heading)] prose-headings:text-white prose-a:text-white prose-strong:text-white prose-p:text-white/90 prose-li:text-white/90">
-<p>O PHP 8.5 entrou no ciclo estável em 2025 e segue recebendo atualizações de manutenção. Em 19/02/2026, a pagina oficial de releases destaca a serie 8.5 ativa, o que reforca um ponto prático para times de produto: já vale planejar upgrade com método para colher ganho de performance e reduzir risco operacional.</p>
-
-<h2>O que mudou no PHP 8.5 na prática</h2>
-<ul>
-  <li>O core adicionou o operador pipe (<code>|&gt;</code>), melhorando composição de transformações em codigo.</li>
-  <li>Entraram recursos como <code>#[\NoDiscard]</code> e suporte ampliado a expressoes constantes (casts, closures e callables).</li>
-  <li>Também existem mudancas incompatíveis e recursos depreciados que exigem revisao antes de subir para produção.</li>
-</ul>
-
-<p>Na documentação oficial de migração, o pacote de novidades vem junto com alertas de backward incompatibility e deprecations. Em outras palavras: atualizar para 8.5 traz valor, mas pede checklist técnico objetivo.</p>
-
-<h2>Por que software sob medida com IA acelera essa migração</h2>
-<p>No meio desse processo, o diferencial real esta no <strong>desenvolvimento de software sob medida com IA</strong>. Em vez de upgrade generico, a equipe consegue priorizar risco por módulo, mapear dependências com mais velocidade e testar cenários críticos do negócio com foco no que realmente impacta faturamento e operação.</p>
-
-<h2>Checklist técnico recomendado para o upgrade</h2>
-<ol>
-  <li>Levantar pontos de incompatibilidade no codigo legado (comparações frouxas, casts e configurações removidas/depreciadas).</li>
-  <li>Revisar uso de APIs depreciadas e ajustar para alternativas recomendadas no manual.</li>
-  <li>Executar suite de testes com cobertura de fluxo comercial e financeiro.</li>
-  <li>Publicar em etapas (staging, canario e rollout completo) com monitoramento de erro e latência.</li>
-</ol>
-
-<h2>Como transformar upgrade técnico em ganho operacional</h2>
-<p>Para negócios de venda direta e operações com alto volume transacional, a migração para PHP 8.5 deve ser tratada como iniciativa de eficiência: menos incidentes em deploy, menor retrabalho de manutenção e mais previsibilidade para evoluir produto. O ganho não vem so da versão nova, mas da forma como a atualização e conduzida.</p>
-</div>
+    <article class="mt-5 overflow-hidden rounded-3xl border border-white/15 bg-white/5">
+      <figure class="relative">
+        <img src="../../../../imagens/posts/php-8-5-em-foco-guia-pratico-para-atualizacao.jpg" alt="PHP 8.5 em foco: guia prático para atualizar seu backend" class="block w-full object-cover" style="aspect-ratio:1200/630" width="1200" height="630" loading="eager" decoding="async" />
+        <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/85 via-black/45 to-transparent" aria-hidden="true"></div>
+        <figcaption class="absolute inset-x-0 bottom-0 p-5 sm:p-8 lg:p-10">
+          <span class="block h-1 w-12 rounded-full bg-white" aria-hidden="true"></span>
+          <p class="mt-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-white/85 sm:text-xs">Blog SVD • 19/02/2026</p>
+          <h1 class="mt-2 text-2xl font-semibold leading-tight text-white sm:text-3xl lg:text-4xl">PHP 8.5 em foco: guia prático para atualizar seu backend</h1>
+          <p class="mt-3 max-w-3xl text-sm leading-6 text-white/90 sm:text-base sm:leading-7"></p>
+        </figcaption>
+      </figure>
+      <div class="p-5 sm:p-8">
+      </div>
     </article>
 
     <section class="mt-8 rounded-2xl border border-white/20 bg-white/5 p-5 text-center">

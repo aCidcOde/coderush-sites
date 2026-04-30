@@ -94,35 +94,19 @@ Pagina estatica do post "Descubra o poder do marketing multinível: alavanque se
   <main class="mx-auto max-w-[900px] px-4 py-8 sm:px-6 sm:py-10">
     <a href="../../../../" class="inline-flex rounded-full border border-white/60 px-4 py-2 text-xs font-semibold uppercase tracking-wide hover:bg-white/10">Voltar para o site principal</a>
 
-    <article class="mt-5 rounded-3xl border border-white/20 bg-white/5 p-5 sm:p-8">
-      <p class="text-xs font-medium uppercase tracking-wide text-white/70">Blog SVD • 23/05/2023</p>
-      <h1 class="mt-2 font-[var(--font-heading)] text-3xl font-semibold leading-tight sm:text-4xl">Descubra o poder do marketing multinível: alavanque seus lucros e conquiste o sucesso!</h1>
-
-      <img decoding="async" src="../../../../imagens/posts/descubra-o-poder-do-marketing-multinivel-alavanque-seus-lucros-e-conquiste-o-sucesso.webp" alt="Descubra o poder do marketing multinível: alavanque seus lucros e conquiste o sucesso!" class="mt-6 w-full rounded-2xl border border-white/20" width="1200" height="630" loading="lazy" />
-
-      <div class="prose prose-invert mt-6 max-w-none prose-headings:font-[var(--font-heading)] prose-headings:text-white prose-a:text-white prose-strong:text-white prose-p:text-white/90 prose-li:text-white/90">
-<p>O marketing multinível é um modelo de vendas diretas no qual você ganha comissões não apenas pelas suas próprias vendas, mas também pela rede de revendedores que você constrói. É uma oportunidade de crescimento pessoal e financeiro, onde você se torna um líder e amplia seus ganhos ao atrair e orientar uma equipe de revendedores. Junte-se a nós e transforme sua vida hoje mesmo!</p>
-
-
-
-<p></p>
-
-
-
-<h2 class="wp-block-heading" id="h-conquiste-o-sucesso-com-o-seu-proprio-sistema-de-marketing-multinivel-deixe-nos-cuidar-da-instalacao-e-configuracao">Conquiste o sucesso com o seu próprio sistema de marketing multinível &#8211; deixe-nos cuidar da instalação e configuração!</h2>
-
-
-
-<p>Se você deseja entrar no mundo do marketing multinível e construir sua própria rede de revendedores, estamos aqui para ajudar. Somos especialistas em fornecer serviços de instalação e configuração de sistemas personalizados para que você possa iniciar sua jornada rumo ao sucesso. Nossa equipe experiente cuidará de todos os aspectos técnicos, permitindo que você se concentre no crescimento do seu negócio.</p>
-
-
-
-<p>Com nosso serviço de instalação e configuração, você terá acesso a um sistema completo e eficiente para gerenciar suas vendas, comissões e toda a estrutura da sua rede de revendedores. Não se preocupe com os detalhes complicados &#8211; nós cuidaremos de tudo para você. Aproveite nossa expertise e deixe-nos montar o cenário perfeito para o seu sucesso no marketing multinível.</p>
-
-
-
-<p>Não perca tempo e esforços preciosos tentando descobrir como configurar seu sistema de marketing multinível. Deixe-nos assumir essa tarefa para você, enquanto você se concentra em alcançar seus objetivos. Conte conosco para fornecer uma solução personalizada que atenda às suas necessidades e proporcione uma base sólida para o crescimento do seu negócio. Estamos aqui para ajudá-lo a transformar sua visão em realidade e conquistar o sucesso no marketing multinível!</p>
-</div>
+    <article class="mt-5 overflow-hidden rounded-3xl border border-white/15 bg-white/5">
+      <figure class="relative">
+        <img src="../../../../imagens/posts/crm-automacao-potencializando-vendas-diretas-tecnologia-avancada.jpg" alt="Descubra o poder do marketing multinível: alavanque seus lucros e conquiste o sucesso!" class="block w-full object-cover" style="aspect-ratio:1200/630" width="1200" height="630" loading="eager" decoding="async" />
+        <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/85 via-black/45 to-transparent" aria-hidden="true"></div>
+        <figcaption class="absolute inset-x-0 bottom-0 p-5 sm:p-8 lg:p-10">
+          <span class="block h-1 w-12 rounded-full bg-white" aria-hidden="true"></span>
+          <p class="mt-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-white/85 sm:text-xs">Blog SVD • 23/05/2023</p>
+          <h1 class="mt-2 text-2xl font-semibold leading-tight text-white sm:text-3xl lg:text-4xl">Descubra o poder do marketing multinível: alavanque seus lucros e conquiste o sucesso!</h1>
+          <p class="mt-3 max-w-3xl text-sm leading-6 text-white/90 sm:text-base sm:leading-7"></p>
+        </figcaption>
+      </figure>
+      <div class="p-5 sm:p-8">
+      </div>
     </article>
 
     <section class="mt-8 rounded-2xl border border-white/20 bg-white/5 p-5 text-center">

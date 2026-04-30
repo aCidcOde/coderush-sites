@@ -94,41 +94,19 @@ Post de blog estatico com foco em IA: agentes em escala com MCP stateful e gover
   <main class="mx-auto max-w-[900px] px-4 py-8 sm:px-6 sm:py-10">
     <a href="../../../../" class="inline-flex rounded-full border border-white/60 px-4 py-2 text-xs font-semibold uppercase tracking-wide hover:bg-white/10">Voltar para o site principal</a>
 
-    <article class="mt-5 rounded-3xl border border-white/20 bg-white/5 p-5 sm:p-8">
-      <p class="text-xs font-medium uppercase tracking-wide text-white/70">Blog SVD • 18/03/2026</p>
-      <h1 class="mt-2 font-[var(--font-heading)] text-3xl font-semibold leading-tight sm:text-4xl">Agentes de IA em 2026: MCP stateful e governança para operar em escala</h1>
-
-      <img src="../../../../imagens/posts/agentes-de-ia-em-2026-mcp-stateful-e-governanca-para-operar-em-escala.jpg" alt="Agentes de IA em 2026: MCP stateful e governança para operar em escala" class="mt-6 w-full rounded-2xl border border-white/20" width="1200" height="630" loading="lazy" />
-
-      <div class="prose prose-invert mt-6 max-w-none prose-headings:font-[var(--font-heading)] prose-headings:text-white prose-a:text-white prose-strong:text-white prose-p:text-white/90 prose-li:text-white/90">
-<p>O tema mais quente da semana em IA saiu da fase de promessa e entrou na rotina de operação: agentes com contexto persistente, ferramentas conectadas e governança centralizada. O movimento aparece em lancamentos de plataforma e em eventos globais de ecossistema, mostrando que 2026 e o ano de sair de pilotos isolados.</p>
-
-<h2>O que mudou no ciclo atual de agentes</h2>
-<ul>
-  <li><strong>Contexto stateful:</strong> fluxos longos agora mantem estado entre interações, reduzindo retrabalho e perda de contexto em operações reais.</li>
-  <li><strong>Controles fora do codigo:</strong> políticas de acesso e validação podem ser aplicadas no gateway, com menos acoplamento no app.</li>
-  <li><strong>Infraestrutura de escala:</strong> o mercado reforca a camada de agentes como parte do stack produtivo, não apenas demo de laboratorio.</li>
-</ul>
-
-<p>No meio dessa evolução, o diferencial prático continua sendo <strong>software sob medida com IA</strong>. Framework e plataforma aceleram a base, mas resultado de negócio vem quando regras operacionais, integrações e compliance da sua empresa entram no fluxo de agentes de forma desenhada para sua realidade.</p>
-
-<h2>Como aplicar sem aumentar risco operacional</h2>
-<ol>
-  <li><strong>Escolha 1 fluxo crítico:</strong> comece com um processo de alto volume (suporte, onboarding ou backoffice), com SLA claro.</li>
-  <li><strong>Modele contexto e memória:</strong> defina quais dados o agente pode manter por sessao e por quanto tempo, com trilha de auditoria.</li>
-  <li><strong>Implemente governança por política:</strong> restrinja chamadas de ferramenta por perfil e tipo de tarefa, com validação de entrada e saida.</li>
-  <li><strong>Meça impacto real:</strong> acompanhe custo por tarefa, taxa de automação util, tempo de resolução e taxa de escalonamento humano.</li>
-</ol>
-
-<h2>Impacto para negócio e operação</h2>
-<ul>
-  <li><strong>Produtividade sustentavel:</strong> menos handoff manual e mais continuidade entre etapas de processo.</li>
-  <li><strong>Confiabilidade:</strong> agentes com regras de acesso e observabilidade diminuem risco de acao indevida.</li>
-  <li><strong>Escala com previsibilidade:</strong> crescimento de volume sem explosao de custo operacional.</li>
-</ul>
-
-<p>Para implementar esse desenho com velocidade e controle, vale combinar <a href="../../../../codafacil/">desenvolvimento com IA sob medida</a> com uma frente continua de <a href="../../../../inteligencia-artificial/">IA aplicada ao negócio</a>, conectando tecnologia, processo e metas operacionais.</p>
-</div>
+    <article class="mt-5 overflow-hidden rounded-3xl border border-white/15 bg-white/5">
+      <figure class="relative">
+        <img src="../../../../imagens/posts/agentes-de-ia-em-2026-mcp-stateful-e-governanca-para-operar-em-escala.jpg" alt="Agentes de IA em 2026: MCP stateful e governança para operar em escala" class="block w-full object-cover" style="aspect-ratio:1200/630" width="1200" height="630" loading="eager" decoding="async" />
+        <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/85 via-black/45 to-transparent" aria-hidden="true"></div>
+        <figcaption class="absolute inset-x-0 bottom-0 p-5 sm:p-8 lg:p-10">
+          <span class="block h-1 w-12 rounded-full bg-white" aria-hidden="true"></span>
+          <p class="mt-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-white/85 sm:text-xs">Blog SVD • 18/03/2026</p>
+          <h1 class="mt-2 text-2xl font-semibold leading-tight text-white sm:text-3xl lg:text-4xl">Agentes de IA em 2026: MCP stateful e governança para operar em escala</h1>
+          <p class="mt-3 max-w-3xl text-sm leading-6 text-white/90 sm:text-base sm:leading-7"></p>
+        </figcaption>
+      </figure>
+      <div class="p-5 sm:p-8">
+      </div>
     </article>
 
     <section class="mt-8 rounded-2xl border border-white/20 bg-white/5 p-5 text-center">

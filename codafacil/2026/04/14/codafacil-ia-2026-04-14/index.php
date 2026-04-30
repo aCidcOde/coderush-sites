@@ -67,14 +67,19 @@
       Voltar para o site principal
     </a>
 
-    <article class="mt-5 rounded-3xl border border-white/15 bg-white/5 p-5 sm:p-8">
-      <p class="text-xs font-semibold uppercase tracking-[0.22em] text-white/55">Blog Codafacil.dev • 14/04/2026</p>
-      <h1 class="mt-3 text-3xl font-semibold leading-tight text-white sm:text-4xl">Codafacil.dev: como usar IA de forma prática</h1>
-      <p class="mt-5 text-base leading-7 text-white/80 sm:text-lg">Guia objetivo sobre software sob medida com IA aplicada com foco em resultado operacional.</p>
-
-      <img src="../../../../imagens/posts/codafacil-ia-2026-04-14.jpg" alt="Codafacil.dev: como usar IA de forma prática" class="mt-6 w-full rounded-2xl border border-white/15" width="1200" height="630" loading="lazy" />
-
-      <section class="mt-8">
+    <article class="mt-5 overflow-hidden rounded-3xl border border-white/15 bg-white/5">
+      <figure class="relative">
+        <img src="../../../../imagens/posts/codafacil-ia-2026-04-14.jpg" alt="Codafacil.dev: como usar IA de forma prática" class="block w-full object-cover" style="aspect-ratio:1200/630" width="1200" height="630" loading="eager" decoding="async" />
+        <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/85 via-black/45 to-transparent" aria-hidden="true"></div>
+        <figcaption class="absolute inset-x-0 bottom-0 p-5 sm:p-8 lg:p-10">
+          <span class="block h-1 w-12 rounded-full bg-sky-300" aria-hidden="true"></span>
+          <p class="mt-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-white/85 sm:text-xs">Blog Codafacil.dev • 14/04/2026</p>
+          <h1 class="mt-2 text-2xl font-semibold leading-tight text-white sm:text-3xl lg:text-4xl">Codafacil.dev: como usar IA de forma pratica</h1>
+          <p class="mt-3 max-w-3xl text-sm leading-6 text-white/90 sm:text-base sm:leading-7">Guia objetivo sobre software sob medida com IA aplicada com foco em resultado operacional.</p>
+        </figcaption>
+      </figure>
+      <div class="p-5 sm:p-8">
+<section class="mt-8">
         <h2 class="text-xl font-semibold text-white sm:text-2xl">Contexto de mercado</h2>
         <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">Empresas estão acelerando a adoção de ia para reduzir retrabalho, ganhar previsibilidade e melhorar a experiência do cliente.</p>
       </section>
@@ -90,6 +95,7 @@
         <h2 class="text-xl font-semibold text-white sm:text-2xl">Plano de execução</h2>
         <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">Comece com piloto de 30 dias, defina KPIs, valide com usuários reais e escale somente o que trouxer ganho comprovado.</p>
       </section>
+      </div>
     </article>
 
     <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">

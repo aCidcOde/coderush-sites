@@ -94,41 +94,19 @@ Post de blog estatico com foco em conectores de IA e impacto operacional.
   <main class="mx-auto max-w-[900px] px-4 py-8 sm:px-6 sm:py-10">
     <a href="../../../../" class="inline-flex rounded-full border border-white/60 px-4 py-2 text-xs font-semibold uppercase tracking-wide hover:bg-white/10">Voltar para o site principal</a>
 
-    <article class="mt-5 rounded-3xl border border-white/20 bg-white/5 p-5 sm:p-8">
-      <p class="text-xs font-medium uppercase tracking-wide text-white/70">Blog SVD • 25/02/2026</p>
-      <h1 class="mt-2 font-[var(--font-heading)] text-3xl font-semibold leading-tight sm:text-4xl">IA conectada a ferramentas: o que muda na operação</h1>
-
-      <img src="../../../../imagens/posts/ia-conectada-a-ferramentas-o-que-muda-na-operacao.jpg" alt="IA conectada a ferramentas: o que muda na operação" class="mt-6 w-full rounded-2xl border border-white/20" width="1200" height="630" loading="lazy" />
-
-      <div class="prose prose-invert mt-6 max-w-none prose-headings:font-[var(--font-heading)] prose-headings:text-white prose-a:text-white prose-strong:text-white prose-p:text-white/90 prose-li:text-white/90">
-<p>Nos últimos dias, anuncios sobre conectores e plugins corporativos de IA ganharam forca: em 24/02/2026 a Anthropic apresentou o Cowork com plugins e marketplace privado, e parceiros como a Docusign detalharam integrações para automatizar fluxos de contrato. O sinal e claro: agentes de IA deixam de ser chat e passam a operar dentro das ferramentas do dia a dia.</p>
-
-<h2>O que mudou nos conectores de IA corporativos</h2>
-<ul>
-  <li>Conectores oficiais permitem que agentes acessem dados de documentos, e-mail e ferramentas de produtividade com governança.</li>
-  <li>O modelo de marketplace privado facilita a aprovação de apps e integra a IA ao stack que a empresa já utiliza.</li>
-  <li>Parcerias como a Docusign colocam a IA no fluxo de contratos, acelerando revisao, compliance e ciclo comercial.</li>
-</ul>
-
-<p>No meio desse movimento, o diferencial real esta no <strong>desenvolvimento de software sob medida com IA</strong>. Conectar ferramenta por conectar não garante resultado. O ganho operacional aparece quando a IA respeita regras do negócio, entende o funil comercial e se integra aos sistemas críticos da empresa.</p>
-
-<h2>Onde isso impacta a operação na prática</h2>
-<ul>
-  <li><strong>Comercial:</strong> redução de tempo em propostas, revisoes e follow-up com dados integrados.</li>
-  <li><strong>Operações:</strong> atualização de status em múltiplos sistemas sem retrabalho manual.</li>
-  <li><strong>Compliance:</strong> verificação automatizada de clausulas e auditoria com rastreabilidade.</li>
-</ul>
-
-<h2>Como comecar com baixo risco</h2>
-<ol>
-  <li>Mapear processos com maior custo operacional e definir um piloto curto.</li>
-  <li>Selecionar conectores oficiais e limitar permissões por área e equipe.</li>
-  <li>Definir indicadores de ganho (tempo, retrabalho, taxa de erro) e revisar a cada 2 semanas.</li>
-  <li>Escalar apenas quando a IA estiver alinhada com governança e regras do negócio.</li>
-</ol>
-
-<p>Se sua operação depende de varias ferramentas, vale avaliar uma estratégia de <a href="../../../../codafacil/">desenvolvimento com IA sob medida</a> para integrar dados e reduzir custo operacional com controle total.</p>
-</div>
+    <article class="mt-5 overflow-hidden rounded-3xl border border-white/15 bg-white/5">
+      <figure class="relative">
+        <img src="../../../../imagens/posts/ia-conectada-a-ferramentas-o-que-muda-na-operacao.jpg" alt="IA conectada a ferramentas: o que muda na operação" class="block w-full object-cover" style="aspect-ratio:1200/630" width="1200" height="630" loading="eager" decoding="async" />
+        <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/85 via-black/45 to-transparent" aria-hidden="true"></div>
+        <figcaption class="absolute inset-x-0 bottom-0 p-5 sm:p-8 lg:p-10">
+          <span class="block h-1 w-12 rounded-full bg-white" aria-hidden="true"></span>
+          <p class="mt-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-white/85 sm:text-xs">Blog SVD • 25/02/2026</p>
+          <h1 class="mt-2 text-2xl font-semibold leading-tight text-white sm:text-3xl lg:text-4xl">IA conectada a ferramentas: o que muda na operação</h1>
+          <p class="mt-3 max-w-3xl text-sm leading-6 text-white/90 sm:text-base sm:leading-7"></p>
+        </figcaption>
+      </figure>
+      <div class="p-5 sm:p-8">
+      </div>
     </article>
 
     <section class="mt-8 rounded-2xl border border-white/20 bg-white/5 p-5 text-center">

@@ -94,41 +94,19 @@ Post de blog estatico com foco em PHP 8.5.3, suporte de versoes e plano de atual
   <main class="mx-auto max-w-[900px] px-4 py-8 sm:px-6 sm:py-10">
     <a href="../../../../" class="inline-flex rounded-full border border-white/60 px-4 py-2 text-xs font-semibold uppercase tracking-wide hover:bg-white/10">Voltar para o site principal</a>
 
-    <article class="mt-5 rounded-3xl border border-white/20 bg-white/5 p-5 sm:p-8">
-      <p class="text-xs font-medium uppercase tracking-wide text-white/70">Blog SVD • 04/03/2026</p>
-      <h1 class="mt-2 font-[var(--font-heading)] text-3xl font-semibold leading-tight sm:text-4xl">PHP 8.5.3 em produção: checklist para atualizar com seguranca</h1>
-
-      <img src="../../../../imagens/posts/php-8-5-3-em-producao-checklist-para-atualizar-com-seguranca.jpg" alt="PHP 8.5.3 em produção: checklist para atualizar com seguranca" class="mt-6 w-full rounded-2xl border border-white/20" width="1200" height="630" loading="lazy" />
-
-      <div class="prose prose-invert mt-6 max-w-none prose-headings:font-[var(--font-heading)] prose-headings:text-white prose-a:text-white prose-strong:text-white prose-p:text-white/90 prose-li:text-white/90">
-<p>As publicações oficiais do PHP em 2026 reforcam um ponto importante para equipes de tecnologia: atualizar runtime não e so sobre performance, mas sobre previsibilidade operacional. Com a chegada do PHP 8.5.3 no canal estável, vale revisar como seu backend esta distribuido entre versões e onde existe risco de suporte.</p>
-
-<h2>O que o ciclo oficial do PHP sinaliza para o seu backend</h2>
-<ul>
-  <li>As notas de release no archive oficial mostram correções continuas de bugs e estabilidade no ramo 8.5.</li>
-  <li>A pagina de versões suportadas ajuda a priorizar ambientes que estão perto de fim de suporte.</li>
-  <li>O changelog da serie 8 detalha o tipo de ajuste entregue, dando base para plano de teste direcionado.</li>
-</ul>
-
-<p>No meio desse movimento, o diferencial real continua sendo <strong>desenvolvimento de software sob medida com IA</strong>. Não basta trocar versão no servidor. O ganho aparece quando a atualização entra em um fluxo com observabilidade, automação de testes e regras do negócio no centro da decisão.</p>
-
-<h2>Checklist prático para atualizar com risco baixo</h2>
-<ol>
-  <li><strong>Inventario:</strong> mapear serviços, workers e cron jobs por versão de PHP em uso.</li>
-  <li><strong>Compatibilidade:</strong> rodar testes automatizados e validar bibliotecas críticas (pagamento, ERP, filas).</li>
-  <li><strong>Rollout progressivo:</strong> liberar por etapas e monitorar erro, latência e consumo.</li>
-  <li><strong>Plano de retorno:</strong> manter rollback rápido para o último build estável.</li>
-</ol>
-
-<h2>Impacto direto para negócio e operação</h2>
-<ul>
-  <li><strong>Menos indisponibilidade:</strong> atualização planejada reduz incidentes em horarios de pico.</li>
-  <li><strong>Mais previsibilidade:</strong> ciclo técnico alinhado a metas comerciais e SLAs.</li>
-  <li><strong>Custo sob controle:</strong> menos retrabalho emergencial e menor custo de manutenção corretiva.</li>
-</ul>
-
-<p>Se você quer evoluir stack e processos juntos, vale combinar esse plano com uma frente de <a href="../../../../codafacil/">desenvolvimento com IA sob medida</a> e com iniciativas de <a href="../../../../inteligencia-artificial/">IA aplicada ao negócio</a>, mantendo governança em cada etapa.</p>
-</div>
+    <article class="mt-5 overflow-hidden rounded-3xl border border-white/15 bg-white/5">
+      <figure class="relative">
+        <img src="../../../../imagens/posts/php-8-5-3-em-producao-checklist-para-atualizar-com-seguranca.jpg" alt="PHP 8.5.3 em produção: checklist para atualizar com seguranca" class="block w-full object-cover" style="aspect-ratio:1200/630" width="1200" height="630" loading="eager" decoding="async" />
+        <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/85 via-black/45 to-transparent" aria-hidden="true"></div>
+        <figcaption class="absolute inset-x-0 bottom-0 p-5 sm:p-8 lg:p-10">
+          <span class="block h-1 w-12 rounded-full bg-white" aria-hidden="true"></span>
+          <p class="mt-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-white/85 sm:text-xs">Blog SVD • 04/03/2026</p>
+          <h1 class="mt-2 text-2xl font-semibold leading-tight text-white sm:text-3xl lg:text-4xl">PHP 8.5.3 em produção: checklist para atualizar com seguranca</h1>
+          <p class="mt-3 max-w-3xl text-sm leading-6 text-white/90 sm:text-base sm:leading-7"></p>
+        </figcaption>
+      </figure>
+      <div class="p-5 sm:p-8">
+      </div>
     </article>
 
     <section class="mt-8 rounded-2xl border border-white/20 bg-white/5 p-5 text-center">
