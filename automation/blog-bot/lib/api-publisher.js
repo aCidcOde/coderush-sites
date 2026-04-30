@@ -10,6 +10,23 @@ function ensureDir(dirPath) {
   fs.mkdirSync(dirPath, { recursive: true });
 }
 
+function nowInBrtIso() {
+  const fmt = new Intl.DateTimeFormat("sv-SE", {
+    timeZone: "America/Sao_Paulo",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    hour12: false
+  });
+  const parts = Object.fromEntries(
+    fmt.formatToParts(new Date()).map((p) => [p.type, p.value])
+  );
+  return `${parts.year}-${parts.month}-${parts.day}T${parts.hour}:${parts.minute}:${parts.second}-03:00`;
+}
+
 function buildPayload({ site, contract, aiConfig }) {
   const headline = contract.content?.headline || "";
   const seoTitle = contract.content?.seoTitle
@@ -25,7 +42,7 @@ function buildPayload({ site, contract, aiConfig }) {
     angle: contract.angle || "",
     sources: Array.isArray(contract.sources) ? contract.sources : [],
     coverAlt: contract.coverAlt || "",
-    generatedAt: contract.generatedAt || new Date().toISOString(),
+    generatedAt: contract.generatedAt || nowInBrtIso(),
     generatedBy: "bot",
     model: aiConfig?.textModel || "unknown",
     content

@@ -3,7 +3,7 @@
   "date": "2026-04-30",
   "timezone": "America/Sao_Paulo",
   "focus": "ia",
-  "startedAt": "2026-04-30T12:19:57.778Z",
+  "startedAt": "2026-04-30T12:44:47.874Z",
   "aiProvider": "openrouter",
   "sites": [
     {
@@ -19,18 +19,18 @@
         "skipped": false,
         "errors": []
       },
-      "outputPath": "automation/blog-bot/out/emergency/2026-04-30/otimizar-due-diligence-imobiliaria-certidoes.json",
-      "markdownPath": "automation/blog-bot/out/emergency/2026-04-30/otimizar-due-diligence-imobiliaria-certidoes.md",
+      "outputPath": "automation/blog-bot/out/emergency/2026-04-30/due-diligence-imobiliaria-certidoes-orientadas-seguranca.json",
+      "markdownPath": "automation/blog-bot/out/emergency/2026-04-30/due-diligence-imobiliaria-certidoes-orientadas-seguranca.md",
       "publishResult": {
         "target": "api",
         "apiStatus": 201,
-        "apiUrl": "https://app-hml.emergency.com.br/blog/otimizar-due-diligence-imobiliaria-certidoes",
-        "apiId": 4,
-        "apiPublishedAt": "2026-04-30T12:19:57-03:00",
-        "coverPath": "automation/blog-bot/out/emergency/covers/otimizar-due-diligence-imobiliaria-certidoes.jpg",
-        "coverSize": 104252,
+        "apiUrl": "https://app-hml.emergency.com.br/blog/due-diligence-imobiliaria-certidoes-orientadas-seguranca",
+        "apiId": 5,
+        "apiPublishedAt": "2026-04-30T09:44:47-03:00",
+        "coverPath": "automation/blog-bot/out/emergency/covers/due-diligence-imobiliaria-certidoes-orientadas-seguranca.jpg",
+        "coverSize": 190337,
         "coverSource": "openai/gpt-5-image",
-        "coverAlt": "Relatório executivo com gráficos em azul-marinho e cinza-prata, transmitindo credibilidade e sobriedade jurídica",
+        "coverAlt": "Capa de artigo com fundo azul-marinho e detalhes em azul corporativo e cinza-prata, transmitindo seriedade e credibilidade",
         "coverLeakage": {
           "skipped": true,
           "reason": "tesseract not installed"
@@ -53,6 +53,6 @@
   },
   "fallbackCount": 0,
   "allFallback": false,
-  "finishedAt": "2026-04-30T12:21:20.752Z",
+  "finishedAt": "2026-04-30T12:46:40.094Z",
   "ok": true
 }

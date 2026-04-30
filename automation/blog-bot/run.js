@@ -69,6 +69,23 @@ function nowInSaoPaulo() {
   return formatter.format(new Date());
 }
 
+function nowInBrtIso() {
+  const fmt = new Intl.DateTimeFormat("sv-SE", {
+    timeZone: "America/Sao_Paulo",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    hour12: false
+  });
+  const parts = Object.fromEntries(
+    fmt.formatToParts(new Date()).map((p) => [p.type, p.value])
+  );
+  return `${parts.year}-${parts.month}-${parts.day}T${parts.hour}:${parts.minute}:${parts.second}-03:00`;
+}
+
 function focusForWeek(rotation, dateSeed) {
   const hash = crypto.createHash("sha1").update(dateSeed).digest("hex");
   const index = parseInt(hash.slice(0, 8), 16) % rotation.length;
@@ -131,7 +148,7 @@ function buildPostContract(site, focus, date, angle) {
     description,
     sources: [],
     status: "draft",
-    generatedAt: new Date().toISOString()
+    generatedAt: nowInBrtIso()
   };
 }
 
