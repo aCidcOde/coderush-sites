@@ -3,7 +3,7 @@
   "date": "2026-04-30",
   "timezone": "America/Sao_Paulo",
   "focus": "ia",
-  "startedAt": "2026-04-30T12:44:47.874Z",
+  "startedAt": "2026-04-30T17:03:31.061Z",
   "aiProvider": "openrouter",
   "sites": [
     {
@@ -19,18 +19,18 @@
         "skipped": false,
         "errors": []
       },
-      "outputPath": "automation/blog-bot/out/emergency/2026-04-30/due-diligence-imobiliaria-certidoes-orientadas-seguranca.json",
-      "markdownPath": "automation/blog-bot/out/emergency/2026-04-30/due-diligence-imobiliaria-certidoes-orientadas-seguranca.md",
+      "outputPath": "automation/blog-bot/out/emergency/2026-04-30/due-diligence-imobiliaria-certidoes-riscos-envolvidos.json",
+      "markdownPath": "automation/blog-bot/out/emergency/2026-04-30/due-diligence-imobiliaria-certidoes-riscos-envolvidos.md",
       "publishResult": {
         "target": "api",
         "apiStatus": 201,
-        "apiUrl": "https://app-hml.emergency.com.br/blog/due-diligence-imobiliaria-certidoes-orientadas-seguranca",
-        "apiId": 5,
-        "apiPublishedAt": "2026-04-30T09:44:47-03:00",
-        "coverPath": "automation/blog-bot/out/emergency/covers/due-diligence-imobiliaria-certidoes-orientadas-seguranca.jpg",
-        "coverSize": 190337,
+        "apiUrl": "https://app-hml.emergency.com.br/blog/due-diligence-imobiliaria-certidoes-riscos-envolvidos",
+        "apiId": 6,
+        "apiPublishedAt": "2026-04-30T14:03:31-03:00",
+        "coverPath": "automation/blog-bot/out/emergency/covers/due-diligence-imobiliaria-certidoes-riscos-envolvidos.jpg",
+        "coverSize": 270353,
         "coverSource": "openai/gpt-5-image",
-        "coverAlt": "Capa de artigo com fundo azul-marinho e detalhes em azul corporativo e cinza-prata, transmitindo seriedade e credibilidade",
+        "coverAlt": "Capa de artigo com fundo deep-navy, detalhes em dourado quente e leve brilho off-white, transmitindo sofisticação e credibilidade",
         "coverLeakage": {
           "skipped": true,
           "reason": "tesseract not installed"
@@ -53,6 +53,6 @@
   },
   "fallbackCount": 0,
   "allFallback": false,
-  "finishedAt": "2026-04-30T12:46:40.094Z",
+  "finishedAt": "2026-04-30T17:05:16.031Z",
   "ok": true
 }

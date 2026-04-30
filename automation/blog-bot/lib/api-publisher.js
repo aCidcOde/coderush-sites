@@ -40,7 +40,7 @@ function buildPayload({ site, contract, aiConfig }) {
     focus: contract.focus || "",
     theme: contract.theme || "",
     angle: contract.angle || "",
-    sources: [],
+    sources: Array.isArray(contract.sources) ? contract.sources : [],
     coverAlt: contract.coverAlt || "",
     generatedAt: contract.generatedAt || nowInBrtIso(),
     generatedBy: "bot",
