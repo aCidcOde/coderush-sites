@@ -117,6 +117,13 @@
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/04/30/comprar-construir-software-escolher/"><img src="../../../../imagens/posts/comprar-construir-software-escolher.jpg" alt="Comprar ou construir software: o que escolher?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/04/30/comprar-construir-software-escolher/" class="hover:underline">Comprar ou construir software: o que escolher?</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda as nuances da decisão entre comprar e construir software sob medida, focando na governança e na integração.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="../../../../2026/04/19/coderush-php-2026-04-19/"><img src="../../../../imagens/posts/coderush-php-2026-04-19.jpg" alt="Governança de Tecnologia: O Caminho para o Crescimento Sustentável" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/04/19/coderush-php-2026-04-19/" class="hover:underline">Governança de Tecnologia: O Caminho para o Crescimento Sustentável</a></h3>

@@ -1,0 +1,87 @@
+{
+  "date": "2026-04-30",
+  "siteId": "coderush",
+  "postType": "institucional-tecnologia",
+  "focus": "ia",
+  "theme": "decisao entre comprar e construir software",
+  "angle": "governanca",
+  "slug": "comprar-construir-software-escolher",
+  "title": "CodeRush: IA aplicado a governanca",
+  "description": "Atualização semanal de ia para CodeRush, com foco em decisao entre comprar e construir software.",
+  "sources": [
+    "https://martinfowler.com/fragments/2026-04-29.html",
+    "https://martinfowler.com/fragments/2026-04-21.html",
+    "https://martinfowler.com/fragments/2026-04-09.html",
+    "https://martinfowler.com/fragments/2026-04-14.html",
+    "https://aws.amazon.com/blogs/architecture/modernizing-kyc-with-aws-serverless-solutions-and-agentic-ai-for-financial-services/"
+  ],
+  "status": "draft",
+  "generatedAt": "2026-04-30T03:15:08.774Z",
+  "content": {
+    "eyebrow": "Decisões em Tecnologia",
+    "headline": "Comprar ou construir software: o que escolher?",
+    "summary": "Entenda as nuances da decisão entre comprar e construir software sob medida, focando na governança e na integração.",
+    "answerBox": {
+      "question": "Qual a melhor opção: comprar ou construir software?",
+      "answer": "A decisão entre comprar ou construir software depende da governança, do alinhamento com regras de negócio e da integração com sistemas legados. Cada alternativa tem seus prós e contras, e a escolha certa varia conforme o contexto da empresa."
+    },
+    "tldr": [
+      "Decisão entre comprar ou construir software é crucial.",
+      "Governança e integração são fatores chave.",
+      "IA pode influenciar na construção de soluções."
+    ],
+    "sections": [
+      {
+        "type": "prose",
+        "title": "Entendendo a Decisão",
+        "body": "A escolha entre comprar ou construir software sob medida pode parecer simples, mas é repleta de nuances. A integração com sistemas legados e a aderência às regras de negócio existentes são pontos críticos. Além disso, a governança de tecnologia deve ser considerada para evitar improvisos e garantir que a solução atenda às necessidades da empresa."
+      },
+      {
+        "type": "list",
+        "title": "Quando Comprar Software",
+        "items": [
+          "Necessidade de rapidez na implementação.",
+          "Soluções já testadas e validadas no mercado.",
+          "Menor investimento inicial com suporte incluído.",
+          "Menos riscos de manutenção e atualização."
+        ]
+      },
+      {
+        "type": "callout",
+        "body": "Já estruturamos essa decisão em diversas empresas. Vale a pena conversar sobre o seu cenário e entender qual caminho é mais adequado.",
+        "ctaLabel": "Fale com a CodeRush",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Quando Construir Software",
+        "body": "Construir software sob medida pode ser a melhor escolha quando a empresa possui necessidades específicas que soluções prontas não atendem. Além disso, a personalização e a flexibilidade no desenvolvimento permitem uma melhor adaptação às mudanças do mercado. No entanto, isso requer um planejamento detalhado e uma governança de tecnologia robusta. A integração de IA pode ser um diferencial para automações e otimizações que sistemas prontos não oferecem."
+      },
+      {
+        "type": "cta-inline",
+        "body": "Vamos discutir o que faz mais sentido para a sua empresa.",
+        "ctaLabel": "Fale com a CodeRush",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Os Trade-offs a Considerar",
+        "body": "É fundamental analisar os trade-offs entre as opções. Comprar pode parecer mais simples, mas pode não atender integralmente às suas necessidades. Construir oferece personalização, mas pode aumentar custos e tempo de desenvolvimento. Outro ponto importante é a integração com sistemas legados, que pode ser desafiadora e deve ser planejada cuidadosamente para evitar grandes interrupções."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Qual é a principal vantagem de comprar software?",
+        "a": "A principal vantagem de comprar software é a rapidez na implementação e o suporte já disponível, o que reduz riscos iniciais."
+      },
+      {
+        "q": "Quando é melhor optar por software sob medida?",
+        "a": "Optar por software sob medida é ideal quando as necessidades da empresa são únicas e não atendidas por soluções prontas."
+      },
+      {
+        "q": "Como a IA pode ser integrada em sistemas legados?",
+        "a": "Integrar IA em sistemas legados requer planejamento cuidadoso para garantir compatibilidade e maximizar o valor das soluções existentes."
+      }
+    ]
+  }
+}

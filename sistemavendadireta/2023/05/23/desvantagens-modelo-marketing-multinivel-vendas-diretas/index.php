@@ -169,11 +169,11 @@ Pagina estatica do post "Marketing multinível também apresenta algumas desvant
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://coderush.com.br/2026/04/28/decidindo-comprar-construir-software-papel-arquitetura/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/decidindo-comprar-construir-software-papel-arquitetura.jpg" alt="Decidindo entre Comprar ou Construir Software: O Papel da Arquitetura" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://coderush.com.br/2026/04/30/comprar-construir-software-escolher/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/comprar-construir-software-escolher.jpg" alt="Comprar ou construir software: o que escolher?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">CodeRush</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/04/28/decidindo-comprar-construir-software-papel-arquitetura/" rel="noopener" target="_blank" class="hover:underline">Decidindo entre Comprar ou Construir Software: O Papel da Arquitetura</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Neste artigo, discutiremos a decisão crítica entre comprar ou construir software, focando na importância da arquitetura de software e na...</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/04/30/comprar-construir-software-escolher/" rel="noopener" target="_blank" class="hover:underline">Comprar ou construir software: o que escolher?</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda as nuances da decisão entre comprar e construir software sob medida, focando na governança e na integração.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
