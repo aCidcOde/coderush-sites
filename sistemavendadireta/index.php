@@ -753,22 +753,13 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-HOME-CARDS:START -->
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/04/28/crm-automacao-potencializando-vendas-diretas-tecnologia-avancada/" data-blog-image="imagens/posts/crm-automacao-potencializando-vendas-diretas-tecnologia-avancada.jpg" data-blog-slug="crm-automacao-potencializando-vendas-diretas-tecnologia-avancada" data-blog-date="2026-04-28">
-  <a href="2026/04/28/crm-automacao-potencializando-vendas-diretas-tecnologia-avancada/">
-    <img src="imagens/posts/crm-automacao-potencializando-vendas-diretas-tecnologia-avancada.jpg" alt="CRM e Automação: Potencializando Vendas Diretas com Tecnologia Avançada" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/04/30/crm-automacao-marketing-multinivel/" data-blog-image="imagens/posts/crm-automacao-marketing-multinivel.jpg" data-blog-slug="crm-automacao-marketing-multinivel" data-blog-date="2026-04-30">
+  <a href="2026/04/30/crm-automacao-marketing-multinivel/">
+    <img src="imagens/posts/crm-automacao-marketing-multinivel.jpg" alt="CRM e Automação para Marketing Multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
   </a>
   <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="2026/04/28/crm-automacao-potencializando-vendas-diretas-tecnologia-avancada/" class="hover:underline">CRM e Automação: Potencializando Vendas Diretas com Tecnologia Avançada</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Neste artigo, exploramos como um sistema de venda direta e as ferramentas de CRM podem transformar a operação comercial em marketing multinível, utilizando IA para otimizar proc...</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/04/19/sistemavendadireta-php-2026-04-19/" data-blog-image="imagens/posts/sistemavendadireta-php-2026-04-19.jpg" data-blog-slug="sistemavendadireta-php-2026-04-19" data-blog-date="2026-04-19">
-  <a href="2026/04/19/sistemavendadireta-php-2026-04-19/">
-    <img src="imagens/posts/sistemavendadireta-php-2026-04-19.jpg" alt="Governança Comercial: Potencializando Vendas Diretas com Dados e IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-  </a>
-  <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="2026/04/19/sistemavendadireta-php-2026-04-19/" class="hover:underline">Governança Comercial: Potencializando Vendas Diretas com Dados e IA</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Neste artigo, discutiremos como a governança comercial pode ser aprimorada através do uso de dados e inteligência artificial, focando em soluções práticas para gestores e donos...</p>
+    <h2 class="text-base font-semibold leading-snug"><a href="2026/04/30/crm-automacao-marketing-multinivel/" class="hover:underline">CRM e Automação para Marketing Multinível</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a automação e IA podem otimizar o marketing multinível na sua empresa.</p>
   </div>
 </article>
 <!-- BLOG-HOME-CARDS:END -->

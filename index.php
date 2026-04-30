@@ -700,24 +700,6 @@ $seoLdGraph = [
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda as nuances da decisão entre comprar e construir software sob medida, focando na governança e na integração.</p>
   </div>
 </article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/04/28/decidindo-comprar-construir-software-papel-arquitetura/" data-blog-image="imagens/posts/decidindo-comprar-construir-software-papel-arquitetura.jpg" data-blog-slug="decidindo-comprar-construir-software-papel-arquitetura" data-blog-date="2026-04-28">
-  <a href="2026/04/28/decidindo-comprar-construir-software-papel-arquitetura/">
-    <img src="imagens/posts/decidindo-comprar-construir-software-papel-arquitetura.jpg" alt="Decidindo entre Comprar ou Construir Software: O Papel da Arquitetura" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-  </a>
-  <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="2026/04/28/decidindo-comprar-construir-software-papel-arquitetura/" class="hover:underline">Decidindo entre Comprar ou Construir Software: O Papel da Arquitetura</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Neste artigo, discutiremos a decisão crítica entre comprar ou construir software, focando na importância da arquitetura de software e na integração com sistemas legados, com um...</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/04/19/coderush-php-2026-04-19/" data-blog-image="imagens/posts/coderush-php-2026-04-19.jpg" data-blog-slug="coderush-php-2026-04-19" data-blog-date="2026-04-19">
-  <a href="2026/04/19/coderush-php-2026-04-19/">
-    <img src="imagens/posts/coderush-php-2026-04-19.jpg" alt="Governança de Tecnologia: O Caminho para o Crescimento Sustentável" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-  </a>
-  <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="2026/04/19/coderush-php-2026-04-19/" class="hover:underline">Governança de Tecnologia: O Caminho para o Crescimento Sustentável</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Neste artigo, abordaremos a importância da governança de tecnologia no crescimento das operações empresariais, com um foco especial em PHP e como a inteligência artificial pode...</p>
-  </div>
-</article>
 <!-- BLOG-HOME-CARDS:END -->
       </div>
     </div>

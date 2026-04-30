@@ -226,27 +226,27 @@
   <p class="mt-2 text-sm text-white/70">Conteúdo recente dos outros sites do ecossistema.</p>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://codafacil.dev/2026/04/28/integracoes-automacao-operacoes-criticas-papel-ia-desenvolvimento/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/integracoes-automacao-operacoes-criticas-papel-ia-desenvolvimento.jpg" alt="Integrações e Automação em Operações Críticas: O Papel da IA no Desenvolvimento de Software Sob Medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://codafacil.dev/2026/04/30/integracoes-automacao-operacoes-criticas-ia/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/integracoes-automacao-operacoes-criticas-ia.jpg" alt="Integrações e automação para operações críticas com IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/04/28/integracoes-automacao-operacoes-criticas-papel-ia-desenvolvimento/" rel="noopener" target="_blank" class="hover:underline">Integrações e Automação em Operações Críticas: O Papel da IA no Desenvolvimento de Software Sob Medida</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Neste artigo, exploramos como a aplicação de IA nas integrações e automações pode acelerar o desenvolvimento de software sob medida, mant...</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/04/30/integracoes-automacao-operacoes-criticas-ia/" rel="noopener" target="_blank" class="hover:underline">Integrações e automação para operações críticas com IA</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Como acelerar o desenvolvimento de software sob medida sem perder qualidade.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://fluxointeligenteia.com.br/2026/04/19/fluxointeligenteia-php-2026-04-19/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/fluxointeligenteia-php-2026-04-19.jpg" alt="Automação de Processos com LLMs: Custo, SLA e Fallback Humano em Operações Reais" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">FluxoInteligente IA</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/04/19/fluxointeligenteia-php-2026-04-19/" rel="noopener" target="_blank" class="hover:underline">Automação de Processos com LLMs: Custo, SLA e Fallback Humano em Operações Reais</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como a automação de processos utilizando LLMs (Modelos de Linguagem de Grande Escala) pode transformar a eficiência operacional...</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://sistemavendadireta.com.br/2026/04/19/sistemavendadireta-php-2026-04-19/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/sistemavendadireta-php-2026-04-19.jpg" alt="Governança Comercial: Potencializando Vendas Diretas com Dados e IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://sistemavendadireta.com.br/2026/04/30/crm-automacao-marketing-multinivel/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/crm-automacao-marketing-multinivel.jpg" alt="CRM e Automação para Marketing Multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Sistema Venda Direta</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/04/19/sistemavendadireta-php-2026-04-19/" rel="noopener" target="_blank" class="hover:underline">Governança Comercial: Potencializando Vendas Diretas com Dados e IA</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Neste artigo, discutiremos como a governança comercial pode ser aprimorada através do uso de dados e inteligência artificial, focando em...</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/04/30/crm-automacao-marketing-multinivel/" rel="noopener" target="_blank" class="hover:underline">CRM e Automação para Marketing Multinível</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a automação e IA podem otimizar o marketing multinível na sua empresa.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="https://fluxointeligenteia.com.br/2026/04/30/automacao-processos-llms-n8n-atendimento/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/automacao-processos-llms-n8n-atendimento.jpg" alt="Automação de Processos com LLMs e n8n no Atendimento" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">FluxoInteligente IA</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/04/30/automacao-processos-llms-n8n-atendimento/" rel="noopener" target="_blank" class="hover:underline">Automação de Processos com LLMs e n8n no Atendimento</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como agentes inteligentes otimizam o atendimento e reduzem custos.</p>
   </div>
 </article>
   </div>

@@ -1,9 +1,12 @@
-name: Blog Automation Weekly
+name: Blog Automation
 
 on:
   schedule:
-    # Segunda 07:00 America/Sao_Paulo (UTC-3 -> 10:00 UTC)
-    - cron: "0 10 * * 1"
+    # A cada 3 dias as 10:00 UTC (07:00 America/Sao_Paulo).
+    # GitHub Actions nao suporta intervalo de N dias direto; usamos dias do mes
+    # multiplos de 3 (3,6,9,...,30). Ciclo se repete a cada 3 dias com pulo
+    # ocasional no virar de mes — aceitavel para cadencia editorial.
+    - cron: "0 10 3,6,9,12,15,18,21,24,27,30 * *"
   workflow_dispatch:
 
 permissions:
@@ -31,7 +34,7 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y --no-install-recommends python3-pil tesseract-ocr
 
-      - name: Run weekly blog bot
+      - name: Run blog bot
         env:
           API_OPENROUTER: ${{ secrets.API_OPENROUTER }}
           BLOG_BOT_OPENROUTER_MODEL: openai/gpt-4o-mini
@@ -43,12 +46,12 @@ jobs:
         id: create_pr
         uses: peter-evans/create-pull-request@v6
         with:
-          commit-message: "chore(blog): publicar conteudo semanal multi-site"
-          branch: "automation/blog-weekly-${{ github.run_id }}"
-          title: "Automacao semanal de posts: publicacao multi-site"
+          commit-message: "chore(blog): publicar conteudo multi-site"
+          branch: "automation/blog-${{ github.run_id }}"
+          title: "Automacao de posts: publicacao multi-site"
           body: |
             ## Resumo
-            - Executa o robô semanal para `coderush`, `codafacil`, `fluxointeligenteia` e `sistemavendadireta`
+            - Executa o robô a cada 3 dias para `coderush`, `codafacil`, `fluxointeligenteia` e `sistemavendadireta`
             - Publica posts, atualiza destaques nas homes e mantém `/blog/`, sitemap e robots por site
             - Registra artefatos e relatório em `automation/blog-bot/`
 
