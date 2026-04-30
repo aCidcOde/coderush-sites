@@ -50,8 +50,9 @@ function buildPromptInstruction({ site, contract, coverArt }) {
 
   const motifs = joinList(coverArt.visualMotifs, "uma metafora visual unica");
   const avoidList = joinList(coverArt.avoid, "texto, logos, telas, rostos em close");
+  const character = coverArt.characterReference;
 
-  return [
+  const lines = [
     "Voce e diretor de arte de uma revista de tecnologia premium (referencia: capa Wired ou MIT Technology Review).",
     "Sua tarefa: escrever UM unico paragrafo (4-6 frases, em ingles, denso e visual) descrevendo a capa 16:9 (1200x630px) de um post de blog corporativo.",
     "",
@@ -68,12 +69,27 @@ function buildPromptInstruction({ site, contract, coverArt }) {
     `- Iluminacao: ${coverArt.lighting}`,
     `- Mood: ${coverArt.mood}`,
     `- Motivos visuais permitidos: ${motifs}`,
-    `- EVITAR sob qualquer circunstancia: ${avoidList}`,
+    `- EVITAR sob qualquer circunstancia: ${avoidList}`
+  ];
+
+  if (character) {
+    lines.push(
+      "",
+      `Personagem mascote disponivel: ${character.name}`,
+      `- Descricao fisica (rendering reference, descreva-o explicitamente se entrar): ${character.description}`,
+      `- Regra de uso: ${character.usageRule}`,
+      "- Decida com base no angulo do post se ele entra ou nao. Se entrar, descreva-o explicitamente no paragrafo. Se nao entrar, NAO mencione o personagem nem deixe traco humanoide na cena."
+    );
+  }
+
+  lines.push(
     "",
     "REGRAS ABSOLUTAS:",
     "- A imagem NUNCA pode conter texto, palavras, letras, numeros, logotipos ou simbolos legiveis.",
     "- SEM mockup de tela cheia de UI, SEM watermark.",
-    "- SEM rosto humano em close (silhuetas distantes ou maos cortadas sao OK se servir ao conceito).",
+    character
+      ? "- ZERO pessoas reais ou personagens humanos fotorrealisticos (sem businessman, sem advogado, sem persona em terno, sem silhuetas humanas, sem maos humanas). A unica figura permitida e o mascote estilizado descrito acima, e SOMENTE quando a regra de uso indicar. Em qualquer outro caso, use composicao puramente abstrata."
+      : "- ZERO pessoas reais ou personagens humanos fotorrealisticos. Sem silhuetas, sem businessman, sem maos humanas. Composicao puramente abstrata.",
     "- Uma unica metafora visual forte e clara, com area de respiro generosa.",
     "- Composicao 16:9, com ponto focal claro e profundidade.",
     "",
@@ -86,7 +102,9 @@ function buildPromptInstruction({ site, contract, coverArt }) {
     "6. Estilo de render (cinematografico fotorrealista, ilustracao editorial 3D, painting digital, etc.)",
     "",
     "Responda APENAS em JSON valido: { \"prompt\": \"<paragrafo unico em ingles>\" }"
-  ].join("\n");
+  );
+
+  return lines.join("\n");
 }
 
 function buildAltTextInstruction({ site, contract, coverArt }) {

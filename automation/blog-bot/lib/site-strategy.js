@@ -210,23 +210,37 @@ const SITE_PROFILES = {
       "advogados, controllers, compradores corporativos e analistas de compliance que precisam fechar diligencias documentais sem retrabalho",
     personaShort: "areas juridica, compliance e M&A",
     coverArt: {
-      paletteHex: ["#0c1a33", "#0e3a8a", "#cbd5e1"],
-      paletteDescription: "azul-marinho institucional (#0c1a33) com azul corporativo (#0e3a8a) e cinza-prata sobrio (#cbd5e1)",
-      lighting: "iluminacao limpa e estavel, sem drama, leve gradient editorial, profundidade discreta",
-      mood: "credibilidade institucional, sobriedade juridica, sensacao de relatorio executivo bem formatado",
+      paletteHex: ["#0d1118", "#0f172a", "#d89b1a", "#f3c65a"],
+      paletteDescription:
+        "fundo deep-navy (#0d1118 a #0f172a) com acento dourado quente (#d89b1a, gold primary, em destaque editorial) e leve realce em gold-soft (#f3c65a). Off-white (#e2e8f0) so como toque sutil em luz/brilho",
+      lighting:
+        "iluminacao editorial premium estilo capa de revista de negocios, rim light dourado discreto, leve gradient diagonal do navy escuro pro navy meio, profundidade com atmospheric fog suave",
+      mood:
+        "credibilidade institucional + tech-forward, autoridade juridica com acento dourado de sofisticacao, sensacao de dossie executivo iluminado",
       visualMotifs: [
-        "abstracoes geometricas que sugerem documentos, dossies ou camadas analiticas",
-        "linhas finas conectando blocos como metafora de cruzamento de fontes",
-        "papel, pasta ou selo reduzidos a forma e cor sem texto legivel",
-        "sensacao de auditoria sem clichê de balanca de justica"
+        "abstracoes geometricas de documentos, dossies sobrepostos ou camadas analiticas em isometria limpa",
+        "linhas finas dourado-quente conectando blocos como metafora de cruzamento de fontes",
+        "selos, lacres ou marcas d agua reduzidos a forma e cor (sem texto legivel)",
+        "particulas douradas dispersas sugerindo dado verificado",
+        "Gordon (mascote IA) aparece em cerca de 40% das capas, sempre como ator analitico (revisando dossie, segurando tablet, observando matriz de dados), nunca como hero shot"
       ],
+      characterReference: {
+        name: "Gordon",
+        description:
+          "humanoid robot character with chrome silver-blue body, slim athletic build, friendly youthful face, signature transparent translucent skull revealing a glowing soft-blue brain inside, fine gold trim lines and panels along chest/shoulders/arms, subtle round gold emblem on chest plate, calm confident expression",
+        usageRule:
+          "Only feature Gordon when the post angle involves a concrete analytical activity (revisao de matricula, due diligence imobiliaria, auditoria, checklist, onboarding de fornecedor). Place him at 1/3 of the frame, in mid-shot or upper-body, interacting with abstract documents/dossiers/holographic data, never centered, never staring at camera, never with text-bearing tablet. For abstract/conceptual posts (regulacao, mercado, panorama, tendencias), omit him entirely and use pure abstract metaphor."
+      },
       avoid: [
-        "balança da justica",
+        "balanca da justica",
         "martelo de juiz",
         "lupa sobre papel",
         "globo terrestre",
-        "graficos de bolsa",
-        "pessoas em terno apertando mao"
+        "graficos de bolsa com numeros",
+        "pessoas em terno apertando mao",
+        "Gordon centralizado fazendo hero pose",
+        "Gordon segurando tablet com texto visivel",
+        "qualquer rosto humano fotorrealistico em close"
       ]
     },
     offering:
