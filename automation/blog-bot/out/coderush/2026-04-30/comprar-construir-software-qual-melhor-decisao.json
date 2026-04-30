@@ -1,0 +1,88 @@
+{
+  "date": "2026-04-30",
+  "siteId": "coderush",
+  "postType": "institucional-tecnologia",
+  "focus": "ia",
+  "theme": "decisao entre comprar e construir software",
+  "angle": "governanca",
+  "slug": "comprar-construir-software-qual-melhor-decisao",
+  "title": "CodeRush: IA aplicado a governanca",
+  "description": "Atualização semanal de ia para CodeRush, com foco em decisao entre comprar e construir software.",
+  "sources": [
+    "https://martinfowler.com/fragments/2026-04-29.html",
+    "https://martinfowler.com/fragments/2026-04-21.html",
+    "https://martinfowler.com/fragments/2026-04-09.html",
+    "https://martinfowler.com/fragments/2026-04-14.html",
+    "https://aws.amazon.com/blogs/architecture/modernizing-kyc-with-aws-serverless-solutions-and-agentic-ai-for-financial-services/"
+  ],
+  "status": "draft",
+  "generatedAt": "2026-04-30T10:35:26.458Z",
+  "content": {
+    "eyebrow": "Consultoria técnica",
+    "headline": "Comprar ou construir software: qual a melhor decisão?",
+    "summary": "Entenda os trade-offs entre comprar e construir software sob medida com foco em governança.",
+    "answerBox": {
+      "question": "É melhor comprar ou construir software sob medida?",
+      "answer": "A escolha entre comprar ou construir software depende de fatores como governança, integração com sistemas legados e requisitos específicos de negócios. Avaliar essas necessidades é essencial para evitar improvisos e garantir resultados eficazes."
+    },
+    "tldr": [
+      "Defina claramente suas necessidades antes da decisão",
+      "Considere a governança e integração de sistemas legados",
+      "A consultoria pode ajudar em decisões estratégicas"
+    ],
+    "sections": [
+      {
+        "type": "prose",
+        "title": "O dilema da compra versus construção",
+        "body": "Quando se trata de software, a decisão entre comprar uma solução pronta ou construir uma sob medida é crítica. Comprar pode ser mais rápido e menos custoso inicialmente, mas pode não atender a todas as necessidades específicas da sua empresa. Construir permite personalização, mas requer tempo e recursos. A escolha deve considerar não apenas o custo, mas também a governança e a integração com sistemas legados."
+      },
+      {
+        "type": "list",
+        "title": "Critérios para decidir entre comprar ou construir",
+        "items": [
+          "Necessidades específicas da empresa",
+          "Orçamento disponível para desenvolvimento",
+          "Prazo para implementação",
+          "Capacidade de suporte técnico interno",
+          "Integração com sistemas existentes"
+        ]
+      },
+      {
+        "type": "callout",
+        "body": "Já estruturamos isso em vários clientes. Entender seu cenário é fundamental. Vale uma conversa para esclarecer suas dúvidas.",
+        "ctaLabel": "Fale com a CodeRush",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "A importância da governança",
+        "body": "Governança é um aspecto muitas vezes negligenciado na decisão de compra ou construção. Um software sem a governança adequada pode levar a problemas de compliance e segurança. Ao optar por construir, você pode integrar práticas de governança desde o início, garantindo que o software atenda a todas as normas e políticas da empresa. A consultoria pode orientar nesse processo, ajudando a criar uma arquitetura de software robusta."
+      },
+      {
+        "type": "cta-inline",
+        "body": "Considerar a governança desde o início pode evitar problemas futuros.",
+        "ctaLabel": "Fale com a CodeRush",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Cuidado com armadilhas comuns",
+        "body": "Ao decidir entre comprar ou construir, é fácil cair em armadilhas. Ignorar a necessidade de integração com sistemas legados pode gerar um big-bang problemático. Também, subestimar o tempo de desenvolvimento e os custos de manutenção é um erro comum. Avaliar as implicações a longo prazo é crucial para evitar surpresas desagradáveis."
+      }
+    ],
+    "faq": [
+      {
+        "q": "O que considerar na governança de software?",
+        "a": "Considerar políticas de compliance, segurança de dados e processos de aprovação é fundamental para uma governança eficaz."
+      },
+      {
+        "q": "Como integrar IA em sistemas legados?",
+        "a": "Integrar IA em sistemas legados requer uma análise cuidadosa da arquitetura existente e um plano de transição para minimizar interrupções."
+      },
+      {
+        "q": "Quais são os sinais de que é hora de modernizar sistemas?",
+        "a": "Baixa performance, dificuldade em integrar novas tecnologias e falta de suporte são sinais claros de que a modernização é necessária."
+      }
+    ]
+  }
+}

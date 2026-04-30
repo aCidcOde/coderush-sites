@@ -199,7 +199,22 @@
     </section>
 
     <!-- BLOG-LEIA-TAMBEM START -->
-    <!-- BLOG-LEIA-TAMBEM END -->
+<section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
+  <div class="flex items-end justify-between gap-4">
+    <h2 class="text-2xl font-semibold text-white">Leia também sobre vendas diretas</h2>
+    <a href="../../../../blog/" class="text-sm font-semibold text-white/85 hover:text-white">Ver todos os artigos do SVD</a>
+  </div>
+  <div class="mt-5 grid gap-4 md:grid-cols-3">
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/04/30/crm-automacao-potencializando-marketing-multinivel/"><img src="../../../../imagens/posts/crm-automacao-potencializando-marketing-multinivel.jpg" alt="CRM e Automação: Potencializando o Marketing Multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/04/30/crm-automacao-potencializando-marketing-multinivel/" class="hover:underline">CRM e Automação: Potencializando o Marketing Multinível</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como o uso de CRM e automação pode otimizar processos no marketing multinível e melhorar resultados comerciais.</p>
+  </div>
+</article>
+  </div>
+</section>
+<!-- BLOG-LEIA-TAMBEM END -->
     <!-- BLOG-CROSS-SITE START -->
 <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
   <div class="flex items-end justify-between gap-4">
@@ -209,11 +224,11 @@
   <p class="mt-2 text-sm text-white/70">Conteúdo recente dos outros sites do ecossistema.</p>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://codafacil.dev/2026/04/30/integracoes-automacao-operacoes-criticas-ia/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/integracoes-automacao-operacoes-criticas-ia.jpg" alt="Integrações e automação para operações críticas com IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://codafacil.dev/2026/04/30/integracoes-automacao-operacoes-criticas-ia/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/integracoes-automacao-operacoes-criticas-ia.jpg" alt="Integrações e automação em operações críticas com IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/04/30/integracoes-automacao-operacoes-criticas-ia/" rel="noopener" target="_blank" class="hover:underline">Integrações e automação para operações críticas com IA</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Como acelerar o desenvolvimento de software sob medida sem perder qualidade.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/04/30/integracoes-automacao-operacoes-criticas-ia/" rel="noopener" target="_blank" class="hover:underline">Integrações e automação em operações críticas com IA</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como integrar IA para acelerar o desenvolvimento de software sob medida sem perder qualidade.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
@@ -221,15 +236,15 @@
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">FluxoInteligente IA</p>
     <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/04/30/automacao-processos-llms-n8n-atendimento/" rel="noopener" target="_blank" class="hover:underline">Automação de Processos com LLMs e n8n no Atendimento</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como agentes inteligentes otimizam o atendimento e reduzem custos.</p>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como agentes inteligentes e automação podem otimizar atendimento e reduzir custos.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://coderush.com.br/2026/04/30/comprar-construir-software-escolher/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/comprar-construir-software-escolher.jpg" alt="Comprar ou construir software: o que escolher?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://coderush.com.br/2026/04/30/comprar-construir-software-qual-melhor-decisao/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/comprar-construir-software-qual-melhor-decisao.jpg" alt="Comprar ou construir software: qual a melhor decisão?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">CodeRush</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/04/30/comprar-construir-software-escolher/" rel="noopener" target="_blank" class="hover:underline">Comprar ou construir software: o que escolher?</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda as nuances da decisão entre comprar e construir software sob medida, focando na governança e na integração.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/04/30/comprar-construir-software-qual-melhor-decisao/" rel="noopener" target="_blank" class="hover:underline">Comprar ou construir software: qual a melhor decisão?</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda os trade-offs entre comprar e construir software sob medida com foco em governança.</p>
   </div>
 </article>
   </div>
