@@ -3,70 +3,34 @@
   "date": "2026-04-30",
   "timezone": "America/Sao_Paulo",
   "focus": "ia",
-  "startedAt": "2026-04-30T03:38:09.235Z",
+  "startedAt": "2026-04-30T12:19:57.778Z",
   "aiProvider": "openrouter",
   "sites": [
     {
-      "siteId": "codafacil",
+      "siteId": "emergency",
       "ok": true,
       "aiUsed": true,
       "aiProvider": "openrouter",
       "warning": null,
-      "angle": "DX",
-      "theme": "integracoes e automacao para operacoes criticas",
+      "angle": "investigacao patrimonial",
+      "theme": "due diligence imobiliaria com certidoes orientadas",
       "research": {
         "used": 6,
         "skipped": false,
         "errors": []
       },
-      "outputPath": "automation/blog-bot/out/codafacil/2026-04-30/integracoes-automacao-operacoes-criticas-ia.json",
-      "markdownPath": "automation/blog-bot/out/codafacil/2026-04-30/integracoes-automacao-operacoes-criticas-ia.md",
+      "outputPath": "automation/blog-bot/out/emergency/2026-04-30/otimizar-due-diligence-imobiliaria-certidoes.json",
+      "markdownPath": "automation/blog-bot/out/emergency/2026-04-30/otimizar-due-diligence-imobiliaria-certidoes.md",
       "publishResult": {
-        "postPath": "codafacil/2026/04/30/integracoes-automacao-operacoes-criticas-ia/index.php",
-        "homeUpdated": true,
-        "blogUpdated": true,
-        "sitemapUpdated": true,
-        "robotsUpdated": false,
+        "target": "api",
+        "apiStatus": 201,
+        "apiUrl": "https://app-hml.emergency.com.br/blog/otimizar-due-diligence-imobiliaria-certidoes",
+        "apiId": 4,
+        "apiPublishedAt": "2026-04-30T12:19:57-03:00",
+        "coverPath": "automation/blog-bot/out/emergency/covers/otimizar-due-diligence-imobiliaria-certidoes.jpg",
+        "coverSize": 104252,
         "coverSource": "openai/gpt-5-image",
-        "coverAlt": "Gráficos técnicos em fundo verde-petróleo com detalhes em azul royal e violeta, transmitindo precisão e inovação em engenharia",
-        "coverLeakage": {
-          "skipped": true,
-          "reason": "tesseract not installed"
-        }
-      },
-      "lint": {
-        "ok": true,
-        "skipped": false,
-        "targets": [
-          "codafacil/index.php",
-          "codafacil/blog/index.php",
-          "codafacil/2026/04/30/integracoes-automacao-operacoes-criticas-ia/index.php"
-        ]
-      }
-    },
-    {
-      "siteId": "fluxointeligenteia",
-      "ok": true,
-      "aiUsed": true,
-      "aiProvider": "openrouter",
-      "warning": null,
-      "angle": "atendimento",
-      "theme": "automacao de processos com LLMs e n8n",
-      "research": {
-        "used": 6,
-        "skipped": false,
-        "errors": []
-      },
-      "outputPath": "automation/blog-bot/out/fluxointeligenteia/2026-04-30/automacao-processos-llms-n8n-atendimento.json",
-      "markdownPath": "automation/blog-bot/out/fluxointeligenteia/2026-04-30/automacao-processos-llms-n8n-atendimento.md",
-      "publishResult": {
-        "postPath": "fluxointeligenteia/2026/04/30/automacao-processos-llms-n8n-atendimento/index.html",
-        "homeUpdated": true,
-        "blogUpdated": true,
-        "sitemapUpdated": true,
-        "robotsUpdated": false,
-        "coverSource": "openai/gpt-5-image",
-        "coverAlt": "Capa com fundo dark esmeralda, detalhes em verde e ciano, representando agentes inteligentes em fluxo dinâmico, energia operacional",
+        "coverAlt": "Relatório executivo com gráficos em azul-marinho e cinza-prata, transmitindo credibilidade e sobriedade jurídica",
         "coverLeakage": {
           "skipped": true,
           "reason": "tesseract not installed"
@@ -77,56 +41,18 @@
         "skipped": true,
         "targets": []
       }
-    },
-    {
-      "siteId": "sistemavendadireta",
-      "ok": true,
-      "aiUsed": true,
-      "aiProvider": "openrouter",
-      "warning": null,
-      "angle": "campo",
-      "theme": "crm e automacao para marketing multinivel",
-      "research": {
-        "used": 6,
-        "skipped": false,
-        "errors": []
-      },
-      "outputPath": "automation/blog-bot/out/sistemavendadireta/2026-04-30/crm-automacao-marketing-multinivel.json",
-      "markdownPath": "automation/blog-bot/out/sistemavendadireta/2026-04-30/crm-automacao-marketing-multinivel.md",
-      "publishResult": {
-        "postPath": "sistemavendadireta/2026/04/30/crm-automacao-marketing-multinivel/index.php",
-        "homeUpdated": true,
-        "blogUpdated": true,
-        "sitemapUpdated": true,
-        "robotsUpdated": false,
-        "coverSource": "openai/gpt-5-image",
-        "coverAlt": "Capa com fundo azul profundo e azul corporativo, destacando elementos gráficos que transmitem confiança e profissionalismo",
-        "coverLeakage": {
-          "skipped": true,
-          "reason": "tesseract not installed"
-        }
-      },
-      "lint": {
-        "ok": true,
-        "skipped": false,
-        "targets": [
-          "sistemavendadireta/index.php",
-          "sistemavendadireta/blog/index.php",
-          "sistemavendadireta/2026/04/30/crm-automacao-marketing-multinivel/index.php"
-        ]
-      }
     }
   ],
   "duplications": [],
   "relatedRefresh": {
-    "touched": 4,
-    "unchanged": 0,
+    "touched": 0,
+    "unchanged": 4,
     "errors": [],
     "totalCards": 4,
     "totalFiles": 4
   },
   "fallbackCount": 0,
   "allFallback": false,
-  "finishedAt": "2026-04-30T03:42:57.880Z",
+  "finishedAt": "2026-04-30T12:21:20.752Z",
   "ok": true
 }

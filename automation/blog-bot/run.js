@@ -14,6 +14,7 @@ const {
 } = require("./lib/ai-writer");
 const { gatherResearch, uniqueLinks } = require("./lib/research");
 const { publishSitePost } = require("./lib/publisher");
+const { publishApiPost } = require("./lib/api-publisher");
 const { refreshAllPosts } = require("./lib/related-refresher");
 
 const ROOT = path.resolve(__dirname, "..", "..");
@@ -532,28 +533,62 @@ async function run() {
     };
 
     if (mode === "publish") {
-      const publishResult = await publishSitePost(ROOT, site, contract, aiConfig);
-      const lint = lintPhpFiles(publishResult.phpLintTargets);
-      siteResult.publishResult = {
-        postPath: publishResult.postPath,
-        homeUpdated: publishResult.homeUpdated,
-        blogUpdated: publishResult.blogUpdated,
-        sitemapUpdated: publishResult.sitemapUpdated,
-        robotsUpdated: publishResult.robotsUpdated,
-        coverSource: publishResult.coverSource,
-        coverAlt: publishResult.coverAlt,
-        coverLeakage: publishResult.coverLeakage
-      };
-      siteResult.lint = lint;
+      if (site.target === "api") {
+        try {
+          const apiResult = await publishApiPost(ROOT, site, contract, aiConfig);
+          siteResult.publishResult = {
+            target: "api",
+            apiStatus: apiResult.apiStatus,
+            apiUrl: apiResult.apiUrl,
+            apiId: apiResult.apiId,
+            apiPublishedAt: apiResult.apiPublishedAt,
+            coverPath: path
+              .relative(ROOT, apiResult.coverPath)
+              .replace(/\\/g, "/"),
+            coverSize: apiResult.coverSize,
+            coverSource: apiResult.coverSource,
+            coverAlt: apiResult.coverAlt,
+            coverLeakage: apiResult.coverLeakage
+          };
+          if (apiResult.warning) {
+            siteResult.warning = siteResult.warning
+              ? `${siteResult.warning} ${apiResult.warning}`
+              : apiResult.warning;
+          }
+          siteResult.lint = { ok: true, skipped: true, targets: [] };
+        } catch (error) {
+          siteResult.ok = false;
+          siteResult.publishResult = {
+            target: "api",
+            error: error.message || String(error)
+          };
+          siteResult.lint = { ok: true, skipped: true, targets: [] };
+        }
+      } else {
+        const publishResult = await publishSitePost(ROOT, site, contract, aiConfig);
+        const lint = lintPhpFiles(publishResult.phpLintTargets);
+        siteResult.publishResult = {
+          target: "files",
+          postPath: publishResult.postPath,
+          homeUpdated: publishResult.homeUpdated,
+          blogUpdated: publishResult.blogUpdated,
+          sitemapUpdated: publishResult.sitemapUpdated,
+          robotsUpdated: publishResult.robotsUpdated,
+          coverSource: publishResult.coverSource,
+          coverAlt: publishResult.coverAlt,
+          coverLeakage: publishResult.coverLeakage
+        };
+        siteResult.lint = lint;
 
-      if (publishResult.warning) {
-        siteResult.warning = siteResult.warning
-          ? `${siteResult.warning} ${publishResult.warning}`
-          : publishResult.warning;
-      }
+        if (publishResult.warning) {
+          siteResult.warning = siteResult.warning
+            ? `${siteResult.warning} ${publishResult.warning}`
+            : publishResult.warning;
+        }
 
-      if (!lint.ok) {
-        siteResult.ok = false;
+        if (!lint.ok) {
+          siteResult.ok = false;
+        }
       }
     }
 

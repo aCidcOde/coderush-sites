@@ -205,6 +205,87 @@ const SITE_PROFILES = {
       "reducao de custo operacional com IA aplicada"
     ]
   },
+  emergency: {
+    persona:
+      "advogados, controllers, compradores corporativos e analistas de compliance que precisam fechar diligencias documentais sem retrabalho",
+    personaShort: "areas juridica, compliance e M&A",
+    coverArt: {
+      paletteHex: ["#0c1a33", "#0e3a8a", "#cbd5e1"],
+      paletteDescription: "azul-marinho institucional (#0c1a33) com azul corporativo (#0e3a8a) e cinza-prata sobrio (#cbd5e1)",
+      lighting: "iluminacao limpa e estavel, sem drama, leve gradient editorial, profundidade discreta",
+      mood: "credibilidade institucional, sobriedade juridica, sensacao de relatorio executivo bem formatado",
+      visualMotifs: [
+        "abstracoes geometricas que sugerem documentos, dossies ou camadas analiticas",
+        "linhas finas conectando blocos como metafora de cruzamento de fontes",
+        "papel, pasta ou selo reduzidos a forma e cor sem texto legivel",
+        "sensacao de auditoria sem clichê de balanca de justica"
+      ],
+      avoid: [
+        "balança da justica",
+        "martelo de juiz",
+        "lupa sobre papel",
+        "globo terrestre",
+        "graficos de bolsa",
+        "pessoas em terno apertando mao"
+      ]
+    },
+    offering:
+      "emissao de certidoes online cartorarias e forenses + apoio a due diligence imobiliaria, societaria e juridica em ambito nacional",
+    differentiators: [
+      "atuacao nacional desde 1994 com cobertura cartoraria e forense",
+      "emissao orientada com painel de acompanhamento por solicitacao",
+      "experiencia em due diligence imobiliaria, societaria e M&A",
+      "suporte humano para pedidos complexos, nao so emissao automatica"
+    ],
+    voice: "consultivo institucional, tecnico mas acessivel, com preocupacao explicita por risco e prazo",
+    casualVoice: "consultor que ja fechou diligencia em deal travado — direto, fala em prazo e risco real, sem juridiques desnecessario",
+    bannedWords: mergeBanned([
+      "100% seguro",
+      "risco zero",
+      "infalivel",
+      "burocracia chata",
+      "papelada"
+    ]),
+    angleBias: [
+      "due diligence imobiliaria",
+      "due diligence societaria",
+      "M&A",
+      "compliance",
+      "regularizacao",
+      "habilitacao de fornecedor",
+      "investigacao patrimonial"
+    ],
+    cta: { label: "Fale com a Emergency", path: "#contato" },
+    keywords: {
+      primary: [
+        "due diligence",
+        "certidoes online",
+        "due diligence imobiliaria"
+      ],
+      secondary: [
+        "due diligence societaria",
+        "compliance corporativo",
+        "habilitacao de fornecedor",
+        "regularizacao imobiliaria",
+        "investigacao patrimonial",
+        "certidoes cartorarias"
+      ],
+      longTail: [
+        "como fazer due diligence imobiliaria de matricula",
+        "checklist de due diligence em fusoes e aquisicoes",
+        "certidoes obrigatorias em compra de imovel",
+        "due diligence societaria para aquisicao de empresa",
+        "como validar fornecedor pessoa juridica antes de contratar"
+      ]
+    },
+    themes: [
+      "due diligence imobiliaria com certidoes orientadas",
+      "due diligence societaria em M&A no mercado brasileiro",
+      "habilitacao e onboarding de fornecedor com certidoes",
+      "regularizacao documental antes de transacao patrimonial",
+      "compliance corporativo apoiado em certidoes cartorarias"
+    ]
+  },
   sistemavendadireta: {
     persona:
       "diretores comerciais e de tecnologia em empresas de venda direta e marketing multinivel",

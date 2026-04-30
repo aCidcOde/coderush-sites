@@ -33,6 +33,7 @@ function inferFocusLabel(title, text) {
 function listPostFiles(rootDir, sitesConfig) {
   const files = [];
   for (const site of sitesConfig.sites) {
+    if (site.target === "api" || !site.siteRoot) continue;
     const siteRoot = path.resolve(rootDir, site.siteRoot);
     if (!fs.existsSync(siteRoot)) continue;
     const ext = site.renderExtension || "php";

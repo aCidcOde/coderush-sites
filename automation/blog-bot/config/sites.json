@@ -201,6 +201,40 @@
           "https://wfdsa.org/feed/"
         ]
       }
+    },
+    {
+      "id": "emergency",
+      "name": "Emergency Documentação",
+      "postType": "due-diligence-certidoes",
+      "language": "pt-BR",
+      "enabled": true,
+      "baseUrl": "https://emergency.com.br",
+      "target": "api",
+      "api": {
+        "baseUrl": "https://app-hml.emergency.com.br",
+        "endpoint": "/api/blog/posts",
+        "tokenEnv": "BLOG_API_TOKEN_EMERGENCY"
+      },
+      "outputRoot": "automation/blog-bot/out/emergency",
+      "coverModel": {
+        "primary": "gpt-5-image",
+        "fallback": [
+          "gemini-3-pro",
+          "gemini-flash"
+        ]
+      },
+      "research": {
+        "maxItems": 6,
+        "sinceDays": 21,
+        "feeds": [
+          "https://www.jota.info/feed",
+          "https://www.conjur.com.br/rss",
+          "https://capitalaberto.com.br/feed/",
+          "https://www.gov.br/cvm/pt-br/assuntos/noticias/rss.xml",
+          "https://www.infomoney.com.br/feed/",
+          "https://exame.com/feed/"
+        ]
+      }
     }
   ]
 }

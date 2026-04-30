@@ -88,6 +88,7 @@ function parseSiteIndex(filePath) {
 function buildCrossSiteIndex(rootDir, sitesConfig) {
   const index = [];
   for (const site of sitesConfig.sites) {
+    if (site.target === "api" || !site.siteRoot || !site.blogIndexPath) continue;
     const blogIndexPath = path.resolve(rootDir, site.siteRoot, site.blogIndexPath);
     const cards = parseSiteIndex(blogIndexPath);
     for (const card of cards) {

@@ -40,6 +40,7 @@ jobs:
           BLOG_BOT_OPENROUTER_MODEL: openai/gpt-4o-mini
           BLOG_BOT_OPENROUTER_IMAGE_MODEL: google/gemini-2.5-flash-image
           BLOG_BOT_PROMPT_MODEL: anthropic/claude-sonnet-4-6
+          BLOG_API_TOKEN_EMERGENCY: ${{ secrets.BLOG_API_TOKEN_EMERGENCY }}
         run: npm run blogbot:publish
 
       - name: Create automated PR
