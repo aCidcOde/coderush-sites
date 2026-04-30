@@ -136,17 +136,17 @@ Post de blog estatico com foco em IA, vendas diretas e evolucao de operacao.
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/04/26/sistemavendadireta-tecnologia-2026-04-26/"><img src="../../../../imagens/posts/sistemavendadireta-tecnologia-2026-04-26.jpg" alt="Sistema Venda Direta: como usar TECNOLOGIA de forma pratica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2023/07/03/descubra-estrategias-de-venda-direta/"><img src="../../../../imagens/posts/descubra-estrategias-de-venda-direta.webp" alt="Descubra Estratégias de Venda Direta" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/04/26/sistemavendadireta-tecnologia-2026-04-26/" class="hover:underline">Sistema Venda Direta: como usar TECNOLOGIA de forma pratica</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre governanca comercial com dados e ia com foco em resultado operacional.</p>
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2023/07/03/descubra-estrategias-de-venda-direta/" class="hover:underline">Descubra Estratégias de Venda Direta</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra as Estratégias de Venda Direta que Farão seu Negócio Decolar! A venda direta é um mercado em constante crescimento e transformação. Com o avanço tec...</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/04/14/sistemavendadireta-ia-2026-04-14/"><img src="../../../../imagens/posts/sistemavendadireta-ia-2026-04-14.jpg" alt="Sistema Venda Direta: como usar IA de forma pratica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2023/04/13/importancia-sistema-venda-direta-para-seu-negocio/"><img src="../../../../imagens/posts/importancia-sistema-venda-direta-para-seu-negocio.webp" alt="A importância de um sistema vendas direta para seu negócio" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/04/14/sistemavendadireta-ia-2026-04-14/" class="hover:underline">Sistema Venda Direta: como usar IA de forma pratica</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre tecnologia para vendas diretas em escala com foco em resultado operacional.</p>
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2023/04/13/importancia-sistema-venda-direta-para-seu-negocio/" class="hover:underline">A importância de um sistema vendas direta para seu negócio</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Compreender a importância de um sistema de vendas diretas é fundamental para quem busca crescimento e sucesso nesse mercado. Ao contrário do que muitos acred...</p>
   </div>
 </article>
   </div>

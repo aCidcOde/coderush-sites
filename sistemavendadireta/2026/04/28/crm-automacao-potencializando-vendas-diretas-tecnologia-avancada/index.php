@@ -118,24 +118,24 @@
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/04/26/sistemavendadireta-tecnologia-2026-04-26/"><img src="../../../../imagens/posts/sistemavendadireta-tecnologia-2026-04-26.jpg" alt="Sistema Venda Direta: como usar TECNOLOGIA de forma pratica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/04/26/sistemavendadireta-tecnologia-2026-04-26/" class="hover:underline">Sistema Venda Direta: como usar TECNOLOGIA de forma pratica</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre governanca comercial com dados e ia com foco em resultado operacional.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/04/14/sistemavendadireta-ia-2026-04-14/"><img src="../../../../imagens/posts/sistemavendadireta-ia-2026-04-14.jpg" alt="Sistema Venda Direta: como usar IA de forma pratica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/04/14/sistemavendadireta-ia-2026-04-14/" class="hover:underline">Sistema Venda Direta: como usar IA de forma pratica</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre tecnologia para vendas diretas em escala com foco em resultado operacional.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="../../../../2026/02/10/importancia-da-ia-no-marketing-multinivel-e-vendas-diretas/"><img src="../../../../imagens/posts/ia-mmn.webp" alt="A importância da IA no Marketing Multinível e Vendas Diretas" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/02/10/importancia-da-ia-no-marketing-multinivel-e-vendas-diretas/" class="hover:underline">A importância da IA no Marketing Multinível e Vendas Diretas</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a IA reduz custo operacional, melhora a produtividade da rede e aumenta previsibilidade em operações de marketing multinível e vendas diretas.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/02/10/codafacil-parceiro-tecnico-para-escalar-operacao-com-ia/"><img src="../../../../imagens/posts/codafacil-parceiro.webp" alt="Codafacil: parceiro técnico para escalar operação com IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/02/10/codafacil-parceiro-tecnico-para-escalar-operacao-com-ia/" class="hover:underline">Codafacil: parceiro técnico para escalar operação com IA</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Conheça como o Codafacil acelera customizações, integrações e evolução contínua para empresas que já operam com venda direta e querem avançar com IA.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2023/07/03/descubra-estrategias-de-venda-direta/"><img src="../../../../imagens/posts/descubra-estrategias-de-venda-direta.webp" alt="Descubra Estratégias de Venda Direta" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2023/07/03/descubra-estrategias-de-venda-direta/" class="hover:underline">Descubra Estratégias de Venda Direta</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra as Estratégias de Venda Direta que Farão seu Negócio Decolar! A venda direta é um mercado em constante crescimento e transformação. Com o avanço tec...</p>
   </div>
 </article>
   </div>
@@ -158,19 +158,19 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://coderush.com.br/2026/04/26/coderush-tecnologia-2026-04-26/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/coderush-tecnologia-2026-04-26.jpg" alt="CodeRush: como usar TECNOLOGIA de forma pratica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">CodeRush</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/04/26/coderush-tecnologia-2026-04-26/" rel="noopener" target="_blank" class="hover:underline">CodeRush: como usar TECNOLOGIA de forma pratica</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre produtividade de times com automacao inteligente com foco em resultado operacional.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="https://codafacil.dev/2026/04/28/integracoes-automacao-operacoes-criticas-papel-ia-desenvolvimento/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/integracoes-automacao-operacoes-criticas-papel-ia-desenvolvimento.jpg" alt="Integrações e Automação em Operações Críticas: O Papel da IA no Desenvolvimento de Software Sob Medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
     <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/04/28/integracoes-automacao-operacoes-criticas-papel-ia-desenvolvimento/" rel="noopener" target="_blank" class="hover:underline">Integrações e Automação em Operações Críticas: O Papel da IA no Desenvolvimento de Software Sob Medida</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Neste artigo, exploramos como a aplicação de IA nas integrações e automações pode acelerar o desenvolvimento de software sob medida, mant...</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="https://coderush.com.br/2026/04/19/coderush-php-2026-04-19/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/coderush-php-2026-04-19.jpg" alt="Governança de Tecnologia: O Caminho para o Crescimento Sustentável" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">CodeRush</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/04/19/coderush-php-2026-04-19/" rel="noopener" target="_blank" class="hover:underline">Governança de Tecnologia: O Caminho para o Crescimento Sustentável</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Neste artigo, abordaremos a importância da governança de tecnologia no crescimento das operações empresariais, com um foco especial em PH...</p>
   </div>
 </article>
   </div>

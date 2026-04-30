@@ -161,14 +161,6 @@ Post de blog estatico com foco em PHP 8.5.3, suporte de versoes e plano de atual
   <p class="mt-2 text-sm text-white/70">Conteúdo recente dos outros sites do ecossistema.</p>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://fluxointeligenteia.com.br/2026/04/26/fluxointeligenteia-tecnologia-2026-04-26/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/fluxointeligenteia-tecnologia-2026-04-26.jpg" alt="FluxoInteligente IA: como usar TECNOLOGIA de forma pratica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">FluxoInteligente IA</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/04/26/fluxointeligenteia-tecnologia-2026-04-26/" rel="noopener" target="_blank" class="hover:underline">FluxoInteligente IA: como usar TECNOLOGIA de forma pratica</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre reducao de custo operacional com ia aplicada com foco em resultado operacional.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="https://codafacil.dev/2026/04/19/codafacil-php-2026-04-19/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/codafacil-php-2026-04-19.jpg" alt="Software Sob Medida com IA: Como PHP Sustenta Entrega e Qualidade com Testes Automatizados" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
@@ -177,11 +169,19 @@ Post de blog estatico com foco em PHP 8.5.3, suporte de versoes e plano de atual
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://coderush.com.br/2026/04/26/coderush-tecnologia-2026-04-26/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/coderush-tecnologia-2026-04-26.jpg" alt="CodeRush: como usar TECNOLOGIA de forma pratica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://fluxointeligenteia.com.br/2026/04/19/fluxointeligenteia-php-2026-04-19/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/fluxointeligenteia-php-2026-04-19.jpg" alt="Automação de Processos com LLMs: Custo, SLA e Fallback Humano em Operações Reais" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">FluxoInteligente IA</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/04/19/fluxointeligenteia-php-2026-04-19/" rel="noopener" target="_blank" class="hover:underline">Automação de Processos com LLMs: Custo, SLA e Fallback Humano em Operações Reais</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como a automação de processos utilizando LLMs (Modelos de Linguagem de Grande Escala) pode transformar a eficiência operacional...</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="https://coderush.com.br/2026/04/19/coderush-php-2026-04-19/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/coderush-php-2026-04-19.jpg" alt="Governança de Tecnologia: O Caminho para o Crescimento Sustentável" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">CodeRush</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/04/26/coderush-tecnologia-2026-04-26/" rel="noopener" target="_blank" class="hover:underline">CodeRush: como usar TECNOLOGIA de forma pratica</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre produtividade de times com automacao inteligente com foco em resultado operacional.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/04/19/coderush-php-2026-04-19/" rel="noopener" target="_blank" class="hover:underline">Governança de Tecnologia: O Caminho para o Crescimento Sustentável</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Neste artigo, abordaremos a importância da governança de tecnologia no crescimento das operações empresariais, com um foco especial em PH...</p>
   </div>
 </article>
   </div>

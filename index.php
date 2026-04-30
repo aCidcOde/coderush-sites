@@ -700,15 +700,6 @@ $seoLdGraph = [
     <p class="mt-2 text-sm leading-relaxed text-white/80">Neste artigo, discutiremos a decisão crítica entre comprar ou construir software, focando na importância da arquitetura de software e na integração com sistemas legados, com um...</p>
   </div>
 </article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/04/26/coderush-tecnologia-2026-04-26/" data-blog-image="imagens/posts/coderush-tecnologia-2026-04-26.jpg" data-blog-slug="coderush-tecnologia-2026-04-26" data-blog-date="2026-04-26">
-  <a href="2026/04/26/coderush-tecnologia-2026-04-26/">
-    <img src="imagens/posts/coderush-tecnologia-2026-04-26.jpg" alt="CodeRush: como usar TECNOLOGIA de forma pratica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-  </a>
-  <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="2026/04/26/coderush-tecnologia-2026-04-26/" class="hover:underline">CodeRush: como usar TECNOLOGIA de forma pratica</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre produtividade de times com automacao inteligente com foco em resultado operacional.</p>
-  </div>
-</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/04/19/coderush-php-2026-04-19/" data-blog-image="imagens/posts/coderush-php-2026-04-19.jpg" data-blog-slug="coderush-php-2026-04-19" data-blog-date="2026-04-19">
   <a href="2026/04/19/coderush-php-2026-04-19/">
     <img src="imagens/posts/coderush-php-2026-04-19.jpg" alt="Governança de Tecnologia: O Caminho para o Crescimento Sustentável" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />

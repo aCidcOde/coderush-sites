@@ -129,13 +129,6 @@ Post de blog estatico com foco em conectores de IA e impacto operacional.
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/04/26/sistemavendadireta-tecnologia-2026-04-26/"><img src="../../../../imagens/posts/sistemavendadireta-tecnologia-2026-04-26.jpg" alt="Sistema Venda Direta: como usar TECNOLOGIA de forma pratica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/04/26/sistemavendadireta-tecnologia-2026-04-26/" class="hover:underline">Sistema Venda Direta: como usar TECNOLOGIA de forma pratica</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre governanca comercial com dados e ia com foco em resultado operacional.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="../../../../2026/03/11/soc-agentico-e-seguranca-multicloud-com-governanca-unificada/"><img src="../../../../imagens/posts/soc-agentico-e-seguranca-multicloud-com-governanca-unificada.jpg" alt="SOC agentico e seguranca multicloud: guia pratico de governanca em 2026" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/03/11/soc-agentico-e-seguranca-multicloud-com-governanca-unificada/" class="hover:underline">SOC agentico e seguranca multicloud: guia pratico de governanca em 2026</a></h3>
@@ -147,6 +140,13 @@ Post de blog estatico com foco em conectores de IA e impacto operacional.
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/02/19/php-8-5-em-foco-guia-pratico-para-atualizacao/" class="hover:underline">PHP 8.5 em foco: guia prático para atualizar seu backend</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda o que mudou no PHP 8.5 e veja um checklist objetivo para atualizar com segurança e ganho operacional.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/02/10/mudancas-de-escopo-de-vendas-diretas-para-sistema-de-parceiros/"><img src="../../../../imagens/posts/mudancas-escopo-parceiros.webp" alt="Mudanças de escopo: de Vendas Diretas para Sistema de Parceiros" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/02/10/mudancas-de-escopo-de-vendas-diretas-para-sistema-de-parceiros/" class="hover:underline">Mudanças de escopo: de Vendas Diretas para Sistema de Parceiros</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Veja como conduzir mudanças de escopo com segurança ao evoluir projetos de vendas diretas para modelos de parceria e canais, sem perder controle operacional.</p>
   </div>
 </article>
   </div>
@@ -169,19 +169,19 @@ Post de blog estatico com foco em conectores de IA e impacto operacional.
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://coderush.com.br/2026/04/14/coderush-ia-2026-04-14/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/coderush-ia-2026-04-14.jpg" alt="CodeRush: como usar IA de forma pratica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">CodeRush</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/04/14/coderush-ia-2026-04-14/" rel="noopener" target="_blank" class="hover:underline">CodeRush: como usar IA de forma pratica</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre governanca de tecnologia para crescimento com foco em resultado operacional.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="https://codafacil.dev/2026/04/28/integracoes-automacao-operacoes-criticas-papel-ia-desenvolvimento/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/integracoes-automacao-operacoes-criticas-papel-ia-desenvolvimento.jpg" alt="Integrações e Automação em Operações Críticas: O Papel da IA no Desenvolvimento de Software Sob Medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
     <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/04/28/integracoes-automacao-operacoes-criticas-papel-ia-desenvolvimento/" rel="noopener" target="_blank" class="hover:underline">Integrações e Automação em Operações Críticas: O Papel da IA no Desenvolvimento de Software Sob Medida</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Neste artigo, exploramos como a aplicação de IA nas integrações e automações pode acelerar o desenvolvimento de software sob medida, mant...</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="https://coderush.com.br/2026/04/19/coderush-php-2026-04-19/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/coderush-php-2026-04-19.jpg" alt="Governança de Tecnologia: O Caminho para o Crescimento Sustentável" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">CodeRush</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/04/19/coderush-php-2026-04-19/" rel="noopener" target="_blank" class="hover:underline">Governança de Tecnologia: O Caminho para o Crescimento Sustentável</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Neste artigo, abordaremos a importância da governança de tecnologia no crescimento das operações empresariais, com um foco especial em PH...</p>
   </div>
 </article>
   </div>

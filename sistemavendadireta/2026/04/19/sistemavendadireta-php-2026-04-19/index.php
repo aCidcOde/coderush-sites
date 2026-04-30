@@ -120,13 +120,6 @@
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/04/26/sistemavendadireta-tecnologia-2026-04-26/"><img src="../../../../imagens/posts/sistemavendadireta-tecnologia-2026-04-26.jpg" alt="Sistema Venda Direta: como usar TECNOLOGIA de forma pratica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/04/26/sistemavendadireta-tecnologia-2026-04-26/" class="hover:underline">Sistema Venda Direta: como usar TECNOLOGIA de forma pratica</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre governanca comercial com dados e ia com foco em resultado operacional.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="../../../../2026/04/28/crm-automacao-potencializando-vendas-diretas-tecnologia-avancada/"><img src="../../../../imagens/posts/crm-automacao-potencializando-vendas-diretas-tecnologia-avancada.jpg" alt="CRM e Automação: Potencializando Vendas Diretas com Tecnologia Avançada" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/04/28/crm-automacao-potencializando-vendas-diretas-tecnologia-avancada/" class="hover:underline">CRM e Automação: Potencializando Vendas Diretas com Tecnologia Avançada</a></h3>
@@ -134,10 +127,17 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/04/14/sistemavendadireta-ia-2026-04-14/"><img src="../../../../imagens/posts/sistemavendadireta-ia-2026-04-14.jpg" alt="Sistema Venda Direta: como usar IA de forma pratica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/02/19/php-8-5-em-foco-guia-pratico-para-atualizacao/"><img src="../../../../imagens/posts/php-8-5-em-foco-guia-pratico-para-atualizacao.jpg" alt="PHP 8.5 em foco: guia prático para atualizar seu backend" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/04/14/sistemavendadireta-ia-2026-04-14/" class="hover:underline">Sistema Venda Direta: como usar IA de forma pratica</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre tecnologia para vendas diretas em escala com foco em resultado operacional.</p>
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/02/19/php-8-5-em-foco-guia-pratico-para-atualizacao/" class="hover:underline">PHP 8.5 em foco: guia prático para atualizar seu backend</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda o que mudou no PHP 8.5 e veja um checklist objetivo para atualizar com segurança e ganho operacional.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/02/10/codafacil-parceiro-tecnico-para-escalar-operacao-com-ia/"><img src="../../../../imagens/posts/codafacil-parceiro.webp" alt="Codafacil: parceiro técnico para escalar operação com IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/02/10/codafacil-parceiro-tecnico-para-escalar-operacao-com-ia/" class="hover:underline">Codafacil: parceiro técnico para escalar operação com IA</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Conheça como o Codafacil acelera customizações, integrações e evolução contínua para empresas que já operam com venda direta e querem avançar com IA.</p>
   </div>
 </article>
   </div>
@@ -168,11 +168,11 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://codafacil.dev/2026/04/26/codafacil-tecnologia-2026-04-26/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/codafacil-tecnologia-2026-04-26.jpg" alt="Codafacil.dev: como usar TECNOLOGIA de forma pratica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://codafacil.dev/2026/04/19/codafacil-php-2026-04-19/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/codafacil-php-2026-04-19.jpg" alt="Software Sob Medida com IA: Como PHP Sustenta Entrega e Qualidade com Testes Automatizados" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/04/26/codafacil-tecnologia-2026-04-26/" rel="noopener" target="_blank" class="hover:underline">Codafacil.dev: como usar TECNOLOGIA de forma pratica</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre software sob medida com IA aplicada com foco em resultado operacional.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/04/19/codafacil-php-2026-04-19/" rel="noopener" target="_blank" class="hover:underline">Software Sob Medida com IA: Como PHP Sustenta Entrega e Qualidade com Testes Automatizados</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como a combinação de software sob medida e inteligência artificial pode otimizar operações, melhorar a tomada de decisões e traz...</p>
   </div>
 </article>
   </div>

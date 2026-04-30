@@ -143,10 +143,10 @@ Pagina estatica do post "Como se proteger de golpes de pirâmide e evitar cair e
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/04/26/sistemavendadireta-tecnologia-2026-04-26/"><img src="../../../../imagens/posts/sistemavendadireta-tecnologia-2026-04-26.jpg" alt="Sistema Venda Direta: como usar TECNOLOGIA de forma pratica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/04/19/sistemavendadireta-php-2026-04-19/"><img src="../../../../imagens/posts/sistemavendadireta-php-2026-04-19.jpg" alt="Governança Comercial: Potencializando Vendas Diretas com Dados e IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/04/26/sistemavendadireta-tecnologia-2026-04-26/" class="hover:underline">Sistema Venda Direta: como usar TECNOLOGIA de forma pratica</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre governanca comercial com dados e ia com foco em resultado operacional.</p>
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/04/19/sistemavendadireta-php-2026-04-19/" class="hover:underline">Governança Comercial: Potencializando Vendas Diretas com Dados e IA</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Neste artigo, discutiremos como a governança comercial pode ser aprimorada através do uso de dados e inteligência artificial, focando em soluções práticas pa...</p>
   </div>
 </article>
   </div>

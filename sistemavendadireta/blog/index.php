@@ -98,15 +98,6 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
     <p class="mt-2 text-sm leading-relaxed text-white/80">Neste artigo, exploramos como um sistema de venda direta e as ferramentas de CRM podem transformar a operação comercial em marketing multinível, utilizando IA para otimizar proc...</p>
   </div>
 </article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/04/26/sistemavendadireta-tecnologia-2026-04-26/" data-blog-image="imagens/posts/sistemavendadireta-tecnologia-2026-04-26.jpg" data-blog-slug="sistemavendadireta-tecnologia-2026-04-26" data-blog-date="2026-04-26">
-  <a href="../2026/04/26/sistemavendadireta-tecnologia-2026-04-26/">
-    <img src="../imagens/posts/sistemavendadireta-tecnologia-2026-04-26.jpg" alt="Sistema Venda Direta: como usar TECNOLOGIA de forma pratica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-  </a>
-  <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="../2026/04/26/sistemavendadireta-tecnologia-2026-04-26/" class="hover:underline">Sistema Venda Direta: como usar TECNOLOGIA de forma pratica</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre governanca comercial com dados e ia com foco em resultado operacional.</p>
-  </div>
-</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/04/19/sistemavendadireta-php-2026-04-19/" data-blog-image="imagens/posts/sistemavendadireta-php-2026-04-19.jpg" data-blog-slug="sistemavendadireta-php-2026-04-19" data-blog-date="2026-04-19">
   <a href="../2026/04/19/sistemavendadireta-php-2026-04-19/">
     <img src="../imagens/posts/sistemavendadireta-php-2026-04-19.jpg" alt="Governança Comercial: Potencializando Vendas Diretas com Dados e IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
@@ -114,15 +105,6 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="../2026/04/19/sistemavendadireta-php-2026-04-19/" class="hover:underline">Governança Comercial: Potencializando Vendas Diretas com Dados e IA</a></h2>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Neste artigo, discutiremos como a governança comercial pode ser aprimorada através do uso de dados e inteligência artificial, focando em soluções práticas para gestores e donos...</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/04/14/sistemavendadireta-ia-2026-04-14/" data-blog-image="imagens/posts/sistemavendadireta-ia-2026-04-14.jpg" data-blog-slug="sistemavendadireta-ia-2026-04-14" data-blog-date="2026-04-14">
-  <a href="../2026/04/14/sistemavendadireta-ia-2026-04-14/">
-    <img src="../imagens/posts/sistemavendadireta-ia-2026-04-14.jpg" alt="Sistema Venda Direta: como usar IA de forma pratica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-  </a>
-  <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="../2026/04/14/sistemavendadireta-ia-2026-04-14/" class="hover:underline">Sistema Venda Direta: como usar IA de forma pratica</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Guia objetivo sobre tecnologia para vendas diretas em escala com foco em resultado operacional.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/04/04/seguranca-agentica-em-2026-checklist-com-nist-cyber-ai-profile-e-owasp/" data-blog-image="imagens/posts/seguranca-agentica-em-2026-checklist-com-nist-cyber-ai-profile-e-owasp.jpg" data-blog-slug="seguranca-agentica-em-2026-checklist-com-nist-cyber-ai-profile-e-owasp" data-blog-date="2026-04-04">
