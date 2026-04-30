@@ -52,6 +52,7 @@ const SITE_PROFILES = {
       "integracao com sistemas legados sem big-bang"
     ],
     voice: "consultivo, direto, com clareza de trade-offs e sem hype",
+    casualVoice: "consultor que ja resolveu isso em outras empresas — frases curtas, evita formalidade vazia, sem girias",
     bannedWords: mergeBanned(["magico", "disruptivo", "no-code milagroso"]),
     angleBias: ["arquitetura", "governanca", "decisao tecnica", "casos de empresa media"],
     cta: { label: "Fale com a CodeRush", path: "#contato" },
@@ -106,6 +107,7 @@ const SITE_PROFILES = {
       "entrega curta com escopo claro"
     ],
     voice: "tecnico, pragmatico, com referencias de codigo, processo e DX",
+    casualVoice: "tech lead que ja viu o codigo virar problema — direto ao ponto, exemplos rapidos, sem academicismo",
     bannedWords: mergeBanned(["plug and play", "low code milagroso", "100% automatico"]),
     angleBias: ["engenharia", "DX", "tooling de IA para devs", "qualidade de codigo"],
     cta: { label: "Fale com a Codafacil.dev", path: "#contato" },
@@ -161,6 +163,7 @@ const SITE_PROFILES = {
       "engenharia de prompt e tool-use bem definida por agente"
     ],
     voice: "operacional, focado em processo, custo e SLA",
+    casualVoice: "consultor de operacao que ja colocou agente em producao — pragmatico, fala de SLA real, sem mistica de IA",
     bannedWords: mergeBanned(["IA generica", "chatbot besta", "tudo automatizado", "agente magico"]),
     angleBias: [
       "agentes inteligentes",
@@ -227,6 +230,7 @@ const SITE_PROFILES = {
       "IA aplicada a campo e suporte ao distribuidor"
     ],
     voice: "executivo, focado em resultado comercial e previsibilidade",
+    casualVoice: "diretor comercial que ja escalou MMN — fala em numero, em processo, sem promessa de ganho facil",
     bannedWords: mergeBanned(["esquema de piramide", "ganhe dinheiro facil", "renda passiva garantida"]),
     angleBias: ["MMN", "vendas diretas", "campo", "comissionamento", "CRM"],
     cta: { label: "Solicite um orcamento", path: "#contato" },
@@ -282,6 +286,7 @@ function sitePromptStyle(site) {
   const profile = siteProfile(site.id) || {};
   return {
     tone: profile.voice || "consultivo, direto, focado em negocio",
+    casualTone: profile.casualVoice || "consultor pragmatico — direto, sem girias",
     audience: profile.persona || "gestores e donos de operacao",
     offering: profile.offering || "",
     differentiators: profile.differentiators || [],

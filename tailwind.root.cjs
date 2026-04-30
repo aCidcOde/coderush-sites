@@ -5,6 +5,15 @@ module.exports = {
     "./blog/**/*.php",
     "./20*/**/*.php"
   ],
+  safelist: [
+    "italic",
+    "border-l-4",
+    "border-blue-400",
+    "bg-blue-400/10",
+    "text-blue-400",
+    "decoration-blue-400/40",
+    "underline-offset-4"
+  ],
   theme: {
     extend: {
       colors: {

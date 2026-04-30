@@ -432,45 +432,162 @@ function buildSeoTitle(contract, site) {
   return `${head}${suffix}`;
 }
 
+function buildMetaDescription(contract) {
+  const answer = contract?.content?.answerBox?.answer;
+  if (typeof answer === "string" && answer.trim().length >= 80) return answer.trim();
+  return contract.description || "";
+}
+
 function buildJsonLd(site, contract, canonicalUrl, imageUrl) {
   return JSON.stringify(
     {
       "@context": "https://schema.org",
       "@type": "BlogPosting",
       headline: `${contract.content.headline} | ${site.name}`,
-      description: contract.description,
+      description: buildMetaDescription(contract),
       datePublished: `${contract.date}T09:00:00-03:00`,
       dateModified: `${contract.date}T09:00:00-03:00`,
-      mainEntityOfPage: {
-        "@type": "WebPage",
-        "@id": canonicalUrl
-      },
+      mainEntityOfPage: { "@type": "WebPage", "@id": canonicalUrl },
       image: [imageUrl],
-      author: {
-        "@type": "Organization",
-        name: site.name
-      },
-      publisher: {
-        "@type": "Organization",
-        name: site.name
-      }
+      author: { "@type": "Organization", name: site.name },
+      publisher: { "@type": "Organization", name: site.name }
     },
     null,
     2
   );
 }
 
-function renderSections(contract) {
+function buildFaqJsonLd(contract) {
+  const faq = contract?.content?.faq;
+  if (!Array.isArray(faq) || faq.length === 0) return "";
+  return JSON.stringify(
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: faq.map((item) => ({
+        "@type": "Question",
+        name: item.q,
+        acceptedAnswer: { "@type": "Answer", text: item.a }
+      }))
+    },
+    null,
+    2
+  );
+}
+
+const SITE_ACCENT = {
+  coderush: "blue-400",
+  codafacil: "sky-300",
+  fluxointeligenteia: "emerald-400",
+  sistemavendadireta: "white"
+};
+
+function accentFor(siteId) {
+  return SITE_ACCENT[siteId] || "white";
+}
+
+function renderProseSection(section) {
+  return [
+    '      <section class="mt-8">',
+    `        <h2 class="text-xl font-semibold text-white sm:text-2xl">${esc(section.title)}</h2>`,
+    `        <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">${esc(section.body)}</p>`,
+    "      </section>"
+  ].join("\n");
+}
+
+function renderListSection(section, accent) {
+  const items = (section.items || []).map((item) => `
+        <li class="flex gap-3">
+          <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-${accent}" aria-hidden="true"></span>
+          <span>${esc(item)}</span>
+        </li>`).join("");
+  return [
+    '      <section class="mt-8">',
+    `        <h2 class="text-xl font-semibold text-white sm:text-2xl">${esc(section.title)}</h2>`,
+    `        <ul class="mt-4 space-y-2 text-sm leading-7 text-white/85 sm:text-base">${items}
+        </ul>`,
+    "      </section>"
+  ].join("\n");
+}
+
+function renderCalloutSection(section, accent, relativeRoot) {
+  const href = relativeLink(relativeRoot, section.ctaHref || "#contato");
+  const linkPart = section.ctaLabel
+    ? ` <a href="${href}" class="font-semibold text-${accent} underline decoration-${accent}/40 underline-offset-4 hover:text-white">${esc(section.ctaLabel)} →</a>`
+    : "";
+  return [
+    `      <aside class="my-8 rounded-2xl border-l-4 border-${accent} bg-${accent}/10 p-5 sm:p-6">`,
+    `        <p class="text-sm leading-7 text-white/90 sm:text-base">${esc(section.body)}${linkPart}</p>`,
+    "      </aside>"
+  ].join("\n");
+}
+
+function renderCtaInlineSection(section, accent, relativeRoot) {
+  const href = relativeLink(relativeRoot, section.ctaHref || "#contato");
+  const label = section.ctaLabel ? esc(section.ctaLabel) : "Fale com o time";
+  return [
+    `      <p class="my-6 text-sm leading-7 text-white/85 sm:text-base">`,
+    `        ${esc(section.body)} <a href="${href}" class="font-semibold text-${accent} underline decoration-${accent}/40 underline-offset-4 hover:text-white">${label} →</a>`,
+    `      </p>`
+  ].join("\n");
+}
+
+function renderSection(section, accent, relativeRoot) {
+  if (!section) return "";
+  const type = section.type || "prose";
+  switch (type) {
+    case "list":       return renderListSection(section, accent);
+    case "callout":    return renderCalloutSection(section, accent, relativeRoot);
+    case "cta-inline": return renderCtaInlineSection(section, accent, relativeRoot);
+    case "prose":
+    default:           return renderProseSection(section);
+  }
+}
+
+function renderSections(contract, accent, relativeRoot) {
   return (contract.content.sections || [])
-    .map((section) =>
-      [
-        '      <section class="mt-8">',
-        `        <h2 class="text-xl font-semibold text-white sm:text-2xl">${esc(section.title)}</h2>`,
-        `        <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">${esc(section.body)}</p>`,
-        "      </section>"
-      ].join("\n")
-    )
+    .map((section) => renderSection(section, accent, relativeRoot))
+    .filter(Boolean)
     .join("\n");
+}
+
+function renderAnswerBox(answerBox, accent) {
+  if (!answerBox || !answerBox.answer) return "";
+  return [
+    `      <aside class="mt-6 rounded-2xl border-l-4 border-${accent} bg-white/[0.04] p-5 sm:p-6">`,
+    answerBox.question
+      ? `        <h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-${accent}">${esc(answerBox.question)}</h3>`
+      : "",
+    `        <p class="mt-2 text-base leading-7 text-white/90 sm:text-lg">${esc(answerBox.answer)}</p>`,
+    "      </aside>"
+  ].filter(Boolean).join("\n");
+}
+
+function renderTldr(tldr) {
+  if (!Array.isArray(tldr) || tldr.length === 0) return "";
+  const items = tldr.map((item) => `
+        <li class="rounded-xl border border-white/10 bg-white/5 p-4 text-sm leading-6 text-white/90">${esc(item)}</li>`).join("");
+  return [
+    `      <section class="mt-6">`,
+    `        <p class="text-[11px] font-semibold uppercase tracking-[0.22em] text-white/55">Em resumo</p>`,
+    `        <ul class="mt-3 grid gap-3 sm:grid-cols-3">${items}
+        </ul>`,
+    "      </section>"
+  ].join("\n");
+}
+
+function renderFaq(faq) {
+  if (!Array.isArray(faq) || faq.length === 0) return "";
+  const items = faq.map((item) => `
+        <details class="mt-3 rounded-xl border border-white/10 bg-white/5 p-4">
+          <summary class="cursor-pointer text-base font-semibold text-white">${esc(item.q)}</summary>
+          <p class="mt-2 text-sm leading-6 text-white/85">${esc(item.a)}</p>
+        </details>`).join("");
+  return [
+    `      <section class="mt-10">`,
+    `        <h2 class="text-xl font-semibold text-white sm:text-2xl">Perguntas frequentes</h2>${items}`,
+    "      </section>"
+  ].join("\n");
 }
 
 function renderRelatedSection() {
@@ -497,13 +614,15 @@ function buildPostTemplate(root, site, contract, relatedCards) {
     : "";
 
   const seoTitle = buildSeoTitle(contract, site);
+  const metaDescription = buildMetaDescription(contract);
+  const faqJsonLd = buildFaqJsonLd(contract);
   return `<!doctype html>
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>${esc(seoTitle)}</title>
-  <meta name="description" content="${esc(contract.description)}" />
+  <meta name="description" content="${esc(metaDescription)}" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <link rel="canonical" href="${canonicalUrl}" />
   <link rel="icon" type="image/svg+xml" href="${relativeRoot}favicon.svg" />
@@ -511,18 +630,21 @@ function buildPostTemplate(root, site, contract, relatedCards) {
   <link rel="apple-touch-icon" sizes="180x180" href="${relativeRoot}apple-touch-icon.png" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="${esc(seoTitle)}" />
-  <meta property="og:description" content="${esc(contract.description)}" />
+  <meta property="og:description" content="${esc(metaDescription)}" />
   <meta property="og:url" content="${canonicalUrl}" />
   <meta property="og:image" content="${imageUrl}" />
   <meta property="og:site_name" content="${esc(site.name)}" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="${esc(seoTitle)}" />
-  <meta name="twitter:description" content="${esc(contract.description)}" />
+  <meta name="twitter:description" content="${esc(metaDescription)}" />
   <meta name="twitter:image" content="${imageUrl}" />
 ${styles}
   <script type="application/ld+json">
 ${buildJsonLd(site, contract, canonicalUrl, imageUrl)}
-  </script>
+  </script>${faqJsonLd ? `
+  <script type="application/ld+json">
+${faqJsonLd}
+  </script>` : ""}
 </head>
 <body class="${copy.bodyClass}">
   <header class="${copy.headerClass}">
@@ -545,7 +667,7 @@ ${renderNavLinks(copy, relativeRoot)}
         <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/85 via-black/45 to-transparent" aria-hidden="true"></div>
         <figcaption class="absolute inset-x-0 bottom-0 p-5 sm:p-8 lg:p-10">
           <span class="block h-1 w-12 rounded-full ${copy.headingBarClass}" aria-hidden="true"></span>
-          <p class="mt-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-white/85 sm:text-xs">${esc(copy.articleLabel)} • ${brDate(
+          <p class="mt-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-white/85 sm:text-xs">${esc(contract.content.eyebrow || copy.articleLabel)} • ${brDate(
             contract.date
           )}</p>
           <h1 class="mt-2 text-2xl font-semibold leading-tight text-white sm:text-3xl lg:text-4xl">${esc(
@@ -555,7 +677,10 @@ ${renderNavLinks(copy, relativeRoot)}
         </figcaption>
       </figure>
       <div class="p-5 sm:p-8">
-${renderSections(contract)}
+${renderAnswerBox(contract.content.answerBox, accentFor(site.id))}
+${renderTldr(contract.content.tldr)}
+${renderSections(contract, accentFor(site.id), relativeRoot)}
+${renderFaq(contract.content.faq)}
       </div>
     </article>
 
@@ -888,6 +1013,7 @@ module.exports = {
   HOME_MARKERS,
   INDEX_MARKERS,
   publishSitePost,
+  buildPostTemplate,
   buildSeoTitle,
   smartTruncate
 };

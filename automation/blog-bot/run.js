@@ -177,12 +177,16 @@ function buildAiPrompt({ site, contract, research = [] }) {
         .join("\n")
     : "";
 
+  const ctaLabel = style.cta.label;
+  const ctaPath = style.cta.path;
+
   const lines = [
     `Site: ${site.name}`,
     `Tipo de post: ${style.postType}`,
     `Publico: ${style.audience}`,
     `Oferta da empresa: ${style.offering}`,
-    `Tom: ${style.tone}`,
+    `Tom prosa (sections type=prose): ${style.tone}`,
+    `Tom callout/cta-inline: ${style.casualTone}`,
     `Tema da semana: ${contract.theme}`,
     `Angulo desta edicao: ${contract.angle}`,
     `Foco rotativo: ${contract.focus}`,
@@ -190,20 +194,52 @@ function buildAiPrompt({ site, contract, research = [] }) {
     bannedLine,
     keywordsBlock,
     "",
-    "Estruture um post com JSON valido no formato:",
-    '{ "headline": "...", "summary": "...", "sections": [{"title":"...", "body":"..."}] }',
-    "Obrigatorio: 4 secoes com 80-160 palavras cada, incluindo uma secao chamada 'Software sob medida com IA'.",
-    "Quando houver conteudo recente, cite ao menos 2 fontes em markdown ([texto](url)) integradas ao texto.",
+    "FORMATO DO POST (modelo Hibrido AEO + Consultivo):",
+    "O leitor cai aqui via Google. answerBox no topo responde direto a pergunta dele. Depois o post aprofunda em sections tipadas, com 1 callout e 1 cta-inline distribuidos no fluxo. Fecha com FAQ estruturado.",
     "",
-    "Diretrizes de conversao (CTAs sutis, nunca interruptivas):",
-    "- O conteudo deve ser educacional/tecnico de qualidade, voltado ao tema. CTAs sao secundarios, nao podem dominar o texto.",
-    `- Inclua exatamente UMA mencao inline ao servico, na secao 2 ou 3, como transicao natural (ex: "quem precisa avaliar isso na pratica costuma ter beneficio em conversar com a ${site.name}", linkando para [${style.cta.label}](${style.cta.path})).`,
-    `- Feche a ultima secao com UMA linha leve de contato em markdown, sem hype, apontando para [${style.cta.label}](${style.cta.path}).`,
-    "- Nada de \"transforme ja\", \"nao perca\", \"clique aqui\" ou linguagem de copy agressivo.",
-    "- O headline deve ser informativo sobre o tema; nao escreva headline-pitch.",
+    "Retorne JSON valido EXATAMENTE neste schema:",
+    `{
+  "eyebrow": "string curta (2-4 palavras, ex: 'Guia pratico', 'Consultoria tecnica')",
+  "headline": "string (50-65 chars, informativo, sem pitch)",
+  "summary": "string (140 chars max, contexto curto que aparece sob o titulo)",
+  "answerBox": {
+    "question": "string (a pergunta exata que o leitor faria no Google)",
+    "answer": "string (40-50 palavras, resposta direta e completa)"
+  },
+  "tldr": ["bullet 1 (8-12 palavras)", "bullet 2", "bullet 3"],
+  "sections": [
+    { "type": "prose", "title": "string", "body": "string (90-130 palavras)" },
+    { "type": "list", "title": "string", "items": ["item 1 (8-15 palavras)", "...", "..."] },
+    { "type": "callout", "body": "string (40-60 palavras, tom levemente descontraido)", "ctaLabel": "${ctaLabel}", "ctaHref": "${ctaPath}" },
+    { "type": "prose", "title": "string", "body": "string (110-150 palavras)" },
+    { "type": "cta-inline", "body": "string (uma frase curta ate ~20 palavras)", "ctaLabel": "${ctaLabel}", "ctaHref": "${ctaPath}" },
+    { "type": "prose", "title": "string", "body": "string (90-130 palavras, trade-offs ou o que evitar)" }
+  ],
+  "faq": [
+    { "q": "pergunta curta", "a": "resposta 30-50 palavras" },
+    { "q": "...", "a": "..." },
+    { "q": "...", "a": "..." }
+  ]
+}`,
+    "",
+    "REGRAS POR CAMPO:",
+    "- answerBox.answer: 40-50 palavras, completas, autossuficientes. Vai virar meta description.",
+    "- tldr: exatamente 3 bullets. Cada bullet entrega UMA ideia, nao usa virgula serial.",
+    "- sections: exatamente 6 itens, na sequencia [prose, list, callout, prose, cta-inline, prose]. Nao reordene.",
+    "- list.items: 4-6 itens curtos. Mostre criterios, sinais, passos OU armadilhas.",
+    `- callout.body: tom levemente descontraido. Pode usar "ja estruturamos isso em N clientes", "vale uma conversa", "se faz sentido pro seu cenario". NUNCA "a gente", girias, CAPS ou exclamacao.`,
+    `- cta-inline.body: uma frase de transicao natural. Nunca "clique aqui", nunca "agora".`,
+    "- faq: 3-5 perguntas. As respostas devem ser autossuficientes (LLMs vao extrair sem contexto).",
+    "- Quando houver conteudo recente, cite ao menos 2 fontes em markdown ([texto](url)) integradas ao body de uma section type=prose.",
+    "",
+    "DIRETRIZES DE CONVERSAO:",
+    "- O conteudo principal e educacional/consultivo. callout + cta-inline + faq sao pontos de conversao sutis, nunca interruptivos.",
+    `- Use o ctaLabel "${ctaLabel}" e ctaHref "${ctaPath}" exatamente como dado no schema.`,
+    `- Pode mencionar ${site.name} 1-2 vezes no body de prose, como transicao natural ("nesse tipo de cenario, ${site.name} costuma...").`,
+    "- Headline informa sobre o tema, nao vende. Sem 'transforme ja', 'nao perca', 'clique aqui'.",
     researchBlock,
     "",
-    "Regras adicionais:",
+    "REGRAS ADICIONAIS:",
     style.constraints.map((item) => `- ${item}`).join("\n")
   ];
 
@@ -247,9 +283,8 @@ function loadExistingDraft(site, contract) {
 
   try {
     const draft = JSON.parse(fs.readFileSync(filePath, "utf8"));
-    if (draft?.content?.headline && Array.isArray(draft?.content?.sections)) {
-      return draft;
-    }
+    const ok = draft?.content?.headline && Array.isArray(draft?.content?.sections);
+    if (ok) return draft;
   } catch (error) {
     return null;
   }
@@ -359,11 +394,20 @@ function jaccard(a, b) {
 
 function flattenContent(content) {
   if (!content) return "";
-  return [
-    content.headline,
-    content.summary,
-    ...(content.sections || []).map((section) => `${section.title} ${section.body}`)
-  ].join(" ");
+  const parts = [content.headline, content.summary];
+  if (content.answerBox) {
+    parts.push(content.answerBox.question || "", content.answerBox.answer || "");
+  }
+  if (Array.isArray(content.tldr)) parts.push(content.tldr.join(" "));
+  for (const section of content.sections || []) {
+    if (!section) continue;
+    parts.push(section.title || "", section.body || "");
+    if (Array.isArray(section.items)) parts.push(section.items.join(" "));
+  }
+  for (const item of content.faq || []) {
+    parts.push(item?.q || "", item?.a || "");
+  }
+  return parts.filter(Boolean).join(" ");
 }
 
 function detectDuplications(documents) {

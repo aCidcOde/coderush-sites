@@ -28,6 +28,12 @@ function resolveAiConfig(env = process.env) {
   return null;
 }
 
+const SYSTEM_ROLE =
+  "Voce escreve para um blog consultivo de tecnologia em pt-BR. " +
+  "Tom: consultivo, direto, levemente descontraido (como conversa com colega senior, sem formalidade nem hype, sem girias). " +
+  "O leitor chegou via busca: a primeira resposta no answerBox precisa ser direta. " +
+  "Responda APENAS com JSON valido conforme o schema pedido pelo usuario.";
+
 async function generateWithOpenAI({ apiKey, model, prompt }) {
   const response = await fetch("https://api.openai.com/v1/chat/completions", {
     method: "POST",
@@ -39,15 +45,8 @@ async function generateWithOpenAI({ apiKey, model, prompt }) {
       model,
       temperature: 0.7,
       messages: [
-        {
-          role: "system",
-          content:
-            "Voce escreve artigos tecnicos em pt-BR para blogs corporativos. Responda em JSON valido."
-        },
-        {
-          role: "user",
-          content: prompt
-        }
+        { role: "system", content: SYSTEM_ROLE },
+        { role: "user", content: prompt }
       ],
       response_format: { type: "json_object" }
     })
@@ -81,15 +80,8 @@ async function generateWithOpenRouter({ apiKey, model, prompt, appUrl, appName }
       temperature: 0.7,
       response_format: { type: "json_object" },
       messages: [
-        {
-          role: "system",
-          content:
-            "Voce escreve artigos tecnicos em pt-BR para blogs corporativos. Responda em JSON valido."
-        },
-        {
-          role: "user",
-          content: prompt
-        }
+        { role: "system", content: SYSTEM_ROLE },
+        { role: "user", content: prompt }
       ]
     })
   });
@@ -276,24 +268,69 @@ function generateFallbackContent({ siteName, theme, focus, profile = {}, angle =
     : "";
 
   return {
+    eyebrow: "Guia pratico",
     headline: `${capitalize(primaryKeyword)}: o que ${personaShort} precisam decidir sobre ${angleLabel}`,
     summary: `Guia pratico sobre ${primaryKeyword} no contexto de ${theme}, com leitura de ${secondaryKeyword} e foco em ${differentiators}.`,
+    answerBox: {
+      question: `Como aplicar ${primaryKeyword} sem virar projeto sem fim?`,
+      answer: `${capitalize(primaryKeyword)} entrega valor quando entra em um fluxo critico medido. O caminho curto: escolher um recorte com KPI claro, validar em 30 dias e so escalar com retorno comprovado. ${capitalize(personaShort)} usam ${differentiators} pra evitar reescrita de sistema.`
+    },
+    tldr: [
+      `Recorte um fluxo critico antes de escalar ${primaryKeyword}.`,
+      `Meca impacto em 30 dias com KPI definido.`,
+      `${capitalize(differentiators)} reduz risco de reescrita.`
+    ],
     sections: [
       {
+        type: "prose",
         title: `Contexto: ${primaryKeyword} no dia a dia`,
         body: `${capitalize(personaShort)} ja sentem o peso de adotar ${secondaryKeyword} sem criterio. ${evidenceLine}${longTailLine} Antes de escalar, e preciso definir onde ${primaryKeyword} cria valor real e onde ainda e ruido.`
       },
       {
+        type: "list",
+        title: `Quando ${primaryKeyword} faz sentido na operacao`,
+        items: [
+          `Existe um fluxo critico onde a operacao trava recorrentemente.`,
+          `Os dados de entrada estao razoavelmente estruturados.`,
+          `Ha KPI mensuravel para validar em 30 dias.`,
+          `O time de operacao consegue dedicar 1-2h por semana de feedback.`
+        ]
+      },
+      {
+        type: "callout",
+        body: `Ja estruturamos esse recorte em projetos parecidos: ${offering}. Se faz sentido pro seu cenario, vale uma conversa de 30min sem compromisso.`,
+        ctaLabel,
+        ctaHref: ctaPath
+      },
+      {
+        type: "prose",
         title: `Como avaliar ${secondaryKeyword} sem reescrever tudo`,
-        body: `Tratar ${primaryKeyword} como projeto isolado costuma falhar. O caminho mais eficiente e mapear um fluxo critico, medir o impacto e replicar onde houver retorno. Quem precisa avaliar isso na pratica costuma ter beneficio em conversar com um time como o da ${siteName} ([${ctaLabel}](${ctaPath})), que ja aplicou ${differentiators} em contextos parecidos. Nada disso elimina a etapa interna de validacao com os times de operacao.`
+        body: `Tratar ${primaryKeyword} como projeto isolado costuma falhar. O caminho mais eficiente e mapear um fluxo critico, medir o impacto e replicar onde houver retorno. ${capitalize(siteName)} aplica ${differentiators} em contextos parecidos, sem eliminar a etapa interna de validacao com os times de operacao.`
       },
       {
-        title: "Software sob medida com IA",
-        body: `Para ${angleLabel}, software sob medida com IA aplicada permite integrar sistemas existentes, manter regras de negocio e ganhar velocidade onde a operacao trava. A diferenca esta em escolher o ponto certo de automacao e medir efeito antes de generalizar. ${offering} entrega exatamente nessa fronteira.`
+        type: "cta-inline",
+        body: `Quer ver como esse recorte se aplica ao seu cenario?`,
+        ctaLabel,
+        ctaHref: ctaPath
       },
       {
-        title: "Proximo passo concreto",
-        body: `Recomenda-se comecar com um recorte de ${primaryKeyword} dentro de ${theme}: um fluxo critico, KPI claro, prazo curto. Esse formato evita iniciativas longas sem retorno. Para discutir como esse recorte se aplica ao seu contexto, [${ctaLabel}](${ctaPath}).`
+        type: "prose",
+        title: "Trade-offs e o que evitar",
+        body: `O erro mais comum e tratar ${primaryKeyword} como solucao universal. Sem recorte, sem KPI e sem fallback humano, a iniciativa vira ruido operacional. ${capitalize(angleLabel)} exige escolher o ponto certo de automacao e medir efeito antes de generalizar para outros fluxos.`
+      }
+    ],
+    faq: [
+      {
+        q: `Quanto tempo leva pra ver retorno com ${primaryKeyword}?`,
+        a: `Com recorte bem definido, a primeira leitura de impacto vem em 30 dias. Generalizacao para outros fluxos depende do KPI da fase 1 — sem isso, vira projeto sem fim.`
+      },
+      {
+        q: `Precisa reescrever os sistemas atuais?`,
+        a: `Nao. ${capitalize(siteName)} prioriza integracao com os sistemas existentes, mantendo as regras de negocio. Reescrita so quando a divida tecnica trava o resultado.`
+      },
+      {
+        q: `Quem deve liderar essa frente internamente?`,
+        a: `O time de operacao que sente o problema, com sponsor de tecnologia. Sem dono claro do fluxo critico, ${primaryKeyword} nao gera retorno mensuravel.`
       }
     ]
   };

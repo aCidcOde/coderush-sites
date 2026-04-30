@@ -6,6 +6,15 @@ module.exports = {
     "./sistemavendadireta/wordpress/**/*.php",
     "./sistemavendadireta/20*/**/*.php"
   ],
+  safelist: [
+    "italic",
+    "border-l-4",
+    "border-white",
+    "bg-white/10",
+    "text-white",
+    "decoration-white/40",
+    "underline-offset-4"
+  ],
   theme: {
     extend: {
       colors: {
