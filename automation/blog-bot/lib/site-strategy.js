@@ -139,70 +139,73 @@ const SITE_PROFILES = {
   },
   fluxointeligenteia: {
     persona:
-      "gerentes de operacao e atendimento que precisam reduzir custo e retrabalho com automacao",
-    personaShort: "times de operacao",
+      "diretores, gerentes de operacao, atendimento e TI que precisam colocar agentes corporativos em producao com governanca",
+    personaShort: "times de operacao, atendimento e TI",
     coverArt: {
       paletteHex: ["#04110d", "#34d399", "#38bdf8"],
       paletteDescription: "fundo dark esmeralda (#04110d) com verde esmeralda (#34d399) e ciano (#38bdf8)",
       lighting: "particulas de dados em movimento, linhas conectivas com brilho leve, atmosfera de sala-de-controle moderna",
-      mood: "energia operacional, agentes inteligentes em fluxo, sensacao de processo em tempo real",
+      mood: "controle operacional, agentes corporativos em fluxo, seguranca e integracao em tempo real",
       visualMotifs: [
-        "fluxos conectados por linhas de luz como metafora de agentes orquestrados",
-        "nos de processamento abstratos representando agentes ou ferramentas",
+        "fluxos conectados por linhas de luz como metafora de agentes corporativos orquestrados",
+        "nos de processamento abstratos representando RAG, tools, canais e permissoes",
         "particulas de dados pequenas e rapidas",
-        "camadas de profundidade sugerindo pipeline"
+        "camadas de profundidade sugerindo base de conhecimento, auditoria e observabilidade"
       ],
-      avoid: ["robos antropomorficos", "cerebros eletronicos cliche", "engrenagens", "telas de chatbot"]
+      avoid: ["robos antropomorficos", "cerebros eletronicos cliche", "engrenagens", "telas de chatbot", "autonomia total sem validacao"]
     },
     offering:
-      "agentes inteligentes (LangChain, LangGraph), automacao com n8n, integracao de sistemas e orquestracao de fluxos",
+      "agentes corporativos com RAG, tools, canais integrados, permissoes, auditoria, governanca e automacao segura",
     differentiators: [
-      "agentes inteligentes em producao com LangChain e LangGraph",
-      "n8n auto-hospedado integrado a sistemas reais",
-      "fluxos com fallback humano, observabilidade e auditoria",
-      "engenharia de prompt e tool-use bem definida por agente"
+      "agentes corporativos em producao conectados a documentos e sistemas internos",
+      "RAG, embeddings e bases de conhecimento privadas",
+      "tools com validacao, permissoes, logs e auditoria",
+      "Link como base de plataforma para agentes, onboarding, feedbacks e observabilidade"
     ],
-    voice: "operacional, focado em processo, custo e SLA",
-    casualVoice: "consultor de operacao que ja colocou agente em producao — pragmatico, fala de SLA real, sem mistica de IA",
-    bannedWords: mergeBanned(["IA generica", "chatbot besta", "tudo automatizado", "agente magico"]),
+    voice: "operacional e tecnico-comercial, focado em governanca, seguranca, ROI, permissoes e execucao controlada",
+    casualVoice: "consultor de operacao que ja colocou agente corporativo em producao — pragmatico, fala de permissoes, auditoria e SLA real, sem mistica de IA",
+    bannedWords: mergeBanned(["IA generica", "chatbot besta", "tudo automatizado", "agente magico", "autonomia total"]),
     angleBias: [
-      "agentes inteligentes",
-      "langchain",
-      "langgraph",
+      "agentes corporativos",
+      "RAG",
+      "tools",
+      "permissoes",
+      "auditoria",
+      "governanca",
       "n8n",
-      "RPA",
-      "atendimento",
-      "custo operacional",
-      "tool-use"
+      "canais integrados",
+      "Link"
     ],
     cta: { label: "Fale com a FluxoInteligente IA", path: "#contato" },
     keywords: {
       primary: [
-        "automacao com IA",
-        "agentes inteligentes",
-        "automacao de processos"
+        "agentes corporativos de IA",
+        "IA corporativa com governanca",
+        "automacao com IA segura"
       ],
       secondary: [
+        "RAG",
+        "tools",
+        "auditoria de IA",
+        "permissoes por usuario",
         "LangChain",
         "n8n",
-        "agentes de IA",
-        "LLM para automacao",
-        "RPA com IA",
-        "automacao de atendimento"
+        "agentes de IA corporativos",
+        "LLM para automacao"
       ],
       longTail: [
-        "como criar agentes de IA com LangChain",
-        "automacao de atendimento com IA",
-        "n8n auto-hospedado para empresas",
-        "agentes inteligentes em producao"
+        "como criar agentes corporativos com RAG",
+        "agentes de IA com permissoes e auditoria",
+        "IA corporativa conectada a documentos e sistemas",
+        "plataforma Link para agentes corporativos"
       ]
     },
     themes: [
-      "agentes inteligentes com LangChain em producao",
-      "orquestracao de agentes com LangGraph",
-      "automacao de processos com LLMs e n8n",
-      "n8n e integracoes em escala com agentes",
-      "reducao de custo operacional com IA aplicada"
+      "agentes corporativos com RAG e governanca",
+      "tools seguras para agentes de IA",
+      "permissoes e auditoria em IA corporativa",
+      "canais integrados para agentes corporativos",
+      "Link como base operacional para agentes inteligentes"
     ]
   },
   emergency: {
@@ -222,14 +225,14 @@ const SITE_PROFILES = {
         "linhas finas dourado-quente conectando blocos como metafora de cruzamento de fontes",
         "selos, lacres ou marcas d agua reduzidos a forma e cor (sem texto legivel)",
         "particulas douradas dispersas sugerindo dado verificado",
-        "Gordon (mascote IA) aparece em cerca de 40% das capas, sempre como ator analitico (revisando dossie, segurando tablet, observando matriz de dados), nunca como hero shot"
+        "mascote IA robótico aparece em cerca de 40% das capas, sempre como ator analitico (revisando dossie, segurando tablet, observando matriz de dados), nunca como hero shot"
       ],
       characterReference: {
-        name: "Gordon",
+        name: "mascote IA",
         description:
           "humanoid robot character with chrome silver-blue body, slim athletic build, friendly youthful face, signature transparent translucent skull revealing a glowing soft-blue brain inside, fine gold trim lines and panels along chest/shoulders/arms, subtle round gold emblem on chest plate, calm confident expression",
         usageRule:
-          "Only feature Gordon when the post angle involves a concrete analytical activity (revisao de matricula, due diligence imobiliaria, auditoria, checklist, onboarding de fornecedor). Place him at 1/3 of the frame, in mid-shot or upper-body, interacting with abstract documents/dossiers/holographic data, never centered, never staring at camera, never with text-bearing tablet. For abstract/conceptual posts (regulacao, mercado, panorama, tendencias), omit him entirely and use pure abstract metaphor."
+          "Only feature the robot mascot when the post angle involves a concrete analytical activity (revisao de matricula, due diligence imobiliaria, auditoria, checklist, onboarding de fornecedor). Place it at 1/3 of the frame, in mid-shot or upper-body, interacting with abstract documents/dossiers/holographic data, never centered, never staring at camera, never with text-bearing tablet. For abstract/conceptual posts (regulacao, mercado, panorama, tendencias), omit it entirely and use pure abstract metaphor."
       },
       avoid: [
         "balanca da justica",
@@ -238,8 +241,8 @@ const SITE_PROFILES = {
         "globo terrestre",
         "graficos de bolsa com numeros",
         "pessoas em terno apertando mao",
-        "Gordon centralizado fazendo hero pose",
-        "Gordon segurando tablet com texto visivel",
+        "mascote centralizado fazendo hero pose",
+        "mascote segurando tablet com texto visivel",
         "qualquer rosto humano fotorrealistico em close"
       ]
     },

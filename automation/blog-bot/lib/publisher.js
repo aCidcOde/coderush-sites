@@ -77,16 +77,16 @@ const SITE_COPY = {
     blogName: "Blog FluxoInteligente IA",
     homeSectionTitle: "Blog FluxoInteligente IA",
     homeSectionDescription:
-      "Conteúdo sobre agentes, n8n, automação de processos e IA aplicada a operações que precisam reduzir custo com governança.",
+      "Conteúdo sobre agentes corporativos, RAG, tools, automação segura e IA aplicada a operações que precisam escalar com governança.",
     indexTitle: "Blog FluxoInteligente IA | Todos os posts",
     indexDescription:
-      "Artigos da FluxoInteligente IA sobre agentes, automação, n8n e operação assistida por IA.",
+      "Artigos da FluxoInteligente IA sobre agentes corporativos, RAG, tools, permissões, auditoria, canais e automação com IA.",
     articleLabel: "Blog FluxoInteligente IA",
     footerBlurb:
-      "A FluxoInteligente IA desenha automações com agentes, integra sistemas e leva fluxos complexos para produção.",
-    ctaTitle: "Quer colocar um fluxo inteligente em produção?",
+      "A FluxoInteligente IA cria agentes corporativos conectados a documentos, sistemas, canais e tools, com permissões, auditoria e governança.",
+    ctaTitle: "Quer criar um agente corporativo em produção?",
     ctaBody:
-      "A FluxoInteligente IA conecta agentes, n8n e integrações reais para reduzir retrabalho e tempo operacional.",
+      "A FluxoInteligente IA estrutura RAG, tools, integrações, canais e controles para colocar agentes corporativos em operação real.",
     ctaPath: "#contato",
     ctaLabel: "Fale com a FluxoInteligente IA",
     phone: "11 99456-6726",

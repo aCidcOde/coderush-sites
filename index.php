@@ -441,17 +441,17 @@ $seoLdGraph = [
         </a>
 
         <!-- FluxoInteligente IA -->
-        <a href="https://fluxointeligenteia.com.br" target="_blank " class="portfolio-card group relative flex h-full flex-col rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.07] to-white/[0.02] p-6 shadow-lg shadow-black/25 backdrop-blur-sm hover:border-emerald-500/35">
+        <a href="https://fluxointeligenteia.com.br/agentes-corporativos/" target="_blank" rel="noopener noreferrer" class="portfolio-card group relative flex h-full flex-col rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.07] to-white/[0.02] p-6 shadow-lg shadow-black/25 backdrop-blur-sm hover:border-emerald-500/35">
           <div class="mb-5 flex items-start justify-between gap-3">
             <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-emerald-500/15 ring-1 ring-emerald-400/25 text-emerald-200">
               <i data-lucide="workflow" class="h-6 w-6" aria-hidden="true"></i>
             </span>
-            <span class="shrink-0 rounded-full bg-emerald-500/10 px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-emerald-200/90">Automação</span>
+            <span class="shrink-0 rounded-full bg-emerald-500/10 px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-emerald-200/90">Agentes corporativos</span>
           </div>
           <h3 class="font-heading text-lg font-bold text-white transition group-hover:text-emerald-200">FluxoInteligente IA</h3>
-          <p class="mt-3 flex-grow text-sm leading-relaxed text-white/65">Processos complexos viram fluxos inteligentes: n8n, langchain, RAG, agentes e IA aplicada ao negócio.</p>
+          <p class="mt-3 flex-grow text-sm leading-relaxed text-white/65">Agentes corporativos conectados a documentos, sistemas, canais e tools — com RAG, permissões, auditoria e governança.</p>
           <div class="mt-6 flex items-center justify-between gap-3 border-t border-white/10 pt-5">
-            <span class="truncate text-xs text-white/45" title="fluxointeligenteia.com.br">fluxointeligenteia.com.br</span>
+            <span class="truncate text-xs text-white/45" title="Agentes corporativos de IA">fluxointeligenteia.com.br</span>
             <span class="inline-flex shrink-0 items-center gap-1.5 text-sm font-semibold text-emerald-400 transition group-hover:text-emerald-300">
               Visitar
               <i data-lucide="arrow-right" class="h-4 w-4 transition group-hover:translate-x-0.5" aria-hidden="true"></i>
@@ -815,8 +815,8 @@ $seoLdGraph = [
               codafacil.dev
               <i data-lucide="external-link" class="h-3 w-3 shrink-0 opacity-70" aria-hidden="true"></i>
             </a>
-            <a href="https://fluxointeligenteia.com.br" target="_blank" rel="noopener noreferrer" class="footer-eco-pill focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#020b1a]">
-              <span class="max-w-[12rem] truncate sm:max-w-none">fluxointeligenteia.com.br</span>
+            <a href="https://fluxointeligenteia.com.br" target="_blank" rel="noopener noreferrer" title="FluxoInteligente IA — agentes corporativos com RAG, tools e governança" class="footer-eco-pill focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#020b1a]">
+              <span class="max-w-[12rem] truncate sm:max-w-none">FluxoInteligente IA</span>
               <i data-lucide="external-link" class="h-3 w-3 shrink-0 opacity-70" aria-hidden="true"></i>
             </a>
           </div>

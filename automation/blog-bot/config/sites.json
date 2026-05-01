@@ -99,7 +99,7 @@
     {
       "id": "fluxointeligenteia",
       "name": "FluxoInteligente IA",
-      "postType": "ia-pratica-automacao",
+      "postType": "agentes-corporativos-ia",
       "language": "pt-BR",
       "enabled": true,
       "baseUrl": "https://fluxointeligenteia.com.br",

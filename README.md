@@ -13,6 +13,18 @@ Hub multi-site do ecossistema **CodeRush** — conjunto de empresas de tecnologi
 | **Codafacil.dev** | codafacil.dev | `codafacil/` | PHP + Tailwind compilado |
 | **FluxoInteligente IA** | fluxointeligenteia.com.br | `fluxointeligenteia/` | HTML + Tailwind compilado + CSS/JS externos |
 
+### Posicionamento da FluxoInteligente IA
+
+A FluxoInteligente IA vende **agentes corporativos integrados ao negócio**, não apenas fluxos de automação. A narrativa pública deve priorizar:
+
+- agentes corporativos com RAG, tools, canais e integrações;
+- base de conhecimento privada, documentos e busca semântica;
+- permissões, logs, auditoria, observabilidade e LGPD;
+- execução segura em CRM, ERP, APIs, planilhas, bancos e e-mail/WhatsApp;
+- **Link** como plataforma/base para agentes inteligentes corporativos.
+
+Evitar posicionar a marca como apenas `n8n`, chatbot simples ou automação genérica.
+
 ---
 
 ## Rodando localmente
@@ -65,6 +77,8 @@ coderush-sites/
 │
 └── fluxointeligenteia/           # fluxointeligenteia.com.br
     ├── index.html
+    ├── agentes-corporativos/
+    ├── link/
     ├── css/
     └── js/
 ```

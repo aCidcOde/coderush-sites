@@ -521,8 +521,8 @@ document.addEventListener('DOMContentLoaded', function () {
             },
             auto: {
               t:
-                'Para automação com **n8n**, agentes e IA aplicada ao negócio, o **FluxoInteligente IA** desenha fluxos e integrações.',
-              link: { href: '/fluxointeligenteia/', label: 'Ver FluxoInteligente IA', external: false },
+                'Para agentes corporativos com **RAG**, tools, integrações, permissões e auditoria, a **FluxoInteligente IA** cria IA conectada à operação.',
+              link: { href: '/fluxointeligenteia/', label: 'Ver agentes corporativos', external: false },
             },
             human: {
               t:

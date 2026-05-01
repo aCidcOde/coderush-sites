@@ -42,6 +42,8 @@ O fluxo é multi-site de verdade: gera o draft, publica o post em `YYYY/MM/DD/sl
   - índice: [`codafacil/blog/index.php`](/Users/acidcode/data/coderush-sites/codafacil/blog/index.php)
 - `fluxointeligenteia`
   - home: [`fluxointeligenteia/index.html`](/Users/acidcode/data/coderush-sites/fluxointeligenteia/index.html)
+  - agentes corporativos: [`fluxointeligenteia/agentes-corporativos/index.html`](/Users/acidcode/data/coderush-sites/fluxointeligenteia/agentes-corporativos/index.html)
+  - Link: [`fluxointeligenteia/link/index.html`](/Users/acidcode/data/coderush-sites/fluxointeligenteia/link/index.html)
   - índice: [`fluxointeligenteia/blog/index.html`](/Users/acidcode/data/coderush-sites/fluxointeligenteia/blog/index.html)
 - `sistemavendadireta`
   - home: [`sistemavendadireta/index.php`](/Users/acidcode/data/coderush-sites/sistemavendadireta/index.php)
@@ -81,6 +83,14 @@ Observação importante:
 
 - o robô agora também lê `sistemavendadireta/.env`, `codafacil/.env` e `fluxointeligenteia/.env` quando esses arquivos existirem
 - isso permite reaproveitar uma chave já cadastrada no projeto, sem exigir um `.env` novo na raiz
+
+## Perfil editorial da FluxoInteligente IA
+
+O posicionamento atual da FluxoInteligente IA é **agentes corporativos integrados ao negócio**. Posts, CTAs e cards devem reforçar RAG, tools, canais, integrações, permissões, logs, auditoria, observabilidade, LGPD e evolução contínua.
+
+- Produto/base própria: `Link`
+- Evitar: vender a marca como apenas n8n, chatbot simples ou automação genérica
+- Preferir: agentes corporativos, IA integrada à operação, execução segura, base de conhecimento privada e governança
 
 ## Comandos
 

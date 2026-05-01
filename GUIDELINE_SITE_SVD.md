@@ -138,6 +138,7 @@ Removidos como obsoletos:
 
 ### FluxoInteligente IA (`fluxointeligenteia/`)
 - Entrada: `index.html`
+- Paginas estrategicas: `agentes-corporativos/index.html`, `link/index.html`
 - CSS: `css/site-tailwind.css`, `css/hub-parity.css`, `css/styles.css`
 - JS: `js/scripts.js`
 
@@ -277,10 +278,12 @@ Cada perfil contem:
 - Keywords primarias: `desenvolvimento de software sob medida`, `fabrica de software`, `desenvolvimento Laravel`
 - CTA: "Fale com a Codafacil.dev" → `#contato`
 
-**FluxoInteligente IA** — agentes inteligentes (LangChain, n8n) e automacao com IA
-- Voz: operacional, focado em processo, custo e SLA
-- Keywords primarias: `automacao com IA`, `agentes inteligentes`, `automacao de processos`
-- CTA: "Fale com a FluxoInteligente IA" → `#contato`
+**FluxoInteligente IA** — agentes corporativos integrados ao negocio, com RAG, tools, canais, permissoes, auditoria e governanca
+- Produto/base: `Link`
+- Voz: operacional e tecnico-comercial, focada em processo, seguranca, permissoes, auditoria, ROI e SLA
+- Keywords primarias: `agentes corporativos de IA`, `IA corporativa com governanca`, `automacao com IA segura`
+- CTA: "Quero criar meu agente corporativo" ou "Fale com especialista" → `#contato`
+- Evitar: vender apenas `n8n`, chatbot simples, autonomia total sem validacao humana ou automacao generica
 
 **Sistema Venda Direta** — software para vendas diretas e MMN
 - Voz: executivo, focado em resultado comercial e previsibilidade
@@ -312,7 +315,7 @@ Vivem em `automation/blog-bot/lib/publisher.js` na chave `ctaTitle` de cada `SIT
 
 - CodeRush: "Quer destravar uma iniciativa de tecnologia com criterio?"
 - Codafacil: "Precisa tirar um produto ou integracao do papel?"
-- FluxoInteligente: "Quer colocar um fluxo inteligente em producao?"
+- FluxoInteligente: "Quer criar um agente corporativo em producao?"
 - SVD: "Quer aplicar IA na operacao comercial com previsibilidade?"
 
 ### Feeds RSS por site
@@ -321,7 +324,7 @@ Vivem em `automation/blog-bot/lib/publisher.js` na chave `ctaTitle` de cada `SIT
 |---|---|
 | CodeRush | Martin Fowler, AWS Architecture, ThoughtWorks, Stack Overflow, Google Cloud |
 | Codafacil | Laravel News, Stitcher (Brent Roose), GitHub Blog, LangChain, Codeium |
-| FluxoInteligente | LangChain, n8n, Hugging Face, CrewAI, OpenAI |
+| FluxoInteligente | LangChain, n8n, Hugging Face, CrewAI, OpenAI, docs/RAG/tools/governanca |
 | SVD | Direct Selling News, RD Station, HubSpot Sales, Salesforce, WFDSA |
 
 Mistura PT/EN. Apenas fontes gratuitas. Lista atual em `automation/blog-bot/config/sites.json:research.feeds`.

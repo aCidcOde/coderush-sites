@@ -17,6 +17,15 @@ Repositório multi-site (5 marcas) com automação de blog via OpenRouter + GitH
 
 Pipeline: pickTheme → research RSS → AI prompt → generate JSON contract → generate cover (gpt-5-image / gemini-3-pro fallback) → publish.
 
+## Posicionamento FluxoInteligente IA
+
+FluxoInteligente IA deve ser tratada como empresa de **agentes corporativos integrados ao negócio**, com automação, RAG, tools, canais, permissões, auditoria, observabilidade e governança.
+
+- Produto/base própria: **Link**
+- Rotas principais: `/`, `/agentes-corporativos/`, `/link/`
+- Evitar: vender apenas `n8n`, chatbot simples ou automação genérica
+- Usar: agentes corporativos, base de conhecimento, execução segura, permissões, logs, auditoria, canais integrados e evolução contínua
+
 ## Cadência
 
 Cron a cada 3 dias (`0 10 3,6,9,12,15,18,21,24,27,30 * *` UTC = 07:00 SP) em `.github/workflows/blog-automation.yml`. 1 batch publica em todos os 5 sites. Manual via `workflow_dispatch`.
@@ -59,7 +68,7 @@ Renderer: emite JSON-LD `BlogPosting` + `FAQPage` quando aplicável.
 
 ## Design system Emergency (referência pros próximos sites API)
 
-Paleta deep-navy + gold extraída do CSS real do emergency.com.br + tokens.css do planetacertidoes-saas. Personagem mascote opcional ("Gordon") aparece quando o ângulo do post é analítico (DD imobiliária, auditoria, checklist). **Regra absoluta**: ZERO pessoas reais fotorealísticas; só Gordon estilizado quando regra de uso permite, ou abstração pura.
+Paleta deep-navy + gold extraída do CSS real do emergency.com.br + tokens.css do planetacertidoes-saas. Personagem mascote robótico opcional aparece quando o ângulo do post é analítico (DD imobiliária, auditoria, checklist). **Regra absoluta**: ZERO pessoas reais fotorealísticas; só mascote estilizado quando regra de uso permite, ou abstração pura.
 
 `gpt-5-image` respeita melhor a regra. `gemini-3-pro` (fallback) às vezes ignora — quando isso ocorrer, regerar.
 

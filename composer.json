@@ -1,6 +1,6 @@
 {
     "name": "coderush/coderush-sites",
-    "description": "Monorepo dos sites do ecossistema CodeRush (hub, SVD, Codafacil, WordPress Consultoria e FluxoInteligente IA).",
+    "description": "Monorepo dos sites do ecossistema CodeRush (hub, SVD, Codafacil, WordPress Consultoria e FluxoInteligente IA para agentes corporativos).",
     "type": "project",
     "license": "proprietary",
     "require": {

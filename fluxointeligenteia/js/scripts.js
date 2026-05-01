@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded",function(){
       var leadStorageKey="fluxo-contact-lead";
       var urlParams=new URLSearchParams(window.location.search);
       var mailStatus=urlParams.get("mail");
-      var defaultWaMsg="Ola, vim pelo site da FluxoInteligente IA e quero saber mais sobre automacao.";
+      var defaultWaMsg="Ola, vim pelo site da FluxoInteligente IA e quero saber mais sobre agentes corporativos.";
       var phone="5511994566726";
 
       function getStoredLead(){try{var r=window.sessionStorage.getItem(leadStorageKey);return r?JSON.parse(r):null;}catch(e){return null;}}
@@ -101,23 +101,23 @@ document.addEventListener("DOMContentLoaded",function(){
           if(iconMsg&&iconX){iconMsg.classList.toggle("hidden",v);iconX.classList.toggle("hidden",!v);}
           if(labelOpen&&labelClose){labelOpen.classList.toggle("hidden",v);labelClose.classList.toggle("hidden",!v);}
           icons();
-          if(v&&!initialized){initialized=true;bot("Olá! Posso orientar sobre diagnóstico, implementação ou parceria recorrente — ou te levar ao formulário.");
+          if(v&&!initialized){initialized=true;bot("Olá! Posso orientar sobre diagnóstico, agente corporativo ou Link — ou te levar ao formulário.");
             renderQuick([
-              {label:"Diagnóstico",onClick:function(){user("Quero diagnóstico");typing(function(){bot("O diagnóstico mapeia processos e entrega roadmap com ROI. Use o formulário com essa opção.");renderQuick([ctaChip(),{label:"Menu",onClick:function(){renderQuick(menu());}}]);});}},
-              {label:"Implementação",onClick:function(){user("Implementação de fluxos");typing(function(){bot("Feito: desenho no n8n, integrações, testes e homologação. Peça proposta no formulário.");renderQuick([ctaChip(),{label:"Menu",onClick:function(){renderQuick(menu());}}]);});}},
-              {label:"Parceiro IA",onClick:function(){user("Parceiro IA recorrente");typing(function(){bot("Ideal para evolução contínua: horas mensais, novos fluxos e relatórios. Fale conosco no formulário.");renderQuick([ctaChip(),{label:"Menu",onClick:function(){renderQuick(menu());}}]);});}},
+              {label:"Diagnóstico",onClick:function(){user("Quero diagnóstico");typing(function(){bot("O diagnóstico mapeia processos, gargalos e agentes com maior potencial de ROI. Use o formulário com essa opção.");renderQuick([ctaChip(),{label:"Menu",onClick:function(){renderQuick(menu());}}]);});}},
+              {label:"Agente corporativo",onClick:function(){user("Quero um agente corporativo");typing(function(){bot("Desenhamos persona, permissões, base de conhecimento, tools, canais e integrações para produção.");renderQuick([ctaChip(),{label:"Menu",onClick:function(){renderQuick(menu());}}]);});}},
+              {label:"Link",onClick:function(){user("Quero conhecer o Link");typing(function(){bot("O Link é nossa base para agentes corporativos com RAG, tools, permissões, auditoria e canais integrados.");renderQuick([ctaChip(),{label:"Menu",onClick:function(){renderQuick(menu());}}]);});}},
               {label:"Hub CodeRush",onClick:function(){user("Ver ecossistema");typing(function(){bot("Somos parte do CodeRush — veja todas as marcas no hub.");var d=document.createElement("div");d.className="chat-msg chat-msg--bot mt-2";var a=document.createElement("a");a.href="/";a.className="font-semibold text-emerald-400 underline decoration-emerald-400/40 underline-offset-2 hover:text-emerald-300";a.textContent="Abrir hub CodeRush";d.appendChild(a);messagesEl.appendChild(d);scrollB();renderQuick([ctaChip(),{label:"Menu",onClick:function(){renderQuick(menu());}}]);});}}
             ]);
           }
           if(v)setTimeout(function(){input.focus();},rm?0:200);
         }
         function menu(){return[
-          {label:"Diagnóstico",onClick:function(){user("Diagnóstico");typing(function(){bot("Use o formulário selecionando diagnóstico / mapeamento.");renderQuick([ctaChip()]);});}},
-          {label:"Implementação",onClick:function(){user("Implementação");typing(function(){bot("Descreva sistemas e prazo no formulário para uma proposta.");renderQuick([ctaChip()]);});}},
-          {label:"Parceiro IA",onClick:function(){user("Parceiro IA");typing(function(){bot("Indique volume mensal desejado no formulário.");renderQuick([ctaChip()]);});}},
+          {label:"Diagnóstico",onClick:function(){user("Diagnóstico");typing(function(){bot("Use o formulário para pedir um diagnóstico de automação com IA.");renderQuick([ctaChip()]);});}},
+          {label:"Agente corporativo",onClick:function(){user("Agente corporativo");typing(function(){bot("Descreva sistemas, documentos e canais desejados no formulário para uma proposta.");renderQuick([ctaChip()]);});}},
+          {label:"Link",onClick:function(){user("Link");typing(function(){bot("Podemos demonstrar o Link como plataforma de agentes com governança.");renderQuick([ctaChip()]);});}},
           {label:"Hub CodeRush",onClick:function(){user("CodeRush");typing(function(){bot("Acesse o hub para outras empresas do grupo.");var d=document.createElement("div");d.className="chat-msg chat-msg--bot mt-2";var a=document.createElement("a");a.href="/";a.className="font-semibold text-emerald-400 underline";a.textContent="coderush hub";d.appendChild(a);messagesEl.appendChild(d);scrollB();renderQuick([ctaChip()]);});}}
         ];}
-        function freeText(raw){var t=raw.trim();if(t.length<2)return;user(t);input.value="";typing(function(){bot("Obrigado pelo contexto. Para retorno estruturado, use o formulário de contato — nossa equipe responde em nome da FluxoInteligente.");renderQuick([ctaChip(),{label:"Menu",onClick:function(){renderQuick(menu());}}]);});}
+        function freeText(raw){var t=raw.trim();if(t.length<2)return;user(t);input.value="";typing(function(){bot("Obrigado pelo contexto. Para retorno estruturado, use o formulário de contato — nossa equipe responde em nome da FluxoInteligente IA.");renderQuick([ctaChip(),{label:"Menu",onClick:function(){renderQuick(menu());}}]);});}
         backdrop.addEventListener("click",function(){setOpen(false);});
         closeBtn&&closeBtn.addEventListener("click",function(){setOpen(false);});
         launcher.addEventListener("click",function(){setOpen(!open);});
