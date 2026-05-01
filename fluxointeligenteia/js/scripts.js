@@ -124,3 +124,75 @@ document.addEventListener("DOMContentLoaded",function(){
         form.addEventListener("submit",function(e){e.preventDefault();freeText(input.value);});
       })();
     });
+
+(function(){
+      function buildPageNeural(){
+        var svg=document.getElementById("page-neural");
+        if(!svg)return;
+        var edgesG=document.getElementById("pn-edges");
+        var nodesG=document.getElementById("pn-nodes");
+        var pulsesG=document.getElementById("pn-pulses");
+        if(!edgesG||!nodesG||!pulsesG)return;
+        edgesG.textContent="";
+        nodesG.textContent="";
+        pulsesG.textContent="";
+        var W=1920,H=2400,cols=7,rows=12,colStep=W/(cols-1),rowStep=H/(rows-1),pts=[],svgNs="http://www.w3.org/2000/svg";
+        for(var c=0;c<cols;c++){
+          pts[c]=[];
+          for(var r=0;r<rows;r++){
+            var jx=Math.sin(c*12.9+r*4.1)*0.5*(colStep*0.32);
+            var jy=Math.cos(c*5.3+r*7.7)*0.5*(rowStep*0.30);
+            pts[c][r]={x:c*colStep+jx,y:r*rowStep+jy};
+          }
+        }
+        for(var c2=0;c2<cols-1;c2++){
+          for(var r2=0;r2<rows;r2++){
+            var p=pts[c2][r2];
+            var targets=[pts[c2+1][r2]];
+            if(r2>0&&(r2+c2)%3!==0)targets.push(pts[c2+1][r2-1]);
+            if(r2<rows-1&&(r2+c2)%2===0)targets.push(pts[c2+1][r2+1]);
+            targets.forEach(function(t){
+              var line=document.createElementNS(svgNs,"line");
+              line.setAttribute("x1",p.x.toFixed(1));
+              line.setAttribute("y1",p.y.toFixed(1));
+              line.setAttribute("x2",t.x.toFixed(1));
+              line.setAttribute("y2",t.y.toFixed(1));
+              line.setAttribute("opacity",(0.45+Math.random()*0.35).toFixed(2));
+              edgesG.appendChild(line);
+            });
+          }
+        }
+        for(var c3=0;c3<cols;c3++){
+          for(var r3=0;r3<rows;r3++){
+            var p2=pts[c3][r3];
+            var ci=document.createElementNS(svgNs,"circle");
+            ci.setAttribute("cx",p2.x.toFixed(1));
+            ci.setAttribute("cy",p2.y.toFixed(1));
+            ci.setAttribute("r",(2+((c3+r3)%3===0?1.5:0)).toFixed(1));
+            ci.setAttribute("opacity","0.65");
+            ci.setAttribute("class","neural-node n"+((c3+r3)%6+1));
+            nodesG.appendChild(ci);
+          }
+        }
+        for(var i=0;i<6;i++){
+          var row=Math.floor(Math.random()*rows);
+          var path="M"+pts[0][row].x.toFixed(1)+","+pts[0][row].y.toFixed(1);
+          for(var c4=1;c4<cols;c4++){
+            var drift=Math.random()<0.5?-1:1;
+            if(Math.random()<0.55)row=Math.max(0,Math.min(rows-1,row+drift));
+            path+=" L"+pts[c4][row].x.toFixed(1)+","+pts[c4][row].y.toFixed(1);
+          }
+          var pulse=document.createElementNS(svgNs,"circle");
+          pulse.setAttribute("r","3");
+          pulse.setAttribute("fill",i%2?"url(#pn-pulse-alt)":"url(#pn-pulse)");
+          var motion=document.createElementNS(svgNs,"animateMotion");
+          motion.setAttribute("dur",(5+Math.random()*4).toFixed(1)+"s");
+          motion.setAttribute("repeatCount","indefinite");
+          motion.setAttribute("begin",(-Math.random()*5).toFixed(1)+"s");
+          motion.setAttribute("path",path);
+          pulse.appendChild(motion);
+          pulsesG.appendChild(pulse);
+        }
+      }
+      document.addEventListener("DOMContentLoaded",buildPageNeural);
+    })();

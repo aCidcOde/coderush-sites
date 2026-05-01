@@ -160,6 +160,34 @@
 </head>
 
 <body id="top" class="min-h-screen antialiased">
+  <div class="site-neural-bg" aria-hidden="true">
+    <div class="site-neural-blob site-neural-blob-a"></div>
+    <div class="site-neural-blob site-neural-blob-b"></div>
+    <div class="site-neural-blob site-neural-blob-c"></div>
+    <div class="site-neural-grid"></div>
+    <svg id="page-neural" class="site-neural-svg" viewBox="0 0 1920 2400" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="pn-edge" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="rgba(16,185,129,0.05)"></stop>
+          <stop offset="50%" stop-color="rgba(52,211,153,0.34)"></stop>
+          <stop offset="100%" stop-color="rgba(96,165,250,0.05)"></stop>
+        </linearGradient>
+        <radialGradient id="pn-pulse" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="rgba(255,255,255,1)"></stop>
+          <stop offset="40%" stop-color="rgba(52,211,153,0.9)"></stop>
+          <stop offset="100%" stop-color="transparent"></stop>
+        </radialGradient>
+        <radialGradient id="pn-pulse-alt" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="rgba(255,255,255,1)"></stop>
+          <stop offset="40%" stop-color="rgba(45,212,191,0.88)"></stop>
+          <stop offset="100%" stop-color="transparent"></stop>
+        </radialGradient>
+      </defs>
+      <g id="pn-edges" stroke="url(#pn-edge)" stroke-width="0.7" fill="none"></g>
+      <g id="pn-nodes" fill="#a7f3d0"></g>
+      <g id="pn-pulses"></g>
+    </svg>
+  </div>
 
   <header class="site-header" data-site-header>
     <div class="site-header-pill">
@@ -167,8 +195,9 @@
         class="site-header-inner mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-2.5 sm:gap-4 sm:px-6 sm:py-3 md:py-3.5">
         <a href="#top"
           class="header-brand group flex shrink-0 items-center gap-2.5 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/55 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">
-          <span class="header-brand-mark" aria-hidden="true">FI</span>
-          <span class="header-brand-text">Fluxo<span>Inteligente com IA</span></span>
+          <span class="sr-only">FluxoInteligente IA</span>
+          <img src="imagens/logo-link-transparente-icone-branco.png" alt="FluxoInteligente IA" class="header-brand-logo"
+            width="2172" height="724" decoding="async" />
         </a>
         <div class="hidden items-center gap-5 lg:gap-7 md:flex">
           <nav class="flex flex-wrap items-center justify-end gap-x-1 gap-y-1 sm:gap-x-2 lg:gap-x-3 xl:gap-x-4"
@@ -237,6 +266,95 @@
       <div class="hero-blob hero-blob-1"></div>
       <div class="hero-blob hero-blob-2"></div>
       <div class="hero-blob hero-blob-3"></div>
+      <svg class="hero-neural-overlay" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <linearGradient id="hero-neural-edge" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="rgba(16,185,129,0.04)"></stop>
+            <stop offset="50%" stop-color="rgba(52,211,153,0.4)"></stop>
+            <stop offset="100%" stop-color="rgba(96,165,250,0.04)"></stop>
+          </linearGradient>
+          <radialGradient id="hero-neural-pulse" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="rgba(255,255,255,1)"></stop>
+            <stop offset="40%" stop-color="rgba(52,211,153,0.9)"></stop>
+            <stop offset="100%" stop-color="transparent"></stop>
+          </radialGradient>
+          <radialGradient id="hero-neural-halo" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="rgba(52,211,153,0.65)"></stop>
+            <stop offset="60%" stop-color="rgba(52,211,153,0.08)"></stop>
+            <stop offset="100%" stop-color="transparent"></stop>
+          </radialGradient>
+        </defs>
+        <g stroke="url(#hero-neural-edge)" stroke-width="0.8" fill="none" opacity="0.7">
+          <line x1="120" y1="160" x2="320" y2="240"></line>
+          <line x1="120" y1="160" x2="320" y2="420"></line>
+          <line x1="120" y1="380" x2="320" y2="240"></line>
+          <line x1="120" y1="380" x2="320" y2="420"></line>
+          <line x1="120" y1="380" x2="320" y2="640"></line>
+          <line x1="120" y1="640" x2="320" y2="420"></line>
+          <line x1="120" y1="640" x2="320" y2="640"></line>
+          <line x1="320" y1="240" x2="560" y2="180"></line>
+          <line x1="320" y1="240" x2="560" y2="380"></line>
+          <line x1="320" y1="420" x2="560" y2="180"></line>
+          <line x1="320" y1="420" x2="560" y2="380"></line>
+          <line x1="320" y1="420" x2="560" y2="600"></line>
+          <line x1="320" y1="640" x2="560" y2="600"></line>
+          <line x1="320" y1="640" x2="560" y2="780"></line>
+          <line x1="560" y1="180" x2="820" y2="280"></line>
+          <line x1="560" y1="380" x2="820" y2="280"></line>
+          <line x1="560" y1="380" x2="820" y2="540"></line>
+          <line x1="560" y1="600" x2="820" y2="540"></line>
+          <line x1="560" y1="780" x2="820" y2="700"></line>
+          <line x1="820" y1="280" x2="1080" y2="200"></line>
+          <line x1="820" y1="280" x2="1080" y2="440"></line>
+          <line x1="820" y1="540" x2="1080" y2="440"></line>
+          <line x1="820" y1="540" x2="1080" y2="660"></line>
+          <line x1="820" y1="700" x2="1080" y2="660"></line>
+          <line x1="1080" y1="200" x2="1320" y2="280"></line>
+          <line x1="1080" y1="440" x2="1320" y2="280"></line>
+          <line x1="1080" y1="440" x2="1320" y2="520"></line>
+          <line x1="1080" y1="660" x2="1320" y2="520"></line>
+          <line x1="1080" y1="660" x2="1320" y2="740"></line>
+          <line x1="1320" y1="280" x2="1500" y2="380"></line>
+          <line x1="1320" y1="520" x2="1500" y2="380"></line>
+          <line x1="1320" y1="520" x2="1500" y2="600"></line>
+          <line x1="1320" y1="740" x2="1500" y2="600"></line>
+        </g>
+        <circle r="3" fill="url(#hero-neural-pulse)">
+          <animateMotion dur="3.6s" repeatCount="indefinite" path="M120,160 L320,240 L560,180 L820,280 L1080,200 L1320,280 L1500,380"></animateMotion>
+        </circle>
+        <circle r="3" fill="url(#hero-neural-pulse)">
+          <animateMotion dur="4.4s" begin="-1s" repeatCount="indefinite" path="M120,380 L320,420 L560,380 L820,540 L1080,440 L1320,520 L1500,600"></animateMotion>
+        </circle>
+        <circle r="3" fill="url(#hero-neural-pulse)">
+          <animateMotion dur="5.2s" begin="-2s" repeatCount="indefinite" path="M120,640 L320,640 L560,600 L820,700 L1080,660 L1320,740 L1500,600"></animateMotion>
+        </circle>
+        <circle cx="560" cy="180" r="22" fill="url(#hero-neural-halo)" opacity="0.6"></circle>
+        <circle cx="820" cy="540" r="22" fill="url(#hero-neural-halo)" opacity="0.5"></circle>
+        <circle cx="1080" cy="440" r="22" fill="url(#hero-neural-halo)" opacity="0.6"></circle>
+        <g fill="#a7f3d0">
+          <circle class="neural-node" cx="120" cy="160" r="3"></circle>
+          <circle class="neural-node n2" cx="120" cy="380" r="3"></circle>
+          <circle class="neural-node n3" cx="120" cy="640" r="3"></circle>
+          <circle class="neural-node" cx="320" cy="240" r="3"></circle>
+          <circle class="neural-node n2" cx="320" cy="420" r="3"></circle>
+          <circle class="neural-node n3" cx="320" cy="640" r="3"></circle>
+          <circle class="neural-node n4" cx="560" cy="180" r="4"></circle>
+          <circle class="neural-node n5" cx="560" cy="380" r="3"></circle>
+          <circle class="neural-node n6" cx="560" cy="600" r="3"></circle>
+          <circle class="neural-node" cx="560" cy="780" r="3"></circle>
+          <circle class="neural-node n2" cx="820" cy="280" r="3"></circle>
+          <circle class="neural-node n3" cx="820" cy="540" r="4"></circle>
+          <circle class="neural-node n4" cx="820" cy="700" r="3"></circle>
+          <circle class="neural-node n5" cx="1080" cy="200" r="3"></circle>
+          <circle class="neural-node n6" cx="1080" cy="440" r="4"></circle>
+          <circle class="neural-node" cx="1080" cy="660" r="3"></circle>
+          <circle class="neural-node n2" cx="1320" cy="280" r="3"></circle>
+          <circle class="neural-node n3" cx="1320" cy="520" r="3"></circle>
+          <circle class="neural-node n4" cx="1320" cy="740" r="3"></circle>
+          <circle class="neural-node n5" cx="1500" cy="380" r="3"></circle>
+          <circle class="neural-node n6" cx="1500" cy="600" r="3"></circle>
+        </g>
+      </svg>
       <div class="hero-vignette"></div>
       <div class="hero-noise"></div>
     </div>
@@ -279,6 +397,11 @@
         <a href="#como-funciona"
           class="inline-flex items-center justify-center rounded-full border border-white/25 bg-white/[0.03] px-8 py-3.5 text-sm font-semibold text-white/95 backdrop-blur-sm transition duration-300 hover:-translate-y-0.5 hover:border-white/45 hover:bg-white/[0.08] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">Ver
           como funciona</a>
+      </div>
+      <div class="hero-reveal-item hero-delay-5 mt-10 flex justify-center">
+        <img src="imagens/hero-link.png" alt="Link, agente corporativo da FluxoInteligente IA"
+          class="hero-link-image h-72 w-full max-w-sm object-contain drop-shadow-[0_28px_55px_rgba(16,185,129,0.32)] sm:h-96 sm:max-w-md md:h-[30rem] md:max-w-xl"
+          width="1254" height="1254" loading="eager" decoding="async" fetchpriority="high" />
       </div>
       <div class="hero-reveal-item hero-delay-5 mt-14 flex flex-col items-center gap-2 md:mt-20">
         <a href="#clientes"
@@ -468,6 +591,17 @@
         <div class="lg:col-span-7">
           <div
             class="rounded-3xl border border-emerald-500/25 bg-gradient-to-br from-emerald-950/45 via-white/[0.04] to-white/[0.02] p-6 shadow-2xl shadow-emerald-950/30 md:p-8">
+            <div class="mb-7 flex flex-col items-center gap-5 text-center sm:flex-row sm:text-left">
+              <img src="imagens/avatar-link.png" alt="Conheça o Link, agente corporativo da FluxoInteligente IA"
+                class="h-44 w-44 shrink-0 object-contain drop-shadow-[0_24px_45px_rgba(16,185,129,0.28)] sm:h-52 sm:w-52"
+                width="1254" height="1254" loading="lazy" decoding="async" />
+              <div>
+                <p class="font-heading text-xs font-semibold uppercase tracking-[0.2em] text-emerald-300/85">Conheça o
+                  Link</p>
+                <p class="mt-2 text-sm leading-relaxed text-white/65">Um assistente corporativo para conectar
+                  conhecimento, ferramentas e canais sem perder controle operacional.</p>
+              </div>
+            </div>
             <div class="grid gap-3 sm:grid-cols-2">
               <div class="rounded-2xl border border-white/10 bg-white/[0.05] p-4">
                 <p class="text-sm font-semibold text-white">Agentes por área ou função</p>
@@ -1048,10 +1182,20 @@
 
       <div class="contact-layout">
         <div class="contact-copy">
-          <h2 class="text-base leading-relaxed text-white/90 sm:text-lg">
-            Se sua empresa tem processos repetitivos, documentos espalhados, atendimento manual ou sistemas que não
-            conversam entre si, podemos desenhar um agente corporativo para operar com segurança dentro do seu negócio.
-          </h2>
+          <div
+            class="mb-7 flex flex-col items-center gap-4 rounded-2xl border border-emerald-400/20 bg-emerald-500/[0.06] p-5 text-center sm:flex-row sm:items-end sm:text-left">
+            <img src="imagens/link-falando.png" alt="Link falando sobre agentes corporativos da FluxoInteligente IA"
+              class="h-36 w-36 shrink-0 object-contain drop-shadow-[0_20px_40px_rgba(16,185,129,0.28)] sm:h-44 sm:w-44"
+              width="1254" height="1254" loading="lazy" decoding="async" />
+            <div
+              class="relative rounded-2xl border border-white/15 bg-white/[0.08] p-5 text-base leading-relaxed text-white/90 shadow-lg shadow-black/20 sm:flex-1">
+              <span
+                class="absolute -left-2 bottom-10 hidden h-4 w-4 rotate-45 border-b border-l border-white/15 bg-white/[0.08] sm:block"
+                aria-hidden="true"></span>
+              Se sua empresa tem processos repetitivos, documentos espalhados, atendimento manual ou sistemas que não
+              conversam entre si, podemos desenhar um agente corporativo para operar com segurança dentro do seu negócio.
+            </div>
+          </div>
           <div class="contact-aside-card">
             <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/60">Atalho direto</p>
             <h3 class="mt-2 text-lg font-semibold">Prefere falar agora?</h3>
