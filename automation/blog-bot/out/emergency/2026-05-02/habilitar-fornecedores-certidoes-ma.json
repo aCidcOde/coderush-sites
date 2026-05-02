@@ -1,0 +1,88 @@
+{
+  "date": "2026-05-02",
+  "siteId": "emergency",
+  "postType": "due-diligence-certidoes",
+  "focus": "ia",
+  "theme": "habilitacao e onboarding de fornecedor com certidoes",
+  "angle": "M&A",
+  "slug": "habilitar-fornecedores-certidoes-ma",
+  "title": "Emergency Documentação: IA aplicado a M&A",
+  "description": "Atualização semanal de ia para Emergency Documentação, com foco em habilitacao e onboarding de fornecedor com certidoes.",
+  "sources": [
+    "https://capitalaberto.com.br/canais/por-dentro-do-mercado-by-vortx/agentes-de-ia-no-mercado-de-capitais-a-revolucao-que-nao-passa-pelo-chatgpt/",
+    "https://www.jota.info/opiniao-e-analise/artigos/a-experiencia-de-blumenau-e-a-adocao-da-inteligencia-artificial-na-transacao-tributaria",
+    "https://www.infomoney.com.br/economia/bowman-do-fed-diz-que-e-necessario-monitorar-impacto-da-ia-no-sistema-financeiro/",
+    "https://exame.com/inteligencia-artificial/ia-no-hype-conheca-o-suno-ferramenta-que-cria-musicas-completas-a-partir-de-text/",
+    "https://www.jota.info/opiniao-e-analise/artigos/investigacoes-internas-e-ia-sao-maiores-preocupacoes-de-juridicos-de-multinacionais-diz-pesquisa"
+  ],
+  "status": "draft",
+  "generatedAt": "2026-05-02T11:27:58-03:00",
+  "content": {
+    "eyebrow": "Guia prático",
+    "headline": "Como habilitar fornecedores com certidões em M&A",
+    "summary": "Entenda como a habilitação de fornecedores e certidões impactam no sucesso de M&A.",
+    "answerBox": {
+      "question": "Como habilitar fornecedores com certidões para M&A?",
+      "answer": "A habilitação de fornecedores em M&A envolve a obtenção de certidões online que comprovem a regularidade fiscal e trabalhista. Esses documentos garantem segurança jurídica e evitam riscos no processo de aquisição."
+    },
+    "tldr": [
+      "Certidões online são essenciais para M&A.",
+      "Habilitar fornecedores reduz riscos jurídicos.",
+      "A experiência em due diligence faz a diferença."
+    ],
+    "sections": [
+      {
+        "type": "prose",
+        "title": "O que é habilitação de fornecedores?",
+        "body": "Habilitação de fornecedores refere-se ao processo de validação de empresas que fornecem produtos ou serviços. Em transações de M&A, essa etapa é crucial, pois certidões como a de regularidade fiscal e trabalhista garantem que o fornecedor está em conformidade com a legislação. Isso minimiza riscos e aumenta a segurança da transação."
+      },
+      {
+        "type": "list",
+        "title": "Passos para habilitação de fornecedores em M&A",
+        "items": [
+          "Identificar as certidões necessárias para cada fornecedor.",
+          "Solicitar certidões online em cartórios e órgãos competentes.",
+          "Analisar a regularidade fiscal e trabalhista dos fornecedores.",
+          "Verificar a compatibilidade dos fornecedores com os requisitos do contrato.",
+          "Realizar acompanhamento contínuo durante o processo de M&A."
+        ]
+      },
+      {
+        "type": "callout",
+        "body": "Já estruturamos esse processo em diversas transações. Um acompanhamento humano pode evitar surpresas desagradáveis. Vale uma conversa.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Importância das certidões online",
+        "body": "As certidões online são uma ferramenta valiosa para advogados e controllers. Elas oferecem agilidade e segurança na verificação de fornecedores. Com a experiência da Emergency Documentação, é possível emitir certidões de forma orientada, garantindo que você tenha acesso às informações corretas no tempo certo. Em um cenário de M&A, essa rapidez pode ser decisiva para evitar atrasos e garantir a conformidade."
+      },
+      {
+        "type": "cta-inline",
+        "body": "Entenda como podemos ajudar na sua due diligence.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Cuidado com a falta de regularidade",
+        "body": "A ausência de certidões ou a irregularidade nos documentos pode resultar em riscos altos durante a aquisição. É vital evitar fornecedores com pendências, pois isso pode comprometer a transação. A Emergency Documentação se destaca por oferecer suporte humano em pedidos complexos, garantindo que você não dependa apenas de sistemas automatizados."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Quais certidões são obrigatórias em M&A?",
+        "a": "As principais certidões incluem a de regularidade fiscal, trabalhista e, dependendo do setor, licenças específicas de operação."
+      },
+      {
+        "q": "Como fazer due diligence imobiliária de matrícula?",
+        "a": "A due diligence imobiliária de matrícula envolve verificar a documentação do imóvel, incluindo escritura, registro e certidões de ônus."
+      },
+      {
+        "q": "O que é due diligence societária?",
+        "a": "Due diligence societária é a análise detalhada dos documentos e obrigações legais de uma empresa antes de uma aquisição ou fusão."
+      }
+    ]
+  }
+}

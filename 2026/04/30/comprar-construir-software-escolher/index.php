@@ -194,6 +194,21 @@
     </section>
 
     <!-- BLOG-LEIA-TAMBEM START -->
+<section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
+  <div class="flex items-end justify-between gap-4">
+    <h2 class="text-2xl font-semibold text-white">Leia também sobre arquitetura de software</h2>
+    <a href="../../../../blog/" class="text-sm font-semibold text-white/85 hover:text-white">Ver todos os artigos da CodeRush</a>
+  </div>
+  <div class="mt-5 grid gap-4 md:grid-cols-3">
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/05/02/garantir-governanca-arquitetura-software-critica/"><img src="../../../../imagens/posts/garantir-governanca-arquitetura-software-critica.jpg" alt="Como garantir governança em arquitetura de software crítica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/02/garantir-governanca-arquitetura-software-critica/" class="hover:underline">Como garantir governança em arquitetura de software crítica</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda a importância da governança na arquitetura de software para operações críticas e como a IA pode auxiliar.</p>
+  </div>
+</article>
+  </div>
+</section>
 <!-- BLOG-LEIA-TAMBEM END -->
     <!-- BLOG-CROSS-SITE START -->
 <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
@@ -204,11 +219,19 @@
   <p class="mt-2 text-sm text-white/70">Conteúdo recente dos outros sites do ecossistema.</p>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://codafacil.dev/2026/04/30/integracoes-automacao-operacoes-criticas-ia/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/integracoes-automacao-operacoes-criticas-ia.jpg" alt="Integrações e automação para operações críticas com IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://codafacil.dev/2026/05/02/acelere-desenvolvimento-software-sob-medida-ia/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/acelere-desenvolvimento-software-sob-medida-ia.jpg" alt="Acelere o desenvolvimento de software sob medida com IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/04/30/integracoes-automacao-operacoes-criticas-ia/" rel="noopener" target="_blank" class="hover:underline">Integrações e automação para operações críticas com IA</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Como acelerar o desenvolvimento de software sob medida sem perder qualidade.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/05/02/acelere-desenvolvimento-software-sob-medida-ia/" rel="noopener" target="_blank" class="hover:underline">Acelere o desenvolvimento de software sob medida com IA</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como a IA pode otimizar seu ciclo de desenvolvimento de software sob medida sem perder a qualidade.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="https://fluxointeligenteia.com.br/2026/05/02/implementar-agentes-corporativos-ia-governanca/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/implementar-agentes-corporativos-ia-governanca.jpg" alt="Como implementar agentes corporativos de IA com governança" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">FluxoInteligente IA</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/05/02/implementar-agentes-corporativos-ia-governanca/" rel="noopener" target="_blank" class="hover:underline">Como implementar agentes corporativos de IA com governança</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como integrar agentes corporativos de IA com foco em governança, segurança e automação eficiente.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
@@ -217,14 +240,6 @@
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Sistema Venda Direta</p>
     <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/04/30/crm-automacao-marketing-multinivel/" rel="noopener" target="_blank" class="hover:underline">CRM e Automação para Marketing Multinível</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a automação e IA podem otimizar o marketing multinível na sua empresa.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://fluxointeligenteia.com.br/agentes-corporativos/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/automacao-processos-llms-n8n-atendimento.jpg" alt="Agentes corporativos de IA conectados ao negócio" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">FluxoInteligente IA</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/agentes-corporativos/" rel="noopener" target="_blank" class="hover:underline">Agentes corporativos de IA conectados ao negócio</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Conheça agentes com RAG, tools, canais integrados, permissões, auditoria e governança operacional.</p>
   </div>
 </article>
   </div>
