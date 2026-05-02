@@ -60,11 +60,13 @@ async function ensureCoverFile({ root, site, contract, aiConfig }) {
   );
   ensureDir(coverDir);
   const targetPath = path.resolve(coverDir, `${contract.slug}.jpg`);
+  const altPath = `${targetPath}.alt.txt`;
   if (fs.existsSync(targetPath)) {
+    const cachedAlt = fs.existsSync(altPath) ? fs.readFileSync(altPath, "utf8").trim() : "";
     return {
       path: targetPath,
       source: "existing",
-      altText: "",
+      altText: cachedAlt,
       warning: null,
       leakage: null,
       prompt: ""
@@ -74,6 +76,9 @@ async function ensureCoverFile({ root, site, contract, aiConfig }) {
     throw new Error(`aiConfig ausente para gerar cover do site ${site.id}`);
   }
   const result = await generateCover({ aiConfig, site, contract, targetPath });
+  if (result.altText) {
+    fs.writeFileSync(altPath, result.altText, "utf8");
+  }
   return {
     path: targetPath,
     source: result.source,
@@ -144,6 +149,11 @@ async function publishApiPost(root, site, contract, aiConfig) {
   const cover = await ensureCoverFile({ root, site, contract, aiConfig });
   if (cover.altText && !contract.coverAlt) {
     contract.coverAlt = cover.altText;
+  }
+  if (!contract.coverAlt) {
+    throw new Error(
+      `coverAlt ausente para ${site.id}/${contract.slug}: regenere a capa removendo ${cover.path}`
+    );
   }
 
   const coverSize = fs.statSync(cover.path).size;
