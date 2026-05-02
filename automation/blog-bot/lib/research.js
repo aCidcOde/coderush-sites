@@ -105,23 +105,41 @@ function buildFocusMatchers(focus) {
   });
 }
 
-function rankItems(items, { sinceDays = 21, focus = "" } = {}) {
+function buildTopicMatchers(terms) {
+  const tokens = new Set();
+  (Array.isArray(terms) ? terms : [terms])
+    .filter(Boolean)
+    .forEach((term) => {
+      String(term)
+        .toLowerCase()
+        .split(/[^a-zà-ÿ0-9]+/i)
+        .filter((token) => token.length >= 4)
+        .forEach((token) => tokens.add(token));
+    });
+  return [...tokens].map((token) => new RegExp(escapeRegex(token), "i"));
+}
+
+function rankItems(items, { sinceDays = 21, focus = "", topicTerms = [], minTopicHits = 1 } = {}) {
   const cutoff = Date.now() - sinceDays * 24 * 60 * 60 * 1000;
-  const matchers = buildFocusMatchers(focus);
+  const focusMatchers = buildFocusMatchers(focus);
+  const topicMatchers = buildTopicMatchers(topicTerms);
+  const enforceTopic = topicMatchers.length > 0 && minTopicHits > 0;
 
   return [...items]
     .filter((item) => !item.publishedAt || item.publishedAt.getTime() >= cutoff)
     .map((item) => {
       const haystack = `${item.title} ${item.summary}`;
-      const focusHits = matchers.reduce((acc, matcher) => acc + (matcher.test(haystack) ? 1 : 0), 0);
+      const focusHits = focusMatchers.reduce((acc, matcher) => acc + (matcher.test(haystack) ? 1 : 0), 0);
+      const topicHits = topicMatchers.reduce((acc, matcher) => acc + (matcher.test(haystack) ? 1 : 0), 0);
       const recency = item.publishedAt ? item.publishedAt.getTime() : 0;
-      return { ...item, _score: focusHits * 1e13 + recency };
+      return { ...item, _topicHits: topicHits, _score: topicHits * 1e16 + focusHits * 1e13 + recency };
     })
+    .filter((item) => !enforceTopic || item._topicHits >= minTopicHits)
     .sort((left, right) => right._score - left._score)
-    .map(({ _score, ...item }) => item);
+    .map(({ _score, _topicHits, ...item }) => item);
 }
 
-async function gatherResearch({ feeds, focus, maxItems = 6, sinceDays = 21 }) {
+async function gatherResearch({ feeds, focus, maxItems = 6, sinceDays = 21, topicTerms = [], minTopical = 2 }) {
   const list = Array.isArray(feeds) ? feeds.filter(Boolean) : [];
   if (list.length === 0) {
     return { items: [], errors: [], skipped: true };
@@ -130,7 +148,14 @@ async function gatherResearch({ feeds, focus, maxItems = 6, sinceDays = 21 }) {
   const results = await Promise.all(list.map(fetchFeed));
   const errors = results.filter((result) => !result.ok).map((result) => ({ url: result.url, error: result.error }));
   const merged = results.flatMap((result) => result.items);
-  const ranked = rankItems(merged, { sinceDays, focus }).slice(0, maxItems);
+
+  let topical = rankItems(merged, { sinceDays, focus, topicTerms, minTopicHits: 1 });
+  let topicalRelaxed = false;
+  if (topical.length < minTopical) {
+    topical = rankItems(merged, { sinceDays, focus, topicTerms: [], minTopicHits: 0 });
+    topicalRelaxed = true;
+  }
+  const ranked = topical.slice(0, maxItems);
 
   return {
     items: ranked.map((item) => ({
@@ -141,7 +166,8 @@ async function gatherResearch({ feeds, focus, maxItems = 6, sinceDays = 21 }) {
       sourceUrl: item.sourceUrl
     })),
     errors,
-    skipped: false
+    skipped: false,
+    topicalRelaxed
   };
 }
 

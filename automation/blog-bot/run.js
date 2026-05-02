@@ -155,10 +155,13 @@ function buildPostContract(site, focus, date, angle) {
 function buildAiPrompt({ site, contract, research = [] }) {
   const style = sitePromptStyle(site);
 
+  const researchHeader = style.excludeSourcesFromContent
+    ? "Conteudo recente do setor (use SOMENTE como contexto factual; NAO insira links externos no body):"
+    : "Conteudo recente do setor (use como referencia factual e cite ao menos 2 com link em markdown):";
   const researchBlock = research.length
     ? [
         "",
-        "Conteudo recente do setor (use como referencia factual e cite ao menos 2 com link em markdown):",
+        researchHeader,
         ...research.map((item, idx) => {
           const lines = [`${idx + 1}. ${item.title}`];
           if (item.link) lines.push(`   Link: ${item.link}`);
@@ -248,7 +251,9 @@ function buildAiPrompt({ site, contract, research = [] }) {
     `- callout.body: tom levemente descontraido. Pode usar "ja estruturamos isso em N clientes", "vale uma conversa", "se faz sentido pro seu cenario". NUNCA "a gente", girias, CAPS ou exclamacao.`,
     `- cta-inline.body: uma frase de transicao natural. Nunca "clique aqui", nunca "agora".`,
     "- faq: 3-5 perguntas. As respostas devem ser autossuficientes (LLMs vao extrair sem contexto).",
-    "- Quando houver conteudo recente, cite ao menos 2 fontes em markdown ([texto](url)) integradas ao body de uma section type=prose.",
+    style.excludeSourcesFromContent
+      ? "- NAO inserir links de fontes externas no body. Texto autossuficiente, sem citacoes em markdown."
+      : "- Quando houver conteudo recente, cite ao menos 2 fontes em markdown ([texto](url)) integradas ao body de uma section type=prose.",
     "",
     "DIRETRIZES DE CONVERSAO:",
     "- O conteudo principal e educacional/consultivo. callout + cta-inline + faq sao pontos de conversao sutis, nunca interruptivos.",
@@ -501,11 +506,19 @@ async function run() {
       aiProvider = "existing-draft";
       warning = "Rascunho existente reutilizado para manter o seed consistente.";
     } else {
+      const profile = sitePromptStyle(site);
+      const topicTerms = [
+        contract.theme,
+        contract.angle,
+        ...(profile.keywords?.primary || []),
+        ...(profile.keywords?.secondary || []).slice(0, 3)
+      ].filter(Boolean);
       research = await gatherResearch({
         feeds: site.research?.feeds || [],
         focus: expandFocus(focus),
         maxItems: site.research?.maxItems || 6,
-        sinceDays: site.research?.sinceDays || 21
+        sinceDays: site.research?.sinceDays || 21,
+        topicTerms
       });
 
       const generation = await generateContent(

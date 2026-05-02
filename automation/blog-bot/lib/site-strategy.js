@@ -256,6 +256,7 @@ const SITE_PROFILES = {
     ],
     voice: "consultivo institucional, tecnico mas acessivel, com preocupacao explicita por risco e prazo",
     casualVoice: "consultor que ja fechou diligencia em deal travado — direto, fala em prazo e risco real, sem juridiques desnecessario",
+    excludeSourcesFromContent: true,
     bannedWords: mergeBanned([
       "100% seguro",
       "risco zero",
@@ -391,6 +392,7 @@ function sitePromptStyle(site) {
     bannedWords: profile.bannedWords || [],
     cta: profile.cta || { label: "Fale com o time", path: "#contato" },
     keywords: profile.keywords || { primary: [], secondary: [], longTail: [] },
+    excludeSourcesFromContent: !!profile.excludeSourcesFromContent,
     constraints: [
       "Texto em pt-BR",
       "Evitar promessas absolutas e hype",
