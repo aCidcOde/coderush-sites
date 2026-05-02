@@ -1,0 +1,85 @@
+{
+  "date": "2026-05-02",
+  "siteId": "emergency",
+  "postType": "due-diligence-certidoes",
+  "focus": "ia",
+  "theme": "habilitacao e onboarding de fornecedor com certidoes",
+  "angle": "M&A",
+  "slug": "habilitacao-onboarding-fornecedor-ma",
+  "title": "Emergency Documentação: IA aplicado a M&A",
+  "description": "Atualização semanal de ia para Emergency Documentação, com foco em habilitacao e onboarding de fornecedor com certidoes.",
+  "sources": [
+    "https://www.jota.info/opiniao-e-analise/artigos/investigacoes-internas-e-ia-sao-maiores-preocupacoes-de-juridicos-de-multinacionais-diz-pesquisa",
+    "https://capitalaberto.com.br/artigos/reforma-tributaria-vira-pretexto-para-pressao-indevida/"
+  ],
+  "status": "draft",
+  "generatedAt": "2026-05-02T15:38:49-03:00",
+  "content": {
+    "eyebrow": "Guia prático",
+    "headline": "Habilitação e onboarding de fornecedor em M&A",
+    "summary": "Entenda como certidões online podem facilitar a due diligence de fornecedores.",
+    "answerBox": {
+      "question": "Como fazer due diligence imobiliária de matrícula?",
+      "answer": "A due diligence imobiliária de matrícula envolve verificar a regularidade da propriedade, certidões de ônus e ações, e a titularidade do bem. Utilize certidões online para otimizar a coleta de documentos e reduzir riscos."
+    },
+    "tldr": [
+      "Certidões online aceleram a due diligence imobiliária.",
+      "A habilitação de fornecedores é crucial em M&A.",
+      "Suporte humano é essencial para casos complexos."
+    ],
+    "sections": [
+      {
+        "type": "prose",
+        "title": "A importância da habilitação de fornecedores",
+        "body": "No contexto de M&A, a habilitação de fornecedores é um passo crítico. Isso garante que a empresa adquirida possui parcerias sólidas e que as relações comerciais estão em conformidade. A falta de verificação pode resultar em riscos significativos, como litígios futuros e problemas de compliance."
+      },
+      {
+        "type": "list",
+        "title": "Principais certidões para a habilitação",
+        "items": [
+          "Certidão de matrícula do imóvel.",
+          "Certidão de ônus reais.",
+          "Certidão de ações e protestos.",
+          "Certidão negativa de débitos fiscais.",
+          "Certidão de regularidade do FGTS."
+        ]
+      },
+      {
+        "type": "callout",
+        "body": "Já estruturamos isso em diversos clientes. Se faz sentido para o seu cenário, vale uma conversa.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Desafios na due diligence",
+        "body": "Realizar uma due diligence imobiliária e societária pode ser desafiador, especialmente quando se trata de fornecedores. O uso de certidões online da Emergency Documentação, acompanhadas do suporte humano, pode minimizar esses desafios. Com uma equipe experiente, é possível resolver pendências e facilitar o processo."
+      },
+      {
+        "type": "cta-inline",
+        "body": "Considere como uma abordagem mais estruturada pode ajudar no seu próximo projeto.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Armadilhas a evitar",
+        "body": "Evite confiar apenas em documentos impressos ou em informações não verificadas. A falta de um painel de acompanhamento pode levar a erros e retrabalho. A Emergency Documentação oferece um painel que permite monitorar a emissão de certidões, garantindo que você tenha acesso a informações atualizadas."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Quais são as certidões obrigatórias em compra de imóvel?",
+        "a": "As certidões obrigatórias incluem a matrícula do imóvel, ônus reais e ações judiciais, entre outras. Elas garantem a regularidade do bem."
+      },
+      {
+        "q": "Como validar fornecedor pessoa jurídica antes de contratar?",
+        "a": "Valide o fornecedor verificando seu registro na Junta Comercial, certidões negativas de débitos e a regularidade fiscal e trabalhista."
+      },
+      {
+        "q": "O que é due diligence societária para aquisição de empresa?",
+        "a": "A due diligence societária envolve a análise de documentos e registros que atestem a regularidade e a saúde financeira da empresa a ser adquirida."
+      }
+    ]
+  }
+}

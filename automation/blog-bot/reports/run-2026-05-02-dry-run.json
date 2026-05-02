@@ -1,0 +1,31 @@
+{
+  "mode": "dry-run",
+  "date": "2026-05-02",
+  "timezone": "America/Sao_Paulo",
+  "focus": "ia",
+  "startedAt": "2026-05-02T18:30:53.248Z",
+  "aiProvider": "openrouter",
+  "sites": [
+    {
+      "siteId": "emergency",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "M&A",
+      "theme": "habilitacao e onboarding de fornecedor com certidoes",
+      "research": {
+        "used": 2,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/emergency/2026-05-02/habilitacao-onboarding-fornecedores-certidoes.json",
+      "markdownPath": "automation/blog-bot/out/emergency/2026-05-02/habilitacao-onboarding-fornecedores-certidoes.md"
+    }
+  ],
+  "duplications": [],
+  "fallbackCount": 0,
+  "allFallback": false,
+  "finishedAt": "2026-05-02T18:31:02.816Z",
+  "ok": true
+}

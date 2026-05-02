@@ -3,161 +3,9 @@
   "date": "2026-05-02",
   "timezone": "America/Sao_Paulo",
   "focus": "ia",
-  "startedAt": "2026-05-02T14:21:26.944Z",
+  "startedAt": "2026-05-02T18:38:49.949Z",
   "aiProvider": "openrouter",
   "sites": [
-    {
-      "siteId": "coderush",
-      "ok": true,
-      "aiUsed": true,
-      "aiProvider": "openrouter",
-      "warning": null,
-      "angle": "governanca",
-      "theme": "arquitetura de software para operacoes criticas",
-      "research": {
-        "used": 6,
-        "skipped": false,
-        "errors": []
-      },
-      "outputPath": "automation/blog-bot/out/coderush/2026-05-02/garantir-governanca-arquitetura-software-critica.json",
-      "markdownPath": "automation/blog-bot/out/coderush/2026-05-02/garantir-governanca-arquitetura-software-critica.md",
-      "publishResult": {
-        "target": "files",
-        "postPath": "2026/05/02/garantir-governanca-arquitetura-software-critica/index.php",
-        "homeUpdated": true,
-        "blogUpdated": true,
-        "sitemapUpdated": true,
-        "robotsUpdated": false,
-        "coverSource": "openai/gpt-5-image",
-        "coverAlt": "Capa com fundo azul-marinho profundo, detalhes em azul elétrico e violeta, transmitindo uma atmosfera tecnológica e moderna",
-        "coverLeakage": {
-          "skipped": true,
-          "reason": "tesseract not installed"
-        }
-      },
-      "lint": {
-        "ok": true,
-        "skipped": false,
-        "targets": [
-          "index.php",
-          "blog/index.php",
-          "2026/05/02/garantir-governanca-arquitetura-software-critica/index.php"
-        ]
-      }
-    },
-    {
-      "siteId": "codafacil",
-      "ok": true,
-      "aiUsed": true,
-      "aiProvider": "openrouter",
-      "warning": null,
-      "angle": "DX",
-      "theme": "tooling de IA para engenharia",
-      "research": {
-        "used": 6,
-        "skipped": false,
-        "errors": []
-      },
-      "outputPath": "automation/blog-bot/out/codafacil/2026-05-02/acelere-desenvolvimento-software-sob-medida-ia.json",
-      "markdownPath": "automation/blog-bot/out/codafacil/2026-05-02/acelere-desenvolvimento-software-sob-medida-ia.md",
-      "publishResult": {
-        "target": "files",
-        "postPath": "codafacil/2026/05/02/acelere-desenvolvimento-software-sob-medida-ia/index.php",
-        "homeUpdated": true,
-        "blogUpdated": true,
-        "sitemapUpdated": true,
-        "robotsUpdated": false,
-        "coverSource": "openai/gpt-5-image",
-        "coverAlt": "Capa com fundo verde-petróleo escuro, traços em azul royal e violeta tech, representando desenvolvimento de software e inovação",
-        "coverLeakage": {
-          "skipped": true,
-          "reason": "tesseract not installed"
-        }
-      },
-      "lint": {
-        "ok": true,
-        "skipped": false,
-        "targets": [
-          "codafacil/index.php",
-          "codafacil/blog/index.php",
-          "codafacil/2026/05/02/acelere-desenvolvimento-software-sob-medida-ia/index.php"
-        ]
-      }
-    },
-    {
-      "siteId": "fluxointeligenteia",
-      "ok": true,
-      "aiUsed": true,
-      "aiProvider": "openrouter",
-      "warning": null,
-      "angle": "tools",
-      "theme": "Link como base operacional para agentes inteligentes",
-      "research": {
-        "used": 6,
-        "skipped": false,
-        "errors": []
-      },
-      "outputPath": "automation/blog-bot/out/fluxointeligenteia/2026-05-02/implementar-agentes-corporativos-ia-governanca.json",
-      "markdownPath": "automation/blog-bot/out/fluxointeligenteia/2026-05-02/implementar-agentes-corporativos-ia-governanca.md",
-      "publishResult": {
-        "target": "files",
-        "postPath": "fluxointeligenteia/2026/05/02/implementar-agentes-corporativos-ia-governanca/index.html",
-        "homeUpdated": true,
-        "blogUpdated": true,
-        "sitemapUpdated": true,
-        "robotsUpdated": false,
-        "coverSource": "openai/gpt-5-image",
-        "coverAlt": "Capa com fundo escuro esmeralda e elementos em verde e ciano, representando agentes de IA em operação e integração segura",
-        "coverLeakage": {
-          "skipped": true,
-          "reason": "tesseract not installed"
-        }
-      },
-      "lint": {
-        "ok": true,
-        "skipped": true,
-        "targets": []
-      }
-    },
-    {
-      "siteId": "sistemavendadireta",
-      "ok": true,
-      "aiUsed": true,
-      "aiProvider": "openrouter",
-      "warning": null,
-      "angle": "CRM",
-      "theme": "integracoes de pagamento e logistica para MMN",
-      "research": {
-        "used": 6,
-        "skipped": false,
-        "errors": []
-      },
-      "outputPath": "automation/blog-bot/out/sistemavendadireta/2026-05-02/integrar-pagamentos-logistica-marketing-multinivel.json",
-      "markdownPath": "automation/blog-bot/out/sistemavendadireta/2026-05-02/integrar-pagamentos-logistica-marketing-multinivel.md",
-      "publishResult": {
-        "target": "files",
-        "postPath": "sistemavendadireta/2026/05/02/integrar-pagamentos-logistica-marketing-multinivel/index.php",
-        "homeUpdated": true,
-        "blogUpdated": true,
-        "sitemapUpdated": true,
-        "robotsUpdated": false,
-        "coverSource": "openai/gpt-5-image",
-        "coverAlt": "Capa com fundo azul profundo e azul corporativo, apresentando gráficos e ícones de pagamentos e logística, transmitindo confiabilidade",
-        "coverLeakage": {
-          "skipped": true,
-          "reason": "tesseract not installed"
-        }
-      },
-      "lint": {
-        "ok": true,
-        "skipped": false,
-        "targets": [
-          "sistemavendadireta/index.php",
-          "sistemavendadireta/blog/index.php",
-          "sistemavendadireta/2026/05/02/integrar-pagamentos-logistica-marketing-multinivel/index.php"
-        ]
-      }
-    },
     {
       "siteId": "emergency",
       "ok": true,
@@ -167,22 +15,22 @@
       "angle": "M&A",
       "theme": "habilitacao e onboarding de fornecedor com certidoes",
       "research": {
-        "used": 6,
+        "used": 2,
         "skipped": false,
         "errors": []
       },
-      "outputPath": "automation/blog-bot/out/emergency/2026-05-02/habilitar-fornecedores-certidoes-ma.json",
-      "markdownPath": "automation/blog-bot/out/emergency/2026-05-02/habilitar-fornecedores-certidoes-ma.md",
+      "outputPath": "automation/blog-bot/out/emergency/2026-05-02/habilitacao-onboarding-fornecedor-ma.json",
+      "markdownPath": "automation/blog-bot/out/emergency/2026-05-02/habilitacao-onboarding-fornecedor-ma.md",
       "publishResult": {
         "target": "api",
         "apiStatus": 201,
-        "apiUrl": "https://app-hml.emergency.com.br/blog/habilitar-fornecedores-certidoes-ma",
-        "apiId": 7,
-        "apiPublishedAt": "2026-05-02T11:27:58-03:00",
-        "coverPath": "automation/blog-bot/out/emergency/covers/habilitar-fornecedores-certidoes-ma.jpg",
-        "coverSize": 267791,
+        "apiUrl": "https://app-hml.emergency.com.br/blog/habilitacao-onboarding-fornecedor-ma",
+        "apiId": 8,
+        "apiPublishedAt": "2026-05-02T15:38:49-03:00",
+        "coverPath": "automation/blog-bot/out/emergency/covers/habilitacao-onboarding-fornecedor-ma.jpg",
+        "coverSize": 231943,
         "coverSource": "openai/gpt-5-image",
-        "coverAlt": "Capa de artigo com fundo deep-navy, detalhes em dourado quente e leve brilho off-white, transmitindo sofisticação e credibilidade",
+        "coverAlt": "Capa com fundo deep-navy e detalhes em dourado, transmitindo sofisticação e credibilidade, ideal para temas de M&A",
         "coverLeakage": {
           "skipped": true,
           "reason": "tesseract not installed"
@@ -197,14 +45,14 @@
   ],
   "duplications": [],
   "relatedRefresh": {
-    "touched": 8,
-    "unchanged": 0,
+    "touched": 0,
+    "unchanged": 8,
     "errors": [],
     "totalCards": 8,
     "totalFiles": 8
   },
   "fallbackCount": 0,
   "allFallback": false,
-  "finishedAt": "2026-05-02T14:29:36.684Z",
+  "finishedAt": "2026-05-02T18:40:48.135Z",
   "ok": true
 }
