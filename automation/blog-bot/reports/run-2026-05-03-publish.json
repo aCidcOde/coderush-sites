@@ -1,0 +1,220 @@
+{
+  "mode": "publish",
+  "date": "2026-05-03",
+  "timezone": "America/Sao_Paulo",
+  "focus": "ia",
+  "startedAt": "2026-05-03T10:21:26.217Z",
+  "aiProvider": "openrouter",
+  "sites": [
+    {
+      "siteId": "coderush",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "governanca",
+      "theme": "decisao entre comprar e construir software",
+      "research": {
+        "used": 4,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/coderush/2026-05-03/comprar-construir-software-considerar.json",
+      "markdownPath": "automation/blog-bot/out/coderush/2026-05-03/comprar-construir-software-considerar.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "2026/05/03/comprar-construir-software-considerar/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Capa de artigo com fundo azul-marinho profundo, detalhes em azul elétrico e violeta, evocando uma atmosfera tecnológica e premium",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": false,
+          "alphanumericCount": 0,
+          "sample": ""
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "index.php",
+          "blog/index.php",
+          "2026/05/03/comprar-construir-software-considerar/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "codafacil",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "qualidade de codigo",
+      "theme": "software sob medida com IA aplicada",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/codafacil/2026-05-03/garantir-qualidade-desenvolvimento-software-sob-medida-ia.json",
+      "markdownPath": "automation/blog-bot/out/codafacil/2026-05-03/garantir-qualidade-desenvolvimento-software-sob-medida-ia.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "codafacil/2026/05/03/garantir-qualidade-desenvolvimento-software-sob-medida-ia/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Capa com fundo verde-petróleo escuro, elementos em azul royal e violeta tech, representando engenharia e tecnologia aplicada",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": false,
+          "alphanumericCount": 0,
+          "sample": ""
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "codafacil/index.php",
+          "codafacil/blog/index.php",
+          "codafacil/2026/05/03/garantir-qualidade-desenvolvimento-software-sob-medida-ia/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "fluxointeligenteia",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "canais integrados",
+      "theme": "permissoes e auditoria em IA corporativa",
+      "research": {
+        "used": 6,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/fluxointeligenteia/2026-05-03/canais-integrados-auditoria-agentes-corporativos-ia.json",
+      "markdownPath": "automation/blog-bot/out/fluxointeligenteia/2026-05-03/canais-integrados-auditoria-agentes-corporativos-ia.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "fluxointeligenteia/2026/05/03/canais-integrados-auditoria-agentes-corporativos-ia/index.html",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Cenário com fundo dark esmeralda, exibindo agentes corporativos em fluxo verde esmeralda e ciano, simbolizando segurança e integração",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": false,
+          "alphanumericCount": 2,
+          "sample": ""
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    },
+    {
+      "siteId": "sistemavendadireta",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "CRM",
+      "theme": "governanca comercial com dados e ia",
+      "research": {
+        "used": 6,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/sistemavendadireta/2026-05-03/crm-pode-potencializar-governanca-comercial.json",
+      "markdownPath": "automation/blog-bot/out/sistemavendadireta/2026-05-03/crm-pode-potencializar-governanca-comercial.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "sistemavendadireta/2026/05/03/crm-pode-potencializar-governanca-comercial/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Gráfico de desempenho em fundo azul profundo, destacando dados e métricas em azul corporativo, transmitindo confiança e profissionalismo",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": false,
+          "alphanumericCount": 4,
+          "sample": "CRM"
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "sistemavendadireta/index.php",
+          "sistemavendadireta/blog/index.php",
+          "sistemavendadireta/2026/05/03/crm-pode-potencializar-governanca-comercial/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "emergency",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "regularizacao",
+      "theme": "due diligence societaria em M&A no mercado brasileiro",
+      "research": {
+        "used": 6,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/emergency/2026-05-03/due-diligence-societaria-ma-regularizacao-essencial.json",
+      "markdownPath": "automation/blog-bot/out/emergency/2026-05-03/due-diligence-societaria-ma-regularizacao-essencial.md",
+      "publishResult": {
+        "target": "api",
+        "apiStatus": 201,
+        "apiUrl": "https://app-hml.emergency.com.br/blog/due-diligence-societaria-ma-regularizacao-essencial",
+        "apiId": 9,
+        "apiPublishedAt": "2026-05-03T07:27:33-03:00",
+        "coverPath": "automation/blog-bot/out/emergency/covers/due-diligence-societaria-ma-regularizacao-essencial.jpg",
+        "coverSize": 199137,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Dossie executivo iluminado com fundo deep-navy e detalhes em dourado, transmitindo seriedade e sofisticação na área jurídica",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": false,
+          "alphanumericCount": 4,
+          "sample": ""
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    }
+  ],
+  "duplications": [],
+  "relatedRefresh": {
+    "touched": 12,
+    "unchanged": 0,
+    "errors": [],
+    "totalCards": 12,
+    "totalFiles": 12
+  },
+  "fallbackCount": 0,
+  "allFallback": false,
+  "finishedAt": "2026-05-03T10:29:13.929Z",
+  "ok": true
+}

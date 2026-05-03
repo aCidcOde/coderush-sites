@@ -212,6 +212,13 @@
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a automação e IA podem otimizar o marketing multinível na sua empresa.</p>
   </div>
 </article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/05/03/crm-pode-potencializar-governanca-comercial/"><img src="../../../../imagens/posts/crm-pode-potencializar-governanca-comercial.jpg" alt="Como um CRM pode potencializar sua governança comercial" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/03/crm-pode-potencializar-governanca-comercial/" class="hover:underline">Como um CRM pode potencializar sua governança comercial</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como um CRM integrado com IA pode transformar sua governança comercial no setor de venda direta.</p>
+  </div>
+</article>
   </div>
 </section>
 <!-- BLOG-LEIA-TAMBEM END -->
@@ -224,6 +231,14 @@
   <p class="mt-2 text-sm text-white/70">Conteúdo recente dos outros sites do ecossistema.</p>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="https://codafacil.dev/2026/05/03/garantir-qualidade-desenvolvimento-software-sob-medida-ia/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/garantir-qualidade-desenvolvimento-software-sob-medida-ia.jpg" alt="Como garantir qualidade no desenvolvimento de software sob medida com IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/05/03/garantir-qualidade-desenvolvimento-software-sob-medida-ia/" rel="noopener" target="_blank" class="hover:underline">Como garantir qualidade no desenvolvimento de software sob medida com IA</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como a IA pode melhorar a qualidade no desenvolvimento de software sob medida e acelerar entregas.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="https://fluxointeligenteia.com.br/2026/05/02/implementar-agentes-corporativos-ia-governanca/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/implementar-agentes-corporativos-ia-governanca.jpg" alt="Como implementar agentes corporativos de IA com governança" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">FluxoInteligente IA</p>
@@ -232,19 +247,11 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://codafacil.dev/2026/04/30/integracoes-automacao-operacoes-criticas-ia/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/integracoes-automacao-operacoes-criticas-ia.jpg" alt="Integrações e automação para operações críticas com IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/04/30/integracoes-automacao-operacoes-criticas-ia/" rel="noopener" target="_blank" class="hover:underline">Integrações e automação para operações críticas com IA</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Como acelerar o desenvolvimento de software sob medida sem perder qualidade.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://coderush.com.br/2026/05/02/garantir-governanca-arquitetura-software-critica/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/garantir-governanca-arquitetura-software-critica.jpg" alt="Como garantir governança em arquitetura de software crítica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://coderush.com.br/2026/05/03/comprar-construir-software-considerar/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/comprar-construir-software-considerar.jpg" alt="Comprar ou construir software: o que considerar?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">CodeRush</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/05/02/garantir-governanca-arquitetura-software-critica/" rel="noopener" target="_blank" class="hover:underline">Como garantir governança em arquitetura de software crítica</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda a importância da governança na arquitetura de software para operações críticas e como a IA pode auxiliar.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/05/03/comprar-construir-software-considerar/" rel="noopener" target="_blank" class="hover:underline">Comprar ou construir software: o que considerar?</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda os prós e contras de comprar ou construir software sob medida.</p>
   </div>
 </article>
   </div>

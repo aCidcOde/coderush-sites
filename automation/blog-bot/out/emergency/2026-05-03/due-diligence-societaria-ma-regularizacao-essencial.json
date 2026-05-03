@@ -1,0 +1,88 @@
+{
+  "date": "2026-05-03",
+  "siteId": "emergency",
+  "postType": "due-diligence-certidoes",
+  "focus": "ia",
+  "theme": "due diligence societaria em M&A no mercado brasileiro",
+  "angle": "regularizacao",
+  "slug": "due-diligence-societaria-ma-regularizacao-essencial",
+  "title": "Emergency Documentação: IA aplicado a regularizacao",
+  "description": "Atualização semanal de ia para Emergency Documentação, com foco em due diligence societaria em M&A no mercado brasileiro.",
+  "sources": [
+    "https://capitalaberto.com.br/mercados/acordo-ue-mercosul-mexe-com-estrutura-de-credito-ao-agronegocio/",
+    "https://capitalaberto.com.br/canais/por-dentro-do-mercado-by-vortx/agentes-de-ia-no-mercado-de-capitais-a-revolucao-que-nao-passa-pelo-chatgpt/",
+    "https://www.jota.info/opiniao-e-analise/artigos/investigacoes-internas-e-ia-sao-maiores-preocupacoes-de-juridicos-de-multinacionais-diz-pesquisa",
+    "https://www.jota.info/tributos/carf-nega-credito-de-pis-cofins-na-compra-de-ouro-financeiro-revendido-como-mercadoria",
+    "https://exame.com/esporte/gp-de-miami-carro-de-bortoleto-pega-fogo-e-brasileiro-larga-em-ultimo-na-formula-1/"
+  ],
+  "status": "draft",
+  "generatedAt": "2026-05-03T07:27:33-03:00",
+  "content": {
+    "eyebrow": "Guia de Regularização",
+    "headline": "Due Diligence Societária em M&A: A Regularização Essencial",
+    "summary": "Entenda a importância da regularização na due diligence societária para M&As no Brasil.",
+    "answerBox": {
+      "question": "Como realizar due diligence societária para aquisição de empresa?",
+      "answer": "A due diligence societária envolve a verificação detalhada dos documentos e informações da empresa alvo. É crucial revisar a regularização de certidões, compliance e pendências jurídicas para mitigar riscos e garantir uma transação segura."
+    },
+    "tldr": [
+      "Regularização é chave em due diligence societária.",
+      "Certidões online aceleram o processo de verificação.",
+      "Apoio especializado ajuda a evitar retrabalho."
+    ],
+    "sections": [
+      {
+        "type": "prose",
+        "title": "A Importância da Regularização na Due Diligence",
+        "body": "A regularização é um passo fundamental na due diligence societária, especialmente em processos de M&A. Verificar a situação legal da empresa alvo garante que não existam pendências que possam comprometer a transação. Certidões atualizadas e compliance são essenciais para evitar surpresas indesejadas."
+      },
+      {
+        "type": "list",
+        "title": "Checklist para Due Diligence Societária",
+        "items": [
+          "Verificar a situação cadastral da empresa na Receita Federal.",
+          "Revisar certidões de regularidade fiscal e trabalhista.",
+          "Analisar contratos sociais e alterações contratuais.",
+          "Investigar possíveis litígios e pendências jurídicas.",
+          "Avaliar a estrutura de governança e compliance."
+        ]
+      },
+      {
+        "type": "callout",
+        "body": "Já estruturamos isso em diversos clientes. Uma conversa pode esclarecer como nossa abordagem reduz riscos e otimiza prazos.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Como a Tecnologia Facilita a Due Diligence",
+        "body": "A utilização de certidões online tem revolucionado a forma como se realiza a due diligence. Com a Emergency Documentação, é possível solicitar e acompanhar a emissão de certidões de forma simples e rápida. Isso não apenas acelera o processo, mas também assegura que todas as informações estejam atualizadas e disponíveis em tempo real, minimizando riscos."
+      },
+      {
+        "type": "cta-inline",
+        "body": "Uma análise detalhada pode fazer a diferença na sua transação.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Cuidado com Armadilhas Comuns na Due Diligence",
+        "body": "É fácil deixar passar alguns detalhes cruciais na due diligence. Fique atento a certidões desatualizadas ou informações incompletas, que podem levar a problemas futuros. Além disso, não subestime a importância de um suporte humano para esclarecer dúvidas e auxiliar em casos complexos."
+      }
+    ],
+    "faq": [
+      {
+        "q": "O que é due diligence societária?",
+        "a": "Due diligence societária é o processo de verificação das condições legais e financeiras de uma empresa antes de uma aquisição, focando em aspectos como regularização e compliance."
+      },
+      {
+        "q": "Quais certidões são obrigatórias em uma due diligence?",
+        "a": "As certidões obrigatórias incluem certidões de regularidade fiscal, trabalhista e de ações judiciais, essenciais para garantir que a empresa não possui pendências."
+      },
+      {
+        "q": "Como evitar problemas na due diligence imobiliária?",
+        "a": "Realizar uma pesquisa completa sobre a documentação do imóvel, incluindo a matrícula e certidões de ônus, é fundamental para evitar surpresas durante a aquisição."
+      }
+    ]
+  }
+}
