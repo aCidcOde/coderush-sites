@@ -201,6 +201,13 @@
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/05/03/comprar-construir-software-considerar/"><img src="../../../../imagens/posts/comprar-construir-software-considerar.jpg" alt="Comprar ou construir software: o que considerar?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/03/comprar-construir-software-considerar/" class="hover:underline">Comprar ou construir software: o que considerar?</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda os prós e contras de comprar ou construir software sob medida.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="../../../../2026/05/02/garantir-governanca-arquitetura-software-critica/"><img src="../../../../imagens/posts/garantir-governanca-arquitetura-software-critica.jpg" alt="Como garantir governança em arquitetura de software crítica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/02/garantir-governanca-arquitetura-software-critica/" class="hover:underline">Como garantir governança em arquitetura de software crítica</a></h3>
@@ -219,27 +226,27 @@
   <p class="mt-2 text-sm text-white/70">Conteúdo recente dos outros sites do ecossistema.</p>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://codafacil.dev/2026/05/02/acelere-desenvolvimento-software-sob-medida-ia/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/acelere-desenvolvimento-software-sob-medida-ia.jpg" alt="Acelere o desenvolvimento de software sob medida com IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://codafacil.dev/2026/05/03/garantir-qualidade-desenvolvimento-software-sob-medida-ia/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/garantir-qualidade-desenvolvimento-software-sob-medida-ia.jpg" alt="Como garantir qualidade no desenvolvimento de software sob medida com IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/05/02/acelere-desenvolvimento-software-sob-medida-ia/" rel="noopener" target="_blank" class="hover:underline">Acelere o desenvolvimento de software sob medida com IA</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como a IA pode otimizar seu ciclo de desenvolvimento de software sob medida sem perder a qualidade.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/05/03/garantir-qualidade-desenvolvimento-software-sob-medida-ia/" rel="noopener" target="_blank" class="hover:underline">Como garantir qualidade no desenvolvimento de software sob medida com IA</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como a IA pode melhorar a qualidade no desenvolvimento de software sob medida e acelerar entregas.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://fluxointeligenteia.com.br/2026/05/02/implementar-agentes-corporativos-ia-governanca/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/implementar-agentes-corporativos-ia-governanca.jpg" alt="Como implementar agentes corporativos de IA com governança" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://fluxointeligenteia.com.br/2026/05/03/canais-integrados-auditoria-agentes-corporativos-ia/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/canais-integrados-auditoria-agentes-corporativos-ia.jpg" alt="Canais integrados e auditoria em agentes corporativos de IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">FluxoInteligente IA</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/05/02/implementar-agentes-corporativos-ia-governanca/" rel="noopener" target="_blank" class="hover:underline">Como implementar agentes corporativos de IA com governança</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como integrar agentes corporativos de IA com foco em governança, segurança e automação eficiente.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/05/03/canais-integrados-auditoria-agentes-corporativos-ia/" rel="noopener" target="_blank" class="hover:underline">Canais integrados e auditoria em agentes corporativos de IA</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como implementar agentes corporativos com governança e segurança efetiva.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://sistemavendadireta.com.br/2026/04/30/crm-automacao-marketing-multinivel/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/crm-automacao-marketing-multinivel.jpg" alt="CRM e Automação para Marketing Multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://sistemavendadireta.com.br/2026/05/03/crm-pode-potencializar-governanca-comercial/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/crm-pode-potencializar-governanca-comercial.jpg" alt="Como um CRM pode potencializar sua governança comercial" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Sistema Venda Direta</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/04/30/crm-automacao-marketing-multinivel/" rel="noopener" target="_blank" class="hover:underline">CRM e Automação para Marketing Multinível</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a automação e IA podem otimizar o marketing multinível na sua empresa.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/05/03/crm-pode-potencializar-governanca-comercial/" rel="noopener" target="_blank" class="hover:underline">Como um CRM pode potencializar sua governança comercial</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como um CRM integrado com IA pode transformar sua governança comercial no setor de venda direta.</p>
   </div>
 </article>
   </div>

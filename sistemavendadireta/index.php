@@ -753,6 +753,15 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-HOME-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/03/crm-pode-potencializar-governanca-comercial/" data-blog-image="imagens/posts/crm-pode-potencializar-governanca-comercial.jpg" data-blog-slug="crm-pode-potencializar-governanca-comercial" data-blog-date="2026-05-03">
+  <a href="2026/05/03/crm-pode-potencializar-governanca-comercial/">
+    <img src="imagens/posts/crm-pode-potencializar-governanca-comercial.jpg" alt="Como um CRM pode potencializar sua governança comercial" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="2026/05/03/crm-pode-potencializar-governanca-comercial/" class="hover:underline">Como um CRM pode potencializar sua governança comercial</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como um CRM integrado com IA pode transformar sua governança comercial no setor de venda direta.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/02/integrar-pagamentos-logistica-marketing-multinivel/" data-blog-image="imagens/posts/integrar-pagamentos-logistica-marketing-multinivel.jpg" data-blog-slug="integrar-pagamentos-logistica-marketing-multinivel" data-blog-date="2026-05-02">
   <a href="2026/05/02/integrar-pagamentos-logistica-marketing-multinivel/">
     <img src="imagens/posts/integrar-pagamentos-logistica-marketing-multinivel.jpg" alt="Como integrar pagamentos e logística em marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
