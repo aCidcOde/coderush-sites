@@ -691,6 +691,15 @@ $seoLdGraph = [
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-HOME-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/06/arquitetura-software-operacoes-criticas-decisoes-fazem-diferenca/" data-blog-image="imagens/posts/arquitetura-software-operacoes-criticas-decisoes-fazem-diferenca.jpg" data-blog-slug="arquitetura-software-operacoes-criticas-decisoes-fazem-diferenca" data-blog-date="2026-05-06">
+  <a href="2026/05/06/arquitetura-software-operacoes-criticas-decisoes-fazem-diferenca/">
+    <img src="imagens/posts/arquitetura-software-operacoes-criticas-decisoes-fazem-diferenca.jpg" alt="Arquitetura de software para operações críticas: decisões que fazem a diferença" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="2026/05/06/arquitetura-software-operacoes-criticas-decisoes-fazem-diferenca/" class="hover:underline">Arquitetura de software para operações críticas: decisões que fazem a diferença</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a arquitetura de software impacta operações críticas e a importância da IA nesse cenário.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/03/comprar-construir-software-considerar/" data-blog-image="imagens/posts/comprar-construir-software-considerar.jpg" data-blog-slug="comprar-construir-software-considerar" data-blog-date="2026-05-03">
   <a href="2026/05/03/comprar-construir-software-considerar/">
     <img src="imagens/posts/comprar-construir-software-considerar.jpg" alt="Comprar ou construir software: o que considerar?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
@@ -707,15 +716,6 @@ $seoLdGraph = [
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="2026/05/02/garantir-governanca-arquitetura-software-critica/" class="hover:underline">Como garantir governança em arquitetura de software crítica</a></h2>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda a importância da governança na arquitetura de software para operações críticas e como a IA pode auxiliar.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/04/30/comprar-construir-software-escolher/" data-blog-image="imagens/posts/comprar-construir-software-escolher.jpg" data-blog-slug="comprar-construir-software-escolher" data-blog-date="2026-04-30">
-  <a href="2026/04/30/comprar-construir-software-escolher/">
-    <img src="imagens/posts/comprar-construir-software-escolher.jpg" alt="Comprar ou construir software: o que escolher?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-  </a>
-  <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="2026/04/30/comprar-construir-software-escolher/" class="hover:underline">Comprar ou construir software: o que escolher?</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda as nuances da decisão entre comprar e construir software sob medida, focando na governança e na integração.</p>
   </div>
 </article>
 <!-- BLOG-HOME-CARDS:END -->

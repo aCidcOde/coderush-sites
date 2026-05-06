@@ -1,0 +1,88 @@
+{
+  "date": "2026-05-06",
+  "siteId": "coderush",
+  "postType": "institucional-tecnologia",
+  "focus": "ia",
+  "theme": "arquitetura de software para operacoes criticas",
+  "angle": "decisao tecnica",
+  "slug": "arquitetura-software-operacoes-criticas-decisoes-fazem-diferenca",
+  "title": "CodeRush: IA aplicado a decisao tecnica",
+  "description": "Atualização semanal de ia para CodeRush, com foco em arquitetura de software para operacoes criticas.",
+  "sources": [
+    "https://martinfowler.com/fragments/2026-04-29.html",
+    "https://martinfowler.com/fragments/2026-04-21.html",
+    "https://martinfowler.com/fragments/2026-05-05.html",
+    "https://aws.amazon.com/blogs/architecture/modernizing-kyc-with-aws-serverless-solutions-and-agentic-ai-for-financial-services/",
+    "https://martinfowler.com/bliki/MythicalManMonth.html"
+  ],
+  "status": "draft",
+  "generatedAt": "2026-05-06T07:41:25-03:00",
+  "content": {
+    "eyebrow": "Consultoria técnica",
+    "headline": "Arquitetura de software para operações críticas: decisões que fazem a diferença",
+    "summary": "Entenda como a arquitetura de software impacta operações críticas e a importância da IA nesse cenário.",
+    "answerBox": {
+      "question": "Como a arquitetura de software impacta operações críticas?",
+      "answer": "A arquitetura de software é fundamental em operações críticas, pois garante desempenho, segurança e escalabilidade. Decisões bem fundamentadas evitam improvisos e garantem a integração com sistemas legados, essencial para a continuidade dos negócios."
+    },
+    "tldr": [
+      "Arquitetura sólida é crucial para operações críticas.",
+      "IA pode otimizar processos sem grandes mudanças.",
+      "Integração com legados é um desafio comum."
+    ],
+    "sections": [
+      {
+        "type": "prose",
+        "title": "A importância da arquitetura de software",
+        "body": "A arquitetura de software define como os componentes de um sistema interagem e se comunicam. Para operações críticas, uma arquitetura bem planejada não só melhora a eficiência, mas também garante segurança e estabilidade. Quando falamos de operações críticas, decisões inadequadas podem levar a falhas significativas, impactando a continuidade dos negócios. Portanto, um bom planejamento é essencial."
+      },
+      {
+        "type": "list",
+        "title": "Critérios para uma arquitetura eficaz",
+        "items": [
+          "Aderência às regras de negócio existentes.",
+          "Facilidade de integração com sistemas legados.",
+          "Escalabilidade para suportar crescimento.",
+          "Segurança para proteger dados sensíveis.",
+          "Desempenho para garantir respostas rápidas."
+        ]
+      },
+      {
+        "type": "callout",
+        "body": "Já estruturamos soluções para operações críticas em diversos clientes. Vale uma conversa para entender seu cenário e como podemos ajudar.",
+        "ctaLabel": "Fale com a CodeRush",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Integrando IA em sistemas legados",
+        "body": "A integração de IA em sistemas legados é um desafio comum. Em vez de substituições radicais, uma abordagem pragmática pode ser mais eficaz. Isso envolve adaptar e modernizar partes do sistema, garantindo que as funcionalidades atuais sejam mantidas. Por exemplo, a aplicação de IA pode automatizar processos, como na validação de KYC em serviços financeiros, conforme discutido em [AWS](https://aws.amazon.com/blogs/architecture/modernizing-kyc-with-aws-serverless-solutions-and-agentic-ai-for-financial-services/)."
+      },
+      {
+        "type": "cta-inline",
+        "body": "Vamos explorar como a IA pode melhorar sua operação crítica.",
+        "ctaLabel": "Fale com a CodeRush",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Evite os erros comuns",
+        "body": "Um erro frequente é subestimar a complexidade da integração com sistemas legados. Isso pode levar a um projeto falho, com custos elevados e atrasos. Outro ponto é a falta de alinhamento entre as expectativas de negócio e as capacidades técnicas. É crucial envolver todas as partes interessadas desde o início para evitar surpresas no meio do caminho."
+      }
+    ],
+    "faq": [
+      {
+        "q": "O que é arquitetura de software?",
+        "a": "Arquitetura de software é a estrutura organizacional de um sistema, definindo como seus componentes interagem e se comunicam."
+      },
+      {
+        "q": "Por que a IA é importante para operações críticas?",
+        "a": "A IA pode otimizar processos, melhorar a tomada de decisões e aumentar a eficiência em operações críticas."
+      },
+      {
+        "q": "Como integrar IA em sistemas legados?",
+        "a": "A integração deve ser feita de forma incremental, modernizando partes do sistema sem alterações drásticas, preservando funcionalidades existentes."
+      }
+    ]
+  }
+}

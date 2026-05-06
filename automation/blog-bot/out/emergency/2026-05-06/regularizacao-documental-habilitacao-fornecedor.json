@@ -1,0 +1,88 @@
+{
+  "date": "2026-05-06",
+  "siteId": "emergency",
+  "postType": "due-diligence-certidoes",
+  "focus": "ia",
+  "theme": "regularizacao documental antes de transacao patrimonial",
+  "angle": "habilitacao de fornecedor",
+  "slug": "regularizacao-documental-habilitacao-fornecedor",
+  "title": "Emergency Documentação: IA aplicado a habilitacao de fornecedor",
+  "description": "Atualização semanal de ia para Emergency Documentação, com foco em regularizacao documental antes de transacao patrimonial.",
+  "sources": [
+    "https://www.infomoney.com.br/mercados/itau-gpa-rd-brava-prio-tim-ca-tenda-e-mais-acoes-para-acompanhar-hoje/",
+    "https://exame.com/inteligencia-artificial/como-fazer-o-chatgpt-pensar-antes-de-responder-com-apenas-um-comando-simples/",
+    "https://exame.com/inteligencia-artificial/o-truque-de-1-linha-que-forca-o-chatgpt-a-mostrar-o-raciocinio-antes-da-resposta/",
+    "https://www.conjur.com.br/2026-mai-05/tj-mg-trt-3-e-seccional-mineira-da-oab-discutem-litigancia-abusiva/",
+    "https://capitalaberto.com.br/companhias-abertas/aegea-novo-aporte-refinanciar-dividas/"
+  ],
+  "status": "draft",
+  "generatedAt": "2026-05-06T07:47:58-03:00",
+  "content": {
+    "eyebrow": "Guia prático",
+    "headline": "Regularização documental para habilitação de fornecedor",
+    "summary": "Entenda a importância da regularização documental na habilitação de fornecedores e como garantir uma due diligence eficiente.",
+    "answerBox": {
+      "question": "Como realizar a regularização documental de um fornecedor?",
+      "answer": "Para regularizar a documentação de um fornecedor, é necessário verificar certidões obrigatórias, realizar uma due diligence completa e garantir que todos os documentos estejam em dia. Isso minimiza riscos e acelera o processo de habilitação."
+    },
+    "tldr": [
+      "A regularização documental é essencial para fornecedores.",
+      "Certidões online facilitam a due diligence.",
+      "Apoio especializado reduz riscos e prazos."
+    ],
+    "sections": [
+      {
+        "type": "prose",
+        "title": "Por que a regularização é crucial?",
+        "body": "A regularização documental é um passo fundamental para qualquer empresa que deseja habilitar fornecedores de forma eficiente. Em um cenário de negócios cada vez mais competitivo, garantir que todos os documentos estejam em conformidade ajuda a mitigar riscos legais e financeiros. Isso é especialmente relevante em transações patrimoniais, onde a validação de certidões é vital."
+      },
+      {
+        "type": "list",
+        "title": "Principais documentos para verificação",
+        "items": [
+          "Certidão de Regularidade Fiscal (CRF)",
+          "Certidão Negativa de Débitos (CND)",
+          "Registro na Junta Comercial",
+          "Comprovação de endereço",
+          "Certidão de Distribuição de Ações"
+        ]
+      },
+      {
+        "type": "callout",
+        "body": "Já estruturamos isso em diversos clientes. Vale uma conversa para entender como podemos ajudar no seu caso.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Impactos da falta de regularização",
+        "body": "A falta de regularização pode resultar em atrasos significativos e até em cancelamentos de contratos. Além disso, fornecedores não habilitados podem trazer riscos de compliance e comprometer a reputação da empresa. Por isso, a due diligence imobiliária e societária deve ser feita com atenção, garantindo que todas as certidões estejam válidas e atualizadas."
+      },
+      {
+        "type": "cta-inline",
+        "body": "Entender a documentação exigida é um passo importante na habilitação de fornecedores.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Dicas para uma due diligence eficaz",
+        "body": "Evite apenas a emissão automática de certidões. Uma análise detalhada dos documentos é essencial para identificar potenciais riscos. Trabalhar com uma equipe especializada, como a da Emergency Documentação, pode fazer a diferença em uma due diligence, principalmente em cenários complexos. Fique atento a prazos e atualizações para não ter surpresas no futuro."
+      }
+    ],
+    "faq": [
+      {
+        "q": "O que é due diligence?",
+        "a": "Due diligence é o processo de investigação e análise de informações sobre uma empresa ou fornecedor antes de firmar um contrato ou transação. Visa identificar riscos e validar conformidades."
+      },
+      {
+        "q": "Quais são as certidões obrigatórias na compra de imóvel?",
+        "a": "As principais certidões obrigatórias incluem a Certidão de Registro de Imóveis, Certidão Negativa de Débitos e a Certidão de Distribuição de Ações."
+      },
+      {
+        "q": "Como validar fornecedor pessoa jurídica?",
+        "a": "Para validar um fornecedor pessoa jurídica, verifique sua regularidade fiscal, certidões e histórico judicial. Isso ajuda a evitar riscos de compliance."
+      }
+    ]
+  }
+}

@@ -753,6 +753,15 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-HOME-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/06/integracoes-pagamento-logistica-mmn/" data-blog-image="imagens/posts/integracoes-pagamento-logistica-mmn.jpg" data-blog-slug="integracoes-pagamento-logistica-mmn" data-blog-date="2026-05-06">
+  <a href="2026/05/06/integracoes-pagamento-logistica-mmn/">
+    <img src="imagens/posts/integracoes-pagamento-logistica-mmn.jpg" alt="Integrações de Pagamento e Logística no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="2026/05/06/integracoes-pagamento-logistica-mmn/" class="hover:underline">Integrações de Pagamento e Logística no MMN</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como otimizar processos de pagamento e logística no marketing multinível.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/03/crm-pode-potencializar-governanca-comercial/" data-blog-image="imagens/posts/crm-pode-potencializar-governanca-comercial.jpg" data-blog-slug="crm-pode-potencializar-governanca-comercial" data-blog-date="2026-05-03">
   <a href="2026/05/03/crm-pode-potencializar-governanca-comercial/">
     <img src="imagens/posts/crm-pode-potencializar-governanca-comercial.jpg" alt="Como um CRM pode potencializar sua governança comercial" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
@@ -769,15 +778,6 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="2026/05/02/integrar-pagamentos-logistica-marketing-multinivel/" class="hover:underline">Como integrar pagamentos e logística em marketing multinível</a></h2>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como otimizar suas operações de MMN com CRM e integrações eficazes.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/04/30/crm-automacao-marketing-multinivel/" data-blog-image="imagens/posts/crm-automacao-marketing-multinivel.jpg" data-blog-slug="crm-automacao-marketing-multinivel" data-blog-date="2026-04-30">
-  <a href="2026/04/30/crm-automacao-marketing-multinivel/">
-    <img src="imagens/posts/crm-automacao-marketing-multinivel.jpg" alt="CRM e Automação para Marketing Multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-  </a>
-  <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="2026/04/30/crm-automacao-marketing-multinivel/" class="hover:underline">CRM e Automação para Marketing Multinível</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a automação e IA podem otimizar o marketing multinível na sua empresa.</p>
   </div>
 </article>
 <!-- BLOG-HOME-CARDS:END -->
