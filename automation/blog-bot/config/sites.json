@@ -211,7 +211,7 @@
       "baseUrl": "https://emergency.com.br",
       "target": "api",
       "api": {
-        "baseUrl": "https://app-hml.emergency.com.br",
+        "baseUrl": "https://emergency.com.br",
         "endpoint": "/api/blog/posts",
         "tokenEnv": "BLOG_API_TOKEN_EMERGENCY"
       },
