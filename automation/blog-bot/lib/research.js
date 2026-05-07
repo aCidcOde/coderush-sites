@@ -105,18 +105,29 @@ function buildFocusMatchers(focus) {
   });
 }
 
+function stripAccents(value) {
+  return String(value || "").normalize("NFD").replace(/[̀-ͯ]/g, "");
+}
+
+const TOPIC_STOPWORDS = new Set([
+  "para", "como", "sobre", "antes", "apos", "depois", "entre", "essa", "esse", "esta", "este",
+  "isso", "isto", "uma", "umas", "uns", "ate", "com", "sem", "dos", "das", "nao", "sim", "mas",
+  "mais", "menos", "muito", "pouco", "deve", "pode", "ainda", "outra", "outras", "outros", "outro",
+  "tem", "ter", "ser", "for", "foi", "vai", "ja"
+]);
+
 function buildTopicMatchers(terms) {
   const tokens = new Set();
   (Array.isArray(terms) ? terms : [terms])
     .filter(Boolean)
     .forEach((term) => {
-      String(term)
+      stripAccents(String(term))
         .toLowerCase()
-        .split(/[^a-zà-ÿ0-9]+/i)
-        .filter((token) => token.length >= 4)
+        .split(/[^a-z0-9]+/)
+        .filter((token) => token.length >= 4 && !TOPIC_STOPWORDS.has(token))
         .forEach((token) => tokens.add(token));
     });
-  return [...tokens].map((token) => new RegExp(escapeRegex(token), "i"));
+  return [...tokens].map((token) => new RegExp(`\\b${escapeRegex(token)}`, "i"));
 }
 
 function rankItems(items, { sinceDays = 21, focus = "", topicTerms = [], minTopicHits = 1 } = {}) {
@@ -128,7 +139,7 @@ function rankItems(items, { sinceDays = 21, focus = "", topicTerms = [], minTopi
   return [...items]
     .filter((item) => !item.publishedAt || item.publishedAt.getTime() >= cutoff)
     .map((item) => {
-      const haystack = `${item.title} ${item.summary}`;
+      const haystack = stripAccents(`${item.title} ${item.summary}`);
       const focusHits = focusMatchers.reduce((acc, matcher) => acc + (matcher.test(haystack) ? 1 : 0), 0);
       const topicHits = topicMatchers.reduce((acc, matcher) => acc + (matcher.test(haystack) ? 1 : 0), 0);
       const recency = item.publishedAt ? item.publishedAt.getTime() : 0;
@@ -139,22 +150,18 @@ function rankItems(items, { sinceDays = 21, focus = "", topicTerms = [], minTopi
     .map(({ _score, _topicHits, ...item }) => item);
 }
 
-async function gatherResearch({ feeds, focus, maxItems = 6, sinceDays = 21, topicTerms = [], minTopical = 2 }) {
+async function gatherResearch({ feeds, focus, maxItems = 6, sinceDays = 21, topicTerms = [], minTopicHits = 1 }) {
   const list = Array.isArray(feeds) ? feeds.filter(Boolean) : [];
   if (list.length === 0) {
-    return { items: [], errors: [], skipped: true };
+    return { items: [], errors: [], skipped: true, topicalEmpty: false };
   }
 
   const results = await Promise.all(list.map(fetchFeed));
   const errors = results.filter((result) => !result.ok).map((result) => ({ url: result.url, error: result.error }));
   const merged = results.flatMap((result) => result.items);
 
-  let topical = rankItems(merged, { sinceDays, focus, topicTerms, minTopicHits: 1 });
-  let topicalRelaxed = false;
-  if (topical.length < minTopical) {
-    topical = rankItems(merged, { sinceDays, focus, topicTerms: [], minTopicHits: 0 });
-    topicalRelaxed = true;
-  }
+  const topical = rankItems(merged, { sinceDays, focus, topicTerms, minTopicHits });
+  const topicalEmpty = topicTerms.length > 0 && topical.length === 0;
   const ranked = topical.slice(0, maxItems);
 
   return {
@@ -167,7 +174,7 @@ async function gatherResearch({ feeds, focus, maxItems = 6, sinceDays = 21, topi
     })),
     errors,
     skipped: false,
-    topicalRelaxed
+    topicalEmpty
   };
 }
 

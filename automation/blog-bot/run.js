@@ -13,6 +13,7 @@ const {
   generateFallbackContent
 } = require("./lib/ai-writer");
 const { gatherResearch, uniqueLinks } = require("./lib/research");
+const { searchWebForTopic } = require("./lib/web-search");
 const { publishSitePost } = require("./lib/publisher");
 const { publishApiPost } = require("./lib/api-publisher");
 const { refreshAllPosts } = require("./lib/related-refresher");
@@ -518,8 +519,26 @@ async function run() {
         focus: expandFocus(focus),
         maxItems: site.research?.maxItems || 6,
         sinceDays: site.research?.sinceDays || 21,
-        topicTerms
+        topicTerms,
+        minTopicHits: 2
       });
+
+      if (research.items.length < 2) {
+        const query = [contract.theme, contract.angle, profile.keywords?.primary?.[0]]
+          .filter(Boolean)
+          .join(" ");
+        const web = await searchWebForTopic(query, { maxResults: 5 });
+        if (web.items.length) {
+          research = {
+            items: web.items,
+            errors: [...(research.errors || []), ...(web.error ? [{ url: "ddg", error: web.error }] : [])],
+            skipped: false,
+            topicalEmpty: false,
+            webFallback: true,
+            webQuery: query
+          };
+        }
+      }
 
       const generation = await generateContent(
         aiConfig,
@@ -529,9 +548,14 @@ async function run() {
         research.items
       );
       contract.content = generation.content;
-      contract.sources = research.items.length
-        ? uniqueLinks(research.items, 5)
-        : DEFAULT_SOURCES;
+      const styleForSources = sitePromptStyle(site);
+      if (research.items.length) {
+        contract.sources = uniqueLinks(research.items, 5);
+      } else if (styleForSources.excludeSourcesFromContent) {
+        contract.sources = [];
+      } else {
+        contract.sources = DEFAULT_SOURCES;
+      }
       aiUsed = generation.aiUsed;
       aiProvider = generation.aiProvider;
       warning = generation.warning;
