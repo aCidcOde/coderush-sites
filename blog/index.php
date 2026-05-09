@@ -42,6 +42,15 @@
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-INDEX-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/09/comprar-construir-software-empresa-precisa-saber/" data-blog-image="imagens/posts/comprar-construir-software-empresa-precisa-saber.jpg" data-blog-slug="comprar-construir-software-empresa-precisa-saber" data-blog-date="2026-05-09">
+  <a href="../2026/05/09/comprar-construir-software-empresa-precisa-saber/">
+    <img src="../imagens/posts/comprar-construir-software-empresa-precisa-saber.jpg" alt="Comprar ou construir software: o que sua empresa precisa saber" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="../2026/05/09/comprar-construir-software-empresa-precisa-saber/" class="hover:underline">Comprar ou construir software: o que sua empresa precisa saber</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda as vantagens e desvantagens de criar ou adquirir software sob medida para sua empresa.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/06/arquitetura-software-operacoes-criticas-decisoes-fazem-diferenca/" data-blog-image="imagens/posts/arquitetura-software-operacoes-criticas-decisoes-fazem-diferenca.jpg" data-blog-slug="arquitetura-software-operacoes-criticas-decisoes-fazem-diferenca" data-blog-date="2026-05-06">
   <a href="../2026/05/06/arquitetura-software-operacoes-criticas-decisoes-fazem-diferenca/">
     <img src="../imagens/posts/arquitetura-software-operacoes-criticas-decisoes-fazem-diferenca.jpg" alt="Arquitetura de software para operações críticas: decisões que fazem a diferença" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />

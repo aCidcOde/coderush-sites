@@ -215,10 +215,10 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/05/03/comprar-construir-software-considerar/"><img src="../../../../imagens/posts/comprar-construir-software-considerar.jpg" alt="Comprar ou construir software: o que considerar?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/05/09/comprar-construir-software-empresa-precisa-saber/"><img src="../../../../imagens/posts/comprar-construir-software-empresa-precisa-saber.jpg" alt="Comprar ou construir software: o que sua empresa precisa saber" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/03/comprar-construir-software-considerar/" class="hover:underline">Comprar ou construir software: o que considerar?</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda os prós e contras de comprar ou construir software sob medida.</p>
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/09/comprar-construir-software-empresa-precisa-saber/" class="hover:underline">Comprar ou construir software: o que sua empresa precisa saber</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda as vantagens e desvantagens de criar ou adquirir software sob medida para sua empresa.</p>
   </div>
 </article>
   </div>

@@ -1,0 +1,88 @@
+{
+  "date": "2026-05-09",
+  "siteId": "emergency",
+  "postType": "due-diligence-certidoes",
+  "focus": "php",
+  "theme": "habilitacao e onboarding de fornecedor com certidoes",
+  "angle": "due diligence imobiliaria",
+  "slug": "fazer-due-diligence-imobiliaria-habilitacao-fornecedores",
+  "title": "Emergency Documentação: PHP aplicado a due diligence imobiliaria",
+  "description": "Atualização semanal de php para Emergency Documentação, com foco em habilitacao e onboarding de fornecedor com certidoes.",
+  "sources": [
+    "https://www.cadenio.com/pt-br/blog/onboarding-fornecedor-qualificacao-due-diligence-auditavel",
+    "https://www.gobuyer.com.br/due-dilligence-de-fornecedores-checklist-completo-de-risco-compliance-e-esg-para-homologar-com-seguranca/",
+    "https://monitorcnpj.com.br/artigos/homologacao-fornecedores/",
+    "https://supplylabs.com.br/due-diligence-de-fornecedores/",
+    "https://www.duebot.com.br/"
+  ],
+  "status": "draft",
+  "generatedAt": "2026-05-09T07:26:31-03:00",
+  "content": {
+    "eyebrow": "Guia prático",
+    "headline": "Como fazer due diligence imobiliária na habilitação de fornecedores",
+    "summary": "Entenda como a due diligence imobiliária pode otimizar a habilitação de fornecedores.",
+    "answerBox": {
+      "question": "Como fazer due diligence imobiliária de matrícula?",
+      "answer": "Para realizar a due diligence imobiliária de matrícula, é necessário verificar a regularidade da propriedade, consultar certidões cartorárias e analisar eventuais ônus ou pendências. A emissão de certidões online facilita este processo."
+    },
+    "tldr": [
+      "Due diligence imobiliária é essencial na habilitação de fornecedores.",
+      "Certidões online agilizam o processo de verificação.",
+      "Acompanhamento humano garante maior precisão nas diligências."
+    ],
+    "sections": [
+      {
+        "type": "prose",
+        "title": "Importância da Due Diligence Imobiliária",
+        "body": "A due diligence imobiliária é um passo crucial na habilitação de fornecedores, especialmente quando se trata de contratos que envolvem imóveis. Essa verificação permite identificar riscos associados à propriedade, como pendências legais ou restrições que podem impactar o negócio. Em um cenário de alta competitividade, garantir a regularidade da documentação é fundamental para evitar problemas futuros."
+      },
+      {
+        "type": "list",
+        "title": "Principais etapas da due diligence imobiliária",
+        "items": [
+          "Verificação da matrícula do imóvel no cartório.",
+          "Consulta a certidões de ônus reais e ações.",
+          "Análise de contratos e documentos relacionados.",
+          "Avaliação de conformidade com a legislação.",
+          "Identificação de possíveis litígios ou disputas."
+        ]
+      },
+      {
+        "type": "callout",
+        "body": "Já estruturamos isso em diversos clientes que enfrentavam desafios semelhantes. Vale uma conversa para entender seu cenário e como podemos ajudar.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Facilitando a emissão de certidões online",
+        "body": "A emissão de certidões online tem se mostrado uma solução eficiente para acelerar o processo de due diligence. Com um painel de acompanhamento, é possível monitorar o status dos pedidos em tempo real, evitando surpresas. A Emergency Documentação, com sua experiência desde 1994, oferece suporte humano para casos mais complexos, garantindo que todas as certidões necessárias sejam obtidas de forma rápida e precisa."
+      },
+      {
+        "type": "cta-inline",
+        "body": "Para otimizar sua diligência, consulte-nos sobre nossas soluções.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Considerações finais sobre riscos e prazos",
+        "body": "Evitar a análise superficial durante a due diligence imobiliária pode resultar em riscos significativos. Falhas na verificação podem levar a perdas financeiras e problemas legais. Portanto, priorizar uma abordagem cuidadosa e bem estruturada, com apoio especializado, é essencial. A escolha de uma empresa confiável, como a Emergency Documentação, pode fazer toda a diferença na segurança e agilidade do seu processo."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Quais certidões são obrigatórias na compra de um imóvel?",
+        "a": "As certidões obrigatórias incluem a matrícula do imóvel, certidão de ônus reais, e certidão negativa de ações. Essas garantem a regularidade da propriedade."
+      },
+      {
+        "q": "O que é habilitação de fornecedor?",
+        "a": "Habilitação de fornecedor é o processo de verificação da capacidade e conformidade de um fornecedor para garantir que atende aos requisitos legais e contratuais."
+      },
+      {
+        "q": "Como validar fornecedor pessoa jurídica antes de contratar?",
+        "a": "Para validar um fornecedor pessoa jurídica, é fundamental consultar sua regularidade fiscal, certidões e histórico de compliance, além de procurar referências no mercado."
+      }
+    ]
+  }
+}
