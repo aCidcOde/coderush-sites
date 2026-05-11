@@ -1,1369 +1,1219 @@
+<!-- LP gerada por tools/build-index.py a partir de pages/componentes e pages/lp/sections. -->
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>FluxoInteligente IA — Agentes corporativos, automação e IA integrada ao negócio</title>
-  <meta name="description"
-    content="Criamos agentes de IA corporativos com RAG, automação, integrações, WhatsApp, e-mail, permissões, auditoria e governança para operações que precisam escalar." />
-  <link rel="canonical" href="https://fluxointeligenteia.com.br/" />
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <link rel="alternate icon" href="favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-  <meta property="og:title"
-    content="FluxoInteligente IA — Agentes corporativos, automação e IA integrada ao negócio" />
-  <meta property="og:description"
-    content="Criamos agentes de IA corporativos com RAG, automação, integrações, WhatsApp, e-mail, permissões, auditoria e governança para operações que precisam escalar." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://fluxointeligenteia.com.br/" />
-  <meta property="og:site_name" content="FluxoInteligente IA" />
-  <meta property="og:locale" content="pt_BR" />
-  <meta property="og:image" content="https://fluxointeligenteia.com.br/og-fluxointeligenteia.jpg" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="FluxoInteligente IA — Agentes de Inteligencia Artificial" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="FluxoInteligente IA — Agentes corporativos, automação e IA integrada ao negócio" />
-  <meta name="twitter:description"
-    content="Criamos agentes de IA corporativos com RAG, automação, integrações, WhatsApp, e-mail, permissões, auditoria e governança para operações que precisam escalar." />
-  <meta name="twitter:image" content="https://fluxointeligenteia.com.br/og-fluxointeligenteia.jpg" />
-  <meta name="theme-color" content="#04110d" />
-  <meta name="keywords"
-    content="FluxoInteligente, agentes corporativos, IA corporativa, RAG, tools, n8n, integrações, CRM, ERP, WhatsApp, auditoria, permissões, LGPD, governança" />
-  <meta name="robots" content="index, follow" />
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://fluxointeligenteia.com.br/#organization",
-        "name": "FluxoInteligente IA",
-        "url": "https://fluxointeligenteia.com.br/",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://fluxointeligenteia.com.br/og-fluxointeligenteia.jpg"
-        },
-        "areaServed": "Brasil",
-        "parentOrganization": {
-          "@type": "Organization",
-          "name": "CodeRush",
-          "url": "https://coderush.com.br/"
-        }
-      },
-      {
-        "@type": "WebSite",
-        "@id": "https://fluxointeligenteia.com.br/#website",
-        "url": "https://fluxointeligenteia.com.br/",
-        "name": "FluxoInteligente IA",
-        "publisher": { "@id": "https://fluxointeligenteia.com.br/#organization" }
-      },
-      {
-        "@type": "WebPage",
-        "@id": "https://fluxointeligenteia.com.br/#webpage",
-        "url": "https://fluxointeligenteia.com.br/",
-        "name": "FluxoInteligente IA — Agentes corporativos, automação e IA integrada ao negócio",
-        "description": "Criamos agentes de IA corporativos com RAG, automação, integrações, WhatsApp, e-mail, permissões, auditoria e governança para operações que precisam escalar.",
-        "inLanguage": "pt-BR",
-        "isPartOf": { "@id": "https://fluxointeligenteia.com.br/#website" }
-      }
-    ]
-  }
-  </script>
-  <link rel="stylesheet" href="css/site-tailwind.css?v=20260501" />
-  <link rel="stylesheet" href="css/hub-parity.css?v=20260501" />
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap"
-    rel="stylesheet" />
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "O que é um agente corporativo?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "É um agente de IA conectado ao contexto da empresa. Ele pode consultar documentos, responder usuários, executar ações em sistemas autorizados e registrar tudo com segurança."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "O agente pode acessar meu ERP ou CRM?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Sim, desde que exista API, banco, webhook ou forma segura de integração. O acesso é desenhado com permissões, logs e limites claros."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "O agente pode funcionar no WhatsApp?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Sim. Podemos integrar WhatsApp como canal de atendimento, usando API oficial ou gateway controlado, dependendo do cenário e dos requisitos de produção."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Como vocês evitam que o agente acesse dados indevidos?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "A arquitetura considera permissões por usuário, validação no backend, logs, auditoria e regras de negócio fora do modelo de IA."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "O agente substitui minha equipe?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Não necessariamente. O objetivo é reduzir tarefas repetitivas, acelerar atendimento e apoiar a equipe com automação e informação confiável."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Preciso ter meus dados organizados?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Não completamente. Parte do trabalho é organizar documentos, fluxos, integrações e bases para que o agente consiga operar com segurança."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Como entro em contato comercial?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Use o formulário nesta página ou o e-mail contato@coderush.com.br. Resposta humana, sem fila robótica genérica."
-        }
-      }
-    ]
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    "name": "Soluções de agentes corporativos — FluxoInteligente IA",
-    "description": "Exemplos de agentes corporativos para suporte interno, atendimento, documentos, operação e vendas.",
-    "numberOfItems": 3,
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "item": { "@type": "CreativeWork", "name": "Agente de suporte interno", "abstract": "Consulta manuais, orienta processos e reduz dependência de atendimento manual." } },
-      { "@type": "ListItem", "position": 2, "item": { "@type": "CreativeWork", "name": "Agente documental", "abstract": "Lê, classifica, resume e consulta documentos com OCR, RAG e regras de negócio." } },
-      { "@type": "ListItem", "position": 3, "item": { "@type": "CreativeWork", "name": "Link", "abstract": "Plataforma de agentes corporativos com base de conhecimento, tools, permissões e auditoria." } }
-    ]
-  }
-  </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FluxoInteligente IA — Agentes Corporativos com Governança e ROI</title>
+<meta name="description" content="Agentes corporativos com RAG, ferramentas seguras, permissões, auditoria e canais integrados. Tire projetos de IA do piloto e coloque em produção com governança e resultado mensurável.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<link rel="canonical" href="https://fluxointeligenteia.com.br/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="FluxoInteligente IA — Agentes Corporativos com Governança e ROI">
+<meta property="og:description" content="Agentes corporativos com RAG, ferramentas seguras, permissões, auditoria e canais integrados. Tire projetos de IA do piloto e coloque em produção com governança e resultado mensurável.">
+<meta property="og:url" content="https://fluxointeligenteia.com.br/">
+<meta property="og:site_name" content="FluxoInteligente IA">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="alternate icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/index.css">
+<link rel="stylesheet" href="css/site-tailwind.css">
+<link rel="stylesheet" href="css/hub-parity.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "FluxoInteligente IA",
+  "url": "https://fluxointeligenteia.com.br/",
+  "description": "Agentes corporativos com RAG, ferramentas seguras, permissões, auditoria e canais integrados."
+}
+</script>
 </head>
+<body data-site="home">
 
-<body id="top" class="min-h-screen antialiased">
-  <div class="site-neural-bg" aria-hidden="true">
-    <div class="site-neural-blob site-neural-blob-a"></div>
-    <div class="site-neural-blob site-neural-blob-b"></div>
-    <div class="site-neural-blob site-neural-blob-c"></div>
-    <div class="site-neural-grid"></div>
-    <svg id="page-neural" class="site-neural-svg" viewBox="0 0 1920 2400" preserveAspectRatio="xMidYMid slice">
-      <defs>
-        <linearGradient id="pn-edge" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0%" stop-color="rgba(16,185,129,0.05)"></stop>
-          <stop offset="50%" stop-color="rgba(52,211,153,0.34)"></stop>
-          <stop offset="100%" stop-color="rgba(96,165,250,0.05)"></stop>
-        </linearGradient>
-        <radialGradient id="pn-pulse" cx="50%" cy="50%" r="50%">
-          <stop offset="0%" stop-color="rgba(255,255,255,1)"></stop>
-          <stop offset="40%" stop-color="rgba(52,211,153,0.9)"></stop>
-          <stop offset="100%" stop-color="transparent"></stop>
-        </radialGradient>
-        <radialGradient id="pn-pulse-alt" cx="50%" cy="50%" r="50%">
-          <stop offset="0%" stop-color="rgba(255,255,255,1)"></stop>
-          <stop offset="40%" stop-color="rgba(45,212,191,0.88)"></stop>
-          <stop offset="100%" stop-color="transparent"></stop>
-        </radialGradient>
-      </defs>
-      <g id="pn-edges" stroke="url(#pn-edge)" stroke-width="0.7" fill="none"></g>
-      <g id="pn-nodes" fill="#a7f3d0"></g>
-      <g id="pn-pulses"></g>
-    </svg>
+<!-- CURSOR -->
+<div id="cursor-dot"></div>
+<div id="cursor-ring"></div>
+
+<!-- SCROLL PROGRESS -->
+<div id="scroll-progress"></div>
+
+<div id="flux-slot-header" aria-hidden="true"></div>
+
+<!-- ═══ STICKY BOTTOM CTA ══════════════════════════════ -->
+<div id="sticky-cta">
+  <p><strong>Pronto para automatizar?</strong> Ative seu agente hoje.</p>
+  <a href="https://wa.me/5511994566726" class="btn btn-primary" style="padding:9px 20px;font-size:13px;" target="_blank">
+    <div class="shimmer"></div>
+    <span class="btn-inner">Criar meu agente <span class="btn-arrow">→</span></span>
+  </a>
+</div>
+
+<!-- Conteúdo principal (gerado a partir de pages/lp/sections/) -->
+<!-- ═══ HERO 2-COL ════════════════════════════════════════ -->
+<section id="hero">
+  <div class="hero-bg">
+    <div class="mesh"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-horizon"></div>
+    <div class="hero-orb one"></div>
+    <div class="hero-orb two"></div>
+    <div class="hero-orb three"></div>
+    <div class="hero-glow"></div>
   </div>
+  <canvas id="particles-canvas"></canvas>
 
-  <header class="site-header" data-site-header>
-    <div class="site-header-pill">
-      <div
-        class="site-header-inner mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-2.5 sm:gap-4 sm:px-6 sm:py-3 md:py-3.5">
-        <a href="#top"
-          class="header-brand group flex shrink-0 items-center gap-2.5 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/55 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">
-          <span class="sr-only">FluxoInteligente IA</span>
-          <img src="imagens/logo-link-transparente-icone-branco.png" alt="FluxoInteligente IA" class="header-brand-logo"
-            width="2172" height="724" decoding="async" />
-        </a>
-        <div class="hidden items-center gap-5 lg:gap-7 md:flex">
-          <nav class="flex flex-wrap items-center justify-end gap-x-1 gap-y-1 sm:gap-x-2 lg:gap-x-3 xl:gap-x-4"
-            aria-label="Seções da página">
-            <a href="#sobre"
-              class="header-nav-link focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">Agentes</a>
-            <a href="#link"
-              class="header-nav-link focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">Link</a>
-            <a href="#solucoes"
-              class="header-nav-link focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">Soluções</a>
-            <a href="#cases"
-              class="header-nav-link focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">Cases</a>
-            <a href="#faq"
-              class="header-nav-link focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">FAQ</a>
-          </nav>
-          <div class="flex items-center gap-2.5 pl-2 lg:border-l lg:border-white/[0.08] lg:pl-5">
-            <a href="#contato"
-              class="header-btn-primary inline-flex items-center justify-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/55 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">
-              <span class="header-btn-primary-shine" aria-hidden="true"></span>
-              <span class="relative z-[1]">Falar com especialista</span>
-            </a>
-          </div>
-        </div>
-        <button type="button" id="mobile-menu-btn"
-          class="header-menu-btn relative z-[60] flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-white/[.14] bg-white/[0.03] text-white/90 md:hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]"
-          aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menu de navegação">
-          <span class="sr-only">Alternar menu</span>
-          <svg id="mobile-menu-icon-open" class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
-            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-          </svg>
-          <svg id="mobile-menu-icon-close" class="hidden h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
-            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-          </svg>
-        </button>
-      </div>
-    </div>
-    <div id="mobile-menu"
-      class="header-mobile-panel hidden border border-white/[0.1] bg-[#04110d]/94 backdrop-blur-xl md:hidden">
-      <nav class="mx-auto flex max-w-6xl flex-col gap-0.5 px-6 py-4" aria-label="Menu mobile">
-        <a href="#sobre"
-          class="header-mobile-link px-3 py-3 text-sm font-medium text-white/85 hover:bg-white/[0.05] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-inset">Agentes</a>
-        <a href="#link"
-          class="header-mobile-link px-3 py-3 text-sm font-medium text-white/85 hover:bg-white/[0.05] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-inset">Link</a>
-        <a href="#solucoes"
-          class="header-mobile-link px-3 py-3 text-sm font-medium text-white/85 hover:bg-white/[0.05] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-inset">Soluções</a>
-        <a href="#cases"
-          class="header-mobile-link px-3 py-3 text-sm font-medium text-white/85 hover:bg-white/[0.05] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-inset">Cases</a>
-        <a href="#faq"
-          class="header-mobile-link px-3 py-3 text-sm font-medium text-white/85 hover:bg-white/[0.05] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-inset">FAQ</a>
-        <div class="mt-3 flex flex-col gap-2.5 border-t border-white/10 pt-4">
-          <a href="#contato"
-            class="header-btn-primary flex w-full items-center justify-center px-4 py-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/55 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">
-            <span class="header-btn-primary-shine" aria-hidden="true"></span>
-            <span class="relative z-[1]">Falar com especialista</span>
-          </a>
-        </div>
-      </nav>
-    </div>
-  </header>
+  <div class="hero-shell">
 
-  <section class="hero-section relative overflow-hidden px-6 text-center" aria-labelledby="hero-heading">
-    <div class="hero-ambient" aria-hidden="true">
-      <div class="hero-grid"></div>
-      <div class="hero-blob hero-blob-1"></div>
-      <div class="hero-blob hero-blob-2"></div>
-      <div class="hero-blob hero-blob-3"></div>
-      <svg class="hero-neural-overlay" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
-        <defs>
-          <linearGradient id="hero-neural-edge" x1="0" y1="0" x2="1" y2="0">
-            <stop offset="0%" stop-color="rgba(16,185,129,0.04)"></stop>
-            <stop offset="50%" stop-color="rgba(52,211,153,0.4)"></stop>
-            <stop offset="100%" stop-color="rgba(96,165,250,0.04)"></stop>
-          </linearGradient>
-          <radialGradient id="hero-neural-pulse" cx="50%" cy="50%" r="50%">
-            <stop offset="0%" stop-color="rgba(255,255,255,1)"></stop>
-            <stop offset="40%" stop-color="rgba(52,211,153,0.9)"></stop>
-            <stop offset="100%" stop-color="transparent"></stop>
-          </radialGradient>
-          <radialGradient id="hero-neural-halo" cx="50%" cy="50%" r="50%">
-            <stop offset="0%" stop-color="rgba(52,211,153,0.65)"></stop>
-            <stop offset="60%" stop-color="rgba(52,211,153,0.08)"></stop>
-            <stop offset="100%" stop-color="transparent"></stop>
-          </radialGradient>
-        </defs>
-        <g stroke="url(#hero-neural-edge)" stroke-width="0.8" fill="none" opacity="0.7">
-          <line x1="120" y1="160" x2="320" y2="240"></line>
-          <line x1="120" y1="160" x2="320" y2="420"></line>
-          <line x1="120" y1="380" x2="320" y2="240"></line>
-          <line x1="120" y1="380" x2="320" y2="420"></line>
-          <line x1="120" y1="380" x2="320" y2="640"></line>
-          <line x1="120" y1="640" x2="320" y2="420"></line>
-          <line x1="120" y1="640" x2="320" y2="640"></line>
-          <line x1="320" y1="240" x2="560" y2="180"></line>
-          <line x1="320" y1="240" x2="560" y2="380"></line>
-          <line x1="320" y1="420" x2="560" y2="180"></line>
-          <line x1="320" y1="420" x2="560" y2="380"></line>
-          <line x1="320" y1="420" x2="560" y2="600"></line>
-          <line x1="320" y1="640" x2="560" y2="600"></line>
-          <line x1="320" y1="640" x2="560" y2="780"></line>
-          <line x1="560" y1="180" x2="820" y2="280"></line>
-          <line x1="560" y1="380" x2="820" y2="280"></line>
-          <line x1="560" y1="380" x2="820" y2="540"></line>
-          <line x1="560" y1="600" x2="820" y2="540"></line>
-          <line x1="560" y1="780" x2="820" y2="700"></line>
-          <line x1="820" y1="280" x2="1080" y2="200"></line>
-          <line x1="820" y1="280" x2="1080" y2="440"></line>
-          <line x1="820" y1="540" x2="1080" y2="440"></line>
-          <line x1="820" y1="540" x2="1080" y2="660"></line>
-          <line x1="820" y1="700" x2="1080" y2="660"></line>
-          <line x1="1080" y1="200" x2="1320" y2="280"></line>
-          <line x1="1080" y1="440" x2="1320" y2="280"></line>
-          <line x1="1080" y1="440" x2="1320" y2="520"></line>
-          <line x1="1080" y1="660" x2="1320" y2="520"></line>
-          <line x1="1080" y1="660" x2="1320" y2="740"></line>
-          <line x1="1320" y1="280" x2="1500" y2="380"></line>
-          <line x1="1320" y1="520" x2="1500" y2="380"></line>
-          <line x1="1320" y1="520" x2="1500" y2="600"></line>
-          <line x1="1320" y1="740" x2="1500" y2="600"></line>
-        </g>
-        <circle r="3" fill="url(#hero-neural-pulse)">
-          <animateMotion dur="3.6s" repeatCount="indefinite" path="M120,160 L320,240 L560,180 L820,280 L1080,200 L1320,280 L1500,380"></animateMotion>
-        </circle>
-        <circle r="3" fill="url(#hero-neural-pulse)">
-          <animateMotion dur="4.4s" begin="-1s" repeatCount="indefinite" path="M120,380 L320,420 L560,380 L820,540 L1080,440 L1320,520 L1500,600"></animateMotion>
-        </circle>
-        <circle r="3" fill="url(#hero-neural-pulse)">
-          <animateMotion dur="5.2s" begin="-2s" repeatCount="indefinite" path="M120,640 L320,640 L560,600 L820,700 L1080,660 L1320,740 L1500,600"></animateMotion>
-        </circle>
-        <circle cx="560" cy="180" r="22" fill="url(#hero-neural-halo)" opacity="0.6"></circle>
-        <circle cx="820" cy="540" r="22" fill="url(#hero-neural-halo)" opacity="0.5"></circle>
-        <circle cx="1080" cy="440" r="22" fill="url(#hero-neural-halo)" opacity="0.6"></circle>
-        <g fill="#a7f3d0">
-          <circle class="neural-node" cx="120" cy="160" r="3"></circle>
-          <circle class="neural-node n2" cx="120" cy="380" r="3"></circle>
-          <circle class="neural-node n3" cx="120" cy="640" r="3"></circle>
-          <circle class="neural-node" cx="320" cy="240" r="3"></circle>
-          <circle class="neural-node n2" cx="320" cy="420" r="3"></circle>
-          <circle class="neural-node n3" cx="320" cy="640" r="3"></circle>
-          <circle class="neural-node n4" cx="560" cy="180" r="4"></circle>
-          <circle class="neural-node n5" cx="560" cy="380" r="3"></circle>
-          <circle class="neural-node n6" cx="560" cy="600" r="3"></circle>
-          <circle class="neural-node" cx="560" cy="780" r="3"></circle>
-          <circle class="neural-node n2" cx="820" cy="280" r="3"></circle>
-          <circle class="neural-node n3" cx="820" cy="540" r="4"></circle>
-          <circle class="neural-node n4" cx="820" cy="700" r="3"></circle>
-          <circle class="neural-node n5" cx="1080" cy="200" r="3"></circle>
-          <circle class="neural-node n6" cx="1080" cy="440" r="4"></circle>
-          <circle class="neural-node" cx="1080" cy="660" r="3"></circle>
-          <circle class="neural-node n2" cx="1320" cy="280" r="3"></circle>
-          <circle class="neural-node n3" cx="1320" cy="520" r="3"></circle>
-          <circle class="neural-node n4" cx="1320" cy="740" r="3"></circle>
-          <circle class="neural-node n5" cx="1500" cy="380" r="3"></circle>
-          <circle class="neural-node n6" cx="1500" cy="600" r="3"></circle>
-        </g>
-      </svg>
-      <div class="hero-vignette"></div>
-      <div class="hero-noise"></div>
-    </div>
-    <div class="relative z-10 mx-auto w-full max-w-4xl">
-      <div class="hero-reveal-item hero-delay-1">
-        <span
-          class="hero-badge rounded-full px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-emerald-200">Agentes
-          corporativos com governança</span>
-      </div>
-      <h1 id="hero-heading"
-        class="hero-reveal-item hero-delay-2 mt-7 font-heading text-4xl font-extrabold leading-[1.12] tracking-tight text-white sm:text-5xl md:text-6xl md:leading-[1.1]">
-        <span class="block text-white">Agentes de IA corporativos</span>
-        <span class="gradient-text mt-2 block sm:mt-3">conectados à sua operação</span>
-      </h1>
-      <p
-        class="hero-reveal-item hero-delay-3 mx-auto mt-7 max-w-2xl text-base leading-relaxed text-white/75 sm:text-lg">
-        Criamos agentes inteligentes que consultam bases internas, automatizam tarefas, atendem usuários e integram
-        sistemas como CRM, ERP, e-mail, WhatsApp, bancos de dados e APIs — com governança, segurança e resultado
-        mensurável.
-      </p>
-      <ul
-        class="hero-reveal-item hero-delay-4 mx-auto mt-7 grid max-w-3xl gap-3 text-left text-sm text-white/70 sm:grid-cols-2">
-        <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Chat, e-mail e WhatsApp como
-          canais de atendimento</li>
-        <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> RAG com documentos internos e
-          bases de conhecimento</li>
-        <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Tools para consultar sistemas
-          e executar ações</li>
-        <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Permissões, auditoria e
-          governança por usuário</li>
-      </ul>
-      <div class="hero-reveal-item hero-delay-4 mt-10 flex flex-wrap items-center justify-center gap-4">
-        <a href="#contato"
-          class="group relative inline-flex items-center justify-center overflow-hidden rounded-full bg-brand px-8 py-3.5 text-sm font-semibold text-white shadow-[0_0_0_1px_rgba(255,255,255,0.08),0_16px_40px_-12px_rgba(5,150,105,0.55)] transition duration-300 hover:-translate-y-0.5 hover:bg-emerald-500 hover:shadow-[0_0_0_1px_rgba(255,255,255,0.12),0_22px_48px_-8px_rgba(5,150,105,0.45)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">
-          <span class="relative z-10">Quero criar meu agente corporativo</span>
-          <span
-            class="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/15 to-transparent transition duration-700 group-hover:translate-x-full"
-            aria-hidden="true"></span>
-        </a>
-        <a href="#como-funciona"
-          class="inline-flex items-center justify-center rounded-full border border-white/25 bg-white/[0.03] px-8 py-3.5 text-sm font-semibold text-white/95 backdrop-blur-sm transition duration-300 hover:-translate-y-0.5 hover:border-white/45 hover:bg-white/[0.08] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">Ver
-          como funciona</a>
-      </div>
-      <div class="hero-reveal-item hero-delay-5 mt-10 flex justify-center">
-        <img src="imagens/hero-link.png" alt="Link, agente corporativo da FluxoInteligente IA"
-          class="hero-link-image h-72 w-full max-w-sm object-contain drop-shadow-[0_28px_55px_rgba(16,185,129,0.32)] sm:h-96 sm:max-w-md md:h-[30rem] md:max-w-xl"
-          width="1254" height="1254" loading="eager" decoding="async" fetchpriority="high" />
-      </div>
-      <div class="hero-reveal-item hero-delay-5 mt-14 flex flex-col items-center gap-2 md:mt-20">
-        <a href="#clientes"
-          class="hero-scroll-hint group inline-flex flex-col items-center gap-2 rounded-lg px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-white/45 transition hover:text-white/75 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">
-          <span>Veja mais</span>
-          <svg class="h-5 w-5 text-emerald-400/80 group-hover:text-emerald-300" xmlns="http://www.w3.org/2000/svg"
-            fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-          </svg>
-        </a>
-      </div>
-    </div>
-  </section>
+    <!-- Two-column grid -->
+    <div class="hero-two-col">
 
-  <section id="clientes" class="clients-strip border-t border-white/[0.06] bg-[#04110d] py-10 md:py-14"
-    aria-label="Integrações e stack técnica">
-    <div class="mx-auto max-w-6xl px-6">
-      <p class="text-center text-[11px] font-semibold uppercase tracking-[0.2em] text-white/40">IA, automação, canais e
-        governança no mesmo desenho</p>
-      <p class="mx-auto mt-2 max-w-xl text-center text-xs text-white/45">Agentes corporativos precisam conversar com
-        documentos, sistemas e pessoas sem perder controle operacional.</p>
-    </div>
-    <div class="clients-marquee mx-auto mt-8 max-w-[100vw]">
-      <div class="clients-track">
-        <div class="clients-group">
-          <span class="clients-logo">n8n</span>
-          <span class="clients-logo">OpenAI</span>
-          <span class="clients-logo">Anthropic</span>
-          <span class="clients-logo">Gemini</span>
-          <span class="clients-logo">LangChain</span>
-          <span class="clients-logo">RAG</span>
-          <span class="clients-logo">Embeddings</span>
-          <span class="clients-logo">OCR</span>
-        </div>
-        <div class="clients-group">
-          <span class="clients-logo">WhatsApp</span>
-          <span class="clients-logo">E-mail</span>
-          <span class="clients-logo">Chat web</span>
-          <span class="clients-logo">PostgreSQL</span>
-          <span class="clients-logo">pgvector</span>
-          <span class="clients-logo">Google Sheets</span>
-          <span class="clients-logo">CRM</span>
-          <span class="clients-logo">ERP</span>
-          <span class="clients-logo">APIs</span>
-          <span class="clients-logo">Audit log</span>
-        </div>
-      </div>
-    </div>
-  </section>
+      <!-- ── LEFT: content ── -->
+      <div class="hero-left">
 
-  <section id="sobre" class="sobre-section relative border-t border-white/[0.06] px-6 py-20 md:py-28"
-    aria-labelledby="sobre-heading">
-    <div class="sobre-ambient" aria-hidden="true"></div>
-    <div class="sobre-ring hidden lg:block" aria-hidden="true"></div>
-    <div
-      class="pointer-events-none absolute inset-x-0 top-0 mx-auto h-px max-w-3xl bg-gradient-to-r from-transparent via-emerald-500/35 to-transparent"
-      aria-hidden="true"></div>
-    <div class="relative mx-auto max-w-6xl">
-      <div class="grid gap-14 lg:grid-cols-12 lg:items-start lg:gap-12">
-        <div class="lg:col-span-5">
-          <p
-            class="sobre-reveal sobre-d-1 font-heading text-[11px] font-semibold uppercase tracking-[0.22em] text-emerald-400/95">
-            Agentes corporativos</p>
-          <h2 id="sobre-heading"
-            class="sobre-reveal sobre-d-2 mt-3 font-heading text-3xl font-bold tracking-tight text-white sm:text-4xl">O
-            que um agente corporativo pode fazer?</h2>
-          <p class="sobre-reveal sobre-d-3 mt-5 text-base leading-relaxed text-white/[.68]">
-            Um agente corporativo é mais do que um chatbot. Ele entende o contexto da empresa, consulta bases de
-            conhecimento, acessa sistemas autorizados, executa tarefas com segurança e registra tudo para controle
-            operacional.
-          </p>
-          <div class="sobre-reveal sobre-d-5 mt-8 flex flex-wrap gap-3">
-            <a href="agentes-corporativos/"
-              class="inline-flex items-center justify-center gap-2 rounded-full bg-brand px-6 py-3 text-sm font-semibold text-white shadow-[0_12px_36px_-12px_rgba(5,150,105,0.65)] transition hover:-translate-y-0.5 hover:bg-emerald-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">
-              <i data-lucide="bot" class="h-4 w-4" aria-hidden="true"></i>
-              Ver agentes corporativos
-            </a>
-            <a href="#contato"
-              class="inline-flex items-center justify-center gap-2 rounded-full border border-white/[.22] bg-white/[0.04] px-6 py-3 text-sm font-semibold text-white/[.92] backdrop-blur-sm transition hover:-translate-y-0.5 hover:border-white/40 hover:bg-white/[0.08] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">
-              <i data-lucide="message-square" class="h-4 w-4" aria-hidden="true"></i>
-              Desenhar meu agente
-            </a>
-          </div>
+        <!-- Segmented tabs -->
+        <div class="hero-tabs" id="hero-tabs" role="tablist">
+          <button class="htab active" onclick="setHeroState(0,this)" role="tab">Automação</button>
+          <button class="htab" onclick="setHeroState(1,this)" role="tab">Crescimento</button>
+          <button class="htab" onclick="setHeroState(2,this)" role="tab">Eficiência</button>
+          <button class="htab" onclick="setHeroState(3,this)" role="tab">Integrações</button>
         </div>
-        <div class="lg:col-span-7">
-          <div class="mt-4 grid gap-3 sm:grid-cols-2">
-            <article class="sobre-reveal sobre-d-4 sobre-pillar flex gap-4 p-4 sm:p-5">
-              <span
-                class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-emerald-500/15 text-emerald-200 ring-1 ring-emerald-400/20">
-                <i data-lucide="book-open" class="h-5 w-5" aria-hidden="true"></i>
-              </span>
-              <div>
-                <h3 class="font-heading text-sm font-bold text-white">Consultar conhecimento interno</h3>
-                <p class="mt-1.5 text-xs leading-relaxed text-white/55">Responde com base em documentos, manuais,
-                  políticas, contratos, procedimentos e bases vetoriais.</p>
-              </div>
-            </article>
-            <article class="sobre-reveal sobre-d-5 sobre-pillar flex gap-4 p-4 sm:p-5">
-              <span
-                class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-emerald-500/15 text-emerald-200 ring-1 ring-emerald-400/20">
-                <i data-lucide="terminal" class="h-5 w-5" aria-hidden="true"></i>
-              </span>
-              <div>
-                <h3 class="font-heading text-sm font-bold text-white">Executar tarefas com tools</h3>
-                <p class="mt-1.5 text-xs leading-relaxed text-white/55">Aciona funções para consultar dados, gerar
-                  relatórios, criar registros e disparar fluxos controlados.</p>
-              </div>
-            </article>
-            <article class="sobre-reveal sobre-d-6 sobre-pillar flex gap-4 p-4 sm:p-5">
-              <span
-                class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-emerald-500/15 text-emerald-200 ring-1 ring-emerald-400/20">
-                <i data-lucide="shield-check" class="h-5 w-5" aria-hidden="true"></i>
-              </span>
-              <div>
-                <h3 class="font-heading text-sm font-bold text-white">Respeitar permissões</h3>
-                <p class="mt-1.5 text-xs leading-relaxed text-white/55">Cada usuário acessa apenas o que tem permissão,
-                  sem extrapolar papéis ou dados privados.</p>
-              </div>
-            </article>
-            <article class="sobre-reveal sobre-d-7 sobre-pillar flex gap-4 p-4 sm:p-5">
-              <span
-                class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-emerald-500/15 text-emerald-200 ring-1 ring-emerald-400/20">
-                <i data-lucide="message-square" class="h-5 w-5" aria-hidden="true"></i>
-              </span>
-              <div>
-                <h3 class="font-heading text-sm font-bold text-white">Operar em múltiplos canais</h3>
-                <p class="mt-1.5 text-xs leading-relaxed text-white/55">Atende via chat web, e-mail, WhatsApp e outros
-                  canais conectados à operação.</p>
-              </div>
-            </article>
-            <article class="sobre-reveal sobre-d-7 sobre-pillar flex gap-4 p-4 sm:p-5">
-              <span
-                class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-emerald-500/15 text-emerald-200 ring-1 ring-emerald-400/20">
-                <i data-lucide="clipboard-check" class="h-5 w-5" aria-hidden="true"></i>
-              </span>
-              <div>
-                <h3 class="font-heading text-sm font-bold text-white">Gerar auditoria</h3>
-                <p class="mt-1.5 text-xs leading-relaxed text-white/55">Ações sensíveis ficam registradas com
-                  histórico, rastreabilidade e controle.</p>
-              </div>
-            </article>
-            <article class="sobre-reveal sobre-d-7 sobre-pillar flex gap-4 p-4 sm:p-5">
-              <span
-                class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-emerald-500/15 text-emerald-200 ring-1 ring-emerald-400/20">
-                <i data-lucide="repeat-2" class="h-5 w-5" aria-hidden="true"></i>
-              </span>
-              <div>
-                <h3 class="font-heading text-sm font-bold text-white">Aprender com a operação</h3>
-                <p class="mt-1.5 text-xs leading-relaxed text-white/55">Conversas, feedbacks e dificuldades viram
-                  insumos para melhoria contínua.</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <section id="link" class="border-t border-white/[0.06] px-6 py-16 md:py-24" aria-labelledby="link-heading">
-    <div class="relative mx-auto max-w-6xl">
-      <div
-        class="pointer-events-none absolute inset-x-0 top-0 mx-auto h-px max-w-3xl bg-gradient-to-r from-transparent via-emerald-500/40 to-transparent"
-        aria-hidden="true"></div>
-      <div class="grid gap-10 lg:grid-cols-12 lg:items-center">
-        <div class="lg:col-span-5">
-          <p class="text-xs font-semibold uppercase tracking-widest text-emerald-400">Plataforma Link</p>
-          <h2 id="link-heading" class="mt-3 font-heading text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Link: nossa base para agentes inteligentes corporativos</h2>
-          <p class="mt-5 text-base leading-relaxed text-white/[.68]">O Link é uma plataforma de agentes de IA
-            desenvolvida para operações que precisam de atendimento inteligente, automação segura, consulta a documentos
-            e integração com sistemas internos.</p>
-          <p class="mt-4 text-sm leading-relaxed text-white/[.58]">Ele combina chat, RAG, tools, versionamento de agentes,
-            auditoria, permissões, onboarding, canais de comunicação e observabilidade para transformar IA em operação
-            real.</p>
-          <div class="mt-7 flex flex-wrap gap-3">
-            <a href="link/"
-              class="inline-flex items-center justify-center gap-2 rounded-full bg-brand px-6 py-3 text-sm font-semibold text-white shadow-[0_12px_36px_-12px_rgba(5,150,105,0.65)] transition hover:-translate-y-0.5 hover:bg-emerald-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">
-              Quero ver o Link em ação
-              <i data-lucide="arrow-right" class="h-4 w-4" aria-hidden="true"></i>
-            </a>
-            <a href="#contato"
-              class="inline-flex items-center justify-center gap-2 rounded-full border border-white/[.22] bg-white/[0.04] px-6 py-3 text-sm font-semibold text-white/[.92] backdrop-blur-sm transition hover:-translate-y-0.5 hover:border-white/40 hover:bg-white/[0.08] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">
-              Quero usar o Link na minha operação
-            </a>
-          </div>
-        </div>
-        <div class="lg:col-span-7">
-          <div
-            class="rounded-3xl border border-emerald-500/25 bg-gradient-to-br from-emerald-950/45 via-white/[0.04] to-white/[0.02] p-6 shadow-2xl shadow-emerald-950/30 md:p-8">
-            <div class="mb-7 flex flex-col items-center gap-5 text-center sm:flex-row sm:text-left">
-              <img src="imagens/avatar-link.png" alt="Conheça o Link, agente corporativo da FluxoInteligente IA"
-                class="h-44 w-44 shrink-0 object-contain drop-shadow-[0_24px_45px_rgba(16,185,129,0.28)] sm:h-52 sm:w-52"
-                width="1254" height="1254" loading="lazy" decoding="async" />
-              <div>
-                <p class="font-heading text-xs font-semibold uppercase tracking-[0.2em] text-emerald-300/85">Conheça o
-                  Link</p>
-                <p class="mt-2 text-sm leading-relaxed text-white/65">Um assistente corporativo para conectar
-                  conhecimento, ferramentas e canais sem perder controle operacional.</p>
-              </div>
+        <!-- Animated content area -->
+        <div class="hero-content-area">
+
+          <!-- State 0: Automação -->
+          <div class="hstate active" data-state="0">
+            <h1 class="hero-h1">IA que <span class="grad">automatiza</span><br>sua operação<br><span class="grad-white">de verdade</span></h1>
+            <p class="hero-sub-txt">Agentes inteligentes conectados às suas bases internas, com RAG, governança e resultado mensurável desde o primeiro deploy.</p>
+            <div class="hero-ctas-left">
+              <a href="#form-section" class="btn btn-primary" style="padding:14px 28px;font-size:14px;">
+                <div class="shimmer"></div>
+                <span class="btn-inner">Criar meu agente <span class="btn-arrow">→</span></span>
+              </a>
+              <a href="#how" class="btn btn-ghost" style="padding:14px 24px;font-size:14px;">Ver como funciona</a>
             </div>
-            <div class="grid gap-3 sm:grid-cols-2">
-              <div class="rounded-2xl border border-white/10 bg-white/[0.05] p-4">
-                <p class="text-sm font-semibold text-white">Agentes por área ou função</p>
-                <p class="mt-1 text-xs leading-relaxed text-white/55">Personas, objetivos, limites e versões por
-                  contexto de uso.</p>
+          </div>
+
+          <!-- State 1: Crescimento -->
+          <div class="hstate" data-state="1">
+            <h1 class="hero-h1">Agentes que <span class="grad">aceleram</span><br>seu crescimento<br><span class="grad-white">com precisão</span></h1>
+            <p class="hero-sub-txt">Do lead à conversão, agentes comerciais qualificam, fazem follow-up e organizam oportunidades por prioridade automaticamente.</p>
+            <div class="hero-ctas-left">
+              <a href="#form-section" class="btn btn-primary" style="padding:14px 28px;font-size:14px;">
+                <div class="shimmer"></div>
+                <span class="btn-inner">Acelerar meu crescimento <span class="btn-arrow">→</span></span>
+              </a>
+              <a href="#testimonials" class="btn btn-ghost" style="padding:14px 24px;font-size:14px;">Ver resultados</a>
+            </div>
+          </div>
+
+          <!-- State 2: Eficiência -->
+          <div class="hstate" data-state="2">
+            <h1 class="hero-h1">Reduza custos com <span class="grad">eficiência</span><br>e <span class="grad-white">governança total</span></h1>
+            <p class="hero-sub-txt">Elimine tarefas manuais repetitivas. Seu time foca no estratégico enquanto o agente resolve o operacional com segurança.</p>
+            <div class="hero-ctas-left">
+              <a href="#form-section" class="btn btn-primary" style="padding:14px 28px;font-size:14px;">
+                <div class="shimmer"></div>
+                <span class="btn-inner">Reduzir custos operacionais <span class="btn-arrow">→</span></span>
+              </a>
+              <a href="#features" class="btn btn-ghost" style="padding:14px 24px;font-size:14px;">Ver recursos</a>
+            </div>
+          </div>
+
+          <!-- State 3: Integrações -->
+          <div class="hstate" data-state="3">
+            <h1 class="hero-h1">Conecte todos os <span class="grad">seus sistemas</span><br>em um <span class="grad-white">agente só</span></h1>
+            <p class="hero-sub-txt">CRM, ERP, WhatsApp, e-mail, planilhas e APIs — tudo integrado em uma única inteligência com controle e rastreabilidade.</p>
+            <div class="hero-ctas-left">
+              <a href="#form-section" class="btn btn-primary" style="padding:14px 28px;font-size:14px;">
+                <div class="shimmer"></div>
+                <span class="btn-inner">Ver integrações disponíveis <span class="btn-arrow">→</span></span>
+              </a>
+              <a href="#interactive" class="btn btn-ghost" style="padding:14px 24px;font-size:14px;">Explorar plataforma</a>
+            </div>
+          </div>
+
+        </div><!-- /hero-content-area -->
+      </div><!-- /hero-left -->
+
+      <!-- ── RIGHT: visuals ── -->
+      <div class="hero-right">
+        <div class="hero-visual-wrap">
+
+          <!-- Floating chips -->
+          <div class="f-chip chart" style="top:-16px;left:-12px;animation:chipFloat 6s 1s ease-in-out infinite;z-index:4">
+            <div class="f-chip-head">
+              <span class="f-chip-kicker">orquestração Flux</span>
+              <span class="f-chip-value">SLA 99,3%</span>
+            </div>
+            <div class="sparkline" aria-hidden="true">
+              <svg viewBox="0 0 180 32" preserveAspectRatio="none">
+                <defs>
+                  <linearGradient id="sparkGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="rgba(125,255,159,0.6)"></stop>
+                    <stop offset="100%" stop-color="rgba(125,255,159,0)"></stop>
+                  </linearGradient>
+                </defs>
+                <polygon class="spark-fill" points="0,26 18,20 34,22 52,14 70,18 88,12 106,16 124,10 142,14 160,9 180,11 180,32 0,32"></polygon>
+                <polyline points="0,26 18,20 34,22 52,14 70,18 88,12 106,16 124,10 142,14 160,9 180,11"></polyline>
+              </svg>
+            </div>
+            <div class="f-chip-meta"><span>RAG com base privada</span><span>latência média 182ms</span></div>
+          </div>
+          <div class="f-chip chart compact" id="chip-integrations" style="bottom:16px;right:-12px;animation:chipFloat 7s 2.5s ease-in-out infinite;z-index:4">
+            <div class="f-chip-head">
+              <span class="f-chip-kicker">conectores corporativos</span>
+              <span class="f-chip-value">12 ativos</span>
+            </div>
+            <div class="f-chip-bottom-grid" aria-hidden="true">
+              <div class="f-chip-radial" id="chip-integrations-radial"></div>
+              <div class="f-chip-tooltip" id="chip-integrations-tip">12/12 online · 99.8%</div>
+            </div>
+            <div class="f-chip-meta"><span>Disponibilidade dos conectores</span><span>últimas 24h</span></div>
+          </div>
+
+          <!-- Visual 0: Chat do agente -->
+          <div class="hvisual active" data-visual="0">
+            <div class="hero-card sys-ui">
+              <div class="ctb">
+                <div class="mac-dot md-r"></div><div class="mac-dot md-y"></div><div class="mac-dot md-g"></div>
+                <div class="ctb-label">chat studio · suporte · online</div>
               </div>
-              <div class="rounded-2xl border border-white/10 bg-white/[0.05] p-4">
-                <p class="text-sm font-semibold text-white">Base de conhecimento privada</p>
-                <p class="mt-1 text-xs leading-relaxed text-white/55">Documentos, busca semântica, embeddings e RAG
-                  controlado.</p>
+              <div class="app-shell">
+                <aside class="app-side">
+                  <div class="sys-brand">
+                    <img src="assets/img/flux-icon.png" alt="Flux">
+                    <div class="sys-brand-text"><strong>Gordon Workspace</strong><small>agentes sublimity</small></div>
+                  </div>
+                  <div class="app-side-label">recentes</div>
+                  <div class="app-side-list">
+                    <div class="app-side-item active"><span class="mi">MSG</span>Nova conversa</div>
+                    <div class="app-side-item"><span class="mi">SUP</span>Suporte Gordon</div>
+                    <div class="app-side-item"><span class="mi">CRT</span>Criadora de Agentes</div>
+                    <div class="app-side-item"><span class="mi">FAQ</span>Base oficial</div>
+                  </div>
+                </aside>
+                <div class="app-main">
+                  <div class="sys-topbar">
+                    <div class="sys-search">Busque agentes, conversas, conhecimento...</div>
+                    <div class="sys-user"><span class="sys-user-dot">A</span>Admin</div>
+                  </div>
+                  <div class="app-main-head">
+                    <div class="app-main-title">Gordon Suporte</div>
+                    <div class="app-pill">5 perguntas</div>
+                  </div>
+                  <div class="chat">
+                    <div class="msg-row">
+                      <div class="av av-ai"><img src="assets/img/flux-icon.png" alt="Flux" style="width:14px;height:14px;object-fit:contain"></div>
+                      <div class="bubble bubble-ai">Olá! Sou o Gordon Suporte. Posso ajudar com dúvidas de uso da plataforma.<span class="bubble-sub">Diga o que você precisa e eu te guio passo a passo.</span></div>
+                    </div>
+                    <div class="msg-row" style="justify-content:flex-end">
+                      <div class="bubble bubble-user">Quero configurar um agente e ligar no meu CRM.</div>
+                      <div class="av av-user">USR</div>
+                    </div>
+                    <div class="msg-row">
+                      <div class="av av-ai"><img src="assets/img/flux-icon.png" alt="Flux" style="width:14px;height:14px;object-fit:contain"></div>
+                      <div class="bubble bubble-ai">Perfeito. Primeiro defina objetivo, permissões e base de conhecimento.<span class="bubble-sub">checklist pronto · integração guiada · logs habilitados</span></div>
+                    </div>
+                  </div>
+                  <div class="chat-composer">Escreva sua mensagem...</div>
+                </div>
               </div>
-              <div class="rounded-2xl border border-white/10 bg-white/[0.05] p-4">
-                <p class="text-sm font-semibold text-white">Tools para ações reais</p>
-                <p class="mt-1 text-xs leading-relaxed text-white/55">Execução em sistemas externos com validação,
-                  permissões e trilhas.</p>
-              </div>
-              <div class="rounded-2xl border border-white/10 bg-white/[0.05] p-4">
-                <p class="text-sm font-semibold text-white">Logs e auditoria</p>
-                <p class="mt-1 text-xs leading-relaxed text-white/55">Histórico de conversas, ações sensíveis,
-                  feedbacks e rastreabilidade.</p>
-              </div>
-              <div class="rounded-2xl border border-white/10 bg-white/[0.05] p-4">
-                <p class="text-sm font-semibold text-white">Controle de acesso</p>
-                <p class="mt-1 text-xs leading-relaxed text-white/55">Permissões por usuário para proteger dados e
-                  processos internos.</p>
-              </div>
-              <div class="rounded-2xl border border-white/10 bg-white/[0.05] p-4">
-                <p class="text-sm font-semibold text-white">Canais integrados</p>
-                <p class="mt-1 text-xs leading-relaxed text-white/55">Chat, e-mail e futura integração com WhatsApp no
-                  mesmo agente.</p>
+              <div class="hero-stats">
+                <div class="hs"><div class="hs-val">24/7</div><div class="hs-lbl">Suporte ativo</div></div>
+                <div class="hs"><div class="hs-val">2m</div><div class="hs-lbl">Primeira orientação</div></div>
+                <div class="hs"><div class="hs-val">100%</div><div class="hs-lbl">Fluxos auditáveis</div></div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <section id="como-funciona" class="border-t border-white/[0.06] px-6 py-20 md:py-28">
-    <div class="mx-auto max-w-5xl">
-      <div class="mb-12 text-center">
-        <p class="text-xs font-semibold uppercase tracking-widest text-emerald-400">Como entregamos</p>
-        <h2 class="mt-2 font-heading text-3xl font-bold tracking-tight text-white sm:text-4xl">Da ideia ao agente em
-          produção</h2>
-        <p class="mx-auto mt-3 max-w-2xl text-base text-white/60">Projetamos a operação, conectamos os sistemas e
-          colocamos o agente para trabalhar com segurança, auditoria e ciclos de melhoria.</p>
-      </div>
-      <div class="grid gap-4 md:grid-cols-2">
-        <div class="rounded-2xl border border-white/10 bg-white/[0.04] p-5">
-          <span
-            class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-emerald-600 font-heading text-xs font-bold text-white">1</span>
-          <h3 class="mt-4 font-heading text-lg font-bold text-white">Diagnóstico</h3>
-          <p class="mt-2 text-sm leading-relaxed text-white/65">Mapeamos o processo, os gargalos, os sistemas
-            envolvidos e o resultado esperado.</p>
-        </div>
-        <div class="rounded-2xl border border-white/10 bg-white/[0.04] p-5">
-          <span
-            class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-emerald-600 font-heading text-xs font-bold text-white">2</span>
-          <h3 class="mt-4 font-heading text-lg font-bold text-white">Desenho do agente</h3>
-          <p class="mt-2 text-sm leading-relaxed text-white/65">Definimos persona, permissões, bases de conhecimento,
-            tools, canais e limites de atuação.</p>
-        </div>
-        <div class="rounded-2xl border border-white/10 bg-white/[0.04] p-5">
-          <span
-            class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-emerald-600 font-heading text-xs font-bold text-white">3</span>
-          <h3 class="mt-4 font-heading text-lg font-bold text-white">Integrações</h3>
-          <p class="mt-2 text-sm leading-relaxed text-white/65">Conectamos APIs, bancos, planilhas, CRM, ERP, e-mail,
-            WhatsApp ou sistemas internos.</p>
-        </div>
-        <div class="rounded-2xl border border-white/10 bg-white/[0.04] p-5">
-          <span
-            class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-emerald-600 font-heading text-xs font-bold text-white">4</span>
-          <h3 class="mt-4 font-heading text-lg font-bold text-white">Base de conhecimento</h3>
-          <p class="mt-2 text-sm leading-relaxed text-white/65">Organizamos documentos, criamos embeddings, estruturamos
-            RAG e validamos respostas.</p>
-        </div>
-        <div class="rounded-2xl border border-white/10 bg-white/[0.04] p-5">
-          <span
-            class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-emerald-600 font-heading text-xs font-bold text-white">5</span>
-          <h3 class="mt-4 font-heading text-lg font-bold text-white">Segurança e governança</h3>
-          <p class="mt-2 text-sm leading-relaxed text-white/65">Aplicamos autenticação, autorização, logs, auditoria e
-            regras de aprovação para ações sensíveis.</p>
-        </div>
-        <div class="rounded-2xl border border-white/10 bg-white/[0.04] p-5">
-          <span
-            class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-emerald-600 font-heading text-xs font-bold text-white">6</span>
-          <h3 class="mt-4 font-heading text-lg font-bold text-white">Deploy e melhoria contínua</h3>
-          <p class="mt-2 text-sm leading-relaxed text-white/65">Colocamos em produção, medimos uso, analisamos feedbacks
-            e evoluímos por ciclos.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="solucoes" class="relative border-t border-white/[0.06] px-6 py-20 md:py-24">
-    <div
-      class="pointer-events-none absolute inset-x-0 top-0 mx-auto h-px max-w-3xl bg-gradient-to-r from-transparent via-emerald-500/35 to-transparent"
-      aria-hidden="true"></div>
-    <div class="relative mx-auto max-w-6xl">
-      <div class="mb-12 text-center">
-        <p class="text-xs font-semibold uppercase tracking-widest text-emerald-400">Soluções</p>
-        <h2 class="mt-2 font-heading text-3xl font-bold tracking-tight text-white sm:text-4xl">Agentes que executam
-          partes reais da operação</h2>
-      </div>
-      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        <div class="card-hover rounded-2xl border border-white/10 bg-white/[0.04] p-6">
-          <div
-            class="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-500/15 text-emerald-200 ring-1 ring-emerald-400/25">
-            <i data-lucide="headphones" class="h-5 w-5" aria-hidden="true"></i>
-          </div>
-          <h3 class="font-heading text-lg font-bold text-white">Agente de suporte interno</h3>
-          <p class="mt-2 text-sm text-white/65">Responde dúvidas da equipe, consulta manuais, orienta processos e reduz
-            dependência de atendimento manual.</p>
-        </div>
-        <div class="card-hover rounded-2xl border border-white/10 bg-white/[0.04] p-6">
-          <div
-            class="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-500/15 text-emerald-200 ring-1 ring-emerald-400/25">
-            <i data-lucide="message-circle" class="h-5 w-5" aria-hidden="true"></i>
-          </div>
-          <h3 class="font-heading text-lg font-bold text-white">Agente de atendimento ao cliente</h3>
-          <p class="mt-2 text-sm text-white/65">Atende clientes por chat, e-mail ou WhatsApp, consulta status, responde
-            dúvidas e escala para humanos quando necessário.</p>
-        </div>
-        <div class="card-hover rounded-2xl border border-white/10 bg-white/[0.04] p-6">
-          <div
-            class="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-500/15 text-emerald-200 ring-1 ring-emerald-400/25">
-            <i data-lucide="file-search" class="h-5 w-5" aria-hidden="true"></i>
-          </div>
-          <h3 class="font-heading text-lg font-bold text-white">Agente de documentos e contratos</h3>
-          <p class="mt-2 text-sm text-white/65">Lê, classifica, resume e consulta documentos usando OCR, RAG e regras
-            de negócio.</p>
-        </div>
-        <div class="card-hover rounded-2xl border border-white/10 bg-white/[0.04] p-6">
-          <div
-            class="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-500/15 text-emerald-200 ring-1 ring-emerald-400/25">
-            <i data-lucide="activity" class="h-5 w-5" aria-hidden="true"></i>
-          </div>
-          <h3 class="font-heading text-lg font-bold text-white">Agente operacional</h3>
-          <p class="mt-2 text-sm text-white/65">Consulta sistemas internos, gera relatórios, confere pendências e
-            executa rotinas com aprovação.</p>
-        </div>
-        <div class="card-hover rounded-2xl border border-white/10 bg-white/[0.04] p-6">
-          <div
-            class="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-500/15 text-emerald-200 ring-1 ring-emerald-400/25">
-            <i data-lucide="handshake" class="h-5 w-5" aria-hidden="true"></i>
-          </div>
-          <h3 class="font-heading text-lg font-bold text-white">Agente comercial</h3>
-          <p class="mt-2 text-sm text-white/65">Qualifica leads, consulta CRM, envia follow-ups e organiza oportunidades
-            por prioridade.</p>
-        </div>
-        <div class="card-hover rounded-2xl border border-white/10 bg-white/[0.04] p-6">
-          <div
-            class="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-500/15 text-emerald-200 ring-1 ring-emerald-400/25">
-            <i data-lucide="route" class="h-5 w-5" aria-hidden="true"></i>
-          </div>
-          <h3 class="font-heading text-lg font-bold text-white">Agente de onboarding</h3>
-          <p class="mt-2 text-sm text-white/65">Guia novos usuários, coleta informações, cria agentes personalizados e
-            acompanha a adoção da plataforma.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="diferenciais" class="relative border-t border-white/[0.06] px-6 py-20 md:py-24">
-    <div class="mx-auto max-w-6xl">
-      <div class="mx-auto max-w-3xl text-center">
-        <p class="text-xs font-semibold uppercase tracking-widest text-emerald-400">Engenharia de agentes</p>
-        <h2 class="mt-2 font-heading text-3xl font-bold tracking-tight text-white sm:text-4xl">Não é só automação. É
-          engenharia de agentes com governança.</h2>
-        <p class="mx-auto mt-3 max-w-2xl text-base text-white/60">Separamos regras críticas do modelo de IA, conectamos
-          dados com controle e medimos a operação para evoluir com base no uso real.</p>
-      </div>
-      <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-        <div class="rounded-2xl border border-white/10 bg-white/[0.04] p-6">
-          <h3 class="font-heading text-lg font-bold text-white">RAG e conhecimento privado</h3>
-          <p class="mt-2 text-sm leading-relaxed text-white/65">Conectamos documentos, manuais, PDFs, bases internas e
-            bancos vetoriais para que o agente responda com contexto real.</p>
-        </div>
-        <div class="rounded-2xl border border-white/10 bg-white/[0.04] p-6">
-          <h3 class="font-heading text-lg font-bold text-white">Tools e execução segura</h3>
-          <p class="mt-2 text-sm leading-relaxed text-white/65">O agente pode executar ações em sistemas externos, mas
-            com validação, permissões, confirmação e auditoria.</p>
-        </div>
-        <div class="rounded-2xl border border-white/10 bg-white/[0.04] p-6">
-          <h3 class="font-heading text-lg font-bold text-white">Multi-canal</h3>
-          <p class="mt-2 text-sm leading-relaxed text-white/65">A mesma inteligência pode operar via chat web, e-mail,
-            WhatsApp e integrações internas.</p>
-        </div>
-        <div class="rounded-2xl border border-white/10 bg-white/[0.04] p-6">
-          <h3 class="font-heading text-lg font-bold text-white">Observabilidade</h3>
-          <p class="mt-2 text-sm leading-relaxed text-white/65">Criamos dashboards e relatórios para entender uso,
-            gargalos, feedbacks e ROI.</p>
-        </div>
-        <div class="rounded-2xl border border-white/10 bg-white/[0.04] p-6">
-          <h3 class="font-heading text-lg font-bold text-white">Segurança e LGPD</h3>
-          <p class="mt-2 text-sm leading-relaxed text-white/65">Projetos com controle de acesso, minimização de dados,
-            logs e separação clara de responsabilidades.</p>
-        </div>
-        <div class="rounded-2xl border border-white/10 bg-white/[0.04] p-6">
-          <h3 class="font-heading text-lg font-bold text-white">Evolução contínua</h3>
-          <p class="mt-2 text-sm leading-relaxed text-white/65">O agente melhora com feedbacks, análise das conversas e
-            priorização baseada em uso real.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="tecnologias" class="border-t border-white/[0.06] px-6 py-16 md:py-20">
-    <div class="mx-auto max-w-6xl">
-      <div class="mb-10 text-center">
-        <p class="text-xs font-semibold uppercase tracking-widest text-emerald-400">Stack técnica</p>
-        <h2 class="mt-2 font-heading text-3xl font-bold text-white">Tecnologias organizadas por função</h2>
-      </div>
-      <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-5">
-        <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-5">
-          <h3 class="font-heading text-sm font-bold text-white">IA e agentes</h3>
-          <div class="mt-4 flex flex-wrap gap-2 text-xs text-white/70">
-            <span class="rounded-full border border-white/15 px-3 py-1">OpenAI</span>
-            <span class="rounded-full border border-white/15 px-3 py-1">Anthropic</span>
-            <span class="rounded-full border border-white/15 px-3 py-1">Gemini</span>
-            <span class="rounded-full border border-white/15 px-3 py-1">OpenRouter</span>
-            <span class="rounded-full border border-white/15 px-3 py-1">LangChain</span>
-            <span class="rounded-full border border-white/15 px-3 py-1">RAG</span>
-            <span class="rounded-full border border-white/15 px-3 py-1">Embeddings</span>
-            <span class="rounded-full border border-white/15 px-3 py-1">OCR</span>
-          </div>
-        </div>
-        <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-5">
-          <h3 class="font-heading text-sm font-bold text-white">Orquestração</h3>
-          <div class="mt-4 flex flex-wrap gap-2 text-xs text-white/70">
-            <span class="rounded-full border border-white/15 px-3 py-1">n8n</span>
-            <span class="rounded-full border border-white/15 px-3 py-1">Webhooks</span>
-            <span class="rounded-full border border-white/15 px-3 py-1">Make</span>
-            <span class="rounded-full border border-white/15 px-3 py-1">Filas</span>
-            <span class="rounded-full border border-white/15 px-3 py-1">Jobs</span>
-            <span class="rounded-full border border-white/15 px-3 py-1">APIs</span>
-          </div>
-        </div>
-        <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-5">
-          <h3 class="font-heading text-sm font-bold text-white">Canais</h3>
-          <div class="mt-4 flex flex-wrap gap-2 text-xs text-white/70">
-            <span class="rounded-full border border-white/15 px-3 py-1">Chat web</span>
-            <span class="rounded-full border border-white/15 px-3 py-1">E-mail</span>
-            <span class="rounded-full border border-white/15 px-3 py-1">WhatsApp</span>
-            <span class="rounded-full border border-white/15 px-3 py-1">Slack</span>
-          </div>
-        </div>
-        <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-5">
-          <h3 class="font-heading text-sm font-bold text-white">Dados e sistemas</h3>
-          <div class="mt-4 flex flex-wrap gap-2 text-xs text-white/70">
-            <span class="rounded-full border border-white/15 px-3 py-1">PostgreSQL</span>
-            <span class="rounded-full border border-white/15 px-3 py-1">pgvector</span>
-            <span class="rounded-full border border-white/15 px-3 py-1">Google Sheets</span>
-            <span class="rounded-full border border-white/15 px-3 py-1">CRM</span>
-            <span class="rounded-full border border-white/15 px-3 py-1">ERP</span>
-            <span class="rounded-full border border-white/15 px-3 py-1">E-commerce</span>
-            <span class="rounded-full border border-white/15 px-3 py-1">Bancos internos</span>
-          </div>
-        </div>
-        <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-5">
-          <h3 class="font-heading text-sm font-bold text-white">Governança</h3>
-          <div class="mt-4 flex flex-wrap gap-2 text-xs text-white/70">
-            <span class="rounded-full border border-white/15 px-3 py-1">ACL</span>
-            <span class="rounded-full border border-white/15 px-3 py-1">Audit log</span>
-            <span class="rounded-full border border-white/15 px-3 py-1">LGPD</span>
-            <span class="rounded-full border border-white/15 px-3 py-1">Observabilidade</span>
-            <span class="rounded-full border border-white/15 px-3 py-1">Versionamento</span>
-            <span class="rounded-full border border-white/15 px-3 py-1">HMAC</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="planos" class="border-t border-white/[0.06] px-6 py-20 md:py-28">
-    <div class="relative mx-auto max-w-6xl">
-      <div class="mb-12 text-center">
-        <p class="text-xs font-semibold uppercase tracking-widest text-emerald-400">Oferta comercial</p>
-        <h2 class="mt-2 font-heading text-3xl font-bold tracking-tight text-white sm:text-4xl">Como podemos começar
-        </h2>
-        <p class="mt-3 text-base text-white/60">Escolha o nível de apoio conforme a maturidade da operação e o número
-          de agentes necessários.</p>
-      </div>
-      <div class="grid gap-6 sm:grid-cols-3">
-        <div class="card-hover flex flex-col rounded-2xl border border-white/10 bg-white/[0.04] p-8">
-          <p class="text-xs font-semibold uppercase tracking-widest text-emerald-400">Diagnóstico</p>
-          <h3 class="mt-2 font-heading text-2xl font-bold text-white">Diagnóstico de automação com IA</h3>
-          <p class="mt-3 flex-1 text-sm text-white/60">Para empresas que querem entender onde agentes e automações
-            podem gerar ganho real.</p>
-          <ul class="mt-6 space-y-2 text-sm text-white/70">
-            <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Mapeamento de processos
-            </li>
-            <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Identificação de gargalos
-            </li>
-            <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Sugestão de agentes e
-              fluxos</li>
-            <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Estimativa de esforço e
-              ROI</li>
-            <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Roadmap de implementação
-            </li>
-          </ul>
-          <a href="#contato"
-            class="mt-8 block rounded-full border border-emerald-600 px-6 py-2.5 text-center text-sm font-semibold text-emerald-400 transition hover:bg-emerald-600 hover:text-white">Agendar
-            diagnóstico</a>
-        </div>
-        <div class="card-hover relative flex flex-col rounded-2xl border border-emerald-600/50 bg-emerald-900/20 p-8">
-          <div
-            class="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-emerald-600 px-4 py-0.5 text-xs font-bold uppercase tracking-wide text-white">
-            Mais popular</div>
-          <p class="text-xs font-semibold uppercase tracking-widest text-emerald-400">Implementação</p>
-          <h3 class="mt-2 font-heading text-2xl font-bold text-white">Agente corporativo sob medida</h3>
-          <p class="mt-3 flex-1 text-sm text-white/60">Para empresas que querem colocar um agente em produção conectado
-            à operação.</p>
-          <ul class="mt-6 space-y-2 text-sm text-white/70">
-            <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Criação do agente</li>
-            <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Prompt e comportamento
-            </li>
-            <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Base de conhecimento</li>
-            <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Integrações</li>
-            <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Canal web, e-mail ou
-              WhatsApp</li>
-            <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Testes e homologação</li>
-            <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Treinamento da equipe</li>
-          </ul>
-          <a href="#contato"
-            class="mt-8 block rounded-full bg-brand px-6 py-2.5 text-center text-sm font-semibold text-white transition hover:bg-emerald-500">Criar
-            meu agente</a>
-        </div>
-        <div class="card-hover flex flex-col rounded-2xl border border-white/10 bg-white/[0.04] p-8">
-          <p class="text-xs font-semibold uppercase tracking-widest text-emerald-400">Contínuo</p>
-          <h3 class="mt-2 font-heading text-2xl font-bold text-white">Plataforma de agentes e automação contínua</h3>
-          <p class="mt-3 flex-1 text-sm text-white/60">Para operações que precisam de múltiplos agentes, governança e
-            evolução constante.</p>
-          <ul class="mt-6 space-y-2 text-sm text-white/70">
-            <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Plataforma de agentes</li>
-            <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Múltiplos usuários e
-              permissões</li>
-            <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Tools seguras</li>
-            <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Dashboards e auditoria</li>
-            <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Evolução mensal</li>
-            <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Suporte e melhorias
-              contínuas</li>
-          </ul>
-          <a href="#contato"
-            class="mt-8 block rounded-full border border-emerald-600 px-6 py-2.5 text-center text-sm font-semibold text-emerald-400 transition hover:bg-emerald-600 hover:text-white">Falar
-            com especialista</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="cases" class="cases-section relative border-t border-white/[0.06] px-6 py-20 md:py-28"
-    aria-labelledby="cases-heading">
-    <div class="cases-ambient" aria-hidden="true"></div>
-    <div class="relative mx-auto max-w-6xl">
-      <header class="cases-reveal cases-d-1 mx-auto mb-12 max-w-3xl text-center md:mb-16">
-        <p class="text-xs font-semibold uppercase tracking-widest text-emerald-400/90">Cases</p>
-        <h2 id="cases-heading" class="mt-3 font-heading text-3xl font-bold tracking-tight text-white sm:text-4xl">Prova
-          concreta de agentes aplicados à operação</h2>
-        
-      </header>
-
-      <article
-        class="cases-reveal cases-d-3 cases-card group relative overflow-hidden rounded-3xl border border-emerald-500/25 bg-gradient-to-br from-emerald-950/40 via-[#04110d] to-[#04110d] p-6 shadow-xl shadow-emerald-950/30 sm:p-8 md:p-10">
-        <div class="cases-featured-bar absolute left-0 right-0 top-0 h-px opacity-80" aria-hidden="true"></div>
-        <div class="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
-          <div class="max-w-2xl">
-            <div
-              class="inline-flex items-center gap-2 rounded-full border border-emerald-400/30 bg-emerald-500/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-emerald-200">
-              <i data-lucide="trending-up" class="h-3.5 w-3.5" aria-hidden="true"></i>
-              Case em destaque
-            </div>
-            <h3 class="mt-4 font-heading text-2xl font-bold text-white md:text-3xl">Case: Agente para análise de
-              documentos imobiliários</h3>
-            <p class="mt-3 text-sm leading-relaxed text-white/70 md:text-base">
-              Criamos uma solução com agentes de IA para apoiar a análise de matrículas, certidões e documentos
-              imobiliários. O sistema utiliza OCR, classificação automática, RAG com base vetorial e interface
-              conversacional para consultar informações, montar documentos e reduzir o esforço manual da operação.
-            </p>
-            <ul class="mt-5 grid gap-2 text-sm text-white/70 sm:grid-cols-2" aria-label="Resultados do case">
-              <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> OCR em documentos e
-                certidões</li>
-              <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Classificação automática
-                de informações</li>
-              <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Busca semântica em base
-                vetorial</li>
-              <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Interface de agente para
-                consulta e produção de documentos</li>
-              <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Redução de retrabalho
-                operacional</li>
-              <li class="flex items-start gap-2"><span class="mt-0.5 text-emerald-400">✓</span> Base preparada para
-                auditoria e evolução</li>
-            </ul>
-            <ul class="mt-5 flex flex-wrap gap-2" aria-label="Destaques do case">
-              <li
-                class="rounded-full border border-white/15 bg-white/[0.05] px-3 py-1 text-xs font-medium text-white/75">
-                Agentes de IA</li>
-              <li
-                class="rounded-full border border-white/15 bg-white/[0.05] px-3 py-1 text-xs font-medium text-white/75">
-                OCR</li>
-              <li
-                class="rounded-full border border-white/15 bg-white/[0.05] px-3 py-1 text-xs font-medium text-white/75">
-                RAG</li>
-              <li
-                class="rounded-full border border-white/15 bg-white/[0.05] px-3 py-1 text-xs font-medium text-white/75">
-                LangChain</li>
-              <li
-                class="rounded-full border border-white/15 bg-white/[0.05] px-3 py-1 text-xs font-medium text-white/75">
-                Laravel</li>
-              <li
-                class="rounded-full border border-white/15 bg-white/[0.05] px-3 py-1 text-xs font-medium text-white/75">
-                PostgreSQL</li>
-              <li
-                class="rounded-full border border-white/15 bg-white/[0.05] px-3 py-1 text-xs font-medium text-white/75">
-                Automação documental</li>
-            </ul>
-          </div>
-          <div class="flex w-full shrink-0 flex-col gap-3 sm:flex-row sm:items-center lg:w-auto lg:flex-col">
-            <a href="#contato"
-              class="inline-flex items-center justify-center gap-2 rounded-full bg-brand px-6 py-3 text-sm font-semibold text-white shadow-lg transition hover:bg-emerald-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">
-              Quero algo parecido
-              <i data-lucide="arrow-right" class="h-4 w-4 transition group-hover:translate-x-0.5"
-                aria-hidden="true"></i>
-            </a>
-            <a href="#planos"
-              class="inline-flex items-center justify-center rounded-full border border-white/25 px-6 py-3 text-sm font-semibold text-white/90 transition hover:border-white/50 hover:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">Ver
-              planos</a>
-          </div>
-        </div>
-      </article>
-
-      
-      
-
-      <div class="cases-reveal cases-d-8 mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-        <a href="#contato"
-          class="inline-flex w-full items-center justify-center rounded-full bg-brand px-8 py-3.5 text-sm font-semibold text-white shadow-lg transition hover:bg-emerald-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d] sm:w-auto">Falar
-          com especialista</a>
-        <a href="#solucoes"
-          class="inline-flex w-full items-center justify-center rounded-full border border-white/25 px-8 py-3.5 text-sm font-semibold text-white/90 transition hover:border-white/45 hover:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d] sm:w-auto">Ver
-          soluções</a>
-      </div>
-    </div>
-  </section>
-
-  
-
-  <section id="faq" class="faq-section relative border-t border-white/[0.06] px-6 py-20 md:py-24"
-    aria-labelledby="faq-heading">
-    <div class="relative mx-auto max-w-3xl">
-      <header class="mx-auto mb-10 text-center md:mb-12">
-        <p class="text-xs font-semibold uppercase tracking-widest text-emerald-400">Dúvidas</p>
-        <h2 id="faq-heading" class="mt-3 font-heading text-3xl font-bold tracking-tight text-white sm:text-4xl">
-          Perguntas e respostas</h2>
-      </header>
-      <div class="space-y-3">
-        <details name="fluxo-faq" class="faq-item faq-reveal faq-d-1">
-          <summary class="faq-summary"><span>O que é um agente corporativo?</span><span class="faq-chevron"><i
-                data-lucide="chevron-down" class="h-4 w-4" aria-hidden="true"></i></span></summary>
-          <div class="faq-panel">
-            <div class="faq-panel-inner">
-              <div class="faq-answer">
-                <p>É um agente de IA conectado ao contexto da empresa. Ele pode consultar documentos, responder
-                  usuários, executar ações em sistemas autorizados e registrar tudo com segurança.</p>
+          <!-- Visual 1: Pipeline comercial -->
+          <div class="hvisual" data-visual="1">
+            <div class="hero-card sys-ui">
+              <div class="ctb">
+                <div class="mac-dot md-r"></div><div class="mac-dot md-y"></div><div class="mac-dot md-g"></div>
+                <div class="ctb-label">agentes da operação · catálogo · plataforma</div>
+              </div>
+              <div class="app-shell">
+                <aside class="app-side">
+                  <div class="sys-brand">
+                    <img src="assets/img/flux-icon.png" alt="Flux">
+                    <div class="sys-brand-text"><strong>Gordon Workspace</strong><small>admin</small></div>
+                  </div>
+                  <div class="app-side-label">menu</div>
+                  <div class="app-side-list">
+                    <div class="app-side-item"><span class="mi">DB</span>Dashboard</div>
+                    <div class="app-side-item active"><span class="mi">AG</span>Agentes</div>
+                    <div class="app-side-item"><span class="mi">EST</span>Estatísticas</div>
+                    <div class="app-side-item"><span class="mi">KB</span>Conhecimento</div>
+                  </div>
+                </aside>
+                <div class="app-main">
+                  <div class="sys-topbar">
+                    <div class="sys-search">Busque agentes, conversas, conhecimento...</div>
+                    <div class="sys-user"><span class="sys-user-dot">AG</span>André</div>
+                  </div>
+                  <div class="app-main-head">
+                    <div class="app-main-title">Agentes da sua operação</div>
+                    <div class="app-pill">todos os tiers</div>
+                  </div>
+                  <div class="sys-filter-row">
+                    <div class="sys-filter">Buscar por nome...</div>
+                    <div class="sys-filter">Filtrar</div>
+                    <div class="sys-filter primary">Criar agente</div>
+                  </div>
+                  <div class="agent-grid">
+                    <div class="agent-card-mini">
+                      <div class="agent-thumb"><img src="assets/img/flux-icon.png" alt="Agente"></div>
+                      <div class="agent-title">Criadora de Agentes</div>
+                      <div class="agent-sub">Prompts profissionais com poucas perguntas</div>
+                      <span class="agent-cta">Conversar</span>
+                    </div>
+                    <div class="agent-card-mini">
+                      <div class="agent-thumb"><img src="assets/img/flux-icon.png" alt="Agente"></div>
+                      <div class="agent-title">Gordon Suporte</div>
+                      <div class="agent-sub">Dúvidas de uso com base no manual oficial</div>
+                      <span class="agent-cta">Conversar</span>
+                    </div>
+                    <div class="agent-card-mini">
+                      <div class="agent-thumb"><img src="assets/img/flux-icon.png" alt="Agente"></div>
+                      <div class="agent-title">RPG SNES Analyst</div>
+                      <div class="agent-sub">Especialista em jogos e curadoria de dados</div>
+                      <span class="agent-cta">Conversar</span>
+                    </div>
+                    <div class="agent-card-mini">
+                      <div class="agent-thumb"><img src="assets/img/flux-icon.png" alt="Agente"></div>
+                      <div class="agent-title">Vintenário</div>
+                      <div class="agent-sub">Emissão e controle operacional assistido</div>
+                      <span class="agent-cta">Conversar</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="hero-stats" style="margin-top:14px;padding-top:14px;border-top:1px solid var(--border)">
+                <div class="hs"><div class="hs-val">24</div><div class="hs-lbl">Agentes publicados</div></div>
+                <div class="hs"><div class="hs-val">8</div><div class="hs-lbl">Times conectados</div></div>
+                <div class="hs"><div class="hs-val">+31%</div><div class="hs-lbl">Produtividade</div></div>
               </div>
             </div>
           </div>
-        </details>
-        <details name="fluxo-faq" class="faq-item faq-reveal faq-d-2">
-          <summary class="faq-summary"><span>O agente pode acessar meu ERP ou CRM?</span><span
-              class="faq-chevron"><i data-lucide="chevron-down" class="h-4 w-4" aria-hidden="true"></i></span></summary>
-          <div class="faq-panel">
-            <div class="faq-panel-inner">
-              <div class="faq-answer">
-                <p>Sim, desde que exista API, banco, webhook ou forma segura de integração. O acesso é desenhado com
-                  permissões, logs e limites claros.</p>
-              </div>
-            </div>
-          </div>
-        </details>
-        <details name="fluxo-faq" class="faq-item faq-reveal faq-d-3">
-          <summary class="faq-summary"><span>O agente pode funcionar no WhatsApp?</span><span class="faq-chevron"><i
-                data-lucide="chevron-down" class="h-4 w-4" aria-hidden="true"></i></span></summary>
-          <div class="faq-panel">
-            <div class="faq-panel-inner">
-              <div class="faq-answer">
-                <p>Sim. Podemos integrar WhatsApp como canal de atendimento, usando API oficial ou gateway controlado,
-                  dependendo do cenário e dos requisitos de produção.</p>
-              </div>
-            </div>
-          </div>
-        </details>
-        <details name="fluxo-faq" class="faq-item faq-reveal faq-d-4">
-          <summary class="faq-summary"><span>Como vocês evitam que o agente acesse dados indevidos?</span><span class="faq-chevron"><i
-                data-lucide="chevron-down" class="h-4 w-4" aria-hidden="true"></i></span></summary>
-          <div class="faq-panel">
-            <div class="faq-panel-inner">
-              <div class="faq-answer">
-                <p>A arquitetura considera permissões por usuário, validação no backend, logs, auditoria e regras de
-                  negócio fora do modelo de IA.</p>
-              </div>
-            </div>
-          </div>
-        </details>
-        <details name="fluxo-faq" class="faq-item faq-reveal faq-d-5">
-          <summary class="faq-summary"><span>O agente substitui minha equipe?</span><span class="faq-chevron"><i
-                data-lucide="chevron-down" class="h-4 w-4" aria-hidden="true"></i></span></summary>
-          <div class="faq-panel">
-            <div class="faq-panel-inner">
-              <div class="faq-answer">
-                <p>Não necessariamente. O objetivo é reduzir tarefas repetitivas, acelerar atendimento e apoiar a equipe
-                  com automação e informação confiável.</p>
-              </div>
-            </div>
-          </div>
-        </details>
-        <details name="fluxo-faq" class="faq-item faq-reveal faq-d-6">
-          <summary class="faq-summary"><span>Preciso ter meus dados organizados?</span><span class="faq-chevron"><i
-                data-lucide="chevron-down" class="h-4 w-4" aria-hidden="true"></i></span></summary>
-          <div class="faq-panel">
-            <div class="faq-panel-inner">
-              <div class="faq-answer">
-                <p>Não completamente. Parte do trabalho é organizar documentos, fluxos, integrações e bases para que o
-                  agente consiga operar com segurança.</p>
-              </div>
-            </div>
-          </div>
-        </details>
-      </div>
-      <p class="mt-10 text-center text-sm text-white/45">Não encontrou? <a href="#contato"
-          class="font-semibold text-emerald-400 underline decoration-emerald-400/35 underline-offset-2 hover:text-emerald-300">Fale
-          conosco</a>.</p>
-    </div>
-  </section>
 
-  <section id="blog" class="border-t border-white/[0.06] px-6 py-20 md:py-24" aria-labelledby="blog-heading">
-    <div class="mx-auto max-w-6xl">
-      <div class="flex items-end justify-between gap-4">
+          <!-- Visual 2: Eficiência operacional -->
+          <div class="hvisual" data-visual="2">
+            <div class="hero-card sys-ui">
+              <div class="ctb">
+                <div class="mac-dot md-r"></div><div class="mac-dot md-y"></div><div class="mac-dot md-g"></div>
+                <div class="ctb-label">estatísticas · tokens e execução · live</div>
+              </div>
+              <div class="app-shell">
+                <aside class="app-side">
+                  <div class="sys-brand">
+                    <img src="assets/img/flux-icon.png" alt="Flux">
+                    <div class="sys-brand-text"><strong>Gordon Workspace</strong><small>admin</small></div>
+                  </div>
+                  <div class="app-side-label">menu</div>
+                  <div class="app-side-list">
+                    <div class="app-side-item active"><span class="mi">DB</span>Dashboard</div>
+                    <div class="app-side-item"><span class="mi">AG</span>Agentes</div>
+                    <div class="app-side-item"><span class="mi">EST</span>Estatísticas</div>
+                    <div class="app-side-item"><span class="mi">CFG</span>Configurações</div>
+                  </div>
+                </aside>
+                <div class="app-main">
+                  <div class="sys-topbar">
+                    <div class="sys-search">Busque agentes, conversas, conhecimento...</div>
+                    <div class="sys-user"><span class="sys-user-dot">AG</span>André</div>
+                  </div>
+                  <div class="app-main-head">
+                    <div class="app-main-title">Tokens consumidos</div>
+                    <div class="app-pill">últimos 7 dias</div>
+                  </div>
+                  <div class="kpi-strip">
+                    <div class="kpi-box"><strong>763.772</strong><span>Total</span></div>
+                    <div class="kpi-box"><strong>741.601</strong><span>Entrada</span></div>
+                    <div class="kpi-box"><strong>22.171</strong><span>Saída</span></div>
+                    <div class="kpi-box"><strong>R$ 5,36</strong><span>Custo</span></div>
+                  </div>
+                  <div class="ops-grid">
+                    <div class="ops-kpi ok"><strong>42</strong><span>Respostas no período</span></div>
+                    <div class="ops-kpi live"><strong>6</strong><span>Agentes ativos</span></div>
+                    <div class="ops-kpi"><strong>331k</strong><span>Mais usado: Gordon</span></div>
+                    <div class="ops-kpi"><strong>99.9%</strong><span>Disponibilidade</span></div>
+                  </div>
+                  <div class="summary-banner">
+                    <div class="app-main-title" style="margin-bottom:6px">Últimas execuções LangChain</div>
+                    <div style="font-size:11px;color:#c7d8fb;line-height:1.5;margin-bottom:8px">Log recente por resposta com tokens de entrada e saída.</div>
+                    <span class="app-pill">Ver relatório</span>
+                  </div>
+                </div>
+              </div>
+              <div class="hero-stats" style="margin-top:14px;padding-top:14px;border-top:1px solid var(--border)">
+                <div class="hs"><div class="hs-val">-38%</div><div class="hs-lbl">Custo por ticket</div></div>
+                <div class="hs"><div class="hs-val">+54%</div><div class="hs-lbl">Velocidade de resposta</div></div>
+                <div class="hs"><div class="hs-val">100%</div><div class="hs-lbl">Rastreabilidade</div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Visual 3: Integrações -->
+          <div class="hvisual" data-visual="3">
+            <div class="hero-card sys-ui">
+              <div class="ctb">
+                <div class="mac-dot md-r"></div><div class="mac-dot md-y"></div><div class="mac-dot md-g"></div>
+                <div class="ctb-label">conhecimento · repositórios privados · live</div>
+              </div>
+              <div class="app-shell">
+                <aside class="app-side">
+                  <div class="sys-brand">
+                    <img src="assets/img/flux-icon.png" alt="Flux">
+                    <div class="sys-brand-text"><strong>Gordon Workspace</strong><small>knowledge hub</small></div>
+                  </div>
+                  <div class="app-side-label">categorias</div>
+                  <div class="app-side-list">
+                    <div class="app-side-item active"><span class="mi">LLM</span>IA e LLM</div>
+                    <div class="app-side-item"><span class="mi">CRM</span>CRM e Vendas</div>
+                    <div class="app-side-item"><span class="mi">MSG</span>Mensageria</div>
+                    <div class="app-side-item"><span class="mi">API</span>Dados e APIs</div>
+                  </div>
+                </aside>
+                <div class="app-main">
+                  <div class="sys-topbar">
+                    <div class="sys-search">Busque conectores, credenciais, filas e logs...</div>
+                    <div class="sys-user"><span class="sys-user-dot">AG</span>André</div>
+                  </div>
+                  <div class="app-main-head">
+                    <div class="app-main-title">Repositórios privados para os seus agentes</div>
+                    <div class="seg-switch"><span class="active">Repositórios</span><span>Documentos</span></div>
+                  </div>
+                  <div class="sys-filter-row">
+                    <div class="sys-filter">Pesquisar repositórios</div>
+                    <div class="sys-filter">5</div>
+                    <div class="sys-filter">Mostrando 0 de 0 resultado(s)</div>
+                    <div class="sys-filter">Ver documentos</div>
+                    <div class="sys-filter primary">Criar repositório</div>
+                  </div>
+                  <div class="sys-table">
+                    <div class="sys-table-head">
+                      <span>Nome</span><span>Assistentes</span><span>Documentos</span><span>Ações</span>
+                    </div>
+                    <div class="sys-table-empty">Nenhum repositório encontrado.</div>
+                  </div>
+                  <div class="summary-banner">
+                    <div class="app-main-title" style="margin-bottom:6px">Manual de conhecimento</div>
+                    <div class="pipeline-list">
+                      <div class="pipeline-item is-selected">
+                        <div class="pipeline-lead"><div class="pipeline-dot" style="background:var(--a3)"></div><span>Explica uploads, vínculos e boas práticas antes de alimentar uma base.</span></div>
+                        <span class="score high">novo</span>
+                      </div>
+                      <div class="pipeline-item">
+                        <div class="pipeline-lead"><div class="pipeline-dot" style="background:var(--a1)"></div><span>Checklist de permissões e versionamento recomendado para produção.</span></div>
+                        <span class="score med">guia</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="hero-stats" style="margin-top:14px;padding-top:14px;border-top:1px solid var(--border)">
+                <div class="hs"><div class="hs-val">0</div><div class="hs-lbl">Repositórios no período</div></div>
+                <div class="hs"><div class="hs-val">0</div><div class="hs-lbl">Documentos indexados</div></div>
+                <div class="hs"><div class="hs-val">100%</div><div class="hs-lbl">Pronto para onboarding</div></div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /hero-visual-wrap -->
+      </div><!-- /hero-right -->
+    </div><!-- /hero-two-col -->
+
+    <!-- Social proof bar -->
+    <div class="hero-social-row">
+      <div class="hsr-item"><div class="hsr-dot"></div>Deploy em semanas</div>
+      <div class="hsr-item"><div class="hsr-dot"></div>Governança e LGPD</div>
+      <div class="hsr-item"><div class="hsr-dot"></div>Integrações nativas</div>
+      <div class="hsr-item"><div class="hsr-dot"></div>Audit log completo</div>
+      <div class="hsr-item"><div class="hsr-dot"></div>Resposta humana em 2h</div>
+    </div>
+
+  </div><!-- /inner -->
+</section>
+
+<!-- ═══ SUCCESS MODAL ═══════════════════════════════════════ -->
+<div id="success-modal" aria-hidden="true">
+  <div class="success-modal-backdrop" onclick="closeSuccessModal()"></div>
+  <div class="success-modal-card" role="dialog" aria-modal="true" aria-labelledby="success-modal-title">
+    <button class="success-close" type="button" onclick="closeSuccessModal()" aria-label="Fechar modal">✕</button>
+    <div class="success-head">
+      <div class="success-logo-wrap">
+        <img src="assets/img/flux-icon.png" alt="Flux">
+      </div>
+      <div>
+        <div class="success-eyebrow">Contato enviado</div>
+        <h3 class="success-title" id="success-modal-title">Obrigado pelo contato!</h3>
+      </div>
+    </div>
+    <div class="success-body">
+      <p>Sou o <strong>Flux</strong>. Recebi sua solicitação com sucesso e um de nossos especialistas irá entrar em contato em breve para avançarmos no seu diagnóstico.</p>
+      <div class="success-badges">
+        <span class="success-badge">Resposta humana em até 2h</span>
+        <span class="success-badge">Sem compromisso inicial</span>
+        <span class="success-badge">Plano sob medida</span>
+      </div>
+    </div>
+    <div class="success-actions">
+      <a href="#interactive" class="btn btn-ghost" onclick="closeSuccessModal()">Ver plataforma</a>
+      <a href="https://wa.me/5511994566726" target="_blank" rel="noopener" class="btn btn-primary" onclick="closeSuccessModal()">
+        <div class="shimmer"></div>
+        <span class="btn-inner">Falar no WhatsApp <span class="btn-arrow">→</span></span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="sec-divider"></div>
+
+<!-- ═══ TRUST BAR ══════════════════════════════════════════ -->
+<section id="trust">
+  <div class="trust-wrap">
+    <div class="trust-lbl">Stack técnica de referência</div>
+
+    <div class="marquee-track">
+      <div class="marquee-inner">
+        <!-- Set 1 -->
+        <div class="tl"><div class="tl-icon" style="background:#1d1d1d">OA</div>OpenAI</div>
+        <div class="tl"><div class="tl-icon" style="background:#c96442">AN</div>Anthropic</div>
+        <div class="tl"><div class="tl-icon" style="background:#1a73e8">G</div>Gemini</div>
+        <div class="tl"><div class="tl-icon" style="background:#1c7e45">n8</div>n8n</div>
+        <div class="tl"><div class="tl-icon" style="background:#336791">PG</div>PostgreSQL</div>
+        <div class="tl"><div class="tl-icon" style="background:#e91e63">LC</div>LangChain</div>
+        <div class="tl"><div class="tl-icon" style="background:#25d366">WA</div>WhatsApp</div>
+        <div class="tl"><div class="tl-icon" style="background:#4a154b">SL</div>Slack</div>
+        <div class="tl"><div class="tl-icon" style="background:#0f9d58">GS</div>G. Sheets</div>
+        <div class="tl"><div class="tl-icon" style="background:#e44d26">WH</div>Webhooks</div>
+        <div class="tl"><div class="tl-icon" style="background:#0052cc">CR</div>CRM</div>
+        <div class="tl"><div class="tl-icon" style="background:#254a7e">ER</div>ERP</div>
+        <!-- Duplicate set for seamless loop -->
+        <div class="tl"><div class="tl-icon" style="background:#1d1d1d">OA</div>OpenAI</div>
+        <div class="tl"><div class="tl-icon" style="background:#c96442">AN</div>Anthropic</div>
+        <div class="tl"><div class="tl-icon" style="background:#1a73e8">G</div>Gemini</div>
+        <div class="tl"><div class="tl-icon" style="background:#1c7e45">n8</div>n8n</div>
+        <div class="tl"><div class="tl-icon" style="background:#336791">PG</div>PostgreSQL</div>
+        <div class="tl"><div class="tl-icon" style="background:#e91e63">LC</div>LangChain</div>
+        <div class="tl"><div class="tl-icon" style="background:#25d366">WA</div>WhatsApp</div>
+        <div class="tl"><div class="tl-icon" style="background:#4a154b">SL</div>Slack</div>
+        <div class="tl"><div class="tl-icon" style="background:#0f9d58">GS</div>G. Sheets</div>
+        <div class="tl"><div class="tl-icon" style="background:#e44d26">WH</div>Webhooks</div>
+        <div class="tl"><div class="tl-icon" style="background:#0052cc">CR</div>CRM</div>
+        <div class="tl"><div class="tl-icon" style="background:#254a7e">ER</div>ERP</div>
+      </div>
+    </div>
+
+    
+  </div>
+</section>
+
+<div class="sec-divider"></div>
+
+<!-- ═══ VALUE PROPS ════════════════════════════════════════ -->
+<section id="value">
+  <div class="container">
+    <div class="sec-header">
+      <div class="eyebrow">Proposta de valor</div>
+      <h2>Não é chatbot.<br>É <span class="grad">engenharia de agentes.</span></h2>
+      <p>Seu agente age no contexto real da empresa, com segurança e rastreabilidade total em cada ação.</p>
+    </div>
+
+    <div class="val-grid">
+      <div class="val-card rv">
+        <div class="spotlight"></div>
+        <div class="val-icon">🧠</div>
+        <h3>Conhecimento privado</h3>
+        <p>RAG com documentos internos, PDFs, manuais e bases vetoriais. Respostas com contexto real da sua empresa.</p>
+      </div>
+      <div class="val-card rv rv-d1">
+        <div class="spotlight"></div>
+        <div class="val-icon">⚡</div>
+        <h3>Tools e ações reais</h3>
+        <p>Executa ações em CRM, ERP, planilhas e APIs com validação, permissões e confirmação antes de agir.</p>
+      </div>
+      <div class="val-card rv rv-d2">
+        <div class="spotlight"></div>
+        <div class="val-icon">🔐</div>
+        <h3>Governança total</h3>
+        <p>Controle de acesso por usuário, audit log completo e conformidade com LGPD — sem exceções.</p>
+      </div>
+      <div class="val-card rv rv-d3">
+        <div class="spotlight"></div>
+        <div class="val-icon">📡</div>
+        <h3>Multicanal integrado</h3>
+        <p>Chat, e-mail, WhatsApp e Slack na mesma inteligência. Um agente, múltiplos pontos de contato.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="sec-divider"></div>
+
+<!-- ═══ HOW IT WORKS ═══════════════════════════════════════ -->
+<section id="how">
+  <div class="container">
+    <div class="sec-header">
+      <div class="eyebrow">Da ideia à produção</div>
+      <h2>Em produção em <span class="grad">semanas,</span><br>não meses</h2>
+      <p>Processo estruturado para colocar seu agente operando com segurança e resultados mensuráveis.</p>
+    </div>
+
+    <div class="how-grid">
+      <div class="steps rv">
+        <div class="step active" onclick="activateStep(this,0)">
+          <div class="step-num">01</div>
+          <div class="step-body">
+            <h3>Diagnóstico</h3>
+            <p>Mapeamos processos, gargalos, sistemas envolvidos e o resultado esperado para o agente.</p>
+          </div>
+        </div>
+        <div class="step" onclick="activateStep(this,1)">
+          <div class="step-num">02</div>
+          <div class="step-body">
+            <h3>Desenho do agente</h3>
+            <p>Persona, permissões, bases de conhecimento, tools, canais e limites de atuação definidos.</p>
+          </div>
+        </div>
+        <div class="step" onclick="activateStep(this,2)">
+          <div class="step-num">03</div>
+          <div class="step-body">
+            <h3>Integrações</h3>
+            <p>Conectamos APIs, bancos, CRM, ERP, WhatsApp e sistemas internos com segurança.</p>
+          </div>
+        </div>
+        <div class="step" onclick="activateStep(this,3)">
+          <div class="step-num">04</div>
+          <div class="step-body">
+            <h3>Deploy e evolução contínua</h3>
+            <p>Em produção, medimos uso, analisamos feedbacks e evoluímos por ciclos iterativos.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="how-visual rv rv-d2">
+        <div class="code-card">
+          <div class="code-top">
+            <div class="mac-dot md-r"></div>
+            <div class="mac-dot md-y"></div>
+            <div class="mac-dot md-g"></div>
+            <div style="font-family:var(--mono);font-size:11px;color:var(--muted);margin-left:auto" id="code-label">agent.config.ts</div>
+          </div>
+          <div class="code-body" id="code-body">
+            <div class="cl"><span class="ln">1</span><span><span class="ck">const</span> agent = <span class="ck">new</span> FluxoAgent({</span></div>
+            <div class="cl"><span class="ln">2</span><span>  <span class="cs">name</span>: <span class="cv">"Link Jurídico"</span>,</span></div>
+            <div class="cl"><span class="ln">3</span><span>  <span class="cs">model</span>: <span class="cv">"gpt-4o"</span>,</span></div>
+            <div class="cl"><span class="ln">4</span><span>  <span class="cs">rag</span>: <span class="ck">true</span>,</span></div>
+            <div class="cl"><span class="ln">5</span><span>  <span class="cs">channels</span>: [<span class="cv">"chat"</span>, <span class="cv">"email"</span>],</span></div>
+            <div class="cl"><span class="ln">6</span><span>  <span class="cs">tools</span>: [crm, docs, erp],</span></div>
+            <div class="cl"><span class="ln">7</span><span>  <span class="cs">audit</span>: <span class="ck">true</span>, <span class="cs">lgpd</span>: <span class="ck">true</span>,</span></div>
+            <div class="cl"><span class="ln">8</span><span>});</span></div>
+            <div class="cl" style="margin-top:8px"><span class="ln">10</span><span><span class="cc">// 🟢 Agent deployed · v2.4</span></span></div>
+          </div>
+          <div class="code-tags" id="code-tags">
+            <div class="ctag">Mapeamento</div>
+            <div class="ctag">Processos</div>
+            <div class="ctag">ROI estimado</div>
+            <div class="ctag">Gargalos</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="sec-divider"></div>
+
+<!-- ═══ FEATURES ═══════════════════════════════════════════ -->
+<section id="features">
+  <div class="container">
+    <div class="sec-header">
+      <div class="eyebrow">Recursos técnicos</div>
+      <h2>Tudo que uma operação<br><span class="grad">séria precisa</span></h2>
+      <p>Funcionalidades projetadas para ambientes corporativos com segurança, escala e governança.</p>
+    </div>
+
+    <div class="feat-grid">
+      <div class="feat-card rv">
+        <div class="spot"></div>
+        <div class="feat-icon-wrap">🗂️</div>
+        <h3>RAG com bases privadas</h3>
+        <p>Documentos, PDFs, manuais e políticas indexados com embeddings e busca semântica vetorial.</p>
+        <div class="feat-pill">pgvector · embeddings</div>
+      </div>
+      <div class="feat-card rv rv-d1">
+        <div class="spot"></div>
+        <div class="feat-icon-wrap">🔧</div>
+        <h3>Tools corporativas</h3>
+        <p>Execução segura em sistemas externos com validação, permissões e confirmação antes de agir.</p>
+        <div class="feat-pill">APIs · webhooks</div>
+      </div>
+      <div class="feat-card rv rv-d2">
+        <div class="spot"></div>
+        <div class="feat-icon-wrap">📋</div>
+        <h3>Audit log completo</h3>
+        <p>Toda ação sensível registrada com timestamp, usuário e contexto. Rastreabilidade total.</p>
+        <div class="feat-pill">compliance · LGPD</div>
+      </div>
+      <div class="feat-card rv rv-d1">
+        <div class="spot"></div>
+        <div class="feat-icon-wrap">👥</div>
+        <h3>Controle de acesso</h3>
+        <p>Permissões granulares por usuário, papel e departamento. Zero extrapolação de dados.</p>
+        <div class="feat-pill">ACL · RBAC</div>
+      </div>
+      <div class="feat-card rv rv-d2">
+        <div class="spot"></div>
+        <div class="feat-icon-wrap">📡</div>
+        <h3>Multicanal nativo</h3>
+        <p>Chat, e-mail, WhatsApp e Slack. Mesma inteligência, múltiplos pontos de atendimento.</p>
+        <div class="feat-pill">omnichannel</div>
+      </div>
+      <div class="feat-card rv rv-d3">
+        <div class="spot"></div>
+        <div class="feat-icon-wrap">📊</div>
+        <h3>Observabilidade</h3>
+        <p>Dashboards de uso, gargalos, ROI e feedbacks. Melhoria contínua baseada em dados reais.</p>
+        <div class="feat-pill">analytics · métricas</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="sec-divider"></div>
+
+<!-- ═══ INTERACTIVE TABS ════════════════════════════════════ -->
+<section id="interactive">
+  <div class="container">
+    <div class="sec-header">
+      <div class="eyebrow">Plataforma Link</div>
+      <h2>Veja o agente<br><span class="grad">em ação</span></h2>
+      <p>Explore as capacidades da plataforma Link — agentes corporativos prontos para produção.</p>
+    </div>
+
+    <div class="tabs-shell rv-scale">
+      <div class="tabs-nav">
+        <button class="tn active" onclick="switchTab('at',this)">Atendimento</button>
+        <button class="tn" onclick="switchTab('au',this)">Automação</button>
+        <button class="tn" onclick="switchTab('lg',this)">Auditoria</button>
+      </div>
+
+      <div class="tab-content-grid">
+        <div class="tab-stage">
+          <div class="tab-demo-area">
+            <div class="desktop-topbar">
+              <span class="desktop-dot r"></span>
+              <span class="desktop-dot y"></span>
+              <span class="desktop-dot g"></span>
+              <span class="desktop-url">https://app.gordon.ai/workspace/live</span>
+            </div>
+            <div class="tab-shot active" data-shot="at">
+              <img src="assets/img/screenshots/image copy 3.png" alt="Tela real de atendimento do Gordon Suporte" loading="lazy" decoding="async" style="object-position:center 18%;">
+              <span class="tab-shot-badge">● Atendimento com contexto</span>
+            </div>
+            <div class="tab-shot" data-shot="au">
+              <img src="assets/img/screenshots/image copy.png" alt="Tela de automação e catálogo de agentes" loading="lazy" decoding="async" style="object-position:center 14%;">
+            </div>
+            <div class="tab-shot" data-shot="lg">
+              <img src="assets/img/screenshots/image.png" alt="Tela de auditoria e estatísticas da plataforma" loading="lazy" decoding="async" style="object-position:center 10%;">
+            </div>
+          </div>
+        </div>
+
         <div>
-          <p class="font-heading text-[10px] font-semibold uppercase tracking-[0.2em] text-white/35">Conteúdo</p>
-          <h2 id="blog-heading" class="mt-3 font-heading text-3xl font-bold tracking-tight text-white sm:text-4xl">Blog FluxoInteligente IA</h2>
-          <div class="mt-3 h-1 w-[72px] rounded-full bg-emerald-400"></div>
+          <!-- Atendimento -->
+          <div id="tab-at" class="tab-pane active">
+            <div class="tab-info">
+              <h3>Atendimento com contexto real</h3>
+              <p>O agente consulta documentos, sistemas e bases de conhecimento para responder com precisão — e executa ações nos seus sistemas sem sair do chat.</p>
+              <div class="tab-checks">
+                <div class="tc"><div class="tc-icon">✓</div>RAG com documentos e contratos internos</div>
+                <div class="tc"><div class="tc-icon">✓</div>Integração com CRM, ERP e e-mail</div>
+                <div class="tc"><div class="tc-icon">✓</div>Escala para humanos quando necessário</div>
+                <div class="tc"><div class="tc-icon">✓</div>Histórico completo por usuário</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Automação -->
+          <div id="tab-au" class="tab-pane">
+            <div class="tab-info">
+              <h3>Fluxos automáticos com governança</h3>
+              <p>Automatize processos complexos com n8n e agentes de IA. Cada ação é validada, logada e controlada por regras de negócio — antes de executar.</p>
+              <div class="tab-checks">
+                <div class="tc"><div class="tc-icon">✓</div>Orquestração com n8n e webhooks</div>
+                <div class="tc"><div class="tc-icon">✓</div>Validação antes de cada ação</div>
+                <div class="tc"><div class="tc-icon">✓</div>Notificações multicanal automáticas</div>
+                <div class="tc"><div class="tc-icon">✓</div>Logs detalhados por execução</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Auditoria -->
+          <div id="tab-lg" class="tab-pane">
+            <div class="tab-info">
+              <h3>Rastreabilidade e conformidade</h3>
+              <p>Cada ação, consulta e acesso negado é registrado em tempo real. LGPD, auditoria e conformidade prontos para revisões externas sem esforço.</p>
+              <div class="tab-checks">
+                <div class="tc"><div class="tc-icon">✓</div>Audit log imutável por ação</div>
+                <div class="tc"><div class="tc-icon">✓</div>Acessos negados registrados</div>
+                <div class="tc"><div class="tc-icon">✓</div>Exportação para compliance</div>
+                <div class="tc"><div class="tc-icon">✓</div>Alertas para ações sensíveis</div>
+              </div>
+            </div>
+          </div>
         </div>
-        <a href="blog/"
-          class="text-sm font-semibold text-emerald-400/90 transition hover:text-emerald-300">Ver todos os posts</a>
       </div>
+    </div>
+  </div>
+</section>
 
-      <p class="mt-5 max-w-3xl text-sm leading-relaxed text-white/65">
-        Conteúdo sobre agentes corporativos, RAG, automação de processos e IA aplicada a operações que precisam reduzir
-        custo com governança.
-      </p>
+<div class="sec-divider"></div>
 
-      <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+<!-- ═══ TESTIMONIALS ════════════════════════════════════════ -->
+<section id="testimonials">
+  <div class="container">
+    <div class="sec-header">
+      <div class="eyebrow">Resultados reais</div>
+      <h2>Operações que <span class="grad">transformaram</span><br>com agentes</h2>
+    </div>
+
+    <div class="testi-grid">
+      <div class="tc-card rv">
+        <div class="stars">★★★★★</div>
+        <p class="tc-text">Eliminamos <strong>80% das consultas manuais</strong> da equipe jurídica. O agente lê contratos, responde dúvidas e atualiza o sistema. Implementação em menos de 3 semanas.</p>
+        <div class="tc-author">
+          <div class="tc-av">MF</div>
+          <div>
+            <div class="tc-name">Mariana Fonseca</div>
+            <div class="tc-role">Head of Legal Ops · Imobiliária SP</div>
+          </div>
+        </div>
+      </div>
+      <div class="tc-card rv rv-d1">
+        <div class="stars">★★★★★</div>
+        <p class="tc-text">A governança foi o diferencial. Precisávamos de um agente que soubesse o que <strong>não pode fazer</strong> tanto quanto o que pode. O audit log nos dá tranquilidade total.</p>
+        <div class="tc-author">
+          <div class="tc-av">RC</div>
+          <div>
+            <div class="tc-name">Rafael Costa</div>
+            <div class="tc-role">CTO · Fintech regulada</div>
+          </div>
+        </div>
+      </div>
+      <div class="tc-card rv rv-d2">
+        <div class="stars">★★★★★</div>
+        <p class="tc-text">Nosso agente de suporte interno atende <strong>centenas de dúvidas por dia</strong> sem fila de espera. A equipe foi redirecionada para projetos estratégicos.</p>
+        <div class="tc-author">
+          <div class="tc-av">AL</div>
+          <div>
+            <div class="tc-name">Ana Lima</div>
+            <div class="tc-role">Head of IT · Indústria manufatureira</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="metrics">
+      <div class="mc-card rv">
+        <div class="mc-val" data-target="80" data-suffix="%">0%</div>
+        <div class="mc-lbl">Redução de tarefas manuais</div>
+      </div>
+      <div class="mc-card rv rv-d1">
+        <div class="mc-val" data-target="3" data-suffix="×">0×</div>
+        <div class="mc-lbl">Velocidade de atendimento</div>
+      </div>
+      <div class="mc-card rv rv-d2">
+        <div class="mc-val" data-target="100" data-suffix="%">0%</div>
+        <div class="mc-lbl">Ações auditadas</div>
+      </div>
+      <div class="mc-card rv rv-d3">
+        <div class="mc-val" data-target="3" data-suffix="sem">0sem</div>
+        <div class="mc-lbl">Da ideia ao deploy</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="sec-divider"></div>
+
+<!-- ═══ BLOG ════════════════════════════════════════════════ -->
+<section id="blog">
+  <div class="container">
+    <div class="sec-header">
+      <div class="eyebrow">Conteúdo estratégico</div>
+      <h2>Insights de IA aplicada<br><span class="grad">ao negócio real</span></h2>
+      <p>Artigos práticos sobre automação, governança, integrações e ROI para operações corporativas.</p>
+    </div>
+
+    <div class="blog-grid rv">
 <!-- BLOG-HOME-CARDS:START -->
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/09/implementar-agentes-corporativos-ia-governanca/" data-blog-image="imagens/posts/implementar-agentes-corporativos-ia-governanca.jpg" data-blog-slug="implementar-agentes-corporativos-ia-governanca" data-blog-date="2026-05-09">
   <a href="2026/05/09/implementar-agentes-corporativos-ia-governanca/">
-    <img src="imagens/posts/implementar-agentes-corporativos-ia-governanca.jpg" alt="Como implementar agentes corporativos de IA com governança" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+    <img src="imagens/posts/implementar-agentes-corporativos-ia-governanca.jpg" alt="Como implementar agentes corporativos" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
   </a>
   <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="2026/05/09/implementar-agentes-corporativos-ia-governanca/" class="hover:underline">Como implementar agentes corporativos de IA com governança</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Saiba como estruturar agentes corporativos de IA, focando em governança e segurança para operações confiáveis.</p>
+    <h2 class="text-base font-semibold leading-snug"><a href="2026/05/09/implementar-agentes-corporativos-ia-governanca/" class="hover:underline">Como implementar agentes corporativos</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Para criar agentes corporativos com RAG, é fundamental integrar ferramentas de validação e auditoria, definir permissões por usuário e conectá-los a sistemas internos e bases de conhecimento. Isso garante segurança e governança na automação.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/06/canais-integrados-base-operacional-agentes-corporativos/" data-blog-image="imagens/posts/canais-integrados-base-operacional-agentes-corporativos.jpg" data-blog-slug="canais-integrados-base-operacional-agentes-corporativos" data-blog-date="2026-05-06">
   <a href="2026/05/06/canais-integrados-base-operacional-agentes-corporativos/">
-    <img src="imagens/posts/canais-integrados-base-operacional-agentes-corporativos.jpg" alt="Canais Integrados: Base Operacional para Agentes Corporativos" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+    <img src="imagens/posts/canais-integrados-base-operacional-agentes-corporativos.jpg" alt="Canais Integrados: Base Operacional" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
   </a>
   <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="2026/05/06/canais-integrados-base-operacional-agentes-corporativos/" class="hover:underline">Canais Integrados: Base Operacional para Agentes Corporativos</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como integrar canais para otimizar agentes corporativos com governança e segurança.</p>
+    <h2 class="text-base font-semibold leading-snug"><a href="2026/05/06/canais-integrados-base-operacional-agentes-corporativos/" class="hover:underline">Canais Integrados: Base Operacional</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Para criar agentes corporativos com RAG, é essencial integrar canais e ferramentas que garantam governança, auditoria e permissões adequadas. Utilize plataformas como o Link para conectar documentos e sistemas, permitindo uma operação controlada e segura.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/03/canais-integrados-auditoria-agentes-corporativos-ia/" data-blog-image="imagens/posts/canais-integrados-auditoria-agentes-corporativos-ia.jpg" data-blog-slug="canais-integrados-auditoria-agentes-corporativos-ia" data-blog-date="2026-05-03">
   <a href="2026/05/03/canais-integrados-auditoria-agentes-corporativos-ia/">
-    <img src="imagens/posts/canais-integrados-auditoria-agentes-corporativos-ia.jpg" alt="Canais integrados e auditoria em agentes corporativos de IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+    <img src="imagens/posts/canais-integrados-auditoria-agentes-corporativos-ia.jpg" alt="Canais integrados e auditoria" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
   </a>
   <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="2026/05/03/canais-integrados-auditoria-agentes-corporativos-ia/" class="hover:underline">Canais integrados e auditoria em agentes corporativos de IA</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como implementar agentes corporativos com governança e segurança efetiva.</p>
+    <h2 class="text-base font-semibold leading-snug"><a href="2026/05/03/canais-integrados-auditoria-agentes-corporativos-ia/" class="hover:underline">Canais integrados e auditoria</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Para implementar agentes corporativos de IA com governança, é essencial definir permissões por usuário, realizar auditorias constantes e integrar canais adequados. Use ferramentas como RAG e plataformas como Link para garantir controle e segurança na automação.</p>
   </div>
 </article>
 <!-- BLOG-HOME-CARDS:END -->
+    </div>
+
+    <div class="blog-footer-cta rv rv-d2">
+      <p>Quer receber os próximos conteúdos com playbooks e templates de implantação? Publicamos semanalmente.</p>
+      <a href="blog/" class="btn btn-ghost" style="padding:12px 18px;font-size:13px;">Acessar portal de notícias</a>
+    </div>
+  </div>
+</section>
+
+<div class="sec-divider"></div>
+
+<section id="faq">
+  <div class="faq-wrap">
+    <div class="sec-header">
+      <div class="eyebrow">Perguntas frequentes</div>
+      <h2>Dúvidas reais sobre<br><span class="grad">implantação com IA</span></h2>
+      <p>Respostas objetivas para as perguntas mais comuns de empresas que estão saindo de piloto para produção.</p>
+    </div>
+
+    <div class="faq-list" id="faq-list">
+      <div class="faq-item open">
+        <button class="faq-q" type="button">
+          <span>Em quanto tempo conseguimos colocar um agente em produção?</span>
+          <div class="faq-icon" aria-hidden="true"></div>
+        </button>
+        <div class="faq-a">
+          <p>Na maioria dos cenários, o primeiro fluxo entra em produção em 2 a 3 semanas. O prazo depende do nível de integração com CRM, ERP, base documental e regras de aprovação da operação.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button">
+          <span>Como a governança funciona na prática para evitar riscos?</span>
+          <div class="faq-icon" aria-hidden="true"></div>
+        </button>
+        <div class="faq-a">
+          <p>Cada ação do agente pode ser limitada por permissões, política de execução e trilha de auditoria. Isso garante rastreabilidade completa e controle sobre o que o agente pode ou não pode executar.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button">
+          <span>É possível integrar com sistemas já existentes, como CRM e ERP?</span>
+          <div class="faq-icon" aria-hidden="true"></div>
+        </button>
+        <div class="faq-a">
+          <p>Sim. A arquitetura é desenhada para integrar APIs e fontes internas sem quebrar processos atuais. O objetivo é aproveitar o stack existente e automatizar etapas de maior impacto primeiro.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button">
+          <span>Como vocês tratam segurança de dados e LGPD?</span>
+          <div class="faq-icon" aria-hidden="true"></div>
+        </button>
+        <div class="faq-a">
+          <p>Aplicamos escopo de acesso por perfil, segregação de fontes, logs de ação e políticas de privacidade desde o desenho. O projeto já nasce com foco em conformidade e proteção de dados sensíveis.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button">
+          <span>Como medir ROI e provar resultado para diretoria?</span>
+          <div class="faq-icon" aria-hidden="true"></div>
+        </button>
+        <div class="faq-a">
+          <p>Definimos métricas por fluxo desde o início: tempo economizado, redução de retrabalho, taxa de acerto e volume de ações auditadas. Assim, o impacto é demonstrado com indicadores de negócio reais.</p>
+        </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="contato" class="contact-section scroll-mt-28 border-t border-white/[0.06] px-6 py-20 md:py-28"
-    aria-labelledby="contato-heading">
-    <div class="contact-ambient" aria-hidden="true"></div>
-    <div class="relative mx-auto max-w-6xl">
-      <h4 id="contato-heading" class="font-heading text-[30px] font-semibold">Quer transformar sua operação em agentes
-        inteligentes?</h4>
-      <div class="mt-2 h-1 w-[72px] rounded-full bg-white"></div>
+<div class="sec-divider"></div>
 
-      <div id="contact-feedback" class="contact-feedback-alert hidden" role="alert"></div>
-
-      <div class="contact-layout">
-        <div class="contact-copy">
-          <div
-            class="mb-7 flex flex-col items-center gap-4 rounded-2xl border border-emerald-400/20 bg-emerald-500/[0.06] p-5 text-center sm:flex-row sm:items-end sm:text-left">
-            <img src="imagens/link-falando.png" alt="Link falando sobre agentes corporativos da FluxoInteligente IA"
-              class="h-36 w-36 shrink-0 object-contain drop-shadow-[0_20px_40px_rgba(16,185,129,0.28)] sm:h-44 sm:w-44"
-              width="1254" height="1254" loading="lazy" decoding="async" />
-            <div
-              class="relative rounded-2xl border border-white/15 bg-white/[0.08] p-5 text-base leading-relaxed text-white/90 shadow-lg shadow-black/20 sm:flex-1">
-              <span
-                class="absolute -left-2 bottom-10 hidden h-4 w-4 rotate-45 border-b border-l border-white/15 bg-white/[0.08] sm:block"
-                aria-hidden="true"></span>
-              Se sua empresa tem processos repetitivos, documentos espalhados, atendimento manual ou sistemas que não
-              conversam entre si, podemos desenhar um agente corporativo para operar com segurança dentro do seu negócio.
+<section id="form-section">
+  <div class="container">
+    <div class="form-grid">
+      <!-- Left: benefits -->
+      <div class="form-left rv">
+        <div class="eyebrow" style="margin-bottom:14px">Vamos conversar</div>
+        <h2>Crie seu agente<br><span class="grad">em semanas</span></h2>
+        <p>Resposta humana em até 2 horas. Sem script genérico — nosso time analisa sua operação antes de entrar em contato.</p>
+        <div class="form-benefits">
+          <div class="fb">
+            <div class="fb-icon">🚀</div>
+            <div>
+              <strong>Diagnóstico gratuito</strong>
+              Mapeamos seus processos e estimamos o ROI antes de qualquer investimento.
             </div>
           </div>
-          <div class="contact-aside-card">
-            <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/60">Atalho direto</p>
-            <h3 class="mt-2 text-lg font-semibold">Prefere falar agora?</h3>
-            <p class="mt-2 text-sm text-white/85">Se quiser pular o formulário, fale direto com nossa equipe comercial
-              no WhatsApp.</p>
-            <a href="https://wa.me/5511994566726?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20FluxoInteligente%20IA%20e%20quero%20criar%20um%20agente%20corporativo."
-              target="_blank" rel="noopener noreferrer" class="contact-direct-link mt-4">Falar no WhatsApp agora</a>
-            <p class="mt-3 text-sm text-white/70"><b>Telefone para Contato:</b> 11 99456-6726</p>
+          <div class="fb">
+            <div class="fb-icon">🤝</div>
+            <div>
+              <strong>Sem compromisso inicial</strong>
+              Entenda o que um agente pode fazer pela sua operação antes de decidir.
+            </div>
+          </div>
+          <div class="fb">
+            <div class="fb-icon">⚡</div>
+            <div>
+              <strong>Deploy em semanas</strong>
+              Processo estruturado para ir à produção rápido, com segurança e governança.
+            </div>
+          </div>
+          <div class="fb">
+            <div class="fb-icon">🔐</div>
+            <div>
+              <strong>Privacidade garantida</strong>
+              Seus dados nunca são compartilhados. LGPD por design em todo o processo.
+            </div>
           </div>
         </div>
+      </div>
 
-        <div class="contact-form-card">
-          <h3 class="text-lg font-semibold">Receber contato comercial</h3>
-          <p class="mt-2 text-sm text-white/85">Iremos entrar em contato!</p>
+      <!-- Right: form -->
+      <div class="form-card rv rv-d2">
+        <div id="form-fields">
+          <div style="margin-bottom:24px">
+            <div style="font-size:18px;font-weight:700;color:#fff;margin-bottom:6px">Fale com um especialista</div>
+            <div style="font-size:13px;color:var(--text-2)">Preencha abaixo — respondemos em até 2 horas.</div>
+          </div>
 
-          <form id="contact-lead-form" action="/enviar-contato.php" method="post" class="contact-form"
-            data-whatsapp-phone="5511994566726"
-            data-whatsapp-message-template="Ola, vim pelo site da FluxoInteligente IA. Meu nome e {nome} e meu WhatsApp e {whatsapp}. Quero saber mais sobre agentes corporativos.">
-            <input type="hidden" name="redirect" value="/" />
-            <input type="hidden" name="origem" value="fluxointeligenteia" />
-            <input type="hidden" name="servico" value="FluxoInteligente IA" />
-            <input type="hidden" name="mensagem" value="Lead enviado pela home" />
-
-            <div>
-              <label for="contact-nome" class="contact-label mb-2">Nome</label>
-              <input id="contact-nome" name="nome" type="text" required autocomplete="name" placeholder="Seu nome"
-                class="contact-input" />
+          <form id="contact-form" action="/enviar-contato.php" method="post" novalidate>
+            <input type="hidden" name="redirect" value="/?mail=ok#form-section">
+            <input type="hidden" name="origem" value="fluxointeligenteia">
+            <input type="hidden" name="servico" value="FluxoInteligente IA">
+            <div class="form-hp-wrap" aria-hidden="true">
+              <label for="flux-contact-hp">Website</label>
+              <input type="text" id="flux-contact-hp" name="website" tabindex="-1" autocomplete="off">
+            </div>
+            <div class="form-row">
+              <div class="fl-group" id="fg-name">
+                <input class="fl-input" type="text" id="f-name" name="nome" placeholder="Nome completo" autocomplete="name" maxlength="120" minlength="2" required aria-describedby="err-f-name" inputmode="text">
+                <label class="fl-label" for="f-name">Nome completo</label>
+                <div class="fl-error-msg" id="err-f-name" role="alert">Por favor, informe seu nome (mínimo 2 caracteres).</div>
+              </div>
+              <div class="fl-group" id="fg-email">
+                <input class="fl-input" type="email" id="f-email" name="email" placeholder="E-mail corporativo" autocomplete="email" maxlength="254" required aria-describedby="err-f-email">
+                <label class="fl-label" for="f-email">E-mail corporativo</label>
+                <div class="fl-error-msg" id="err-f-email" role="alert">E-mail inválido ou incompleto.</div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="fl-group" id="fg-phone">
+                <input class="fl-input" type="tel" id="f-phone" name="telefone" placeholder="WhatsApp (DDD + número)" autocomplete="tel" maxlength="19" inputmode="numeric" aria-describedby="err-f-phone">
+                <label class="fl-label" for="f-phone">WhatsApp</label>
+                <div class="fl-error-msg" id="err-f-phone" role="alert">Informe DDD + número (10 a 13 dígitos, apenas números).</div>
+              </div>
+              <div class="fl-group" id="fg-company">
+                <input class="fl-input" type="text" id="f-company" name="empresa" placeholder="Empresa" maxlength="200" autocomplete="organization">
+                <label class="fl-label" for="f-company">Empresa <span class="opt-badge">opcional</span></label>
+              </div>
             </div>
 
-            <div>
-              <label for="contact-whatsapp" class="contact-label mb-2">WhatsApp</label>
-              <input id="contact-whatsapp" name="whatsapp" type="tel" required autocomplete="tel" inputmode="tel"
-                placeholder="(11) 99999-9999" class="contact-input" />
-            </div>
-
-            <button type="submit" class="contact-submit contact-submit-shine"><span>ENVIAR </span></button>
+            <button type="submit" class="form-submit">
+              <div class="shimmer"></div>
+              <span class="form-submit-inner">Quero criar meu agente →</span>
+            </button>
           </form>
 
-
-          <div id="contact-success-box" class="contact-status-card is-success hidden">
-            <p class="text-sm font-semibold text-white">Lead enviado com sucesso.</p>
-            <p class="mt-1 text-sm text-white/80">Se o WhatsApp não abrir automaticamente, use o botão abaixo.</p>
-            <a id="contact-success-whatsapp-link" href="https://wa.me/5511994566726" target="_blank"
-              rel="noopener noreferrer" class="contact-status-action mt-3">Abrir WhatsApp agora</a>
+          <div class="form-trust">
+            <div class="ft-item"><div class="ft-dot"></div>Resposta em até 2h</div>
+            <div class="ft-item"><div class="ft-dot"></div>Sem spam</div>
+            <div class="ft-item"><div class="ft-dot"></div>100% privado</div>
           </div>
+        </div>
 
-          <div id="contact-error-box" class="contact-status-card is-error hidden">
-            <p class="text-sm font-semibold text-white">Nao foi possivel concluir o envio.</p>
-            <p class="mt-1 text-sm text-white/80">Tente novamente em instantes ou use o atalho direto para falar com
-              nossa equipe.</p>
-          </div>
+        <!-- Success state -->
+        <div class="form-success" id="form-success">
+          <div class="form-success-icon">✓</div>
+          <h3>Mensagem enviada!</h3>
+          <p>Nosso time entrará em contato em até 2 horas.<br>Enquanto isso, explore como funciona o Link.</p>
+          <a href="#interactive" class="btn btn-ghost" style="margin-top:20px;display:inline-flex">Ver plataforma →</a>
         </div>
       </div>
     </div>
-  </section>
-
-  <footer id="site-footer" class="footer-site relative px-6 pb-10 pt-14 md:pb-14 md:pt-16" aria-label="Rodapé">
-    <div class="footer-top-glow" aria-hidden="true"></div>
-    <div class="footer-ambient" aria-hidden="true"></div>
-    <div class="relative mx-auto max-w-6xl">
-      <div class="grid gap-12 md:grid-cols-12 md:gap-10 lg:gap-14">
-        <div class="footer-reveal md:col-span-5">
-          <p class="font-heading text-[10px] font-semibold uppercase tracking-[0.2em] text-white/35">Próximo passo</p>
-          <h2 class="mt-2 font-heading text-xl font-bold tracking-tight text-white md:text-2xl">Vamos conversar sobre
-            seu agente corporativo</h2>
-          <p class="mt-3 max-w-md text-sm leading-relaxed text-white/55">Resposta humana, sem fila genérica. Fale com o
-            time da FluxoInteligente IA.</p>
-          <div class="mt-6 flex flex-wrap gap-3">
-            <a href="#contato"
-              class="footer-cta-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">
-              <i data-lucide="arrow-right" class="h-4 w-4" aria-hidden="true"></i>
-              Falar com especialista
-            </a>
-          </div>
-          <a href="mailto:contato@fluxointeligenteia.com.br"
-            class="mt-6 inline-flex items-center gap-2 text-sm font-medium text-emerald-400/90 transition hover:text-emerald-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">
-            <i data-lucide="mail" class="h-4 w-4 shrink-0" aria-hidden="true"></i>
-            contato@coderush.com.br
-          </a>
-        </div>
-        <nav class="footer-reveal footer-stagger-1 md:col-span-3" aria-label="Mapa do site">
-          <p class="font-heading text-[10px] font-semibold uppercase tracking-[0.2em] text-white/35">Navegação</p>
-          <ul class="mt-4 space-y-2.5 text-sm">
-            <li><a href="#sobre"
-                class="footer-nav-link rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">Agentes</a>
-            </li>
-            <li><a href="agentes-corporativos/"
-                class="footer-nav-link rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">Agentes corporativos</a>
-            </li>
-            <li><a href="link/"
-                class="footer-nav-link rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">Link</a>
-            </li>
-            <li><a href="#solucoes"
-                class="footer-nav-link rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">Soluções</a>
-            </li>
-            <li><a href="#cases"
-                class="footer-nav-link rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">Cases</a>
-            </li>
-            <li><a href="#faq"
-                class="footer-nav-link rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">FAQ</a>
-            </li>
-            <li><a href="blog/"
-                class="footer-nav-link rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">Blog</a>
-            </li>
-            <li><a href="#contato"
-                class="footer-nav-link rounded-md font-medium text-emerald-400/90 hover:text-emerald-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">Contato</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="footer-reveal footer-stagger-2 md:col-span-4">
-          <p class="font-heading text-[10px] font-semibold uppercase tracking-[0.2em] text-white/35">Ecossistema
-            CodeRush</p>
-          <p class="mt-2 text-xs leading-relaxed text-white/45">Marcas do grupo.</p>
-          <div class="mt-4 flex flex-wrap gap-2">
-            <a href="https://coderush.com.br" target="_blank" rel="noopener noreferrer"
-              class="footer-eco-pill focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">coderush.com.br<i
-                data-lucide="external-link" class="h-3 w-3 shrink-0 opacity-70" aria-hidden="true"></i></a>
-            <a href="https://sistemavendadireta.com.br" target="_blank" rel="noopener noreferrer"
-              class="footer-eco-pill focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]"><span
-                class="max-w-[11rem] truncate sm:max-w-none">sistemavendadireta.com.br</span><i
-                data-lucide="external-link" class="h-3 w-3 shrink-0 opacity-70" aria-hidden="true"></i></a>
-            <a href="https://codafacil.dev" target="_blank" rel="noopener noreferrer"
-              class="footer-eco-pill focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">codafacil.dev<i
-                data-lucide="external-link" class="h-3 w-3 shrink-0 opacity-70" aria-hidden="true"></i></a>
-            
-          </div>
-        </div>
-      </div>
-      <div
-        class="footer-reveal footer-stagger-3 mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-xs text-white/40 md:flex-row md:items-center">
-        <p>© <span id="year-copy"></span> FluxoInteligente com IA — Todos os direitos reservados.</p>
-        <p class="text-center text-white/35 md:text-right"><a href="#contato"
-            class="font-medium text-emerald-400/80 transition hover:text-emerald-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#04110d]">Falar com especialista</a></p>
-      </div>
-    </div>
-  </footer>
-
-  <div class="fab-dock" role="group" aria-label="Ações rápidas">
-    <button type="button" id="back-to-top" class="back-to-top-fab is-at-top" aria-label="Voltar ao topo"><i
-        data-lucide="chevron-up" class="h-6 w-6" aria-hidden="true"></i></button>
-    <a href="https://wa.me/5511994566726?text=Ol%C3%A1%2C%20vim%20pelo%20site%20FluxoInteligente%20IA%20e%20quero%20criar%20um%20agente%20corporativo."
-      target="_blank" rel="noopener noreferrer" class="chat-launcher" aria-label="Falar no WhatsApp">
-      <i data-lucide="message-circle" class="h-7 w-7" aria-hidden="true"></i>
-    </a>
   </div>
+</section>
+
+<div class="sec-divider"></div>
+
+<section id="cta">
+  <div class="cta-inner">
+    <div class="eyebrow" style="display:block;text-align:center;margin-bottom:20px">Próximo passo</div>
+    <h2>Pronto para colocar IA<br>para <span class="grad">trabalhar de verdade?</span></h2>
+    <p>Mapeamos sua operação, identificamos os processos ideais e criamos seu agente com governança e resultado mensurável.</p>
+
+    <div class="cta-btns">
+      <a href="https://wa.me/5511994566726" class="btn btn-primary" style="padding:18px 36px;font-size:16px;" target="_blank">
+        <div class="shimmer"></div>
+        <span class="btn-inner">Falar com especialista <span class="btn-arrow">→</span></span>
+      </a>
+      <a href="#how" class="btn btn-ghost" style="padding:18px 36px;font-size:16px;">Ver como funciona</a>
+    </div>
+
+    <div class="cta-trust">
+      <div class="cta-trust-item">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.5"/><path d="M4.5 7L6.5 9L9.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Resposta humana, sem fila genérica
+      </div>
+      <div class="cta-trust-item">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.5"/><path d="M4.5 7L6.5 9L9.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Sem compromisso inicial
+      </div>
+      <div class="cta-trust-item">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.5"/><path d="M4.5 7L6.5 9L9.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Diagnóstico gratuito
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="newsletter">
+  <div class="newsletter-shell rv-scale" id="newsletter-shell">
+    <div class="nl-left">
+      <h3 class="nl-title">Receba insights de IA<br><span class="grad">que geram resultado</span></h3>
+      <p class="nl-text">Toda semana, enviamos playbooks práticos, tendências e casos aplicáveis para operações que querem escalar com governança.</p>
+      <div class="nl-pills">
+        <span class="nl-pill">Sem spam</span>
+        <span class="nl-pill">Conteúdo aplicável</span>
+        <span class="nl-pill">1 e-mail por semana</span>
+      </div>
+    </div>
+    <div class="nl-right">
+      <!-- Mesmo checklist de segurança no endpoint da newsletter (LGPD/opt-out no servidor). -->
+      <form class="nl-form" id="newsletter-form" novalidate>
+        <div class="form-hp-wrap" aria-hidden="true">
+          <label for="flux-nl-hp">Empresa</label>
+          <input type="text" id="flux-nl-hp" name="company_url" tabindex="-1" autocomplete="off">
+        </div>
+        <div class="nl-field-group" id="nl-fg-name">
+          <input class="nl-input" type="text" id="nl-name" name="name" placeholder="Seu nome" autocomplete="name" required maxlength="120" minlength="2" aria-describedby="nl-err-name">
+          <div class="nl-error-msg" id="nl-err-name" role="alert">Informe seu nome (mínimo 2 caracteres).</div>
+        </div>
+        <div class="nl-field-group" id="nl-fg-email">
+          <input class="nl-input" type="email" id="nl-email" name="email" placeholder="Seu e-mail corporativo" autocomplete="email" required maxlength="254" aria-describedby="nl-err-email">
+          <div class="nl-error-msg" id="nl-err-email" role="alert">E-mail inválido ou incompleto.</div>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;padding:13px 16px;font-size:13px;">
+          <div class="shimmer"></div>
+          <span class="btn-inner">Quero receber os insights <span class="btn-arrow">→</span></span>
+        </button>
+        <div class="nl-success" id="nl-success">
+          <div class="nl-success-dot"></div>
+          <div class="nl-success-copy">
+            <div class="nl-success-title" id="nl-success-title">Perfeito, você entrou na lista VIP de insights.</div>
+            <div class="nl-success-text" id="nl-success-text">Seu próximo playbook chega com foco em eficiência real e aplicação prática.</div>
+            <div class="nl-success-badge" id="nl-success-badge">Flux Intelligence Feed</div>
+            <div class="nl-success-chipline">
+              <span class="nl-success-chip">Sem spam</span>
+              <span class="nl-success-chip">Curadoria humana</span>
+              <span class="nl-success-chip">Ação imediata</span>
+            </div>
+          </div>
+        </div>
+        <div class="nl-legal">Ao se inscrever, você concorda em receber comunicações da FluxoInteligente IA.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<div id="flux-slot-footer" aria-hidden="true"></div>
+
+<!-- ═══ WHATSAPP FLOATING BUTTON ════════════════════════════ -->
+<div id="wa-btn">
+  <a href="https://wa.me/5511994566726?text=Olá%2C%20vim%20pelo%20site%20e%20quero%20criar%20um%20agente%20corporativo." target="_blank" rel="noopener">
+    <div class="wa-circle">
+      <svg class="wa-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+        <path d="M12.004 2C6.477 2 2 6.477 2 12.004c0 1.773.46 3.44 1.27 4.9L2 22l5.236-1.244A9.952 9.952 0 0012.004 22C17.53 22 22 17.523 22 12.004 22 6.477 17.53 2 12.004 2zm0 18.199a8.17 8.17 0 01-4.17-1.144l-.299-.178-3.104.737.78-2.97-.195-.307A8.2 8.2 0 013.8 12.004c0-4.522 3.68-8.204 8.204-8.204 4.523 0 8.2 3.682 8.2 8.204 0 4.521-3.677 8.195-8.2 8.195z"/>
+      </svg>
+    </div>
+    <div class="wa-tooltip">Fale conosco no WhatsApp</div>
+  </a>
+</div>
+
+<!-- ═══ FLUX GUIDE AVATAR ════════════════════════════════ -->
+<div id="flux-guide" class="min">
+  <div class="flux-bubble" id="flux-bubble">
+    <small>GUIA FLUX</small>
+    <span class="flux-section-tag" id="flux-section-tag">Visão Geral</span>
+    <p id="flux-text">Quer um tour rápido? Eu te mostro os blocos principais da página.</p>
+    <div class="flux-actions">
+      <a href="#interactive" class="flux-link" id="flux-link-main">Ver plataforma</a>
+      <a href="#form-section" class="flux-link">Ir para formulário</a>
+    </div>
+  </div>
+  <button class="flux-avatar-btn" id="flux-avatar-btn" aria-label="Abrir guia Flux">
+    <img class="flux-avatar-img" src="assets/img/flux-icon.png" alt="Flux">
+  </button>
+</div>
+
+<!-- ═══ MOBILE DRAWER ════════════════════════════════════════ -->
+<div id="mobile-drawer" aria-hidden="true">
+  <div id="drawer-backdrop"></div>
+  <div id="drawer-panel" role="dialog" aria-modal="true" aria-label="Menu principal">
+    <button class="drawer-close" id="drawer-close-btn" aria-label="Fechar menu">✕</button>
+    <div class="drawer-head">
+      <span class="drawer-eyebrow">Navegação</span>
+      <div class="drawer-title">Encontre rápido o que importa</div>
+    </div>
+    <div class="drawer-nav">
+      <a class="drawer-link" data-section="value" style="--i:1" href="#value">Benefícios</a>
+      <a class="drawer-link" data-section="how" style="--i:2" href="#how">Como Funciona</a>
+      <a class="drawer-link" data-section="features" style="--i:3" href="#features">Recursos</a>
+      <a class="drawer-link" data-section="interactive" style="--i:4" href="#interactive">Plataforma</a>
+      <a class="drawer-link" data-section="testimonials" style="--i:5" href="#testimonials">Cases</a>
+      <a class="drawer-link" data-section="faq" style="--i:6" href="#faq">FAQ</a>
+      <a class="drawer-link" data-section="blog" style="--i:7" href="blog/">Blog</a>
+    </div>
+    <div class="drawer-flux-guide" id="drawer-flux-guide" aria-live="polite">
+      <img class="drawer-flux-avatar" src="assets/img/flux-icon.png" alt="Flux guia">
+      <div>
+        <div class="drawer-flux-label">Flux recomenda</div>
+        <p class="drawer-flux-text" id="drawer-flux-text">Comece por Benefícios para entender o ganho rápido e depois vá para Plataforma para ver a automação em ação.</p>
+      </div>
+    </div>
+    <div class="drawer-cta">
+      <a href="#form-section" class="btn btn-primary" style="width:100%;justify-content:center;padding:14px;">
+        <div class="shimmer"></div>
+        <span class="btn-inner">Criar meu agente <span class="btn-arrow">→</span></span>
+      </a>
+    </div>
+  </div>
+</div>
 
 
-  <script src="https://cdn.jsdelivr.net/npm/lucide@0.469.0/dist/umd/lucide.min.js" crossorigin="anonymous"></script>
-
-  <script src="js/scripts.js?v=20260501" defer></script>
+<script defer src="assets/js/site-layout.js"></script>
+<script defer src="assets/js/index.js"></script>
 </body>
-
 </html>

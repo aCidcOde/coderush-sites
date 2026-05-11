@@ -1,0 +1,48 @@
+<section id="newsletter">
+  <div class="newsletter-shell rv-scale" id="newsletter-shell">
+    <div class="nl-left">
+      <h3 class="nl-title">Receba insights de IA<br><span class="grad">que geram resultado</span></h3>
+      <p class="nl-text">Toda semana, enviamos playbooks práticos, tendências e casos aplicáveis para operações que querem escalar com governança.</p>
+      <div class="nl-pills">
+        <span class="nl-pill">Sem spam</span>
+        <span class="nl-pill">Conteúdo aplicável</span>
+        <span class="nl-pill">1 e-mail por semana</span>
+      </div>
+    </div>
+    <div class="nl-right">
+      <!-- Mesmo checklist de segurança no endpoint da newsletter (LGPD/opt-out no servidor). -->
+      <form class="nl-form" id="newsletter-form" novalidate>
+        <div class="form-hp-wrap" aria-hidden="true">
+          <label for="flux-nl-hp">Empresa</label>
+          <input type="text" id="flux-nl-hp" name="company_url" tabindex="-1" autocomplete="off">
+        </div>
+        <div class="nl-field-group" id="nl-fg-name">
+          <input class="nl-input" type="text" id="nl-name" name="name" placeholder="Seu nome" autocomplete="name" required maxlength="120" minlength="2" aria-describedby="nl-err-name">
+          <div class="nl-error-msg" id="nl-err-name" role="alert">Informe seu nome (mínimo 2 caracteres).</div>
+        </div>
+        <div class="nl-field-group" id="nl-fg-email">
+          <input class="nl-input" type="email" id="nl-email" name="email" placeholder="Seu e-mail corporativo" autocomplete="email" required maxlength="254" aria-describedby="nl-err-email">
+          <div class="nl-error-msg" id="nl-err-email" role="alert">E-mail inválido ou incompleto.</div>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;padding:13px 16px;font-size:13px;">
+          <div class="shimmer"></div>
+          <span class="btn-inner">Quero receber os insights <span class="btn-arrow">→</span></span>
+        </button>
+        <div class="nl-success" id="nl-success">
+          <div class="nl-success-dot"></div>
+          <div class="nl-success-copy">
+            <div class="nl-success-title" id="nl-success-title">Perfeito, você entrou na lista VIP de insights.</div>
+            <div class="nl-success-text" id="nl-success-text">Seu próximo playbook chega com foco em eficiência real e aplicação prática.</div>
+            <div class="nl-success-badge" id="nl-success-badge">Flux Intelligence Feed</div>
+            <div class="nl-success-chipline">
+              <span class="nl-success-chip">Sem spam</span>
+              <span class="nl-success-chip">Curadoria humana</span>
+              <span class="nl-success-chip">Ação imediata</span>
+            </div>
+          </div>
+        </div>
+        <div class="nl-legal">Ao se inscrever, você concorda em receber comunicações da FluxoInteligente IA.</div>
+      </form>
+    </div>
+  </div>
+</section>

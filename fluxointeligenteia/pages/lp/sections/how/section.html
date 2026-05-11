@@ -1,0 +1,73 @@
+<!-- ═══ HOW IT WORKS ═══════════════════════════════════════ -->
+<section id="how">
+  <div class="container">
+    <div class="sec-header">
+      <div class="eyebrow">Da ideia à produção</div>
+      <h2>Em produção em <span class="grad">semanas,</span><br>não meses</h2>
+      <p>Processo estruturado para colocar seu agente operando com segurança e resultados mensuráveis.</p>
+    </div>
+
+    <div class="how-grid">
+      <div class="steps rv">
+        <div class="step active" onclick="activateStep(this,0)">
+          <div class="step-num">01</div>
+          <div class="step-body">
+            <h3>Diagnóstico</h3>
+            <p>Mapeamos processos, gargalos, sistemas envolvidos e o resultado esperado para o agente.</p>
+          </div>
+        </div>
+        <div class="step" onclick="activateStep(this,1)">
+          <div class="step-num">02</div>
+          <div class="step-body">
+            <h3>Desenho do agente</h3>
+            <p>Persona, permissões, bases de conhecimento, tools, canais e limites de atuação definidos.</p>
+          </div>
+        </div>
+        <div class="step" onclick="activateStep(this,2)">
+          <div class="step-num">03</div>
+          <div class="step-body">
+            <h3>Integrações</h3>
+            <p>Conectamos APIs, bancos, CRM, ERP, WhatsApp e sistemas internos com segurança.</p>
+          </div>
+        </div>
+        <div class="step" onclick="activateStep(this,3)">
+          <div class="step-num">04</div>
+          <div class="step-body">
+            <h3>Deploy e evolução contínua</h3>
+            <p>Em produção, medimos uso, analisamos feedbacks e evoluímos por ciclos iterativos.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="how-visual rv rv-d2">
+        <div class="code-card">
+          <div class="code-top">
+            <div class="mac-dot md-r"></div>
+            <div class="mac-dot md-y"></div>
+            <div class="mac-dot md-g"></div>
+            <div style="font-family:var(--mono);font-size:11px;color:var(--muted);margin-left:auto" id="code-label">agent.config.ts</div>
+          </div>
+          <div class="code-body" id="code-body">
+            <div class="cl"><span class="ln">1</span><span><span class="ck">const</span> agent = <span class="ck">new</span> FluxoAgent({</span></div>
+            <div class="cl"><span class="ln">2</span><span>  <span class="cs">name</span>: <span class="cv">"Link Jurídico"</span>,</span></div>
+            <div class="cl"><span class="ln">3</span><span>  <span class="cs">model</span>: <span class="cv">"gpt-4o"</span>,</span></div>
+            <div class="cl"><span class="ln">4</span><span>  <span class="cs">rag</span>: <span class="ck">true</span>,</span></div>
+            <div class="cl"><span class="ln">5</span><span>  <span class="cs">channels</span>: [<span class="cv">"chat"</span>, <span class="cv">"email"</span>],</span></div>
+            <div class="cl"><span class="ln">6</span><span>  <span class="cs">tools</span>: [crm, docs, erp],</span></div>
+            <div class="cl"><span class="ln">7</span><span>  <span class="cs">audit</span>: <span class="ck">true</span>, <span class="cs">lgpd</span>: <span class="ck">true</span>,</span></div>
+            <div class="cl"><span class="ln">8</span><span>});</span></div>
+            <div class="cl" style="margin-top:8px"><span class="ln">10</span><span><span class="cc">// 🟢 Agent deployed · v2.4</span></span></div>
+          </div>
+          <div class="code-tags" id="code-tags">
+            <div class="ctag">Mapeamento</div>
+            <div class="ctag">Processos</div>
+            <div class="ctag">ROI estimado</div>
+            <div class="ctag">Gargalos</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="sec-divider"></div>

@@ -1,0 +1,107 @@
+<section id="form-section">
+  <div class="container">
+    <div class="form-grid">
+      <!-- Left: benefits -->
+      <div class="form-left rv">
+        <div class="eyebrow" style="margin-bottom:14px">Vamos conversar</div>
+        <h2>Crie seu agente<br><span class="grad">em semanas</span></h2>
+        <p>Resposta humana em até 2 horas. Sem script genérico — nosso time analisa sua operação antes de entrar em contato.</p>
+        <div class="form-benefits">
+          <div class="fb">
+            <div class="fb-icon">🚀</div>
+            <div>
+              <strong>Diagnóstico gratuito</strong>
+              Mapeamos seus processos e estimamos o ROI antes de qualquer investimento.
+            </div>
+          </div>
+          <div class="fb">
+            <div class="fb-icon">🤝</div>
+            <div>
+              <strong>Sem compromisso inicial</strong>
+              Entenda o que um agente pode fazer pela sua operação antes de decidir.
+            </div>
+          </div>
+          <div class="fb">
+            <div class="fb-icon">⚡</div>
+            <div>
+              <strong>Deploy em semanas</strong>
+              Processo estruturado para ir à produção rápido, com segurança e governança.
+            </div>
+          </div>
+          <div class="fb">
+            <div class="fb-icon">🔐</div>
+            <div>
+              <strong>Privacidade garantida</strong>
+              Seus dados nunca são compartilhados. LGPD por design em todo o processo.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: form -->
+      <div class="form-card rv rv-d2">
+        <div id="form-fields">
+          <div style="margin-bottom:24px">
+            <div style="font-size:18px;font-weight:700;color:#fff;margin-bottom:6px">Fale com um especialista</div>
+            <div style="font-size:13px;color:var(--text-2)">Preencha abaixo — respondemos em até 2 horas.</div>
+          </div>
+
+          <form id="contact-form" action="/enviar-contato.php" method="post" novalidate>
+            <input type="hidden" name="redirect" value="/?mail=ok#form-section">
+            <input type="hidden" name="origem" value="fluxointeligenteia">
+            <input type="hidden" name="servico" value="FluxoInteligente IA">
+            <div class="form-hp-wrap" aria-hidden="true">
+              <label for="flux-contact-hp">Website</label>
+              <input type="text" id="flux-contact-hp" name="website" tabindex="-1" autocomplete="off">
+            </div>
+            <div class="form-row">
+              <div class="fl-group" id="fg-name">
+                <input class="fl-input" type="text" id="f-name" name="nome" placeholder="Nome completo" autocomplete="name" maxlength="120" minlength="2" required aria-describedby="err-f-name" inputmode="text">
+                <label class="fl-label" for="f-name">Nome completo</label>
+                <div class="fl-error-msg" id="err-f-name" role="alert">Por favor, informe seu nome (mínimo 2 caracteres).</div>
+              </div>
+              <div class="fl-group" id="fg-email">
+                <input class="fl-input" type="email" id="f-email" name="email" placeholder="E-mail corporativo" autocomplete="email" maxlength="254" required aria-describedby="err-f-email">
+                <label class="fl-label" for="f-email">E-mail corporativo</label>
+                <div class="fl-error-msg" id="err-f-email" role="alert">E-mail inválido ou incompleto.</div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="fl-group" id="fg-phone">
+                <input class="fl-input" type="tel" id="f-phone" name="telefone" placeholder="WhatsApp (DDD + número)" autocomplete="tel" maxlength="19" inputmode="numeric" aria-describedby="err-f-phone">
+                <label class="fl-label" for="f-phone">WhatsApp</label>
+                <div class="fl-error-msg" id="err-f-phone" role="alert">Informe DDD + número (10 a 13 dígitos, apenas números).</div>
+              </div>
+              <div class="fl-group" id="fg-company">
+                <input class="fl-input" type="text" id="f-company" name="empresa" placeholder="Empresa" maxlength="200" autocomplete="organization">
+                <label class="fl-label" for="f-company">Empresa <span class="opt-badge">opcional</span></label>
+              </div>
+            </div>
+
+            <button type="submit" class="form-submit">
+              <div class="shimmer"></div>
+              <span class="form-submit-inner">Quero criar meu agente →</span>
+            </button>
+          </form>
+
+          <div class="form-trust">
+            <div class="ft-item"><div class="ft-dot"></div>Resposta em até 2h</div>
+            <div class="ft-item"><div class="ft-dot"></div>Sem spam</div>
+            <div class="ft-item"><div class="ft-dot"></div>100% privado</div>
+          </div>
+        </div>
+
+        <!-- Success state -->
+        <div class="form-success" id="form-success">
+          <div class="form-success-icon">✓</div>
+          <h3>Mensagem enviada!</h3>
+          <p>Nosso time entrará em contato em até 2 horas.<br>Enquanto isso, explore como funciona o Link.</p>
+          <a href="#interactive" class="btn btn-ghost" style="margin-top:20px;display:inline-flex">Ver plataforma →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="sec-divider"></div>
+

@@ -21,10 +21,11 @@ Pipeline: pickTheme → research RSS → AI prompt → generate JSON contract �
 
 FluxoInteligente IA deve ser tratada como empresa de **agentes corporativos integrados ao negócio**, com automação, RAG, tools, canais, permissões, auditoria, observabilidade e governança.
 
-- Produto/base própria: **Link**
-- Rotas principais: `/`, `/agentes-corporativos/`, `/link/`
+- Rotas principais (v2.0): `/`, `/blog/`
+- Páginas `/agentes-corporativos/` e `/link/` e o mascote **Link** foram descontinuados na migração v2.0 — o posicionamento agora vive nas sections da LP modular (value, features, interactive)
 - Evitar: vender apenas `n8n`, chatbot simples ou automação genérica
 - Usar: agentes corporativos, base de conhecimento, execução segura, permissões, logs, auditoria, canais integrados e evolução contínua
+- Stack do site: HTML/CSS/JS vanilla modular em `fluxointeligenteia/pages/` (componentes + sections). LP final regerada por `python3 fluxointeligenteia/tools/build-index.py`. Header/footer globais injetados por `assets/js/site-layout.js` via `data-site` + slots `#flux-slot-header` / `#flux-slot-footer`. Tailwind continua ativo só pros cards/posts gerados pelo blog-bot.
 
 ## Cadência
 

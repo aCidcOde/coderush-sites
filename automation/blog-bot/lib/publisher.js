@@ -605,13 +605,66 @@ function buildPostTemplate(root, site, contract, relatedCards) {
   const canonicalPath = buildCardRecord(contract).postPath;
   const canonicalUrl = `${site.baseUrl}/${canonicalPath}`;
   const imageUrl = `${site.baseUrl}/imagens/posts/${contract.slug}.jpg`;
-  const styles = stylesheetLinks(root, site, relativeRoot);
+  const isFluxo = site.id === "fluxointeligenteia";
 
   const emailMarkup = copy.email
     ? `        <p class="mt-3 text-sm text-white/80">Email: <a href="mailto:${esc(copy.email)}" class="font-semibold hover:underline">${esc(
         copy.email
       )}</a></p>`
     : "";
+
+  const styles = isFluxo
+    ? `  <link rel="stylesheet" href="${relativeRoot}assets/css/site-shell.css" />\n${stylesheetLinks(root, site, relativeRoot)}`
+    : stylesheetLinks(root, site, relativeRoot);
+  const fluxoFontPreload = isFluxo
+    ? `\n  <link rel="preconnect" href="https://fonts.googleapis.com">\n  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">`
+    : "";
+  const bodyAttrs = isFluxo ? ' data-site="post"' : "";
+  const headerMarkup = isFluxo
+    ? `<div id="cursor-dot" aria-hidden="true"></div>
+  <div id="cursor-ring" aria-hidden="true"></div>
+  <div id="scroll-progress"></div>
+  <div id="flux-slot-header" aria-hidden="true"></div>`
+    : `<header class="${copy.headerClass}">
+    <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4 sm:px-6">
+      <a href="${relativeRoot}" class="text-lg font-semibold tracking-tight text-white">${esc(site.name)}</a>
+      <nav class="hidden items-center gap-5 md:flex">
+${renderNavLinks(copy, relativeRoot)}
+      </nav>
+    </div>
+  </header>`;
+  const footerMarkup = isFluxo
+    ? `<div id="flux-slot-footer" aria-hidden="true"></div>
+  <script defer src="${relativeRoot}assets/js/site-layout.js"></script>
+  <script defer src="${relativeRoot}assets/js/site-shell.js"></script>`
+    : `<footer class="${copy.footerClass}">
+    <div class="mx-auto max-w-6xl px-4 py-10 sm:px-6">
+      <div class="grid gap-8 md:grid-cols-3">
+        <div>
+          <h2 class="text-xl font-semibold text-white">${esc(site.name)}</h2>
+          <p class="mt-3 max-w-sm text-sm leading-7 text-white/80">${esc(copy.footerBlurb)}</p>
+          <p class="mt-3 text-sm text-white/80">Telefone: <a href="tel:+5511994566726" class="font-semibold hover:underline">${esc(
+            copy.phone
+          )}</a></p>
+${emailMarkup}
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold text-white">Navegacao</h3>
+          <nav class="mt-4 grid gap-2 text-sm text-white/85" aria-label="Mapa do site">
+${renderFooterLinks(copy, relativeRoot)}
+          </nav>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold text-white">Próximo passo</h3>
+          <p class="mt-3 text-sm leading-7 text-white/80">Resposta humana, sem fila generica. Fale com o time comercial do site.</p>
+          <a href="${relativeLink(relativeRoot, copy.ctaPath)}" class="mt-4 inline-flex rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/10">
+            ${esc(copy.ctaLabel)}
+          </a>
+        </div>
+      </div>
+      <div class="mt-8 border-t border-white/10 pt-4 text-xs text-white/45">© ${esc(site.name)} - Todos os direitos reservados.</div>
+    </div>
+  </footer>`;
 
   const seoTitle = buildSeoTitle(contract, site);
   const metaDescription = buildMetaDescription(contract);
@@ -637,7 +690,7 @@ function buildPostTemplate(root, site, contract, relatedCards) {
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="${esc(seoTitle)}" />
   <meta name="twitter:description" content="${esc(metaDescription)}" />
-  <meta name="twitter:image" content="${imageUrl}" />
+  <meta name="twitter:image" content="${imageUrl}" />${fluxoFontPreload}
 ${styles}
   <script type="application/ld+json">
 ${buildJsonLd(site, contract, canonicalUrl, imageUrl)}
@@ -646,15 +699,8 @@ ${buildJsonLd(site, contract, canonicalUrl, imageUrl)}
 ${faqJsonLd}
   </script>` : ""}
 </head>
-<body class="${copy.bodyClass}">
-  <header class="${copy.headerClass}">
-    <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4 sm:px-6">
-      <a href="${relativeRoot}" class="text-lg font-semibold tracking-tight text-white">${esc(site.name)}</a>
-      <nav class="hidden items-center gap-5 md:flex">
-${renderNavLinks(copy, relativeRoot)}
-      </nav>
-    </div>
-  </header>
+<body class="${copy.bodyClass}"${bodyAttrs}>
+  ${headerMarkup}
 
   <main class="mx-auto max-w-4xl px-4 py-8 sm:px-6 sm:py-10">
     <a href="${relativeRoot}" class="inline-flex rounded-full border border-white/40 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-white/85 hover:bg-white/10">
@@ -701,34 +747,7 @@ ${renderFaq(contract.content.faq)}
 ${renderRelatedSection()}
   </main>
 
-  <footer class="${copy.footerClass}">
-    <div class="mx-auto max-w-6xl px-4 py-10 sm:px-6">
-      <div class="grid gap-8 md:grid-cols-3">
-        <div>
-          <h2 class="text-xl font-semibold text-white">${esc(site.name)}</h2>
-          <p class="mt-3 max-w-sm text-sm leading-7 text-white/80">${esc(copy.footerBlurb)}</p>
-          <p class="mt-3 text-sm text-white/80">Telefone: <a href="tel:+5511994566726" class="font-semibold hover:underline">${esc(
-            copy.phone
-          )}</a></p>
-${emailMarkup}
-        </div>
-        <div>
-          <h3 class="text-lg font-semibold text-white">Navegacao</h3>
-          <nav class="mt-4 grid gap-2 text-sm text-white/85" aria-label="Mapa do site">
-${renderFooterLinks(copy, relativeRoot)}
-          </nav>
-        </div>
-        <div>
-          <h3 class="text-lg font-semibold text-white">Próximo passo</h3>
-          <p class="mt-3 text-sm leading-7 text-white/80">Resposta humana, sem fila generica. Fale com o time comercial do site.</p>
-          <a href="${relativeLink(relativeRoot, copy.ctaPath)}" class="mt-4 inline-flex rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/10">
-            ${esc(copy.ctaLabel)}
-          </a>
-        </div>
-      </div>
-      <div class="mt-8 border-t border-white/10 pt-4 text-xs text-white/45">© ${esc(site.name)} - Todos os direitos reservados.</div>
-    </div>
-  </footer>
+  ${footerMarkup}
 </body>
 </html>
 `;
