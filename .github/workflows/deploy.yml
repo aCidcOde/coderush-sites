@@ -10,7 +10,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: SSH bootstrap — fetch + reset --hard
+      - name: Deploy via SSH
         env:
           SSH_KEY: ${{ secrets.SSH_KEY }}
           SSH_HOST: ${{ secrets.SSH_HOST }}
@@ -19,24 +19,39 @@ jobs:
           mkdir -p ~/.ssh
           printf '%s\n' "$SSH_KEY" > ~/.ssh/id_deploy
           chmod 600 ~/.ssh/id_deploy
+
           ssh -i ~/.ssh/id_deploy -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null \
-            "$SSH_USER@$SSH_HOST" \
-            "cd /data/coderush-sites && git fetch origin main && git reset --hard origin/main && git status --short && git rev-parse HEAD"
+            "$SSH_USER@$SSH_HOST" bash -s <<'REMOTE'
+          set -e
+          cd /data/coderush-sites
 
-      - name: Trigger deploy webhook
-        run: |
-          set -o pipefail
-          body=$(mktemp)
-          http=$(curl -sS -o "$body" -w "%{http_code}" \
-            -X POST https://coderush.com.br/deploy.php \
-            -H "X-Deploy-Token: ${{ secrets.DEPLOY_TOKEN }}")
+          echo "=== whoami / pwd ==="
+          whoami
+          pwd
 
-          echo "HTTP $http"
-          echo "--- response body ---"
-          cat "$body"
-          echo "--- end body ---"
+          echo "=== git fetch ==="
+          git fetch origin main
 
-          if [ "$http" != "200" ]; then
-            echo "::error::Deploy webhook retornou HTTP $http"
-            exit 1
+          echo "=== git reset --hard origin/main ==="
+          git reset --hard origin/main
+
+          echo "=== HEAD ==="
+          git rev-parse HEAD
+
+          if [ -f composer.json ]; then
+            echo "=== composer install ==="
+            composer install --no-dev --no-interaction --optimize-autoloader --no-progress || echo "composer falhou (nao critico pra sites estaticos)"
           fi
+
+          if [ -f package.json ]; then
+            echo "=== npm run build:css ==="
+            npm run build:css
+          fi
+
+          if [ -f docker-compose.yml ] || [ -f compose.yml ]; then
+            echo "=== docker compose restart ==="
+            docker compose restart || echo "docker restart falhou (nao critico se nginx serve direto do disco)"
+          fi
+
+          echo "=== deploy ok ==="
+          REMOTE

@@ -614,7 +614,7 @@ function buildPostTemplate(root, site, contract, relatedCards) {
     : "";
 
   const styles = isFluxo
-    ? `  <link rel="stylesheet" href="${relativeRoot}assets/css/site-shell.css" />\n${stylesheetLinks(root, site, relativeRoot)}`
+    ? `  <link rel="stylesheet" href="${relativeRoot}assets/css/blog.css" />\n  <link rel="stylesheet" href="${relativeRoot}assets/css/site-shell.css" />\n${stylesheetLinks(root, site, relativeRoot)}`
     : stylesheetLinks(root, site, relativeRoot);
   const fluxoFontPreload = isFluxo
     ? `\n  <link rel="preconnect" href="https://fonts.googleapis.com">\n  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">`
