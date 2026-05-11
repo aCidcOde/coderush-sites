@@ -79,6 +79,7 @@ body::before{
    TYPOGRAPHY
 ═══════════════════════════════════════════════════════════ */
 h1,h2,h3,h4{
+  font-family:var(--sans);
   line-height:1.06;
   letter-spacing:-0.04em;
   font-weight:800;
@@ -93,10 +94,12 @@ h1,h2,h3,h4{
 .eyebrow::before{content:'//';opacity:0.4;margin-right:2px}
 
 .grad{
+  font-family:var(--sans);
   background:linear-gradient(120deg,var(--a1) 0%,var(--a3) 100%);
   -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
 }
 .grad-white{
+  font-family:var(--sans);
   background:linear-gradient(160deg,#ffffff 30%,rgba(255,255,255,0.45) 100%);
   -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
 }
