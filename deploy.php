@@ -37,11 +37,16 @@ function runStep(string $name, string $cmd): array {
     return ['name' => $name, 'cmd' => $cmd, 'exit' => $exitCode, 'output' => $body];
 }
 
+// fetch+reset em vez de pull: build:css regenera <site>/css/site-tailwind.css
+// (tracked), deixando working tree dirty entre deploys e quebrando pull com
+// "local changes would be overwritten". reset --hard é o padrao pra deploy.
 $steps = [
-    ['git pull',        'git pull origin main'],
+    ['git status (pre)', 'git status --short && git rev-parse HEAD'],
+    ['git fetch',        'git fetch origin main'],
+    ['git reset',        'git reset --hard origin/main'],
     ['composer install', 'composer install --no-dev --no-interaction --optimize-autoloader --no-progress'],
-    ['npm build:css',   'npm run build:css'],
-    ['docker restart',  'docker compose restart'],
+    ['npm build:css',    'npm run build:css'],
+    ['docker restart',   'docker compose restart'],
 ];
 
 $results = [];
