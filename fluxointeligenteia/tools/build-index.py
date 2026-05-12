@@ -59,8 +59,8 @@ HEAD = """<!-- LP gerada por tools/build-index.py a partir de pages/componentes 
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap">
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Sora:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Sora:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/index.css">
 <link rel="stylesheet" href="css/site-tailwind.css">
 <link rel="stylesheet" href="css/hub-parity.css">
@@ -86,6 +86,21 @@ TAIL = """
 """
 
 
+def preserve_marker_block(rendered: str, existing: str, marker: str) -> str:
+    start = f"<!-- {marker}:START -->"
+    end = f"<!-- {marker}:END -->"
+    existing_start = existing.find(start)
+    existing_end = existing.find(end, existing_start)
+    rendered_start = rendered.find(start)
+    rendered_end = rendered.find(end, rendered_start)
+
+    if min(existing_start, existing_end, rendered_start, rendered_end) == -1:
+        return rendered
+
+    existing_block = existing[existing_start : existing_end + len(end)]
+    return rendered[:rendered_start] + existing_block + rendered[rendered_end + len(end) :]
+
+
 def main():
     parts = [HEAD]
     for name in COMPONENTS_TOP:
@@ -102,7 +117,10 @@ def main():
         parts.append(f.read_text(encoding="utf-8").rstrip() + "\n\n")
     parts.append(TAIL)
     out = ROOT / "index.html"
-    out.write_text("".join(parts), encoding="utf-8")
+    existing = out.read_text(encoding="utf-8") if out.exists() else ""
+    rendered = "".join(parts)
+    rendered = preserve_marker_block(rendered, existing, "BLOG-HOME-CARDS")
+    out.write_text(rendered, encoding="utf-8")
     print("OK ->", out, "(%d bytes)" % out.stat().st_size)
 
 
