@@ -60,16 +60,41 @@ function envValue(array $env, array $keys, string $default = ''): string
     return $default;
 }
 
+function wantsJsonResponse(): bool
+{
+    $requestedWith = strtolower((string) ($_SERVER['HTTP_X_REQUESTED_WITH'] ?? ''));
+    $accept = strtolower((string) ($_SERVER['HTTP_ACCEPT'] ?? ''));
+
+    return $requestedWith === 'xmlhttprequest' || str_contains($accept, 'application/json');
+}
+
 function safeRedirect(string $location, bool $success): void
 {
+    if (wantsJsonResponse()) {
+        http_response_code($success ? 200 : 422);
+        header('Content-Type: application/json; charset=UTF-8');
+        echo json_encode([
+            'ok' => $success,
+            'status' => $success ? 'ok' : 'erro',
+        ], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
+        exit;
+    }
+
     $target = $location;
     if ($target === '' || !str_starts_with($target, '/')) {
         $target = '/';
     }
 
+    $fragment = '';
+    $hashPosition = strpos($target, '#');
+    if ($hashPosition !== false) {
+        $fragment = substr($target, $hashPosition);
+        $target = substr($target, 0, $hashPosition);
+    }
+
     $separator = str_contains($target, '?') ? '&' : '?';
     $status = $success ? 'ok' : 'erro';
-    header('Location: ' . $target . $separator . 'mail=' . $status, true, 303);
+    header('Location: ' . $target . $separator . 'mail=' . $status . $fragment, true, 303);
     exit;
 }
 

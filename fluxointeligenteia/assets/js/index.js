@@ -858,7 +858,8 @@ document.addEventListener('keydown', e => {
 });
 if(contactForm) {
   const contactHp = document.getElementById('flux-contact-hp');
-  contactForm.addEventListener('submit', function(e){
+  contactForm.addEventListener('submit', async function(e){
+    e.preventDefault();
     if (contactHp && contactHp.value.trim() !== '') contactHp.value = '';
     let valid=true;
     const nameInp=document.getElementById('f-name');
@@ -873,9 +874,44 @@ if(contactForm) {
     if(name.length<2){ setFieldState('fg-name','error'); valid=false; } else setFieldState('fg-name','valid');
     if(!validateEmailStrict(email)){ setFieldState('fg-email','error'); valid=false; } else setFieldState('fg-email','valid');
     if(!validateBRPhoneDigits(phoneDigits)){ setFieldState('fg-phone','error'); valid=false; } else setFieldState('fg-phone','valid');
-    if(!valid){ e.preventDefault(); return; }
+    if(!valid) return;
     const btn=this.querySelector('.form-submit');
-    btn.disabled=true; btn.querySelector('.form-submit-inner').textContent='Enviando...';
+    const btnLabel = btn?.querySelector('.form-submit-inner');
+    const originalLabel = btnLabel?.textContent || 'Quero criar meu agente →';
+    if (btn) btn.disabled = true;
+    if (btnLabel) btnLabel.textContent = 'Enviando...';
+
+    try {
+      const response = await fetch(this.action, {
+        method: 'POST',
+        body: new FormData(this),
+        headers: {
+          'Accept': 'application/json',
+          'X-Requested-With': 'XMLHttpRequest'
+        },
+        credentials: 'same-origin'
+      });
+
+      let payload = null;
+      try {
+        payload = await response.clone().json();
+      } catch (_) {
+        payload = null;
+      }
+
+      if (!response.ok || payload?.ok === false) {
+        throw new Error(payload?.message || 'Falha ao enviar contato.');
+      }
+
+      this.reset();
+      ['fg-name','fg-email','fg-phone'].forEach(id => setFieldState(id, ''));
+      openSuccessModal();
+    } catch (_) {
+      alert('Não foi possível enviar sua mensagem agora. Tente novamente em alguns instantes ou fale pelo WhatsApp.');
+    } finally {
+      if (btn) btn.disabled = false;
+      if (btnLabel) btnLabel.textContent = originalLabel;
+    }
   });
   try {
     const params = new URLSearchParams(window.location.search);
