@@ -599,6 +599,131 @@ function renderRelatedSection() {
   ].join("\n");
 }
 
+function renderFluxoPostTemplate({
+  relativeRoot,
+  contract,
+  copy,
+  site,
+  seoTitle,
+  metaDescription,
+  canonicalUrl,
+  imageUrl,
+  faqJsonLd,
+  styles,
+  fluxoFontPreload,
+  headerMarkup,
+  footerMarkup
+}) {
+  const accent = accentFor(site.id);
+  return `<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>${esc(seoTitle)}</title>
+  <meta name="description" content="${esc(metaDescription)}" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <link rel="canonical" href="${canonicalUrl}" />
+  <link rel="icon" type="image/svg+xml" href="${relativeRoot}favicon.svg" />
+  <link rel="alternate icon" href="${relativeRoot}favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="${relativeRoot}apple-touch-icon.png" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="${esc(seoTitle)}" />
+  <meta property="og:description" content="${esc(metaDescription)}" />
+  <meta property="og:url" content="${canonicalUrl}" />
+  <meta property="og:image" content="${imageUrl}" />
+  <meta property="og:site_name" content="${esc(site.name)}" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="${esc(seoTitle)}" />
+  <meta name="twitter:description" content="${esc(metaDescription)}" />
+  <meta name="twitter:image" content="${imageUrl}" />${fluxoFontPreload}
+${styles}
+  <script type="application/ld+json">
+${buildJsonLd(site, contract, canonicalUrl, imageUrl)}
+  </script>${faqJsonLd ? `
+  <script type="application/ld+json">
+${faqJsonLd}
+  </script>` : ""}
+</head>
+<body class="${copy.bodyClass}" data-site="post">
+  ${headerMarkup}
+
+  <nav class="post-subnav rv" aria-label="Atalhos do artigo">
+    <div class="container post-subnav-inner">
+      <a href="${relativeRoot}blog/" class="pn-btn pn-portal"><span aria-hidden="true">←</span> Portal</a>
+      <a href="${relativeRoot}" class="pn-btn pn-mini">Início site</a>
+      <a href="#post-content" class="pn-btn pn-mini">Conteúdo</a>
+      <a href="${relativeRoot}#form-section" class="pn-btn pn-top">Criar agente <span aria-hidden="true">↗</span></a>
+    </div>
+  </nav>
+
+  <section class="post-hero">
+    <div class="container">
+      <nav class="post-breadcrumb rv" aria-label="Localização neste site">
+        <a class="bc-link" href="${relativeRoot}">FluxoInteligente IA</a>
+        <span class="bc-sep" aria-hidden="true">/</span>
+        <a class="bc-link" href="${relativeRoot}blog/">Blog</a>
+        <span class="bc-sep" aria-hidden="true">/</span>
+        <span class="bc-current">${esc(contract.content.eyebrow || copy.articleLabel)}</span>
+      </nav>
+      <h1 class="rv rv-d1">${esc(contract.content.headline)}</h1>
+      <p class="sub rv rv-d2">${esc(contract.content.summary)}</p>
+      <div class="meta rv rv-d3">
+        <span class="tag">${esc(contract.content.eyebrow || copy.articleLabel)}</span>
+        <span>${brDate(contract.date)}</span>
+        <span>Guia prático</span>
+      </div>
+    </div>
+  </section>
+  <div class="sec-divider"></div>
+
+  <main class="container post-wrap" id="main">
+    <article class="rv rv-scale post-article">
+      <div class="cover cover-interactive">
+        <img src="${relativeRoot}imagens/posts/${contract.slug}.jpg" alt="${esc(contract.coverAlt || contract.content.headline)}" width="1200" height="630" loading="eager" decoding="async" />
+      </div>
+      <div class="article-read-track" aria-hidden="true">
+        <div class="article-read-fill"></div>
+      </div>
+      <div class="content" id="post-content">
+${renderAnswerBox(contract.content.answerBox, accent)}
+${renderTldr(contract.content.tldr)}
+${renderSections(contract, accent, relativeRoot)}
+${renderFaq(contract.content.faq)}
+      </div>
+    </article>
+
+    <aside class="side" aria-label="Apoio do artigo">
+      <div class="panel rv rv-d1">
+        <h4>Neste artigo</h4>
+        <div class="toc">
+          ${(contract.content.sections || []).slice(0, 6).map((section) => section?.title ? `<a href="#post-content">${esc(section.title)}</a>` : "").filter(Boolean).join("\n          ")}
+        </div>
+      </div>
+      <div class="panel rv rv-d2">
+        <h4>Próximo passo</h4>
+        <p>Mapeie processos, permissões e integrações antes de colocar um agente em produção.</p>
+        <a href="${relativeRoot}#form-section" class="panel-link">Conversar com especialista</a>
+      </div>
+    </aside>
+  </main>
+
+  <section class="container post-cta rv">
+    <h2>${esc(copy.ctaTitle)}</h2>
+    <p>${esc(copy.ctaBody)}</p>
+    <a href="${relativeLink(relativeRoot, copy.ctaPath)}">${esc(copy.ctaLabel)}</a>
+  </section>
+
+  <div class="container post-related-wrap">
+${renderRelatedSection()}
+  </div>
+
+  ${footerMarkup}
+</body>
+</html>
+`;
+}
+
 function buildPostTemplate(root, site, contract, relatedCards) {
   const copy = SITE_COPY[site.id];
   const relativeRoot = "../../../../";
@@ -669,6 +794,23 @@ ${renderFooterLinks(copy, relativeRoot)}
   const seoTitle = buildSeoTitle(contract, site);
   const metaDescription = buildMetaDescription(contract);
   const faqJsonLd = buildFaqJsonLd(contract);
+  if (isFluxo) {
+    return renderFluxoPostTemplate({
+      relativeRoot,
+      contract,
+      copy,
+      site,
+      seoTitle,
+      metaDescription,
+      canonicalUrl,
+      imageUrl,
+      faqJsonLd,
+      styles,
+      fluxoFontPreload,
+      headerMarkup,
+      footerMarkup
+    });
+  }
   return `<!doctype html>
 <html lang="pt-BR">
 <head>
