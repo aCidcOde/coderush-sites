@@ -1,0 +1,88 @@
+{
+  "date": "2026-05-12",
+  "siteId": "emergency",
+  "postType": "due-diligence-certidoes",
+  "focus": "ia",
+  "theme": "habilitacao e onboarding de fornecedor com certidoes",
+  "angle": "M&A",
+  "slug": "habilitacao-onboarding-fornecedores-ma",
+  "title": "Emergency Documentação: IA aplicado a M&A",
+  "description": "Atualização semanal de ia para Emergency Documentação, com foco em habilitacao e onboarding de fornecedor com certidoes.",
+  "sources": [
+    "https://pt.linkedin.com/pulse/homologação-de-fornecedores-due-dilligence-check-o-é-mario-mmwyf",
+    "https://www.checkfile.ai/pt-BR/blog/due-diligence-checklist-empresas",
+    "https://emergency.com.br/blog/due-diligence-mais-seguranca-para-decidir-com-confianca",
+    "https://www.linkana.com/blog/como-fazer-due-diligence/",
+    "https://www.kronoos.com/blog/plataforma-de-certidões-onde-tirar-certidões-online"
+  ],
+  "status": "draft",
+  "generatedAt": "2026-05-12T07:54:24-03:00",
+  "content": {
+    "eyebrow": "Consultoria técnica",
+    "headline": "Habilitação e onboarding de fornecedores em M&A",
+    "summary": "Entenda como certidões online podem facilitar a due diligence imobiliária e societária.",
+    "answerBox": {
+      "question": "Como habilitar fornecedores para M&A com certidões?",
+      "answer": "Para habilitar fornecedores em um processo de M&A, é essencial obter certidões online que comprovem a regularidade jurídica e fiscal. Isso minimiza riscos e acelera a due diligence, garantindo que todos os documentos estejam em ordem antes da contratação."
+    },
+    "tldr": [
+      "Certidões online aceleram o processo de due diligence.",
+      "Habilitação de fornecedores requer verificações rigorosas.",
+      "Apoio humano é essencial em casos complexos."
+    ],
+    "sections": [
+      {
+        "type": "prose",
+        "title": "Importância da Habilitação de Fornecedores",
+        "body": "A habilitação de fornecedores é uma etapa fundamental em processos de M&A. Ao garantir que os fornecedores estejam regulares, você reduz riscos e evita retrabalhos. A due diligence imobiliária e societária deve incluir a verificação de certidões, o que pode ser feito de forma ágil e eficiente com serviços especializados."
+      },
+      {
+        "type": "list",
+        "title": "Principais Certidões Necessárias",
+        "items": [
+          "Certidão de Regularidade Fiscal e Tributária",
+          "Certidão de Distribuição de Ações",
+          "Certidão de Registro de Imóveis",
+          "Certidão de Protestos",
+          "Certidão Negativa de Débitos Trabalhistas"
+        ]
+      },
+      {
+        "type": "callout",
+        "body": "Já estruturamos isso em vários clientes e sabemos como otimizar o processo. Vale uma conversa para entender seu cenário.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Desafios na Due Diligence",
+        "body": "Realizar uma due diligence eficiente pode ser desafiador, especialmente quando se trata de fornecedores. Muitos documentos são exigidos e a falta de organização pode atrasar o processo. A Emergency Documentação oferece suporte humano para pedidos complexos, garantindo que nenhuma certidão fique de fora e que tudo ocorra dentro dos prazos estabelecidos."
+      },
+      {
+        "type": "cta-inline",
+        "body": "Vamos garantir que sua diligência seja feita de forma eficaz.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Evitando Armadilhas Comuns",
+        "body": "Evite deixar para verificar a documentação de fornecedores na última hora. Isso pode levar a surpresas desagradáveis e atrasos no fechamento do negócio. Além disso, não confie apenas em emissões automáticas de certidões; o suporte humano pode fazer a diferença em casos mais complicados."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Quais certidões são obrigatórias para comprar um imóvel?",
+        "a": "As certidões obrigatórias incluem a Certidão de Registro de Imóveis, Certidão de Distribuição de Ações e Certidão Negativa de Débitos Trabalhistas."
+      },
+      {
+        "q": "Como validar fornecedor pessoa jurídica antes de contratar?",
+        "a": "Para validar um fornecedor, verifique suas certidões de regularidade fiscal, ações em andamento e referências de outros clientes."
+      },
+      {
+        "q": "Quais são os riscos de não realizar a due diligence?",
+        "a": "Não realizar a due diligence pode resultar em prejuízos financeiros, problemas legais e comprometimento da reputação da empresa."
+      }
+    ]
+  }
+}
