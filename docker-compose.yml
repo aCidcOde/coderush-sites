@@ -4,6 +4,7 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: coderush-app
+    restart: unless-stopped
     volumes:
       - .:/var/www/html
     networks:
@@ -12,6 +13,7 @@ services:
   nginx:
     image: nginx:alpine
     container_name: coderush-nginx
+    restart: unless-stopped
     ports:
       - "8081:80"
     volumes:
