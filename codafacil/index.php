@@ -582,6 +582,15 @@ $seoLdGraph = [
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-HOME-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/15/acelere-desenvolvimento-software-sob-medida-ia/" data-blog-image="imagens/posts/acelere-desenvolvimento-software-sob-medida-ia.jpg" data-blog-slug="acelere-desenvolvimento-software-sob-medida-ia" data-blog-date="2026-05-15">
+  <a href="2026/05/15/acelere-desenvolvimento-software-sob-medida-ia/">
+    <img src="imagens/posts/acelere-desenvolvimento-software-sob-medida-ia.jpg" alt="Acelere o desenvolvimento de software sob medida com IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="2026/05/15/acelere-desenvolvimento-software-sob-medida-ia/" class="hover:underline">Acelere o desenvolvimento de software sob medida com IA</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como a IA pode otimizar o ciclo de desenvolvimento de software sob medida.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/12/acelere-desenvolvimento-ia-ciclo-entrega/" data-blog-image="imagens/posts/acelere-desenvolvimento-ia-ciclo-entrega.jpg" data-blog-slug="acelere-desenvolvimento-ia-ciclo-entrega" data-blog-date="2026-05-12">
   <a href="2026/05/12/acelere-desenvolvimento-ia-ciclo-entrega/">
     <img src="imagens/posts/acelere-desenvolvimento-ia-ciclo-entrega.jpg" alt="Acelere seu desenvolvimento com IA no ciclo de entrega" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
@@ -598,15 +607,6 @@ $seoLdGraph = [
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="2026/05/09/ia-pode-melhorar-qualidade-codigo-php/" class="hover:underline">Como a IA pode melhorar a qualidade do código em PHP</a></h2>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como ferramentas de IA podem acelerar o desenvolvimento de software sob medida sem comprometer a qualidade.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/06/ia-pode-acelerar-desenvolvimento-software-sob-medida/" data-blog-image="imagens/posts/ia-pode-acelerar-desenvolvimento-software-sob-medida.jpg" data-blog-slug="ia-pode-acelerar-desenvolvimento-software-sob-medida" data-blog-date="2026-05-06">
-  <a href="2026/05/06/ia-pode-acelerar-desenvolvimento-software-sob-medida/">
-    <img src="imagens/posts/ia-pode-acelerar-desenvolvimento-software-sob-medida.jpg" alt="Como a IA pode acelerar o desenvolvimento de software sob medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-  </a>
-  <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="2026/05/06/ia-pode-acelerar-desenvolvimento-software-sob-medida/" class="hover:underline">Como a IA pode acelerar o desenvolvimento de software sob medida</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Explore como a IA aplicada pode otimizar o ciclo de desenvolvimento de software sob medida, garantindo qualidade e agilidade.</p>
   </div>
 </article>
 <!-- BLOG-HOME-CARDS:END -->

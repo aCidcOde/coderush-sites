@@ -1,0 +1,86 @@
+{
+  "date": "2026-05-15",
+  "siteId": "coderush",
+  "postType": "institucional-tecnologia",
+  "focus": "ia",
+  "theme": "decisao entre comprar e construir software",
+  "angle": "casos de empresa media",
+  "slug": "comprar-construir-software-considerar",
+  "title": "CodeRush: IA aplicado a casos de empresa media",
+  "description": "Atualização semanal de ia para CodeRush, com foco em decisao entre comprar e construir software.",
+  "sources": [
+    "https://martinfowler.com/fragments/2026-05-14.html",
+    "https://martinfowler.com/fragments/2026-05-05.html"
+  ],
+  "status": "draft",
+  "generatedAt": "2026-05-15T07:47:46-03:00",
+  "content": {
+    "eyebrow": "Decisões de Software",
+    "headline": "Comprar ou construir software: o que considerar?",
+    "summary": "Entenda os prós e contras de construir ou comprar software sob medida para sua empresa.",
+    "answerBox": {
+      "question": "Quando vale a pena comprar ou construir software sob medida?",
+      "answer": "A decisão entre comprar e construir software depende de fatores como custo, tempo de implementação e personalização. Se as necessidades são específicas e únicas, construir pode ser a melhor opção. Para soluções mais genéricas, a compra pode ser mais eficiente."
+    },
+    "tldr": [
+      "Comprar pode ser mais rápido e econômico.",
+      "Construir oferece personalização e controle.",
+      "Avalie custo, tempo e integrações necessárias."
+    ],
+    "sections": [
+      {
+        "type": "prose",
+        "title": "A escolha entre comprar e construir",
+        "body": "Optar entre comprar e construir software é uma decisão crítica para empresas de médio porte. Ao comprar, você pode obter soluções rápidas e geralmente mais baratas. No entanto, ao construir, obtém-se um produto que se alinha perfeitamente às necessidades do negócio, mas com um investimento maior de tempo e recursos."
+      },
+      {
+        "type": "list",
+        "title": "Fatores a considerar na decisão",
+        "items": [
+          "Custo total de propriedade e manutenção",
+          "Prazos e capacidade de implementação",
+          "Necessidade de personalização e flexibilidade",
+          "Integração com sistemas legados",
+          "Suporte e atualizações",
+          "Escalabilidade para o futuro"
+        ]
+      },
+      {
+        "type": "callout",
+        "body": "Já estruturamos essa análise em diversas empresas. Vale uma conversa para entender seu cenário específico.",
+        "ctaLabel": "Fale com a CodeRush",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Casos de empresas médias",
+        "body": "Empresas médias frequentemente enfrentam o dilema entre comprar e construir. Em um caso recente, uma empresa do setor de saúde optou por desenvolver um sistema sob medida, permitindo integrações eficientes com seus sistemas legados e uma governança de tecnologia mais robusta. Essa abordagem garantiu aderência às regras de negócio existentes e um retorno sobre investimento mais claro ao longo do tempo."
+      },
+      {
+        "type": "cta-inline",
+        "body": "Se sua empresa está nessa situação, estamos prontos para ajudar.",
+        "ctaLabel": "Fale com a CodeRush",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Evite armadilhas comuns",
+        "body": "Um dos principais erros é subestimar o custo e o tempo de desenvolvimento de um software sob medida. Além disso, não considerar a integração com sistemas legados pode levar a um 'big-bang' problemático. Sempre avalie a complexidade do seu ambiente atual e busque consultoria especializada, como a da CodeRush, para evitar surpresas desagradáveis."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Quais os principais benefícios de software sob medida?",
+        "a": "Software sob medida oferece personalização total, melhor alinhamento às necessidades do negócio e maior controle sobre atualizações e manutenções."
+      },
+      {
+        "q": "Quando é mais vantajoso comprar software?",
+        "a": "Comprar software é vantajoso quando as soluções prontas atendem às necessidades da empresa, oferecendo economia e rapidez na implementação."
+      },
+      {
+        "q": "Como integrar IA em sistemas legados?",
+        "a": "Integrar IA em sistemas legados pode ser feito por meio de APIs e serviços em nuvem, garantindo que novas funcionalidades sejam adicionadas sem interromper operações existentes."
+      }
+    ]
+  }
+}

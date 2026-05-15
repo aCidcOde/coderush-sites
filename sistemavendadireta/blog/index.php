@@ -89,6 +89,15 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-INDEX-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/15/crm-automacao-comissionamento-mmn/" data-blog-image="imagens/posts/crm-automacao-comissionamento-mmn.jpg" data-blog-slug="crm-automacao-comissionamento-mmn" data-blog-date="2026-05-15">
+  <a href="../2026/05/15/crm-automacao-comissionamento-mmn/">
+    <img src="../imagens/posts/crm-automacao-comissionamento-mmn.jpg" alt="CRM e automação no comissionamento para MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="../2026/05/15/crm-automacao-comissionamento-mmn/" class="hover:underline">CRM e automação no comissionamento para MMN</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como CRM e automação podem otimizar comissionamento em marketing multinível.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/12/governanca-comercial-dados-ia-podem-melhorar-resultados/" data-blog-image="imagens/posts/governanca-comercial-dados-ia-podem-melhorar-resultados.jpg" data-blog-slug="governanca-comercial-dados-ia-podem-melhorar-resultados" data-blog-date="2026-05-12">
   <a href="../2026/05/12/governanca-comercial-dados-ia-podem-melhorar-resultados/">
     <img src="../imagens/posts/governanca-comercial-dados-ia-podem-melhorar-resultados.jpg" alt="Governança Comercial: Como Dados e IA Podem Melhorar Resultados" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />

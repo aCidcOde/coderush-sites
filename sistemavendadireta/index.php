@@ -753,6 +753,15 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-HOME-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/15/crm-automacao-comissionamento-mmn/" data-blog-image="imagens/posts/crm-automacao-comissionamento-mmn.jpg" data-blog-slug="crm-automacao-comissionamento-mmn" data-blog-date="2026-05-15">
+  <a href="2026/05/15/crm-automacao-comissionamento-mmn/">
+    <img src="imagens/posts/crm-automacao-comissionamento-mmn.jpg" alt="CRM e automação no comissionamento para MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="2026/05/15/crm-automacao-comissionamento-mmn/" class="hover:underline">CRM e automação no comissionamento para MMN</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como CRM e automação podem otimizar comissionamento em marketing multinível.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/12/governanca-comercial-dados-ia-podem-melhorar-resultados/" data-blog-image="imagens/posts/governanca-comercial-dados-ia-podem-melhorar-resultados.jpg" data-blog-slug="governanca-comercial-dados-ia-podem-melhorar-resultados" data-blog-date="2026-05-12">
   <a href="2026/05/12/governanca-comercial-dados-ia-podem-melhorar-resultados/">
     <img src="imagens/posts/governanca-comercial-dados-ia-podem-melhorar-resultados.jpg" alt="Governança Comercial: Como Dados e IA Podem Melhorar Resultados" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
@@ -769,15 +778,6 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="2026/05/09/integracoes-pagamento-logistica-marketing-multinivel/" class="hover:underline">Integrações de pagamento e logística para marketing multinível</a></h2>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como integrar pagamentos e logística em operações de marketing multinível para maximizar resultados.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/06/integracoes-pagamento-logistica-mmn/" data-blog-image="imagens/posts/integracoes-pagamento-logistica-mmn.jpg" data-blog-slug="integracoes-pagamento-logistica-mmn" data-blog-date="2026-05-06">
-  <a href="2026/05/06/integracoes-pagamento-logistica-mmn/">
-    <img src="imagens/posts/integracoes-pagamento-logistica-mmn.jpg" alt="Integrações de Pagamento e Logística no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-  </a>
-  <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="2026/05/06/integracoes-pagamento-logistica-mmn/" class="hover:underline">Integrações de Pagamento e Logística no MMN</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como otimizar processos de pagamento e logística no marketing multinível.</p>
   </div>
 </article>
 <!-- BLOG-HOME-CARDS:END -->

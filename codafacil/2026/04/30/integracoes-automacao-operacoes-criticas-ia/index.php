@@ -234,11 +234,11 @@
   <p class="mt-2 text-sm text-white/70">Conteúdo recente dos outros sites do ecossistema.</p>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://coderush.com.br/2026/05/12/arquitetura-software-operacoes-criticas-governanca/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/arquitetura-software-operacoes-criticas-governanca.jpg" alt="Arquitetura de software para operações críticas e governança" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://coderush.com.br/2026/05/15/comprar-construir-software-considerar/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/comprar-construir-software-considerar.jpg" alt="Comprar ou construir software: o que considerar?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">CodeRush</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/05/12/arquitetura-software-operacoes-criticas-governanca/" rel="noopener" target="_blank" class="hover:underline">Arquitetura de software para operações críticas e governança</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a governança pode otimizar a arquitetura de software em operações críticas.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/05/15/comprar-construir-software-considerar/" rel="noopener" target="_blank" class="hover:underline">Comprar ou construir software: o que considerar?</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda os prós e contras de construir ou comprar software sob medida para sua empresa.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">

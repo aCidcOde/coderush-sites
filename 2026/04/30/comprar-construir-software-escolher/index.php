@@ -201,10 +201,10 @@
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/05/03/comprar-construir-software-considerar/"><img src="../../../../imagens/posts/comprar-construir-software-considerar.jpg" alt="Comprar ou construir software: o que considerar?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/05/15/comprar-construir-software-considerar/"><img src="../../../../imagens/posts/comprar-construir-software-considerar.jpg" alt="Comprar ou construir software: o que considerar?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/03/comprar-construir-software-considerar/" class="hover:underline">Comprar ou construir software: o que considerar?</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda os prós e contras de comprar ou construir software sob medida.</p>
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/15/comprar-construir-software-considerar/" class="hover:underline">Comprar ou construir software: o que considerar?</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda os prós e contras de construir ou comprar software sob medida para sua empresa.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
@@ -241,11 +241,11 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://codafacil.dev/2026/05/12/acelere-desenvolvimento-ia-ciclo-entrega/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/acelere-desenvolvimento-ia-ciclo-entrega.jpg" alt="Acelere seu desenvolvimento com IA no ciclo de entrega" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://codafacil.dev/2026/05/15/acelere-desenvolvimento-software-sob-medida-ia/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/acelere-desenvolvimento-software-sob-medida-ia.jpg" alt="Acelere o desenvolvimento de software sob medida com IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/05/12/acelere-desenvolvimento-ia-ciclo-entrega/" rel="noopener" target="_blank" class="hover:underline">Acelere seu desenvolvimento com IA no ciclo de entrega</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como integrar IA no desenvolvimento de software sob medida sem comprometer a qualidade.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/05/15/acelere-desenvolvimento-software-sob-medida-ia/" rel="noopener" target="_blank" class="hover:underline">Acelere o desenvolvimento de software sob medida com IA</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como a IA pode otimizar o ciclo de desenvolvimento de software sob medida.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">

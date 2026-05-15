@@ -206,6 +206,13 @@
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/05/15/crm-automacao-comissionamento-mmn/"><img src="../../../../imagens/posts/crm-automacao-comissionamento-mmn.jpg" alt="CRM e automação no comissionamento para MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/15/crm-automacao-comissionamento-mmn/" class="hover:underline">CRM e automação no comissionamento para MMN</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como CRM e automação podem otimizar comissionamento em marketing multinível.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="../../../../2026/05/09/integracoes-pagamento-logistica-marketing-multinivel/"><img src="../../../../imagens/posts/integracoes-pagamento-logistica-marketing-multinivel.jpg" alt="Integrações de pagamento e logística para marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/09/integracoes-pagamento-logistica-marketing-multinivel/" class="hover:underline">Integrações de pagamento e logística para marketing multinível</a></h3>
@@ -217,13 +224,6 @@
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/02/integrar-pagamentos-logistica-marketing-multinivel/" class="hover:underline">Como integrar pagamentos e logística em marketing multinível</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como otimizar suas operações de MMN com CRM e integrações eficazes.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/05/12/governanca-comercial-dados-ia-podem-melhorar-resultados/"><img src="../../../../imagens/posts/governanca-comercial-dados-ia-podem-melhorar-resultados.jpg" alt="Governança Comercial: Como Dados e IA Podem Melhorar Resultados" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/12/governanca-comercial-dados-ia-podem-melhorar-resultados/" class="hover:underline">Governança Comercial: Como Dados e IA Podem Melhorar Resultados</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a governança comercial, aliada à IA, pode otimizar processos e resultados em vendas diretas.</p>
   </div>
 </article>
   </div>
