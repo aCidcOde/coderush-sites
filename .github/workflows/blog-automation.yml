@@ -34,6 +34,7 @@ jobs:
           sudo apt-get install -y --no-install-recommends python3-pil tesseract-ocr
 
       - name: Run blog bot
+        id: blogbot
         env:
           API_OPENROUTER: ${{ secrets.API_OPENROUTER }}
           BLOG_BOT_OPENROUTER_MODEL: openai/gpt-4o-mini
@@ -43,6 +44,7 @@ jobs:
         run: npm run blogbot:publish
 
       - name: Commit and push to main
+        id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -54,3 +56,28 @@ jobs:
           git commit -m "chore(blog): publicar conteudo multi-site (run ${{ github.run_id }})"
           git pull --rebase origin main
           git push origin HEAD:main
+
+      - name: Build email summary
+        if: always()
+        id: email
+        env:
+          BLOGBOT_OUTCOME: ${{ steps.blogbot.outcome }}
+          COMMIT_OUTCOME: ${{ steps.commit.outcome }}
+          RUN_ID: ${{ github.run_id }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: node automation/blog-bot/scripts/build-email-summary.js
+
+      - name: Send email report
+        if: always()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          secure: true
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          subject: ${{ steps.email.outputs.subject }}
+          to: andre@sistemavendadireta.com.br
+          from: Blog Bot Coderush <${{ secrets.MAIL_USERNAME }}>
+          body: file://automation/blog-bot/reports/last-email-body.txt
+          convert_markdown: false
