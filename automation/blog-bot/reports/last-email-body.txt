@@ -1,0 +1,43 @@
+Blog bot rodou em 2026-05-15T10:22:30.268-03:00.
+
+Run ID: 25913820022
+Logs: https://github.com/aCidcOde/coderush-sites/actions/runs/25913820022
+
+Modo: publish
+Data: 2026-05-15 (America/Sao_Paulo)
+Iniciado: 2026-05-15T10:47:46.287Z
+Finalizado: 2026-05-15T10:53:02.951Z
+Status geral: OK
+
+=== POR SITE ===
+
+[OK] coderush
+  Tema: decisao entre comprar e construir software
+  Ângulo: casos de empresa media
+  Target: arquivos
+  Path: 2026/05/15/comprar-construir-software-considerar/index.php
+
+[OK] codafacil
+  Tema: software sob medida com IA aplicada
+  Ângulo: tooling de IA para devs
+  Target: arquivos
+  Path: codafacil/2026/05/15/acelere-desenvolvimento-software-sob-medida-ia/index.php
+
+[OK] fluxointeligenteia
+  Tema: permissoes e auditoria em IA corporativa
+  Ângulo: n8n
+  Target: arquivos
+  Path: fluxointeligenteia/2026/05/15/permissoes-auditoria-agentes-corporativos-ia/index.html
+
+[OK] sistemavendadireta
+  Tema: crm e automacao para marketing multinivel
+  Ângulo: comissionamento
+  Target: arquivos
+  Path: sistemavendadireta/2026/05/15/crm-automacao-comissionamento-mmn/index.php
+
+[OK] emergency
+  Tema: compliance corporativo apoiado em certidoes cartorarias
+  Ângulo: regularizacao
+  Target: API (status 201)
+  URL: https://emergency.com.br/blog/regularizacao-certidoes-online-impacta-due-diligence
+  Aviso: Possivel texto vazado na capa (sample: "adue GUIFENCe")

@@ -215,10 +215,10 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/05/12/arquitetura-software-operacoes-criticas-governanca/"><img src="../../../../imagens/posts/arquitetura-software-operacoes-criticas-governanca.jpg" alt="Arquitetura de software para operações críticas e governança" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/05/18/arquitetura-software-governanca-crescimento/"><img src="../../../../imagens/posts/arquitetura-software-governanca-crescimento.jpg" alt="Arquitetura de software e governança para crescimento" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/12/arquitetura-software-operacoes-criticas-governanca/" class="hover:underline">Arquitetura de software para operações críticas e governança</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a governança pode otimizar a arquitetura de software em operações críticas.</p>
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/18/arquitetura-software-governanca-crescimento/" class="hover:underline">Arquitetura de software e governança para crescimento</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como alinhar arquitetura de software e governança para impulsionar seu crescimento.</p>
   </div>
 </article>
   </div>
@@ -241,11 +241,11 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://codafacil.dev/2026/05/15/acelere-desenvolvimento-software-sob-medida-ia/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/acelere-desenvolvimento-software-sob-medida-ia.jpg" alt="Acelere o desenvolvimento de software sob medida com IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://codafacil.dev/2026/05/18/ia-pode-acelerar-desenvolvimento-software-sob-medida/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/ia-pode-acelerar-desenvolvimento-software-sob-medida.jpg" alt="Como a IA pode acelerar o desenvolvimento de software sob medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/05/15/acelere-desenvolvimento-software-sob-medida-ia/" rel="noopener" target="_blank" class="hover:underline">Acelere o desenvolvimento de software sob medida com IA</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como a IA pode otimizar o ciclo de desenvolvimento de software sob medida.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/05/18/ia-pode-acelerar-desenvolvimento-software-sob-medida/" rel="noopener" target="_blank" class="hover:underline">Como a IA pode acelerar o desenvolvimento de software sob medida</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como ferramentas de IA estão transformando o ciclo de desenvolvimento de software, garantindo qualidade e agilidade.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">

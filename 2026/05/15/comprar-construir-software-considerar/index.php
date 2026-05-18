@@ -241,11 +241,11 @@
   <p class="mt-2 text-sm text-white/70">Conteúdo recente dos outros sites do ecossistema.</p>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://codafacil.dev/2026/05/15/acelere-desenvolvimento-software-sob-medida-ia/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/acelere-desenvolvimento-software-sob-medida-ia.jpg" alt="Acelere o desenvolvimento de software sob medida com IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://codafacil.dev/2026/05/18/ia-pode-acelerar-desenvolvimento-software-sob-medida/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/ia-pode-acelerar-desenvolvimento-software-sob-medida.jpg" alt="Como a IA pode acelerar o desenvolvimento de software sob medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/05/15/acelere-desenvolvimento-software-sob-medida-ia/" rel="noopener" target="_blank" class="hover:underline">Acelere o desenvolvimento de software sob medida com IA</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como a IA pode otimizar o ciclo de desenvolvimento de software sob medida.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/05/18/ia-pode-acelerar-desenvolvimento-software-sob-medida/" rel="noopener" target="_blank" class="hover:underline">Como a IA pode acelerar o desenvolvimento de software sob medida</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como ferramentas de IA estão transformando o ciclo de desenvolvimento de software, garantindo qualidade e agilidade.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
@@ -257,11 +257,11 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://fluxointeligenteia.com.br/2026/05/15/permissoes-auditoria-agentes-corporativos-ia/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/permissoes-auditoria-agentes-corporativos-ia.jpg" alt="Permissões e Auditoria em Agentes Corporativos de IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://fluxointeligenteia.com.br/2026/05/18/implementar-agentes-corporativos-ia-seguranca/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/implementar-agentes-corporativos-ia-seguranca.jpg" alt="Como implementar agentes corporativos de IA com segurança" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">FluxoInteligente IA</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/05/15/permissoes-auditoria-agentes-corporativos-ia/" rel="noopener" target="_blank" class="hover:underline">Permissões e Auditoria em Agentes Corporativos de IA</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como gerenciar permissões e auditoria em IA corporativa com n8n.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/05/18/implementar-agentes-corporativos-ia-seguranca/" rel="noopener" target="_blank" class="hover:underline">Como implementar agentes corporativos de IA com segurança</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como garantir permissões e auditoria em agentes corporativos de IA com efetividade.</p>
   </div>
 </article>
   </div>

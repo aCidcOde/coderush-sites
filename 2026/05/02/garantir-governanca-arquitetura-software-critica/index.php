@@ -208,17 +208,17 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/05/18/arquitetura-software-governanca-crescimento/"><img src="../../../../imagens/posts/arquitetura-software-governanca-crescimento.jpg" alt="Arquitetura de software e governança para crescimento" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/18/arquitetura-software-governanca-crescimento/" class="hover:underline">Arquitetura de software e governança para crescimento</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como alinhar arquitetura de software e governança para impulsionar seu crescimento.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="../../../../2026/04/30/comprar-construir-software-escolher/"><img src="../../../../imagens/posts/comprar-construir-software-escolher.jpg" alt="Comprar ou construir software: o que escolher?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/04/30/comprar-construir-software-escolher/" class="hover:underline">Comprar ou construir software: o que escolher?</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda as nuances da decisão entre comprar e construir software sob medida, focando na governança e na integração.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/05/06/arquitetura-software-operacoes-criticas-decisoes-fazem-diferenca/"><img src="../../../../imagens/posts/arquitetura-software-operacoes-criticas-decisoes-fazem-diferenca.jpg" alt="Arquitetura de software para operações críticas: decisões que fazem a diferença" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/06/arquitetura-software-operacoes-criticas-decisoes-fazem-diferenca/" class="hover:underline">Arquitetura de software para operações críticas: decisões que fazem a diferença</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a arquitetura de software impacta operações críticas e a importância da IA nesse cenário.</p>
   </div>
 </article>
   </div>

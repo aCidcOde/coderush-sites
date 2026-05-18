@@ -254,11 +254,11 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://fluxointeligenteia.com.br/2026/05/03/canais-integrados-auditoria-agentes-corporativos-ia/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/canais-integrados-auditoria-agentes-corporativos-ia.jpg" alt="Canais integrados e auditoria" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://fluxointeligenteia.com.br/2026/05/18/implementar-agentes-corporativos-ia-seguranca/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/implementar-agentes-corporativos-ia-seguranca.jpg" alt="Como implementar agentes corporativos de IA com segurança" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">FluxoInteligente IA</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/05/03/canais-integrados-auditoria-agentes-corporativos-ia/" rel="noopener" target="_blank" class="hover:underline">Canais integrados e auditoria</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Para implementar agentes corporativos de IA com governança, é essencial definir permissões por usuário, realizar auditorias constantes e...</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/05/18/implementar-agentes-corporativos-ia-seguranca/" rel="noopener" target="_blank" class="hover:underline">Como implementar agentes corporativos de IA com segurança</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como garantir permissões e auditoria em agentes corporativos de IA com efetividade.</p>
   </div>
 </article>
   </div>

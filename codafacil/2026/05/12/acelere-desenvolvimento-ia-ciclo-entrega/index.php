@@ -206,6 +206,13 @@
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/05/18/ia-pode-acelerar-desenvolvimento-software-sob-medida/"><img src="../../../../imagens/posts/ia-pode-acelerar-desenvolvimento-software-sob-medida.jpg" alt="Como a IA pode acelerar o desenvolvimento de software sob medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/18/ia-pode-acelerar-desenvolvimento-software-sob-medida/" class="hover:underline">Como a IA pode acelerar o desenvolvimento de software sob medida</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como ferramentas de IA estão transformando o ciclo de desenvolvimento de software, garantindo qualidade e agilidade.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="../../../../2026/05/15/acelere-desenvolvimento-software-sob-medida-ia/"><img src="../../../../imagens/posts/acelere-desenvolvimento-software-sob-medida-ia.jpg" alt="Acelere o desenvolvimento de software sob medida com IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/15/acelere-desenvolvimento-software-sob-medida-ia/" class="hover:underline">Acelere o desenvolvimento de software sob medida com IA</a></h3>
@@ -217,13 +224,6 @@
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/09/ia-pode-melhorar-qualidade-codigo-php/" class="hover:underline">Como a IA pode melhorar a qualidade do código em PHP</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como ferramentas de IA podem acelerar o desenvolvimento de software sob medida sem comprometer a qualidade.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/05/06/ia-pode-acelerar-desenvolvimento-software-sob-medida/"><img src="../../../../imagens/posts/ia-pode-acelerar-desenvolvimento-software-sob-medida.jpg" alt="Como a IA pode acelerar o desenvolvimento de software sob medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/06/ia-pode-acelerar-desenvolvimento-software-sob-medida/" class="hover:underline">Como a IA pode acelerar o desenvolvimento de software sob medida</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Explore como a IA aplicada pode otimizar o ciclo de desenvolvimento de software sob medida, garantindo qualidade e agilidade.</p>
   </div>
 </article>
   </div>

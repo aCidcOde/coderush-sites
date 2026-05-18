@@ -1,0 +1,88 @@
+{
+  "date": "2026-05-18",
+  "siteId": "coderush",
+  "postType": "institucional-tecnologia",
+  "focus": "tecnologia",
+  "theme": "governanca de tecnologia para crescimento",
+  "angle": "arquitetura",
+  "slug": "arquitetura-software-governanca-crescimento",
+  "title": "CodeRush: TECNOLOGIA aplicado a arquitetura",
+  "description": "Atualização semanal de tecnologia para CodeRush, com foco em governanca de tecnologia para crescimento.",
+  "sources": [
+    "https://fcamara.com/blog/governanca-ti/",
+    "https://www.gov.br/governodigital/pt-br/estrategias-e-governanca-digital/sisp/documentos/arquivos/guia_de_governanca_de_tic_do_sisp_v_2-0.pdf",
+    "https://www.xsoluti.com.br/",
+    "https://highconcept.com.br/governanca-desenvolvimento-software/",
+    "https://itshow.com.br/governanca-de-ti-arquitetura-ia-software-roi/"
+  ],
+  "status": "draft",
+  "generatedAt": "2026-05-18T14:12:55-03:00",
+  "content": {
+    "eyebrow": "Consultoria técnica",
+    "headline": "Arquitetura de software e governança para crescimento",
+    "summary": "Entenda como alinhar arquitetura de software e governança para impulsionar seu crescimento.",
+    "answerBox": {
+      "question": "Como a governança de tecnologia pode ajudar no crescimento?",
+      "answer": "A governança de tecnologia garante que sua arquitetura de software esteja alinhada às metas de negócio. Isso reduz riscos, melhora a eficiência e facilita a integração com sistemas legados, essencial para o crescimento sustentável."
+    },
+    "tldr": [
+      "Arquitetura de software é crucial para a governança.",
+      "Integração com sistemas legados deve ser planejada.",
+      "A consultoria técnica pode otimizar resultados."
+    ],
+    "sections": [
+      {
+        "type": "prose",
+        "title": "A importância da arquitetura de software na governança",
+        "body": "A arquitetura de software é a base para uma governança eficaz. Ela permite que as iniciativas de tecnologia se conectem diretamente aos objetivos estratégicos da empresa. Uma arquitetura bem definida evita improvisos e reduz riscos, garantindo que as soluções atendam às necessidades de negócio. Para mais insights, consulte o guia sobre [Governança de TI](https://fcamara.com/blog/governanca-ti/)."
+      },
+      {
+        "type": "list",
+        "title": "Sinais de que sua governança precisa de ajustes",
+        "items": [
+          "Dificuldade na integração com sistemas legados",
+          "Processos lentos e burocráticos",
+          "Falta de alinhamento entre TI e negócios",
+          "Baixa visibilidade de dados e métricas",
+          "Reclamações frequentes das equipes sobre ferramentas"
+        ]
+      },
+      {
+        "type": "callout",
+        "body": "Já estruturamos isso em várias empresas. Vale uma conversa para entender seu cenário e como podemos ajudar.",
+        "ctaLabel": "Fale com a CodeRush",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Evite armadilhas comuns na governança de tecnologia",
+        "body": "Um erro comum é não considerar a arquitetura de software nas decisões de governança. Ignorar a integração com sistemas legados pode levar a implementações desastrosas. Além disso, escolher tecnologias sem alinhamento estratégico pode resultar em desperdício de recursos. Sempre busque uma visão holística. Para melhores práticas, veja o [Guia de Governança de TIC do SIS](https://www.gov.br/governodigital/pt-br/estrategias-e-governanca-digital/sisp/documentos/arquivos/guia_de_governanca_de_tic_do_sisp_v_2-0.pdf)."
+      },
+      {
+        "type": "cta-inline",
+        "body": "Vamos conversar sobre como otimizar sua arquitetura de software.",
+        "ctaLabel": "Fale com a CodeRush",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "A importância da consultoria técnica",
+        "body": "A consultoria em tecnologia é essencial para tirar iniciativas do papel. Profissionais experientes podem ajudar a mapear a arquitetura necessária e garantir que as soluções sejam personalizadas para a realidade do seu negócio. Nesse processo, a CodeRush pode oferecer suporte contínuo, alinhando tecnologia e estratégia de forma prática."
+      }
+    ],
+    "faq": [
+      {
+        "q": "O que é governança de tecnologia?",
+        "a": "Governança de tecnologia é um conjunto de práticas e estruturas que garantem o alinhamento entre a tecnologia e os objetivos estratégicos da organização."
+      },
+      {
+        "q": "Como integrar IA em sistemas legados?",
+        "a": "Integrar IA em sistemas legados exige um planejamento cuidadoso, considerando a arquitetura existente e evitando mudanças drásticas que possam causar interrupções."
+      },
+      {
+        "q": "Quais são os benefícios de uma arquitetura de software bem definida?",
+        "a": "Uma arquitetura bem definida melhora a eficiência operacional, facilita a integração de novas tecnologias e reduz riscos associados a falhas de implementação."
+      }
+    ]
+  }
+}

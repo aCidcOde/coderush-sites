@@ -220,10 +220,10 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/05/15/crm-automacao-comissionamento-mmn/"><img src="../../../../imagens/posts/crm-automacao-comissionamento-mmn.jpg" alt="CRM e automação no comissionamento para MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/05/18/crm-automacao-marketing-multinivel-usar/"><img src="../../../../imagens/posts/crm-automacao-marketing-multinivel-usar.jpg" alt="CRM e Automação no Marketing Multinível: Como Usar?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/15/crm-automacao-comissionamento-mmn/" class="hover:underline">CRM e automação no comissionamento para MMN</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como CRM e automação podem otimizar comissionamento em marketing multinível.</p>
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/18/crm-automacao-marketing-multinivel-usar/" class="hover:underline">CRM e Automação no Marketing Multinível: Como Usar?</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como CRM e automação podem otimizar processos no marketing multinível.</p>
   </div>
 </article>
   </div>
@@ -254,11 +254,11 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://coderush.com.br/2026/05/15/comprar-construir-software-considerar/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/comprar-construir-software-considerar.jpg" alt="Comprar ou construir software: o que considerar?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://coderush.com.br/2026/05/18/arquitetura-software-governanca-crescimento/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/arquitetura-software-governanca-crescimento.jpg" alt="Arquitetura de software e governança para crescimento" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">CodeRush</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/05/15/comprar-construir-software-considerar/" rel="noopener" target="_blank" class="hover:underline">Comprar ou construir software: o que considerar?</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda os prós e contras de construir ou comprar software sob medida para sua empresa.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/05/18/arquitetura-software-governanca-crescimento/" rel="noopener" target="_blank" class="hover:underline">Arquitetura de software e governança para crescimento</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como alinhar arquitetura de software e governança para impulsionar seu crescimento.</p>
   </div>
 </article>
   </div>

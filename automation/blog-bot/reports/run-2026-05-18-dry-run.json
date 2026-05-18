@@ -1,0 +1,95 @@
+{
+  "mode": "dry-run",
+  "date": "2026-05-18",
+  "timezone": "America/Sao_Paulo",
+  "focus": "tecnologia",
+  "startedAt": "2026-05-18T16:33:47.706Z",
+  "aiProvider": "openrouter",
+  "sites": [
+    {
+      "siteId": "coderush",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "arquitetura",
+      "theme": "governanca de tecnologia para crescimento",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/coderush/2026-05-18/governanca-tecnologia-arquitetura-crescer-seguranca.json",
+      "markdownPath": "automation/blog-bot/out/coderush/2026-05-18/governanca-tecnologia-arquitetura-crescer-seguranca.md"
+    },
+    {
+      "siteId": "codafacil",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "tooling de IA para devs",
+      "theme": "entrega de produtos digitais com governanca tecnica",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/codafacil/2026-05-18/acelerar-entrega-produtos-digitais-ia.json",
+      "markdownPath": "automation/blog-bot/out/codafacil/2026-05-18/acelerar-entrega-produtos-digitais-ia.md"
+    },
+    {
+      "siteId": "fluxointeligenteia",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "Link",
+      "theme": "permissoes e auditoria em IA corporativa",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/fluxointeligenteia/2026-05-18/permissoes-auditoria-agentes-corporativos-ia.json",
+      "markdownPath": "automation/blog-bot/out/fluxointeligenteia/2026-05-18/permissoes-auditoria-agentes-corporativos-ia.md"
+    },
+    {
+      "siteId": "sistemavendadireta",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "MMN",
+      "theme": "crm e automacao para marketing multinivel",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/sistemavendadireta/2026-05-18/crm-automacao-marketing-multinivel.json",
+      "markdownPath": "automation/blog-bot/out/sistemavendadireta/2026-05-18/crm-automacao-marketing-multinivel.md"
+    },
+    {
+      "siteId": "emergency",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "due diligence imobiliaria",
+      "theme": "compliance corporativo apoiado em certidoes cartorarias",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/emergency/2026-05-18/due-diligence-imobiliaria-certidoes-online-2023.json",
+      "markdownPath": "automation/blog-bot/out/emergency/2026-05-18/due-diligence-imobiliaria-certidoes-online-2023.md"
+    }
+  ],
+  "duplications": [],
+  "fallbackCount": 0,
+  "allFallback": false,
+  "finishedAt": "2026-05-18T16:34:57.419Z",
+  "ok": true
+}

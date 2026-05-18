@@ -1,0 +1,86 @@
+{
+  "date": "2026-05-18",
+  "siteId": "coderush",
+  "postType": "institucional-tecnologia",
+  "focus": "tecnologia",
+  "theme": "governanca de tecnologia para crescimento",
+  "angle": "arquitetura",
+  "slug": "governanca-tecnologia-arquitetura-crescer-seguranca",
+  "title": "CodeRush: TECNOLOGIA aplicado a arquitetura",
+  "description": "Atualização semanal de tecnologia para CodeRush, com foco em governanca de tecnologia para crescimento.",
+  "sources": [
+    "https://fcamara.com/blog/governanca-ti/",
+    "https://www.gov.br/governodigital/pt-br/estrategias-e-governanca-digital/sisp/documentos/arquivos/guia_de_governanca_de_tic_do_sisp_v_2-0.pdf",
+    "https://www.xsoluti.com.br/",
+    "https://highconcept.com.br/governanca-desenvolvimento-software/",
+    "https://itshow.com.br/governanca-de-ti-arquitetura-ia-software-roi/"
+  ],
+  "status": "draft",
+  "generatedAt": "2026-05-18T13:33:47-03:00",
+  "content": {
+    "eyebrow": "Consultoria técnica",
+    "headline": "Governança de tecnologia: arquitetura para crescer com segurança",
+    "summary": "Entenda como uma boa arquitetura de software pode ajudar na governança de tecnologia e no crescimento seguro.",
+    "answerBox": {
+      "question": "Como a arquitetura de software ajuda na governança de tecnologia?",
+      "answer": "Uma arquitetura de software bem estruturada garante que as iniciativas de tecnologia estejam alinhadas às regras de negócio, facilitando a integração com sistemas legados e evitando improvisos que podem comprometer a operação."
+    },
+    "tldr": [
+      "Arquitetura de software é essencial para governança",
+      "Integração com sistemas legados é possível",
+      "Consultoria pode otimizar sua estratégia"
+    ],
+    "sections": [
+      {
+        "type": "prose",
+        "title": "A importância da arquitetura de software",
+        "body": "Uma arquitetura de software sólida é o alicerce para a governança de tecnologia. Ela não só organiza os processos, mas também assegura que as soluções atendam às necessidades do negócio. Como aponta o [Guia de Governança de TIC do SIS](https://www.gov.br/governodigital/pt-br/estrategias-e-governanca-digital/sisp/documentos/arquivos/guia_de_governanca_de_tic_do_sisp_v_2-0.pdf), uma boa estrutura minimiza riscos e facilita a adaptação a mudanças."
+      },
+      {
+        "type": "list",
+        "title": "Critérios para uma boa arquitetura",
+        "items": [
+          "Alinhamento com as regras de negócio existentes",
+          "Facilidade de integração com sistemas legados",
+          "Escalabilidade para atender ao crescimento",
+          "Manutenibilidade e documentação clara",
+          "Segurança desde a concepção"
+        ]
+      },
+      {
+        "type": "callout",
+        "body": "Já estruturamos isso em várias empresas. Vale uma conversa se você busca implementar ou ajustar sua arquitetura.",
+        "ctaLabel": "Fale com a CodeRush",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Trade-offs a considerar",
+        "body": "Ao definir a arquitetura, é preciso considerar trade-offs entre flexibilidade e controle. Por exemplo, soluções muito customizadas podem atender perfeitamente às necessidades, mas podem ser mais difíceis de manter. A [governança de TI na prática](https://itshow.com.br/governanca-de-ti-arquitetura-ia-software-roi/) aborda esses pontos, ressaltando a importância de um equilíbrio saudável."
+      },
+      {
+        "type": "cta-inline",
+        "body": "Uma estratégia bem definida pode fazer toda a diferença na sua operação."
+      },
+      {
+        "type": "prose",
+        "title": "Integrando IA e modernização",
+        "body": "A modernização de sistemas pode incluir a aplicação de IA, que, quando bem integrada, traz insights valiosos. Em cenários onde já atuamos, como em projetos de IA aplicada, notamos que a arquitetura planejada facilita essa integração, garantindo que novas tecnologias não quebrem os processos já existentes."
+      }
+    ],
+    "faq": [
+      {
+        "q": "O que é governança de tecnologia?",
+        "a": "Governança de tecnologia refere-se às práticas e processos que asseguram que a tecnologia atenda aos objetivos de negócios de forma eficaz e segura."
+      },
+      {
+        "q": "Como saber se minha arquitetura está adequada?",
+        "a": "Uma análise de alinhamento com as regras de negócio e a capacidade de integrar com sistemas legados são bons indicadores da adequação da arquitetura."
+      },
+      {
+        "q": "Quais são os benefícios da consultoria de tecnologia?",
+        "a": "Uma consultoria de tecnologia pode oferecer expertise para implementar soluções adequadas, otimizar processos e evitar falhas comuns na execução de projetos."
+      }
+    ]
+  }
+}

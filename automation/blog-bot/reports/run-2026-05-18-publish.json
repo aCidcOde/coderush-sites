@@ -1,0 +1,207 @@
+{
+  "mode": "publish",
+  "date": "2026-05-18",
+  "timezone": "America/Sao_Paulo",
+  "focus": "tecnologia",
+  "startedAt": "2026-05-18T17:12:55.658Z",
+  "aiProvider": "openrouter",
+  "sites": [
+    {
+      "siteId": "coderush",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "arquitetura",
+      "theme": "governanca de tecnologia para crescimento",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/coderush/2026-05-18/arquitetura-software-governanca-crescimento.json",
+      "markdownPath": "automation/blog-bot/out/coderush/2026-05-18/arquitetura-software-governanca-crescimento.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "2026/05/18/arquitetura-software-governanca-crescimento/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Capa com fundo azul-marinho profundo, detalhes em azul elétrico e violeta, transmitindo sofisticação e inovação tecnológica",
+        "coverLeakage": {
+          "skipped": true,
+          "reason": "tesseract not installed"
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "index.php",
+          "blog/index.php",
+          "2026/05/18/arquitetura-software-governanca-crescimento/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "codafacil",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "tooling de IA para devs",
+      "theme": "entrega de produtos digitais com governanca tecnica",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/codafacil/2026-05-18/ia-pode-acelerar-desenvolvimento-software-sob-medida.json",
+      "markdownPath": "automation/blog-bot/out/codafacil/2026-05-18/ia-pode-acelerar-desenvolvimento-software-sob-medida.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "codafacil/2026/05/18/ia-pode-acelerar-desenvolvimento-software-sob-medida/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "existing",
+        "coverAlt": "",
+        "coverLeakage": null
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "codafacil/index.php",
+          "codafacil/blog/index.php",
+          "codafacil/2026/05/18/ia-pode-acelerar-desenvolvimento-software-sob-medida/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "fluxointeligenteia",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "Link",
+      "theme": "permissoes e auditoria em IA corporativa",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/fluxointeligenteia/2026-05-18/implementar-agentes-corporativos-ia-seguranca.json",
+      "markdownPath": "automation/blog-bot/out/fluxointeligenteia/2026-05-18/implementar-agentes-corporativos-ia-seguranca.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "fluxointeligenteia/2026/05/18/implementar-agentes-corporativos-ia-seguranca/index.html",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Cenário digital com fundo em dark esmeralda, agentes corporativos interagindo em verde esmeralda e ciano, atmosfera de segurança e integração",
+        "coverLeakage": {
+          "skipped": true,
+          "reason": "tesseract not installed"
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    },
+    {
+      "siteId": "sistemavendadireta",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "MMN",
+      "theme": "crm e automacao para marketing multinivel",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/sistemavendadireta/2026-05-18/crm-automacao-marketing-multinivel-usar.json",
+      "markdownPath": "automation/blog-bot/out/sistemavendadireta/2026-05-18/crm-automacao-marketing-multinivel-usar.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "sistemavendadireta/2026/05/18/crm-automacao-marketing-multinivel-usar/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Capa apresenta gráfico de crescimento em azul profundo e azul corporativo, com elementos brancos, transmitindo confiança e profissionalismo",
+        "coverLeakage": {
+          "skipped": true,
+          "reason": "tesseract not installed"
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "sistemavendadireta/index.php",
+          "sistemavendadireta/blog/index.php",
+          "sistemavendadireta/2026/05/18/crm-automacao-marketing-multinivel-usar/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "emergency",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "due diligence imobiliaria",
+      "theme": "compliance corporativo apoiado em certidoes cartorarias",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/emergency/2026-05-18/due-diligence-imobiliaria-importancia-certidoes-online.json",
+      "markdownPath": "automation/blog-bot/out/emergency/2026-05-18/due-diligence-imobiliaria-importancia-certidoes-online.md",
+      "publishResult": {
+        "target": "api",
+        "apiStatus": 201,
+        "apiUrl": "https://emergency.com.br/blog/due-diligence-imobiliaria-importancia-certidoes-online",
+        "apiId": 9,
+        "apiPublishedAt": "2026-05-18T14:18:15-03:00",
+        "coverPath": "automation/blog-bot/out/emergency/covers/due-diligence-imobiliaria-importancia-certidoes-online.jpg",
+        "coverSize": 247755,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Capa de artigo com fundo deep-navy e detalhes em dourado, transmitindo sofisticação e credibilidade em um ambiente executivo iluminado",
+        "coverLeakage": {
+          "skipped": true,
+          "reason": "tesseract not installed"
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    }
+  ],
+  "duplications": [],
+  "relatedRefresh": {
+    "touched": 30,
+    "unchanged": 1,
+    "errors": [],
+    "totalCards": 27,
+    "totalFiles": 31
+  },
+  "fallbackCount": 0,
+  "allFallback": false,
+  "finishedAt": "2026-05-18T17:21:04.768Z",
+  "ok": true
+}
