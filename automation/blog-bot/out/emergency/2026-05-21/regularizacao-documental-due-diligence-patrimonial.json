@@ -1,0 +1,88 @@
+{
+  "date": "2026-05-21",
+  "siteId": "emergency",
+  "postType": "due-diligence-certidoes",
+  "focus": "ia",
+  "theme": "regularizacao documental antes de transacao patrimonial",
+  "angle": "compliance",
+  "slug": "regularizacao-documental-due-diligence-patrimonial",
+  "title": "Emergency Documentação: IA aplicado a compliance",
+  "description": "Atualização semanal de ia para Emergency Documentação, com foco em regularizacao documental antes de transacao patrimonial.",
+  "sources": [
+    "https://emergency.com.br/blog/regularizacao-documental-antes-transacoes-patrimoniais",
+    "https://idpdoc.com/conteudos/due-diligence-documental/",
+    "https://www.sefaz.ba.gov.br/docs/controle-interno/manual_basico_due_diligence_diligencia_previa.pdf",
+    "https://nradvocacia.com.br/due-diligence-imobiliaria-guia-do-investidor/",
+    "https://www.jusbrasil.com.br/artigos/regularizacao-de-imoveis-e-due-diligence-imobiliaria-o-risco-de-comprar-imovel-com-dividas-ou-irregularidades/5689832023"
+  ],
+  "status": "draft",
+  "generatedAt": "2026-05-21T08:12:57-03:00",
+  "content": {
+    "eyebrow": "Guia prático",
+    "headline": "Regularização documental em due diligence patrimonial",
+    "summary": "Entenda a importância da regularização documental antes de fechar uma transação patrimonial.",
+    "answerBox": {
+      "question": "O que é regularização documental antes de uma transação patrimonial?",
+      "answer": "A regularização documental envolve a verificação e a adequação de todos os documentos necessários para garantir a conformidade legal antes de uma transação patrimonial, minimizando riscos e atrasos."
+    },
+    "tldr": [
+      "A regularização documental é crucial para transações seguras.",
+      "Certidões online facilitam o processo de due diligence.",
+      "Apoio especializado pode evitar retrabalhos e riscos."
+    ],
+    "sections": [
+      {
+        "type": "prose",
+        "title": "Importância da regularização documental",
+        "body": "A regularização documental é um passo essencial em qualquer transação patrimonial. Sem ela, o comprador pode enfrentar riscos legais que podem atrasar ou até inviabilizar o negócio. Documentos incompletos ou inconsistentes podem gerar problemas sérios, como litígios ou a perda de ativos. Portanto, investir tempo na regularização é garantir uma transação mais tranquila."
+      },
+      {
+        "type": "list",
+        "title": "Pontos-chave na regularização documental",
+        "items": [
+          "Verifique a validade das certidões cartorárias.",
+          "Assegure-se da regularidade fiscal do vendedor.",
+          "Confirme a inexistência de ônus sobre o imóvel.",
+          "Avalie a situação registral da propriedade.",
+          "Realize uma investigação patrimonial do vendedor."
+        ]
+      },
+      {
+        "type": "callout",
+        "body": "Já estruturamos isso em diversos clientes. Vale uma conversa sobre como podemos apoiar sua equipe na regularização documental. Estamos aqui para ajudar!",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Desafios comuns na due diligence",
+        "body": "Um dos maiores desafios na due diligence é a falta de informações claras ou a dificuldade em acessar documentos necessários. É comum que as partes envolvidas tenham diferentes interpretações sobre a documentação. Nesse tipo de cenário, Emergency Documentação costuma atuar, oferecendo suporte humano que complementa a emissão automática de certidões, garantindo que todos os detalhes sejam conferidos."
+      },
+      {
+        "type": "cta-inline",
+        "body": "Vamos discutir como garantir uma due diligence eficiente e segura.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "O que evitar na regularização documental",
+        "body": "Evite confiar apenas em informações verbais ou documentos não oficiais. A falta de uma checklist pode levar a descuidos que comprometem o negócio. Além disso, não subestime a importância de prazos; a lentidão no processo de regularização pode gerar custos adicionais e riscos. Uma abordagem proativa e bem estruturada é sempre o melhor caminho."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Quais são as certidões obrigatórias em uma compra de imóvel?",
+        "a": "As certidões obrigatórias incluem certidão de ônus reais, certidão negativa de débito e certidão de ações cíveis."
+      },
+      {
+        "q": "Como fazer due diligence imobiliária de matrícula?",
+        "a": "Verifique a regularidade da matrícula no cartório, analise o histórico de propriedade e consulte possíveis ônus."
+      },
+      {
+        "q": "O que é investigação patrimonial?",
+        "a": "Investigação patrimonial é o processo de averiguação da situação financeira e legal de um potencial vendedor ou fornecedor."
+      }
+    ]
+  }
+}

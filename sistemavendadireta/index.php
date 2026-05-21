@@ -753,6 +753,15 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-HOME-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/21/tecnologia-vendas-diretas-escala-mmn-ia/" data-blog-image="imagens/posts/tecnologia-vendas-diretas-escala-mmn-ia.jpg" data-blog-slug="tecnologia-vendas-diretas-escala-mmn-ia" data-blog-date="2026-05-21">
+  <a href="2026/05/21/tecnologia-vendas-diretas-escala-mmn-ia/">
+    <img src="imagens/posts/tecnologia-vendas-diretas-escala-mmn-ia.jpg" alt="Tecnologia para Vendas Diretas em Escala: MMN e IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="2026/05/21/tecnologia-vendas-diretas-escala-mmn-ia/" class="hover:underline">Tecnologia para Vendas Diretas em Escala: MMN e IA</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a tecnologia e a IA podem otimizar processos em marketing multinível.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/18/crm-automacao-marketing-multinivel-usar/" data-blog-image="imagens/posts/crm-automacao-marketing-multinivel-usar.jpg" data-blog-slug="crm-automacao-marketing-multinivel-usar" data-blog-date="2026-05-18">
   <a href="2026/05/18/crm-automacao-marketing-multinivel-usar/">
     <img src="imagens/posts/crm-automacao-marketing-multinivel-usar.jpg" alt="CRM e Automação no Marketing Multinível: Como Usar?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
@@ -769,15 +778,6 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="2026/05/15/crm-automacao-comissionamento-mmn/" class="hover:underline">CRM e automação no comissionamento para MMN</a></h2>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como CRM e automação podem otimizar comissionamento em marketing multinível.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/12/governanca-comercial-dados-ia-podem-melhorar-resultados/" data-blog-image="imagens/posts/governanca-comercial-dados-ia-podem-melhorar-resultados.jpg" data-blog-slug="governanca-comercial-dados-ia-podem-melhorar-resultados" data-blog-date="2026-05-12">
-  <a href="2026/05/12/governanca-comercial-dados-ia-podem-melhorar-resultados/">
-    <img src="imagens/posts/governanca-comercial-dados-ia-podem-melhorar-resultados.jpg" alt="Governança Comercial: Como Dados e IA Podem Melhorar Resultados" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-  </a>
-  <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="2026/05/12/governanca-comercial-dados-ia-podem-melhorar-resultados/" class="hover:underline">Governança Comercial: Como Dados e IA Podem Melhorar Resultados</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a governança comercial, aliada à IA, pode otimizar processos e resultados em vendas diretas.</p>
   </div>
 </article>
 <!-- BLOG-HOME-CARDS:END -->

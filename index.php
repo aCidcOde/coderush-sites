@@ -691,6 +691,15 @@ $seoLdGraph = [
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-HOME-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/21/construir-comprar-software-considerar/" data-blog-image="imagens/posts/construir-comprar-software-considerar.jpg" data-blog-slug="construir-comprar-software-considerar" data-blog-date="2026-05-21">
+  <a href="2026/05/21/construir-comprar-software-considerar/">
+    <img src="imagens/posts/construir-comprar-software-considerar.jpg" alt="Construir ou comprar software: o que considerar?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="2026/05/21/construir-comprar-software-considerar/" class="hover:underline">Construir ou comprar software: o que considerar?</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como escolher entre desenvolver ou adquirir software sob medida.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/18/arquitetura-software-governanca-crescimento/" data-blog-image="imagens/posts/arquitetura-software-governanca-crescimento.jpg" data-blog-slug="arquitetura-software-governanca-crescimento" data-blog-date="2026-05-18">
   <a href="2026/05/18/arquitetura-software-governanca-crescimento/">
     <img src="imagens/posts/arquitetura-software-governanca-crescimento.jpg" alt="Arquitetura de software e governança para crescimento" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
@@ -707,15 +716,6 @@ $seoLdGraph = [
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="2026/05/15/comprar-construir-software-considerar/" class="hover:underline">Comprar ou construir software: o que considerar?</a></h2>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda os prós e contras de construir ou comprar software sob medida para sua empresa.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/12/arquitetura-software-operacoes-criticas-governanca/" data-blog-image="imagens/posts/arquitetura-software-operacoes-criticas-governanca.jpg" data-blog-slug="arquitetura-software-operacoes-criticas-governanca" data-blog-date="2026-05-12">
-  <a href="2026/05/12/arquitetura-software-operacoes-criticas-governanca/">
-    <img src="imagens/posts/arquitetura-software-operacoes-criticas-governanca.jpg" alt="Arquitetura de software para operações críticas e governança" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-  </a>
-  <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="2026/05/12/arquitetura-software-operacoes-criticas-governanca/" class="hover:underline">Arquitetura de software para operações críticas e governança</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a governança pode otimizar a arquitetura de software em operações críticas.</p>
   </div>
 </article>
 <!-- BLOG-HOME-CARDS:END -->

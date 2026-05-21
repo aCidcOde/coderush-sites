@@ -220,10 +220,10 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/05/18/crm-automacao-marketing-multinivel-usar/"><img src="../../../../imagens/posts/crm-automacao-marketing-multinivel-usar.jpg" alt="CRM e Automação no Marketing Multinível: Como Usar?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/05/21/tecnologia-vendas-diretas-escala-mmn-ia/"><img src="../../../../imagens/posts/tecnologia-vendas-diretas-escala-mmn-ia.jpg" alt="Tecnologia para Vendas Diretas em Escala: MMN e IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/18/crm-automacao-marketing-multinivel-usar/" class="hover:underline">CRM e Automação no Marketing Multinível: Como Usar?</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como CRM e automação podem otimizar processos no marketing multinível.</p>
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/21/tecnologia-vendas-diretas-escala-mmn-ia/" class="hover:underline">Tecnologia para Vendas Diretas em Escala: MMN e IA</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a tecnologia e a IA podem otimizar processos em marketing multinível.</p>
   </div>
 </article>
   </div>
@@ -246,19 +246,19 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://codafacil.dev/2026/05/12/acelere-desenvolvimento-ia-ciclo-entrega/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/acelere-desenvolvimento-ia-ciclo-entrega.jpg" alt="Acelere seu desenvolvimento com IA no ciclo de entrega" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://codafacil.dev/2026/05/21/ia-pode-elevar-qualidade-software-sob-medida/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/ia-pode-elevar-qualidade-software-sob-medida.jpg" alt="Como a IA pode elevar a qualidade do seu software sob medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/05/12/acelere-desenvolvimento-ia-ciclo-entrega/" rel="noopener" target="_blank" class="hover:underline">Acelere seu desenvolvimento com IA no ciclo de entrega</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como integrar IA no desenvolvimento de software sob medida sem comprometer a qualidade.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/05/21/ia-pode-elevar-qualidade-software-sob-medida/" rel="noopener" target="_blank" class="hover:underline">Como a IA pode elevar a qualidade do seu software sob medida</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como integrar IA no desenvolvimento de software sob medida sem comprometer a qualidade.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://coderush.com.br/2026/05/18/arquitetura-software-governanca-crescimento/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/arquitetura-software-governanca-crescimento.jpg" alt="Arquitetura de software e governança para crescimento" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://coderush.com.br/2026/05/21/construir-comprar-software-considerar/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/construir-comprar-software-considerar.jpg" alt="Construir ou comprar software: o que considerar?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">CodeRush</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/05/18/arquitetura-software-governanca-crescimento/" rel="noopener" target="_blank" class="hover:underline">Arquitetura de software e governança para crescimento</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como alinhar arquitetura de software e governança para impulsionar seu crescimento.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/05/21/construir-comprar-software-considerar/" rel="noopener" target="_blank" class="hover:underline">Construir ou comprar software: o que considerar?</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como escolher entre desenvolver ou adquirir software sob medida.</p>
   </div>
 </article>
   </div>
