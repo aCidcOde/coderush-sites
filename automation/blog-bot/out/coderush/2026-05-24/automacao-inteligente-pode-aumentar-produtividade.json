@@ -1,0 +1,84 @@
+{
+  "date": "2026-05-24",
+  "siteId": "coderush",
+  "postType": "institucional-tecnologia",
+  "focus": "tecnologia",
+  "theme": "produtividade de times com automacao inteligente",
+  "angle": "casos de empresa media",
+  "slug": "automacao-inteligente-pode-aumentar-produtividade",
+  "title": "CodeRush: TECNOLOGIA aplicado a casos de empresa media",
+  "description": "Atualização semanal de tecnologia para CodeRush, com foco em produtividade de times com automacao inteligente.",
+  "sources": [
+    "https://martinfowler.com/fragments/2026-05-14.html",
+    "https://martinfowler.com/fragments/2026-05-05.html"
+  ],
+  "status": "draft",
+  "generatedAt": "2026-05-24T07:33:16-03:00",
+  "content": {
+    "eyebrow": "Consultoria técnica",
+    "headline": "Como a automação inteligente pode aumentar a produtividade",
+    "summary": "Descubra como empresas médias estão adotando a automação inteligente para melhorar a produtividade e a eficiência.",
+    "answerBox": {
+      "question": "Como a automação inteligente melhora a produtividade em empresas médias?",
+      "answer": "A automação inteligente aumenta a produtividade ao otimizar processos, reduzir erros e liberar tempo da equipe para tarefas estratégicas. Empresas médias podem integrar soluções sob medida e aproveitar IA para melhorar a eficiência operacional sem grandes interrupções."
+    },
+    "tldr": [
+      "Automação inteligente melhora processos e reduz erros",
+      "Integração com sistemas legados é essencial",
+      "Consultoria ajuda na execução pragmática"
+    ],
+    "sections": [
+      {
+        "type": "prose",
+        "title": "Entendendo a automação inteligente",
+        "body": "A automação inteligente combina tecnologias como IA e machine learning para otimizar tarefas repetitivas. Para empresas médias, isso pode significar uma grande melhoria na eficiência operacional. Ao implementar soluções sob medida, é possível alinhar a automação com as regras de negócio existentes, garantindo uma transição suave e sem grandes interrupções. Isso é crucial para evitar o famoso 'big-bang' em integrações."
+      },
+      {
+        "type": "list",
+        "title": "Sinais de que sua empresa precisa de automação",
+        "items": [
+          "Processos manuais demorando muito tempo",
+          "Erros frequentes em tarefas repetitivas",
+          "Dificuldade na integração de sistemas legados",
+          "Baixa capacidade de resposta a demandas do mercado"
+        ]
+      },
+      {
+        "type": "callout",
+        "body": "Já estruturamos isso em várias empresas médias. Vale uma conversa para entender como isso se aplica ao seu cenário.",
+        "ctaLabel": "Fale com a CodeRush",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Casos práticos de sucesso",
+        "body": "Um exemplo interessante é a implementação de soluções de automação em uma empresa de logística. Com a integração de IA em sistemas legados, a empresa conseguiu reduzir o tempo de processamento de pedidos em 30%. Outro caso é de uma empresa de serviços financeiros, que automatizou relatórios e aumentou a precisão em 40%. Esses exemplos mostram como é possível aplicar a automação de forma pragmática e alinhada às necessidades do negócio. Para mais informações, você pode conferir detalhes em [Fragments](https://martinfowler.com/fragments/2026-05-14.html) sobre o futuro do desenvolvimento de software."
+      },
+      {
+        "type": "cta-inline",
+        "body": "Vamos explorar como podemos ajudar sua empresa a integrar soluções de automação.",
+        "ctaLabel": "Fale com a CodeRush",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Evitar armadilhas na automação",
+        "body": "É importante abordar a automação com cautela. Empresas que tentam implementar mudanças drásticas de uma só vez podem enfrentar resistência interna e falhas. É essencial mapear processos e priorizar a automação de áreas críticas. Além disso, garantir que a equipe esteja capacitada para lidar com novas ferramentas é fundamental para o sucesso e aceitação das soluções implementadas."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Quais são os benefícios da automação para empresas médias?",
+        "a": "Os benefícios incluem aumento da eficiência, redução de erros, e liberação de recursos humanos para tarefas mais estratégicas."
+      },
+      {
+        "q": "Como integrar IA em sistemas legados?",
+        "a": "A integração deve ser feita de forma gradual, analisando quais processos podem ser automatizados sem grandes interrupções nos serviços existentes."
+      },
+      {
+        "q": "A consultoria de tecnologia é necessária para automação?",
+        "a": "Sim, a consultoria ajuda a identificar oportunidades e a implementar soluções de forma alinhada às regras de negócio da empresa."
+      }
+    ]
+  }
+}

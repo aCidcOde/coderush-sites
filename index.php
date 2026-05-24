@@ -691,6 +691,15 @@ $seoLdGraph = [
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-HOME-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/24/automacao-inteligente-pode-aumentar-produtividade/" data-blog-image="imagens/posts/automacao-inteligente-pode-aumentar-produtividade.jpg" data-blog-slug="automacao-inteligente-pode-aumentar-produtividade" data-blog-date="2026-05-24">
+  <a href="2026/05/24/automacao-inteligente-pode-aumentar-produtividade/">
+    <img src="imagens/posts/automacao-inteligente-pode-aumentar-produtividade.jpg" alt="Como a automação inteligente pode aumentar a produtividade" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="2026/05/24/automacao-inteligente-pode-aumentar-produtividade/" class="hover:underline">Como a automação inteligente pode aumentar a produtividade</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como empresas médias estão adotando a automação inteligente para melhorar a produtividade e a eficiência.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/21/construir-comprar-software-considerar/" data-blog-image="imagens/posts/construir-comprar-software-considerar.jpg" data-blog-slug="construir-comprar-software-considerar" data-blog-date="2026-05-21">
   <a href="2026/05/21/construir-comprar-software-considerar/">
     <img src="imagens/posts/construir-comprar-software-considerar.jpg" alt="Construir ou comprar software: o que considerar?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
@@ -707,15 +716,6 @@ $seoLdGraph = [
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="2026/05/18/arquitetura-software-governanca-crescimento/" class="hover:underline">Arquitetura de software e governança para crescimento</a></h2>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como alinhar arquitetura de software e governança para impulsionar seu crescimento.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/15/comprar-construir-software-considerar/" data-blog-image="imagens/posts/comprar-construir-software-considerar.jpg" data-blog-slug="comprar-construir-software-considerar" data-blog-date="2026-05-15">
-  <a href="2026/05/15/comprar-construir-software-considerar/">
-    <img src="imagens/posts/comprar-construir-software-considerar.jpg" alt="Comprar ou construir software: o que considerar?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-  </a>
-  <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="2026/05/15/comprar-construir-software-considerar/" class="hover:underline">Comprar ou construir software: o que considerar?</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda os prós e contras de construir ou comprar software sob medida para sua empresa.</p>
   </div>
 </article>
 <!-- BLOG-HOME-CARDS:END -->

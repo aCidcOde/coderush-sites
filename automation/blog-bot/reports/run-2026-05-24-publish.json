@@ -1,0 +1,220 @@
+{
+  "mode": "publish",
+  "date": "2026-05-24",
+  "timezone": "America/Sao_Paulo",
+  "focus": "tecnologia",
+  "startedAt": "2026-05-24T10:33:16.661Z",
+  "aiProvider": "openrouter",
+  "sites": [
+    {
+      "siteId": "coderush",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Possível texto vazado na capa (sample: \"<thih\")",
+      "angle": "casos de empresa media",
+      "theme": "produtividade de times com automacao inteligente",
+      "research": {
+        "used": 2,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/coderush/2026-05-24/automacao-inteligente-pode-aumentar-produtividade.json",
+      "markdownPath": "automation/blog-bot/out/coderush/2026-05-24/automacao-inteligente-pode-aumentar-produtividade.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "2026/05/24/automacao-inteligente-pode-aumentar-produtividade/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Capa com fundo azul-marinho profundo, detalhes em azul elétrico e violeta, transmitindo uma atmosfera futurista e tecnológica",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": true,
+          "alphanumericCount": 12,
+          "sample": "<thih"
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "index.php",
+          "blog/index.php",
+          "2026/05/24/automacao-inteligente-pode-aumentar-produtividade/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "codafacil",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "qualidade de codigo",
+      "theme": "integracoes e automacao para operacoes criticas",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/codafacil/2026-05-24/garantir-qualidade-codigo-integracoes-criticas.json",
+      "markdownPath": "automation/blog-bot/out/codafacil/2026-05-24/garantir-qualidade-codigo-integracoes-criticas.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "codafacil/2026/05/24/garantir-qualidade-codigo-integracoes-criticas/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Capa de artigo com fundo verde-petróleo escuro, elementos em azul royal e violeta tech, transmitindo precisão e clareza técnica",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": false,
+          "alphanumericCount": 3,
+          "sample": ""
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "codafacil/index.php",
+          "codafacil/blog/index.php",
+          "codafacil/2026/05/24/garantir-qualidade-codigo-integracoes-criticas/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "fluxointeligenteia",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "auditoria",
+      "theme": "tools seguras para agentes de IA",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/fluxointeligenteia/2026-05-24/auditoria-agentes-corporativos-ia-voce-precisa-saber.json",
+      "markdownPath": "automation/blog-bot/out/fluxointeligenteia/2026-05-24/auditoria-agentes-corporativos-ia-voce-precisa-saber.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "fluxointeligenteia/2026/05/24/auditoria-agentes-corporativos-ia-voce-precisa-saber/index.html",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Cenário com fundo escuro esmeralda e detalhes em verde e ciano, representando controle operacional e integração de agentes de IA",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": false,
+          "alphanumericCount": 0,
+          "sample": ""
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    },
+    {
+      "siteId": "sistemavendadireta",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "campo",
+      "theme": "governanca comercial com dados e ia",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/sistemavendadireta/2026-05-24/governanca-comercial-dados-ia-marketing-multinivel.json",
+      "markdownPath": "automation/blog-bot/out/sistemavendadireta/2026-05-24/governanca-comercial-dados-ia-marketing-multinivel.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "sistemavendadireta/2026/05/24/governanca-comercial-dados-ia-marketing-multinivel/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Gráfico de dados em fundo azul profundo, com elementos em azul corporativo e branco, transmitindo uma atmosfera de governança e confiabilidade",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": false,
+          "alphanumericCount": 4,
+          "sample": ""
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "sistemavendadireta/index.php",
+          "sistemavendadireta/blog/index.php",
+          "sistemavendadireta/2026/05/24/governanca-comercial-dados-ia-marketing-multinivel/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "emergency",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Possivel texto vazado na capa (sample: \"\")",
+      "angle": "M&A",
+      "theme": "regularizacao documental antes de transacao patrimonial",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/emergency/2026-05-24/regularizacao-documental-ma-passo-passo.json",
+      "markdownPath": "automation/blog-bot/out/emergency/2026-05-24/regularizacao-documental-ma-passo-passo.md",
+      "publishResult": {
+        "target": "api",
+        "apiStatus": 201,
+        "apiUrl": "https://emergency.com.br/blog/regularizacao-documental-ma-passo-passo",
+        "apiId": 11,
+        "apiPublishedAt": "2026-05-24T07:39:55-03:00",
+        "coverPath": "automation/blog-bot/out/emergency/covers/regularizacao-documental-ma-passo-passo.jpg",
+        "coverSize": 267289,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Dossiê executivo iluminado em tons deep-navy e acentos dourados, transmitindo sofisticação e autoridade em M&A",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": true,
+          "alphanumericCount": 9,
+          "sample": ""
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    }
+  ],
+  "duplications": [],
+  "relatedRefresh": {
+    "touched": 26,
+    "unchanged": 13,
+    "errors": [],
+    "totalCards": 35,
+    "totalFiles": 39
+  },
+  "fallbackCount": 0,
+  "allFallback": false,
+  "finishedAt": "2026-05-24T10:41:33.219Z",
+  "ok": true
+}
