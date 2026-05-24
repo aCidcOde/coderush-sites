@@ -86,7 +86,7 @@ jobs:
           username: ${{ secrets.MAIL_USERNAME }}
           password: ${{ secrets.MAIL_PASSWORD }}
           subject: ${{ steps.email.outputs.subject }}
-          to: andre@sistemavendadireta.com.br
+          to: acidkp@gmail.com
           from: Blog Bot Coderush <${{ secrets.MAIL_USERNAME }}>
           body: file://automation/blog-bot/reports/last-email-body.txt
           convert_markdown: false
