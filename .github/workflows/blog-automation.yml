@@ -11,6 +11,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 jobs:
   generate-post-drafts:
@@ -51,11 +52,19 @@ jobs:
           git add -A
           if git diff --cached --quiet; then
             echo "Nenhuma alteracao gerada pelo bot — nada a commitar."
+            echo "pushed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
           git commit -m "chore(blog): publicar conteudo multi-site (run ${{ github.run_id }})"
           git pull --rebase origin main
           git push origin HEAD:main
+          echo "pushed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Trigger Deploy workflow
+        if: steps.commit.outputs.pushed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run deploy.yml --ref main --repo ${{ github.repository }}
 
       - name: Build email summary
         if: always()
