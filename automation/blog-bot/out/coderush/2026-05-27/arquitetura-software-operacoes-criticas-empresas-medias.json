@@ -1,0 +1,84 @@
+{
+  "date": "2026-05-27",
+  "siteId": "coderush",
+  "postType": "institucional-tecnologia",
+  "focus": "ia",
+  "theme": "arquitetura de software para operacoes criticas",
+  "angle": "casos de empresa media",
+  "slug": "arquitetura-software-operacoes-criticas-empresas-medias",
+  "title": "CodeRush: IA aplicado a casos de empresa media",
+  "description": "Atualização semanal de ia para CodeRush, com foco em arquitetura de software para operacoes criticas.",
+  "sources": [
+    "https://martinfowler.com/fragments/2026-05-14.html"
+  ],
+  "status": "draft",
+  "generatedAt": "2026-05-27T08:11:47-03:00",
+  "content": {
+    "eyebrow": "Consultoria técnica",
+    "headline": "Arquitetura de software para operações críticas em empresas médias",
+    "summary": "Entenda como implementar uma arquitetura de software sólida para operações críticas, focando na integração com sistemas legados.",
+    "answerBox": {
+      "question": "Como implementar arquitetura de software para operações críticas?",
+      "answer": "Implementar uma arquitetura de software para operações críticas envolve planejar estratégias de integração com sistemas legados, garantir aderência às regras de negócio e priorizar a execução pragmática. A consultoria especializada pode ajudar a evitar improvisos."
+    },
+    "tldr": [
+      "Arquitetura sólida é essencial para operações críticas.",
+      "Integração com sistemas legados deve ser planejada.",
+      "Consultoria de tecnologia traz experiência valiosa."
+    ],
+    "sections": [
+      {
+        "type": "prose",
+        "title": "A importância da arquitetura de software",
+        "body": "Uma arquitetura de software bem estruturada é fundamental para garantir a continuidade das operações em empresas médias, especialmente em setores críticos. Isso não apenas reduz riscos, mas também melhora a eficiência operacional. É preciso considerar a integração com sistemas legados e as regras de negócio existentes, evitando soluções improvisadas que podem comprometer a confiabilidade."
+      },
+      {
+        "type": "list",
+        "title": "Sinais de que sua arquitetura precisa de atenção",
+        "items": [
+          "Dificuldades na integração com sistemas legados.",
+          "Desempenho aquém do esperado em operações críticas.",
+          "Falta de escalabilidade para atender a novos desafios.",
+          "Reatividade a problemas em vez de proatividade.",
+          "Conformidade inadequada com regras de negócio."
+        ]
+      },
+      {
+        "type": "callout",
+        "body": "Vale lembrar que já estruturamos isso em diversas empresas. Uma conversa pode esclarecer como aplicar essas soluções no seu cenário.",
+        "ctaLabel": "Fale com a CodeRush",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Casos práticos de sucesso",
+        "body": "Recentemente, observamos empresas que conseguiram modernizar suas arquiteturas sem interromper operações críticas. Um exemplo é a integração gradual de IA em sistemas legados, como abordado por [Martin Fowler](https://martinfowler.com/fragments/2026-05-14.html). Essa abordagem permite melhorias contínuas e minimiza riscos associados a grandes mudanças. A CodeRush já ajudou clientes a navegar por esses processos, garantindo resultados tangíveis."
+      },
+      {
+        "type": "cta-inline",
+        "body": "Se você está pensando em modernizar sua arquitetura, vale a pena conversar com um especialista.",
+        "ctaLabel": "Fale com a CodeRush",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Evite armadilhas comuns",
+        "body": "Um dos maiores erros é tentar implementar mudanças drásticas de uma só vez. Isso pode causar interrupções significativas. Além disso, desconsiderar as regras de negócio existentes e não planejar a integração com sistemas legados pode resultar em falhas. É crucial adotar uma abordagem gradual e focada, alinhada às necessidades do seu negócio."
+      }
+    ],
+    "faq": [
+      {
+        "q": "O que é arquitetura de software?",
+        "a": "Arquitetura de software é a estrutura fundamental de um sistema, incluindo seus componentes e suas interações. Ela define como os sistemas operam e se integram."
+      },
+      {
+        "q": "Como a IA pode ser integrada em sistemas legados?",
+        "a": "A IA pode ser integrada em sistemas legados através de APIs e microsserviços, permitindo melhorias sem a necessidade de um 'big bang'."
+      },
+      {
+        "q": "Quais são os benefícios de uma consultoria de tecnologia?",
+        "a": "Uma consultoria de tecnologia oferece expertise para evitar erros comuns, otimizar processos e garantir que soluções sejam adequadas às necessidades do negócio."
+      }
+    ]
+  }
+}

@@ -691,6 +691,15 @@ $seoLdGraph = [
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-HOME-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/27/arquitetura-software-operacoes-criticas-empresas-medias/" data-blog-image="imagens/posts/arquitetura-software-operacoes-criticas-empresas-medias.jpg" data-blog-slug="arquitetura-software-operacoes-criticas-empresas-medias" data-blog-date="2026-05-27">
+  <a href="2026/05/27/arquitetura-software-operacoes-criticas-empresas-medias/">
+    <img src="imagens/posts/arquitetura-software-operacoes-criticas-empresas-medias.jpg" alt="Arquitetura de software para operações críticas em empresas médias" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="2026/05/27/arquitetura-software-operacoes-criticas-empresas-medias/" class="hover:underline">Arquitetura de software para operações críticas em empresas médias</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como implementar uma arquitetura de software sólida para operações críticas, focando na integração com sistemas legados.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/24/automacao-inteligente-pode-aumentar-produtividade/" data-blog-image="imagens/posts/automacao-inteligente-pode-aumentar-produtividade.jpg" data-blog-slug="automacao-inteligente-pode-aumentar-produtividade" data-blog-date="2026-05-24">
   <a href="2026/05/24/automacao-inteligente-pode-aumentar-produtividade/">
     <img src="imagens/posts/automacao-inteligente-pode-aumentar-produtividade.jpg" alt="Como a automação inteligente pode aumentar a produtividade" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
@@ -707,15 +716,6 @@ $seoLdGraph = [
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="2026/05/21/construir-comprar-software-considerar/" class="hover:underline">Construir ou comprar software: o que considerar?</a></h2>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como escolher entre desenvolver ou adquirir software sob medida.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/18/arquitetura-software-governanca-crescimento/" data-blog-image="imagens/posts/arquitetura-software-governanca-crescimento.jpg" data-blog-slug="arquitetura-software-governanca-crescimento" data-blog-date="2026-05-18">
-  <a href="2026/05/18/arquitetura-software-governanca-crescimento/">
-    <img src="imagens/posts/arquitetura-software-governanca-crescimento.jpg" alt="Arquitetura de software e governança para crescimento" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-  </a>
-  <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="2026/05/18/arquitetura-software-governanca-crescimento/" class="hover:underline">Arquitetura de software e governança para crescimento</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como alinhar arquitetura de software e governança para impulsionar seu crescimento.</p>
   </div>
 </article>
 <!-- BLOG-HOME-CARDS:END -->

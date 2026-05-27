@@ -1,0 +1,220 @@
+{
+  "mode": "publish",
+  "date": "2026-05-27",
+  "timezone": "America/Sao_Paulo",
+  "focus": "ia",
+  "startedAt": "2026-05-27T11:11:47.274Z",
+  "aiProvider": "openrouter",
+  "sites": [
+    {
+      "siteId": "coderush",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "casos de empresa media",
+      "theme": "arquitetura de software para operacoes criticas",
+      "research": {
+        "used": 1,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/coderush/2026-05-27/arquitetura-software-operacoes-criticas-empresas-medias.json",
+      "markdownPath": "automation/blog-bot/out/coderush/2026-05-27/arquitetura-software-operacoes-criticas-empresas-medias.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "2026/05/27/arquitetura-software-operacoes-criticas-empresas-medias/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Design sofisticado em azul-marinho com detalhes em azul elétrico e violeta, evocando um ambiente tecnológico e moderno",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": false,
+          "alphanumericCount": 2,
+          "sample": ""
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "index.php",
+          "blog/index.php",
+          "2026/05/27/arquitetura-software-operacoes-criticas-empresas-medias/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "codafacil",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "DX",
+      "theme": "integracoes e automacao para operacoes criticas",
+      "research": {
+        "used": 0,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/codafacil/2026-05-27/ia-pode-otimizar-operacoes-criticas-desenvolvimento.json",
+      "markdownPath": "automation/blog-bot/out/codafacil/2026-05-27/ia-pode-otimizar-operacoes-criticas-desenvolvimento.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "codafacil/2026/05/27/ia-pode-otimizar-operacoes-criticas-desenvolvimento/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Capa de artigo com fundo verde-petróleo escuro, detalhes em azul royal e violeta, refletindo um ambiente técnico e preciso de engenharia",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": false,
+          "alphanumericCount": 2,
+          "sample": ""
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "codafacil/index.php",
+          "codafacil/blog/index.php",
+          "codafacil/2026/05/27/ia-pode-otimizar-operacoes-criticas-desenvolvimento/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "fluxointeligenteia",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "tools",
+      "theme": "permissoes e auditoria em IA corporativa",
+      "research": {
+        "used": 0,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/fluxointeligenteia/2026-05-27/permissoes-auditoria-agentes-corporativos-ia.json",
+      "markdownPath": "automation/blog-bot/out/fluxointeligenteia/2026-05-27/permissoes-auditoria-agentes-corporativos-ia.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "fluxointeligenteia/2026/05/27/permissoes-auditoria-agentes-corporativos-ia/index.html",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "existing",
+        "coverAlt": "",
+        "coverLeakage": null
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    },
+    {
+      "siteId": "sistemavendadireta",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "vendas diretas",
+      "theme": "integracoes de pagamento e logistica para MMN",
+      "research": {
+        "used": 0,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/sistemavendadireta/2026-05-27/integrando-pagamentos-logistica-marketing-multinivel.json",
+      "markdownPath": "automation/blog-bot/out/sistemavendadireta/2026-05-27/integrando-pagamentos-logistica-marketing-multinivel.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "sistemavendadireta/2026/05/27/integrando-pagamentos-logistica-marketing-multinivel/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Capa de artigo com fundo azul profundo e azul corporativo, transmitindo confiança e maturidade, com elementos gráficos sobre pagamentos e logística",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": false,
+          "alphanumericCount": 3,
+          "sample": ""
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "sistemavendadireta/index.php",
+          "sistemavendadireta/blog/index.php",
+          "sistemavendadireta/2026/05/27/integrando-pagamentos-logistica-marketing-multinivel/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "emergency",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Possivel texto vazado na capa (sample: \"See\")",
+      "angle": "investigacao patrimonial",
+      "theme": "due diligence societaria em M&A no mercado brasileiro",
+      "research": {
+        "used": 1,
+        "skipped": false,
+        "errors": [
+          {
+            "url": "https://www.jota.info/feed",
+            "error": "This operation was aborted"
+          }
+        ]
+      },
+      "outputPath": "automation/blog-bot/out/emergency/2026-05-27/due-diligence-societaria-ma-brasil.json",
+      "markdownPath": "automation/blog-bot/out/emergency/2026-05-27/due-diligence-societaria-ma-brasil.md",
+      "publishResult": {
+        "target": "api",
+        "apiStatus": 201,
+        "apiUrl": "https://emergency.com.br/blog/due-diligence-societaria-ma-brasil",
+        "apiId": 12,
+        "apiPublishedAt": "2026-05-27T08:17:55-03:00",
+        "coverPath": "automation/blog-bot/out/emergency/covers/due-diligence-societaria-ma-brasil.jpg",
+        "coverSize": 244826,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Capa com fundo deep-navy, detalhes em dourado quente e leve brilho off-white, evocando sofisticação e autoridade jurídica",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": true,
+          "alphanumericCount": 11,
+          "sample": "See"
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    }
+  ],
+  "duplications": [],
+  "relatedRefresh": {
+    "touched": 41,
+    "unchanged": 2,
+    "errors": [],
+    "totalCards": 38,
+    "totalFiles": 43
+  },
+  "fallbackCount": 0,
+  "allFallback": false,
+  "finishedAt": "2026-05-27T11:20:59.476Z",
+  "ok": true
+}

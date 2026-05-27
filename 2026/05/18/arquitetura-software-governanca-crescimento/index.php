@@ -205,6 +205,13 @@
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/05/27/arquitetura-software-operacoes-criticas-empresas-medias/"><img src="../../../../imagens/posts/arquitetura-software-operacoes-criticas-empresas-medias.jpg" alt="Arquitetura de software para operações críticas em empresas médias" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/27/arquitetura-software-operacoes-criticas-empresas-medias/" class="hover:underline">Arquitetura de software para operações críticas em empresas médias</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como implementar uma arquitetura de software sólida para operações críticas, focando na integração com sistemas legados.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="../../../../2026/05/12/arquitetura-software-operacoes-criticas-governanca/"><img src="../../../../imagens/posts/arquitetura-software-operacoes-criticas-governanca.jpg" alt="Arquitetura de software para operações críticas e governança" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/12/arquitetura-software-operacoes-criticas-governanca/" class="hover:underline">Arquitetura de software para operações críticas e governança</a></h3>
@@ -216,13 +223,6 @@
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/02/garantir-governanca-arquitetura-software-critica/" class="hover:underline">Como garantir governança em arquitetura de software crítica</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda a importância da governança na arquitetura de software para operações críticas e como a IA pode auxiliar.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/04/30/comprar-construir-software-escolher/"><img src="../../../../imagens/posts/comprar-construir-software-escolher.jpg" alt="Comprar ou construir software: o que escolher?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/04/30/comprar-construir-software-escolher/" class="hover:underline">Comprar ou construir software: o que escolher?</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda as nuances da decisão entre comprar e construir software sob medida, focando na governança e na integração.</p>
   </div>
 </article>
   </div>
@@ -245,11 +245,11 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://codafacil.dev/2026/05/24/garantir-qualidade-codigo-integracoes-criticas/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/garantir-qualidade-codigo-integracoes-criticas.jpg" alt="Como garantir qualidade de código em integrações críticas" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://codafacil.dev/2026/05/27/ia-pode-otimizar-operacoes-criticas-desenvolvimento/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/ia-pode-otimizar-operacoes-criticas-desenvolvimento.jpg" alt="Como a IA pode otimizar operações críticas no desenvolvimento" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/05/24/garantir-qualidade-codigo-integracoes-criticas/" rel="noopener" target="_blank" class="hover:underline">Como garantir qualidade de código em integrações críticas</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Dicas práticas para manter a qualidade de código em automações e integrações no desenvolvimento de software.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/05/27/ia-pode-otimizar-operacoes-criticas-desenvolvimento/" rel="noopener" target="_blank" class="hover:underline">Como a IA pode otimizar operações críticas no desenvolvimento</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Explore como integrar IA no desenvolvimento de software sob medida para acelerar entregas e manter a qualidade.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">

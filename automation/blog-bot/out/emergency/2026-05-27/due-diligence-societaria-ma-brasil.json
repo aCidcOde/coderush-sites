@@ -1,0 +1,84 @@
+{
+  "date": "2026-05-27",
+  "siteId": "emergency",
+  "postType": "due-diligence-certidoes",
+  "focus": "ia",
+  "theme": "due diligence societaria em M&A no mercado brasileiro",
+  "angle": "investigacao patrimonial",
+  "slug": "due-diligence-societaria-ma-brasil",
+  "title": "Emergency Documentação: IA aplicado a investigacao patrimonial",
+  "description": "Atualização semanal de ia para Emergency Documentação, com foco em due diligence societaria em M&A no mercado brasileiro.",
+  "sources": [
+    "https://capitalaberto.com.br/encontros/mercado-de-carbono-2026/"
+  ],
+  "status": "draft",
+  "generatedAt": "2026-05-27T08:17:55-03:00",
+  "content": {
+    "eyebrow": "Guia prático",
+    "headline": "Due diligence societária em M&A no Brasil",
+    "summary": "Entenda os passos essenciais para uma due diligence societária eficaz em fusões e aquisições.",
+    "answerBox": {
+      "question": "Como fazer due diligence societária em M&A no Brasil?",
+      "answer": "Para uma due diligence societária eficaz em M&A no Brasil, é crucial investigar a saúde financeira, compliance regulatório e a estrutura societária da empresa-alvo. Utilize certidões online para verificar pendências e garantir a regularidade documental."
+    },
+    "tldr": [
+      "Due diligence é essencial em fusões e aquisições.",
+      "Certidões online agilizam o processo de verificação.",
+      "Investigação patrimonial minimiza riscos e retrabalho."
+    ],
+    "sections": [
+      {
+        "type": "prose",
+        "title": "O que é due diligence societária?",
+        "body": "A due diligence societária é um processo de investigação detalhada que avalia a viabilidade de uma transação de M&A. Isso envolve a análise de documentos, contratos e a situação legal da empresa-alvo. O objetivo é identificar riscos que possam impactar a aquisição e assegurar que não haja surpresas desagradáveis após a conclusão do negócio."
+      },
+      {
+        "type": "list",
+        "title": "Principais passos para uma due diligence eficaz",
+        "items": [
+          "Análise de documentos societários e contratos vigentes.",
+          "Verificação de certidões cartorárias e forenses.",
+          "Avaliação de compliance e regulatórios.",
+          "Investigação patrimonial da empresa-alvo.",
+          "Identificação de litígios pendentes."
+        ]
+      },
+      {
+        "type": "callout",
+        "body": "Já estruturamos isso em diversos clientes e, com nosso suporte, você pode evitar retrabalho. Vale uma conversa sobre como podemos ajudar sua equipe a finalizar o processo mais rapidamente.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Importância da investigação patrimonial",
+        "body": "A investigação patrimonial é um componente crucial na due diligence societária. Ela permite a identificação de ativos e passivos que não estão visíveis em documentos convencionais. Com isso, é possível avaliar melhor o valor real da empresa e os riscos associados à aquisição, evitando surpresas financeiras no futuro."
+      },
+      {
+        "type": "cta-inline",
+        "body": "Entre em contato para saber como otimizar sua due diligence.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Cuidado com armadilhas comuns",
+        "body": "Um erro comum na due diligence é não considerar todos os aspectos legais e regulatórios. Isso pode resultar em problemas sérios após a transação. Além disso, confiar apenas em informações fornecidas pela empresa-alvo é arriscado. A utilização de certidões online da Emergency Documentação pode ajudar a mitigar esses riscos e garantir uma análise mais completa."
+      }
+    ],
+    "faq": [
+      {
+        "q": "O que é uma certidão cartorária?",
+        "a": "Uma certidão cartorária é um documento oficial que comprova a situação jurídica de uma pessoa ou empresa, incluindo pendências e registros."
+      },
+      {
+        "q": "Quais certidões são obrigatórias em uma compra de imóvel?",
+        "a": "As certidões obrigatórias incluem a matrícula do imóvel, certidões negativas de débitos fiscais e de ações judiciais."
+      },
+      {
+        "q": "Como validar um fornecedor pessoa jurídica?",
+        "a": "Para validar um fornecedor pessoa jurídica, é importante solicitar certidões de regularidade fiscal e verificar sua situação cadastral na Receita Federal."
+      }
+    ]
+  }
+}

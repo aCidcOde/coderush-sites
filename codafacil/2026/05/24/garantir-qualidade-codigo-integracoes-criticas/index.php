@@ -206,6 +206,13 @@
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/05/27/ia-pode-otimizar-operacoes-criticas-desenvolvimento/"><img src="../../../../imagens/posts/ia-pode-otimizar-operacoes-criticas-desenvolvimento.jpg" alt="Como a IA pode otimizar operações críticas no desenvolvimento" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/27/ia-pode-otimizar-operacoes-criticas-desenvolvimento/" class="hover:underline">Como a IA pode otimizar operações críticas no desenvolvimento</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Explore como integrar IA no desenvolvimento de software sob medida para acelerar entregas e manter a qualidade.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="../../../../2026/05/18/ia-pode-acelerar-desenvolvimento-software-sob-medida/"><img src="../../../../imagens/posts/ia-pode-acelerar-desenvolvimento-software-sob-medida.jpg" alt="Como a IA pode acelerar o desenvolvimento de software sob medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/18/ia-pode-acelerar-desenvolvimento-software-sob-medida/" class="hover:underline">Como a IA pode acelerar o desenvolvimento de software sob medida</a></h3>
@@ -217,13 +224,6 @@
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/09/ia-pode-melhorar-qualidade-codigo-php/" class="hover:underline">Como a IA pode melhorar a qualidade do código em PHP</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como ferramentas de IA podem acelerar o desenvolvimento de software sob medida sem comprometer a qualidade.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/05/03/garantir-qualidade-desenvolvimento-software-sob-medida-ia/"><img src="../../../../imagens/posts/garantir-qualidade-desenvolvimento-software-sob-medida-ia.jpg" alt="Como garantir qualidade no desenvolvimento de software sob medida com IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/03/garantir-qualidade-desenvolvimento-software-sob-medida-ia/" class="hover:underline">Como garantir qualidade no desenvolvimento de software sob medida com IA</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como a IA pode melhorar a qualidade no desenvolvimento de software sob medida e acelerar entregas.</p>
   </div>
 </article>
   </div>
@@ -246,19 +246,19 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://coderush.com.br/2026/05/02/garantir-governanca-arquitetura-software-critica/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/garantir-governanca-arquitetura-software-critica.jpg" alt="Como garantir governança em arquitetura de software crítica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://coderush.com.br/2026/05/27/arquitetura-software-operacoes-criticas-empresas-medias/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/arquitetura-software-operacoes-criticas-empresas-medias.jpg" alt="Arquitetura de software para operações críticas em empresas médias" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">CodeRush</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/05/02/garantir-governanca-arquitetura-software-critica/" rel="noopener" target="_blank" class="hover:underline">Como garantir governança em arquitetura de software crítica</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda a importância da governança na arquitetura de software para operações críticas e como a IA pode auxiliar.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/05/27/arquitetura-software-operacoes-criticas-empresas-medias/" rel="noopener" target="_blank" class="hover:underline">Arquitetura de software para operações críticas em empresas médias</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como implementar uma arquitetura de software sólida para operações críticas, focando na integração com sistemas legados.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://sistemavendadireta.com.br/2026/05/09/integracoes-pagamento-logistica-marketing-multinivel/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/integracoes-pagamento-logistica-marketing-multinivel.jpg" alt="Integrações de pagamento e logística para marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://sistemavendadireta.com.br/2026/05/27/integrando-pagamentos-logistica-marketing-multinivel/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/integrando-pagamentos-logistica-marketing-multinivel.jpg" alt="Integrando Pagamentos e Logística no Marketing Multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Sistema Venda Direta</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/05/09/integracoes-pagamento-logistica-marketing-multinivel/" rel="noopener" target="_blank" class="hover:underline">Integrações de pagamento e logística para marketing multinível</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como integrar pagamentos e logística em operações de marketing multinível para maximizar resultados.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/05/27/integrando-pagamentos-logistica-marketing-multinivel/" rel="noopener" target="_blank" class="hover:underline">Integrando Pagamentos e Logística no Marketing Multinível</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como as integrações de pagamento e logística impactam as vendas diretas.</p>
   </div>
 </article>
   </div>

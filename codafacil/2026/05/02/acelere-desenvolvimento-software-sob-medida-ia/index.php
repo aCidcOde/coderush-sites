@@ -213,17 +213,17 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/05/27/ia-pode-otimizar-operacoes-criticas-desenvolvimento/"><img src="../../../../imagens/posts/ia-pode-otimizar-operacoes-criticas-desenvolvimento.jpg" alt="Como a IA pode otimizar operações críticas no desenvolvimento" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/27/ia-pode-otimizar-operacoes-criticas-desenvolvimento/" class="hover:underline">Como a IA pode otimizar operações críticas no desenvolvimento</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Explore como integrar IA no desenvolvimento de software sob medida para acelerar entregas e manter a qualidade.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="../../../../2026/05/15/acelere-desenvolvimento-software-sob-medida-ia/"><img src="../../../../imagens/posts/acelere-desenvolvimento-software-sob-medida-ia.jpg" alt="Acelere o desenvolvimento de software sob medida com IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/15/acelere-desenvolvimento-software-sob-medida-ia/" class="hover:underline">Acelere o desenvolvimento de software sob medida com IA</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como a IA pode otimizar o ciclo de desenvolvimento de software sob medida.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/05/09/ia-pode-melhorar-qualidade-codigo-php/"><img src="../../../../imagens/posts/ia-pode-melhorar-qualidade-codigo-php.jpg" alt="Como a IA pode melhorar a qualidade do código em PHP" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/09/ia-pode-melhorar-qualidade-codigo-php/" class="hover:underline">Como a IA pode melhorar a qualidade do código em PHP</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como ferramentas de IA podem acelerar o desenvolvimento de software sob medida sem comprometer a qualidade.</p>
   </div>
 </article>
   </div>
@@ -254,11 +254,11 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://fluxointeligenteia.com.br/2026/05/18/implementar-agentes-corporativos-ia-seguranca/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/implementar-agentes-corporativos-ia-seguranca.jpg" alt="Como implementar agentes corporativos de IA com segurança" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://fluxointeligenteia.com.br/2026/05/27/permissoes-auditoria-agentes-corporativos-ia/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/permissoes-auditoria-agentes-corporativos-ia.jpg" alt="Permissões e Auditoria em Agentes Corporativos de IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">FluxoInteligente IA</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/05/18/implementar-agentes-corporativos-ia-seguranca/" rel="noopener" target="_blank" class="hover:underline">Como implementar agentes corporativos de IA com segurança</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como garantir permissões e auditoria em agentes corporativos de IA com efetividade.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/05/27/permissoes-auditoria-agentes-corporativos-ia/" rel="noopener" target="_blank" class="hover:underline">Permissões e Auditoria em Agentes Corporativos de IA</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como garantir governança e segurança em IA corporativa.</p>
   </div>
 </article>
   </div>

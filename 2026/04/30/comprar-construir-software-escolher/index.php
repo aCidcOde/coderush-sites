@@ -208,17 +208,17 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/05/27/arquitetura-software-operacoes-criticas-empresas-medias/"><img src="../../../../imagens/posts/arquitetura-software-operacoes-criticas-empresas-medias.jpg" alt="Arquitetura de software para operações críticas em empresas médias" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/27/arquitetura-software-operacoes-criticas-empresas-medias/" class="hover:underline">Arquitetura de software para operações críticas em empresas médias</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como implementar uma arquitetura de software sólida para operações críticas, focando na integração com sistemas legados.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="../../../../2026/05/21/construir-comprar-software-considerar/"><img src="../../../../imagens/posts/construir-comprar-software-considerar.jpg" alt="Construir ou comprar software: o que considerar?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/21/construir-comprar-software-considerar/" class="hover:underline">Construir ou comprar software: o que considerar?</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como escolher entre desenvolver ou adquirir software sob medida.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/05/09/comprar-construir-software-empresa-precisa-saber/"><img src="../../../../imagens/posts/comprar-construir-software-empresa-precisa-saber.jpg" alt="Comprar ou construir software: o que sua empresa precisa saber" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/09/comprar-construir-software-empresa-precisa-saber/" class="hover:underline">Comprar ou construir software: o que sua empresa precisa saber</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda as vantagens e desvantagens de criar ou adquirir software sob medida para sua empresa.</p>
   </div>
 </article>
   </div>
@@ -241,11 +241,11 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://codafacil.dev/2026/05/24/garantir-qualidade-codigo-integracoes-criticas/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/garantir-qualidade-codigo-integracoes-criticas.jpg" alt="Como garantir qualidade de código em integrações críticas" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://codafacil.dev/2026/05/27/ia-pode-otimizar-operacoes-criticas-desenvolvimento/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/ia-pode-otimizar-operacoes-criticas-desenvolvimento.jpg" alt="Como a IA pode otimizar operações críticas no desenvolvimento" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/05/24/garantir-qualidade-codigo-integracoes-criticas/" rel="noopener" target="_blank" class="hover:underline">Como garantir qualidade de código em integrações críticas</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Dicas práticas para manter a qualidade de código em automações e integrações no desenvolvimento de software.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/05/27/ia-pode-otimizar-operacoes-criticas-desenvolvimento/" rel="noopener" target="_blank" class="hover:underline">Como a IA pode otimizar operações críticas no desenvolvimento</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Explore como integrar IA no desenvolvimento de software sob medida para acelerar entregas e manter a qualidade.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">

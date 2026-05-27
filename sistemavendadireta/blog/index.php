@@ -89,6 +89,15 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-INDEX-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/27/integrando-pagamentos-logistica-marketing-multinivel/" data-blog-image="imagens/posts/integrando-pagamentos-logistica-marketing-multinivel.jpg" data-blog-slug="integrando-pagamentos-logistica-marketing-multinivel" data-blog-date="2026-05-27">
+  <a href="../2026/05/27/integrando-pagamentos-logistica-marketing-multinivel/">
+    <img src="../imagens/posts/integrando-pagamentos-logistica-marketing-multinivel.jpg" alt="Integrando Pagamentos e Logística no Marketing Multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="../2026/05/27/integrando-pagamentos-logistica-marketing-multinivel/" class="hover:underline">Integrando Pagamentos e Logística no Marketing Multinível</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como as integrações de pagamento e logística impactam as vendas diretas.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/24/governanca-comercial-dados-ia-marketing-multinivel/" data-blog-image="imagens/posts/governanca-comercial-dados-ia-marketing-multinivel.jpg" data-blog-slug="governanca-comercial-dados-ia-marketing-multinivel" data-blog-date="2026-05-24">
   <a href="../2026/05/24/governanca-comercial-dados-ia-marketing-multinivel/">
     <img src="../imagens/posts/governanca-comercial-dados-ia-marketing-multinivel.jpg" alt="Governança Comercial com Dados e IA no Marketing Multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
