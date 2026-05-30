@@ -1,0 +1,88 @@
+{
+  "date": "2026-05-30",
+  "siteId": "emergency",
+  "postType": "due-diligence-certidoes",
+  "focus": "tecnologia",
+  "theme": "due diligence imobiliaria com certidoes orientadas",
+  "angle": "compliance",
+  "slug": "due-diligence-imobiliaria-certidoes-compliance",
+  "title": "Emergency Documentação: TECNOLOGIA aplicado a compliance",
+  "description": "Atualização semanal de tecnologia para Emergency Documentação, com foco em due diligence imobiliaria com certidoes orientadas.",
+  "sources": [
+    "https://legalsuite.com.br/blog/imob-due-diligence-imobiliaria",
+    "https://apartamentolivre.com.br/due-diligence-imobiliaria",
+    "https://nradvocacia.com.br/due-diligence-imobiliaria-guia-do-investidor/",
+    "https://calzadoadv.com/checklist-de-due-diligence-imobiliaria-avaliacao-de-risco/",
+    "https://regenteimoveis.com.br/guia/regularizacao-fundiaria/due-diligence-imobiliaria-certidoes/"
+  ],
+  "status": "draft",
+  "generatedAt": "2026-05-30T07:40:33-03:00",
+  "content": {
+    "eyebrow": "Guia Prático",
+    "headline": "Due Diligence Imobiliária: Certidões e Compliance",
+    "summary": "Entenda a importância das certidões online na due diligence imobiliária e como evitar riscos.",
+    "answerBox": {
+      "question": "Como fazer due diligence imobiliária de matrícula?",
+      "answer": "Para realizar uma due diligence imobiliária de matrícula, é essencial verificar a documentação do imóvel, analisar certidões cartorárias, e avaliar possíveis ônus. Utilize serviços de certidões online para obter informações mais rápidas e seguras."
+    },
+    "tldr": [
+      "Certidões online agilizam a due diligence imobiliária.",
+      "Compliance é crucial para evitar riscos legais.",
+      "A Emergency Documentação oferece suporte especializado."
+    ],
+    "sections": [
+      {
+        "type": "prose",
+        "title": "Importância da Due Diligence Imobiliária",
+        "body": "A due diligence imobiliária é um passo essencial na aquisição de imóveis, pois garante que todas as informações relevantes sejam verificadas. Isso inclui certidões que atestam a regularidade do imóvel e do proprietário. Uma análise cuidadosa ajuda a evitar surpresas desagradáveis e riscos legais futuros."
+      },
+      {
+        "type": "list",
+        "title": "Checklist de Certidões Importantes",
+        "items": [
+          "Certidão de matrícula do imóvel atualizada.",
+          "Certidão de ônus reais para verificar pendências.",
+          "Certidão de ações reais e pessoais.",
+          "Certidão de tributos municipais e estaduais.",
+          "Certidão de quitação de débitos condominiais."
+        ]
+      },
+      {
+        "type": "callout",
+        "body": "Já estruturamos isso em diversos clientes. Vale uma conversa para entender como podemos ajudar no seu processo.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Riscos e Conformidade",
+        "body": "Ao realizar a due diligence, o compliance corporativo se torna fundamental. A falta de uma verificação minuciosa pode resultar em problemas legais significativos. Por isso, é crucial contar com suporte especializado, como o oferecido pela Emergency Documentação, que garante que todos os aspectos estejam cobertos e reduz riscos associados."
+      },
+      {
+        "type": "cta-inline",
+        "body": "Se você precisa de suporte na emissão de certidões, entre em contato.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "O Que Evitar na Due Diligence",
+        "body": "Evite confiar apenas em informações orais ou documentos desatualizados. A falta de uma análise detalhada pode levar à aquisição de bens problemáticos. Sempre utilize fontes confiáveis e, se necessário, busque ajuda especializada para garantir uma due diligence robusta."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Quais certidões são obrigatórias na compra de um imóvel?",
+        "a": "As certidões obrigatórias incluem a matrícula atualizada, certidão de ônus reais, e certidão de tributos. Essas garantem a regularidade do imóvel."
+      },
+      {
+        "q": "Como validar fornecedor pessoa jurídica antes de contratar?",
+        "a": "Para validar um fornecedor pessoa jurídica, é importante solicitar certidões de regularidade fiscal e verificar a situação cadastral na Receita Federal."
+      },
+      {
+        "q": "O que deve ser considerado em uma due diligence societária?",
+        "a": "Na due diligence societária, deve-se analisar documentos como contratos sociais, certidões de regularidade e ações judiciais pendentes."
+      }
+    ]
+  }
+}

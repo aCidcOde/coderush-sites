@@ -582,6 +582,15 @@ $seoLdGraph = [
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-HOME-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/30/ferramentas-ia-otimizar-operacoes-criticas-desenvolvimento/" data-blog-image="imagens/posts/ferramentas-ia-otimizar-operacoes-criticas-desenvolvimento.jpg" data-blog-slug="ferramentas-ia-otimizar-operacoes-criticas-desenvolvimento" data-blog-date="2026-05-30">
+  <a href="2026/05/30/ferramentas-ia-otimizar-operacoes-criticas-desenvolvimento/">
+    <img src="imagens/posts/ferramentas-ia-otimizar-operacoes-criticas-desenvolvimento.jpg" alt="Ferramentas de IA para otimizar operações críticas em desenvolvimento" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="2026/05/30/ferramentas-ia-otimizar-operacoes-criticas-desenvolvimento/" class="hover:underline">Ferramentas de IA para otimizar operações críticas em desenvolvimento</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como integrar IA para acelerar a entrega em software sob medida.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/27/ia-pode-otimizar-operacoes-criticas-desenvolvimento/" data-blog-image="imagens/posts/ia-pode-otimizar-operacoes-criticas-desenvolvimento.jpg" data-blog-slug="ia-pode-otimizar-operacoes-criticas-desenvolvimento" data-blog-date="2026-05-27">
   <a href="2026/05/27/ia-pode-otimizar-operacoes-criticas-desenvolvimento/">
     <img src="imagens/posts/ia-pode-otimizar-operacoes-criticas-desenvolvimento.jpg" alt="Como a IA pode otimizar operações críticas no desenvolvimento" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
@@ -598,15 +607,6 @@ $seoLdGraph = [
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="2026/05/24/garantir-qualidade-codigo-integracoes-criticas/" class="hover:underline">Como garantir qualidade de código em integrações críticas</a></h2>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Dicas práticas para manter a qualidade de código em automações e integrações no desenvolvimento de software.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/21/ia-pode-elevar-qualidade-software-sob-medida/" data-blog-image="imagens/posts/ia-pode-elevar-qualidade-software-sob-medida.jpg" data-blog-slug="ia-pode-elevar-qualidade-software-sob-medida" data-blog-date="2026-05-21">
-  <a href="2026/05/21/ia-pode-elevar-qualidade-software-sob-medida/">
-    <img src="imagens/posts/ia-pode-elevar-qualidade-software-sob-medida.jpg" alt="Como a IA pode elevar a qualidade do seu software sob medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-  </a>
-  <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="2026/05/21/ia-pode-elevar-qualidade-software-sob-medida/" class="hover:underline">Como a IA pode elevar a qualidade do seu software sob medida</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como integrar IA no desenvolvimento de software sob medida sem comprometer a qualidade.</p>
   </div>
 </article>
 <!-- BLOG-HOME-CARDS:END -->

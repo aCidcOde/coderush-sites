@@ -89,6 +89,15 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-INDEX-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/30/crm-automacao-otimizam-marketing-multinivel/" data-blog-image="imagens/posts/crm-automacao-otimizam-marketing-multinivel.jpg" data-blog-slug="crm-automacao-otimizam-marketing-multinivel" data-blog-date="2026-05-30">
+  <a href="../2026/05/30/crm-automacao-otimizam-marketing-multinivel/">
+    <img src="../imagens/posts/crm-automacao-otimizam-marketing-multinivel.jpg" alt="Como CRM e automação otimizam seu marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="../2026/05/30/crm-automacao-otimizam-marketing-multinivel/" class="hover:underline">Como CRM e automação otimizam seu marketing multinível</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como ferramentas de CRM e automação podem impulsionar sua operação de marketing multinível.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/27/integrando-pagamentos-logistica-marketing-multinivel/" data-blog-image="imagens/posts/integrando-pagamentos-logistica-marketing-multinivel.jpg" data-blog-slug="integrando-pagamentos-logistica-marketing-multinivel" data-blog-date="2026-05-27">
   <a href="../2026/05/27/integrando-pagamentos-logistica-marketing-multinivel/">
     <img src="../imagens/posts/integrando-pagamentos-logistica-marketing-multinivel.jpg" alt="Integrando Pagamentos e Logística no Marketing Multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />

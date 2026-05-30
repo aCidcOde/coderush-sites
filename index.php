@@ -691,6 +691,15 @@ $seoLdGraph = [
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-HOME-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/30/governanca-tecnologia-caminho-crescimento/" data-blog-image="imagens/posts/governanca-tecnologia-caminho-crescimento.jpg" data-blog-slug="governanca-tecnologia-caminho-crescimento" data-blog-date="2026-05-30">
+  <a href="2026/05/30/governanca-tecnologia-caminho-crescimento/">
+    <img src="imagens/posts/governanca-tecnologia-caminho-crescimento.jpg" alt="Governança de Tecnologia: O Caminho para o Crescimento" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="2026/05/30/governanca-tecnologia-caminho-crescimento/" class="hover:underline">Governança de Tecnologia: O Caminho para o Crescimento</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a governança de tecnologia pode impulsionar o crescimento da sua empresa.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/27/arquitetura-software-operacoes-criticas-empresas-medias/" data-blog-image="imagens/posts/arquitetura-software-operacoes-criticas-empresas-medias.jpg" data-blog-slug="arquitetura-software-operacoes-criticas-empresas-medias" data-blog-date="2026-05-27">
   <a href="2026/05/27/arquitetura-software-operacoes-criticas-empresas-medias/">
     <img src="imagens/posts/arquitetura-software-operacoes-criticas-empresas-medias.jpg" alt="Arquitetura de software para operações críticas em empresas médias" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
@@ -707,15 +716,6 @@ $seoLdGraph = [
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="2026/05/24/automacao-inteligente-pode-aumentar-produtividade/" class="hover:underline">Como a automação inteligente pode aumentar a produtividade</a></h2>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como empresas médias estão adotando a automação inteligente para melhorar a produtividade e a eficiência.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/21/construir-comprar-software-considerar/" data-blog-image="imagens/posts/construir-comprar-software-considerar.jpg" data-blog-slug="construir-comprar-software-considerar" data-blog-date="2026-05-21">
-  <a href="2026/05/21/construir-comprar-software-considerar/">
-    <img src="imagens/posts/construir-comprar-software-considerar.jpg" alt="Construir ou comprar software: o que considerar?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-  </a>
-  <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="2026/05/21/construir-comprar-software-considerar/" class="hover:underline">Construir ou comprar software: o que considerar?</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como escolher entre desenvolver ou adquirir software sob medida.</p>
   </div>
 </article>
 <!-- BLOG-HOME-CARDS:END -->

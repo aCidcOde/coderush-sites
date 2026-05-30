@@ -1,0 +1,220 @@
+{
+  "mode": "publish",
+  "date": "2026-05-30",
+  "timezone": "America/Sao_Paulo",
+  "focus": "tecnologia",
+  "startedAt": "2026-05-30T10:34:34.619Z",
+  "aiProvider": "openrouter",
+  "sites": [
+    {
+      "siteId": "coderush",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Possível texto vazado na capa (sample: \"Cie Leet\")",
+      "angle": "decisao tecnica",
+      "theme": "governanca de tecnologia para crescimento",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/coderush/2026-05-30/governanca-tecnologia-caminho-crescimento.json",
+      "markdownPath": "automation/blog-bot/out/coderush/2026-05-30/governanca-tecnologia-caminho-crescimento.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "2026/05/30/governanca-tecnologia-caminho-crescimento/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Capa com fundo azul-marinho profundo, detalhes em azul elétrico e violeta, transmitindo uma atmosfera tecnológica e moderna",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": true,
+          "alphanumericCount": 16,
+          "sample": "Cie Leet"
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "index.php",
+          "blog/index.php",
+          "2026/05/30/governanca-tecnologia-caminho-crescimento/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "codafacil",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "tooling de IA para devs",
+      "theme": "integracoes e automacao para operacoes criticas",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/codafacil/2026-05-30/ferramentas-ia-otimizar-operacoes-criticas-desenvolvimento.json",
+      "markdownPath": "automation/blog-bot/out/codafacil/2026-05-30/ferramentas-ia-otimizar-operacoes-criticas-desenvolvimento.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "codafacil/2026/05/30/ferramentas-ia-otimizar-operacoes-criticas-desenvolvimento/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Ilustração de ferramentas digitais em um fundo verde-petróleo escuro com detalhes em azul royal e violeta, transmitindo inovação e engenharia",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": false,
+          "alphanumericCount": 2,
+          "sample": ""
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "codafacil/index.php",
+          "codafacil/blog/index.php",
+          "codafacil/2026/05/30/ferramentas-ia-otimizar-operacoes-criticas-desenvolvimento/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "fluxointeligenteia",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "permissoes",
+      "theme": "canais integrados para agentes corporativos",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/fluxointeligenteia/2026-05-30/gerenciar-permissoes-agentes-corporativos-ia.json",
+      "markdownPath": "automation/blog-bot/out/fluxointeligenteia/2026-05-30/gerenciar-permissoes-agentes-corporativos-ia.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "fluxointeligenteia/2026/05/30/gerenciar-permissoes-agentes-corporativos-ia/index.html",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Ambiente de trabalho com fundo escuro esmeralda e elementos em verde e ciano, representando controle e segurança em operação de IA",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": false,
+          "alphanumericCount": 4,
+          "sample": ""
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    },
+    {
+      "siteId": "sistemavendadireta",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "campo",
+      "theme": "crm e automacao para marketing multinivel",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/sistemavendadireta/2026-05-30/crm-automacao-otimizam-marketing-multinivel.json",
+      "markdownPath": "automation/blog-bot/out/sistemavendadireta/2026-05-30/crm-automacao-otimizam-marketing-multinivel.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "sistemavendadireta/2026/05/30/crm-automacao-otimizam-marketing-multinivel/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Capa de artigo com fundo azul profundo e azul corporativo, destacando elementos gráficos que simbolizam CRM e automação em marketing",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": false,
+          "alphanumericCount": 0,
+          "sample": ""
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "sistemavendadireta/index.php",
+          "sistemavendadireta/blog/index.php",
+          "sistemavendadireta/2026/05/30/crm-automacao-otimizam-marketing-multinivel/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "emergency",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Possivel texto vazado na capa (sample: \"\")",
+      "angle": "compliance",
+      "theme": "due diligence imobiliaria com certidoes orientadas",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/emergency/2026-05-30/due-diligence-imobiliaria-certidoes-compliance.json",
+      "markdownPath": "automation/blog-bot/out/emergency/2026-05-30/due-diligence-imobiliaria-certidoes-compliance.md",
+      "publishResult": {
+        "target": "api",
+        "apiStatus": 201,
+        "apiUrl": "https://emergency.com.br/blog/due-diligence-imobiliaria-certidoes-compliance",
+        "apiId": 13,
+        "apiPublishedAt": "2026-05-30T07:40:33-03:00",
+        "coverPath": "automation/blog-bot/out/emergency/covers/due-diligence-imobiliaria-certidoes-compliance.jpg",
+        "coverSize": 296041,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Dossie executivo em fundo deep-navy com detalhes em dourado quente e leve brilho off-white, transmitindo credibilidade e sofisticação",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": true,
+          "alphanumericCount": 19,
+          "sample": ""
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    }
+  ],
+  "duplications": [],
+  "relatedRefresh": {
+    "touched": 33,
+    "unchanged": 14,
+    "errors": [],
+    "totalCards": 42,
+    "totalFiles": 47
+  },
+  "fallbackCount": 0,
+  "allFallback": false,
+  "finishedAt": "2026-05-30T10:42:45.206Z",
+  "ok": true
+}
