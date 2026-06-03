@@ -79,7 +79,13 @@ const SITE_PROFILES = {
       "governanca de tecnologia para crescimento",
       "arquitetura de software para operacoes criticas",
       "decisao entre comprar e construir software",
-      "produtividade de times com automacao inteligente"
+      "produtividade de times com automacao inteligente",
+      "modernizacao gradual de sistemas legados",
+      "escolha de stack para iniciativa critica",
+      "ROI e priorizacao de iniciativas de tecnologia",
+      "IA aplicada em processos de retaguarda",
+      "gestao de risco em substituicao de sistema",
+      "como dimensionar equipe de tecnologia em empresa media"
     ]
   },
   codafacil: {
@@ -134,7 +140,13 @@ const SITE_PROFILES = {
       "software sob medida com IA aplicada",
       "integracoes e automacao para operacoes criticas",
       "tooling de IA para engenharia",
-      "entrega de produtos digitais com governanca tecnica"
+      "entrega de produtos digitais com governanca tecnica",
+      "testes automatizados no ciclo de entrega",
+      "arquitetura Laravel para sistemas sob medida",
+      "pareamento humano-IA no desenvolvimento",
+      "escala de banco e cache em produtos sob medida",
+      "gestao de debito tecnico em produto digital",
+      "design de API para integracoes corporativas"
     ]
   },
   fluxointeligenteia: {
@@ -205,7 +217,12 @@ const SITE_PROFILES = {
       "tools seguras para agentes de IA",
       "permissoes e auditoria em IA corporativa",
       "canais integrados para agentes corporativos",
-      "Link como base operacional para agentes inteligentes"
+      "base de conhecimento corporativo para agentes",
+      "observabilidade e logs de agentes em producao",
+      "evolucao continua de agentes corporativos",
+      "agentes corporativos no atendimento ao cliente",
+      "agentes corporativos integrados a ERP e CRM",
+      "ROI de agentes corporativos em operacao"
     ]
   },
   emergency: {
@@ -301,7 +318,13 @@ const SITE_PROFILES = {
       "due diligence societaria em M&A no mercado brasileiro",
       "habilitacao e onboarding de fornecedor com certidoes",
       "regularizacao documental antes de transacao patrimonial",
-      "compliance corporativo apoiado em certidoes cartorarias"
+      "compliance corporativo apoiado em certidoes cartorarias",
+      "investigacao patrimonial em contencioso",
+      "certidoes em processos sucessorios e inventarios",
+      "KYC e onboarding corporativo com certidoes",
+      "riscos ocultos em aquisicao de imovel",
+      "LGPD e tratamento de dados em diligencia",
+      "diligencia em operacoes de credito e financiamento"
     ]
   },
   sistemavendadireta: {
@@ -356,7 +379,13 @@ const SITE_PROFILES = {
       "tecnologia para vendas diretas em escala",
       "crm e automacao para marketing multinivel",
       "integracoes de pagamento e logistica para MMN",
-      "governanca comercial com dados e ia"
+      "governanca comercial com dados e ia",
+      "plano de carreira em marketing multinivel",
+      "onboarding e ativacao de distribuidor",
+      "IA para suporte ao distribuidor em campo",
+      "previsibilidade de receita em MMN",
+      "gestao de inadimplencia em venda direta",
+      "expansao internacional para empresas de MMN"
     ]
   }
 };
