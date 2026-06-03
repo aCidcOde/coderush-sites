@@ -753,6 +753,15 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-HOME-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/03/tecnologia-vendas-diretas-escala-considerar/" data-blog-image="imagens/posts/tecnologia-vendas-diretas-escala-considerar.jpg" data-blog-slug="tecnologia-vendas-diretas-escala-considerar" data-blog-date="2026-06-03">
+  <a href="2026/06/03/tecnologia-vendas-diretas-escala-considerar/">
+    <img src="imagens/posts/tecnologia-vendas-diretas-escala-considerar.jpg" alt="Tecnologia para Vendas Diretas em Escala: O que Considerar" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="2026/06/03/tecnologia-vendas-diretas-escala-considerar/" class="hover:underline">Tecnologia para Vendas Diretas em Escala: O que Considerar</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a tecnologia impacta as vendas diretas e MMN no campo.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/30/crm-automacao-otimizam-marketing-multinivel/" data-blog-image="imagens/posts/crm-automacao-otimizam-marketing-multinivel.jpg" data-blog-slug="crm-automacao-otimizam-marketing-multinivel" data-blog-date="2026-05-30">
   <a href="2026/05/30/crm-automacao-otimizam-marketing-multinivel/">
     <img src="imagens/posts/crm-automacao-otimizam-marketing-multinivel.jpg" alt="Como CRM e automação otimizam seu marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
@@ -769,15 +778,6 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="2026/05/27/integrando-pagamentos-logistica-marketing-multinivel/" class="hover:underline">Integrando Pagamentos e Logística no Marketing Multinível</a></h2>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como as integrações de pagamento e logística impactam as vendas diretas.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/24/governanca-comercial-dados-ia-marketing-multinivel/" data-blog-image="imagens/posts/governanca-comercial-dados-ia-marketing-multinivel.jpg" data-blog-slug="governanca-comercial-dados-ia-marketing-multinivel" data-blog-date="2026-05-24">
-  <a href="2026/05/24/governanca-comercial-dados-ia-marketing-multinivel/">
-    <img src="imagens/posts/governanca-comercial-dados-ia-marketing-multinivel.jpg" alt="Governança Comercial com Dados e IA no Marketing Multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-  </a>
-  <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="2026/05/24/governanca-comercial-dados-ia-marketing-multinivel/" class="hover:underline">Governança Comercial com Dados e IA no Marketing Multinível</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Explore como dados e IA podem otimizar a governança comercial em vendas diretas e marketing multinível.</p>
   </div>
 </article>
 <!-- BLOG-HOME-CARDS:END -->

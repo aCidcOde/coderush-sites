@@ -42,6 +42,15 @@
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-INDEX-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/03/melhorar-produtividade-equipe-automacao/" data-blog-image="imagens/posts/melhorar-produtividade-equipe-automacao.jpg" data-blog-slug="melhorar-produtividade-equipe-automacao" data-blog-date="2026-06-03">
+  <a href="../2026/06/03/melhorar-produtividade-equipe-automacao/">
+    <img src="../imagens/posts/melhorar-produtividade-equipe-automacao.jpg" alt="Como melhorar a produtividade da sua equipe com automação" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="../2026/06/03/melhorar-produtividade-equipe-automacao/" class="hover:underline">Como melhorar a produtividade da sua equipe com automação</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a automação pode aumentar a eficiência dos times em empresas médias.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/30/governanca-tecnologia-caminho-crescimento/" data-blog-image="imagens/posts/governanca-tecnologia-caminho-crescimento.jpg" data-blog-slug="governanca-tecnologia-caminho-crescimento" data-blog-date="2026-05-30">
   <a href="../2026/05/30/governanca-tecnologia-caminho-crescimento/">
     <img src="../imagens/posts/governanca-tecnologia-caminho-crescimento.jpg" alt="Governança de Tecnologia: O Caminho para o Crescimento" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />

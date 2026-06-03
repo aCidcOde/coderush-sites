@@ -249,19 +249,19 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://sistemavendadireta.com.br/2026/05/12/governanca-comercial-dados-ia-podem-melhorar-resultados/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/governanca-comercial-dados-ia-podem-melhorar-resultados.jpg" alt="Governança Comercial: Como Dados e IA Podem Melhorar Resultados" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://sistemavendadireta.com.br/2026/06/03/tecnologia-vendas-diretas-escala-considerar/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/tecnologia-vendas-diretas-escala-considerar.jpg" alt="Tecnologia para Vendas Diretas em Escala: O que Considerar" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Sistema Venda Direta</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/05/12/governanca-comercial-dados-ia-podem-melhorar-resultados/" rel="noopener" target="_blank" class="hover:underline">Governança Comercial: Como Dados e IA Podem Melhorar Resultados</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a governança comercial, aliada à IA, pode otimizar processos e resultados em vendas diretas.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/06/03/tecnologia-vendas-diretas-escala-considerar/" rel="noopener" target="_blank" class="hover:underline">Tecnologia para Vendas Diretas em Escala: O que Considerar</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a tecnologia impacta as vendas diretas e MMN no campo.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://fluxointeligenteia.com.br/2026/05/30/gerenciar-permissoes-agentes-corporativos-ia/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/gerenciar-permissoes-agentes-corporativos-ia.jpg" alt="Como gerenciar permissões em agentes corporativos de IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://fluxointeligenteia.com.br/2026/06/03/permissoes-auditoria-agentes-corporativos-ia/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/permissoes-auditoria-agentes-corporativos-ia.jpg" alt="Permissões e Auditoria em Agentes Corporativos de IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">FluxoInteligente IA</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/05/30/gerenciar-permissoes-agentes-corporativos-ia/" rel="noopener" target="_blank" class="hover:underline">Como gerenciar permissões em agentes corporativos de IA</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como implementar permissões seguras em agentes corporativos de IA com foco em governança.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/06/03/permissoes-auditoria-agentes-corporativos-ia/" rel="noopener" target="_blank" class="hover:underline">Permissões e Auditoria em Agentes Corporativos de IA</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda a importância da governança, permissões e auditoria para a implementação de agentes corporativos de IA.</p>
   </div>
 </article>
   </div>

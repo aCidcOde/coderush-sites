@@ -1,0 +1,86 @@
+{
+  "date": "2026-06-03",
+  "siteId": "coderush",
+  "postType": "institucional-tecnologia",
+  "focus": "tecnologia",
+  "theme": "produtividade de times com automacao inteligente",
+  "angle": "casos de empresa media",
+  "slug": "melhorar-produtividade-equipe-automacao",
+  "title": "CodeRush: TECNOLOGIA aplicado a casos de empresa media",
+  "description": "Atualização semanal de tecnologia para CodeRush, com foco em produtividade de times com automacao inteligente.",
+  "sources": [
+    "https://martinfowler.com/fragments/2026-06-02.html",
+    "https://martinfowler.com/fragments/2026-05-14.html",
+    "https://martinfowler.com/fragments/2026-05-27.html"
+  ],
+  "status": "draft",
+  "generatedAt": "2026-06-03T08:37:07-03:00",
+  "content": {
+    "eyebrow": "Automação inteligente",
+    "headline": "Como melhorar a produtividade da sua equipe com automação",
+    "summary": "Entenda como a automação pode aumentar a eficiência dos times em empresas médias.",
+    "answerBox": {
+      "question": "Como a automação inteligente pode aumentar a produtividade da equipe?",
+      "answer": "A automação inteligente pode reduzir tarefas manuais e repetitivas, permitindo que sua equipe se concentre em atividades mais estratégicas. Isso não só melhora a eficiência, mas também promove um ambiente colaborativo e inovador."
+    },
+    "tldr": [
+      "Automação reduz tarefas repetitivas e aumenta eficiência",
+      "Integração com sistemas legados é crucial",
+      "Consultoria pode ajudar a implementar soluções sob medida"
+    ],
+    "sections": [
+      {
+        "type": "prose",
+        "title": "A importância da automação para equipes médias",
+        "body": "Em empresas médias, a automação inteligente pode ser um divisor de águas. Tarefas repetitivas consomem tempo e energia da equipe, dificultando a inovação. Implementar soluções automatizadas não apenas libera a carga de trabalho, mas também permite que os colaboradores se concentrem em decisões mais estratégicas e criativas."
+      },
+      {
+        "type": "list",
+        "title": "Sinais de que sua equipe precisa de automação",
+        "items": [
+          "Aumento de erros em tarefas manuais",
+          "Colaboradores sobrecarregados com tarefas repetitivas",
+          "Demora na entrega de projetos",
+          "Baixa moral da equipe devido à carga de trabalho",
+          "Falta de tempo para inovação e melhorias"
+        ]
+      },
+      {
+        "type": "callout",
+        "body": "Já ajudamos diversas empresas a implementar automação. Vale a pena explorar como isso pode funcionar no seu cenário.",
+        "ctaLabel": "Fale com a CodeRush",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Integrações e sistemas legados",
+        "body": "Integrar soluções novas com sistemas legados pode ser desafiador, mas é essencial para o sucesso da automação. A abordagem correta evita um grande 'big bang' e permite uma transição suave. Em casos anteriores, a CodeRush tem mostrado que a integração eficaz pode reduzir riscos e aumentar a adesão às novas ferramentas."
+      },
+      {
+        "type": "cta-inline",
+        "body": "Descubra como a automação pode beneficiar sua operação.",
+        "ctaLabel": "Fale com a CodeRush",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Erros comuns a evitar",
+        "body": "Um dos principais erros na adoção de automação é não considerar as especificidades do seu negócio. Implementar soluções genéricas pode resultar em falhas. Além disso, a falta de treinamento para a equipe pode limitar o potencial das novas ferramentas. É importante alinhar a automação às suas necessidades reais."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Como escolher a tecnologia certa para automação?",
+        "a": "Escolher a tecnologia certa envolve entender suas necessidades específicas e avaliar soluções que se integrem bem aos seus processos existentes."
+      },
+      {
+        "q": "Qual o impacto da IA na automação?",
+        "a": "A IA pode otimizar processos, prever necessidades e aprender com dados históricos, melhorando continuamente a eficiência da automação."
+      },
+      {
+        "q": "Como a consultoria pode ajudar na automação?",
+        "a": "Uma consultoria pode oferecer insights especializados, ajudar na escolha das ferramentas e garantir uma implementação alinhada aos objetivos da empresa."
+      }
+    ]
+  }
+}

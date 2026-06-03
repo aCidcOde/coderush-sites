@@ -246,11 +246,11 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://coderush.com.br/2026/05/30/governanca-tecnologia-caminho-crescimento/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/governanca-tecnologia-caminho-crescimento.jpg" alt="Governança de Tecnologia: O Caminho para o Crescimento" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://coderush.com.br/2026/06/03/melhorar-produtividade-equipe-automacao/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/melhorar-produtividade-equipe-automacao.jpg" alt="Como melhorar a produtividade da sua equipe com automação" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">CodeRush</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/05/30/governanca-tecnologia-caminho-crescimento/" rel="noopener" target="_blank" class="hover:underline">Governança de Tecnologia: O Caminho para o Crescimento</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a governança de tecnologia pode impulsionar o crescimento da sua empresa.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/06/03/melhorar-produtividade-equipe-automacao/" rel="noopener" target="_blank" class="hover:underline">Como melhorar a produtividade da sua equipe com automação</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a automação pode aumentar a eficiência dos times em empresas médias.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
