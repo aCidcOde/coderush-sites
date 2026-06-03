@@ -6,6 +6,7 @@ const crypto = require("node:crypto");
 const { execSync } = require("node:child_process");
 const { loadEnvFiles } = require("./lib/env-loader");
 const { pickSiteTheme, pickAngle, siteProfile, sitePromptStyle } = require("./lib/site-strategy");
+const { loadRecentPosts, recentThemes, recentAngles } = require("./lib/recent-posts");
 const {
   resolveAiConfig,
   generateWithOpenAI,
@@ -130,8 +131,8 @@ function slugFromHeadline(headline, { maxLen = 70 } = {}) {
   return result || candidate.slice(0, maxLen);
 }
 
-function buildPostContract(site, focus, date, angle) {
-  const theme = pickSiteTheme(site.id, date);
+function buildPostContract(site, focus, date, angle, { excludeThemes = [] } = {}) {
+  const theme = pickSiteTheme(site.id, date, { exclude: excludeThemes });
   const angleLabel = angle || theme;
   const title = `${site.name}: ${focus.toUpperCase()} aplicado a ${angleLabel}`;
   const slug = slugify(`${site.id}-${focus}-${date}`);
@@ -153,8 +154,24 @@ function buildPostContract(site, focus, date, angle) {
   };
 }
 
-function buildAiPrompt({ site, contract, research = [] }) {
+function buildAiPrompt({ site, contract, research = [], recent = [] }) {
   const style = sitePromptStyle(site);
+
+  const recentBlock = recent.length
+    ? [
+        "",
+        "EVITE REPETIR estes posts recentes deste mesmo site (use angulo diferente, pergunta diferente, abertura diferente):",
+        ...recent.slice(0, 6).map((item, idx) => {
+          const parts = [
+            item.headline ? `H: ${item.headline}` : null,
+            item.question ? `Q: ${item.question}` : null,
+            item.angle ? `A: ${item.angle}` : null
+          ].filter(Boolean);
+          return `${idx + 1}. ${parts.join(" | ")}`;
+        }),
+        "Sua headline e answerBox.question DEVEM ser distintas em forma e foco das listadas acima — nada de variacao cosmetica do mesmo titulo."
+      ].join("\n")
+    : "";
 
   const researchHeader = style.excludeSourcesFromContent
     ? "Conteudo recente do setor (use SOMENTE como contexto factual; NAO insira links externos no body):"
@@ -262,6 +279,7 @@ function buildAiPrompt({ site, contract, research = [] }) {
     `- Pode mencionar ${site.name} 1-2 vezes no body de prose, como transicao natural ("nesse tipo de cenario, ${site.name} costuma...").`,
     "- Headline informa sobre o tema, nao vende. Sem 'transforme ja', 'nao perca', 'clique aqui'.",
     researchBlock,
+    recentBlock,
     "",
     "REGRAS ADICIONAIS:",
     style.constraints.map((item) => `- ${item}`).join("\n")
@@ -493,8 +511,11 @@ async function run() {
       continue;
     }
 
-    const angle = pickAngle(site.id, date);
-    let contract = buildPostContract(site, focus, date, angle);
+    const recents = loadRecentPosts(site.id, { beforeDate: date, limit: 8 });
+    const excludeThemes = recentThemes(recents);
+    const excludeAngles = recentAngles(recents);
+    const angle = pickAngle(site.id, date, { exclude: excludeAngles });
+    let contract = buildPostContract(site, focus, date, angle, { excludeThemes });
     const existingDraft = loadExistingDraft(site, contract);
 
     let aiUsed = false;
@@ -543,7 +564,7 @@ async function run() {
       const generation = await generateContent(
         aiConfig,
         site,
-        buildAiPrompt({ site, contract, research: research.items }),
+        buildAiPrompt({ site, contract, research: research.items, recent: recents }),
         contract,
         research.items
       );

@@ -365,20 +365,37 @@ function siteProfile(siteId) {
   return SITE_PROFILES[siteId] || null;
 }
 
-function pickSiteTheme(siteId, seed) {
-  const profile = siteProfile(siteId);
-  const candidates = profile?.themes || ["tecnologia aplicada a negocios"];
-  const hash = crypto.createHash("sha1").update(`${siteId}:${seed}`).digest("hex");
-  const index = parseInt(hash.slice(0, 8), 16) % candidates.length;
-  return candidates[index];
+function pickFromList(candidates, fallback, hashKey, excludeSet) {
+  const all = candidates && candidates.length ? candidates : [fallback];
+  const filtered = excludeSet && excludeSet.size
+    ? all.filter((item) => !excludeSet.has(String(item).trim().toLowerCase()))
+    : all;
+  const pool = filtered.length ? filtered : all;
+  const hash = crypto.createHash("sha1").update(hashKey).digest("hex");
+  const index = parseInt(hash.slice(0, 8), 16) % pool.length;
+  return pool[index];
 }
 
-function pickAngle(siteId, seed) {
+function pickSiteTheme(siteId, seed, { exclude = [] } = {}) {
   const profile = siteProfile(siteId);
-  const candidates = profile?.angleBias || ["aplicacao pratica"];
-  const hash = crypto.createHash("sha1").update(`${siteId}:angle:${seed}`).digest("hex");
-  const index = parseInt(hash.slice(0, 8), 16) % candidates.length;
-  return candidates[index];
+  const excludeSet = new Set(exclude.map((value) => String(value).trim().toLowerCase()));
+  return pickFromList(
+    profile?.themes,
+    "tecnologia aplicada a negocios",
+    `${siteId}:${seed}`,
+    excludeSet
+  );
+}
+
+function pickAngle(siteId, seed, { exclude = [] } = {}) {
+  const profile = siteProfile(siteId);
+  const excludeSet = new Set(exclude.map((value) => String(value).trim().toLowerCase()));
+  return pickFromList(
+    profile?.angleBias,
+    "aplicacao pratica",
+    `${siteId}:angle:${seed}`,
+    excludeSet
+  );
 }
 
 function sitePromptStyle(site) {
