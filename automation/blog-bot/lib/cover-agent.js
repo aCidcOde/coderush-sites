@@ -159,20 +159,29 @@ function buildPromptInstruction({ site, contract, coverArt, recentAlts = [] }) {
   return lines.join("\n");
 }
 
-function buildAltTextInstruction({ site, contract, coverArt }) {
-  const personaShort = siteProfile(site.id)?.personaShort || "leitores";
-  return [
+function buildAltTextInstruction({ site, contract, coverArt, visualPrompt = "" }) {
+  const lines = [
     "Gere um alt-text descritivo em pt-BR para a capa de um artigo, com 90-140 caracteres, sem mencionar marca, sem aspas, sem ponto final.",
-    "O alt-text deve descrever objetivamente o que aparece na imagem (assunto visual + paleta dominante + atmosfera), util para acessibilidade e SEO.",
-    "Nao escreva 'imagem ilustrativa', 'foto de' nem o titulo do post — descreva o que se ve.",
+    "O alt-text deve descrever objetivamente o ASSUNTO VISUAL CONCRETO da imagem — o que a metafora central representa, nao apenas paleta e mood.",
+    "Nao escreva 'imagem ilustrativa', 'foto de', 'capa com', 'dossie executivo iluminado', nem o titulo do post — descreva o que se ve como cena.",
+    "Inclua o sujeito principal + 1 detalhe de composicao + paleta dominante.",
     "",
-    `Marca: ${site.name}`,
     `Titulo do post: "${contract.content?.headline || contract.title || ""}"`,
-    `Persona-alvo: ${personaShort}`,
-    `Direcao visual: ${coverArt.paletteDescription}; ${coverArt.mood}`,
-    "",
-    "Responda APENAS em JSON valido: { \"alt\": \"<texto descritivo>\" }"
-  ].join("\n");
+    `Tema do post: ${contract.theme || "n/a"}`
+  ];
+
+  if (visualPrompt) {
+    lines.push(
+      "",
+      "Descricao visual real da capa que foi gerada (use isto como referencia primaria do que a imagem mostra):",
+      visualPrompt.slice(0, 800)
+    );
+  } else {
+    lines.push(`Direcao visual da marca: ${coverArt.paletteDescription}; ${coverArt.mood}`);
+  }
+
+  lines.push("", "Responda APENAS em JSON valido: { \"alt\": \"<texto descritivo>\" }");
+  return lines.join("\n");
 }
 
 function resolvePromptAiConfig(aiConfig, env = process.env) {
@@ -213,10 +222,10 @@ async function buildVisualPrompt({ aiConfig, site, contract, coverArt, recentAlt
   }
 }
 
-async function buildAltText({ aiConfig, site, contract, coverArt }) {
+async function buildAltText({ aiConfig, site, contract, coverArt, visualPrompt = "" }) {
   if (!aiConfig) return "";
   const fastAi = { ...aiConfig, textModel: aiConfig.textModel || "openai/gpt-4o-mini" };
-  const instruction = buildAltTextInstruction({ site, contract, coverArt });
+  const instruction = buildAltTextInstruction({ site, contract, coverArt, visualPrompt });
   try {
     const result = await callTextModel({ aiConfig: fastAi, prompt: instruction });
     const alt = String(result?.alt || "").replace(/[\r\n]+/g, " ").trim();
@@ -461,7 +470,7 @@ async function generateCover({ aiConfig, site, contract, targetPath }) {
     throw new Error(`Cover agent falhou em todos os modelos. ${summary}`);
   }
 
-  const altText = await buildAltText({ aiConfig, site, contract, coverArt });
+  const altText = await buildAltText({ aiConfig, site, contract, coverArt, visualPrompt });
   const leakage = detectTextLeakage(targetPath);
 
   return {

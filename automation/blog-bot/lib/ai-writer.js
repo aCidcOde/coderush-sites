@@ -34,6 +34,28 @@ const SYSTEM_ROLE =
   "O leitor chegou via busca: a primeira resposta no answerBox precisa ser direta. " +
   "Responda APENAS com JSON valido conforme o schema pedido pelo usuario.";
 
+function parseJsonResponse(raw) {
+  if (raw === undefined || raw === null) {
+    throw new Error("Resposta vazia do LLM.");
+  }
+  const text = String(raw).trim();
+  try {
+    return JSON.parse(text);
+  } catch {
+    // try stripping ```json ... ``` or ``` ... ``` fences
+    const fenceMatch = text.match(/```(?:json)?\s*([\s\S]*?)\s*```/i);
+    if (fenceMatch) {
+      return JSON.parse(fenceMatch[1].trim());
+    }
+    // try extracting first {...} or [...] block
+    const objMatch = text.match(/[{\[][\s\S]*[}\]]/);
+    if (objMatch) {
+      return JSON.parse(objMatch[0]);
+    }
+    throw new Error(`Resposta do LLM nao e JSON valido: ${text.slice(0, 120)}`);
+  }
+}
+
 async function generateWithOpenAI({ apiKey, model, prompt }) {
   const response = await fetch("https://api.openai.com/v1/chat/completions", {
     method: "POST",
@@ -63,7 +85,7 @@ async function generateWithOpenAI({ apiKey, model, prompt }) {
     throw new Error("Resposta da OpenAI sem conteudo.");
   }
 
-  return JSON.parse(content);
+  return parseJsonResponse(content);
 }
 
 async function generateWithOpenRouter({ apiKey, model, prompt, appUrl, appName }) {
@@ -97,7 +119,7 @@ async function generateWithOpenRouter({ apiKey, model, prompt, appUrl, appName }
     throw new Error("Resposta da OpenRouter sem conteudo.");
   }
 
-  return JSON.parse(content);
+  return parseJsonResponse(content);
 }
 
 function normalizeImageUrl(candidate) {
