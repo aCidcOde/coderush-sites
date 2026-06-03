@@ -1,7 +1,39 @@
 const fs = require("node:fs");
+const crypto = require("node:crypto");
 const { execFileSync, execSync } = require("node:child_process");
 const { generateWithOpenAI, generateWithOpenRouter } = require("./ai-writer");
 const { siteProfile } = require("./site-strategy");
+const { loadRecentCoverAlts } = require("./recent-posts");
+
+const COMPOSITION_VARIATIONS = [
+  "isometric 3D angle from upper-right, blocks/planes arranged like a system diagram, generous negative space top-left",
+  "top-down aerial flat-lay composition, elements arranged as a network or grid, central focal cluster",
+  "macro close-up of a single textured object or material detail, shallow depth-of-field, soft background bokeh",
+  "mid-shot wide cinematic framing, layered foreground/midground/background depth, rim light separating planes",
+  "low-angle dramatic perspective looking up at a single vertical structure or stack, atmospheric fog at base",
+  "dutch-tilt diagonal composition, energy lines crossing the frame, asymmetric balance with one heavy quadrant",
+  "side-profile lateral composition with strong silhouette and backlit rim, layered transparent planes receding",
+  "frontal symmetrical hero shot of a single abstract construct, centered with radial light burst behind"
+];
+
+function pickDeterministic(list, hashKey, exclude = new Set()) {
+  const all = list && list.length ? list : [""];
+  const filtered = exclude.size ? all.filter((item) => !exclude.has(item)) : all;
+  const pool = filtered.length ? filtered : all;
+  const hash = crypto.createHash("sha1").update(hashKey).digest("hex");
+  const index = parseInt(hash.slice(0, 8), 16) % pool.length;
+  return pool[index];
+}
+
+function pickMotifSubset(motifs, hashKey, count = 2) {
+  if (!motifs || !motifs.length) return [];
+  if (motifs.length <= count) return [...motifs];
+  const hash = crypto.createHash("sha1").update(hashKey).digest("hex");
+  const startIndex = parseInt(hash.slice(0, 8), 16) % motifs.length;
+  const offset = (parseInt(hash.slice(8, 16), 16) % (motifs.length - 1)) + 1;
+  const second = (startIndex + offset) % motifs.length;
+  return [motifs[startIndex], motifs[second]];
+}
 
 const TARGET_WIDTH = 1200;
 const TARGET_HEIGHT = 630;
@@ -42,15 +74,27 @@ function defaultCoverArt() {
   };
 }
 
-function buildPromptInstruction({ site, contract, coverArt }) {
+function buildPromptInstruction({ site, contract, coverArt, recentAlts = [] }) {
   const profile = siteProfile(site.id) || {};
   const angle = contract.angle || "";
   const personaShort = profile.personaShort || "leitores tecnicos";
   const longTail = profile.keywords?.longTail?.[0] || contract.theme || "";
+  const slug = contract.slug || contract.content?.headline || contract.title || "";
 
-  const motifs = joinList(coverArt.visualMotifs, "uma metafora visual unica");
+  const motifSubset = pickMotifSubset(coverArt.visualMotifs, `${site.id}:motif:${slug}`, 2);
+  const motifs = joinList(motifSubset, "uma metafora visual unica");
+  const composition = pickDeterministic(COMPOSITION_VARIATIONS, `${site.id}:comp:${slug}`);
   const avoidList = joinList(coverArt.avoid, "texto, logos, telas, rostos em close");
   const character = coverArt.characterReference;
+
+  const recentBlock = recentAlts.length
+    ? [
+        "",
+        "EVITE REPETIR essas capas recentes do mesmo site (use composicao, metafora central e elementos visuais distintos):",
+        ...recentAlts.slice(0, 5).map((item, idx) => `${idx + 1}. ${item.alt}`),
+        "Sua capa deve ter uma metafora visual e composicao claramente diferente das listadas acima."
+      ].join("\n")
+    : "";
 
   const lines = [
     "Voce e diretor de arte de uma revista de tecnologia premium (referencia: capa Wired ou MIT Technology Review).",
@@ -61,15 +105,23 @@ function buildPromptInstruction({ site, contract, coverArt }) {
     `- Persona-alvo: ${personaShort}`,
     `- Titulo do post: "${contract.content?.headline || contract.title || ""}"`,
     `- Resumo do post: "${contract.content?.summary || contract.description || ""}"`,
+    `- Tema: ${contract.theme || "n/a"}`,
     `- Angulo da semana: ${angle || "n/a"}`,
     `- Pergunta long-tail que orienta o tom: "${longTail}"`,
+    "",
+    "METAFORA CENTRAL (mais importante):",
+    "- Extraia 2-3 substantivos concretos do titulo OU tema (ex: 'banco de dados', 'cache', 'permissoes', 'auditoria', 'comissionamento', 'inadimplencia', 'certidao', 'inventario').",
+    "- Construa UMA metafora visual unica em torno desses substantivos concretos — nao use abstracoes genericas tipo 'documentos flutuando', 'rede luminosa', 'dossie executivo' a menos que sejam diretamente exigidas pelo titulo.",
+    "- A metafora deve ser instantaneamente reconhecivel como representando ESSE post especifico, nao um post generico do site.",
     "",
     "Direcao visual da marca (siga estritamente):",
     `- Paleta: ${coverArt.paletteDescription}`,
     `- Iluminacao: ${coverArt.lighting}`,
     `- Mood: ${coverArt.mood}`,
-    `- Motivos visuais permitidos: ${motifs}`,
-    `- EVITAR sob qualquer circunstancia: ${avoidList}`
+    `- Motivos visuais para esta edicao (use 1 ou combine os 2 — NAO precisa usar todos): ${motifs}`,
+    `- Composicao desta edicao: ${composition}`,
+    `- EVITAR sob qualquer circunstancia: ${avoidList}`,
+    recentBlock
   ];
 
   if (character) {
@@ -149,10 +201,10 @@ async function callTextModel({ aiConfig, prompt }) {
   return null;
 }
 
-async function buildVisualPrompt({ aiConfig, site, contract, coverArt }) {
+async function buildVisualPrompt({ aiConfig, site, contract, coverArt, recentAlts = [] }) {
   const promptAi = resolvePromptAiConfig(aiConfig);
   if (!promptAi) return "";
-  const instruction = buildPromptInstruction({ site, contract, coverArt });
+  const instruction = buildPromptInstruction({ site, contract, coverArt, recentAlts });
   try {
     const result = await callTextModel({ aiConfig: promptAi, prompt: instruction });
     return result?.prompt?.trim() || "";
@@ -371,8 +423,9 @@ async function generateCover({ aiConfig, site, contract, targetPath }) {
 
   const profile = siteProfile(site.id) || {};
   const coverArt = profile.coverArt || defaultCoverArt();
+  const recentAlts = loadRecentCoverAlts(site.id, { excludeSlug: contract.slug, limit: 5 });
 
-  let visualPrompt = await buildVisualPrompt({ aiConfig, site, contract, coverArt });
+  let visualPrompt = await buildVisualPrompt({ aiConfig, site, contract, coverArt, recentAlts });
   if (!visualPrompt) {
     visualPrompt = [
       `Editorial cinematic 16:9 cover for an article titled "${contract.content?.headline || contract.title || ""}".`,

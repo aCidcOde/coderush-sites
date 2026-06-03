@@ -3,6 +3,7 @@ const path = require("path");
 
 const ROOT = path.resolve(__dirname, "..");
 const OUT_ROOT = path.join(ROOT, "out");
+const COVERS_DIRNAME = "covers";
 
 function readDraft(filePath) {
   try {
@@ -63,8 +64,36 @@ function recentAngles(recents) {
   return Array.from(uniqueLowerSet(recents.map((r) => r.angle)));
 }
 
+function loadRecentCoverAlts(siteId, { excludeSlug, limit = 6 } = {}) {
+  const coversDir = path.join(OUT_ROOT, siteId, COVERS_DIRNAME);
+  if (!fs.existsSync(coversDir)) return [];
+  const entries = fs
+    .readdirSync(coversDir)
+    .filter((name) => name.endsWith(".jpg.alt.txt"))
+    .map((name) => {
+      const filePath = path.join(coversDir, name);
+      return { name, filePath, mtime: fs.statSync(filePath).mtimeMs };
+    })
+    .sort((a, b) => b.mtime - a.mtime);
+
+  const out = [];
+  for (const entry of entries) {
+    if (out.length >= limit) break;
+    const slug = entry.name.replace(/\.jpg\.alt\.txt$/, "");
+    if (excludeSlug && slug === excludeSlug) continue;
+    try {
+      const alt = fs.readFileSync(entry.filePath, "utf8").trim();
+      if (alt) out.push({ slug, alt });
+    } catch {
+      // ignore unreadable file
+    }
+  }
+  return out;
+}
+
 module.exports = {
   loadRecentPosts,
+  loadRecentCoverAlts,
   recentThemes,
   recentAngles
 };
