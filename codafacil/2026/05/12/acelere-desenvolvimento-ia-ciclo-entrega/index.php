@@ -238,19 +238,19 @@
   <p class="mt-2 text-sm text-white/70">Conteúdo recente dos outros sites do ecossistema.</p>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="https://sistemavendadireta.com.br/2026/06/06/crm-pode-acelerar-onboarding-distribuidores/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/crm-pode-acelerar-onboarding-distribuidores.jpg" alt="Como um CRM pode acelerar o onboarding de distribuidores" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Sistema Venda Direta</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/06/06/crm-pode-acelerar-onboarding-distribuidores/" rel="noopener" target="_blank" class="hover:underline">Como um CRM pode acelerar o onboarding de distribuidores</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como utilizar um CRM para otimizar o onboarding e a ativação de distribuidores em vendas diretas.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="https://coderush.com.br/2026/05/12/arquitetura-software-operacoes-criticas-governanca/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/arquitetura-software-operacoes-criticas-governanca.jpg" alt="Arquitetura de software para operações críticas e governança" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">CodeRush</p>
     <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/05/12/arquitetura-software-operacoes-criticas-governanca/" rel="noopener" target="_blank" class="hover:underline">Arquitetura de software para operações críticas e governança</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a governança pode otimizar a arquitetura de software em operações críticas.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://sistemavendadireta.com.br/2026/05/12/governanca-comercial-dados-ia-podem-melhorar-resultados/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/governanca-comercial-dados-ia-podem-melhorar-resultados.jpg" alt="Governança Comercial: Como Dados e IA Podem Melhorar Resultados" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Sistema Venda Direta</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/05/12/governanca-comercial-dados-ia-podem-melhorar-resultados/" rel="noopener" target="_blank" class="hover:underline">Governança Comercial: Como Dados e IA Podem Melhorar Resultados</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a governança comercial, aliada à IA, pode otimizar processos e resultados em vendas diretas.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">

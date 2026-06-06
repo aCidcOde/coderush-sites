@@ -582,6 +582,15 @@ $seoLdGraph = [
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-HOME-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/06/pareamento-humano-ia-pode-acelerar-desenvolvimento-software/" data-blog-image="imagens/posts/pareamento-humano-ia-pode-acelerar-desenvolvimento-software.jpg" data-blog-slug="pareamento-humano-ia-pode-acelerar-desenvolvimento-software" data-blog-date="2026-06-06">
+  <a href="2026/06/06/pareamento-humano-ia-pode-acelerar-desenvolvimento-software/">
+    <img src="imagens/posts/pareamento-humano-ia-pode-acelerar-desenvolvimento-software.jpg" alt="Como o pareamento humano-IA pode acelerar o desenvolvimento de software" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="2026/06/06/pareamento-humano-ia-pode-acelerar-desenvolvimento-software/" class="hover:underline">Como o pareamento humano-IA pode acelerar o desenvolvimento de software</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como o pareamento entre humanos e IA otimiza o ciclo de desenvolvimento de software sob medida.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/03/acelere-desenvolvimento-software-ia-aplicada/" data-blog-image="imagens/posts/acelere-desenvolvimento-software-ia-aplicada.jpg" data-blog-slug="acelere-desenvolvimento-software-ia-aplicada" data-blog-date="2026-06-03">
   <a href="2026/06/03/acelere-desenvolvimento-software-ia-aplicada/">
     <img src="imagens/posts/acelere-desenvolvimento-software-ia-aplicada.jpg" alt="Acelere o desenvolvimento de software com IA aplicada" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
@@ -598,15 +607,6 @@ $seoLdGraph = [
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="2026/05/30/ferramentas-ia-otimizar-operacoes-criticas-desenvolvimento/" class="hover:underline">Ferramentas de IA para otimizar operações críticas em desenvolvimento</a></h2>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como integrar IA para acelerar a entrega em software sob medida.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/27/ia-pode-otimizar-operacoes-criticas-desenvolvimento/" data-blog-image="imagens/posts/ia-pode-otimizar-operacoes-criticas-desenvolvimento.jpg" data-blog-slug="ia-pode-otimizar-operacoes-criticas-desenvolvimento" data-blog-date="2026-05-27">
-  <a href="2026/05/27/ia-pode-otimizar-operacoes-criticas-desenvolvimento/">
-    <img src="imagens/posts/ia-pode-otimizar-operacoes-criticas-desenvolvimento.jpg" alt="Como a IA pode otimizar operações críticas no desenvolvimento" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-  </a>
-  <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="2026/05/27/ia-pode-otimizar-operacoes-criticas-desenvolvimento/" class="hover:underline">Como a IA pode otimizar operações críticas no desenvolvimento</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Explore como integrar IA no desenvolvimento de software sob medida para acelerar entregas e manter a qualidade.</p>
   </div>
 </article>
 <!-- BLOG-HOME-CARDS:END -->

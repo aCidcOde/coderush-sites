@@ -691,6 +691,15 @@ $seoLdGraph = [
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-HOME-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/06/aplicar-governanca-ia-processos-retaguarda/" data-blog-image="imagens/posts/aplicar-governanca-ia-processos-retaguarda.jpg" data-blog-slug="aplicar-governanca-ia-processos-retaguarda" data-blog-date="2026-06-06">
+  <a href="2026/06/06/aplicar-governanca-ia-processos-retaguarda/">
+    <img src="imagens/posts/aplicar-governanca-ia-processos-retaguarda.jpg" alt="Como aplicar governança em IA nos processos de retaguarda" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="2026/06/06/aplicar-governanca-ia-processos-retaguarda/" class="hover:underline">Como aplicar governança em IA nos processos de retaguarda</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como integrar IA em processos de retaguarda com governança eficaz.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/03/melhorar-produtividade-equipe-automacao/" data-blog-image="imagens/posts/melhorar-produtividade-equipe-automacao.jpg" data-blog-slug="melhorar-produtividade-equipe-automacao" data-blog-date="2026-06-03">
   <a href="2026/06/03/melhorar-produtividade-equipe-automacao/">
     <img src="imagens/posts/melhorar-produtividade-equipe-automacao.jpg" alt="Como melhorar a produtividade da sua equipe com automação" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
@@ -707,15 +716,6 @@ $seoLdGraph = [
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="2026/05/30/governanca-tecnologia-caminho-crescimento/" class="hover:underline">Governança de Tecnologia: O Caminho para o Crescimento</a></h2>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a governança de tecnologia pode impulsionar o crescimento da sua empresa.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/27/arquitetura-software-operacoes-criticas-empresas-medias/" data-blog-image="imagens/posts/arquitetura-software-operacoes-criticas-empresas-medias.jpg" data-blog-slug="arquitetura-software-operacoes-criticas-empresas-medias" data-blog-date="2026-05-27">
-  <a href="2026/05/27/arquitetura-software-operacoes-criticas-empresas-medias/">
-    <img src="imagens/posts/arquitetura-software-operacoes-criticas-empresas-medias.jpg" alt="Arquitetura de software para operações críticas em empresas médias" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-  </a>
-  <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="2026/05/27/arquitetura-software-operacoes-criticas-empresas-medias/" class="hover:underline">Arquitetura de software para operações críticas em empresas médias</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como implementar uma arquitetura de software sólida para operações críticas, focando na integração com sistemas legados.</p>
   </div>
 </article>
 <!-- BLOG-HOME-CARDS:END -->

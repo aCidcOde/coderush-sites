@@ -89,6 +89,15 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-INDEX-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/06/crm-pode-acelerar-onboarding-distribuidores/" data-blog-image="imagens/posts/crm-pode-acelerar-onboarding-distribuidores.jpg" data-blog-slug="crm-pode-acelerar-onboarding-distribuidores" data-blog-date="2026-06-06">
+  <a href="../2026/06/06/crm-pode-acelerar-onboarding-distribuidores/">
+    <img src="../imagens/posts/crm-pode-acelerar-onboarding-distribuidores.jpg" alt="Como um CRM pode acelerar o onboarding de distribuidores" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="../2026/06/06/crm-pode-acelerar-onboarding-distribuidores/" class="hover:underline">Como um CRM pode acelerar o onboarding de distribuidores</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como utilizar um CRM para otimizar o onboarding e a ativação de distribuidores em vendas diretas.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/03/tecnologia-vendas-diretas-escala-considerar/" data-blog-image="imagens/posts/tecnologia-vendas-diretas-escala-considerar.jpg" data-blog-slug="tecnologia-vendas-diretas-escala-considerar" data-blog-date="2026-06-03">
   <a href="../2026/06/03/tecnologia-vendas-diretas-escala-considerar/">
     <img src="../imagens/posts/tecnologia-vendas-diretas-escala-considerar.jpg" alt="Tecnologia para Vendas Diretas em Escala: O que Considerar" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />

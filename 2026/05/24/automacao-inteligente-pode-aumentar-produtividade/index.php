@@ -208,17 +208,17 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/06/06/aplicar-governanca-ia-processos-retaguarda/"><img src="../../../../imagens/posts/aplicar-governanca-ia-processos-retaguarda.jpg" alt="Como aplicar governança em IA nos processos de retaguarda" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/06/aplicar-governanca-ia-processos-retaguarda/" class="hover:underline">Como aplicar governança em IA nos processos de retaguarda</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como integrar IA em processos de retaguarda com governança eficaz.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="../../../../2026/05/27/arquitetura-software-operacoes-criticas-empresas-medias/"><img src="../../../../imagens/posts/arquitetura-software-operacoes-criticas-empresas-medias.jpg" alt="Arquitetura de software para operações críticas em empresas médias" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/27/arquitetura-software-operacoes-criticas-empresas-medias/" class="hover:underline">Arquitetura de software para operações críticas em empresas médias</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como implementar uma arquitetura de software sólida para operações críticas, focando na integração com sistemas legados.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/05/21/construir-comprar-software-considerar/"><img src="../../../../imagens/posts/construir-comprar-software-considerar.jpg" alt="Construir ou comprar software: o que considerar?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/21/construir-comprar-software-considerar/" class="hover:underline">Construir ou comprar software: o que considerar?</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como escolher entre desenvolver ou adquirir software sob medida.</p>
   </div>
 </article>
   </div>

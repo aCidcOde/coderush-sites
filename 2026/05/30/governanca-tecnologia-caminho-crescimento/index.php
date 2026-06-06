@@ -212,17 +212,17 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/06/06/aplicar-governanca-ia-processos-retaguarda/"><img src="../../../../imagens/posts/aplicar-governanca-ia-processos-retaguarda.jpg" alt="Como aplicar governança em IA nos processos de retaguarda" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/06/aplicar-governanca-ia-processos-retaguarda/" class="hover:underline">Como aplicar governança em IA nos processos de retaguarda</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como integrar IA em processos de retaguarda com governança eficaz.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="../../../../2026/05/12/arquitetura-software-operacoes-criticas-governanca/"><img src="../../../../imagens/posts/arquitetura-software-operacoes-criticas-governanca.jpg" alt="Arquitetura de software para operações críticas e governança" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/12/arquitetura-software-operacoes-criticas-governanca/" class="hover:underline">Arquitetura de software para operações críticas e governança</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a governança pode otimizar a arquitetura de software em operações críticas.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/05/02/garantir-governanca-arquitetura-software-critica/"><img src="../../../../imagens/posts/garantir-governanca-arquitetura-software-critica.jpg" alt="Como garantir governança em arquitetura de software crítica" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/02/garantir-governanca-arquitetura-software-critica/" class="hover:underline">Como garantir governança em arquitetura de software crítica</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda a importância da governança na arquitetura de software para operações críticas e como a IA pode auxiliar.</p>
   </div>
 </article>
   </div>
@@ -253,11 +253,11 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://codafacil.dev/2026/06/03/acelere-desenvolvimento-software-ia-aplicada/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/acelere-desenvolvimento-software-ia-aplicada.jpg" alt="Acelere o desenvolvimento de software com IA aplicada" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://codafacil.dev/2026/06/06/pareamento-humano-ia-pode-acelerar-desenvolvimento-software/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/pareamento-humano-ia-pode-acelerar-desenvolvimento-software.jpg" alt="Como o pareamento humano-IA pode acelerar o desenvolvimento de software" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/06/03/acelere-desenvolvimento-software-ia-aplicada/" rel="noopener" target="_blank" class="hover:underline">Acelere o desenvolvimento de software com IA aplicada</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como usar ferramentas de IA para melhorar a entrega de software sob medida.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/06/06/pareamento-humano-ia-pode-acelerar-desenvolvimento-software/" rel="noopener" target="_blank" class="hover:underline">Como o pareamento humano-IA pode acelerar o desenvolvimento de software</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como o pareamento entre humanos e IA otimiza o ciclo de desenvolvimento de software sob medida.</p>
   </div>
 </article>
   </div>

@@ -246,19 +246,19 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://coderush.com.br/2026/06/03/melhorar-produtividade-equipe-automacao/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/melhorar-produtividade-equipe-automacao.jpg" alt="Como melhorar a produtividade da sua equipe com automação" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://coderush.com.br/2026/06/06/aplicar-governanca-ia-processos-retaguarda/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/aplicar-governanca-ia-processos-retaguarda.jpg" alt="Como aplicar governança em IA nos processos de retaguarda" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">CodeRush</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/06/03/melhorar-produtividade-equipe-automacao/" rel="noopener" target="_blank" class="hover:underline">Como melhorar a produtividade da sua equipe com automação</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a automação pode aumentar a eficiência dos times em empresas médias.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/06/06/aplicar-governanca-ia-processos-retaguarda/" rel="noopener" target="_blank" class="hover:underline">Como aplicar governança em IA nos processos de retaguarda</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como integrar IA em processos de retaguarda com governança eficaz.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://codafacil.dev/2026/05/27/ia-pode-otimizar-operacoes-criticas-desenvolvimento/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/ia-pode-otimizar-operacoes-criticas-desenvolvimento.jpg" alt="Como a IA pode otimizar operações críticas no desenvolvimento" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://codafacil.dev/2026/06/06/pareamento-humano-ia-pode-acelerar-desenvolvimento-software/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/pareamento-humano-ia-pode-acelerar-desenvolvimento-software.jpg" alt="Como o pareamento humano-IA pode acelerar o desenvolvimento de software" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/05/27/ia-pode-otimizar-operacoes-criticas-desenvolvimento/" rel="noopener" target="_blank" class="hover:underline">Como a IA pode otimizar operações críticas no desenvolvimento</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Explore como integrar IA no desenvolvimento de software sob medida para acelerar entregas e manter a qualidade.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/06/06/pareamento-humano-ia-pode-acelerar-desenvolvimento-software/" rel="noopener" target="_blank" class="hover:underline">Como o pareamento humano-IA pode acelerar o desenvolvimento de software</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como o pareamento entre humanos e IA otimiza o ciclo de desenvolvimento de software sob medida.</p>
   </div>
 </article>
   </div>

@@ -213,17 +213,17 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/06/06/pareamento-humano-ia-pode-acelerar-desenvolvimento-software/"><img src="../../../../imagens/posts/pareamento-humano-ia-pode-acelerar-desenvolvimento-software.jpg" alt="Como o pareamento humano-IA pode acelerar o desenvolvimento de software" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/06/pareamento-humano-ia-pode-acelerar-desenvolvimento-software/" class="hover:underline">Como o pareamento humano-IA pode acelerar o desenvolvimento de software</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como o pareamento entre humanos e IA otimiza o ciclo de desenvolvimento de software sob medida.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="../../../../2026/05/18/ia-pode-acelerar-desenvolvimento-software-sob-medida/"><img src="../../../../imagens/posts/ia-pode-acelerar-desenvolvimento-software-sob-medida.jpg" alt="Como a IA pode acelerar o desenvolvimento de software sob medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/18/ia-pode-acelerar-desenvolvimento-software-sob-medida/" class="hover:underline">Como a IA pode acelerar o desenvolvimento de software sob medida</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como ferramentas de IA estão transformando o ciclo de desenvolvimento de software, garantindo qualidade e agilidade.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/05/15/acelere-desenvolvimento-software-sob-medida-ia/"><img src="../../../../imagens/posts/acelere-desenvolvimento-software-sob-medida-ia.jpg" alt="Acelere o desenvolvimento de software sob medida com IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/15/acelere-desenvolvimento-software-sob-medida-ia/" class="hover:underline">Acelere o desenvolvimento de software sob medida com IA</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como a IA pode otimizar o ciclo de desenvolvimento de software sob medida.</p>
   </div>
 </article>
   </div>
@@ -254,11 +254,11 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://sistemavendadireta.com.br/2026/05/12/governanca-comercial-dados-ia-podem-melhorar-resultados/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/governanca-comercial-dados-ia-podem-melhorar-resultados.jpg" alt="Governança Comercial: Como Dados e IA Podem Melhorar Resultados" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://sistemavendadireta.com.br/2026/06/06/crm-pode-acelerar-onboarding-distribuidores/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/crm-pode-acelerar-onboarding-distribuidores.jpg" alt="Como um CRM pode acelerar o onboarding de distribuidores" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Sistema Venda Direta</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/05/12/governanca-comercial-dados-ia-podem-melhorar-resultados/" rel="noopener" target="_blank" class="hover:underline">Governança Comercial: Como Dados e IA Podem Melhorar Resultados</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a governança comercial, aliada à IA, pode otimizar processos e resultados em vendas diretas.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/06/06/crm-pode-acelerar-onboarding-distribuidores/" rel="noopener" target="_blank" class="hover:underline">Como um CRM pode acelerar o onboarding de distribuidores</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como utilizar um CRM para otimizar o onboarding e a ativação de distribuidores em vendas diretas.</p>
   </div>
 </article>
   </div>

@@ -246,11 +246,11 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://sistemavendadireta.com.br/2026/05/18/crm-automacao-marketing-multinivel-usar/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/crm-automacao-marketing-multinivel-usar.jpg" alt="CRM e Automação no Marketing Multinível: Como Usar?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://sistemavendadireta.com.br/2026/06/06/crm-pode-acelerar-onboarding-distribuidores/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/crm-pode-acelerar-onboarding-distribuidores.jpg" alt="Como um CRM pode acelerar o onboarding de distribuidores" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Sistema Venda Direta</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/05/18/crm-automacao-marketing-multinivel-usar/" rel="noopener" target="_blank" class="hover:underline">CRM e Automação no Marketing Multinível: Como Usar?</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como CRM e automação podem otimizar processos no marketing multinível.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/06/06/crm-pode-acelerar-onboarding-distribuidores/" rel="noopener" target="_blank" class="hover:underline">Como um CRM pode acelerar o onboarding de distribuidores</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como utilizar um CRM para otimizar o onboarding e a ativação de distribuidores em vendas diretas.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">

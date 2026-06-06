@@ -42,6 +42,15 @@
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-INDEX-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/06/aplicar-governanca-ia-processos-retaguarda/" data-blog-image="imagens/posts/aplicar-governanca-ia-processos-retaguarda.jpg" data-blog-slug="aplicar-governanca-ia-processos-retaguarda" data-blog-date="2026-06-06">
+  <a href="../2026/06/06/aplicar-governanca-ia-processos-retaguarda/">
+    <img src="../imagens/posts/aplicar-governanca-ia-processos-retaguarda.jpg" alt="Como aplicar governança em IA nos processos de retaguarda" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="../2026/06/06/aplicar-governanca-ia-processos-retaguarda/" class="hover:underline">Como aplicar governança em IA nos processos de retaguarda</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como integrar IA em processos de retaguarda com governança eficaz.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/03/melhorar-produtividade-equipe-automacao/" data-blog-image="imagens/posts/melhorar-produtividade-equipe-automacao.jpg" data-blog-slug="melhorar-produtividade-equipe-automacao" data-blog-date="2026-06-03">
   <a href="../2026/06/03/melhorar-produtividade-equipe-automacao/">
     <img src="../imagens/posts/melhorar-produtividade-equipe-automacao.jpg" alt="Como melhorar a produtividade da sua equipe com automação" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />

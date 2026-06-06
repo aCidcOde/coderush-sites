@@ -215,10 +215,10 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/05/30/governanca-tecnologia-caminho-crescimento/"><img src="../../../../imagens/posts/governanca-tecnologia-caminho-crescimento.jpg" alt="Governança de Tecnologia: O Caminho para o Crescimento" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/06/06/aplicar-governanca-ia-processos-retaguarda/"><img src="../../../../imagens/posts/aplicar-governanca-ia-processos-retaguarda.jpg" alt="Como aplicar governança em IA nos processos de retaguarda" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/30/governanca-tecnologia-caminho-crescimento/" class="hover:underline">Governança de Tecnologia: O Caminho para o Crescimento</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a governança de tecnologia pode impulsionar o crescimento da sua empresa.</p>
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/06/aplicar-governanca-ia-processos-retaguarda/" class="hover:underline">Como aplicar governança em IA nos processos de retaguarda</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como integrar IA em processos de retaguarda com governança eficaz.</p>
   </div>
 </article>
   </div>

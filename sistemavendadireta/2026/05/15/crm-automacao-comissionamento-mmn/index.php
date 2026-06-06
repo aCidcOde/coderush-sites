@@ -213,17 +213,17 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/06/06/crm-pode-acelerar-onboarding-distribuidores/"><img src="../../../../imagens/posts/crm-pode-acelerar-onboarding-distribuidores.jpg" alt="Como um CRM pode acelerar o onboarding de distribuidores" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/06/crm-pode-acelerar-onboarding-distribuidores/" class="hover:underline">Como um CRM pode acelerar o onboarding de distribuidores</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como utilizar um CRM para otimizar o onboarding e a ativação de distribuidores em vendas diretas.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="../../../../2026/05/18/crm-automacao-marketing-multinivel-usar/"><img src="../../../../imagens/posts/crm-automacao-marketing-multinivel-usar.jpg" alt="CRM e Automação no Marketing Multinível: Como Usar?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/18/crm-automacao-marketing-multinivel-usar/" class="hover:underline">CRM e Automação no Marketing Multinível: Como Usar?</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como CRM e automação podem otimizar processos no marketing multinível.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/05/03/crm-pode-potencializar-governanca-comercial/"><img src="../../../../imagens/posts/crm-pode-potencializar-governanca-comercial.jpg" alt="Como um CRM pode potencializar sua governança comercial" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/03/crm-pode-potencializar-governanca-comercial/" class="hover:underline">Como um CRM pode potencializar sua governança comercial</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como um CRM integrado com IA pode transformar sua governança comercial no setor de venda direta.</p>
   </div>
 </article>
   </div>

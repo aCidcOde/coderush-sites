@@ -241,11 +241,19 @@
   <p class="mt-2 text-sm text-white/70">Conteúdo recente dos outros sites do ecossistema.</p>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://codafacil.dev/2026/05/27/ia-pode-otimizar-operacoes-criticas-desenvolvimento/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/ia-pode-otimizar-operacoes-criticas-desenvolvimento.jpg" alt="Como a IA pode otimizar operações críticas no desenvolvimento" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://codafacil.dev/2026/06/06/pareamento-humano-ia-pode-acelerar-desenvolvimento-software/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/pareamento-humano-ia-pode-acelerar-desenvolvimento-software.jpg" alt="Como o pareamento humano-IA pode acelerar o desenvolvimento de software" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/05/27/ia-pode-otimizar-operacoes-criticas-desenvolvimento/" rel="noopener" target="_blank" class="hover:underline">Como a IA pode otimizar operações críticas no desenvolvimento</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Explore como integrar IA no desenvolvimento de software sob medida para acelerar entregas e manter a qualidade.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/06/06/pareamento-humano-ia-pode-acelerar-desenvolvimento-software/" rel="noopener" target="_blank" class="hover:underline">Como o pareamento humano-IA pode acelerar o desenvolvimento de software</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como o pareamento entre humanos e IA otimiza o ciclo de desenvolvimento de software sob medida.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="https://sistemavendadireta.com.br/2026/06/06/crm-pode-acelerar-onboarding-distribuidores/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/crm-pode-acelerar-onboarding-distribuidores.jpg" alt="Como um CRM pode acelerar o onboarding de distribuidores" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Sistema Venda Direta</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/06/06/crm-pode-acelerar-onboarding-distribuidores/" rel="noopener" target="_blank" class="hover:underline">Como um CRM pode acelerar o onboarding de distribuidores</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como utilizar um CRM para otimizar o onboarding e a ativação de distribuidores em vendas diretas.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
@@ -254,14 +262,6 @@
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">FluxoInteligente IA</p>
     <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/06/03/permissoes-auditoria-agentes-corporativos-ia/" rel="noopener" target="_blank" class="hover:underline">Permissões e Auditoria em Agentes Corporativos de IA</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda a importância da governança, permissões e auditoria para a implementação de agentes corporativos de IA.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://sistemavendadireta.com.br/2026/06/03/tecnologia-vendas-diretas-escala-considerar/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/tecnologia-vendas-diretas-escala-considerar.jpg" alt="Tecnologia para Vendas Diretas em Escala: O que Considerar" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Sistema Venda Direta</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/06/03/tecnologia-vendas-diretas-escala-considerar/" rel="noopener" target="_blank" class="hover:underline">Tecnologia para Vendas Diretas em Escala: O que Considerar</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a tecnologia impacta as vendas diretas e MMN no campo.</p>
   </div>
 </article>
   </div>
