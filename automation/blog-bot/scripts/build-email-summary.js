@@ -4,6 +4,36 @@ const path = require('path');
 
 const REPORTS_DIR = path.join(__dirname, '..', 'reports');
 const BODY_OUT = path.join(REPORTS_DIR, 'last-email-body.txt');
+const SITES_CONFIG = path.join(__dirname, '..', 'config', 'sites.json');
+
+function loadSitesConfig() {
+  try {
+    const data = JSON.parse(fs.readFileSync(SITES_CONFIG, 'utf8'));
+    const list = Array.isArray(data) ? data : data.sites || [];
+    const byId = {};
+    for (const site of list) {
+      if (site && site.id) byId[site.id] = site;
+    }
+    return byId;
+  } catch {
+    return {};
+  }
+}
+
+const SITES_BY_ID = loadSitesConfig();
+
+function buildPostUrl(siteId, postPath) {
+  const site = SITES_BY_ID[siteId];
+  const baseUrl = site && site.baseUrl ? site.baseUrl.replace(/\/$/, '') : '';
+  if (!baseUrl || !postPath) return '';
+  let rel = String(postPath).replace(/^\/+/, '');
+  if (rel.startsWith(`${siteId}/`)) {
+    rel = rel.slice(siteId.length + 1);
+  }
+  rel = rel.replace(/\/index\.(php|html)$/i, '/');
+  if (!rel.endsWith('/')) rel = `${rel}/`;
+  return `${baseUrl}/${rel}`;
+}
 
 const blogbotOutcome = process.env.BLOGBOT_OUTCOME || 'unknown';
 const commitOutcome = process.env.COMMIT_OUTCOME || 'unknown';
@@ -47,6 +77,8 @@ function summarize(report) {
       if (pr.apiUrl) lines.push(`  URL: ${pr.apiUrl}`);
     } else if (pr.target === 'files') {
       lines.push(`  Target: arquivos`);
+      const url = buildPostUrl(s.siteId, pr.postPath);
+      if (url) lines.push(`  URL: ${url}`);
       if (pr.postPath) lines.push(`  Path: ${pr.postPath}`);
     }
     if (s.warning) lines.push(`  Aviso: ${s.warning}`);
