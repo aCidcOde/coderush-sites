@@ -1,0 +1,87 @@
+{
+  "date": "2026-06-09",
+  "siteId": "emergency",
+  "postType": "due-diligence-certidoes",
+  "focus": "php",
+  "theme": "habilitacao e onboarding de fornecedor com certidoes",
+  "angle": "due diligence societaria",
+  "slug": "habilitacao-fornecedores-due-diligence-societaria",
+  "title": "Emergency Documentação: PHP aplicado a due diligence societaria",
+  "description": "Atualização semanal de php para Emergency Documentação, com foco em habilitacao e onboarding de fornecedor com certidoes.",
+  "sources": [
+    "https://emergency.com.br/blog/habilitacao-onboarding-fornecedores-ma",
+    "https://emergency.com.br/blog/habilitacao-fornecedores-due-diligence-necessaria",
+    "https://www.cadenio.com/pt-br/blog/onboarding-fornecedor-qualificacao-due-diligence-auditavel",
+    "https://www.gobuyer.com.br/due-dilligence-de-fornecedores-checklist-completo-de-risco-compliance-e-esg-para-homologar-com-seguranca/",
+    "https://www.lexisnexis.com/blogs/br/b/compliance/posts/due-diligence-de-fornecedores-risco-na-cadeia-de-suprimentos"
+  ],
+  "status": "draft",
+  "generatedAt": "2026-06-09T08:11:26-03:00",
+  "content": {
+    "eyebrow": "Orientações Práticas",
+    "headline": "Habilitação de Fornecedores na Due Diligence Societária",
+    "summary": "Entenda como realizar a habilitação de fornecedores de forma eficaz na due diligence societária.",
+    "answerBox": {
+      "question": "Como habilitar um fornecedor durante a due diligence societária?",
+      "answer": "Habilitar um fornecedor na due diligence societária envolve verificar sua regularidade documental, incluindo certidões e compliance. É essencial garantir que o fornecedor não apresente riscos legais ou financeiros antes de formalizar qualquer contrato."
+    },
+    "tldr": [
+      "Habilitação de fornecedores é crucial na due diligence.",
+      "Verifique regularidade documental e compliance.",
+      "Apoio especializado pode agilizar o processo."
+    ],
+    "sections": [
+      {
+        "type": "prose",
+        "title": "A Importância da Habilitação de Fornecedores",
+        "body": "A habilitação de fornecedores é uma etapa essencial na due diligence societária. Isso garante que você não apenas contrate um fornecedor, mas também que ele tenha a saúde financeira e legal necessárias. A análise prévia minimiza riscos e assegura que a parceria será segura e produtiva."
+      },
+      {
+        "type": "list",
+        "title": "Passos para Habilitação de Fornecedores",
+        "items": [
+          "Verificar certidões de regularidade fiscal e trabalhista.",
+          "Analisar a situação cadastral da empresa na Receita Federal.",
+          "Consultar registros de ações judiciais relevantes.",
+          "Avaliar a capacidade técnica e financeira do fornecedor."
+        ]
+      },
+      {
+        "type": "callout",
+        "body": "Já estruturamos isso em diversos projetos. Uma conversa pode ajudar a entender seu cenário específico e otimizar a busca por fornecedores.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Desafios na Habilitação de Fornecedores",
+        "body": "Um dos maiores desafios na habilitação é a complexidade das informações a serem analisadas. Muitas vezes, as certidões não refletem a totalidade da situação de um fornecedor. Portanto, contar com uma equipe que compreenda a due diligence societária pode fazer a diferença. A Emergency Documentação, com sua experiência, pode ajudar a evitar armadilhas."
+      },
+      {
+        "type": "cta-inline",
+        "body": "Se você está lidando com fornecedores, considere um suporte especializado.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "O Que Evitar na Habilitação",
+        "body": "Evite confiar apenas em informações superficiais. Documentos desatualizados ou incompletos podem esconder riscos significativos. Além disso, não deixe de consultar diferentes fontes para confirmar a regularidade do fornecedor, pois isso pode prevenir problemas futuros e garantir uma relação comercial segura."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Quais certidões são obrigatórias na habilitação de fornecedores?",
+        "a": "As certidões obrigatórias incluem a de regularidade fiscal, trabalhista e a situação cadastral na Receita Federal. Essas garantem a conformidade legal do fornecedor."
+      },
+      {
+        "q": "Como posso reduzir riscos na contratação de fornecedores?",
+        "a": "Realizar uma análise minuciosa de documentos e consultar referências de outros clientes pode ajudar a mitigar riscos na contratação de fornecedores."
+      },
+      {
+        "q": "Qual a importância do suporte na due diligence?",
+        "a": "Um suporte especializado pode acelerar o processo de habilitação, além de oferecer insights valiosos sobre possíveis riscos e armadilhas na documentação."
+      }
+    ]
+  }
+}

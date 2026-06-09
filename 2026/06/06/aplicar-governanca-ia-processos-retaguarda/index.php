@@ -205,6 +205,13 @@
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/06/09/modernizacao-gradual-sistemas-legados-php/"><img src="../../../../imagens/posts/modernizacao-gradual-sistemas-legados-php.jpg" alt="Modernização gradual de sistemas legados em PHP" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/09/modernizacao-gradual-sistemas-legados-php/" class="hover:underline">Modernização gradual de sistemas legados em PHP</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Explore como modernizar sistemas legados de forma pragmática e integrada.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="../../../../2026/05/27/arquitetura-software-operacoes-criticas-empresas-medias/"><img src="../../../../imagens/posts/arquitetura-software-operacoes-criticas-empresas-medias.jpg" alt="Arquitetura de software para operações críticas em empresas médias" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/27/arquitetura-software-operacoes-criticas-empresas-medias/" class="hover:underline">Arquitetura de software para operações críticas em empresas médias</a></h3>
@@ -216,13 +223,6 @@
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/02/garantir-governanca-arquitetura-software-critica/" class="hover:underline">Como garantir governança em arquitetura de software crítica</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda a importância da governança na arquitetura de software para operações críticas e como a IA pode auxiliar.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/05/30/governanca-tecnologia-caminho-crescimento/"><img src="../../../../imagens/posts/governanca-tecnologia-caminho-crescimento.jpg" alt="Governança de Tecnologia: O Caminho para o Crescimento" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/30/governanca-tecnologia-caminho-crescimento/" class="hover:underline">Governança de Tecnologia: O Caminho para o Crescimento</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a governança de tecnologia pode impulsionar o crescimento da sua empresa.</p>
   </div>
 </article>
   </div>

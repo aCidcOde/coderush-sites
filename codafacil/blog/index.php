@@ -43,6 +43,15 @@
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-INDEX-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/09/arquitetura-laravel-aumentando-dx-software-sob-medida/" data-blog-image="imagens/posts/arquitetura-laravel-aumentando-dx-software-sob-medida.jpg" data-blog-slug="arquitetura-laravel-aumentando-dx-software-sob-medida" data-blog-date="2026-06-09">
+  <a href="../2026/06/09/arquitetura-laravel-aumentando-dx-software-sob-medida/">
+    <img src="../imagens/posts/arquitetura-laravel-aumentando-dx-software-sob-medida.jpg" alt="Arquitetura Laravel: Aumentando a DX em Software Sob Medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="../2026/06/09/arquitetura-laravel-aumentando-dx-software-sob-medida/" class="hover:underline">Arquitetura Laravel: Aumentando a DX em Software Sob Medida</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a arquitetura Laravel pode otimizar o desenvolvimento de software sob medida com foco em experiência do desenvolvedor.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/06/pareamento-humano-ia-pode-acelerar-desenvolvimento-software/" data-blog-image="imagens/posts/pareamento-humano-ia-pode-acelerar-desenvolvimento-software.jpg" data-blog-slug="pareamento-humano-ia-pode-acelerar-desenvolvimento-software" data-blog-date="2026-06-06">
   <a href="../2026/06/06/pareamento-humano-ia-pode-acelerar-desenvolvimento-software/">
     <img src="../imagens/posts/pareamento-humano-ia-pode-acelerar-desenvolvimento-software.jpg" alt="Como o pareamento humano-IA pode acelerar o desenvolvimento de software" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />

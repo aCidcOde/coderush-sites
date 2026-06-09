@@ -1,0 +1,88 @@
+{
+  "date": "2026-06-09",
+  "siteId": "codafacil",
+  "postType": "software-sob-medida-ia",
+  "focus": "php",
+  "theme": "arquitetura Laravel para sistemas sob medida",
+  "angle": "DX",
+  "slug": "arquitetura-laravel-aumentando-dx-software-sob-medida",
+  "title": "Codafacil.dev: PHP aplicado a DX",
+  "description": "Atualização semanal de php para Codafacil.dev, com foco em arquitetura Laravel para sistemas sob medida.",
+  "sources": [
+    "https://www.commithouse.com.br/servicos/desenvolvimento",
+    "https://duiliofanton.com.br/",
+    "http://andersonolsen.com.br/",
+    "https://sixtec.com.br/",
+    "https://mestrescriativos.com.br/servicos/desenvolvimento-custom/"
+  ],
+  "status": "draft",
+  "generatedAt": "2026-06-09T08:06:05-03:00",
+  "content": {
+    "eyebrow": "Guia prático",
+    "headline": "Arquitetura Laravel: Aumentando a DX em Software Sob Medida",
+    "summary": "Entenda como a arquitetura Laravel pode otimizar o desenvolvimento de software sob medida com foco em experiência do desenvolvedor.",
+    "answerBox": {
+      "question": "Como a arquitetura Laravel pode melhorar a entrega de software sob medida?",
+      "answer": "A arquitetura Laravel facilita a entrega de software sob medida por meio de uma estrutura organizada, suporte a testes automatizados e integração com ferramentas de IA, como GitHub Copilot. Isso resulta em um ciclo de desenvolvimento mais ágil e com maior qualidade."
+    },
+    "tldr": [
+      "Laravel otimiza a entrega de software sob medida",
+      "Integração de IA melhora a experiência do desenvolvedor",
+      "Testes automatizados garantem qualidade desde o início"
+    ],
+    "sections": [
+      {
+        "type": "prose",
+        "title": "Por que escolher Laravel?",
+        "body": "O Laravel se destaca pela sua simplicidade e robustez, oferecendo uma arquitetura que favorece o desenvolvimento ágil. Com suas funcionalidades nativas, como rotas, middleware e Eloquent ORM, é possível construir sistemas web sob medida de forma eficiente. Além disso, a comunidade ativa garante atualizações constantes e suporte, essencial para manter o software alinhado às novas demandas do mercado."
+      },
+      {
+        "type": "list",
+        "title": "Benefícios do Laravel para a DX",
+        "items": [
+          "Estrutura clara que facilita manutenção e escalabilidade",
+          "Rápida aplicação de mudanças com rotas dinâmicas",
+          "Integração nativa com testes automatizados",
+          "Suporte a APIs para extensibilidade",
+          "Comunidade ativa e rica em recursos"
+        ]
+      },
+      {
+        "type": "callout",
+        "body": "Já estruturamos isso em diversos projetos com Laravel. Vale uma conversa para ver como podemos ajudar no seu cenário específico.",
+        "ctaLabel": "Fale com a Codafacil.dev",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Integração com IA no fluxo de desenvolvimento",
+        "body": "Integrar IA, como o GitHub Copilot, pode acelerar a codificação e aumentar a qualidade do código gerado. Essa parceria entre humanos e máquinas permite que os desenvolvedores se concentrem em aspectos mais críticos do projeto, enquanto a IA cuida das tarefas repetitivas. A aplicação de IA no desenvolvimento Laravel não é apenas uma tendência, mas uma necessidade para garantir eficiência e inovação, conforme discutido em [Commit House](https://www.commithouse.com.br/servicos/desenvolvimento) e [Duílio Fanton](https://duiliofanton.com.br/)."
+      },
+      {
+        "type": "cta-inline",
+        "body": "Vamos conversar sobre como podemos otimizar seu processo de desenvolvimento.",
+        "ctaLabel": "Fale com a Codafacil.dev",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Evite armadilhas comuns",
+        "body": "É importante ter clareza no escopo do projeto para evitar mudanças excessivas que podem atrasar a entrega. Além disso, não subestime a importância de testes automatizados; começar a aplicá-los desde o primeiro sprint pode evitar retrabalho e garantir a qualidade do software. Fique atento também à documentação, que deve ser mantida em dia para facilitar a manutenção futura do sistema."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Quais são as vantagens do Laravel para sistemas sob medida?",
+        "a": "O Laravel oferece uma arquitetura robusta, suporte a testes automatizados e integração fácil com APIs, permitindo um desenvolvimento ágil e de alta qualidade."
+      },
+      {
+        "q": "Como a IA pode ser integrada ao desenvolvimento Laravel?",
+        "a": "Ferramentas como GitHub Copilot podem auxiliar na geração de código, reduzindo o tempo de desenvolvimento e aumentando a produtividade dos desenvolvedores."
+      },
+      {
+        "q": "Quais práticas ajudam a garantir qualidade em software sob medida?",
+        "a": "Implementar testes automatizados desde o início e ter um escopo claro são práticas fundamentais para garantir a qualidade do software durante o desenvolvimento."
+      }
+    ]
+  }
+}

@@ -89,6 +89,15 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-INDEX-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/09/comissionamento-gerenciar-inadimplencia-eficazmente/" data-blog-image="imagens/posts/comissionamento-gerenciar-inadimplencia-eficazmente.jpg" data-blog-slug="comissionamento-gerenciar-inadimplencia-eficazmente" data-blog-date="2026-06-09">
+  <a href="../2026/06/09/comissionamento-gerenciar-inadimplencia-eficazmente/">
+    <img src="../imagens/posts/comissionamento-gerenciar-inadimplencia-eficazmente.jpg" alt="Comissionamento: Como Gerenciar a Inadimplência Eficazmente" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="../2026/06/09/comissionamento-gerenciar-inadimplencia-eficazmente/" class="hover:underline">Comissionamento: Como Gerenciar a Inadimplência Eficazmente</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como o comissionamento impacta a gestão de inadimplência em vendas diretas e marketing multinível.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/06/crm-pode-acelerar-onboarding-distribuidores/" data-blog-image="imagens/posts/crm-pode-acelerar-onboarding-distribuidores.jpg" data-blog-slug="crm-pode-acelerar-onboarding-distribuidores" data-blog-date="2026-06-06">
   <a href="../2026/06/06/crm-pode-acelerar-onboarding-distribuidores/">
     <img src="../imagens/posts/crm-pode-acelerar-onboarding-distribuidores.jpg" alt="Como um CRM pode acelerar o onboarding de distribuidores" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />

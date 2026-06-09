@@ -753,6 +753,15 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-HOME-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/09/comissionamento-gerenciar-inadimplencia-eficazmente/" data-blog-image="imagens/posts/comissionamento-gerenciar-inadimplencia-eficazmente.jpg" data-blog-slug="comissionamento-gerenciar-inadimplencia-eficazmente" data-blog-date="2026-06-09">
+  <a href="2026/06/09/comissionamento-gerenciar-inadimplencia-eficazmente/">
+    <img src="imagens/posts/comissionamento-gerenciar-inadimplencia-eficazmente.jpg" alt="Comissionamento: Como Gerenciar a Inadimplência Eficazmente" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="2026/06/09/comissionamento-gerenciar-inadimplencia-eficazmente/" class="hover:underline">Comissionamento: Como Gerenciar a Inadimplência Eficazmente</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como o comissionamento impacta a gestão de inadimplência em vendas diretas e marketing multinível.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/06/crm-pode-acelerar-onboarding-distribuidores/" data-blog-image="imagens/posts/crm-pode-acelerar-onboarding-distribuidores.jpg" data-blog-slug="crm-pode-acelerar-onboarding-distribuidores" data-blog-date="2026-06-06">
   <a href="2026/06/06/crm-pode-acelerar-onboarding-distribuidores/">
     <img src="imagens/posts/crm-pode-acelerar-onboarding-distribuidores.jpg" alt="Como um CRM pode acelerar o onboarding de distribuidores" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
@@ -769,15 +778,6 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="2026/06/03/tecnologia-vendas-diretas-escala-considerar/" class="hover:underline">Tecnologia para Vendas Diretas em Escala: O que Considerar</a></h2>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a tecnologia impacta as vendas diretas e MMN no campo.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/30/crm-automacao-otimizam-marketing-multinivel/" data-blog-image="imagens/posts/crm-automacao-otimizam-marketing-multinivel.jpg" data-blog-slug="crm-automacao-otimizam-marketing-multinivel" data-blog-date="2026-05-30">
-  <a href="2026/05/30/crm-automacao-otimizam-marketing-multinivel/">
-    <img src="imagens/posts/crm-automacao-otimizam-marketing-multinivel.jpg" alt="Como CRM e automação otimizam seu marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-  </a>
-  <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="2026/05/30/crm-automacao-otimizam-marketing-multinivel/" class="hover:underline">Como CRM e automação otimizam seu marketing multinível</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como ferramentas de CRM e automação podem impulsionar sua operação de marketing multinível.</p>
   </div>
 </article>
 <!-- BLOG-HOME-CARDS:END -->

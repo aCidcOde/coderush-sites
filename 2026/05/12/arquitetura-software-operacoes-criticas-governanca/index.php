@@ -219,10 +219,10 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/05/06/arquitetura-software-operacoes-criticas-decisoes-fazem-diferenca/"><img src="../../../../imagens/posts/arquitetura-software-operacoes-criticas-decisoes-fazem-diferenca.jpg" alt="Arquitetura de software para operações críticas: decisões que fazem a diferença" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/06/09/modernizacao-gradual-sistemas-legados-php/"><img src="../../../../imagens/posts/modernizacao-gradual-sistemas-legados-php.jpg" alt="Modernização gradual de sistemas legados em PHP" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/06/arquitetura-software-operacoes-criticas-decisoes-fazem-diferenca/" class="hover:underline">Arquitetura de software para operações críticas: decisões que fazem a diferença</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a arquitetura de software impacta operações críticas e a importância da IA nesse cenário.</p>
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/09/modernizacao-gradual-sistemas-legados-php/" class="hover:underline">Modernização gradual de sistemas legados em PHP</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Explore como modernizar sistemas legados de forma pragmática e integrada.</p>
   </div>
 </article>
   </div>

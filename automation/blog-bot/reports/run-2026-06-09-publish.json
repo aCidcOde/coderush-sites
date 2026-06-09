@@ -1,0 +1,235 @@
+{
+  "mode": "publish",
+  "date": "2026-06-09",
+  "timezone": "America/Sao_Paulo",
+  "focus": "php",
+  "startedAt": "2026-06-09T11:03:43.047Z",
+  "aiProvider": "openrouter",
+  "sites": [
+    {
+      "siteId": "coderush",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Possível texto vazado na capa (sample: \"SSRI SRR Sanne vacant moe\")",
+      "angle": "arquitetura",
+      "theme": "modernizacao gradual de sistemas legados",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/coderush/2026-06-09/modernizacao-gradual-sistemas-legados-php.json",
+      "markdownPath": "automation/blog-bot/out/coderush/2026-06-09/modernizacao-gradual-sistemas-legados-php.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "2026/06/09/modernizacao-gradual-sistemas-legados-php/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Modelo arquitetônico em seção transversal com camadas de estratos geológicos representando infraestrutura de servidores, em azul elétrico e navy",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": true,
+          "alphanumericCount": 144,
+          "sample": "SSRI SRR Sanne vacant moe"
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "index.php",
+          "blog/index.php",
+          "2026/06/09/modernizacao-gradual-sistemas-legados-php/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "codafacil",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Possível texto vazado na capa (sample: \"\")",
+      "angle": "DX",
+      "theme": "arquitetura Laravel para sistemas sob medida",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": [
+          {
+            "url": "https://www.codeium.com/blog/rss.xml",
+            "error": "HTTP 404"
+          }
+        ]
+      },
+      "outputPath": "automation/blog-bot/out/codafacil/2026-06-09/arquitetura-laravel-aumentando-dx-software-sob-medida.json",
+      "markdownPath": "automation/blog-bot/out/codafacil/2026-06-09/arquitetura-laravel-aumentando-dx-software-sob-medida.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "codafacil/2026/06/09/arquitetura-laravel-aumentando-dx-software-sob-medida/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Blueprint aéreo de um sistema modular com hexágonos interconectados em verde-petróleo, azul e violeta, destacando um núcleo otimizado",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": true,
+          "alphanumericCount": 10,
+          "sample": ""
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "codafacil/index.php",
+          "codafacil/blog/index.php",
+          "codafacil/2026/06/09/arquitetura-laravel-aumentando-dx-software-sob-medida/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "fluxointeligenteia",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Possível texto vazado na capa (sample: \"\")",
+      "angle": "governanca",
+      "theme": "evolucao continua de agentes corporativos",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/fluxointeligenteia/2026-06-09/garantir-governanca-agentes-corporativos-ia.json",
+      "markdownPath": "automation/blog-bot/out/fluxointeligenteia/2026-06-09/garantir-governanca-agentes-corporativos-ia.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "fluxointeligenteia/2026/06/09/garantir-governanca-agentes-corporativos-ia/index.html",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Uma pilha vertical de painéis hexagonais translúcidos, conectados por linhas de luz ciano, emergindo de uma névoa verde profunda",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": true,
+          "alphanumericCount": 8,
+          "sample": ""
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    },
+    {
+      "siteId": "sistemavendadireta",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Possível texto vazado na capa (sample: \"eee) CIGAR pee See\")",
+      "angle": "comissionamento",
+      "theme": "gestao de inadimplencia em venda direta",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": [
+          {
+            "url": "https://blog.rdstation.com/feed/",
+            "error": "HTTP 415"
+          }
+        ]
+      },
+      "outputPath": "automation/blog-bot/out/sistemavendadireta/2026-06-09/comissionamento-gerenciar-inadimplencia-eficazmente.json",
+      "markdownPath": "automation/blog-bot/out/sistemavendadireta/2026-06-09/comissionamento-gerenciar-inadimplencia-eficazmente.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "sistemavendadireta/2026/06/09/comissionamento-gerenciar-inadimplencia-eficazmente/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Pilha vertical de painéis translúcidos representando registros de comissões, emergindo de uma névoa densa em tons de azul",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": true,
+          "alphanumericCount": 35,
+          "sample": "eee) CIGAR pee See"
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "sistemavendadireta/index.php",
+          "sistemavendadireta/blog/index.php",
+          "sistemavendadireta/2026/06/09/comissionamento-gerenciar-inadimplencia-eficazmente/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "emergency",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Possivel texto vazado na capa (sample: \"LSS Jig) jae\")",
+      "angle": "due diligence societaria",
+      "theme": "habilitacao e onboarding de fornecedor com certidoes",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": [
+          {
+            "url": "https://www.gov.br/cvm/pt-br/assuntos/noticias/rss.xml",
+            "error": "fetch failed"
+          }
+        ]
+      },
+      "outputPath": "automation/blog-bot/out/emergency/2026-06-09/habilitacao-fornecedores-due-diligence-societaria.json",
+      "markdownPath": "automation/blog-bot/out/emergency/2026-06-09/habilitacao-fornecedores-due-diligence-societaria.md",
+      "publishResult": {
+        "target": "api",
+        "apiStatus": 201,
+        "apiUrl": "https://emergency.com.br/blog/habilitacao-fornecedores-due-diligence-societaria",
+        "apiId": 16,
+        "apiPublishedAt": "2026-06-09T08:11:26-03:00",
+        "coverPath": "automation/blog-bot/out/emergency/covers/habilitacao-fornecedores-due-diligence-societaria.jpg",
+        "coverSize": 165842,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Constelação suspensa de selos corporativos metálicos conectados por filamentos dourados, com robô humanoide avaliando os selos",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": true,
+          "alphanumericCount": 47,
+          "sample": "LSS Jig) jae"
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    }
+  ],
+  "duplications": [],
+  "relatedRefresh": {
+    "touched": 31,
+    "unchanged": 28,
+    "errors": [],
+    "totalCards": 53,
+    "totalFiles": 59
+  },
+  "fallbackCount": 0,
+  "allFallback": false,
+  "finishedAt": "2026-06-09T11:12:52.487Z",
+  "ok": true
+}

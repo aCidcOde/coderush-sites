@@ -215,10 +215,10 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/06/06/aplicar-governanca-ia-processos-retaguarda/"><img src="../../../../imagens/posts/aplicar-governanca-ia-processos-retaguarda.jpg" alt="Como aplicar governança em IA nos processos de retaguarda" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/06/09/modernizacao-gradual-sistemas-legados-php/"><img src="../../../../imagens/posts/modernizacao-gradual-sistemas-legados-php.jpg" alt="Modernização gradual de sistemas legados em PHP" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/06/aplicar-governanca-ia-processos-retaguarda/" class="hover:underline">Como aplicar governança em IA nos processos de retaguarda</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como integrar IA em processos de retaguarda com governança eficaz.</p>
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/09/modernizacao-gradual-sistemas-legados-php/" class="hover:underline">Modernização gradual de sistemas legados em PHP</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Explore como modernizar sistemas legados de forma pragmática e integrada.</p>
   </div>
 </article>
   </div>
@@ -241,11 +241,11 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://codafacil.dev/2026/05/27/ia-pode-otimizar-operacoes-criticas-desenvolvimento/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/ia-pode-otimizar-operacoes-criticas-desenvolvimento.jpg" alt="Como a IA pode otimizar operações críticas no desenvolvimento" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://codafacil.dev/2026/06/09/arquitetura-laravel-aumentando-dx-software-sob-medida/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/arquitetura-laravel-aumentando-dx-software-sob-medida.jpg" alt="Arquitetura Laravel: Aumentando a DX em Software Sob Medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/05/27/ia-pode-otimizar-operacoes-criticas-desenvolvimento/" rel="noopener" target="_blank" class="hover:underline">Como a IA pode otimizar operações críticas no desenvolvimento</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Explore como integrar IA no desenvolvimento de software sob medida para acelerar entregas e manter a qualidade.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/06/09/arquitetura-laravel-aumentando-dx-software-sob-medida/" rel="noopener" target="_blank" class="hover:underline">Arquitetura Laravel: Aumentando a DX em Software Sob Medida</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a arquitetura Laravel pode otimizar o desenvolvimento de software sob medida com foco em experiência do desenvolvedor.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
