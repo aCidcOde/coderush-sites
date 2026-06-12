@@ -691,6 +691,15 @@ $seoLdGraph = [
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-HOME-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/12/gerenciando-riscos-substituicao-sistemas-legados/" data-blog-image="imagens/posts/gerenciando-riscos-substituicao-sistemas-legados.jpg" data-blog-slug="gerenciando-riscos-substituicao-sistemas-legados" data-blog-date="2026-06-12">
+  <a href="2026/06/12/gerenciando-riscos-substituicao-sistemas-legados/">
+    <img src="imagens/posts/gerenciando-riscos-substituicao-sistemas-legados.jpg" alt="Gerenciando riscos na substituição de sistemas legados" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="2026/06/12/gerenciando-riscos-substituicao-sistemas-legados/" class="hover:underline">Gerenciando riscos na substituição de sistemas legados</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como gerenciar riscos ao substituir sistemas legados em empresas médias.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/09/modernizacao-gradual-sistemas-legados-php/" data-blog-image="imagens/posts/modernizacao-gradual-sistemas-legados-php.jpg" data-blog-slug="modernizacao-gradual-sistemas-legados-php" data-blog-date="2026-06-09">
   <a href="2026/06/09/modernizacao-gradual-sistemas-legados-php/">
     <img src="imagens/posts/modernizacao-gradual-sistemas-legados-php.jpg" alt="Modernização gradual de sistemas legados em PHP" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
@@ -707,15 +716,6 @@ $seoLdGraph = [
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="2026/06/06/aplicar-governanca-ia-processos-retaguarda/" class="hover:underline">Como aplicar governança em IA nos processos de retaguarda</a></h2>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como integrar IA em processos de retaguarda com governança eficaz.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/03/melhorar-produtividade-equipe-automacao/" data-blog-image="imagens/posts/melhorar-produtividade-equipe-automacao.jpg" data-blog-slug="melhorar-produtividade-equipe-automacao" data-blog-date="2026-06-03">
-  <a href="2026/06/03/melhorar-produtividade-equipe-automacao/">
-    <img src="imagens/posts/melhorar-produtividade-equipe-automacao.jpg" alt="Como melhorar a produtividade da sua equipe com automação" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-  </a>
-  <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="2026/06/03/melhorar-produtividade-equipe-automacao/" class="hover:underline">Como melhorar a produtividade da sua equipe com automação</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a automação pode aumentar a eficiência dos times em empresas médias.</p>
   </div>
 </article>
 <!-- BLOG-HOME-CARDS:END -->

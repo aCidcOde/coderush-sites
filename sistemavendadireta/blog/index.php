@@ -89,6 +89,15 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-INDEX-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/12/expandir-internacionalmente-marketing-multinivel/" data-blog-image="imagens/posts/expandir-internacionalmente-marketing-multinivel.jpg" data-blog-slug="expandir-internacionalmente-marketing-multinivel" data-blog-date="2026-06-12">
+  <a href="../2026/06/12/expandir-internacionalmente-marketing-multinivel/">
+    <img src="../imagens/posts/expandir-internacionalmente-marketing-multinivel.jpg" alt="Como Expandir Internacionalmente no Marketing Multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="../2026/06/12/expandir-internacionalmente-marketing-multinivel/" class="hover:underline">Como Expandir Internacionalmente no Marketing Multinível</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como a tecnologia pode impulsionar sua expansão internacional em vendas diretas.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/09/comissionamento-gerenciar-inadimplencia-eficazmente/" data-blog-image="imagens/posts/comissionamento-gerenciar-inadimplencia-eficazmente.jpg" data-blog-slug="comissionamento-gerenciar-inadimplencia-eficazmente" data-blog-date="2026-06-09">
   <a href="../2026/06/09/comissionamento-gerenciar-inadimplencia-eficazmente/">
     <img src="../imagens/posts/comissionamento-gerenciar-inadimplencia-eficazmente.jpg" alt="Comissionamento: Como Gerenciar a Inadimplência Eficazmente" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />

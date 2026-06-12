@@ -43,6 +43,15 @@
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-INDEX-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/12/garantir-qualidade-codigo-apis-corporativas/" data-blog-image="imagens/posts/garantir-qualidade-codigo-apis-corporativas.jpg" data-blog-slug="garantir-qualidade-codigo-apis-corporativas" data-blog-date="2026-06-12">
+  <a href="../2026/06/12/garantir-qualidade-codigo-apis-corporativas/">
+    <img src="../imagens/posts/garantir-qualidade-codigo-apis-corporativas.jpg" alt="Como garantir a qualidade de código em APIs corporativas" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="../2026/06/12/garantir-qualidade-codigo-apis-corporativas/" class="hover:underline">Como garantir a qualidade de código em APIs corporativas</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Dicas práticas para manter a qualidade do código em integrações de APIs no desenvolvimento sob medida.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/09/arquitetura-laravel-aumentando-dx-software-sob-medida/" data-blog-image="imagens/posts/arquitetura-laravel-aumentando-dx-software-sob-medida.jpg" data-blog-slug="arquitetura-laravel-aumentando-dx-software-sob-medida" data-blog-date="2026-06-09">
   <a href="../2026/06/09/arquitetura-laravel-aumentando-dx-software-sob-medida/">
     <img src="../imagens/posts/arquitetura-laravel-aumentando-dx-software-sob-medida.jpg" alt="Arquitetura Laravel: Aumentando a DX em Software Sob Medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />

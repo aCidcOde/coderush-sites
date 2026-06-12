@@ -1,0 +1,230 @@
+{
+  "mode": "publish",
+  "date": "2026-06-12",
+  "timezone": "America/Sao_Paulo",
+  "focus": "tecnologia",
+  "startedAt": "2026-06-12T11:17:25.104Z",
+  "aiProvider": "openrouter",
+  "sites": [
+    {
+      "siteId": "coderush",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Possível texto vazado na capa (sample: \"EUR alae\")",
+      "angle": "casos de empresa media",
+      "theme": "gestao de risco em substituicao de sistema",
+      "research": {
+        "used": 2,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/coderush/2026-06-12/gerenciando-riscos-substituicao-sistemas-legados.json",
+      "markdownPath": "automation/blog-bot/out/coderush/2026-06-12/gerenciando-riscos-substituicao-sistemas-legados.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "2026/06/12/gerenciando-riscos-substituicao-sistemas-legados/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Um rack de servidores fracturado ao centro, com um lado envelhecido em aço oxidado e o outro moderno em titânio, iluminado por filamentos azuis",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": true,
+          "alphanumericCount": 12,
+          "sample": "EUR alae"
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "index.php",
+          "blog/index.php",
+          "2026/06/12/gerenciando-riscos-substituicao-sistemas-legados/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "codafacil",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "qualidade de codigo",
+      "theme": "design de API para integracoes corporativas",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": [
+          {
+            "url": "https://www.codeium.com/blog/rss.xml",
+            "error": "HTTP 404"
+          }
+        ]
+      },
+      "outputPath": "automation/blog-bot/out/codafacil/2026-06-12/garantir-qualidade-codigo-apis-corporativas.json",
+      "markdownPath": "automation/blog-bot/out/codafacil/2026-06-12/garantir-qualidade-codigo-apis-corporativas.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "codafacil/2026/06/12/garantir-qualidade-codigo-apis-corporativas/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Uma estrutura modular de tubos hexagonais flutuando em um espaço vazio, com portões de validação iluminados em tons de azul-violeta",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": false,
+          "alphanumericCount": 2,
+          "sample": ""
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "codafacil/index.php",
+          "codafacil/blog/index.php",
+          "codafacil/2026/06/12/garantir-qualidade-codigo-apis-corporativas/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "fluxointeligenteia",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Possível texto vazado na capa (sample: \"SSNs Bae Sam SSE NSS\")",
+      "angle": "canais integrados",
+      "theme": "agentes corporativos com RAG e governanca",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/fluxointeligenteia/2026-06-12/implementando-agentes-corporativos-ia-governanca-eficaz.json",
+      "markdownPath": "automation/blog-bot/out/fluxointeligenteia/2026-06-12/implementando-agentes-corporativos-ia-governanca-eficaz.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "fluxointeligenteia/2026/06/12/implementando-agentes-corporativos-ia-governanca-eficaz/index.html",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Uma sala de controle abstrata com um lattice de governança luminoso e planos hexagonais semi-transparentes em verde profundo",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": true,
+          "alphanumericCount": 54,
+          "sample": "SSNs Bae Sam SSE NSS"
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    },
+    {
+      "siteId": "sistemavendadireta",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Possível texto vazado na capa (sample: \"ify\")",
+      "angle": "vendas diretas",
+      "theme": "expansao internacional para empresas de MMN",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": [
+          {
+            "url": "https://blog.rdstation.com/feed/",
+            "error": "HTTP 415"
+          }
+        ]
+      },
+      "outputPath": "automation/blog-bot/out/sistemavendadireta/2026-06-12/expandir-internacionalmente-marketing-multinivel.json",
+      "markdownPath": "automation/blog-bot/out/sistemavendadireta/2026-06-12/expandir-internacionalmente-marketing-multinivel.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "sistemavendadireta/2026/06/12/expandir-internacionalmente-marketing-multinivel/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Arranjo simétrico de hexágonos transparentes representando mercados nacionais, com tonalidades de azul profundo a quase branco",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": true,
+          "alphanumericCount": 20,
+          "sample": "ify"
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "sistemavendadireta/index.php",
+          "sistemavendadireta/blog/index.php",
+          "sistemavendadireta/2026/06/12/expandir-internacionalmente-marketing-multinivel/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "emergency",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Possivel texto vazado na capa (sample: \"bag Wan\")",
+      "angle": "regularizacao",
+      "theme": "riscos ocultos em aquisicao de imovel",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/emergency/2026-06-12/riscos-ocultos-aquisicao-imoveis-mitiga-los.json",
+      "markdownPath": "automation/blog-bot/out/emergency/2026-06-12/riscos-ocultos-aquisicao-imoveis-mitiga-los.md",
+      "publishResult": {
+        "target": "api",
+        "apiStatus": 201,
+        "apiUrl": "https://emergency.com.br/blog/riscos-ocultos-aquisicao-imoveis-mitiga-los",
+        "apiId": 23,
+        "apiPublishedAt": "2026-06-12T08:22:59-03:00",
+        "coverPath": "automation/blog-bot/out/emergency/covers/riscos-ocultos-aquisicao-imoveis-mitiga-los.jpg",
+        "coverSize": 202089,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Uma seção isométrica de um terreno com um modelo arquitetônico em azul profundo, camadas de documentos aparecendo sob o solo iluminadas em dourado",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": true,
+          "alphanumericCount": 17,
+          "sample": "bag Wan"
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    }
+  ],
+  "duplications": [],
+  "relatedRefresh": {
+    "touched": 29,
+    "unchanged": 34,
+    "errors": [],
+    "totalCards": 57,
+    "totalFiles": 63
+  },
+  "fallbackCount": 0,
+  "allFallback": false,
+  "finishedAt": "2026-06-12T11:24:38.430Z",
+  "ok": true
+}
