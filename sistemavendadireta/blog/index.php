@@ -89,6 +89,15 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-INDEX-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/15/construindo-plano-carreira-marketing-multinivel/" data-blog-image="imagens/posts/construindo-plano-carreira-marketing-multinivel.jpg" data-blog-slug="construindo-plano-carreira-marketing-multinivel" data-blog-date="2026-06-15">
+  <a href="../2026/06/15/construindo-plano-carreira-marketing-multinivel/">
+    <img src="../imagens/posts/construindo-plano-carreira-marketing-multinivel.jpg" alt="Construindo um plano de carreira em marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="../2026/06/15/construindo-plano-carreira-marketing-multinivel/" class="hover:underline">Construindo um plano de carreira em marketing multinível</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como um plano de carreira sólido pode maximizar seu sucesso em marketing multinível.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/12/expandir-internacionalmente-marketing-multinivel/" data-blog-image="imagens/posts/expandir-internacionalmente-marketing-multinivel.jpg" data-blog-slug="expandir-internacionalmente-marketing-multinivel" data-blog-date="2026-06-12">
   <a href="../2026/06/12/expandir-internacionalmente-marketing-multinivel/">
     <img src="../imagens/posts/expandir-internacionalmente-marketing-multinivel.jpg" alt="Como Expandir Internacionalmente no Marketing Multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />

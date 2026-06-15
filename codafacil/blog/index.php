@@ -43,6 +43,15 @@
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-INDEX-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/15/governanca-tecnica-acelera-entrega-produtos-digitais/" data-blog-image="imagens/posts/governanca-tecnica-acelera-entrega-produtos-digitais.jpg" data-blog-slug="governanca-tecnica-acelera-entrega-produtos-digitais" data-blog-date="2026-06-15">
+  <a href="../2026/06/15/governanca-tecnica-acelera-entrega-produtos-digitais/">
+    <img src="../imagens/posts/governanca-tecnica-acelera-entrega-produtos-digitais.jpg" alt="Como a governança técnica acelera a entrega de produtos digitais" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="../2026/06/15/governanca-tecnica-acelera-entrega-produtos-digitais/" class="hover:underline">Como a governança técnica acelera a entrega de produtos digitais</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Saiba como a governança técnica e a IA podem otimizar a entrega de software sob medida.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/12/garantir-qualidade-codigo-apis-corporativas/" data-blog-image="imagens/posts/garantir-qualidade-codigo-apis-corporativas.jpg" data-blog-slug="garantir-qualidade-codigo-apis-corporativas" data-blog-date="2026-06-12">
   <a href="../2026/06/12/garantir-qualidade-codigo-apis-corporativas/">
     <img src="../imagens/posts/garantir-qualidade-codigo-apis-corporativas.jpg" alt="Como garantir a qualidade de código em APIs corporativas" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />

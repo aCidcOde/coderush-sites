@@ -246,19 +246,19 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://coderush.com.br/2026/06/06/aplicar-governanca-ia-processos-retaguarda/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/aplicar-governanca-ia-processos-retaguarda.jpg" alt="Como aplicar governança em IA nos processos de retaguarda" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://coderush.com.br/2026/06/15/escolher-stack-tecnologica-iniciativas-criticas/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/escolher-stack-tecnologica-iniciativas-criticas.jpg" alt="Como escolher a stack tecnológica para iniciativas críticas?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">CodeRush</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/06/06/aplicar-governanca-ia-processos-retaguarda/" rel="noopener" target="_blank" class="hover:underline">Como aplicar governança em IA nos processos de retaguarda</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como integrar IA em processos de retaguarda com governança eficaz.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/06/15/escolher-stack-tecnologica-iniciativas-criticas/" rel="noopener" target="_blank" class="hover:underline">Como escolher a stack tecnológica para iniciativas críticas?</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Decisões sobre stack tecnológica são cruciais para o sucesso de projetos e operações. Entenda como escolher a melhor opção.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://codafacil.dev/2026/06/09/arquitetura-laravel-aumentando-dx-software-sob-medida/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/arquitetura-laravel-aumentando-dx-software-sob-medida.jpg" alt="Arquitetura Laravel: Aumentando a DX em Software Sob Medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://codafacil.dev/2026/06/15/governanca-tecnica-acelera-entrega-produtos-digitais/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/governanca-tecnica-acelera-entrega-produtos-digitais.jpg" alt="Como a governança técnica acelera a entrega de produtos digitais" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/06/09/arquitetura-laravel-aumentando-dx-software-sob-medida/" rel="noopener" target="_blank" class="hover:underline">Arquitetura Laravel: Aumentando a DX em Software Sob Medida</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a arquitetura Laravel pode otimizar o desenvolvimento de software sob medida com foco em experiência do desenvolvedor.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/06/15/governanca-tecnica-acelera-entrega-produtos-digitais/" rel="noopener" target="_blank" class="hover:underline">Como a governança técnica acelera a entrega de produtos digitais</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Saiba como a governança técnica e a IA podem otimizar a entrega de software sob medida.</p>
   </div>
 </article>
   </div>

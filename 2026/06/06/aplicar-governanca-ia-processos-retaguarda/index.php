@@ -253,11 +253,11 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://codafacil.dev/2026/06/12/garantir-qualidade-codigo-apis-corporativas/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/garantir-qualidade-codigo-apis-corporativas.jpg" alt="Como garantir a qualidade de código em APIs corporativas" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://codafacil.dev/2026/06/15/governanca-tecnica-acelera-entrega-produtos-digitais/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/governanca-tecnica-acelera-entrega-produtos-digitais.jpg" alt="Como a governança técnica acelera a entrega de produtos digitais" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/06/12/garantir-qualidade-codigo-apis-corporativas/" rel="noopener" target="_blank" class="hover:underline">Como garantir a qualidade de código em APIs corporativas</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Dicas práticas para manter a qualidade do código em integrações de APIs no desenvolvimento sob medida.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/06/15/governanca-tecnica-acelera-entrega-produtos-digitais/" rel="noopener" target="_blank" class="hover:underline">Como a governança técnica acelera a entrega de produtos digitais</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Saiba como a governança técnica e a IA podem otimizar a entrega de software sob medida.</p>
   </div>
 </article>
   </div>
