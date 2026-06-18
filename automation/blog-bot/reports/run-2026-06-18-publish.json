@@ -1,0 +1,230 @@
+{
+  "mode": "publish",
+  "date": "2026-06-18",
+  "timezone": "America/Sao_Paulo",
+  "focus": "php",
+  "startedAt": "2026-06-18T11:22:55.333Z",
+  "aiProvider": "openrouter",
+  "sites": [
+    {
+      "siteId": "coderush",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "arquitetura",
+      "theme": "decisao entre comprar e construir software",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/coderush/2026-06-18/comprar-construir-software-considerar-arquitetura.json",
+      "markdownPath": "automation/blog-bot/out/coderush/2026-06-18/comprar-construir-software-considerar-arquitetura.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "2026/06/18/comprar-construir-software-considerar-arquitetura/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Uma pilha vertical de blocos arquitetônicos cortados com precisão se ergue da névoa densa, com módulos escuros e outros vazios, em um fundo azul profundo",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": false,
+          "alphanumericCount": 5,
+          "sample": ""
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "index.php",
+          "blog/index.php",
+          "2026/06/18/comprar-construir-software-considerar-arquitetura/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "codafacil",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Possível texto vazado na capa (sample: \"ENS Swe\")",
+      "angle": "engenharia",
+      "theme": "software sob medida com IA aplicada",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": [
+          {
+            "url": "https://www.codeium.com/blog/rss.xml",
+            "error": "HTTP 404"
+          }
+        ]
+      },
+      "outputPath": "automation/blog-bot/out/codafacil/2026-06-18/ia-pode-otimizar-desenvolvimento-software-sob-medida.json",
+      "markdownPath": "automation/blog-bot/out/codafacil/2026-06-18/ia-pode-otimizar-desenvolvimento-software-sob-medida.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "codafacil/2026/06/18/ia-pode-otimizar-desenvolvimento-software-sob-medida/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Composição aérea de uma linha de montagem de software, com componentes modulares em tons de azul e violeta, destacando um nó de IA iluminado",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": true,
+          "alphanumericCount": 23,
+          "sample": "ENS Swe"
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "codafacil/index.php",
+          "codafacil/blog/index.php",
+          "codafacil/2026/06/18/ia-pode-otimizar-desenvolvimento-software-sob-medida/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "fluxointeligenteia",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Possível texto vazado na capa (sample: \"eee Fae ONO ONS “NON\")",
+      "angle": "Link",
+      "theme": "base de conhecimento corporativo para agentes",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/fluxointeligenteia/2026-06-18/usar-bases-conhecimento-agentes-corporativos-ia.json",
+      "markdownPath": "automation/blog-bot/out/fluxointeligenteia/2026-06-18/usar-bases-conhecimento-agentes-corporativos-ia.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "fluxointeligenteia/2026/06/18/usar-bases-conhecimento-agentes-corporativos-ia/index.html",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Um cofre de conhecimento isométrico flutua em um espaço escuro, com camadas de blocos translúcidos e linhas cyan pulsantes",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": true,
+          "alphanumericCount": 171,
+          "sample": "eee Fae ONO ONS “NON"
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    },
+    {
+      "siteId": "sistemavendadireta",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "CRM",
+      "theme": "IA para suporte ao distribuidor em campo",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/sistemavendadireta/2026-06-18/crm-ia-pode-potencializar-mmn.json",
+      "markdownPath": "automation/blog-bot/out/sistemavendadireta/2026-06-18/crm-ia-pode-potencializar-mmn.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "sistemavendadireta/2026/06/18/crm-ia-pode-potencializar-mmn/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Estrutura vertical de camadas de CRM em azul profundo, emergindo de uma névoa baixa, com luz branca suave no topo e fundo degradê escuro",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": false,
+          "alphanumericCount": 0,
+          "sample": ""
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "sistemavendadireta/index.php",
+          "sistemavendadireta/blog/index.php",
+          "sistemavendadireta/2026/06/18/crm-ia-pode-potencializar-mmn/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "emergency",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Possivel texto vazado na capa (sample: \"GenTIDACH) caRroRanls\")",
+      "angle": "compliance",
+      "theme": "compliance corporativo apoiado em certidoes cartorarias",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": [
+          {
+            "url": "https://www.gov.br/cvm/pt-br/assuntos/noticias/rss.xml",
+            "error": "fetch failed"
+          }
+        ]
+      },
+      "outputPath": "automation/blog-bot/out/emergency/2026-06-18/importancia-certidoes-online-due-diligence.json",
+      "markdownPath": "automation/blog-bot/out/emergency/2026-06-18/importancia-certidoes-online-due-diligence.md",
+      "publishResult": {
+        "target": "api",
+        "apiStatus": 201,
+        "apiUrl": "https://emergency.com.br/blog/importancia-certidoes-online-due-diligence",
+        "apiId": 25,
+        "apiPublishedAt": "2026-06-18T08:28:32-03:00",
+        "coverPath": "automation/blog-bot/out/emergency/covers/importancia-certidoes-online-due-diligence.jpg",
+        "coverSize": 229583,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Uma pilha vertical de selos de certidão cartorária se eleva, envolta em névoa suave, destacando-se contra um fundo azul profundo",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": true,
+          "alphanumericCount": 29,
+          "sample": "GenTIDACH) caRroRanls"
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    }
+  ],
+  "duplications": [],
+  "relatedRefresh": {
+    "touched": 40,
+    "unchanged": 31,
+    "errors": [],
+    "totalCards": 65,
+    "totalFiles": 71
+  },
+  "fallbackCount": 0,
+  "allFallback": false,
+  "finishedAt": "2026-06-18T11:30:01.493Z",
+  "ok": true
+}

@@ -209,6 +209,13 @@
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/06/18/comprar-construir-software-considerar-arquitetura/"><img src="../../../../imagens/posts/comprar-construir-software-considerar-arquitetura.jpg" alt="Comprar ou construir software: o que considerar em arquitetura" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/18/comprar-construir-software-considerar-arquitetura/" class="hover:underline">Comprar ou construir software: o que considerar em arquitetura</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda os principais fatores na decisão de comprar ou construir software sob medida.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="../../../../2026/05/15/comprar-construir-software-considerar/"><img src="../../../../imagens/posts/comprar-construir-software-considerar.jpg" alt="Comprar ou construir software: o que considerar?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/15/comprar-construir-software-considerar/" class="hover:underline">Comprar ou construir software: o que considerar?</a></h3>
@@ -220,13 +227,6 @@
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/04/30/comprar-construir-software-escolher/" class="hover:underline">Comprar ou construir software: o que escolher?</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda as nuances da decisão entre comprar e construir software sob medida, focando na governança e na integração.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/05/09/comprar-construir-software-empresa-precisa-saber/"><img src="../../../../imagens/posts/comprar-construir-software-empresa-precisa-saber.jpg" alt="Comprar ou construir software: o que sua empresa precisa saber" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/09/comprar-construir-software-empresa-precisa-saber/" class="hover:underline">Comprar ou construir software: o que sua empresa precisa saber</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda as vantagens e desvantagens de criar ou adquirir software sob medida para sua empresa.</p>
   </div>
 </article>
   </div>
@@ -241,27 +241,27 @@
   <p class="mt-2 text-sm text-white/70">Conteúdo recente dos outros sites do ecossistema.</p>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://codafacil.dev/2026/06/09/arquitetura-laravel-aumentando-dx-software-sob-medida/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/arquitetura-laravel-aumentando-dx-software-sob-medida.jpg" alt="Arquitetura Laravel: Aumentando a DX em Software Sob Medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://codafacil.dev/2026/06/18/ia-pode-otimizar-desenvolvimento-software-sob-medida/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/ia-pode-otimizar-desenvolvimento-software-sob-medida.jpg" alt="Como a IA pode otimizar o desenvolvimento de software sob medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/06/09/arquitetura-laravel-aumentando-dx-software-sob-medida/" rel="noopener" target="_blank" class="hover:underline">Arquitetura Laravel: Aumentando a DX em Software Sob Medida</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a arquitetura Laravel pode otimizar o desenvolvimento de software sob medida com foco em experiência do desenvolvedor.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/06/18/ia-pode-otimizar-desenvolvimento-software-sob-medida/" rel="noopener" target="_blank" class="hover:underline">Como a IA pode otimizar o desenvolvimento de software sob medida</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Explore como aplicar IA para acelerar a entrega de software, mantendo a qualidade e eficiência.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://sistemavendadireta.com.br/2026/06/15/construindo-plano-carreira-marketing-multinivel/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/construindo-plano-carreira-marketing-multinivel.jpg" alt="Construindo um plano de carreira em marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://sistemavendadireta.com.br/2026/06/18/crm-ia-pode-potencializar-mmn/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/crm-ia-pode-potencializar-mmn.jpg" alt="Como o CRM com IA pode potencializar seu MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Sistema Venda Direta</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/06/15/construindo-plano-carreira-marketing-multinivel/" rel="noopener" target="_blank" class="hover:underline">Construindo um plano de carreira em marketing multinível</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como um plano de carreira sólido pode maximizar seu sucesso em marketing multinível.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/06/18/crm-ia-pode-potencializar-mmn/" rel="noopener" target="_blank" class="hover:underline">Como o CRM com IA pode potencializar seu MMN</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como um CRM com inteligência artificial apoia distribuidores em campo no marketing multinível.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://fluxointeligenteia.com.br/2026/06/15/integrar-agentes-corporativos-ia-atendimento-cliente/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/integrar-agentes-corporativos-ia-atendimento-cliente.jpg" alt="Como integrar agentes corporativos de IA no atendimento ao cliente" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://fluxointeligenteia.com.br/2026/06/18/usar-bases-conhecimento-agentes-corporativos-ia/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/usar-bases-conhecimento-agentes-corporativos-ia.jpg" alt="Como usar bases de conhecimento em agentes corporativos de IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">FluxoInteligente IA</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/06/15/integrar-agentes-corporativos-ia-atendimento-cliente/" rel="noopener" target="_blank" class="hover:underline">Como integrar agentes corporativos de IA no atendimento ao cliente</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como implementar agentes corporativos de IA com segurança e governança no atendimento ao cliente.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/06/18/usar-bases-conhecimento-agentes-corporativos-ia/" rel="noopener" target="_blank" class="hover:underline">Como usar bases de conhecimento em agentes corporativos de IA</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como integrar bases de conhecimento em agentes corporativos de IA com governança e segurança.</p>
   </div>
 </article>
   </div>

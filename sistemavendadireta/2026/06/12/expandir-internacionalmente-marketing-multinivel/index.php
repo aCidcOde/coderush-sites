@@ -213,17 +213,17 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/06/18/crm-ia-pode-potencializar-mmn/"><img src="../../../../imagens/posts/crm-ia-pode-potencializar-mmn.jpg" alt="Como o CRM com IA pode potencializar seu MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/18/crm-ia-pode-potencializar-mmn/" class="hover:underline">Como o CRM com IA pode potencializar seu MMN</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como um CRM com inteligência artificial apoia distribuidores em campo no marketing multinível.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="../../../../2026/05/21/tecnologia-vendas-diretas-escala-mmn-ia/"><img src="../../../../imagens/posts/tecnologia-vendas-diretas-escala-mmn-ia.jpg" alt="Tecnologia para Vendas Diretas em Escala: MMN e IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/21/tecnologia-vendas-diretas-escala-mmn-ia/" class="hover:underline">Tecnologia para Vendas Diretas em Escala: MMN e IA</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a tecnologia e a IA podem otimizar processos em marketing multinível.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/05/09/integracoes-pagamento-logistica-marketing-multinivel/"><img src="../../../../imagens/posts/integracoes-pagamento-logistica-marketing-multinivel.jpg" alt="Integrações de pagamento e logística para marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/09/integracoes-pagamento-logistica-marketing-multinivel/" class="hover:underline">Integrações de pagamento e logística para marketing multinível</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como integrar pagamentos e logística em operações de marketing multinível para maximizar resultados.</p>
   </div>
 </article>
   </div>
@@ -238,11 +238,11 @@
   <p class="mt-2 text-sm text-white/70">Conteúdo recente dos outros sites do ecossistema.</p>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://fluxointeligenteia.com.br/2026/05/06/canais-integrados-base-operacional-agentes-corporativos/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/canais-integrados-base-operacional-agentes-corporativos.jpg" alt="Canais Integrados: Base Operacional" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://fluxointeligenteia.com.br/2026/06/18/usar-bases-conhecimento-agentes-corporativos-ia/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/usar-bases-conhecimento-agentes-corporativos-ia.jpg" alt="Como usar bases de conhecimento em agentes corporativos de IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">FluxoInteligente IA</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/05/06/canais-integrados-base-operacional-agentes-corporativos/" rel="noopener" target="_blank" class="hover:underline">Canais Integrados: Base Operacional</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Para criar agentes corporativos com RAG, é essencial integrar canais e ferramentas que garantam governança, auditoria e permissões adequa...</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/06/18/usar-bases-conhecimento-agentes-corporativos-ia/" rel="noopener" target="_blank" class="hover:underline">Como usar bases de conhecimento em agentes corporativos de IA</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como integrar bases de conhecimento em agentes corporativos de IA com governança e segurança.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">

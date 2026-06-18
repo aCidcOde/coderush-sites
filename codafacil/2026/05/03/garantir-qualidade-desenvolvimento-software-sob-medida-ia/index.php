@@ -220,10 +220,10 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/06/12/garantir-qualidade-codigo-apis-corporativas/"><img src="../../../../imagens/posts/garantir-qualidade-codigo-apis-corporativas.jpg" alt="Como garantir a qualidade de código em APIs corporativas" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/06/18/ia-pode-otimizar-desenvolvimento-software-sob-medida/"><img src="../../../../imagens/posts/ia-pode-otimizar-desenvolvimento-software-sob-medida.jpg" alt="Como a IA pode otimizar o desenvolvimento de software sob medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/12/garantir-qualidade-codigo-apis-corporativas/" class="hover:underline">Como garantir a qualidade de código em APIs corporativas</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Dicas práticas para manter a qualidade do código em integrações de APIs no desenvolvimento sob medida.</p>
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/18/ia-pode-otimizar-desenvolvimento-software-sob-medida/" class="hover:underline">Como a IA pode otimizar o desenvolvimento de software sob medida</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Explore como aplicar IA para acelerar a entrega de software, mantendo a qualidade e eficiência.</p>
   </div>
 </article>
   </div>

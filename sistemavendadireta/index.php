@@ -753,6 +753,15 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-HOME-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/18/crm-ia-pode-potencializar-mmn/" data-blog-image="imagens/posts/crm-ia-pode-potencializar-mmn.jpg" data-blog-slug="crm-ia-pode-potencializar-mmn" data-blog-date="2026-06-18">
+  <a href="2026/06/18/crm-ia-pode-potencializar-mmn/">
+    <img src="imagens/posts/crm-ia-pode-potencializar-mmn.jpg" alt="Como o CRM com IA pode potencializar seu MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="2026/06/18/crm-ia-pode-potencializar-mmn/" class="hover:underline">Como o CRM com IA pode potencializar seu MMN</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como um CRM com inteligência artificial apoia distribuidores em campo no marketing multinível.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/15/construindo-plano-carreira-marketing-multinivel/" data-blog-image="imagens/posts/construindo-plano-carreira-marketing-multinivel.jpg" data-blog-slug="construindo-plano-carreira-marketing-multinivel" data-blog-date="2026-06-15">
   <a href="2026/06/15/construindo-plano-carreira-marketing-multinivel/">
     <img src="imagens/posts/construindo-plano-carreira-marketing-multinivel.jpg" alt="Construindo um plano de carreira em marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
@@ -769,15 +778,6 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="2026/06/12/expandir-internacionalmente-marketing-multinivel/" class="hover:underline">Como Expandir Internacionalmente no Marketing Multinível</a></h2>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como a tecnologia pode impulsionar sua expansão internacional em vendas diretas.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/09/comissionamento-gerenciar-inadimplencia-eficazmente/" data-blog-image="imagens/posts/comissionamento-gerenciar-inadimplencia-eficazmente.jpg" data-blog-slug="comissionamento-gerenciar-inadimplencia-eficazmente" data-blog-date="2026-06-09">
-  <a href="2026/06/09/comissionamento-gerenciar-inadimplencia-eficazmente/">
-    <img src="imagens/posts/comissionamento-gerenciar-inadimplencia-eficazmente.jpg" alt="Comissionamento: Como Gerenciar a Inadimplência Eficazmente" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-  </a>
-  <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="2026/06/09/comissionamento-gerenciar-inadimplencia-eficazmente/" class="hover:underline">Comissionamento: Como Gerenciar a Inadimplência Eficazmente</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como o comissionamento impacta a gestão de inadimplência em vendas diretas e marketing multinível.</p>
   </div>
 </article>
 <!-- BLOG-HOME-CARDS:END -->

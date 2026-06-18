@@ -43,6 +43,15 @@
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-INDEX-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/18/ia-pode-otimizar-desenvolvimento-software-sob-medida/" data-blog-image="imagens/posts/ia-pode-otimizar-desenvolvimento-software-sob-medida.jpg" data-blog-slug="ia-pode-otimizar-desenvolvimento-software-sob-medida" data-blog-date="2026-06-18">
+  <a href="../2026/06/18/ia-pode-otimizar-desenvolvimento-software-sob-medida/">
+    <img src="../imagens/posts/ia-pode-otimizar-desenvolvimento-software-sob-medida.jpg" alt="Como a IA pode otimizar o desenvolvimento de software sob medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="../2026/06/18/ia-pode-otimizar-desenvolvimento-software-sob-medida/" class="hover:underline">Como a IA pode otimizar o desenvolvimento de software sob medida</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Explore como aplicar IA para acelerar a entrega de software, mantendo a qualidade e eficiência.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/15/governanca-tecnica-acelera-entrega-produtos-digitais/" data-blog-image="imagens/posts/governanca-tecnica-acelera-entrega-produtos-digitais.jpg" data-blog-slug="governanca-tecnica-acelera-entrega-produtos-digitais" data-blog-date="2026-06-15">
   <a href="../2026/06/15/governanca-tecnica-acelera-entrega-produtos-digitais/">
     <img src="../imagens/posts/governanca-tecnica-acelera-entrega-produtos-digitais.jpg" alt="Como a governança técnica acelera a entrega de produtos digitais" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
