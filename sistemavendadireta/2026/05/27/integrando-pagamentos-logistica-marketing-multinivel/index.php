@@ -254,11 +254,11 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://fluxointeligenteia.com.br/2026/06/15/integrar-agentes-corporativos-ia-atendimento-cliente/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/integrar-agentes-corporativos-ia-atendimento-cliente.jpg" alt="Como integrar agentes corporativos de IA no atendimento ao cliente" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://fluxointeligenteia.com.br/2026/06/21/auditoria-agentes-corporativos-ia-praticas-essenciais/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/auditoria-agentes-corporativos-ia-praticas-essenciais.jpg" alt="Auditoria em Agentes Corporativos de IA: Práticas Essenciais" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">FluxoInteligente IA</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/06/15/integrar-agentes-corporativos-ia-atendimento-cliente/" rel="noopener" target="_blank" class="hover:underline">Como integrar agentes corporativos de IA no atendimento ao cliente</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como implementar agentes corporativos de IA com segurança e governança no atendimento ao cliente.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/06/21/auditoria-agentes-corporativos-ia-praticas-essenciais/" rel="noopener" target="_blank" class="hover:underline">Auditoria em Agentes Corporativos de IA: Práticas Essenciais</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Explore a importância da auditoria em agentes corporativos de IA para garantir segurança e governança eficaz.</p>
   </div>
 </article>
   </div>

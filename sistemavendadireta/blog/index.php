@@ -89,6 +89,15 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-INDEX-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/21/ia-pode-fortalecer-governanca-comercial-mmn/" data-blog-image="imagens/posts/ia-pode-fortalecer-governanca-comercial-mmn.jpg" data-blog-slug="ia-pode-fortalecer-governanca-comercial-mmn" data-blog-date="2026-06-21">
+  <a href="../2026/06/21/ia-pode-fortalecer-governanca-comercial-mmn/">
+    <img src="../imagens/posts/ia-pode-fortalecer-governanca-comercial-mmn.jpg" alt="Como a IA pode fortalecer a governança comercial no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="../2026/06/21/ia-pode-fortalecer-governanca-comercial-mmn/" class="hover:underline">Como a IA pode fortalecer a governança comercial no MMN</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como dados e inteligência artificial podem otimizar a governança em vendas diretas e marketing multinível.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/18/crm-ia-pode-potencializar-mmn/" data-blog-image="imagens/posts/crm-ia-pode-potencializar-mmn.jpg" data-blog-slug="crm-ia-pode-potencializar-mmn" data-blog-date="2026-06-18">
   <a href="../2026/06/18/crm-ia-pode-potencializar-mmn/">
     <img src="../imagens/posts/crm-ia-pode-potencializar-mmn.jpg" alt="Como o CRM com IA pode potencializar seu MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />

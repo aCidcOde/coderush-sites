@@ -1,0 +1,230 @@
+{
+  "mode": "publish",
+  "date": "2026-06-21",
+  "timezone": "America/Sao_Paulo",
+  "focus": "ia",
+  "startedAt": "2026-06-21T11:03:42.162Z",
+  "aiProvider": "openrouter",
+  "sites": [
+    {
+      "siteId": "coderush",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Possível texto vazado na capa (sample: \"wae wha\")",
+      "angle": "decisao tecnica",
+      "theme": "ROI e priorizacao de iniciativas de tecnologia",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/coderush/2026-06-21/priorizar-iniciativas-tecnologia-medir-roi.json",
+      "markdownPath": "automation/blog-bot/out/coderush/2026-06-21/priorizar-iniciativas-tecnologia-medir-roi.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "2026/06/21/priorizar-iniciativas-tecnologia-medir-roi/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Uma matriz de prioridade tridimensional com azulejos de obsidiana em camadas, iluminados em azul e violeta, flutua sobre um vazio profundo",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": true,
+          "alphanumericCount": 20,
+          "sample": "wae wha"
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "index.php",
+          "blog/index.php",
+          "2026/06/21/priorizar-iniciativas-tecnologia-medir-roi/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "codafacil",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "engenharia",
+      "theme": "testes automatizados no ciclo de entrega",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": [
+          {
+            "url": "https://www.codeium.com/blog/rss.xml",
+            "error": "HTTP 404"
+          }
+        ]
+      },
+      "outputPath": "automation/blog-bot/out/codafacil/2026-06-21/implementar-testes-automatizados-desenvolvimento-software-sob-medida.json",
+      "markdownPath": "automation/blog-bot/out/codafacil/2026-06-21/implementar-testes-automatizados-desenvolvimento-software-sob-medida.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "codafacil/2026/06/21/implementar-testes-automatizados-desenvolvimento-software-sob-medida/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Pipeline isométrico com nós hexagonais conectados por trilhos azuis, representando uma cadeia de verificação automatizada em software",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": false,
+          "alphanumericCount": 5,
+          "sample": ""
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "codafacil/index.php",
+          "codafacil/blog/index.php",
+          "codafacil/2026/06/21/implementar-testes-automatizados-desenvolvimento-software-sob-medida/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "fluxointeligenteia",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Possível texto vazado na capa (sample: \"coe Nee ant anes.\")",
+      "angle": "auditoria",
+      "theme": "observabilidade e logs de agentes em producao",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/fluxointeligenteia/2026-06-21/auditoria-agentes-corporativos-ia-praticas-essenciais.json",
+      "markdownPath": "automation/blog-bot/out/fluxointeligenteia/2026-06-21/auditoria-agentes-corporativos-ia-praticas-essenciais.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "fluxointeligenteia/2026/06/21/auditoria-agentes-corporativos-ia-praticas-essenciais/index.html",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Um denso bloco de cristal escuro em formato de livro de auditoria, com camadas internas iluminadas em azul-ciano, contra fundo embaçado",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": true,
+          "alphanumericCount": 30,
+          "sample": "coe Nee ant anes."
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    },
+    {
+      "siteId": "sistemavendadireta",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Possível texto vazado na capa (sample: \"ill awe\")",
+      "angle": "MMN",
+      "theme": "governanca comercial com dados e ia",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/sistemavendadireta/2026-06-21/ia-pode-fortalecer-governanca-comercial-mmn.json",
+      "markdownPath": "automation/blog-bot/out/sistemavendadireta/2026-06-21/ia-pode-fortalecer-governanca-comercial-mmn.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "sistemavendadireta/2026/06/21/ia-pode-fortalecer-governanca-comercial-mmn/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Uma rede de governança em hexágonos interligados flutua em um fundo azul profundo, simbolizando caminhos de comissões em um sistema estruturado",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": true,
+          "alphanumericCount": 15,
+          "sample": "ill awe"
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "sistemavendadireta/index.php",
+          "sistemavendadireta/blog/index.php",
+          "sistemavendadireta/2026/06/21/ia-pode-fortalecer-governanca-comercial-mmn/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "emergency",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Possivel texto vazado na capa (sample: \"cone SEBS bikes [aed yoda\")",
+      "angle": "due diligence societaria",
+      "theme": "KYC e onboarding corporativo com certidoes",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": [
+          {
+            "url": "https://www.gov.br/cvm/pt-br/assuntos/noticias/rss.xml",
+            "error": "fetch failed"
+          }
+        ]
+      },
+      "outputPath": "automation/blog-bot/out/emergency/2026-06-21/due-diligence-societaria-voce-precisa-saber.json",
+      "markdownPath": "automation/blog-bot/out/emergency/2026-06-21/due-diligence-societaria-voce-precisa-saber.md",
+      "publishResult": {
+        "target": "api",
+        "apiStatus": 201,
+        "apiUrl": "https://emergency.com.br/blog/due-diligence-societaria-voce-precisa-saber",
+        "apiId": 26,
+        "apiPublishedAt": "2026-06-21T08:10:07-03:00",
+        "coverPath": "automation/blog-bot/out/emergency/covers/due-diligence-societaria-voce-precisa-saber.jpg",
+        "coverSize": 168266,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Livro de registro corporativo aberto com hologramas translúcidos em camadas, robô humanoide azul analisando dados em luz dourada",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": true,
+          "alphanumericCount": 92,
+          "sample": "cone SEBS bikes [aed yoda"
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    }
+  ],
+  "duplications": [],
+  "relatedRefresh": {
+    "touched": 53,
+    "unchanged": 22,
+    "errors": [],
+    "totalCards": 69,
+    "totalFiles": 75
+  },
+  "fallbackCount": 0,
+  "allFallback": false,
+  "finishedAt": "2026-06-21T11:11:41.682Z",
+  "ok": true
+}

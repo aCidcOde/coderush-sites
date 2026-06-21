@@ -1,0 +1,88 @@
+{
+  "date": "2026-06-21",
+  "siteId": "emergency",
+  "postType": "due-diligence-certidoes",
+  "focus": "ia",
+  "theme": "KYC e onboarding corporativo com certidoes",
+  "angle": "due diligence societaria",
+  "slug": "due-diligence-societaria-voce-precisa-saber",
+  "title": "Emergency Documentação: IA aplicado a due diligence societaria",
+  "description": "Atualização semanal de ia para Emergency Documentação, com foco em KYC e onboarding corporativo com certidoes.",
+  "sources": [
+    "https://www.businessscreen.com/resources/corporate-kyc",
+    "https://www.encompasscorporation.com/encompass-platform/corporate-customer-due-diligence/",
+    "https://www.linkedin.com/pulse/from-kyc-kyb-how-customer-due-diligence-requirements-ivr2c",
+    "https://www.moodys.com/web/en/us/kyc/solutions/automation.html",
+    "https://www.moodys.com/web/en/us/kyc/sectors/corporates.html"
+  ],
+  "status": "draft",
+  "generatedAt": "2026-06-21T08:10:07-03:00",
+  "content": {
+    "eyebrow": "Guia prático",
+    "headline": "Due Diligence Societária: O Que Você Precisa Saber",
+    "summary": "Entenda como realizar uma due diligence societária eficiente com certidões online.",
+    "answerBox": {
+      "question": "Como fazer due diligence societária com certidões online?",
+      "answer": "Para realizar uma due diligence societária com certidões online, comece identificando os documentos necessários, como certidões de registro e regularidade. Utilize plataformas especializadas que ofereçam acesso a essas certidões e suporte durante o processo, garantindo eficiência e segurança."
+    },
+    "tldr": [
+      "Certidões online otimizam a due diligence societária.",
+      "Apoio humano é essencial para pedidos complexos.",
+      "Evite retrabalho com um bom planejamento."
+    ],
+    "sections": [
+      {
+        "type": "prose",
+        "title": "Importância da Due Diligence Societária",
+        "body": "A due diligence societária é uma etapa crucial em transações corporativas. Ela permite verificar a saúde legal de uma empresa antes da aquisição ou parceria. Com a utilização de certidões online, é possível acelerar esse processo, reduzindo o risco de surpresas indesejadas. Uma análise cuidadosa pode evitar problemas futuros e ajudar na tomada de decisão."
+      },
+      {
+        "type": "list",
+        "title": "Principais Certidões Necessárias",
+        "items": [
+          "Certidão de registro da empresa na Junta Comercial.",
+          "Certidão de regularidade fiscal e trabalhista.",
+          "Certidão de distribuição de ações e protestos.",
+          "Certidão de débitos de tributos municipais.",
+          "Certidão de inexistência de ações judiciais relevantes."
+        ]
+      },
+      {
+        "type": "callout",
+        "body": "Em situações complexas, já estruturamos isso em N clientes. Vale uma conversa para entender melhor seu cenário.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Como Utilizar Certidões Online",
+        "body": "Com as certidões online, o processo de due diligence se torna mais ágil. Você pode solicitar documentos diretamente pela plataforma, acompanhando o status em tempo real. Isso não só economiza tempo, mas também minimiza o risco de erros. Emergency Documentação oferece um painel de acompanhamento para facilitar ainda mais esse processo."
+      },
+      {
+        "type": "cta-inline",
+        "body": "Se você precisa de suporte em sua due diligence, estamos aqui para ajudar.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Cuidado com Armadilhas Comuns",
+        "body": "É importante evitar a tentação de confiar apenas em informações superficiais. Muitas vezes, questões como débitos ocultos podem surgir. Além disso, a falta de documentação adequada pode levar a complicações futuras. Portanto, sempre verifique as certidões e busque suporte especializado quando necessário."
+      }
+    ],
+    "faq": [
+      {
+        "q": "O que é due diligence societária?",
+        "a": "A due diligence societária é uma investigação detalhada da situação legal e financeira de uma empresa antes de uma transação."
+      },
+      {
+        "q": "Quais certidões são obrigatórias na due diligence?",
+        "a": "As certidões obrigatórias incluem registro na Junta Comercial, regularidade fiscal e certidões de protestos."
+      },
+      {
+        "q": "Como evitar retrabalho na due diligence?",
+        "a": "Um bom planejamento e uso de certidões online ajudam a evitar retrabalho, assegurando que todos documentos necessários sejam solicitados desde o início."
+      }
+    ]
+  }
+}

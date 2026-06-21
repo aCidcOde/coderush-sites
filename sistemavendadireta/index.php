@@ -753,6 +753,15 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-HOME-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/21/ia-pode-fortalecer-governanca-comercial-mmn/" data-blog-image="imagens/posts/ia-pode-fortalecer-governanca-comercial-mmn.jpg" data-blog-slug="ia-pode-fortalecer-governanca-comercial-mmn" data-blog-date="2026-06-21">
+  <a href="2026/06/21/ia-pode-fortalecer-governanca-comercial-mmn/">
+    <img src="imagens/posts/ia-pode-fortalecer-governanca-comercial-mmn.jpg" alt="Como a IA pode fortalecer a governança comercial no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="2026/06/21/ia-pode-fortalecer-governanca-comercial-mmn/" class="hover:underline">Como a IA pode fortalecer a governança comercial no MMN</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como dados e inteligência artificial podem otimizar a governança em vendas diretas e marketing multinível.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/18/crm-ia-pode-potencializar-mmn/" data-blog-image="imagens/posts/crm-ia-pode-potencializar-mmn.jpg" data-blog-slug="crm-ia-pode-potencializar-mmn" data-blog-date="2026-06-18">
   <a href="2026/06/18/crm-ia-pode-potencializar-mmn/">
     <img src="imagens/posts/crm-ia-pode-potencializar-mmn.jpg" alt="Como o CRM com IA pode potencializar seu MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
@@ -769,15 +778,6 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="2026/06/15/construindo-plano-carreira-marketing-multinivel/" class="hover:underline">Construindo um plano de carreira em marketing multinível</a></h2>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como um plano de carreira sólido pode maximizar seu sucesso em marketing multinível.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/12/expandir-internacionalmente-marketing-multinivel/" data-blog-image="imagens/posts/expandir-internacionalmente-marketing-multinivel.jpg" data-blog-slug="expandir-internacionalmente-marketing-multinivel" data-blog-date="2026-06-12">
-  <a href="2026/06/12/expandir-internacionalmente-marketing-multinivel/">
-    <img src="imagens/posts/expandir-internacionalmente-marketing-multinivel.jpg" alt="Como Expandir Internacionalmente no Marketing Multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-  </a>
-  <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="2026/06/12/expandir-internacionalmente-marketing-multinivel/" class="hover:underline">Como Expandir Internacionalmente no Marketing Multinível</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como a tecnologia pode impulsionar sua expansão internacional em vendas diretas.</p>
   </div>
 </article>
 <!-- BLOG-HOME-CARDS:END -->
