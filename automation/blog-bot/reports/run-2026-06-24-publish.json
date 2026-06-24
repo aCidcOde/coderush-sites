@@ -1,0 +1,220 @@
+{
+  "mode": "publish",
+  "date": "2026-06-24",
+  "timezone": "America/Sao_Paulo",
+  "focus": "tecnologia",
+  "startedAt": "2026-06-24T11:01:29.216Z",
+  "aiProvider": "openrouter",
+  "sites": [
+    {
+      "siteId": "coderush",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "governanca",
+      "theme": "arquitetura de software para operacoes criticas",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/coderush/2026-06-24/arquitetura-software-operacoes-criticas-governanca.json",
+      "markdownPath": "automation/blog-bot/out/coderush/2026-06-24/arquitetura-software-operacoes-criticas-governanca.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "2026/06/24/arquitetura-software-operacoes-criticas-governanca/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "existing",
+        "coverAlt": "",
+        "coverLeakage": null
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "index.php",
+          "blog/index.php",
+          "2026/06/24/arquitetura-software-operacoes-criticas-governanca/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "codafacil",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Possível texto vazado na capa (sample: \"\")",
+      "angle": "DX",
+      "theme": "gestao de debito tecnico em produto digital",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": [
+          {
+            "url": "https://www.codeium.com/blog/rss.xml",
+            "error": "HTTP 404"
+          }
+        ]
+      },
+      "outputPath": "automation/blog-bot/out/codafacil/2026-06-24/gerenciar-divida-tecnica-melhorar-dx-software.json",
+      "markdownPath": "automation/blog-bot/out/codafacil/2026-06-24/gerenciar-divida-tecnica-melhorar-dx-software.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "codafacil/2026/06/24/gerenciar-divida-tecnica-melhorar-dx-software/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Um emaranhado de canos de cobre corroídos no canto inferior esquerdo, contrastando com um conduto modular de aço escovado iluminado em azul",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": true,
+          "alphanumericCount": 18,
+          "sample": ""
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "codafacil/index.php",
+          "codafacil/blog/index.php",
+          "codafacil/2026/06/24/gerenciar-divida-tecnica-melhorar-dx-software/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "fluxointeligenteia",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Possível texto vazado na capa (sample: \"\")",
+      "angle": "tools",
+      "theme": "tools seguras para agentes de IA",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/fluxointeligenteia/2026-06-24/ferramentas-seguras-implementar-agentes-corporativos-ia.json",
+      "markdownPath": "automation/blog-bot/out/fluxointeligenteia/2026-06-24/ferramentas-seguras-implementar-agentes-corporativos-ia.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "fluxointeligenteia/2026/06/24/ferramentas-seguras-implementar-agentes-corporativos-ia/index.html",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Um denso aglomerado de nós de segurança interconectados, com chaves hexagonais e blocos modulares, irradiando luz ciana",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": true,
+          "alphanumericCount": 9,
+          "sample": ""
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    },
+    {
+      "siteId": "sistemavendadireta",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "campo",
+      "theme": "integracoes de pagamento e logistica para MMN",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/sistemavendadireta/2026-06-24/integracoes-pagamento-logistica-impactam-mmn.json",
+      "markdownPath": "automation/blog-bot/out/sistemavendadireta/2026-06-24/integracoes-pagamento-logistica-impactam-mmn.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "sistemavendadireta/2026/06/24/integracoes-pagamento-logistica-impactam-mmn/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Uma plataforma hexagonal em três camadas, conectada por canais geométricos, em tons de azul marinho e detalhes em branco",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": false,
+          "alphanumericCount": 0,
+          "sample": ""
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "sistemavendadireta/index.php",
+          "sistemavendadireta/blog/index.php",
+          "sistemavendadireta/2026/06/24/integracoes-pagamento-logistica-impactam-mmn/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "emergency",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Possivel texto vazado na capa (sample: \"\")",
+      "angle": "investigacao patrimonial",
+      "theme": "due diligence societaria em M&A no mercado brasileiro",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/emergency/2026-06-24/investigacao-patrimonial-due-diligence-societaria-ma.json",
+      "markdownPath": "automation/blog-bot/out/emergency/2026-06-24/investigacao-patrimonial-due-diligence-societaria-ma.md",
+      "publishResult": {
+        "target": "api",
+        "apiStatus": 201,
+        "apiUrl": "https://emergency.com.br/blog/investigacao-patrimonial-due-diligence-societaria-ma",
+        "apiId": 27,
+        "apiPublishedAt": "2026-06-24T08:06:42-03:00",
+        "coverPath": "automation/blog-bot/out/emergency/covers/investigacao-patrimonial-due-diligence-societaria-ma.jpg",
+        "coverSize": 261823,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Robô futurista interage com hologramas de documentos patrimoniais, em tons de azul e ouro, simbolizando análise de dados em M&A",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": true,
+          "alphanumericCount": 14,
+          "sample": ""
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    }
+  ],
+  "duplications": [],
+  "relatedRefresh": {
+    "touched": 53,
+    "unchanged": 26,
+    "errors": [],
+    "totalCards": 72,
+    "totalFiles": 79
+  },
+  "fallbackCount": 0,
+  "allFallback": false,
+  "finishedAt": "2026-06-24T11:08:18.221Z",
+  "ok": true
+}

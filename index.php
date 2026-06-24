@@ -691,6 +691,15 @@ $seoLdGraph = [
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-HOME-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/24/arquitetura-software-operacoes-criticas-governanca/" data-blog-image="imagens/posts/arquitetura-software-operacoes-criticas-governanca.jpg" data-blog-slug="arquitetura-software-operacoes-criticas-governanca" data-blog-date="2026-06-24">
+  <a href="2026/06/24/arquitetura-software-operacoes-criticas-governanca/">
+    <img src="imagens/posts/arquitetura-software-operacoes-criticas-governanca.jpg" alt="Arquitetura de Software para Operações Críticas e Governança" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="2026/06/24/arquitetura-software-operacoes-criticas-governanca/" class="hover:underline">Arquitetura de Software para Operações Críticas e Governança</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como uma boa arquitetura de software pode garantir governança em operações críticas.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/21/priorizar-iniciativas-tecnologia-medir-roi/" data-blog-image="imagens/posts/priorizar-iniciativas-tecnologia-medir-roi.jpg" data-blog-slug="priorizar-iniciativas-tecnologia-medir-roi" data-blog-date="2026-06-21">
   <a href="2026/06/21/priorizar-iniciativas-tecnologia-medir-roi/">
     <img src="imagens/posts/priorizar-iniciativas-tecnologia-medir-roi.jpg" alt="Como priorizar iniciativas de tecnologia e medir ROI" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
@@ -707,15 +716,6 @@ $seoLdGraph = [
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="2026/06/18/comprar-construir-software-considerar-arquitetura/" class="hover:underline">Comprar ou construir software: o que considerar em arquitetura</a></h2>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda os principais fatores na decisão de comprar ou construir software sob medida.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/15/escolher-stack-tecnologica-iniciativas-criticas/" data-blog-image="imagens/posts/escolher-stack-tecnologica-iniciativas-criticas.jpg" data-blog-slug="escolher-stack-tecnologica-iniciativas-criticas" data-blog-date="2026-06-15">
-  <a href="2026/06/15/escolher-stack-tecnologica-iniciativas-criticas/">
-    <img src="imagens/posts/escolher-stack-tecnologica-iniciativas-criticas.jpg" alt="Como escolher a stack tecnológica para iniciativas críticas?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-  </a>
-  <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="2026/06/15/escolher-stack-tecnologica-iniciativas-criticas/" class="hover:underline">Como escolher a stack tecnológica para iniciativas críticas?</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Decisões sobre stack tecnológica são cruciais para o sucesso de projetos e operações. Entenda como escolher a melhor opção.</p>
   </div>
 </article>
 <!-- BLOG-HOME-CARDS:END -->

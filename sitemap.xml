@@ -2,15 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://coderush.com.br/</loc>
-    <lastmod>2026-06-21</lastmod>
+    <lastmod>2026-06-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://coderush.com.br/blog/</loc>
-    <lastmod>2026-06-21</lastmod>
+    <lastmod>2026-06-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://coderush.com.br/2026/06/24/arquitetura-software-operacoes-criticas-governanca/</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://coderush.com.br/2026/06/21/priorizar-iniciativas-tecnologia-medir-roi/</loc>
@@ -87,12 +93,6 @@
   <url>
     <loc>https://coderush.com.br/2026/05/15/comprar-construir-software-considerar/</loc>
     <lastmod>2026-05-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://coderush.com.br/2026/05/12/arquitetura-software-operacoes-criticas-governanca/</loc>
-    <lastmod>2026-05-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

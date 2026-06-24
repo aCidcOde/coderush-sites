@@ -219,10 +219,10 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/06/15/escolher-stack-tecnologica-iniciativas-criticas/"><img src="../../../../imagens/posts/escolher-stack-tecnologica-iniciativas-criticas.jpg" alt="Como escolher a stack tecnológica para iniciativas críticas?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/06/24/arquitetura-software-operacoes-criticas-governanca/"><img src="../../../../imagens/posts/arquitetura-software-operacoes-criticas-governanca.jpg" alt="Arquitetura de Software para Operações Críticas e Governança" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/15/escolher-stack-tecnologica-iniciativas-criticas/" class="hover:underline">Como escolher a stack tecnológica para iniciativas críticas?</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Decisões sobre stack tecnológica são cruciais para o sucesso de projetos e operações. Entenda como escolher a melhor opção.</p>
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/24/arquitetura-software-operacoes-criticas-governanca/" class="hover:underline">Arquitetura de Software para Operações Críticas e Governança</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como uma boa arquitetura de software pode garantir governança em operações críticas.</p>
   </div>
 </article>
   </div>

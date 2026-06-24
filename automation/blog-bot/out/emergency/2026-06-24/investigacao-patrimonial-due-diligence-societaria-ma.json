@@ -1,0 +1,88 @@
+{
+  "date": "2026-06-24",
+  "siteId": "emergency",
+  "postType": "due-diligence-certidoes",
+  "focus": "tecnologia",
+  "theme": "due diligence societaria em M&A no mercado brasileiro",
+  "angle": "investigacao patrimonial",
+  "slug": "investigacao-patrimonial-due-diligence-societaria-ma",
+  "title": "Emergency Documentação: TECNOLOGIA aplicado a investigacao patrimonial",
+  "description": "Atualização semanal de tecnologia para Emergency Documentação, com foco em due diligence societaria em M&A no mercado brasileiro.",
+  "sources": [
+    "https://www.jusbrasil.com.br/artigos/fusoes-aquisicoes-e-incorporacoes-m-a-etapas-juridicas-due-diligence-e-contratos-de-compra-e-venda-de-participacao-societaria/5447938281",
+    "https://www.jusbrasil.com.br/artigos/due-diligence-em-operacoes-societarias-etapas-relevancia-juridica-e-estrategia-empresarial/3813212023",
+    "https://revistaft.com.br/fusoes-e-aquisicoes-ma-e-o-papel-do-compliance-analise-dos-riscos-e-due-diligence-em-operacoes-no-brasil/",
+    "https://fixcompliance.com.br/2026/03/11/due-diligence-no-mercado-brasileiro-por-que-ela-se-tornou-indispensavel-para-decisoes-seguras/",
+    "https://emergency.com.br/blog/due-diligence-societaria-ma-brasil"
+  ],
+  "status": "draft",
+  "generatedAt": "2026-06-24T08:06:42-03:00",
+  "content": {
+    "eyebrow": "Guia prático",
+    "headline": "Investigação Patrimonial na Due Diligence Societária em M&A",
+    "summary": "Entenda a importância da investigação patrimonial na due diligence societária e como certidões online podem ajudar.",
+    "answerBox": {
+      "question": "O que é investigação patrimonial na due diligence societária?",
+      "answer": "Investigação patrimonial na due diligence societária envolve a análise detalhada dos ativos e passivos de uma empresa adquirida, assegurando que não existam riscos ocultos. Utilizar certidões online facilita esse processo, tornando-o mais eficiente e menos sujeito a retrabalho."
+    },
+    "tldr": [
+      "Investigações patrimoniais são cruciais em M&A.",
+      "Certidões online agilizam a due diligence.",
+      "Evite riscos ocultos com apoio especializado."
+    ],
+    "sections": [
+      {
+        "type": "prose",
+        "title": "Por que a Investigação Patrimonial é Essencial?",
+        "body": "A investigação patrimonial é uma etapa crítica na due diligence societária, especialmente em processos de M&A. Ela permite que os compradores avaliem a saúde financeira e legal da empresa-alvo, identificando ativos e passivos relevantes. Ignorar essa fase pode resultar em surpresas desagradáveis que impactam o valor da transação."
+      },
+      {
+        "type": "list",
+        "title": "Principais Aspectos da Investigação Patrimonial",
+        "items": [
+          "Verificação de bens imóveis e móveis da empresa.",
+          "Análise de dívidas e passivos existentes.",
+          "Identificação de litígios ou ações judiciais.",
+          "Exame de contratos e obrigações legais.",
+          "Avaliação de ativos intangíveis, como marcas."
+        ]
+      },
+      {
+        "type": "callout",
+        "body": "Já estruturamos isso em diversos clientes. Vale a pena conversar sobre como podemos ajudar sua empresa a evitar riscos na due diligence.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Como as Certidões Online Facilitam o Processo?",
+        "body": "Utilizar certidões online torna a investigação patrimonial mais ágil e eficiente. Com acesso rápido a documentos cartorários e forenses, é possível obter informações precisas sobre a situação jurídica da empresa em questão. Isso minimiza o retrabalho e acelera a conclusão da due diligence, permitindo que as partes avancem na negociação com confiança."
+      },
+      {
+        "type": "cta-inline",
+        "body": "Se você busca eficiência e segurança na sua due diligence, converse com um especialista.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Cuidado com os Riscos Ocultos",
+        "body": "Ao realizar a due diligence, é fundamental estar atento a riscos ocultos que podem não ser evidentes à primeira vista. A falta de documentação adequada ou a presença de litígios não informados podem comprometer a transação. Por isso, contar com suporte humano e tecnologia, como a oferecida pela Emergency Documentação, é essencial para garantir uma análise completa e segura."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Quais certidões são obrigatórias na due diligence?",
+        "a": "As certidões obrigatórias incluem certidão de ônus reais, certidão de distribuição de ações e certidão negativa de débitos tributários."
+      },
+      {
+        "q": "Como posso agilizar a investigação patrimonial?",
+        "a": "Utilizando certidões online e contando com o suporte de especialistas em due diligence para garantir eficiência e segurança."
+      },
+      {
+        "q": "O que fazer se encontrar dívidas ocultas?",
+        "a": "É importante reavaliar a proposta de aquisição e considerar renegociações ou ajustes no preço com base nas dívidas encontradas."
+      }
+    ]
+  }
+}
