@@ -1,0 +1,88 @@
+{
+  "date": "2026-06-27",
+  "siteId": "coderush",
+  "postType": "institucional-tecnologia",
+  "focus": "php",
+  "theme": "como dimensionar equipe de tecnologia em empresa media",
+  "angle": "governanca",
+  "slug": "dimensionar-equipe-tecnologia-empresas-medias",
+  "title": "CodeRush: PHP aplicado a governanca",
+  "description": "Atualização semanal de php para CodeRush, com foco em como dimensionar equipe de tecnologia em empresa media.",
+  "sources": [
+    "https://pt.linkedin.com/pulse/como-estruturar-um-time-de-ti-e-desenvolvimento-djjgf",
+    "https://tiinside.com.br/13/10/2023/dimensionamento-de-times-de-tecnologia/",
+    "https://economiasp.com/2023/10/03/dimensionamento-de-times-de-tecnologia/",
+    "https://pt.scribd.com/doc/22719689/Qual-e-o-tamanho-ideal-de-uma-equipe-de-TI",
+    "https://blog.bossabox.com/dimensionamento-de-times-de-tecnologia/"
+  ],
+  "status": "draft",
+  "generatedAt": "2026-06-27T07:39:18-03:00",
+  "content": {
+    "eyebrow": "Guia prático",
+    "headline": "Como dimensionar a equipe de tecnologia em empresas médias",
+    "summary": "Estratégias para formar equipes de tecnologia eficazes e alinhadas à governança.",
+    "answerBox": {
+      "question": "Como dimensionar a equipe de tecnologia em empresas médias?",
+      "answer": "Para dimensionar uma equipe de tecnologia, avalie suas necessidades específicas, a complexidade dos projetos e o alinhamento com a governança existente. Equipes muito grandes podem gerar ruídos, enquanto equipes pequenas podem não atender à demanda. O equilíbrio é fundamental."
+    },
+    "tldr": [
+      "Avalie as necessidades específicas da sua empresa.",
+      "Equipes devem ser dimensionadas com equilíbrio.",
+      "A governança é essencial para o sucesso."
+    ],
+    "sections": [
+      {
+        "type": "prose",
+        "title": "A importância do dimensionamento adequado",
+        "body": "O dimensionamento de equipes de tecnologia é um desafio comum em empresas médias. Um estudo recente destaca que equipes muito grandes podem causar ineficiência, enquanto equipes pequenas podem não ter a capacidade de atender a todas as demandas ([Economia SP](https://economiasp.com/2023/10/03/dimensionamento-de-times-de-tecnologia/)). Portanto, entender as necessidades específicas da sua empresa é crucial."
+      },
+      {
+        "type": "list",
+        "title": "Critérios para dimensionamento eficaz",
+        "items": [
+          "Avalie a complexidade dos projetos em andamento.",
+          "Considere a habilidade técnica necessária.",
+          "Leve em conta a governança de tecnologia existente.",
+          "Analise a integração com sistemas legados.",
+          "Reveja a carga de trabalho e demandas futuras."
+        ]
+      },
+      {
+        "type": "callout",
+        "body": "Já ajudamos empresas a estruturar suas equipes de tecnologia de forma eficiente. Vale uma conversa para entender seu cenário específico.",
+        "ctaLabel": "Fale com a CodeRush",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Governança: o guia para o sucesso",
+        "body": "A governança de tecnologia é um aspecto crítico ao dimensionar equipes. Ela garante que os processos e as práticas estejam alinhados aos objetivos de negócios. Uma abordagem bem estruturada pode evitar desperdícios e garantir que a equipe atue de forma coesa. A CodeRush tem experiência em alinhar a governança às necessidades de diversas empresas, ajudando a construir equipes que não apenas atendem às demandas, mas também respeitam as regras de negócio existentes."
+      },
+      {
+        "type": "cta-inline",
+        "body": "Se você está considerando como integrar IA em sua equipe, converse conosco.",
+        "ctaLabel": "Fale com a CodeRush",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Erros a evitar no dimensionamento",
+        "body": "Um erro comum é não considerar a cultura organizacional ao dimensionar equipes. Equipes que não se alinham à cultura da empresa podem gerar resistência e problemas de comunicação. Além disso, negligenciar a integração com sistemas legados pode resultar em desafios operacionais significativos. Lembre-se de que um bom dimensionamento é tanto uma questão de números quanto de pessoas."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Qual é o tamanho ideal de uma equipe de tecnologia?",
+        "a": "O tamanho ideal varia com a complexidade dos projetos e as necessidades da empresa, mas deve sempre buscar um equilíbrio entre eficiência e capacidade."
+      },
+      {
+        "q": "Como a governança impacta o dimensionamento da equipe?",
+        "a": "Uma governança sólida ajuda a alinhar a equipe com os objetivos da empresa, garantindo que todos trabalhem em direção ao mesmo resultado e respeitem as regras de negócio."
+      },
+      {
+        "q": "Quais são os sinais de que a equipe está dimensionada incorretamente?",
+        "a": "Sinais incluem atrasos em entregas, comunicação ineficaz e sobrecarga de trabalho para os membros da equipe. É crucial monitorar esses indicadores."
+      }
+    ]
+  }
+}

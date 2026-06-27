@@ -753,6 +753,15 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-HOME-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/27/crm-automacao-impulsionam-marketing-multinivel/" data-blog-image="imagens/posts/crm-automacao-impulsionam-marketing-multinivel.jpg" data-blog-slug="crm-automacao-impulsionam-marketing-multinivel" data-blog-date="2026-06-27">
+  <a href="2026/06/27/crm-automacao-impulsionam-marketing-multinivel/">
+    <img src="imagens/posts/crm-automacao-impulsionam-marketing-multinivel.jpg" alt="Como CRM e automação impulsionam o marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="2026/06/27/crm-automacao-impulsionam-marketing-multinivel/" class="hover:underline">Como CRM e automação impulsionam o marketing multinível</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como utilizar CRM e automação para otimizar vendas diretas e resultados no marketing multinível.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/24/integracoes-pagamento-logistica-impactam-mmn/" data-blog-image="imagens/posts/integracoes-pagamento-logistica-impactam-mmn.jpg" data-blog-slug="integracoes-pagamento-logistica-impactam-mmn" data-blog-date="2026-06-24">
   <a href="2026/06/24/integracoes-pagamento-logistica-impactam-mmn/">
     <img src="imagens/posts/integracoes-pagamento-logistica-impactam-mmn.jpg" alt="Como as integrações de pagamento e logística impactam o MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
@@ -769,15 +778,6 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="2026/06/21/ia-pode-fortalecer-governanca-comercial-mmn/" class="hover:underline">Como a IA pode fortalecer a governança comercial no MMN</a></h2>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como dados e inteligência artificial podem otimizar a governança em vendas diretas e marketing multinível.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/18/crm-ia-pode-potencializar-mmn/" data-blog-image="imagens/posts/crm-ia-pode-potencializar-mmn.jpg" data-blog-slug="crm-ia-pode-potencializar-mmn" data-blog-date="2026-06-18">
-  <a href="2026/06/18/crm-ia-pode-potencializar-mmn/">
-    <img src="imagens/posts/crm-ia-pode-potencializar-mmn.jpg" alt="Como o CRM com IA pode potencializar seu MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-  </a>
-  <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="2026/06/18/crm-ia-pode-potencializar-mmn/" class="hover:underline">Como o CRM com IA pode potencializar seu MMN</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como um CRM com inteligência artificial apoia distribuidores em campo no marketing multinível.</p>
   </div>
 </article>
 <!-- BLOG-HOME-CARDS:END -->

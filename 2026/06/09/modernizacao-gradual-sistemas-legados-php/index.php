@@ -245,19 +245,19 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://codafacil.dev/2026/06/24/gerenciar-divida-tecnica-melhorar-dx-software/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/gerenciar-divida-tecnica-melhorar-dx-software.jpg" alt="Como gerenciar dívida técnica para melhorar a DX em software" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://codafacil.dev/2026/06/27/melhore-escalabilidade-qualidade-sistemas-sob-medida/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/melhore-escalabilidade-qualidade-sistemas-sob-medida.jpg" alt="Melhore a Escalabilidade e Qualidade de Sistemas Sob Medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/06/24/gerenciar-divida-tecnica-melhorar-dx-software/" rel="noopener" target="_blank" class="hover:underline">Como gerenciar dívida técnica para melhorar a DX em software</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Explore estratégias práticas para gerenciar dívida técnica e aprimorar a experiência do desenvolvedor em produtos digitais.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/06/27/melhore-escalabilidade-qualidade-sistemas-sob-medida/" rel="noopener" target="_blank" class="hover:underline">Melhore a Escalabilidade e Qualidade de Sistemas Sob Medida</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como otimizar a escalabilidade e a qualidade de código em projetos de software sob medida com IA.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://sistemavendadireta.com.br/2026/06/24/integracoes-pagamento-logistica-impactam-mmn/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/integracoes-pagamento-logistica-impactam-mmn.jpg" alt="Como as integrações de pagamento e logística impactam o MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://sistemavendadireta.com.br/2026/06/27/crm-automacao-impulsionam-marketing-multinivel/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/crm-automacao-impulsionam-marketing-multinivel.jpg" alt="Como CRM e automação impulsionam o marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Sistema Venda Direta</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/06/24/integracoes-pagamento-logistica-impactam-mmn/" rel="noopener" target="_blank" class="hover:underline">Como as integrações de pagamento e logística impactam o MMN</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda a importância das integrações para otimizar operações no marketing multinível.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/06/27/crm-automacao-impulsionam-marketing-multinivel/" rel="noopener" target="_blank" class="hover:underline">Como CRM e automação impulsionam o marketing multinível</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como utilizar CRM e automação para otimizar vendas diretas e resultados no marketing multinível.</p>
   </div>
 </article>
   </div>

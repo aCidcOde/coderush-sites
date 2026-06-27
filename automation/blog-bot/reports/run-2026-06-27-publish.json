@@ -1,0 +1,239 @@
+{
+  "mode": "publish",
+  "date": "2026-06-27",
+  "timezone": "America/Sao_Paulo",
+  "focus": "php",
+  "startedAt": "2026-06-27T10:39:18.742Z",
+  "aiProvider": "openrouter",
+  "sites": [
+    {
+      "siteId": "coderush",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "governanca",
+      "theme": "como dimensionar equipe de tecnologia em empresa media",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/coderush/2026-06-27/dimensionar-equipe-tecnologia-empresas-medias.json",
+      "markdownPath": "automation/blog-bot/out/coderush/2026-06-27/dimensionar-equipe-tecnologia-empresas-medias.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "2026/06/27/dimensionar-equipe-tecnologia-empresas-medias/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Uma grade modular de blocos brilhantes representando papéis em uma equipe, dispostos em formação precisa em um fundo azul profundo",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": false,
+          "alphanumericCount": 0,
+          "sample": ""
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "index.php",
+          "blog/index.php",
+          "2026/06/27/dimensionar-equipe-tecnologia-empresas-medias/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "codafacil",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "qualidade de codigo",
+      "theme": "escala de banco e cache em produtos sob medida",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": [
+          {
+            "url": "https://www.codeium.com/blog/rss.xml",
+            "error": "HTTP 404"
+          }
+        ]
+      },
+      "outputPath": "automation/blog-bot/out/codafacil/2026-06-27/melhore-escalabilidade-qualidade-sistemas-sob-medida.json",
+      "markdownPath": "automation/blog-bot/out/codafacil/2026-06-27/melhore-escalabilidade-qualidade-sistemas-sob-medida.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "codafacil/2026/06/27/melhore-escalabilidade-qualidade-sistemas-sob-medida/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Estrutura de arquitetura de banco de dados em camadas, com superfícies translúcidas e padrões circuitais, em um fundo escuro e profundo",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": false,
+          "alphanumericCount": 4,
+          "sample": ""
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "codafacil/index.php",
+          "codafacil/blog/index.php",
+          "codafacil/2026/06/27/melhore-escalabilidade-qualidade-sistemas-sob-medida/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "fluxointeligenteia",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "permissoes",
+      "theme": "canais integrados para agentes corporativos",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/fluxointeligenteia/2026-06-27/gerencie-permissoes-agentes-corporativos-ia-seguranca.json",
+      "markdownPath": "automation/blog-bot/out/fluxointeligenteia/2026-06-27/gerencie-permissoes-agentes-corporativos-ia-seguranca.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "fluxointeligenteia/2026/06/27/gerencie-permissoes-agentes-corporativos-ia-seguranca/index.html",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Painel de controle de acesso em close-up, destacando camadas de mecanismos de permissão iluminadas em verde e azul, com fundo desfocado em verde escuro",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": false,
+          "alphanumericCount": 3,
+          "sample": ""
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    },
+    {
+      "siteId": "sistemavendadireta",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "campo",
+      "theme": "crm e automacao para marketing multinivel",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": [
+          {
+            "url": "https://blog.rdstation.com/feed/",
+            "error": "HTTP 415"
+          },
+          {
+            "url": "https://wfdsa.org/feed/",
+            "error": "fetch failed"
+          }
+        ]
+      },
+      "outputPath": "automation/blog-bot/out/sistemavendadireta/2026-06-27/crm-automacao-impulsionam-marketing-multinivel.json",
+      "markdownPath": "automation/blog-bot/out/sistemavendadireta/2026-06-27/crm-automacao-impulsionam-marketing-multinivel.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "sistemavendadireta/2026/06/27/crm-automacao-impulsionam-marketing-multinivel/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Uma torre monumental vertical formada por segmentos interligados de pipeline de CRM e nós de automação, com anéis geométricos empilhados em hierarquia, envolta ",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": false,
+          "alphanumericCount": 2,
+          "sample": ""
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "sistemavendadireta/index.php",
+          "sistemavendadireta/blog/index.php",
+          "sistemavendadireta/2026/06/27/crm-automacao-impulsionam-marketing-multinivel/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "emergency",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Possivel texto vazado na capa (sample: \"PROPERTY REGISTRATION CERTIFICATE\")",
+      "angle": "compliance",
+      "theme": "due diligence imobiliaria com certidoes orientadas",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": [
+          {
+            "url": "https://www.gov.br/cvm/pt-br/assuntos/noticias/rss.xml",
+            "error": "fetch failed"
+          }
+        ]
+      },
+      "outputPath": "automation/blog-bot/out/emergency/2026-06-27/realizar-due-diligence-imobiliaria-certidoes-online.json",
+      "markdownPath": "automation/blog-bot/out/emergency/2026-06-27/realizar-due-diligence-imobiliaria-certidoes-online.md",
+      "publishResult": {
+        "target": "api",
+        "apiStatus": 201,
+        "apiUrl": "https://emergency.com.br/blog/realizar-due-diligence-imobiliaria-certidoes-online",
+        "apiId": 28,
+        "apiPublishedAt": "2026-06-27T07:44:21-03:00",
+        "coverPath": "automation/blog-bot/out/emergency/covers/realizar-due-diligence-imobiliaria-certidoes-online.jpg",
+        "coverSize": 230560,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Certidão de registro de propriedade em close-up, com textura embutida, e robô humanoide prateado ao lado, em fundo azul profundo",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": true,
+          "alphanumericCount": 38,
+          "sample": "PROPERTY REGISTRATION CERTIFICATE"
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    }
+  ],
+  "duplications": [],
+  "relatedRefresh": {
+    "touched": 44,
+    "unchanged": 39,
+    "errors": [],
+    "totalCards": 76,
+    "totalFiles": 83
+  },
+  "fallbackCount": 0,
+  "allFallback": false,
+  "finishedAt": "2026-06-27T10:45:36.178Z",
+  "ok": true
+}

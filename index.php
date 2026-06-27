@@ -691,6 +691,15 @@ $seoLdGraph = [
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-HOME-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/27/dimensionar-equipe-tecnologia-empresas-medias/" data-blog-image="imagens/posts/dimensionar-equipe-tecnologia-empresas-medias.jpg" data-blog-slug="dimensionar-equipe-tecnologia-empresas-medias" data-blog-date="2026-06-27">
+  <a href="2026/06/27/dimensionar-equipe-tecnologia-empresas-medias/">
+    <img src="imagens/posts/dimensionar-equipe-tecnologia-empresas-medias.jpg" alt="Como dimensionar a equipe de tecnologia em empresas médias" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="2026/06/27/dimensionar-equipe-tecnologia-empresas-medias/" class="hover:underline">Como dimensionar a equipe de tecnologia em empresas médias</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Estratégias para formar equipes de tecnologia eficazes e alinhadas à governança.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/24/arquitetura-software-operacoes-criticas-governanca/" data-blog-image="imagens/posts/arquitetura-software-operacoes-criticas-governanca.jpg" data-blog-slug="arquitetura-software-operacoes-criticas-governanca" data-blog-date="2026-06-24">
   <a href="2026/06/24/arquitetura-software-operacoes-criticas-governanca/">
     <img src="imagens/posts/arquitetura-software-operacoes-criticas-governanca.jpg" alt="Arquitetura de Software para Operações Críticas e Governança" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
@@ -707,15 +716,6 @@ $seoLdGraph = [
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="2026/06/21/priorizar-iniciativas-tecnologia-medir-roi/" class="hover:underline">Como priorizar iniciativas de tecnologia e medir ROI</a></h2>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Dicas práticas sobre como decidir iniciativas tecnológicas com foco em ROI e eficiência.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/18/comprar-construir-software-considerar-arquitetura/" data-blog-image="imagens/posts/comprar-construir-software-considerar-arquitetura.jpg" data-blog-slug="comprar-construir-software-considerar-arquitetura" data-blog-date="2026-06-18">
-  <a href="2026/06/18/comprar-construir-software-considerar-arquitetura/">
-    <img src="imagens/posts/comprar-construir-software-considerar-arquitetura.jpg" alt="Comprar ou construir software: o que considerar em arquitetura" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-  </a>
-  <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="2026/06/18/comprar-construir-software-considerar-arquitetura/" class="hover:underline">Comprar ou construir software: o que considerar em arquitetura</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda os principais fatores na decisão de comprar ou construir software sob medida.</p>
   </div>
 </article>
 <!-- BLOG-HOME-CARDS:END -->

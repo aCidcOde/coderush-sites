@@ -246,11 +246,11 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://coderush.com.br/2026/06/21/priorizar-iniciativas-tecnologia-medir-roi/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/priorizar-iniciativas-tecnologia-medir-roi.jpg" alt="Como priorizar iniciativas de tecnologia e medir ROI" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://coderush.com.br/2026/06/27/dimensionar-equipe-tecnologia-empresas-medias/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/dimensionar-equipe-tecnologia-empresas-medias.jpg" alt="Como dimensionar a equipe de tecnologia em empresas médias" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">CodeRush</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/06/21/priorizar-iniciativas-tecnologia-medir-roi/" rel="noopener" target="_blank" class="hover:underline">Como priorizar iniciativas de tecnologia e medir ROI</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Dicas práticas sobre como decidir iniciativas tecnológicas com foco em ROI e eficiência.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/06/27/dimensionar-equipe-tecnologia-empresas-medias/" rel="noopener" target="_blank" class="hover:underline">Como dimensionar a equipe de tecnologia em empresas médias</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Estratégias para formar equipes de tecnologia eficazes e alinhadas à governança.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">

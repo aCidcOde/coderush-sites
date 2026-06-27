@@ -212,17 +212,17 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/06/27/dimensionar-equipe-tecnologia-empresas-medias/"><img src="../../../../imagens/posts/dimensionar-equipe-tecnologia-empresas-medias.jpg" alt="Como dimensionar a equipe de tecnologia em empresas médias" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/27/dimensionar-equipe-tecnologia-empresas-medias/" class="hover:underline">Como dimensionar a equipe de tecnologia em empresas médias</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Estratégias para formar equipes de tecnologia eficazes e alinhadas à governança.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="../../../../2026/06/12/gerenciando-riscos-substituicao-sistemas-legados/"><img src="../../../../imagens/posts/gerenciando-riscos-substituicao-sistemas-legados.jpg" alt="Gerenciando riscos na substituição de sistemas legados" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/12/gerenciando-riscos-substituicao-sistemas-legados/" class="hover:underline">Gerenciando riscos na substituição de sistemas legados</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como gerenciar riscos ao substituir sistemas legados em empresas médias.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/06/09/modernizacao-gradual-sistemas-legados-php/"><img src="../../../../imagens/posts/modernizacao-gradual-sistemas-legados-php.jpg" alt="Modernização gradual de sistemas legados em PHP" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/09/modernizacao-gradual-sistemas-legados-php/" class="hover:underline">Modernização gradual de sistemas legados em PHP</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Explore como modernizar sistemas legados de forma pragmática e integrada.</p>
   </div>
 </article>
   </div>
@@ -237,6 +237,14 @@
   <p class="mt-2 text-sm text-white/70">Conteúdo recente dos outros sites do ecossistema.</p>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="https://codafacil.dev/2026/06/27/melhore-escalabilidade-qualidade-sistemas-sob-medida/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/melhore-escalabilidade-qualidade-sistemas-sob-medida.jpg" alt="Melhore a Escalabilidade e Qualidade de Sistemas Sob Medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/06/27/melhore-escalabilidade-qualidade-sistemas-sob-medida/" rel="noopener" target="_blank" class="hover:underline">Melhore a Escalabilidade e Qualidade de Sistemas Sob Medida</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como otimizar a escalabilidade e a qualidade de código em projetos de software sob medida com IA.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="https://sistemavendadireta.com.br/2026/06/12/expandir-internacionalmente-marketing-multinivel/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/expandir-internacionalmente-marketing-multinivel.jpg" alt="Como Expandir Internacionalmente no Marketing Multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Sistema Venda Direta</p>
@@ -250,14 +258,6 @@
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">FluxoInteligente IA</p>
     <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/04/30/automacao-processos-llms-n8n-atendimento/" rel="noopener" target="_blank" class="hover:underline">Automação de Processos com LLMs e n8n</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">A automação com IA, por meio de agentes inteligentes, reduz custos e retrabalho, otimizando processos de atendimento. Ferramentas como La...</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://codafacil.dev/2026/06/18/ia-pode-otimizar-desenvolvimento-software-sob-medida/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/ia-pode-otimizar-desenvolvimento-software-sob-medida.jpg" alt="Como a IA pode otimizar o desenvolvimento de software sob medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/06/18/ia-pode-otimizar-desenvolvimento-software-sob-medida/" rel="noopener" target="_blank" class="hover:underline">Como a IA pode otimizar o desenvolvimento de software sob medida</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Explore como aplicar IA para acelerar a entrega de software, mantendo a qualidade e eficiência.</p>
   </div>
 </article>
   </div>

@@ -254,11 +254,11 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://fluxointeligenteia.com.br/2026/06/24/ferramentas-seguras-implementar-agentes-corporativos-ia/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/ferramentas-seguras-implementar-agentes-corporativos-ia.jpg" alt="Ferramentas seguras para implementar agentes corporativos de IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://fluxointeligenteia.com.br/2026/06/27/gerencie-permissoes-agentes-corporativos-ia-seguranca/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/gerencie-permissoes-agentes-corporativos-ia-seguranca.jpg" alt="Gerencie permissões em agentes corporativos de IA com segurança" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">FluxoInteligente IA</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/06/24/ferramentas-seguras-implementar-agentes-corporativos-ia/" rel="noopener" target="_blank" class="hover:underline">Ferramentas seguras para implementar agentes corporativos de IA</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como garantir governança e segurança em agentes corporativos de IA com ferramentas e práticas eficazes.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/06/27/gerencie-permissoes-agentes-corporativos-ia-seguranca/" rel="noopener" target="_blank" class="hover:underline">Gerencie permissões em agentes corporativos de IA com segurança</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como implementar permissões eficazes em agentes corporativos de IA para uma governança robusta.</p>
   </div>
 </article>
   </div>
