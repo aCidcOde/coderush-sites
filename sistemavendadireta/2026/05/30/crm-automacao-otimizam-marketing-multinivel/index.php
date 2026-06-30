@@ -238,19 +238,19 @@
   <p class="mt-2 text-sm text-white/70">Conteúdo recente dos outros sites do ecossistema.</p>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://coderush.com.br/2026/06/03/melhorar-produtividade-equipe-automacao/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/melhorar-produtividade-equipe-automacao.jpg" alt="Como melhorar a produtividade da sua equipe com automação" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://codafacil.dev/2026/06/30/acelerar-operacoes-criticas-ia-integracoes-eficientes/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/acelerar-operacoes-criticas-ia-integracoes-eficientes.jpg" alt="Como acelerar operações críticas com IA e integrações eficientes" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
-    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">CodeRush</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/06/03/melhorar-produtividade-equipe-automacao/" rel="noopener" target="_blank" class="hover:underline">Como melhorar a produtividade da sua equipe com automação</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a automação pode aumentar a eficiência dos times em empresas médias.</p>
+    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/06/30/acelerar-operacoes-criticas-ia-integracoes-eficientes/" rel="noopener" target="_blank" class="hover:underline">Como acelerar operações críticas com IA e integrações eficientes</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como integrar automação e IA nas operações críticas para acelerar o desenvolvimento sem perder qualidade.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://codafacil.dev/2026/05/30/ferramentas-ia-otimizar-operacoes-criticas-desenvolvimento/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/ferramentas-ia-otimizar-operacoes-criticas-desenvolvimento.jpg" alt="Ferramentas de IA para otimizar operações críticas em desenvolvimento" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://coderush.com.br/2026/06/30/automacao-inteligente-pode-aumentar-produtividade-time/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/automacao-inteligente-pode-aumentar-produtividade-time.jpg" alt="Como a automação inteligente pode aumentar a produtividade do seu time" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
-    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/05/30/ferramentas-ia-otimizar-operacoes-criticas-desenvolvimento/" rel="noopener" target="_blank" class="hover:underline">Ferramentas de IA para otimizar operações críticas em desenvolvimento</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como integrar IA para acelerar a entrega em software sob medida.</p>
+    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">CodeRush</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/06/30/automacao-inteligente-pode-aumentar-produtividade-time/" rel="noopener" target="_blank" class="hover:underline">Como a automação inteligente pode aumentar a produtividade do seu time</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como decisões técnicas em automação podem impactar a produtividade das equipes.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">

@@ -205,6 +205,13 @@
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/06/30/automacao-inteligente-pode-aumentar-produtividade-time/"><img src="../../../../imagens/posts/automacao-inteligente-pode-aumentar-produtividade-time.jpg" alt="Como a automação inteligente pode aumentar a produtividade do seu time" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/30/automacao-inteligente-pode-aumentar-produtividade-time/" class="hover:underline">Como a automação inteligente pode aumentar a produtividade do seu time</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como decisões técnicas em automação podem impactar a produtividade das equipes.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="../../../../2026/05/30/governanca-tecnologia-caminho-crescimento/"><img src="../../../../imagens/posts/governanca-tecnologia-caminho-crescimento.jpg" alt="Governança de Tecnologia: O Caminho para o Crescimento" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/30/governanca-tecnologia-caminho-crescimento/" class="hover:underline">Governança de Tecnologia: O Caminho para o Crescimento</a></h3>
@@ -216,13 +223,6 @@
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/24/arquitetura-software-operacoes-criticas-governanca/" class="hover:underline">Arquitetura de Software para Operações Críticas e Governança</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como uma boa arquitetura de software pode garantir governança em operações críticas.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/06/21/priorizar-iniciativas-tecnologia-medir-roi/"><img src="../../../../imagens/posts/priorizar-iniciativas-tecnologia-medir-roi.jpg" alt="Como priorizar iniciativas de tecnologia e medir ROI" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/21/priorizar-iniciativas-tecnologia-medir-roi/" class="hover:underline">Como priorizar iniciativas de tecnologia e medir ROI</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Dicas práticas sobre como decidir iniciativas tecnológicas com foco em ROI e eficiência.</p>
   </div>
 </article>
   </div>
@@ -253,11 +253,11 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://fluxointeligenteia.com.br/2026/06/27/gerencie-permissoes-agentes-corporativos-ia-seguranca/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/gerencie-permissoes-agentes-corporativos-ia-seguranca.jpg" alt="Gerencie permissões em agentes corporativos de IA com segurança" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://fluxointeligenteia.com.br/2026/06/30/garantir-permissoes-auditoria-agentes-corporativos-ia/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/garantir-permissoes-auditoria-agentes-corporativos-ia.jpg" alt="Como garantir permissões e auditoria em agentes corporativos de IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">FluxoInteligente IA</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/06/27/gerencie-permissoes-agentes-corporativos-ia-seguranca/" rel="noopener" target="_blank" class="hover:underline">Gerencie permissões em agentes corporativos de IA com segurança</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como implementar permissões eficazes em agentes corporativos de IA para uma governança robusta.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/06/30/garantir-permissoes-auditoria-agentes-corporativos-ia/" rel="noopener" target="_blank" class="hover:underline">Como garantir permissões e auditoria em agentes corporativos de IA</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda a importância de permissões e auditoria para agentes corporativos de IA com governança eficaz.</p>
   </div>
 </article>
   </div>

@@ -213,17 +213,17 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/06/30/acelerar-operacoes-criticas-ia-integracoes-eficientes/"><img src="../../../../imagens/posts/acelerar-operacoes-criticas-ia-integracoes-eficientes.jpg" alt="Como acelerar operações críticas com IA e integrações eficientes" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/30/acelerar-operacoes-criticas-ia-integracoes-eficientes/" class="hover:underline">Como acelerar operações críticas com IA e integrações eficientes</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como integrar automação e IA nas operações críticas para acelerar o desenvolvimento sem perder qualidade.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="../../../../2026/06/24/gerenciar-divida-tecnica-melhorar-dx-software/"><img src="../../../../imagens/posts/gerenciar-divida-tecnica-melhorar-dx-software.jpg" alt="Como gerenciar dívida técnica para melhorar a DX em software" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/24/gerenciar-divida-tecnica-melhorar-dx-software/" class="hover:underline">Como gerenciar dívida técnica para melhorar a DX em software</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Explore estratégias práticas para gerenciar dívida técnica e aprimorar a experiência do desenvolvedor em produtos digitais.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/06/18/ia-pode-otimizar-desenvolvimento-software-sob-medida/"><img src="../../../../imagens/posts/ia-pode-otimizar-desenvolvimento-software-sob-medida.jpg" alt="Como a IA pode otimizar o desenvolvimento de software sob medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/18/ia-pode-otimizar-desenvolvimento-software-sob-medida/" class="hover:underline">Como a IA pode otimizar o desenvolvimento de software sob medida</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Explore como aplicar IA para acelerar a entrega de software, mantendo a qualidade e eficiência.</p>
   </div>
 </article>
   </div>

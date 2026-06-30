@@ -43,6 +43,15 @@
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-INDEX-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/30/acelerar-operacoes-criticas-ia-integracoes-eficientes/" data-blog-image="imagens/posts/acelerar-operacoes-criticas-ia-integracoes-eficientes.jpg" data-blog-slug="acelerar-operacoes-criticas-ia-integracoes-eficientes" data-blog-date="2026-06-30">
+  <a href="../2026/06/30/acelerar-operacoes-criticas-ia-integracoes-eficientes/">
+    <img src="../imagens/posts/acelerar-operacoes-criticas-ia-integracoes-eficientes.jpg" alt="Como acelerar operações críticas com IA e integrações eficientes" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="../2026/06/30/acelerar-operacoes-criticas-ia-integracoes-eficientes/" class="hover:underline">Como acelerar operações críticas com IA e integrações eficientes</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como integrar automação e IA nas operações críticas para acelerar o desenvolvimento sem perder qualidade.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/27/melhore-escalabilidade-qualidade-sistemas-sob-medida/" data-blog-image="imagens/posts/melhore-escalabilidade-qualidade-sistemas-sob-medida.jpg" data-blog-slug="melhore-escalabilidade-qualidade-sistemas-sob-medida" data-blog-date="2026-06-27">
   <a href="../2026/06/27/melhore-escalabilidade-qualidade-sistemas-sob-medida/">
     <img src="../imagens/posts/melhore-escalabilidade-qualidade-sistemas-sob-medida.jpg" alt="Melhore a Escalabilidade e Qualidade de Sistemas Sob Medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />

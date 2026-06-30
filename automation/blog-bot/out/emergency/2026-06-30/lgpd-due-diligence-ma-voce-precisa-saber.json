@@ -1,0 +1,88 @@
+{
+  "date": "2026-06-30",
+  "siteId": "emergency",
+  "postType": "due-diligence-certidoes",
+  "focus": "ia",
+  "theme": "LGPD e tratamento de dados em diligencia",
+  "angle": "M&A",
+  "slug": "lgpd-due-diligence-ma-voce-precisa-saber",
+  "title": "Emergency Documentação: IA aplicado a M&A",
+  "description": "Atualização semanal de ia para Emergency Documentação, com foco em LGPD e tratamento de dados em diligencia.",
+  "sources": [
+    "https://www.migalhas.com.br/depeso/381346/a-protecao-de-dados-nos-processos-de-due-diligence",
+    "https://slap.law/lgpd-e-a-sua-relacao-com-os-processos-de-due-diligence/",
+    "https://bens.adv.br/blog/lgpd-e-protecao-de-dados-na-due-diligence-empresarial-um-gui",
+    "https://limacabral.adv.br/a-protecao-de-dados-nos-processos-de-due-diligence/",
+    "https://br.lexlatin.com/opiniao/due-diligence-operacoes-ma-cuidados-protecao-dados"
+  ],
+  "status": "draft",
+  "generatedAt": "2026-06-30T08:08:11-03:00",
+  "content": {
+    "eyebrow": "Guia prático",
+    "headline": "LGPD e a Due Diligence em M&A: O Que Você Precisa Saber",
+    "summary": "Entenda como a LGPD impacta a due diligence em M&A e como evitar riscos.",
+    "answerBox": {
+      "question": "Como a LGPD afeta a due diligence em M&A?",
+      "answer": "A LGPD exige que os dados pessoais sejam tratados com cuidado durante a due diligence em M&A. Isso implica que os advogados e analistas de compliance devem garantir que todas as informações coletadas estejam em conformidade com a legislação, evitando riscos legais e financeiros."
+    },
+    "tldr": [
+      "A LGPD é crucial na due diligence em M&A.",
+      "Certidões online facilitam o processo de compliance.",
+      "Apoio humano é essencial para diligências complexas."
+    ],
+    "sections": [
+      {
+        "type": "prose",
+        "title": "A importância da LGPD na Due Diligence",
+        "body": "A Lei Geral de Proteção de Dados (LGPD) traz novas responsabilidades para empresas durante a due diligence. Em M&A, é fundamental garantir que a coleta de dados pessoais esteja em conformidade. Isso não apenas minimiza riscos legais, mas também protege a reputação da empresa envolvida na transação."
+      },
+      {
+        "type": "list",
+        "title": "Principais cuidados com a LGPD em M&A",
+        "items": [
+          "Verificar a origem dos dados pessoais coletados.",
+          "Obter consentimento explícito para o tratamento de dados.",
+          "Implementar medidas de segurança para proteger informações.",
+          "Realizar auditorias sobre o uso de dados por terceiros.",
+          "Treinar equipes sobre compliance e proteção de dados."
+        ]
+      },
+      {
+        "type": "callout",
+        "body": "Já estruturamos isso em diversos clientes e os resultados são positivos. Vale uma conversa para entender como podemos ajudar no seu cenário específico.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Como as Certidões Online Ajudam na Due Diligence",
+        "body": "As certidões online são uma ferramenta valiosa para atender às exigências da LGPD. Elas permitem acesso rápido a informações necessárias para a análise de compliance, reduzindo o tempo e o retrabalho em diligências. Além disso, a Emergency Documentação oferece suporte humano para casos mais complexos, garantindo uma abordagem mais segura e eficiente."
+      },
+      {
+        "type": "cta-inline",
+        "body": "Se sua empresa está passando por uma due diligence, considere o suporte da Emergency.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Desafios e Armadilhas na Due Diligence",
+        "body": "Um dos principais desafios na due diligence em M&A é garantir que todos os dados estejam em conformidade com a LGPD. Armadilhas comuns incluem a falta de transparência na coleta de dados e o não cumprimento das obrigações de segurança. É crucial ter um plano claro e contar com uma equipe experiente para evitar problemas."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Quais certidões são obrigatórias na due diligence?",
+        "a": "As certidões obrigatórias variam conforme o tipo de transação, mas geralmente incluem certidões de propriedade, protestos e ações judiciais."
+      },
+      {
+        "q": "Como posso garantir a conformidade com a LGPD?",
+        "a": "Para garantir a conformidade, é essencial revisar as práticas de coleta de dados, obter consentimento e implementar políticas de segurança adequadas."
+      },
+      {
+        "q": "Qual o prazo médio para concluir uma due diligence?",
+        "a": "O prazo pode variar, mas uma due diligence bem estruturada pode ser concluída em 30 a 60 dias, dependendo da complexidade do caso."
+      }
+    ]
+  }
+}

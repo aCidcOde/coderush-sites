@@ -1,0 +1,225 @@
+{
+  "mode": "publish",
+  "date": "2026-06-30",
+  "timezone": "America/Sao_Paulo",
+  "focus": "ia",
+  "startedAt": "2026-06-30T11:01:55.393Z",
+  "aiProvider": "openrouter",
+  "sites": [
+    {
+      "siteId": "coderush",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "decisao tecnica",
+      "theme": "produtividade de times com automacao inteligente",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/coderush/2026-06-30/automacao-inteligente-pode-aumentar-produtividade-time.json",
+      "markdownPath": "automation/blog-bot/out/coderush/2026-06-30/automacao-inteligente-pode-aumentar-produtividade-time.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "2026/06/30/automacao-inteligente-pode-aumentar-produtividade-time/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Um bloco modular isométrico negro com circuitos internos azuis e violetas, isolado à esquerda em um fundo nebuloso azul marinho",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": false,
+          "alphanumericCount": 6,
+          "sample": ""
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "index.php",
+          "blog/index.php",
+          "2026/06/30/automacao-inteligente-pode-aumentar-produtividade-time/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "codafacil",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "engenharia",
+      "theme": "integracoes e automacao para operacoes criticas",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": [
+          {
+            "url": "https://www.codeium.com/blog/rss.xml",
+            "error": "HTTP 404"
+          }
+        ]
+      },
+      "outputPath": "automation/blog-bot/out/codafacil/2026-06-30/acelerar-operacoes-criticas-ia-integracoes-eficientes.json",
+      "markdownPath": "automation/blog-bot/out/codafacil/2026-06-30/acelerar-operacoes-criticas-ia-integracoes-eficientes.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "codafacil/2026/06/30/acelerar-operacoes-criticas-ia-integracoes-eficientes/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Fábrica de software abstrata com segmentos mecânicos interligados em verde petróleo e canais azuis, destacando nós violeta pulsantes",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": false,
+          "alphanumericCount": 7,
+          "sample": "end"
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "codafacil/index.php",
+          "codafacil/blog/index.php",
+          "codafacil/2026/06/30/acelerar-operacoes-criticas-ia-integracoes-eficientes/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "fluxointeligenteia",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Possível texto vazado na capa (sample: \"\")",
+      "angle": "agentes corporativos",
+      "theme": "permissoes e auditoria em IA corporativa",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/fluxointeligenteia/2026-06-30/garantir-permissoes-auditoria-agentes-corporativos-ia.json",
+      "markdownPath": "automation/blog-bot/out/fluxointeligenteia/2026-06-30/garantir-permissoes-auditoria-agentes-corporativos-ia.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "fluxointeligenteia/2026/06/30/garantir-permissoes-auditoria-agentes-corporativos-ia/index.html",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Painel de controle de acesso corporativo com portões hexagonais transparentes em verde escuro, partículas de dados fluindo entre eles",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": true,
+          "alphanumericCount": 21,
+          "sample": ""
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    },
+    {
+      "siteId": "sistemavendadireta",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "CRM",
+      "theme": "previsibilidade de receita em MMN",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/sistemavendadireta/2026-06-30/garantir-previsibilidade-receita-marketing-multinivel.json",
+      "markdownPath": "automation/blog-bot/out/sistemavendadireta/2026-06-30/garantir-previsibilidade-receita-marketing-multinivel.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "sistemavendadireta/2026/06/30/garantir-previsibilidade-receita-marketing-multinivel/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Pipeline de módulos de previsão de receita em uma hierarquia limpa, com elementos em azul profundo e linhas iluminadas conectando os nós",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": false,
+          "alphanumericCount": 7,
+          "sample": ""
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "sistemavendadireta/index.php",
+          "sistemavendadireta/blog/index.php",
+          "sistemavendadireta/2026/06/30/garantir-previsibilidade-receita-marketing-multinivel/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "emergency",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Possivel texto vazado na capa (sample: \"Gen hee OKLA wae\")",
+      "angle": "M&A",
+      "theme": "LGPD e tratamento de dados em diligencia",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/emergency/2026-06-30/lgpd-due-diligence-ma-voce-precisa-saber.json",
+      "markdownPath": "automation/blog-bot/out/emergency/2026-06-30/lgpd-due-diligence-ma-voce-precisa-saber.md",
+      "publishResult": {
+        "target": "api",
+        "apiStatus": 201,
+        "apiUrl": "https://emergency.com.br/blog/lgpd-due-diligence-ma-voce-precisa-saber",
+        "apiId": 29,
+        "apiPublishedAt": "2026-06-30T08:08:11-03:00",
+        "coverPath": "automation/blog-bot/out/emergency/covers/lgpd-due-diligence-ma-voce-precisa-saber.jpg",
+        "coverSize": 274770,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Uma composição plana em visão superior mostra pastas corporativas e dossiês de conformidade sobre uma superfície azul-escura, com sombras douradas e camadas de ",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": true,
+          "alphanumericCount": 39,
+          "sample": "Gen hee OKLA wae"
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    }
+  ],
+  "duplications": [],
+  "relatedRefresh": {
+    "touched": 63,
+    "unchanged": 24,
+    "errors": [],
+    "totalCards": 80,
+    "totalFiles": 87
+  },
+  "fallbackCount": 0,
+  "allFallback": false,
+  "finishedAt": "2026-06-30T11:09:40.235Z",
+  "ok": true
+}

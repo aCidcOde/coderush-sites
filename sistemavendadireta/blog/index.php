@@ -89,6 +89,15 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-INDEX-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/30/garantir-previsibilidade-receita-marketing-multinivel/" data-blog-image="imagens/posts/garantir-previsibilidade-receita-marketing-multinivel.jpg" data-blog-slug="garantir-previsibilidade-receita-marketing-multinivel" data-blog-date="2026-06-30">
+  <a href="../2026/06/30/garantir-previsibilidade-receita-marketing-multinivel/">
+    <img src="../imagens/posts/garantir-previsibilidade-receita-marketing-multinivel.jpg" alt="Como garantir previsibilidade de receita no marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="../2026/06/30/garantir-previsibilidade-receita-marketing-multinivel/" class="hover:underline">Como garantir previsibilidade de receita no marketing multinível</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como um CRM eficiente pode ajudar a prever receitas em MMN.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/27/crm-automacao-impulsionam-marketing-multinivel/" data-blog-image="imagens/posts/crm-automacao-impulsionam-marketing-multinivel.jpg" data-blog-slug="crm-automacao-impulsionam-marketing-multinivel" data-blog-date="2026-06-27">
   <a href="../2026/06/27/crm-automacao-impulsionam-marketing-multinivel/">
     <img src="../imagens/posts/crm-automacao-impulsionam-marketing-multinivel.jpg" alt="Como CRM e automação impulsionam o marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
