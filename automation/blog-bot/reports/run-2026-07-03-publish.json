@@ -1,0 +1,230 @@
+{
+  "mode": "publish",
+  "date": "2026-07-03",
+  "timezone": "America/Sao_Paulo",
+  "focus": "tecnologia",
+  "startedAt": "2026-07-03T10:53:45.626Z",
+  "aiProvider": "openrouter",
+  "sites": [
+    {
+      "siteId": "coderush",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Possível texto vazado na capa (sample: \"wees\")",
+      "angle": "arquitetura",
+      "theme": "IA aplicada em processos de retaguarda",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/coderush/2026-07-03/integrar-ia-processos-retaguarda-arquitetura-software.json",
+      "markdownPath": "automation/blog-bot/out/coderush/2026-07-03/integrar-ia-processos-retaguarda-arquitetura-software.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "2026/07/03/integrar-ia-processos-retaguarda-arquitetura-software/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Estrutura arquitetônica isométrica com módulos interligados e condutos azuis luminosos, remetendo à integração de IA em sistemas complexos",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": true,
+          "alphanumericCount": 21,
+          "sample": "wees"
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "index.php",
+          "blog/index.php",
+          "2026/07/03/integrar-ia-processos-retaguarda-arquitetura-software/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "codafacil",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Possível texto vazado na capa (sample: \"\")",
+      "angle": "tooling de IA para devs",
+      "theme": "tooling de IA para engenharia",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": [
+          {
+            "url": "https://www.codeium.com/blog/rss.xml",
+            "error": "HTTP 404"
+          }
+        ]
+      },
+      "outputPath": "automation/blog-bot/out/codafacil/2026-07-03/ia-pode-otimizar-ciclo-desenvolvimento-software.json",
+      "markdownPath": "automation/blog-bot/out/codafacil/2026-07-03/ia-pode-otimizar-ciclo-desenvolvimento-software.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "codafacil/2026/07/03/ia-pode-otimizar-ciclo-desenvolvimento-software/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Um imponente conjunto de engrenagens e tubos, representando uma fábrica de software, em um fundo verde-petróleo com luz radial.",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": true,
+          "alphanumericCount": 9,
+          "sample": ""
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "codafacil/index.php",
+          "codafacil/blog/index.php",
+          "codafacil/2026/07/03/ia-pode-otimizar-ciclo-desenvolvimento-software/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "fluxointeligenteia",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Possível texto vazado na capa (sample: \"See\")",
+      "angle": "RAG",
+      "theme": "ROI de agentes corporativos em operacao",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/fluxointeligenteia/2026-07-03/roi-implementacao-agentes-corporativos-ia.json",
+      "markdownPath": "automation/blog-bot/out/fluxointeligenteia/2026-07-03/roi-implementacao-agentes-corporativos-ia.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "fluxointeligenteia/2026/07/03/roi-implementacao-agentes-corporativos-ia/index.html",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Um instrumento de medição de ROI em destaque, com nós de recuperação pulsando em azul ciano, iluminado por um fundo verde profundo",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": true,
+          "alphanumericCount": 22,
+          "sample": "See"
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    },
+    {
+      "siteId": "sistemavendadireta",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "MMN",
+      "theme": "tecnologia para vendas diretas em escala",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/sistemavendadireta/2026-07-03/tecnologia-escalar-vendas-diretas-mmn.json",
+      "markdownPath": "automation/blog-bot/out/sistemavendadireta/2026-07-03/tecnologia-escalar-vendas-diretas-mmn.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "sistemavendadireta/2026/07/03/tecnologia-escalar-vendas-diretas-mmn/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Uma rede geométrica em expansão com nós hexagonais conectados por feixes de luz, representando a profundidade de vendas diretas em azul marinho",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": false,
+          "alphanumericCount": 3,
+          "sample": "ose"
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "sistemavendadireta/index.php",
+          "sistemavendadireta/blog/index.php",
+          "sistemavendadireta/2026/07/03/tecnologia-escalar-vendas-diretas-mmn/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "emergency",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Possivel texto vazado na capa (sample: \"\\froree Cay\")",
+      "angle": "habilitacao de fornecedor",
+      "theme": "investigacao patrimonial em contencioso",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": [
+          {
+            "url": "https://www.gov.br/cvm/pt-br/assuntos/noticias/rss.xml",
+            "error": "fetch failed"
+          }
+        ]
+      },
+      "outputPath": "automation/blog-bot/out/emergency/2026-07-03/habilitacao-fornecedor-due-diligence-imobiliaria-eficaz.json",
+      "markdownPath": "automation/blog-bot/out/emergency/2026-07-03/habilitacao-fornecedor-due-diligence-imobiliaria-eficaz.md",
+      "publishResult": {
+        "target": "api",
+        "apiStatus": 201,
+        "apiUrl": "https://emergency.com.br/blog/habilitacao-fornecedor-due-diligence-imobiliaria-eficaz",
+        "apiId": 30,
+        "apiPublishedAt": "2026-07-03T07:59:24-03:00",
+        "coverPath": "automation/blog-bot/out/emergency/covers/habilitacao-fornecedor-due-diligence-imobiliaria-eficaz.jpg",
+        "coverSize": 216690,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Selos de registro de propriedade em cascata dourada à esquerda, enquanto um robô prateado analisa um selo flutuante à direita",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": true,
+          "alphanumericCount": 39,
+          "sample": "\\froree Cay"
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    }
+  ],
+  "duplications": [],
+  "relatedRefresh": {
+    "touched": 65,
+    "unchanged": 26,
+    "errors": [],
+    "totalCards": 84,
+    "totalFiles": 91
+  },
+  "fallbackCount": 0,
+  "allFallback": false,
+  "finishedAt": "2026-07-03T11:01:07.081Z",
+  "ok": true
+}

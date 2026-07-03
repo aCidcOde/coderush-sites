@@ -206,6 +206,13 @@
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/07/03/tecnologia-escalar-vendas-diretas-mmn/"><img src="../../../../imagens/posts/tecnologia-escalar-vendas-diretas-mmn.jpg" alt="Tecnologia para Escalar Vendas Diretas no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/07/03/tecnologia-escalar-vendas-diretas-mmn/" class="hover:underline">Tecnologia para Escalar Vendas Diretas no MMN</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Como a tecnologia pode impulsionar suas operações em marketing multinível.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="../../../../2026/05/12/governanca-comercial-dados-ia-podem-melhorar-resultados/"><img src="../../../../imagens/posts/governanca-comercial-dados-ia-podem-melhorar-resultados.jpg" alt="Governança Comercial: Como Dados e IA Podem Melhorar Resultados" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/12/governanca-comercial-dados-ia-podem-melhorar-resultados/" class="hover:underline">Governança Comercial: Como Dados e IA Podem Melhorar Resultados</a></h3>
@@ -217,13 +224,6 @@
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/30/garantir-previsibilidade-receita-marketing-multinivel/" class="hover:underline">Como garantir previsibilidade de receita no marketing multinível</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como um CRM eficiente pode ajudar a prever receitas em MMN.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/06/21/ia-pode-fortalecer-governanca-comercial-mmn/"><img src="../../../../imagens/posts/ia-pode-fortalecer-governanca-comercial-mmn.jpg" alt="Como a IA pode fortalecer a governança comercial no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/21/ia-pode-fortalecer-governanca-comercial-mmn/" class="hover:underline">Como a IA pode fortalecer a governança comercial no MMN</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como dados e inteligência artificial podem otimizar a governança em vendas diretas e marketing multinível.</p>
   </div>
 </article>
   </div>
@@ -238,19 +238,19 @@
   <p class="mt-2 text-sm text-white/70">Conteúdo recente dos outros sites do ecossistema.</p>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="https://coderush.com.br/2026/07/03/integrar-ia-processos-retaguarda-arquitetura-software/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/integrar-ia-processos-retaguarda-arquitetura-software.jpg" alt="Como integrar IA em processos de retaguarda com arquitetura de software" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">CodeRush</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/07/03/integrar-ia-processos-retaguarda-arquitetura-software/" rel="noopener" target="_blank" class="hover:underline">Como integrar IA em processos de retaguarda com arquitetura de software</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como a arquitetura de software pode facilitar a integração de IA em processos de retaguarda.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="https://codafacil.dev/2026/05/09/ia-pode-melhorar-qualidade-codigo-php/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/ia-pode-melhorar-qualidade-codigo-php.jpg" alt="Como a IA pode melhorar a qualidade do código em PHP" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
     <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/05/09/ia-pode-melhorar-qualidade-codigo-php/" rel="noopener" target="_blank" class="hover:underline">Como a IA pode melhorar a qualidade do código em PHP</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como ferramentas de IA podem acelerar o desenvolvimento de software sob medida sem comprometer a qualidade.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://coderush.com.br/2026/06/24/arquitetura-software-operacoes-criticas-governanca/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/arquitetura-software-operacoes-criticas-governanca.jpg" alt="Arquitetura de Software para Operações Críticas e Governança" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">CodeRush</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/06/24/arquitetura-software-operacoes-criticas-governanca/" rel="noopener" target="_blank" class="hover:underline">Arquitetura de Software para Operações Críticas e Governança</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como uma boa arquitetura de software pode garantir governança em operações críticas.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">

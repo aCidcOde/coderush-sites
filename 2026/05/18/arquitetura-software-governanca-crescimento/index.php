@@ -212,17 +212,17 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/07/03/integrar-ia-processos-retaguarda-arquitetura-software/"><img src="../../../../imagens/posts/integrar-ia-processos-retaguarda-arquitetura-software.jpg" alt="Como integrar IA em processos de retaguarda com arquitetura de software" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/07/03/integrar-ia-processos-retaguarda-arquitetura-software/" class="hover:underline">Como integrar IA em processos de retaguarda com arquitetura de software</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como a arquitetura de software pode facilitar a integração de IA em processos de retaguarda.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="../../../../2026/06/24/arquitetura-software-operacoes-criticas-governanca/"><img src="../../../../imagens/posts/arquitetura-software-operacoes-criticas-governanca.jpg" alt="Arquitetura de Software para Operações Críticas e Governança" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/24/arquitetura-software-operacoes-criticas-governanca/" class="hover:underline">Arquitetura de Software para Operações Críticas e Governança</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como uma boa arquitetura de software pode garantir governança em operações críticas.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/06/12/gerenciando-riscos-substituicao-sistemas-legados/"><img src="../../../../imagens/posts/gerenciando-riscos-substituicao-sistemas-legados.jpg" alt="Gerenciando riscos na substituição de sistemas legados" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/12/gerenciando-riscos-substituicao-sistemas-legados/" class="hover:underline">Gerenciando riscos na substituição de sistemas legados</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como gerenciar riscos ao substituir sistemas legados em empresas médias.</p>
   </div>
 </article>
   </div>
@@ -253,11 +253,11 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://sistemavendadireta.com.br/2026/06/21/ia-pode-fortalecer-governanca-comercial-mmn/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/ia-pode-fortalecer-governanca-comercial-mmn.jpg" alt="Como a IA pode fortalecer a governança comercial no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://sistemavendadireta.com.br/2026/07/03/tecnologia-escalar-vendas-diretas-mmn/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/tecnologia-escalar-vendas-diretas-mmn.jpg" alt="Tecnologia para Escalar Vendas Diretas no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Sistema Venda Direta</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/06/21/ia-pode-fortalecer-governanca-comercial-mmn/" rel="noopener" target="_blank" class="hover:underline">Como a IA pode fortalecer a governança comercial no MMN</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como dados e inteligência artificial podem otimizar a governança em vendas diretas e marketing multinível.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/07/03/tecnologia-escalar-vendas-diretas-mmn/" rel="noopener" target="_blank" class="hover:underline">Tecnologia para Escalar Vendas Diretas no MMN</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Como a tecnologia pode impulsionar suas operações em marketing multinível.</p>
   </div>
 </article>
   </div>

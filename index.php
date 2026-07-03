@@ -691,6 +691,15 @@ $seoLdGraph = [
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-HOME-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/07/03/integrar-ia-processos-retaguarda-arquitetura-software/" data-blog-image="imagens/posts/integrar-ia-processos-retaguarda-arquitetura-software.jpg" data-blog-slug="integrar-ia-processos-retaguarda-arquitetura-software" data-blog-date="2026-07-03">
+  <a href="2026/07/03/integrar-ia-processos-retaguarda-arquitetura-software/">
+    <img src="imagens/posts/integrar-ia-processos-retaguarda-arquitetura-software.jpg" alt="Como integrar IA em processos de retaguarda com arquitetura de software" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="2026/07/03/integrar-ia-processos-retaguarda-arquitetura-software/" class="hover:underline">Como integrar IA em processos de retaguarda com arquitetura de software</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como a arquitetura de software pode facilitar a integração de IA em processos de retaguarda.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/30/automacao-inteligente-pode-aumentar-produtividade-time/" data-blog-image="imagens/posts/automacao-inteligente-pode-aumentar-produtividade-time.jpg" data-blog-slug="automacao-inteligente-pode-aumentar-produtividade-time" data-blog-date="2026-06-30">
   <a href="2026/06/30/automacao-inteligente-pode-aumentar-produtividade-time/">
     <img src="imagens/posts/automacao-inteligente-pode-aumentar-produtividade-time.jpg" alt="Como a automação inteligente pode aumentar a produtividade do seu time" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
@@ -707,15 +716,6 @@ $seoLdGraph = [
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="2026/06/27/dimensionar-equipe-tecnologia-empresas-medias/" class="hover:underline">Como dimensionar a equipe de tecnologia em empresas médias</a></h2>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Estratégias para formar equipes de tecnologia eficazes e alinhadas à governança.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/24/arquitetura-software-operacoes-criticas-governanca/" data-blog-image="imagens/posts/arquitetura-software-operacoes-criticas-governanca.jpg" data-blog-slug="arquitetura-software-operacoes-criticas-governanca" data-blog-date="2026-06-24">
-  <a href="2026/06/24/arquitetura-software-operacoes-criticas-governanca/">
-    <img src="imagens/posts/arquitetura-software-operacoes-criticas-governanca.jpg" alt="Arquitetura de Software para Operações Críticas e Governança" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-  </a>
-  <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="2026/06/24/arquitetura-software-operacoes-criticas-governanca/" class="hover:underline">Arquitetura de Software para Operações Críticas e Governança</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como uma boa arquitetura de software pode garantir governança em operações críticas.</p>
   </div>
 </article>
 <!-- BLOG-HOME-CARDS:END -->

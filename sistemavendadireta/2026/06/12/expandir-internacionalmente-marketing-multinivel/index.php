@@ -220,10 +220,10 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/06/18/crm-ia-pode-potencializar-mmn/"><img src="../../../../imagens/posts/crm-ia-pode-potencializar-mmn.jpg" alt="Como o CRM com IA pode potencializar seu MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/07/03/tecnologia-escalar-vendas-diretas-mmn/"><img src="../../../../imagens/posts/tecnologia-escalar-vendas-diretas-mmn.jpg" alt="Tecnologia para Escalar Vendas Diretas no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/18/crm-ia-pode-potencializar-mmn/" class="hover:underline">Como o CRM com IA pode potencializar seu MMN</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como um CRM com inteligência artificial apoia distribuidores em campo no marketing multinível.</p>
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/07/03/tecnologia-escalar-vendas-diretas-mmn/" class="hover:underline">Tecnologia para Escalar Vendas Diretas no MMN</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Como a tecnologia pode impulsionar suas operações em marketing multinível.</p>
   </div>
 </article>
   </div>
@@ -246,19 +246,19 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="https://coderush.com.br/2026/07/03/integrar-ia-processos-retaguarda-arquitetura-software/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/integrar-ia-processos-retaguarda-arquitetura-software.jpg" alt="Como integrar IA em processos de retaguarda com arquitetura de software" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">CodeRush</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/07/03/integrar-ia-processos-retaguarda-arquitetura-software/" rel="noopener" target="_blank" class="hover:underline">Como integrar IA em processos de retaguarda com arquitetura de software</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como a arquitetura de software pode facilitar a integração de IA em processos de retaguarda.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="https://codafacil.dev/2026/06/30/acelerar-operacoes-criticas-ia-integracoes-eficientes/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/acelerar-operacoes-criticas-ia-integracoes-eficientes.jpg" alt="Como acelerar operações críticas com IA e integrações eficientes" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
     <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/06/30/acelerar-operacoes-criticas-ia-integracoes-eficientes/" rel="noopener" target="_blank" class="hover:underline">Como acelerar operações críticas com IA e integrações eficientes</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como integrar automação e IA nas operações críticas para acelerar o desenvolvimento sem perder qualidade.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://coderush.com.br/2026/06/27/dimensionar-equipe-tecnologia-empresas-medias/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/dimensionar-equipe-tecnologia-empresas-medias.jpg" alt="Como dimensionar a equipe de tecnologia em empresas médias" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">CodeRush</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/06/27/dimensionar-equipe-tecnologia-empresas-medias/" rel="noopener" target="_blank" class="hover:underline">Como dimensionar a equipe de tecnologia em empresas médias</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Estratégias para formar equipes de tecnologia eficazes e alinhadas à governança.</p>
   </div>
 </article>
   </div>

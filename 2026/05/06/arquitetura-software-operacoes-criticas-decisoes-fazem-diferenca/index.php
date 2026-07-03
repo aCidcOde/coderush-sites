@@ -253,11 +253,11 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://sistemavendadireta.com.br/2026/06/24/integracoes-pagamento-logistica-impactam-mmn/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/integracoes-pagamento-logistica-impactam-mmn.jpg" alt="Como as integrações de pagamento e logística impactam o MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://sistemavendadireta.com.br/2026/07/03/tecnologia-escalar-vendas-diretas-mmn/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/tecnologia-escalar-vendas-diretas-mmn.jpg" alt="Tecnologia para Escalar Vendas Diretas no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Sistema Venda Direta</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/06/24/integracoes-pagamento-logistica-impactam-mmn/" rel="noopener" target="_blank" class="hover:underline">Como as integrações de pagamento e logística impactam o MMN</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda a importância das integrações para otimizar operações no marketing multinível.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/07/03/tecnologia-escalar-vendas-diretas-mmn/" rel="noopener" target="_blank" class="hover:underline">Tecnologia para Escalar Vendas Diretas no MMN</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Como a tecnologia pode impulsionar suas operações em marketing multinível.</p>
   </div>
 </article>
   </div>

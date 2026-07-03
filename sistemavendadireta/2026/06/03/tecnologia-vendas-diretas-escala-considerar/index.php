@@ -206,6 +206,13 @@
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/07/03/tecnologia-escalar-vendas-diretas-mmn/"><img src="../../../../imagens/posts/tecnologia-escalar-vendas-diretas-mmn.jpg" alt="Tecnologia para Escalar Vendas Diretas no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/07/03/tecnologia-escalar-vendas-diretas-mmn/" class="hover:underline">Tecnologia para Escalar Vendas Diretas no MMN</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Como a tecnologia pode impulsionar suas operações em marketing multinível.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="../../../../2026/06/09/comissionamento-gerenciar-inadimplencia-eficazmente/"><img src="../../../../imagens/posts/comissionamento-gerenciar-inadimplencia-eficazmente.jpg" alt="Comissionamento: Como Gerenciar a Inadimplência Eficazmente" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/09/comissionamento-gerenciar-inadimplencia-eficazmente/" class="hover:underline">Comissionamento: Como Gerenciar a Inadimplência Eficazmente</a></h3>
@@ -217,13 +224,6 @@
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/21/tecnologia-vendas-diretas-escala-mmn-ia/" class="hover:underline">Tecnologia para Vendas Diretas em Escala: MMN e IA</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a tecnologia e a IA podem otimizar processos em marketing multinível.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/06/27/crm-automacao-impulsionam-marketing-multinivel/"><img src="../../../../imagens/posts/crm-automacao-impulsionam-marketing-multinivel.jpg" alt="Como CRM e automação impulsionam o marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/27/crm-automacao-impulsionam-marketing-multinivel/" class="hover:underline">Como CRM e automação impulsionam o marketing multinível</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como utilizar CRM e automação para otimizar vendas diretas e resultados no marketing multinível.</p>
   </div>
 </article>
   </div>
@@ -246,11 +246,11 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://coderush.com.br/2026/06/24/arquitetura-software-operacoes-criticas-governanca/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/arquitetura-software-operacoes-criticas-governanca.jpg" alt="Arquitetura de Software para Operações Críticas e Governança" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://coderush.com.br/2026/07/03/integrar-ia-processos-retaguarda-arquitetura-software/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/integrar-ia-processos-retaguarda-arquitetura-software.jpg" alt="Como integrar IA em processos de retaguarda com arquitetura de software" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">CodeRush</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/06/24/arquitetura-software-operacoes-criticas-governanca/" rel="noopener" target="_blank" class="hover:underline">Arquitetura de Software para Operações Críticas e Governança</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como uma boa arquitetura de software pode garantir governança em operações críticas.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/07/03/integrar-ia-processos-retaguarda-arquitetura-software/" rel="noopener" target="_blank" class="hover:underline">Como integrar IA em processos de retaguarda com arquitetura de software</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como a arquitetura de software pode facilitar a integração de IA em processos de retaguarda.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">

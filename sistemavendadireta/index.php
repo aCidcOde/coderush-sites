@@ -753,6 +753,15 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-HOME-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/07/03/tecnologia-escalar-vendas-diretas-mmn/" data-blog-image="imagens/posts/tecnologia-escalar-vendas-diretas-mmn.jpg" data-blog-slug="tecnologia-escalar-vendas-diretas-mmn" data-blog-date="2026-07-03">
+  <a href="2026/07/03/tecnologia-escalar-vendas-diretas-mmn/">
+    <img src="imagens/posts/tecnologia-escalar-vendas-diretas-mmn.jpg" alt="Tecnologia para Escalar Vendas Diretas no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="2026/07/03/tecnologia-escalar-vendas-diretas-mmn/" class="hover:underline">Tecnologia para Escalar Vendas Diretas no MMN</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Como a tecnologia pode impulsionar suas operações em marketing multinível.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/30/garantir-previsibilidade-receita-marketing-multinivel/" data-blog-image="imagens/posts/garantir-previsibilidade-receita-marketing-multinivel.jpg" data-blog-slug="garantir-previsibilidade-receita-marketing-multinivel" data-blog-date="2026-06-30">
   <a href="2026/06/30/garantir-previsibilidade-receita-marketing-multinivel/">
     <img src="imagens/posts/garantir-previsibilidade-receita-marketing-multinivel.jpg" alt="Como garantir previsibilidade de receita no marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
@@ -769,15 +778,6 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="2026/06/27/crm-automacao-impulsionam-marketing-multinivel/" class="hover:underline">Como CRM e automação impulsionam o marketing multinível</a></h2>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como utilizar CRM e automação para otimizar vendas diretas e resultados no marketing multinível.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/24/integracoes-pagamento-logistica-impactam-mmn/" data-blog-image="imagens/posts/integracoes-pagamento-logistica-impactam-mmn.jpg" data-blog-slug="integracoes-pagamento-logistica-impactam-mmn" data-blog-date="2026-06-24">
-  <a href="2026/06/24/integracoes-pagamento-logistica-impactam-mmn/">
-    <img src="imagens/posts/integracoes-pagamento-logistica-impactam-mmn.jpg" alt="Como as integrações de pagamento e logística impactam o MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-  </a>
-  <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="2026/06/24/integracoes-pagamento-logistica-impactam-mmn/" class="hover:underline">Como as integrações de pagamento e logística impactam o MMN</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda a importância das integrações para otimizar operações no marketing multinível.</p>
   </div>
 </article>
 <!-- BLOG-HOME-CARDS:END -->

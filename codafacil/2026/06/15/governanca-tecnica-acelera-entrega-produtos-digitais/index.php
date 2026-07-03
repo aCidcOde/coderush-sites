@@ -206,6 +206,13 @@
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/07/03/ia-pode-otimizar-ciclo-desenvolvimento-software/"><img src="../../../../imagens/posts/ia-pode-otimizar-ciclo-desenvolvimento-software.jpg" alt="Como a IA pode otimizar o ciclo de desenvolvimento de software" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/07/03/ia-pode-otimizar-ciclo-desenvolvimento-software/" class="hover:underline">Como a IA pode otimizar o ciclo de desenvolvimento de software</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como utilizar ferramentas de IA para acelerar a entrega de software sob medida sem comprometer a qualidade.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="../../../../2026/06/21/implementar-testes-automatizados-desenvolvimento-software-sob-medida/"><img src="../../../../imagens/posts/implementar-testes-automatizados-desenvolvimento-software-sob-medida.jpg" alt="Como implementar testes automatizados no desenvolvimento de software sob medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/21/implementar-testes-automatizados-desenvolvimento-software-sob-medida/" class="hover:underline">Como implementar testes automatizados no desenvolvimento de software sob medida</a></h3>
@@ -217,13 +224,6 @@
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/30/acelerar-operacoes-criticas-ia-integracoes-eficientes/" class="hover:underline">Como acelerar operações críticas com IA e integrações eficientes</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como integrar automação e IA nas operações críticas para acelerar o desenvolvimento sem perder qualidade.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/06/24/gerenciar-divida-tecnica-melhorar-dx-software/"><img src="../../../../imagens/posts/gerenciar-divida-tecnica-melhorar-dx-software.jpg" alt="Como gerenciar dívida técnica para melhorar a DX em software" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/24/gerenciar-divida-tecnica-melhorar-dx-software/" class="hover:underline">Como gerenciar dívida técnica para melhorar a DX em software</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Explore estratégias práticas para gerenciar dívida técnica e aprimorar a experiência do desenvolvedor em produtos digitais.</p>
   </div>
 </article>
   </div>
@@ -246,11 +246,11 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://coderush.com.br/2026/06/06/aplicar-governanca-ia-processos-retaguarda/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/aplicar-governanca-ia-processos-retaguarda.jpg" alt="Como aplicar governança em IA nos processos de retaguarda" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://coderush.com.br/2026/07/03/integrar-ia-processos-retaguarda-arquitetura-software/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/integrar-ia-processos-retaguarda-arquitetura-software.jpg" alt="Como integrar IA em processos de retaguarda com arquitetura de software" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">CodeRush</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/06/06/aplicar-governanca-ia-processos-retaguarda/" rel="noopener" target="_blank" class="hover:underline">Como aplicar governança em IA nos processos de retaguarda</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como integrar IA em processos de retaguarda com governança eficaz.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/07/03/integrar-ia-processos-retaguarda-arquitetura-software/" rel="noopener" target="_blank" class="hover:underline">Como integrar IA em processos de retaguarda com arquitetura de software</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como a arquitetura de software pode facilitar a integração de IA em processos de retaguarda.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">

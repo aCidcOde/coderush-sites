@@ -1,0 +1,88 @@
+{
+  "date": "2026-07-03",
+  "siteId": "emergency",
+  "postType": "due-diligence-certidoes",
+  "focus": "tecnologia",
+  "theme": "investigacao patrimonial em contencioso",
+  "angle": "habilitacao de fornecedor",
+  "slug": "habilitacao-fornecedor-due-diligence-imobiliaria-eficaz",
+  "title": "Emergency Documentação: TECNOLOGIA aplicado a habilitacao de fornecedor",
+  "description": "Atualização semanal de tecnologia para Emergency Documentação, com foco em investigacao patrimonial em contencioso.",
+  "sources": [
+    "https://emergency.com.br/blog/habilitacao-fornecedores-due-diligence-necessaria",
+    "https://edossie.com.br/investigacao-patrimonial-execucao-judicial/",
+    "https://edossie.com.br/diferenca-investigacao-patrimonial-due-diligence/",
+    "https://www.rrk.com.br/due-diligence-patrimonial-etapas-de-verificacao-em-processos-de-aquisicao/",
+    "https://admsite.oabrs.org.br/arquivos/honorarios-versao-2026.pdf"
+  ],
+  "status": "draft",
+  "generatedAt": "2026-07-03T07:59:24-03:00",
+  "content": {
+    "eyebrow": "Consultoria técnica",
+    "headline": "Habilitação de Fornecedor: Due Diligence Imobiliária Eficaz",
+    "summary": "Entenda a importância da due diligence na habilitação de fornecedores e como certidões online podem facilitar o processo.",
+    "answerBox": {
+      "question": "Como fazer due diligence imobiliária para habilitação de fornecedor?",
+      "answer": "Para habilitar um fornecedor, a due diligence imobiliária envolve a verificação de certidões, análise de propriedades e a avaliação de riscos relacionados. Utilizar certidões online acelera o processo e minimiza retrabalho, garantindo informações atualizadas e precisas."
+    },
+    "tldr": [
+      "A due diligence é crucial na habilitação de fornecedores",
+      "Certidões online aceleram o processo de verificação",
+      "Emergency Documentação oferece suporte completo na diligência"
+    ],
+    "sections": [
+      {
+        "type": "prose",
+        "title": "Entendendo a Habilitação de Fornecedores",
+        "body": "A habilitação de fornecedores é um passo essencial na gestão de riscos e compliance corporativo. O processo de due diligence imobiliária garante que a empresa contrate parceiros seguros, evitando problemas legais e financeiros. Informações precisas sobre a situação patrimonial dos fornecedores são fundamentais para decisões informadas."
+      },
+      {
+        "type": "list",
+        "title": "Passos para uma Due Diligence Eficiente",
+        "items": [
+          "Verifique certidões imobiliárias atualizadas",
+          "Analise a situação fiscal do fornecedor",
+          "Considere a reputação do fornecedor no mercado",
+          "Investigue possíveis litígios ou restrições",
+          "Confirme a regularidade da documentação apresentada"
+        ]
+      },
+      {
+        "type": "callout",
+        "body": "Já estruturamos isso em diversos clientes. Vale a pena uma conversa sobre como podemos acelerar seu processo de habilitação de fornecedores.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "A Importância das Certidões Online",
+        "body": "Com a digitalização, as certidões online se tornaram ferramentas essenciais para a due diligence. Elas oferecem acesso rápido a informações críticas, como registros de propriedade e situação fiscal. A Emergency Documentação facilita a emissão dessas certidões, permitindo um acompanhamento eficaz do processo, reduzindo o tempo de espera e aumentando a confiabilidade das informações obtidas."
+      },
+      {
+        "type": "cta-inline",
+        "body": "Explore como podemos ajudar na sua due diligence imobiliária.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Evitando Armadilhas na Habilitação",
+        "body": "É crucial evitar erros comuns durante o processo de habilitação. A falta de uma análise minuciosa pode resultar em contratações problemáticas, levando a prejuízos e complicações legais. Procure sempre informações atualizadas e verifique a regularidade dos documentos apresentados. O suporte humano da Emergency Documentação é ideal para lidar com situações complexas."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Quais certidões são essenciais na due diligence?",
+        "a": "As certidões essenciais incluem a matrícula do imóvel, certidão de ônus reais e certidão negativa de débitos fiscais."
+      },
+      {
+        "q": "Como validar um fornecedor pessoa jurídica antes de contratar?",
+        "a": "Verifique a regularidade fiscal, a reputação no mercado e a situação de litígios. Certidões online podem ajudar."
+      },
+      {
+        "q": "Qual a diferença entre investigação patrimonial e due diligence?",
+        "a": "A investigação patrimonial foca em ativos e passivos, enquanto a due diligence avalia a totalidade das informações de um fornecedor."
+      }
+    ]
+  }
+}
