@@ -1,0 +1,88 @@
+{
+  "date": "2026-07-06",
+  "siteId": "emergency",
+  "postType": "due-diligence-certidoes",
+  "focus": "php",
+  "theme": "certidoes em processos sucessorios e inventarios",
+  "angle": "compliance",
+  "slug": "certidoes-processos-sucessorios-saber",
+  "title": "Emergency Documentação: PHP aplicado a compliance",
+  "description": "Atualização semanal de php para Emergency Documentação, com foco em certidoes em processos sucessorios e inventarios.",
+  "sources": [
+    "https://www.lec.com.br/due-diligence-um-checklist-completo-2/",
+    "https://emergency.com.br/blog/due-diligence-mais-seguranca-para-decidir-com-confianca",
+    "https://www.revoluti.com.br/",
+    "https://grcsolutions.com.br/conteudo/due-diligence-checklist/",
+    "https://pt.linkedin.com/pulse/due-diligence-um-checklist-completo-roger-tomazoni"
+  ],
+  "status": "draft",
+  "generatedAt": "2026-07-06T10:43:17-03:00",
+  "content": {
+    "eyebrow": "Guia sobre certidões",
+    "headline": "Certidões em Processos Sucessórios: O Que Saber",
+    "summary": "Entenda a importância das certidões em due diligence sucessória e como garantir compliance.",
+    "answerBox": {
+      "question": "Quais certidões são necessárias em processos sucessórios?",
+      "answer": "Em processos sucessórios, são essenciais certidões de nascimento, óbito e casamento, além de certidões negativas de débitos. Elas garantem a regularidade e a legitimidade dos documentos, evitando problemas futuros e riscos em transações."
+    },
+    "tldr": [
+      "Certidões garantem a regularidade em inventários",
+      "Due diligence reduz riscos em transações",
+      "Apoio especializado é essencial para evitar erros"
+    ],
+    "sections": [
+      {
+        "type": "prose",
+        "title": "A importância das certidões nos processos sucessórios",
+        "body": "As certidões desempenham um papel crucial na due diligence em processos sucessórios. Elas não apenas comprovam vínculos familiares, mas também garantem a legalidade dos atos. Isso é fundamental para evitar complicações legais e garantir que o patrimônio seja transferido corretamente. No contexto de compliance, certidões como os registros de óbito e de propriedade são essenciais para validar informações durante a análise do patrimônio."
+      },
+      {
+        "type": "list",
+        "title": "Certidões essenciais para a due diligence sucessória",
+        "items": [
+          "Certidão de óbito do falecido",
+          "Certidão de nascimento dos herdeiros",
+          "Certidão de casamento do falecido",
+          "Certidões negativas de débitos",
+          "Certidões de propriedade do imóvel"
+        ]
+      },
+      {
+        "type": "callout",
+        "body": "Já estruturamos isso em diversos casos de sucesso. Um bom suporte na emissão das certidões pode acelerar o processo e evitar retrabalhos. Vale uma conversa!",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Como a Emergency Documentação pode ajudar",
+        "body": "A Emergency Documentação oferece um serviço de emissão de certidões online, facilitando o acesso a documentos essenciais para a sua due diligence. Com nossa experiência desde 1994, garantimos uma cobertura cartorária e forense nacional, além de suporte humano para pedidos mais complexos. Isso reduz o tempo de espera e aumenta a segurança das transações, evitando que problemas legais surjam no futuro."
+      },
+      {
+        "type": "cta-inline",
+        "body": "Em uma negociação, ter as certidões corretas pode fazer toda a diferença.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "O que evitar na due diligence sucessória",
+        "body": "Um dos maiores riscos na due diligence é a falta de documentos. Evite iniciar um processo sem as certidões necessárias, pois isso pode acarretar em retrabalho e atrasos. Além disso, certidões vencidas ou com informações desatualizadas podem comprometer a legalidade da transação. Sempre mantenha um checklist atualizado e, se necessário, busque apoio especializado para garantir a regularidade."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Quais documentos são essenciais para um inventário?",
+        "a": "Os documentos essenciais incluem certidões de óbito, nascimento e casamento, além de documentos que comprovem a propriedade dos bens."
+      },
+      {
+        "q": "Como validar informações de herdeiros?",
+        "a": "A validação pode ser feita por meio das certidões de nascimento e casamento, que comprovam o vínculo familiar e a legitimidade dos herdeiros."
+      },
+      {
+        "q": "Qual a importância das certidões negativas?",
+        "a": "As certidões negativas são cruciais para garantir que não existam débitos ou pendências que possam afetar a transmissão dos bens."
+      }
+    ]
+  }
+}

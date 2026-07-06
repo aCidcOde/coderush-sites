@@ -1,0 +1,87 @@
+{
+  "date": "2026-07-06",
+  "siteId": "codafacil",
+  "postType": "software-sob-medida-ia",
+  "focus": "php",
+  "theme": "pareamento humano-IA no desenvolvimento",
+  "angle": "engenharia",
+  "slug": "pareamento-humano-ia-desenvolvimento-software-sob-medida",
+  "title": "Codafacil.dev: PHP aplicado a engenharia",
+  "description": "Atualização semanal de php para Codafacil.dev, com foco em pareamento humano-IA no desenvolvimento.",
+  "sources": [
+    "https://codafacil.dev/2026/06/06/pareamento-humano-ia-pode-acelerar-desenvolvimento-software/",
+    "https://codafacil.dev/2026/05/21/ia-pode-elevar-qualidade-software-sob-medida/",
+    "https://infochoice.com.br/site/index.php/2026/03/09/arquitetura-desenvolvimento-software-ia/",
+    "https://infochoice.com.br/site/index.php/2026/03/08/humanos-agentes-ia-equipes-desenvolvimento-software/",
+    "https://pt.linkedin.com/pulse/times-mistos-de-desenvolvedores-humanos-e-agentes-ia-o-63xlf"
+  ],
+  "status": "draft",
+  "generatedAt": "2026-07-06T10:40:10-03:00",
+  "content": {
+    "eyebrow": "Integração de IA",
+    "headline": "Pareamento humano-IA no desenvolvimento de software sob medida",
+    "summary": "Entenda como a IA pode turbinar a entrega de software sob medida sem comprometer a qualidade.",
+    "answerBox": {
+      "question": "Como o pareamento humano-IA pode melhorar o desenvolvimento de software?",
+      "answer": "O pareamento humano-IA permite que equipes de desenvolvimento otimizem processos e ganhem agilidade. Ferramentas como GitHub Copilot ajudam a gerar código mais eficiente, enquanto testes automatizados garantem qualidade desde o início do projeto."
+    },
+    "tldr": [
+      "Pareamento humano-IA melhora a eficiência no desenvolvimento.",
+      "Testes automatizados garantem qualidade desde o primeiro sprint.",
+      "Entregas curtas com escopo claro facilitam ajustes rápidos."
+    ],
+    "sections": [
+      {
+        "type": "prose",
+        "title": "O que é pareamento humano-IA?",
+        "body": "O pareamento humano-IA envolve a colaboração entre desenvolvedores e ferramentas de inteligência artificial, como o GitHub Copilot. Essa abordagem permite que os desenvolvedores aproveitem a capacidade da IA para gerar sugestões de código, enquanto mantêm o controle e a criatividade na implementação. A combinação dessas forças pode acelerar o ciclo de desenvolvimento, tornando o processo mais eficiente."
+      },
+      {
+        "type": "list",
+        "title": "Benefícios do pareamento humano-IA",
+        "items": [
+          "Aumento da produtividade na escrita de código.",
+          "Redução de erros e bugs com sugestões contextuais.",
+          "Facilidade em implementar testes automatizados desde o início.",
+          "Aprimoramento da qualidade do software com feedback instantâneo."
+        ]
+      },
+      {
+        "type": "callout",
+        "body": "Em nosso trabalho com diversos clientes, já vimos como o pareamento pode agilizar entregas. Vale a pena explorar essa abordagem para seu projeto.",
+        "ctaLabel": "Fale com a Codafacil.dev",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Implementando testes automatizados",
+        "body": "Iniciar o desenvolvimento com testes automatizados é uma estratégia eficaz para garantir a qualidade do software. Usar frameworks como PHPUnit no desenvolvimento PHP, por exemplo, permite que erros sejam detectados rapidamente. Ao integrar esses testes desde o primeiro sprint, você cria um ciclo de feedback que ajuda a manter a qualidade durante todo o processo de desenvolvimento. Isso é especialmente importante em projetos sob medida, onde cada detalhe conta."
+      },
+      {
+        "type": "cta-inline",
+        "body": "Se você está considerando como a IA pode ajudar sua equipe, vale a pena uma conversa.",
+        "ctaLabel": "Fale com a Codafacil.dev",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Cuidado com os desafios",
+        "body": "Embora o pareamento humano-IA traga muitos benefícios, é importante estar ciente dos desafios. A dependência excessiva de sugestões da IA pode levar a um código menos eficiente se não for supervisionado. Além disso, o controle dos testes automatizados é crucial para que não se tornem um ponto de falha. O ideal é manter um equilíbrio, usando a IA como uma ferramenta para potencializar o trabalho humano."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Como posso integrar IA em meu processo de desenvolvimento?",
+        "a": "A integração pode começar com ferramentas como GitHub Copilot e a implementação de testes automatizados desde a fase inicial do projeto."
+      },
+      {
+        "q": "Quais são os riscos de depender da IA no desenvolvimento?",
+        "a": "O principal risco é a dependência excessiva, que pode gerar código menos eficiente se não for monitorado e ajustado por desenvolvedores."
+      },
+      {
+        "q": "Qual a importância dos testes automatizados?",
+        "a": "Testes automatizados são essenciais para garantir a qualidade do código e detectar falhas rapidamente, especialmente em desenvolvimento sob medida."
+      }
+    ]
+  }
+}

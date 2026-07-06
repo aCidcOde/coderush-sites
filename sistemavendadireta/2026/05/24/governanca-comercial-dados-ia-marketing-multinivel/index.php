@@ -246,19 +246,19 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://codafacil.dev/2026/07/03/ia-pode-otimizar-ciclo-desenvolvimento-software/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/ia-pode-otimizar-ciclo-desenvolvimento-software.jpg" alt="Como a IA pode otimizar o ciclo de desenvolvimento de software" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://codafacil.dev/2026/07/06/pareamento-humano-ia-desenvolvimento-software-sob-medida/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/pareamento-humano-ia-desenvolvimento-software-sob-medida.jpg" alt="Pareamento humano-IA no desenvolvimento de software sob medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/07/03/ia-pode-otimizar-ciclo-desenvolvimento-software/" rel="noopener" target="_blank" class="hover:underline">Como a IA pode otimizar o ciclo de desenvolvimento de software</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como utilizar ferramentas de IA para acelerar a entrega de software sob medida sem comprometer a qualidade.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/07/06/pareamento-humano-ia-desenvolvimento-software-sob-medida/" rel="noopener" target="_blank" class="hover:underline">Pareamento humano-IA no desenvolvimento de software sob medida</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a IA pode turbinar a entrega de software sob medida sem comprometer a qualidade.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://fluxointeligenteia.com.br/2026/07/03/roi-implementacao-agentes-corporativos-ia/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/roi-implementacao-agentes-corporativos-ia.jpg" alt="ROI e a Implementação de Agentes Corporativos de IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://fluxointeligenteia.com.br/2026/07/06/implementando-agentes-corporativos-ia-governanca/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/implementando-agentes-corporativos-ia-governanca.jpg" alt="Implementando agentes corporativos de IA com governança" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">FluxoInteligente IA</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/07/03/roi-implementacao-agentes-corporativos-ia/" rel="noopener" target="_blank" class="hover:underline">ROI e a Implementação de Agentes Corporativos de IA</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como calcular o ROI de agentes corporativos de IA com governança eficaz.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/07/06/implementando-agentes-corporativos-ia-governanca/" rel="noopener" target="_blank" class="hover:underline">Implementando agentes corporativos de IA com governança</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como integrar agentes corporativos de IA em sua operação com foco em governança e segurança.</p>
   </div>
 </article>
   </div>

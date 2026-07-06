@@ -582,6 +582,15 @@ $seoLdGraph = [
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-HOME-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/07/06/pareamento-humano-ia-desenvolvimento-software-sob-medida/" data-blog-image="imagens/posts/pareamento-humano-ia-desenvolvimento-software-sob-medida.jpg" data-blog-slug="pareamento-humano-ia-desenvolvimento-software-sob-medida" data-blog-date="2026-07-06">
+  <a href="2026/07/06/pareamento-humano-ia-desenvolvimento-software-sob-medida/">
+    <img src="imagens/posts/pareamento-humano-ia-desenvolvimento-software-sob-medida.jpg" alt="Pareamento humano-IA no desenvolvimento de software sob medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="2026/07/06/pareamento-humano-ia-desenvolvimento-software-sob-medida/" class="hover:underline">Pareamento humano-IA no desenvolvimento de software sob medida</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a IA pode turbinar a entrega de software sob medida sem comprometer a qualidade.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/07/03/ia-pode-otimizar-ciclo-desenvolvimento-software/" data-blog-image="imagens/posts/ia-pode-otimizar-ciclo-desenvolvimento-software.jpg" data-blog-slug="ia-pode-otimizar-ciclo-desenvolvimento-software" data-blog-date="2026-07-03">
   <a href="2026/07/03/ia-pode-otimizar-ciclo-desenvolvimento-software/">
     <img src="imagens/posts/ia-pode-otimizar-ciclo-desenvolvimento-software.jpg" alt="Como a IA pode otimizar o ciclo de desenvolvimento de software" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
@@ -598,15 +607,6 @@ $seoLdGraph = [
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="2026/06/30/acelerar-operacoes-criticas-ia-integracoes-eficientes/" class="hover:underline">Como acelerar operações críticas com IA e integrações eficientes</a></h2>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como integrar automação e IA nas operações críticas para acelerar o desenvolvimento sem perder qualidade.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/27/melhore-escalabilidade-qualidade-sistemas-sob-medida/" data-blog-image="imagens/posts/melhore-escalabilidade-qualidade-sistemas-sob-medida.jpg" data-blog-slug="melhore-escalabilidade-qualidade-sistemas-sob-medida" data-blog-date="2026-06-27">
-  <a href="2026/06/27/melhore-escalabilidade-qualidade-sistemas-sob-medida/">
-    <img src="imagens/posts/melhore-escalabilidade-qualidade-sistemas-sob-medida.jpg" alt="Melhore a Escalabilidade e Qualidade de Sistemas Sob Medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-  </a>
-  <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="2026/06/27/melhore-escalabilidade-qualidade-sistemas-sob-medida/" class="hover:underline">Melhore a Escalabilidade e Qualidade de Sistemas Sob Medida</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como otimizar a escalabilidade e a qualidade de código em projetos de software sob medida com IA.</p>
   </div>
 </article>
 <!-- BLOG-HOME-CARDS:END -->

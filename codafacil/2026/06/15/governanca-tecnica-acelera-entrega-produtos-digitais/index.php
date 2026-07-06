@@ -220,10 +220,10 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/06/30/acelerar-operacoes-criticas-ia-integracoes-eficientes/"><img src="../../../../imagens/posts/acelerar-operacoes-criticas-ia-integracoes-eficientes.jpg" alt="Como acelerar operações críticas com IA e integrações eficientes" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/07/06/pareamento-humano-ia-desenvolvimento-software-sob-medida/"><img src="../../../../imagens/posts/pareamento-humano-ia-desenvolvimento-software-sob-medida.jpg" alt="Pareamento humano-IA no desenvolvimento de software sob medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/30/acelerar-operacoes-criticas-ia-integracoes-eficientes/" class="hover:underline">Como acelerar operações críticas com IA e integrações eficientes</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como integrar automação e IA nas operações críticas para acelerar o desenvolvimento sem perder qualidade.</p>
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/07/06/pareamento-humano-ia-desenvolvimento-software-sob-medida/" class="hover:underline">Pareamento humano-IA no desenvolvimento de software sob medida</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a IA pode turbinar a entrega de software sob medida sem comprometer a qualidade.</p>
   </div>
 </article>
   </div>

@@ -1,0 +1,220 @@
+{
+  "mode": "publish",
+  "date": "2026-07-06",
+  "timezone": "America/Sao_Paulo",
+  "focus": "php",
+  "startedAt": "2026-07-06T13:39:58.546Z",
+  "aiProvider": "openrouter",
+  "sites": [
+    {
+      "siteId": "coderush",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "casos de empresa media",
+      "theme": "modernizacao gradual de sistemas legados",
+      "research": {
+        "used": 2,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/coderush/2026-07-06/modernizacao-gradual-sistemas-legados-php.json",
+      "markdownPath": "automation/blog-bot/out/coderush/2026-07-06/modernizacao-gradual-sistemas-legados-php.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "2026/07/06/modernizacao-gradual-sistemas-legados-php/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "existing",
+        "coverAlt": "",
+        "coverLeakage": null
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "index.php",
+          "blog/index.php",
+          "2026/07/06/modernizacao-gradual-sistemas-legados-php/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "codafacil",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "engenharia",
+      "theme": "pareamento humano-IA no desenvolvimento",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": [
+          {
+            "url": "https://www.codeium.com/blog/rss.xml",
+            "error": "HTTP 404"
+          }
+        ]
+      },
+      "outputPath": "automation/blog-bot/out/codafacil/2026-07-06/pareamento-humano-ia-desenvolvimento-software-sob-medida.json",
+      "markdownPath": "automation/blog-bot/out/codafacil/2026-07-06/pareamento-humano-ia-desenvolvimento-software-sob-medida.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "codafacil/2026/07/06/pareamento-humano-ia-desenvolvimento-software-sob-medida/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Uma abstração de camadas interconectadas em tons de verde-petróleo e azul royal, simbolizando a colaboração entre humanos e IA no desenvolvimento",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": false,
+          "alphanumericCount": 0,
+          "sample": ""
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "codafacil/index.php",
+          "codafacil/blog/index.php",
+          "codafacil/2026/07/06/pareamento-humano-ia-desenvolvimento-software-sob-medida/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "fluxointeligenteia",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Possível texto vazado na capa (sample: \"oats SWS OSS ‘ere sei\")",
+      "angle": "governanca",
+      "theme": "agentes corporativos integrados a ERP e CRM",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/fluxointeligenteia/2026-07-06/implementando-agentes-corporativos-ia-governanca.json",
+      "markdownPath": "automation/blog-bot/out/fluxointeligenteia/2026-07-06/implementando-agentes-corporativos-ia-governanca.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "fluxointeligenteia/2026/07/06/implementando-agentes-corporativos-ia-governanca/index.html",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "google/gemini-3-pro-image-preview",
+        "coverAlt": "Sala de controle moderna com linhas de luz conectando fluxos de dados, fundo escuro esmeralda e partículas em movimento",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": true,
+          "alphanumericCount": 79,
+          "sample": "oats SWS OSS ‘ere sei"
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    },
+    {
+      "siteId": "sistemavendadireta",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "comissionamento",
+      "theme": "onboarding e ativacao de distribuidor",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/sistemavendadireta/2026-07-06/comissionamento-eficiente-onboarding-distribuidores.json",
+      "markdownPath": "automation/blog-bot/out/sistemavendadireta/2026-07-06/comissionamento-eficiente-onboarding-distribuidores.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "sistemavendadireta/2026/07/06/comissionamento-eficiente-onboarding-distribuidores/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "google/gemini-3-pro-image-preview",
+        "coverAlt": "Abstrações geométricas em camadas formando uma rede comercial, com predominância de azul profundo e acentos brancos",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": false,
+          "alphanumericCount": 2,
+          "sample": ""
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "sistemavendadireta/index.php",
+          "sistemavendadireta/blog/index.php",
+          "sistemavendadireta/2026/07/06/comissionamento-eficiente-onboarding-distribuidores/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "emergency",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Possivel texto vazado na capa (sample: \"Certiddes Procesos Sucessorios: Que Saber\")",
+      "angle": "compliance",
+      "theme": "certidoes em processos sucessorios e inventarios",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/emergency/2026-07-06/certidoes-processos-sucessorios-saber.json",
+      "markdownPath": "automation/blog-bot/out/emergency/2026-07-06/certidoes-processos-sucessorios-saber.md",
+      "publishResult": {
+        "target": "api",
+        "apiStatus": 201,
+        "apiUrl": "https://emergency.com.br/blog/certidoes-processos-sucessorios-saber",
+        "apiId": 31,
+        "apiPublishedAt": "2026-07-06T10:43:17-03:00",
+        "coverPath": "automation/blog-bot/out/emergency/covers/certidoes-processos-sucessorios-saber.jpg",
+        "coverSize": 196125,
+        "coverSource": "google/gemini-2.5-flash-image",
+        "coverAlt": "Capa com um documento legal em destaque, cercado por formas geométricas sutis em tons de azul escuro e dourado, transmitindo seriedade",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": true,
+          "alphanumericCount": 95,
+          "sample": "Certiddes Procesos Sucessorios: Que Saber"
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    }
+  ],
+  "duplications": [],
+  "relatedRefresh": {
+    "touched": 33,
+    "unchanged": 62,
+    "errors": [],
+    "totalCards": 87,
+    "totalFiles": 95
+  },
+  "fallbackCount": 0,
+  "allFallback": false,
+  "finishedAt": "2026-07-06T13:43:44.040Z",
+  "ok": true
+}
