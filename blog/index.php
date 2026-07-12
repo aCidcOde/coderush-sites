@@ -42,6 +42,15 @@
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-INDEX-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/07/12/governanca-tecnologia-impulsiona-empresas-medias/" data-blog-image="imagens/posts/governanca-tecnologia-impulsiona-empresas-medias.jpg" data-blog-slug="governanca-tecnologia-impulsiona-empresas-medias" data-blog-date="2026-07-12">
+  <a href="../2026/07/12/governanca-tecnologia-impulsiona-empresas-medias/">
+    <img src="../imagens/posts/governanca-tecnologia-impulsiona-empresas-medias.jpg" alt="Como a governança de tecnologia impulsiona empresas médias" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="../2026/07/12/governanca-tecnologia-impulsiona-empresas-medias/" class="hover:underline">Como a governança de tecnologia impulsiona empresas médias</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como implementar governança de tecnologia para otimizar processos e apoiar o crescimento em empresas médias.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/07/06/modernizacao-gradual-sistemas-legados-php/" data-blog-image="imagens/posts/modernizacao-gradual-sistemas-legados-php.jpg" data-blog-slug="modernizacao-gradual-sistemas-legados-php" data-blog-date="2026-07-06">
   <a href="../2026/07/06/modernizacao-gradual-sistemas-legados-php/">
     <img src="../imagens/posts/modernizacao-gradual-sistemas-legados-php.jpg" alt="Modernização gradual de sistemas legados em PHP" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />

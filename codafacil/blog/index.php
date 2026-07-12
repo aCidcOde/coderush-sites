@@ -43,6 +43,15 @@
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-INDEX-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/07/12/design-api-integracoes-corporativas-considerar/" data-blog-image="imagens/posts/design-api-integracoes-corporativas-considerar.jpg" data-blog-slug="design-api-integracoes-corporativas-considerar" data-blog-date="2026-07-12">
+  <a href="../2026/07/12/design-api-integracoes-corporativas-considerar/">
+    <img src="../imagens/posts/design-api-integracoes-corporativas-considerar.jpg" alt="Design de API para Integrações Corporativas: O Que Considerar" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="../2026/07/12/design-api-integracoes-corporativas-considerar/" class="hover:underline">Design de API para Integrações Corporativas: O Que Considerar</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como projetar APIs eficientes para integrações corporativas com foco em qualidade e agilidade.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/07/06/pareamento-humano-ia-desenvolvimento-software-sob-medida/" data-blog-image="imagens/posts/pareamento-humano-ia-desenvolvimento-software-sob-medida.jpg" data-blog-slug="pareamento-humano-ia-desenvolvimento-software-sob-medida" data-blog-date="2026-07-06">
   <a href="../2026/07/06/pareamento-humano-ia-desenvolvimento-software-sob-medida/">
     <img src="../imagens/posts/pareamento-humano-ia-desenvolvimento-software-sob-medida.jpg" alt="Pareamento humano-IA no desenvolvimento de software sob medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />

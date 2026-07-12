@@ -1,0 +1,87 @@
+{
+  "date": "2026-07-12",
+  "siteId": "coderush",
+  "postType": "institucional-tecnologia",
+  "focus": "ia",
+  "theme": "governanca de tecnologia para crescimento",
+  "angle": "casos de empresa media",
+  "slug": "governanca-tecnologia-impulsiona-empresas-medias",
+  "title": "CodeRush: IA aplicado a casos de empresa media",
+  "description": "Atualização semanal de ia para CodeRush, com foco em governanca de tecnologia para crescimento.",
+  "sources": [
+    "https://fcamara.com/blog/governanca-ti/",
+    "https://promovesolucoes.com/governanca-de-ti-na-pratica-do-caos-a-excelencia-operacional/",
+    "https://www.idealbusinessschool.com.br/blog/governanca-em-empresas-de-tecnologia-estrategias-para-transformar-resultados/",
+    "https://www.dalth.com.br/guia-completo-de-governanca-e-gestao-de-ti-estrategica/",
+    "https://coderush.com.br/2026/05/18/arquitetura-software-governanca-crescimento/"
+  ],
+  "status": "draft",
+  "generatedAt": "2026-07-12T08:06:34-03:00",
+  "content": {
+    "eyebrow": "Governança eficaz",
+    "headline": "Como a governança de tecnologia impulsiona empresas médias",
+    "summary": "Entenda como implementar governança de tecnologia para otimizar processos e apoiar o crescimento em empresas médias.",
+    "answerBox": {
+      "question": "Como implementar governança de tecnologia em empresas médias?",
+      "answer": "Implementar governança de tecnologia em empresas médias envolve definir políticas claras, alinhar a TI com os objetivos de negócios e garantir compliance. Isso ajuda a otimizar processos e mitigar riscos, essencial para o crescimento sustentável."
+    },
+    "tldr": [
+      "A governança de tecnologia é crucial para o crescimento.",
+      "Políticas claras ajudam a alinhar TI com negócios.",
+      "Integração com sistemas legados é um desafio comum."
+    ],
+    "sections": [
+      {
+        "type": "prose",
+        "title": "O que é governança de tecnologia?",
+        "body": "Governança de tecnologia é o conjunto de práticas que garante que a TI suporte e atenda aos objetivos de negócios. Para empresas médias, isso envolve a definição de processos, políticas e indicadores que orientem a tomada de decisão. A implementação eficaz pode ser a diferença entre crescimento desordenado e um avanço sustentável."
+      },
+      {
+        "type": "list",
+        "title": "Sinais de que sua empresa precisa de governança de tecnologia",
+        "items": [
+          "Falta de alinhamento entre TI e objetivos de negócios.",
+          "Dificuldades na integração de sistemas legados.",
+          "Processos de decisão lenta ou desorganizada.",
+          "Alta taxa de falhas em projetos de tecnologia."
+        ]
+      },
+      {
+        "type": "callout",
+        "body": "Já estruturamos isso em diversas empresas médias. Uma conversa pode esclarecer como aplicar isso no seu cenário específico.",
+        "ctaLabel": "Fale com a CodeRush",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Casos de sucesso na governança",
+        "body": "Empresas que implementaram governança de tecnologia relatam melhorias significativas. Um exemplo é a [Fcamara](https://fcamara.com/blog/governanca-ti/), que estruturou sua governança e alcançou resultados notáveis. Outro caso é o da [ProMove](https://promovesolucoes.com/governanca-de-ti-na-pratica-do-caos-a-excelencia-operacional/), que transformou sua operação através de uma governança bem definida. Essas iniciativas mostram que o caminho é viável e trouxe crescimento."
+      },
+      {
+        "type": "cta-inline",
+        "body": "Se isso ressoa com sua realidade, podemos ajudar a estruturar sua governança.",
+        "ctaLabel": "Fale com a CodeRush",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Desafios na implementação",
+        "body": "Implementar governança pode ser desafiador. É crucial evitar a sobrecarga de regras que podem atrasar processos. Também é importante garantir que a governança não seja vista apenas como burocracia, mas como uma ferramenta que agrega valor ao negócio, especialmente em iniciativas críticas e na integração com sistemas legados."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Quais são os principais benefícios da governança de tecnologia?",
+        "a": "Os principais benefícios incluem melhor alinhamento entre TI e negócios, mitigação de riscos e maior eficiência operacional."
+      },
+      {
+        "q": "Como a governança de tecnologia se relaciona com a transformação digital?",
+        "a": "A governança de tecnologia é fundamental para garantir que os esforços de transformação digital estejam alinhados e sejam sustentáveis a longo prazo."
+      },
+      {
+        "q": "Quais indicativos mostram que a governança está funcionando?",
+        "a": "Indicativos incluem a redução de falhas em projetos, maior agilidade nas decisões e melhor satisfação dos stakeholders."
+      }
+    ]
+  }
+}

@@ -1,0 +1,234 @@
+{
+  "mode": "publish",
+  "date": "2026-07-12",
+  "timezone": "America/Sao_Paulo",
+  "focus": "ia",
+  "startedAt": "2026-07-12T11:06:34.645Z",
+  "aiProvider": "openrouter",
+  "sites": [
+    {
+      "siteId": "coderush",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Possível texto vazado na capa (sample: \"alia ceooS\")",
+      "angle": "casos de empresa media",
+      "theme": "governanca de tecnologia para crescimento",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/coderush/2026-07-12/governanca-tecnologia-impulsiona-empresas-medias.json",
+      "markdownPath": "automation/blog-bot/out/coderush/2026-07-12/governanca-tecnologia-impulsiona-empresas-medias.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "2026/07/12/governanca-tecnologia-impulsiona-empresas-medias/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Estrutura modular de governança em tecnologia com plataformas cúbicas interligadas e detalhes em azul elétrico, emergindo de um fundo escuro",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": true,
+          "alphanumericCount": 25,
+          "sample": "alia ceooS"
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "index.php",
+          "blog/index.php",
+          "2026/07/12/governanca-tecnologia-impulsiona-empresas-medias/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "codafacil",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Possível texto vazado na capa (sample: \"ies) 7,22 (gee Ose eae.\")",
+      "angle": "engenharia",
+      "theme": "design de API para integracoes corporativas",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": [
+          {
+            "url": "https://www.codeium.com/blog/rss.xml",
+            "error": "HTTP 404"
+          }
+        ]
+      },
+      "outputPath": "automation/blog-bot/out/codafacil/2026-07-12/design-api-integracoes-corporativas-considerar.json",
+      "markdownPath": "automation/blog-bot/out/codafacil/2026-07-12/design-api-integracoes-corporativas-considerar.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "codafacil/2026/07/12/design-api-integracoes-corporativas-considerar/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Uma pilha vertical de camadas interconectadas de contratos de API, emergindo de uma névoa densa, revelando circuitos iluminados em azul royal",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": true,
+          "alphanumericCount": 65,
+          "sample": "ies) 7,22 (gee Ose eae."
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "codafacil/index.php",
+          "codafacil/blog/index.php",
+          "codafacil/2026/07/12/design-api-integracoes-corporativas-considerar/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "fluxointeligenteia",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Possível texto vazado na capa (sample: \"OLE AMO NUE NEL ALS\")",
+      "angle": "canais integrados",
+      "theme": "agentes corporativos com RAG e governanca",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/fluxointeligenteia/2026-07-12/integrando-agentes-corporativos-ia-governanca-eficiente.json",
+      "markdownPath": "automation/blog-bot/out/fluxointeligenteia/2026-07-12/integrando-agentes-corporativos-ia-governanca-eficiente.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "fluxointeligenteia/2026/07/12/integrando-agentes-corporativos-ia-governanca-eficiente/index.html",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Painel de governança em close-up com trilhas de dados em verde e azul, destacando conexões dinâmicas em um fundo difuso",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": true,
+          "alphanumericCount": 268,
+          "sample": "OLE AMO NUE NEL ALS"
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    },
+    {
+      "siteId": "sistemavendadireta",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Possível texto vazado na capa (sample: \"vale\")",
+      "angle": "vendas diretas",
+      "theme": "expansao internacional para empresas de MMN",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": [
+          {
+            "url": "https://blog.rdstation.com/feed/",
+            "error": "HTTP 415"
+          },
+          {
+            "url": "https://wfdsa.org/feed/",
+            "error": "fetch failed"
+          }
+        ]
+      },
+      "outputPath": "automation/blog-bot/out/sistemavendadireta/2026-07-12/estrategias-expansao-internacional-marketing-multinivel.json",
+      "markdownPath": "automation/blog-bot/out/sistemavendadireta/2026-07-12/estrategias-expansao-internacional-marketing-multinivel.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "sistemavendadireta/2026/07/12/estrategias-expansao-internacional-marketing-multinivel/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Uma rede complexa de rotas de envio interconectadas em camadas, com contornos de terra em azul profundo e linhas luminosas em azul corporativo",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": true,
+          "alphanumericCount": 12,
+          "sample": "vale"
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "sistemavendadireta/index.php",
+          "sistemavendadireta/blog/index.php",
+          "sistemavendadireta/2026/07/12/estrategias-expansao-internacional-marketing-multinivel/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "emergency",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Possivel texto vazado na capa (sample: \"SSeS ONS Kae Rete: See\")",
+      "angle": "regularizacao",
+      "theme": "riscos ocultos em aquisicao de imovel",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/emergency/2026-07-12/riscos-ocultos-aquisicao-imoveis-regularizacao-mitigacao.json",
+      "markdownPath": "automation/blog-bot/out/emergency/2026-07-12/riscos-ocultos-aquisicao-imoveis-regularizacao-mitigacao.md",
+      "publishResult": {
+        "target": "api",
+        "apiStatus": 201,
+        "apiUrl": "https://emergency.com.br/blog/riscos-ocultos-aquisicao-imoveis-regularizacao-mitigacao",
+        "apiId": 32,
+        "apiPublishedAt": "2026-07-12T08:12:27-03:00",
+        "coverPath": "automation/blog-bot/out/emergency/covers/riscos-ocultos-aquisicao-imoveis-regularizacao-mitigacao.jpg",
+        "coverSize": 183271,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Documento de registro de terras fraturado em um plano arquitetônico dourado sobre pedra escura, revelando riscos legais ocultos em camadas",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": true,
+          "alphanumericCount": 91,
+          "sample": "SSeS ONS Kae Rete: See"
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    }
+  ],
+  "duplications": [],
+  "relatedRefresh": {
+    "touched": 52,
+    "unchanged": 47,
+    "errors": [],
+    "totalCards": 91,
+    "totalFiles": 99
+  },
+  "fallbackCount": 0,
+  "allFallback": false,
+  "finishedAt": "2026-07-12T11:13:57.354Z",
+  "ok": true
+}

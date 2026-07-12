@@ -89,6 +89,15 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-INDEX-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/07/12/estrategias-expansao-internacional-marketing-multinivel/" data-blog-image="imagens/posts/estrategias-expansao-internacional-marketing-multinivel.jpg" data-blog-slug="estrategias-expansao-internacional-marketing-multinivel" data-blog-date="2026-07-12">
+  <a href="../2026/07/12/estrategias-expansao-internacional-marketing-multinivel/">
+    <img src="../imagens/posts/estrategias-expansao-internacional-marketing-multinivel.jpg" alt="Estratégias para expansão internacional no marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="../2026/07/12/estrategias-expansao-internacional-marketing-multinivel/" class="hover:underline">Estratégias para expansão internacional no marketing multinível</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como otimizar processos de vendas diretas internacionalmente.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/07/06/comissionamento-eficiente-onboarding-distribuidores/" data-blog-image="imagens/posts/comissionamento-eficiente-onboarding-distribuidores.jpg" data-blog-slug="comissionamento-eficiente-onboarding-distribuidores" data-blog-date="2026-07-06">
   <a href="../2026/07/06/comissionamento-eficiente-onboarding-distribuidores/">
     <img src="../imagens/posts/comissionamento-eficiente-onboarding-distribuidores.jpg" alt="Comissionamento eficiente no onboarding de distribuidores" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
