@@ -212,17 +212,17 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/07/15/decisoes-tecnicas-substituicao-sistemas-legados/"><img src="../../../../imagens/posts/decisoes-tecnicas-substituicao-sistemas-legados.jpg" alt="Decisões Técnicas na Substituição de Sistemas Legados" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/07/15/decisoes-tecnicas-substituicao-sistemas-legados/" class="hover:underline">Decisões Técnicas na Substituição de Sistemas Legados</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda os riscos e como tomar decisões informadas na substituição de sistemas legados.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="../../../../2026/07/12/governanca-tecnologia-impulsiona-empresas-medias/"><img src="../../../../imagens/posts/governanca-tecnologia-impulsiona-empresas-medias.jpg" alt="Como a governança de tecnologia impulsiona empresas médias" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/07/12/governanca-tecnologia-impulsiona-empresas-medias/" class="hover:underline">Como a governança de tecnologia impulsiona empresas médias</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como implementar governança de tecnologia para otimizar processos e apoiar o crescimento em empresas médias.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/07/03/integrar-ia-processos-retaguarda-arquitetura-software/"><img src="../../../../imagens/posts/integrar-ia-processos-retaguarda-arquitetura-software.jpg" alt="Como integrar IA em processos de retaguarda com arquitetura de software" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/07/03/integrar-ia-processos-retaguarda-arquitetura-software/" class="hover:underline">Como integrar IA em processos de retaguarda com arquitetura de software</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como a arquitetura de software pode facilitar a integração de IA em processos de retaguarda.</p>
   </div>
 </article>
   </div>
@@ -245,11 +245,11 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://codafacil.dev/2026/06/27/melhore-escalabilidade-qualidade-sistemas-sob-medida/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/melhore-escalabilidade-qualidade-sistemas-sob-medida.jpg" alt="Melhore a Escalabilidade e Qualidade de Sistemas Sob Medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://codafacil.dev/2026/07/15/ia-pode-otimizar-arquitetura-laravel-sob-medida/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/ia-pode-otimizar-arquitetura-laravel-sob-medida.jpg" alt="Como a IA pode otimizar a arquitetura Laravel sob medida?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/06/27/melhore-escalabilidade-qualidade-sistemas-sob-medida/" rel="noopener" target="_blank" class="hover:underline">Melhore a Escalabilidade e Qualidade de Sistemas Sob Medida</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como otimizar a escalabilidade e a qualidade de código em projetos de software sob medida com IA.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/07/15/ia-pode-otimizar-arquitetura-laravel-sob-medida/" rel="noopener" target="_blank" class="hover:underline">Como a IA pode otimizar a arquitetura Laravel sob medida?</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Explore como integrar IA na arquitetura Laravel para acelerar o desenvolvimento de software sob medida.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">

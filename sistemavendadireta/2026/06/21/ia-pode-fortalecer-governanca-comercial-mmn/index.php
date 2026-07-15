@@ -246,19 +246,19 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://codafacil.dev/2026/07/03/ia-pode-otimizar-ciclo-desenvolvimento-software/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/ia-pode-otimizar-ciclo-desenvolvimento-software.jpg" alt="Como a IA pode otimizar o ciclo de desenvolvimento de software" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://codafacil.dev/2026/07/15/ia-pode-otimizar-arquitetura-laravel-sob-medida/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/ia-pode-otimizar-arquitetura-laravel-sob-medida.jpg" alt="Como a IA pode otimizar a arquitetura Laravel sob medida?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/07/03/ia-pode-otimizar-ciclo-desenvolvimento-software/" rel="noopener" target="_blank" class="hover:underline">Como a IA pode otimizar o ciclo de desenvolvimento de software</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como utilizar ferramentas de IA para acelerar a entrega de software sob medida sem comprometer a qualidade.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/07/15/ia-pode-otimizar-arquitetura-laravel-sob-medida/" rel="noopener" target="_blank" class="hover:underline">Como a IA pode otimizar a arquitetura Laravel sob medida?</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Explore como integrar IA na arquitetura Laravel para acelerar o desenvolvimento de software sob medida.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://fluxointeligenteia.com.br/2026/07/12/integrando-agentes-corporativos-ia-governanca-eficiente/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/integrando-agentes-corporativos-ia-governanca-eficiente.jpg" alt="Integrando Agentes Corporativos de IA com Governança Eficiente" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://fluxointeligenteia.com.br/2026/07/15/usar-n8n-implementar-agentes-corporativos-ia/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/usar-n8n-implementar-agentes-corporativos-ia.jpg" alt="Como usar n8n para implementar agentes corporativos de IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">FluxoInteligente IA</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/07/12/integrando-agentes-corporativos-ia-governanca-eficiente/" rel="noopener" target="_blank" class="hover:underline">Integrando Agentes Corporativos de IA com Governança Eficiente</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como implementar agentes corporativos de IA com governança e canais integrados para maximizar a eficiência.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/07/15/usar-n8n-implementar-agentes-corporativos-ia/" rel="noopener" target="_blank" class="hover:underline">Como usar n8n para implementar agentes corporativos de IA</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como integrar agentes de IA no atendimento ao cliente usando n8n com governança e segurança.</p>
   </div>
 </article>
   </div>

@@ -245,19 +245,19 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://codafacil.dev/2026/06/27/melhore-escalabilidade-qualidade-sistemas-sob-medida/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/melhore-escalabilidade-qualidade-sistemas-sob-medida.jpg" alt="Melhore a Escalabilidade e Qualidade de Sistemas Sob Medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://codafacil.dev/2026/07/15/ia-pode-otimizar-arquitetura-laravel-sob-medida/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/ia-pode-otimizar-arquitetura-laravel-sob-medida.jpg" alt="Como a IA pode otimizar a arquitetura Laravel sob medida?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/06/27/melhore-escalabilidade-qualidade-sistemas-sob-medida/" rel="noopener" target="_blank" class="hover:underline">Melhore a Escalabilidade e Qualidade de Sistemas Sob Medida</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como otimizar a escalabilidade e a qualidade de código em projetos de software sob medida com IA.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/07/15/ia-pode-otimizar-arquitetura-laravel-sob-medida/" rel="noopener" target="_blank" class="hover:underline">Como a IA pode otimizar a arquitetura Laravel sob medida?</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Explore como integrar IA na arquitetura Laravel para acelerar o desenvolvimento de software sob medida.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://sistemavendadireta.com.br/2026/07/12/estrategias-expansao-internacional-marketing-multinivel/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/estrategias-expansao-internacional-marketing-multinivel.jpg" alt="Estratégias para expansão internacional no marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://sistemavendadireta.com.br/2026/07/15/crm-pode-potencializar-plano-carreira-mmn/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/crm-pode-potencializar-plano-carreira-mmn.jpg" alt="Como um CRM pode potencializar seu plano de carreira em MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Sistema Venda Direta</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/07/12/estrategias-expansao-internacional-marketing-multinivel/" rel="noopener" target="_blank" class="hover:underline">Estratégias para expansão internacional no marketing multinível</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como otimizar processos de vendas diretas internacionalmente.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/07/15/crm-pode-potencializar-plano-carreira-mmn/" rel="noopener" target="_blank" class="hover:underline">Como um CRM pode potencializar seu plano de carreira em MMN</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como um CRM eficaz pode impulsionar seu desenvolvimento e resultados no marketing multinível.</p>
   </div>
 </article>
   </div>

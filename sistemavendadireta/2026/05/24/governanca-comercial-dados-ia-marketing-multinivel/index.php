@@ -220,10 +220,10 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/06/30/garantir-previsibilidade-receita-marketing-multinivel/"><img src="../../../../imagens/posts/garantir-previsibilidade-receita-marketing-multinivel.jpg" alt="Como garantir previsibilidade de receita no marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/07/15/crm-pode-potencializar-plano-carreira-mmn/"><img src="../../../../imagens/posts/crm-pode-potencializar-plano-carreira-mmn.jpg" alt="Como um CRM pode potencializar seu plano de carreira em MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/30/garantir-previsibilidade-receita-marketing-multinivel/" class="hover:underline">Como garantir previsibilidade de receita no marketing multinível</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como um CRM eficiente pode ajudar a prever receitas em MMN.</p>
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/07/15/crm-pode-potencializar-plano-carreira-mmn/" class="hover:underline">Como um CRM pode potencializar seu plano de carreira em MMN</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como um CRM eficaz pode impulsionar seu desenvolvimento e resultados no marketing multinível.</p>
   </div>
 </article>
   </div>
@@ -238,27 +238,27 @@
   <p class="mt-2 text-sm text-white/70">Conteúdo recente dos outros sites do ecossistema.</p>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://coderush.com.br/2026/07/12/governanca-tecnologia-impulsiona-empresas-medias/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/governanca-tecnologia-impulsiona-empresas-medias.jpg" alt="Como a governança de tecnologia impulsiona empresas médias" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://coderush.com.br/2026/07/15/decisoes-tecnicas-substituicao-sistemas-legados/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/decisoes-tecnicas-substituicao-sistemas-legados.jpg" alt="Decisões Técnicas na Substituição de Sistemas Legados" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">CodeRush</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/07/12/governanca-tecnologia-impulsiona-empresas-medias/" rel="noopener" target="_blank" class="hover:underline">Como a governança de tecnologia impulsiona empresas médias</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como implementar governança de tecnologia para otimizar processos e apoiar o crescimento em empresas médias.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/07/15/decisoes-tecnicas-substituicao-sistemas-legados/" rel="noopener" target="_blank" class="hover:underline">Decisões Técnicas na Substituição de Sistemas Legados</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda os riscos e como tomar decisões informadas na substituição de sistemas legados.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://fluxointeligenteia.com.br/2026/07/12/integrando-agentes-corporativos-ia-governanca-eficiente/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/integrando-agentes-corporativos-ia-governanca-eficiente.jpg" alt="Integrando Agentes Corporativos de IA com Governança Eficiente" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">FluxoInteligente IA</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/07/12/integrando-agentes-corporativos-ia-governanca-eficiente/" rel="noopener" target="_blank" class="hover:underline">Integrando Agentes Corporativos de IA com Governança Eficiente</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como implementar agentes corporativos de IA com governança e canais integrados para maximizar a eficiência.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://codafacil.dev/2026/07/06/pareamento-humano-ia-desenvolvimento-software-sob-medida/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/pareamento-humano-ia-desenvolvimento-software-sob-medida.jpg" alt="Pareamento humano-IA no desenvolvimento de software sob medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://codafacil.dev/2026/07/15/ia-pode-otimizar-arquitetura-laravel-sob-medida/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/ia-pode-otimizar-arquitetura-laravel-sob-medida.jpg" alt="Como a IA pode otimizar a arquitetura Laravel sob medida?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/07/06/pareamento-humano-ia-desenvolvimento-software-sob-medida/" rel="noopener" target="_blank" class="hover:underline">Pareamento humano-IA no desenvolvimento de software sob medida</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a IA pode turbinar a entrega de software sob medida sem comprometer a qualidade.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/07/15/ia-pode-otimizar-arquitetura-laravel-sob-medida/" rel="noopener" target="_blank" class="hover:underline">Como a IA pode otimizar a arquitetura Laravel sob medida?</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Explore como integrar IA na arquitetura Laravel para acelerar o desenvolvimento de software sob medida.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="https://fluxointeligenteia.com.br/2026/07/15/usar-n8n-implementar-agentes-corporativos-ia/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/usar-n8n-implementar-agentes-corporativos-ia.jpg" alt="Como usar n8n para implementar agentes corporativos de IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">FluxoInteligente IA</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/07/15/usar-n8n-implementar-agentes-corporativos-ia/" rel="noopener" target="_blank" class="hover:underline">Como usar n8n para implementar agentes corporativos de IA</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como integrar agentes de IA no atendimento ao cliente usando n8n com governança e segurança.</p>
   </div>
 </article>
   </div>

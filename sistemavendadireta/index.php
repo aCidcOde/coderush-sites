@@ -753,6 +753,15 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-HOME-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/07/15/crm-pode-potencializar-plano-carreira-mmn/" data-blog-image="imagens/posts/crm-pode-potencializar-plano-carreira-mmn.jpg" data-blog-slug="crm-pode-potencializar-plano-carreira-mmn" data-blog-date="2026-07-15">
+  <a href="2026/07/15/crm-pode-potencializar-plano-carreira-mmn/">
+    <img src="imagens/posts/crm-pode-potencializar-plano-carreira-mmn.jpg" alt="Como um CRM pode potencializar seu plano de carreira em MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="2026/07/15/crm-pode-potencializar-plano-carreira-mmn/" class="hover:underline">Como um CRM pode potencializar seu plano de carreira em MMN</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como um CRM eficaz pode impulsionar seu desenvolvimento e resultados no marketing multinível.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/07/12/estrategias-expansao-internacional-marketing-multinivel/" data-blog-image="imagens/posts/estrategias-expansao-internacional-marketing-multinivel.jpg" data-blog-slug="estrategias-expansao-internacional-marketing-multinivel" data-blog-date="2026-07-12">
   <a href="2026/07/12/estrategias-expansao-internacional-marketing-multinivel/">
     <img src="imagens/posts/estrategias-expansao-internacional-marketing-multinivel.jpg" alt="Estratégias para expansão internacional no marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
@@ -769,15 +778,6 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="2026/07/06/comissionamento-eficiente-onboarding-distribuidores/" class="hover:underline">Comissionamento eficiente no onboarding de distribuidores</a></h2>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como otimizar o comissionamento no onboarding de distribuidores e potencializar resultados.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/07/03/tecnologia-escalar-vendas-diretas-mmn/" data-blog-image="imagens/posts/tecnologia-escalar-vendas-diretas-mmn.jpg" data-blog-slug="tecnologia-escalar-vendas-diretas-mmn" data-blog-date="2026-07-03">
-  <a href="2026/07/03/tecnologia-escalar-vendas-diretas-mmn/">
-    <img src="imagens/posts/tecnologia-escalar-vendas-diretas-mmn.jpg" alt="Tecnologia para Escalar Vendas Diretas no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-  </a>
-  <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="2026/07/03/tecnologia-escalar-vendas-diretas-mmn/" class="hover:underline">Tecnologia para Escalar Vendas Diretas no MMN</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Como a tecnologia pode impulsionar suas operações em marketing multinível.</p>
   </div>
 </article>
 <!-- BLOG-HOME-CARDS:END -->

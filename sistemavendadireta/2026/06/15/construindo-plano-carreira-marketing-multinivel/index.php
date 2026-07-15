@@ -206,6 +206,13 @@
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/07/15/crm-pode-potencializar-plano-carreira-mmn/"><img src="../../../../imagens/posts/crm-pode-potencializar-plano-carreira-mmn.jpg" alt="Como um CRM pode potencializar seu plano de carreira em MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/07/15/crm-pode-potencializar-plano-carreira-mmn/" class="hover:underline">Como um CRM pode potencializar seu plano de carreira em MMN</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como um CRM eficaz pode impulsionar seu desenvolvimento e resultados no marketing multinível.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="../../../../2026/06/30/garantir-previsibilidade-receita-marketing-multinivel/"><img src="../../../../imagens/posts/garantir-previsibilidade-receita-marketing-multinivel.jpg" alt="Como garantir previsibilidade de receita no marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/30/garantir-previsibilidade-receita-marketing-multinivel/" class="hover:underline">Como garantir previsibilidade de receita no marketing multinível</a></h3>
@@ -217,13 +224,6 @@
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/07/03/tecnologia-escalar-vendas-diretas-mmn/" class="hover:underline">Tecnologia para Escalar Vendas Diretas no MMN</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Como a tecnologia pode impulsionar suas operações em marketing multinível.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/06/21/ia-pode-fortalecer-governanca-comercial-mmn/"><img src="../../../../imagens/posts/ia-pode-fortalecer-governanca-comercial-mmn.jpg" alt="Como a IA pode fortalecer a governança comercial no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/21/ia-pode-fortalecer-governanca-comercial-mmn/" class="hover:underline">Como a IA pode fortalecer a governança comercial no MMN</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como dados e inteligência artificial podem otimizar a governança em vendas diretas e marketing multinível.</p>
   </div>
 </article>
   </div>
@@ -246,11 +246,11 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://codafacil.dev/2026/07/03/ia-pode-otimizar-ciclo-desenvolvimento-software/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/ia-pode-otimizar-ciclo-desenvolvimento-software.jpg" alt="Como a IA pode otimizar o ciclo de desenvolvimento de software" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://codafacil.dev/2026/07/15/ia-pode-otimizar-arquitetura-laravel-sob-medida/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/ia-pode-otimizar-arquitetura-laravel-sob-medida.jpg" alt="Como a IA pode otimizar a arquitetura Laravel sob medida?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/07/03/ia-pode-otimizar-ciclo-desenvolvimento-software/" rel="noopener" target="_blank" class="hover:underline">Como a IA pode otimizar o ciclo de desenvolvimento de software</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como utilizar ferramentas de IA para acelerar a entrega de software sob medida sem comprometer a qualidade.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/07/15/ia-pode-otimizar-arquitetura-laravel-sob-medida/" rel="noopener" target="_blank" class="hover:underline">Como a IA pode otimizar a arquitetura Laravel sob medida?</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Explore como integrar IA na arquitetura Laravel para acelerar o desenvolvimento de software sob medida.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">

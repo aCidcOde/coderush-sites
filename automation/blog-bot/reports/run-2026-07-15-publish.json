@@ -1,0 +1,225 @@
+{
+  "mode": "publish",
+  "date": "2026-07-15",
+  "timezone": "America/Sao_Paulo",
+  "focus": "ia",
+  "startedAt": "2026-07-15T11:24:49.392Z",
+  "aiProvider": "openrouter",
+  "sites": [
+    {
+      "siteId": "coderush",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Possível texto vazado na capa (sample: \"Tae ale\")",
+      "angle": "decisao tecnica",
+      "theme": "gestao de risco em substituicao de sistema",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/coderush/2026-07-15/decisoes-tecnicas-substituicao-sistemas-legados.json",
+      "markdownPath": "automation/blog-bot/out/coderush/2026-07-15/decisoes-tecnicas-substituicao-sistemas-legados.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "2026/07/15/decisoes-tecnicas-substituicao-sistemas-legados/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Vista aérea de uma seção arquitetônica mostrando um sistema envelhecido à esquerda e um moderno à direita, com luzes pulsantes em azul e violeta",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": true,
+          "alphanumericCount": 23,
+          "sample": "Tae ale"
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "index.php",
+          "blog/index.php",
+          "2026/07/15/decisoes-tecnicas-substituicao-sistemas-legados/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "codafacil",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "tooling de IA para devs",
+      "theme": "arquitetura Laravel para sistemas sob medida",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": [
+          {
+            "url": "https://www.codeium.com/blog/rss.xml",
+            "error": "HTTP 404"
+          }
+        ]
+      },
+      "outputPath": "automation/blog-bot/out/codafacil/2026-07-15/ia-pode-otimizar-arquitetura-laravel-sob-medida.json",
+      "markdownPath": "automation/blog-bot/out/codafacil/2026-07-15/ia-pode-otimizar-arquitetura-laravel-sob-medida.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "codafacil/2026/07/15/ia-pode-otimizar-arquitetura-laravel-sob-medida/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Uma pilha modular de blocos hexagonais iluminada por um braço de luz, em um fundo verde-petróleo predominante",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": false,
+          "alphanumericCount": 0,
+          "sample": ""
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "codafacil/index.php",
+          "codafacil/blog/index.php",
+          "codafacil/2026/07/15/ia-pode-otimizar-arquitetura-laravel-sob-medida/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "fluxointeligenteia",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Possível texto vazado na capa (sample: \"\")",
+      "angle": "n8n",
+      "theme": "agentes corporativos no atendimento ao cliente",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/fluxointeligenteia/2026-07-15/usar-n8n-implementar-agentes-corporativos-ia.json",
+      "markdownPath": "automation/blog-bot/out/fluxointeligenteia/2026-07-15/usar-n8n-implementar-agentes-corporativos-ia.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "fluxointeligenteia/2026/07/15/usar-n8n-implementar-agentes-corporativos-ia/index.html",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Rede densa de nós de trabalho interconectados, com tons de ciano e verde, em composição diagonal, representando fluxo de dados",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": true,
+          "alphanumericCount": 11,
+          "sample": ""
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    },
+    {
+      "siteId": "sistemavendadireta",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "CRM",
+      "theme": "plano de carreira em marketing multinivel",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/sistemavendadireta/2026-07-15/crm-pode-potencializar-plano-carreira-mmn.json",
+      "markdownPath": "automation/blog-bot/out/sistemavendadireta/2026-07-15/crm-pode-potencializar-plano-carreira-mmn.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "sistemavendadireta/2026/07/15/crm-pode-potencializar-plano-carreira-mmn/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Composição em plano aéreo com uma grade de nós hexagonais em azul marinho, representando uma rede de carreira e progresso em marketing multinível",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": false,
+          "alphanumericCount": 5,
+          "sample": ""
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "sistemavendadireta/index.php",
+          "sistemavendadireta/blog/index.php",
+          "sistemavendadireta/2026/07/15/crm-pode-potencializar-plano-carreira-mmn/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "emergency",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Possivel texto vazado na capa (sample: \"NGO NSN PEON “een raw\")",
+      "angle": "due diligence imobiliaria",
+      "theme": "diligencia em operacoes de credito e financiamento",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/emergency/2026-07-15/realizar-due-diligence-imobiliaria-seguranca.json",
+      "markdownPath": "automation/blog-bot/out/emergency/2026-07-15/realizar-due-diligence-imobiliaria-seguranca.md",
+      "publishResult": {
+        "target": "api",
+        "apiStatus": 201,
+        "apiUrl": "https://emergency.com.br/blog/realizar-due-diligence-imobiliaria-seguranca",
+        "apiId": 33,
+        "apiPublishedAt": "2026-07-15T08:31:14-03:00",
+        "coverPath": "automation/blog-bot/out/emergency/covers/realizar-due-diligence-imobiliaria-seguranca.jpg",
+        "coverSize": 263828,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Uma escritura monumental em pergaminho, analisada por um robô prateado, com linhas de grade cadastral e uma névoa profunda ao fundo",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": true,
+          "alphanumericCount": 38,
+          "sample": "NGO NSN PEON “een raw"
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    }
+  ],
+  "duplications": [],
+  "relatedRefresh": {
+    "touched": 48,
+    "unchanged": 55,
+    "errors": [],
+    "totalCards": 95,
+    "totalFiles": 103
+  },
+  "fallbackCount": 0,
+  "allFallback": false,
+  "finishedAt": "2026-07-15T11:32:49.244Z",
+  "ok": true
+}
