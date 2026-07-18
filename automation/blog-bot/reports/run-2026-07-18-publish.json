@@ -1,0 +1,235 @@
+{
+  "mode": "publish",
+  "date": "2026-07-18",
+  "timezone": "America/Sao_Paulo",
+  "focus": "ia",
+  "startedAt": "2026-07-18T10:56:57.042Z",
+  "aiProvider": "openrouter",
+  "sites": [
+    {
+      "siteId": "coderush",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Possível texto vazado na capa (sample: \"L577) aes\")",
+      "angle": "arquitetura",
+      "theme": "decisao entre comprar e construir software",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/coderush/2026-07-18/comprar-construir-software-arquitetura-pede.json",
+      "markdownPath": "automation/blog-bot/out/coderush/2026-07-18/comprar-construir-software-arquitetura-pede.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "2026/07/18/comprar-construir-software-arquitetura-pede/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Duas estruturas arquitetônicas se enfrentam: uma modular rígida em azul elétrico e uma estrutura esquelética em violeta iluminada",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": true,
+          "alphanumericCount": 36,
+          "sample": "L577) aes"
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "index.php",
+          "blog/index.php",
+          "2026/07/18/comprar-construir-software-arquitetura-pede/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "codafacil",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Possível texto vazado na capa (sample: \"jane ial\")",
+      "angle": "qualidade de codigo",
+      "theme": "entrega de produtos digitais com governanca tecnica",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": [
+          {
+            "url": "https://www.codeium.com/blog/rss.xml",
+            "error": "HTTP 404"
+          }
+        ]
+      },
+      "outputPath": "automation/blog-bot/out/codafacil/2026-07-18/garantir-qualidade-desenvolvimento-software-sob-medida.json",
+      "markdownPath": "automation/blog-bot/out/codafacil/2026-07-18/garantir-qualidade-desenvolvimento-software-sob-medida.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "codafacil/2026/07/18/garantir-qualidade-desenvolvimento-software-sob-medida/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Portão de qualidade mecânica com estruturas interligadas, iluminado em azul profundo, contra um fundo verde escuro difuso",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": true,
+          "alphanumericCount": 22,
+          "sample": "jane ial"
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "codafacil/index.php",
+          "codafacil/blog/index.php",
+          "codafacil/2026/07/18/garantir-qualidade-desenvolvimento-software-sob-medida/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "fluxointeligenteia",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "Link",
+      "theme": "base de conhecimento corporativo para agentes",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/fluxointeligenteia/2026-07-18/usar-base-conhecimento-agentes-corporativos-ia.json",
+      "markdownPath": "automation/blog-bot/out/fluxointeligenteia/2026-07-18/usar-base-conhecimento-agentes-corporativos-ia.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "fluxointeligenteia/2026/07/18/usar-base-conhecimento-agentes-corporativos-ia/index.html",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Arquitetura modular isométrica de blocos de dados em camadas, com finas linhas cianitas conectando camadas de conhecimento em um fundo escuro",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": false,
+          "alphanumericCount": 2,
+          "sample": ""
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    },
+    {
+      "siteId": "sistemavendadireta",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Possível texto vazado na capa (sample: \"Vat ‘Cog\")",
+      "angle": "vendas diretas",
+      "theme": "IA para suporte ao distribuidor em campo",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": [
+          {
+            "url": "https://blog.rdstation.com/feed/",
+            "error": "HTTP 415"
+          }
+        ]
+      },
+      "outputPath": "automation/blog-bot/out/sistemavendadireta/2026-07-18/ia-pode-otimizar-suporte-distribuidor-mmn.json",
+      "markdownPath": "automation/blog-bot/out/sistemavendadireta/2026-07-18/ia-pode-otimizar-suporte-distribuidor-mmn.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "sistemavendadireta/2026/07/18/ia-pode-otimizar-suporte-distribuidor-mmn/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Rede hexagonal de nós 3D em tons de azul, com um núcleo brilhante irradiando conexões finas em um fundo navy",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": true,
+          "alphanumericCount": 13,
+          "sample": "Vat ‘Cog"
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "sistemavendadireta/index.php",
+          "sistemavendadireta/blog/index.php",
+          "sistemavendadireta/2026/07/18/ia-pode-otimizar-suporte-distribuidor-mmn/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "emergency",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Possivel texto vazado na capa (sample: \"‘ihe Nae\")",
+      "angle": "compliance",
+      "theme": "compliance corporativo apoiado em certidoes cartorarias",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": [
+          {
+            "url": "https://capitalaberto.com.br/feed/",
+            "error": "HTTP 404"
+          }
+        ]
+      },
+      "outputPath": "automation/blog-bot/out/emergency/2026-07-18/certidoes-online-facilitam-due-diligence.json",
+      "markdownPath": "automation/blog-bot/out/emergency/2026-07-18/certidoes-online-facilitam-due-diligence.md",
+      "publishResult": {
+        "target": "api",
+        "apiStatus": 201,
+        "apiUrl": "https://emergency.com.br/blog/certidoes-online-facilitam-due-diligence",
+        "apiId": 34,
+        "apiPublishedAt": "2026-07-18T08:03:11-03:00",
+        "coverPath": "automation/blog-bot/out/emergency/covers/certidoes-online-facilitam-due-diligence.jpg",
+        "coverSize": 220912,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Um grande registro cartorial em aço escuro exibe páginas semi-transparentes com linhas douradas, conectadas a pontos de verificação iluminados",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": true,
+          "alphanumericCount": 28,
+          "sample": "‘ihe Nae"
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    }
+  ],
+  "duplications": [],
+  "relatedRefresh": {
+    "touched": 70,
+    "unchanged": 37,
+    "errors": [],
+    "totalCards": 99,
+    "totalFiles": 107
+  },
+  "fallbackCount": 0,
+  "allFallback": false,
+  "finishedAt": "2026-07-18T11:04:35.965Z",
+  "ok": true
+}

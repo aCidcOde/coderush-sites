@@ -206,6 +206,13 @@
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/07/18/garantir-qualidade-desenvolvimento-software-sob-medida/"><img src="../../../../imagens/posts/garantir-qualidade-desenvolvimento-software-sob-medida.jpg" alt="Como garantir qualidade no desenvolvimento de software sob medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/07/18/garantir-qualidade-desenvolvimento-software-sob-medida/" class="hover:underline">Como garantir qualidade no desenvolvimento de software sob medida</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a governança técnica pode acelerar entregas mantendo a qualidade do código.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="../../../../2026/07/03/ia-pode-otimizar-ciclo-desenvolvimento-software/"><img src="../../../../imagens/posts/ia-pode-otimizar-ciclo-desenvolvimento-software.jpg" alt="Como a IA pode otimizar o ciclo de desenvolvimento de software" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/07/03/ia-pode-otimizar-ciclo-desenvolvimento-software/" class="hover:underline">Como a IA pode otimizar o ciclo de desenvolvimento de software</a></h3>
@@ -217,13 +224,6 @@
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/21/implementar-testes-automatizados-desenvolvimento-software-sob-medida/" class="hover:underline">Como implementar testes automatizados no desenvolvimento de software sob medida</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como integrar testes automatizados no ciclo de entrega de software sob medida com IA.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/07/12/design-api-integracoes-corporativas-considerar/"><img src="../../../../imagens/posts/design-api-integracoes-corporativas-considerar.jpg" alt="Design de API para Integrações Corporativas: O Que Considerar" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/07/12/design-api-integracoes-corporativas-considerar/" class="hover:underline">Design de API para Integrações Corporativas: O Que Considerar</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como projetar APIs eficientes para integrações corporativas com foco em qualidade e agilidade.</p>
   </div>
 </article>
   </div>

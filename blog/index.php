@@ -42,6 +42,15 @@
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-INDEX-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/07/18/comprar-construir-software-arquitetura-pede/" data-blog-image="imagens/posts/comprar-construir-software-arquitetura-pede.jpg" data-blog-slug="comprar-construir-software-arquitetura-pede" data-blog-date="2026-07-18">
+  <a href="../2026/07/18/comprar-construir-software-arquitetura-pede/">
+    <img src="../imagens/posts/comprar-construir-software-arquitetura-pede.jpg" alt="Comprar ou construir software: o que sua arquitetura pede?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="../2026/07/18/comprar-construir-software-arquitetura-pede/" class="hover:underline">Comprar ou construir software: o que sua arquitetura pede?</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a arquitetura de software influencia a decisão entre comprar e construir soluções.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/07/15/decisoes-tecnicas-substituicao-sistemas-legados/" data-blog-image="imagens/posts/decisoes-tecnicas-substituicao-sistemas-legados.jpg" data-blog-slug="decisoes-tecnicas-substituicao-sistemas-legados" data-blog-date="2026-07-15">
   <a href="../2026/07/15/decisoes-tecnicas-substituicao-sistemas-legados/">
     <img src="../imagens/posts/decisoes-tecnicas-substituicao-sistemas-legados.jpg" alt="Decisões Técnicas na Substituição de Sistemas Legados" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />

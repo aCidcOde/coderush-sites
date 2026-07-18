@@ -89,6 +89,15 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-INDEX-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/07/18/ia-pode-otimizar-suporte-distribuidor-mmn/" data-blog-image="imagens/posts/ia-pode-otimizar-suporte-distribuidor-mmn.jpg" data-blog-slug="ia-pode-otimizar-suporte-distribuidor-mmn" data-blog-date="2026-07-18">
+  <a href="../2026/07/18/ia-pode-otimizar-suporte-distribuidor-mmn/">
+    <img src="../imagens/posts/ia-pode-otimizar-suporte-distribuidor-mmn.jpg" alt="Como a IA pode otimizar o suporte ao distribuidor no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="../2026/07/18/ia-pode-otimizar-suporte-distribuidor-mmn/" class="hover:underline">Como a IA pode otimizar o suporte ao distribuidor no MMN</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a inteligência artificial melhora o suporte ao distribuidor em vendas diretas.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/07/15/crm-pode-potencializar-plano-carreira-mmn/" data-blog-image="imagens/posts/crm-pode-potencializar-plano-carreira-mmn.jpg" data-blog-slug="crm-pode-potencializar-plano-carreira-mmn" data-blog-date="2026-07-15">
   <a href="../2026/07/15/crm-pode-potencializar-plano-carreira-mmn/">
     <img src="../imagens/posts/crm-pode-potencializar-plano-carreira-mmn.jpg" alt="Como um CRM pode potencializar seu plano de carreira em MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />

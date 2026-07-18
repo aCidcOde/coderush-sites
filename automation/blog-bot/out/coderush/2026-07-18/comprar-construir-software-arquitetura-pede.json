@@ -1,0 +1,88 @@
+{
+  "date": "2026-07-18",
+  "siteId": "coderush",
+  "postType": "institucional-tecnologia",
+  "focus": "ia",
+  "theme": "decisao entre comprar e construir software",
+  "angle": "arquitetura",
+  "slug": "comprar-construir-software-arquitetura-pede",
+  "title": "CodeRush: IA aplicado a arquitetura",
+  "description": "Atualização semanal de ia para CodeRush, com foco em decisao entre comprar e construir software.",
+  "sources": [
+    "https://www.coderush.com.br/2026/06/18/comprar-construir-software-considerar-arquitetura/",
+    "https://www.sparsum.com/insights/software-sob-medida-vs-pronto",
+    "https://coderush.com.br/2026/05/21/construir-comprar-software-considerar/",
+    "https://etcweb.com.br/blog/quando-construir-quando-comprar",
+    "https://ecosire.com/pt/blog/build-vs-buy-software-decision-guide"
+  ],
+  "status": "draft",
+  "generatedAt": "2026-07-18T07:56:57-03:00",
+  "content": {
+    "eyebrow": "Decisões de Arquitetura",
+    "headline": "Comprar ou construir software: o que sua arquitetura pede?",
+    "summary": "Entenda como a arquitetura de software influencia a decisão entre comprar e construir soluções.",
+    "answerBox": {
+      "question": "Quando devo optar por comprar ou construir software?",
+      "answer": "A escolha entre comprar ou construir software depende das suas necessidades específicas, integração com sistemas legados e flexibilidade. Considere a arquitetura existente e as regras de negócio para otimizar sua decisão."
+    },
+    "tldr": [
+      "Avalie a arquitetura antes de decidir entre comprar ou construir.",
+      "Sistemas legados podem impactar sua escolha.",
+      "Consultoria pode ajudar a alinhar suas necessidades."
+    ],
+    "sections": [
+      {
+        "type": "prose",
+        "title": "O que considerar na decisão",
+        "body": "A decisão de comprar ou construir software deve começar pela análise da arquitetura existente. Se sua empresa já possui sistemas legados, a integração sem um big-bang pode ser um desafio. A flexibilidade de um software sob medida pode ser necessária, mas o custo e o tempo de desenvolvimento precisam ser pesados."
+      },
+      {
+        "type": "list",
+        "title": "Fatores a avaliar",
+        "items": [
+          "Necessidades específicas da sua empresa.",
+          "Compatibilidade com sistemas legados.",
+          "Custo total de propriedade.",
+          "Prazo de entrega e tempo de desenvolvimento.",
+          "Flexibilidade para futuras atualizações."
+        ]
+      },
+      {
+        "type": "callout",
+        "body": "Já ajudamos empresas a navegar nesse dilema. Vale uma conversa para entender seu cenário.",
+        "ctaLabel": "Fale com a CodeRush",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Pragmatismo na execução",
+        "body": "Um software sob medida pode parecer a solução ideal, mas é fundamental garantir que ele se encaixe nas regras de negócio existentes. A CodeRush já estruturou soluções que respeitam a arquitetura atual, evitando surpresas. Mantenha o foco na integração e na governança técnica para minimizar riscos."
+      },
+      {
+        "type": "cta-inline",
+        "body": "Entender suas necessidades é o primeiro passo para a decisão.",
+        "ctaLabel": "Fale com a CodeRush",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Evite armadilhas comuns",
+        "body": "Um erro comum é ignorar a compatibilidade com sistemas legados. Além disso, não subestime o impacto do custo total de propriedade. Decidir por impulso pode resultar em soluções que não atendem a longo prazo. Avalie sempre as consequências de cada abordagem."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Qual a vantagem de um software sob medida?",
+        "a": "Um software sob medida é projetado para atender necessidades específicas, garantindo melhor alinhamento com as operações da empresa e flexibilidade para adaptações futuras."
+      },
+      {
+        "q": "Como integrar IA em sistemas legados?",
+        "a": "Integrar IA em sistemas legados requer uma análise cuidadosa da arquitetura atual e a definição de interfaces que permitam a comunicação entre a nova tecnologia e o sistema existente."
+      },
+      {
+        "q": "Quando é melhor comprar software pronto?",
+        "a": "Comprar software pronto pode ser vantajoso quando as necessidades são comuns e o tempo de implementação é crítico, além de oferecer suporte e atualizações regulares."
+      }
+    ]
+  }
+}
