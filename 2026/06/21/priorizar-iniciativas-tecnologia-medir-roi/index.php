@@ -212,17 +212,17 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/07/21/escolher-arquitetura-software-iniciativas-criticas/"><img src="../../../../imagens/posts/escolher-arquitetura-software-iniciativas-criticas.jpg" alt="Como escolher a arquitetura de software para iniciativas críticas" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/07/21/escolher-arquitetura-software-iniciativas-criticas/" class="hover:underline">Como escolher a arquitetura de software para iniciativas críticas</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como selecionar a stack ideal para projetos de tecnologia sem improviso.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="../../../../2026/06/15/escolher-stack-tecnologica-iniciativas-criticas/"><img src="../../../../imagens/posts/escolher-stack-tecnologica-iniciativas-criticas.jpg" alt="Como escolher a stack tecnológica para iniciativas críticas?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/15/escolher-stack-tecnologica-iniciativas-criticas/" class="hover:underline">Como escolher a stack tecnológica para iniciativas críticas?</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Decisões sobre stack tecnológica são cruciais para o sucesso de projetos e operações. Entenda como escolher a melhor opção.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/06/30/automacao-inteligente-pode-aumentar-produtividade-time/"><img src="../../../../imagens/posts/automacao-inteligente-pode-aumentar-produtividade-time.jpg" alt="Como a automação inteligente pode aumentar a produtividade do seu time" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/30/automacao-inteligente-pode-aumentar-produtividade-time/" class="hover:underline">Como a automação inteligente pode aumentar a produtividade do seu time</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como decisões técnicas em automação podem impactar a produtividade das equipes.</p>
   </div>
 </article>
   </div>
@@ -245,11 +245,11 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://codafacil.dev/2026/05/18/ia-pode-acelerar-desenvolvimento-software-sob-medida/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/ia-pode-acelerar-desenvolvimento-software-sob-medida.jpg" alt="Como a IA pode acelerar o desenvolvimento de software sob medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://codafacil.dev/2026/05/09/ia-pode-melhorar-qualidade-codigo-php/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/ia-pode-melhorar-qualidade-codigo-php.jpg" alt="Como a IA pode melhorar a qualidade do código em PHP" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/05/18/ia-pode-acelerar-desenvolvimento-software-sob-medida/" rel="noopener" target="_blank" class="hover:underline">Como a IA pode acelerar o desenvolvimento de software sob medida</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como ferramentas de IA estão transformando o ciclo de desenvolvimento de software, garantindo qualidade e agilidade.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/05/09/ia-pode-melhorar-qualidade-codigo-php/" rel="noopener" target="_blank" class="hover:underline">Como a IA pode melhorar a qualidade do código em PHP</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como ferramentas de IA podem acelerar o desenvolvimento de software sob medida sem comprometer a qualidade.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">

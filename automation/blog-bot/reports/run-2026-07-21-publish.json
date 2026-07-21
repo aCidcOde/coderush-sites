@@ -1,0 +1,229 @@
+{
+  "mode": "publish",
+  "date": "2026-07-21",
+  "timezone": "America/Sao_Paulo",
+  "focus": "ia",
+  "startedAt": "2026-07-21T11:43:19.214Z",
+  "aiProvider": "openrouter",
+  "sites": [
+    {
+      "siteId": "coderush",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "arquitetura",
+      "theme": "escolha de stack para iniciativa critica",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/coderush/2026-07-21/escolher-arquitetura-software-iniciativas-criticas.json",
+      "markdownPath": "automation/blog-bot/out/coderush/2026-07-21/escolher-arquitetura-software-iniciativas-criticas.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "2026/07/21/escolher-arquitetura-software-iniciativas-criticas/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Blocos modulares interconectados por linhas de luz em um fundo azul-marinho, com névoa sutil e iluminação suave",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": false,
+          "alphanumericCount": 4,
+          "sample": "wes"
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "index.php",
+          "blog/index.php",
+          "2026/07/21/escolher-arquitetura-software-iniciativas-criticas/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "codafacil",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "tooling de IA para devs",
+      "theme": "software sob medida com IA aplicada",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": [
+          {
+            "url": "https://www.codeium.com/blog/rss.xml",
+            "error": "HTTP 404"
+          }
+        ]
+      },
+      "outputPath": "automation/blog-bot/out/codafacil/2026-07-21/ia-pode-acelerar-desenvolvimento-software-sob-medida.json",
+      "markdownPath": "automation/blog-bot/out/codafacil/2026-07-21/ia-pode-acelerar-desenvolvimento-software-sob-medida.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "codafacil/2026/07/21/ia-pode-acelerar-desenvolvimento-software-sob-medida/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "existing",
+        "coverAlt": "",
+        "coverLeakage": null
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "codafacil/index.php",
+          "codafacil/blog/index.php",
+          "codafacil/2026/07/21/ia-pode-acelerar-desenvolvimento-software-sob-medida/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "fluxointeligenteia",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Possível texto vazado na capa (sample: \"ait “tae sit toon eee\")",
+      "angle": "auditoria",
+      "theme": "evolucao continua de agentes corporativos",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/fluxointeligenteia/2026-07-21/realizar-auditoria-agentes-corporativos-ia.json",
+      "markdownPath": "automation/blog-bot/out/fluxointeligenteia/2026-07-21/realizar-auditoria-agentes-corporativos-ia.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "fluxointeligenteia/2026/07/21/realizar-auditoria-agentes-corporativos-ia/index.html",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "google/gemini-3-pro-image-preview",
+        "coverAlt": "Agentes corporativos em fluxo conectados por linhas de luz, com partículas de dados em movimento em um fundo escuro esmeralda",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": true,
+          "alphanumericCount": 69,
+          "sample": "ait “tae sit toon eee"
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    },
+    {
+      "siteId": "sistemavendadireta",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "comissionamento",
+      "theme": "gestao de inadimplencia em venda direta",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/sistemavendadireta/2026-07-21/gestao-comissionamento-impacta-inadimplencia-mmn.json",
+      "markdownPath": "automation/blog-bot/out/sistemavendadireta/2026-07-21/gestao-comissionamento-impacta-inadimplencia-mmn.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "sistemavendadireta/2026/07/21/gestao-comissionamento-impacta-inadimplencia-mmn/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "google/gemini-3-pro-image-preview",
+        "coverAlt": "Abstrações geométricas em camadas formando uma rede comercial em tons de azul profundo e corporativo, simbolizando estrutura e fluidez",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": false,
+          "alphanumericCount": 7,
+          "sample": ""
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "sistemavendadireta/index.php",
+          "sistemavendadireta/blog/index.php",
+          "sistemavendadireta/2026/07/21/gestao-comissionamento-impacta-inadimplencia-mmn/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "emergency",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Possivel texto vazado na capa (sample: \"Due Dilligence Societaria: Regulariizagdo Documental\")",
+      "angle": "due diligence societaria",
+      "theme": "regularizacao documental antes de transacao patrimonial",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": [
+          {
+            "url": "https://www.jota.info/feed",
+            "error": "This operation was aborted"
+          },
+          {
+            "url": "https://capitalaberto.com.br/feed/",
+            "error": "HTTP 404"
+          }
+        ]
+      },
+      "outputPath": "automation/blog-bot/out/emergency/2026-07-21/due-diligence-societaria-regularizacao-documental-eficaz.json",
+      "markdownPath": "automation/blog-bot/out/emergency/2026-07-21/due-diligence-societaria-regularizacao-documental-eficaz.md",
+      "publishResult": {
+        "target": "api",
+        "apiStatus": 201,
+        "apiUrl": "https://emergency.com.br/blog/due-diligence-societaria-regularizacao-documental-eficaz",
+        "apiId": 35,
+        "apiPublishedAt": "2026-07-21T08:46:33-03:00",
+        "coverPath": "automation/blog-bot/out/emergency/covers/due-diligence-societaria-regularizacao-documental-eficaz.jpg",
+        "coverSize": 206545,
+        "coverSource": "google/gemini-2.5-flash-image",
+        "coverAlt": "Um dossiê aberto com documentos organizados e uma caneta elegante, em fundo azul profundo com toques dourados brilhantes",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": true,
+          "alphanumericCount": 135,
+          "sample": "Due Dilligence Societaria: Regulariizagdo Documental"
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    }
+  ],
+  "duplications": [],
+  "relatedRefresh": {
+    "touched": 33,
+    "unchanged": 78,
+    "errors": [],
+    "totalCards": 102,
+    "totalFiles": 111
+  },
+  "fallbackCount": 0,
+  "allFallback": false,
+  "finishedAt": "2026-07-21T11:47:09.878Z",
+  "ok": true
+}

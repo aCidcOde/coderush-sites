@@ -753,6 +753,15 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-HOME-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/07/21/gestao-comissionamento-impacta-inadimplencia-mmn/" data-blog-image="imagens/posts/gestao-comissionamento-impacta-inadimplencia-mmn.jpg" data-blog-slug="gestao-comissionamento-impacta-inadimplencia-mmn" data-blog-date="2026-07-21">
+  <a href="2026/07/21/gestao-comissionamento-impacta-inadimplencia-mmn/">
+    <img src="imagens/posts/gestao-comissionamento-impacta-inadimplencia-mmn.jpg" alt="Como a gestão de comissionamento impacta a inadimplência no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="2026/07/21/gestao-comissionamento-impacta-inadimplencia-mmn/" class="hover:underline">Como a gestão de comissionamento impacta a inadimplência no MMN</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda a relação entre comissionamento e inadimplência em vendas diretas.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/07/18/ia-pode-otimizar-suporte-distribuidor-mmn/" data-blog-image="imagens/posts/ia-pode-otimizar-suporte-distribuidor-mmn.jpg" data-blog-slug="ia-pode-otimizar-suporte-distribuidor-mmn" data-blog-date="2026-07-18">
   <a href="2026/07/18/ia-pode-otimizar-suporte-distribuidor-mmn/">
     <img src="imagens/posts/ia-pode-otimizar-suporte-distribuidor-mmn.jpg" alt="Como a IA pode otimizar o suporte ao distribuidor no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
@@ -769,15 +778,6 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="2026/07/15/crm-pode-potencializar-plano-carreira-mmn/" class="hover:underline">Como um CRM pode potencializar seu plano de carreira em MMN</a></h2>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como um CRM eficaz pode impulsionar seu desenvolvimento e resultados no marketing multinível.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/07/12/estrategias-expansao-internacional-marketing-multinivel/" data-blog-image="imagens/posts/estrategias-expansao-internacional-marketing-multinivel.jpg" data-blog-slug="estrategias-expansao-internacional-marketing-multinivel" data-blog-date="2026-07-12">
-  <a href="2026/07/12/estrategias-expansao-internacional-marketing-multinivel/">
-    <img src="imagens/posts/estrategias-expansao-internacional-marketing-multinivel.jpg" alt="Estratégias para expansão internacional no marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-  </a>
-  <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="2026/07/12/estrategias-expansao-internacional-marketing-multinivel/" class="hover:underline">Estratégias para expansão internacional no marketing multinível</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como otimizar processos de vendas diretas internacionalmente.</p>
   </div>
 </article>
 <!-- BLOG-HOME-CARDS:END -->

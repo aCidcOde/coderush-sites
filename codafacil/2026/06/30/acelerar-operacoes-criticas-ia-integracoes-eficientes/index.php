@@ -213,17 +213,17 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/05/18/ia-pode-acelerar-desenvolvimento-software-sob-medida/"><img src="../../../../imagens/posts/ia-pode-acelerar-desenvolvimento-software-sob-medida.jpg" alt="Como a IA pode acelerar o desenvolvimento de software sob medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/18/ia-pode-acelerar-desenvolvimento-software-sob-medida/" class="hover:underline">Como a IA pode acelerar o desenvolvimento de software sob medida</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como ferramentas de IA estão transformando o ciclo de desenvolvimento de software, garantindo qualidade e agilidade.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="../../../../2026/04/30/integracoes-automacao-operacoes-criticas-ia/"><img src="../../../../imagens/posts/integracoes-automacao-operacoes-criticas-ia.jpg" alt="Integrações e automação para operações críticas com IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/04/30/integracoes-automacao-operacoes-criticas-ia/" class="hover:underline">Integrações e automação para operações críticas com IA</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Como acelerar o desenvolvimento de software sob medida sem perder qualidade.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/07/03/ia-pode-otimizar-ciclo-desenvolvimento-software/"><img src="../../../../imagens/posts/ia-pode-otimizar-ciclo-desenvolvimento-software.jpg" alt="Como a IA pode otimizar o ciclo de desenvolvimento de software" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/07/03/ia-pode-otimizar-ciclo-desenvolvimento-software/" class="hover:underline">Como a IA pode otimizar o ciclo de desenvolvimento de software</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como utilizar ferramentas de IA para acelerar a entrega de software sob medida sem comprometer a qualidade.</p>
   </div>
 </article>
   </div>

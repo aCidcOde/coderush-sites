@@ -219,10 +219,10 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/06/21/priorizar-iniciativas-tecnologia-medir-roi/"><img src="../../../../imagens/posts/priorizar-iniciativas-tecnologia-medir-roi.jpg" alt="Como priorizar iniciativas de tecnologia e medir ROI" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/07/21/escolher-arquitetura-software-iniciativas-criticas/"><img src="../../../../imagens/posts/escolher-arquitetura-software-iniciativas-criticas.jpg" alt="Como escolher a arquitetura de software para iniciativas críticas" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/21/priorizar-iniciativas-tecnologia-medir-roi/" class="hover:underline">Como priorizar iniciativas de tecnologia e medir ROI</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Dicas práticas sobre como decidir iniciativas tecnológicas com foco em ROI e eficiência.</p>
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/07/21/escolher-arquitetura-software-iniciativas-criticas/" class="hover:underline">Como escolher a arquitetura de software para iniciativas críticas</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como selecionar a stack ideal para projetos de tecnologia sem improviso.</p>
   </div>
 </article>
   </div>

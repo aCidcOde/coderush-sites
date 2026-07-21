@@ -238,6 +238,14 @@
   <p class="mt-2 text-sm text-white/70">Conteúdo recente dos outros sites do ecossistema.</p>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="https://codafacil.dev/2026/07/21/ia-pode-acelerar-desenvolvimento-software-sob-medida/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/ia-pode-acelerar-desenvolvimento-software-sob-medida.jpg" alt="Como a IA pode acelerar o desenvolvimento de software sob medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/07/21/ia-pode-acelerar-desenvolvimento-software-sob-medida/" rel="noopener" target="_blank" class="hover:underline">Como a IA pode acelerar o desenvolvimento de software sob medida</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a inteligência artificial pode otimizar o processo de desenvolvimento de software sob medida.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="https://coderush.com.br/2026/07/12/governanca-tecnologia-impulsiona-empresas-medias/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/governanca-tecnologia-impulsiona-empresas-medias.jpg" alt="Como a governança de tecnologia impulsiona empresas médias" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">CodeRush</p>
@@ -246,19 +254,11 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://codafacil.dev/2026/07/18/garantir-qualidade-desenvolvimento-software-sob-medida/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/garantir-qualidade-desenvolvimento-software-sob-medida.jpg" alt="Como garantir qualidade no desenvolvimento de software sob medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/07/18/garantir-qualidade-desenvolvimento-software-sob-medida/" rel="noopener" target="_blank" class="hover:underline">Como garantir qualidade no desenvolvimento de software sob medida</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a governança técnica pode acelerar entregas mantendo a qualidade do código.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://fluxointeligenteia.com.br/2026/07/18/usar-base-conhecimento-agentes-corporativos-ia/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/usar-base-conhecimento-agentes-corporativos-ia.jpg" alt="Como usar base de conhecimento para agentes corporativos de IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://fluxointeligenteia.com.br/2026/07/21/realizar-auditoria-agentes-corporativos-ia/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/realizar-auditoria-agentes-corporativos-ia.jpg" alt="Como realizar auditoria em agentes corporativos de IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">FluxoInteligente IA</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/07/18/usar-base-conhecimento-agentes-corporativos-ia/" rel="noopener" target="_blank" class="hover:underline">Como usar base de conhecimento para agentes corporativos de IA</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Saiba como implementar uma base de conhecimento eficiente para agentes corporativos com governança e segurança.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/07/21/realizar-auditoria-agentes-corporativos-ia/" rel="noopener" target="_blank" class="hover:underline">Como realizar auditoria em agentes corporativos de IA</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como garantir uma auditoria eficaz em agentes corporativos de IA com governança e segurança.</p>
   </div>
 </article>
   </div>
