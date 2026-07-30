@@ -89,6 +89,15 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-INDEX-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/07/30/integracoes-pagamento-logistica-marketing-multinivel/" data-blog-image="imagens/posts/integracoes-pagamento-logistica-marketing-multinivel.jpg" data-blog-slug="integracoes-pagamento-logistica-marketing-multinivel" data-blog-date="2026-07-30">
+  <a href="../2026/07/30/integracoes-pagamento-logistica-marketing-multinivel/">
+    <img src="../imagens/posts/integracoes-pagamento-logistica-marketing-multinivel.jpg" alt="Integrações de pagamento e logística no marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="../2026/07/30/integracoes-pagamento-logistica-marketing-multinivel/" class="hover:underline">Integrações de pagamento e logística no marketing multinível</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como integrar pagamentos e logística para otimizar seu CRM no MMN.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/07/21/gestao-comissionamento-impacta-inadimplencia-mmn/" data-blog-image="imagens/posts/gestao-comissionamento-impacta-inadimplencia-mmn.jpg" data-blog-slug="gestao-comissionamento-impacta-inadimplencia-mmn" data-blog-date="2026-07-21">
   <a href="../2026/07/21/gestao-comissionamento-impacta-inadimplencia-mmn/">
     <img src="../imagens/posts/gestao-comissionamento-impacta-inadimplencia-mmn.jpg" alt="Como a gestão de comissionamento impacta a inadimplência no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
@@ -294,15 +303,6 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="../2026/05/12/governanca-comercial-dados-ia-podem-melhorar-resultados/" class="hover:underline">Governança Comercial: Como Dados e IA Podem Melhorar Resultados</a></h2>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a governança comercial, aliada à IA, pode otimizar processos e resultados em vendas diretas.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/09/integracoes-pagamento-logistica-marketing-multinivel/" data-blog-image="imagens/posts/integracoes-pagamento-logistica-marketing-multinivel.jpg" data-blog-slug="integracoes-pagamento-logistica-marketing-multinivel" data-blog-date="2026-05-09">
-  <a href="../2026/05/09/integracoes-pagamento-logistica-marketing-multinivel/">
-    <img src="../imagens/posts/integracoes-pagamento-logistica-marketing-multinivel.jpg" alt="Integrações de pagamento e logística para marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-  </a>
-  <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="../2026/05/09/integracoes-pagamento-logistica-marketing-multinivel/" class="hover:underline">Integrações de pagamento e logística para marketing multinível</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como integrar pagamentos e logística em operações de marketing multinível para maximizar resultados.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/06/integracoes-pagamento-logistica-mmn/" data-blog-image="imagens/posts/integracoes-pagamento-logistica-mmn.jpg" data-blog-slug="integracoes-pagamento-logistica-mmn" data-blog-date="2026-05-06">

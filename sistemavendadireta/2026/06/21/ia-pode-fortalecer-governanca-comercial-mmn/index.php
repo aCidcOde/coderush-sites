@@ -254,11 +254,11 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://fluxointeligenteia.com.br/2026/07/21/realizar-auditoria-agentes-corporativos-ia/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/realizar-auditoria-agentes-corporativos-ia.jpg" alt="Como realizar auditoria em agentes corporativos de IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://fluxointeligenteia.com.br/2026/07/30/observabilidade-logs-agentes-corporativos-ia/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/observabilidade-logs-agentes-corporativos-ia.jpg" alt="Observabilidade e Logs em Agentes Corporativos de IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">FluxoInteligente IA</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/07/21/realizar-auditoria-agentes-corporativos-ia/" rel="noopener" target="_blank" class="hover:underline">Como realizar auditoria em agentes corporativos de IA</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como garantir uma auditoria eficaz em agentes corporativos de IA com governança e segurança.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/07/30/observabilidade-logs-agentes-corporativos-ia/" rel="noopener" target="_blank" class="hover:underline">Observabilidade e Logs em Agentes Corporativos de IA</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como garantir a observabilidade e os logs de agentes de IA em produção com segurança e governança.</p>
   </div>
 </article>
   </div>

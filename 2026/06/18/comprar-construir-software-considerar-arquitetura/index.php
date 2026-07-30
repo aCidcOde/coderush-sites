@@ -205,13 +205,6 @@
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/05/27/arquitetura-software-operacoes-criticas-empresas-medias/"><img src="../../../../imagens/posts/arquitetura-software-operacoes-criticas-empresas-medias.jpg" alt="Arquitetura de software para operações críticas em empresas médias" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/27/arquitetura-software-operacoes-criticas-empresas-medias/" class="hover:underline">Arquitetura de software para operações críticas em empresas médias</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como implementar uma arquitetura de software sólida para operações críticas, focando na integração com sistemas legados.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="../../../../2026/04/30/comprar-construir-software-escolher/"><img src="../../../../imagens/posts/comprar-construir-software-escolher.jpg" alt="Comprar ou construir software: o que escolher?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/04/30/comprar-construir-software-escolher/" class="hover:underline">Comprar ou construir software: o que escolher?</a></h3>
@@ -223,6 +216,13 @@
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/07/18/comprar-construir-software-arquitetura-pede/" class="hover:underline">Comprar ou construir software: o que sua arquitetura pede?</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a arquitetura de software influencia a decisão entre comprar e construir soluções.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/05/21/construir-comprar-software-considerar/"><img src="../../../../imagens/posts/construir-comprar-software-considerar.jpg" alt="Construir ou comprar software: o que considerar?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/21/construir-comprar-software-considerar/" class="hover:underline">Construir ou comprar software: o que considerar?</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como escolher entre desenvolver ou adquirir software sob medida.</p>
   </div>
 </article>
   </div>
@@ -253,11 +253,11 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://sistemavendadireta.com.br/2026/07/21/gestao-comissionamento-impacta-inadimplencia-mmn/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/gestao-comissionamento-impacta-inadimplencia-mmn.jpg" alt="Como a gestão de comissionamento impacta a inadimplência no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://sistemavendadireta.com.br/2026/07/30/integracoes-pagamento-logistica-marketing-multinivel/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/integracoes-pagamento-logistica-marketing-multinivel.jpg" alt="Integrações de pagamento e logística no marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Sistema Venda Direta</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/07/21/gestao-comissionamento-impacta-inadimplencia-mmn/" rel="noopener" target="_blank" class="hover:underline">Como a gestão de comissionamento impacta a inadimplência no MMN</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda a relação entre comissionamento e inadimplência em vendas diretas.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/07/30/integracoes-pagamento-logistica-marketing-multinivel/" rel="noopener" target="_blank" class="hover:underline">Integrações de pagamento e logística no marketing multinível</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como integrar pagamentos e logística para otimizar seu CRM no MMN.</p>
   </div>
 </article>
   </div>

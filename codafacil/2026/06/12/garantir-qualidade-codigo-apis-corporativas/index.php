@@ -213,17 +213,17 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/07/30/integrar-testes-automatizados-desenvolvimento-software-sob-medida/"><img src="../../../../imagens/posts/integrar-testes-automatizados-desenvolvimento-software-sob-medida.jpg" alt="Como integrar testes automatizados no desenvolvimento de software sob medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/07/30/integrar-testes-automatizados-desenvolvimento-software-sob-medida/" class="hover:underline">Como integrar testes automatizados no desenvolvimento de software sob medida</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda a importância dos testes automatizados na entrega de software com qualidade e agilidade.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="../../../../2026/07/18/garantir-qualidade-desenvolvimento-software-sob-medida/"><img src="../../../../imagens/posts/garantir-qualidade-desenvolvimento-software-sob-medida.jpg" alt="Como garantir qualidade no desenvolvimento de software sob medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/07/18/garantir-qualidade-desenvolvimento-software-sob-medida/" class="hover:underline">Como garantir qualidade no desenvolvimento de software sob medida</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a governança técnica pode acelerar entregas mantendo a qualidade do código.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/05/09/ia-pode-melhorar-qualidade-codigo-php/"><img src="../../../../imagens/posts/ia-pode-melhorar-qualidade-codigo-php.jpg" alt="Como a IA pode melhorar a qualidade do código em PHP" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/09/ia-pode-melhorar-qualidade-codigo-php/" class="hover:underline">Como a IA pode melhorar a qualidade do código em PHP</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como ferramentas de IA podem acelerar o desenvolvimento de software sob medida sem comprometer a qualidade.</p>
   </div>
 </article>
   </div>
@@ -254,11 +254,11 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://sistemavendadireta.com.br/2026/07/15/crm-pode-potencializar-plano-carreira-mmn/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/crm-pode-potencializar-plano-carreira-mmn.jpg" alt="Como um CRM pode potencializar seu plano de carreira em MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://sistemavendadireta.com.br/2026/07/30/integracoes-pagamento-logistica-marketing-multinivel/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/integracoes-pagamento-logistica-marketing-multinivel.jpg" alt="Integrações de pagamento e logística no marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Sistema Venda Direta</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/07/15/crm-pode-potencializar-plano-carreira-mmn/" rel="noopener" target="_blank" class="hover:underline">Como um CRM pode potencializar seu plano de carreira em MMN</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como um CRM eficaz pode impulsionar seu desenvolvimento e resultados no marketing multinível.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/07/30/integracoes-pagamento-logistica-marketing-multinivel/" rel="noopener" target="_blank" class="hover:underline">Integrações de pagamento e logística no marketing multinível</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como integrar pagamentos e logística para otimizar seu CRM no MMN.</p>
   </div>
 </article>
   </div>

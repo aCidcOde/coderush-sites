@@ -238,19 +238,19 @@
   <p class="mt-2 text-sm text-white/70">Conteúdo recente dos outros sites do ecossistema.</p>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="https://coderush.com.br/2026/07/30/arquitetura-software-operacoes-criticas-empresas-medias/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/arquitetura-software-operacoes-criticas-empresas-medias.jpg" alt="Arquitetura de software para operações críticas em empresas médias" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">CodeRush</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/07/30/arquitetura-software-operacoes-criticas-empresas-medias/" rel="noopener" target="_blank" class="hover:underline">Arquitetura de software para operações críticas em empresas médias</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como implementar uma arquitetura de software eficiente para operações críticas.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="https://codafacil.dev/2026/04/30/integracoes-automacao-operacoes-criticas-ia/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/integracoes-automacao-operacoes-criticas-ia.jpg" alt="Integrações e automação para operações críticas com IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
     <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/04/30/integracoes-automacao-operacoes-criticas-ia/" rel="noopener" target="_blank" class="hover:underline">Integrações e automação para operações críticas com IA</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Como acelerar o desenvolvimento de software sob medida sem perder qualidade.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://coderush.com.br/2026/07/21/escolher-arquitetura-software-iniciativas-criticas/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/escolher-arquitetura-software-iniciativas-criticas.jpg" alt="Como escolher a arquitetura de software para iniciativas críticas" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">CodeRush</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/07/21/escolher-arquitetura-software-iniciativas-criticas/" rel="noopener" target="_blank" class="hover:underline">Como escolher a arquitetura de software para iniciativas críticas</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como selecionar a stack ideal para projetos de tecnologia sem improviso.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">

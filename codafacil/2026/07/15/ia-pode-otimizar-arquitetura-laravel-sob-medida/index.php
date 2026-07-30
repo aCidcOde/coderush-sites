@@ -220,10 +220,10 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/06/18/ia-pode-otimizar-desenvolvimento-software-sob-medida/"><img src="../../../../imagens/posts/ia-pode-otimizar-desenvolvimento-software-sob-medida.jpg" alt="Como a IA pode otimizar o desenvolvimento de software sob medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/07/30/integrar-testes-automatizados-desenvolvimento-software-sob-medida/"><img src="../../../../imagens/posts/integrar-testes-automatizados-desenvolvimento-software-sob-medida.jpg" alt="Como integrar testes automatizados no desenvolvimento de software sob medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/18/ia-pode-otimizar-desenvolvimento-software-sob-medida/" class="hover:underline">Como a IA pode otimizar o desenvolvimento de software sob medida</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Explore como aplicar IA para acelerar a entrega de software, mantendo a qualidade e eficiência.</p>
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/07/30/integrar-testes-automatizados-desenvolvimento-software-sob-medida/" class="hover:underline">Como integrar testes automatizados no desenvolvimento de software sob medida</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda a importância dos testes automatizados na entrega de software com qualidade e agilidade.</p>
   </div>
 </article>
   </div>

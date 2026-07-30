@@ -246,11 +246,11 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://codafacil.dev/2026/07/12/design-api-integracoes-corporativas-considerar/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/design-api-integracoes-corporativas-considerar.jpg" alt="Design de API para Integrações Corporativas: O Que Considerar" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://codafacil.dev/2026/07/30/integrar-testes-automatizados-desenvolvimento-software-sob-medida/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/integrar-testes-automatizados-desenvolvimento-software-sob-medida.jpg" alt="Como integrar testes automatizados no desenvolvimento de software sob medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/07/12/design-api-integracoes-corporativas-considerar/" rel="noopener" target="_blank" class="hover:underline">Design de API para Integrações Corporativas: O Que Considerar</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como projetar APIs eficientes para integrações corporativas com foco em qualidade e agilidade.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/07/30/integrar-testes-automatizados-desenvolvimento-software-sob-medida/" rel="noopener" target="_blank" class="hover:underline">Como integrar testes automatizados no desenvolvimento de software sob medida</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda a importância dos testes automatizados na entrega de software com qualidade e agilidade.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">

@@ -1,0 +1,88 @@
+{
+  "date": "2026-07-30",
+  "siteId": "emergency",
+  "postType": "due-diligence-certidoes",
+  "focus": "ia",
+  "theme": "habilitacao e onboarding de fornecedor com certidoes",
+  "angle": "investigacao patrimonial",
+  "slug": "habilitacao-fornecedores-papel-certidoes-online",
+  "title": "Emergency Documentação: IA aplicado a investigacao patrimonial",
+  "description": "Atualização semanal de ia para Emergency Documentação, com foco em habilitacao e onboarding de fornecedor com certidoes.",
+  "sources": [
+    "https://www.cadenio.com/pt-br/blog/onboarding-fornecedor-qualificacao-due-diligence-auditavel",
+    "https://emergency.com.br/blog/habilitacao-onboarding-fornecedores-ma",
+    "https://emergency.com.br/blog/habilitacao-fornecedores-due-diligence-necessaria",
+    "https://www.kronoos.com/blog/homologação-e-monitoramento-de-fornecedores-em-um-só-lugar-do-onboarding-ao-alerta-de-risco",
+    "https://www.revoluti.com.br/"
+  ],
+  "status": "draft",
+  "generatedAt": "2026-07-30T08:50:04-03:00",
+  "content": {
+    "eyebrow": "Orientação prática",
+    "headline": "Habilitação de fornecedores: O papel das certidões online",
+    "summary": "Entenda como certidões online são essenciais para o onboarding de fornecedores.",
+    "answerBox": {
+      "question": "Como as certidões online ajudam na habilitação de fornecedores?",
+      "answer": "As certidões online otimizam a habilitação de fornecedores ao fornecer informações rápidas e precisas sobre a situação legal e financeira das empresas, reduzindo riscos e aumentando a eficiência nas diligências documentais."
+    },
+    "tldr": [
+      "Certidões online agilizam a habilitação de fornecedores.",
+      "Redução de riscos é fundamental no onboarding.",
+      "Apoio humano é essencial para casos complexos."
+    ],
+    "sections": [
+      {
+        "type": "prose",
+        "title": "Importância da habilitação de fornecedores",
+        "body": "A habilitação de fornecedores é um passo crítico para garantir que as empresas estejam alinhadas com as normas de compliance e com os requisitos legais. Em um cenário onde a transparência é essencial, o uso de certidões online pode facilitar a verificação da idoneidade e da regularidade fiscal dos fornecedores, o que é vital para evitar riscos em futuras transações."
+      },
+      {
+        "type": "list",
+        "title": "Principais certidões para habilitação de fornecedores",
+        "items": [
+          "Certidão de regularidade fiscal",
+          "Certidão de antecedentes criminais",
+          "Certidão de protestos",
+          "Certidão de falências",
+          "Certidão negativa de débitos"
+        ]
+      },
+      {
+        "type": "callout",
+        "body": "Já estruturamos isso em diversos clientes. Vale a pena uma conversa para entender como podemos ajudar no seu cenário específico.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Como funciona a emissão de certidões online?",
+        "body": "A emissão de certidões online é um processo que permite acessar informações de várias cartorárias e forenses em tempo real. Com um painel de acompanhamento, o solicitante pode monitorar o status de suas solicitações, garantindo agilidade e precisão. Isso é especialmente valioso em processos de due diligence, onde o tempo é um fator crítico. A Emergency Documentação oferece esse suporte com um toque humano, essencial para pedidos mais complexos."
+      },
+      {
+        "type": "cta-inline",
+        "body": "Descubra como podemos facilitar sua diligência documental.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Riscos a evitar na habilitação de fornecedores",
+        "body": "Um dos principais erros na habilitação de fornecedores é não realizar uma análise aprofundada das certidões. Confiar apenas em informações superficiais pode levar a contratações problemáticas e, consequentemente, a riscos financeiros e legais. Além disso, é importante não ignorar a necessidade de suporte humano em casos que envolvem situações complexas, onde as certidões podem não contar toda a história."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Quais certidões são obrigatórias para a habilitação de fornecedores?",
+        "a": "As certidões obrigatórias incluem regularidade fiscal, antecedentes criminais e certidão negativa de débitos."
+      },
+      {
+        "q": "Como as certidões online garantem a agilidade na due diligence?",
+        "a": "As certidões online permitem acesso rápido a informações atualizadas, reduzindo o tempo de verificação e aumentando a eficiência do processo."
+      },
+      {
+        "q": "Qual a importância do suporte humano na emissão de certidões?",
+        "a": "O suporte humano é crucial para lidar com situações complexas, garantindo que todos os aspectos da due diligence sejam devidamente considerados."
+      }
+    ]
+  }
+}

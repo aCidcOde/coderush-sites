@@ -212,17 +212,17 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/05/27/arquitetura-software-operacoes-criticas-empresas-medias/"><img src="../../../../imagens/posts/arquitetura-software-operacoes-criticas-empresas-medias.jpg" alt="Arquitetura de software para operações críticas em empresas médias" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/27/arquitetura-software-operacoes-criticas-empresas-medias/" class="hover:underline">Arquitetura de software para operações críticas em empresas médias</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como implementar uma arquitetura de software sólida para operações críticas, focando na integração com sistemas legados.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="../../../../2026/06/06/aplicar-governanca-ia-processos-retaguarda/"><img src="../../../../imagens/posts/aplicar-governanca-ia-processos-retaguarda.jpg" alt="Como aplicar governança em IA nos processos de retaguarda" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/06/aplicar-governanca-ia-processos-retaguarda/" class="hover:underline">Como aplicar governança em IA nos processos de retaguarda</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como integrar IA em processos de retaguarda com governança eficaz.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/07/30/arquitetura-software-operacoes-criticas-empresas-medias/"><img src="../../../../imagens/posts/arquitetura-software-operacoes-criticas-empresas-medias.jpg" alt="Arquitetura de software para operações críticas em empresas médias" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/07/30/arquitetura-software-operacoes-criticas-empresas-medias/" class="hover:underline">Arquitetura de software para operações críticas em empresas médias</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como implementar uma arquitetura de software eficiente para operações críticas.</p>
   </div>
 </article>
   </div>
@@ -253,11 +253,11 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://sistemavendadireta.com.br/2026/07/12/estrategias-expansao-internacional-marketing-multinivel/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/estrategias-expansao-internacional-marketing-multinivel.jpg" alt="Estratégias para expansão internacional no marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://sistemavendadireta.com.br/2026/07/30/integracoes-pagamento-logistica-marketing-multinivel/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/integracoes-pagamento-logistica-marketing-multinivel.jpg" alt="Integrações de pagamento e logística no marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Sistema Venda Direta</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/07/12/estrategias-expansao-internacional-marketing-multinivel/" rel="noopener" target="_blank" class="hover:underline">Estratégias para expansão internacional no marketing multinível</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como otimizar processos de vendas diretas internacionalmente.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/07/30/integracoes-pagamento-logistica-marketing-multinivel/" rel="noopener" target="_blank" class="hover:underline">Integrações de pagamento e logística no marketing multinível</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como integrar pagamentos e logística para otimizar seu CRM no MMN.</p>
   </div>
 </article>
   </div>

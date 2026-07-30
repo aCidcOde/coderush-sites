@@ -219,10 +219,10 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/07/03/integrar-ia-processos-retaguarda-arquitetura-software/"><img src="../../../../imagens/posts/integrar-ia-processos-retaguarda-arquitetura-software.jpg" alt="Como integrar IA em processos de retaguarda com arquitetura de software" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/07/30/arquitetura-software-operacoes-criticas-empresas-medias/"><img src="../../../../imagens/posts/arquitetura-software-operacoes-criticas-empresas-medias.jpg" alt="Arquitetura de software para operações críticas em empresas médias" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/07/03/integrar-ia-processos-retaguarda-arquitetura-software/" class="hover:underline">Como integrar IA em processos de retaguarda com arquitetura de software</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como a arquitetura de software pode facilitar a integração de IA em processos de retaguarda.</p>
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/07/30/arquitetura-software-operacoes-criticas-empresas-medias/" class="hover:underline">Arquitetura de software para operações críticas em empresas médias</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como implementar uma arquitetura de software eficiente para operações críticas.</p>
   </div>
 </article>
   </div>

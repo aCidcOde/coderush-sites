@@ -206,6 +206,13 @@
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/07/30/integrar-testes-automatizados-desenvolvimento-software-sob-medida/"><img src="../../../../imagens/posts/integrar-testes-automatizados-desenvolvimento-software-sob-medida.jpg" alt="Como integrar testes automatizados no desenvolvimento de software sob medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/07/30/integrar-testes-automatizados-desenvolvimento-software-sob-medida/" class="hover:underline">Como integrar testes automatizados no desenvolvimento de software sob medida</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda a importância dos testes automatizados na entrega de software com qualidade e agilidade.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="../../../../2026/06/12/garantir-qualidade-codigo-apis-corporativas/"><img src="../../../../imagens/posts/garantir-qualidade-codigo-apis-corporativas.jpg" alt="Como garantir a qualidade de código em APIs corporativas" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/12/garantir-qualidade-codigo-apis-corporativas/" class="hover:underline">Como garantir a qualidade de código em APIs corporativas</a></h3>
@@ -217,13 +224,6 @@
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/30/acelerar-operacoes-criticas-ia-integracoes-eficientes/" class="hover:underline">Como acelerar operações críticas com IA e integrações eficientes</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como integrar automação e IA nas operações críticas para acelerar o desenvolvimento sem perder qualidade.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/06/21/implementar-testes-automatizados-desenvolvimento-software-sob-medida/"><img src="../../../../imagens/posts/implementar-testes-automatizados-desenvolvimento-software-sob-medida.jpg" alt="Como implementar testes automatizados no desenvolvimento de software sob medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/21/implementar-testes-automatizados-desenvolvimento-software-sob-medida/" class="hover:underline">Como implementar testes automatizados no desenvolvimento de software sob medida</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como integrar testes automatizados no ciclo de entrega de software sob medida com IA.</p>
   </div>
 </article>
   </div>
@@ -238,19 +238,19 @@
   <p class="mt-2 text-sm text-white/70">Conteúdo recente dos outros sites do ecossistema.</p>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://fluxointeligenteia.com.br/2026/07/21/realizar-auditoria-agentes-corporativos-ia/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/realizar-auditoria-agentes-corporativos-ia.jpg" alt="Como realizar auditoria em agentes corporativos de IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://fluxointeligenteia.com.br/2026/07/30/observabilidade-logs-agentes-corporativos-ia/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/observabilidade-logs-agentes-corporativos-ia.jpg" alt="Observabilidade e Logs em Agentes Corporativos de IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">FluxoInteligente IA</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/07/21/realizar-auditoria-agentes-corporativos-ia/" rel="noopener" target="_blank" class="hover:underline">Como realizar auditoria em agentes corporativos de IA</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como garantir uma auditoria eficaz em agentes corporativos de IA com governança e segurança.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/07/30/observabilidade-logs-agentes-corporativos-ia/" rel="noopener" target="_blank" class="hover:underline">Observabilidade e Logs em Agentes Corporativos de IA</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como garantir a observabilidade e os logs de agentes de IA em produção com segurança e governança.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://sistemavendadireta.com.br/2026/07/15/crm-pode-potencializar-plano-carreira-mmn/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/crm-pode-potencializar-plano-carreira-mmn.jpg" alt="Como um CRM pode potencializar seu plano de carreira em MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://sistemavendadireta.com.br/2026/07/30/integracoes-pagamento-logistica-marketing-multinivel/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/integracoes-pagamento-logistica-marketing-multinivel.jpg" alt="Integrações de pagamento e logística no marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Sistema Venda Direta</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/07/15/crm-pode-potencializar-plano-carreira-mmn/" rel="noopener" target="_blank" class="hover:underline">Como um CRM pode potencializar seu plano de carreira em MMN</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como um CRM eficaz pode impulsionar seu desenvolvimento e resultados no marketing multinível.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/07/30/integracoes-pagamento-logistica-marketing-multinivel/" rel="noopener" target="_blank" class="hover:underline">Integrações de pagamento e logística no marketing multinível</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como integrar pagamentos e logística para otimizar seu CRM no MMN.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">

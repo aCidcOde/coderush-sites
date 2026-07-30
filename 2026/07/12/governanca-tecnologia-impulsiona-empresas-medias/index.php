@@ -208,17 +208,17 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/07/30/arquitetura-software-operacoes-criticas-empresas-medias/"><img src="../../../../imagens/posts/arquitetura-software-operacoes-criticas-empresas-medias.jpg" alt="Arquitetura de software para operações críticas em empresas médias" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/07/30/arquitetura-software-operacoes-criticas-empresas-medias/" class="hover:underline">Arquitetura de software para operações críticas em empresas médias</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como implementar uma arquitetura de software eficiente para operações críticas.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="../../../../2026/06/12/gerenciando-riscos-substituicao-sistemas-legados/"><img src="../../../../imagens/posts/gerenciando-riscos-substituicao-sistemas-legados.jpg" alt="Gerenciando riscos na substituição de sistemas legados" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/12/gerenciando-riscos-substituicao-sistemas-legados/" class="hover:underline">Gerenciando riscos na substituição de sistemas legados</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como gerenciar riscos ao substituir sistemas legados em empresas médias.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/05/30/governanca-tecnologia-caminho-crescimento/"><img src="../../../../imagens/posts/governanca-tecnologia-caminho-crescimento.jpg" alt="Governança de Tecnologia: O Caminho para o Crescimento" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/30/governanca-tecnologia-caminho-crescimento/" class="hover:underline">Governança de Tecnologia: O Caminho para o Crescimento</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a governança de tecnologia pode impulsionar o crescimento da sua empresa.</p>
   </div>
 </article>
   </div>
