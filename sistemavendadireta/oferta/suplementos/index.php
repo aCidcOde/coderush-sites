@@ -310,6 +310,32 @@ $seoDescription = 'Sistema para distribuidora de suplementos que vende por consu
     </section>
 
 
+
+    <section class="py-6">
+      <div class="grid gap-4 md:grid-cols-3">
+        <div class="rounded-2xl border border-amber-300/40 bg-white/[0.07] p-5">
+          <p class="font-[var(--font-heading)] text-lg font-bold text-amber-300">No ar em dias, não meses</p>
+          <p class="mt-2 text-sm leading-relaxed text-white/90">A última implantação internacional entrou em produção em 5 dias — loja, escritório e administrativo. O sistema já existe; o trabalho é parametrizar a sua regra.</p>
+        </div>
+        <div class="rounded-2xl border border-amber-300/40 bg-white/[0.07] p-5">
+          <p class="font-[var(--font-heading)] text-lg font-bold text-amber-300">Migração com valor fechado</p>
+          <p class="mt-2 text-sm leading-relaxed text-white/90">Vindo de outro sistema? Migramos seus dados com escopo e preço definidos antes do contrato — sem surpresa no meio do caminho.</p>
+        </div>
+        <div class="rounded-2xl border border-amber-300/40 bg-white/[0.07] p-5">
+          <p class="font-[var(--font-heading)] text-lg font-bold text-amber-300">Nota fiscal integrada</p>
+          <p class="mt-2 text-sm leading-relaxed text-white/90">Emissão de NF-e e DANFE dentro da própria plataforma — rodando há anos em operação real de venda direta, sem ferramenta externa.</p>
+        </div>
+      </div>
+
+      <figure class="mt-6 rounded-2xl border border-white/20 bg-white/5 p-5 sm:p-6">
+        <blockquote class="text-base leading-relaxed text-white/90">
+          "Há mais de 8 anos usamos o sistema venda direta, que nos ajuda a gerenciar nossa rede de distribuidores
+          e a aumentar nossas vendas com perfeição, eu recomendo!"
+        </blockquote>
+        <figcaption class="mt-3 text-sm font-semibold text-white/80">Leandro Sato — Ecotrend South America <span class="ml-2 text-amber-300">★★★★★</span></figcaption>
+      </figure>
+    </section>
+
     <section class="py-6">
       <div class="rounded-[30px] border border-white/30 bg-white/[0.08] p-6 sm:p-8">
         <div class="grid items-center gap-6 lg:grid-cols-[1fr_auto]">
