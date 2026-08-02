@@ -259,6 +259,97 @@ $seoDescription = 'Sistema para distribuidora de suplementos que vende por consu
       </p>
     </section>
 
+
+    <section id="simulador" class="scroll-mt-24 py-10">
+      <h2 class="font-[var(--font-heading)] text-2xl font-bold sm:text-[32px]">Simule os números da sua operação</h2>
+      <div class="mt-2 h-1 w-[72px] rounded-full bg-amber-300"></div>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-white/90">
+        Ajuste os três controles e veja o faturamento projetado, quanto o plano distribui em comissões
+        e quanto o sistema custa nessa faixa — sem cadastro, sem e-mail.
+      </p>
+
+      <div class="mt-6 grid gap-6 lg:grid-cols-[1.1fr_1fr]">
+        <div class="rounded-[24px] border border-white/20 bg-white/5 p-5 sm:p-6">
+          <div>
+            <div class="flex items-center justify-between gap-3">
+              <label for="sim-consultores" class="text-sm font-semibold text-white/90">Consultores ativos</label>
+              <span id="sim-consultores-out" class="rounded-full bg-white/10 px-3 py-1 text-sm font-bold text-amber-300">100</span>
+            </div>
+            <input id="sim-consultores" type="range" min="10" max="3000" step="10" value="100" class="mt-3 w-full" style="accent-color:#fcd34d" />
+          </div>
+
+          <div class="mt-6">
+            <div class="flex items-center justify-between gap-3">
+              <label for="sim-ticket" class="text-sm font-semibold text-white/90">Compra média mensal por consultor</label>
+              <span id="sim-ticket-out" class="rounded-full bg-white/10 px-3 py-1 text-sm font-bold text-amber-300">R$ 300</span>
+            </div>
+            <input id="sim-ticket" type="range" min="50" max="2000" step="50" value="300" class="mt-3 w-full" style="accent-color:#fcd34d" />
+          </div>
+
+          <div class="mt-6">
+            <div class="flex items-center justify-between gap-3">
+              <label for="sim-payout" class="text-sm font-semibold text-white/90">Payout do plano (comissões + bônus)</label>
+              <span id="sim-payout-out" class="rounded-full bg-white/10 px-3 py-1 text-sm font-bold text-amber-300">40%</span>
+            </div>
+            <input id="sim-payout" type="range" min="10" max="60" step="5" value="40" class="mt-3 w-full" style="accent-color:#fcd34d" />
+            <p class="mt-2 text-xs text-white/60">Payout é o total que o plano devolve pra rede. Acima de ~50% costuma comprometer a margem — parametrizamos isso com você na implantação.</p>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-3">
+          <div class="rounded-2xl border border-white/20 bg-white/5 px-5 py-4">
+            <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/60">Faturamento projetado / mês</p>
+            <p id="sim-faturamento" class="mt-1 font-[var(--font-heading)] text-3xl font-bold text-white">R$ 30.000</p>
+          </div>
+          <div class="rounded-2xl border border-white/20 bg-white/5 px-5 py-4">
+            <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/60">Comissões distribuídas pela rede</p>
+            <p id="sim-comissoes" class="mt-1 font-[var(--font-heading)] text-3xl font-bold text-white">R$ 12.000</p>
+            <p class="mt-1 text-xs text-white/60">calculadas e pagas automaticamente pelo sistema</p>
+          </div>
+          <div class="rounded-2xl border border-amber-300/40 bg-white/[0.07] px-5 py-4">
+            <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/60">Mensalidade do sistema nessa faixa</p>
+            <p id="sim-mensalidade" class="mt-1 font-[var(--font-heading)] text-3xl font-bold text-amber-300">R$ 500</p>
+            <p id="sim-percentual" class="mt-1 text-xs text-white/60">1,7% do faturamento projetado</p>
+          </div>
+          <a href="#garantir" class="inline-flex items-center justify-center rounded-full bg-amber-400 px-6 py-3.5 text-sm font-bold uppercase tracking-wide text-brand transition hover:-translate-y-0.5 hover:bg-amber-300">
+            Quero esse plano rodando
+          </a>
+        </div>
+      </div>
+      <p class="mt-3 text-xs text-white/55">Projeção ilustrativa a partir dos valores informados — não é promessa de resultado. A tabela oficial de mensalidades está acima; acima de R$ 1 milhão/mês, proposta sob avaliação de infraestrutura.</p>
+
+      <script>
+        (function () {
+          var tiers = [[50000,500],[100000,1000],[200000,1500],[350000,3000],[500000,4500],[750000,7000],[1000000,9000]];
+          var brl = new Intl.NumberFormat("pt-BR",{style:"currency",currency:"BRL",maximumFractionDigits:0});
+          var pct = new Intl.NumberFormat("pt-BR",{maximumFractionDigits:1});
+          var used = false;
+          function $(id){return document.getElementById(id);}
+          function calc(){
+            var c = +$("sim-consultores").value, t = +$("sim-ticket").value, p = +$("sim-payout").value;
+            $("sim-consultores-out").textContent = c.toLocaleString("pt-BR");
+            $("sim-ticket-out").textContent = brl.format(t);
+            $("sim-payout-out").textContent = p + "%";
+            var fat = c * t;
+            $("sim-faturamento").textContent = brl.format(fat);
+            $("sim-comissoes").textContent = brl.format(fat * p / 100);
+            var fee = null;
+            for (var i = 0; i < tiers.length; i++) { if (fat <= tiers[i][0]) { fee = tiers[i][1]; break; } }
+            if (fee === null) {
+              $("sim-mensalidade").textContent = "Sob proposta";
+              $("sim-percentual").textContent = "acima de R$ 1 milhão/mês — avaliação de infraestrutura";
+            } else {
+              $("sim-mensalidade").textContent = brl.format(fee);
+              $("sim-percentual").textContent = pct.format(fee / fat * 100) + "% do faturamento projetado";
+            }
+            if (!used) { used = true; if (typeof window.gtag === "function") { window.gtag("event", "simulator_use", { page: "lp-oferta-suplementos" }); } }
+          }
+          ["sim-consultores","sim-ticket","sim-payout"].forEach(function(id){ $(id).addEventListener("input", calc); });
+          calc(); used = false;
+        })();
+      </script>
+    </section>
+
     <section class="py-10">
       <h2 class="font-[var(--font-heading)] text-2xl font-bold sm:text-[32px]">Não é promessa — é operação rodando</h2>
       <div class="mt-2 h-1 w-[72px] rounded-full bg-amber-300"></div>
