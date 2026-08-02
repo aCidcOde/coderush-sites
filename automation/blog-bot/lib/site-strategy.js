@@ -354,7 +354,7 @@ const SITE_PROFILES = {
     voice: "executivo, focado em resultado comercial e previsibilidade",
     casualVoice: "diretor comercial que ja escalou MMN — fala em numero, em processo, sem promessa de ganho facil",
     bannedWords: mergeBanned(["esquema de piramide", "ganhe dinheiro facil", "renda passiva garantida"]),
-    angleBias: ["MMN", "vendas diretas", "campo", "comissionamento", "CRM"],
+    angleBias: ["MMN", "vendas diretas", "internacionalizacao", "comissionamento", "fiscal", "integracao ERP"],
     cta: { label: "Solicite um orcamento", path: "#contato" },
     keywords: {
       primary: [
@@ -377,15 +377,19 @@ const SITE_PROFILES = {
     },
     themes: [
       "tecnologia para vendas diretas em escala",
-      "crm e automacao para marketing multinivel",
       "integracoes de pagamento e logistica para MMN",
       "governanca comercial com dados e ia",
       "plano de carreira em marketing multinivel",
       "onboarding e ativacao de distribuidor",
-      "IA para suporte ao distribuidor em campo",
       "previsibilidade de receita em MMN",
-      "gestao de inadimplencia em venda direta",
-      "expansao internacional para empresas de MMN"
+      "internacionalizacao de operacao de venda direta (idioma, moeda e documento fiscal)",
+      "moeda local e precificacao em operacao internacional de MMN",
+      "comissao por cargo versus plano de pontos em venda direta",
+      "emissao fiscal e NF-e integrada em operacao de venda direta",
+      "integracao de sistema de venda direta com ERP (TOTVS, Bling)",
+      "anti-fraude e controle de clientes em e-commerce de alto volume",
+      "quando modernizar um sistema legado sem parar a operacao",
+      "implantacao de sistema assistida por ia (carga de catalogo, traducao, testes)"
     ]
   }
 };
