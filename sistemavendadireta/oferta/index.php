@@ -308,6 +308,29 @@ $seoDescription = 'Plataforma completa de MMN e venda direta: escritório virtua
       </a>
     </section>
 
+
+    <section class="py-6">
+      <div class="rounded-[30px] border border-white/30 bg-white/[0.08] p-6 sm:p-8">
+        <div class="grid items-center gap-6 lg:grid-cols-[1fr_auto]">
+          <div>
+            <h2 class="font-[var(--font-heading)] text-2xl font-bold sm:text-[28px]">Quer conhecer a plataforma por completo?</h2>
+            <p class="mt-3 max-w-2xl text-base leading-relaxed text-white/90">
+              Funcionalidades, integrações, clientes e o blog com conteúdo sobre venda direta —
+              tudo no site principal do Sistema Venda Direta.
+            </p>
+          </div>
+          <div class="flex flex-col items-stretch gap-3 sm:min-w-[280px]">
+            <a href="../" class="inline-flex items-center justify-center rounded-full border border-white/75 px-6 py-3 text-sm font-bold uppercase tracking-wide hover:bg-white/10">
+              Conhecer o Sistema Venda Direta
+            </a>
+            <a href="../cases/" class="inline-flex items-center justify-center rounded-full border border-white/35 px-6 py-3 text-sm font-semibold uppercase tracking-wide hover:bg-white/10">
+              Ver os cases
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="garantir" class="scroll-mt-24 py-10">
       <div class="rounded-[30px] border border-amber-300/40 bg-white/[0.07] p-6 sm:p-8">
         <div class="grid gap-8 lg:grid-cols-[1fr_1fr]">
