@@ -104,9 +104,12 @@ $seoDescription = 'Plataforma completa de MMN e venda direta: escritório virtua
   <header class="border-b border-white/10 bg-brand/95">
     <div class="mx-auto flex max-w-[1140px] items-center justify-between gap-4 px-4 py-3 sm:px-6">
       <img decoding="async" src="../imagens/Logo-Branco-1.webp" alt="Sistema Venda Direta" class="h-auto w-[150px] sm:w-[200px]" width="1000" height="300" />
-      <a href="<?= htmlspecialchars($whatsappHref, ENT_QUOTES, 'UTF-8') ?>" target="_blank" rel="noopener noreferrer" class="hidden rounded-full bg-[#25D366] px-4 py-2 text-sm font-bold sm:inline-flex">
-        Falar agora
-      </a>
+      <div class="flex items-center gap-5">
+        <a href="../cases/" class="text-sm font-semibold text-white/85 hover:text-white">Cases</a>
+        <a href="<?= htmlspecialchars($whatsappHref, ENT_QUOTES, 'UTF-8') ?>" target="_blank" rel="noopener noreferrer" class="hidden rounded-full bg-[#25D366] px-4 py-2 text-sm font-bold sm:inline-flex">
+          Falar agora
+        </a>
+      </div>
     </div>
   </header>
 

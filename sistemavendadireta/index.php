@@ -251,7 +251,7 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
           <li><a href="#porque" class="text-sm font-medium text-white/90 hover:text-white">Porque</a></li>
           <li><a href="#vantagens" class="text-sm font-medium text-white/90 hover:text-white">Vantagens</a></li>
           <li><a href="#desenvolvimento-ia" class="text-sm font-medium text-white/90 hover:text-white">Desenvolvimento com IA</a></li>
-          <li><a href="#cases" class="text-sm font-medium text-white/90 hover:text-white">Cases</a></li>
+          <li><a href="cases/" class="text-sm font-medium text-white/90 hover:text-white">Cases</a></li>
           <li><a href="#clientes" class="text-sm font-medium text-white/90 hover:text-white">Clientes</a></li>
         </ul>
 
@@ -274,7 +274,7 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
             <a href="#porque" class="rounded-lg border border-white/20 bg-white/5 px-3 py-2">Porque</a>
             <a href="#vantagens" class="rounded-lg border border-white/20 bg-white/5 px-3 py-2">Vantagens</a>
             <a href="#desenvolvimento-ia" class="rounded-lg border border-white/20 bg-white/5 px-3 py-2">Desenvolvimento com IA</a>
-            <a href="#cases" class="rounded-lg border border-white/20 bg-white/5 px-3 py-2">Cases</a>
+            <a href="cases/" class="rounded-lg border border-white/20 bg-white/5 px-3 py-2">Cases</a>
             <a href="#clientes" class="rounded-lg border border-white/20 bg-white/5 px-3 py-2">Clientes</a>
             <a href="#contato" class="rounded-lg border border-white/65 px-3 py-2 text-center font-semibold">Solicite um Orçamento</a>
           </div>
