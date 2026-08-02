@@ -88,6 +88,7 @@
   ]
 }
   </script>
+  <?php include __DIR__ . '/../../../../inc/analytics.php'; ?>
 </head>
 <body class="min-h-screen bg-brand text-white antialiased">
   <header class="border-b border-white/10 bg-brand/95 backdrop-blur">

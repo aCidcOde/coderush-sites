@@ -8,7 +8,7 @@ Enquanto SVD_GA4_ID estiver vazio, nao emite nada — seguro pra deploy antes de
 Preencher com o Measurement ID (formato G-XXXXXXXXXX) quando a property GA4 for criada.
 */
 
-const SVD_GA4_ID = '';
+const SVD_GA4_ID = 'G-4107EVTE0Q';
 
 if (SVD_GA4_ID !== ''): ?>
 <!-- Google tag (gtag.js) -->

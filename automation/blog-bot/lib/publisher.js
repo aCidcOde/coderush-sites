@@ -794,6 +794,17 @@ ${renderFooterLinks(copy, relativeRoot)}
   const seoTitle = buildSeoTitle(contract, site);
   const metaDescription = buildMetaDescription(contract);
   const faqJsonLd = buildFaqJsonLd(contract);
+  const gaSnippet = site.ga4Id
+    ? `
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=${site.ga4Id}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '${site.ga4Id}');
+  </script>`
+    : "";
   if (isFluxo) {
     return renderFluxoPostTemplate({
       relativeRoot,
@@ -839,7 +850,7 @@ ${buildJsonLd(site, contract, canonicalUrl, imageUrl)}
   </script>${faqJsonLd ? `
   <script type="application/ld+json">
 ${faqJsonLd}
-  </script>` : ""}
+  </script>` : ""}${gaSnippet}
 </head>
 <body class="${copy.bodyClass}"${bodyAttrs}>
   ${headerMarkup}
