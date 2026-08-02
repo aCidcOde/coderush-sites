@@ -171,6 +171,12 @@
         "sitemapPath": "sitemap.xml",
         "extraPaths": [
           {
+            "path": "/cases/",
+            "lastmod": "2026-08-02",
+            "changefreq": "monthly",
+            "priority": "0.9"
+          },
+          {
             "path": "/codafacil/",
             "lastmod": "2026-02-10",
             "changefreq": "weekly",

@@ -1,0 +1,111 @@
+{
+  "date": "2026-08-02",
+  "siteId": "sistemavendadireta",
+  "postType": "vendas-diretas-processos",
+  "focus": "case",
+  "theme": "Internacionalização de operação de venda direta",
+  "angle": "Case New Professional's — Paraguai",
+  "slug": "levar-operacao-venda-direta-para-outro-pais",
+  "title": "Levar a venda direta para outro país: o que muda no sistema",
+  "description": "O que realmente muda no sistema quando uma operação de venda direta atravessa a fronteira: idioma, moeda, documento fiscal, endereço e plano de comissões.",
+  "sources": [
+    "https://www.dinacopa.gov.py/",
+    "https://www.abevd.org.br/",
+    "https://www.gov.br/receitafederal/pt-br"
+  ],
+  "status": "published",
+  "generatedAt": "2026-08-02T09:00:00-03:00",
+  "content": {
+    "eyebrow": "Case de implantação",
+    "headline": "Levar a venda direta para outro país: o que muda no sistema",
+    "seoTitle": "Venda direta em outro país: o que muda no sistema",
+    "summary": "Traduzir a loja é a parte fácil. O que trava uma operação de venda direta fora do Brasil é moeda, documento fiscal, endereço e plano de comissões — e cada um deles vive dentro do sistema.",
+    "answerBox": {
+      "question": "O que muda no sistema quando uma operação de venda direta vai para outro país?",
+      "answer": "Muda mais do que o idioma. É preciso tratar a moeda local com as regras de arredondamento dela, aceitar o documento fiscal que cada país exige no cadastro, resolver endereço com a base oficial de código postal daquele território e, com frequência, reescrever o plano de comissões para o modelo que o mercado local entende. Traduzir as telas sem ajustar essas quatro camadas gera cadastro incompleto, valor errado e comissão que não fecha."
+    },
+    "tldr": [
+      "Idioma é a camada mais visível e a mais barata: o custo real está em moeda, documento fiscal e endereço.",
+      "Moeda sem casas decimais quebra qualquer formatador que assuma centavos — é um bug silencioso que corrompe preço.",
+      "Plano de comissões por cargo precisa ser editável no administrativo, com registro de quem alterou o quê."
+    ],
+    "sections": [
+      {
+        "type": "prose",
+        "title": "A tradução é a parte visível do problema",
+        "body": "Quando uma empresa de venda direta decide operar em outro país, a conversa costuma começar pelo idioma. É a parte que todo mundo enxerga: a loja, o cadastro, o escritório do consultor. E é, de fato, trabalho — numa implantação recente foram cerca de 900 chaves de tradução para cobrir português, espanhol e inglês em toda a plataforma, com detecção automática pelo navegador e seletor manual. Mas traduzir é previsível. O que costuma atrasar um lançamento são as regras que ninguém vê na tela e que só aparecem quando o primeiro pedido real entra."
+      },
+      {
+        "type": "list",
+        "title": "As quatro camadas que travam a expansão",
+        "items": [
+          "Moeda: taxa de conversão, formato de exibição e regra de arredondamento do país.",
+          "Documento fiscal: o campo de identificação muda de nome, formato e validação a cada fronteira.",
+          "Endereço: o que no Brasil o CEP resolve em uma chamada pode não ter API pública no país vizinho.",
+          "Plano de comissões: o modelo que funciona aqui nem sempre é o que o mercado local reconhece."
+        ]
+      },
+      {
+        "type": "prose",
+        "title": "Moeda: o bug que corrompe preço em silêncio",
+        "body": "A maioria dos sistemas de e-commerce armazena valor em centavos e divide por cem na exibição. Isso funciona bem enquanto a moeda tem duas casas decimais. O guarani paraguaio não tem. Ao migrar preços de real para guarani, um formatador que assume centavos passa a exibir e gravar valores errados — e o erro não estoura, ele só aparece no fechamento. Antes de qualquer carga de catálogo, vale testar a moeda de destino no caminho inteiro: cadastro do produto, vitrine, carrinho, pedido e relatório."
+      },
+      {
+        "type": "prose",
+        "title": "Documento fiscal e endereço: o cadastro é regional",
+        "body": "Um cadastro internacional não pode ter um campo genérico de documento. No Paraguai o consultor se identifica por C.I. e a empresa por RUC; no Brasil são CPF e CNPJ; nos Estados Unidos, SSN e EIN. O rótulo, a máscara e a validação precisam seguir o país escolhido no cadastro. O endereço tem o mesmo tipo de armadilha: no Brasil existe uma cultura consolidada de busca por CEP, e nem todo país oferece API pública equivalente. Em uma implantação no Paraguai, a saída foi carregar o dataset oficial da DINACOPA, com 8.644 zonas, e resolver a busca internamente — o cliente digita o código e departamento, cidade e bairro se preenchem sozinhos."
+      },
+      {
+        "type": "callout",
+        "title": "Um detalhe operacional que vale mais que uma feature",
+        "body": "Nem toda operação calcula frete. Quando a entrega é combinada e paga no recebimento, o sistema não deve simular cálculo — deve dizer isso na tela do pedido. Prometer na interface algo que a operação não faz gera mais chamado de suporte do que qualquer funcionalidade ausente."
+      },
+      {
+        "type": "prose",
+        "title": "Plano de comissões: escrito em regra, não em código",
+        "body": "A parte mais estratégica da expansão costuma ser o plano. Trocar um plano de pontos por um motor de comissões por cargo — venda pessoal, níveis de rede e bônus de diretoria — muda a forma como o consultor entende o próprio ganho. O ponto de atenção é onde esses percentuais moram: se estiverem no código, cada ajuste comercial vira uma nova versão do sistema. O caminho saudável é deixá-los editáveis no administrativo, com registro de quem alterou o quê e quando — auditoria simples, que resolve discussão de fechamento antes que ela vire disputa."
+      },
+      {
+        "type": "list",
+        "title": "Checklist antes de abrir a operação",
+        "items": [
+          "Testar a moeda local do cadastro do produto até o relatório de fechamento.",
+          "Validar documento fiscal por país, com máscara e mensagem de erro no idioma certo.",
+          "Definir como o endereço será resolvido — base oficial, digitação livre ou as duas.",
+          "Publicar em domínio próprio, com certificado renovando sozinho.",
+          "Rodar uma auditoria de segurança antes do primeiro consultor entrar: cookie de sessão, formulários públicos e redirecionamentos."
+        ]
+      },
+      {
+        "type": "prose",
+        "title": "Segurança e domínio não são etapa final",
+        "body": "Domínio próprio com certificado renovando automaticamente é higiene básica, mas costuma ficar para o último dia. Junto dele vale uma revisão de segurança: cookie de autenticação exigindo conexão segura, formulários públicos protegidos contra injeção e rotas que aceitam parâmetro de destino — como troca de idioma — impedidas de redirecionar para fora do site. São correções baratas quando feitas antes do lançamento e caras quando descobertas com a rede já operando."
+      },
+      {
+        "type": "cta-inline",
+        "title": "Quer ver como isso ficou na prática?",
+        "body": "A operação da New Professional's, no Paraguai, reúne os pontos deste artigo: três idiomas, preço em guarani, comissão por cargo e endereço pela base oficial do país.",
+        "ctaLabel": "Ver os cases",
+        "ctaHref": "/cases/"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Traduzir a loja é suficiente para operar em outro país?",
+        "a": "Não. A tradução resolve a leitura, mas o cadastro continua pedindo documento no formato errado, o endereço não valida e a moeda pode ser exibida com casas decimais que não existem no país. Idioma é a camada mais visível, não a mais crítica."
+      },
+      {
+        "q": "Por que moeda sem casas decimais dá problema?",
+        "a": "Porque grande parte dos sistemas guarda valor em centavos e divide por cem para exibir. Em moedas sem casas decimais, como o guarani, essa lógica corrompe o valor sem gerar erro visível — o problema aparece no fechamento, não no cadastro."
+      },
+      {
+        "q": "Como resolver endereço em país sem API pública de código postal?",
+        "a": "Carregando a base oficial dentro do próprio sistema. No Paraguai, o dataset da DINACOPA cobre 8.644 zonas e permite preencher departamento, cidade e bairro a partir do código digitado, sem depender de serviço externo."
+      },
+      {
+        "q": "Os percentuais de comissão devem ficar no código?",
+        "a": "Não. Percentuais no código transformam qualquer ajuste comercial em nova versão do sistema. O ideal é mantê-los editáveis no administrativo, com histórico de alteração para auditoria de fechamento."
+      }
+    ]
+  }
+}

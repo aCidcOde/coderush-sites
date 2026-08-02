@@ -116,7 +116,11 @@ $clientCompanies = [
     ['name' => 'Moove'],
     ['name' => 'Clean Bit'],
     ['name' => 'XLR Invest'],
+    ['name' => 'Protech Nutritional'],
+    ['name' => "New Professional's"],
 ];
+
+$clientCases = require __DIR__ . '/inc/cases.php';
 $clientCompaniesTop = array_slice($clientCompanies, 0, (int) ceil(count($clientCompanies) / 2));
 $clientCompaniesBottom = array_slice($clientCompanies, (int) ceil(count($clientCompanies) / 2));
 
@@ -243,6 +247,7 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
           <li><a href="#porque" class="text-sm font-medium text-white/90 hover:text-white">Porque</a></li>
           <li><a href="#vantagens" class="text-sm font-medium text-white/90 hover:text-white">Vantagens</a></li>
           <li><a href="#desenvolvimento-ia" class="text-sm font-medium text-white/90 hover:text-white">Desenvolvimento com IA</a></li>
+          <li><a href="#cases" class="text-sm font-medium text-white/90 hover:text-white">Cases</a></li>
           <li><a href="#clientes" class="text-sm font-medium text-white/90 hover:text-white">Clientes</a></li>
         </ul>
 
@@ -265,6 +270,7 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
             <a href="#porque" class="rounded-lg border border-white/20 bg-white/5 px-3 py-2">Porque</a>
             <a href="#vantagens" class="rounded-lg border border-white/20 bg-white/5 px-3 py-2">Vantagens</a>
             <a href="#desenvolvimento-ia" class="rounded-lg border border-white/20 bg-white/5 px-3 py-2">Desenvolvimento com IA</a>
+            <a href="#cases" class="rounded-lg border border-white/20 bg-white/5 px-3 py-2">Cases</a>
             <a href="#clientes" class="rounded-lg border border-white/20 bg-white/5 px-3 py-2">Clientes</a>
             <a href="#contato" class="rounded-lg border border-white/65 px-3 py-2 text-center font-semibold">Solicite um Orçamento</a>
           </div>
@@ -522,6 +528,57 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
       </a>
     </section>
 
+    <section id="cases" class="scroll-mt-28 py-10">
+      <h4 class="font-[var(--font-heading)] text-[30px] font-semibold">Operações no ar</h4>
+      <div class="mt-2 h-1 w-[72px] rounded-full bg-white"></div>
+      <h2 class="mt-4 font-[var(--font-heading)] text-xl font-semibold sm:text-2xl">
+        Projetos recentes rodando sobre a plataforma Sistema Venda Direta.
+      </h2>
+
+      <div class="mt-6 grid gap-4 md:grid-cols-2">
+        <?php foreach ($clientCases as $case): ?>
+          <article class="flex flex-col rounded-2xl border border-white/20 bg-white/5 p-5">
+            <div class="flex items-center rounded-xl bg-white px-4 py-3">
+              <picture>
+                <source srcset="<?= htmlspecialchars($case['logo'], ENT_QUOTES, 'UTF-8') ?>" type="image/webp" />
+                <img
+                  src="<?= htmlspecialchars($case['logoFallback'], ENT_QUOTES, 'UTF-8') ?>"
+                  alt="<?= htmlspecialchars($case['name'], ENT_QUOTES, 'UTF-8') ?>"
+                  class="h-9 w-auto object-contain sm:h-11"
+                  width="<?= (int) $case['logoWidth'] ?>"
+                  height="<?= (int) $case['logoHeight'] ?>"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+
+            <p class="mt-4 text-xs font-semibold uppercase tracking-[0.18em] text-white/70"><?= htmlspecialchars($case['segment'], ENT_QUOTES, 'UTF-8') ?></p>
+            <h3 class="mt-1 font-[var(--font-heading)] text-lg font-semibold"><?= htmlspecialchars($case['name'], ENT_QUOTES, 'UTF-8') ?></h3>
+            <p class="mt-2 text-sm leading-relaxed text-white/90"><?= htmlspecialchars($case['summary'], ENT_QUOTES, 'UTF-8') ?></p>
+
+            <ul class="mt-4 grid gap-2 text-sm text-white/90">
+              <?php foreach ($case['highlights'] as $highlight): ?>
+                <li class="rounded-xl border border-white/20 bg-white/5 px-3 py-2"><?= htmlspecialchars($highlight, ENT_QUOTES, 'UTF-8') ?></li>
+              <?php endforeach; ?>
+            </ul>
+
+            <a
+              href="<?= htmlspecialchars($case['url'], ENT_QUOTES, 'UTF-8') ?>"
+              target="_blank"
+              rel="noopener"
+              class="mt-5 inline-flex items-center justify-center rounded-full border border-white/70 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10"
+            >
+              Visitar operação
+            </a>
+          </article>
+        <?php endforeach; ?>
+      </div>
+
+      <a href="cases/" class="mt-6 inline-flex rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10">
+        Ver todos os cases
+      </a>
+    </section>
+
     <section id="clientes" class="scroll-mt-28 py-10">
       <h4 class="font-[var(--font-heading)] text-[30px] font-semibold">Quem usa e recomenda!</h4>
       <div class="mt-2 h-1 w-[72px] rounded-full bg-white"></div>
@@ -753,6 +810,15 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-HOME-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/08/02/levar-operacao-venda-direta-para-outro-pais/" data-blog-image="imagens/posts/levar-operacao-venda-direta-para-outro-pais.jpg" data-blog-slug="levar-operacao-venda-direta-para-outro-pais" data-blog-date="2026-08-02">
+  <a href="2026/08/02/levar-operacao-venda-direta-para-outro-pais/">
+    <img src="imagens/posts/levar-operacao-venda-direta-para-outro-pais.jpg" alt="Levar a venda direta para outro país: o que muda no sistema" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="2026/08/02/levar-operacao-venda-direta-para-outro-pais/" class="hover:underline">Levar a venda direta para outro país: o que muda no sistema</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Traduzir a loja é a parte fácil. O que trava uma operação de venda direta fora do Brasil é moeda, documento fiscal, endereço e plano de comissões — e cada um deles vive dentro d...</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/07/30/integracoes-pagamento-logistica-marketing-multinivel/" data-blog-image="imagens/posts/integracoes-pagamento-logistica-marketing-multinivel.jpg" data-blog-slug="integracoes-pagamento-logistica-marketing-multinivel" data-blog-date="2026-07-30">
   <a href="2026/07/30/integracoes-pagamento-logistica-marketing-multinivel/">
     <img src="imagens/posts/integracoes-pagamento-logistica-marketing-multinivel.jpg" alt="Integrações de pagamento e logística no marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
@@ -769,15 +835,6 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="2026/07/21/gestao-comissionamento-impacta-inadimplencia-mmn/" class="hover:underline">Como a gestão de comissionamento impacta a inadimplência no MMN</a></h2>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda a relação entre comissionamento e inadimplência em vendas diretas.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/07/18/ia-pode-otimizar-suporte-distribuidor-mmn/" data-blog-image="imagens/posts/ia-pode-otimizar-suporte-distribuidor-mmn.jpg" data-blog-slug="ia-pode-otimizar-suporte-distribuidor-mmn" data-blog-date="2026-07-18">
-  <a href="2026/07/18/ia-pode-otimizar-suporte-distribuidor-mmn/">
-    <img src="imagens/posts/ia-pode-otimizar-suporte-distribuidor-mmn.jpg" alt="Como a IA pode otimizar o suporte ao distribuidor no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-  </a>
-  <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="2026/07/18/ia-pode-otimizar-suporte-distribuidor-mmn/" class="hover:underline">Como a IA pode otimizar o suporte ao distribuidor no MMN</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a inteligência artificial melhora o suporte ao distribuidor em vendas diretas.</p>
   </div>
 </article>
 <!-- BLOG-HOME-CARDS:END -->
@@ -804,6 +861,7 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
             <a href="wordpress/" class="hover:underline">WordPress</a>
             <a href="codafacil/" class="hover:underline">Desenvolvimento com IA</a>
             <a href="inteligencia-artificial/" class="hover:underline">Multinível com IA</a>
+            <a href="cases/" class="hover:underline">Cases</a>
             <a href="blog/" class="hover:underline">Blog</a>
           </nav>
         </div>
