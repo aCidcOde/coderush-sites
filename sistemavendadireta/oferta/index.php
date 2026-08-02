@@ -423,5 +423,27 @@ $seoDescription = 'Plataforma completa de MMN e venda direta: escritório virtua
   </a>
 
   <script src="../js/scripts.js" defer></script>
+  <script>
+    // Eventos de conversao GA4 — no-op enquanto o gtag nao estiver carregado (SVD_GA4_ID vazio).
+    (function () {
+      function track(name, params) {
+        if (typeof window.gtag === "function") {
+          window.gtag("event", name, params || {});
+        }
+      }
+      document.addEventListener("click", function (event) {
+        var link = event.target.closest && event.target.closest('a[href*="wa.me"]');
+        if (link) {
+          track("whatsapp_click", { page: "lp-oferta-instalacao" });
+        }
+      });
+      var form = document.getElementById("contact-lead-form");
+      if (form) {
+        form.addEventListener("submit", function () {
+          track("generate_lead", { page: "lp-oferta-instalacao" });
+        });
+      }
+    })();
+  </script>
 </body>
 </html>
