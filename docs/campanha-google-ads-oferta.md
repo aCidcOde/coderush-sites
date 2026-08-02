@@ -128,3 +128,75 @@ Fixar título 3 na posição 1 durante a promoção (é a oferta).
   pra colar na interface. Com MCC + token futuramente, automação de lances e relatórios.
 - O campo `origem=lp-oferta-instalacao` no e-mail de lead identifica a LP; o UTM identifica
   a campanha/grupo no GA4.
+
+---
+
+# Adendo (2026-08-02) — Expansão: aluguel, concorrentes e verticais
+
+## Estratégia de fases
+
+- **Fase A (agora)**: campanha principal + grupos abaixo. Orçamento total R$ 40–60/dia concentrado.
+- **Fase B (gatilhos, 2–4 semanas)**: vertical com CPA < geral → campanha própria com orçamento
+  dedicado; tráfego sem conversão → remarketing (público GA4 já coletando); termos de pesquisa
+  novos → grupo novo.
+- **Fase C (mapeado, aguardando dado)**: consignado/sacoleiras, afiliados white label, clube de
+  assinatura, Paraguai em espanhol (precisa LP es), YouTube/PMax.
+- **Paralelo (manual, gratuito)**: cadastrar nos diretórios Capterra Brasil, GetApp Brasil e
+  comparasoftware.com.py — as páginas "melhores sistemas MMN" deles rankeiam acima de todos.
+
+## Grupo 4 — Aluguel / sistema pronto (→ /oferta/)
+
+```
+"aluguel sistema mmn"
+"alugar sistema mmn"
+"sistema mmn pronto"
+"sistema mmn mensalidade"
+"plataforma mmn pronta"
+```
+utm_content=aluguel
+
+## Grupo 5 — Concorrentes (→ /oferta/)
+
+Lance nos termos de marca (permitido; NUNCA usar a marca no texto do anúncio):
+```
+"aliadus mmn"
+"mmnweb"
+"maxnivel sistema"
+"m2n sistema"
+"sistema mmn eloss"
+"embraton mmn"
+```
+Anúncio comparativo genérico: "Compare Antes de Fechar" / "Operação em 2 Países" /
+"Mensalidade Proporcional". utm_content=concorrentes
+
+## Campanha vertical 1 — Suplementos (→ /oferta/suplementos/)
+
+```
+"sistema para distribuidora de suplementos"
+"software distribuidora suplementos"
+"sistema para venda de suplementos por consultores"
+"sistema revenda suplementos"
+"plataforma venda direta suplementos"
+```
+Títulos extras (≤30): "Sistema p/ Suplementos" (22) · "Rede de Consultores Pronta" (25) ·
+"Case Real: Protech" (18)
+utm_campaign=instalacao-50off-suplementos
+
+## Campanha vertical 2 — Cosméticos (→ /oferta/cosmeticos/)
+
+```
+"sistema para revenda de cosmeticos"
+"sistema para consultoras"
+"software revenda por catalogo"
+"sistema venda direta cosmeticos"
+"plataforma para marca de cosmeticos revenda"
+```
+Títulos extras (≤30): "Sistema p/ Cosméticos" (21) · "Escritório da Consultora" (24) ·
+"Case Internacional Real" (23)
+utm_campaign=instalacao-50off-cosmeticos
+
+## Leads por origem (campo do e-mail)
+
+- `lp-oferta-instalacao` — LP geral
+- `lp-oferta-suplementos` — vertical suplementos
+- `lp-oferta-cosmeticos` — vertical cosméticos
