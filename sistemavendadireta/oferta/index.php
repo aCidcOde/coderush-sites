@@ -79,9 +79,10 @@ $seoDescription = 'Plataforma completa de MMN e venda direta: escritório virtua
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" />
-  <link rel="stylesheet" href="../css/site-tailwind.css" />
-  <link rel="stylesheet" href="../css/site-optimizations.css" />
-  <link rel="stylesheet" href="../css/styles.css" />
+  <?php $cssVersion = (string) @filemtime(__DIR__ . '/../css/site-tailwind.css'); ?>
+  <link rel="stylesheet" href="../css/site-tailwind.css?v=<?= htmlspecialchars($cssVersion, ENT_QUOTES, 'UTF-8') ?>" />
+  <link rel="stylesheet" href="../css/site-optimizations.css?v=<?= htmlspecialchars($cssVersion, ENT_QUOTES, 'UTF-8') ?>" />
+  <link rel="stylesheet" href="../css/styles.css?v=<?= htmlspecialchars($cssVersion, ENT_QUOTES, 'UTF-8') ?>" />
   <?php include __DIR__ . '/../inc/analytics.php'; ?>
 </head>
 <body class="bg-brand text-white antialiased font-[var(--font-body)] site-optimized">
