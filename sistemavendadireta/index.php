@@ -120,7 +120,10 @@ $clientCompanies = [
     ['name' => "New Professional's"],
 ];
 
-$clientCases = require __DIR__ . '/inc/cases.php';
+$clientCases = array_values(array_filter(
+    require __DIR__ . '/inc/cases.php',
+    static fn (array $case): bool => empty($case['hidden']) && !empty($case['featured'])
+));
 $clientCompaniesTop = array_slice($clientCompanies, 0, (int) ceil(count($clientCompanies) / 2));
 $clientCompaniesBottom = array_slice($clientCompanies, (int) ceil(count($clientCompanies) / 2));
 
@@ -533,7 +536,7 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
       <h4 class="font-[var(--font-heading)] text-[30px] font-semibold">Operações no ar</h4>
       <div class="mt-2 h-1 w-[72px] rounded-full bg-white"></div>
       <h2 class="mt-4 font-[var(--font-heading)] text-xl font-semibold sm:text-2xl">
-        Projetos recentes rodando sobre a plataforma Sistema Venda Direta.
+        Sistemas desenvolvidos e mantidos pela Sistema Venda Direta — de venda direta e e-commerce a ERP, SaaS e IA.
       </h2>
 
       <div class="mt-6 grid gap-4 md:grid-cols-2">
@@ -563,14 +566,23 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
               <?php endforeach; ?>
             </ul>
 
-            <a
-              href="<?= htmlspecialchars($case['url'], ENT_QUOTES, 'UTF-8') ?>"
-              target="_blank"
-              rel="noopener"
-              class="mt-5 inline-flex items-center justify-center rounded-full border border-white/70 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10"
-            >
-              Visitar operação
-            </a>
+            <?php if (!empty($case['url'])): ?>
+              <a
+                href="<?= htmlspecialchars($case['url'], ENT_QUOTES, 'UTF-8') ?>"
+                target="_blank"
+                rel="noopener"
+                class="mt-5 inline-flex items-center justify-center rounded-full border border-white/70 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10"
+              >
+                Visitar operação
+              </a>
+            <?php else: ?>
+              <a
+                href="cases/#<?= htmlspecialchars($case['slug'], ENT_QUOTES, 'UTF-8') ?>"
+                class="mt-5 inline-flex items-center justify-center rounded-full border border-white/70 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10"
+              >
+                Ver o case completo
+              </a>
+            <?php endif; ?>
           </article>
         <?php endforeach; ?>
       </div>

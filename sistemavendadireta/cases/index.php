@@ -7,7 +7,10 @@ Pagina de cases de clientes da plataforma Sistema Venda Direta.
 Fonte de dados unica: ../inc/cases.php (mesma usada pela secao #cases da home).
 */
 
-$clientCases = require __DIR__ . '/../inc/cases.php';
+$clientCases = array_values(array_filter(
+    require __DIR__ . '/../inc/cases.php',
+    static fn (array $case): bool => empty($case['hidden'])
+));
 
 $seoBase = 'https://www.sistemavendadireta.com.br';
 $seoUrl = $seoBase . '/cases/';
@@ -18,13 +21,16 @@ $seoImage = $seoBase . '/imagens/Clientes.jpg';
 
 $itemListElements = [];
 foreach ($clientCases as $position => $case) {
-    $itemListElements[] = [
+    $item = [
         '@type' => 'ListItem',
         'position' => $position + 1,
         'name' => $case['name'],
         'description' => $case['summary'],
-        'url' => $case['url'],
     ];
+    if (!empty($case['url'])) {
+        $item['url'] = $case['url'];
+    }
+    $itemListElements[] = $item;
 }
 
 $seoLdGraph = [
@@ -131,12 +137,13 @@ $seoLdGraph = [
     <section class="py-10">
       <p class="text-xs font-semibold uppercase tracking-[0.22em] text-white/70">Cases de clientes</p>
       <h1 class="mt-3 font-[var(--font-heading)] text-3xl font-semibold leading-tight sm:text-4xl">
-        Operações no ar sobre a plataforma Sistema Venda Direta
+        Sistemas em produção desenvolvidos pela Sistema Venda Direta
       </h1>
       <div class="mt-3 h-1 w-[72px] rounded-full bg-white"></div>
       <p class="mt-4 max-w-3xl text-base leading-relaxed text-white/90">
-        Cada operação tem sua própria regra de negócio: moeda, idioma, documento fiscal, plano de comissões e forma de entrega.
-        Abaixo estão projetos recentes e o que foi entregue em cada um — sem generalização, com o escopo real de cada implantação.
+        Venda direta e MMN, e-commerce, ERP, SaaS e IA aplicada. Cada operação tem sua própria regra de negócio —
+        moeda, idioma, documento fiscal, plano de comissões, integração — e abaixo está o que foi entregue em cada uma,
+        sem generalização, com o escopo real de cada projeto.
       </p>
     </section>
 
@@ -164,14 +171,20 @@ $seoLdGraph = [
               </p>
               <h2 class="mt-2 font-[var(--font-heading)] text-2xl font-semibold sm:text-[30px]"><?= htmlspecialchars($case['name'], ENT_QUOTES, 'UTF-8') ?></h2>
               <p class="mt-3 max-w-3xl text-base leading-relaxed text-white/90"><?= htmlspecialchars($case['summary'], ENT_QUOTES, 'UTF-8') ?></p>
-              <a
-                href="<?= htmlspecialchars($case['url'], ENT_QUOTES, 'UTF-8') ?>"
-                target="_blank"
-                rel="noopener"
-                class="mt-5 inline-flex rounded-full border border-white/70 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10"
-              >
-                Visitar operação
-              </a>
+              <?php if (!empty($case['url'])): ?>
+                <a
+                  href="<?= htmlspecialchars($case['url'], ENT_QUOTES, 'UTF-8') ?>"
+                  target="_blank"
+                  rel="noopener"
+                  class="mt-5 inline-flex rounded-full border border-white/70 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10"
+                >
+                  Visitar operação
+                </a>
+              <?php else: ?>
+                <p class="mt-5 inline-flex rounded-full border border-white/30 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide text-white/70">
+                  Sistema interno do cliente
+                </p>
+              <?php endif; ?>
             </div>
           </div>
 
