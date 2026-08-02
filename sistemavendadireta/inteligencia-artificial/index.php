@@ -107,6 +107,7 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
       ]
     }
   </script>
+  <?php include __DIR__ . '/../inc/analytics.php'; ?>
 </head>
 <body class="bg-brand text-white antialiased font-[var(--font-body)] site-optimized">
   <a href="#conteudo" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-white focus:px-4 focus:py-2 focus:text-brand focus:font-semibold">

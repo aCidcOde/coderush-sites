@@ -62,6 +62,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
       }
     }
   </script>
+  <?php include __DIR__ . '/../inc/analytics.php'; ?>
 </head>
 <body class="bg-brand text-white antialiased font-[var(--font-body)] site-optimized">
   <header class="sticky top-0 z-40 border-b border-white/10 bg-brand/95 backdrop-blur">

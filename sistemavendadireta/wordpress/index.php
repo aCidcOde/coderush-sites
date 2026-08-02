@@ -64,6 +64,7 @@ Pagina de servicos WordPress/WooCommerce e Laravel com foco em conversao e quali
       ]
     }
   </script>
+  <?php include __DIR__ . '/../inc/analytics.php'; ?>
 </head>
 <body class="bg-brand font-[var(--font-body)] text-white antialiased selection:bg-white selection:text-brand site-optimized">
   <header class="border-b border-white/15 bg-brand-dark/30">

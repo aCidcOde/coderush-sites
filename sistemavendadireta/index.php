@@ -223,6 +223,7 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
   <link rel="stylesheet" href="css/styles.css?v=<?= filemtime(__DIR__ . '/css/styles.css') ?>" />
 
   <script type="application/ld+json"><?= json_encode($seoLdGraph, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) ?></script>
+  <?php include __DIR__ . '/inc/analytics.php'; ?>
 </head>
 <body class="bg-brand text-white antialiased font-[var(--font-body)] site-optimized">
   <a href="#conteudo" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-white focus:px-4 focus:py-2 focus:text-brand focus:font-semibold">

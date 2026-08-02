@@ -3,6 +3,7 @@ module.exports = {
     "./sistemavendadireta/index.php",
     "./sistemavendadireta/blog/**/*.php",
     "./sistemavendadireta/cases/**/*.php",
+    "./sistemavendadireta/oferta/**/*.php",
     "./sistemavendadireta/inteligencia-artificial/**/*.php",
     "./sistemavendadireta/wordpress/**/*.php",
     "./sistemavendadireta/20*/**/*.php"
