@@ -161,7 +161,27 @@ $seoDescription = 'Plataforma completa de MMN e venda direta: escritório virtua
         </div>
       </div>
 
-      <div class="grid gap-3">
+
+      <div class="relative">
+        <div class="pointer-events-none absolute -inset-8 rounded-full bg-amber-400/10 blur-3xl" aria-hidden="true"></div>
+        <picture>
+          <source srcset="../imagens/lp/hero-oferta.webp" type="image/webp" />
+          <img
+            src="../imagens/lp/hero-oferta.jpg"
+            alt="Painel do escritório virtual com a rede de consultores conectada"
+            class="relative w-full rounded-[28px] border border-white/15 shadow-[0_30px_60px_rgba(0,0,0,0.35)]"
+            width="900"
+            height="720"
+            loading="eager"
+            decoding="async"
+            fetchpriority="high"
+          />
+        </picture>
+      </div>
+    </section>
+
+    <section class="pb-4">
+      <div class="grid gap-3 md:grid-cols-3">
         <div class="rounded-2xl border border-white/20 bg-white/5 p-5">
           <p class="font-[var(--font-heading)] text-3xl font-bold text-amber-300">10 dias</p>
           <p class="mt-1 text-sm text-white/85">foi o prazo da última implantação internacional: loja, escritório e admin no ar em julho de 2026.</p>
