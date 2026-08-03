@@ -95,13 +95,13 @@ $seoDescription = 'Sistema para marca de cosméticos que vende por consultoras: 
 
   <?php if ($promoActive): ?>
     <div class="sticky top-0 z-50 border-b border-amber-300/40 bg-amber-400 text-brand">
-      <div class="mx-auto flex max-w-[1140px] flex-wrap items-center justify-between gap-2 px-4 py-2 sm:px-6">
-        <p class="text-sm font-bold uppercase tracking-wide">
-          Até <?= (int) $discountCashPct ?>% OFF na instalação · encerra <?= htmlspecialchars($deadlineLabel, ENT_QUOTES, 'UTF-8') ?>
-          <span class="ml-1 rounded-full bg-brand px-2 py-0.5 text-xs font-bold text-white"><?= (int) $daysLeft ?> dia<?= $daysLeft === 1 ? '' : 's' ?></span>
+      <div class="mx-auto flex max-w-[1140px] flex-nowrap items-center justify-between gap-3 px-4 py-2 sm:px-6">
+        <p class="min-w-0 text-xs font-bold uppercase leading-tight tracking-wide sm:text-sm">
+          Até <?= (int) $discountCashPct ?>% OFF na instalação<span class="hidden md:inline"> · encerra <?= htmlspecialchars($deadlineLabel, ENT_QUOTES, 'UTF-8') ?></span>
+          <span class="ml-1 whitespace-nowrap rounded-full bg-brand px-2 py-0.5 text-[10px] font-bold text-white sm:text-xs"><?= (int) $daysLeft ?> dia<?= $daysLeft === 1 ? '' : 's' ?></span>
         </p>
-        <a href="#garantir" class="rounded-full bg-brand px-4 py-1.5 text-xs font-bold uppercase tracking-wide text-white hover:bg-brand-dark">
-          Garantir desconto
+        <a href="#garantir" class="shrink-0 whitespace-nowrap rounded-full bg-brand px-3 py-1.5 text-[11px] font-bold uppercase tracking-wide text-white hover:bg-brand-dark sm:px-4 sm:text-xs">
+          Garantir<span class="hidden sm:inline"> desconto</span>
         </a>
       </div>
     </div>
