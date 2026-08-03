@@ -218,8 +218,9 @@ if ($gaSite && !empty($gaSite['eventos'])) {
     .muted { color: var(--text-soft); }
 
     /* boxes grid */
-    .boxes { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px; }
-    .box { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 18px;
+    .boxes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+    @media (max-width: 900px) { .boxes { grid-template-columns: minmax(0, 1fr); } }
+    .box { min-width: 0; overflow: hidden; background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 18px;
       backdrop-filter: blur(6px); animation: rise .5s ease both; }
     .box h3 { font-size: 13px; text-transform: uppercase; letter-spacing: .07em; color: var(--text-soft);
       display: flex; align-items: center; gap: 8px; margin-bottom: 14px; }
@@ -227,9 +228,9 @@ if ($gaSite && !empty($gaSite['eventos'])) {
 
     /* bar lists */
     .bars { list-style: none; display: grid; gap: 11px; }
-    .bar-top { display: flex; justify-content: space-between; gap: 10px; font-size: 13px; margin-bottom: 4px; }
-    .bar-label { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-    .bar-value { font-weight: 700; color: var(--amber); }
+    .bar-top { display: flex; justify-content: space-between; gap: 10px; font-size: 13px; margin-bottom: 4px; min-width: 0; }
+    .bar-label { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .bar-value { flex-shrink: 0; font-weight: 700; color: var(--amber); }
     .bar-track { height: 6px; border-radius: 99px; background: rgba(255,255,255,.08); overflow: hidden; }
     .bar-fill { height: 100%; border-radius: 99px; background: linear-gradient(90deg, #f59e0b, var(--amber));
       box-shadow: 0 0 10px rgba(252,211,77,.35); transition: width .6s ease; }
