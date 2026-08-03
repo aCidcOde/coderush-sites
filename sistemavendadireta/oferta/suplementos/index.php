@@ -75,8 +75,12 @@ $seoDescription = 'Sistema para distribuidora de suplementos que vende por consu
   <meta property="og:description" content="<?= htmlspecialchars($seoDescription, ENT_QUOTES, 'UTF-8') ?>" />
   <meta property="og:url" content="<?= htmlspecialchars($seoUrl, ENT_QUOTES, 'UTF-8') ?>" />
   <meta property="og:site_name" content="Sistema Venda Direta" />
-  <meta property="og:image" content="<?= htmlspecialchars($seoBase . '/imagens/Clientes.jpg', ENT_QUOTES, 'UTF-8') ?>" />
+  <meta property="og:image" content="<?= htmlspecialchars($seoBase . '/imagens/og-oferta.jpg?v=2', ENT_QUOTES, 'UTF-8') ?>" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Instalação do Sistema Venda Direta com até 40% OFF — R$ 3.500 em 2x ou R$ 3.000 à vista até 31/08" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="<?= htmlspecialchars($seoBase . '/imagens/og-oferta.jpg?v=2', ENT_QUOTES, 'UTF-8') ?>" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
