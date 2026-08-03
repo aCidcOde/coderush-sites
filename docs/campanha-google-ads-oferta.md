@@ -20,7 +20,7 @@ Landing: https://www.sistemavendadireta.com.br/oferta/ (instalacao R$3.500 em 2x
   Importar → Propriedades do Google Analytics 4). Secundária: `whatsapp_click`
 - **Extensões**: sitelinks (Cases → `/cases/`, Blog → `/blog/`, IA para MMN →
   `/inteligencia-artificial/`), frase de destaque ("25 anos de experiência",
-  "Operação no Brasil e Paraguai", "Mensalidade desde R$ 500"), chamada 11 99456-6726
+  "Operação em 3 países", "Mensalidade desde R$ 500"), chamada 11 99456-6726
 
 ## URL final (todas os grupos)
 
@@ -93,7 +93,7 @@ dela, não comprar sistema.)
 | 5 | Escritório Virtual Incluso | 26 |
 | 6 | Mensalidade desde R$ 500 | 24 |
 | 7 | Implantação Assistida por IA | 28 |
-| 8 | No Ar no Brasil e Paraguai | 26 |
+| 8 | Brasil, Paraguai e Bolívia | 26 |
 | 9 | Loja Virtual Integrada | 22 |
 | 10 | Comissões Automáticas | 21 |
 | 11 | À Vista por R$ 3.000 | 20 |
@@ -110,7 +110,7 @@ Fixar título 3 na posição 1 durante a promoção (é a oferta).
 |---|---|---|
 | 1 | Plataforma completa: escritório virtual, rede binária e unilevel, loja e financeiro. | 84 |
 | 2 | Instalação R$ 3.500 em 2x ou R$ 3.000 à vista até 31/08. Mensalidade proporcional. | 85 |
-| 3 | Operações reais no Brasil e Paraguai. Multi-idioma, multimoeda e comissão por cargo. | 84 |
+| 3 | Rodando no Brasil, Paraguai e Bolívia. Multi-idioma, multimoeda e comissão por cargo. | 87 |
 | 4 | Parametrizamos seu plano de negócio: binário, unilevel ou comissão por cargo. | 77 |
 
 **Caminho de exibição**: `/oferta/50-off`

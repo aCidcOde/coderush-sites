@@ -157,7 +157,7 @@ $seoDescription = 'Sistema para distribuidora de suplementos que vende por consu
 
       <div class="grid gap-3">
         <div class="rounded-2xl border border-white/20 bg-white/5 p-5">
-          <p class="font-[var(--font-heading)] text-3xl font-bold text-amber-300">5 dias</p>
+          <p class="font-[var(--font-heading)] text-3xl font-bold text-amber-300">10 dias</p>
           <p class="mt-1 text-sm text-white/85">foi o prazo da última implantação internacional: loja, escritório e admin no ar em julho de 2026.</p>
         </div>
         <div class="rounded-2xl border border-white/20 bg-white/5 p-5">
@@ -165,8 +165,8 @@ $seoDescription = 'Sistema para distribuidora de suplementos que vende por consu
           <p class="mt-1 text-sm text-white/85">de experiência do time em sistemas de vendas, financeiro e fiscal.</p>
         </div>
         <div class="rounded-2xl border border-white/20 bg-white/5 p-5">
-          <p class="font-[var(--font-heading)] text-3xl font-bold text-amber-300">2 países</p>
-          <p class="mt-1 text-sm text-white/85">com operação ativa hoje — Brasil e Paraguai, em três idiomas e moeda local.</p>
+          <p class="font-[var(--font-heading)] text-3xl font-bold text-amber-300">3 países</p>
+          <p class="mt-1 text-sm text-white/85">com operação ativa hoje — Brasil, Paraguai e Bolívia, em três idiomas e moeda local.</p>
         </div>
       </div>
     </section>
@@ -381,7 +381,7 @@ $seoDescription = 'Sistema para distribuidora de suplementos que vende por consu
           </div>
           <p class="mt-4 text-sm leading-relaxed text-white/90">
             Operação no Paraguai em três idiomas, preço em guarani, comissão por cargo editável no administrativo
-            e endereço resolvido pela base oficial de código postal do país. No ar em 5 dias.
+            e endereço resolvido pela base oficial de código postal do país. No ar em 10 dias.
           </p>
         </article>
 
@@ -394,7 +394,7 @@ $seoDescription = 'Sistema para distribuidora de suplementos que vende por consu
           </div>
           <p class="mt-4 text-sm leading-relaxed text-white/90">
             Mais de 8 anos de operação contínua: escritório do associado, administrativo, treinamento
-            e emissão fiscal NF-e integrada na própria plataforma.
+            e loja — a operação mais longeva da plataforma.
           </p>
         </article>
       </div>
@@ -410,15 +410,15 @@ $seoDescription = 'Sistema para distribuidora de suplementos que vende por consu
       <div class="grid gap-4 md:grid-cols-3">
         <div class="rounded-2xl border border-amber-300/40 bg-white/[0.07] p-5">
           <p class="font-[var(--font-heading)] text-lg font-bold text-amber-300">No ar em dias, não meses</p>
-          <p class="mt-2 text-sm leading-relaxed text-white/90">A última implantação internacional entrou em produção em 5 dias — loja, escritório e administrativo. O sistema já existe; o trabalho é parametrizar a sua regra.</p>
+          <p class="mt-2 text-sm leading-relaxed text-white/90">A última implantação internacional entrou em produção em 10 dias — loja, escritório e administrativo. O sistema já existe; o trabalho é parametrizar a sua regra.</p>
         </div>
         <div class="rounded-2xl border border-amber-300/40 bg-white/[0.07] p-5">
           <p class="font-[var(--font-heading)] text-lg font-bold text-amber-300">Migração com valor fechado</p>
           <p class="mt-2 text-sm leading-relaxed text-white/90">Vindo de outro sistema? Migramos seus dados com escopo e preço definidos antes do contrato — sem surpresa no meio do caminho.</p>
         </div>
         <div class="rounded-2xl border border-amber-300/40 bg-white/[0.07] p-5">
-          <p class="font-[var(--font-heading)] text-lg font-bold text-amber-300">Nota fiscal integrada</p>
-          <p class="mt-2 text-sm leading-relaxed text-white/90">Emissão de NF-e e DANFE dentro da própria plataforma — rodando há anos em operação real de venda direta, sem ferramenta externa.</p>
+          <p class="font-[var(--font-heading)] text-lg font-bold text-amber-300">Integração com Bling</p>
+          <p class="mt-2 text-sm leading-relaxed text-white/90">Pedidos, estoque e faturamento sincronizados com o Bling, nosso ERP parceiro — e se você já usa outro ERP, integramos com ele.</p>
         </div>
       </div>
 
