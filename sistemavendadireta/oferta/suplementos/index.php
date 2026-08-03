@@ -5,7 +5,7 @@ declare(strict_types=1);
 [Modulo Landing de Oferta SVD — trafego pago]
 @Author: André Gomes ( @acidcode )
 @since 2026-08-02
-Landing dedicada a campanha patrocinada: 50% de desconto na instalacao + implantacao assistida por IA.
+Landing dedicada a campanha patrocinada: instalacao promocional (2x ou a vista) + implantacao assistida por IA.
 Nao e linkada pelo index (trafego pago). noindex por ser pagina de campanha com prazo.
 
 Parametros da campanha ficam no bloco de configuracao abaixo — alterar so aqui.
@@ -18,11 +18,12 @@ $mailStatus = in_array($mailStatus, ['ok', 'erro'], true) ? $mailStatus : '';
 // Configuracao da campanha
 // ----------------------------------------------------------------------------
 $promoInstallFrom = 5000;          // valor cheio da instalacao (R$)
-$promoInstallTo = 2500;            // valor promocional (R$)
+$promoInstallTo = 3500;            // valor promocional em 2x (R$)
+$promoInstallCash = 3000;          // valor promocional a vista (R$)
 $promoDeadline = '2026-08-31';     // ultimo dia da promocao (America/Sao_Paulo)
 $promoSlots = 8;                   // vagas de implantacao no periodo
 $whatsappPhone = '5511994566726';
-$whatsappMessage = 'Ola! Tenho uma operacao de suplementos e vim pela campanha de 50% na instalacao. Quero ver o sistema.';
+$whatsappMessage = 'Ola! Tenho uma operacao de suplementos e vim pela campanha de instalacao com desconto. Quero ver o sistema.';
 
 $monthlyTiers = [
     ['revenue' => 'até R$ 50 mil', 'price' => 'R$ 500'],
@@ -43,13 +44,15 @@ $deadlineLabel = $deadline->format('d/m/Y');
 
 $moneyFrom = 'R$ ' . number_format($promoInstallFrom, 0, ',', '.');
 $moneyTo = 'R$ ' . number_format($promoInstallTo, 0, ',', '.');
+$moneyCash = 'R$ ' . number_format($promoInstallCash, 0, ',', '.');
+$discountCashPct = (int) round((1 - $promoInstallCash / $promoInstallFrom) * 100);
 
 $whatsappHref = 'https://wa.me/' . $whatsappPhone . '?text=' . rawurlencode($whatsappMessage);
 
 $seoBase = 'https://www.sistemavendadireta.com.br';
 $seoUrl = $seoBase . '/oferta/suplementos/';
 $seoTitle = 'Sistema para distribuidora de suplementos com consultores | Sistema Venda Direta';
-$seoDescription = 'Sistema para distribuidora de suplementos que vende por consultores: escritório virtual, rede, comissões e loja. Instalação com 50% de desconto.';
+$seoDescription = 'Sistema para distribuidora de suplementos que vende por consultores: escritório virtual, rede, comissões e loja. Instalação promocional: R$ 3.500 em 2x ou R$ 3.000 à vista.';
 ?>
 <!doctype html>
 <html lang="pt-BR">
@@ -68,7 +71,7 @@ $seoDescription = 'Sistema para distribuidora de suplementos que vende por consu
 
   <meta property="og:locale" content="pt_BR" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Sistema para distribuidora de suplementos — 50% off na instalação" />
+  <meta property="og:title" content="Sistema para distribuidora de suplementos  — instalação em oferta" />
   <meta property="og:description" content="<?= htmlspecialchars($seoDescription, ENT_QUOTES, 'UTF-8') ?>" />
   <meta property="og:url" content="<?= htmlspecialchars($seoUrl, ENT_QUOTES, 'UTF-8') ?>" />
   <meta property="og:site_name" content="Sistema Venda Direta" />
@@ -90,7 +93,7 @@ $seoDescription = 'Sistema para distribuidora de suplementos que vende por consu
     <div class="sticky top-0 z-50 border-b border-amber-300/40 bg-amber-400 text-brand">
       <div class="mx-auto flex max-w-[1140px] flex-wrap items-center justify-between gap-2 px-4 py-2 sm:px-6">
         <p class="text-sm font-bold uppercase tracking-wide">
-          50% OFF na instalação · encerra <?= htmlspecialchars($deadlineLabel, ENT_QUOTES, 'UTF-8') ?>
+          Até <?= (int) $discountCashPct ?>% OFF na instalação · encerra <?= htmlspecialchars($deadlineLabel, ENT_QUOTES, 'UTF-8') ?>
           <span class="ml-1 rounded-full bg-brand px-2 py-0.5 text-xs font-bold text-white"><?= (int) $daysLeft ?> dia<?= $daysLeft === 1 ? '' : 's' ?></span>
         </p>
         <a href="#garantir" class="rounded-full bg-brand px-4 py-1.5 text-xs font-bold uppercase tracking-wide text-white hover:bg-brand-dark">
@@ -131,9 +134,10 @@ $seoDescription = 'Sistema para distribuidora de suplementos que vende por consu
           <div class="mt-2 flex flex-wrap items-end gap-3">
             <span class="text-2xl font-semibold text-white/50 line-through"><?= htmlspecialchars($moneyFrom, ENT_QUOTES, 'UTF-8') ?></span>
             <span class="font-[var(--font-heading)] text-5xl font-bold text-amber-300"><?= htmlspecialchars($moneyTo, ENT_QUOTES, 'UTF-8') ?></span>
+            <span class="pb-1 text-sm font-semibold text-white/85">em 2x &nbsp;·&nbsp; ou <span class="text-amber-300 font-bold"><?= htmlspecialchars($moneyCash, ENT_QUOTES, 'UTF-8') ?></span> à vista</span>
           </div>
           <p class="mt-2 text-sm text-white/85">
-            Em duas parcelas: metade no fechamento, metade na entrega. Mensalidade a partir de <strong>R$ 500</strong>, proporcional ao seu faturamento.
+            Parcelado: metade no fechamento, metade na entrega. À vista: <strong><?= htmlspecialchars($moneyCash, ENT_QUOTES, 'UTF-8') ?></strong> no fechamento. Mensalidade a partir de <strong>R$ 500</strong>, proporcional ao seu faturamento.
           </p>
           <div class="mt-5 grid gap-3 sm:grid-cols-2">
             <a href="#garantir" class="inline-flex items-center justify-center rounded-full bg-amber-400 px-6 py-3.5 text-sm font-bold uppercase tracking-wide text-brand transition hover:-translate-y-0.5 hover:bg-amber-300">
@@ -454,7 +458,7 @@ $seoDescription = 'Sistema para distribuidora de suplementos que vende por consu
         <div class="grid gap-8 lg:grid-cols-[1fr_1fr]">
           <div>
             <h2 class="font-[var(--font-heading)] text-2xl font-bold sm:text-[32px]">
-              Garanta a instalação por <span class="text-amber-300"><?= htmlspecialchars($moneyTo, ENT_QUOTES, 'UTF-8') ?></span>
+              Garanta a instalação por <span class="text-amber-300"><?= htmlspecialchars($moneyTo, ENT_QUOTES, 'UTF-8') ?></span> — ou <span class="text-amber-300"><?= htmlspecialchars($moneyCash, ENT_QUOTES, 'UTF-8') ?></span> à vista
             </h2>
             <p class="mt-3 text-base leading-relaxed text-white/90">
               Deixe seu WhatsApp. Uma pessoa da equipe entra em contato, entende seu plano de negócio
@@ -479,11 +483,11 @@ $seoDescription = 'Sistema para distribuidora de suplementos que vende por consu
               method="post"
               class="space-y-4"
               data-whatsapp-phone="<?= htmlspecialchars($whatsappPhone, ENT_QUOTES, 'UTF-8') ?>"
-              data-whatsapp-message-template="Ola, vim pela campanha de 50% na instalacao. Meu nome e {nome} e meu WhatsApp e {whatsapp}."
+              data-whatsapp-message-template="Ola, vim pela campanha de instalacao com desconto. Meu nome e {nome} e meu WhatsApp e {whatsapp}."
             >
               <input type="hidden" name="redirect" value="/oferta/suplementos/" />
               <input type="hidden" name="origem" value="lp-oferta-suplementos" />
-              <input type="hidden" name="servico" value="Sistema Venda Direta — 50% instalacao (lp-oferta-suplementos)" />
+              <input type="hidden" name="servico" value="Sistema Venda Direta — instalacao promocional (lp-oferta-suplementos)" />
               <input type="hidden" name="mensagem" value="Lead da LP lp-oferta-suplementos" />
 
               <div>
@@ -497,7 +501,7 @@ $seoDescription = 'Sistema para distribuidora de suplementos que vende por consu
               </div>
 
               <button type="submit" class="inline-flex w-full items-center justify-center rounded-full bg-amber-400 px-5 py-3.5 text-sm font-bold uppercase tracking-wide text-brand transition hover:-translate-y-0.5 hover:bg-amber-300">
-                Quero o desconto de 50%
+                Quero garantir o desconto
               </button>
               <p class="text-center text-xs text-white/60">Sem compromisso. Respondemos em horário comercial.</p>
             </form>
@@ -545,10 +549,10 @@ $seoDescription = 'Sistema para distribuidora de suplementos que vende por consu
 
     <section class="py-12 text-center">
       <h2 class="font-[var(--font-heading)] text-2xl font-bold sm:text-3xl">
-        <?= htmlspecialchars($moneyFrom, ENT_QUOTES, 'UTF-8') ?> viram <?= htmlspecialchars($moneyTo, ENT_QUOTES, 'UTF-8') ?><?= $promoActive ? ' até ' . htmlspecialchars($deadlineLabel, ENT_QUOTES, 'UTF-8') : '' ?>
+        <?= htmlspecialchars($moneyFrom, ENT_QUOTES, 'UTF-8') ?> viram <?= htmlspecialchars($moneyCash, ENT_QUOTES, 'UTF-8') ?> à vista<?= $promoActive ? ' até ' . htmlspecialchars($deadlineLabel, ENT_QUOTES, 'UTF-8') : '' ?>
       </h2>
       <p class="mx-auto mt-3 max-w-2xl text-base leading-relaxed text-white/90">
-        Depois disso, a instalação volta ao valor cheio. Se a sua operação vai começar este ano, começar agora custa metade.
+        Depois disso, a instalação volta ao valor cheio. Se a sua operação vai começar este ano, começar agora sai bem mais barato.
       </p>
       <a href="#garantir" class="mt-6 inline-flex rounded-full bg-amber-400 px-8 py-3.5 text-sm font-bold uppercase tracking-wide text-brand transition hover:-translate-y-0.5 hover:bg-amber-300">
         Garantir minha vaga
@@ -566,7 +570,7 @@ $seoDescription = 'Sistema para distribuidora de suplementos que vende por consu
       </div>
       <p class="mt-6 text-xs text-white/60">
         © Sistema Venda Direta — Todos os direitos reservados.
-        Promoção de 50% sobre o valor de instalação válida para contratos fechados até <?= htmlspecialchars($deadlineLabel, ENT_QUOTES, 'UTF-8') ?>,
+        Condição promocional de instalação (<?= htmlspecialchars($moneyTo, ENT_QUOTES, 'UTF-8') ?> em duas parcelas ou <?= htmlspecialchars($moneyCash, ENT_QUOTES, 'UTF-8') ?> à vista) válida para contratos fechados até <?= htmlspecialchars($deadlineLabel, ENT_QUOTES, 'UTF-8') ?>,
         limitada a <?= (int) $promoSlots ?> implantações no período. Não cumulativa com outras condições comerciais.
       </p>
     </div>

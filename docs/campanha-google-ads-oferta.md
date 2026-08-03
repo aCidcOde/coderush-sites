@@ -4,11 +4,11 @@
 @Author: Andre Gomes ( @acidcode )
 @since 2026-08-02
 Pacote pronto pra colar na interface do Google Ads (sem API — requer developer token).
-Landing: https://www.sistemavendadireta.com.br/oferta/ (50% off instalacao, expira 31/08/2026).
+Landing: https://www.sistemavendadireta.com.br/oferta/ (instalacao R$3.500 em 2x ou R$3.000 a vista, expira 31/08/2026).
 */
 -->
 
-# Campanha Google Ads — Oferta 50% Instalação SVD
+# Campanha Google Ads — Oferta Instalação Promocional SVD
 
 ## Estrutura
 
@@ -88,7 +88,7 @@ dela, não comprar sistema.)
 |---|---|---|
 | 1 | Sistema para Venda Direta | 25 |
 | 2 | Software MMN Completo | 21 |
-| 3 | 50% OFF na Instalação | 21 |
+| 3 | Até 40% OFF na Instalação | 25 |
 | 4 | Plano Binário e Unilevel | 24 |
 | 5 | Escritório Virtual Incluso | 26 |
 | 6 | Mensalidade desde R$ 500 | 24 |
@@ -96,7 +96,7 @@ dela, não comprar sistema.)
 | 8 | No Ar no Brasil e Paraguai | 26 |
 | 9 | Loja Virtual Integrada | 22 |
 | 10 | Comissões Automáticas | 21 |
-| 11 | Instalação por R$ 2.500 | 23 |
+| 11 | À Vista por R$ 3.000 | 20 |
 | 12 | Migramos seu Sistema Atual | 26 |
 | 13 | 25 Anos de Experiência | 22 |
 | 14 | Sua Marca e seu Domínio | 23 |
@@ -109,7 +109,7 @@ Fixar título 3 na posição 1 durante a promoção (é a oferta).
 | # | Descrição | chars |
 |---|---|---|
 | 1 | Plataforma completa: escritório virtual, rede binária e unilevel, loja e financeiro. | 84 |
-| 2 | Instalação com 50% de desconto até 31/08. Mensalidade proporcional ao faturamento. | 82 |
+| 2 | Instalação R$ 3.500 em 2x ou R$ 3.000 à vista até 31/08. Mensalidade proporcional. | 85 |
 | 3 | Operações reais no Brasil e Paraguai. Multi-idioma, multimoeda e comissão por cargo. | 84 |
 | 4 | Parametrizamos seu plano de negócio: binário, unilevel ou comissão por cargo. | 77 |
 
