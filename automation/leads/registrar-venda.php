@@ -55,12 +55,13 @@ function envSecret(): string
 
 $whatsapp = argValue($argv, 'whatsapp');
 $leadId = argValue($argv, 'lead-id');
+$refCode = argValue($argv, 'ref');
 $valor = argValue($argv, 'valor');
 $descricao = argValue($argv, 'descricao') ?? 'Instalacao Sistema Venda Direta';
 $dryRun = argValue($argv, 'dry-run') !== null;
 
-if (($whatsapp === null && $leadId === null) || $valor === null || !is_numeric($valor)) {
-    fwrite(STDERR, "Uso: --whatsapp=DDDNUMERO (ou --lead-id=N) --valor=3000 [--descricao=...] [--dry-run]\n");
+if (($whatsapp === null && $leadId === null && $refCode === null) || $valor === null || !is_numeric($valor)) {
+    fwrite(STDERR, "Uso: --whatsapp=DDDNUMERO (ou --lead-id=N, ou --ref=XXXXX do WhatsApp) --valor=3000 [--descricao=...] [--dry-run]\n");
     exit(1);
 }
 $valorFloat = (float) $valor;
@@ -71,6 +72,9 @@ $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 if ($leadId !== null) {
     $stmt = $pdo->prepare('SELECT * FROM leads WHERE id = ?');
     $stmt->execute([(int) $leadId]);
+} elseif ($refCode !== null) {
+    $stmt = $pdo->prepare('SELECT * FROM leads WHERE mensagem = ? ORDER BY id DESC LIMIT 1');
+    $stmt->execute(['ref zap: ' . strtoupper(trim($refCode))]);
 } else {
     $digits = preg_replace('/\D+/', '', $whatsapp);
     $suffix = substr($digits, -8);

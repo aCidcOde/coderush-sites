@@ -620,11 +620,43 @@ $seoDescription = 'Sistema para marca de cosméticos que vende por consultoras: 
           window.gtag("event", name, enriched);
         }
       }
+      function zapRef() {
+        try {
+          var r = window.sessionStorage.getItem("svd-zap-ref");
+          if (!r) {
+            r = Math.random().toString(36).slice(2, 7).toUpperCase().replace(/[^A-Z0-9]/g, "X");
+            while (r.length < 5) r += "X";
+            window.sessionStorage.setItem("svd-zap-ref", r);
+          }
+          return r;
+        } catch (e) { return "AAAAA"; }
+      }
       document.addEventListener("click", function (event) {
         var link = event.target.closest && event.target.closest('a[href*="wa.me"]');
-        if (link) {
-          track("whatsapp_click", { page: "lp-oferta-cosmeticos" });
+        if (!link) return;
+        track("whatsapp_click", { page: "lp-oferta-cosmeticos" });
+        var ref = zapRef();
+        // embute o codigo de referencia na mensagem pre-preenchida do WhatsApp
+        if (link.href.indexOf("text=") !== -1 && link.href.indexOf("%5Bref") === -1) {
+          link.href += encodeURIComponent(" [ref " + ref + "]");
         }
+        // registra o lead de intencao no servidor com a atribuicao da sessao
+        try {
+          var stored = {};
+          try { stored = JSON.parse(window.sessionStorage.getItem("svd-attribution") || "{}"); } catch (e) {}
+          var data = new FormData();
+          data.append("ref", ref);
+          data.append("origem", "lp-oferta-cosmeticos");
+          data.append("ga_client_id", (document.cookie.match(/(?:^|;\s*)_ga=GA\d+\.\d+\.(\d+\.\d+)/) || [])[1] || "");
+          if (stored.gclid) data.append("gclid", stored.gclid);
+          if (stored.utm_source) data.append("utm_source", stored.utm_source);
+          if (stored.utm_medium) data.append("utm_medium", stored.utm_medium);
+          if (stored.utm_campaign) data.append("utm_campaign", stored.utm_campaign);
+          if (stored.utm_content) data.append("utm_content", stored.utm_content);
+          if (window.__svdSimBucket) data.append("sim_faturamento", window.__svdSimBucket);
+          data.append("page_url", window.location.href.split("#")[0]);
+          navigator.sendBeacon("/zap-lead.php", data);
+        } catch (e) {}
       });
       var form = document.getElementById("contact-lead-form");
       if (form) {

@@ -49,7 +49,7 @@ if (isset($_GET['sair'])) {
 $authed = ($_SESSION['svd_leads_auth'] ?? false) === true;
 
 $leads = [];
-$totals = ['total' => 0, 'ultimos7' => 0, 'fechados' => 0, 'receita' => 0.0];
+$totals = ['total' => 0, 'ultimos7' => 0, 'fechados' => 0, 'receita' => 0.0, 'zap' => 0];
 $porOrigem = [];
 $dbAviso = '';
 
@@ -65,9 +65,10 @@ if ($authed) {
                 'SELECT * FROM leads ORDER BY id DESC LIMIT 200'
             )->fetchAll(PDO::FETCH_ASSOC);
 
-            $totals['total'] = (int) $pdo->query('SELECT COUNT(*) FROM leads WHERE status != "teste"')->fetchColumn();
+            $totals['total'] = (int) $pdo->query('SELECT COUNT(*) FROM leads WHERE status NOT IN ("teste","zap")')->fetchColumn();
+            $totals['zap'] = (int) $pdo->query('SELECT COUNT(*) FROM leads WHERE status = "zap"')->fetchColumn();
             $totals['ultimos7'] = (int) $pdo->query(
-                'SELECT COUNT(*) FROM leads WHERE status != "teste" AND created_at >= datetime("now", "-7 days")'
+                'SELECT COUNT(*) FROM leads WHERE status NOT IN ("teste","zap") AND created_at >= datetime("now", "-7 days")'
             )->fetchColumn();
             $totals['fechados'] = (int) $pdo->query('SELECT COUNT(*) FROM leads WHERE status = "fechado"')->fetchColumn();
             $totals['receita'] = (float) $pdo->query(
@@ -130,6 +131,7 @@ function brDateTime(?string $iso): string
     .tag.novo { background: rgba(96,165,250,.2); color: #93c5fd; }
     .tag.fechado { background: rgba(52,211,153,.2); color: #6ee7b7; }
     .tag.teste { background: rgba(255,255,255,.12); color: rgba(255,255,255,.6); }
+    .tag.zap { background: rgba(52,211,153,.15); color: #6ee7b7; }
     .muted { color: rgba(255,255,255,.5); }
     .scroll { overflow-x: auto; border: 1px solid rgba(255,255,255,.15); border-radius: 14px; }
     .login { max-width: 360px; margin: 12vh auto 0; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.2); border-radius: 18px; padding: 28px; }
@@ -167,6 +169,7 @@ function brDateTime(?string $iso): string
       <div class="card"><b><?= $totals['total'] ?></b><span>Leads no total</span></div>
       <div class="card"><b><?= $totals['ultimos7'] ?></b><span>Últimos 7 dias</span></div>
       <div class="card"><b><?= $totals['fechados'] ?></b><span>Vendas fechadas</span></div>
+      <div class="card"><b><?= $totals['zap'] ?></b><span>Cliques WhatsApp</span></div>
       <div class="card"><b>R$ <?= number_format($totals['receita'], 0, ',', '.') ?></b><span>Receita registrada</span></div>
     </div>
 
@@ -197,7 +200,7 @@ function brDateTime(?string $iso): string
             <tr>
               <td class="muted"><?= (int) $lead['id'] ?></td>
               <td><?= e(brDateTime($lead['created_at'])) ?></td>
-              <td><?= e($lead['nome']) ?></td>
+              <td><?= e($lead['nome']) ?><?= $lead['status']==='zap' && $lead['mensagem'] ? '<br /><span class="muted">' . e($lead['mensagem']) . '</span>' : '' ?></td>
               <td><?= e($lead['telefone']) ?></td>
               <td><?= e($lead['origem']) ?></td>
               <td><?= e($lead['utm_campaign'] ?: '-') ?><?= $lead['utm_content'] ? ' / ' . e($lead['utm_content']) : '' ?></td>
