@@ -121,7 +121,7 @@ $seoDescription = 'Sistema para marca de cosméticos que vende por consultoras: 
 
   <main class="mx-auto max-w-[1140px] px-4 sm:px-6">
 
-    <section class="grid items-center gap-8 py-10 lg:grid-cols-[1.15fr_1fr] lg:py-14">
+    <section class="py-10 lg:py-14">
       <div>
         <p class="inline-flex rounded-full border border-amber-300/50 bg-amber-400/15 px-3 py-1 text-xs font-bold uppercase tracking-[0.18em] text-amber-200">
           Campanha por tempo limitado
@@ -129,11 +129,14 @@ $seoDescription = 'Sistema para marca de cosméticos que vende por consultoras: 
         <h1 class="mt-4 font-[var(--font-heading)] text-3xl font-bold leading-[1.1] sm:text-4xl lg:text-[46px]">
           Sistema para <span class="text-amber-300">revenda de cosméticos</span> com rede de consultoras
         </h1>
-        <p class="mt-4 max-w-xl text-base leading-relaxed text-white/90 sm:text-lg">
+        <p class="mt-4 max-w-3xl text-base leading-relaxed text-white/90 sm:text-lg">
           Catálogo por linhas técnicas, escritório da consultora com metas e ranking, comissões automáticas e loja integrada. A mesma plataforma que roda hoje uma operação internacional de cosmética capilar em três idiomas.
         </p>
 
-        <div class="mt-7 rounded-3xl border border-amber-300/40 bg-white/[0.07] p-5 sm:p-6">
+      </div>
+
+      <div class="mt-8 grid items-stretch gap-6 lg:grid-cols-2">
+        <div class="flex flex-col justify-center rounded-3xl border border-amber-300/40 bg-white/[0.07] p-5 sm:p-6">
           <p class="text-sm font-semibold uppercase tracking-[0.18em] text-white/70">Instalação</p>
           <div class="mt-2 flex flex-wrap items-end gap-3">
             <span class="text-2xl font-semibold text-white/50 line-through"><?= htmlspecialchars($moneyFrom, ENT_QUOTES, 'UTF-8') ?></span>
@@ -157,24 +160,22 @@ $seoDescription = 'Sistema para marca de cosméticos que vende por consultoras: 
             </p>
           <?php endif; ?>
         </div>
-      </div>
 
-
-      <div class="relative">
-        <div class="pointer-events-none absolute -inset-8 rounded-full bg-amber-400/10 blur-3xl" aria-hidden="true"></div>
-        <picture>
-          <source srcset="../../imagens/lp/hero-oferta.webp" type="image/webp" />
-          <img
-            src="../../imagens/lp/hero-oferta.jpg"
-            alt="Painel do escritório virtual com a rede de consultores conectada"
-            class="relative w-full rounded-[28px] border border-white/15 shadow-[0_30px_60px_rgba(0,0,0,0.35)]"
-            width="900"
-            height="720"
-            loading="eager"
-            decoding="async"
-            fetchpriority="high"
-          />
-        </picture>
+        <div class="relative overflow-hidden rounded-3xl border border-amber-300/40 bg-white/[0.07]">
+          <picture>
+            <source srcset="../../imagens/lp/hero-oferta.webp" type="image/webp" />
+            <img
+              src="../../imagens/lp/hero-oferta.jpg"
+              alt="Painel do escritório virtual com a rede de consultores conectada"
+              class="h-full min-h-[280px] w-full object-cover"
+              width="900"
+              height="720"
+              loading="eager"
+              decoding="async"
+              fetchpriority="high"
+            />
+          </picture>
+        </div>
       </div>
     </section>
 
