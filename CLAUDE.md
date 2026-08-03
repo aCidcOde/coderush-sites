@@ -9,8 +9,8 @@ Repositório multi-site (5 marcas) com automação de blog via OpenRouter + GitH
 **File-based** (escreve PHP/HTML local + atualiza home/blog index/sitemap, deploy via push):
 - `coderush` (CodeRush hub)
 - `codafacil` (Codafacil.dev)
-- `fluxointeligenteia` (FluxoInteligente IA)
 - `sistemavendadireta` (Sistema Venda Direta)
+- ~~`fluxointeligenteia`~~ — **descontinuado em 2026-08-03** (`enabled: false` no sites.json): a marca foi absorvida pela BFR Intelligence. Nginx responde 301 pra `bfrintelligence.com.br` (posts → `/conteudos/artigo.html?slug=...`), EXCETO `/imagens/posts/` que continua servindo as capas referenciadas pelos artigos migrados. Os 28 posts foram migrados via `POST https://bfrintelligence.com.br/api.php` (Bearer token; exige User-Agent de navegador por causa do Cloudflare).
 
 **API target** (POST multipart cover+payload pra API externa):
 - `emergency` (Emergency Documentação) → `https://app-hml.emergency.com.br/api/blog/posts`

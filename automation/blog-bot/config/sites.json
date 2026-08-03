@@ -101,7 +101,7 @@
       "name": "FluxoInteligente IA",
       "postType": "agentes-corporativos-ia",
       "language": "pt-BR",
-      "enabled": true,
+      "enabled": false,
       "baseUrl": "https://fluxointeligenteia.com.br",
       "siteRoot": "fluxointeligenteia",
       "renderExtension": "html",
