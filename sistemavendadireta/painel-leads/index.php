@@ -2,12 +2,13 @@
 declare(strict_types=1);
 
 /*
-[Modulo Painel de Leads SVD]
+[Modulo Painel de Leads SVD — dashboard]
 @Author: André Gomes ( @acidcode )
 @since 2026-08-03
-Tela protegida por senha simples pra acompanhar o log de leads do leads.sqlite:
-origem, campanha (UTM/gclid), faixa simulada e status de fechamento (ROI).
-Senha em LEADS_PANEL_PASSWORD no .env da raiz. Sem senha configurada, nega acesso.
+@updated 2026-08-03 (dashboard: icones, barras, efeitos, responsivo; GA so SVD, snapshot 3/3h)
+Cockpit protegido por senha: leads do formulario, cliques de WhatsApp com ref,
+receita registrada e estatisticas do GA4 (storage/ga-stats.json via cron no host).
+Senha em LEADS_PANEL_PASSWORD no .env da raiz.
 */
 
 session_start();
@@ -27,7 +28,6 @@ function envPassword(): string
 }
 
 $expected = envPassword();
-$authed = ($_SESSION['svd_leads_auth'] ?? false) === true;
 $error = '';
 
 if (isset($_POST['senha'])) {
@@ -36,7 +36,7 @@ if (isset($_POST['senha'])) {
         header('Location: ./', true, 303);
         exit;
     }
-    sleep(1); // desacelera forca bruta
+    sleep(1);
     $error = 'Senha incorreta.';
 }
 
@@ -52,39 +52,34 @@ $leads = [];
 $totals = ['total' => 0, 'ultimos7' => 0, 'fechados' => 0, 'receita' => 0.0, 'zap' => 0];
 $porOrigem = [];
 $dbAviso = '';
+$ga = null;
+$gaSite = null;
 
 if ($authed) {
     $dbPath = __DIR__ . '/../storage/leads.sqlite';
     if (!is_file($dbPath)) {
-        $dbAviso = 'Ainda não há leads registrados (leads.sqlite não existe).';
+        $dbAviso = 'Ainda não há leads registrados.';
     } else {
         try {
             $pdo = new PDO('sqlite:' . $dbPath);
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $leads = $pdo->query(
-                'SELECT * FROM leads ORDER BY id DESC LIMIT 200'
-            )->fetchAll(PDO::FETCH_ASSOC);
-
+            $leads = $pdo->query('SELECT * FROM leads ORDER BY id DESC LIMIT 200')->fetchAll(PDO::FETCH_ASSOC);
             $totals['total'] = (int) $pdo->query('SELECT COUNT(*) FROM leads WHERE status NOT IN ("teste","zap")')->fetchColumn();
             $totals['zap'] = (int) $pdo->query('SELECT COUNT(*) FROM leads WHERE status = "zap"')->fetchColumn();
-            $totals['ultimos7'] = (int) $pdo->query(
-                'SELECT COUNT(*) FROM leads WHERE status NOT IN ("teste","zap") AND created_at >= datetime("now", "-7 days")'
-            )->fetchColumn();
+            $totals['ultimos7'] = (int) $pdo->query('SELECT COUNT(*) FROM leads WHERE status NOT IN ("teste","zap") AND created_at >= datetime("now", "-7 days")')->fetchColumn();
             $totals['fechados'] = (int) $pdo->query('SELECT COUNT(*) FROM leads WHERE status = "fechado"')->fetchColumn();
-            $totals['receita'] = (float) $pdo->query(
-                'SELECT COALESCE(SUM(close_value), 0) FROM leads WHERE status = "fechado"'
-            )->fetchColumn();
-
-            foreach ($pdo->query(
-                'SELECT COALESCE(origem, "sem origem") AS origem, COUNT(*) AS qtd
-                 FROM leads WHERE status != "teste" GROUP BY origem ORDER BY qtd DESC'
-            ) as $row) {
+            $totals['receita'] = (float) $pdo->query('SELECT COALESCE(SUM(close_value), 0) FROM leads WHERE status = "fechado"')->fetchColumn();
+            foreach ($pdo->query('SELECT COALESCE(origem, "sem origem") AS origem, COUNT(*) AS qtd FROM leads WHERE status != "teste" GROUP BY origem ORDER BY qtd DESC LIMIT 8') as $row) {
                 $porOrigem[] = $row;
             }
         } catch (Throwable $e) {
             $dbAviso = 'Erro ao ler o banco de leads: ' . $e->getMessage();
         }
     }
+
+    $gaStatsPath = __DIR__ . '/../storage/ga-stats.json';
+    $ga = is_file($gaStatsPath) ? json_decode((string) file_get_contents($gaStatsPath), true) : null;
+    $gaSite = is_array($ga) ? ($ga['sites'][0] ?? null) : null;
 }
 
 function e(?string $v): string
@@ -104,50 +99,180 @@ function brDateTime(?string $iso): string
         return $iso;
     }
 }
+
+/** Lista com barra proporcional: $rows = [['label' =>, 'value' => int]] */
+function barList(array $rows): string
+{
+    if (!$rows) {
+        return '<p class="muted">Sem dados ainda.</p>';
+    }
+    $max = max(array_map(static fn ($r) => (int) $r['value'], $rows));
+    $max = max($max, 1);
+    $html = '<ul class="bars">';
+    foreach ($rows as $r) {
+        $pct = (int) round((int) $r['value'] / $max * 100);
+        $html .= '<li><div class="bar-top"><span class="bar-label">' . e((string) $r['label'])
+            . '</span><span class="bar-value">' . number_format((int) $r['value'], 0, ',', '.')
+            . '</span></div><div class="bar-track"><div class="bar-fill" style="width:' . $pct . '%"></div></div></li>';
+    }
+    return $html . '</ul>';
+}
+
+/** Icones SVG inline (stroke herda a cor do chip) */
+function icon(string $name): string
+{
+    $paths = [
+        'users' => '<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>',
+        'clock' => '<circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>',
+        'zap' => '<path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>',
+        'check' => '<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>',
+        'money' => '<line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>',
+        'target' => '<circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/>',
+        'globe' => '<circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>',
+        'file' => '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/>',
+        'chart' => '<line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/>',
+        'gauge' => '<path d="M12 2a10 10 0 1 0 10 10"/><polyline points="12 6 12 12 16 14"/>',
+        'eye' => '<path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/>',
+        'megaphone' => '<path d="M3 11h3l9-7v16l-9-7H3z"/><path d="M18 8a5 5 0 0 1 0 8"/>',
+        'lock' => '<rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>',
+    ];
+    return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' . ($paths[$name] ?? '') . '</svg>';
+}
+
+$gaEventos = [];
+if ($gaSite && !empty($gaSite['eventos'])) {
+    $nomes = [
+        'generate_lead' => 'Leads (formulário)',
+        'whatsapp_click' => 'Cliques WhatsApp',
+        'simulator_use' => 'Uso do simulador',
+        'form_start' => 'Começou o formulário',
+        'purchase' => 'Vendas (purchase)',
+    ];
+    foreach ($nomes as $key => $label) {
+        if (isset($gaSite['eventos'][$key])) {
+            $gaEventos[] = ['label' => $label, 'value' => (int) $gaSite['eventos'][$key]];
+        }
+    }
+}
 ?>
 <!doctype html>
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Painel de Leads | Sistema Venda Direta</title>
+  <title>Painel SVD | Leads &amp; Audiência</title>
   <meta name="robots" content="noindex, nofollow" />
   <style>
-    :root { color-scheme: dark; }
+    :root {
+      color-scheme: dark;
+      --bg: #041233; --bg2: #06215c;
+      --card: rgba(255,255,255,.055); --line: rgba(255,255,255,.13);
+      --amber: #fcd34d; --green: #34d399; --blue: #60a5fa; --text-soft: rgba(255,255,255,.62);
+    }
     * { box-sizing: border-box; margin: 0; }
-    body { font-family: system-ui, -apple-system, sans-serif; background: #04173a; color: #fff; min-height: 100vh; }
-    .wrap { max-width: 1240px; margin: 0 auto; padding: 24px 16px 60px; }
-    h1 { font-size: 22px; margin-bottom: 4px; }
-    .sub { color: rgba(255,255,255,.6); font-size: 13px; margin-bottom: 24px; }
-    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-bottom: 24px; }
-    .card { background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.15); border-radius: 14px; padding: 14px 16px; }
-    .card b { display: block; font-size: 26px; color: #fcd34d; }
-    .card span { font-size: 12px; color: rgba(255,255,255,.65); text-transform: uppercase; letter-spacing: .08em; }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      background: radial-gradient(1200px 600px at 85% -10%, rgba(96,165,250,.16), transparent 60%),
+                  radial-gradient(900px 500px at -10% 110%, rgba(252,211,77,.08), transparent 55%),
+                  linear-gradient(160deg, var(--bg) 0%, var(--bg2) 100%);
+      background-attachment: fixed;
+      color: #fff; min-height: 100vh;
+    }
+    .wrap { max-width: 1280px; margin: 0 auto; padding: 22px 16px 70px; }
+
+    /* topo */
+    .topbar { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 22px; }
+    .brand { display: flex; align-items: center; gap: 12px; }
+    .brand-icon { width: 42px; height: 42px; border-radius: 12px; display: grid; place-items: center;
+      background: linear-gradient(135deg, var(--amber), #f59e0b); color: #04173a; }
+    .brand-icon svg { width: 22px; height: 22px; }
+    h1 { font-size: 19px; letter-spacing: -.01em; }
+    .sub { color: var(--text-soft); font-size: 12px; margin-top: 2px; }
+    .sair { display: inline-flex; align-items: center; gap: 7px; color: var(--text-soft); font-size: 13px;
+      text-decoration: none; border: 1px solid var(--line); padding: 7px 15px; border-radius: 99px; transition: .18s; }
+    .sair:hover { color: #fff; border-color: rgba(255,255,255,.4); }
+    .sair svg { width: 14px; height: 14px; }
+
+    /* KPI cards */
+    .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(168px, 1fr)); gap: 12px; margin-bottom: 26px; }
+    .kpi { position: relative; overflow: hidden; background: var(--card); border: 1px solid var(--line); border-radius: 16px;
+      padding: 16px; display: flex; gap: 13px; align-items: center; backdrop-filter: blur(6px);
+      transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease; animation: rise .45s ease both; }
+    .kpi:hover { transform: translateY(-3px); box-shadow: 0 14px 30px rgba(0,0,0,.35); border-color: rgba(255,255,255,.28); }
+    .kpi .chip { width: 42px; height: 42px; border-radius: 12px; display: grid; place-items: center; flex-shrink: 0; }
+    .kpi .chip svg { width: 21px; height: 21px; }
+    .kpi b { display: block; font-size: 24px; line-height: 1.1; letter-spacing: -.02em; }
+    .kpi span { font-size: 11px; color: var(--text-soft); text-transform: uppercase; letter-spacing: .07em; }
+    .c-amber { background: rgba(252,211,77,.16); color: var(--amber); }
+    .c-green { background: rgba(52,211,153,.16); color: var(--green); }
+    .c-blue  { background: rgba(96,165,250,.16); color: var(--blue); }
+    @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+    .kpi:nth-child(2) { animation-delay: .05s; } .kpi:nth-child(3) { animation-delay: .1s; }
+    .kpi:nth-child(4) { animation-delay: .15s; } .kpi:nth-child(5) { animation-delay: .2s; }
+
+    /* section headers */
+    .sec { display: flex; align-items: baseline; gap: 10px; margin: 30px 0 14px; }
+    .sec h2 { font-size: 16px; display: flex; align-items: center; gap: 9px; }
+    .sec h2 svg { width: 17px; height: 17px; color: var(--amber); }
+    .sec .muted { font-size: 12px; }
+    .muted { color: var(--text-soft); }
+
+    /* boxes grid */
+    .boxes { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px; }
+    .box { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 18px;
+      backdrop-filter: blur(6px); animation: rise .5s ease both; }
+    .box h3 { font-size: 13px; text-transform: uppercase; letter-spacing: .07em; color: var(--text-soft);
+      display: flex; align-items: center; gap: 8px; margin-bottom: 14px; }
+    .box h3 svg { width: 15px; height: 15px; color: var(--amber); }
+
+    /* bar lists */
+    .bars { list-style: none; display: grid; gap: 11px; }
+    .bar-top { display: flex; justify-content: space-between; gap: 10px; font-size: 13px; margin-bottom: 4px; }
+    .bar-label { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .bar-value { font-weight: 700; color: var(--amber); }
+    .bar-track { height: 6px; border-radius: 99px; background: rgba(255,255,255,.08); overflow: hidden; }
+    .bar-fill { height: 100%; border-radius: 99px; background: linear-gradient(90deg, #f59e0b, var(--amber));
+      box-shadow: 0 0 10px rgba(252,211,77,.35); transition: width .6s ease; }
+
+    /* tables */
+    .tbl-scroll { overflow-x: auto; }
     table { width: 100%; border-collapse: collapse; font-size: 13px; }
-    th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid rgba(255,255,255,.1); vertical-align: top; }
-    th { color: rgba(255,255,255,.55); font-size: 11px; text-transform: uppercase; letter-spacing: .08em; position: sticky; top: 0; background: #04173a; }
+    th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid rgba(255,255,255,.08); vertical-align: top; white-space: nowrap; }
+    td:nth-child(3), td:nth-child(6) { white-space: normal; }
+    th { color: var(--text-soft); font-size: 10.5px; text-transform: uppercase; letter-spacing: .07em; }
     tr:hover td { background: rgba(255,255,255,.04); }
-    .tag { display: inline-block; padding: 2px 8px; border-radius: 99px; font-size: 11px; font-weight: 600; }
-    .tag.novo { background: rgba(96,165,250,.2); color: #93c5fd; }
-    .tag.fechado { background: rgba(52,211,153,.2); color: #6ee7b7; }
-    .tag.teste { background: rgba(255,255,255,.12); color: rgba(255,255,255,.6); }
-    .tag.zap { background: rgba(52,211,153,.15); color: #6ee7b7; }
-    .muted { color: rgba(255,255,255,.5); }
-    .scroll { overflow-x: auto; border: 1px solid rgba(255,255,255,.15); border-radius: 14px; }
-    .login { max-width: 360px; margin: 12vh auto 0; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.2); border-radius: 18px; padding: 28px; }
-    .login h1 { text-align: center; margin-bottom: 18px; }
-    input[type=password] { width: 100%; padding: 12px 14px; border-radius: 10px; border: 1px solid rgba(255,255,255,.25); background: rgba(255,255,255,.08); color: #fff; font-size: 15px; }
-    button { width: 100%; margin-top: 12px; padding: 12px; border: 0; border-radius: 10px; background: #fcd34d; color: #04173a; font-weight: 700; font-size: 14px; cursor: pointer; }
-    .err { color: #fca5a5; font-size: 13px; margin-top: 10px; text-align: center; }
-    .topbar { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
-    .sair { color: rgba(255,255,255,.6); font-size: 13px; text-decoration: none; border: 1px solid rgba(255,255,255,.25); padding: 6px 14px; border-radius: 99px; }
-    h2 { font-size: 15px; margin: 26px 0 10px; color: rgba(255,255,255,.85); }
+    .tag { display: inline-block; padding: 2px 9px; border-radius: 99px; font-size: 11px; font-weight: 600; }
+    .tag.novo { background: rgba(96,165,250,.18); color: #93c5fd; }
+    .tag.fechado { background: rgba(52,211,153,.18); color: #6ee7b7; }
+    .tag.teste { background: rgba(255,255,255,.1); color: var(--text-soft); }
+    .tag.zap { background: rgba(52,211,153,.13); color: #6ee7b7; }
+
+    /* login */
+    .login { max-width: 370px; margin: 14vh auto 0; background: var(--card); border: 1px solid var(--line);
+      border-radius: 20px; padding: 32px; backdrop-filter: blur(8px); animation: rise .4s ease both; }
+    .login .brand { justify-content: center; margin-bottom: 20px; }
+    input[type=password] { width: 100%; padding: 13px 15px; border-radius: 12px; border: 1px solid rgba(255,255,255,.25);
+      background: rgba(255,255,255,.08); color: #fff; font-size: 15px; outline: none; transition: border-color .15s; }
+    input[type=password]:focus { border-color: var(--amber); }
+    button { width: 100%; margin-top: 13px; padding: 13px; border: 0; border-radius: 12px;
+      background: linear-gradient(135deg, var(--amber), #f59e0b); color: #04173a; font-weight: 800; font-size: 14px;
+      cursor: pointer; transition: transform .15s, box-shadow .15s; }
+    button:hover { transform: translateY(-1px); box-shadow: 0 10px 22px rgba(245,158,11,.3); }
+    .err { color: #fca5a5; font-size: 13px; margin-top: 12px; text-align: center; }
+
+    @media (max-width: 640px) {
+      .kpi b { font-size: 20px; }
+      .wrap { padding-top: 16px; }
+    }
   </style>
 </head>
 <body>
 <?php if (!$authed): ?>
   <div class="login">
-    <h1>Painel de Leads</h1>
+    <div class="brand">
+      <div class="brand-icon"><?= icon('lock') ?></div>
+      <div><h1>Painel SVD</h1><p class="sub">Leads &amp; Audiência</p></div>
+    </div>
     <form method="post">
       <input type="password" name="senha" placeholder="Senha" autofocus required />
       <button type="submit">Entrar</button>
@@ -158,111 +283,94 @@ function brDateTime(?string $iso): string
 <?php else: ?>
   <div class="wrap">
     <div class="topbar">
-      <div>
-        <h1>Painel de Leads — Sistema Venda Direta</h1>
-        <p class="sub">Fonte: storage/leads.sqlite · atualizado em tempo real a cada lead · horário de Brasília</p>
-      </div>
-      <a class="sair" href="?sair=1">Sair</a>
-    </div>
-
-    <div class="cards">
-      <div class="card"><b><?= $totals['total'] ?></b><span>Leads no total</span></div>
-      <div class="card"><b><?= $totals['ultimos7'] ?></b><span>Últimos 7 dias</span></div>
-      <div class="card"><b><?= $totals['fechados'] ?></b><span>Vendas fechadas</span></div>
-      <div class="card"><b><?= $totals['zap'] ?></b><span>Cliques WhatsApp</span></div>
-      <div class="card"><b>R$ <?= number_format($totals['receita'], 0, ',', '.') ?></b><span>Receita registrada</span></div>
-    </div>
-
-    <?php if ($porOrigem): ?>
-      <h2>Leads por origem</h2>
-      <div class="scroll" style="margin-bottom:8px;">
-        <table>
-          <tr><th>Origem (LP/página)</th><th>Leads</th></tr>
-          <?php foreach ($porOrigem as $row): ?>
-            <tr><td><?= e($row['origem']) ?></td><td><?= (int) $row['qtd'] ?></td></tr>
-          <?php endforeach; ?>
-        </table>
-      </div>
-    <?php endif; ?>
-
-    <?php
-    $gaStatsPath = __DIR__ . '/../storage/ga-stats.json';
-    $ga = is_file($gaStatsPath) ? json_decode((string) file_get_contents($gaStatsPath), true) : null;
-    if (is_array($ga)):
-    ?>
-      <h2>Google Analytics <span class="muted" style="font-weight:400;">· snapshot de <?= e(brDateTime($ga['gerado_em'] ?? null)) ?> · atualiza a cada 6h</span></h2>
-      <?php foreach (($ga['sites'] ?? []) as $gs): ?>
-        <div class="scroll" style="margin-bottom:14px; padding:14px 16px;">
-          <p style="font-weight:700; margin-bottom:10px;"><?= e($gs['host'] ?? '') ?></p>
-          <div class="cards" style="margin-bottom:12px;">
-            <div class="card"><b><?= (int) ($gs['d7']['usuarios'] ?? 0) ?></b><span>Usuários (7d)</span></div>
-            <div class="card"><b><?= (int) ($gs['d7']['sessoes'] ?? 0) ?></b><span>Sessões (7d)</span></div>
-            <div class="card"><b><?= (int) ($gs['d28']['usuarios'] ?? 0) ?></b><span>Usuários (28d)</span></div>
-            <div class="card"><b><?= (int) ($gs['d28']['pageviews'] ?? 0) ?></b><span>Pageviews (28d)</span></div>
-          </div>
-
-          <?php if (!empty($gs['eventos'])): ?>
-            <p class="muted" style="margin-bottom:6px;">Eventos-chave (28d):
-              <?php foreach ($gs['eventos'] as $nome => $qtd): ?>
-                <span class="tag zap" style="margin-right:6px;"><?= e($nome) ?>: <?= (int) $qtd ?></span>
-              <?php endforeach; ?>
-            </p>
-          <?php endif; ?>
-
-          <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px;">
-            <?php if (!empty($gs['fontes'])): ?>
-              <table><tr><th>Fonte / mídia (28d)</th><th>Sessões</th></tr>
-                <?php foreach ($gs['fontes'] as $row): ?>
-                  <tr><td><?= e($row['fonte']) ?></td><td><?= (int) $row['sessoes'] ?></td></tr>
-                <?php endforeach; ?>
-              </table>
-            <?php endif; ?>
-            <?php if (!empty($gs['campanhas'])): ?>
-              <table><tr><th>Campanha (28d)</th><th>Sessões</th><th>Conversões</th></tr>
-                <?php foreach ($gs['campanhas'] as $row): ?>
-                  <tr><td><?= e($row['campanha']) ?></td><td><?= (int) $row['sessoes'] ?></td><td><?= e((string) $row['conversoes']) ?></td></tr>
-                <?php endforeach; ?>
-              </table>
-            <?php endif; ?>
-            <?php if (!empty($gs['paginas'])): ?>
-              <table><tr><th>Página (28d)</th><th>Views</th></tr>
-                <?php foreach ($gs['paginas'] as $row): ?>
-                  <tr><td><?= e($row['pagina']) ?></td><td><?= (int) $row['views'] ?></td></tr>
-                <?php endforeach; ?>
-              </table>
-            <?php endif; ?>
-            <?php if (!empty($gs['faixas_simuladas'])): ?>
-              <table><tr><th>Faixa simulada (28d)</th><th>Usos</th></tr>
-                <?php foreach ($gs['faixas_simuladas'] as $row): ?>
-                  <tr><td><?= e($row['faixa']) ?></td><td><?= (int) $row['eventos'] ?></td></tr>
-                <?php endforeach; ?>
-              </table>
-            <?php endif; ?>
-          </div>
+      <div class="brand">
+        <div class="brand-icon"><?= icon('chart') ?></div>
+        <div>
+          <h1>Painel SVD — Leads &amp; Audiência</h1>
+          <p class="sub">sistemavendadireta.com.br · horário de Brasília<?= $ga ? ' · Google atualizado ' . e(brDateTime($ga['gerado_em'] ?? null)) . ' (a cada 3h)' : '' ?></p>
         </div>
-      <?php endforeach; ?>
+      </div>
+      <a class="sair" href="?sair=1"><?= icon('lock') ?> Sair</a>
+    </div>
+
+    <div class="kpis">
+      <div class="kpi"><div class="chip c-amber"><?= icon('users') ?></div><div><b><?= $totals['total'] ?></b><span>Leads (form)</span></div></div>
+      <div class="kpi"><div class="chip c-blue"><?= icon('clock') ?></div><div><b><?= $totals['ultimos7'] ?></b><span>Últimos 7 dias</span></div></div>
+      <div class="kpi"><div class="chip c-green"><?= icon('zap') ?></div><div><b><?= $totals['zap'] ?></b><span>Cliques WhatsApp</span></div></div>
+      <div class="kpi"><div class="chip c-green"><?= icon('check') ?></div><div><b><?= $totals['fechados'] ?></b><span>Vendas fechadas</span></div></div>
+      <div class="kpi"><div class="chip c-amber"><?= icon('money') ?></div><div><b>R$ <?= number_format($totals['receita'], 0, ',', '.') ?></b><span>Receita registrada</span></div></div>
+    </div>
+
+    <?php if ($gaSite): ?>
+      <div class="sec"><h2><?= icon('gauge') ?> Audiência (Google Analytics)</h2></div>
+      <div class="kpis">
+        <div class="kpi"><div class="chip c-blue"><?= icon('users') ?></div><div><b><?= (int) ($gaSite['d7']['usuarios'] ?? 0) ?></b><span>Usuários · 7 dias</span></div></div>
+        <div class="kpi"><div class="chip c-blue"><?= icon('eye') ?></div><div><b><?= (int) ($gaSite['d7']['sessoes'] ?? 0) ?></b><span>Sessões · 7 dias</span></div></div>
+        <div class="kpi"><div class="chip c-amber"><?= icon('users') ?></div><div><b><?= (int) ($gaSite['d28']['usuarios'] ?? 0) ?></b><span>Usuários · 28 dias</span></div></div>
+        <div class="kpi"><div class="chip c-amber"><?= icon('eye') ?></div><div><b><?= (int) ($gaSite['d28']['pageviews'] ?? 0) ?></b><span>Pageviews · 28 dias</span></div></div>
+      </div>
+
+      <div class="boxes">
+        <div class="box">
+          <h3><?= icon('target') ?> Eventos-chave · 28d</h3>
+          <?= barList($gaEventos) ?>
+        </div>
+        <div class="box">
+          <h3><?= icon('globe') ?> Origem do tráfego · 28d</h3>
+          <?= barList(array_map(static fn ($r) => ['label' => $r['fonte'], 'value' => $r['sessoes']], $gaSite['fontes'] ?? [])) ?>
+        </div>
+        <div class="box">
+          <h3><?= icon('file') ?> Páginas acessadas · 28d</h3>
+          <?= barList(array_map(static fn ($r) => ['label' => $r['pagina'], 'value' => $r['views']], $gaSite['paginas'] ?? [])) ?>
+        </div>
+        <?php $campanhas = array_values(array_filter($gaSite['campanhas'] ?? [], static fn ($r) => !in_array($r['campanha'], ['(not set)', '(direct)'], true))); ?>
+        <div class="box">
+          <h3><?= icon('megaphone') ?> Campanhas · 28d</h3>
+          <?php if ($campanhas): ?>
+            <div class="tbl-scroll"><table>
+              <tr><th>Campanha</th><th>Sessões</th><th>Conversões</th></tr>
+              <?php foreach ($campanhas as $row): ?>
+                <tr><td><?= e($row['campanha']) ?></td><td><?= (int) $row['sessoes'] ?></td><td><?= e((string) $row['conversoes']) ?></td></tr>
+              <?php endforeach; ?>
+            </table></div>
+          <?php else: ?>
+            <p class="muted">Nenhuma sessão de campanha ainda — os UTMs aparecem aqui assim que os anúncios rodarem.</p>
+          <?php endif; ?>
+        </div>
+        <?php if (!empty($gaSite['faixas_simuladas'])): ?>
+          <div class="box">
+            <h3><?= icon('chart') ?> Faixas simuladas · 28d</h3>
+            <?= barList(array_map(static fn ($r) => ['label' => $r['faixa'], 'value' => $r['eventos']], $gaSite['faixas_simuladas'])) ?>
+          </div>
+        <?php endif; ?>
+        <?php if ($porOrigem): ?>
+          <div class="box">
+            <h3><?= icon('target') ?> Leads por LP de origem</h3>
+            <?= barList(array_map(static fn ($r) => ['label' => $r['origem'], 'value' => $r['qtd']], $porOrigem)) ?>
+          </div>
+        <?php endif; ?>
+      </div>
     <?php endif; ?>
 
-    <h2>Últimos leads (até 200)</h2>
+    <div class="sec"><h2><?= icon('users') ?> Últimos leads</h2><span class="muted">até 200 · formulário e WhatsApp</span></div>
     <?php if ($dbAviso !== ''): ?>
       <p class="muted"><?= e($dbAviso) ?></p>
     <?php else: ?>
-      <div class="scroll">
+      <div class="box tbl-scroll">
         <table>
           <tr>
             <th>#</th><th>Data</th><th>Nome</th><th>WhatsApp</th><th>Origem</th>
-            <th>Campanha / conteúdo</th><th>Fonte</th><th>Faixa simulada</th>
-            <th>Google Ads?</th><th>Status</th><th>Valor</th>
+            <th>Campanha</th><th>Fonte</th><th>Faixa simulada</th><th>Ads?</th><th>Status</th><th>Valor</th>
           </tr>
           <?php foreach ($leads as $lead): ?>
             <tr>
               <td class="muted"><?= (int) $lead['id'] ?></td>
               <td><?= e(brDateTime($lead['created_at'])) ?></td>
-              <td><?= e($lead['nome']) ?><?= $lead['status']==='zap' && $lead['mensagem'] ? '<br /><span class="muted">' . e($lead['mensagem']) . '</span>' : '' ?></td>
+              <td><?= e($lead['nome']) ?><?= $lead['status'] === 'zap' && $lead['mensagem'] ? '<br /><span class="muted">' . e($lead['mensagem']) . '</span>' : '' ?></td>
               <td><?= e($lead['telefone']) ?></td>
               <td><?= e($lead['origem']) ?></td>
               <td><?= e($lead['utm_campaign'] ?: '-') ?><?= $lead['utm_content'] ? ' / ' . e($lead['utm_content']) : '' ?></td>
-              <td><?= e($lead['utm_source'] ?: 'direto/orgânico') ?></td>
+              <td><?= e($lead['utm_source'] ?: 'direto') ?></td>
               <td><?= e($lead['sim_faturamento'] ?: '-') ?></td>
               <td><?= $lead['gclid'] ? 'sim' : '-' ?></td>
               <td><span class="tag <?= e($lead['status']) ?>"><?= e($lead['status']) ?></span></td>

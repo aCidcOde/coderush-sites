@@ -3,7 +3,7 @@
 [Modulo Leads SVD — snapshot de estatisticas do GA4]
 @Author: Andre Gomes ( @acidcode )
 @since 2026-08-03
-Roda no HOST (cron, a cada 6h): consulta a Data API do GA4 com a service account
+Roda no HOST (cron, a cada 3h): consulta a Data API do GA4 com a service account
 e grava um JSON que o painel-leads renderiza. Sem credencial no container web.
 Saida: sistemavendadireta/storage/ga-stats.json
 """
@@ -14,8 +14,7 @@ from google.analytics.data_v1beta import (BetaAnalyticsDataClient, RunReportRequ
     DateRange, Dimension, Metric, OrderBy)
 
 OUT = "/data/coderush-sites/sistemavendadireta/storage/ga-stats.json"
-PROPS = [("properties/379315278", "sistemavendadireta.com.br"),
-         ("properties/548256848", "bfrintelligence.com.br")]
+PROPS = [("properties/379315278", "sistemavendadireta.com.br")]
 FOCUS_EVENTS = ["generate_lead", "whatsapp_click", "simulator_use", "form_start", "purchase"]
 
 c = BetaAnalyticsDataClient()
