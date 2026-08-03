@@ -339,6 +339,7 @@ $seoDescription = 'Sistema para distribuidora de suplementos que vende por consu
             $("sim-comissoes").textContent = brl.format(fat * p / 100);
             var fee = null;
             for (var i = 0; i < tiers.length; i++) { if (fat <= tiers[i][0]) { fee = tiers[i][1]; break; } }
+            window.__svdSimBucket = fat <= 50000 ? "ate-50k" : fat <= 100000 ? "50k-100k" : fat <= 200000 ? "100k-200k" : fat <= 350000 ? "200k-350k" : fat <= 500000 ? "350k-500k" : fat <= 1000000 ? "500k-1M" : "acima-1M";
             if (fee === null) {
               $("sim-mensalidade").textContent = "Sob proposta";
               $("sim-percentual").textContent = "acima de R$ 1 milhão/mês — avaliação de infraestrutura";
@@ -587,7 +588,11 @@ $seoDescription = 'Sistema para distribuidora de suplementos que vende por consu
     (function () {
       function track(name, params) {
         if (typeof window.gtag === "function") {
-          window.gtag("event", name, params || {});
+          var enriched = params || {};
+          if (window.__svdSimBucket) {
+            enriched.sim_faturamento = window.__svdSimBucket;
+          }
+          window.gtag("event", name, enriched);
         }
       }
       document.addEventListener("click", function (event) {

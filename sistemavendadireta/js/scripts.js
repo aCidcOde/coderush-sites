@@ -1,4 +1,66 @@
 // Extracted from sistemavendadireta/index.php block 1.
+
+// --- Atribuicao de lead (client_id do GA, gclid e UTMs) -------------------
+// Persiste os parametros de campanha na sessao (sobrevivem a navegacao entre
+// paginas) e preenche os campos ocultos do formulario no submit. Base do
+// funil lead -> venda (purchase offline via Measurement Protocol).
+var SVD_ATTR_KEY = "svd-attribution";
+
+(function captureAttribution() {
+  try {
+    var params = new URLSearchParams(window.location.search);
+    var keys = ["gclid", "utm_source", "utm_medium", "utm_campaign", "utm_content"];
+    var stored = {};
+    try {
+      stored = JSON.parse(window.sessionStorage.getItem(SVD_ATTR_KEY) || "{}");
+    } catch (e) {}
+    var changed = false;
+    keys.forEach(function (k) {
+      var v = params.get(k);
+      if (v) {
+        stored[k] = v;
+        changed = true;
+      }
+    });
+    if (changed) {
+      window.sessionStorage.setItem(SVD_ATTR_KEY, JSON.stringify(stored));
+    }
+  } catch (e) {}
+})();
+
+function svdGaClientId() {
+  var match = document.cookie.match(/(?:^|;\s*)_ga=GA\d+\.\d+\.(\d+\.\d+)/);
+  return match ? match[1] : "";
+}
+
+function fillLeadTrackingFields(form) {
+  var stored = {};
+  try {
+    stored = JSON.parse(window.sessionStorage.getItem(SVD_ATTR_KEY) || "{}");
+  } catch (e) {}
+
+  function setField(name, value) {
+    if (!value) return;
+    var input = form.querySelector('input[name="' + name + '"]');
+    if (!input) {
+      input = document.createElement("input");
+      input.type = "hidden";
+      input.name = name;
+      form.appendChild(input);
+    }
+    input.value = value;
+  }
+
+  setField("ga_client_id", svdGaClientId());
+  setField("gclid", stored.gclid || "");
+  setField("utm_source", stored.utm_source || "");
+  setField("utm_medium", stored.utm_medium || "");
+  setField("utm_campaign", stored.utm_campaign || "");
+  setField("utm_content", stored.utm_content || "");
+  setField("sim_faturamento", window.__svdSimBucket || "");
+  setField("page_url", window.location.href.split("#")[0]);
+}
+
 document.addEventListener("DOMContentLoaded", function () {
       var containers = document.querySelectorAll(".lottie-box[data-lottie-src]");
       var leadForm = document.getElementById("contact-lead-form");
@@ -61,6 +123,8 @@ document.addEventListener("DOMContentLoaded", function () {
             window.sessionStorage.setItem(leadStorageKey, JSON.stringify(payload));
           } catch (error) {
           }
+
+          fillLeadTrackingFields(leadForm);
         });
       }
 

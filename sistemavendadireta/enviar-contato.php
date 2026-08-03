@@ -109,6 +109,81 @@ function persistLeadLocally(string $baseDir, array $payload, string $reason): bo
     return $leadSaved && $logSaved;
 }
 
+function normalizePhoneDigits(string $value): string
+{
+    return preg_replace('/\D+/', '', $value) ?? '';
+}
+
+function persistLeadToDatabase(string $baseDir, array $lead): bool
+{
+    $storageDir = rtrim($baseDir, DIRECTORY_SEPARATOR) . DIRECTORY_SEPARATOR . 'storage';
+    if (!is_dir($storageDir) && !mkdir($storageDir, 0775, true) && !is_dir($storageDir)) {
+        return false;
+    }
+
+    try {
+        $pdo = new PDO('sqlite:' . $storageDir . DIRECTORY_SEPARATOR . 'leads.sqlite');
+        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $pdo->exec('CREATE TABLE IF NOT EXISTS leads (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            created_at TEXT NOT NULL,
+            nome TEXT,
+            email TEXT,
+            telefone TEXT,
+            telefone_digits TEXT,
+            origem TEXT,
+            servico TEXT,
+            mensagem TEXT,
+            ga_client_id TEXT,
+            gclid TEXT,
+            utm_source TEXT,
+            utm_medium TEXT,
+            utm_campaign TEXT,
+            utm_content TEXT,
+            sim_faturamento TEXT,
+            page_url TEXT,
+            ip TEXT,
+            user_agent TEXT,
+            status TEXT NOT NULL DEFAULT "novo",
+            closed_at TEXT,
+            close_value REAL,
+            transaction_id TEXT
+        )');
+        $stmt = $pdo->prepare('INSERT INTO leads (
+            created_at, nome, email, telefone, telefone_digits, origem, servico, mensagem,
+            ga_client_id, gclid, utm_source, utm_medium, utm_campaign, utm_content,
+            sim_faturamento, page_url, ip, user_agent
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
+        $stmt->execute([
+            date('c'),
+            $lead['nome'] ?? null,
+            $lead['email'] ?? null,
+            $lead['telefone'] ?? null,
+            normalizePhoneDigits((string) ($lead['telefone'] ?? '')),
+            $lead['origem'] ?? null,
+            $lead['servico'] ?? null,
+            $lead['mensagem'] ?? null,
+            $lead['ga_client_id'] ?? null,
+            $lead['gclid'] ?? null,
+            $lead['utm_source'] ?? null,
+            $lead['utm_medium'] ?? null,
+            $lead['utm_campaign'] ?? null,
+            $lead['utm_content'] ?? null,
+            $lead['sim_faturamento'] ?? null,
+            $lead['page_url'] ?? null,
+            $lead['ip'] ?? null,
+            $lead['user_agent'] ?? null,
+        ]);
+        return true;
+    } catch (Throwable $exception) {
+        appendLineToFile(
+            $storageDir . DIRECTORY_SEPARATOR . 'contact-errors.log',
+            sprintf('[%s] SQLite lead log falhou: %s', date('c'), $exception->getMessage())
+        );
+        return false;
+    }
+}
+
 function sendMailWithPHPMailer(array $smtpConfig, string $fromEmail, string $fromName, string $toEmail, string $replyTo, string $subject, string $body, ?string &$failureReason = null): bool
 {
     $host = $smtpConfig['host'];
@@ -201,6 +276,22 @@ $servico = trim((string) ($_POST['servico'] ?? 'Nao informado'));
 $mensagem = trim((string) ($_POST['mensagem'] ?? ''));
 $origem = trim((string) ($_POST['origem'] ?? 'site'));
 
+$trackingField = static function (string $key, int $maxLength = 300): ?string {
+    $value = trim((string) ($_POST[$key] ?? ''));
+    if ($value === '') {
+        return null;
+    }
+    return mb_substr($value, 0, $maxLength);
+};
+$gaClientId = $trackingField('ga_client_id', 64);
+$gclid = $trackingField('gclid');
+$utmSource = $trackingField('utm_source', 100);
+$utmMedium = $trackingField('utm_medium', 100);
+$utmCampaign = $trackingField('utm_campaign', 150);
+$utmContent = $trackingField('utm_content', 150);
+$simFaturamento = $trackingField('sim_faturamento', 40);
+$pageUrl = $trackingField('page_url', 500);
+
 if ($nome === '') {
     $nome = 'Nao informado';
 }
@@ -228,6 +319,8 @@ $body = implode("\n", [
     'Email: ' . ($email !== '' ? $email : 'Nao informado'),
     'Telefone: ' . ($telefone !== '' ? $telefone : 'Nao informado'),
     'Servico: ' . $servico,
+    'Campanha: ' . ($utmCampaign !== null ? $utmCampaign . ' / ' . ($utmContent ?? '-') : 'trafego direto/organico'),
+    'Faixa simulada: ' . ($simFaturamento ?? 'nao usou o simulador'),
     '',
     'Mensagem:',
     $mensagem,
@@ -253,9 +346,20 @@ $leadPayload = [
     'telefone' => $telefone !== '' ? $telefone : null,
     'servico' => $servico,
     'mensagem' => $mensagem,
+    'ga_client_id' => $gaClientId,
+    'gclid' => $gclid,
+    'utm_source' => $utmSource,
+    'utm_medium' => $utmMedium,
+    'utm_campaign' => $utmCampaign,
+    'utm_content' => $utmContent,
+    'sim_faturamento' => $simFaturamento,
+    'page_url' => $pageUrl,
     'ip' => $_SERVER['REMOTE_ADDR'] ?? 'desconhecido',
     'user_agent' => $_SERVER['HTTP_USER_AGENT'] ?? 'desconhecido',
 ];
+
+// Log estruturado SEMPRE (base do funil lead -> venda / ROI), independente do e-mail.
+persistLeadToDatabase(__DIR__, $leadPayload);
 
 $transportFailureReason = '';
 $sent = sendMailWithPHPMailer($smtpConfig, $fromEmail, $fromName, $toEmail, $replyTo, $subject, $body, $transportFailureReason);
