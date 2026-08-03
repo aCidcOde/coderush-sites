@@ -327,6 +327,82 @@ const SITE_PROFILES = {
       "diligencia em operacoes de credito e financiamento"
     ]
   },
+  bfrintelligence: {
+    persona:
+      "diretores, gerentes de operacao, atendimento e TI que querem tirar IA do piloto e operar agentes com resultado mensuravel",
+    personaShort: "lideres de operacao e TI",
+    coverArt: {
+      paletteHex: ["#1E88E5", "#283593", "#0D1B3E", "#F0F6FF"],
+      paletteDescription:
+        "azul eletrico (#1E88E5) em gradiente 130 graus para indigo profundo (#283593), sobre navy noturno (#0D1B3E) ou nevoa clara (#F0F6FF)",
+      lighting: "luz limpa de produto SaaS, gradientes suaves azul-indigo, brilho pontual frio, sem neon saturado",
+      mood: "inteligencia aplicada, precisao de engenharia, produto de IA serio e mensuravel",
+      visualMotifs: [
+        "malhas de nos conectados representando agentes orquestrados",
+        "blocos geometricos limpos em camadas, estetica de arquitetura de software",
+        "feixes de dados em gradiente azul-indigo atravessando a composicao",
+        "grades e linhas finas lembrando blueprint tecnico"
+      ],
+      avoid: [
+        "robos antropomorficos",
+        "cerebros eletronicos cliche",
+        "engrenagens",
+        "telas de chatbot",
+        "verde esmeralda ou dark emerald (paleta da marca anterior)"
+      ]
+    },
+    offering:
+      "agentes de IA para operacao real: contexto, integracao com sistemas, seguranca, governanca e ROI mensuravel",
+    differentiators: [
+      "agentes com contexto e integracao a sistemas internos, nao chatbot generico",
+      "engenharia de agentes: RAG, tools, permissoes e auditoria",
+      "foco em sair do piloto e medir resultado em operacao"
+    ],
+    voice: "editorial tecnico-executivo, claro e direto, focado em operacao real e resultado mensuravel",
+    casualVoice: "engenheiro-consultor que ja colocou agente em producao — fala de integracao, guardrail e ROI, sem mistica de IA",
+    bannedWords: mergeBanned(["IA magica", "chatbot besta", "tudo automatizado", "autonomia total", "revolucionario"]),
+    angleBias: [
+      "engenharia de agentes",
+      "automacao e integracoes",
+      "governanca",
+      "ROI",
+      "RAG",
+      "seguranca"
+    ],
+    cta: { label: "Criar meu agente", path: "/#contato" },
+    keywords: {
+      primary: [
+        "agentes de IA para empresas",
+        "IA na operacao",
+        "engenharia de agentes"
+      ],
+      secondary: [
+        "RAG",
+        "automacao com IA",
+        "governanca de IA",
+        "integracao de agentes",
+        "ROI de IA",
+        "agentes corporativos"
+      ],
+      longTail: [
+        "como tirar agente de IA do piloto",
+        "agentes de IA integrados a sistemas internos",
+        "medir ROI de agentes de IA na operacao"
+      ]
+    },
+    themes: [
+      "engenharia de agentes: do piloto a producao",
+      "agentes com RAG e contexto do negocio",
+      "automacao e integracoes com sistemas internos",
+      "governanca, permissoes e auditoria de agentes",
+      "ROI mensuravel de IA na operacao",
+      "seguranca e guardrails em agentes corporativos",
+      "observabilidade e logs de agentes em producao",
+      "orquestracao de multiplos agentes",
+      "agentes de IA no atendimento com canais integrados",
+      "base de conhecimento privada para agentes"
+    ]
+  },
   sistemavendadireta: {
     persona:
       "diretores comerciais e de tecnologia em empresas de venda direta e marketing multinivel",

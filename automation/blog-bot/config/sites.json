@@ -242,6 +242,42 @@
           "https://exame.com/feed/"
         ]
       }
+    },
+    {
+      "id": "bfrintelligence",
+      "name": "BFR Intelligence",
+      "postType": "agentes-ia-operacao",
+      "language": "pt-BR",
+      "enabled": true,
+      "baseUrl": "https://bfrintelligence.com.br",
+      "target": "api",
+      "api": {
+        "baseUrl": "https://bfrintelligence.com.br",
+        "endpoint": "/api.php",
+        "tokenEnv": "BFR_CONTENT_TOKEN",
+        "format": "bfr-json",
+        "coverPublicDir": "fluxointeligenteia/imagens/posts",
+        "coverPublicBaseUrl": "https://fluxointeligenteia.com.br/imagens/posts"
+      },
+      "outputRoot": "automation/blog-bot/out/bfrintelligence",
+      "coverModel": {
+        "primary": "gpt-5-image",
+        "fallback": [
+          "gemini-3-pro",
+          "gemini-flash"
+        ]
+      },
+      "research": {
+        "maxItems": 6,
+        "sinceDays": 21,
+        "feeds": [
+          "https://blog.langchain.com/rss/",
+          "https://blog.n8n.io/rss/",
+          "https://huggingface.co/blog/feed.xml",
+          "https://blog.crewai.com/rss/",
+          "https://openai.com/blog/rss.xml"
+        ]
+      }
     }
   ]
 }

@@ -42,6 +42,7 @@ jobs:
           BLOG_BOT_OPENROUTER_IMAGE_MODEL: google/gemini-2.5-flash-image
           BLOG_BOT_PROMPT_MODEL: anthropic/claude-sonnet-4-6
           BLOG_API_TOKEN_EMERGENCY: ${{ secrets.BLOG_API_TOKEN_EMERGENCY }}
+          BFR_CONTENT_TOKEN: ${{ secrets.BFR_CONTENT_TOKEN }}
         run: npm run blogbot:publish
 
       - name: Commit and push to main

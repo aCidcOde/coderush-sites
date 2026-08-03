@@ -91,6 +91,106 @@ async function ensureCoverFile({ root, site, contract, aiConfig }) {
   };
 }
 
+function markdownFromContent(content) {
+  const parts = [];
+  const ab = content?.answerBox || {};
+  if (ab.question) {
+    parts.push(`## ${ab.question}\n\n${ab.answer || ""}`);
+  }
+  const tldr = Array.isArray(content?.tldr) ? content.tldr : [];
+  if (tldr.length) {
+    parts.push("**Em resumo:**\n\n" + tldr.map((t) => `- ${t}`).join("\n"));
+  }
+  for (const s of content?.sections || []) {
+    const title = (s.title || "").trim();
+    if (s.type === "prose") {
+      parts.push((title ? `## ${title}\n\n` : "") + (s.body || ""));
+    } else if (s.type === "list") {
+      const items = (s.items || []).map((i) => `- ${i}`).join("\n");
+      parts.push((title ? `## ${title}\n\n` : "") + items);
+    } else if (s.type === "callout") {
+      parts.push(`> **${title || "Atenção"}** — ${(s.body || "").replace(/\n/g, " ")}`);
+    }
+    // cta-inline: nao replicado — o CTA e do template do destino
+  }
+  const faq = Array.isArray(content?.faq) ? content.faq : [];
+  if (faq.length) {
+    parts.push(
+      "## Perguntas frequentes\n\n"
+        + faq.map((f) => `**${f.q}**\n\n${f.a}`).join("\n\n")
+    );
+  }
+  return parts.filter((p) => p.trim()).join("\n\n");
+}
+
+function bfrCategory(contract) {
+  const hay = `${contract.theme || ""} ${contract.angle || ""}`.toLowerCase();
+  if (/governan|auditoria|permiss|roi|seguran|observabilidade|log/.test(hay)) {
+    return "Governança e ROI";
+  }
+  if (/automa|integra|n8n|canal|canais|atendimento/.test(hay)) {
+    return "Automação e integrações";
+  }
+  return "Engenharia de agentes";
+}
+
+function buildBfrPayload({ site, contract, coverAlt }) {
+  const content = contract.content || {};
+  const description = String(contract.description || content.summary || "").slice(0, 320);
+  const publishedAt = contract.generatedAt || nowInBrtIso();
+  return {
+    external_id: `bot-${contract.date}-${contract.slug}`,
+    slug: contract.slug,
+    title: content.headline || contract.title,
+    excerpt: String(content.summary || description).slice(0, 300),
+    body: markdownFromContent(content),
+    category: bfrCategory(contract),
+    author_name: "BFR Intelligence",
+    featured_image_url: `${site.api.coverPublicBaseUrl}/${contract.slug}.jpg`,
+    featured_image_alt: coverAlt || content.headline || contract.title,
+    meta_title: String(content.seoTitle || content.headline || "").slice(0, 70),
+    meta_description: description,
+    tags: ["inteligência artificial", "agentes", "automação", "governança"],
+    status: "published",
+    published_at: publishedAt
+  };
+}
+
+function publishCoverPublicly(root, site, contract, coverPath) {
+  // A capa precisa de URL publica: copia pro diretorio servido (excecao do 301 do fluxo),
+  // que o workflow commita e o deploy publica junto.
+  const publicDir = path.resolve(root, site.api.coverPublicDir);
+  ensureDir(publicDir);
+  const target = path.resolve(publicDir, `${contract.slug}.jpg`);
+  fs.copyFileSync(coverPath, target);
+  return target;
+}
+
+async function postJsonToApi({ site, payload }) {
+  const token = resolveToken(site);
+  const url = buildEndpoint(site);
+  const response = await fetch(url, {
+    method: "POST",
+    headers: {
+      Accept: "application/json",
+      Authorization: `Bearer ${token}`,
+      "Content-Type": "application/json",
+      // Cloudflare do destino bloqueia UA de bot (error 1010)
+      "User-Agent":
+        "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+    },
+    body: JSON.stringify(payload)
+  });
+  const rawText = await response.text();
+  let body = null;
+  try {
+    body = rawText ? JSON.parse(rawText) : null;
+  } catch (_err) {
+    body = { raw: rawText };
+  }
+  return { status: response.status, ok: response.ok, body };
+}
+
 function resolveToken(site) {
   const envName = site.api?.tokenEnv || "BLOG_API_TOKEN";
   const token = String(process.env[envName] || "").trim();
@@ -154,6 +254,32 @@ async function publishApiPost(root, site, contract, aiConfig) {
     throw new Error(
       `coverAlt ausente para ${site.id}/${contract.slug}: regenere a capa removendo ${cover.path}`
     );
+  }
+
+  if (site.api?.format === "bfr-json") {
+    const publicPath = publishCoverPublicly(root, site, contract, cover.path);
+    const payload = buildBfrPayload({ site, contract, coverAlt: contract.coverAlt });
+    const apiResult = await postJsonToApi({ site, payload });
+    if (!apiResult.ok && apiResult.status !== 200) {
+      const detail = apiResult.body?.message || apiResult.body?.raw || "";
+      throw new Error(
+        `API ${apiResult.status} ao publicar ${site.id}/${contract.slug}: `
+          + (typeof detail === "string" ? detail : JSON.stringify(detail))
+      );
+    }
+    return {
+      apiStatus: apiResult.status,
+      apiUrl: `${site.baseUrl}/conteudos/artigo.html?slug=${apiResult.body?.data?.slug || contract.slug}`,
+      apiId: apiResult.body?.data?.id || null,
+      apiPublishedAt: payload.published_at,
+      apiResponse: apiResult.body,
+      coverPath: publicPath,
+      coverSize: fs.statSync(cover.path).size,
+      coverSource: cover.source,
+      coverAlt: cover.altText || contract.coverAlt || "",
+      coverLeakage: cover.leakage || null,
+      warning: cover.warning
+    };
   }
 
   const coverSize = fs.statSync(cover.path).size;
