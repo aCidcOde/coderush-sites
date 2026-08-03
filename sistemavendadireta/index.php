@@ -118,6 +118,7 @@ $clientCompanies = [
     ['name' => 'XLR Invest'],
     ['name' => 'Protech Nutritional'],
     ['name' => "New Professional's"],
+    ['name' => 'ForOne'],
 ];
 
 $clientCases = array_values(array_filter(

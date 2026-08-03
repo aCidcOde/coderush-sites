@@ -98,6 +98,49 @@ return [
         ],
     ],
     [
+        'slug' => 'forone',
+        'name' => 'ForOne',
+        'segment' => 'Venda direta multinível • Bolívia',
+        'period' => 'Operação no ar',
+        'featured' => true,
+        'logo' => 'imagens/clientes/forone.webp',
+        'logoFallback' => 'imagens/clientes/forone.png',
+        'logoWidth' => 480,
+        'logoHeight' => 224,
+        'url' => 'https://oficina.foroneglobal.com/',
+        'summary' => 'Escritório virtual da operação internacional da ForOne: rede binária e unilevel simultâneas, '
+            . 'seis tipos de bônus — incluindo matching — e plano de carreira que vai da adesão à franquia.',
+        'highlights' => [
+            'Rede binária e unilevel rodando em paralelo',
+            'Seis tipos de bônus, incluindo matching de equipe',
+            'Plano de carreira em cinco níveis, até franquia',
+            'Fechamento de bônus automatizado por rotinas programadas',
+        ],
+        'details' => [
+            [
+                'title' => 'Plano de compensação composto',
+                'body' => 'A operação combina rede binária e unilevel na mesma árvore de consultores, com seis tipos de bônus '
+                    . 'parametrizados — binário, fundador, indicação, indicação de franquia, matching e ativação mensal. '
+                    . 'É o plano mais completo rodando sobre a plataforma.',
+            ],
+            [
+                'title' => 'Carreira até a franquia',
+                'body' => 'Cinco níveis de plano — da taxa de adesão a Bronze, Prata, Ouro e Franquia — com regras de qualificação '
+                    . 'e bonificação próprias por nível, configuradas no administrativo.',
+            ],
+            [
+                'title' => 'Fechamento automatizado',
+                'body' => 'Rotinas programadas de 5 minutos a mensais processam volumes, ativações e fechamentos de bônus sem '
+                    . 'intervenção manual — o consultor acompanha tudo no escritório virtual, com loja e treinamento integrados.',
+            ],
+        ],
+        'metrics' => [
+            ['value' => '6', 'label' => 'tipos de bônus no plano'],
+            ['value' => '5', 'label' => 'níveis de carreira'],
+            ['value' => '2', 'label' => 'redes em paralelo (binária + unilevel)'],
+        ],
+    ],
+    [
         'slug' => 'mauasinc',
         'name' => 'MauaSinc',
         'segment' => 'Plataforma de operação corporativa • Grupo Mauá',
@@ -147,7 +190,7 @@ return [
         'name' => 'Planeta Certidões → Emergency',
         'segment' => 'Documentos e certidões digitais • SaaS',
         'period' => 'Modernização em produção',
-        'featured' => true,
+        'featured' => false,
         'logo' => 'imagens/clientes/planeta-emergency.webp',
         'logoFallback' => 'imagens/clientes/planeta-emergency.png',
         'logoWidth' => 420,
