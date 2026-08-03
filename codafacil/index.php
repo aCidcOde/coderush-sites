@@ -705,7 +705,6 @@ $seoLdGraph = [
         <div class="flex flex-wrap justify-center gap-2 text-xs text-white/45">
           <a href="https://coderush.com.br" target="_blank" rel="noopener noreferrer" class="rounded-full border border-white/15 px-3 py-1 transition hover:border-white/35 hover:text-white/80">coderush.com.br</a>
           <a href="https://sistemavendadireta.com.br" target="_blank" rel="noopener noreferrer" class="rounded-full border border-white/15 px-3 py-1 transition hover:border-white/35 hover:text-white/80">sistemavendadireta.com.br</a>
-          <a href="https://fluxointeligenteia.com.br" target="_blank" rel="noopener noreferrer" title="FluxoInteligente IA — agentes corporativos com RAG, tools e governança" class="rounded-full border border-white/15 px-3 py-1 transition hover:border-white/35 hover:text-white/80">FluxoInteligente IA</a>
         </div>
       </div>
     </div>
