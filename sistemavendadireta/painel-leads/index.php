@@ -185,6 +185,64 @@ function brDateTime(?string $iso): string
       </div>
     <?php endif; ?>
 
+    <?php
+    $gaStatsPath = __DIR__ . '/../storage/ga-stats.json';
+    $ga = is_file($gaStatsPath) ? json_decode((string) file_get_contents($gaStatsPath), true) : null;
+    if (is_array($ga)):
+    ?>
+      <h2>Google Analytics <span class="muted" style="font-weight:400;">· snapshot de <?= e(brDateTime($ga['gerado_em'] ?? null)) ?> · atualiza a cada 6h</span></h2>
+      <?php foreach (($ga['sites'] ?? []) as $gs): ?>
+        <div class="scroll" style="margin-bottom:14px; padding:14px 16px;">
+          <p style="font-weight:700; margin-bottom:10px;"><?= e($gs['host'] ?? '') ?></p>
+          <div class="cards" style="margin-bottom:12px;">
+            <div class="card"><b><?= (int) ($gs['d7']['usuarios'] ?? 0) ?></b><span>Usuários (7d)</span></div>
+            <div class="card"><b><?= (int) ($gs['d7']['sessoes'] ?? 0) ?></b><span>Sessões (7d)</span></div>
+            <div class="card"><b><?= (int) ($gs['d28']['usuarios'] ?? 0) ?></b><span>Usuários (28d)</span></div>
+            <div class="card"><b><?= (int) ($gs['d28']['pageviews'] ?? 0) ?></b><span>Pageviews (28d)</span></div>
+          </div>
+
+          <?php if (!empty($gs['eventos'])): ?>
+            <p class="muted" style="margin-bottom:6px;">Eventos-chave (28d):
+              <?php foreach ($gs['eventos'] as $nome => $qtd): ?>
+                <span class="tag zap" style="margin-right:6px;"><?= e($nome) ?>: <?= (int) $qtd ?></span>
+              <?php endforeach; ?>
+            </p>
+          <?php endif; ?>
+
+          <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px;">
+            <?php if (!empty($gs['fontes'])): ?>
+              <table><tr><th>Fonte / mídia (28d)</th><th>Sessões</th></tr>
+                <?php foreach ($gs['fontes'] as $row): ?>
+                  <tr><td><?= e($row['fonte']) ?></td><td><?= (int) $row['sessoes'] ?></td></tr>
+                <?php endforeach; ?>
+              </table>
+            <?php endif; ?>
+            <?php if (!empty($gs['campanhas'])): ?>
+              <table><tr><th>Campanha (28d)</th><th>Sessões</th><th>Conversões</th></tr>
+                <?php foreach ($gs['campanhas'] as $row): ?>
+                  <tr><td><?= e($row['campanha']) ?></td><td><?= (int) $row['sessoes'] ?></td><td><?= e((string) $row['conversoes']) ?></td></tr>
+                <?php endforeach; ?>
+              </table>
+            <?php endif; ?>
+            <?php if (!empty($gs['paginas'])): ?>
+              <table><tr><th>Página (28d)</th><th>Views</th></tr>
+                <?php foreach ($gs['paginas'] as $row): ?>
+                  <tr><td><?= e($row['pagina']) ?></td><td><?= (int) $row['views'] ?></td></tr>
+                <?php endforeach; ?>
+              </table>
+            <?php endif; ?>
+            <?php if (!empty($gs['faixas_simuladas'])): ?>
+              <table><tr><th>Faixa simulada (28d)</th><th>Usos</th></tr>
+                <?php foreach ($gs['faixas_simuladas'] as $row): ?>
+                  <tr><td><?= e($row['faixa']) ?></td><td><?= (int) $row['eventos'] ?></td></tr>
+                <?php endforeach; ?>
+              </table>
+            <?php endif; ?>
+          </div>
+        </div>
+      <?php endforeach; ?>
+    <?php endif; ?>
+
     <h2>Últimos leads (até 200)</h2>
     <?php if ($dbAviso !== ''): ?>
       <p class="muted"><?= e($dbAviso) ?></p>
