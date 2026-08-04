@@ -263,6 +263,18 @@ $seoDescription = 'Sistema para marca de cosméticos com consultoras: catálogo 
       </p>
     </section>
 
+    <section class="py-6">
+      <h2 class="font-[var(--font-heading)] text-xl font-bold sm:text-2xl">Tecnologia por trás da sua operação</h2>
+      <div class="mt-2 h-1 w-[56px] rounded-full bg-amber-300"></div>
+      <div class="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="flex items-start gap-3 rounded-2xl border border-white/20 bg-white/5 px-4 py-3"><svg class="h-5 w-5 shrink-0 text-amber-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span class="text-sm leading-relaxed text-white/90"><strong>Proteção Cloudflare</strong> contra ataques e sobrecarga</span></div>
+        <div class="flex items-start gap-3 rounded-2xl border border-white/20 bg-white/5 px-4 py-3"><svg class="h-5 w-5 shrink-0 text-amber-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg><span class="text-sm leading-relaxed text-white/90"><strong>Infraestrutura dedicada</strong> — nada compartilhado com terceiros</span></div>
+        <div class="flex items-start gap-3 rounded-2xl border border-white/20 bg-white/5 px-4 py-3"><svg class="h-5 w-5 shrink-0 text-amber-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg><span class="text-sm leading-relaxed text-white/90"><strong>SSL automático</strong> e cookies de sessão endurecidos</span></div>
+        <div class="flex items-start gap-3 rounded-2xl border border-white/20 bg-white/5 px-4 py-3"><svg class="h-5 w-5 shrink-0 text-amber-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg><span class="text-sm leading-relaxed text-white/90"><strong>Backups replicados</strong> em ambiente externo</span></div>
+      </div>
+    </section>
+
+
     <section class="py-10">
       <h2 class="font-[var(--font-heading)] text-2xl font-bold sm:text-[32px]">Mensalidade proporcional ao seu faturamento</h2>
       <div class="mt-2 h-1 w-[72px] rounded-full bg-amber-300"></div>
@@ -567,6 +579,7 @@ $seoDescription = 'Sistema para marca de cosméticos com consultoras: catálogo 
             ['Meu plano de negócio é diferente. Serve?', 'A instalação contempla a parametrização do seu plano. Binário, unilevel, comissão por cargo ou modelo próprio: a regra é configurada, não improvisada.'],
             ['O que não está incluso?', 'Integrações de ERP e gateway de pagamento são orçadas separadamente, porque dependem do provedor que você já usa.'],
             ['Existe outro custo além da mensalidade?', 'Não. Novas funcionalidades pedidas depois são acordadas antes de qualquer cobrança.'],
+            ['Onde o sistema fica hospedado?', 'Em infraestrutura dedicada Linux, atrás de proteção Cloudflare, com certificado SSL automático e backups replicados. Sua operação não divide servidor com terceiros.'],
             ['Como funciona o suporte?', 'Direto por WhatsApp e telefone, com a mesma equipe que fez a implantação.'],
         ];
         foreach ($faq as $pair): ?>
