@@ -190,8 +190,8 @@ $seoDescription = 'Sistema para distribuidora de suplementos que vende por consu
           <p class="mt-1 text-sm text-white/85">de experiência do time em sistemas de vendas, financeiro e fiscal.</p>
         </div>
         <div class="rounded-2xl border border-white/20 bg-white/5 p-5">
-          <p class="font-[var(--font-heading)] text-3xl font-bold text-amber-300">3 países</p>
-          <p class="mt-1 text-sm text-white/85">com operação ativa hoje — Brasil, Paraguai e Bolívia, em três idiomas e moeda local.</p>
+          <p class="font-[var(--font-heading)] text-3xl font-bold text-amber-300">5 países</p>
+          <p class="mt-1 text-sm text-white/85">atendidos pela plataforma — Brasil, Paraguai, Bolívia, Estados Unidos e Portugal — em três idiomas e moeda local.</p>
         </div>
       </div>
     </section>
