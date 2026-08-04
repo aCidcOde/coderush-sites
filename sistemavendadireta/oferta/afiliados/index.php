@@ -53,7 +53,7 @@ $whatsappHref = 'https://wa.me/' . $whatsappPhone . '?text=' . rawurlencode($wha
 
 $seoBase = 'https://www.sistemavendadireta.com.br';
 $seoUrl = $seoBase . '/oferta/afiliados/';
-$seoTitle = 'Sistema para programa de afiliados | Sistema Venda Direta';
+$seoTitle = 'Sistema para afiliados e influenciadores | Sistema Venda Direta';
 $seoDescription = 'Cadastre afiliados e influenciadores com link e cupom próprios; o sistema rastreia, calcula e paga os bônus. Instalação promocional até 31/08.';
 ?>
 <!doctype html>
@@ -129,10 +129,10 @@ $seoDescription = 'Cadastre afiliados e influenciadores com link e cupom própri
           Celebrando 10 anos
         </p>
         <h1 class="mt-4 font-[var(--font-heading)] text-3xl font-bold leading-[1.1] sm:text-4xl lg:text-[46px]">
-          Sistema para <span class="text-amber-300">programa de afiliados</span> e influenciadores
+          Sistema para <span class="text-amber-300">afiliados, influenciadores e parcerias</span>
         </h1>
         <p class="mt-4 max-w-3xl text-base leading-relaxed text-white/90 sm:text-lg">
-          Sua empresa cadastra afiliados e influenciadores — cada um com link e cupom próprios — e o sistema rastreia as vendas, calcula e paga os bônus. Escritório do afiliado, extrato transparente e regras de comissão editáveis: a mesma plataforma que roda programas de afiliados há mais de 10 anos.
+          Sua empresa cadastra <strong class="text-amber-300">afiliados e influenciadores</strong> — cada um com link e cupom próprios — e o sistema rastreia as vendas, calcula e paga os bônus. Escritório do <strong class="text-amber-300">parceiro</strong>, extrato transparente e regras de comissão editáveis: a mesma plataforma que roda <strong class="text-amber-300">programas de parceria</strong> há mais de 10 anos.
         </p>
 
       </div>
@@ -202,12 +202,12 @@ $seoDescription = 'Cadastre afiliados e influenciadores com link e cupom própri
     </section>
 
     <section class="py-10">
-      <h2 class="font-[var(--font-heading)] text-2xl font-bold sm:text-[32px]">Feito para parcerias com criadores</h2>
+      <h2 class="font-[var(--font-heading)] text-2xl font-bold sm:text-[32px]">Parcerias com <span class="text-amber-300">influenciadores</span> no YouTube, TikTok e Instagram</h2>
       <div class="mt-2 h-1 w-[72px] rounded-full bg-amber-300"></div>
       <p class="mt-4 max-w-3xl text-base leading-relaxed text-white/90">
-        Cada criador recebe um <strong>link rastreável</strong> e um <strong>cupom com o próprio nome</strong>.
+        Cada <strong class="text-amber-300">influenciador</strong> recebe um <strong>link rastreável</strong> e um <strong>cupom com o próprio nome</strong>.
         Não importa onde a venda nasce — vídeo, bio ou stories — o sistema identifica quem indicou,
-        calcula o bônus e mostra tudo no extrato do parceiro.
+        calcula o bônus e mostra tudo no extrato da <strong class="text-amber-300">parceria</strong>.
       </p>
 
       <div class="mt-6 grid gap-4 md:grid-cols-3">
@@ -227,7 +227,7 @@ $seoDescription = 'Cadastre afiliados e influenciadores com link e cupom própri
           <p class="mt-2 text-sm leading-relaxed text-white/85">Link na bio e cupom nos stories — influenciadora acompanha as próprias vendas e o bônus a receber no escritório dela.</p>
         </div>
       </div>
-      <p class="mt-4 text-sm text-white/70">E o que vale pra criador vale pra qualquer canal: site parceiro, indicação boca a boca ou equipe de vendas — o link e o cupom identificam a venda, não a plataforma.</p>
+      <p class="mt-4 text-sm text-white/70">E o que vale pra <strong class="text-amber-300">influenciador</strong> vale pra qualquer <strong class="text-amber-300">parceria</strong>: site parceiro, indicação boca a boca ou equipe de vendas — o link e o cupom identificam a venda, não a plataforma.</p>
     </section>
 
     <section class="py-10">
