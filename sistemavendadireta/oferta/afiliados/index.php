@@ -202,6 +202,35 @@ $seoDescription = 'Cadastre afiliados e influenciadores com link e cupom própri
     </section>
 
     <section class="py-10">
+      <h2 class="font-[var(--font-heading)] text-2xl font-bold sm:text-[32px]">Feito para parcerias com criadores</h2>
+      <div class="mt-2 h-1 w-[72px] rounded-full bg-amber-300"></div>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-white/90">
+        Cada criador recebe um <strong>link rastreável</strong> e um <strong>cupom com o próprio nome</strong>.
+        Não importa onde a venda nasce — vídeo, bio ou stories — o sistema identifica quem indicou,
+        calcula o bônus e mostra tudo no extrato do parceiro.
+      </p>
+
+      <div class="mt-6 grid gap-4 md:grid-cols-3">
+        <div class="rounded-2xl border border-white/20 bg-white/5 p-5">
+          <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-amber-400/15 text-amber-300"><svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4"/><polygon points="10 9 15 12 10 15 10 9" fill="currentColor" stroke="none"/></svg></div>
+          <h3 class="mt-3 font-semibold">YouTube</h3>
+          <p class="mt-2 text-sm leading-relaxed text-white/85">Link na descrição e cupom falado no vídeo — a venda do review de ontem e a do vídeo de 2 anos atrás caem pro mesmo criador.</p>
+        </div>
+        <div class="rounded-2xl border border-white/20 bg-white/5 p-5">
+          <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-amber-400/15 text-amber-300"><svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18a4 4 0 1 0 4 4V6a5 5 0 0 0 5 5"/></svg></div>
+          <h3 class="mt-3 font-semibold">TikTok</h3>
+          <p class="mt-2 text-sm leading-relaxed text-white/85">Cupom curto e memorável pro público que vê o vídeo e digita na loja — rastreio funciona mesmo sem clique no link.</p>
+        </div>
+        <div class="rounded-2xl border border-white/20 bg-white/5 p-5">
+          <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-amber-400/15 text-amber-300"><svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></div>
+          <h3 class="mt-3 font-semibold">Instagram</h3>
+          <p class="mt-2 text-sm leading-relaxed text-white/85">Link na bio e cupom nos stories — influenciadora acompanha as próprias vendas e o bônus a receber no escritório dela.</p>
+        </div>
+      </div>
+      <p class="mt-4 text-sm text-white/70">E o que vale pra criador vale pra qualquer canal: site parceiro, indicação boca a boca ou equipe de vendas — o link e o cupom identificam a venda, não a plataforma.</p>
+    </section>
+
+    <section class="py-10">
       <h2 class="font-[var(--font-heading)] text-2xl font-bold sm:text-[32px]">Implantação assistida por IA</h2>
       <div class="mt-2 h-1 w-[72px] rounded-full bg-amber-300"></div>
       <p class="mt-4 max-w-3xl text-base leading-relaxed text-white/90">
