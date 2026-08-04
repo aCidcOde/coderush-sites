@@ -22,6 +22,8 @@ $promoInstallTo = 3500;            // valor promocional em 2x (R$)
 $promoInstallCash = 3000;          // valor promocional a vista (R$)
 $promoDeadline = '2026-08-31';     // ultimo dia da promocao (America/Sao_Paulo)
 $promoSlots = 10;                  // vagas de implantacao no periodo (tema: 10 anos)
+$promoSlotsFilled = 2;             // ja fechadas: New Professional's e Protech
+$promoSlotsLeft = max(0, $promoSlots - $promoSlotsFilled);
 $whatsappPhone = '5511994566726';
 $whatsappMessage = 'Ola! Tenho uma operacao de suplementos e vim pela Promocao 10 Anos. Quero ver o sistema.';
 
@@ -156,8 +158,11 @@ $seoDescription = 'Sistema para distribuidora de suplementos com consultores: es
           </div>
           <?php if ($promoActive): ?>
             <p class="mt-3 text-center text-xs text-white/70">
-              <?= (int) $promoSlots ?> vagas de implantação até <?= htmlspecialchars($deadlineLabel, ENT_QUOTES, 'UTF-8') ?> — a fila respeita a ordem de fechamento.
+              <?= (int) $promoSlotsFilled ?> das <?= (int) $promoSlots ?> vagas já preenchidas (New Professional\'s e Protech) — restam <strong class="text-amber-300"><?= (int) $promoSlotsLeft ?></strong> até <?= htmlspecialchars($deadlineLabel, ENT_QUOTES, 'UTF-8') ?>.
             </p>
+            <div class="mx-auto mt-2 h-1.5 w-full max-w-[260px] overflow-hidden rounded-full bg-white/15">
+              <div class="h-full rounded-full bg-amber-400" style="width: <?= (int) round($promoSlotsFilled / max(1, $promoSlots) * 100) ?>%"></div>
+            </div>
           <?php endif; ?>
         </div>
 
