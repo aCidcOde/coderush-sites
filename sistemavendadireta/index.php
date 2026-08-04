@@ -10,6 +10,18 @@ $contactRedirect = ($scriptDir === '/' || $scriptDir === '') ? '/' : rtrim($scri
 
 $seoBase = 'https://www.sistemavendadireta.com.br';
 $seoUrl = $seoBase . '/';
+
+// Modal da promocao de instalacao — mesmos parametros da LP /oferta/.
+// Some sozinho depois do prazo; valores atualizados aqui e em oferta/index.php.
+$promoModal = [
+    'from' => 'R$ 5.000',
+    'to' => 'R$ 3.500',
+    'cash' => 'R$ 3.000',
+    'deadline' => '2026-08-31',
+];
+$promoModalDeadline = new DateTimeImmutable($promoModal['deadline'] . ' 23:59:59', new DateTimeZone('America/Sao_Paulo'));
+$promoModalActive = new DateTimeImmutable('now', new DateTimeZone('America/Sao_Paulo')) <= $promoModalDeadline;
+$promoModalDeadlineLabel = $promoModalDeadline->format('d/m/Y');
 $seoTitle = 'Sistema para Vendas Diretas e Marketing Multinível — MMN';
 $seoDescription = 'Plataforma MMN com planos binário e unilevel, gateways de pagamento e loja virtual integrada. Sistema Venda Direta desde 2002 — ecossistema CodeRush no Brasil.';
 $seoOgImage = $seoBase . '/imagens/og-sistema-venda-direta.jpg';
@@ -908,6 +920,66 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
     <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-white/20 text-base leading-none">W</span>
     <span class="sm:hidden">WhatsApp</span>
   </a>
+
+  <?php if ($promoModalActive): ?>
+    <!-- Modal da promocao de instalacao (1x por sessao; expira em <?= htmlspecialchars($promoModal['deadline'], ENT_QUOTES, 'UTF-8') ?>) -->
+    <div id="promo-modal" class="fixed inset-0 z-[90] hidden items-center justify-center p-4" role="dialog" aria-modal="true" aria-labelledby="promo-modal-titulo">
+      <div id="promo-modal-backdrop" class="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
+      <div class="relative w-full max-w-md overflow-hidden rounded-[28px] border border-amber-300/50 bg-gradient-to-b from-brand to-brand-dark p-6 text-center shadow-[0_30px_80px_rgba(0,0,0,0.5)] sm:p-8">
+        <button id="promo-modal-fechar" type="button" aria-label="Fechar" class="absolute right-4 top-4 inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/30 text-lg leading-none text-white/80 hover:bg-white/10">&times;</button>
+
+        <p class="inline-flex rounded-full border border-amber-300/50 bg-amber-400/15 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.18em] text-amber-200">
+          Oferta por tempo limitado
+        </p>
+        <h2 id="promo-modal-titulo" class="mt-4 font-[var(--font-heading)] text-2xl font-bold leading-tight sm:text-[28px]">
+          Instalação com <span class="text-amber-300">até 40% OFF</span>
+        </h2>
+        <div class="mt-4 flex flex-wrap items-end justify-center gap-2">
+          <span class="text-lg font-semibold text-white/50 line-through"><?= htmlspecialchars($promoModal['from'], ENT_QUOTES, 'UTF-8') ?></span>
+          <span class="font-[var(--font-heading)] text-4xl font-bold text-amber-300"><?= htmlspecialchars($promoModal['to'], ENT_QUOTES, 'UTF-8') ?></span>
+          <span class="pb-1 text-sm font-semibold text-white/85">em 2x</span>
+        </div>
+        <p class="mt-1 text-sm font-semibold text-white/90">ou <span class="text-amber-300 font-bold"><?= htmlspecialchars($promoModal['cash'], ENT_QUOTES, 'UTF-8') ?></span> à vista</p>
+        <p class="mt-3 text-xs text-white/70">Válida até <?= htmlspecialchars($promoModalDeadlineLabel, ENT_QUOTES, 'UTF-8') ?> · mensalidade proporcional ao faturamento</p>
+
+        <a id="promo-modal-cta" href="oferta/?utm_source=site&utm_medium=modal&utm_campaign=instalacao-50off" class="mt-5 inline-flex w-full items-center justify-center rounded-full bg-amber-400 px-6 py-3.5 text-sm font-bold uppercase tracking-wide text-brand transition hover:-translate-y-0.5 hover:bg-amber-300">
+          Ver a oferta completa
+        </a>
+        <button id="promo-modal-depois" type="button" class="mt-3 text-xs font-semibold text-white/60 hover:text-white/85">
+          Agora não, continuar no site
+        </button>
+      </div>
+    </div>
+    <script>
+      (function () {
+        var modal = document.getElementById("promo-modal");
+        if (!modal) return;
+        var KEY = "svd-promo-modal-visto";
+        try { if (window.sessionStorage.getItem(KEY)) return; } catch (e) {}
+        function track(name) {
+          if (typeof window.gtag === "function") { window.gtag("event", name, { page: "home-modal" }); }
+        }
+        function fechar() {
+          modal.classList.add("hidden");
+          modal.classList.remove("flex");
+          try { window.sessionStorage.setItem(KEY, "1"); } catch (e) {}
+        }
+        window.setTimeout(function () {
+          modal.classList.remove("hidden");
+          modal.classList.add("flex");
+          track("promo_modal_view");
+        }, 2200);
+        document.getElementById("promo-modal-fechar").addEventListener("click", fechar);
+        document.getElementById("promo-modal-depois").addEventListener("click", fechar);
+        document.getElementById("promo-modal-backdrop").addEventListener("click", fechar);
+        document.addEventListener("keydown", function (ev) { if (ev.key === "Escape") fechar(); });
+        document.getElementById("promo-modal-cta").addEventListener("click", function () {
+          track("promo_modal_click");
+          try { window.sessionStorage.setItem(KEY, "1"); } catch (e) {}
+        });
+      })();
+    </script>
+  <?php endif; ?>
 
   <script src="js/lottie.min.js" defer></script>
 
