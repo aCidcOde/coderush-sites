@@ -151,13 +151,13 @@ $seoLdGraph = [
       <section id="<?= htmlspecialchars($case['slug'], ENT_QUOTES, 'UTF-8') ?>" class="scroll-mt-28 py-6">
         <article class="rounded-[30px] border border-white/25 bg-white/[0.06] p-6 sm:p-8">
           <div class="grid gap-6 lg:grid-cols-[auto_1fr] lg:items-center">
-            <div class="flex max-w-[280px] items-center rounded-2xl bg-white px-5 py-4">
+            <div class="flex w-full max-w-[360px] items-center justify-center rounded-2xl bg-white px-6 py-5">
               <picture>
                 <source srcset="../<?= htmlspecialchars($case['logo'], ENT_QUOTES, 'UTF-8') ?>" type="image/webp" />
                 <img
                   src="../<?= htmlspecialchars($case['logoFallback'], ENT_QUOTES, 'UTF-8') ?>"
                   alt="<?= htmlspecialchars($case['name'], ENT_QUOTES, 'UTF-8') ?>"
-                  class="h-10 w-auto object-contain sm:h-12"
+                  class="h-16 w-auto max-w-full object-contain sm:h-16"
                   width="<?= (int) $case['logoWidth'] ?>"
                   height="<?= (int) $case['logoHeight'] ?>"
                   loading="lazy"
@@ -187,6 +187,14 @@ $seoLdGraph = [
               <?php endif; ?>
             </div>
           </div>
+
+          <?php if (!empty($case['highlights'])): ?>
+            <ul class="mt-6 grid gap-2 text-sm text-white/90 sm:grid-cols-2">
+              <?php foreach ($case['highlights'] as $highlight): ?>
+                <li class="flex items-start gap-2 rounded-xl border border-white/20 bg-white/5 px-3 py-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-amber-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span><?= htmlspecialchars($highlight, ENT_QUOTES, 'UTF-8') ?></span></li>
+              <?php endforeach; ?>
+            </ul>
+          <?php endif; ?>
 
           <?php if (!empty($case['metrics'])): ?>
             <div class="mt-7 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
