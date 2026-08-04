@@ -200,3 +200,55 @@ utm_campaign=instalacao-50off-cosmeticos
 - `lp-oferta-instalacao` — LP geral
 - `lp-oferta-suplementos` — vertical suplementos
 - `lp-oferta-cosmeticos` — vertical cosméticos
+
+---
+
+# Adendo 2 (2026-08-04) — 5 LPs prontas e lancamento escalonado
+
+## Ordem de lancamento
+
+1. **Semana 1**: só `SVD - Promocao 10 Anos` → `/oferta/` com R$ 50/dia (baseline limpo)
+2. **Semana 2+**: liberar as verticais UMA por vez conforme o dado (CTR ≥3% e CPA da geral
+   como régua). Cada LP tem `origem` próprio no lead — o painel diz qual frente paga a conta.
+
+| LP | origem do lead | utm_campaign |
+|---|---|---|
+| /oferta/ | lp-oferta-instalacao | instalacao-50off |
+| /oferta/suplementos/ | lp-oferta-suplementos | instalacao-50off-suplementos |
+| /oferta/cosmeticos/ | lp-oferta-cosmeticos | instalacao-50off-cosmeticos |
+| /oferta/afiliados/ | lp-oferta-afiliados | instalacao-50off-afiliados |
+| /oferta/parceiros/ | lp-oferta-parceiros | instalacao-50off-parceiros |
+
+## Campanha vertical 3 — Afiliados/influenciadores (→ /oferta/afiliados/)
+
+```
+"plataforma de afiliados"
+"sistema para programa de afiliados"
+"software programa de afiliados"
+"sistema de afiliados white label"
+"plataforma de afiliados para influenciadores"
+"sistema cupom de influenciador"
+"programa de afiliados para minha empresa"
+```
+Títulos extras (≤30): "Sistema p/ Afiliados" (20) · "Link e Cupom por Afiliado" (24) ·
+"Bônus Pagos Sem Planilha" (23) · "Afiliados há 10 Anos" (20)
+Descrição: "Cadastre afiliados com link e cupom próprios. O sistema rastreia, calcula e paga os bônus." (89)
+
+## Campanha vertical 4 — Parceiros/indicacoes (→ /oferta/parceiros/)
+
+```
+"sistema programa de parceiros"
+"software programa de indicacao"
+"sistema de indicacao de clientes"
+"plataforma member get member"
+"sistema para gestao de parceiros"
+"programa de indicacao para empresa"
+```
+Títulos extras (≤30): "Sistema p/ Parceiros" (20) · "Indicação com Comissão" (22) ·
+"Cupom por Indicador" (19) · "Comissões Automáticas" (21)
+Descrição: "Parceiros com link e cupom próprios: o sistema rastreia indicações e paga as comissões." (86)
+
+## Negativações extras (afiliados/parceiros)
+
+`hotmart, monetizze, eduzz, kiwify, braip, "como ser afiliado", "ganhar dinheiro como afiliado"`
+(quem busca isso quer SER afiliado de infoproduto, não montar programa proprio)

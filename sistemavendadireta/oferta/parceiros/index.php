@@ -25,7 +25,7 @@ $promoSlots = 10;                  // vagas de implantacao no periodo (tema: 10 
 $promoSlotsFilled = 2;             // ja fechadas: New Professional's e Protech
 $promoSlotsLeft = max(0, $promoSlots - $promoSlotsFilled);
 $whatsappPhone = '5511994566726';
-$whatsappMessage = 'Ola! Tenho uma marca de cosmeticos e vim pela Promocao 10 Anos. Quero ver o sistema.';
+$whatsappMessage = 'Ola! Quero montar um programa de parceiros/indicacoes e vim pela Promocao 10 Anos. Quero ver o sistema.';
 
 $monthlyTiers = [
     ['revenue' => 'até R$ 50 mil', 'price' => 'R$ 500'],
@@ -52,9 +52,9 @@ $discountCashPct = (int) round((1 - $promoInstallCash / $promoInstallFrom) * 100
 $whatsappHref = 'https://wa.me/' . $whatsappPhone . '?text=' . rawurlencode($whatsappMessage);
 
 $seoBase = 'https://www.sistemavendadireta.com.br';
-$seoUrl = $seoBase . '/oferta/cosmeticos/';
-$seoTitle = 'Sistema para revenda de cosméticos | Sistema Venda Direta';
-$seoDescription = 'Sistema para marca de cosméticos com consultoras: catálogo por linhas, comissões e loja. Instalação promocional até 31/08.';
+$seoUrl = $seoBase . '/oferta/parceiros/';
+$seoTitle = 'Sistema para programa de parceiros e indicações | Sistema Venda Direta';
+$seoDescription = 'Programa de parceiros com link e cupom por indicador: o sistema rastreia indicações, calcula e paga comissões. Instalação promocional até 31/08.';
 ?>
 <!doctype html>
 <html lang="pt-BR">
@@ -73,7 +73,7 @@ $seoDescription = 'Sistema para marca de cosméticos com consultoras: catálogo 
 
   <meta property="og:locale" content="pt_BR" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Sistema para revenda de cosméticos  — instalação em oferta" />
+  <meta property="og:title" content="Sistema para programa de parceiros — Promoção 10 Anos" />
   <meta property="og:description" content="<?= htmlspecialchars($seoDescription, ENT_QUOTES, 'UTF-8') ?>" />
   <meta property="og:url" content="<?= htmlspecialchars($seoUrl, ENT_QUOTES, 'UTF-8') ?>" />
   <meta property="og:site_name" content="Sistema Venda Direta" />
@@ -129,10 +129,10 @@ $seoDescription = 'Sistema para marca de cosméticos com consultoras: catálogo 
           Celebrando 10 anos
         </p>
         <h1 class="mt-4 font-[var(--font-heading)] text-3xl font-bold leading-[1.1] sm:text-4xl lg:text-[46px]">
-          Sistema para <span class="text-amber-300">revenda de cosméticos</span> com rede de consultoras
+          Sistema para <span class="text-amber-300">programa de parceiros</span> e indicações
         </h1>
         <p class="mt-4 max-w-3xl text-base leading-relaxed text-white/90 sm:text-lg">
-          Catálogo por linhas técnicas, escritório da consultora com metas e ranking, comissões automáticas e loja integrada. A mesma plataforma que roda hoje uma operação internacional de cosmética capilar em três idiomas.
+          Cadastre parceiros e indicadores — cada um com link e cupom próprios — e deixe o sistema rastrear as indicações, calcular e pagar as comissões. Regras editáveis no administrativo, extrato transparente e pagamento sem planilha, na plataforma que gerencia redes de comissão há 10 anos.
         </p>
 
       </div>
@@ -318,7 +318,7 @@ $seoDescription = 'Sistema para marca de cosméticos com consultoras: catálogo 
         <div class="rounded-[24px] border border-white/20 bg-white/5 p-5 sm:p-6">
           <div>
             <div class="flex items-center justify-between gap-3">
-              <label for="sim-consultores" class="text-sm font-semibold text-white/90">Consultores ativos</label>
+              <label for="sim-consultores" class="text-sm font-semibold text-white/90">Parceiros ativos</label>
               <span id="sim-consultores-out" class="rounded-full bg-white/10 px-3 py-1 text-sm font-bold text-amber-300">100</span>
             </div>
             <input id="sim-consultores" type="range" min="10" max="3000" step="10" value="100" class="mt-3 w-full" style="accent-color:#fcd34d" />
@@ -326,7 +326,7 @@ $seoDescription = 'Sistema para marca de cosméticos com consultoras: catálogo 
 
           <div class="mt-6">
             <div class="flex items-center justify-between gap-3">
-              <label for="sim-ticket" class="text-sm font-semibold text-white/90">Compra média mensal por consultor</label>
+              <label for="sim-ticket" class="text-sm font-semibold text-white/90">Venda média mensal por parceiro</label>
               <span id="sim-ticket-out" class="rounded-full bg-white/10 px-3 py-1 text-sm font-bold text-amber-300">R$ 300</span>
             </div>
             <input id="sim-ticket" type="range" min="50" max="2000" step="50" value="300" class="mt-3 w-full" style="accent-color:#fcd34d" />
@@ -348,7 +348,7 @@ $seoDescription = 'Sistema para marca de cosméticos com consultoras: catálogo 
             <p id="sim-faturamento" class="mt-1 font-[var(--font-heading)] text-3xl font-bold text-white">R$ 30.000</p>
           </div>
           <div class="rounded-2xl border border-white/20 bg-white/5 px-5 py-4">
-            <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/60">Comissões distribuídas pela rede</p>
+            <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/60">Comissões e bônus distribuídos</p>
             <p id="sim-comissoes" class="mt-1 font-[var(--font-heading)] text-3xl font-bold text-white">R$ 12.000</p>
             <p class="mt-1 text-xs text-white/60">calculadas e pagas automaticamente pelo sistema</p>
           </div>
@@ -389,7 +389,7 @@ $seoDescription = 'Sistema para marca de cosméticos com consultoras: catálogo 
               $("sim-mensalidade").textContent = brl.format(fee);
               $("sim-percentual").textContent = pct.format(fee / fat * 100) + "% do faturamento projetado";
             }
-            if (!used) { used = true; if (typeof window.gtag === "function") { window.gtag("event", "simulator_use", { page: "lp-oferta-cosmeticos" }); } }
+            if (!used) { used = true; if (typeof window.gtag === "function") { window.gtag("event", "simulator_use", { page: "lp-oferta-parceiros" }); } }
           }
           ["sim-consultores","sim-ticket","sim-payout"].forEach(function(id){ $(id).addEventListener("input", calc); });
           calc(); used = false;
@@ -402,6 +402,19 @@ $seoDescription = 'Sistema para marca de cosméticos com consultoras: catálogo 
       <div class="mt-2 h-1 w-[72px] rounded-full bg-amber-300"></div>
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <article class="rounded-2xl border border-white/20 bg-white/5 p-5">
+          <div class="flex items-center rounded-xl bg-white px-4 py-3">
+            <picture>
+              <source srcset="../../imagens/clientes/ecotrend-afiliados.webp" type="image/webp" />
+              <img src="../../imagens/clientes/ecotrend-afiliados.png" alt="Ecotrend Afiliados" class="h-9 w-auto object-contain sm:h-11" width="480" height="149" loading="lazy" />
+            </picture>
+          </div>
+          <p class="mt-4 text-sm leading-relaxed text-white/90">
+            Há mais de 10 anos rodando uma rede de afiliados completa: escritório do afiliado,
+            administrativo, treinamento e loja — a operação mais longeva da plataforma.
+          </p>
+        </article>
+
         <article class="rounded-2xl border border-white/20 bg-white/5 p-5">
           <div class="flex items-center rounded-xl bg-white px-4 py-3">
             <picture>
@@ -425,19 +438,6 @@ $seoDescription = 'Sistema para marca de cosméticos com consultoras: catálogo 
           <p class="mt-4 text-sm leading-relaxed text-white/90">
             Suplementos com distribuição exclusiva por consultor: entrada na loja pelo fluxo de indicação,
             catálogo em 9 linhas, escritório virtual e plano com três formas de ganho.
-          </p>
-        </article>
-
-        <article class="rounded-2xl border border-white/20 bg-white/5 p-5">
-          <div class="flex items-center rounded-xl bg-white px-4 py-3">
-            <picture>
-              <source srcset="../../imagens/clientes/ecotrend-afiliados.webp" type="image/webp" />
-              <img src="../../imagens/clientes/ecotrend-afiliados.png" alt="Ecotrend Afiliados" class="h-9 w-auto object-contain sm:h-11" width="480" height="149" loading="lazy" />
-            </picture>
-          </div>
-          <p class="mt-4 text-sm leading-relaxed text-white/90">
-            Mais de 10 anos de operação contínua: escritório do associado, administrativo, treinamento
-            e loja — a operação mais longeva da plataforma.
           </p>
         </article>
       </div>
@@ -528,10 +528,10 @@ $seoDescription = 'Sistema para marca de cosméticos com consultoras: catálogo 
               data-whatsapp-phone="<?= htmlspecialchars($whatsappPhone, ENT_QUOTES, 'UTF-8') ?>"
               data-whatsapp-message-template="Ola, vim pela Promocao 10 Anos. Meu nome e {nome} e meu WhatsApp e {whatsapp}."
             >
-              <input type="hidden" name="redirect" value="/oferta/cosmeticos/" />
-              <input type="hidden" name="origem" value="lp-oferta-cosmeticos" />
-              <input type="hidden" name="servico" value="Sistema Venda Direta — instalacao promocional (lp-oferta-cosmeticos)" />
-              <input type="hidden" name="mensagem" value="Lead da LP lp-oferta-cosmeticos" />
+              <input type="hidden" name="redirect" value="/oferta/parceiros/" />
+              <input type="hidden" name="origem" value="lp-oferta-parceiros" />
+              <input type="hidden" name="servico" value="Sistema Venda Direta — instalacao promocional (lp-oferta-parceiros)" />
+              <input type="hidden" name="mensagem" value="Lead da LP lp-oferta-parceiros" />
 
               <div>
                 <label for="contact-nome" class="mb-2 block text-sm font-medium text-white/90">Nome</label>
@@ -652,7 +652,7 @@ $seoDescription = 'Sistema para marca de cosméticos com consultoras: catálogo 
       document.addEventListener("click", function (event) {
         var link = event.target.closest && event.target.closest('a[href*="wa.me"]');
         if (!link) return;
-        track("whatsapp_click", { page: "lp-oferta-cosmeticos" });
+        track("whatsapp_click", { page: "lp-oferta-parceiros" });
         var ref = zapRef();
         // embute o codigo de referencia na mensagem pre-preenchida do WhatsApp
         if (link.href.indexOf("text=") !== -1 && link.href.indexOf("%5Bref") === -1) {
@@ -664,7 +664,7 @@ $seoDescription = 'Sistema para marca de cosméticos com consultoras: catálogo 
           try { stored = JSON.parse(window.sessionStorage.getItem("svd-attribution") || "{}"); } catch (e) {}
           var data = new FormData();
           data.append("ref", ref);
-          data.append("origem", "lp-oferta-cosmeticos");
+          data.append("origem", "lp-oferta-instalacao");
           data.append("ga_client_id", (document.cookie.match(/(?:^|;\s*)_ga=GA\d+\.\d+\.(\d+\.\d+)/) || [])[1] || "");
           if (stored.gclid) data.append("gclid", stored.gclid);
           if (stored.utm_source) data.append("utm_source", stored.utm_source);
@@ -679,7 +679,7 @@ $seoDescription = 'Sistema para marca de cosméticos com consultoras: catálogo 
       var form = document.getElementById("contact-lead-form");
       if (form) {
         form.addEventListener("submit", function () {
-          track("generate_lead", { page: "lp-oferta-cosmeticos" });
+          track("generate_lead", { page: "lp-oferta-parceiros" });
         });
       }
     })();

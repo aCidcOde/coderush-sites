@@ -438,7 +438,7 @@ $seoDescription = 'Plataforma completa de MMN: escritório, loja, rede e finance
             </picture>
           </div>
           <p class="mt-4 text-sm leading-relaxed text-white/90">
-            Mais de 8 anos de operação contínua: escritório do associado, administrativo, treinamento
+            Mais de 10 anos de operação contínua: escritório do associado, administrativo, treinamento
             e loja — a operação mais longeva da plataforma.
           </p>
         </article>
