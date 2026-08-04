@@ -15,8 +15,7 @@ $clientCases = array_values(array_filter(
 $seoBase = 'https://www.sistemavendadireta.com.br';
 $seoUrl = $seoBase . '/cases/';
 $seoTitle = 'Cases de clientes | Sistema Venda Direta';
-$seoDescription = 'Operações de venda direta e marketing multinível no ar sobre a plataforma Sistema Venda Direta: '
-    . 'loja virtual, escritório do consultor, plano de comissões e operações internacionais.';
+$seoDescription = 'Sistemas em produção: venda direta e MMN, e-commerce, ERP e SaaS — com operações no Brasil, Paraguai e Bolívia.';
 $seoImage = $seoBase . '/imagens/Clientes.jpg';
 
 $itemListElements = [];

@@ -11,7 +11,7 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sistema Venda Direta com IA | Custo Operacional Sob Controle e Operação Escalável</title>
+  <title>IA para MMN e Vendas Diretas | Sistema Venda Direta</title>
   <meta name="description" content="Sistema Venda Direta com abordagem orientada por IA: custo operacional controlado com governança, produtividade e evolução contínua com apoio do Codafacil." />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="theme-color" content="#004AAD" />

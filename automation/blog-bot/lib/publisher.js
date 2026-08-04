@@ -434,8 +434,11 @@ function buildSeoTitle(contract, site) {
 
 function buildMetaDescription(contract) {
   const answer = contract?.content?.answerBox?.answer;
-  if (typeof answer === "string" && answer.trim().length >= 80) return answer.trim();
-  return contract.description || "";
+  const base = (typeof answer === "string" && answer.trim().length >= 80)
+    ? answer.trim()
+    : (contract.description || "");
+  // meta description longa e cortada pelo Google e polui og/twitter — teto ~160.
+  return smartTruncate(base, 160);
 }
 
 function buildJsonLd(site, contract, canonicalUrl, imageUrl) {

@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Levar a venda direta para outro país | Sistema Venda Direta</title>
-  <meta name="description" content="Muda mais do que o idioma. É preciso tratar a moeda local com as regras de arredondamento dela, aceitar o documento fiscal que cada país exige no cadastro, resolver endereço com a base oficial de código postal daquele território e, com frequência, reescrever o plano de comissões para o modelo que o mercado local entende. Traduzir as telas sem ajustar essas quatro camadas gera cadastro incompleto, valor errado e comissão que não fecha." />
+  <meta name="description" content="O que muda no sistema quando a venda direta cruza a fronteira: idioma, moeda, documento fiscal, endereço e plano de comissões — com um case real no Paraguai." />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <link rel="canonical" href="https://sistemavendadireta.com.br/2026/08/02/levar-operacao-venda-direta-para-outro-pais/" />
   <link rel="icon" type="image/svg+xml" href="../../../../favicon.svg" />
@@ -12,13 +12,13 @@
   <link rel="apple-touch-icon" sizes="180x180" href="../../../../apple-touch-icon.png" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="Levar a venda direta para outro país | Sistema Venda Direta" />
-  <meta property="og:description" content="Muda mais do que o idioma. É preciso tratar a moeda local com as regras de arredondamento dela, aceitar o documento fiscal que cada país exige no cadastro, resolver endereço com a base oficial de código postal daquele território e, com frequência, reescrever o plano de comissões para o modelo que o mercado local entende. Traduzir as telas sem ajustar essas quatro camadas gera cadastro incompleto, valor errado e comissão que não fecha." />
+  <meta property="og:description" content="O que muda no sistema quando a venda direta cruza a fronteira: idioma, moeda, documento fiscal, endereço e plano de comissões — com um case real no Paraguai." />
   <meta property="og:url" content="https://sistemavendadireta.com.br/2026/08/02/levar-operacao-venda-direta-para-outro-pais/" />
   <meta property="og:image" content="https://sistemavendadireta.com.br/imagens/posts/levar-operacao-venda-direta-para-outro-pais.jpg" />
   <meta property="og:site_name" content="Sistema Venda Direta" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Levar a venda direta para outro país | Sistema Venda Direta" />
-  <meta name="twitter:description" content="Muda mais do que o idioma. É preciso tratar a moeda local com as regras de arredondamento dela, aceitar o documento fiscal que cada país exige no cadastro, resolver endereço com a base oficial de código postal daquele território e, com frequência, reescrever o plano de comissões para o modelo que o mercado local entende. Traduzir as telas sem ajustar essas quatro camadas gera cadastro incompleto, valor errado e comissão que não fecha." />
+  <meta name="twitter:description" content="O que muda no sistema quando a venda direta cruza a fronteira: idioma, moeda, documento fiscal, endereço e plano de comissões — com um case real no Paraguai." />
   <meta name="twitter:image" content="https://sistemavendadireta.com.br/imagens/posts/levar-operacao-venda-direta-para-outro-pais.jpg" />
   <link rel="stylesheet" href="../../../../css/site-tailwind.css" />
   <link rel="stylesheet" href="../../../../css/styles.css" />
@@ -28,7 +28,7 @@
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Levar a venda direta para outro país: o que muda no sistema | Sistema Venda Direta",
-  "description": "Muda mais do que o idioma. É preciso tratar a moeda local com as regras de arredondamento dela, aceitar o documento fiscal que cada país exige no cadastro, resolver endereço com a base oficial de código postal daquele território e, com frequência, reescrever o plano de comissões para o modelo que o mercado local entende. Traduzir as telas sem ajustar essas quatro camadas gera cadastro incompleto, valor errado e comissão que não fecha.",
+  "description": "O que muda no sistema quando a venda direta cruza a fronteira: idioma, moeda, documento fiscal, endereço e plano de comissões — com um case real no Paraguai.",
   "datePublished": "2026-08-02T09:00:00-03:00",
   "dateModified": "2026-08-02T09:00:00-03:00",
   "mainEntityOfPage": {
@@ -122,7 +122,7 @@
       <div class="p-5 sm:p-8">
       <aside class="mt-6 rounded-2xl border-l-4 border-white bg-white/[0.04] p-5 sm:p-6">
         <h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-white">O que muda no sistema quando uma operação de venda direta vai para outro país?</h3>
-        <p class="mt-2 text-base leading-7 text-white/90 sm:text-lg">Muda mais do que o idioma. É preciso tratar a moeda local com as regras de arredondamento dela, aceitar o documento fiscal que cada país exige no cadastro, resolver endereço com a base oficial de código postal daquele território e, com frequência, reescrever o plano de comissões para o modelo que o mercado local entende. Traduzir as telas sem ajustar essas quatro camadas gera cadastro incompleto, valor errado e comissão que não fecha.</p>
+        <p class="mt-2 text-base leading-7 text-white/90 sm:text-lg">O que muda no sistema quando a venda direta cruza a fronteira: idioma, moeda, documento fiscal, endereço e plano de comissões — com um case real no Paraguai.</p>
       </aside>
       <section class="mt-6">
         <p class="text-[11px] font-semibold uppercase tracking-[0.22em] text-white/55">Em resumo</p>
