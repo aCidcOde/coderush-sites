@@ -252,3 +252,18 @@ Descrição: "Parceiros com link e cupom próprios: o sistema rastreia indicaç�
 
 `hotmart, monetizze, eduzz, kiwify, braip, "como ser afiliado", "ganhar dinheiro como afiliado"`
 (quem busca isso quer SER afiliado de infoproduto, não montar programa proprio)
+
+## Links identificados — social (organico e pago)
+
+**Organico (compartilhar no perfil/pagina):**
+- Facebook:  https://www.sistemavendadireta.com.br/oferta/?utm_source=facebook&utm_medium=social&utm_campaign=instalacao-50off
+- LinkedIn:  https://www.sistemavendadireta.com.br/oferta/?utm_source=linkedin&utm_medium=social&utm_campaign=instalacao-50off
+- WhatsApp/grupos: https://www.sistemavendadireta.com.br/oferta/?utm_source=whatsapp&utm_medium=social&utm_campaign=instalacao-50off
+
+**Pago (usar nos anuncios quando patrocinar):**
+- Facebook/Instagram Ads: .../oferta/?utm_source=facebook&utm_medium=paid_social&utm_campaign=instalacao-50off&utm_content={{ad.name}}
+- LinkedIn Ads: .../oferta/?utm_source=linkedin&utm_medium=paid_social&utm_campaign=instalacao-50off
+
+Regra: organico = utm_medium=social; pago = utm_medium=paid_social. Assim o painel/GA
+separa alcance proprio de midia comprada. Preview: forcar re-scrape no
+developers.facebook.com/tools/debug e linkedin.com/post-inspector se o banner nao aparecer.
