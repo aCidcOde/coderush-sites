@@ -100,6 +100,63 @@ function brDateTime(?string $iso): string
     }
 }
 
+
+/** Grafico SVG de evolucao diaria (area = sessoes, linha = usuarios). Sem libs externas. */
+function dailyChart(array $dias): string
+{
+    $n = count($dias);
+    if ($n < 2) {
+        return '<p class="muted">Ainda não há dias suficientes pra desenhar a evolução — volta amanhã.</p>';
+    }
+    $W = 860; $H = 250; $padL = 34; $padR = 12; $padT = 14; $padB = 30;
+    $iw = $W - $padL - $padR; $ih = $H - $padT - $padB;
+    $max = 1;
+    foreach ($dias as $d) { $max = max($max, (int) $d['sessoes'], (int) $d['usuarios']); }
+    $x = static fn (int $i): float => $padL + ($n > 1 ? $i * $iw / ($n - 1) : 0);
+    $y = static fn (int $v): float => $padT + $ih - ($v / $max * $ih);
+
+    $ptsS = $ptsU = [];
+    foreach ($dias as $i => $d) {
+        $ptsS[] = round($x($i), 1) . ',' . round($y((int) $d['sessoes']), 1);
+        $ptsU[] = round($x($i), 1) . ',' . round($y((int) $d['usuarios']), 1);
+    }
+    $area = 'M' . str_replace(',', ' ', $ptsS[0]) . ' L' . implode(' L', array_map(static fn ($p) => str_replace(',', ' ', $p), $ptsS))
+        . ' L' . round($x($n - 1), 1) . ' ' . ($padT + $ih) . ' L' . $padL . ' ' . ($padT + $ih) . ' Z';
+
+    $grid = '';
+    for ($g = 0; $g <= 4; $g++) {
+        $gy = round($padT + $ih - $g * $ih / 4, 1);
+        $gv = (int) round($max * $g / 4);
+        $grid .= '<line x1="' . $padL . '" y1="' . $gy . '" x2="' . ($W - $padR) . '" y2="' . $gy . '" stroke="rgba(255,255,255,.08)" />'
+            . '<text x="' . ($padL - 7) . '" y="' . ($gy + 4) . '" text-anchor="end" font-size="11" fill="rgba(255,255,255,.45)">' . $gv . '</text>';
+    }
+    $labels = '';
+    $step = max(1, (int) ceil($n / 7));
+    foreach ($dias as $i => $d) {
+        if ($i % $step !== 0 && $i !== $n - 1) continue;
+        $dt = $d['data'];
+        $lbl = substr($dt, 6, 2) . '/' . substr($dt, 4, 2);
+        $labels .= '<text x="' . round($x($i), 1) . '" y="' . ($H - 8) . '" text-anchor="middle" font-size="11" fill="rgba(255,255,255,.5)">' . $lbl . '</text>';
+    }
+    $dots = '';
+    foreach ($dias as $i => $d) {
+        $dots .= '<circle cx="' . round($x($i), 1) . '" cy="' . round($y((int) $d['sessoes']), 1) . '" r="3.5" fill="#fcd34d">'
+            . '<title>' . substr($d['data'], 6, 2) . '/' . substr($d['data'], 4, 2) . ' — ' . (int) $d['sessoes'] . ' sessões · ' . (int) $d['usuarios'] . ' usuários</title></circle>';
+    }
+    return '<svg viewBox="0 0 ' . $W . ' ' . $H . '" style="width:100%;height:auto;display:block;" role="img" aria-label="Evolução diária de sessões e usuários">'
+        . '<defs><linearGradient id="gArea" x1="0" y1="0" x2="0" y2="1">'
+        . '<stop offset="0" stop-color="#fcd34d" stop-opacity=".35"/><stop offset="1" stop-color="#fcd34d" stop-opacity="0"/></linearGradient></defs>'
+        . $grid
+        . '<path d="' . $area . '" fill="url(#gArea)" />'
+        . '<polyline points="' . implode(' ', $ptsS) . '" fill="none" stroke="#fcd34d" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" />'
+        . '<polyline points="' . implode(' ', $ptsU) . '" fill="none" stroke="#60a5fa" stroke-width="2" stroke-dasharray="5 4" stroke-linejoin="round" stroke-linecap="round" />'
+        . $dots . $labels
+        . '</svg>'
+        . '<p class="muted" style="margin-top:8px;font-size:12px;">'
+        . '<span style="color:#fcd34d;font-weight:700;">━</span> sessões &nbsp;&nbsp;'
+        . '<span style="color:#60a5fa;font-weight:700;">┄</span> usuários · últimos 28 dias</p>';
+}
+
 /** Lista com barra proporcional: $rows = [['label' =>, 'value' => int]] */
 function barList(array $rows): string
 {
@@ -310,6 +367,13 @@ if ($gaSite && !empty($gaSite['eventos'])) {
         <div class="kpi"><div class="chip c-amber"><?= icon('users') ?></div><div><b><?= (int) ($gaSite['d28']['usuarios'] ?? 0) ?></b><span>Usuários · 28 dias</span></div></div>
         <div class="kpi"><div class="chip c-amber"><?= icon('eye') ?></div><div><b><?= (int) ($gaSite['d28']['pageviews'] ?? 0) ?></b><span>Pageviews · 28 dias</span></div></div>
       </div>
+
+      <?php if (!empty($gaSite['diario'])): ?>
+        <div class="box" style="margin-bottom:14px;">
+          <h3><?= icon('chart') ?> Evolução de acessos · por dia</h3>
+          <?= dailyChart($gaSite['diario']) ?>
+        </div>
+      <?php endif; ?>
 
       <div class="boxes">
         <div class="box">

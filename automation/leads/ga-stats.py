@@ -43,6 +43,9 @@ for prop, host in PROPS:
         site[label] = {"usuarios": int(m[0].value) if m else 0,
                        "sessoes": int(m[1].value) if m else 0,
                        "pageviews": int(m[2].value) if m else 0}
+    diario = report(prop, ["date"], ["activeUsers", "sessions"], limit=31, days="28daysAgo")
+    dias = sorted(rows(diario), key=lambda r: r["d"][0])
+    site["diario"] = [{"data": r["d"][0], "usuarios": int(r["m"][0]), "sessoes": int(r["m"][1])} for r in dias]
     ev = report(prop, ["eventName"], ["eventCount"], limit=30)
     site["eventos"] = {r2["d"][0]: int(r2["m"][0]) for r2 in rows(ev) if r2["d"][0] in FOCUS_EVENTS}
     src = report(prop, ["sessionSourceMedium"], ["sessions"], limit=8, order_metric="sessions")
