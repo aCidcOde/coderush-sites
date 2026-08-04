@@ -137,7 +137,9 @@ function bfrCategory(contract) {
 function buildBfrPayload({ site, contract, coverAlt }) {
   const content = contract.content || {};
   const description = String(contract.description || content.summary || "").slice(0, 320);
-  const publishedAt = contract.generatedAt || nowInBrtIso();
+  // SEMPRE "agora" em BRT: o front da BFR esconde posts com published_at futuro,
+  // entao qualquer data adiante do relogio deles some do site ate a hora chegar.
+  const publishedAt = nowInBrtIso();
   return {
     external_id: `bot-${contract.date}-${contract.slug}`,
     slug: contract.slug,
