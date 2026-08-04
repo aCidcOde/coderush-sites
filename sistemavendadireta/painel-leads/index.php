@@ -272,6 +272,12 @@ if ($gaSite && !empty($gaSite['eventos'])) {
     .sec h2 { font-size: 16px; display: flex; align-items: center; gap: 9px; }
     .sec h2 svg { width: 17px; height: 17px; color: var(--amber); }
     .sec .muted { font-size: 12px; }
+    .quicklinks { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: -8px 0 22px; }
+    .ql-label { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; color: var(--text-soft); text-transform: uppercase; letter-spacing: .07em; }
+    .ql-label svg { width: 14px; height: 14px; color: var(--amber); }
+    .ql { font-size: 12.5px; font-weight: 600; color: rgba(255,255,255,.85); text-decoration: none;
+      border: 1px solid var(--line); border-radius: 99px; padding: 5px 13px; transition: .15s; }
+    .ql:hover { border-color: var(--amber); color: var(--amber); transform: translateY(-1px); }
     .muted { color: var(--text-soft); }
 
     /* boxes grid */
@@ -349,6 +355,23 @@ if ($gaSite && !empty($gaSite['eventos'])) {
         </div>
       </div>
       <a class="sair" href="?sair=1"><?= icon('lock') ?> Sair</a>
+    </div>
+
+    <div class="quicklinks">
+      <span class="ql-label"><?= icon('megaphone') ?> LPs da campanha:</span>
+      <?php
+      $lps = [
+          ['Geral', '/oferta/'],
+          ['Suplementos', '/oferta/suplementos/'],
+          ['Cosméticos', '/oferta/cosmeticos/'],
+          ['Afiliados', '/oferta/afiliados/'],
+          ['Parceiros', '/oferta/parceiros/'],
+          ['Cases', '/cases/'],
+          ['Site', '/'],
+      ];
+      foreach ($lps as [$nome, $path]): ?>
+        <a class="ql" href="https://www.sistemavendadireta.com.br<?= e($path) ?>" target="_blank" rel="noopener"><?= e($nome) ?></a>
+      <?php endforeach; ?>
     </div>
 
     <div class="kpis">
