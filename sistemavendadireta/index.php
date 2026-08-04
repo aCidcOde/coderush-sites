@@ -23,7 +23,7 @@ $promoModalDeadline = new DateTimeImmutable($promoModal['deadline'] . ' 23:59:59
 $promoModalActive = new DateTimeImmutable('now', new DateTimeZone('America/Sao_Paulo')) <= $promoModalDeadline;
 $promoModalDeadlineLabel = $promoModalDeadline->format('d/m/Y');
 $seoTitle = 'Sistema para Vendas Diretas e Marketing Multinível — MMN';
-$seoDescription = 'Plataforma MMN com planos binário e unilevel, gateways de pagamento e loja virtual integrada. Sistema Venda Direta desde 2002 — ecossistema CodeRush no Brasil.';
+$seoDescription = 'Plataforma MMN com planos binário e unilevel, gateways de pagamento e loja virtual integrada. 10 anos de Sistema Venda Direta — ecossistema CodeRush no Brasil.';
 $seoOgImage = $seoBase . '/imagens/og-sistema-venda-direta.jpg';
 $seoLogo = $seoBase . '/wp-content/uploads/2023/04/Logo-Azul-004AAD-1.png';
 
@@ -893,7 +893,7 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
         </div>
 
         <div class="space-y-4">
-          <h4 class="font-[var(--font-heading)] text-lg font-semibold">25 anos de experiência desenvolvendo sistemas</h4>
+          <h4 class="font-[var(--font-heading)] text-lg font-semibold">Desenvolvendo sistemas desde 2002</h4>
           <a href="/#contato" class="inline-flex rounded-full border border-white/70 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10">
             Solicite um Orçamento
           </a>
@@ -929,10 +929,10 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
         <button id="promo-modal-fechar" type="button" aria-label="Fechar" class="absolute right-4 top-4 inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/30 text-lg leading-none text-white/80 hover:bg-white/10">&times;</button>
 
         <p class="inline-flex rounded-full border border-amber-300/50 bg-amber-400/15 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.18em] text-amber-200">
-          Oferta por tempo limitado
+          Celebrando 10 anos
         </p>
         <h2 id="promo-modal-titulo" class="mt-4 font-[var(--font-heading)] text-2xl font-bold leading-tight sm:text-[28px]">
-          Instalação com <span class="text-amber-300">até 40% OFF</span>
+          Promoção 10 Anos: <span class="text-amber-300">até 40% OFF</span> na instalação
         </h2>
         <div class="mt-4 flex flex-wrap items-end justify-center gap-2">
           <span class="text-lg font-semibold text-white/50 line-through"><?= htmlspecialchars($promoModal['from'], ENT_QUOTES, 'UTF-8') ?></span>

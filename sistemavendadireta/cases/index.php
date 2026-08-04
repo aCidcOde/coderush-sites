@@ -258,7 +258,7 @@ $seoLdGraph = [
         </div>
 
         <div class="space-y-4">
-          <h4 class="font-[var(--font-heading)] text-lg font-semibold">25 anos de experiência desenvolvendo sistemas</h4>
+          <h4 class="font-[var(--font-heading)] text-lg font-semibold">Desenvolvendo sistemas desde 2002</h4>
           <a href="../#contato" class="inline-flex rounded-full border border-white/70 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10">
             Solicite um Orçamento
           </a>

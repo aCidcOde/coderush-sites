@@ -21,9 +21,9 @@ $promoInstallFrom = 5000;          // valor cheio da instalacao (R$)
 $promoInstallTo = 3500;            // valor promocional em 2x (R$)
 $promoInstallCash = 3000;          // valor promocional a vista (R$)
 $promoDeadline = '2026-08-31';     // ultimo dia da promocao (America/Sao_Paulo)
-$promoSlots = 8;                   // vagas de implantacao no periodo
+$promoSlots = 10;                  // vagas de implantacao no periodo (tema: 10 anos)
 $whatsappPhone = '5511994566726';
-$whatsappMessage = 'Ola! Tenho uma marca de cosmeticos e vim pela campanha de instalacao com desconto. Quero ver o sistema.';
+$whatsappMessage = 'Ola! Tenho uma marca de cosmeticos e vim pela Promocao 10 Anos. Quero ver o sistema.';
 
 $monthlyTiers = [
     ['revenue' => 'até R$ 50 mil', 'price' => 'R$ 500'],
@@ -75,12 +75,12 @@ $seoDescription = 'Sistema para marca de cosméticos com consultoras: catálogo 
   <meta property="og:description" content="<?= htmlspecialchars($seoDescription, ENT_QUOTES, 'UTF-8') ?>" />
   <meta property="og:url" content="<?= htmlspecialchars($seoUrl, ENT_QUOTES, 'UTF-8') ?>" />
   <meta property="og:site_name" content="Sistema Venda Direta" />
-  <meta property="og:image" content="<?= htmlspecialchars($seoBase . '/imagens/og-oferta.jpg?v=2', ENT_QUOTES, 'UTF-8') ?>" />
+  <meta property="og:image" content="<?= htmlspecialchars($seoBase . '/imagens/og-oferta.jpg?v=3', ENT_QUOTES, 'UTF-8') ?>" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="Instalação do Sistema Venda Direta com até 40% OFF — R$ 3.500 em 2x ou R$ 3.000 à vista até 31/08" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="<?= htmlspecialchars($seoBase . '/imagens/og-oferta.jpg?v=2', ENT_QUOTES, 'UTF-8') ?>" />
+  <meta name="twitter:image" content="<?= htmlspecialchars($seoBase . '/imagens/og-oferta.jpg?v=3', ENT_QUOTES, 'UTF-8') ?>" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -97,7 +97,7 @@ $seoDescription = 'Sistema para marca de cosméticos com consultoras: catálogo 
     <div class="sticky top-0 z-50 border-b border-amber-300/40 bg-amber-400 text-brand">
       <div class="mx-auto flex max-w-[1140px] flex-nowrap items-center justify-between gap-3 px-4 py-2 sm:px-6">
         <p class="min-w-0 text-xs font-bold uppercase leading-tight tracking-wide sm:text-sm">
-          Até <?= (int) $discountCashPct ?>% OFF na instalação<span class="hidden md:inline"> · encerra <?= htmlspecialchars($deadlineLabel, ENT_QUOTES, 'UTF-8') ?></span>
+          Promoção 10 Anos: até <?= (int) $discountCashPct ?>% OFF<span class="hidden md:inline"> na instalação · encerra <?= htmlspecialchars($deadlineLabel, ENT_QUOTES, 'UTF-8') ?></span>
           <span class="ml-1 whitespace-nowrap rounded-full bg-brand px-2 py-0.5 text-[10px] font-bold text-white sm:text-xs"><?= (int) $daysLeft ?> dia<?= $daysLeft === 1 ? '' : 's' ?></span>
         </p>
         <a href="#garantir" class="shrink-0 whitespace-nowrap rounded-full bg-brand px-3 py-1.5 text-[11px] font-bold uppercase tracking-wide text-white hover:bg-brand-dark sm:px-4 sm:text-xs">
@@ -124,7 +124,7 @@ $seoDescription = 'Sistema para marca de cosméticos com consultoras: catálogo 
     <section class="py-10 lg:py-14">
       <div>
         <p class="inline-flex rounded-full border border-amber-300/50 bg-amber-400/15 px-3 py-1 text-xs font-bold uppercase tracking-[0.18em] text-amber-200">
-          Campanha por tempo limitado
+          Celebrando 10 anos
         </p>
         <h1 class="mt-4 font-[var(--font-heading)] text-3xl font-bold leading-[1.1] sm:text-4xl lg:text-[46px]">
           Sistema para <span class="text-amber-300">revenda de cosméticos</span> com rede de consultoras
@@ -186,8 +186,8 @@ $seoDescription = 'Sistema para marca de cosméticos com consultoras: catálogo 
           <p class="mt-1 text-sm text-white/85">foi o prazo da última implantação internacional: loja, escritório e admin no ar em julho de 2026.</p>
         </div>
         <div class="rounded-2xl border border-white/20 bg-white/5 p-5">
-          <p class="font-[var(--font-heading)] text-3xl font-bold text-amber-300">25 anos</p>
-          <p class="mt-1 text-sm text-white/85">de experiência do time em sistemas de vendas, financeiro e fiscal.</p>
+          <p class="font-[var(--font-heading)] text-3xl font-bold text-amber-300">10 anos</p>
+          <p class="mt-1 text-sm text-white/85">de Sistema Venda Direta no ar — com um time que desenvolve sistemas de vendas, financeiro e fiscal desde 2002.</p>
         </div>
         <div class="rounded-2xl border border-white/20 bg-white/5 p-5">
           <p class="font-[var(--font-heading)] text-3xl font-bold text-amber-300">5 países</p>
@@ -509,7 +509,7 @@ $seoDescription = 'Sistema para marca de cosméticos com consultoras: catálogo 
               method="post"
               class="space-y-4"
               data-whatsapp-phone="<?= htmlspecialchars($whatsappPhone, ENT_QUOTES, 'UTF-8') ?>"
-              data-whatsapp-message-template="Ola, vim pela campanha de instalacao com desconto. Meu nome e {nome} e meu WhatsApp e {whatsapp}."
+              data-whatsapp-message-template="Ola, vim pela Promocao 10 Anos. Meu nome e {nome} e meu WhatsApp e {whatsapp}."
             >
               <input type="hidden" name="redirect" value="/oferta/cosmeticos/" />
               <input type="hidden" name="origem" value="lp-oferta-cosmeticos" />
@@ -575,7 +575,7 @@ $seoDescription = 'Sistema para marca de cosméticos com consultoras: catálogo 
 
     <section class="py-12 text-center">
       <h2 class="font-[var(--font-heading)] text-2xl font-bold sm:text-3xl">
-        <?= htmlspecialchars($moneyFrom, ENT_QUOTES, 'UTF-8') ?> viram <?= htmlspecialchars($moneyCash, ENT_QUOTES, 'UTF-8') ?> à vista<?= $promoActive ? ' até ' . htmlspecialchars($deadlineLabel, ENT_QUOTES, 'UTF-8') : '' ?>
+        Promoção 10 Anos: <?= htmlspecialchars($moneyFrom, ENT_QUOTES, 'UTF-8') ?> viram <?= htmlspecialchars($moneyCash, ENT_QUOTES, 'UTF-8') ?> à vista<?= $promoActive ? ' até ' . htmlspecialchars($deadlineLabel, ENT_QUOTES, 'UTF-8') : '' ?>
       </h2>
       <p class="mx-auto mt-3 max-w-2xl text-base leading-relaxed text-white/90">
         Depois disso, a instalação volta ao valor cheio. Se a sua operação vai começar este ano, começar agora sai bem mais barato.
@@ -596,7 +596,7 @@ $seoDescription = 'Sistema para marca de cosméticos com consultoras: catálogo 
       </div>
       <p class="mt-6 text-xs text-white/60">
         © Sistema Venda Direta — Todos os direitos reservados.
-        Condição promocional de instalação (<?= htmlspecialchars($moneyTo, ENT_QUOTES, 'UTF-8') ?> em duas parcelas ou <?= htmlspecialchars($moneyCash, ENT_QUOTES, 'UTF-8') ?> à vista) válida para contratos fechados até <?= htmlspecialchars($deadlineLabel, ENT_QUOTES, 'UTF-8') ?>,
+        Promoção 10 Anos — condição promocional de instalação (<?= htmlspecialchars($moneyTo, ENT_QUOTES, 'UTF-8') ?> em duas parcelas ou <?= htmlspecialchars($moneyCash, ENT_QUOTES, 'UTF-8') ?> à vista) válida para contratos fechados até <?= htmlspecialchars($deadlineLabel, ENT_QUOTES, 'UTF-8') ?>,
         limitada a <?= (int) $promoSlots ?> implantações no período. Não cumulativa com outras condições comerciais.
       </p>
     </div>

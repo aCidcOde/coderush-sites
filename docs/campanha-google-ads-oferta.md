@@ -8,7 +8,7 @@ Landing: https://www.sistemavendadireta.com.br/oferta/ (instalacao R$3.500 em 2x
 */
 -->
 
-# Campanha Google Ads — Oferta Instalação Promocional SVD
+# Campanha Google Ads — Promoção 10 Anos SVD
 
 ## Estrutura
 
@@ -19,7 +19,7 @@ Landing: https://www.sistemavendadireta.com.br/oferta/ (instalacao R$3.500 em 2x
 - **Conversão**: importar do GA4 o key event `generate_lead` (Ferramentas → Conversões →
   Importar → Propriedades do Google Analytics 4). Secundária: `whatsapp_click`
 - **Extensões**: sitelinks (Cases → `/cases/`, Blog → `/blog/`, IA para MMN →
-  `/inteligencia-artificial/`), frase de destaque ("25 anos de experiência",
+  `/inteligencia-artificial/`), frase de destaque ("10 anos de mercado",
   "Clientes em 5 países", "Mensalidade desde R$ 500"), chamada 11 99456-6726
 
 ## URL final (todas os grupos)
@@ -98,7 +98,7 @@ dela, não comprar sistema.)
 | 10 | Comissões Automáticas | 21 |
 | 11 | À Vista por R$ 3.000 | 20 |
 | 12 | Migramos seu Sistema Atual | 26 |
-| 13 | 25 Anos de Experiência | 22 |
+| 13 | Promoção 10 Anos SVD | 20 |
 | 14 | Sua Marca e seu Domínio | 23 |
 | 15 | Orçamento pelo WhatsApp | 23 |
 
@@ -109,7 +109,7 @@ Fixar título 3 na posição 1 durante a promoção (é a oferta).
 | # | Descrição | chars |
 |---|---|---|
 | 1 | Plataforma completa: escritório virtual, rede binária e unilevel, loja e financeiro. | 84 |
-| 2 | Instalação R$ 3.500 em 2x ou R$ 3.000 à vista até 31/08. Mensalidade proporcional. | 85 |
+| 2 | Promoção 10 Anos: R$ 3.500 em 2x ou R$ 3.000 à vista até 31/08. Mensalidade sob medida. | 87 |
 | 3 | Clientes em 5 países: Brasil, Paraguai, Bolívia, EUA e Portugal. Multimoeda real. | 81 |
 | 4 | Parametrizamos seu plano de negócio: binário, unilevel ou comissão por cargo. | 77 |
 
