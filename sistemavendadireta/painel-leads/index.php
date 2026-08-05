@@ -28,6 +28,7 @@ function envPassword(): string
 }
 
 $expected = envPassword();
+$authed = ($_SESSION['svd_leads_auth'] ?? false) === true;
 $error = '';
 
 if (isset($_POST['senha'])) {
@@ -38,6 +39,15 @@ if (isset($_POST['senha'])) {
     }
     sleep(1);
     $error = 'Senha incorreta.';
+}
+
+// Pedido de atualizacao do snapshot do GA: o container so cria o arquivo-gatilho;
+// quem tem credencial e roda a Data API e o watcher no host (a cada minuto).
+if ($authed && isset($_POST['atualizar_ga'])) {
+    $flag = __DIR__ . '/../storage/ga-refresh.request';
+    @file_put_contents($flag, date('c'));
+    header('Location: ./?atualizando=1', true, 303);
+    exit;
 }
 
 if (isset($_GET['sair'])) {
@@ -191,6 +201,7 @@ function icon(string $name): string
         'gauge' => '<path d="M12 2a10 10 0 1 0 10 10"/><polyline points="12 6 12 12 16 14"/>',
         'eye' => '<path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/>',
         'megaphone' => '<path d="M3 11h3l9-7v16l-9-7H3z"/><path d="M18 8a5 5 0 0 1 0 8"/>',
+        'refresh' => '<polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/>',
         'lock' => '<rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>',
     ];
     return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' . ($paths[$name] ?? '') . '</svg>';
@@ -245,6 +256,19 @@ if ($gaSite && !empty($gaSite['eventos'])) {
     .brand-icon svg { width: 22px; height: 22px; }
     h1 { font-size: 19px; letter-spacing: -.01em; }
     .sub { color: var(--text-soft); font-size: 12px; margin-top: 2px; }
+    .btn-refresh {
+      display: inline-flex; align-items: center; gap: 7px; width: auto; margin: 0;
+      padding: 7px 15px; font-size: 13px; border-radius: 99px; cursor: pointer;
+      background: rgba(255,255,255,.06); border: 1px solid var(--line); color: rgba(255,255,255,.85);
+      font-weight: 600; transition: .18s;
+    }
+    .btn-refresh:hover:not(:disabled) { border-color: var(--amber); color: var(--amber); transform: none; box-shadow: none; }
+    .btn-refresh:disabled { opacity: .55; cursor: progress; }
+    .btn-refresh svg { width: 14px; height: 14px; }
+    .aviso-refresh {
+      margin: -10px 0 18px; padding: 10px 14px; border-radius: 12px; font-size: 13px;
+      background: rgba(252,211,77,.12); border: 1px solid rgba(252,211,77,.3); color: #fcd34d;
+    }
     .sair { display: inline-flex; align-items: center; gap: 7px; color: var(--text-soft); font-size: 13px;
       text-decoration: none; border: 1px solid var(--line); padding: 7px 15px; border-radius: 99px; transition: .18s; }
     .sair:hover { color: #fff; border-color: rgba(255,255,255,.4); }
@@ -354,8 +378,20 @@ if ($gaSite && !empty($gaSite['eventos'])) {
           <p class="sub">sistemavendadireta.com.br · horário de Brasília<?= $ga ? ' · Google atualizado ' . e(brDateTime($ga['gerado_em'] ?? null)) . ' (a cada 3h)' : '' ?></p>
         </div>
       </div>
-      <a class="sair" href="?sair=1"><?= icon('lock') ?> Sair</a>
+      <div style="display:flex;gap:9px;align-items:center;">
+        <?php $pendente = is_file(__DIR__ . '/../storage/ga-refresh.request'); ?>
+        <form method="post" style="margin:0;">
+          <button type="submit" name="atualizar_ga" value="1" class="btn-refresh" <?= $pendente ? 'disabled' : '' ?>>
+            <?= icon('refresh') ?> <?= $pendente ? 'Atualizando…' : 'Atualizar dados' ?>
+          </button>
+        </form>
+        <a class="sair" href="?sair=1"><?= icon('lock') ?> Sair</a>
+      </div>
     </div>
+
+    <?php if (!empty($_GET['atualizando']) || (isset($pendente) && $pendente)): ?>
+      <p class="aviso-refresh">Atualização solicitada — os dados do Google chegam em até 1 minuto. Recarregue a página.</p>
+    <?php endif; ?>
 
     <div class="quicklinks">
       <span class="ql-label"><?= icon('megaphone') ?> LPs da campanha:</span>
