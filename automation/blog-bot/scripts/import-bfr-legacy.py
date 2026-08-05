@@ -68,17 +68,68 @@ def md_to_html(body):
     out = re.sub(r"(?:<p>)?@@YT:([A-Za-z0-9_-]{6,})@@(?:</p>)?", lambda m: YT_EMBED.format(vid=m.group(1)), out)
     return out
 
+
+TITLE_SUFFIX = " | BFR Intelligence"
+
+def fit_title(raw):
+    """Corta o titulo contando o sufixo da marca (limite real de 70 chars)."""
+    raw = (raw or "").strip()
+    room = 70 - len(TITLE_SUFFIX)
+    if len(raw) <= room:
+        return raw
+    return raw[:room - 1].rsplit(" ", 1)[0] + "…"
+
+LEGACY_DESC = re.compile(r"FluxoInteligente|Atualiza[çc][ãa]o semanal", re.I)
+LEAD_VERBS = re.compile(r"^(entenda|descubra|saiba|veja|conhe[çc]a|aprenda)\s+(como|a|o|os|as|por que|porque|a import[âa]ncia de)?\s*", re.I)
+
+def first_sentence(body):
+    """Primeira frase util do corpo, sem markdown."""
+    for raw in (body or "").split("\n"):
+        line = raw.strip()
+        if not line or line.startswith(("#", ">", "-", "*", "!", "|")):
+            continue
+        line = re.sub(r"\*\*|\*|`|\[([^\]]+)\]\([^)]+\)", lambda m: m.group(1) if m.lastindex else "", line)
+        line = line.strip()
+        if len(line) > 40:
+            parts = re.split(r"(?<=[.!?])\s+", line)
+            return parts[0].strip()
+    return ""
+
+def build_description(p):
+    """Description propria da BFR: nunca herda a copy generica do bot antigo."""
+    desc = (p.get("meta_description") or "").strip()
+    if not desc or LEGACY_DESC.search(desc):
+        desc = (p.get("excerpt") or "").strip()
+    if len(desc) < 70:
+        extra = first_sentence(p.get("body"))
+        if extra and extra.lower() not in desc.lower():
+            desc = (desc + " " + extra).strip() if desc else extra
+    desc = re.sub(r"\s+", " ", desc).strip()
+    if len(desc) > 160:
+        desc = desc[:159].rsplit(" ", 1)[0] + "…"
+    return desc
+
+def title_from_excerpt(p):
+    """Titulo alternativo pra posts que repetem headline (dedupe editorial)."""
+    base = re.sub(r"\s+", " ", (p.get("excerpt") or "").strip())
+    base = LEAD_VERBS.sub("", base).strip()
+    base = re.sub(r"[.!?]+$", "", base)
+    if not base:
+        return None
+    base = base[0].upper() + base[1:]
+    if len(base) > 58:
+        base = base[:57].rsplit(" ", 1)[0] + "…"
+    return base
+
 def page_html(p, cat):
     rel = "../../../../"
     slug = p["slug"]
     canonical = f"{BASE_URL}/{dated_path(p)}"
     image_url = f"{BASE_URL}/imagens/posts/{slug}.jpg"
     title = p["title"]
-    SUFFIX = " | BFR Intelligence"
-    raw_title = p.get("meta_title") or title
-    room = 70 - len(SUFFIX)
-    meta_title = raw_title if len(raw_title) <= room else (raw_title[:room - 1].rsplit(" ", 1)[0] + "…")
-    meta_desc = (p.get("meta_description") or p.get("excerpt") or "")[:160]
+    SUFFIX = TITLE_SUFFIX
+    meta_title = fit_title(p.get("meta_title") or title)
+    meta_desc = build_description(p)
     excerpt = p.get("excerpt") or ""
     body_html = md_to_html(p.get("body") or "")
     tags = [t for t in (p.get("tags") or []) if t]
@@ -213,6 +264,20 @@ def main():
     raw = json.load(open(os.path.join(SITE, "data/.posts.json"), encoding="utf-8"))
     posts = [p for p in raw if isinstance(p, dict) and p.get("status") == "published"]
     posts.sort(key=lambda p: p["published_at"], reverse=True)
+
+    # dedupe de titulos (o bot antigo repetiu headlines): mantem o mais recente,
+    # os demais recebem titulo derivado do proprio resumo
+    seen_titles = {}
+    for p in sorted(posts, key=lambda x: x["published_at"], reverse=True):
+        key = fit_title(p["title"]).lower()
+        if key in seen_titles:
+            alt = title_from_excerpt(p)
+            if alt and fit_title(alt).lower() not in seen_titles:
+                p["title"] = alt
+                p["meta_title"] = alt
+                seen_titles[fit_title(alt).lower()] = True
+                continue
+        seen_titles[key] = True
     print(f"posts validos: {len(posts)} (descartados: {len(raw)-len(posts)})")
 
     redirects = []
