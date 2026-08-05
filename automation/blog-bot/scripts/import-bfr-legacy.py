@@ -41,11 +41,32 @@ def dated_path(p):
     d = p["published_at"][:10]
     return f"{d[0:4]}/{d[5:7]}/{d[8:10]}/{p['slug']}/"
 
+YT_EMBED = ('<div class="bfr-embed"><iframe src="https://www.youtube-nocookie.com/embed/{vid}" '
+            'title="Video do YouTube" loading="lazy" allow="accelerometer; autoplay; clipboard-write; '
+            'encrypted-media; gyroscope; picture-in-picture; web-share" '
+            'referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>')
+
+def youtube_embeds(body):
+    """Converte referencias de video em embed responsivo (antes do markdown)."""
+    # formato legado da fase API: thumbnail + linha "Assistir no YouTube"
+    body = re.sub(
+        r"!\[[^\]]*\]\(https://i\.ytimg\.com/vi/([A-Za-z0-9_-]{6,})/[^)]*\)\s*\n+\s*"
+        r"\*\*[^\[]*\[[^\]]+\]\(https://www\.youtube\.com/watch\?v=\1[^)]*\)\*\*",
+        lambda m: "@@YT:" + m.group(1) + "@@", body)
+    # link ou URL de youtube sozinho numa linha
+    body = re.sub(
+        r"(?m)^\s*(?:\*\*)?\[?[^\[\]\n]*\]?\(?https://(?:www\.)?youtube\.com/watch\?v=([A-Za-z0-9_-]{6,})[^)\s]*\)?(?:\*\*)?\s*$",
+        lambda m: "@@YT:" + m.group(1) + "@@", body)
+    return body
+
 def md_to_html(body):
+    body = youtube_embeds(body)
     # links de imagem do fluxo viram locais; iframes nao existem no acervo
     body = body.replace("https://fluxointeligenteia.com.br/imagens/posts/", "../../../../imagens/posts/")
     body = body.replace("https://i.ytimg.com/vi/", "https://i.ytimg.com/vi/")  # thumbs externas ok em links
-    return markdown.markdown(body, extensions=["extra", "sane_lists"])
+    out = markdown.markdown(body, extensions=["extra", "sane_lists"])
+    out = re.sub(r"(?:<p>)?@@YT:([A-Za-z0-9_-]{6,})@@(?:</p>)?", lambda m: YT_EMBED.format(vid=m.group(1)), out)
+    return out
 
 def page_html(p, cat):
     rel = "../../../../"
@@ -53,10 +74,15 @@ def page_html(p, cat):
     canonical = f"{BASE_URL}/{dated_path(p)}"
     image_url = f"{BASE_URL}/imagens/posts/{slug}.jpg"
     title = p["title"]
-    meta_title = (p.get("meta_title") or title)[:70]
+    SUFFIX = " | BFR Intelligence"
+    raw_title = p.get("meta_title") or title
+    room = 70 - len(SUFFIX)
+    meta_title = raw_title if len(raw_title) <= room else (raw_title[:room - 1].rsplit(" ", 1)[0] + "…")
     meta_desc = (p.get("meta_description") or p.get("excerpt") or "")[:160]
     excerpt = p.get("excerpt") or ""
     body_html = md_to_html(p.get("body") or "")
+    tags = [t for t in (p.get("tags") or []) if t]
+    keywords = ", ".join(dict.fromkeys(tags + [cat.lower(), "BFR Intelligence"]))
     ld = {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
@@ -74,13 +100,15 @@ def page_html(p, cat):
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>{esc(meta_title)} | BFR Intelligence</title>
+  <title>{esc(meta_title)}{SUFFIX}</title>
   <meta name="description" content="{esc(meta_desc)}" />
+  <meta name="keywords" content="{esc(keywords)}" />
+  <meta name="author" content="BFR Intelligence" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <link rel="canonical" href="{canonical}" />
   <link rel="icon" type="image/png" href="{rel}assets/logo-bfr.png" />
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="{esc(meta_title)}" />
+  <meta property="og:title" content="{esc(meta_title)}{SUFFIX}" />
   <meta property="og:description" content="{esc(meta_desc)}" />
   <meta property="og:url" content="{canonical}" />
   <meta property="og:image" content="{image_url}" />

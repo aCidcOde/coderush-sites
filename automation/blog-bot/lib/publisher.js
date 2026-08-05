@@ -668,7 +668,16 @@ function renderBfrSections(contract, relativeRoot, copy) {
 function renderBfrPostTemplate({ relativeRoot, contract, copy, site, seoTitle, metaDescription, canonicalUrl, imageUrl, faqJsonLd }) {
   const content = contract.content || {};
   const dateBr = brDate(contract.date);
-  const category = contract.postType === "agentes-ia-operacao" ? (contract.bfrCategory || "Engenharia de agentes") : (contract.bfrCategory || "Engenharia de agentes");
+  const hay = `${contract.theme || ""} ${contract.angle || ""}`.toLowerCase();
+  const category = contract.bfrCategory
+    || (/governan|auditoria|permiss|roi|seguran|observabilidade|log/.test(hay) ? "Governança e ROI"
+      : /automa|integra|n8n|canal|canais|atendimento/.test(hay) ? "Automação e integrações"
+      : "Engenharia de agentes");
+  const bfrKeywords = [...new Set([
+    ...(contract.theme ? [contract.theme] : []),
+    ...(contract.angle ? [contract.angle] : []),
+    "agentes de IA", "IA na operação", category.toLowerCase(), "BFR Intelligence"
+  ])].join(", ");
   return `<!doctype html>
 <html lang="pt-BR">
 <head>
@@ -676,9 +685,11 @@ function renderBfrPostTemplate({ relativeRoot, contract, copy, site, seoTitle, m
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>${esc(seoTitle)}</title>
   <meta name="description" content="${esc(metaDescription)}" />
+  <meta name="keywords" content="${esc(bfrKeywords)}" />
+  <meta name="author" content="BFR Intelligence" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <link rel="canonical" href="${canonicalUrl}" />
-  <link rel="icon" type="image/x-icon" href="${relativeRoot}favicon.ico" />
+  <link rel="icon" type="image/png" href="${relativeRoot}assets/logo-bfr.png" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="${esc(seoTitle)}" />
   <meta property="og:description" content="${esc(metaDescription)}" />
