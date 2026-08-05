@@ -1,0 +1,31 @@
+{
+  "mode": "dry-run",
+  "date": "2026-05-11",
+  "timezone": "America/Sao_Paulo",
+  "focus": "ia",
+  "startedAt": "2026-05-11T13:15:10.120Z",
+  "aiProvider": "openrouter",
+  "sites": [
+    {
+      "siteId": "fluxointeligenteia",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "tools",
+      "theme": "tools seguras para agentes de IA",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/fluxointeligenteia/2026-05-11/ferramentas-seguras-agentes-corporativos-ia.json",
+      "markdownPath": "automation/blog-bot/out/fluxointeligenteia/2026-05-11/ferramentas-seguras-agentes-corporativos-ia.md"
+    }
+  ],
+  "duplications": [],
+  "fallbackCount": 0,
+  "allFallback": false,
+  "finishedAt": "2026-05-11T13:15:25.157Z",
+  "ok": true
+}
