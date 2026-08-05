@@ -8,6 +8,7 @@
 <link rel="icon" type="image/png" href="assets/logo-bfr.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="conteudos/blog.css" />
 <link rel="stylesheet" href="bfr-styles.css?v=20260802-2">
 <!-- Google tag (gtag.js) -->
 <!-- Google tag (gtag.js) -->
@@ -964,8 +965,36 @@
     <p class="s-sub">Guias, análises e playbooks sobre agentes corporativos, automação, RAG, integrações e governança.</p>
   </div>
 
-  <div class="home-content-grid reveal" id="homeContentGrid" aria-live="polite">
-    <div class="content-loading">Carregando as publicações mais recentes...</div>
+  <div class="home-content-grid bfr-cards reveal" id="homeContentGrid">
+<!-- BLOG-HOME-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/08/04/impacto-inteligencia-artificial-empresas-brasileiras/" data-blog-image="imagens/posts/impacto-inteligencia-artificial-empresas-brasileiras.jpg" data-blog-slug="impacto-inteligencia-artificial-empresas-brasileiras" data-blog-date="2026-08-04">
+  <a href="2026/08/04/impacto-inteligencia-artificial-empresas-brasileiras/">
+    <img src="imagens/posts/impacto-inteligencia-artificial-empresas-brasileiras.jpg" alt="IA nas empresas brasileiras: o que separa impacto de experimento" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="2026/08/04/impacto-inteligencia-artificial-empresas-brasileiras/" class="hover:underline">IA nas empresas brasileiras: o que separa impacto de experimento</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">A reportagem do g1 mostra o avanço da IA nas empresas do país. O que define quem colhe resultado — e quem coleciona pilotos — é o que está em volta do modelo.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/08/03/integrar-agentes-ia-operacao-governanca-eficaz/" data-blog-image="imagens/posts/integrar-agentes-ia-operacao-governanca-eficaz.jpg" data-blog-slug="integrar-agentes-ia-operacao-governanca-eficaz" data-blog-date="2026-08-03">
+  <a href="2026/08/03/integrar-agentes-ia-operacao-governanca-eficaz/">
+    <img src="imagens/posts/integrar-agentes-ia-operacao-governanca-eficaz.jpg" alt="Como integrar agentes de IA na operação com governança eficaz" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="2026/08/03/integrar-agentes-ia-operacao-governanca-eficaz/" class="hover:underline">Como integrar agentes de IA na operação com governança eficaz</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como agentes de IA podem ser integrados à sua operação para resultados mensuráveis e governança adequada.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/07/30/observabilidade-logs-agentes-corporativos-ia/" data-blog-image="imagens/posts/observabilidade-logs-agentes-corporativos-ia.jpg" data-blog-slug="observabilidade-logs-agentes-corporativos-ia" data-blog-date="2026-07-30">
+  <a href="2026/07/30/observabilidade-logs-agentes-corporativos-ia/">
+    <img src="imagens/posts/observabilidade-logs-agentes-corporativos-ia.jpg" alt="Observabilidade e Logs em Agentes Corporativos de IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="2026/07/30/observabilidade-logs-agentes-corporativos-ia/" class="hover:underline">Observabilidade e Logs em Agentes Corporativos de IA</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como garantir a observabilidade e os logs de agentes de IA em produção com segurança e governança.</p>
+  </div>
+</article>
+<!-- BLOG-HOME-CARDS:END -->
   </div>
   <div class="home-content-actions reveal">
     <a href="conteudos/index.html" class="btn-hero-primary" data-content-link>Explorar todos os conteúdos <span class="ic">→</span></a>
@@ -1268,69 +1297,7 @@ document.querySelectorAll('img[data-mobile]').forEach(img=>{
 /* init gallery (after lightbox refs exist) */
 setShot(0);
 
-/* ── CONTEÚDOS ── */
-const homeContentGrid=document.getElementById('homeContentGrid');
-const contentPathHasSitePrefix=location.pathname==='/site'||location.pathname.startsWith('/site/');
-const contentSitePrefix=contentPathHasSitePrefix?'/site':'';
-const contentApiUrl=contentSitePrefix+'/api.php';
-const contentArticleUrl=slug=>contentSitePrefix+'/conteudos/artigo.html?slug='+encodeURIComponent(slug);
-document.querySelectorAll('[data-content-link]').forEach(link=>{link.href=contentSitePrefix+'/conteudos/index.html';});
-function contentElement(tag,className,text){
-  const element=document.createElement(tag);
-  if(className)element.className=className;
-  if(text)element.textContent=text;
-  return element;
-}
-function buildContentCard(post){
-  const article=contentElement('article','content-card');
-  const media=contentElement('a','content-card-media');
-  media.href=contentArticleUrl(post.slug);
-  if(post.featured_image_url){
-    const image=document.createElement('img');
-    image.src=post.featured_image_url;
-    image.alt=post.featured_image_alt||'';
-    image.loading='lazy';
-    media.appendChild(image);
-  }else{
-    const placeholder=contentElement('span','content-cover-placeholder','BFR · INSIGHT');
-    media.appendChild(placeholder);
-  }
-
-  const copy=contentElement('div','content-card-copy');
-  copy.appendChild(contentElement('span','content-card-category',post.category));
-  const heading=contentElement('h3');
-  const titleLink=contentElement('a','',post.title);
-  titleLink.href=contentArticleUrl(post.slug);
-  heading.appendChild(titleLink);
-  copy.appendChild(heading);
-  copy.appendChild(contentElement('p','',post.excerpt));
-  const meta=contentElement('div','content-card-meta');
-  const publishedAt=new Date(post.published_at);
-  const date=Number.isNaN(publishedAt.getTime())?'':new Intl.DateTimeFormat('pt-BR',{day:'2-digit',month:'short',year:'numeric'}).format(publishedAt);
-  if(date)meta.appendChild(contentElement('span','',date));
-  meta.appendChild(contentElement('span','',post.reading_time_minutes+' min'));
-  copy.appendChild(meta);
-  article.append(media,copy);
-  return article;
-}
-async function loadHomeContent(){
-  try{
-    const response=await fetch(contentApiUrl+'?limit=3',{headers:{Accept:'application/json'}});
-    if(!response.ok)throw new Error('content_unavailable');
-    const payload=await response.json();
-    const posts=Array.isArray(payload.data)?payload.data.slice(0,3):[];
-    homeContentGrid.replaceChildren();
-    if(posts.length===0){
-      homeContentGrid.appendChild(contentElement('div','content-home-empty','Os primeiros conteúdos estão sendo preparados. A biblioteca já está pronta para receber novas publicações.'));
-      return;
-    }
-    posts.forEach(post=>homeContentGrid.appendChild(buildContentCard(post)));
-  }catch(error){
-    homeContentGrid.replaceChildren(contentElement('div','content-home-empty','Não foi possível carregar os conteúdos agora. Acesse a biblioteca para tentar novamente.'));
-  }
-}
-loadHomeContent();
-
+/* Conteúdos agora são estáticos (cards gerados pelo blog-bot nos markers) */
 /* ── CONTACT FORM ── */
 const form=document.getElementById('contactForm');
 form.addEventListener('submit',e=>{

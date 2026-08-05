@@ -250,15 +250,6 @@
       "language": "pt-BR",
       "enabled": true,
       "baseUrl": "https://bfrintelligence.com.br",
-      "target": "api",
-      "api": {
-        "baseUrl": "https://bfrintelligence.com.br",
-        "endpoint": "/api.php",
-        "tokenEnv": "BFR_CONTENT_TOKEN",
-        "format": "bfr-json",
-        "coverPublicDir": "fluxointeligenteia/imagens/posts",
-        "coverPublicBaseUrl": "https://fluxointeligenteia.com.br/imagens/posts"
-      },
       "outputRoot": "automation/blog-bot/out/bfrintelligence",
       "coverModel": {
         "primary": "gpt-5-image",
@@ -276,6 +267,44 @@
           "https://huggingface.co/blog/feed.xml",
           "https://blog.crewai.com/rss/",
           "https://openai.com/blog/rss.xml"
+        ]
+      },
+      "siteRoot": "bfrintelligence",
+      "renderExtension": "html",
+      "homePath": "index.html",
+      "blogIndexPath": "conteudos/index.html",
+      "requiresPhpLint": false,
+      "lintTargets": [],
+      "assets": {
+        "postsDir": "imagens/posts",
+        "fallbackCover": "imagens/posts/bfrintelligence-cover-base.jpg"
+      },
+      "seo": {
+        "robotsPath": "robots.txt",
+        "sitemapPath": "sitemap.xml",
+        "extraPaths": [
+          {
+            "path": "/termos.html",
+            "lastmod": "2026-08-05",
+            "changefreq": "yearly",
+            "priority": "0.3"
+          },
+          {
+            "path": "/privacidade.html",
+            "lastmod": "2026-08-05",
+            "changefreq": "yearly",
+            "priority": "0.3"
+          },
+          {
+            "path": "/lgpd.html",
+            "lastmod": "2026-08-05",
+            "changefreq": "yearly",
+            "priority": "0.3"
+          }
+        ],
+        "disallow": [
+          "/data/",
+          "/api.php"
         ]
       }
     }

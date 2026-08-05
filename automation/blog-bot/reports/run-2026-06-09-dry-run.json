@@ -1,0 +1,100 @@
+{
+  "mode": "dry-run",
+  "date": "2026-06-09",
+  "timezone": "America/Sao_Paulo",
+  "focus": "php",
+  "startedAt": "2026-06-03T13:57:30.922Z",
+  "aiProvider": "openrouter",
+  "sites": [
+    {
+      "siteId": "coderush",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "arquitetura",
+      "theme": "gestao de risco em substituicao de sistema",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/coderush/2026-06-09/gerenciando-riscos-substituicao-sistemas-legados.json",
+      "markdownPath": "automation/blog-bot/out/coderush/2026-06-09/gerenciando-riscos-substituicao-sistemas-legados.md"
+    },
+    {
+      "siteId": "codafacil",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "DX",
+      "theme": "escala de banco e cache em produtos sob medida",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": [
+          {
+            "url": "https://www.codeium.com/blog/rss.xml",
+            "error": "HTTP 404"
+          }
+        ]
+      },
+      "outputPath": "automation/blog-bot/out/codafacil/2026-06-09/escalando-banco-dados-cache-software-sob-medida.json",
+      "markdownPath": "automation/blog-bot/out/codafacil/2026-06-09/escalando-banco-dados-cache-software-sob-medida.md"
+    },
+    {
+      "siteId": "fluxointeligenteia",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "canais integrados",
+      "theme": "agentes corporativos no atendimento ao cliente",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/fluxointeligenteia/2026-06-09/agentes-corporativos-atendimento-canais-integrados.json",
+      "markdownPath": "automation/blog-bot/out/fluxointeligenteia/2026-06-09/agentes-corporativos-atendimento-canais-integrados.md"
+    },
+    {
+      "siteId": "sistemavendadireta",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "comissionamento",
+      "theme": "gestao de inadimplencia em venda direta",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/sistemavendadireta/2026-06-09/comissionamento-inadimplencia-vendas-diretas.json",
+      "markdownPath": "automation/blog-bot/out/sistemavendadireta/2026-06-09/comissionamento-inadimplencia-vendas-diretas.md"
+    },
+    {
+      "siteId": "emergency",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "due diligence societaria",
+      "theme": "investigacao patrimonial em contencioso",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/emergency/2026-06-09/realizar-due-diligence-societaria-forma-eficaz.json",
+      "markdownPath": "automation/blog-bot/out/emergency/2026-06-09/realizar-due-diligence-societaria-forma-eficaz.md"
+    }
+  ],
+  "duplications": [],
+  "fallbackCount": 0,
+  "allFallback": false,
+  "finishedAt": "2026-06-03T13:59:18.735Z",
+  "ok": true
+}

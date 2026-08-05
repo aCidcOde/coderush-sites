@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /data/
+Disallow: /api.php
+
+Sitemap: https://bfrintelligence.com.br/sitemap.xml

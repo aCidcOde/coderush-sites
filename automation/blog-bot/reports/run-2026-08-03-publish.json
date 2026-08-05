@@ -1,0 +1,60 @@
+{
+  "mode": "publish",
+  "date": "2026-08-03",
+  "timezone": "America/Sao_Paulo",
+  "focus": "tecnologia",
+  "startedAt": "2026-08-03T12:24:32.959Z",
+  "aiProvider": "openrouter",
+  "sites": [
+    {
+      "siteId": "bfrintelligence",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Possivel texto vazado na capa (sample: \"aie oll\")",
+      "angle": "governanca",
+      "theme": "agentes com RAG e contexto do negocio",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/bfrintelligence/2026-08-03/integrar-agentes-ia-operacao-governanca-eficaz.json",
+      "markdownPath": "automation/blog-bot/out/bfrintelligence/2026-08-03/integrar-agentes-ia-operacao-governanca-eficaz.md",
+      "publishResult": {
+        "target": "api",
+        "apiStatus": 201,
+        "apiUrl": "https://bfrintelligence.com.br/conteudos/artigo.html?slug=integrar-agentes-ia-operacao-governanca-eficaz",
+        "apiId": null,
+        "apiPublishedAt": "2026-08-03T09:24:32-03:00",
+        "coverPath": "fluxointeligenteia/imagens/posts/integrar-agentes-ia-operacao-governanca-eficaz.jpg",
+        "coverSize": 147681,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Painel de controle monumental com nós interconectados representando agentes de IA, em azul elétrico sobre fundo azul marinho",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": true,
+          "alphanumericCount": 10,
+          "sample": "aie oll"
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    }
+  ],
+  "duplications": [],
+  "relatedRefresh": {
+    "touched": 7,
+    "unchanged": 109,
+    "errors": [],
+    "totalCards": 105,
+    "totalFiles": 116
+  },
+  "fallbackCount": 0,
+  "allFallback": false,
+  "finishedAt": "2026-08-03T12:26:10.080Z",
+  "ok": true
+}

@@ -1,0 +1,88 @@
+{
+  "date": "2026-06-06",
+  "siteId": "emergency",
+  "postType": "due-diligence-certidoes",
+  "focus": "tecnologia",
+  "theme": "habilitacao e onboarding de fornecedor com certidoes",
+  "angle": "regularizacao",
+  "slug": "regularizar-certidoes-habilitacao-fornecedores",
+  "title": "Emergency Documentação: TECNOLOGIA aplicado a regularizacao",
+  "description": "Atualização semanal de tecnologia para Emergency Documentação, com foco em habilitacao e onboarding de fornecedor com certidoes.",
+  "sources": [
+    "https://emergency.com.br/blog/habilitacao-onboarding-fornecedores-ma",
+    "https://base.ohub.com.br/facilities/gestao-de-fornecedores/selecao-de-fornecedores/artigos/certidoes-obrigatorias-do-fornecedor-antes-da-contratacao",
+    "https://www.gobuyer.com.br/due-dilligence-de-fornecedores-checklist-completo-de-risco-compliance-e-esg-para-homologar-com-seguranca/",
+    "https://www.cadenio.com/pt-br/blog/onboarding-fornecedor-qualificacao-due-diligence-auditavel",
+    "https://gedanken.com.br/produtos/g-certifica/"
+  ],
+  "status": "draft",
+  "generatedAt": "2026-06-03T10:51:58-03:00",
+  "content": {
+    "eyebrow": "Orientações práticas",
+    "headline": "Como regularizar certidões para habilitação de fornecedores?",
+    "summary": "Entenda como a regularização documental é essencial na habilitação de fornecedores.",
+    "answerBox": {
+      "question": "Quais certidões são necessárias para habilitação de fornecedores?",
+      "answer": "Para habilitar fornecedores, é fundamental regularizar certidões cartorárias e forenses, que comprovam a situação fiscal e jurídica da empresa. Isso minimiza riscos e facilita a due diligence, garantindo que a contratação ocorra de maneira segura e eficiente."
+    },
+    "tldr": [
+      "Certidões são essenciais na habilitação de fornecedores.",
+      "Regularização evita riscos na contratação.",
+      "Apoio especializado facilita o processo."
+    ],
+    "sections": [
+      {
+        "type": "prose",
+        "title": "Importância da regularização na habilitação",
+        "body": "A regularização de certidões é um passo crucial na habilitação de fornecedores. Isso garante que a empresa tenha a documentação em dia e evita problemas futuros que podem surgir durante a due diligence. Sem essa regularização, o risco de contratações com empresas irregulares aumenta consideravelmente."
+      },
+      {
+        "type": "list",
+        "title": "Certidões essenciais para habilitação",
+        "items": [
+          "Certidão de Regularidade Fiscal",
+          "Certidão de Distribuição de Ações",
+          "Certidão de Protesto de Títulos",
+          "Certidão de Falência e Recuperação Judicial",
+          "Certidão de Quitação de Débitos Trabalhistas"
+        ]
+      },
+      {
+        "type": "callout",
+        "body": "Já estruturamos a regularização de certidões para diversos clientes. Vale a pena conversar sobre como podemos ajudar no seu cenário específico.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Como a tecnologia auxilia na regularização",
+        "body": "A tecnologia tem sido uma aliada na emissão de certidões online, permitindo que as empresas acessem rapidamente os documentos necessários. Com um painel de acompanhamento, é possível monitorar o status das solicitações, reduzindo retrabalhos e otimizando o tempo de habilitação de fornecedores. A Emergency Documentação, com sua experiência, pode ajudar nesse processo."
+      },
+      {
+        "type": "cta-inline",
+        "body": "Vamos discutir como podemos otimizar a habilitação de fornecedores na sua empresa.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Cuidado com os riscos na habilitação",
+        "body": "A falta de regularização pode trazer sérios riscos, como contratações de fornecedores irregulares e problemas legais futuros. É importante evitar a pressa e garantir que todas as documentações estejam em ordem antes de fechar qualquer contrato. A Emergency Documentação está aqui para orientar você nesse processo."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Quais são as principais certidões necessárias?",
+        "a": "As principais certidões incluem a Certidão de Regularidade Fiscal, Certidão de Distribuição de Ações e Certidão de Falência."
+      },
+      {
+        "q": "Como a tecnologia facilita a emissão de certidões?",
+        "a": "A tecnologia permite a emissão de certidões online e o acompanhamento em tempo real do status das solicitações, agilizando o processo."
+      },
+      {
+        "q": "Quais são os riscos de não regularizar certidões?",
+        "a": "Os riscos incluem contratações com fornecedores irregulares, o que pode acarretar problemas legais e financeiros."
+      }
+    ]
+  }
+}

@@ -103,6 +103,35 @@ const SITE_COPY = {
       { href: "#contato", label: "Contato" }
     ]
   },
+  bfrintelligence: {
+    blogName: "Conteúdos BFR Intelligence",
+    homeSectionTitle: "Conteúdos",
+    homeSectionDescription:
+      "Guias, análises e playbooks para colocar agentes de IA na operação real — com contexto, integração, segurança e resultado mensurável.",
+    indexTitle: "Conteúdos | BFR Intelligence",
+    indexDescription:
+      "Artigos da BFR Intelligence sobre engenharia de agentes, automação e integrações, governança e ROI de IA na operação.",
+    articleLabel: "BFR Intelligence",
+    footerBlurb:
+      "A BFR Intelligence coloca agentes de IA na operação real, com contexto, integração, segurança e resultado mensurável.",
+    ctaTitle: "Quer tirar a IA do piloto e colocar na operação?",
+    ctaBody:
+      "A BFR estrutura agentes com contexto do negócio, integração aos seus sistemas, governança e ROI mensurável.",
+    ctaPath: "#contato",
+    ctaLabel: "Criar meu agente",
+    phone: "",
+    email: "",
+    accentLinkClass: "",
+    headingBarClass: "",
+    bodyClass: "bfr-blog",
+    headerClass: "",
+    footerClass: "",
+    navLinks: [
+      { href: "", label: "Início" },
+      { href: "conteudos/", label: "Conteúdos" },
+      { href: "#contato", label: "Contato" }
+    ]
+  },
   sistemavendadireta: {
     blogName: "Blog SVD",
     homeSectionTitle: "Blog SVD",
@@ -602,6 +631,132 @@ function renderRelatedSection() {
   ].join("\n");
 }
 
+function renderBfrSections(contract, relativeRoot, copy) {
+  const content = contract.content || {};
+  const parts = [];
+  const ab = content.answerBox || {};
+  if (ab.question) {
+    parts.push(`      <div class="bfr-callout"><h2>${esc(ab.question)}</h2><p>${esc(ab.answer || "")}</p></div>`);
+  }
+  const tldr = Array.isArray(content.tldr) ? content.tldr : [];
+  if (tldr.length) {
+    parts.push(`      <h2>Em resumo</h2>\n      <ul>${tldr.map((t) => `<li>${esc(t)}</li>`).join("")}</ul>`);
+  }
+  for (const s of content.sections || []) {
+    const title = s.title ? `      <h2>${esc(s.title)}</h2>\n` : "";
+    if (s.type === "prose") {
+      parts.push(`${title}      <p>${esc(s.body || "")}</p>`);
+    } else if (s.type === "list") {
+      parts.push(`${title}      <ul>${(s.items || []).map((i) => `<li>${esc(i)}</li>`).join("")}</ul>`);
+    } else if (s.type === "callout") {
+      parts.push(`      <div class="bfr-callout"><h2>${esc(s.title || "Atenção")}</h2><p>${esc(s.body || "")}</p></div>`);
+    } else if (s.type === "cta-inline") {
+      const href = s.ctaHref && s.ctaHref.startsWith("/") ? `${relativeRoot}${s.ctaHref.slice(1)}` : (s.ctaHref || `${relativeRoot}${copy.ctaPath.replace(/^#/, "#")}`);
+      parts.push(`      <div class="bfr-cta"><h2>${esc(s.title || copy.ctaTitle)}</h2><p>${esc(s.body || copy.ctaBody)}</p><a href="${esc(href)}">${esc(s.ctaLabel || copy.ctaLabel)}</a></div>`);
+    }
+  }
+  const faq = Array.isArray(content.faq) ? content.faq : [];
+  if (faq.length) {
+    parts.push(
+      `      <h2>Perguntas frequentes</h2>\n`
+        + faq.map((f) => `      <h3>${esc(f.q)}</h3>\n      <p>${esc(f.a)}</p>`).join("\n")
+    );
+  }
+  return parts.join("\n\n");
+}
+
+function renderBfrPostTemplate({ relativeRoot, contract, copy, site, seoTitle, metaDescription, canonicalUrl, imageUrl, faqJsonLd }) {
+  const content = contract.content || {};
+  const dateBr = brDate(contract.date);
+  const category = contract.postType === "agentes-ia-operacao" ? (contract.bfrCategory || "Engenharia de agentes") : (contract.bfrCategory || "Engenharia de agentes");
+  return `<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>${esc(seoTitle)}</title>
+  <meta name="description" content="${esc(metaDescription)}" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <link rel="canonical" href="${canonicalUrl}" />
+  <link rel="icon" type="image/x-icon" href="${relativeRoot}favicon.ico" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="${esc(seoTitle)}" />
+  <meta property="og:description" content="${esc(metaDescription)}" />
+  <meta property="og:url" content="${canonicalUrl}" />
+  <meta property="og:image" content="${imageUrl}" />
+  <meta property="og:site_name" content="BFR Intelligence" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="${imageUrl}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="${relativeRoot}conteudos/blog.css" />
+  <script type="application/ld+json">
+${buildJsonLd(site, contract, canonicalUrl, imageUrl)}
+  </script>${faqJsonLd ? `
+  <script type="application/ld+json">
+${faqJsonLd}
+  </script>` : ""}
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BF0KGVD1LN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BF0KGVD1LN');
+  </script>
+</head>
+<body class="bfr-blog">
+  <nav class="bfr-nav">
+    <div class="bfr-nav-inner">
+      <a class="bfr-logo" href="${relativeRoot}"><span class="bfr-logo-mark">B</span><b>BFR Intelligence</b></a>
+      <div class="bfr-nav-links">
+        <a href="${relativeRoot}">Início</a>
+        <a href="${relativeRoot}conteudos/">Conteúdos</a>
+        <a class="bfr-nav-cta" href="${relativeRoot}#contato">Criar meu agente</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="bfr-main">
+    <p class="bfr-crumb"><a href="${relativeRoot}conteudos/">Conteúdos</a> / ${esc(category)}</p>
+    <article class="bfr-article">
+      <span class="bfr-chip">${esc(category)}</span>
+      <h1>${esc(content.headline || contract.title)}</h1>
+      <p class="bfr-meta">BFR Intelligence · ${esc(dateBr)}</p>
+      <p class="bfr-excerpt">${esc(content.summary || contract.description || "")}</p>
+      <figure class="bfr-cover">
+        <img src="${relativeRoot}imagens/posts/${contract.slug}.jpg" alt="${esc(contract.coverAlt || content.headline || contract.title)}" width="1200" height="630" loading="eager" decoding="async" />
+      </figure>
+      <div class="bfr-content">
+${renderBfrSections(contract, relativeRoot, copy)}
+      </div>
+    </article>
+
+    <div class="bfr-cta" id="cta">
+      <h2>${esc(copy.ctaTitle)}</h2>
+      <p>${esc(copy.ctaBody)}</p>
+      <a href="${relativeRoot}#contato">${esc(copy.ctaLabel)}</a>
+    </div>
+
+    <section class="bfr-related">
+      <div class="bfr-cards">
+${renderRelatedSection()}
+      </div>
+    </section>
+  </main>
+
+  <footer class="bfr-footer">
+    <div class="bfr-footer-inner">
+      <span>© BFR Intelligence — Todos os direitos reservados.</span>
+      <span><a href="${relativeRoot}termos.html">Termos</a> · <a href="${relativeRoot}privacidade.html">Privacidade</a> · <a href="${relativeRoot}lgpd.html">LGPD</a></span>
+    </div>
+  </footer>
+</body>
+</html>
+`;
+}
+
 function renderFluxoPostTemplate({
   relativeRoot,
   contract,
@@ -734,6 +889,7 @@ function buildPostTemplate(root, site, contract, relatedCards) {
   const canonicalUrl = `${site.baseUrl}/${canonicalPath}`;
   const imageUrl = `${site.baseUrl}/imagens/posts/${contract.slug}.jpg`;
   const isFluxo = site.id === "fluxointeligenteia";
+  const isBfr = site.id === "bfrintelligence";
 
   const emailMarkup = copy.email
     ? `        <p class="mt-3 text-sm text-white/80">Email: <a href="mailto:${esc(copy.email)}" class="font-semibold hover:underline">${esc(
@@ -797,6 +953,9 @@ ${renderFooterLinks(copy, relativeRoot)}
   const seoTitle = buildSeoTitle(contract, site);
   const metaDescription = buildMetaDescription(contract);
   const faqJsonLd = buildFaqJsonLd(contract);
+  if (isBfr) {
+    return renderBfrPostTemplate({ relativeRoot, contract, copy, site, seoTitle, metaDescription, canonicalUrl, imageUrl, faqJsonLd });
+  }
   const gaSnippet = site.ga4Id
     ? `
   <!-- Google tag (gtag.js) -->
@@ -1068,7 +1227,7 @@ function buildSitemapXml(site, cards) {
       priority: "1.0"
     },
     {
-      url: `${site.baseUrl}/blog/`,
+      url: `${site.baseUrl}/${(site.blogIndexPath || "blog/index.html").replace(/\/?index\.\w+$/, "")}/`.replace(/\/+$/, "/"),
       lastmod: latestDate,
       changefreq: "weekly",
       priority: "0.9"
@@ -1120,9 +1279,11 @@ function updateSitemap(root, site, cards) {
 
 function updateRobots(root, site) {
   const filePath = path.resolve(root, site.siteRoot, site.seo.robotsPath);
+  const disallows = (site.seo?.disallow || []).map((p) => `Disallow: ${p}`);
   const nextContent = [
     "User-agent: *",
     "Allow: /",
+    ...disallows,
     "",
     `Sitemap: ${site.baseUrl}/sitemap.xml`,
     ""
