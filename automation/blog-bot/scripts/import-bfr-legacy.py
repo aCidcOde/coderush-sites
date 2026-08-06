@@ -18,6 +18,7 @@ import markdown
 ROOT = "/data/coderush-sites"
 SITE = os.path.join(ROOT, "bfrintelligence")
 BASE_URL = "https://bfrintelligence.com.br"
+ASSET_VERSION = "20260806-1"   # subir quando o CSS mudar (cache-busting)
 
 def esc(v):
     return H.escape(str(v or ""), quote=True)
@@ -169,7 +170,7 @@ def page_html(p, cat):
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="{rel}conteudos/blog.css" />
+  <link rel="stylesheet" href="{rel}conteudos/blog.css?v={ASSET_VERSION}" />
   <script type="application/ld+json">
 {json.dumps(ld, ensure_ascii=False, indent=2)}
   </script>

@@ -701,7 +701,7 @@ function renderBfrPostTemplate({ relativeRoot, contract, copy, site, seoTitle, m
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="${relativeRoot}conteudos/blog.css" />
+  <link rel="stylesheet" href="${relativeRoot}conteudos/blog.css?v=20260806-1" />
   <script type="application/ld+json">
 ${buildJsonLd(site, contract, canonicalUrl, imageUrl)}
   </script>${faqJsonLd ? `
