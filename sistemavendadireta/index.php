@@ -836,6 +836,15 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-HOME-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/08/06/comissao-cargo-vs-plano-pontos-venda-direta/" data-blog-image="imagens/posts/comissao-cargo-vs-plano-pontos-venda-direta.jpg" data-blog-slug="comissao-cargo-vs-plano-pontos-venda-direta" data-blog-date="2026-08-06">
+  <a href="2026/08/06/comissao-cargo-vs-plano-pontos-venda-direta/">
+    <img src="imagens/posts/comissao-cargo-vs-plano-pontos-venda-direta.jpg" alt="Comissão por cargo vs plano de pontos em venda direta" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="2026/08/06/comissao-cargo-vs-plano-pontos-venda-direta/" class="hover:underline">Comissão por cargo vs plano de pontos em venda direta</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda as diferenças e como a integração ERP pode otimizar sua operação.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/08/02/levar-operacao-venda-direta-para-outro-pais/" data-blog-image="imagens/posts/levar-operacao-venda-direta-para-outro-pais.jpg" data-blog-slug="levar-operacao-venda-direta-para-outro-pais" data-blog-date="2026-08-02">
   <a href="2026/08/02/levar-operacao-venda-direta-para-outro-pais/">
     <img src="imagens/posts/levar-operacao-venda-direta-para-outro-pais.jpg" alt="Levar a venda direta para outro país: o que muda no sistema" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
@@ -852,15 +861,6 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="2026/07/30/integracoes-pagamento-logistica-marketing-multinivel/" class="hover:underline">Integrações de pagamento e logística no marketing multinível</a></h2>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como integrar pagamentos e logística para otimizar seu CRM no MMN.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/07/21/gestao-comissionamento-impacta-inadimplencia-mmn/" data-blog-image="imagens/posts/gestao-comissionamento-impacta-inadimplencia-mmn.jpg" data-blog-slug="gestao-comissionamento-impacta-inadimplencia-mmn" data-blog-date="2026-07-21">
-  <a href="2026/07/21/gestao-comissionamento-impacta-inadimplencia-mmn/">
-    <img src="imagens/posts/gestao-comissionamento-impacta-inadimplencia-mmn.jpg" alt="Como a gestão de comissionamento impacta a inadimplência no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-  </a>
-  <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="2026/07/21/gestao-comissionamento-impacta-inadimplencia-mmn/" class="hover:underline">Como a gestão de comissionamento impacta a inadimplência no MMN</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda a relação entre comissionamento e inadimplência em vendas diretas.</p>
   </div>
 </article>
 <!-- BLOG-HOME-CARDS:END -->

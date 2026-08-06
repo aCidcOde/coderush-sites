@@ -245,19 +245,19 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="https://bfrintelligence.com.br/2026/07/18/usar-base-conhecimento-agentes-corporativos-ia/" rel="noopener" target="_blank"><img src="https://bfrintelligence.com.br/imagens/posts/usar-base-conhecimento-agentes-corporativos-ia.jpg" alt="Como usar base de conhecimento para agentes corporativos de IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">BFR Intelligence</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://bfrintelligence.com.br/2026/07/18/usar-base-conhecimento-agentes-corporativos-ia/" rel="noopener" target="_blank" class="hover:underline">Como usar base de conhecimento para agentes corporativos de IA</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Saiba como implementar uma base de conhecimento eficiente para agentes corporativos com governança e segurança.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="https://codafacil.dev/2026/07/18/garantir-qualidade-desenvolvimento-software-sob-medida/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/garantir-qualidade-desenvolvimento-software-sob-medida.jpg" alt="Como garantir qualidade no desenvolvimento de software sob medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
     <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/07/18/garantir-qualidade-desenvolvimento-software-sob-medida/" rel="noopener" target="_blank" class="hover:underline">Como garantir qualidade no desenvolvimento de software sob medida</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a governança técnica pode acelerar entregas mantendo a qualidade do código.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://sistemavendadireta.com.br/2026/07/06/comissionamento-eficiente-onboarding-distribuidores/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/comissionamento-eficiente-onboarding-distribuidores.jpg" alt="Comissionamento eficiente no onboarding de distribuidores" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Sistema Venda Direta</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/07/06/comissionamento-eficiente-onboarding-distribuidores/" rel="noopener" target="_blank" class="hover:underline">Comissionamento eficiente no onboarding de distribuidores</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como otimizar o comissionamento no onboarding de distribuidores e potencializar resultados.</p>
   </div>
 </article>
   </div>

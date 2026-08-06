@@ -265,11 +265,11 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://sistemavendadireta.com.br/2026/06/09/comissionamento-gerenciar-inadimplencia-eficazmente/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/comissionamento-gerenciar-inadimplencia-eficazmente.jpg" alt="Comissionamento: Como Gerenciar a Inadimplência Eficazmente" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://sistemavendadireta.com.br/2026/08/06/comissao-cargo-vs-plano-pontos-venda-direta/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/comissao-cargo-vs-plano-pontos-venda-direta.jpg" alt="Comissão por cargo vs plano de pontos em venda direta" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Sistema Venda Direta</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/06/09/comissionamento-gerenciar-inadimplencia-eficazmente/" rel="noopener" target="_blank" class="hover:underline">Comissionamento: Como Gerenciar a Inadimplência Eficazmente</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como o comissionamento impacta a gestão de inadimplência em vendas diretas e marketing multinível.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/08/06/comissao-cargo-vs-plano-pontos-venda-direta/" rel="noopener" target="_blank" class="hover:underline">Comissão por cargo vs plano de pontos em venda direta</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda as diferenças e como a integração ERP pode otimizar sua operação.</p>
   </div>
 </article>
   </div>

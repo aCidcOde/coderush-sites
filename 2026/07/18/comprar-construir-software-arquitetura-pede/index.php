@@ -245,19 +245,19 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="https://sistemavendadireta.com.br/2026/08/06/comissao-cargo-vs-plano-pontos-venda-direta/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/comissao-cargo-vs-plano-pontos-venda-direta.jpg" alt="Comissão por cargo vs plano de pontos em venda direta" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Sistema Venda Direta</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/08/06/comissao-cargo-vs-plano-pontos-venda-direta/" rel="noopener" target="_blank" class="hover:underline">Comissão por cargo vs plano de pontos em venda direta</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda as diferenças e como a integração ERP pode otimizar sua operação.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="https://fluxointeligenteia.com.br/2026/04/30/automacao-processos-llms-n8n-atendimento/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/automacao-processos-llms-n8n-atendimento.jpg" alt="Automação de Processos com LLMs e n8n" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">FluxoInteligente IA</p>
     <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/04/30/automacao-processos-llms-n8n-atendimento/" rel="noopener" target="_blank" class="hover:underline">Automação de Processos com LLMs e n8n</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">A automação com IA, por meio de agentes inteligentes, reduz custos e retrabalho, otimizando processos de atendimento. Ferramentas como La...</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://sistemavendadireta.com.br/2026/07/30/integracoes-pagamento-logistica-marketing-multinivel/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/integracoes-pagamento-logistica-marketing-multinivel.jpg" alt="Integrações de pagamento e logística no marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Sistema Venda Direta</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/07/30/integracoes-pagamento-logistica-marketing-multinivel/" rel="noopener" target="_blank" class="hover:underline">Integrações de pagamento e logística no marketing multinível</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como integrar pagamentos e logística para otimizar seu CRM no MMN.</p>
   </div>
 </article>
   </div>

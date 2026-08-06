@@ -255,11 +255,11 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://codafacil.dev/2026/06/30/acelerar-operacoes-criticas-ia-integracoes-eficientes/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/acelerar-operacoes-criticas-ia-integracoes-eficientes.jpg" alt="Como acelerar operações críticas com IA e integrações eficientes" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://bfrintelligence.com.br/2026/04/30/automacao-processos-llms-n8n-atendimento/" rel="noopener" target="_blank"><img src="https://bfrintelligence.com.br/imagens/posts/automacao-processos-llms-n8n-atendimento.jpg" alt="Automação de Processos com LLMs e n8n no Atendimento" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
-    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/06/30/acelerar-operacoes-criticas-ia-integracoes-eficientes/" rel="noopener" target="_blank" class="hover:underline">Como acelerar operações críticas com IA e integrações eficientes</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como integrar automação e IA nas operações críticas para acelerar o desenvolvimento sem perder qualidade.</p>
+    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">BFR Intelligence</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://bfrintelligence.com.br/2026/04/30/automacao-processos-llms-n8n-atendimento/" rel="noopener" target="_blank" class="hover:underline">Automação de Processos com LLMs e n8n no Atendimento</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como agentes inteligentes otimizam o atendimento e reduzem custos.</p>
   </div>
 </article>
   </div>

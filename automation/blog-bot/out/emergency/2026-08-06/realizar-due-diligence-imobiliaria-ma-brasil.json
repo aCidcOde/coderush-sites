@@ -1,0 +1,88 @@
+{
+  "date": "2026-08-06",
+  "siteId": "emergency",
+  "postType": "due-diligence-certidoes",
+  "focus": "ia",
+  "theme": "due diligence societaria em M&A no mercado brasileiro",
+  "angle": "due diligence imobiliaria",
+  "slug": "realizar-due-diligence-imobiliaria-ma-brasil",
+  "title": "Emergency Documentação: IA aplicado a due diligence imobiliaria",
+  "description": "Atualização semanal de ia para Emergency Documentação, com foco em due diligence societaria em M&A no mercado brasileiro.",
+  "sources": [
+    "https://emergency.com.br/blog/due-diligence-societaria-ma-brasil",
+    "https://www.jusbrasil.com.br/artigos/due-diligence-em-operacoes-societarias-etapas-relevancia-juridica-e-estrategia-empresarial/3813212023",
+    "https://emergency.com.br/blog/due-diligence-societaria-ma-aspectos-compliance",
+    "https://www.pontesvieiraadvogados.com.br/post/m-a-no-brasil-para-investidores-estrangeiros-guia-juridico-completo-due-diligence-mou-contratos-10",
+    "https://www.ey.com/pt_br/services/strategy-transactions/mergers-acquisitions-due-diligence"
+  ],
+  "status": "draft",
+  "generatedAt": "2026-08-06T09:00:07-03:00",
+  "content": {
+    "eyebrow": "Guia prático",
+    "headline": "Como realizar due diligence imobiliária em M&A no Brasil",
+    "summary": "Entenda os principais passos e cuidados na due diligence imobiliária durante fusões e aquisições.",
+    "answerBox": {
+      "question": "Quais os principais cuidados na due diligence imobiliária?",
+      "answer": "Os cuidados incluem verificar a regularização do imóvel, analisar certidões cartorárias, investigar dívidas ou ônus e garantir a conformidade com leis locais. Uma abordagem detalhada evita surpresas durante transações imobiliárias."
+    },
+    "tldr": [
+      "Verifique a regularização do imóvel antes da compra.",
+      "Analise certidões para evitar problemas futuros.",
+      "Considere a importância da investigação patrimonial."
+    ],
+    "sections": [
+      {
+        "type": "prose",
+        "title": "O que é due diligence imobiliária?",
+        "body": "A due diligence imobiliária é uma análise detalhada que garante que todos os aspectos legais e financeiros de um imóvel sejam verificados antes de uma transação. Esse processo é vital em fusões e aquisições, pois um erro pode resultar em riscos significativos, como a descoberta de dívidas ocultas ou problemas de documentação. Entender os passos dessa diligência é crucial para evitar retrabalho e garantir uma negociação segura."
+      },
+      {
+        "type": "list",
+        "title": "Principais passos na due diligence imobiliária",
+        "items": [
+          "Verificar a regularidade da matrícula do imóvel.",
+          "Analisar certidões de ônus reais e ações.",
+          "Confirmar a conformidade com a legislação local.",
+          "Investigar eventuais dívidas ou pendências fiscais.",
+          "Examinar contratos de locação ou ocupação existentes."
+        ]
+      },
+      {
+        "type": "callout",
+        "body": "Já estruturamos isso em diversos clientes e é um passo essencial. Vale a pena uma conversa para entender como podemos ajudar no seu caso específico.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Os riscos da falta de due diligence",
+        "body": "Ignorar a due diligence imobiliária pode resultar em problemas sérios após a aquisição. Por exemplo, a compra de um imóvel com dívidas ocultas pode acarretar em custos adicionais e complicações legais. Além disso, a falta de clareza sobre a documentação pode atrasar a transferência do bem, impactando prazos e a viabilidade da transação. Por isso, é vital contar com suporte especializado para evitar surpresas desagradáveis."
+      },
+      {
+        "type": "cta-inline",
+        "body": "Aprofunde seu conhecimento sobre due diligence imobiliária.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Dicas para uma due diligence eficiente",
+        "body": "Para realizar uma due diligence imobiliária eficiente, é importante criar um checklist detalhado que inclua todos os documentos necessários, como certidões e contratos. Além disso, ter um painel de acompanhamento pode ajudar a monitorar o progresso e garantir que todos os requisitos sejam atendidos dentro do prazo estipulado. Emergência Documentação pode ser um aliado nesse processo, oferecendo suporte e orientação em cada etapa."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Quais certidões são essenciais na due diligence imobiliária?",
+        "a": "As certidões essenciais incluem a matrícula do imóvel, certidão de ônus reais e certidão de ações. Essas documentações ajudam a garantir que o imóvel esteja livre de dívidas e pendências."
+      },
+      {
+        "q": "Como evitar problemas legais após a compra de um imóvel?",
+        "a": "Realizar uma due diligence completa, incluindo a verificação de certidões e a análise de documentação, é fundamental para evitar problemas legais após a aquisição."
+      },
+      {
+        "q": "Qual a importância da investigação patrimonial?",
+        "a": "A investigação patrimonial é crucial para identificar possíveis dívidas e ônus que possam impactar a aquisição do imóvel, garantindo maior segurança na transação."
+      }
+    ]
+  }
+}

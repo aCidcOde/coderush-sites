@@ -239,6 +239,14 @@
   <p class="mt-2 text-sm text-white/70">Conteúdo recente dos outros sites do ecossistema.</p>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="https://bfrintelligence.com.br/2026/08/06/engenharia-agentes-teoria-producao-eficaz/" rel="noopener" target="_blank"><img src="https://bfrintelligence.com.br/imagens/posts/engenharia-agentes-teoria-producao-eficaz.jpg" alt="Engenharia de Agentes: Da Teoria à Produção Eficaz" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">BFR Intelligence</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://bfrintelligence.com.br/2026/08/06/engenharia-agentes-teoria-producao-eficaz/" rel="noopener" target="_blank" class="hover:underline">Engenharia de Agentes: Da Teoria à Produção Eficaz</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como implementar agentes de IA na operação real com resultados mensuráveis.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="https://fluxointeligenteia.com.br/2026/05/06/canais-integrados-base-operacional-agentes-corporativos/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/canais-integrados-base-operacional-agentes-corporativos.jpg" alt="Canais Integrados: Base Operacional" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">FluxoInteligente IA</p>
@@ -252,14 +260,6 @@
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
     <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/07/30/integrar-testes-automatizados-desenvolvimento-software-sob-medida/" rel="noopener" target="_blank" class="hover:underline">Como integrar testes automatizados no desenvolvimento de software sob medida</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda a importância dos testes automatizados na entrega de software com qualidade e agilidade.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://coderush.com.br/2026/06/30/automacao-inteligente-pode-aumentar-produtividade-time/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/automacao-inteligente-pode-aumentar-produtividade-time.jpg" alt="Como a automação inteligente pode aumentar a produtividade do seu time" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">CodeRush</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/06/30/automacao-inteligente-pode-aumentar-produtividade-time/" rel="noopener" target="_blank" class="hover:underline">Como a automação inteligente pode aumentar a produtividade do seu time</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como decisões técnicas em automação podem impactar a produtividade das equipes.</p>
   </div>
 </article>
   </div>

@@ -239,6 +239,14 @@
   <p class="mt-2 text-sm text-white/70">Conteúdo recente dos outros sites do ecossistema.</p>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="https://bfrintelligence.com.br/2026/08/06/engenharia-agentes-teoria-producao-eficaz/" rel="noopener" target="_blank"><img src="https://bfrintelligence.com.br/imagens/posts/engenharia-agentes-teoria-producao-eficaz.jpg" alt="Engenharia de Agentes: Da Teoria à Produção Eficaz" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">BFR Intelligence</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://bfrintelligence.com.br/2026/08/06/engenharia-agentes-teoria-producao-eficaz/" rel="noopener" target="_blank" class="hover:underline">Engenharia de Agentes: Da Teoria à Produção Eficaz</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como implementar agentes de IA na operação real com resultados mensuráveis.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="https://codafacil.dev/2026/06/30/acelerar-operacoes-criticas-ia-integracoes-eficientes/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/acelerar-operacoes-criticas-ia-integracoes-eficientes.jpg" alt="Como acelerar operações críticas com IA e integrações eficientes" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
@@ -252,14 +260,6 @@
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">FluxoInteligente IA</p>
     <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/06/21/auditoria-agentes-corporativos-ia-praticas-essenciais/" rel="noopener" target="_blank" class="hover:underline">Auditoria em Agentes Corporativos de IA: Práticas Essenciais</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Explore a importância da auditoria em agentes corporativos de IA para garantir segurança e governança eficaz.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://coderush.com.br/2026/06/03/melhorar-produtividade-equipe-automacao/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/melhorar-produtividade-equipe-automacao.jpg" alt="Como melhorar a produtividade da sua equipe com automação" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">CodeRush</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/06/03/melhorar-produtividade-equipe-automacao/" rel="noopener" target="_blank" class="hover:underline">Como melhorar a produtividade da sua equipe com automação</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a automação pode aumentar a eficiência dos times em empresas médias.</p>
   </div>
 </article>
   </div>

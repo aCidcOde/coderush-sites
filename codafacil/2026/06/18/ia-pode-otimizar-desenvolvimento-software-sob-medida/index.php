@@ -246,19 +246,19 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://sistemavendadireta.com.br/2026/07/18/ia-pode-otimizar-suporte-distribuidor-mmn/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/ia-pode-otimizar-suporte-distribuidor-mmn.jpg" alt="Como a IA pode otimizar o suporte ao distribuidor no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://sistemavendadireta.com.br/2026/08/06/comissao-cargo-vs-plano-pontos-venda-direta/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/comissao-cargo-vs-plano-pontos-venda-direta.jpg" alt="Comissão por cargo vs plano de pontos em venda direta" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Sistema Venda Direta</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/07/18/ia-pode-otimizar-suporte-distribuidor-mmn/" rel="noopener" target="_blank" class="hover:underline">Como a IA pode otimizar o suporte ao distribuidor no MMN</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a inteligência artificial melhora o suporte ao distribuidor em vendas diretas.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/08/06/comissao-cargo-vs-plano-pontos-venda-direta/" rel="noopener" target="_blank" class="hover:underline">Comissão por cargo vs plano de pontos em venda direta</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda as diferenças e como a integração ERP pode otimizar sua operação.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://fluxointeligenteia.com.br/2026/07/12/integrando-agentes-corporativos-ia-governanca-eficiente/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/integrando-agentes-corporativos-ia-governanca-eficiente.jpg" alt="Integrando Agentes Corporativos de IA com Governança Eficiente" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://bfrintelligence.com.br/2026/08/05/bfr-intelligence-microsoft-startups-aws-activate/" rel="noopener" target="_blank"><img src="https://bfrintelligence.com.br/imagens/posts/bfr-intelligence-microsoft-startups-aws-activate.jpg" alt="BFR Intelligence nos programas de startup da Microsoft e da AWS" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
-    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">FluxoInteligente IA</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/07/12/integrando-agentes-corporativos-ia-governanca-eficiente/" rel="noopener" target="_blank" class="hover:underline">Integrando Agentes Corporativos de IA com Governança Eficiente</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como implementar agentes corporativos de IA com governança e canais integrados para maximizar a eficiência.</p>
+    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">BFR Intelligence</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://bfrintelligence.com.br/2026/08/05/bfr-intelligence-microsoft-startups-aws-activate/" rel="noopener" target="_blank" class="hover:underline">BFR Intelligence nos programas de startup da Microsoft e da AWS</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Agora com Azure OpenAI e AWS Bedrock disponíveis: mais opções de modelo por caso de uso, sem lock-in e com o dado sob governança de nuvem...</p>
   </div>
 </article>
   </div>
