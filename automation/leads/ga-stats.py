@@ -43,9 +43,21 @@ for prop, host in PROPS:
         site[label] = {"usuarios": int(m[0].value) if m else 0,
                        "sessoes": int(m[1].value) if m else 0,
                        "pageviews": int(m[2].value) if m else 0}
-    diario = report(prop, ["date"], ["activeUsers", "sessions"], limit=31, days="28daysAgo")
+    # serie diaria geral (90d, o painel filtra 7/28/90 em cima disso)
+    diario = report(prop, ["date"], ["activeUsers", "sessions"], limit=100, days="90daysAgo")
     dias = sorted(rows(diario), key=lambda r: r["d"][0])
     site["diario"] = [{"data": r["d"][0], "usuarios": int(r["m"][0]), "sessoes": int(r["m"][1])} for r in dias]
+
+    # serie diaria POR PAGINA (top 15 paginas, 90d) — alimenta o drill-down do painel
+    pg_diario = report(prop, ["pagePath", "date"], ["screenPageViews", "activeUsers"],
+                       limit=2000, days="90daysAgo", order_metric="screenPageViews")
+    por_pagina = {}
+    for r in rows(pg_diario):
+        caminho, data = r["d"][0], r["d"][1]
+        por_pagina.setdefault(caminho, []).append(
+            {"data": data, "views": int(r["m"][0]), "usuarios": int(r["m"][1])})
+    top = sorted(por_pagina.items(), key=lambda kv: sum(d["views"] for d in kv[1]), reverse=True)[:15]
+    site["paginas_diario"] = {k: sorted(v, key=lambda d: d["data"]) for k, v in top}
     ev = report(prop, ["eventName"], ["eventCount"], limit=30)
     site["eventos"] = {r2["d"][0]: int(r2["m"][0]) for r2 in rows(ev) if r2["d"][0] in FOCUS_EVENTS}
     src = report(prop, ["sessionSourceMedium"], ["sessions"], limit=8, order_metric="sessions")

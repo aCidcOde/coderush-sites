@@ -58,6 +58,13 @@ if (isset($_GET['sair'])) {
 
 $authed = ($_SESSION['svd_leads_auth'] ?? false) === true;
 
+// filtros da visao de audiencia
+$diasFiltro = (int) ($_GET['dias'] ?? 28);
+if (!in_array($diasFiltro, [7, 28, 90], true)) {
+    $diasFiltro = 28;
+}
+$paginaSel = isset($_GET['pagina']) ? (string) $_GET['pagina'] : '';
+
 $leads = [];
 $totals = ['total' => 0, 'ultimos7' => 0, 'fechados' => 0, 'receita' => 0.0, 'zap' => 0];
 $porOrigem = [];
@@ -111,8 +118,23 @@ function brDateTime(?string $iso): string
 }
 
 
+/** Recorta uma serie diaria pelos ultimos N dias. */
+function ultimosDias(array $serie, int $dias): array
+{
+    if (count($serie) <= $dias) {
+        return $serie;
+    }
+    return array_slice($serie, -$dias);
+}
+
+/** Soma um campo da serie. */
+function somaSerie(array $serie, string $campo): int
+{
+    return array_sum(array_map(static fn ($d) => (int) ($d[$campo] ?? 0), $serie));
+}
+
 /** Grafico SVG de evolucao diaria (area = sessoes, linha = usuarios). Sem libs externas. */
-function dailyChart(array $dias): string
+function dailyChart(array $dias, string $campoA = 'sessoes', string $campoB = 'usuarios', string $rotuloA = 'sessões', string $rotuloB = 'usuários'): string
 {
     $n = count($dias);
     if ($n < 2) {
@@ -121,14 +143,14 @@ function dailyChart(array $dias): string
     $W = 860; $H = 250; $padL = 34; $padR = 12; $padT = 14; $padB = 30;
     $iw = $W - $padL - $padR; $ih = $H - $padT - $padB;
     $max = 1;
-    foreach ($dias as $d) { $max = max($max, (int) $d['sessoes'], (int) $d['usuarios']); }
+    foreach ($dias as $d) { $max = max($max, (int) ($d[$campoA] ?? 0), (int) ($d[$campoB] ?? 0)); }
     $x = static fn (int $i): float => $padL + ($n > 1 ? $i * $iw / ($n - 1) : 0);
     $y = static fn (int $v): float => $padT + $ih - ($v / $max * $ih);
 
     $ptsS = $ptsU = [];
     foreach ($dias as $i => $d) {
-        $ptsS[] = round($x($i), 1) . ',' . round($y((int) $d['sessoes']), 1);
-        $ptsU[] = round($x($i), 1) . ',' . round($y((int) $d['usuarios']), 1);
+        $ptsS[] = round($x($i), 1) . ',' . round($y((int) ($d[$campoA] ?? 0)), 1);
+        $ptsU[] = round($x($i), 1) . ',' . round($y((int) ($d[$campoB] ?? 0)), 1);
     }
     $area = 'M' . str_replace(',', ' ', $ptsS[0]) . ' L' . implode(' L', array_map(static fn ($p) => str_replace(',', ' ', $p), $ptsS))
         . ' L' . round($x($n - 1), 1) . ' ' . ($padT + $ih) . ' L' . $padL . ' ' . ($padT + $ih) . ' Z';
@@ -150,8 +172,8 @@ function dailyChart(array $dias): string
     }
     $dots = '';
     foreach ($dias as $i => $d) {
-        $dots .= '<circle cx="' . round($x($i), 1) . '" cy="' . round($y((int) $d['sessoes']), 1) . '" r="3.5" fill="#fcd34d">'
-            . '<title>' . substr($d['data'], 6, 2) . '/' . substr($d['data'], 4, 2) . ' — ' . (int) $d['sessoes'] . ' sessões · ' . (int) $d['usuarios'] . ' usuários</title></circle>';
+        $dots .= '<circle cx="' . round($x($i), 1) . '" cy="' . round($y((int) ($d[$campoA] ?? 0)), 1) . '" r="3.5" fill="#fcd34d">'
+            . '<title>' . substr($d['data'], 6, 2) . '/' . substr($d['data'], 4, 2) . ' — ' . (int) ($d[$campoA] ?? 0) . ' ' . $rotuloA . ' · ' . (int) ($d[$campoB] ?? 0) . ' ' . $rotuloB . '</title></circle>';
     }
     return '<svg viewBox="0 0 ' . $W . ' ' . $H . '" style="width:100%;height:auto;display:block;" role="img" aria-label="Evolução diária de sessões e usuários">'
         . '<defs><linearGradient id="gArea" x1="0" y1="0" x2="0" y2="1">'
@@ -163,8 +185,8 @@ function dailyChart(array $dias): string
         . $dots . $labels
         . '</svg>'
         . '<p class="muted" style="margin-top:8px;font-size:12px;">'
-        . '<span style="color:#fcd34d;font-weight:700;">━</span> sessões &nbsp;&nbsp;'
-        . '<span style="color:#60a5fa;font-weight:700;">┄</span> usuários · últimos 28 dias</p>';
+        . '<span style="color:#fcd34d;font-weight:700;">━</span> ' . $rotuloA . ' &nbsp;&nbsp;'
+        . '<span style="color:#60a5fa;font-weight:700;">┄</span> ' . $rotuloB . ' · ' . count($dias) . ' dias</p>';
 }
 
 /** Lista com barra proporcional: $rows = [['label' =>, 'value' => int]] */
@@ -178,7 +200,11 @@ function barList(array $rows): string
     $html = '<ul class="bars">';
     foreach ($rows as $r) {
         $pct = (int) round((int) $r['value'] / $max * 100);
-        $html .= '<li><div class="bar-top"><span class="bar-label">' . e((string) $r['label'])
+        $rot = e((string) $r['label']);
+        if (!empty($r['href'])) {
+            $rot = '<a class="bar-link" href="' . e((string) $r['href']) . '">' . $rot . '</a>';
+        }
+        $html .= '<li><div class="bar-top"><span class="bar-label">' . $rot
             . '</span><span class="bar-value">' . number_format((int) $r['value'], 0, ',', '.')
             . '</span></div><div class="bar-track"><div class="bar-fill" style="width:' . $pct . '%"></div></div></li>';
     }
@@ -302,6 +328,14 @@ if ($gaSite && !empty($gaSite['eventos'])) {
     .ql { font-size: 12.5px; font-weight: 600; color: rgba(255,255,255,.85); text-decoration: none;
       border: 1px solid var(--line); border-radius: 99px; padding: 5px 13px; transition: .15s; }
     .ql:hover { border-color: var(--amber); color: var(--amber); transform: translateY(-1px); }
+    .filtros { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 4px 0 16px; }
+    .chip-filtro { font-size: 12.5px; font-weight: 600; color: rgba(255,255,255,.8); text-decoration: none;
+      border: 1px solid var(--line); border-radius: 99px; padding: 5px 14px; transition: .15s; }
+    .chip-filtro:hover { border-color: var(--amber); color: var(--amber); }
+    .chip-filtro.ativo { background: rgba(252,211,77,.16); border-color: var(--amber); color: var(--amber); }
+    .chip-filtro.limpar { color: var(--text-soft); }
+    .bar-link { color: inherit; text-decoration: none; border-bottom: 1px dotted rgba(255,255,255,.25); }
+    .bar-link:hover { color: var(--amber); border-color: var(--amber); }
     .muted { color: var(--text-soft); }
 
     /* boxes grid */
@@ -427,10 +461,54 @@ if ($gaSite && !empty($gaSite['eventos'])) {
         <div class="kpi"><div class="chip c-amber"><?= icon('eye') ?></div><div><b><?= (int) ($gaSite['d28']['pageviews'] ?? 0) ?></b><span>Pageviews · 28 dias</span></div></div>
       </div>
 
-      <?php if (!empty($gaSite['diario'])): ?>
+      <div class="filtros">
+        <span class="muted" style="font-size:12px;text-transform:uppercase;letter-spacing:.07em;">Período:</span>
+        <?php foreach ([7 => '7 dias', 28 => '28 dias', 90 => '90 dias'] as $d => $rot): ?>
+          <a class="chip-filtro <?= $diasFiltro === $d ? 'ativo' : '' ?>"
+             href="?dias=<?= $d ?><?= $paginaSel !== '' ? '&pagina=' . urlencode($paginaSel) : '' ?>"><?= $rot ?></a>
+        <?php endforeach; ?>
+        <?php if ($paginaSel !== ''): ?>
+          <a class="chip-filtro limpar" href="?dias=<?= $diasFiltro ?>">✕ ver todas as páginas</a>
+        <?php endif; ?>
+      </div>
+
+      <?php
+      $serieGeral = ultimosDias($gaSite['diario'] ?? [], $diasFiltro);
+      $seriePagina = $paginaSel !== '' ? ultimosDias($gaSite['paginas_diario'][$paginaSel] ?? [], $diasFiltro) : [];
+      ?>
+
+      <?php if ($paginaSel !== ''): ?>
         <div class="box" style="margin-bottom:14px;">
-          <h3><?= icon('chart') ?> Evolução de acessos · por dia</h3>
-          <?= dailyChart($gaSite['diario']) ?>
+          <h3><?= icon('file') ?> <?= e($paginaSel) ?> · últimos <?= $diasFiltro ?> dias</h3>
+          <?php if ($seriePagina): ?>
+            <div class="cards" style="margin:6px 0 18px;">
+              <div class="card"><div class="chip c-amber"><?= icon('eye') ?></div><div><b><?= number_format(somaSerie($seriePagina, 'views'), 0, ',', '.') ?></b><span>Visualizações</span></div></div>
+              <div class="card"><div class="chip c-blue"><?= icon('users') ?></div><div><b><?= number_format(somaSerie($seriePagina, 'usuarios'), 0, ',', '.') ?></b><span>Usuários</span></div></div>
+              <div class="card"><div class="chip c-green"><?= icon('chart') ?></div><div><b><?= number_format(somaSerie($seriePagina, 'views') / max(1, count($seriePagina)), 1, ',', '.') ?></b><span>Média por dia</span></div></div>
+            </div>
+            <?= dailyChart($seriePagina, 'views', 'usuarios', 'visualizações', 'usuários') ?>
+            <div class="tbl-scroll" style="margin-top:18px;max-height:320px;overflow-y:auto;">
+              <table>
+                <tr><th>Dia</th><th>Visualizações</th><th>Usuários</th></tr>
+                <?php foreach (array_reverse($seriePagina) as $d): ?>
+                  <tr>
+                    <td><?= e(substr($d['data'], 6, 2) . '/' . substr($d['data'], 4, 2) . '/' . substr($d['data'], 0, 4)) ?></td>
+                    <td><?= (int) $d['views'] ?></td>
+                    <td><?= (int) $d['usuarios'] ?></td>
+                  </tr>
+                <?php endforeach; ?>
+              </table>
+            </div>
+          <?php else: ?>
+            <p class="muted">Sem acessos registrados nessa página no período — experimente ampliar para 90 dias.</p>
+          <?php endif; ?>
+        </div>
+      <?php endif; ?>
+
+      <?php if (!empty($serieGeral)): ?>
+        <div class="box" style="margin-bottom:14px;">
+          <h3><?= icon('chart') ?> Evolução de acessos do site · últimos <?= $diasFiltro ?> dias</h3>
+          <?= dailyChart($serieGeral) ?>
         </div>
       <?php endif; ?>
 
@@ -444,8 +522,14 @@ if ($gaSite && !empty($gaSite['eventos'])) {
           <?= barList(array_map(static fn ($r) => ['label' => $r['fonte'], 'value' => $r['sessoes']], $gaSite['fontes'] ?? [])) ?>
         </div>
         <div class="box">
-          <h3><?= icon('file') ?> Páginas acessadas · 28d</h3>
-          <?= barList(array_map(static fn ($r) => ['label' => $r['pagina'], 'value' => $r['views']], $gaSite['paginas'] ?? [])) ?>
+          <h3><?= icon('file') ?> Páginas acessadas · 28d <span class="muted" style="font-weight:400;text-transform:none;letter-spacing:0;">· clique para ver a evolução</span></h3>
+          <?= barList(array_map(static fn ($r) => [
+              'label' => $r['pagina'],
+              'value' => $r['views'],
+              'href' => isset($gaSite['paginas_diario'][$r['pagina']])
+                  ? '?dias=' . $diasFiltro . '&pagina=' . urlencode($r['pagina'])
+                  : null,
+          ], $gaSite['paginas'] ?? [])) ?>
         </div>
         <?php $campanhas = array_values(array_filter($gaSite['campanhas'] ?? [], static fn ($r) => !in_array($r['campanha'], ['(not set)', '(direct)'], true))); ?>
         <div class="box">
