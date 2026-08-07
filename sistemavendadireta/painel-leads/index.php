@@ -308,6 +308,7 @@ if ($gaSite && !empty($gaSite['eventos'])) {
     .kpi:hover { transform: translateY(-3px); box-shadow: 0 14px 30px rgba(0,0,0,.35); border-color: rgba(255,255,255,.28); }
     .kpi .chip { width: 42px; height: 42px; border-radius: 12px; display: grid; place-items: center; flex-shrink: 0; }
     .kpi .chip svg { width: 21px; height: 21px; }
+    .box svg:not([viewBox='0 0 860 250']) { max-width: 22px; max-height: 22px; }
     .kpi b { display: block; font-size: 24px; line-height: 1.1; letter-spacing: -.02em; }
     .kpi span { font-size: 11px; color: var(--text-soft); text-transform: uppercase; letter-spacing: .07em; }
     .c-amber { background: rgba(252,211,77,.16); color: var(--amber); }
@@ -481,10 +482,10 @@ if ($gaSite && !empty($gaSite['eventos'])) {
         <div class="box" style="margin-bottom:14px;">
           <h3><?= icon('file') ?> <?= e($paginaSel) ?> · últimos <?= $diasFiltro ?> dias</h3>
           <?php if ($seriePagina): ?>
-            <div class="cards" style="margin:6px 0 18px;">
-              <div class="card"><div class="chip c-amber"><?= icon('eye') ?></div><div><b><?= number_format(somaSerie($seriePagina, 'views'), 0, ',', '.') ?></b><span>Visualizações</span></div></div>
-              <div class="card"><div class="chip c-blue"><?= icon('users') ?></div><div><b><?= number_format(somaSerie($seriePagina, 'usuarios'), 0, ',', '.') ?></b><span>Usuários</span></div></div>
-              <div class="card"><div class="chip c-green"><?= icon('chart') ?></div><div><b><?= number_format(somaSerie($seriePagina, 'views') / max(1, count($seriePagina)), 1, ',', '.') ?></b><span>Média por dia</span></div></div>
+            <div class="kpis" style="margin:6px 0 18px;">
+              <div class="kpi"><div class="chip c-amber"><?= icon('eye') ?></div><div><b><?= number_format(somaSerie($seriePagina, 'views'), 0, ',', '.') ?></b><span>Visualizações</span></div></div>
+              <div class="kpi"><div class="chip c-blue"><?= icon('users') ?></div><div><b><?= number_format(somaSerie($seriePagina, 'usuarios'), 0, ',', '.') ?></b><span>Usuários</span></div></div>
+              <div class="kpi"><div class="chip c-green"><?= icon('chart') ?></div><div><b><?= number_format(somaSerie($seriePagina, 'views') / max(1, count($seriePagina)), 1, ',', '.') ?></b><span>Média por dia</span></div></div>
             </div>
             <?= dailyChart($seriePagina, 'views', 'usuarios', 'visualizações', 'usuários') ?>
             <div class="tbl-scroll" style="margin-top:18px;max-height:320px;overflow-y:auto;">
