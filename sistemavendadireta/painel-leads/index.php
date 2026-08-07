@@ -30,6 +30,9 @@ function envPassword(): string
 $expected = envPassword();
 $authed = ($_SESSION['svd_leads_auth'] ?? false) === true;
 $error = '';
+$diasFiltro = (int) ($_GET['dias'] ?? 28);
+if (!in_array($diasFiltro, [7, 28, 90], true)) { $diasFiltro = 28; }
+$paginaSel = isset($_GET['pagina']) ? (string) $_GET['pagina'] : '';
 
 if (isset($_POST['senha'])) {
     if ($expected !== '' && hash_equals($expected, (string) $_POST['senha'])) {
@@ -39,6 +42,73 @@ if (isset($_POST['senha'])) {
     }
     sleep(1);
     $error = 'Senha incorreta.';
+}
+
+// Marcar estagio do lead: grava no sqlite e enfileira o evento pro GA4
+// (o watcher no host e quem tem credencial e dispara via Measurement Protocol).
+if ($authed && isset($_POST['marcar_lead'])) {
+    $leadId = (int) ($_POST['lead_id'] ?? 0);
+    $novo = (string) ($_POST['marcar_lead'] ?? '');
+    $mapa = [
+        'qualificado' => 'qualify_lead',
+        'demo' => 'schedule_demo',
+        'perdido' => null,
+        'novo' => null,
+    ];
+    if ($leadId > 0 && array_key_exists($novo, $mapa)) {
+        try {
+            $db = new PDO('sqlite:' . __DIR__ . '/../storage/leads.sqlite');
+            $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $sel = $db->prepare('SELECT ga_client_id, gclid, origem FROM leads WHERE id = ?');
+            $sel->execute([$leadId]);
+            $lead = $sel->fetch(PDO::FETCH_ASSOC);
+            $db->prepare('UPDATE leads SET status = ? WHERE id = ?')->execute([$novo, $leadId]);
+            if ($lead && $mapa[$novo]) {
+                $fila = __DIR__ . '/../storage/ga-events.queue';
+                @file_put_contents($fila, json_encode([
+                    'lead_id' => $leadId,
+                    'event' => $mapa[$novo],
+                    'client_id' => $lead['ga_client_id'] ?: null,
+                    'origem' => $lead['origem'] ?? '',
+                    'ts' => date('c'),
+                ], JSON_UNESCAPED_UNICODE) . "\n", FILE_APPEND | LOCK_EX);
+            }
+        } catch (Throwable $e) {
+            // silencioso: o painel nao pode quebrar por causa do marcador
+        }
+    }
+    header('Location: ./?' . http_build_query(array_filter([
+        'dias' => $diasFiltro, 'pagina' => $paginaSel, 'marcado' => 1,
+    ])), true, 303);
+    exit;
+}
+
+// Exportacao das conversoes offline no formato de upload do Google Ads
+if ($authed && isset($_GET['exportar']) && $_GET['exportar'] === 'ads') {
+    $db = new PDO('sqlite:' . __DIR__ . '/../storage/leads.sqlite');
+    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $q = $db->query("SELECT gclid, status, created_at, closed_at, close_value FROM leads
+                     WHERE gclid IS NOT NULL AND gclid != '' AND status IN ('qualificado','demo','fechado')
+                     ORDER BY id DESC");
+    header('Content-Type: text/csv; charset=utf-8');
+    header('Content-Disposition: attachment; filename="conversoes-offline-svd.csv"');
+    $out = fopen('php://output', 'w');
+    fwrite($out, "Parameters:TimeZone=America/Sao_Paulo\n");
+    fputcsv($out, ['Google Click ID', 'Conversion Name', 'Conversion Time', 'Conversion Value', 'Conversion Currency']);
+    $nomes = ['qualificado' => 'Lead qualificado', 'demo' => 'Demonstração agendada', 'fechado' => 'Venda fechada'];
+    foreach ($q as $r) {
+        $quando = $r['status'] === 'fechado' && $r['closed_at'] ? $r['closed_at'] : $r['created_at'];
+        $dt = new DateTimeImmutable($quando);
+        fputcsv($out, [
+            $r['gclid'],
+            $nomes[$r['status']] ?? 'Lead qualificado',
+            $dt->setTimezone(new DateTimeZone('America/Sao_Paulo'))->format('Y-m-d H:i:s'),
+            $r['status'] === 'fechado' ? (float) $r['close_value'] : 0,
+            'BRL',
+        ]);
+    }
+    fclose($out);
+    exit;
 }
 
 // Pedido de atualizacao do snapshot do GA: o container so cria o arquivo-gatilho;
@@ -58,16 +128,10 @@ if (isset($_GET['sair'])) {
 
 $authed = ($_SESSION['svd_leads_auth'] ?? false) === true;
 
-// filtros da visao de audiencia
-$diasFiltro = (int) ($_GET['dias'] ?? 28);
-if (!in_array($diasFiltro, [7, 28, 90], true)) {
-    $diasFiltro = 28;
-}
-$paginaSel = isset($_GET['pagina']) ? (string) $_GET['pagina'] : '';
-
 $leads = [];
 $totals = ['total' => 0, 'ultimos7' => 0, 'fechados' => 0, 'receita' => 0.0, 'zap' => 0];
 $porOrigem = [];
+$funil = [];
 $dbAviso = '';
 $ga = null;
 $gaSite = null;
@@ -85,6 +149,9 @@ if ($authed) {
             $totals['zap'] = (int) $pdo->query('SELECT COUNT(*) FROM leads WHERE status = "zap"')->fetchColumn();
             $totals['ultimos7'] = (int) $pdo->query('SELECT COUNT(*) FROM leads WHERE status NOT IN ("teste","zap") AND created_at >= datetime("now", "-7 days")')->fetchColumn();
             $totals['fechados'] = (int) $pdo->query('SELECT COUNT(*) FROM leads WHERE status = "fechado"')->fetchColumn();
+            foreach ($pdo->query('SELECT status, COUNT(*) AS qtd FROM leads WHERE status != "teste" GROUP BY status') as $r) {
+                $funil[$r['status']] = (int) $r['qtd'];
+            }
             $totals['receita'] = (float) $pdo->query('SELECT COALESCE(SUM(close_value), 0) FROM leads WHERE status = "fechado"')->fetchColumn();
             foreach ($pdo->query('SELECT COALESCE(origem, "sem origem") AS origem, COUNT(*) AS qtd FROM leads WHERE status != "teste" GROUP BY origem ORDER BY qtd DESC LIMIT 8') as $row) {
                 $porOrigem[] = $row;
@@ -337,6 +404,19 @@ if ($gaSite && !empty($gaSite['eventos'])) {
     .chip-filtro.limpar { color: var(--text-soft); }
     .bar-link { color: inherit; text-decoration: none; border-bottom: 1px dotted rgba(255,255,255,.25); }
     .bar-link:hover { color: var(--amber); border-color: var(--amber); }
+    .funil { display: grid; grid-template-columns: repeat(auto-fit, minmax(128px, 1fr)); gap: 10px; margin-bottom: 18px; }
+    .funil-etapa { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 12px 14px; text-align: center; }
+    .funil-etapa b { display: block; font-size: 22px; margin-bottom: 6px; }
+    .acoes { display: flex; gap: 5px; margin: 0; }
+    .btn-etapa { width: auto; margin: 0; padding: 4px 10px; font-size: 11px; font-weight: 700; border-radius: 99px;
+      cursor: pointer; border: 1px solid var(--line); background: rgba(255,255,255,.06); color: rgba(255,255,255,.8); transition: .15s; }
+    .btn-etapa:hover { transform: none; box-shadow: none; }
+    .btn-etapa.e-qualificado:hover { border-color: var(--amber); color: var(--amber); }
+    .btn-etapa.e-demo:hover { border-color: var(--blue); color: var(--blue); }
+    .btn-etapa.e-perdido:hover { border-color: #fca5a5; color: #fca5a5; }
+    .tag.qualificado { background: rgba(252,211,77,.18); color: var(--amber); }
+    .tag.demo { background: rgba(96,165,250,.18); color: #93c5fd; }
+    .tag.perdido { background: rgba(248,113,113,.15); color: #fca5a5; }
     .muted { color: var(--text-soft); }
 
     /* boxes grid */
@@ -561,7 +641,34 @@ if ($gaSite && !empty($gaSite['eventos'])) {
       </div>
     <?php endif; ?>
 
-    <div class="sec"><h2><?= icon('users') ?> Últimos leads</h2><span class="muted">até 200 · formulário e WhatsApp</span></div>
+    <div class="sec" style="justify-content:space-between;flex-wrap:wrap;">
+      <h2><?= icon('users') ?> Funil de leads</h2>
+      <a class="chip-filtro" href="?exportar=ads" title="CSV no formato de upload de conversões offline do Google Ads">
+        <?= icon('chart') ?> Exportar conversões (Google Ads)
+      </a>
+    </div>
+
+    <div class="funil">
+      <?php
+      $etapasFunil = [
+          'novo' => ['Novos', 'novo'],
+          'zap' => ['Cliques WhatsApp', 'zap'],
+          'qualificado' => ['Qualificados', 'qualificado'],
+          'demo' => ['Demo agendada', 'demo'],
+          'fechado' => ['Vendas', 'fechado'],
+          'perdido' => ['Perdidos', 'perdido'],
+      ];
+      foreach ($etapasFunil as $chave => [$rot, $cls]): ?>
+        <div class="funil-etapa">
+          <b><?= (int) ($funil[$chave] ?? 0) ?></b>
+          <span class="tag <?= $cls ?>"><?= $rot ?></span>
+        </div>
+      <?php endforeach; ?>
+    </div>
+
+    <?php if (!empty($_GET['marcado'])): ?>
+      <p class="aviso-refresh">Etapa registrada — o evento correspondente vai pro Google em até 1 minuto.</p>
+    <?php endif; ?>
     <?php if ($dbAviso !== ''): ?>
       <p class="muted"><?= e($dbAviso) ?></p>
     <?php else: ?>
@@ -569,7 +676,7 @@ if ($gaSite && !empty($gaSite['eventos'])) {
         <table>
           <tr>
             <th>#</th><th>Data</th><th>Nome</th><th>WhatsApp</th><th>Origem</th>
-            <th>Campanha</th><th>Fonte</th><th>Faixa simulada</th><th>Ads?</th><th>Status</th><th>Valor</th>
+            <th>Campanha</th><th>Fonte</th><th>Ads?</th><th>Etapa</th><th>Avançar</th><th>Valor</th>
           </tr>
           <?php foreach ($leads as $lead): ?>
             <tr>
@@ -579,10 +686,28 @@ if ($gaSite && !empty($gaSite['eventos'])) {
               <td><?= e($lead['telefone']) ?></td>
               <td><?= e($lead['origem']) ?></td>
               <td><?= e($lead['utm_campaign'] ?: '-') ?><?= $lead['utm_content'] ? ' / ' . e($lead['utm_content']) : '' ?></td>
-              <td><?= e($lead['utm_source'] ?: 'direto') ?></td>
-              <td><?= e($lead['sim_faturamento'] ?: '-') ?></td>
-              <td><?= $lead['gclid'] ? 'sim' : '-' ?></td>
+              <td><?= e($lead['utm_source'] ?: 'direto') ?><?= $lead['sim_faturamento'] ? '<br /><span class="muted">simulou ' . e($lead['sim_faturamento']) . '</span>' : '' ?></td>
+              <td><?= $lead['gclid'] ? '<span title="veio de anúncio">sim</span>' : '-' ?></td>
               <td><span class="tag <?= e($lead['status']) ?>"><?= e($lead['status']) ?></span></td>
+              <td>
+                <?php if (!in_array($lead['status'], ['fechado', 'teste'], true)): ?>
+                  <form method="post" class="acoes">
+                    <input type="hidden" name="lead_id" value="<?= (int) $lead['id'] ?>" />
+                    <?php
+                    $etapas = [
+                        'qualificado' => ['Qualificar', 'Contato feito, é oportunidade real'],
+                        'demo' => ['Demo', 'Demonstração agendada'],
+                        'perdido' => ['Perdido', 'Não seguiu'],
+                    ];
+                    foreach ($etapas as $chave => [$rot, $titulo]):
+                        if ($lead['status'] === $chave) continue; ?>
+                      <button type="submit" name="marcar_lead" value="<?= $chave ?>" class="btn-etapa e-<?= $chave ?>" title="<?= e($titulo) ?>"><?= $rot ?></button>
+                    <?php endforeach; ?>
+                  </form>
+                <?php elseif ($lead['status'] === 'fechado'): ?>
+                  <span class="muted">✓ venda</span>
+                <?php endif; ?>
+              </td>
               <td><?= $lead['close_value'] !== null ? 'R$ ' . number_format((float) $lead['close_value'], 0, ',', '.') : '-' ?></td>
             </tr>
           <?php endforeach; ?>

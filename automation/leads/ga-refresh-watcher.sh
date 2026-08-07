@@ -9,13 +9,24 @@ set -u
 FLAG=/data/coderush-sites/sistemavendadireta/storage/ga-refresh.request
 LOCK=/tmp/ga-refresh.lock
 
-[ -f "$FLAG" ] || exit 0
+QUEUE=/data/coderush-sites/sistemavendadireta/storage/ga-events.queue
+
+# nada a fazer?
+[ -f "$FLAG" ] || [ -s "$QUEUE" ] || exit 0
 
 # evita execucoes concorrentes com o cron de 3h
 exec 9>"$LOCK"
 flock -n 9 || exit 0
 
-echo "[$(date -Is)] refresh solicitado pelo painel"
-/usr/bin/python3 /data/coderush-sites/automation/leads/ga-stats.py
-rm -f "$FLAG"
-echo "[$(date -Is)] refresh concluido"
+# 1) eventos de etapa do funil enfileirados pelo painel
+if [ -s "$QUEUE" ]; then
+  /usr/bin/python3 /data/coderush-sites/automation/leads/enviar-eventos.py
+fi
+
+# 2) snapshot do GA sob demanda
+if [ -f "$FLAG" ]; then
+  echo "[$(date -Is)] refresh solicitado pelo painel"
+  /usr/bin/python3 /data/coderush-sites/automation/leads/ga-stats.py
+  rm -f "$FLAG"
+  echo "[$(date -Is)] refresh concluido"
+fi
