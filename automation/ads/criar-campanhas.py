@@ -15,9 +15,9 @@ import sys
 
 CUSTOMER_ID = "3578927161"
 YAML = "/root/.config/svd-ads/google-ads.yaml"
-BASE = "https://www.sistemavendadireta.com.br"
+BASE = "https://sistemavendadireta.com.br"  # apex: a URL final do anuncio nao pode ter redirect
 
-H_GERAL = ["Sistema para Venda Direta","Software MMN Completo","Até 40% OFF na Instalação","Plano Binário e Unilevel","Escritório Virtual Incluso","Mensalidade desde R$ 500","Implantação Assistida por IA","Clientes em 5 Países","Loja Virtual Integrada","Comissões Automáticas","À Vista por R$ 3.000","Migramos seu Sistema Atual","Promoção 10 Anos SVD","Sua Marca e seu Domínio","Orçamento pelo WhatsApp"]
+H_GERAL = ["Sistema para Venda Direta","Software MMN Completo","Até 40% OFF na Instalação","Plano Binário e Unilevel","Escritório Virtual Incluso","Mensalidade desde R$ 500","Implantação Assistida por IA","Clientes em 5 Países","Loja Virtual Integrada","Comissões Automáticas","À Vista por R$ 3.000","Migramos seu Sistema Atual","Promoção 10 Anos SVD","Sua Marca e seu Domínio","Instalação por R$ 3.000","Migração do Sistema Atual","Comissões sem Planilhas"]
 D_GERAL = ["Plataforma completa: escritório virtual, rede binária e unilevel, loja e financeiro.","Promoção 10 Anos: R$ 3.500 em 2x ou R$ 3.000 à vista até 31/08. Mensalidade sob medida.","Rodando no Brasil, Paraguai e Bolívia. Multi-idioma, multimoeda e comissão por cargo.","Parametrizamos seu plano de negócio: binário, unilevel ou comissão por cargo."]
 
 def mk_h(extra):
@@ -32,7 +32,7 @@ NEG_ALL = ["gratis","gratuito","emprego","vaga","vagas","curso","como funciona",
 NEG_AFIL = ["hotmart","monetizze","eduzz","kiwify","braip","como ser afiliado","ganhar dinheiro como afiliado"]
 
 CAMPS = [
- dict(name="SVD - Promocao 10 Anos", budget=50, path="/oferta/", camp="instalacao-50off",
+ dict(name="SVD - Promocao 10 Anos", budget=50, path="/oferta/", camp="promo-10-anos",
    heads=H_GERAL, descs=D_GERAL, negs=NEG_ALL, groups=[
     ("Sistema MMN","mmn",[('"sistema mmn"'),'"software mmn"','"sistema para mmn"','"sistema marketing multinivel"','"software marketing multinivel"','"plataforma mmn"','"sistema plano binario"','"sistema plano unilevel"','[sistema de marketing multinivel]','[software para mmn]']),
     ("Venda Direta","venda-direta",['"sistema venda direta"','"sistema de venda direta"','"software venda direta"','"plataforma de venda direta"','"sistema para vendas diretas"','"escritorio virtual mmn"','"escritorio virtual venda direta"','[software de venda direta]']),
@@ -40,19 +40,19 @@ CAMPS = [
     ("Aluguel Sistema Pronto","aluguel",['"aluguel sistema mmn"','"alugar sistema mmn"','"sistema mmn pronto"','"sistema mmn mensalidade"','"plataforma mmn pronta"']),
     ("Concorrentes","concorrentes",['"aliadus mmn"','"mmnweb"','"maxnivel sistema"','"m2n sistema"','"sistema mmn eloss"','"embraton mmn"']),
    ]),
- dict(name="SVD - Suplementos", budget=10, path="/oferta/suplementos/", camp="instalacao-50off-suplementos",
+ dict(name="SVD - Suplementos", budget=10, path="/oferta/suplementos/", camp="promo-10-anos-suplementos",
    heads=mk_h(["Sistema p/ Suplementos","Rede de Consultores Pronta","Case Real: Protech"]),
    descs=["ERP genérico não entende rede. Consultores, comissões, recompra e loja num só sistema.",D_GERAL[1],D_GERAL[2],D_GERAL[3]], negs=NEG_ALL,
    groups=[("Distribuidora Suplementos",None,['"sistema para distribuidora de suplementos"','"software distribuidora suplementos"','"sistema para venda de suplementos por consultores"','"sistema revenda suplementos"','"plataforma venda direta suplementos"'])]),
- dict(name="SVD - Cosmeticos", budget=10, path="/oferta/cosmeticos/", camp="instalacao-50off-cosmeticos",
+ dict(name="SVD - Cosmeticos", budget=10, path="/oferta/cosmeticos/", camp="promo-10-anos-cosmeticos",
    heads=mk_h(["Sistema p/ Cosméticos","Escritório da Consultora","Case Internacional Real"]),
    descs=["Catálogo por linhas, metas e ranking da consultora, comissões e loja integrada.",D_GERAL[1],D_GERAL[2],D_GERAL[3]], negs=NEG_ALL,
    groups=[("Revenda Cosmeticos",None,['"sistema para revenda de cosmeticos"','"sistema para consultoras"','"software revenda por catalogo"','"sistema venda direta cosmeticos"','"plataforma para marca de cosmeticos revenda"'])]),
- dict(name="SVD - Afiliados", budget=10, path="/oferta/afiliados/", camp="instalacao-50off-afiliados",
+ dict(name="SVD - Afiliados", budget=10, path="/oferta/afiliados/", camp="promo-10-anos-afiliados",
    heads=mk_h(["Sistema p/ Afiliados","Link e Cupom por Afiliado","Bônus Pagos Sem Planilha"]),
    descs=["Cadastre afiliados com link e cupom próprios. O sistema rastreia, calcula e paga os bônus.",D_GERAL[1],"Parcerias com influenciadores no YouTube, TikTok e Instagram. Extrato transparente.",D_GERAL[3]], negs=NEG_ALL+NEG_AFIL,
    groups=[("Programa de Afiliados",None,['"plataforma de afiliados"','"sistema para programa de afiliados"','"software programa de afiliados"','"sistema de afiliados white label"','"plataforma de afiliados para influenciadores"','"programa de afiliados para minha empresa"'])]),
- dict(name="SVD - Parceiros", budget=10, path="/oferta/parceiros/", camp="instalacao-50off-parceiros",
+ dict(name="SVD - Parceiros", budget=10, path="/oferta/parceiros/", camp="promo-10-anos-parceiros",
    heads=mk_h(["Sistema p/ Parceiros","Indicação com Comissão","Cupom por Indicador"]),
    descs=["Parceiros com link e cupom próprios: o sistema rastreia indicações e paga as comissões.",D_GERAL[1],"Regras editáveis, extrato transparente e pagamento sem planilha.",D_GERAL[3]], negs=NEG_ALL+NEG_AFIL,
    groups=[("Programa de Parceiros",None,['"sistema programa de parceiros"','"software programa de indicacao"','"sistema de indicacao de clientes"','"plataforma member get member"','"sistema para gestao de parceiros"','"programa de indicacao para empresa"'])]),
@@ -61,6 +61,15 @@ CAMPS = [
 for c in CAMPS:
     for h in c["heads"]: assert len(h) <= 30, f"headline >30: {h}"
     for d in c["descs"]: assert len(d) <= 90, f"desc >90: {d}"
+
+GROUP_HEADS = {
+    "Sistema MMN": ["Sistema MMN Completo", "Plano Binário e Unilevel", "Rede e Comissões num Só Lugar"],
+    "Venda Direta": ["Plataforma de Venda Direta", "Escritório do Consultor", "Loja + Rede Integradas"],
+    "Fundo de Funil": ["Instalação por R$ 3.000", "Mensalidade desde R$ 500", "Agende uma Demonstração"],
+    "Aluguel Sistema Pronto": ["Sistema Pronto para Usar", "Mensalidade desde R$ 500", "No Ar em Dias, não Meses"],
+    "Concorrentes": ["Compare Antes de Fechar", "Clientes em 5 Países", "Migração do Sistema Atual"],
+}
+PIN_H1 = {"Instalação por R$ 3.000", "Até 40% OFF na Instalação"}
 
 def main():
     dry = "--dry-run" in sys.argv
@@ -161,9 +170,12 @@ def main():
             ada.ad_group = group_res
             ada.status = enums("AdGroupAdStatusEnum").PAUSED
             rsa = ada.ad.responsive_search_ad
-            for h in c["heads"]:
+            # headline especifico do grupo entra na frente (relevancia por intencao)
+            heads = GROUP_HEADS.get(gname, []) + [h for h in c["heads"] if h not in GROUP_HEADS.get(gname, [])]
+            for h in heads[:15]:
                 a = client.get_type("AdTextAsset"); a.text = h
-                if h == "Até 40% OFF na Instalação":
+                # 2 titulos disputam a posicao 1 (fixar so um limita as combinacoes)
+                if h in PIN_H1:
                     a.pinned_field = enums("ServedAssetFieldTypeEnum").HEADLINE_1
                 rsa.headlines.append(a)
             for d in c["descs"]:

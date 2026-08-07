@@ -387,7 +387,7 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
           <div class="mt-2 h-1 w-[72px] rounded-full bg-white"></div>
           <p class="mt-4 text-base leading-relaxed text-white/90">
             Nosso sistema venda direta é a escolha ideal para empresas que buscam um software flexível, confiável e fácil de usar.
-            Com mais de 20 anos de experiência, oferecemos recursos avançados, como integração com ERP, relatórios em tempo real
+            Com experiência em sistemas desde 2002, oferecemos recursos avançados, como integração com ERP, relatórios em tempo real
             e planos de compensação personalizados.
           </p>
           <a href="#form" class="mt-6 inline-flex rounded-full border border-white/70 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10">
@@ -942,7 +942,7 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
         <p class="mt-1 text-sm font-semibold text-white/90">ou <span class="text-amber-300 font-bold"><?= htmlspecialchars($promoModal['cash'], ENT_QUOTES, 'UTF-8') ?></span> à vista</p>
         <p class="mt-3 text-xs text-white/70">Válida até <?= htmlspecialchars($promoModalDeadlineLabel, ENT_QUOTES, 'UTF-8') ?> · mensalidade proporcional ao faturamento</p>
 
-        <a id="promo-modal-cta" href="oferta/?utm_source=site&utm_medium=modal&utm_campaign=instalacao-50off" class="mt-5 inline-flex w-full items-center justify-center rounded-full bg-amber-400 px-6 py-3.5 text-sm font-bold uppercase tracking-wide text-brand transition hover:-translate-y-0.5 hover:bg-amber-300">
+        <a id="promo-modal-cta" href="oferta/?utm_source=site&utm_medium=modal&utm_campaign=promo-10-anos" class="mt-5 inline-flex w-full items-center justify-center rounded-full bg-amber-400 px-6 py-3.5 text-sm font-bold uppercase tracking-wide text-brand transition hover:-translate-y-0.5 hover:bg-amber-300">
           Ver a oferta completa
         </a>
         <button id="promo-modal-depois" type="button" class="mt-3 text-xs font-semibold text-white/60 hover:text-white/85">

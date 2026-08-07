@@ -4,7 +4,7 @@
 @Author: Andre Gomes ( @acidcode )
 @since 2026-08-02
 Pacote pronto pra colar na interface do Google Ads (sem API — requer developer token).
-Landing: https://www.sistemavendadireta.com.br/oferta/ (instalacao R$3.500 em 2x ou R$3.000 a vista, expira 31/08/2026).
+Landing: https://sistemavendadireta.com.br/oferta/ (instalacao R$3.500 em 2x ou R$3.000 a vista, expira 31/08/2026).
 */
 -->
 
@@ -25,7 +25,7 @@ Landing: https://www.sistemavendadireta.com.br/oferta/ (instalacao R$3.500 em 2x
 ## URL final (todas os grupos)
 
 ```
-https://www.sistemavendadireta.com.br/oferta/?utm_source=google&utm_medium=cpc&utm_campaign=instalacao-50off&utm_content={_grupo}
+https://sistemavendadireta.com.br/oferta/?utm_source=google&utm_medium=cpc&utm_campaign=promo-10-anos&utm_content={_grupo}
 ```
 
 Trocar `{_grupo}` por `mmn`, `venda-direta` ou `oferta` conforme o grupo abaixo.
@@ -74,7 +74,7 @@ Palavras-chave (frase/exata):
 ```
 gratis, gratuito, emprego, vaga, vagas, curso, como funciona, o que é,
 piramide, golpe, reclame aqui, download, crack, planilha, excel,
-hinode, mary kay, natura, herbalife, jeunesse, catalogo
+hinode, mary kay, natura, herbalife, jeunesse
 ```
 
 (Marcas de MMN entram como negativa porque quem busca a marca quer ser consultor
@@ -102,7 +102,15 @@ dela, não comprar sistema.)
 | 14 | Sua Marca e seu Domínio | 23 |
 | 15 | Orçamento pelo WhatsApp | 23 |
 
-Fixar título 3 na posição 1 durante a promoção (é a oferta).
+Fixar na posição 1 **dois** títulos ("Até 40% OFF na Instalação" e "Instalação por R$ 3.000") —
+fixar um só reduz as combinações que o Google consegue testar.
+
+**Títulos por grupo** (entram na frente dos genéricos, um RSA por grupo):
+- Sistema MMN: "Sistema MMN Completo" · "Plano Binário e Unilevel" · "Rede e Comissões num Só Lugar"
+- Venda Direta: "Plataforma de Venda Direta" · "Escritório do Consultor" · "Loja + Rede Integradas"
+- Fundo de Funil: "Instalação por R$ 3.000" · "Mensalidade desde R$ 500" · "Agende uma Demonstração"
+- Aluguel: "Sistema Pronto para Usar" · "Mensalidade desde R$ 500" · "No Ar em Dias, não Meses"
+- Concorrentes: "Compare Antes de Fechar" · "Clientes em 5 Países" · "Migração do Sistema Atual"
 
 **Descrições** (≤90 chars):
 
@@ -166,7 +174,7 @@ Lance nos termos de marca (permitido; NUNCA usar a marca no texto do anúncio):
 "sistema mmn eloss"
 "embraton mmn"
 ```
-Anúncio comparativo genérico: "Compare Antes de Fechar" / "Operação em 2 Países" /
+Anúncio comparativo genérico: "Compare Antes de Fechar" / "Clientes em 5 Países" /
 "Mensalidade Proporcional". utm_content=concorrentes
 
 ## Campanha vertical 1 — Suplementos (→ /oferta/suplementos/)
@@ -180,7 +188,7 @@ Anúncio comparativo genérico: "Compare Antes de Fechar" / "Operação em 2 Pa�
 ```
 Títulos extras (≤30): "Sistema p/ Suplementos" (22) · "Rede de Consultores Pronta" (25) ·
 "Case Real: Protech" (18)
-utm_campaign=instalacao-50off-suplementos
+utm_campaign=promo-10-anos-suplementos
 
 ## Campanha vertical 2 — Cosméticos (→ /oferta/cosmeticos/)
 
@@ -193,7 +201,7 @@ utm_campaign=instalacao-50off-suplementos
 ```
 Títulos extras (≤30): "Sistema p/ Cosméticos" (21) · "Escritório da Consultora" (24) ·
 "Case Internacional Real" (23)
-utm_campaign=instalacao-50off-cosmeticos
+utm_campaign=promo-10-anos-cosmeticos
 
 ## Leads por origem (campo do e-mail)
 
@@ -213,11 +221,11 @@ utm_campaign=instalacao-50off-cosmeticos
 
 | LP | origem do lead | utm_campaign |
 |---|---|---|
-| /oferta/ | lp-oferta-instalacao | instalacao-50off |
-| /oferta/suplementos/ | lp-oferta-suplementos | instalacao-50off-suplementos |
-| /oferta/cosmeticos/ | lp-oferta-cosmeticos | instalacao-50off-cosmeticos |
-| /oferta/afiliados/ | lp-oferta-afiliados | instalacao-50off-afiliados |
-| /oferta/parceiros/ | lp-oferta-parceiros | instalacao-50off-parceiros |
+| /oferta/ | lp-oferta-instalacao | promo-10-anos |
+| /oferta/suplementos/ | lp-oferta-suplementos | promo-10-anos-suplementos |
+| /oferta/cosmeticos/ | lp-oferta-cosmeticos | promo-10-anos-cosmeticos |
+| /oferta/afiliados/ | lp-oferta-afiliados | promo-10-anos-afiliados |
+| /oferta/parceiros/ | lp-oferta-parceiros | promo-10-anos-parceiros |
 
 ## Campanha vertical 3 — Afiliados/influenciadores (→ /oferta/afiliados/)
 
@@ -256,13 +264,13 @@ Descrição: "Parceiros com link e cupom próprios: o sistema rastreia indicaç�
 ## Links identificados — social (organico e pago)
 
 **Organico (compartilhar no perfil/pagina):**
-- Facebook:  https://www.sistemavendadireta.com.br/oferta/?utm_source=facebook&utm_medium=social&utm_campaign=instalacao-50off
-- LinkedIn:  https://www.sistemavendadireta.com.br/oferta/?utm_source=linkedin&utm_medium=social&utm_campaign=instalacao-50off
-- WhatsApp/grupos: https://www.sistemavendadireta.com.br/oferta/?utm_source=whatsapp&utm_medium=social&utm_campaign=instalacao-50off
+- Facebook:  https://sistemavendadireta.com.br/oferta/?utm_source=facebook&utm_medium=social&utm_campaign=promo-10-anos
+- LinkedIn:  https://sistemavendadireta.com.br/oferta/?utm_source=linkedin&utm_medium=social&utm_campaign=promo-10-anos
+- WhatsApp/grupos: https://sistemavendadireta.com.br/oferta/?utm_source=whatsapp&utm_medium=social&utm_campaign=promo-10-anos
 
 **Pago (usar nos anuncios quando patrocinar):**
-- Facebook/Instagram Ads: .../oferta/?utm_source=facebook&utm_medium=paid_social&utm_campaign=instalacao-50off&utm_content={{ad.name}}
-- LinkedIn Ads: .../oferta/?utm_source=linkedin&utm_medium=paid_social&utm_campaign=instalacao-50off
+- Facebook/Instagram Ads: .../oferta/?utm_source=facebook&utm_medium=paid_social&utm_campaign=promo-10-anos&utm_content={{ad.name}}
+- LinkedIn Ads: .../oferta/?utm_source=linkedin&utm_medium=paid_social&utm_campaign=promo-10-anos
 
 Regra: organico = utm_medium=social; pago = utm_medium=paid_social. Assim o painel/GA
 separa alcance proprio de midia comprada. Preview: forcar re-scrape no
@@ -308,7 +316,7 @@ Colar as palavras-chave (uma por linha, com aspas/colchetes como estao):
 
 ## 5. Anuncio (RSA)
 - URL final:
-  `https://www.sistemavendadireta.com.br/oferta/?utm_source=google&utm_medium=cpc&utm_campaign=instalacao-50off&utm_content=mmn`
+  `https://sistemavendadireta.com.br/oferta/?utm_source=google&utm_medium=cpc&utm_campaign=promo-10-anos&utm_content=mmn`
 - Caminho: `oferta` / `10-anos`
 - Titulos e descricoes: copiar da secao "Anuncios RSA" deste documento
 - **Fixar** "Ate 40% OFF na Instalacao" na **posicao 1**
