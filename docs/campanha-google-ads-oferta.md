@@ -267,3 +267,60 @@ Descrição: "Parceiros com link e cupom próprios: o sistema rastreia indicaç�
 Regra: organico = utm_medium=social; pago = utm_medium=paid_social. Assim o painel/GA
 separa alcance proprio de midia comprada. Preview: forcar re-scrape no
 developers.facebook.com/tools/debug e linkedin.com/post-inspector se o banner nao aparecer.
+
+---
+
+# Passo a passo — criar a campanha geral na interface (sem API)
+
+Use enquanto o developer token nao sai. ~15 minutos. Conta SourceNET (357-892-7161).
+
+## 1. Nova campanha
+`Campanhas` → botao **+** → **Nova campanha**
+- Objetivo: **Criar uma campanha sem meta** (evita o assistente empurrar Performance Max)
+- Tipo: **Pesquisa** → Continuar
+- Nome: `SVD - Promocao 10 Anos`
+
+## 2. Lances
+- Estrategia: **Cliques** (manual) → marcar **"Definir um limite máximo de custo por clique"** → `R$ 6,00`
+  *(quando houver 15+ conversoes/30d, trocar pra "Conversoes")*
+
+## 3. Configuracoes da campanha
+- Redes: **desmarcar** "Rede de Display" e **desmarcar** "Parceiros de pesquisa"
+- Locais: **Brasil**
+- Idiomas: **Português**
+- Orcamento: **R$ 50,00/dia**
+- Data de termino: **31/08/2026** (a promo expira junto)
+
+## 4. Grupo de anuncios 1 — "Sistema MMN"
+Colar as palavras-chave (uma por linha, com aspas/colchetes como estao):
+```
+"sistema mmn"
+"software mmn"
+"sistema para mmn"
+"sistema marketing multinivel"
+"software marketing multinivel"
+"plataforma mmn"
+"sistema plano binario"
+"sistema plano unilevel"
+[sistema de marketing multinivel]
+[software para mmn]
+```
+
+## 5. Anuncio (RSA)
+- URL final:
+  `https://www.sistemavendadireta.com.br/oferta/?utm_source=google&utm_medium=cpc&utm_campaign=instalacao-50off&utm_content=mmn`
+- Caminho: `oferta` / `10-anos`
+- Titulos e descricoes: copiar da secao "Anuncios RSA" deste documento
+- **Fixar** "Ate 40% OFF na Instalacao" na **posicao 1**
+
+## 6. Antes de publicar
+- **Palavras-chave negativas** (nivel campanha): colar a lista da secao "Negativacoes"
+- **Extensoes**: sitelinks (Cases, Blog, IA para MMN), frases de destaque, chamada 11 99456-6726
+- **Conversoes**: conferir em Metas → Conversoes que `generate_lead` esta como **acao principal**
+  e `whatsapp_click` como **secundaria**
+
+## 7. Depois de publicar (dia 1 e 2)
+- `Palavras-chave` → **Termos de pesquisa**: negativar tudo que for emprego/renda/curso
+- Conferir no painel (`/painel-leads/`) se aparece sessao `google / cpc`
+- Os outros 4 grupos (Venda Direta, Fundo de Funil, Aluguel, Concorrentes) podem entrar
+  na mesma campanha depois — ou esperar a API pra eu criar tudo de uma vez
