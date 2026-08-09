@@ -1,0 +1,153 @@
+{
+  "mode": "publish",
+  "date": "2026-08-09",
+  "timezone": "America/Sao_Paulo",
+  "focus": "php",
+  "startedAt": "2026-08-09T10:26:06.587Z",
+  "aiProvider": "openrouter",
+  "sites": [
+    {
+      "siteId": "coderush",
+      "skipped": true,
+      "reason": "site disabled"
+    },
+    {
+      "siteId": "codafacil",
+      "skipped": true,
+      "reason": "site disabled"
+    },
+    {
+      "siteId": "fluxointeligenteia",
+      "skipped": true,
+      "reason": "site disabled"
+    },
+    {
+      "siteId": "sistemavendadireta",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "internacionalizacao",
+      "theme": "anti-fraude e controle de clientes em e-commerce de alto volume",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/sistemavendadireta/2026-08-09/evitar-fraudes-commerce-alto-volume.json",
+      "markdownPath": "automation/blog-bot/out/sistemavendadireta/2026-08-09/evitar-fraudes-commerce-alto-volume.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "sistemavendadireta/2026/08/09/evitar-fraudes-commerce-alto-volume/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Um cadeado tridimensional azul profundo com um detalhe de linha diagonal quebrando o arco, simbolizando a interceptação de fraudes em e-commerce",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": false,
+          "alphanumericCount": 0,
+          "sample": ""
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "sistemavendadireta/index.php",
+          "sistemavendadireta/blog/index.php",
+          "sistemavendadireta/2026/08/09/evitar-fraudes-commerce-alto-volume/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "emergency",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "M&A",
+      "theme": "LGPD e tratamento de dados em diligencia",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": [
+          {
+            "url": "https://capitalaberto.com.br/feed/",
+            "error": "HTTP 404"
+          }
+        ]
+      },
+      "outputPath": "automation/blog-bot/out/emergency/2026-08-09/lgpd-due-diligence-ma-voce-precisa-saber.json",
+      "markdownPath": "automation/blog-bot/out/emergency/2026-08-09/lgpd-due-diligence-ma-voce-precisa-saber.md",
+      "publishResult": {
+        "target": "api",
+        "apiStatus": 200,
+        "apiUrl": "https://emergency.com.br/blog/lgpd-due-diligence-ma-voce-precisa-saber",
+        "apiId": 29,
+        "apiPublishedAt": "2026-06-30T08:08:11-03:00",
+        "coverPath": "automation/blog-bot/out/emergency/covers/lgpd-due-diligence-ma-voce-precisa-saber.jpg",
+        "coverSize": 274770,
+        "coverSource": "existing",
+        "coverAlt": "Uma composição plana em visão superior mostra pastas corporativas e dossiês de conformidade sobre uma superfície azul-escura, com sombras douradas e camadas de",
+        "coverLeakage": null
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    },
+    {
+      "siteId": "bfrintelligence",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "engenharia de agentes",
+      "theme": "agentes de IA no atendimento com canais integrados",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/bfrintelligence/2026-08-09/implementar-agentes-ia-operacao-empresarial.json",
+      "markdownPath": "automation/blog-bot/out/bfrintelligence/2026-08-09/implementar-agentes-ia-operacao-empresarial.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "bfrintelligence/2026/08/09/implementar-agentes-ia-operacao-empresarial/index.html",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Estrutura isométrica de blocos modulares em formação, com canais de dados em gradiente azul, predominância de azul marinho e azul elétrico",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": false,
+          "alphanumericCount": 1,
+          "sample": ""
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    }
+  ],
+  "duplications": [],
+  "relatedRefresh": {
+    "touched": 17,
+    "unchanged": 134,
+    "errors": [],
+    "totalCards": 140,
+    "totalFiles": 151
+  },
+  "fallbackCount": 0,
+  "allFallback": false,
+  "finishedAt": "2026-08-09T10:29:12.336Z",
+  "ok": true
+}

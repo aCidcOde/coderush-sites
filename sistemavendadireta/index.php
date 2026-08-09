@@ -836,6 +836,15 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-HOME-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/08/09/evitar-fraudes-commerce-alto-volume/" data-blog-image="imagens/posts/evitar-fraudes-commerce-alto-volume.jpg" data-blog-slug="evitar-fraudes-commerce-alto-volume" data-blog-date="2026-08-09">
+  <a href="2026/08/09/evitar-fraudes-commerce-alto-volume/">
+    <img src="imagens/posts/evitar-fraudes-commerce-alto-volume.jpg" alt="Como evitar fraudes em e-commerce de alto volume" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="2026/08/09/evitar-fraudes-commerce-alto-volume/" class="hover:underline">Como evitar fraudes em e-commerce de alto volume</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como o controle de clientes e a prevenção de fraudes podem impulsionar seu e-commerce.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/08/06/comissao-cargo-vs-plano-pontos-venda-direta/" data-blog-image="imagens/posts/comissao-cargo-vs-plano-pontos-venda-direta.jpg" data-blog-slug="comissao-cargo-vs-plano-pontos-venda-direta" data-blog-date="2026-08-06">
   <a href="2026/08/06/comissao-cargo-vs-plano-pontos-venda-direta/">
     <img src="imagens/posts/comissao-cargo-vs-plano-pontos-venda-direta.jpg" alt="Comissão por cargo vs plano de pontos em venda direta" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
@@ -852,15 +861,6 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="2026/08/02/levar-operacao-venda-direta-para-outro-pais/" class="hover:underline">Levar a venda direta para outro país: o que muda no sistema</a></h2>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Traduzir a loja é a parte fácil. O que trava uma operação de venda direta fora do Brasil é moeda, documento fiscal, endereço e plano de comissões — e cada um deles vive dentro d...</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/07/30/integracoes-pagamento-logistica-marketing-multinivel/" data-blog-image="imagens/posts/integracoes-pagamento-logistica-marketing-multinivel.jpg" data-blog-slug="integracoes-pagamento-logistica-marketing-multinivel" data-blog-date="2026-07-30">
-  <a href="2026/07/30/integracoes-pagamento-logistica-marketing-multinivel/">
-    <img src="imagens/posts/integracoes-pagamento-logistica-marketing-multinivel.jpg" alt="Integrações de pagamento e logística no marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-  </a>
-  <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="2026/07/30/integracoes-pagamento-logistica-marketing-multinivel/" class="hover:underline">Integrações de pagamento e logística no marketing multinível</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como integrar pagamentos e logística para otimizar seu CRM no MMN.</p>
   </div>
 </article>
 <!-- BLOG-HOME-CARDS:END -->

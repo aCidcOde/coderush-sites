@@ -253,11 +253,11 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://sistemavendadireta.com.br/2026/08/06/comissao-cargo-vs-plano-pontos-venda-direta/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/comissao-cargo-vs-plano-pontos-venda-direta.jpg" alt="Comissão por cargo vs plano de pontos em venda direta" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://sistemavendadireta.com.br/2026/08/09/evitar-fraudes-commerce-alto-volume/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/evitar-fraudes-commerce-alto-volume.jpg" alt="Como evitar fraudes em e-commerce de alto volume" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Sistema Venda Direta</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/08/06/comissao-cargo-vs-plano-pontos-venda-direta/" rel="noopener" target="_blank" class="hover:underline">Comissão por cargo vs plano de pontos em venda direta</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda as diferenças e como a integração ERP pode otimizar sua operação.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/08/09/evitar-fraudes-commerce-alto-volume/" rel="noopener" target="_blank" class="hover:underline">Como evitar fraudes em e-commerce de alto volume</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como o controle de clientes e a prevenção de fraudes podem impulsionar seu e-commerce.</p>
   </div>
 </article>
   </div>
