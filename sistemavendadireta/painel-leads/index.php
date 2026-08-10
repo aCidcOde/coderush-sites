@@ -35,6 +35,19 @@ if (!in_array($diasFiltro, [7, 28, 90], true)) { $diasFiltro = 28; }
 $paginaSel = isset($_GET['pagina']) ? (string) $_GET['pagina'] : '';
 $etapaSel = (string) ($_GET['etapa'] ?? '');
 
+// Abas: cada assunto na sua tela, com o filtro que pertence a ela. Misturar
+// periodo de audiencia com etapa do funil na mesma barra confundia a leitura.
+const ABAS = ['visao' => 'Visão geral', 'trafego' => 'Tráfego', 'ads' => 'Investimento', 'funil' => 'Funil de leads'];
+$aba = (string) ($_GET['aba'] ?? 'visao');
+if (!array_key_exists($aba, ABAS)) { $aba = 'visao'; }
+
+/** URL da propria pagina preservando o estado relevante da aba. */
+function abaUrl(string $aba, array $extra = []): string
+{
+    return '?' . http_build_query(array_filter(array_merge(['aba' => $aba], $extra),
+        static fn ($v) => $v !== '' && $v !== null));
+}
+
 if (isset($_POST['senha'])) {
     if ($expected !== '' && hash_equals($expected, (string) $_POST['senha'])) {
         $_SESSION['svd_leads_auth'] = true;
@@ -86,9 +99,7 @@ if ($authed && isset($_POST['marcar_lead'])) {
             // silencioso: o painel nao pode quebrar por causa do marcador
         }
     }
-    header('Location: ./?' . http_build_query(array_filter([
-        'dias' => $diasFiltro, 'pagina' => $paginaSel, 'etapa' => $etapaSel, 'marcado' => 1,
-    ])), true, 303);
+    header('Location: ./' . abaUrl('funil', ['etapa' => $etapaSel, 'marcado' => 1]), true, 303);
     exit;
 }
 
@@ -125,7 +136,7 @@ if ($authed && isset($_GET['exportar']) && $_GET['exportar'] === 'ads') {
 if ($authed && isset($_POST['atualizar_ga'])) {
     $flag = __DIR__ . '/../storage/ga-refresh.request';
     @file_put_contents($flag, date('c'));
-    header('Location: ./?atualizando=1', true, 303);
+    header('Location: ./' . abaUrl($aba, ['atualizando' => 1]), true, 303);
     exit;
 }
 
@@ -144,6 +155,7 @@ $funil = [];
 $dbAviso = '';
 $ga = null;
 $gaSite = null;
+$ads = null;
 
 if ($authed) {
     $dbPath = __DIR__ . '/../storage/leads.sqlite';
@@ -179,6 +191,19 @@ if ($authed) {
     $gaStatsPath = __DIR__ . '/../storage/ga-stats.json';
     $ga = is_file($gaStatsPath) ? json_decode((string) file_get_contents($gaStatsPath), true) : null;
     $gaSite = is_array($ga) ? ($ga['sites'][0] ?? null) : null;
+    $ads = is_array($ga) ? ($ga['ads'] ?? null) : null;
+}
+
+/** Formata numero em pt-BR sem repetir number_format em toda linha. */
+function num($v, int $casas = 0): string
+{
+    return number_format((float) $v, $casas, ',', '.');
+}
+
+/** Custo por lead: quanto do investimento foi preciso pra cada lead que entrou. */
+function custoPorLead(float $custo, int $leads): string
+{
+    return $leads > 0 ? 'R$ ' . num($custo / $leads, 2) : '—';
 }
 
 function e(?string $v): string
@@ -216,7 +241,7 @@ function somaSerie(array $serie, string $campo): int
 }
 
 /** Grafico SVG de evolucao diaria (area = sessoes, linha = usuarios). Sem libs externas. */
-function dailyChart(array $dias, string $campoA = 'sessoes', string $campoB = 'usuarios', string $rotuloA = 'sessões', string $rotuloB = 'usuários'): string
+function dailyChart(array $dias, string $campoA = 'sessoes', string $campoB = 'usuarios', string $rotuloA = 'sessões', string $rotuloB = 'usuários', int $casas = 0): string
 {
     $n = count($dias);
     if ($n < 2) {
@@ -224,15 +249,16 @@ function dailyChart(array $dias, string $campoA = 'sessoes', string $campoB = 'u
     }
     $W = 860; $H = 250; $padL = 34; $padR = 12; $padT = 14; $padB = 30;
     $iw = $W - $padL - $padR; $ih = $H - $padT - $padB;
-    $max = 1;
-    foreach ($dias as $d) { $max = max($max, (int) ($d[$campoA] ?? 0), (int) ($d[$campoB] ?? 0)); }
+    $max = 0.0;
+    foreach ($dias as $d) { $max = max($max, (float) ($d[$campoA] ?? 0), (float) ($d[$campoB] ?? 0)); }
+    $max = max($max, $casas > 0 ? 0.01 : 1);
     $x = static fn (int $i): float => $padL + ($n > 1 ? $i * $iw / ($n - 1) : 0);
-    $y = static fn (int $v): float => $padT + $ih - ($v / $max * $ih);
+    $y = static fn (float $v): float => $padT + $ih - ($v / $max * $ih);
 
     $ptsS = $ptsU = [];
     foreach ($dias as $i => $d) {
-        $ptsS[] = round($x($i), 1) . ',' . round($y((int) ($d[$campoA] ?? 0)), 1);
-        $ptsU[] = round($x($i), 1) . ',' . round($y((int) ($d[$campoB] ?? 0)), 1);
+        $ptsS[] = round($x($i), 1) . ',' . round($y((float) ($d[$campoA] ?? 0)), 1);
+        $ptsU[] = round($x($i), 1) . ',' . round($y((float) ($d[$campoB] ?? 0)), 1);
     }
     $area = 'M' . str_replace(',', ' ', $ptsS[0]) . ' L' . implode(' L', array_map(static fn ($p) => str_replace(',', ' ', $p), $ptsS))
         . ' L' . round($x($n - 1), 1) . ' ' . ($padT + $ih) . ' L' . $padL . ' ' . ($padT + $ih) . ' Z';
@@ -240,7 +266,7 @@ function dailyChart(array $dias, string $campoA = 'sessoes', string $campoB = 'u
     $grid = '';
     for ($g = 0; $g <= 4; $g++) {
         $gy = round($padT + $ih - $g * $ih / 4, 1);
-        $gv = (int) round($max * $g / 4);
+        $gv = number_format($max * $g / 4, $casas, ',', '.');
         $grid .= '<line x1="' . $padL . '" y1="' . $gy . '" x2="' . ($W - $padR) . '" y2="' . $gy . '" stroke="rgba(255,255,255,.08)" />'
             . '<text x="' . ($padL - 7) . '" y="' . ($gy + 4) . '" text-anchor="end" font-size="11" fill="rgba(255,255,255,.45)">' . $gv . '</text>';
     }
@@ -254,8 +280,10 @@ function dailyChart(array $dias, string $campoA = 'sessoes', string $campoB = 'u
     }
     $dots = '';
     foreach ($dias as $i => $d) {
-        $dots .= '<circle cx="' . round($x($i), 1) . '" cy="' . round($y((int) ($d[$campoA] ?? 0)), 1) . '" r="3.5" fill="#fcd34d">'
-            . '<title>' . substr($d['data'], 6, 2) . '/' . substr($d['data'], 4, 2) . ' — ' . (int) ($d[$campoA] ?? 0) . ' ' . $rotuloA . ' · ' . (int) ($d[$campoB] ?? 0) . ' ' . $rotuloB . '</title></circle>';
+        $dots .= '<circle cx="' . round($x($i), 1) . '" cy="' . round($y((float) ($d[$campoA] ?? 0)), 1) . '" r="3.5" fill="#fcd34d">'
+            . '<title>' . substr($d['data'], 6, 2) . '/' . substr($d['data'], 4, 2) . ' — '
+            . number_format((float) ($d[$campoA] ?? 0), $casas, ',', '.') . ' ' . $rotuloA . ' · '
+            . number_format((float) ($d[$campoB] ?? 0), $casas, ',', '.') . ' ' . $rotuloB . '</title></circle>';
     }
     return '<svg class="chart-svg" viewBox="0 0 ' . $W . ' ' . $H . '" style="width:100%;height:auto;display:block;" role="img" aria-label="Evolução diária de sessões e usuários">'
         . '<defs><linearGradient id="gArea" x1="0" y1="0" x2="0" y2="1">'
@@ -381,6 +409,41 @@ if ($gaSite && !empty($gaSite['eventos'])) {
       text-decoration: none; border: 1px solid var(--line); padding: 7px 15px; border-radius: 99px; transition: .18s; }
     .sair:hover { color: #fff; border-color: rgba(255,255,255,.4); }
     .sair svg { width: 14px; height: 14px; }
+
+    /* abas — cada assunto na sua tela */
+    .tabs { display: flex; gap: 4px; margin: 0 0 26px; border-bottom: 1px solid var(--line);
+      overflow-x: auto; scrollbar-width: none; }
+    .tabs::-webkit-scrollbar { display: none; }
+    .tab { flex-shrink: 0; display: inline-flex; align-items: center; gap: 8px; padding: 11px 18px;
+      font-size: 13.5px; font-weight: 600; color: var(--text-soft); text-decoration: none;
+      border-bottom: 2px solid transparent; margin-bottom: -1px; transition: .15s; white-space: nowrap; }
+    .tab svg { width: 15px; height: 15px; }
+    .tab:hover { color: #fff; }
+    .tab.ativo { color: var(--amber); border-bottom-color: var(--amber); }
+    .tab .badge { font-size: 11px; font-weight: 700; padding: 1px 8px; border-radius: 99px;
+      background: rgba(255,255,255,.1); color: rgba(255,255,255,.75); }
+    .tab.ativo .badge { background: rgba(252,211,77,.18); color: var(--amber); }
+
+    /* barra de filtro: rotulo fixo a esquerda, opcoes agrupadas — nao mistura com o resto */
+    .barra-filtro { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin: 0 0 18px;
+      padding: 11px 14px; background: rgba(255,255,255,.03); border: 1px solid var(--line); border-radius: 14px; }
+    .barra-filtro + .barra-filtro { margin-top: -8px; }
+    .bf-label { font-size: 11px; color: var(--text-soft); text-transform: uppercase;
+      letter-spacing: .07em; font-weight: 700; flex-shrink: 0; }
+    .bf-grupo { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+    .bf-sep { flex: 1 1 auto; }
+
+    /* tabela de metricas de midia (mesmas colunas do Google Ads) */
+    .metricas th { text-align: right; }
+    .metricas th:first-child, .metricas td:first-child { text-align: left; white-space: normal; min-width: 180px; }
+    .metricas td { text-align: right; font-variant-numeric: tabular-nums; }
+    .metricas tfoot td { font-weight: 800; border-top: 1px solid var(--line); border-bottom: 0; color: var(--amber); }
+    .m-alerta { color: #fca5a5; }
+    .m-bom { color: var(--green); }
+    .nota { font-size: 12.5px; line-height: 1.55; color: var(--text-soft); margin-top: 12px;
+      padding: 11px 13px; border-left: 3px solid rgba(252,211,77,.5); background: rgba(252,211,77,.06);
+      border-radius: 0 10px 10px 0; }
+    .nota b { color: var(--amber); }
 
     /* KPI cards */
     .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(168px, 1fr)); gap: 12px; margin-bottom: 26px; }
@@ -534,23 +597,24 @@ if ($gaSite && !empty($gaSite['eventos'])) {
       <p class="aviso-refresh">Atualização solicitada — os dados do Google chegam em até 1 minuto. Recarregue a página.</p>
     <?php endif; ?>
 
-    <div class="quicklinks">
-      <span class="ql-label"><?= icon('megaphone') ?> LPs da campanha:</span>
-      <?php
-      $lps = [
-          ['Geral', '/oferta/'],
-          ['Suplementos', '/oferta/suplementos/'],
-          ['Cosméticos', '/oferta/cosmeticos/'],
-          ['Afiliados', '/oferta/afiliados/'],
-          ['Parceiros', '/oferta/parceiros/'],
-          ['Cases', '/cases/'],
-          ['Site', '/'],
-      ];
-      foreach ($lps as [$nome, $path]): ?>
-        <a class="ql" href="https://www.sistemavendadireta.com.br<?= e($path) ?>" target="_blank" rel="noopener"><?= e($nome) ?></a>
+    <?php
+    $totalLeads = $totals['total'] + $totals['zap'];
+    $abaIcones = ['visao' => 'gauge', 'trafego' => 'globe', 'ads' => 'money', 'funil' => 'users'];
+    $abaBadges = ['funil' => (string) $totalLeads];
+    if ($ads && empty($ads['erro'])) {
+        $abaBadges['ads'] = 'R$ ' . num($ads['periodos']['d28']['custo'] ?? 0);
+    }
+    ?>
+    <nav class="tabs">
+      <?php foreach (ABAS as $chave => $rot): ?>
+        <a class="tab <?= $aba === $chave ? 'ativo' : '' ?>" href="<?= e(abaUrl($chave)) ?>">
+          <?= icon($abaIcones[$chave]) ?> <?= e($rot) ?>
+          <?php if (!empty($abaBadges[$chave])): ?><span class="badge"><?= e($abaBadges[$chave]) ?></span><?php endif; ?>
+        </a>
       <?php endforeach; ?>
-    </div>
+    </nav>
 
+    <?php if ($aba === 'visao'): ?>
     <div class="kpis">
       <div class="kpi"><div class="chip c-amber"><?= icon('users') ?></div><div><b><?= $totals['total'] ?></b><span>Leads (form)</span></div></div>
       <div class="kpi"><div class="chip c-blue"><?= icon('clock') ?></div><div><b><?= $totals['ultimos7'] ?></b><span>Últimos 7 dias</span></div></div>
@@ -567,15 +631,63 @@ if ($gaSite && !empty($gaSite['eventos'])) {
         <div class="kpi"><div class="chip c-amber"><?= icon('users') ?></div><div><b><?= (int) ($gaSite['d28']['usuarios'] ?? 0) ?></b><span>Usuários · 28 dias</span></div></div>
         <div class="kpi"><div class="chip c-amber"><?= icon('eye') ?></div><div><b><?= (int) ($gaSite['d28']['pageviews'] ?? 0) ?></b><span>Pageviews · 28 dias</span></div></div>
       </div>
+    <?php endif; ?>
 
-      <div class="filtros">
-        <span class="muted" style="font-size:12px;text-transform:uppercase;letter-spacing:.07em;">Período:</span>
-        <?php foreach ([7 => '7 dias', 28 => '28 dias', 90 => '90 dias'] as $d => $rot): ?>
-          <a class="chip-filtro <?= $diasFiltro === $d ? 'ativo' : '' ?>"
-             href="?dias=<?= $d ?><?= $paginaSel !== '' ? '&pagina=' . urlencode($paginaSel) : '' ?>"><?= $rot ?></a>
-        <?php endforeach; ?>
+    <?php if ($ads && empty($ads['erro'])): $p28 = $ads['periodos']['d28']; $pHoje = $ads['periodos']['hoje']; ?>
+      <div class="sec">
+        <h2><?= icon('money') ?> Investimento em anúncios · 28 dias</h2>
+        <span class="muted">hoje: R$ <?= num($pHoje['custo'], 2) ?></span>
+      </div>
+      <div class="kpis">
+        <div class="kpi"><div class="chip c-amber"><?= icon('money') ?></div><div><b>R$ <?= num($p28['custo'], 2) ?></b><span>Investido</span></div></div>
+        <div class="kpi"><div class="chip c-blue"><?= icon('target') ?></div><div><b><?= num($p28['cliques']) ?></b><span>Cliques</span></div></div>
+        <div class="kpi"><div class="chip c-blue"><?= icon('money') ?></div><div><b>R$ <?= num($p28['cpc_medio'], 2) ?></b><span>CPC médio</span></div></div>
+        <div class="kpi"><div class="chip c-green"><?= icon('check') ?></div><div><b><?= num($p28['conversoes'], 1) ?></b><span>Conversões</span></div></div>
+        <div class="kpi"><div class="chip c-green"><?= icon('users') ?></div><div><b><?= custoPorLead((float) $p28['custo'], $totals['ultimos7']) ?></b><span>Custo por lead</span></div></div>
+      </div>
+    <?php endif; ?>
+
+    <?php $serieGeral = ultimosDias($gaSite['diario'] ?? [], 28); ?>
+    <?php if (!empty($serieGeral)): ?>
+      <div class="box" style="margin-bottom:22px;">
+        <h3><?= icon('chart') ?> Evolução de acessos · últimos 28 dias</h3>
+        <?= dailyChart($serieGeral) ?>
+      </div>
+    <?php endif; ?>
+
+    <div class="quicklinks">
+      <span class="ql-label"><?= icon('megaphone') ?> LPs da campanha:</span>
+      <?php
+      $lps = [
+          ['Geral', '/oferta/'],
+          ['Suplementos', '/oferta/suplementos/'],
+          ['Cosméticos', '/oferta/cosmeticos/'],
+          ['Afiliados', '/oferta/afiliados/'],
+          ['Parceiros', '/oferta/parceiros/'],
+          ['Cases', '/cases/'],
+          ['Site', '/'],
+      ];
+      foreach ($lps as [$nome, $path]): ?>
+        <a class="ql" href="https://www.sistemavendadireta.com.br<?= e($path) ?>" target="_blank" rel="noopener"><?= e($nome) ?></a>
+      <?php endforeach; ?>
+    </div>
+    <?php endif; /* fim da aba visao */ ?>
+
+    <?php if ($aba === 'trafego' && $gaSite): ?>
+      <div class="barra-filtro">
+        <span class="bf-label">Período</span>
+        <span class="bf-grupo">
+          <?php foreach ([7 => '7 dias', 28 => '28 dias', 90 => '90 dias'] as $d => $rot): ?>
+            <a class="chip-filtro <?= $diasFiltro === $d ? 'ativo' : '' ?>"
+               href="<?= e(abaUrl('trafego', ['dias' => $d, 'pagina' => $paginaSel])) ?>"><?= $rot ?></a>
+          <?php endforeach; ?>
+        </span>
         <?php if ($paginaSel !== ''): ?>
-          <a class="chip-filtro limpar" href="?dias=<?= $diasFiltro ?>">✕ ver todas as páginas</a>
+          <span class="bf-sep"></span>
+          <span class="bf-label">Página</span>
+          <span class="bf-grupo">
+            <a class="chip-filtro ativo" href="<?= e(abaUrl('trafego', ['dias' => $diasFiltro])) ?>">✕ <?= e($paginaSel) ?></a>
+          </span>
         <?php endif; ?>
       </div>
 
@@ -634,7 +746,7 @@ if ($gaSite && !empty($gaSite['eventos'])) {
               'label' => $r['pagina'],
               'value' => $r['views'],
               'href' => isset($gaSite['paginas_diario'][$r['pagina']])
-                  ? '?dias=' . $diasFiltro . '&pagina=' . urlencode($r['pagina'])
+                  ? abaUrl('trafego', ['dias' => $diasFiltro, 'pagina' => $r['pagina']])
                   : null,
           ], $gaSite['paginas'] ?? [])) ?>
         </div>
@@ -665,15 +777,196 @@ if ($gaSite && !empty($gaSite['eventos'])) {
           </div>
         <?php endif; ?>
       </div>
-    <?php endif; ?>
+    <?php elseif ($aba === 'trafego'): ?>
+      <p class="muted">Snapshot do Google Analytics ainda não gerado. Use “Atualizar dados” no topo.</p>
+    <?php endif; /* fim da aba trafego */ ?>
 
-    <div class="sec" style="justify-content:space-between;flex-wrap:wrap;">
-      <h2><?= icon('users') ?> Funil de leads</h2>
-      <a class="chip-filtro" href="?exportar=ads" title="CSV no formato de upload de conversões offline do Google Ads">
-        <?= icon('chart') ?> Exportar conversões (Google Ads)
-      </a>
+    <?php if ($aba === 'ads'): ?>
+      <?php if (!$ads || !empty($ads['erro'])): ?>
+        <p class="muted">Dados do Google Ads indisponíveis<?= $ads && !empty($ads['erro']) ? ': ' . e($ads['erro']) : '' ?>.
+           Use “Atualizar dados” no topo.</p>
+      <?php else:
+        $periodoAds = (string) ($_GET['p'] ?? 'd28');
+        if (!in_array($periodoAds, ['hoje', 'd7', 'd28'], true)) { $periodoAds = 'd28'; }
+        $rotPeriodo = ['hoje' => 'Hoje', 'd7' => '7 dias', 'd28' => '28 dias'][$periodoAds];
+        $p = $ads['periodos'][$periodoAds];
+        $linhas = $ads['campanhas'][$periodoAds];
+        $leadsNoPeriodo = $periodoAds === 'd28' ? $totals['total'] : $totals['ultimos7'];
+      ?>
+      <div class="barra-filtro">
+        <span class="bf-label">Período</span>
+        <span class="bf-grupo">
+          <?php foreach (['hoje' => 'Hoje', 'd7' => '7 dias', 'd28' => '28 dias'] as $k => $rot): ?>
+            <a class="chip-filtro <?= $periodoAds === $k ? 'ativo' : '' ?>"
+               href="<?= e(abaUrl('ads', ['p' => $k])) ?>"><?= $rot ?></a>
+          <?php endforeach; ?>
+        </span>
+        <span class="bf-sep"></span>
+        <a class="chip-filtro" href="<?= e(abaUrl('funil', ['exportar' => 'ads'])) ?>"
+           title="CSV no formato de upload de conversões offline do Google Ads">
+          <?= icon('chart') ?> Exportar conversões
+        </a>
+      </div>
+
+      <div class="kpis">
+        <div class="kpi"><div class="chip c-amber"><?= icon('money') ?></div><div><b>R$ <?= num($p['custo'], 2) ?></b><span>Custo · <?= e($rotPeriodo) ?></span></div></div>
+        <div class="kpi"><div class="chip c-blue"><?= icon('target') ?></div><div><b><?= num($p['cliques']) ?></b><span>Cliques</span></div></div>
+        <div class="kpi"><div class="chip c-blue"><?= icon('eye') ?></div><div><b><?= num($p['impressoes']) ?></b><span>Impressões</span></div></div>
+        <div class="kpi"><div class="chip c-blue"><?= icon('chart') ?></div><div><b><?= num($p['ctr'], 2) ?>%</b><span>CTR</span></div></div>
+        <div class="kpi"><div class="chip c-amber"><?= icon('money') ?></div><div><b>R$ <?= num($p['cpc_medio'], 2) ?></b><span>CPC médio</span></div></div>
+        <div class="kpi"><div class="chip c-green"><?= icon('check') ?></div><div><b><?= num($p['conversoes'], 1) ?></b><span>Conversões</span></div></div>
+        <div class="kpi"><div class="chip c-green"><?= icon('money') ?></div><div><b><?= $p['conversoes'] > 0 ? 'R$ ' . num($p['custo_por_conversao'], 2) : '—' ?></b><span>Custo / conv.</span></div></div>
+        <div class="kpi"><div class="chip c-green"><?= icon('target') ?></div><div><b><?= num($p['taxa_conversao'], 2) ?>%</b><span>Taxa de conv.</span></div></div>
+      </div>
+
+      <div class="box" style="margin-bottom:14px;">
+        <h3><?= icon('megaphone') ?> Desempenho por campanha · <?= e($rotPeriodo) ?></h3>
+        <?php if ($linhas): ?>
+          <div class="tbl-scroll"><table class="metricas">
+            <thead>
+              <tr>
+                <th>Campanha</th><th>Status</th><th>Cliques</th><th>Impr.</th><th>CTR</th>
+                <th>CPC méd.</th><th>Custo</th><th>Conv.</th><th>Custo/conv.</th><th>Taxa conv.</th><th>Impr. perdidas</th>
+              </tr>
+            </thead>
+            <tbody>
+              <?php foreach ($linhas as $row): ?>
+                <tr>
+                  <td><?= e($row['nome']) ?></td>
+                  <td><span class="tag <?= $row['status'] === 'ENABLED' ? 'fechado' : 'teste' ?>"><?= $row['status'] === 'ENABLED' ? 'ativa' : 'pausada' ?></span></td>
+                  <td><?= num($row['cliques']) ?></td>
+                  <td><?= num($row['impressoes']) ?></td>
+                  <td><?= num($row['ctr'], 2) ?>%</td>
+                  <td>R$ <?= num($row['cpc_medio'], 2) ?></td>
+                  <td><b>R$ <?= num($row['custo'], 2) ?></b></td>
+                  <td class="<?= $row['conversoes'] > 0 ? 'm-bom' : 'm-alerta' ?>"><?= num($row['conversoes'], 1) ?></td>
+                  <td><?= $row['conversoes'] > 0 ? 'R$ ' . num($row['custo_por_conversao'], 2) : '—' ?></td>
+                  <td><?= num($row['taxa_conversao'], 2) ?>%</td>
+                  <td class="muted"><?php
+                    $perdas = [];
+                    if (!empty($row['perdida_orcamento'])) { $perdas[] = num($row['perdida_orcamento'], 1) . '% orç.'; }
+                    if (!empty($row['perdida_ranking'])) { $perdas[] = num($row['perdida_ranking'], 1) . '% rank'; }
+                    echo $perdas ? e(implode(' · ', $perdas)) : '—';
+                  ?></td>
+                </tr>
+              <?php endforeach; ?>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td>Total</td><td></td>
+                <td><?= num($p['cliques']) ?></td><td><?= num($p['impressoes']) ?></td>
+                <td><?= num($p['ctr'], 2) ?>%</td><td>R$ <?= num($p['cpc_medio'], 2) ?></td>
+                <td>R$ <?= num($p['custo'], 2) ?></td><td><?= num($p['conversoes'], 1) ?></td>
+                <td><?= $p['conversoes'] > 0 ? 'R$ ' . num($p['custo_por_conversao'], 2) : '—' ?></td>
+                <td><?= num($p['taxa_conversao'], 2) ?>%</td><td></td>
+              </tr>
+            </tfoot>
+          </table></div>
+          <p class="nota">
+            No período: <b>R$ <?= num($p['custo'], 2) ?></b> investidos e <b><?= num($p['cliques']) ?></b> cliques.
+            Entraram <b><?= (int) $leadsNoPeriodo ?></b> leads no site, o que dá
+            <b><?= custoPorLead((float) $p['custo'], (int) $leadsNoPeriodo) ?></b> por lead.
+            <?php if ($p['cliques'] > 0 && $p['conversoes'] == 0): ?>
+              <br />Nenhuma conversão registrada pelo Google ainda — confira abaixo se as ações de conversão estão ativas.
+            <?php endif; ?>
+          </p>
+        <?php else: ?>
+          <p class="muted">Nenhuma campanha com atividade nesse período.</p>
+        <?php endif; ?>
+      </div>
+
+      <?php $serieAds = ultimosDias($ads['diario'] ?? [], $periodoAds === 'hoje' ? 7 : ($periodoAds === 'd7' ? 7 : 28)); ?>
+      <?php if (count($serieAds) > 1): ?>
+        <div class="box" style="margin-bottom:14px;">
+          <h3><?= icon('chart') ?> Investimento diário</h3>
+          <?= dailyChart($serieAds, 'custo', 'cliques', 'reais', 'cliques', 2) ?>
+        </div>
+      <?php endif; ?>
+
+      <div class="boxes">
+        <?php $campHoje = $gaSite['campanhas_periodo'][$periodoAds] ?? []; ?>
+        <div class="box">
+          <h3><?= icon('globe') ?> Acessos por campanha (Analytics) · <?= e($rotPeriodo) ?></h3>
+          <?php if ($campHoje): ?>
+            <div class="tbl-scroll"><table class="metricas">
+              <thead><tr><th>Campanha</th><th>Sessões</th><th>Conv.</th><th>Rejeição</th><th>Tempo</th></tr></thead>
+              <tbody>
+                <?php foreach ($campHoje as $row): ?>
+                  <tr>
+                    <td><?= e($row['campanha']) ?><br /><span class="muted" style="font-size:11px;"><?= e($row['origem']) ?></span></td>
+                    <td><?= (int) $row['sessoes'] ?></td>
+                    <td><?= num($row['conversoes'], 1) ?></td>
+                    <td class="<?= $row['rejeicao'] >= 90 ? 'm-alerta' : '' ?>"><?= num($row['rejeicao'], 0) ?>%</td>
+                    <td><?= num($row['duracao'], 0) ?>s</td>
+                  </tr>
+                <?php endforeach; ?>
+              </tbody>
+            </table></div>
+            <p class="nota">Cliques cobrados pelo Google costumam ser <b>mais</b> que as sessões daqui: quem
+              fecha antes da página carregar não vira sessão. Diferença muito grande indica clique acidental.</p>
+          <?php else: ?>
+            <p class="muted">Nenhuma sessão de campanha no período.</p>
+          <?php endif; ?>
+        </div>
+
+        <div class="box">
+          <h3><?= icon('file') ?> Onde o clique de campanha cai · 28d</h3>
+          <?php $lpPagas = $gaSite['landing_pagas'] ?? []; ?>
+          <?php if ($lpPagas): ?>
+            <div class="tbl-scroll"><table class="metricas">
+              <thead><tr><th>Página de entrada</th><th>Sessões</th><th>Rejeição</th></tr></thead>
+              <tbody>
+                <?php foreach ($lpPagas as $row): ?>
+                  <tr>
+                    <td><?= e($row['pagina'] !== '' ? $row['pagina'] : '(não informada)') ?><br />
+                        <span class="muted" style="font-size:11px;"><?= e($row['campanha']) ?></span></td>
+                    <td><?= (int) $row['sessoes'] ?></td>
+                    <td class="<?= $row['rejeicao'] >= 90 ? 'm-alerta' : '' ?>"><?= num($row['rejeicao'], 0) ?>%</td>
+                  </tr>
+                <?php endforeach; ?>
+              </tbody>
+            </table></div>
+          <?php else: ?>
+            <p class="muted">Sem dados de página de entrada por campanha.</p>
+          <?php endif; ?>
+        </div>
+
+        <?php $convCfg = $ads['conversoes_config'] ?? []; ?>
+        <?php if ($convCfg): ?>
+          <div class="box" style="grid-column:1/-1;">
+            <h3><?= icon('target') ?> Ações de conversão configuradas no Google Ads</h3>
+            <div class="tbl-scroll"><table class="metricas">
+              <thead><tr><th>Ação</th><th>Status</th><th>Categoria</th><th>Usada para lances</th></tr></thead>
+              <tbody>
+                <?php foreach ($convCfg as $row): ?>
+                  <tr>
+                    <td><?= e($row['nome']) ?></td>
+                    <td class="<?= $row['status'] !== 'ENABLED' ? 'm-alerta' : 'm-bom' ?>"><?= e(strtolower($row['status'])) ?></td>
+                    <td class="muted"><?= e(strtolower($row['categoria'])) ?></td>
+                    <td><?= $row['principal'] ? 'sim' : '—' ?></td>
+                  </tr>
+                <?php endforeach; ?>
+              </tbody>
+            </table></div>
+            <p class="nota">As ações vindas do GA4 (<b>generate_lead</b>, <b>whatsapp_click</b>, <b>purchase</b>)
+              precisam estar <b>ativas</b> para o Google contar conversão. Se aparecerem como “hidden”,
+              nenhuma conversão será registrada mesmo com lead entrando no site.</p>
+          </div>
+        <?php endif; ?>
+      </div>
+      <?php endif; ?>
+    <?php endif; /* fim da aba ads */ ?>
+
+    <?php if ($aba === 'funil'): ?>
+    <div class="kpis">
+      <div class="kpi"><div class="chip c-amber"><?= icon('users') ?></div><div><b><?= $totals['total'] ?></b><span>Leads (form)</span></div></div>
+      <div class="kpi"><div class="chip c-blue"><?= icon('clock') ?></div><div><b><?= $totals['ultimos7'] ?></b><span>Últimos 7 dias</span></div></div>
+      <div class="kpi"><div class="chip c-green"><?= icon('zap') ?></div><div><b><?= $totals['zap'] ?></b><span>Cliques WhatsApp</span></div></div>
+      <div class="kpi"><div class="chip c-green"><?= icon('check') ?></div><div><b><?= $totals['fechados'] ?></b><span>Vendas fechadas</span></div></div>
+      <div class="kpi"><div class="chip c-amber"><?= icon('money') ?></div><div><b>R$ <?= num($totals['receita']) ?></b><span>Receita registrada</span></div></div>
     </div>
 
+    <div class="sec"><h2><?= icon('target') ?> Etapas <span class="muted" style="font-weight:400;font-size:12px;">· clique para filtrar a lista</span></h2></div>
     <div class="funil">
       <?php
       $etapasFunil = [
@@ -685,22 +978,28 @@ if ($gaSite && !empty($gaSite['eventos'])) {
           'perdido' => ['Perdidos', 'perdido'],
       ];
       foreach ($etapasFunil as $chave => [$rot, $cls]): ?>
-        <a class="funil-etapa" href="?<?= http_build_query(array_filter(['dias' => $diasFiltro, 'etapa' => $chave])) ?>">
+        <a class="funil-etapa" href="<?= e(abaUrl('funil', ['etapa' => $chave])) ?>">
           <b><?= (int) ($funil[$chave] ?? 0) ?></b>
           <span class="tag <?= $cls ?>"><?= $rot ?></span>
         </a>
       <?php endforeach; ?>
     </div>
 
-    <div class="filtros" style="margin-bottom:14px;">
-      <span class="muted" style="font-size:12px;text-transform:uppercase;letter-spacing:.07em;">Ver:</span>
-      <?php
-      $filtrosEtapa = ['' => 'Todos', 'novo' => 'Novos', 'zap' => 'WhatsApp', 'qualificado' => 'Qualificados',
-                       'demo' => 'Reunião', 'fechado' => 'Vendas', 'perdido' => 'Perdidos', 'teste' => 'Testes'];
-      foreach ($filtrosEtapa as $chave => $rot): ?>
-        <a class="chip-filtro <?= $etapaSel === $chave ? 'ativo' : '' ?>"
-           href="?<?= http_build_query(array_filter(['dias' => $diasFiltro, 'etapa' => $chave])) ?>"><?= $rot ?></a>
-      <?php endforeach; ?>
+    <div class="barra-filtro">
+      <span class="bf-label">Mostrar</span>
+      <span class="bf-grupo">
+        <?php
+        $filtrosEtapa = ['' => 'Todos', 'novo' => 'Novos', 'zap' => 'WhatsApp', 'qualificado' => 'Qualificados',
+                         'demo' => 'Reunião', 'fechado' => 'Vendas', 'perdido' => 'Perdidos', 'teste' => 'Testes'];
+        foreach ($filtrosEtapa as $chave => $rot): ?>
+          <a class="chip-filtro <?= $etapaSel === $chave ? 'ativo' : '' ?>"
+             href="<?= e(abaUrl('funil', ['etapa' => $chave])) ?>"><?= $rot ?></a>
+        <?php endforeach; ?>
+      </span>
+      <span class="bf-sep"></span>
+      <a class="chip-filtro" href="?exportar=ads" title="CSV no formato de upload de conversões offline do Google Ads">
+        <?= icon('chart') ?> Exportar conversões
+      </a>
     </div>
 
     <?php if (!empty($_GET['marcado'])): ?>
@@ -755,6 +1054,7 @@ if ($gaSite && !empty($gaSite['eventos'])) {
         </table>
       </div>
     <?php endif; ?>
+    <?php endif; /* fim da aba funil */ ?>
   </div>
 <?php endif; ?>
 </body>

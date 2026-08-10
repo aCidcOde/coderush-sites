@@ -17,7 +17,9 @@ CUSTOMER_ID = "3578927161"
 YAML = "/root/.config/svd-ads/google-ads.yaml"
 BASE = "https://sistemavendadireta.com.br"  # apex: a URL final do anuncio nao pode ter redirect
 
-H_GERAL = ["Sistema para Venda Direta","Software MMN Completo","Até 40% OFF na Instalação","Plano Binário e Unilevel","Escritório Virtual Incluso","Mensalidade desde R$ 500","Implantação Assistida por IA","Clientes em 5 Países","Loja Virtual Integrada","Comissões Automáticas","À Vista por R$ 3.000","Migramos seu Sistema Atual","Promoção 10 Anos SVD","Sua Marca e seu Domínio","Instalação por R$ 3.000","Migração do Sistema Atual","Comissões sem Planilhas"]
+# ATENCAO: nada de palavra inteira em CAIXA ALTA (ex.: "OFF") — o Google reprova o
+# anuncio inteiro com policy topic CAPITALIZATION. Siglas (MMN, IA, SVD) sao aceitas.
+H_GERAL = ["Sistema para Venda Direta","Software MMN Completo","Até 40% de Desconto","Plano Binário e Unilevel","Escritório Virtual Incluso","Mensalidade desde R$ 500","Implantação Assistida por IA","Clientes em 5 Países","Loja Virtual Integrada","Comissões Automáticas","À Vista por R$ 3.000","Migramos seu Sistema Atual","Promoção 10 Anos SVD","Sua Marca e seu Domínio","Instalação por R$ 3.000","Migração do Sistema Atual","Comissões sem Planilhas"]
 D_GERAL = ["Plataforma completa: escritório virtual, rede binária e unilevel, loja e financeiro.","Promoção 10 Anos: R$ 3.500 em 2x ou R$ 3.000 à vista até 31/08. Mensalidade sob medida.","Rodando no Brasil, Paraguai e Bolívia. Multi-idioma, multimoeda e comissão por cargo.","Parametrizamos seu plano de negócio: binário, unilevel ou comissão por cargo."]
 
 def mk_h(extra):
@@ -69,7 +71,17 @@ GROUP_HEADS = {
     "Aluguel Sistema Pronto": ["Sistema Pronto para Usar", "Mensalidade desde R$ 500", "No Ar em Dias, não Meses"],
     "Concorrentes": ["Compare Antes de Fechar", "Clientes em 5 Países", "Migração do Sistema Atual"],
 }
-PIN_H1 = {"Instalação por R$ 3.000", "Até 40% OFF na Instalação"}
+PIN_H1 = {"Instalação por R$ 3.000", "Até 40% de Desconto"}
+
+# guarda de politica: qualquer palavra >2 letras toda em maiuscula reprova o RSA
+SIGLAS_OK = {"MMN", "IA", "SVD", "ERP", "CRM"}
+_todos_textos = [t for c in CAMPS for t in c["heads"] + c["descs"]]
+_todos_textos += [h for hs in GROUP_HEADS.values() for h in hs]
+for _t in _todos_textos:
+    for _w in _t.split():
+        _limpo = "".join(ch for ch in _w if ch.isalpha())
+        if len(_limpo) > 2 and _limpo.isupper() and _limpo not in SIGLAS_OK:
+            raise SystemExit(f"CAIXA ALTA reprovada pelo Google em '{_t}': {_limpo}")
 
 def main():
     dry = "--dry-run" in sys.argv
@@ -92,6 +104,40 @@ def main():
 
     def enums(name): return getattr(client.enums, name)
 
+    # Idempotencia: a criacao e multi-etapa e pode falhar no meio (politica, cota).
+    # Reexecutar tem que continuar de onde parou, nunca duplicar.
+    ga_svc = client.get_service("GoogleAdsService")
+
+    def campanha_existente(nome):
+        q = f"""SELECT campaign.resource_name FROM campaign
+                WHERE campaign.name = '{nome}' AND campaign.status != 'REMOVED'"""
+        for r in ga_svc.search(customer_id=CUSTOMER_ID, query=q):
+            return r.campaign.resource_name
+        return None
+
+    def grupo_existente(camp_res, nome):
+        cid = camp_res.rsplit("/", 1)[1]
+        q = f"""SELECT ad_group.resource_name FROM ad_group
+                WHERE campaign.id = {cid} AND ad_group.name = '{nome}'
+                  AND ad_group.status != 'REMOVED'"""
+        for r in ga_svc.search(customer_id=CUSTOMER_ID, query=q):
+            return r.ad_group.resource_name
+        return None
+
+    def tem_anuncio(grupo_res):
+        gid = grupo_res.rsplit("/", 1)[1]
+        q = f"""SELECT ad_group_ad.ad.id FROM ad_group_ad
+                WHERE ad_group.id = {gid} AND ad_group_ad.status != 'REMOVED'"""
+        return any(True for _ in ga_svc.search(customer_id=CUSTOMER_ID, query=q))
+
+    def keywords_existentes(grupo_res):
+        gid = grupo_res.rsplit("/", 1)[1]
+        q = f"""SELECT ad_group_criterion.keyword.text FROM ad_group_criterion
+                WHERE ad_group.id = {gid} AND ad_group_criterion.type = 'KEYWORD'
+                  AND ad_group_criterion.status != 'REMOVED'"""
+        return {r.ad_group_criterion.keyword.text.lower()
+                for r in ga_svc.search(customer_id=CUSTOMER_ID, query=q)}
+
     budget_svc = client.get_service("CampaignBudgetService")
     camp_svc = client.get_service("CampaignService")
     group_svc = client.get_service("AdGroupService")
@@ -100,29 +146,35 @@ def main():
     ad_svc = client.get_service("AdGroupAdService")
 
     for c in camps:
-        # budget
-        op = client.get_type("CampaignBudgetOperation")
-        b = op.create
-        b.name = f"Budget {c['name']}"
-        b.amount_micros = c["budget"] * 1_000_000
-        b.delivery_method = enums("BudgetDeliveryMethodEnum").STANDARD
-        b.explicitly_shared = False
-        budget_res = budget_svc.mutate_campaign_budgets(customer_id=CUSTOMER_ID, operations=[op]).results[0].resource_name
+        camp_res = campanha_existente(c["name"])
+        if camp_res:
+            print(f"[=] campanha {c['name']} ja existe -> {camp_res} (completando o que falta)")
+            novos_criterios = False
+        else:
+            # budget
+            op = client.get_type("CampaignBudgetOperation")
+            b = op.create
+            b.name = f"Budget {c['name']}"
+            b.amount_micros = c["budget"] * 1_000_000
+            b.delivery_method = enums("BudgetDeliveryMethodEnum").STANDARD
+            b.explicitly_shared = False
+            budget_res = budget_svc.mutate_campaign_budgets(customer_id=CUSTOMER_ID, operations=[op]).results[0].resource_name
 
-        # campaign (PAUSED, Search, Manual CPC)
-        op = client.get_type("CampaignOperation")
-        cp = op.create
-        cp.name = c["name"]
-        cp.status = enums("CampaignStatusEnum").PAUSED
-        cp.advertising_channel_type = enums("AdvertisingChannelTypeEnum").SEARCH
-        cp.campaign_budget = budget_res
-        cp.manual_cpc.enhanced_cpc_enabled = False
-        cp.network_settings.target_google_search = True
-        cp.network_settings.target_search_network = False
-        cp.network_settings.target_content_network = False
-        cp.contains_eu_political_advertising = enums("EuPoliticalAdvertisingStatusEnum").DOES_NOT_CONTAIN_EU_POLITICAL_ADVERTISING
-        camp_res = camp_svc.mutate_campaigns(customer_id=CUSTOMER_ID, operations=[op]).results[0].resource_name
-        print(f"[ok] campanha {c['name']} -> {camp_res}")
+            # campaign (PAUSED, Search, Manual CPC)
+            op = client.get_type("CampaignOperation")
+            cp = op.create
+            cp.name = c["name"]
+            cp.status = enums("CampaignStatusEnum").PAUSED
+            cp.advertising_channel_type = enums("AdvertisingChannelTypeEnum").SEARCH
+            cp.campaign_budget = budget_res
+            cp.manual_cpc.enhanced_cpc_enabled = False
+            cp.network_settings.target_google_search = True
+            cp.network_settings.target_search_network = False
+            cp.network_settings.target_content_network = False
+            cp.contains_eu_political_advertising = enums("EuPoliticalAdvertisingStatusEnum").DOES_NOT_CONTAIN_EU_POLITICAL_ADVERTISING
+            camp_res = camp_svc.mutate_campaigns(customer_id=CUSTOMER_ID, operations=[op]).results[0].resource_name
+            print(f"[ok] campanha {c['name']} -> {camp_res}")
+            novos_criterios = True
 
         # geo Brasil (2076) + idioma pt (1014)
         ops = []
@@ -142,28 +194,42 @@ def main():
             o.create.keyword.text = neg
             o.create.keyword.match_type = enums("KeywordMatchTypeEnum").PHRASE
             ops.append(o)
-        camp_crit_svc.mutate_campaign_criteria(customer_id=CUSTOMER_ID, operations=ops)
+        if novos_criterios:
+            camp_crit_svc.mutate_campaign_criteria(customer_id=CUSTOMER_ID, operations=ops)
 
         for gname, content, kws in c["groups"]:
-            op = client.get_type("AdGroupOperation")
-            g = op.create
-            g.name = gname
-            g.campaign = camp_res
-            g.status = enums("AdGroupStatusEnum").PAUSED
-            g.type_ = enums("AdGroupTypeEnum").SEARCH_STANDARD
-            g.cpc_bid_micros = 6_000_000
-            group_res = group_svc.mutate_ad_groups(customer_id=CUSTOMER_ID, operations=[op]).results[0].resource_name
+            group_res = grupo_existente(camp_res, gname)
+            if group_res:
+                print(f"     [=] grupo {gname} ja existe")
+            else:
+                op = client.get_type("AdGroupOperation")
+                g = op.create
+                g.name = gname
+                g.campaign = camp_res
+                g.status = enums("AdGroupStatusEnum").PAUSED
+                g.type_ = enums("AdGroupTypeEnum").SEARCH_STANDARD
+                g.cpc_bid_micros = 6_000_000
+                group_res = group_svc.mutate_ad_groups(customer_id=CUSTOMER_ID, operations=[op]).results[0].resource_name
 
+            ja_tem = keywords_existentes(group_res)
             kw_ops = []
             for k in kws:
+                texto = k.strip('"[]')
+                if texto.lower() in ja_tem:
+                    continue
                 o = client.get_type("AdGroupCriterionOperation")
                 cr = o.create
                 cr.ad_group = group_res
                 cr.status = enums("AdGroupCriterionStatusEnum").ENABLED
-                cr.keyword.text = k.strip('"[]')
+                cr.keyword.text = texto
                 cr.keyword.match_type = enums("KeywordMatchTypeEnum").EXACT if k.startswith("[") else enums("KeywordMatchTypeEnum").PHRASE
                 kw_ops.append(o)
-            crit_svc.mutate_ad_group_criteria(customer_id=CUSTOMER_ID, operations=kw_ops)
+            if kw_ops:
+                crit_svc.mutate_ad_group_criteria(customer_id=CUSTOMER_ID, operations=kw_ops)
+
+            if tem_anuncio(group_res):
+                print(f"     grupo {gname}: +{len(kw_ops)} kw | anuncio ja existe")
+                continue
 
             op = client.get_type("AdGroupAdOperation")
             ada = op.create
@@ -182,8 +248,17 @@ def main():
                 a = client.get_type("AdTextAsset"); a.text = d
                 rsa.descriptions.append(a)
             ada.ad.final_urls.append(url(c["path"], c["camp"], content))
-            ad_svc.mutate_ad_group_ads(customer_id=CUSTOMER_ID, operations=[op])
-            print(f"     grupo {gname}: {len(kws)} kw + RSA ok")
+            # anuncio reprovado nao pode derrubar o resto: reporta o motivo e segue
+            try:
+                ad_svc.mutate_ad_group_ads(customer_id=CUSTOMER_ID, operations=[op])
+                print(f"     grupo {gname}: {len(kws)} kw + RSA ok")
+            except Exception as err:
+                topicos = []
+                for e2 in getattr(getattr(err, "failure", None), "errors", []) or []:
+                    for pt in getattr(e2.details.policy_finding_details, "policy_topic_entries", []):
+                        topicos.append(f"{pt.type_.name}:{pt.topic}")
+                print(f"     [!] grupo {gname}: keywords ok, RSA RECUSADO "
+                      f"({', '.join(topicos) or str(err)[:120]})")
 
     print("\nTUDO CRIADO PAUSADO — revisar em ads.google.com e ativar quando quiser.")
 
