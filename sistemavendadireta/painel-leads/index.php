@@ -447,6 +447,12 @@ if ($gaSite && !empty($gaSite['eventos'])) {
 
     /* KPI cards */
     .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(168px, 1fr)); gap: 12px; margin-bottom: 26px; }
+    /* 8 metricas: auto-fit deixaria 7+1 orfao — trava em 4+4 e desce de forma limpa */
+    .kpis-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    @media (max-width: 1080px) { .kpis-4 { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+    @media (max-width: 780px)  { .kpis-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (max-width: 460px)  { .kpis-4 { grid-template-columns: minmax(0, 1fr); } }
+    .kpis-4 .kpi b { white-space: nowrap; }
     .kpi { position: relative; overflow: hidden; background: var(--card); border: 1px solid var(--line); border-radius: 16px;
       padding: 16px; display: flex; gap: 13px; align-items: center; backdrop-filter: blur(6px);
       transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease; animation: rise .45s ease both; }
@@ -808,7 +814,7 @@ if ($gaSite && !empty($gaSite['eventos'])) {
         </a>
       </div>
 
-      <div class="kpis">
+      <div class="kpis kpis-4">
         <div class="kpi"><div class="chip c-amber"><?= icon('money') ?></div><div><b>R$ <?= num($p['custo'], 2) ?></b><span>Custo · <?= e($rotPeriodo) ?></span></div></div>
         <div class="kpi"><div class="chip c-blue"><?= icon('target') ?></div><div><b><?= num($p['cliques']) ?></b><span>Cliques</span></div></div>
         <div class="kpi"><div class="chip c-blue"><?= icon('eye') ?></div><div><b><?= num($p['impressoes']) ?></b><span>Impressões</span></div></div>
