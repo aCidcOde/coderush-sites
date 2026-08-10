@@ -36,15 +36,16 @@ def main():
                 ev = json.loads(linha)
             except Exception:
                 continue
+            params = {"lead_id": ev.get("lead_id"), "origem_lead": ev.get("origem", "")}
+            if ev["event"] == "purchase":
+                params.update({
+                    "transaction_id": f"svd-{ev.get('lead_id')}-{ev.get('ts','')[:10].replace('-','')}",
+                    "value": float(ev.get("valor") or 0),
+                    "currency": "BRL",
+                })
             payload = {
                 "client_id": ev.get("client_id") or f"offline.{ev.get('lead_id')}",
-                "events": [{
-                    "name": ev["event"],
-                    "params": {
-                        "lead_id": ev.get("lead_id"),
-                        "origem_lead": ev.get("origem", ""),
-                    },
-                }],
+                "events": [{"name": ev["event"], "params": params}],
             }
             req = urllib.request.Request(url, data=json.dumps(payload).encode(),
                                          headers={"Content-Type": "application/json"})

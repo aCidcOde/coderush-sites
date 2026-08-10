@@ -33,6 +33,7 @@ $error = '';
 $diasFiltro = (int) ($_GET['dias'] ?? 28);
 if (!in_array($diasFiltro, [7, 28, 90], true)) { $diasFiltro = 28; }
 $paginaSel = isset($_GET['pagina']) ? (string) $_GET['pagina'] : '';
+$etapaSel = (string) ($_GET['etapa'] ?? '');
 
 if (isset($_POST['senha'])) {
     if ($expected !== '' && hash_equals($expected, (string) $_POST['senha'])) {
@@ -52,9 +53,11 @@ if ($authed && isset($_POST['marcar_lead'])) {
     $mapa = [
         'qualificado' => 'qualify_lead',
         'demo' => 'schedule_demo',
+        'fechado' => 'purchase',
         'perdido' => null,
         'novo' => null,
     ];
+    $valorVenda = (float) str_replace(',', '.', (string) ($_POST['valor'] ?? 0));
     if ($leadId > 0 && array_key_exists($novo, $mapa)) {
         try {
             $db = new PDO('sqlite:' . __DIR__ . '/../storage/leads.sqlite');
@@ -62,7 +65,12 @@ if ($authed && isset($_POST['marcar_lead'])) {
             $sel = $db->prepare('SELECT ga_client_id, gclid, origem FROM leads WHERE id = ?');
             $sel->execute([$leadId]);
             $lead = $sel->fetch(PDO::FETCH_ASSOC);
-            $db->prepare('UPDATE leads SET status = ? WHERE id = ?')->execute([$novo, $leadId]);
+            if ($novo === 'fechado') {
+                $db->prepare('UPDATE leads SET status = ?, closed_at = ?, close_value = ?, transaction_id = ? WHERE id = ?')
+                   ->execute(['fechado', date('c'), $valorVenda, 'svd-' . $leadId . '-' . date('Ymd'), $leadId]);
+            } else {
+                $db->prepare('UPDATE leads SET status = ? WHERE id = ?')->execute([$novo, $leadId]);
+            }
             if ($lead && $mapa[$novo]) {
                 $fila = __DIR__ . '/../storage/ga-events.queue';
                 @file_put_contents($fila, json_encode([
@@ -70,6 +78,7 @@ if ($authed && isset($_POST['marcar_lead'])) {
                     'event' => $mapa[$novo],
                     'client_id' => $lead['ga_client_id'] ?: null,
                     'origem' => $lead['origem'] ?? '',
+                    'valor' => $novo === 'fechado' ? $valorVenda : null,
                     'ts' => date('c'),
                 ], JSON_UNESCAPED_UNICODE) . "\n", FILE_APPEND | LOCK_EX);
             }
@@ -78,7 +87,7 @@ if ($authed && isset($_POST['marcar_lead'])) {
         }
     }
     header('Location: ./?' . http_build_query(array_filter([
-        'dias' => $diasFiltro, 'pagina' => $paginaSel, 'marcado' => 1,
+        'dias' => $diasFiltro, 'pagina' => $paginaSel, 'etapa' => $etapaSel, 'marcado' => 1,
     ])), true, 303);
     exit;
 }
@@ -144,7 +153,13 @@ if ($authed) {
         try {
             $pdo = new PDO('sqlite:' . $dbPath);
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $leads = $pdo->query('SELECT * FROM leads ORDER BY id DESC LIMIT 200')->fetchAll(PDO::FETCH_ASSOC);
+            if ($etapaSel !== '' && $etapaSel !== 'todos') {
+                $st = $pdo->prepare('SELECT * FROM leads WHERE status = ? ORDER BY id DESC LIMIT 200');
+                $st->execute([$etapaSel]);
+                $leads = $st->fetchAll(PDO::FETCH_ASSOC);
+            } else {
+                $leads = $pdo->query('SELECT * FROM leads ORDER BY id DESC LIMIT 200')->fetchAll(PDO::FETCH_ASSOC);
+            }
             $totals['total'] = (int) $pdo->query('SELECT COUNT(*) FROM leads WHERE status NOT IN ("teste","zap")')->fetchColumn();
             $totals['zap'] = (int) $pdo->query('SELECT COUNT(*) FROM leads WHERE status = "zap"')->fetchColumn();
             $totals['ultimos7'] = (int) $pdo->query('SELECT COUNT(*) FROM leads WHERE status NOT IN ("teste","zap") AND created_at >= datetime("now", "-7 days")')->fetchColumn();
@@ -242,7 +257,7 @@ function dailyChart(array $dias, string $campoA = 'sessoes', string $campoB = 'u
         $dots .= '<circle cx="' . round($x($i), 1) . '" cy="' . round($y((int) ($d[$campoA] ?? 0)), 1) . '" r="3.5" fill="#fcd34d">'
             . '<title>' . substr($d['data'], 6, 2) . '/' . substr($d['data'], 4, 2) . ' — ' . (int) ($d[$campoA] ?? 0) . ' ' . $rotuloA . ' · ' . (int) ($d[$campoB] ?? 0) . ' ' . $rotuloB . '</title></circle>';
     }
-    return '<svg viewBox="0 0 ' . $W . ' ' . $H . '" style="width:100%;height:auto;display:block;" role="img" aria-label="Evolução diária de sessões e usuários">'
+    return '<svg class="chart-svg" viewBox="0 0 ' . $W . ' ' . $H . '" style="width:100%;height:auto;display:block;" role="img" aria-label="Evolução diária de sessões e usuários">'
         . '<defs><linearGradient id="gArea" x1="0" y1="0" x2="0" y2="1">'
         . '<stop offset="0" stop-color="#fcd34d" stop-opacity=".35"/><stop offset="1" stop-color="#fcd34d" stop-opacity="0"/></linearGradient></defs>'
         . $grid
@@ -402,12 +417,23 @@ if ($gaSite && !empty($gaSite['eventos'])) {
     .chip-filtro:hover { border-color: var(--amber); color: var(--amber); }
     .chip-filtro.ativo { background: rgba(252,211,77,.16); border-color: var(--amber); color: var(--amber); }
     .chip-filtro.limpar { color: var(--text-soft); }
+    .chip-filtro { display: inline-flex; align-items: center; gap: 6px; }
+    .chip-filtro svg { width: 14px; height: 14px; flex: 0 0 14px; }
+    /* trava global: nenhum icone escapa do tamanho, exceto o grafico */
+    svg:not(.chart-svg) { max-width: 24px; max-height: 24px; }
+    .brand-icon svg { max-width: 22px; max-height: 22px; }
     .bar-link { color: inherit; text-decoration: none; border-bottom: 1px dotted rgba(255,255,255,.25); }
     .bar-link:hover { color: var(--amber); border-color: var(--amber); }
     .funil { display: grid; grid-template-columns: repeat(auto-fit, minmax(128px, 1fr)); gap: 10px; margin-bottom: 18px; }
     .funil-etapa { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 12px 14px; text-align: center; }
     .funil-etapa b { display: block; font-size: 22px; margin-bottom: 6px; }
-    .acoes { display: flex; gap: 5px; margin: 0; }
+    .acoes { display: flex; gap: 5px; margin: 0; align-items: center; flex-wrap: wrap; }
+    .venda-wrap { display: inline-flex; align-items: center; gap: 4px; }
+    .inp-valor { width: 62px; padding: 4px 7px; font-size: 11px; border-radius: 8px;
+      border: 1px solid var(--line); background: rgba(255,255,255,.07); color: #fff; }
+    .btn-etapa.e-fechado:hover { border-color: var(--green); color: var(--green); }
+    a.funil-etapa { text-decoration: none; color: inherit; display: block; transition: .15s; }
+    a.funil-etapa:hover { border-color: var(--amber); transform: translateY(-2px); }
     .btn-etapa { width: auto; margin: 0; padding: 4px 10px; font-size: 11px; font-weight: 700; border-radius: 99px;
       cursor: pointer; border: 1px solid var(--line); background: rgba(255,255,255,.06); color: rgba(255,255,255,.8); transition: .15s; }
     .btn-etapa:hover { transform: none; box-shadow: none; }
@@ -659,10 +685,21 @@ if ($gaSite && !empty($gaSite['eventos'])) {
           'perdido' => ['Perdidos', 'perdido'],
       ];
       foreach ($etapasFunil as $chave => [$rot, $cls]): ?>
-        <div class="funil-etapa">
+        <a class="funil-etapa" href="?<?= http_build_query(array_filter(['dias' => $diasFiltro, 'etapa' => $chave])) ?>">
           <b><?= (int) ($funil[$chave] ?? 0) ?></b>
           <span class="tag <?= $cls ?>"><?= $rot ?></span>
-        </div>
+        </a>
+      <?php endforeach; ?>
+    </div>
+
+    <div class="filtros" style="margin-bottom:14px;">
+      <span class="muted" style="font-size:12px;text-transform:uppercase;letter-spacing:.07em;">Ver:</span>
+      <?php
+      $filtrosEtapa = ['' => 'Todos', 'novo' => 'Novos', 'zap' => 'WhatsApp', 'qualificado' => 'Qualificados',
+                       'demo' => 'Reunião', 'fechado' => 'Vendas', 'perdido' => 'Perdidos', 'teste' => 'Testes'];
+      foreach ($filtrosEtapa as $chave => $rot): ?>
+        <a class="chip-filtro <?= $etapaSel === $chave ? 'ativo' : '' ?>"
+           href="?<?= http_build_query(array_filter(['dias' => $diasFiltro, 'etapa' => $chave])) ?>"><?= $rot ?></a>
       <?php endforeach; ?>
     </div>
 
@@ -690,23 +727,27 @@ if ($gaSite && !empty($gaSite['eventos'])) {
               <td><?= $lead['gclid'] ? '<span title="veio de anúncio">sim</span>' : '-' ?></td>
               <td><span class="tag <?= e($lead['status']) ?>"><?= e($lead['status']) ?></span></td>
               <td>
-                <?php if (!in_array($lead['status'], ['fechado', 'teste'], true)): ?>
-                  <form method="post" class="acoes">
-                    <input type="hidden" name="lead_id" value="<?= (int) $lead['id'] ?>" />
-                    <?php
-                    $etapas = [
-                        'qualificado' => ['Qualificar', 'Contato feito, é oportunidade real'],
-                        'demo' => ['Demo', 'Demonstração agendada'],
-                        'perdido' => ['Perdido', 'Não seguiu'],
-                    ];
-                    foreach ($etapas as $chave => [$rot, $titulo]):
-                        if ($lead['status'] === $chave) continue; ?>
-                      <button type="submit" name="marcar_lead" value="<?= $chave ?>" class="btn-etapa e-<?= $chave ?>" title="<?= e($titulo) ?>"><?= $rot ?></button>
-                    <?php endforeach; ?>
-                  </form>
-                <?php elseif ($lead['status'] === 'fechado'): ?>
-                  <span class="muted">✓ venda</span>
-                <?php endif; ?>
+                <form method="post" class="acoes">
+                  <input type="hidden" name="lead_id" value="<?= (int) $lead['id'] ?>" />
+                  <?php
+                  $etapas = [
+                      'qualificado' => ['Qualificar', 'Falei com ele: é oportunidade real'],
+                      'demo' => ['Reunião', 'Demonstração/reunião agendada'],
+                      'perdido' => ['Perdido', 'Não seguiu'],
+                  ];
+                  foreach ($etapas as $chave => [$rot, $titulo]):
+                      if ($lead['status'] === $chave || $lead['status'] === 'fechado') continue; ?>
+                    <button type="submit" name="marcar_lead" value="<?= $chave ?>" class="btn-etapa e-<?= $chave ?>" title="<?= e($titulo) ?>"><?= $rot ?></button>
+                  <?php endforeach; ?>
+                  <?php if ($lead['status'] !== 'fechado'): ?>
+                    <span class="venda-wrap">
+                      <input type="text" name="valor" value="3000" class="inp-valor" title="Valor fechado (R$)" inputmode="decimal" />
+                      <button type="submit" name="marcar_lead" value="fechado" class="btn-etapa e-fechado" title="Comprou: registra a venda e manda o valor pro Google">Comprou</button>
+                    </span>
+                  <?php else: ?>
+                    <button type="submit" name="marcar_lead" value="novo" class="btn-etapa" title="Reabrir o lead">↺ reabrir</button>
+                  <?php endif; ?>
+                </form>
               </td>
               <td><?= $lead['close_value'] !== null ? 'R$ ' . number_format((float) $lead['close_value'], 0, ',', '.') : '-' ?></td>
             </tr>
