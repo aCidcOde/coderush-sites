@@ -202,10 +202,28 @@ def _ads_snapshot():
     return ads
 
 
+# Falha de auth e transitoria (refresh token expira quando o app OAuth esta em
+# modo Teste: 7 dias). Sobrescrever o bloco bom com {"erro": ...} apagava semanas
+# de historico de investimento no painel — preserva o ultimo snapshot valido e so
+# anexa o aviso.
 try:
     out["ads"] = _ads_snapshot()
 except Exception as e:
-    out["ads"] = {"erro": str(e)[:200]}
+    anterior = {}
+    if os.path.isfile(OUT):
+        try:
+            anterior = (json.load(open(OUT, encoding="utf-8")) or {}).get("ads") or {}
+        except Exception:
+            anterior = {}
+    anterior.pop("erro", None)
+    if anterior.get("periodos"):
+        anterior["aviso"] = "dados de " + str(anterior.get("atualizado_em", "snapshot anterior")) \
+                            + " — nao foi possivel atualizar: " + str(e)[:160]
+        out["ads"] = anterior
+    else:
+        out["ads"] = {"erro": str(e)[:200]}
+if out["ads"].get("periodos"):
+    out["ads"].setdefault("atualizado_em", out["gerado_em"])
 
 tmp = OUT + ".tmp"
 with open(tmp, "w", encoding="utf-8") as f:

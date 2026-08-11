@@ -789,9 +789,18 @@ if ($gaSite && !empty($gaSite['eventos'])) {
 
     <?php if ($aba === 'ads'): ?>
       <?php if (!$ads || !empty($ads['erro'])): ?>
-        <p class="muted">Dados do Google Ads indisponíveis<?= $ads && !empty($ads['erro']) ? ': ' . e($ads['erro']) : '' ?>.
-           Use “Atualizar dados” no topo.</p>
+        <p class="aviso-refresh">Dados do Google Ads indisponíveis<?= $ads && !empty($ads['erro']) ? ': ' . e($ads['erro']) : '' ?>.
+           <?php if ($ads && str_contains((string) $ads['erro'], 'invalid_grant')): ?>
+             <br />O acesso à API do Google Ads expirou — é preciso gerar um novo token
+             (<code>python3 automation/ads/renovar-token.py</code>).
+           <?php else: ?>
+             Use “Atualizar dados” no topo.
+           <?php endif; ?>
+        </p>
       <?php else:
+        if (!empty($ads['aviso'])) {
+            echo '<p class="aviso-refresh">' . e($ads['aviso']) . '</p>';
+        }
         $periodoAds = (string) ($_GET['p'] ?? 'd28');
         if (!in_array($periodoAds, ['hoje', 'd7', 'd28'], true)) { $periodoAds = 'd28'; }
         $rotPeriodo = ['hoje' => 'Hoje', 'd7' => '7 dias', 'd28' => '28 dias'][$periodoAds];
