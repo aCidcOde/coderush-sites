@@ -1,0 +1,87 @@
+{
+  "date": "2026-08-12",
+  "siteId": "bfrintelligence",
+  "postType": "agentes-ia-operacao",
+  "focus": "ia",
+  "theme": "observabilidade e logs de agentes em producao",
+  "angle": "ROI",
+  "slug": "medir-roi-agentes-ia-operacao-real",
+  "title": "BFR Intelligence: IA aplicado a ROI",
+  "description": "Atualização semanal de ia para BFR Intelligence, com foco em observabilidade e logs de agentes em producao.",
+  "sources": [
+    "https://microsoft.github.io/ai-agents-for-beginners/translations/pt-BR/10-ai-agents-production/",
+    "https://microsoft.github.io/ai-agents-for-beginners/translations/pt-PT/10-ai-agents-production/",
+    "https://thalesgomes.com/blog/observabilidade-agentes-ia-producao/",
+    "https://learn.microsoft.com/pt-br/security/zero-trust/sfi/observability-ai-systems",
+    "https://www.ibm.com/br-pt/think/insights/ai-agent-observability"
+  ],
+  "status": "draft",
+  "generatedAt": "2026-08-12T07:57:29-03:00",
+  "content": {
+    "eyebrow": "Guia prático",
+    "headline": "Como medir ROI de agentes de IA na operação real",
+    "summary": "Entenda como implementar agentes de IA com foco em resultados mensuráveis e observabilidade.",
+    "answerBox": {
+      "question": "Como tirar agente de IA do piloto e medir resultados?",
+      "answer": "Para tirar agentes de IA do piloto e medir resultados, é necessário integrar os agentes aos sistemas internos. A observabilidade e o monitoramento eficaz ajudam a avaliar o ROI, garantindo que as operações sejam seguras e governadas."
+    },
+    "tldr": [
+      "Integração é fundamental para agentes de IA operacionais",
+      "Observabilidade garante resultados mensuráveis",
+      "Engenharia de agentes melhora segurança e governança"
+    ],
+    "sections": [
+      {
+        "type": "prose",
+        "title": "A importância da observabilidade",
+        "body": "Quando falamos em agentes de IA em produção, a observabilidade se torna um aspecto crucial. Ela permite monitorar o desempenho e a eficácia dos agentes, ajudando a identificar problemas antes que eles impactem as operações. Segundo a [IBM](https://www.ibm.com/br-pt/think/insights/ai-agent-observability), uma boa observabilidade pode ser a diferença entre o sucesso e a falha na implementação de IA."
+      },
+      {
+        "type": "list",
+        "title": "Sinais de que você precisa de observabilidade",
+        "items": [
+          "Dificuldade em medir o desempenho do agente",
+          "Falta de relatórios claros sobre a operação",
+          "Problemas de integração com sistemas existentes",
+          "Feedback negativo dos usuários finais"
+        ]
+      },
+      {
+        "type": "callout",
+        "body": "Já estruturamos isso em diversos clientes. Vale a pena discutir como a observabilidade pode se aplicar ao seu cenário específico.",
+        "ctaLabel": "Criar meu agente",
+        "ctaHref": "/#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Engenharia de agentes e ROI",
+        "body": "A engenharia de agentes é essencial para garantir resultados mensuráveis. Isso envolve a criação de agentes que não apenas realizam tarefas, mas que também são integrados a sistemas internos e possuem guardrails de segurança. Um estudo da [Thales Gomes](https://thalesgomes.com/blog/observabilidade-agentes-ia-producao/) destaca como a integração de agentes pode melhorar significativamente o retorno sobre investimento ao automatizar processos de maneira eficiente."
+      },
+      {
+        "type": "cta-inline",
+        "body": "Se você está pronto para explorar como isso funciona na prática, vamos conversar.",
+        "ctaLabel": "Criar meu agente",
+        "ctaHref": "/#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Evite erros comuns na implementação",
+        "body": "Ao implementar agentes de IA, é fundamental evitar a falta de integração com sistemas internos. Outro erro é subestimar a necessidade de governança e auditoria. Muitas empresas falham em monitorar os dados coletados, o que pode levar a decisões incorretas. A BFR Intelligence ajuda a evitar esses problemas, focando em soluções práticas e mensuráveis."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Como funciona a observabilidade em agentes de IA?",
+        "a": "Observabilidade em agentes de IA envolve monitorar seu desempenho e coletar dados que ajudem a avaliar a eficácia e segurança das operações."
+      },
+      {
+        "q": "Quais são os benefícios da integração de agentes de IA?",
+        "a": "A integração de agentes de IA com sistemas internos permite automação eficiente, melhor controle de dados e redução de erros operacionais."
+      },
+      {
+        "q": "Como medir o ROI de agentes de IA?",
+        "a": "Para medir o ROI dos agentes de IA, é preciso analisar métricas de desempenho, custos operacionais reduzidos, e feedback dos usuários."
+      }
+    ]
+  }
+}

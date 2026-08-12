@@ -1,0 +1,153 @@
+{
+  "mode": "publish",
+  "date": "2026-08-12",
+  "timezone": "America/Sao_Paulo",
+  "focus": "ia",
+  "startedAt": "2026-08-12T10:55:25.184Z",
+  "aiProvider": "openrouter",
+  "sites": [
+    {
+      "siteId": "coderush",
+      "skipped": true,
+      "reason": "site disabled"
+    },
+    {
+      "siteId": "codafacil",
+      "skipped": true,
+      "reason": "site disabled"
+    },
+    {
+      "siteId": "fluxointeligenteia",
+      "skipped": true,
+      "reason": "site disabled"
+    },
+    {
+      "siteId": "sistemavendadireta",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "fiscal",
+      "theme": "governanca comercial com dados e ia",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/sistemavendadireta/2026-08-12/governanca-comercial-dados-ia-marketing-multinivel.json",
+      "markdownPath": "automation/blog-bot/out/sistemavendadireta/2026-08-12/governanca-comercial-dados-ia-marketing-multinivel.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "sistemavendadireta/2026/08/12/governanca-comercial-dados-ia-marketing-multinivel/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "existing",
+        "coverAlt": "",
+        "coverLeakage": null
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "sistemavendadireta/index.php",
+          "sistemavendadireta/blog/index.php",
+          "sistemavendadireta/2026/08/12/governanca-comercial-dados-ia-marketing-multinivel/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "emergency",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Possivel texto vazado na capa (sample: \"ayy\")",
+      "angle": "habilitacao de fornecedor",
+      "theme": "KYC e onboarding corporativo com certidoes",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": [
+          {
+            "url": "https://capitalaberto.com.br/feed/",
+            "error": "HTTP 404"
+          }
+        ]
+      },
+      "outputPath": "automation/blog-bot/out/emergency/2026-08-12/habilitar-fornecedores-due-diligence-eficiente.json",
+      "markdownPath": "automation/blog-bot/out/emergency/2026-08-12/habilitar-fornecedores-due-diligence-eficiente.md",
+      "publishResult": {
+        "target": "api",
+        "apiStatus": 201,
+        "apiUrl": "https://emergency.com.br/blog/habilitar-fornecedores-due-diligence-eficiente",
+        "apiId": 39,
+        "apiPublishedAt": "2026-08-12T07:55:36-03:00",
+        "coverPath": "automation/blog-bot/out/emergency/covers/habilitar-fornecedores-due-diligence-eficiente.jpg",
+        "coverSize": 229374,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Robô humanoide prateado e azul estende a mão para hologramas de selos de certificação dourados, em um fundo azul marinho profundo",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": true,
+          "alphanumericCount": 14,
+          "sample": "ayy"
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    },
+    {
+      "siteId": "bfrintelligence",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Possível texto vazado na capa (sample: \"\")",
+      "angle": "ROI",
+      "theme": "observabilidade e logs de agentes em producao",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/bfrintelligence/2026-08-12/medir-roi-agentes-ia-operacao-real.json",
+      "markdownPath": "automation/blog-bot/out/bfrintelligence/2026-08-12/medir-roi-agentes-ia-operacao-real.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "bfrintelligence/2026/08/12/medir-roi-agentes-ia-operacao-real/index.html",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Um painel de medidores analógicos em metal escovado e vidro azul, com agulhas indicadoras e filamentos de dados elétricos se entrelaçando",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": true,
+          "alphanumericCount": 10,
+          "sample": ""
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    }
+  ],
+  "duplications": [],
+  "relatedRefresh": {
+    "touched": 33,
+    "unchanged": 120,
+    "errors": [],
+    "totalCards": 141,
+    "totalFiles": 153
+  },
+  "fallbackCount": 0,
+  "allFallback": false,
+  "finishedAt": "2026-08-12T10:59:18.530Z",
+  "ok": true
+}

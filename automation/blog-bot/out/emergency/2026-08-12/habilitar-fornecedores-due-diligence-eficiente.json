@@ -1,0 +1,88 @@
+{
+  "date": "2026-08-12",
+  "siteId": "emergency",
+  "postType": "due-diligence-certidoes",
+  "focus": "ia",
+  "theme": "KYC e onboarding corporativo com certidoes",
+  "angle": "habilitacao de fornecedor",
+  "slug": "habilitar-fornecedores-due-diligence-eficiente",
+  "title": "Emergency Documentação: IA aplicado a habilitacao de fornecedor",
+  "description": "Atualização semanal de ia para Emergency Documentação, com foco em KYC e onboarding corporativo com certidoes.",
+  "sources": [
+    "https://www.cadenio.com/pt-br/blog/onboarding-fornecedor-qualificacao-due-diligence-auditavel",
+    "https://emergency.com.br/blog/habilitacao-fornecedores-due-diligence-societaria",
+    "https://tratum.com.br/due-diligence-de-terceiros-guia-kyp/",
+    "https://www.kronoos.com/blog/como-estruturar-o-onboarding-kyc-em-conformidade-com-a-resolução-cmn-4.557",
+    "https://blog.vaas.com.br/kys-due-diligence-fornecedores-como-fazer"
+  ],
+  "status": "draft",
+  "generatedAt": "2026-08-12T07:55:36-03:00",
+  "content": {
+    "eyebrow": "Guia Prático",
+    "headline": "Como habilitar fornecedores com due diligence eficiente",
+    "summary": "Entenda como as certidões online facilitam a habilitação de fornecedores em processos de due diligence.",
+    "answerBox": {
+      "question": "Como habilitar fornecedores utilizando due diligence imobiliária?",
+      "answer": "A habilitação de fornecedores envolve a realização de uma due diligence imobiliária, onde certidões online são essenciais para verificar a regularidade e idoneidade do fornecedor. Isso garante segurança e agilidade no processo de contratação."
+    },
+    "tldr": [
+      "Certidões online agilizam a habilitação de fornecedores",
+      "Due diligence imobiliária minimiza riscos contratuais",
+      "Apoio humano é fundamental em casos complexos"
+    ],
+    "sections": [
+      {
+        "type": "prose",
+        "title": "A importância da due diligence na habilitação de fornecedores",
+        "body": "Realizar a due diligence na habilitação de fornecedores é crucial para evitar riscos contratuais. Nesse processo, as certidões online desempenham um papel fundamental. Elas não apenas oferecem um panorama atualizado sobre a situação legal do fornecedor, mas também otimizam o tempo de análise, permitindo que você se concentre em decisões estratégicas."
+      },
+      {
+        "type": "list",
+        "title": "Critérios para uma due diligence eficaz",
+        "items": [
+          "Verifique a regularidade fiscal do fornecedor",
+          "Analise certidões de propriedade e ônus",
+          "Confirme a idoneidade da empresa com certidões cartorárias",
+          "Avalie a reputação no mercado e referências",
+          "Considere a situação jurídica e trabalhista"
+        ]
+      },
+      {
+        "type": "callout",
+        "body": "Já estruturamos isso em diversos clientes, garantindo que a análise fique mais simples e rápida. Vale uma conversa para entender seu cenário.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Como as certidões online podem ajudar",
+        "body": "As certidões online proporcionam uma maneira rápida e eficiente de consolidar informações necessárias para a habilitação de fornecedores. Com um painel de acompanhamento por solicitação, você tem controle total sobre o andamento das emissões. Além disso, contar com suporte humano em pedidos complexos é um diferencial que a Emergency Documentação oferece, garantindo que você não fique preso em burocracias desnecessárias."
+      },
+      {
+        "type": "cta-inline",
+        "body": "Explore como podemos facilitar sua due diligence.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Cuidado com os riscos na habilitação",
+        "body": "É importante evitar a superficialidade na análise de fornecedores. Confiar apenas em informações básicas pode levar a surpresas desagradáveis. A falta de uma due diligence completa pode resultar em problemas jurídicos e financeiros no futuro. Por isso, sempre busque informações detalhadas e atualizadas, e considere o apoio de um consultor especializado para evitar armadilhas."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Quais certidões são essenciais na due diligence?",
+        "a": "As certidões essenciais incluem certidão negativa de débitos, certidão de propriedade, e certidões de regularidade fiscal e trabalhista."
+      },
+      {
+        "q": "Como garantir a idoneidade de um fornecedor?",
+        "a": "Verifique referências do mercado, analise certidões e busque informações sobre sua reputação e histórico de compliance."
+      },
+      {
+        "q": "Qual o prazo para emissão de certidões online?",
+        "a": "O prazo pode variar, mas normalmente as certidões são emitidas rapidamente, dependendo da complexidade e do tipo solicitado."
+      }
+    ]
+  }
+}
