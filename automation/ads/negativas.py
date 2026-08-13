@@ -8,10 +8,19 @@ Limpeza semanal dos termos de busca: o relatorio mostra o que a pessoa realmente
 digitou, e boa parte nunca vira cliente (pesquisa academica, curioso, concorrente
 procurando emprego). Cada termo desses consome impressao e, se clicar, dinheiro.
 
+FRASE x EXATA: negativa de frase bloqueia tudo que contenha aquele trecho — util
+pra lixo obvio ("curso", "vaga"). Negativa exata bloqueia so aquela busca literal,
+que e o que se usa quando o termo generico gasta dinheiro mas a versao qualificada
+dele precisa continuar rodando: negativar [marketing multinivel] barra o curioso
+sem barrar "sistema de marketing multinivel".
+
+ARMADILHA: negativa NAO casa acento nem variacao. "gratis" nao bloqueia "grátis" —
+tem que cadastrar as duas.
+
 Uso:
   python3 negativas.py --termos                       # lista os termos captados
-  python3 negativas.py --add="empresas multinivel,modelo de negocio" --dry-run
-  python3 negativas.py --add="empresas multinivel,modelo de negocio"
+  python3 negativas.py --add="curso,vaga" --dry-run   # frase
+  python3 negativas.py --exatas="mmn,marketing multinivel"
 """
 import sys
 
@@ -66,9 +75,11 @@ def main():
         return
 
     bruto = arg("add")
-    if not bruto:
-        sys.exit('use --termos ou --add="termo1,termo2"')
-    termos = [t.strip().lower() for t in bruto.split(",") if t.strip()]
+    exatas = arg("exatas")
+    if not bruto and not exatas:
+        sys.exit('use --termos, --add="..." (frase) ou --exatas="..." (exata)')
+    tipo = "EXACT" if exatas else "PHRASE"
+    termos = [t.strip().lower() for t in (exatas or bruto).split(",") if t.strip()]
     dry = "--dry-run" in sys.argv
 
     camp = None
@@ -81,26 +92,29 @@ def main():
 
     ja = set()
     for r in ga.search(customer_id=CUSTOMER_ID, query=f"""
-            SELECT campaign.resource_name, campaign_criterion.keyword.text
+            SELECT campaign.resource_name, campaign_criterion.keyword.text,
+                   campaign_criterion.keyword.match_type
             FROM campaign_criterion WHERE campaign.resource_name = '{camp}'
               AND campaign_criterion.negative = TRUE
               AND campaign_criterion.type = 'KEYWORD'
               AND campaign_criterion.status != 'REMOVED'"""):
-        ja.add(r.campaign_criterion.keyword.text.lower())
+        k = r.campaign_criterion.keyword
+        ja.add((k.text.lower(), k.match_type.name))
 
     ops = []
+    rotulo = "exata" if tipo == "EXACT" else "frase"
     for t in termos:
-        if t in ja:
-            print(f"  [=] '{t}' ja e negativa")
+        if (t, tipo) in ja:
+            print(f"  [=] '{t}' ja e negativa {rotulo}")
             continue
-        print(f"  [+] '{t}' (correspondencia de frase)")
+        print(f"  [+] '{t}' ({rotulo})")
         if dry:
             continue
         o = cli.get_type("CampaignCriterionOperation")
         o.create.campaign = camp
         o.create.negative = True
         o.create.keyword.text = t
-        o.create.keyword.match_type = cli.enums.KeywordMatchTypeEnum.PHRASE
+        o.create.keyword.match_type = getattr(cli.enums.KeywordMatchTypeEnum, tipo)
         ops.append(o)
 
     if dry:
