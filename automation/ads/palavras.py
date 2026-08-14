@@ -16,12 +16,19 @@ multinivel", depois "empresas de marketing multinivel" — cada dia uma variante
 informativa nova, a R$ 6 o clique. Negativa exata vira enxuga-gelo; fechar a
 correspondencia resolve na origem.
 
+Acento nao precisa de entrada separada aqui: palavra POSITIVA casa variantes
+proximas, entao "sistema multinivel" ja cobre "sistema multinível". O oposto vale
+pra negativa, que exige cada forma (ver negativas.py).
+
 Uso:
   python3 palavras.py --ver
-  python3 palavras.py --trocar="sistema marketing multinivel" --tipo=EXACT --dry-run
   python3 palavras.py --trocar="sistema marketing multinivel" --tipo=EXACT
+  python3 palavras.py --adicionar="sistema multinivel,plataforma mmn" --grupo="Sistema MMN"
+  python3 palavras.py --lance-de="sistema mmn" --lance=9
 """
 import sys
+
+from google.protobuf import field_mask_pb2
 
 CUSTOMER_ID = "3578927161"
 ENV_PATH = "/data/coderush-sites/.env"
@@ -63,6 +70,83 @@ def main():
           AND ad_group_criterion.status = 'ENABLED'
           AND segments.date DURING LAST_14_DAYS"""))
 
+    dry = "--dry-run" in sys.argv
+    svc = cli.get_service("AdGroupCriterionService")
+
+    # ---------------------------------------------- adicionar palavras novas
+    novas = arg("adicionar")
+    if novas:
+        grupo_nome = arg("grupo")
+        if not grupo_nome:
+            sys.exit('informe --grupo="..."')
+        tipo = (arg("tipo") or "PHRASE").upper()
+        lance = arg("lance")
+        grupo_res = None
+        for r in ga.search(customer_id=CUSTOMER_ID, query=f"""
+                SELECT ad_group.resource_name, ad_group.name FROM ad_group
+                WHERE campaign.status='ENABLED' AND ad_group.name = '{grupo_nome}'
+                  AND ad_group.status='ENABLED'"""):
+            grupo_res = r.ad_group.resource_name
+        if not grupo_res:
+            sys.exit(f"grupo '{grupo_nome}' nao encontrado")
+
+        existentes = {r.ad_group_criterion.keyword.text.lower() for r in palavras}
+        ops = []
+        for t in [x.strip() for x in novas.split(",") if x.strip()]:
+            if t.lower() in existentes:
+                print(f"  [=] '{t}' ja existe na campanha")
+                continue
+            print(f"  [+] '{t}' em {grupo_nome} ({tipo.lower()})"
+                  + (f", lance R$ {float(lance):.2f}" if lance else ""))
+            if dry:
+                continue
+            o = cli.get_type("AdGroupCriterionOperation")
+            cr = o.create
+            cr.ad_group = grupo_res
+            cr.status = cli.enums.AdGroupCriterionStatusEnum.ENABLED
+            cr.keyword.text = t
+            cr.keyword.match_type = getattr(cli.enums.KeywordMatchTypeEnum, tipo)
+            if lance:
+                cr.cpc_bid_micros = int(round(float(str(lance).replace(",", ".")) * 1_000_000))
+            ops.append(o)
+        if dry:
+            print("\n(dry-run — nada foi alterado)")
+        elif ops:
+            svc.mutate_ad_group_criteria(customer_id=CUSTOMER_ID, operations=ops)
+            print(f"\n  {len(ops)} palavra(s) adicionada(s)")
+        else:
+            print("\nnada a fazer")
+        return
+
+    # ---------------------------------------------- lance de uma palavra so
+    lance_de = arg("lance-de")
+    if lance_de:
+        valor = float(str(arg("lance", "0")).replace(",", "."))
+        if not 0 < valor <= 15:
+            sys.exit("--lance deve estar entre 0 e 15")
+        achados = [r for r in palavras
+                   if r.ad_group_criterion.keyword.text.lower() == lance_de.lower()]
+        if not achados:
+            sys.exit(f"palavra '{lance_de}' nao encontrada")
+        ops = []
+        for r in achados:
+            atual = (r.ad_group_criterion.cpc_bid_micros or 0) / 1e6
+            print(f"  [~] '{r.ad_group_criterion.keyword.text}' em {r.ad_group.name}: "
+                  f"lance {'R$ %.2f' % atual if atual else 'do grupo'} -> R$ {valor:.2f}")
+            if dry:
+                continue
+            o = cli.get_type("AdGroupCriterionOperation")
+            o.update.resource_name = r.ad_group_criterion.resource_name
+            o.update.cpc_bid_micros = int(round(valor * 1_000_000))
+            cli.copy_from(o.update_mask, field_mask_pb2.FieldMask(paths=["cpc_bid_micros"]))
+            ops.append(o)
+        if dry:
+            print("\n(dry-run — nada foi alterado)")
+        elif ops:
+            svc.mutate_ad_group_criteria(customer_id=CUSTOMER_ID, operations=ops)
+            print(f"\n  lance atualizado em {len(ops)} palavra(s)")
+        return
+
     alvo = arg("trocar")
     if "--ver" in sys.argv or not alvo:
         print(f"{'PALAVRA':<38} {'TIPO':<7} {'IMPR':<5} {'CLIQ':<5} CUSTO")
@@ -75,7 +159,6 @@ def main():
     tipo = (arg("tipo") or "EXACT").upper()
     if tipo not in ("EXACT", "PHRASE", "BROAD"):
         sys.exit("--tipo deve ser EXACT, PHRASE ou BROAD")
-    dry = "--dry-run" in sys.argv
 
     achados = [r for r in palavras
                if r.ad_group_criterion.keyword.text.lower() == alvo.lower()]
@@ -113,7 +196,6 @@ def main():
         print("nada a fazer")
         return
 
-    svc = cli.get_service("AdGroupCriterionService")
     # remove antes de criar: a mesma palavra nao pode existir duas vezes no grupo
     svc.mutate_ad_group_criteria(customer_id=CUSTOMER_ID, operations=remover)
     svc.mutate_ad_group_criteria(customer_id=CUSTOMER_ID, operations=criar)

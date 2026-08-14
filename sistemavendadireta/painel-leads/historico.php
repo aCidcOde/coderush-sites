@@ -21,6 +21,19 @@ Campos:
 return [
     [
         'data' => '2026-08-14',
+        'area' => 'ads',
+        'titulo' => '7 palavras novas e lance concentrado, escolhidos pelo Search Console',
+        'porque' => 'Com o dado real de busca deu pra ver o que faltava: "sistema multinivel" '
+            . 'tinha 77 impressões orgânicas e nem estava na campanha, e "software para marketing '
+            . 'multinivel" tinha 84. Também ficou claro que "sistema mmn" é a maior demanda '
+            . 'comercial (176 impressões) com a pior posição orgânica (25ª) — ou seja, o lugar '
+            . 'onde a busca natural não nos salva e o anúncio precisa cobrir.',
+        'efeito' => 'Campanha passou de 34 para 41 palavras. Lance de "sistema mmn" isolado em '
+            . 'R$ 9 contra R$ 6 do resto do grupo. Mais 4 negativas informacionais '
+            . '(340 impressões orgânicas com zero clique), totalizando 41.',
+    ],
+    [
+        'data' => '2026-08-14',
         'area' => 'medicao',
         'titulo' => 'Search Console conectado — escolha de palavra deixou de ser palpite',
         'porque' => 'O GA4 não entrega termo de busca orgânica desde 2011 ("not provided"), '
