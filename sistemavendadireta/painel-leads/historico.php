@@ -21,6 +21,18 @@ Campos:
 return [
     [
         'data' => '2026-08-14',
+        'area' => 'medicao',
+        'titulo' => 'Search Console conectado — escolha de palavra deixou de ser palpite',
+        'porque' => 'O GA4 não entrega termo de busca orgânica desde 2011 ("not provided"), '
+            . 'então as 34 palavras da campanha tinham sido escolhidas por intuição — e 19 delas '
+            . 'vieram marcadas pelo Google como "raramente veiculada". O Search Console mostra a '
+            . 'busca real, o volume e em que posição estamos.',
+        'efeito' => '90 dias de histórico já disponíveis: 7.320 impressões, 125 cliques, posição '
+            . 'média 12,9. Revelou que "sistema mmn" tem 176 impressões com a gente na posição 25, '
+            . 'e que "sistema multinivel" (77 impressões) nem estava na campanha.',
+    ],
+    [
+        'data' => '2026-08-14',
         'area' => 'ads',
         'titulo' => '"sistema marketing multinivel" trocada de frase para exata',
         'porque' => 'Em correspondência de frase ela captava busca informativa: trouxe '
