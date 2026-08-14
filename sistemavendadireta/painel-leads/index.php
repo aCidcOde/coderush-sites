@@ -37,7 +37,8 @@ $etapaSel = (string) ($_GET['etapa'] ?? '');
 
 // Abas: cada assunto na sua tela, com o filtro que pertence a ela. Misturar
 // periodo de audiencia com etapa do funil na mesma barra confundia a leitura.
-const ABAS = ['visao' => 'Visão geral', 'trafego' => 'Tráfego', 'ads' => 'Investimento', 'funil' => 'Funil de leads'];
+const ABAS = ['visao' => 'Visão geral', 'trafego' => 'Tráfego', 'ads' => 'Investimento',
+              'funil' => 'Funil de leads', 'historico' => 'Histórico'];
 $aba = (string) ($_GET['aba'] ?? 'visao');
 if (!array_key_exists($aba, ABAS)) { $aba = 'visao'; }
 
@@ -224,6 +225,18 @@ function brDateTime(?string $iso): string
     }
 }
 
+
+/** AAAA-MM-DD -> "14 de agosto de 2026" */
+function brDate(string $iso): string
+{
+    $meses = [1 => 'janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho',
+              'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'];
+    $p = explode('-', $iso);
+    if (count($p) !== 3) {
+        return $iso;
+    }
+    return (int) $p[2] . ' de ' . ($meses[(int) $p[1]] ?? '?') . ' de ' . $p[0];
+}
 
 /** Recorta uma serie diaria pelos ultimos N dias. */
 function ultimosDias(array $serie, int $dias): array
@@ -433,6 +446,31 @@ if ($gaSite && !empty($gaSite['eventos'])) {
     .bf-grupo { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
     .bf-sep { flex: 1 1 auto; }
 
+    /* linha do tempo do historico de otimizacoes */
+    .linha-tempo { list-style: none; position: relative; padding: 4px 0 4px 26px; }
+    .linha-tempo::before { content: ""; position: absolute; left: 5px; top: 12px; bottom: 12px;
+      width: 2px; background: linear-gradient(180deg, var(--amber), rgba(252,211,77,.12)); }
+    .linha-tempo li { position: relative; margin-bottom: 14px; }
+    .lt-marca { position: absolute; left: -26px; top: 20px; width: 12px; height: 12px;
+      border-radius: 50%; background: var(--amber); box-shadow: 0 0 0 4px rgba(252,211,77,.16); }
+    .lt-corpo { background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+      padding: 15px 17px; transition: .18s; }
+    .lt-corpo:hover { border-color: rgba(255,255,255,.28); transform: translateX(2px); }
+    .lt-topo { display: flex; align-items: center; gap: 10px; margin-bottom: 7px; flex-wrap: wrap; }
+    .lt-data { font-size: 11.5px; color: var(--text-soft); text-transform: uppercase; letter-spacing: .06em; }
+    .lt-corpo h4 { font-size: 14.5px; margin-bottom: 8px; letter-spacing: -.01em; }
+    .lt-porque, .lt-efeito, .lt-pendente { font-size: 13px; line-height: 1.6; margin-top: 6px; }
+    .lt-porque { color: var(--text-soft); }
+    .lt-porque b { color: rgba(255,255,255,.8); }
+    .lt-efeito { color: #a7f3d0; background: rgba(52,211,153,.08); border-left: 3px solid var(--green);
+      padding: 8px 11px; border-radius: 0 8px 8px 0; }
+    .lt-efeito b { color: var(--green); }
+    .lt-pendente { color: rgba(255,255,255,.35); font-style: italic; font-size: 12px; }
+    .tag.area-ads { background: rgba(252,211,77,.18); color: var(--amber); }
+    .tag.area-medicao { background: rgba(96,165,250,.18); color: #93c5fd; }
+    .tag.area-painel { background: rgba(52,211,153,.18); color: #6ee7b7; }
+    .tag.area-site { background: rgba(255,255,255,.12); color: rgba(255,255,255,.75); }
+
     /* tabela de metricas de midia (mesmas colunas do Google Ads) */
     .metricas th { text-align: right; }
     .metricas th:first-child, .metricas td:first-child { text-align: left; white-space: normal; min-width: 180px; }
@@ -605,8 +643,10 @@ if ($gaSite && !empty($gaSite['eventos'])) {
 
     <?php
     $totalLeads = $totals['total'] + $totals['zap'];
-    $abaIcones = ['visao' => 'gauge', 'trafego' => 'globe', 'ads' => 'money', 'funil' => 'users'];
-    $abaBadges = ['funil' => (string) $totalLeads];
+    $abaIcones = ['visao' => 'gauge', 'trafego' => 'globe', 'ads' => 'money',
+                  'funil' => 'users', 'historico' => 'clock'];
+    $historico = is_file(__DIR__ . '/historico.php') ? (require __DIR__ . '/historico.php') : [];
+    $abaBadges = ['funil' => (string) $totalLeads, 'historico' => (string) count($historico)];
     if ($ads && empty($ads['erro'])) {
         $abaBadges['ads'] = 'R$ ' . num($ads['periodos']['d28']['custo'] ?? 0);
     }
@@ -1070,6 +1110,64 @@ if ($gaSite && !empty($gaSite['eventos'])) {
       </div>
     <?php endif; ?>
     <?php endif; /* fim da aba funil */ ?>
+
+    <?php if ($aba === 'historico'): ?>
+      <?php
+      $areaSel = (string) ($_GET['area'] ?? '');
+      $areas = ['ads' => 'Anúncios', 'medicao' => 'Medição', 'painel' => 'Painel', 'site' => 'Site'];
+      $lista = $historico;
+      if ($areaSel !== '' && isset($areas[$areaSel])) {
+          $lista = array_values(array_filter($lista, static fn ($h) => ($h['area'] ?? '') === $areaSel));
+      }
+      $porArea = [];
+      foreach ($historico as $h) { $porArea[$h['area'] ?? '?'] = ($porArea[$h['area'] ?? '?'] ?? 0) + 1; }
+      $comEfeito = count(array_filter($historico, static fn ($h) => trim((string) ($h['efeito'] ?? '')) !== ''));
+      ?>
+      <div class="kpis">
+        <div class="kpi"><div class="chip c-amber"><?= icon('check') ?></div><div><b><?= count($historico) ?></b><span>Melhorias aplicadas</span></div></div>
+        <div class="kpi"><div class="chip c-green"><?= icon('chart') ?></div><div><b><?= $comEfeito ?></b><span>Com efeito medido</span></div></div>
+        <div class="kpi"><div class="chip c-blue"><?= icon('megaphone') ?></div><div><b><?= $porArea['ads'] ?? 0 ?></b><span>Em anúncios</span></div></div>
+        <div class="kpi"><div class="chip c-blue"><?= icon('target') ?></div><div><b><?= $porArea['medicao'] ?? 0 ?></b><span>Em medição</span></div></div>
+      </div>
+
+      <div class="barra-filtro">
+        <span class="bf-label">Área</span>
+        <span class="bf-grupo">
+          <a class="chip-filtro <?= $areaSel === '' ? 'ativo' : '' ?>" href="<?= e(abaUrl('historico')) ?>">Todas</a>
+          <?php foreach ($areas as $k => $rot): if (empty($porArea[$k])) continue; ?>
+            <a class="chip-filtro <?= $areaSel === $k ? 'ativo' : '' ?>"
+               href="<?= e(abaUrl('historico', ['area' => $k])) ?>"><?= e($rot) ?> <?= (int) $porArea[$k] ?></a>
+          <?php endforeach; ?>
+        </span>
+      </div>
+
+      <?php if (!$lista): ?>
+        <p class="muted">Nenhum registro nessa área.</p>
+      <?php else: ?>
+        <ol class="linha-tempo">
+          <?php foreach ($lista as $h): ?>
+            <li>
+              <div class="lt-marca"></div>
+              <div class="lt-corpo">
+                <div class="lt-topo">
+                  <span class="lt-data"><?= e(brDate($h['data'] ?? '')) ?></span>
+                  <span class="tag area-<?= e($h['area'] ?? '') ?>"><?= e($areas[$h['area'] ?? ''] ?? $h['area'] ?? '-') ?></span>
+                </div>
+                <h4><?= e($h['titulo'] ?? '') ?></h4>
+                <?php if (!empty($h['porque'])): ?>
+                  <p class="lt-porque"><b>Por quê:</b> <?= e($h['porque']) ?></p>
+                <?php endif; ?>
+                <?php if (!empty($h['efeito'])): ?>
+                  <p class="lt-efeito"><b>Resultado:</b> <?= e($h['efeito']) ?></p>
+                <?php else: ?>
+                  <p class="lt-pendente">Efeito ainda em observação.</p>
+                <?php endif; ?>
+              </div>
+            </li>
+          <?php endforeach; ?>
+        </ol>
+      <?php endif; ?>
+    <?php endif; /* fim da aba historico */ ?>
   </div>
 <?php endif; ?>
 </body>
