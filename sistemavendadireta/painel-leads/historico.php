@@ -20,6 +20,28 @@ Campos:
 
 return [
     [
+        'data' => '2026-08-15',
+        'area' => 'ads',
+        'titulo' => 'Negativas por intenção: o cluster "quero entrar na rede"',
+        'porque' => 'Dos 4 cliques de 14/08 (R$ 23,70), três eram público errado: '
+            . '"empresas de marketing multinivel", "mlm" e "recrutador mmn". Ficou claro que '
+            . 'não era azar — o vocabulário de MMN é dominado por quem quer ENTRAR numa rede, '
+            . 'não por quem quer COMPRAR software. Bloquear termo a termo virou enxuga-gelo: '
+            . 'a cada dia surgia variante nova a R$ 6 o clique.',
+        'efeito' => '11 negativas de uma vez atacando a intenção (recrutador, recrutamento, '
+            . 'ganhar dinheiro, renda extra, quero entrar, ser consultor...), totalizando 52.',
+    ],
+    [
+        'data' => '2026-08-15',
+        'area' => 'painel',
+        'titulo' => 'Guideline do agente de tráfego pago',
+        'porque' => 'O aprendizado estava espalhado por commits e conversas. Cada regra do '
+            . 'documento nasceu de um erro que custou dinheiro ou de um diagnóstico que levou '
+            . 'dias pra aparecer — a ordem certa de ler métricas, quando frase vaza e exata '
+            . 'resolve, por que negativa não casa acento, quais alavancas mexer primeiro.',
+        'efeito' => 'docs/guideline-agente-trafego-pago.md, atualizado a cada aprendizado novo.',
+    ],
+    [
         'data' => '2026-08-14',
         'area' => 'ads',
         'titulo' => '7 palavras novas e lance concentrado, escolhidos pelo Search Console',
