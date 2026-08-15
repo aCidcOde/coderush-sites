@@ -836,6 +836,15 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-HOME-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/08/15/integrar-sistema-venda-direta-erp/" data-blog-image="imagens/posts/integrar-sistema-venda-direta-erp.jpg" data-blog-slug="integrar-sistema-venda-direta-erp" data-blog-date="2026-08-15">
+  <a href="2026/08/15/integrar-sistema-venda-direta-erp/">
+    <img src="imagens/posts/integrar-sistema-venda-direta-erp.jpg" alt="Como integrar seu sistema de venda direta com ERP" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="2026/08/15/integrar-sistema-venda-direta-erp/" class="hover:underline">Como integrar seu sistema de venda direta com ERP</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a integração de sistemas pode otimizar seu MMN.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/08/12/governanca-comercial-dados-ia-marketing-multinivel/" data-blog-image="imagens/posts/governanca-comercial-dados-ia-marketing-multinivel.jpg" data-blog-slug="governanca-comercial-dados-ia-marketing-multinivel" data-blog-date="2026-08-12">
   <a href="2026/08/12/governanca-comercial-dados-ia-marketing-multinivel/">
     <img src="imagens/posts/governanca-comercial-dados-ia-marketing-multinivel.jpg" alt="Governança Comercial com Dados e IA no Marketing Multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
@@ -852,15 +861,6 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="2026/08/09/evitar-fraudes-commerce-alto-volume/" class="hover:underline">Como evitar fraudes em e-commerce de alto volume</a></h2>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como o controle de clientes e a prevenção de fraudes podem impulsionar seu e-commerce.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/08/06/comissao-cargo-vs-plano-pontos-venda-direta/" data-blog-image="imagens/posts/comissao-cargo-vs-plano-pontos-venda-direta.jpg" data-blog-slug="comissao-cargo-vs-plano-pontos-venda-direta" data-blog-date="2026-08-06">
-  <a href="2026/08/06/comissao-cargo-vs-plano-pontos-venda-direta/">
-    <img src="imagens/posts/comissao-cargo-vs-plano-pontos-venda-direta.jpg" alt="Comissão por cargo vs plano de pontos em venda direta" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-  </a>
-  <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="2026/08/06/comissao-cargo-vs-plano-pontos-venda-direta/" class="hover:underline">Comissão por cargo vs plano de pontos em venda direta</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda as diferenças e como a integração ERP pode otimizar sua operação.</p>
   </div>
 </article>
 <!-- BLOG-HOME-CARDS:END -->

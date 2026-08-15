@@ -247,11 +247,11 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://bfrintelligence.com.br/2026/08/03/integrar-agentes-ia-operacao-governanca-eficaz/" rel="noopener" target="_blank"><img src="https://bfrintelligence.com.br/imagens/posts/integrar-agentes-ia-operacao-governanca-eficaz.jpg" alt="Como integrar agentes de IA na operação com governança eficaz" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://bfrintelligence.com.br/2026/08/15/seguranca-guardrails-agentes-ia-operacao/" rel="noopener" target="_blank"><img src="https://bfrintelligence.com.br/imagens/posts/seguranca-guardrails-agentes-ia-operacao.jpg" alt="Segurança e Guardrails para Agentes de IA na Operação" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">BFR Intelligence</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://bfrintelligence.com.br/2026/08/03/integrar-agentes-ia-operacao-governanca-eficaz/" rel="noopener" target="_blank" class="hover:underline">Como integrar agentes de IA na operação com governança eficaz</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como agentes de IA podem ser integrados à sua operação para resultados mensuráveis e governança adequada.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://bfrintelligence.com.br/2026/08/15/seguranca-guardrails-agentes-ia-operacao/" rel="noopener" target="_blank" class="hover:underline">Segurança e Guardrails para Agentes de IA na Operação</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como implementar segurança e governança eficaz em agentes de IA para resultados mensuráveis.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">

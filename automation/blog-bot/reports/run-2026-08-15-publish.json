@@ -1,0 +1,158 @@
+{
+  "mode": "publish",
+  "date": "2026-08-15",
+  "timezone": "America/Sao_Paulo",
+  "focus": "tecnologia",
+  "startedAt": "2026-08-15T10:16:01.178Z",
+  "aiProvider": "openrouter",
+  "sites": [
+    {
+      "siteId": "coderush",
+      "skipped": true,
+      "reason": "site disabled"
+    },
+    {
+      "siteId": "codafacil",
+      "skipped": true,
+      "reason": "site disabled"
+    },
+    {
+      "siteId": "fluxointeligenteia",
+      "skipped": true,
+      "reason": "site disabled"
+    },
+    {
+      "siteId": "sistemavendadireta",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Possível texto vazado na capa (sample: \"vent itm\")",
+      "angle": "MMN",
+      "theme": "integracao de sistema de venda direta com ERP (TOTVS, Bling)",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/sistemavendadireta/2026-08-15/integrar-sistema-venda-direta-erp.json",
+      "markdownPath": "automation/blog-bot/out/sistemavendadireta/2026-08-15/integrar-sistema-venda-direta-erp.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "sistemavendadireta/2026/08/15/integrar-sistema-venda-direta-erp/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Um complexo construto abstrato de anéis geométricos concêntricos em camadas, com um núcleo vertical metálico em azul profundo",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": true,
+          "alphanumericCount": 16,
+          "sample": "vent itm"
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "sistemavendadireta/index.php",
+          "sistemavendadireta/blog/index.php",
+          "sistemavendadireta/2026/08/15/integrar-sistema-venda-direta-erp/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "emergency",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Possivel texto vazado na capa (sample: \"eqs PROPERTY CERTIFICATE\")",
+      "angle": "investigacao patrimonial",
+      "theme": "due diligence imobiliaria com certidoes orientadas",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": [
+          {
+            "url": "https://capitalaberto.com.br/feed/",
+            "error": "HTTP 404"
+          }
+        ]
+      },
+      "outputPath": "automation/blog-bot/out/emergency/2026-08-15/conduzir-due-diligence-imobiliaria-eficaz.json",
+      "markdownPath": "automation/blog-bot/out/emergency/2026-08-15/conduzir-due-diligence-imobiliaria-eficaz.md",
+      "publishResult": {
+        "target": "api",
+        "apiStatus": 201,
+        "apiUrl": "https://emergency.com.br/blog/conduzir-due-diligence-imobiliaria-eficaz",
+        "apiId": 40,
+        "apiPublishedAt": "2026-08-15T07:17:29-03:00",
+        "coverPath": "automation/blog-bot/out/emergency/covers/conduzir-due-diligence-imobiliaria-eficaz.jpg",
+        "coverSize": 232006,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Um robô humanoide prateado de perfil, olhando para uma pilha de certificados de registro imobiliário em camadas douradas",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": true,
+          "alphanumericCount": 35,
+          "sample": "eqs PROPERTY CERTIFICATE"
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    },
+    {
+      "siteId": "bfrintelligence",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Possível texto vazado na capa (sample: \"WYYe ALA\")",
+      "angle": "automacao e integracoes",
+      "theme": "seguranca e guardrails em agentes corporativos",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/bfrintelligence/2026-08-15/seguranca-guardrails-agentes-ia-operacao.json",
+      "markdownPath": "automation/blog-bot/out/bfrintelligence/2026-08-15/seguranca-guardrails-agentes-ia-operacao.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "bfrintelligence/2026/08/15/seguranca-guardrails-agentes-ia-operacao/index.html",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Painel de disjuntores industriais com interruptores alinhados em alumínio frio, iluminado por luz azul, simbolizando limites operacionais da IA",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": true,
+          "alphanumericCount": 12,
+          "sample": "WYYe ALA"
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    }
+  ],
+  "duplications": [],
+  "relatedRefresh": {
+    "touched": 64,
+    "unchanged": 91,
+    "errors": [],
+    "totalCards": 143,
+    "totalFiles": 155
+  },
+  "fallbackCount": 0,
+  "allFallback": false,
+  "finishedAt": "2026-08-15T10:20:39.926Z",
+  "ok": true
+}

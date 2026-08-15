@@ -245,19 +245,19 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="https://sistemavendadireta.com.br/2026/08/15/integrar-sistema-venda-direta-erp/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/integrar-sistema-venda-direta-erp.jpg" alt="Como integrar seu sistema de venda direta com ERP" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Sistema Venda Direta</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/08/15/integrar-sistema-venda-direta-erp/" rel="noopener" target="_blank" class="hover:underline">Como integrar seu sistema de venda direta com ERP</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a integração de sistemas pode otimizar seu MMN.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="https://bfrintelligence.com.br/2026/05/09/implementar-agentes-corporativos-ia-governanca/" rel="noopener" target="_blank"><img src="https://bfrintelligence.com.br/imagens/posts/implementar-agentes-corporativos-ia-governanca.jpg" alt="Estruturar agentes corporativos de IA, focando em…" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">BFR Intelligence</p>
     <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://bfrintelligence.com.br/2026/05/09/implementar-agentes-corporativos-ia-governanca/" rel="noopener" target="_blank" class="hover:underline">Estruturar agentes corporativos de IA, focando em…</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Saiba como estruturar agentes corporativos de IA, focando em governança e segurança para operações confiáveis.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://fluxointeligenteia.com.br/2026/05/06/canais-integrados-base-operacional-agentes-corporativos/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/canais-integrados-base-operacional-agentes-corporativos.jpg" alt="Canais Integrados: Base Operacional" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">FluxoInteligente IA</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/05/06/canais-integrados-base-operacional-agentes-corporativos/" rel="noopener" target="_blank" class="hover:underline">Canais Integrados: Base Operacional</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Para criar agentes corporativos com RAG, é essencial integrar canais e ferramentas que garantam governança, auditoria e permissões adequa...</p>
   </div>
 </article>
   </div>
