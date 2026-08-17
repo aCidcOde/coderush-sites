@@ -306,9 +306,9 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
   <main id="conteudo" class="mx-auto max-w-[1140px] px-4 sm:px-6">
     <section id="secao1" class="grid items-center gap-6 py-8 md:py-10 lg:grid-cols-2 lg:gap-10">
       <div class="space-y-5">
-        <h1 class="font-[var(--font-heading)] text-4xl font-bold leading-[1.1] sm:text-5xl lg:text-[52px]">
-          Sistema completo de<br />
-          marketing multinível e venda direta
+        <h1 class="font-[var(--font-heading)] text-3xl font-bold leading-[1.15] sm:text-4xl lg:text-[40px]">
+          Sistema completo de marketing<br />
+          multinível e venda direta
         </h1>
         <p class="max-w-[620px] text-base leading-relaxed text-white/90 sm:text-lg">
           Sistema, Escritório Virtual, Administrador, Loja Virtual, Site, Centro de Distribuição,

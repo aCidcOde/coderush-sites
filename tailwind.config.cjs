@@ -1,6 +1,9 @@
 module.exports = {
   content: [
     "./sistemavendadireta/index.php",
+    // inc/ gera HTML (faixa de promocao, cases): sem varrer aqui, as classes
+    // usadas nesses includes nunca entram no CSS e o layout quebra em producao
+    "./sistemavendadireta/inc/**/*.php",
     "./sistemavendadireta/blog/**/*.php",
     "./sistemavendadireta/cases/**/*.php",
     "./sistemavendadireta/oferta/**/*.php",
