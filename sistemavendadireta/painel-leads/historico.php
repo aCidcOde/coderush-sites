@@ -21,6 +21,19 @@ Campos:
 return [
     [
         'data' => '2026-08-17',
+        'area' => 'medicao',
+        'titulo' => 'Primeiro lead da campanha, com atribuição completa',
+        'porque' => 'Marco da operação: a cadeia inteira fechou o ciclo pela primeira vez — '
+            . 'clique no anúncio, landing page, uso do simulador, clique no WhatsApp, lead '
+            . 'gravado com gclid, evento no GA4 e conversão importada de volta no Google Ads.',
+        'efeito' => 'Lead de 14/08 19h, grupo Sistema MMN, faturamento simulado até R$ 50 mil '
+            . '(faixa de R$ 500/mês), referência R94KZ. Custo por lead de R$ 36,99 — todo o '
+            . 'investido até então. Revelou também uma falha de leitura: a coluna de conversões '
+            . 'do Ads mostrava zero por atraso de importação, enquanto o lead já estava no banco. '
+            . 'Cruzar as duas fontes daqui pra frente.',
+    ],
+    [
+        'data' => '2026-08-17',
         'area' => 'site',
         'titulo' => 'LP /oferta/ passou a falar "marketing multinível"',
         'porque' => 'O Índice de Qualidade formou e deu nota 5/10 nas duas palavras pontuadas, '
