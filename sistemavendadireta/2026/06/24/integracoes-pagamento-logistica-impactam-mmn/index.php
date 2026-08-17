@@ -154,14 +154,14 @@
         </ul>
       </section>
       <aside class="my-8 rounded-2xl border-l-4 border-white bg-white/10 p-5 sm:p-6">
-        <p class="text-sm leading-7 text-white/90 sm:text-base">Já estruturamos isso em diversos clientes. Se faz sentido para o seu cenário, vale uma conversa sobre como podemos ajudar. <a href="../../../../#contato" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Solicite um orcamento →</a></p>
+        <p class="text-sm leading-7 text-white/90 sm:text-base">Já estruturamos isso em diversos clientes. Se faz sentido para o seu cenário, vale uma conversa sobre como podemos ajudar. <a href="../../../../?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Solicite um orcamento →</a></p>
       </aside>
       <section class="mt-8">
         <h2 class="text-xl font-semibold text-white sm:text-2xl">Desafios enfrentados sem integrações</h2>
         <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">A falta de integrações pode gerar desafios significativos para empresas de MMN. Processos manuais levam a erros, aumento de custos e insatisfação dos distribuidores. Além disso, a dificuldade em acompanhar comissões e pedidos pode resultar em perda de vendas e desmotivação na equipe. Para evitar esses problemas, investir em um software que integre todas as operações é essencial.</p>
       </section>
       <p class="my-6 text-sm leading-7 text-white/85 sm:text-base">
-        Se você busca otimizar suas operações de MMN, considere uma conversa com nossos especialistas. <a href="../../../../#contato" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Solicite um orcamento →</a>
+        Se você busca otimizar suas operações de MMN, considere uma conversa com nossos especialistas. <a href="../../../../?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Solicite um orcamento →</a>
       </p>
       <section class="mt-8">
         <h2 class="text-xl font-semibold text-white sm:text-2xl">O papel da tecnologia nas operações de campo</h2>
@@ -186,10 +186,10 @@
     </article>
 
     <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
-      <h2 class="text-xl font-semibold text-white">Quer aplicar IA na operação comercial com previsibilidade?</h2>
-      <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">A SVD estrutura arquitetura, integração e governança para levar automação ao negócio com previsibilidade.</p>
-      <a href="../../../../#contato" class="mt-4 inline-flex rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/10">
-        Solicite um orçamento
+      <h2 class="text-xl font-semibold text-white">Precisa de um sistema de marketing multinível pronto para operar?</h2>
+      <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">O Sistema Venda Direta já roda no Brasil, Paraguai e Bolívia: rede binária e unilevel, escritório do consultor, loja virtual e financeiro integrados, parametrizados para o seu plano.</p>
+      <a href="../../../../?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="mt-4 inline-flex rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/10">
+        Conhecer o sistema
       </a>
     </section>
 
@@ -247,19 +247,19 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://fluxointeligenteia.com.br/2026/07/12/integrando-agentes-corporativos-ia-governanca-eficiente/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/integrando-agentes-corporativos-ia-governanca-eficiente.jpg" alt="Integrando Agentes Corporativos de IA com Governança Eficiente" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">FluxoInteligente IA</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/07/12/integrando-agentes-corporativos-ia-governanca-eficiente/" rel="noopener" target="_blank" class="hover:underline">Integrando Agentes Corporativos de IA com Governança Eficiente</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como implementar agentes corporativos de IA com governança e canais integrados para maximizar a eficiência.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="https://bfrintelligence.com.br/2026/07/12/integrando-agentes-corporativos-ia-governanca-eficiente/" rel="noopener" target="_blank"><img src="https://bfrintelligence.com.br/imagens/posts/integrando-agentes-corporativos-ia-governanca-eficiente.jpg" alt="Integrando Agentes Corporativos de IA com Governança Eficiente" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">BFR Intelligence</p>
     <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://bfrintelligence.com.br/2026/07/12/integrando-agentes-corporativos-ia-governanca-eficiente/" rel="noopener" target="_blank" class="hover:underline">Integrando Agentes Corporativos de IA com Governança Eficiente</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como implementar agentes corporativos de IA com governança e canais integrados para maximizar a eficiência.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="https://coderush.com.br/2026/06/21/priorizar-iniciativas-tecnologia-medir-roi/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/priorizar-iniciativas-tecnologia-medir-roi.jpg" alt="Como priorizar iniciativas de tecnologia e medir ROI" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">CodeRush</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/06/21/priorizar-iniciativas-tecnologia-medir-roi/" rel="noopener" target="_blank" class="hover:underline">Como priorizar iniciativas de tecnologia e medir ROI</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Dicas práticas sobre como decidir iniciativas tecnológicas com foco em ROI e eficiência.</p>
   </div>
 </article>
   </div>
@@ -288,8 +288,8 @@
         <div>
           <h3 class="text-lg font-semibold text-white">Próximo passo</h3>
           <p class="mt-3 text-sm leading-7 text-white/80">Resposta humana, sem fila generica. Fale com o time comercial do site.</p>
-          <a href="../../../../#contato" class="mt-4 inline-flex rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/10">
-            Solicite um orçamento
+          <a href="../../../../?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="mt-4 inline-flex rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/10">
+            Conhecer o sistema
           </a>
         </div>
       </div>

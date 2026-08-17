@@ -254,11 +254,11 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://fluxointeligenteia.com.br/2026/04/30/automacao-processos-llms-n8n-atendimento/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/automacao-processos-llms-n8n-atendimento.jpg" alt="Automação de Processos com LLMs e n8n" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://bfrintelligence.com.br/2026/08/05/bfr-intelligence-microsoft-startups-aws-activate/" rel="noopener" target="_blank"><img src="https://bfrintelligence.com.br/imagens/posts/bfr-intelligence-microsoft-startups-aws-activate.jpg" alt="BFR Intelligence nos programas de startup da Microsoft e da AWS" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
-    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">FluxoInteligente IA</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/04/30/automacao-processos-llms-n8n-atendimento/" rel="noopener" target="_blank" class="hover:underline">Automação de Processos com LLMs e n8n</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">A automação com IA, por meio de agentes inteligentes, reduz custos e retrabalho, otimizando processos de atendimento. Ferramentas como La...</p>
+    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">BFR Intelligence</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://bfrintelligence.com.br/2026/08/05/bfr-intelligence-microsoft-startups-aws-activate/" rel="noopener" target="_blank" class="hover:underline">BFR Intelligence nos programas de startup da Microsoft e da AWS</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Agora com Azure OpenAI e AWS Bedrock disponíveis: mais opções de modelo por caso de uso, sem lock-in e com o dado sob governança de nuvem...</p>
   </div>
 </article>
   </div>

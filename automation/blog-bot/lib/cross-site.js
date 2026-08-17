@@ -107,10 +107,16 @@ function buildCrossSiteIndex(rootDir, sitesConfig) {
   return index;
 }
 
+// Sites descontinuados nao podem receber link: o fluxointeligenteia responde 301
+// pra BFR desde 03/08/2026, entao cada card apontando pra la mandava o leitor (e a
+// autoridade do link) pra um redirecionamento. Link tem que ir pra destino vivo.
+const SITES_DESCONTINUADOS = new Set(["fluxointeligenteia"]);
+
 function pickRelatedFromOtherSites({ currentSiteId, currentTitle, currentText = "", index, max = 3 }) {
   const queryTokens = new Set([...tokenize(currentTitle), ...tokenize(currentText)]);
   const candidates = index
-    .filter((card) => card.siteId !== currentSiteId && card.title)
+    .filter((card) => card.siteId !== currentSiteId && card.title
+      && !SITES_DESCONTINUADOS.has(card.siteId))
     .map((card) => {
       const cardTokens = new Set(tokenize(`${card.title} ${card.excerpt}`));
       let overlap = 0;

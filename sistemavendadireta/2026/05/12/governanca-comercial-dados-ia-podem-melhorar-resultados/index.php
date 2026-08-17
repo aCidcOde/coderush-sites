@@ -154,14 +154,14 @@
         </ul>
       </section>
       <aside class="my-8 rounded-2xl border-l-4 border-white bg-white/10 p-5 sm:p-6">
-        <p class="text-sm leading-7 text-white/90 sm:text-base">Já estruturamos isso em várias empresas com ótimo resultado. Vale a pena conversar sobre como isso pode se aplicar ao seu cenário. <a href="../../../../#contato" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Solicite um orcamento →</a></p>
+        <p class="text-sm leading-7 text-white/90 sm:text-base">Já estruturamos isso em várias empresas com ótimo resultado. Vale a pena conversar sobre como isso pode se aplicar ao seu cenário. <a href="../../../../?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Solicite um orcamento →</a></p>
       </aside>
       <section class="mt-8">
         <h2 class="text-xl font-semibold text-white sm:text-2xl">Como a IA Contribui para a Governança</h2>
         <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">A inteligência artificial permite uma análise preditiva que pode transformar a maneira como as empresas de venda direta operam. Por exemplo, ferramentas de IA podem prever quais produtos terão maior demanda, permitindo que as equipes de vendas se preparem adequadamente. Além disso, a IA pode otimizar o processo de comissionamento, garantindo que os distribuidores recebam suas comissões de forma justa e eficiente, o que ajuda a aumentar a motivação e a retenção de talentos.</p>
       </section>
       <p class="my-6 text-sm leading-7 text-white/85 sm:text-base">
-        Vamos explorar as melhores práticas para sua empresa de venda direta. <a href="../../../../#contato" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Solicite um orcamento →</a>
+        Vamos explorar as melhores práticas para sua empresa de venda direta. <a href="../../../../?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Solicite um orcamento →</a>
       </p>
       <section class="mt-8">
         <h2 class="text-xl font-semibold text-white sm:text-2xl">Cuidado com Armadilhas Comuns</h2>
@@ -186,10 +186,10 @@
     </article>
 
     <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
-      <h2 class="text-xl font-semibold text-white">Quer aplicar IA na operação comercial com previsibilidade?</h2>
-      <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">A SVD estrutura arquitetura, integração e governança para levar automação ao negócio com previsibilidade.</p>
-      <a href="../../../../#contato" class="mt-4 inline-flex rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/10">
-        Solicite um orçamento
+      <h2 class="text-xl font-semibold text-white">Precisa de um sistema de marketing multinível pronto para operar?</h2>
+      <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">O Sistema Venda Direta já roda no Brasil, Paraguai e Bolívia: rede binária e unilevel, escritório do consultor, loja virtual e financeiro integrados, parametrizados para o seu plano.</p>
+      <a href="../../../../?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="mt-4 inline-flex rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/10">
+        Conhecer o sistema
       </a>
     </section>
 
@@ -255,11 +255,11 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://fluxointeligenteia.com.br/2026/04/30/automacao-processos-llms-n8n-atendimento/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/automacao-processos-llms-n8n-atendimento.jpg" alt="Automação de Processos com LLMs e n8n" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://bfrintelligence.com.br/2026/07/12/integrando-agentes-corporativos-ia-governanca-eficiente/" rel="noopener" target="_blank"><img src="https://bfrintelligence.com.br/imagens/posts/integrando-agentes-corporativos-ia-governanca-eficiente.jpg" alt="Integrando Agentes Corporativos de IA com Governança Eficiente" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
-    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">FluxoInteligente IA</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/04/30/automacao-processos-llms-n8n-atendimento/" rel="noopener" target="_blank" class="hover:underline">Automação de Processos com LLMs e n8n</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">A automação com IA, por meio de agentes inteligentes, reduz custos e retrabalho, otimizando processos de atendimento. Ferramentas como La...</p>
+    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">BFR Intelligence</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://bfrintelligence.com.br/2026/07/12/integrando-agentes-corporativos-ia-governanca-eficiente/" rel="noopener" target="_blank" class="hover:underline">Integrando Agentes Corporativos de IA com Governança Eficiente</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como implementar agentes corporativos de IA com governança e canais integrados para maximizar a eficiência.</p>
   </div>
 </article>
   </div>
@@ -288,8 +288,8 @@
         <div>
           <h3 class="text-lg font-semibold text-white">Próximo passo</h3>
           <p class="mt-3 text-sm leading-7 text-white/80">Resposta humana, sem fila generica. Fale com o time comercial do site.</p>
-          <a href="../../../../#contato" class="mt-4 inline-flex rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/10">
-            Solicite um orçamento
+          <a href="../../../../?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="mt-4 inline-flex rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/10">
+            Conhecer o sistema
           </a>
         </div>
       </div>

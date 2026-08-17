@@ -154,14 +154,14 @@
         </ul>
       </section>
       <aside class="my-8 rounded-2xl border-l-4 border-white bg-white/10 p-5 sm:p-6">
-        <p class="text-sm leading-7 text-white/90 sm:text-base">Já estruturamos isso em várias empresas de MMN, e os resultados são animadores. Vale uma conversa para entender como isso se aplica ao seu cenário. <a href="../../../../#contato" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Solicite um orcamento →</a></p>
+        <p class="text-sm leading-7 text-white/90 sm:text-base">Já estruturamos isso em várias empresas de MMN, e os resultados são animadores. Vale uma conversa para entender como isso se aplica ao seu cenário. <a href="../../../../?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Solicite um orcamento →</a></p>
       </aside>
       <section class="mt-8">
         <h2 class="text-xl font-semibold text-white sm:text-2xl">Implementando Soluções Tecnológicas</h2>
         <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">Para implementar soluções tecnológicas eficazes no MMN, é crucial escolher um software que se adapte às necessidades da sua operação. O sistema deve integrar com ferramentas de CRM, facilitar o comissionamento e ser flexível o suficiente para escalar conforme a empresa cresce. Plataformas como a [ATOMMN](https://atommn.com.br/) oferecem soluções sob medida, enquanto o [Mediaw](https://www.mediaw.com.br/) proporciona um ecossistema completo para canais próprios.</p>
       </section>
       <p class="my-6 text-sm leading-7 text-white/85 sm:text-base">
-        Considere como a tecnologia pode alavancar suas vendas diretas. <a href="../../../../#contato" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Solicite um orcamento →</a>
+        Considere como a tecnologia pode alavancar suas vendas diretas. <a href="../../../../?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Solicite um orcamento →</a>
       </p>
       <section class="mt-8">
         <h2 class="text-xl font-semibold text-white sm:text-2xl">Desafios a Evitar na Adoção de Tecnologia</h2>
@@ -186,10 +186,10 @@
     </article>
 
     <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
-      <h2 class="text-xl font-semibold text-white">Quer aplicar IA na operação comercial com previsibilidade?</h2>
-      <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">A SVD estrutura arquitetura, integração e governança para levar automação ao negócio com previsibilidade.</p>
-      <a href="../../../../#contato" class="mt-4 inline-flex rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/10">
-        Solicite um orçamento
+      <h2 class="text-xl font-semibold text-white">Precisa de um sistema de marketing multinível pronto para operar?</h2>
+      <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">O Sistema Venda Direta já roda no Brasil, Paraguai e Bolívia: rede binária e unilevel, escritório do consultor, loja virtual e financeiro integrados, parametrizados para o seu plano.</p>
+      <a href="../../../../?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="mt-4 inline-flex rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/10">
+        Conhecer o sistema
       </a>
     </section>
 
@@ -239,14 +239,6 @@
   <p class="mt-2 text-sm text-white/70">Conteúdo recente dos outros sites do ecossistema.</p>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://fluxointeligenteia.com.br/2026/04/30/automacao-processos-llms-n8n-atendimento/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/automacao-processos-llms-n8n-atendimento.jpg" alt="Automação de Processos com LLMs e n8n" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">FluxoInteligente IA</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/04/30/automacao-processos-llms-n8n-atendimento/" rel="noopener" target="_blank" class="hover:underline">Automação de Processos com LLMs e n8n</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">A automação com IA, por meio de agentes inteligentes, reduz custos e retrabalho, otimizando processos de atendimento. Ferramentas como La...</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="https://coderush.com.br/2026/07/12/governanca-tecnologia-impulsiona-empresas-medias/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/governanca-tecnologia-impulsiona-empresas-medias.jpg" alt="Como a governança de tecnologia impulsiona empresas médias" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">CodeRush</p>
@@ -260,6 +252,14 @@
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">BFR Intelligence</p>
     <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://bfrintelligence.com.br/2026/08/15/seguranca-guardrails-agentes-ia-operacao/" rel="noopener" target="_blank" class="hover:underline">Segurança e Guardrails para Agentes de IA na Operação</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como implementar segurança e governança eficaz em agentes de IA para resultados mensuráveis.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="https://codafacil.dev/2026/06/18/ia-pode-otimizar-desenvolvimento-software-sob-medida/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/ia-pode-otimizar-desenvolvimento-software-sob-medida.jpg" alt="Como a IA pode otimizar o desenvolvimento de software sob medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/06/18/ia-pode-otimizar-desenvolvimento-software-sob-medida/" rel="noopener" target="_blank" class="hover:underline">Como a IA pode otimizar o desenvolvimento de software sob medida</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Explore como aplicar IA para acelerar a entrega de software, mantendo a qualidade e eficiência.</p>
   </div>
 </article>
   </div>
@@ -288,8 +288,8 @@
         <div>
           <h3 class="text-lg font-semibold text-white">Próximo passo</h3>
           <p class="mt-3 text-sm leading-7 text-white/80">Resposta humana, sem fila generica. Fale com o time comercial do site.</p>
-          <a href="../../../../#contato" class="mt-4 inline-flex rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/10">
-            Solicite um orçamento
+          <a href="../../../../?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="mt-4 inline-flex rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/10">
+            Conhecer o sistema
           </a>
         </div>
       </div>

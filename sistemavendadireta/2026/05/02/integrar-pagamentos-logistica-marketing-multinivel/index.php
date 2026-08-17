@@ -154,14 +154,14 @@
         </ul>
       </section>
       <aside class="my-8 rounded-2xl border-l-4 border-white bg-white/10 p-5 sm:p-6">
-        <p class="text-sm leading-7 text-white/90 sm:text-base">Já estruturamos isso em diversos clientes e os resultados são claros: maior eficiência e menos retrabalho. Vale a pena conversar sobre como isso se aplica ao seu cenário. <a href="../../../../#contato" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Solicite um orcamento →</a></p>
+        <p class="text-sm leading-7 text-white/90 sm:text-base">Já estruturamos isso em diversos clientes e os resultados são claros: maior eficiência e menos retrabalho. Vale a pena conversar sobre como isso se aplica ao seu cenário. <a href="../../../../?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Solicite um orcamento →</a></p>
       </aside>
       <section class="mt-8">
         <h2 class="text-xl font-semibold text-white sm:text-2xl">O papel do CRM nas integrações</h2>
         <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">Um CRM robusto é fundamental para gerenciar as interações com os distribuidores e facilitar a integração com sistemas de pagamento e logística. Com um CRM eficaz, os diretores comerciais conseguem identificar padrões de venda, prever resultados e otimizar a performance da equipe. A aplicação de IA nesse contexto pode proporcionar insights valiosos, ajudando a ajustar estratégias rapidamente. Segundo dados recentes, a automação está se tornando um diferencial competitivo no setor de D2C, como indicado em [Key Trends in D2C Retail](https://www.directsellingnews.com/2026/04/27/key-trends-in-d2c-retail/?utm_source=rss&amp;#038;utm_medium=rss&amp;#038;utm_campaign=key-trends-in-d2c-retail).</p>
       </section>
       <p class="my-6 text-sm leading-7 text-white/85 sm:text-base">
-        Uma boa integração pode mudar a dinâmica do seu negócio. <a href="../../../../#contato" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Solicite um orcamento →</a>
+        Uma boa integração pode mudar a dinâmica do seu negócio. <a href="../../../../?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Solicite um orcamento →</a>
       </p>
       <section class="mt-8">
         <h2 class="text-xl font-semibold text-white sm:text-2xl">Desafios a serem evitados</h2>
@@ -186,10 +186,10 @@
     </article>
 
     <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
-      <h2 class="text-xl font-semibold text-white">Quer aplicar IA na operação comercial com previsibilidade?</h2>
-      <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">A SVD estrutura arquitetura, integração e governança para levar automação ao negócio com previsibilidade.</p>
-      <a href="../../../../#contato" class="mt-4 inline-flex rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/10">
-        Solicite um orçamento
+      <h2 class="text-xl font-semibold text-white">Precisa de um sistema de marketing multinível pronto para operar?</h2>
+      <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">O Sistema Venda Direta já roda no Brasil, Paraguai e Bolívia: rede binária e unilevel, escritório do consultor, loja virtual e financeiro integrados, parametrizados para o seu plano.</p>
+      <a href="../../../../?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="mt-4 inline-flex rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/10">
+        Conhecer o sistema
       </a>
     </section>
 
@@ -247,19 +247,19 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://fluxointeligenteia.com.br/2026/05/06/canais-integrados-base-operacional-agentes-corporativos/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/canais-integrados-base-operacional-agentes-corporativos.jpg" alt="Canais Integrados: Base Operacional" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">FluxoInteligente IA</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/05/06/canais-integrados-base-operacional-agentes-corporativos/" rel="noopener" target="_blank" class="hover:underline">Canais Integrados: Base Operacional</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Para criar agentes corporativos com RAG, é essencial integrar canais e ferramentas que garantam governança, auditoria e permissões adequa...</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="https://coderush.com.br/2026/07/03/integrar-ia-processos-retaguarda-arquitetura-software/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/integrar-ia-processos-retaguarda-arquitetura-software.jpg" alt="Como integrar IA em processos de retaguarda com arquitetura de software" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">CodeRush</p>
     <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/07/03/integrar-ia-processos-retaguarda-arquitetura-software/" rel="noopener" target="_blank" class="hover:underline">Como integrar IA em processos de retaguarda com arquitetura de software</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como a arquitetura de software pode facilitar a integração de IA em processos de retaguarda.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="https://bfrintelligence.com.br/2026/05/21/integrar-agentes-corporativos-ia-governanca/" rel="noopener" target="_blank"><img src="https://bfrintelligence.com.br/imagens/posts/integrar-agentes-corporativos-ia-governanca.jpg" alt="Como integrar agentes corporativos de IA com governança" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">BFR Intelligence</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://bfrintelligence.com.br/2026/05/21/integrar-agentes-corporativos-ia-governanca/" rel="noopener" target="_blank" class="hover:underline">Como integrar agentes corporativos de IA com governança</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como implementar agentes de IA com governança e automação segura.</p>
   </div>
 </article>
   </div>
@@ -288,8 +288,8 @@
         <div>
           <h3 class="text-lg font-semibold text-white">Próximo passo</h3>
           <p class="mt-3 text-sm leading-7 text-white/80">Resposta humana, sem fila generica. Fale com o time comercial do site.</p>
-          <a href="../../../../#contato" class="mt-4 inline-flex rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/10">
-            Solicite um orçamento
+          <a href="../../../../?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="mt-4 inline-flex rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/10">
+            Conhecer o sistema
           </a>
         </div>
       </div>

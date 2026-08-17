@@ -143,11 +143,17 @@ const SITE_COPY = {
     articleLabel: "Blog SVD",
     footerBlurb:
       "A Sistema Venda Direta desenvolve soluções para operação comercial, vendas diretas e evolução tecnológica com IA aplicada.",
-    ctaTitle: "Quer aplicar IA na operação comercial com previsibilidade?",
+    // O CTA anterior vendia consultoria de IA ("arquitetura, integração e
+    // governança") — nao e o que o SVD vende, e mandava pra ancora #contato do
+    // proprio post, um beco sem saida. Agora nomeia o produto que as buscas
+    // organicas procuram e leva pra home, que tem a explicacao completa e o
+    // formulario. UTM marcada pra medir o fluxo blog -> produto no painel.
+    ctaTitle: "Precisa de um sistema de marketing multinível pronto para operar?",
     ctaBody:
-      "A SVD estrutura arquitetura, integração e governança para levar automação ao negócio com previsibilidade.",
-    ctaPath: "#contato",
-    ctaLabel: "Solicite um orçamento",
+      "O Sistema Venda Direta já roda no Brasil, Paraguai e Bolívia: rede binária e unilevel, "
+      + "escritório do consultor, loja virtual e financeiro integrados, parametrizados para o seu plano.",
+    ctaPath: "?utm_source=blog&utm_medium=post&utm_campaign=cta-artigo",
+    ctaLabel: "Conhecer o sistema",
     phone: "11 99456-6726",
     email: "contato@sistemavendadireta.com.br",
     accentLinkClass: "text-white hover:text-white/80",

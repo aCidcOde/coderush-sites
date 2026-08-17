@@ -22,8 +22,15 @@ $promoModal = [
 $promoModalDeadline = new DateTimeImmutable($promoModal['deadline'] . ' 23:59:59', new DateTimeZone('America/Sao_Paulo'));
 $promoModalActive = new DateTimeImmutable('now', new DateTimeZone('America/Sao_Paulo')) <= $promoModalDeadline;
 $promoModalDeadlineLabel = $promoModalDeadline->format('d/m/Y');
-$seoTitle = 'Sistema para Vendas Diretas e Marketing Multinível — MMN';
-$seoDescription = 'Plataforma MMN com planos binário e unilevel, gateways de pagamento e loja virtual integrada. 10 anos de Sistema Venda Direta — ecossistema CodeRush no Brasil.';
+// Esta home carrega 711 impressoes organicas em 90 dias e rankeia entre a 1a e a
+// 3a posicao pras buscas comerciais do nicho — e levava 10 cliques. O title ja
+// tinha os termos; o que nao havia era motivo pra clicar. A description antiga
+// era lista de recurso terminando em "ecossistema CodeRush no Brasil", jargao
+// interno que desperdicava a posicao mais memoravel do snippet.
+// Agora: prova (10 anos, paises reais) e diferencial (pronto pra operar).
+$seoTitle = 'Sistema de Marketing Multinível e Venda Direta há 10 Anos';
+$seoDescription = 'Sistema MMN pronto para operar: rede binária e unilevel, escritório do consultor, '
+    . 'loja e financeiro integrados. Clientes no Brasil, Paraguai e Bolívia.';
 $seoOgImage = $seoBase . '/imagens/og-sistema-venda-direta.jpg';
 $seoLogo = $seoBase . '/wp-content/uploads/2023/04/Logo-Azul-004AAD-1.png';
 
@@ -300,8 +307,8 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
     <section id="secao1" class="grid items-center gap-6 py-8 md:py-10 lg:grid-cols-2 lg:gap-10">
       <div class="space-y-5">
         <h1 class="font-[var(--font-heading)] text-4xl font-bold leading-[1.1] sm:text-5xl lg:text-[52px]">
-          Completo e Flexivel<br />
-          Sistema Venda Direta
+          Sistema completo de<br />
+          marketing multinível e venda direta
         </h1>
         <p class="max-w-[620px] text-base leading-relaxed text-white/90 sm:text-lg">
           Sistema, Escritório Virtual, Administrador, Loja Virtual, Site, Centro de Distribuição,

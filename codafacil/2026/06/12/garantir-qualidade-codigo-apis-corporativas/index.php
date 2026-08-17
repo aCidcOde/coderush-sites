@@ -238,14 +238,6 @@
   <p class="mt-2 text-sm text-white/70">Conteúdo recente dos outros sites do ecossistema.</p>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://fluxointeligenteia.com.br/2026/06/24/ferramentas-seguras-implementar-agentes-corporativos-ia/" rel="noopener" target="_blank"><img src="https://fluxointeligenteia.com.br/imagens/posts/ferramentas-seguras-implementar-agentes-corporativos-ia.jpg" alt="Ferramentas seguras para implementar agentes corporativos de IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">FluxoInteligente IA</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://fluxointeligenteia.com.br/2026/06/24/ferramentas-seguras-implementar-agentes-corporativos-ia/" rel="noopener" target="_blank" class="hover:underline">Ferramentas seguras para implementar agentes corporativos de IA</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como garantir governança e segurança em agentes corporativos de IA com ferramentas e práticas eficazes.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="https://bfrintelligence.com.br/2026/06/24/ferramentas-seguras-implementar-agentes-corporativos-ia/" rel="noopener" target="_blank"><img src="https://bfrintelligence.com.br/imagens/posts/ferramentas-seguras-implementar-agentes-corporativos-ia.jpg" alt="Ferramentas seguras para implementar agentes corporativos de IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">BFR Intelligence</p>
@@ -259,6 +251,14 @@
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">CodeRush</p>
     <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/05/02/garantir-governanca-arquitetura-software-critica/" rel="noopener" target="_blank" class="hover:underline">Como garantir governança em arquitetura de software crítica</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda a importância da governança na arquitetura de software para operações críticas e como a IA pode auxiliar.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="https://sistemavendadireta.com.br/2026/07/30/integracoes-pagamento-logistica-marketing-multinivel/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/integracoes-pagamento-logistica-marketing-multinivel.jpg" alt="Integrações de pagamento e logística no marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Sistema Venda Direta</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/07/30/integracoes-pagamento-logistica-marketing-multinivel/" rel="noopener" target="_blank" class="hover:underline">Integrações de pagamento e logística no marketing multinível</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como integrar pagamentos e logística para otimizar seu CRM no MMN.</p>
   </div>
 </article>
   </div>
