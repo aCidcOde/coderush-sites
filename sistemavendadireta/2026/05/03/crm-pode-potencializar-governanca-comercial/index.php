@@ -96,12 +96,12 @@
   </header>
 
   <main class="mx-auto max-w-4xl px-4 py-8 sm:px-6 sm:py-10">
-<!-- PROMO-STRIP START -->
-<?php require_once __DIR__ . '/../../../../inc/promo.php'; echo promoStrip('crm-pode-potencializar-governanca-comercial'); ?>
-<!-- PROMO-STRIP END -->
     <a href="../../../../" class="inline-flex rounded-full border border-white/40 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-white/85 hover:bg-white/10">
       Voltar para o site principal
     </a>
+<!-- PROMO-STRIP START -->
+<?php require_once __DIR__ . '/../../../../inc/promo.php'; echo promoStrip('crm-pode-potencializar-governanca-comercial'); ?>
+<!-- PROMO-STRIP END -->
 
     <article class="mt-5 overflow-hidden rounded-3xl border border-white/15 bg-white/5">
       <figure class="relative">

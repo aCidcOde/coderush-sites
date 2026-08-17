@@ -74,10 +74,14 @@ function main() {
     let depois = limpar(antes);
 
     if (!remover) {
-      // <main> abre o conteudo; a faixa entra logo depois, acima do artigo
-      const m = depois.match(/<main[^>]*>/);
+      // A faixa entra DEPOIS do link "Voltar para o site principal", nao antes:
+      // esse link e navegacao e pertence ao topo. Colocando a faixa acima dele,
+      // a promocao aparecia antes de qualquer outra coisa da pagina e a pilha
+      // ficava sem hierarquia. Se o link nao existir, cai pro <main>.
+      const voltar = depois.match(/Voltar para o site principal\s*<\/a>/);
+      const m = voltar || depois.match(/<main[^>]*>/);
       if (!m) {
-        console.log(`  [!] ${path.relative(ROOT, arquivo)} — sem <main>, pulado`);
+        console.log(`  [!] ${path.relative(ROOT, arquivo)} — sem ancora, pulado`);
         pulados += 1;
         continue;
       }
