@@ -53,9 +53,13 @@ $whatsappHref = 'https://wa.me/' . $whatsappPhone . '?text=' . rawurlencode($wha
 
 $seoBase = 'https://www.sistemavendadireta.com.br';
 $seoUrl = $seoBase . '/oferta/';
-$seoTitle = 'Promoção 10 Anos: até 40% OFF na instalação | Sistema Venda Direta';
-$seoDescription = 'Plataforma completa de MMN: escritório, loja, rede e financeiro. '
-    . 'Instalação R$ 3.500 em 2x ou R$ 3.000 à vista, com implantação assistida por IA.';
+// SEO/Ads: o titulo precisa nomear o PRODUTO que a pessoa buscou, nao so a oferta.
+// O Indice de Qualidade do Google marcou a experiencia desta pagina como "abaixo da
+// media" (nota 5/10) — a palavra "multinivel" nao aparecia nenhuma vez, embora a
+// campanha compre exatamente "sistema multinivel" e "sistema marketing multinivel".
+$seoTitle = 'Sistema de Marketing Multinível e Venda Direta | Promoção 10 Anos';
+$seoDescription = 'Sistema de marketing multinível (MMN) e venda direta completo: escritório '
+    . 'do consultor, rede binária e unilevel, loja e financeiro. Instalação a partir de R$ 3.000.';
 ?>
 <!doctype html>
 <html lang="pt-BR">
@@ -130,10 +134,10 @@ $seoDescription = 'Plataforma completa de MMN: escritório, loja, rede e finance
           Celebrando 10 anos
         </p>
         <h1 class="mt-4 font-[var(--font-heading)] text-3xl font-bold leading-[1.1] sm:text-4xl lg:text-[46px]">
-          Sua operação de venda direta no ar com <span class="text-amber-300">até <?= (int) $discountCashPct ?>% de desconto</span> na instalação
+          Sistema de marketing multinível e venda direta no ar com <span class="text-amber-300">até <?= (int) $discountCashPct ?>% de desconto</span> na instalação
         </h1>
         <p class="mt-4 max-w-3xl text-base leading-relaxed text-white/90 sm:text-lg">
-          Plataforma completa de MMN: escritório virtual do consultor, rede binária e unilevel, loja, pedidos,
+          Plataforma completa de MMN (marketing multinível): escritório virtual do consultor, rede binária e unilevel, loja, pedidos,
           financeiro e relatórios. Sem construir nada do zero — o sistema já existe, roda hoje e é parametrizado para a sua regra de negócio.
         </p>
 
@@ -233,14 +237,14 @@ $seoDescription = 'Plataforma completa de MMN: escritório, loja, rede e finance
     </section>
 
     <section class="py-10">
-      <h2 class="font-[var(--font-heading)] text-2xl font-bold sm:text-[32px]">O que está incluso na instalação</h2>
+      <h2 class="font-[var(--font-heading)] text-2xl font-bold sm:text-[32px]">O que o sistema de marketing multinível já traz pronto</h2>
       <div class="mt-2 h-1 w-[72px] rounded-full bg-amber-300"></div>
 
       <div class="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
         <?php
         $included = [
             'Escritório virtual do consultor, com dashboard de ganhos, saldo e ativação',
-            'Rede binária com troca de perna preferencial e árvore unilevel',
+            'Rede multinível binária com troca de perna preferencial e árvore unilevel',
             'Ranking de líderes, contas inativas e contas pendentes',
             'Convites por e-mail com acompanhamento de cadastro',
             'Recompra e pacotes com desconto por plano',

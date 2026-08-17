@@ -20,6 +20,30 @@ Campos:
 
 return [
     [
+        'data' => '2026-08-17',
+        'area' => 'site',
+        'titulo' => 'LP /oferta/ passou a falar "marketing multinível"',
+        'porque' => 'O Índice de Qualidade formou e deu nota 5/10 nas duas palavras pontuadas, '
+            . 'com a experiência da página de destino marcada como ABAIXO DA MÉDIA (o anúncio, '
+            . 'em contraste, ficou acima da média). Investigando: a palavra "multinível" não '
+            . 'aparecia nenhuma vez na página, embora a campanha compre "sistema multinivel" e '
+            . '"sistema marketing multinivel". Quem buscava o termo caía numa página que nunca '
+            . 'o usava, e cujo título falava de desconto em vez do produto.',
+        'efeito' => 'Title, description, H1, subtítulo e seção de recursos reescritos nomeando '
+            . 'o produto. Nota baixa encarece o clique de todas as palavras, então a correção '
+            . 'vale para a campanha inteira. Velocidade estava ok (0,09s, 46 KB) — não era isso.',
+    ],
+    [
+        'data' => '2026-08-17',
+        'area' => 'ads',
+        'titulo' => '3 palavras do fim de semana e negativa de dropshipping',
+        'porque' => 'O relatório de termos do fim de semana veio limpo pela primeira vez — '
+            . 'nenhum recrutador, nenhum "mlm". Sobraram buscas qualificadas que não tínhamos '
+            . '("site mmn", "site de marketing multinivel", "plataforma marketing multinivel") '
+            . 'e um vazamento de outro mercado ("nuvemshop dropshipping").',
+        'efeito' => '44 palavras positivas e 54 negativas.',
+    ],
+    [
         'data' => '2026-08-15',
         'area' => 'ads',
         'titulo' => 'Negativas por intenção: o cluster "quero entrar na rede"',
