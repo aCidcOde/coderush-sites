@@ -130,6 +130,17 @@ O que faltava e passa a ser obrigatório:
 
 ## 6. Armadilhas
 
+- **Confira o `<title>` renderizado antes de culpar o texto.** No SVD, os 34 posts
+  saíam com o título decepado no meio da frase — "Como um CRM pode potencializar
+  sua | Sistema Venda Direta". A causa era o orçamento de 60 caracteres com o
+  sufixo da marca consumindo 23 deles, e um `seoTitle` bem escrito de 55
+  caracteres sendo descartado por não caber nos 37 restantes. Um post assim
+  ficava em 4º lugar com **zero clique em 29 impressões**. Antes de reescrever
+  copy, olhe o que o navegador está de fato exibindo.
+- **A marca no título é opcional; a frase não.** O Google anexa o nome do site
+  sozinho quando falta. Anexar sufixo com prioridade sobre o conteúdo troca o
+  clique por branding que viria de graça.
+
 - **O GA4 não entrega termo de busca orgânica** desde 2011 ("not provided"). Só o
   Search Console tem. Sem ele, escolher pauta é adivinhar.
 - **Search Console só coleta a partir da verificação** — não há retroativo. Cada
