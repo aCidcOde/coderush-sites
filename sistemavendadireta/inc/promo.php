@@ -18,6 +18,12 @@ ATENCAO: as 5 LPs em /oferta/* mantem a propria copia desses valores no topo do
 arquivo. Ao mudar preco ou prazo, alinhar tambem la.
 */
 
+// Ambiente de demonstracao navegavel (loja, escritorio do parceiro e admin), com
+// credenciais publicadas e SEM cadastro. E a oferta de menor atrito que temos:
+// concorrente dá "teste gratis 14 dias" exigindo cadastro; aqui a pessoa entra e
+// usa. Estava no ar desde sempre e linkada em lugar nenhum.
+const DEMO_URL = 'https://zohr.sistemavendadireta.com.br/primeiros-passos';
+
 const PROMO_DEADLINE = '2026-08-31';
 const PROMO_NOME = 'Promoção 10 Anos';
 const PROMO_INSTALL_DE = 5000;
@@ -81,9 +87,16 @@ function promoStrip(string $origem = 'blog'): string
 
     // mt-6 separa do botao "Voltar para o site principal", que fica logo acima;
     // embaixo quem da o respiro e o mt-5 do <article>, entao nao leva mb aqui
+    // O link da demonstracao anda junto: quem le um artigo tecnico costuma querer
+    // VER o sistema antes de falar com alguem. Sem cadastro, o atrito e zero.
+    $demo = htmlspecialchars(DEMO_URL . '?utm_source=blog&utm_medium=conteudo&utm_campaign=demo&utm_content='
+        . rawurlencode($origem), ENT_QUOTES, 'UTF-8');
+
     return '<aside class="mt-6 flex flex-col gap-3 rounded-2xl border border-amber-300/40 bg-amber-400/10 p-4 sm:flex-row sm:items-center sm:justify-between">'
         . '<div><p class="font-semibold text-amber-200">' . htmlspecialchars($titulo, ENT_QUOTES, 'UTF-8') . '</p>'
-        . '<p class="mt-1 text-sm text-white/80">' . htmlspecialchars($texto, ENT_QUOTES, 'UTF-8') . '</p></div>'
+        . '<p class="mt-1 text-sm text-white/80">' . htmlspecialchars($texto, ENT_QUOTES, 'UTF-8') . '</p>'
+        . '<p class="mt-2 text-sm"><a href="' . $demo . '" class="font-semibold text-amber-200 underline decoration-amber-300/50 underline-offset-4 hover:text-white">'
+        . 'Ou entre na demonstração agora</a> <span class="text-white/60">— loja, escritório e painel, sem cadastro.</span></p></div>'
         . '<a href="' . $href . '" class="inline-flex flex-shrink-0 items-center justify-center rounded-full bg-amber-300 px-5 py-2.5 text-sm font-bold uppercase tracking-[0.12em] text-brand hover:bg-amber-200">'
         . htmlspecialchars($rotulo, ENT_QUOTES, 'UTF-8') . '</a>'
         . '</aside>';

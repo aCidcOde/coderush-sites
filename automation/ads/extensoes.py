@@ -24,7 +24,14 @@ ENV_PATH = "/data/coderush-sites/.env"
 BASE = "https://sistemavendadireta.com.br"
 UTM = "utm_source=google&utm_medium=cpc&utm_campaign=promo-10-anos"
 
+# A demonstracao e a arma que faltava: concorrente oferece "teste gratis 14 dias"
+# COM cadastro; a nossa e um ambiente inteiro (loja, escritorio do parceiro e
+# admin) com credenciais publicadas, sem cadastro nenhum. Estava linkada em
+# lugar nenhum — nem no site, nem no anuncio.
+DEMO = "https://zohr.sistemavendadireta.com.br/primeiros-passos"
+
 SITELINKS = [
+    ("Ver demonstracao", "Sistema real, sem cadastro", "Loja, escritorio e admin", f"{DEMO}?{UTM}&utm_content=sitelink-demo"),
     ("Cases reais", "Quem ja opera com o SVD", "Brasil, Paraguai e Bolivia", f"{BASE}/cases/?{UTM}&utm_content=sitelink-cases"),
     ("Simular comissoes", "Veja o custo por consultor", "Simulador em 30 segundos", f"{BASE}/oferta/?{UTM}&utm_content=sitelink-simulador#simulador"),
     ("Planos e mensalidade", "A partir de R$ 500/mes", "Sob medida pro seu porte", f"{BASE}/oferta/?{UTM}&utm_content=sitelink-planos#garantir"),
