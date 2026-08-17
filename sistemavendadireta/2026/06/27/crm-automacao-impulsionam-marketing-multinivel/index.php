@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Como CRM e automação impulsionam | Sistema Venda Direta</title>
+  <title>Como CRM e automação impulsionam o marketing multinível</title>
   <meta name="description" content="O uso de CRM e automação no marketing multinível oferece eficiência em processos, melhor acompanhamento de leads e personalização na comunicação. Isso resulta em aumento de vendas, maior retenção de distribuidores e uma operação mais previsível e escalável." />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <link rel="canonical" href="https://sistemavendadireta.com.br/2026/06/27/crm-automacao-impulsionam-marketing-multinivel/" />
@@ -11,13 +11,13 @@
   <link rel="alternate icon" href="../../../../favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="../../../../apple-touch-icon.png" />
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="Como CRM e automação impulsionam | Sistema Venda Direta" />
+  <meta property="og:title" content="Como CRM e automação impulsionam o marketing multinível" />
   <meta property="og:description" content="O uso de CRM e automação no marketing multinível oferece eficiência em processos, melhor acompanhamento de leads e personalização na comunicação. Isso resulta em aumento de vendas, maior retenção de distribuidores e uma operação mais previsível e escalável." />
   <meta property="og:url" content="https://sistemavendadireta.com.br/2026/06/27/crm-automacao-impulsionam-marketing-multinivel/" />
   <meta property="og:image" content="https://sistemavendadireta.com.br/imagens/posts/crm-automacao-impulsionam-marketing-multinivel.jpg" />
   <meta property="og:site_name" content="Sistema Venda Direta" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Como CRM e automação impulsionam | Sistema Venda Direta" />
+  <meta name="twitter:title" content="Como CRM e automação impulsionam o marketing multinível" />
   <meta name="twitter:description" content="O uso de CRM e automação no marketing multinível oferece eficiência em processos, melhor acompanhamento de leads e personalização na comunicação. Isso resulta em aumento de vendas, maior retenção de distribuidores e uma operação mais previsível e escalável." />
   <meta name="twitter:image" content="https://sistemavendadireta.com.br/imagens/posts/crm-automacao-impulsionam-marketing-multinivel.jpg" />
   <link rel="stylesheet" href="../../../../css/site-tailwind.css" />

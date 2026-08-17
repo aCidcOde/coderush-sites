@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Como evitar fraudes em e-commerce | Sistema Venda Direta</title>
+  <title>Como evitar fraudes em e-commerce de alto volume</title>
   <meta name="description" content="A prevenção de fraudes em e-commerce de alto volume exige sistemas robustos de controle de clientes, automação via IA e integrações eficientes. A implementação" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <link rel="canonical" href="https://sistemavendadireta.com.br/2026/08/09/evitar-fraudes-commerce-alto-volume/" />
@@ -11,13 +11,13 @@
   <link rel="alternate icon" href="../../../../favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="../../../../apple-touch-icon.png" />
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="Como evitar fraudes em e-commerce | Sistema Venda Direta" />
+  <meta property="og:title" content="Como evitar fraudes em e-commerce de alto volume" />
   <meta property="og:description" content="A prevenção de fraudes em e-commerce de alto volume exige sistemas robustos de controle de clientes, automação via IA e integrações eficientes. A implementação" />
   <meta property="og:url" content="https://sistemavendadireta.com.br/2026/08/09/evitar-fraudes-commerce-alto-volume/" />
   <meta property="og:image" content="https://sistemavendadireta.com.br/imagens/posts/evitar-fraudes-commerce-alto-volume.jpg" />
   <meta property="og:site_name" content="Sistema Venda Direta" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Como evitar fraudes em e-commerce | Sistema Venda Direta" />
+  <meta name="twitter:title" content="Como evitar fraudes em e-commerce de alto volume" />
   <meta name="twitter:description" content="A prevenção de fraudes em e-commerce de alto volume exige sistemas robustos de controle de clientes, automação via IA e integrações eficientes. A implementação" />
   <meta name="twitter:image" content="https://sistemavendadireta.com.br/imagens/posts/evitar-fraudes-commerce-alto-volume.jpg" />
   <link rel="stylesheet" href="../../../../css/site-tailwind.css" />

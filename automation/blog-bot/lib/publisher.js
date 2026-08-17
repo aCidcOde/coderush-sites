@@ -424,10 +424,15 @@ function renderFooterLinks(copy, prefix) {
     .join("\n");
 }
 
-const SEO_TITLE_PIXEL_BUDGET = 60; // total chars (~ 580px @ 16px Helvetica)
+const SEO_TITLE_PIXEL_BUDGET = 65; // total chars; o contrato permite ate 70 e 60 decepava frase
+// Palavras que nao podem terminar um titulo: deixam a frase pendurada.
+// "sua"/"seu" faltavam e produziam titulos como "Como um CRM pode potencializar
+// sua | Sistema Venda Direta" — quem ve isso na busca acha que o site quebrou.
 const STOP_TAIL = new Set([
   "a","o","as","os","de","da","do","das","dos","e","em","na","no","nas","nos",
-  "para","por","com","ao","aos","um","uma","uns","umas","sobre","entre","ja","só"
+  "para","por","com","ao","aos","um","uma","uns","umas","sobre","entre","ja","só",
+  "sua","seu","suas","seus","que","pode","podem","ser","como","mais","the","of",
+  "ou","se","ate","até","sem","seus","minha","meu","nossa","nosso","dele","dela"
 ]);
 
 function smartTruncate(text, max) {
@@ -457,14 +462,30 @@ function smartTruncate(text, max) {
   return out || clean.slice(0, max);
 }
 
+/**
+ * Monta o <title>.
+ *
+ * O bug que isso corrige: o sufixo " | Sistema Venda Direta" consome 23 dos 60
+ * caracteres do orcamento, sobrando 37 pro titulo. Nesse espaco toda headline era
+ * decepada no meio ("Como um CRM pode potencializar sua"), e — pior — um seoTitle
+ * proprio, bem escrito, de ~55 caracteres era DESCARTADO por nao caber nos 37.
+ *
+ * Agora o titulo vem primeiro e a marca so entra se sobrar espaco. Google
+ * costuma anexar o nome do site sozinho quando ele falta, entao perder o sufixo
+ * custa pouco; perder metade da frase custa o clique.
+ */
 function buildSeoTitle(contract, site) {
-  const explicit = contract?.content?.seoTitle || contract?.seoTitle;
-  const suffix = ` | ${site.name}`;
-  const room = Math.max(20, SEO_TITLE_PIXEL_BUDGET - suffix.length);
-  const head = explicit && explicit.length <= room
+  const explicit = String(contract?.content?.seoTitle || contract?.seoTitle || "").trim();
+  const headline = String(contract?.content?.headline || "").trim();
+
+  const base = explicit && explicit.length <= SEO_TITLE_PIXEL_BUDGET
     ? explicit
-    : smartTruncate(contract.content.headline, room);
-  return `${head}${suffix}`;
+    : smartTruncate(explicit || headline, SEO_TITLE_PIXEL_BUDGET);
+
+  const suffix = ` | ${site.name}`;
+  return base.length + suffix.length <= SEO_TITLE_PIXEL_BUDGET
+    ? `${base}${suffix}`
+    : base;
 }
 
 function buildMetaDescription(contract) {

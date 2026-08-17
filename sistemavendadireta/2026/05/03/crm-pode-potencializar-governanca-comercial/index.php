@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Como um CRM pode potencializar sua | Sistema Venda Direta</title>
+  <title>Como um CRM pode potencializar sua governança comercial</title>
   <meta name="description" content="A governança comercial pode ser aprimorada por meio de um CRM que integra inteligência artificial, permitindo análises de dados em tempo real, automação de processos e melhor acompanhamento de desempenho, resultando em decisões mais informadas e previsíveis." />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <link rel="canonical" href="https://sistemavendadireta.com.br/2026/05/03/crm-pode-potencializar-governanca-comercial/" />
@@ -11,13 +11,13 @@
   <link rel="alternate icon" href="../../../../favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="../../../../apple-touch-icon.png" />
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="Como um CRM pode potencializar sua | Sistema Venda Direta" />
+  <meta property="og:title" content="Como um CRM pode potencializar sua governança comercial" />
   <meta property="og:description" content="A governança comercial pode ser aprimorada por meio de um CRM que integra inteligência artificial, permitindo análises de dados em tempo real, automação de processos e melhor acompanhamento de desempenho, resultando em decisões mais informadas e previsíveis." />
   <meta property="og:url" content="https://sistemavendadireta.com.br/2026/05/03/crm-pode-potencializar-governanca-comercial/" />
   <meta property="og:image" content="https://sistemavendadireta.com.br/imagens/posts/crm-pode-potencializar-governanca-comercial.jpg" />
   <meta property="og:site_name" content="Sistema Venda Direta" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Como um CRM pode potencializar sua | Sistema Venda Direta" />
+  <meta name="twitter:title" content="Como um CRM pode potencializar sua governança comercial" />
   <meta name="twitter:description" content="A governança comercial pode ser aprimorada por meio de um CRM que integra inteligência artificial, permitindo análises de dados em tempo real, automação de processos e melhor acompanhamento de desempenho, resultando em decisões mais informadas e previsíveis." />
   <meta name="twitter:image" content="https://sistemavendadireta.com.br/imagens/posts/crm-pode-potencializar-governanca-comercial.jpg" />
   <link rel="stylesheet" href="../../../../css/site-tailwind.css" />

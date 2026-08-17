@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Como o CRM com IA pode potencializar | Sistema Venda Direta</title>
+  <title>Como o CRM com IA pode potencializar seu MMN</title>
   <meta name="description" content="A IA em CRM oferece suporte em tempo real para distribuidores, facilitando a gestão de leads, previsões de vendas e atendimento ao cliente. Isso resulta em operações mais ágeis e eficientes no marketing multinível." />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <link rel="canonical" href="https://sistemavendadireta.com.br/2026/06/18/crm-ia-pode-potencializar-mmn/" />
@@ -11,13 +11,13 @@
   <link rel="alternate icon" href="../../../../favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="../../../../apple-touch-icon.png" />
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="Como o CRM com IA pode potencializar | Sistema Venda Direta" />
+  <meta property="og:title" content="Como o CRM com IA pode potencializar seu MMN" />
   <meta property="og:description" content="A IA em CRM oferece suporte em tempo real para distribuidores, facilitando a gestão de leads, previsões de vendas e atendimento ao cliente. Isso resulta em operações mais ágeis e eficientes no marketing multinível." />
   <meta property="og:url" content="https://sistemavendadireta.com.br/2026/06/18/crm-ia-pode-potencializar-mmn/" />
   <meta property="og:image" content="https://sistemavendadireta.com.br/imagens/posts/crm-ia-pode-potencializar-mmn.jpg" />
   <meta property="og:site_name" content="Sistema Venda Direta" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Como o CRM com IA pode potencializar | Sistema Venda Direta" />
+  <meta name="twitter:title" content="Como o CRM com IA pode potencializar seu MMN" />
   <meta name="twitter:description" content="A IA em CRM oferece suporte em tempo real para distribuidores, facilitando a gestão de leads, previsões de vendas e atendimento ao cliente. Isso resulta em operações mais ágeis e eficientes no marketing multinível." />
   <meta name="twitter:image" content="https://sistemavendadireta.com.br/imagens/posts/crm-ia-pode-potencializar-mmn.jpg" />
   <link rel="stylesheet" href="../../../../css/site-tailwind.css" />

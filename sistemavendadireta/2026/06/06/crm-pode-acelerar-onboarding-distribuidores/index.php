@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Como um CRM pode acelerar | Sistema Venda Direta</title>
+  <title>Como um CRM pode acelerar o onboarding de distribuidores</title>
   <meta name="description" content="Utilizar um CRM no onboarding de distribuidores permite centralizar informações, automatizar processos e garantir uma comunicação eficiente, resultando em ativações mais rápidas e efetivas. Isso aumenta a retenção e o engajamento dos novos distribuidores." />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <link rel="canonical" href="https://sistemavendadireta.com.br/2026/06/06/crm-pode-acelerar-onboarding-distribuidores/" />
@@ -11,13 +11,13 @@
   <link rel="alternate icon" href="../../../../favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="../../../../apple-touch-icon.png" />
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="Como um CRM pode acelerar | Sistema Venda Direta" />
+  <meta property="og:title" content="Como um CRM pode acelerar o onboarding de distribuidores" />
   <meta property="og:description" content="Utilizar um CRM no onboarding de distribuidores permite centralizar informações, automatizar processos e garantir uma comunicação eficiente, resultando em ativações mais rápidas e efetivas. Isso aumenta a retenção e o engajamento dos novos distribuidores." />
   <meta property="og:url" content="https://sistemavendadireta.com.br/2026/06/06/crm-pode-acelerar-onboarding-distribuidores/" />
   <meta property="og:image" content="https://sistemavendadireta.com.br/imagens/posts/crm-pode-acelerar-onboarding-distribuidores.jpg" />
   <meta property="og:site_name" content="Sistema Venda Direta" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Como um CRM pode acelerar | Sistema Venda Direta" />
+  <meta name="twitter:title" content="Como um CRM pode acelerar o onboarding de distribuidores" />
   <meta name="twitter:description" content="Utilizar um CRM no onboarding de distribuidores permite centralizar informações, automatizar processos e garantir uma comunicação eficiente, resultando em ativações mais rápidas e efetivas. Isso aumenta a retenção e o engajamento dos novos distribuidores." />
   <meta name="twitter:image" content="https://sistemavendadireta.com.br/imagens/posts/crm-pode-acelerar-onboarding-distribuidores.jpg" />
   <link rel="stylesheet" href="../../../../css/site-tailwind.css" />

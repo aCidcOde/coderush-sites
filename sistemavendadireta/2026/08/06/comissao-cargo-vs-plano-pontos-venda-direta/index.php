@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Comissão por cargo vs plano de pontos | Sistema Venda Direta</title>
+  <title>Comissão por cargo vs plano de pontos em venda direta</title>
   <meta name="description" content="A comissão por cargo oferece uma taxa fixa baseada na posição do distribuidor, enquanto o plano de pontos é mais flexível, permitindo que os ganhos variem" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <link rel="canonical" href="https://sistemavendadireta.com.br/2026/08/06/comissao-cargo-vs-plano-pontos-venda-direta/" />
@@ -11,13 +11,13 @@
   <link rel="alternate icon" href="../../../../favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="../../../../apple-touch-icon.png" />
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="Comissão por cargo vs plano de pontos | Sistema Venda Direta" />
+  <meta property="og:title" content="Comissão por cargo vs plano de pontos em venda direta" />
   <meta property="og:description" content="A comissão por cargo oferece uma taxa fixa baseada na posição do distribuidor, enquanto o plano de pontos é mais flexível, permitindo que os ganhos variem" />
   <meta property="og:url" content="https://sistemavendadireta.com.br/2026/08/06/comissao-cargo-vs-plano-pontos-venda-direta/" />
   <meta property="og:image" content="https://sistemavendadireta.com.br/imagens/posts/comissao-cargo-vs-plano-pontos-venda-direta.jpg" />
   <meta property="og:site_name" content="Sistema Venda Direta" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Comissão por cargo vs plano de pontos | Sistema Venda Direta" />
+  <meta name="twitter:title" content="Comissão por cargo vs plano de pontos em venda direta" />
   <meta name="twitter:description" content="A comissão por cargo oferece uma taxa fixa baseada na posição do distribuidor, enquanto o plano de pontos é mais flexível, permitindo que os ganhos variem" />
   <meta name="twitter:image" content="https://sistemavendadireta.com.br/imagens/posts/comissao-cargo-vs-plano-pontos-venda-direta.jpg" />
   <link rel="stylesheet" href="../../../../css/site-tailwind.css" />

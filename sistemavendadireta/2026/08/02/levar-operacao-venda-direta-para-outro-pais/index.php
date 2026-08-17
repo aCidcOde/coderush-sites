@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Levar a venda direta para outro país | Sistema Venda Direta</title>
+  <title>Levar a venda direta para outro país: o que muda no sistema</title>
   <meta name="description" content="O que muda no sistema quando a venda direta cruza a fronteira: idioma, moeda, documento fiscal, endereço e plano de comissões — com um case real no Paraguai." />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <link rel="canonical" href="https://sistemavendadireta.com.br/2026/08/02/levar-operacao-venda-direta-para-outro-pais/" />
@@ -11,13 +11,13 @@
   <link rel="alternate icon" href="../../../../favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="../../../../apple-touch-icon.png" />
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="Levar a venda direta para outro país | Sistema Venda Direta" />
+  <meta property="og:title" content="Levar a venda direta para outro país: o que muda no sistema" />
   <meta property="og:description" content="O que muda no sistema quando a venda direta cruza a fronteira: idioma, moeda, documento fiscal, endereço e plano de comissões — com um case real no Paraguai." />
   <meta property="og:url" content="https://sistemavendadireta.com.br/2026/08/02/levar-operacao-venda-direta-para-outro-pais/" />
   <meta property="og:image" content="https://sistemavendadireta.com.br/imagens/posts/levar-operacao-venda-direta-para-outro-pais.jpg" />
   <meta property="og:site_name" content="Sistema Venda Direta" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Levar a venda direta para outro país | Sistema Venda Direta" />
+  <meta name="twitter:title" content="Levar a venda direta para outro país: o que muda no sistema" />
   <meta name="twitter:description" content="O que muda no sistema quando a venda direta cruza a fronteira: idioma, moeda, documento fiscal, endereço e plano de comissões — com um case real no Paraguai." />
   <meta name="twitter:image" content="https://sistemavendadireta.com.br/imagens/posts/levar-operacao-venda-direta-para-outro-pais.jpg" />
   <link rel="stylesheet" href="../../../../css/site-tailwind.css" />
