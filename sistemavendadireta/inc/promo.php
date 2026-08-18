@@ -91,14 +91,14 @@ function promoVitrine(string $prefixo = '../'): string
         ],
         [
             'logo' => 'medplant', 'alt' => 'MedPlant',
-            'w' => 600, 'h' => 153, 'data' => 'Operação no ar',
+            'w' => 600, 'h' => 153, 'data' => 'No ar desde agosto de 2026',
             'loja' => 'https://medplant.sistemavendadireta.com.br/loja',
             'texto' => 'Cosméticos e suplementos naturais em quatro linhas — encapsulados, óleos, chás e cosméticos — '
                 . 'com rede de consultores, recompra e centro de distribuição integrados.',
         ],
         [
             'logo' => 'zohr', 'alt' => 'Zohr Parfums',
-            'w' => 800, 'h' => 277, 'data' => 'Operação no ar',
+            'w' => 800, 'h' => 277, 'data' => 'No ar desde agosto de 2026',
             'loja' => 'https://zohr.sistemavendadireta.com.br/loja',
             'texto' => 'Perfumaria fina em três categorias — eau de parfum, fragrâncias para ambiente e corpo & banho — '
                 . 'com dois planos de carreira independentes para consultor e distribuidor.',

@@ -295,7 +295,7 @@ return [
         'slug' => 'medplant',
         'name' => 'MedPlant',
         'segment' => 'Produtos naturais / saúde e bem-estar • Venda direta',
-        'period' => 'Operação no ar',
+        'period' => 'No ar desde agosto de 2026',
         'featured' => false,
         'hidden' => true,
         'logo' => 'imagens/clientes/medplant.webp',
