@@ -107,6 +107,22 @@ $whatsappHref = 'https://wa.me/5511994566726?text=' . rawurlencode(
 
           <div class="mt-5">
             <div class="flex items-center justify-between gap-3">
+              <label for="s-consultores" class="text-sm font-semibold text-white/90">Consultores ativos hoje</label>
+              <span id="o-consultores" class="rounded-full bg-white/10 px-3 py-1 text-sm font-bold text-amber-300">100</span>
+            </div>
+            <input id="s-consultores" type="range" min="10" max="3000" step="10" value="100" class="mt-3 w-full" style="accent-color:#fcd34d" />
+          </div>
+
+          <div class="mt-5">
+            <div class="flex items-center justify-between gap-3">
+              <label for="s-crescimento" class="text-sm font-semibold text-white/90">Crescimento mensal da operação</label>
+              <span id="o-crescimento" class="rounded-full bg-white/10 px-3 py-1 text-sm font-bold text-amber-300">15%</span>
+            </div>
+            <input id="s-crescimento" type="range" min="0" max="40" step="1" value="15" class="mt-3 w-full" style="accent-color:#fcd34d" />
+          </div>
+
+          <div class="mt-5">
+            <div class="flex items-center justify-between gap-3">
               <label for="s-ticket" class="text-sm font-semibold text-white/90">Ticket médio do pedido</label>
               <span id="o-ticket" class="rounded-full bg-white/10 px-3 py-1 text-sm font-bold text-amber-300">R$ 300</span>
             </div>
@@ -135,8 +151,8 @@ $whatsappHref = 'https://wa.me/5511994566726?text=' . rawurlencode(
           <h2 class="font-[var(--font-heading)] text-lg font-bold">2. O que o plano paga</h2>
           <p class="mt-1 text-sm text-white/70">Percentuais sobre o volume que gera o bônus.</p>
 
-          <div class="mt-5 grid gap-4 sm:grid-cols-2">
-            <label class="block">
+          <div class="mt-5">
+            <label class="block sm:max-w-xs">
               <span class="text-sm font-semibold text-white/90">Bônus de indicação</span>
               <span class="mt-1 flex items-center gap-2">
                 <input id="s-indicacao" type="number" min="0" max="60" step="1" value="20" class="w-full rounded-xl border border-white/25 bg-white/10 px-3 py-2 text-white" />
@@ -144,15 +160,10 @@ $whatsappHref = 'https://wa.me/5511994566726?text=' . rawurlencode(
               </span>
               <span class="mt-1 block text-xs text-white/55">sobre a primeira compra do indicado</span>
             </label>
-
-            <label class="block">
-              <span class="text-sm font-semibold text-white/90">Margem de revenda do consultor</span>
-              <span class="mt-1 flex items-center gap-2">
-                <input id="s-revenda" type="number" min="0" max="60" step="1" value="25" class="w-full rounded-xl border border-white/25 bg-white/10 px-3 py-2 text-white" />
-                <span class="text-sm text-white/60">%</span>
-              </span>
-              <span class="mt-1 block text-xs text-white/55">desconto de quem compra pra revender</span>
-            </label>
+            <p class="mt-3 text-xs text-white/60">
+              A margem de revenda do consultor não entra aqui: ela é desconto no preço, não bônus.
+              O ticket abaixo já é o valor que o consultor paga, com o desconto embutido.
+            </p>
           </div>
 
           <div class="mt-6">
@@ -246,6 +257,34 @@ $whatsappHref = 'https://wa.me/5511994566726?text=' . rawurlencode(
     </section>
 
     <section class="border-t border-white/15 py-10">
+      <h2 class="font-[var(--font-heading)] text-2xl font-bold sm:text-[28px]">Seis meses com esse plano</h2>
+      <div class="mt-2 h-1 w-[72px] rounded-full bg-amber-300"></div>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-white/90">
+        Percentual não paga conta — reais pagam. Abaixo, a mesma configuração projetada mês a mês com o
+        crescimento que você definiu. É aqui que dá pra ver se a operação acumula caixa ou dívida.
+      </p>
+
+      <div class="mt-6 overflow-x-auto rounded-2xl border border-white/20 bg-white/5">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="border-b border-white/15 text-left text-xs uppercase tracking-[0.12em] text-white/60">
+              <th class="px-4 py-3">Mês</th>
+              <th class="px-4 py-3 text-right">Consultores</th>
+              <th class="px-4 py-3 text-right">Faturamento</th>
+              <th class="px-4 py-3 text-right">Pago em bônus</th>
+              <th class="px-4 py-3 text-right">Outros custos</th>
+              <th class="px-4 py-3 text-right">Sobra no mês</th>
+              <th class="px-4 py-3 text-right">Caixa acumulado</th>
+            </tr>
+          </thead>
+          <tbody id="proj-corpo"></tbody>
+          <tfoot id="proj-total" class="border-t border-white/25 font-bold text-amber-300"></tfoot>
+        </table>
+      </div>
+      <p id="proj-nota" class="mt-3 text-sm leading-relaxed text-white/80"></p>
+    </section>
+
+    <section class="border-t border-white/15 py-10">
       <h2 class="font-[var(--font-heading)] text-2xl font-bold sm:text-[28px]">Como ler esses números</h2>
       <div class="mt-2 h-1 w-[72px] rounded-full bg-amber-300"></div>
       <div class="mt-6 grid gap-4 md:grid-cols-3">
@@ -257,10 +296,10 @@ $whatsappHref = 'https://wa.me/5511994566726?text=' . rawurlencode(
           </p>
         </div>
         <div class="rounded-2xl border border-white/20 bg-white/5 p-5">
-          <h3 class="font-semibold text-amber-300">Margem de revenda não é payout</h3>
+          <h3 class="font-semibold text-amber-300">Indicação custa mais em crescimento</h3>
           <p class="mt-2 text-sm leading-relaxed text-white/85">
-            O desconto de quem compra para revender sai do preço, não do bônus. Por isso entra na conta
-            separado — misturar os dois é o erro que mais aparece em plano mal desenhado.
+            O bônus de indicação incide sobre primeira compra, então quanto mais a operação cresce, maior
+            a fatia do faturamento que ele consome. Plano que fecha parado pode sangrar justo no lançamento.
           </p>
         </div>
         <div class="rounded-2xl border border-white/20 bg-white/5 p-5">
@@ -318,15 +357,75 @@ $whatsappHref = 'https://wa.me/5511994566726?text=' . rawurlencode(
     });
   }
 
+
+  /**
+   * Seis meses mes a mes. Percentual nao paga conta — reais pagam, e o
+   * acumulado mostra se a operacao junta caixa ou divida.
+   *
+   * O crescimento entra nos consultores; o faturamento acompanha. Payout e
+   * custos sao percentuais, entao escalam junto — o que muda com o tamanho e o
+   * VALOR absoluto em risco. Plano com 2% de sobra em R$ 30 mil da R$ 600; nos
+   * R$ 60 mil do sexto mes, da R$ 1.200 e a mesma fragilidade custa o dobro.
+   */
+  function projetar(consultores, ticket, cresc, payoutReal, outros, margem) {
+    var corpo = $("proj-corpo"), rodape = $("proj-total");
+    corpo.innerHTML = ""; rodape.innerHTML = "";
+    var acum = 0, totFat = 0, totBonus = 0, totSobra = 0;
+    var meses = ["Mês 1", "Mês 2", "Mês 3", "Mês 4", "Mês 5", "Mês 6"];
+
+    meses.forEach(function (nome, i) {
+      var c = Math.round(consultores * Math.pow(1 + cresc / 100, i));
+      var fat = c * ticket;
+      var bonus = fat * payoutReal / 100;
+      var custo = fat * outros / 100;
+      var sobra = fat * (margem - payoutReal - outros) / 100;
+      acum += sobra; totFat += fat; totBonus += bonus; totSobra += sobra;
+
+      var tr = document.createElement("tr");
+      tr.className = "border-b border-white/10";
+      tr.innerHTML =
+        '<td class="px-4 py-3 font-semibold">' + nome + '</td>' +
+        '<td class="px-4 py-3 text-right text-white/80">' + c.toLocaleString("pt-BR") + '</td>' +
+        '<td class="px-4 py-3 text-right">' + brl.format(fat) + '</td>' +
+        '<td class="px-4 py-3 text-right text-white/80">' + brl.format(bonus) + '</td>' +
+        '<td class="px-4 py-3 text-right text-white/60">' + brl.format(custo) + '</td>' +
+        '<td class="px-4 py-3 text-right font-semibold ' + (sobra < 0 ? "text-red-300" : "text-white") + '">' + brl.format(sobra) + '</td>' +
+        '<td class="px-4 py-3 text-right font-bold ' + (acum < 0 ? "text-red-300" : "text-amber-300") + '">' + brl.format(acum) + '</td>';
+      corpo.appendChild(tr);
+    });
+
+    rodape.innerHTML =
+      '<tr><td class="px-4 py-3">Total 6 meses</td><td></td>' +
+      '<td class="px-4 py-3 text-right">' + brl.format(totFat) + '</td>' +
+      '<td class="px-4 py-3 text-right">' + brl.format(totBonus) + '</td><td></td>' +
+      '<td class="px-4 py-3 text-right">' + brl.format(totSobra) + '</td>' +
+      '<td class="px-4 py-3 text-right">' + brl.format(acum) + '</td></tr>';
+
+    var nota = $("proj-nota");
+    if (acum < 0) {
+      nota.className = "mt-3 text-sm leading-relaxed text-red-300";
+      nota.textContent = "Em seis meses a operação acumula " + brl.format(Math.abs(acum)) +
+        " de prejuízo, faturando " + brl.format(totFat) + ". Crescer piora: cada consultor novo " +
+        "aumenta o rombo, porque o plano paga mais do que a margem comporta.";
+    } else {
+      nota.className = "mt-3 text-sm leading-relaxed text-white/80";
+      nota.textContent = "Em seis meses sobram " + brl.format(acum) + " sobre " + brl.format(totFat) +
+        " de faturamento, com " + brl.format(totBonus) + " distribuídos em bônus. " +
+        "O sexto mês sozinho vale " + brl.format(totFat > 0 ? (consultores * Math.pow(1 + cresc / 100, 5) * ticket) : 0) +
+        " — é o tamanho que o plano precisa aguentar.";
+    }
+  }
+
   function calc() {
     var ticket = +$("s-ticket").value;
     var margem = +$("s-margem").value;
     var outros = +$("s-outros").value;
     var indicacao = parseFloat($("s-indicacao").value) || 0;
-    var revenda = parseFloat($("s-revenda").value) || 0;
     var titulo = parseFloat($("s-titulo").value) || 0;
     var pago = +$("s-breakage").value;
     var novos = +$("s-novos").value;
+    var consultores = +$("s-consultores").value;
+    var cresc = +$("s-crescimento").value;
 
     var uni = niveis.reduce(function (a, b) { return a + b; }, 0);
 
@@ -336,6 +435,8 @@ $whatsappHref = 'https://wa.me/5511994566726?text=' . rawurlencode(
     $("o-unilevel").textContent = n1.format(uni) + "%";
     $("o-breakage").textContent = pago + "%";
     $("o-novos").textContent = novos + "%";
+    $("o-consultores").textContent = consultores.toLocaleString("pt-BR");
+    $("o-crescimento").textContent = cresc + "%";
 
     // Rede (unilevel + carreira) sofre breakage: depende de qualificacao.
     // Indicacao nao sofre — sempre existe um patrocinador pra receber. O que
@@ -345,10 +446,10 @@ $whatsappHref = 'https://wa.me/5511994566726?text=' . rawurlencode(
     var nominal = nominalRede + custoIndicacao;
     var real = (nominalRede * pago / 100) + custoIndicacao;
 
-    // A margem de revenda sai do preco, nao do bonus: reduz a margem bruta
-    // disponivel antes de qualquer bonus ser pago.
-    var margemLiquida = margem - revenda;
-    var sobra = margemLiquida - real - outros;
+    // O ticket ja e o preco que o consultor paga (com o desconto de revenda
+    // embutido), entao a margem informada e sobre esse valor. Descontar a revenda
+    // de novo seria contar duas vezes.
+    var sobra = margem - real - outros;
 
     $("r-nominal").textContent = n1.format(nominal) + "%";
     $("r-real").textContent = n1.format(real) + "%";
@@ -360,12 +461,12 @@ $whatsappHref = 'https://wa.me/5511994566726?text=' . rawurlencode(
     var cor, titulo_, msg;
     if (sobra >= 15) {
       cor = "border-emerald-300/50 bg-emerald-400/10"; titulo_ = "O plano fecha";
-      msg = "Sobra " + n1.format(sobra) + "% depois de pagar rede, revenda e custos. É folga suficiente para " +
+      msg = "Sobra " + n1.format(sobra) + "% depois de pagar os bônus e os custos. É folga suficiente para " +
             "absorver inadimplência, devolução e crescimento sem apertar o caixa.";
     } else if (sobra >= 5) {
       cor = "border-amber-300/60 bg-amber-400/10"; titulo_ = "Fecha, mas no limite";
       msg = "Sobram apenas " + n1.format(sobra) + "%. Funciona enquanto tudo corre bem — uma devolução acima do " +
-            "previsto ou um mês de queda já come a margem. Vale reduzir profundidade ou revisar a revenda.";
+            "previsto ou um mês de queda já come a margem. Vale reduzir profundidade ou o bônus de indicação.";
     } else if (sobra >= 0) {
       cor = "border-orange-400/60 bg-orange-500/10"; titulo_ = "Não se sustenta";
       msg = "Sobram " + n1.format(sobra) + "%, o que na prática é zero. O plano só se paga se a rede crescer todo " +
@@ -380,17 +481,19 @@ $whatsappHref = 'https://wa.me/5511994566726?text=' . rawurlencode(
     txt.textContent = msg;
 
     // Ponto de ruptura: quanto de payout real a margem ainda aguenta
-    var teto = margemLiquida - outros;
+    var teto = margem - outros;
     $("r-ruptura").textContent = "Com essa margem, o payout real não pode passar de " +
       n1.format(Math.max(0, teto)) + "%. O bônus de indicação sozinho já consome " +
       n1.format(custoIndicacao) + "% (" + indicacao + "% sobre os " + novos +
       "% do faturamento que são primeira compra), sobrando " +
       n1.format(Math.max(0, teto - custoIndicacao)) + "% para unilevel e carreira.";
 
+    projetar(consultores, ticket, cresc, real, outros, margem);
+
     if (!usou && window.gtag) { usou = true; gtag("event", "simulador_plano_uso"); }
   }
 
-  ["s-ticket", "s-margem", "s-outros", "s-breakage", "s-novos", "s-indicacao", "s-revenda", "s-titulo"]
+  ["s-ticket", "s-margem", "s-outros", "s-breakage", "s-novos", "s-indicacao", "s-titulo", "s-consultores", "s-crescimento"]
     .forEach(function (id) { $(id).addEventListener("input", calc); });
 
   $("add-nivel").addEventListener("click", function () {
