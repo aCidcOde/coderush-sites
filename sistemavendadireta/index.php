@@ -619,7 +619,7 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
 
       <div class="mt-6 grid gap-4 md:grid-cols-2">
         <article class="rounded-2xl border border-white/20 bg-white/5 p-5">
-          <p class="text-sm leading-relaxed text-white/90">Há mais de 8 anos usamos o sistema venda direta, que nos ajuda a gerenciar nossa rede de distribuidores e a aumentar nossas vendas com perfeição, eu recomendo! Já estamos a 8 anos aprimorando e crescendo, com um escritorio virtual simples para qualquer pessoa.</p>
+          <p class="text-sm leading-relaxed text-white/90">Há mais de 10 anos usamos o sistema venda direta, que nos ajuda a gerenciar nossa rede de distribuidores e a aumentar nossas vendas com perfeição, eu recomendo! Já estamos a 10 anos aprimorando e crescendo, com um escritorio virtual simples para qualquer pessoa.</p>
           <div class="mt-4 flex items-center gap-3">
             <img decoding="async" src="imagens/logo@2x-q5j2vw22ajhto7ptb6lous0grda1y29olapc310134.webp" alt="Ecotrend South América" class="h-10 w-10 rounded-full bg-white/15 p-1" loading="lazy" />
             <div>

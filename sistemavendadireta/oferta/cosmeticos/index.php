@@ -11,6 +11,8 @@ Nao e linkada pelo index (trafego pago). noindex por ser pagina de campanha com 
 Parametros da campanha ficam no bloco de configuracao abaixo — alterar so aqui.
 */
 
+require_once __DIR__ . '/../../inc/promo.php';   // vagas fechadas + links das lojas
+
 $mailStatus = $_GET['mail'] ?? '';
 $mailStatus = in_array($mailStatus, ['ok', 'erro'], true) ? $mailStatus : '';
 
@@ -22,7 +24,7 @@ $promoInstallTo = 3500;            // valor promocional em 2x (R$)
 $promoInstallCash = 3000;          // valor promocional a vista (R$)
 $promoDeadline = '2026-08-31';     // ultimo dia da promocao (America/Sao_Paulo)
 $promoSlots = 10;                  // vagas de implantacao no periodo (tema: 10 anos)
-$promoSlotsFilled = 2;             // ja fechadas: New Professional's e Protech
+$promoSlotsFilled = 4;             // ja fechadas: New Professional's, Protech, MedPlant e Zohr
 $promoSlotsLeft = max(0, $promoSlots - $promoSlotsFilled);
 $whatsappPhone = '5511994566726';
 $whatsappMessage = 'Ola! Tenho uma marca de cosmeticos e vim pela Promocao 10 Anos. Quero ver o sistema.';
@@ -113,6 +115,7 @@ $seoDescription = 'Sistema para marca de cosméticos com consultoras: catálogo 
     <div class="mx-auto flex max-w-[1140px] items-center justify-between gap-4 px-4 py-3 sm:px-6">
       <a href="../../" target="_blank" rel="noopener" aria-label="Abrir o site do Sistema Venda Direta em nova aba"><img decoding="async" src="../../imagens/Logo-Branco-1.webp" alt="Sistema Venda Direta" class="h-auto w-[150px] sm:w-[200px]" width="1000" height="300" loading="eager" /></a>
       <div class="flex items-center gap-5">
+        <a href="https://painel.sistemavendadireta.com.br/primeiros-passos?utm_source=site&utm_medium=oferta&utm_campaign=demo" target="_blank" rel="noopener" class="text-sm font-semibold text-amber-300 hover:text-amber-200">Ver demonstração</a>
         <a href="../../cases/" class="text-sm font-semibold text-white/85 hover:text-white">Cases</a>
         <a href="<?= htmlspecialchars($whatsappHref, ENT_QUOTES, 'UTF-8') ?>" target="_blank" rel="noopener noreferrer" class="hidden rounded-full bg-[#25D366] px-4 py-2 text-sm font-bold sm:inline-flex">
           Falar agora
@@ -158,7 +161,7 @@ $seoDescription = 'Sistema para marca de cosméticos com consultoras: catálogo 
           </div>
           <?php if ($promoActive): ?>
             <p class="mt-3 text-center text-xs text-white/70">
-              <?= (int) $promoSlotsFilled ?> das <?= (int) $promoSlots ?> vagas já preenchidas (New Professional\'s e Protech) — restam <strong class="text-amber-300"><?= (int) $promoSlotsLeft ?></strong> até <?= htmlspecialchars($deadlineLabel, ENT_QUOTES, 'UTF-8') ?>.
+              <?= (int) $promoSlotsFilled ?> das <?= (int) $promoSlots ?> vagas já preenchidas (<?= promoClientesHtml() ?>) — restam <strong class="text-amber-300"><?= (int) $promoSlotsLeft ?></strong> até <?= htmlspecialchars($deadlineLabel, ENT_QUOTES, 'UTF-8') ?>.
             </p>
             <div class="mx-auto mt-2 h-1.5 w-full max-w-[260px] overflow-hidden rounded-full bg-white/15">
               <div class="h-full rounded-full bg-amber-400" style="width: <?= (int) round($promoSlotsFilled / max(1, $promoSlots) * 100) ?>%"></div>
@@ -467,7 +470,7 @@ $seoDescription = 'Sistema para marca de cosméticos com consultoras: catálogo 
 
       <figure class="mt-6 rounded-2xl border border-white/20 bg-white/5 p-5 sm:p-6">
         <blockquote class="text-base leading-relaxed text-white/90">
-          "Há mais de 8 anos usamos o sistema venda direta, que nos ajuda a gerenciar nossa rede de distribuidores
+          "Há mais de 10 anos usamos o sistema venda direta, que nos ajuda a gerenciar nossa rede de distribuidores
           e a aumentar nossas vendas com perfeição, eu recomendo!"
         </blockquote>
         <figcaption class="mt-3 text-sm font-semibold text-white/80">Leandro Sato — Ecotrend South America <span class="ml-2 text-amber-300">★★★★★</span></figcaption>
@@ -480,8 +483,8 @@ $seoDescription = 'Sistema para marca de cosméticos com consultoras: catálogo 
           <div>
             <h2 class="font-[var(--font-heading)] text-2xl font-bold sm:text-[28px]">Quer conhecer a plataforma por completo?</h2>
             <p class="mt-3 max-w-2xl text-base leading-relaxed text-white/90">
-              Funcionalidades, integrações, clientes e o blog com conteúdo sobre venda direta —
-              tudo no site principal do Sistema Venda Direta.
+              Entre no ambiente de demonstração e navegue pelo sistema inteiro: loja, escritório do
+              consultor e painel administrativo, com dados de uma operação real. Sem cadastro.
             </p>
           </div>
           <div class="flex flex-col items-stretch gap-3 sm:min-w-[280px]">

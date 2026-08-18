@@ -30,6 +30,39 @@ const PROMO_INSTALL_DE = 5000;
 const PROMO_INSTALL_PARCELADO = 3500;
 const PROMO_INSTALL_AVISTA = 3000;
 
+/**
+ * Vagas ja fechadas da promocao, com a loja de cada uma no ar.
+ *
+ * E prova social de verdade: em vez de dizer "4 de 10 vagas preenchidas", mostra
+ * QUEM preencheu e deixa a pessoa abrir a loja e ver o sistema rodando de
+ * verdade, em cliente real. Vale mais que qualquer selo.
+ *
+ * ATENCAO comercial: MedPlant e Zohr fecharam mas ainda nao pagaram. Aparecem
+ * aqui como argumento de venda apenas — nao entram em receita, conversao nem
+ * orcamento de midia enquanto o pagamento nao cair.
+ */
+function promoClientes(): array
+{
+    return [
+        ["New Professional's", 'https://newprofessional.com.py/loja'],
+        ['Protech', 'https://protech.sistemavendadireta.com.br/loja'],
+        ['MedPlant', 'https://medplant.sistemavendadireta.com.br/loja'],
+        ['Zohr Parfums', 'https://zohr.sistemavendadireta.com.br/loja'],
+    ];
+}
+
+/** Os nomes das vagas fechadas, cada um linkando pra loja do cliente. */
+function promoClientesHtml(string $classe = 'underline decoration-white/40 underline-offset-2 hover:text-amber-300'): string
+{
+    $links = [];
+    foreach (promoClientes() as [$nome, $url]) {
+        $links[] = '<a href="' . htmlspecialchars($url, ENT_QUOTES, 'UTF-8') . '" target="_blank" rel="noopener"'
+            . ' class="' . $classe . '">' . htmlspecialchars($nome, ENT_QUOTES, 'UTF-8') . '</a>';
+    }
+    $ultimo = array_pop($links);
+    return $links ? implode(', ', $links) . ' e ' . $ultimo : $ultimo;
+}
+
 /** A promocao ainda esta valendo hoje? */
 function promoAtiva(): bool
 {
