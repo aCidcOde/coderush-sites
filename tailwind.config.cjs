@@ -7,6 +7,7 @@ module.exports = {
     "./sistemavendadireta/blog/**/*.php",
     "./sistemavendadireta/cases/**/*.php",
     "./sistemavendadireta/oferta/**/*.php",
+    "./sistemavendadireta/simulador/**/*.php",
     "./sistemavendadireta/inteligencia-artificial/**/*.php",
     "./sistemavendadireta/wordpress/**/*.php",
     "./sistemavendadireta/20*/**/*.php"
