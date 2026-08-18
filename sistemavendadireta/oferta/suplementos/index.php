@@ -404,50 +404,7 @@ $seoDescription = 'Sistema para distribuidora de suplementos com consultores: es
       <h2 class="font-[var(--font-heading)] text-2xl font-bold sm:text-[32px]">Não é promessa — é operação rodando</h2>
       <div class="mt-2 h-1 w-[72px] rounded-full bg-amber-300"></div>
 
-      <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-        <article class="rounded-2xl border border-white/20 bg-white/5 p-5">
-          <div class="flex items-center rounded-xl bg-white px-4 py-3">
-            <picture>
-              <source srcset="../../imagens/clientes/protech-nutritional.webp" type="image/webp" />
-              <img src="../../imagens/clientes/protech-nutritional.png" alt="Protech Nutritional" class="h-9 w-auto object-contain sm:h-11" width="480" height="102" loading="lazy" />
-            </picture>
-          </div>
-          <p class="mt-4 text-sm leading-relaxed text-white/90">
-            Suplementos com distribuição exclusiva por consultor: entrada na loja pelo fluxo de indicação,
-            catálogo em 9 linhas, escritório virtual e plano com três formas de ganho.
-          </p>
-        </article>
-
-        <article class="rounded-2xl border border-white/20 bg-white/5 p-5">
-          <div class="flex items-center rounded-xl bg-white px-4 py-3">
-            <picture>
-              <source srcset="../../imagens/clientes/new-professionals.webp" type="image/webp" />
-              <img src="../../imagens/clientes/new-professionals.png" alt="New Professional's" class="h-9 w-auto object-contain sm:h-11" width="480" height="130" loading="lazy" />
-            </picture>
-          </div>
-          <p class="mt-4 text-sm leading-relaxed text-white/90">
-            Operação no Paraguai em três idiomas, preço em guarani, comissão por cargo editável no administrativo
-            e endereço resolvido pela base oficial de código postal do país. No ar em 10 dias.
-          </p>
-        </article>
-
-        <article class="rounded-2xl border border-white/20 bg-white/5 p-5">
-          <div class="flex items-center rounded-xl bg-white px-4 py-3">
-            <picture>
-              <source srcset="../../imagens/clientes/ecotrend-afiliados.webp" type="image/webp" />
-              <img src="../../imagens/clientes/ecotrend-afiliados.png" alt="Ecotrend Afiliados" class="h-9 w-auto object-contain sm:h-11" width="480" height="149" loading="lazy" />
-            </picture>
-          </div>
-          <p class="mt-4 text-sm leading-relaxed text-white/90">
-            Mais de 10 anos de operação contínua: escritório do associado, administrativo, treinamento
-            e loja — a operação mais longeva da plataforma.
-          </p>
-        </article>
-      </div>
-
-      <a href="../../cases/" class="mt-6 inline-flex rounded-full border border-white/60 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10">
-        Ver os cases completos
-      </a>
+      <?= promoVitrine("../../") ?>
     </section>
 
 

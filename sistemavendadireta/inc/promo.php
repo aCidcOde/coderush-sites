@@ -63,6 +63,79 @@ function promoClientesHtml(string $classe = 'underline decoration-white/40 under
     return $links ? implode(', ', $links) . ' e ' . $ultimo : $ultimo;
 }
 
+/**
+ * Cards da secao "Não é promessa — é operação rodando" das LPs.
+ *
+ * Ficava como HTML repetido nos 5 arquivos de /oferta/*; cada cliente novo dava
+ * cinco edicoes. Agora entra aqui uma vez.
+ *
+ * 'data' e o que separa prova de promessa: dizer QUANDO entrou no ar cria
+ * verificabilidade. 'loja' deixa a pessoa abrir e ver rodando.
+ */
+function promoVitrine(string $prefixo = '../'): string
+{
+    $cards = [
+        [
+            'logo' => 'new-professionals', 'alt' => "New Professional's",
+            'w' => 480, 'h' => 130, 'data' => 'No ar desde julho de 2026',
+            'loja' => 'https://newprofessional.com.py/loja',
+            'texto' => 'Operação no Paraguai em três idiomas, preço em guarani, comissão por cargo editável no '
+                . 'administrativo e endereço resolvido pela base oficial de código postal do país. No ar em 10 dias.',
+        ],
+        [
+            'logo' => 'protech-nutritional', 'alt' => 'Protech Nutritional',
+            'w' => 480, 'h' => 102, 'data' => 'No ar desde julho de 2026',
+            'loja' => 'https://protech.sistemavendadireta.com.br/loja',
+            'texto' => 'Suplementos com distribuição exclusiva por consultor: entrada na loja pelo fluxo de indicação, '
+                . 'catálogo em 9 linhas, escritório virtual e plano com três formas de ganho.',
+        ],
+        [
+            'logo' => 'medplant', 'alt' => 'MedPlant',
+            'w' => 600, 'h' => 153, 'data' => 'Operação no ar',
+            'loja' => 'https://medplant.sistemavendadireta.com.br/loja',
+            'texto' => 'Cosméticos e suplementos naturais em quatro linhas — encapsulados, óleos, chás e cosméticos — '
+                . 'com rede de consultores, recompra e centro de distribuição integrados.',
+        ],
+        [
+            'logo' => 'zohr', 'alt' => 'Zohr Parfums',
+            'w' => 800, 'h' => 277, 'data' => 'Operação no ar',
+            'loja' => 'https://zohr.sistemavendadireta.com.br/loja',
+            'texto' => 'Perfumaria fina em três categorias — eau de parfum, fragrâncias para ambiente e corpo & banho — '
+                . 'com dois planos de carreira independentes para consultor e distribuidor.',
+        ],
+        [
+            'logo' => 'ecotrend-afiliados', 'alt' => 'Ecotrend Afiliados',
+            'w' => 480, 'h' => 130, 'data' => 'Mais de 10 anos de operação',
+            'loja' => null,
+            'texto' => 'Programa de afiliados com link e cupom próprios por parceiro, rastreio de indicação e '
+                . 'pagamento de bônus sem planilha.',
+        ],
+    ];
+
+    $html = '<div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">';
+    foreach ($cards as $c) {
+        $e = static fn ($v) => htmlspecialchars((string) $v, ENT_QUOTES, 'UTF-8');
+        $html .= '<article class="flex flex-col rounded-2xl border border-white/20 bg-white/5 p-5">'
+            . '<div class="flex items-center rounded-xl bg-white px-4 py-3">'
+            // so aponta o webp se o arquivo existir — medplant e zohr vieram so em png
+            . (is_file(__DIR__ . '/../imagens/clientes/' . $c['logo'] . '.webp')
+                ? '<picture><source srcset="' . $e($prefixo . 'imagens/clientes/' . $c['logo'] . '.webp') . '" type="image/webp" />'
+                : '<picture>')
+            . '<img src="' . $e($prefixo . 'imagens/clientes/' . $c['logo'] . '.png') . '" alt="' . $e($c['alt'])
+            . '" class="h-9 w-auto object-contain sm:h-11" width="' . (int) $c['w'] . '" height="' . (int) $c['h']
+            . '" loading="lazy" /></picture></div>'
+            . '<p class="mt-3 text-xs font-semibold uppercase tracking-[0.14em] text-amber-300">' . $e($c['data']) . '</p>'
+            . '<p class="mt-2 flex-1 text-sm leading-relaxed text-white/90">' . $e($c['texto']) . '</p>';
+        if ($c['loja']) {
+            $html .= '<a href="' . $e($c['loja']) . '" target="_blank" rel="noopener"'
+                . ' class="mt-4 inline-flex text-sm font-semibold text-amber-300 underline decoration-amber-300/40'
+                . ' underline-offset-4 hover:text-white">Abrir a loja &rarr;</a>';
+        }
+        $html .= '</article>';
+    }
+    return $html . '</div>';
+}
+
 /** A promocao ainda esta valendo hoje? */
 function promoAtiva(): bool
 {
