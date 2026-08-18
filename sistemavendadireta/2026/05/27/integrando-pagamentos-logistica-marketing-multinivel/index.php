@@ -258,11 +258,11 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://bfrintelligence.com.br/2026/07/15/usar-n8n-implementar-agentes-corporativos-ia/" rel="noopener" target="_blank"><img src="https://bfrintelligence.com.br/imagens/posts/usar-n8n-implementar-agentes-corporativos-ia.jpg" alt="Como usar n8n para implementar agentes corporativos de IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://bfrintelligence.com.br/2026/08/18/seguranca-governanca-agentes-ia-operacao/" rel="noopener" target="_blank"><img src="https://bfrintelligence.com.br/imagens/posts/seguranca-governanca-agentes-ia-operacao.jpg" alt="Segurança e Governança em Agentes de IA na Operação" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">BFR Intelligence</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://bfrintelligence.com.br/2026/07/15/usar-n8n-implementar-agentes-corporativos-ia/" rel="noopener" target="_blank" class="hover:underline">Como usar n8n para implementar agentes corporativos de IA</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como integrar agentes de IA no atendimento ao cliente usando n8n com governança e segurança.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://bfrintelligence.com.br/2026/08/18/seguranca-governanca-agentes-ia-operacao/" rel="noopener" target="_blank" class="hover:underline">Segurança e Governança em Agentes de IA na Operação</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Saiba como implementar segurança e governança em agentes de IA para operações reais e mensuráveis.</p>
   </div>
 </article>
   </div>

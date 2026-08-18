@@ -242,6 +242,14 @@
   <p class="mt-2 text-sm text-white/70">Conteúdo recente dos outros sites do ecossistema.</p>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="https://bfrintelligence.com.br/2026/08/03/integrar-agentes-ia-operacao-governanca-eficaz/" rel="noopener" target="_blank"><img src="https://bfrintelligence.com.br/imagens/posts/integrar-agentes-ia-operacao-governanca-eficaz.jpg" alt="Como integrar agentes de IA na operação com governança eficaz" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">BFR Intelligence</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://bfrintelligence.com.br/2026/08/03/integrar-agentes-ia-operacao-governanca-eficaz/" rel="noopener" target="_blank" class="hover:underline">Como integrar agentes de IA na operação com governança eficaz</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como agentes de IA podem ser integrados à sua operação para resultados mensuráveis e governança adequada.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="https://codafacil.dev/2026/07/21/ia-pode-acelerar-desenvolvimento-software-sob-medida/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/ia-pode-acelerar-desenvolvimento-software-sob-medida.jpg" alt="Como a IA pode acelerar o desenvolvimento de software sob medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
@@ -250,19 +258,11 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://coderush.com.br/2026/06/24/arquitetura-software-operacoes-criticas-governanca/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/arquitetura-software-operacoes-criticas-governanca.jpg" alt="Arquitetura de Software para Operações Críticas e Governança" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://coderush.com.br/2026/06/30/automacao-inteligente-pode-aumentar-produtividade-time/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/automacao-inteligente-pode-aumentar-produtividade-time.jpg" alt="Como a automação inteligente pode aumentar a produtividade do seu time" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">CodeRush</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/06/24/arquitetura-software-operacoes-criticas-governanca/" rel="noopener" target="_blank" class="hover:underline">Arquitetura de Software para Operações Críticas e Governança</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como uma boa arquitetura de software pode garantir governança em operações críticas.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://bfrintelligence.com.br/2026/07/12/integrando-agentes-corporativos-ia-governanca-eficiente/" rel="noopener" target="_blank"><img src="https://bfrintelligence.com.br/imagens/posts/integrando-agentes-corporativos-ia-governanca-eficiente.jpg" alt="Integrando Agentes Corporativos de IA com Governança Eficiente" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">BFR Intelligence</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://bfrintelligence.com.br/2026/07/12/integrando-agentes-corporativos-ia-governanca-eficiente/" rel="noopener" target="_blank" class="hover:underline">Integrando Agentes Corporativos de IA com Governança Eficiente</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como implementar agentes corporativos de IA com governança e canais integrados para maximizar a eficiência.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/06/30/automacao-inteligente-pode-aumentar-produtividade-time/" rel="noopener" target="_blank" class="hover:underline">Como a automação inteligente pode aumentar a produtividade do seu time</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como decisões técnicas em automação podem impactar a produtividade das equipes.</p>
   </div>
 </article>
   </div>

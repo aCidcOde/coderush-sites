@@ -217,17 +217,17 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/05/06/integracoes-pagamento-logistica-mmn/"><img src="../../../../imagens/posts/integracoes-pagamento-logistica-mmn.jpg" alt="Integrações de Pagamento e Logística no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/06/integracoes-pagamento-logistica-mmn/" class="hover:underline">Integrações de Pagamento e Logística no MMN</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como otimizar processos de pagamento e logística no marketing multinível.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="../../../../2026/05/27/integrando-pagamentos-logistica-marketing-multinivel/"><img src="../../../../imagens/posts/integrando-pagamentos-logistica-marketing-multinivel.jpg" alt="Integrando Pagamentos e Logística no Marketing Multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/27/integrando-pagamentos-logistica-marketing-multinivel/" class="hover:underline">Integrando Pagamentos e Logística no Marketing Multinível</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como as integrações de pagamento e logística impactam as vendas diretas.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/05/06/integracoes-pagamento-logistica-mmn/"><img src="../../../../imagens/posts/integracoes-pagamento-logistica-mmn.jpg" alt="Integrações de Pagamento e Logística no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/06/integracoes-pagamento-logistica-mmn/" class="hover:underline">Integrações de Pagamento e Logística no MMN</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como otimizar processos de pagamento e logística no marketing multinível.</p>
   </div>
 </article>
   </div>

@@ -208,17 +208,10 @@
     <!-- BLOG-LEIA-TAMBEM START -->
 <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
   <div class="flex items-end justify-between gap-4">
-    <h2 class="text-2xl font-semibold text-white">Leia também sobre governança de tecnologia</h2>
+    <h2 class="text-2xl font-semibold text-white">Leia também sobre vendas diretas</h2>
     <a href="../../../../blog/" class="text-sm font-semibold text-white/85 hover:text-white">Ver todos os artigos do SVD</a>
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/05/12/governanca-comercial-dados-ia-podem-melhorar-resultados/"><img src="../../../../imagens/posts/governanca-comercial-dados-ia-podem-melhorar-resultados.jpg" alt="Governança Comercial: Como Dados e IA Podem Melhorar Resultados" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/12/governanca-comercial-dados-ia-podem-melhorar-resultados/" class="hover:underline">Governança Comercial: Como Dados e IA Podem Melhorar Resultados</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a governança comercial, aliada à IA, pode otimizar processos e resultados em vendas diretas.</p>
-  </div>
-</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="../../../../2026/06/21/ia-pode-fortalecer-governanca-comercial-mmn/"><img src="../../../../imagens/posts/ia-pode-fortalecer-governanca-comercial-mmn.jpg" alt="Como a IA pode fortalecer a governança comercial no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
@@ -227,10 +220,17 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/05/03/crm-pode-potencializar-governanca-comercial/"><img src="../../../../imagens/posts/crm-pode-potencializar-governanca-comercial.jpg" alt="Como um CRM pode potencializar sua governança comercial" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/05/12/governanca-comercial-dados-ia-podem-melhorar-resultados/"><img src="../../../../imagens/posts/governanca-comercial-dados-ia-podem-melhorar-resultados.jpg" alt="Governança Comercial: Como Dados e IA Podem Melhorar Resultados" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/03/crm-pode-potencializar-governanca-comercial/" class="hover:underline">Como um CRM pode potencializar sua governança comercial</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como um CRM integrado com IA pode transformar sua governança comercial no setor de venda direta.</p>
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/12/governanca-comercial-dados-ia-podem-melhorar-resultados/" class="hover:underline">Governança Comercial: Como Dados e IA Podem Melhorar Resultados</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a governança comercial, aliada à IA, pode otimizar processos e resultados em vendas diretas.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/08/18/garantir-previsibilidade-receita-mmn/"><img src="../../../../imagens/posts/garantir-previsibilidade-receita-mmn.jpg" alt="Como garantir previsibilidade de receita em MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/08/18/garantir-previsibilidade-receita-mmn/" class="hover:underline">Como garantir previsibilidade de receita em MMN</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a tecnologia pode ajudar na previsibilidade de receita em marketing multinível.</p>
   </div>
 </article>
   </div>
@@ -261,11 +261,11 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://bfrintelligence.com.br/2026/08/15/seguranca-guardrails-agentes-ia-operacao/" rel="noopener" target="_blank"><img src="https://bfrintelligence.com.br/imagens/posts/seguranca-guardrails-agentes-ia-operacao.jpg" alt="Segurança e Guardrails para Agentes de IA na Operação" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://bfrintelligence.com.br/2026/08/18/seguranca-governanca-agentes-ia-operacao/" rel="noopener" target="_blank"><img src="https://bfrintelligence.com.br/imagens/posts/seguranca-governanca-agentes-ia-operacao.jpg" alt="Segurança e Governança em Agentes de IA na Operação" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">BFR Intelligence</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://bfrintelligence.com.br/2026/08/15/seguranca-guardrails-agentes-ia-operacao/" rel="noopener" target="_blank" class="hover:underline">Segurança e Guardrails para Agentes de IA na Operação</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como implementar segurança e governança eficaz em agentes de IA para resultados mensuráveis.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://bfrintelligence.com.br/2026/08/18/seguranca-governanca-agentes-ia-operacao/" rel="noopener" target="_blank" class="hover:underline">Segurança e Governança em Agentes de IA na Operação</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Saiba como implementar segurança e governança em agentes de IA para operações reais e mensuráveis.</p>
   </div>
 </article>
   </div>

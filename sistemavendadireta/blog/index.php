@@ -90,6 +90,15 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-INDEX-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/08/18/garantir-previsibilidade-receita-mmn/" data-blog-image="imagens/posts/garantir-previsibilidade-receita-mmn.jpg" data-blog-slug="garantir-previsibilidade-receita-mmn" data-blog-date="2026-08-18">
+  <a href="../2026/08/18/garantir-previsibilidade-receita-mmn/">
+    <img src="../imagens/posts/garantir-previsibilidade-receita-mmn.jpg" alt="Como garantir previsibilidade de receita em MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="../2026/08/18/garantir-previsibilidade-receita-mmn/" class="hover:underline">Como garantir previsibilidade de receita em MMN</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a tecnologia pode ajudar na previsibilidade de receita em marketing multinível.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/08/15/integrar-sistema-venda-direta-erp/" data-blog-image="imagens/posts/integrar-sistema-venda-direta-erp.jpg" data-blog-slug="integrar-sistema-venda-direta-erp" data-blog-date="2026-08-15">
   <a href="../2026/08/15/integrar-sistema-venda-direta-erp/">
     <img src="../imagens/posts/integrar-sistema-venda-direta-erp.jpg" alt="Como integrar seu sistema de venda direta com ERP" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />

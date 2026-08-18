@@ -843,6 +843,15 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-HOME-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/08/18/garantir-previsibilidade-receita-mmn/" data-blog-image="imagens/posts/garantir-previsibilidade-receita-mmn.jpg" data-blog-slug="garantir-previsibilidade-receita-mmn" data-blog-date="2026-08-18">
+  <a href="2026/08/18/garantir-previsibilidade-receita-mmn/">
+    <img src="imagens/posts/garantir-previsibilidade-receita-mmn.jpg" alt="Como garantir previsibilidade de receita em MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="2026/08/18/garantir-previsibilidade-receita-mmn/" class="hover:underline">Como garantir previsibilidade de receita em MMN</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a tecnologia pode ajudar na previsibilidade de receita em marketing multinível.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/08/15/integrar-sistema-venda-direta-erp/" data-blog-image="imagens/posts/integrar-sistema-venda-direta-erp.jpg" data-blog-slug="integrar-sistema-venda-direta-erp" data-blog-date="2026-08-15">
   <a href="2026/08/15/integrar-sistema-venda-direta-erp/">
     <img src="imagens/posts/integrar-sistema-venda-direta-erp.jpg" alt="Como integrar seu sistema de venda direta com ERP" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
@@ -859,15 +868,6 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="2026/08/12/governanca-comercial-dados-ia-marketing-multinivel/" class="hover:underline">Governança Comercial com Dados e IA no Marketing Multinível</a></h2>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a governança comercial pode ser otimizada com dados e IA para resultados mais consistentes.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/08/09/evitar-fraudes-commerce-alto-volume/" data-blog-image="imagens/posts/evitar-fraudes-commerce-alto-volume.jpg" data-blog-slug="evitar-fraudes-commerce-alto-volume" data-blog-date="2026-08-09">
-  <a href="2026/08/09/evitar-fraudes-commerce-alto-volume/">
-    <img src="imagens/posts/evitar-fraudes-commerce-alto-volume.jpg" alt="Como evitar fraudes em e-commerce de alto volume" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-  </a>
-  <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="2026/08/09/evitar-fraudes-commerce-alto-volume/" class="hover:underline">Como evitar fraudes em e-commerce de alto volume</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como o controle de clientes e a prevenção de fraudes podem impulsionar seu e-commerce.</p>
   </div>
 </article>
 <!-- BLOG-HOME-CARDS:END -->

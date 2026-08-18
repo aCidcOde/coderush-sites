@@ -212,7 +212,7 @@
     <!-- BLOG-LEIA-TAMBEM START -->
 <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
   <div class="flex items-end justify-between gap-4">
-    <h2 class="text-2xl font-semibold text-white">Leia também</h2>
+    <h2 class="text-2xl font-semibold text-white">Leia também sobre vendas diretas</h2>
     <a href="../../../../blog/" class="text-sm font-semibold text-white/85 hover:text-white">Ver todos os artigos do SVD</a>
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
@@ -224,17 +224,17 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/07/18/ia-pode-otimizar-suporte-distribuidor-mmn/"><img src="../../../../imagens/posts/ia-pode-otimizar-suporte-distribuidor-mmn.jpg" alt="Como a IA pode otimizar o suporte ao distribuidor no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/08/15/integrar-sistema-venda-direta-erp/"><img src="../../../../imagens/posts/integrar-sistema-venda-direta-erp.jpg" alt="Como integrar seu sistema de venda direta com ERP" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/07/18/ia-pode-otimizar-suporte-distribuidor-mmn/" class="hover:underline">Como a IA pode otimizar o suporte ao distribuidor no MMN</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a inteligência artificial melhora o suporte ao distribuidor em vendas diretas.</p>
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/08/15/integrar-sistema-venda-direta-erp/" class="hover:underline">Como integrar seu sistema de venda direta com ERP</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a integração de sistemas pode otimizar seu MMN.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/07/15/crm-pode-potencializar-plano-carreira-mmn/"><img src="../../../../imagens/posts/crm-pode-potencializar-plano-carreira-mmn.jpg" alt="Como um CRM pode potencializar seu plano de carreira em MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/05/03/crm-pode-potencializar-governanca-comercial/"><img src="../../../../imagens/posts/crm-pode-potencializar-governanca-comercial.jpg" alt="Como um CRM pode potencializar sua governança comercial" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/07/15/crm-pode-potencializar-plano-carreira-mmn/" class="hover:underline">Como um CRM pode potencializar seu plano de carreira em MMN</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como um CRM eficaz pode impulsionar seu desenvolvimento e resultados no marketing multinível.</p>
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/03/crm-pode-potencializar-governanca-comercial/" class="hover:underline">Como um CRM pode potencializar sua governança comercial</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como um CRM integrado com IA pode transformar sua governança comercial no setor de venda direta.</p>
   </div>
 </article>
   </div>
@@ -249,11 +249,11 @@
   <p class="mt-2 text-sm text-white/70">Conteúdo recente dos outros sites do ecossistema.</p>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://bfrintelligence.com.br/2026/08/15/seguranca-guardrails-agentes-ia-operacao/" rel="noopener" target="_blank"><img src="https://bfrintelligence.com.br/imagens/posts/seguranca-guardrails-agentes-ia-operacao.jpg" alt="Segurança e Guardrails para Agentes de IA na Operação" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://bfrintelligence.com.br/2026/08/18/seguranca-governanca-agentes-ia-operacao/" rel="noopener" target="_blank"><img src="https://bfrintelligence.com.br/imagens/posts/seguranca-governanca-agentes-ia-operacao.jpg" alt="Segurança e Governança em Agentes de IA na Operação" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">BFR Intelligence</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://bfrintelligence.com.br/2026/08/15/seguranca-guardrails-agentes-ia-operacao/" rel="noopener" target="_blank" class="hover:underline">Segurança e Guardrails para Agentes de IA na Operação</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como implementar segurança e governança eficaz em agentes de IA para resultados mensuráveis.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://bfrintelligence.com.br/2026/08/18/seguranca-governanca-agentes-ia-operacao/" rel="noopener" target="_blank" class="hover:underline">Segurança e Governança em Agentes de IA na Operação</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Saiba como implementar segurança e governança em agentes de IA para operações reais e mensuráveis.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">

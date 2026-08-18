@@ -217,17 +217,17 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/06/15/construindo-plano-carreira-marketing-multinivel/"><img src="../../../../imagens/posts/construindo-plano-carreira-marketing-multinivel.jpg" alt="Construindo um plano de carreira em marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/15/construindo-plano-carreira-marketing-multinivel/" class="hover:underline">Construindo um plano de carreira em marketing multinível</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como um plano de carreira sólido pode maximizar seu sucesso em marketing multinível.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="../../../../2026/06/30/garantir-previsibilidade-receita-marketing-multinivel/"><img src="../../../../imagens/posts/garantir-previsibilidade-receita-marketing-multinivel.jpg" alt="Como garantir previsibilidade de receita no marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/30/garantir-previsibilidade-receita-marketing-multinivel/" class="hover:underline">Como garantir previsibilidade de receita no marketing multinível</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como um CRM eficiente pode ajudar a prever receitas em MMN.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/06/15/construindo-plano-carreira-marketing-multinivel/"><img src="../../../../imagens/posts/construindo-plano-carreira-marketing-multinivel.jpg" alt="Construindo um plano de carreira em marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/15/construindo-plano-carreira-marketing-multinivel/" class="hover:underline">Construindo um plano de carreira em marketing multinível</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como um plano de carreira sólido pode maximizar seu sucesso em marketing multinível.</p>
   </div>
 </article>
   </div>
