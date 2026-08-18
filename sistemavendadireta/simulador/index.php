@@ -180,6 +180,18 @@ $whatsappHref = 'https://wa.me/5511994566726?text=' . rawurlencode(
 
           <div class="mt-6">
             <div class="flex items-center justify-between gap-3">
+              <label for="s-novos" class="text-sm font-semibold text-white/90">Parte do faturamento que vem de primeira compra</label>
+              <span id="o-novos" class="rounded-full bg-white/10 px-3 py-1 text-sm font-bold text-amber-300">20%</span>
+            </div>
+            <input id="s-novos" type="range" min="0" max="60" step="1" value="20" class="mt-3 w-full" style="accent-color:#fcd34d" />
+            <p class="mt-2 text-xs text-white/60">
+              É o que define o custo real do bônus de indicação: ele só incide sobre quem está comprando
+              pela primeira vez. Operação madura fica entre 10% e 20%; em lançamento passa de 50%.
+            </p>
+          </div>
+
+          <div class="mt-6">
+            <div class="flex items-center justify-between gap-3">
               <label for="s-breakage" class="text-sm font-semibold text-white/90">Quanto do plano é efetivamente pago</label>
               <span id="o-breakage" class="rounded-full bg-white/10 px-3 py-1 text-sm font-bold text-amber-300">70%</span>
             </div>
@@ -202,7 +214,7 @@ $whatsappHref = 'https://wa.me/5511994566726?text=' . rawurlencode(
         <div class="rounded-2xl border border-white/20 bg-white/5 px-5 py-4">
           <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/60">Payout nominal recorrente</p>
           <p id="r-nominal" class="mt-1 font-[var(--font-heading)] text-3xl font-bold text-white">26%</p>
-          <p class="mt-1 text-xs text-white/60">unilevel + carreira, somados</p>
+          <p id="r-nominal-nota" class="mt-1 text-xs text-white/60">unilevel + carreira + indicação</p>
         </div>
 
         <div class="rounded-2xl border border-white/20 bg-white/5 px-5 py-4">
@@ -314,6 +326,7 @@ $whatsappHref = 'https://wa.me/5511994566726?text=' . rawurlencode(
     var revenda = parseFloat($("s-revenda").value) || 0;
     var titulo = parseFloat($("s-titulo").value) || 0;
     var pago = +$("s-breakage").value;
+    var novos = +$("s-novos").value;
 
     var uni = niveis.reduce(function (a, b) { return a + b; }, 0);
 
@@ -322,9 +335,15 @@ $whatsappHref = 'https://wa.me/5511994566726?text=' . rawurlencode(
     $("o-outros").textContent = outros + "%";
     $("o-unilevel").textContent = n1.format(uni) + "%";
     $("o-breakage").textContent = pago + "%";
+    $("o-novos").textContent = novos + "%";
 
-    var nominal = uni + titulo;
-    var real = nominal * pago / 100;
+    // Rede (unilevel + carreira) sofre breakage: depende de qualificacao.
+    // Indicacao nao sofre — sempre existe um patrocinador pra receber. O que
+    // limita o custo dela e a fatia do faturamento que e primeira compra.
+    var nominalRede = uni + titulo;
+    var custoIndicacao = indicacao * novos / 100;
+    var nominal = nominalRede + custoIndicacao;
+    var real = (nominalRede * pago / 100) + custoIndicacao;
 
     // A margem de revenda sai do preco, nao do bonus: reduz a margem bruta
     // disponivel antes de qualquer bonus ser pago.
@@ -363,14 +382,15 @@ $whatsappHref = 'https://wa.me/5511994566726?text=' . rawurlencode(
     // Ponto de ruptura: quanto de payout real a margem ainda aguenta
     var teto = margemLiquida - outros;
     $("r-ruptura").textContent = "Com essa margem, o payout real não pode passar de " +
-      n1.format(Math.max(0, teto)) + "% — o equivalente a " + n1.format(Math.max(0, teto * 100 / Math.max(1, pago))) +
-      "% de payout nominal ao pagar " + pago + "% do prometido. O bônus de indicação de " + indicacao +
-      "% não entra aqui por incidir só na primeira compra.";
+      n1.format(Math.max(0, teto)) + "%. O bônus de indicação sozinho já consome " +
+      n1.format(custoIndicacao) + "% (" + indicacao + "% sobre os " + novos +
+      "% do faturamento que são primeira compra), sobrando " +
+      n1.format(Math.max(0, teto - custoIndicacao)) + "% para unilevel e carreira.";
 
     if (!usou && window.gtag) { usou = true; gtag("event", "simulador_plano_uso"); }
   }
 
-  ["s-ticket", "s-margem", "s-outros", "s-breakage", "s-indicacao", "s-revenda", "s-titulo"]
+  ["s-ticket", "s-margem", "s-outros", "s-breakage", "s-novos", "s-indicacao", "s-revenda", "s-titulo"]
     .forEach(function (id) { $(id).addEventListener("input", calc); });
 
   $("add-nivel").addEventListener("click", function () {
