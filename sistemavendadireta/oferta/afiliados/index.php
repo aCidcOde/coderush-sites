@@ -116,6 +116,7 @@ $seoDescription = 'Cadastre afiliados e influenciadores com link e cupom própri
       <a href="../../" target="_blank" rel="noopener" aria-label="Abrir o site do Sistema Venda Direta em nova aba"><img decoding="async" src="../../imagens/Logo-Branco-1.webp" alt="Sistema Venda Direta" class="h-auto w-[150px] sm:w-[200px]" width="1000" height="300" loading="eager" /></a>
       <div class="flex items-center gap-5">
         <a href="https://painel.sistemavendadireta.com.br/primeiros-passos?utm_source=site&utm_medium=oferta&utm_campaign=demo" target="_blank" rel="noopener" class="text-sm font-semibold text-amber-300 hover:text-amber-200">Ver demonstração</a>
+        <a href="../../simulador/?utm_source=site&amp;utm_medium=oferta&amp;utm_campaign=simulador" class="text-sm font-semibold text-white/85 hover:text-white">Simulador de plano</a>
         <a href="../../cases/" class="text-sm font-semibold text-white/85 hover:text-white">Cases</a>
         <a href="<?= htmlspecialchars($whatsappHref, ENT_QUOTES, 'UTF-8') ?>" target="_blank" rel="noopener noreferrer" class="hidden rounded-full bg-[#25D366] px-4 py-2 text-sm font-bold sm:inline-flex">
           Falar agora

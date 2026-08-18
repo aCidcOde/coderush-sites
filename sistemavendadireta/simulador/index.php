@@ -27,8 +27,8 @@ require_once __DIR__ . '/../inc/promo.php';
 $seoBase = 'https://www.sistemavendadireta.com.br';
 $seoUrl = $seoBase . '/simulador/';
 $seoTitle = 'Simulador de Plano de Marketing Multinível | Veja se o seu plano fecha';
-$seoDescription = 'Calcule o payout real do seu plano de MMN: bônus de indicação, unilevel, '
-    . 'binário e carreira. Descubra se a margem sustenta o que o plano promete. Sem cadastro.';
+$seoDescription = 'Calcule o payout real do seu plano de MMN: bônus de indicação, unilevel por nível '
+    . 'e carreira. Descubra se a margem sustenta o que o plano promete. Sem cadastro.';
 
 // Faixas de mensalidade — mesma tabela da /oferta/, usada no bloco de custo.
 $monthlyTiers = [
@@ -75,6 +75,7 @@ $whatsappHref = 'https://wa.me/5511994566726?text=' . rawurlencode(
       <div class="flex items-center gap-5">
         <a href="<?= htmlspecialchars(DEMO_URL, ENT_QUOTES, 'UTF-8') ?>?utm_source=site&utm_medium=simulador&utm_campaign=demo" target="_blank" rel="noopener" class="text-sm font-semibold text-amber-300 hover:text-amber-200">Ver demonstração</a>
         <a href="../cases/" class="hidden text-sm font-semibold text-white/85 hover:text-white sm:inline">Cases</a>
+        <a href="../oferta/?utm_source=site&amp;utm_medium=simulador&amp;utm_campaign=promo-10-anos" class="rounded-full bg-amber-400 px-4 py-2 text-sm font-bold text-brand hover:bg-amber-300">Ver a promoção</a>
       </div>
     </div>
   </header>
@@ -166,17 +167,8 @@ $whatsappHref = 'https://wa.me/5511994566726?text=' . rawurlencode(
             </div>
           </div>
 
-          <div class="mt-6 grid gap-4 sm:grid-cols-2">
-            <label class="block">
-              <span class="text-sm font-semibold text-white/90">Bônus binário</span>
-              <span class="mt-1 flex items-center gap-2">
-                <input id="s-binario" type="number" min="0" max="30" step="1" value="0" class="w-full rounded-xl border border-white/25 bg-white/10 px-3 py-2 text-white" />
-                <span class="text-sm text-white/60">%</span>
-              </span>
-              <span class="mt-1 block text-xs text-white/55">sobre o menor lado — deixe 0 se não usar</span>
-            </label>
-
-            <label class="block">
+          <div class="mt-6">
+            <label class="block sm:max-w-xs">
               <span class="text-sm font-semibold text-white/90">Bônus de carreira / título</span>
               <span class="mt-1 flex items-center gap-2">
                 <input id="s-titulo" type="number" min="0" max="30" step="1" value="5" class="w-full rounded-xl border border-white/25 bg-white/10 px-3 py-2 text-white" />
@@ -210,7 +202,7 @@ $whatsappHref = 'https://wa.me/5511994566726?text=' . rawurlencode(
         <div class="rounded-2xl border border-white/20 bg-white/5 px-5 py-4">
           <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/60">Payout nominal recorrente</p>
           <p id="r-nominal" class="mt-1 font-[var(--font-heading)] text-3xl font-bold text-white">26%</p>
-          <p class="mt-1 text-xs text-white/60">unilevel + binário + carreira, somados</p>
+          <p class="mt-1 text-xs text-white/60">unilevel + carreira, somados</p>
         </div>
 
         <div class="rounded-2xl border border-white/20 bg-white/5 px-5 py-4">
@@ -320,7 +312,6 @@ $whatsappHref = 'https://wa.me/5511994566726?text=' . rawurlencode(
     var outros = +$("s-outros").value;
     var indicacao = parseFloat($("s-indicacao").value) || 0;
     var revenda = parseFloat($("s-revenda").value) || 0;
-    var binario = parseFloat($("s-binario").value) || 0;
     var titulo = parseFloat($("s-titulo").value) || 0;
     var pago = +$("s-breakage").value;
 
@@ -332,7 +323,7 @@ $whatsappHref = 'https://wa.me/5511994566726?text=' . rawurlencode(
     $("o-unilevel").textContent = n1.format(uni) + "%";
     $("o-breakage").textContent = pago + "%";
 
-    var nominal = uni + binario + titulo;
+    var nominal = uni + titulo;
     var real = nominal * pago / 100;
 
     // A margem de revenda sai do preco, nao do bonus: reduz a margem bruta
@@ -379,7 +370,7 @@ $whatsappHref = 'https://wa.me/5511994566726?text=' . rawurlencode(
     if (!usou && window.gtag) { usou = true; gtag("event", "simulador_plano_uso"); }
   }
 
-  ["s-ticket", "s-margem", "s-outros", "s-breakage", "s-indicacao", "s-revenda", "s-binario", "s-titulo"]
+  ["s-ticket", "s-margem", "s-outros", "s-breakage", "s-indicacao", "s-revenda", "s-titulo"]
     .forEach(function (id) { $(id).addEventListener("input", calc); });
 
   $("add-nivel").addEventListener("click", function () {
