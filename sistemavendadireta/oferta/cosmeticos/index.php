@@ -112,7 +112,7 @@ $seoDescription = 'Sistema para marca de cosméticos com consultoras: catálogo 
   <?php endif; ?>
 
   <header class="border-b border-white/10 bg-brand/95">
-    <div class="mx-auto flex max-w-[1140px] items-center justify-between gap-4 px-4 py-3 sm:px-6">
+    <div class="mx-auto flex w-full items-center justify-between gap-4 px-4 py-3 sm:px-8">
       <a href="../../" target="_blank" rel="noopener" aria-label="Abrir o site do Sistema Venda Direta em nova aba"><img decoding="async" src="../../imagens/Logo-Branco-1.webp" alt="Sistema Venda Direta" class="h-auto w-[150px] sm:w-[200px]" width="1000" height="300" loading="eager" /></a>
       <div class="flex items-center gap-5">
         <a href="https://painel.sistemavendadireta.com.br/primeiros-passos?utm_source=site&utm_medium=oferta&utm_campaign=demo" target="_blank" rel="noopener" class="text-sm font-semibold text-amber-300 hover:text-amber-200">Ver demonstração</a>
