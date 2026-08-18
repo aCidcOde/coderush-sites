@@ -22,7 +22,7 @@ arquivo. Ao mudar preco ou prazo, alinhar tambem la.
 // credenciais publicadas e SEM cadastro. E a oferta de menor atrito que temos:
 // concorrente dá "teste gratis 14 dias" exigindo cadastro; aqui a pessoa entra e
 // usa. Estava no ar desde sempre e linkada em lugar nenhum.
-const DEMO_URL = 'https://zohr.sistemavendadireta.com.br/primeiros-passos';
+const DEMO_URL = 'https://painel.sistemavendadireta.com.br/primeiros-passos';
 
 const PROMO_DEADLINE = '2026-08-31';
 const PROMO_NOME = 'Promoção 10 Anos';

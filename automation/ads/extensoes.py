@@ -28,7 +28,7 @@ UTM = "utm_source=google&utm_medium=cpc&utm_campaign=promo-10-anos"
 # COM cadastro; a nossa e um ambiente inteiro (loja, escritorio do parceiro e
 # admin) com credenciais publicadas, sem cadastro nenhum. Estava linkada em
 # lugar nenhum — nem no site, nem no anuncio.
-DEMO = "https://zohr.sistemavendadireta.com.br/primeiros-passos"
+DEMO = "https://painel.sistemavendadireta.com.br/primeiros-passos"
 
 SITELINKS = [
     ("Ver demonstracao", "Sistema real, sem cadastro", "Loja, escritorio e admin", f"{DEMO}?{UTM}&utm_content=sitelink-demo"),
