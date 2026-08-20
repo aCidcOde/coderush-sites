@@ -740,7 +740,49 @@ if ($gaSite && !empty($gaSite['eventos'])) {
       <?php
       $serieGeral = ultimosDias($gaSite['diario'] ?? [], $diasFiltro);
       $seriePagina = $paginaSel !== '' ? ultimosDias($gaSite['paginas_diario'][$paginaSel] ?? [], $diasFiltro) : [];
+
+      // Periodo anterior de mesmo tamanho, pra responder "esta crescendo?".
+      // Numero solto nao diz nada: 40 usuarios e bom ou ruim depende do que veio antes.
+      $todos = $gaSite['diario'] ?? [];
+      $anterior = count($todos) > $diasFiltro
+          ? array_slice($todos, max(0, count($todos) - $diasFiltro * 2), $diasFiltro)
+          : [];
+      $usuarios = somaSerie($serieGeral, 'usuarios');
+      $sessoes = somaSerie($serieGeral, 'sessoes');
+      $usuariosAntes = somaSerie($anterior, 'usuarios');
+      $sessoesAntes = somaSerie($anterior, 'sessoes');
+      $variacao = static function (int $agora, int $antes): array {
+          if ($antes <= 0) {
+              return ['—', 'muted'];
+          }
+          $pct = ($agora - $antes) / $antes * 100;
+          $seta = $pct > 0 ? '▲' : ($pct < 0 ? '▼' : '=');
+          return [$seta . ' ' . number_format(abs($pct), 0, ',', '.') . '%',
+                  $pct >= 0 ? 'm-bom' : 'm-alerta'];
+      };
+      [$varUsuarios, $corUsuarios] = $variacao($usuarios, $usuariosAntes);
+      [$varSessoes, $corSessoes] = $variacao($sessoes, $sessoesAntes);
+      $mediaDia = $serieGeral ? $usuarios / count($serieGeral) : 0;
       ?>
+
+      <div class="kpis kpis-4">
+        <div class="kpi"><div class="chip c-blue"><?= icon('users') ?></div>
+          <div><b><?= num($usuarios) ?></b><span>Usuários únicos · <?= $diasFiltro ?>d</span></div></div>
+        <div class="kpi"><div class="chip c-blue"><?= icon('eye') ?></div>
+          <div><b><?= num($sessoes) ?></b><span>Sessões</span></div></div>
+        <div class="kpi"><div class="chip c-amber"><?= icon('chart') ?></div>
+          <div><b><?= num($mediaDia, 1) ?></b><span>Usuários por dia</span></div></div>
+        <div class="kpi"><div class="chip c-green"><?= icon('gauge') ?></div>
+          <div><b class="<?= $corUsuarios ?>"><?= e($varUsuarios) ?></b><span>vs. <?= $diasFiltro ?>d anteriores</span></div></div>
+      </div>
+
+      <?php if ($anterior): ?>
+        <p class="nota">
+          Nos <?= $diasFiltro ?> dias anteriores foram <b><?= num($usuariosAntes) ?></b> usuários e
+          <b><?= num($sessoesAntes) ?></b> sessões. Agora são <b><?= num($usuarios) ?></b> e
+          <b><?= num($sessoes) ?></b> — <?= e($varUsuarios) ?> em usuários e <?= e($varSessoes) ?> em sessões.
+        </p>
+      <?php endif; ?>
 
       <?php if ($paginaSel !== ''): ?>
         <div class="box" style="margin-bottom:14px;">
