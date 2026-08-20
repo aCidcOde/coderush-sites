@@ -104,6 +104,25 @@ if ($authed && isset($_POST['marcar_lead'])) {
     exit;
 }
 
+// Dar nome a oportunidade. Lead de clique no WhatsApp nasce como
+// "(clique WhatsApp)" — sem nome nao da pra reconhecer quem e depois da conversa,
+// e o funil vira uma lista de anonimos.
+if ($authed && isset($_POST['renomear_lead'])) {
+    $leadId = (int) ($_POST['lead_id'] ?? 0);
+    $nome = mb_substr(trim(strip_tags((string) ($_POST['nome_oportunidade'] ?? ''))), 0, 90);
+    if ($leadId > 0 && $nome !== '') {
+        try {
+            $db = new PDO('sqlite:' . __DIR__ . '/../storage/leads.sqlite');
+            $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $db->prepare('UPDATE leads SET nome = ? WHERE id = ?')->execute([$nome, $leadId]);
+        } catch (Throwable $e) {
+            // silencioso: renomear nao pode derrubar o painel
+        }
+    }
+    header('Location: ./' . abaUrl('funil', ['etapa' => $etapaSel]), true, 303);
+    exit;
+}
+
 // Exportacao das conversoes offline no formato de upload do Google Ads
 if ($authed && isset($_GET['exportar']) && $_GET['exportar'] === 'ads') {
     $db = new PDO('sqlite:' . __DIR__ . '/../storage/leads.sqlite');
@@ -470,6 +489,38 @@ if ($gaSite && !empty($gaSite['eventos'])) {
     .tag.area-medicao { background: rgba(96,165,250,.18); color: #93c5fd; }
     .tag.area-painel { background: rgba(52,211,153,.18); color: #6ee7b7; }
     .tag.area-site { background: rgba(255,255,255,.12); color: rgba(255,255,255,.75); }
+
+    /* kanban do funil — colunas por etapa, uma oportunidade por card.
+       Tabela nao parece funil: le-se linha a linha e nao se enxerga onde trava. */
+    .kanban { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(268px, 1fr);
+      gap: 12px; overflow-x: auto; padding-bottom: 8px; align-items: start; }
+    .col-etapa { background: rgba(255,255,255,.03); border: 1px solid var(--line);
+      border-radius: 16px; padding: 12px; min-height: 120px; }
+    .col-topo { display: flex; align-items: center; justify-content: space-between;
+      gap: 8px; margin-bottom: 10px; padding: 0 2px; }
+    .col-topo b { font-size: 13px; }
+    .col-contagem { font-size: 11px; font-weight: 700; padding: 2px 9px; border-radius: 99px;
+      background: rgba(255,255,255,.1); color: rgba(255,255,255,.8); }
+    .card-lead { background: var(--card); border: 1px solid var(--line); border-radius: 13px;
+      padding: 12px; margin-bottom: 9px; transition: .15s; }
+    .card-lead:hover { border-color: rgba(255,255,255,.3); transform: translateY(-1px); }
+    .card-nome { font-size: 13.5px; font-weight: 700; line-height: 1.3; }
+    .card-meta { font-size: 11px; color: var(--text-soft); margin-top: 5px; line-height: 1.6; }
+    .card-meta b { color: rgba(255,255,255,.75); font-weight: 600; }
+    .card-tags { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 8px; }
+    .mini-tag { font-size: 10px; font-weight: 700; padding: 2px 7px; border-radius: 99px;
+      background: rgba(255,255,255,.1); color: rgba(255,255,255,.7); }
+    .mini-tag.ads { background: rgba(252,211,77,.18); color: var(--amber); }
+    .card-acoes { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 10px;
+      padding-top: 9px; border-top: 1px solid rgba(255,255,255,.08); }
+    .form-nome { display: flex; gap: 4px; margin-top: 8px; }
+    .form-nome input { flex: 1; min-width: 0; padding: 4px 8px; font-size: 11.5px;
+      border-radius: 8px; border: 1px solid var(--line); background: rgba(255,255,255,.07); color: #fff; }
+    .form-nome button { width: auto; margin: 0; padding: 4px 9px; font-size: 11px; border-radius: 8px;
+      background: rgba(255,255,255,.12); color: rgba(255,255,255,.85); border: 1px solid var(--line);
+      font-weight: 700; cursor: pointer; }
+    .form-nome button:hover { transform: none; box-shadow: none; border-color: var(--amber); color: var(--amber); }
+    .col-vazia { font-size: 12px; color: rgba(255,255,255,.3); text-align: center; padding: 14px 6px; font-style: italic; }
 
     /* tabela de metricas de midia (mesmas colunas do Google Ads) */
     .metricas th { text-align: right; }
@@ -1105,35 +1156,80 @@ if ($gaSite && !empty($gaSite['eventos'])) {
     <?php if ($dbAviso !== ''): ?>
       <p class="muted"><?= e($dbAviso) ?></p>
     <?php else: ?>
-      <div class="box tbl-scroll">
-        <table>
-          <tr>
-            <th>#</th><th>Data</th><th>Nome</th><th>WhatsApp</th><th>Origem</th>
-            <th>Campanha</th><th>Fonte</th><th>Ads?</th><th>Etapa</th><th>Avançar</th><th>Valor</th>
-          </tr>
-          <?php foreach ($leads as $lead): ?>
-            <tr>
-              <td class="muted"><?= (int) $lead['id'] ?></td>
-              <td><?= e(brDateTime($lead['created_at'])) ?></td>
-              <td><?= e($lead['nome']) ?><?= $lead['status'] === 'zap' && $lead['mensagem'] ? '<br /><span class="muted">' . e($lead['mensagem']) . '</span>' : '' ?></td>
-              <td><?= e($lead['telefone']) ?></td>
-              <td><?= e($lead['origem']) ?></td>
-              <td><?= e($lead['utm_campaign'] ?: '-') ?><?= $lead['utm_content'] ? ' / ' . e($lead['utm_content']) : '' ?></td>
-              <td><?= e($lead['utm_source'] ?: 'direto') ?><?= $lead['sim_faturamento'] ? '<br /><span class="muted">simulou ' . e($lead['sim_faturamento']) . '</span>' : '' ?></td>
-              <td><?= $lead['gclid'] ? '<span title="veio de anúncio">sim</span>' : '-' ?></td>
-              <td><span class="tag <?= e($lead['status']) ?>"><?= e($lead['status']) ?></span></td>
-              <td>
-                <form method="post" class="acoes">
+      <?php
+      // Kanban: uma coluna por etapa. "novo" e "zap" ficam juntos como entrada —
+      // sao a mesma coisa do ponto de vista comercial: alguem chegou e ninguem falou.
+      $colunas = [
+          'entrada' => ['Entraram', ['novo', 'zap']],
+          'qualificado' => ['Qualificados', ['qualificado']],
+          'demo' => ['Reunião', ['demo']],
+          'fechado' => ['Fecharam', ['fechado']],
+          'perdido' => ['Perdidos', ['perdido']],
+      ];
+      $porColuna = array_fill_keys(array_keys($colunas), []);
+      foreach ($leads as $lead) {
+          foreach ($colunas as $chave => [$rot, $status]) {
+              if (in_array($lead['status'], $status, true)) {
+                  $porColuna[$chave][] = $lead;
+                  break;
+              }
+          }
+      }
+      ?>
+      <div class="kanban">
+        <?php foreach ($colunas as $chave => [$rotulo, $status]): ?>
+          <div class="col-etapa">
+            <div class="col-topo">
+              <b><?= e($rotulo) ?></b>
+              <span class="col-contagem"><?= count($porColuna[$chave]) ?></span>
+            </div>
+
+            <?php if (!$porColuna[$chave]): ?>
+              <p class="col-vazia">vazio</p>
+            <?php endif; ?>
+
+            <?php foreach ($porColuna[$chave] as $lead): ?>
+              <?php
+              $semNome = in_array(trim((string) $lead['nome']), ['', '(clique WhatsApp)'], true);
+              $ref = '';
+              if (preg_match('/ref zap:\s*(\S+)/i', (string) $lead['mensagem'], $m)) { $ref = $m[1]; }
+              ?>
+              <article class="card-lead">
+                <p class="card-nome"><?= $semNome ? '<span class="muted">sem nome</span>' : e($lead['nome']) ?></p>
+
+                <p class="card-meta">
+                  <?= e(brDateTime($lead['created_at'])) ?>
+                  <?php if ($ref !== ''): ?><br />ref <b><?= e($ref) ?></b><?php endif; ?>
+                  <?php if (!empty($lead['telefone'])): ?><br /><b><?= e($lead['telefone']) ?></b><?php endif; ?>
+                  <?php if (!empty($lead['email'])): ?><br /><?= e($lead['email']) ?><?php endif; ?>
+                  <?php if ($lead['close_value'] !== null): ?><br />fechado por <b>R$ <?= num((float) $lead['close_value']) ?></b><?php endif; ?>
+                </p>
+
+                <div class="card-tags">
+                  <?php if (!empty($lead['utm_campaign'])): ?><span class="mini-tag"><?= e($lead['utm_campaign']) ?></span><?php endif; ?>
+                  <?php if (!empty($lead['gclid'])): ?><span class="mini-tag ads" title="veio de clique em anúncio — dá pra mandar a conversão de volta ao Google">Ads</span><?php endif; ?>
+                  <?php if (!empty($lead['sim_faturamento'])): ?><span class="mini-tag">simulou <?= e($lead['sim_faturamento']) ?></span><?php endif; ?>
+                </div>
+
+                <form method="post" class="form-nome">
+                  <input type="hidden" name="lead_id" value="<?= (int) $lead['id'] ?>" />
+                  <input type="text" name="nome_oportunidade" maxlength="90"
+                         placeholder="<?= $semNome ? 'Nome da oportunidade' : 'Renomear' ?>"
+                         value="<?= $semNome ? '' : e($lead['nome']) ?>" />
+                  <button type="submit" name="renomear_lead" value="1" title="Salvar o nome">salvar</button>
+                </form>
+
+                <form method="post" class="card-acoes">
                   <input type="hidden" name="lead_id" value="<?= (int) $lead['id'] ?>" />
                   <?php
                   $etapas = [
                       'qualificado' => ['Qualificar', 'Falei com ele: é oportunidade real'],
-                      'demo' => ['Reunião', 'Demonstração/reunião agendada'],
+                      'demo' => ['Reunião', 'Demonstração ou reunião agendada'],
                       'perdido' => ['Perdido', 'Não seguiu'],
                   ];
-                  foreach ($etapas as $chave => [$rot, $titulo]):
-                      if ($lead['status'] === $chave || $lead['status'] === 'fechado') continue; ?>
-                    <button type="submit" name="marcar_lead" value="<?= $chave ?>" class="btn-etapa e-<?= $chave ?>" title="<?= e($titulo) ?>"><?= $rot ?></button>
+                  foreach ($etapas as $ch => [$rot, $titulo]):
+                      if ($lead['status'] === $ch || $lead['status'] === 'fechado') continue; ?>
+                    <button type="submit" name="marcar_lead" value="<?= $ch ?>" class="btn-etapa e-<?= $ch ?>" title="<?= e($titulo) ?>"><?= $rot ?></button>
                   <?php endforeach; ?>
                   <?php if ($lead['status'] !== 'fechado'): ?>
                     <span class="venda-wrap">
@@ -1141,14 +1237,13 @@ if ($gaSite && !empty($gaSite['eventos'])) {
                       <button type="submit" name="marcar_lead" value="fechado" class="btn-etapa e-fechado" title="Comprou: registra a venda e manda o valor pro Google">Comprou</button>
                     </span>
                   <?php else: ?>
-                    <button type="submit" name="marcar_lead" value="novo" class="btn-etapa" title="Reabrir o lead">↺ reabrir</button>
+                    <button type="submit" name="marcar_lead" value="novo" class="btn-etapa" title="Reabrir a oportunidade">↺ reabrir</button>
                   <?php endif; ?>
                 </form>
-              </td>
-              <td><?= $lead['close_value'] !== null ? 'R$ ' . number_format((float) $lead['close_value'], 0, ',', '.') : '-' ?></td>
-            </tr>
-          <?php endforeach; ?>
-        </table>
+              </article>
+            <?php endforeach; ?>
+          </div>
+        <?php endforeach; ?>
       </div>
     <?php endif; ?>
     <?php endif; /* fim da aba funil */ ?>
