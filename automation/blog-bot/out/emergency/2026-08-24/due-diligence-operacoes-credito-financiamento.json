@@ -1,0 +1,88 @@
+{
+  "date": "2026-08-24",
+  "siteId": "emergency",
+  "postType": "due-diligence-certidoes",
+  "focus": "php",
+  "theme": "diligencia em operacoes de credito e financiamento",
+  "angle": "compliance",
+  "slug": "due-diligence-operacoes-credito-financiamento",
+  "title": "Emergency Documentação: PHP aplicado a compliance",
+  "description": "Atualização semanal de php para Emergency Documentação, com foco em diligencia em operacoes de credito e financiamento.",
+  "sources": [
+    "https://www.pellon.com.br/due-diligence-em-operacoes-bancarias-procedimentos-e-requisitos/",
+    "https://leituraestrategica.com.br/a-diligencia-em-operacoes-de-credito/",
+    "https://rtm.net.br/due-diligence-e-compliance/",
+    "https://kempdantas.adv.br/a-importancia-da-due-diligence-para-as-empresas-de-credito-instituicoes-financeiras-e-demais-agentes-de-fomento-mercantil/",
+    "https://grcsolutions.com.br/conteudo/due-diligence-compliance/"
+  ],
+  "status": "draft",
+  "generatedAt": "2026-08-24T07:32:02-03:00",
+  "content": {
+    "eyebrow": "Guia prático",
+    "headline": "Due diligence em operações de crédito e financiamento",
+    "summary": "Entenda como conduzir uma due diligence eficiente em operações de crédito e financiamento, focando em compliance e riscos.",
+    "answerBox": {
+      "question": "Como realizar due diligence em operações de crédito?",
+      "answer": "Para realizar uma due diligence eficaz em operações de crédito, é essencial verificar a documentação do cliente, analisar a situação financeira e a conformidade com regulamentos de compliance. Isso minimiza riscos e garante uma negociação mais segura."
+    },
+    "tldr": [
+      "Due diligence é essencial para operações de crédito seguras.",
+      "Verifique documentação e situação financeira do cliente.",
+      "Compliance reduz riscos em negociações."
+    ],
+    "sections": [
+      {
+        "type": "prose",
+        "title": "Importância da due diligence em crédito",
+        "body": "A due diligence em operações de crédito é um processo crítico que envolve a verificação minuciosa de informações financeiras e documentais do cliente. Esse procedimento não apenas assegura a conformidade legal, mas também ajuda a identificar potenciais riscos que possam impactar a transação. Em um cenário onde o tempo é essencial, uma abordagem sistemática pode acelerar o fechamento, evitando retrabalhos."
+      },
+      {
+        "type": "list",
+        "title": "Passos para uma due diligence eficaz",
+        "items": [
+          "Revisar certidões cartorárias e forenses.",
+          "Analisar a saúde financeira do cliente.",
+          "Verificar a regularidade fiscal e trabalhista.",
+          "Confirmar a documentação imobiliária, se aplicável.",
+          "Realizar investigação patrimonial para assegurar ativos."
+        ]
+      },
+      {
+        "type": "callout",
+        "body": "Já estruturamos isso em diversos clientes. É interessante pensar que, com um suporte eficaz, você pode evitar complicações futuras. Vale uma conversa para entender melhor sua necessidade.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Desafios na due diligence de crédito",
+        "body": "Um dos grandes desafios na due diligence em operações de crédito é lidar com a complexidade das informações. Muitas vezes, as empresas não possuem a documentação necessária em ordem, o que pode atrasar o processo. Nesse tipo de cenário, Emergency Documentação costuma fornecer apoio, oferecendo soluções personalizadas e um painel de acompanhamento para que você tenha visibilidade total do status da sua diligência. Isso facilita a identificação de pendências e a tomada de decisões rápidas."
+      },
+      {
+        "type": "cta-inline",
+        "body": "Entre em contato para discutir como podemos ajudar em sua diligência.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "O que evitar na due diligence",
+        "body": "É fundamental evitar a superficialidade na análise das informações. Ignorar detalhes pode resultar em riscos significativos e prejuízos financeiros. Além disso, não se deve subestimar a importância do suporte humano em casos complexos. Contar com um consultor experiente pode fazer a diferença e garantir que todos os aspectos sejam considerados adequadamente."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Quais documentos são essenciais na due diligence?",
+        "a": "Os documentos essenciais incluem certidões cartorárias, comprovantes de regularidade fiscal, e relatórios financeiros detalhados do cliente."
+      },
+      {
+        "q": "Como validar fornecedores antes de contratar?",
+        "a": "A validação de fornecedores deve incluir a verificação de sua regularidade fiscal, análise de reputação no mercado e revisão de certificações pertinentes."
+      },
+      {
+        "q": "Quais são os riscos de uma due diligence mal feita?",
+        "a": "Os riscos incluem prejuízos financeiros, problemas jurídicos futuros e danos à reputação da empresa envolvida na transação."
+      }
+    ]
+  }
+}

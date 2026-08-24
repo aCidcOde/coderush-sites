@@ -843,6 +843,15 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-HOME-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/08/24/comissionamento-emissao-nf-venda-direta/" data-blog-image="imagens/posts/comissionamento-emissao-nf-venda-direta.jpg" data-blog-slug="comissionamento-emissao-nf-venda-direta" data-blog-date="2026-08-24">
+  <a href="2026/08/24/comissionamento-emissao-nf-venda-direta/">
+    <img src="imagens/posts/comissionamento-emissao-nf-venda-direta.jpg" alt="Comissionamento e Emissão de NF-e em Venda Direta" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="2026/08/24/comissionamento-emissao-nf-venda-direta/" class="hover:underline">Comissionamento e Emissão de NF-e em Venda Direta</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a integração fiscal impacta comissionamento em vendas diretas.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/08/21/precificar-operacoes-internacionais-mmn-moeda-local/" data-blog-image="imagens/posts/precificar-operacoes-internacionais-mmn-moeda-local.jpg" data-blog-slug="precificar-operacoes-internacionais-mmn-moeda-local" data-blog-date="2026-08-21">
   <a href="2026/08/21/precificar-operacoes-internacionais-mmn-moeda-local/">
     <img src="imagens/posts/precificar-operacoes-internacionais-mmn-moeda-local.jpg" alt="Como precificar operações internacionais em MMN com moeda local" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
@@ -859,15 +868,6 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="2026/08/18/garantir-previsibilidade-receita-mmn/" class="hover:underline">Como garantir previsibilidade de receita em MMN</a></h2>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a tecnologia pode ajudar na previsibilidade de receita em marketing multinível.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/08/15/integrar-sistema-venda-direta-erp/" data-blog-image="imagens/posts/integrar-sistema-venda-direta-erp.jpg" data-blog-slug="integrar-sistema-venda-direta-erp" data-blog-date="2026-08-15">
-  <a href="2026/08/15/integrar-sistema-venda-direta-erp/">
-    <img src="imagens/posts/integrar-sistema-venda-direta-erp.jpg" alt="Como integrar seu sistema de venda direta com ERP" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-  </a>
-  <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="2026/08/15/integrar-sistema-venda-direta-erp/" class="hover:underline">Como integrar seu sistema de venda direta com ERP</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a integração de sistemas pode otimizar seu MMN.</p>
   </div>
 </article>
 <!-- BLOG-HOME-CARDS:END -->

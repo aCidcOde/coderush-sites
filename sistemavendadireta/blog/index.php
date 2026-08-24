@@ -90,6 +90,15 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-INDEX-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/08/24/comissionamento-emissao-nf-venda-direta/" data-blog-image="imagens/posts/comissionamento-emissao-nf-venda-direta.jpg" data-blog-slug="comissionamento-emissao-nf-venda-direta" data-blog-date="2026-08-24">
+  <a href="../2026/08/24/comissionamento-emissao-nf-venda-direta/">
+    <img src="../imagens/posts/comissionamento-emissao-nf-venda-direta.jpg" alt="Comissionamento e Emissão de NF-e em Venda Direta" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="../2026/08/24/comissionamento-emissao-nf-venda-direta/" class="hover:underline">Comissionamento e Emissão de NF-e em Venda Direta</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a integração fiscal impacta comissionamento em vendas diretas.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/08/21/precificar-operacoes-internacionais-mmn-moeda-local/" data-blog-image="imagens/posts/precificar-operacoes-internacionais-mmn-moeda-local.jpg" data-blog-slug="precificar-operacoes-internacionais-mmn-moeda-local" data-blog-date="2026-08-21">
   <a href="../2026/08/21/precificar-operacoes-internacionais-mmn-moeda-local/">
     <img src="../imagens/posts/precificar-operacoes-internacionais-mmn-moeda-local.jpg" alt="Como precificar operações internacionais em MMN com moeda local" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />

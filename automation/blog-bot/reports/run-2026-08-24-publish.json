@@ -1,0 +1,158 @@
+{
+  "mode": "publish",
+  "date": "2026-08-24",
+  "timezone": "America/Sao_Paulo",
+  "focus": "php",
+  "startedAt": "2026-08-24T10:30:47.815Z",
+  "aiProvider": "openrouter",
+  "sites": [
+    {
+      "siteId": "coderush",
+      "skipped": true,
+      "reason": "site disabled"
+    },
+    {
+      "siteId": "codafacil",
+      "skipped": true,
+      "reason": "site disabled"
+    },
+    {
+      "siteId": "fluxointeligenteia",
+      "skipped": true,
+      "reason": "site disabled"
+    },
+    {
+      "siteId": "sistemavendadireta",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Possível texto vazado na capa (sample: \"cee Sec\")",
+      "angle": "comissionamento",
+      "theme": "emissao fiscal e NF-e integrada em operacao de venda direta",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/sistemavendadireta/2026-08-24/comissionamento-emissao-nf-venda-direta.json",
+      "markdownPath": "automation/blog-bot/out/sistemavendadireta/2026-08-24/comissionamento-emissao-nf-venda-direta.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "sistemavendadireta/2026/08/24/comissionamento-emissao-nf-venda-direta/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Rede de hexágonos azuis com silhuetas de recibos e nós interconectados, sobre fundo azul marinho, simbolizando a emissão de NF-e",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": true,
+          "alphanumericCount": 11,
+          "sample": "cee Sec"
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "sistemavendadireta/index.php",
+          "sistemavendadireta/blog/index.php",
+          "sistemavendadireta/2026/08/24/comissionamento-emissao-nf-venda-direta/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "emergency",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Possivel texto vazado na capa (sample: \"mes Ses Beye Der.\")",
+      "angle": "compliance",
+      "theme": "diligencia em operacoes de credito e financiamento",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": [
+          {
+            "url": "https://capitalaberto.com.br/feed/",
+            "error": "HTTP 404"
+          }
+        ]
+      },
+      "outputPath": "automation/blog-bot/out/emergency/2026-08-24/due-diligence-operacoes-credito-financiamento.json",
+      "markdownPath": "automation/blog-bot/out/emergency/2026-08-24/due-diligence-operacoes-credito-financiamento.md",
+      "publishResult": {
+        "target": "api",
+        "apiStatus": 201,
+        "apiUrl": "https://emergency.com.br/blog/due-diligence-operacoes-credito-financiamento",
+        "apiId": 43,
+        "apiPublishedAt": "2026-08-24T07:32:02-03:00",
+        "coverPath": "automation/blog-bot/out/emergency/covers/due-diligence-operacoes-credito-financiamento.jpg",
+        "coverSize": 281325,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Um livro-cofre de crédito flutua em um fundo azul profundo, com páginas brilhantes e um robô analisando dados holográficos ao lado",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": true,
+          "alphanumericCount": 62,
+          "sample": "mes Ses Beye Der."
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    },
+    {
+      "siteId": "bfrintelligence",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "seguranca",
+      "theme": "ROI mensuravel de IA na operacao",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/bfrintelligence/2026-08-24/roi-mensuravel-agentes-ia-operacao-real.json",
+      "markdownPath": "automation/blog-bot/out/bfrintelligence/2026-08-24/roi-mensuravel-agentes-ia-operacao-real.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "bfrintelligence/2026/08/24/roi-mensuravel-agentes-ia-operacao-real/index.html",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Um aparelho de medição modular com blocos de calibração e réguas métricas interligadas em um fundo azul profundo",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": false,
+          "alphanumericCount": 5,
+          "sample": "see"
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    }
+  ],
+  "duplications": [],
+  "relatedRefresh": {
+    "touched": 36,
+    "unchanged": 125,
+    "errors": [],
+    "totalCards": 149,
+    "totalFiles": 161
+  },
+  "fallbackCount": 0,
+  "allFallback": false,
+  "finishedAt": "2026-08-24T10:35:06.766Z",
+  "ok": true
+}

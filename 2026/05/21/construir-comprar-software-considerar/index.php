@@ -257,11 +257,11 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://bfrintelligence.com.br/2026/08/21/implementar-agentes-ia-integracao-real/" rel="noopener" target="_blank"><img src="https://bfrintelligence.com.br/imagens/posts/implementar-agentes-ia-integracao-real.jpg" alt="Como implementar agentes de IA com integração real" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://bfrintelligence.com.br/2026/08/24/roi-mensuravel-agentes-ia-operacao-real/" rel="noopener" target="_blank"><img src="https://bfrintelligence.com.br/imagens/posts/roi-mensuravel-agentes-ia-operacao-real.jpg" alt="ROI Mensurável de Agentes de IA na Operação Real" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">BFR Intelligence</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://bfrintelligence.com.br/2026/08/21/implementar-agentes-ia-integracao-real/" rel="noopener" target="_blank" class="hover:underline">Como implementar agentes de IA com integração real</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como operar agentes de IA de forma eficaz e mensurável na sua empresa.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://bfrintelligence.com.br/2026/08/24/roi-mensuravel-agentes-ia-operacao-real/" rel="noopener" target="_blank" class="hover:underline">ROI Mensurável de Agentes de IA na Operação Real</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como implementar agentes de IA gerando resultados mensuráveis com segurança e integração.</p>
   </div>
 </article>
   </div>

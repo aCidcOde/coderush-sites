@@ -254,11 +254,11 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://bfrintelligence.com.br/2026/08/05/bfr-intelligence-microsoft-startups-aws-activate/" rel="noopener" target="_blank"><img src="https://bfrintelligence.com.br/imagens/posts/bfr-intelligence-microsoft-startups-aws-activate.jpg" alt="BFR Intelligence nos programas de startup da Microsoft e da AWS" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://bfrintelligence.com.br/2026/08/24/roi-mensuravel-agentes-ia-operacao-real/" rel="noopener" target="_blank"><img src="https://bfrintelligence.com.br/imagens/posts/roi-mensuravel-agentes-ia-operacao-real.jpg" alt="ROI Mensurável de Agentes de IA na Operação Real" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">BFR Intelligence</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://bfrintelligence.com.br/2026/08/05/bfr-intelligence-microsoft-startups-aws-activate/" rel="noopener" target="_blank" class="hover:underline">BFR Intelligence nos programas de startup da Microsoft e da AWS</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Agora com Azure OpenAI e AWS Bedrock disponíveis: mais opções de modelo por caso de uso, sem lock-in e com o dado sob governança de nuvem...</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://bfrintelligence.com.br/2026/08/24/roi-mensuravel-agentes-ia-operacao-real/" rel="noopener" target="_blank" class="hover:underline">ROI Mensurável de Agentes de IA na Operação Real</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como implementar agentes de IA gerando resultados mensuráveis com segurança e integração.</p>
   </div>
 </article>
   </div>
