@@ -8,6 +8,7 @@ module.exports = {
     "./sistemavendadireta/cases/**/*.php",
     "./sistemavendadireta/oferta/**/*.php",
     "./sistemavendadireta/simulador/**/*.php",
+    "./sistemavendadireta/sistema-mmn/**/*.php",
     "./sistemavendadireta/inteligencia-artificial/**/*.php",
     "./sistemavendadireta/wordpress/**/*.php",
     "./sistemavendadireta/20*/**/*.php"
