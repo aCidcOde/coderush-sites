@@ -267,18 +267,14 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
         </a>
 
         <ul class="hidden items-center gap-6 lg:flex">
-          <li><a href="#funcionalidades" class="rounded-md bg-white/15 px-3 py-2 text-sm font-medium">Funcionalidades</a></li>
-          <li><a href="#porque" class="text-sm font-medium text-white/90 hover:text-white">Porque</a></li>
-          <li><a href="#vantagens" class="text-sm font-medium text-white/90 hover:text-white">Vantagens</a></li>
-          <li><a href="#desenvolvimento-ia" class="text-sm font-medium text-white/90 hover:text-white">Desenvolvimento com IA</a></li>
-          <li><a href="sistema-mmn/" class="text-sm font-medium text-white/90 hover:text-white">Sistema MMN</a></li>
-          <li><a href="simulador/" class="text-sm font-medium text-white/90 hover:text-white">Simulador</a></li>
-          <li><a href="cases/" class="text-sm font-medium text-white/90 hover:text-white">Cases</a></li>
-          <li><a href="#clientes" class="text-sm font-medium text-white/90 hover:text-white">Clientes</a></li>
+          <li><a href="#funcionalidades" class="whitespace-nowrap rounded-md bg-white/15 px-3 py-2 text-sm font-medium">Funcionalidades</a></li>
+          <li><a href="sistema-mmn/" class="whitespace-nowrap text-sm font-medium text-white/90 hover:text-white">Sistema MMN</a></li>
+          <li><a href="simulador/" class="whitespace-nowrap text-sm font-medium text-white/90 hover:text-white">Simulador</a></li>
+          <li><a href="cases/" class="whitespace-nowrap text-sm font-medium text-white/90 hover:text-white">Cases</a></li>
         </ul>
 
         <a href="#contato" class="hidden rounded-full border border-white/70 px-4 py-2 text-sm font-medium transition hover:bg-white/10 md:inline-flex">
-          Solicite um Orçamento
+          Orçamento
         </a>
       </nav>
 
@@ -300,7 +296,7 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
             <a href="sistema-mmn/" class="rounded-lg border border-white/20 bg-white/5 px-3 py-2">Sistema MMN</a>
           <a href="simulador/" class="rounded-lg border border-white/20 bg-white/5 px-3 py-2">Simulador</a>
           <a href="#clientes" class="rounded-lg border border-white/20 bg-white/5 px-3 py-2">Clientes</a>
-            <a href="#contato" class="rounded-lg border border-white/65 px-3 py-2 text-center font-semibold">Solicite um Orçamento</a>
+            <a href="#contato" class="rounded-lg border border-white/65 px-3 py-2 text-center font-semibold">Orçamento</a>
           </div>
         </details>
       </div>
@@ -402,7 +398,7 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
             e planos de compensação personalizados.
           </p>
           <a href="#form" class="mt-6 inline-flex rounded-full border border-white/70 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10">
-            Solicite um Orçamento
+            Orçamento
           </a>
         </div>
       </div>
@@ -552,7 +548,7 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
       </div>
 
       <a href="#form" class="mt-6 inline-flex rounded-full border border-white/70 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10">
-        Solicite um Orçamento
+        Orçamento
       </a>
     </section>
 
@@ -906,7 +902,7 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
         <div class="space-y-4">
           <h4 class="font-[var(--font-heading)] text-lg font-semibold">Desenvolvendo sistemas desde 2002</h4>
           <a href="/#contato" class="inline-flex rounded-full border border-white/70 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10">
-            Solicite um Orçamento
+            Orçamento
           </a>
           <div class="flex items-center gap-3">
             <a href="https://facebook.com/sistemavendadireta" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#3b5998] text-sm font-bold">f</a>
