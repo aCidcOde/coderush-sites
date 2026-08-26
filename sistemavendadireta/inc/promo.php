@@ -37,9 +37,10 @@ const PROMO_INSTALL_AVISTA = 3000;
  * QUEM preencheu e deixa a pessoa abrir a loja e ver o sistema rodando de
  * verdade, em cliente real. Vale mais que qualquer selo.
  *
- * ATENCAO comercial: MedPlant e Zohr fecharam mas ainda nao pagaram. Aparecem
- * aqui como argumento de venda apenas — nao entram em receita, conversao nem
- * orcamento de midia enquanto o pagamento nao cair.
+ * ATENCAO comercial (26/08/2026): a Zohr segue em negociacao e a MedPlant ainda
+ * nao pagou. Aparecem aqui como argumento de venda apenas — nao entram em
+ * receita, conversao nem orcamento de midia enquanto o pagamento nao cair.
+ * A VELARO, primeira venda vinda da campanha, ja pagou e esta no funil do painel.
  */
 function promoClientes(): array
 {
