@@ -57,6 +57,32 @@ try {
         exit;
     }
 
+    // A atribuicao chega do JS lendo o sessionStorage — mas isso falha em WebView
+    // (link aberto dentro de app), onde o sessionStorage e isolado ou bloqueado.
+    // Foi o que aconteceu com o lead #6 em 26/08: veio de clique pago, com gclid
+    // na URL, e gravou tudo vazio. Sem gclid nao da pra mandar a conversao de
+    // volta ao Google — a venda deixa de ensinar qual busca gerou negocio.
+    //
+    // A page_url sempre chega e carrega os mesmos parametros. Extrair dela e o
+    // caminho que nao depende de JS, de storage nem de navegador.
+    $daUrl = [];
+    $urlBruta = $field('page_url', 500);
+    if ($urlBruta) {
+        $query = parse_url($urlBruta, PHP_URL_QUERY);
+        if (is_string($query) && $query !== '') {
+            parse_str($query, $daUrl);
+        }
+    }
+    /** Valor enviado pelo JS; se vier vazio, cai pro que estava na URL. */
+    $attr = static function (string $chave, int $max = 300) use ($field, $daUrl): ?string {
+        $v = $field($chave, $max);
+        if ($v !== null && $v !== '') {
+            return $v;
+        }
+        $u = $daUrl[$chave] ?? '';
+        return is_string($u) && $u !== '' ? mb_substr(trim(strip_tags($u)), 0, $max) : null;
+    };
+
     $stmt = $pdo->prepare('INSERT INTO leads (
         created_at, nome, origem, servico, mensagem,
         ga_client_id, gclid, utm_source, utm_medium, utm_campaign, utm_content,
@@ -69,11 +95,11 @@ try {
         'WhatsApp direto',
         $refTag,
         $field('ga_client_id', 64),
-        $field('gclid'),
-        $field('utm_source', 100),
-        $field('utm_medium', 100),
-        $field('utm_campaign', 150),
-        $field('utm_content', 150),
+        $attr('gclid'),
+        $attr('utm_source', 100),
+        $attr('utm_medium', 100),
+        $attr('utm_campaign', 150),
+        $attr('utm_content', 150),
         $field('sim_faturamento', 40),
         $field('page_url', 500),
         $_SERVER['REMOTE_ADDR'] ?? null,
