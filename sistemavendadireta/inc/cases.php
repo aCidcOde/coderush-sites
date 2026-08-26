@@ -165,6 +165,34 @@ return [
         ],
     ],
     [
+        'slug' => 'avig360',
+        'name' => 'AVIG 360',
+        'segment' => 'Saúde mental corporativa e NR-01 • Brasil',
+        'period' => 'Programa de parceiros no ar',
+        'featured' => false,
+        'logo' => 'imagens/clientes/avig360.png',
+        'logoFallback' => 'imagens/clientes/avig360.png',
+        'logoWidth' => 464,
+        'logoHeight' => 88,
+        'url' => 'https://avig360.com/',
+        'summary' => 'Plataforma de conformidade com a NR-01 que usa o SVD como canal de parceiros de negócio.',
+        'highlights' => [
+            'Programa de parceiros com painel próprio',
+            'Indicação e comissão sobre contratos fechados',
+            'Cadastro e acompanhamento do parceiro',
+            'Operação B2B, fora do varejo tradicional',
+        ],
+        'details' => [
+            [
+                'title' => 'Venda direta não é só produto físico',
+                'body' => 'A AVIG 360 vende software corporativo por meio de parceiros que indicam contratos. '
+                    . 'A mesma mecânica de rede, comissão e escritório do parceiro atende um ciclo de venda '
+                    . 'B2B — sem catálogo, sem estoque, sem frete.',
+            ],
+        ],
+        'metrics' => [],
+    ],
+    [
         'slug' => 'accenti',
         'name' => 'Accenti',
         'segment' => 'Aromaterapia e bem-estar • Brasil',

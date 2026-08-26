@@ -49,6 +49,7 @@ function promoClientes(): array
         ['Protech', 'https://protech.sistemavendadireta.com.br/loja'],
         ['MedPlant', 'https://medplant.sistemavendadireta.com.br/loja'],
         ['Zohr Parfums', 'https://zohr.sistemavendadireta.com.br/loja'],
+        ['AVIG 360', 'https://avig360.com/'],
     ];
 }
 
@@ -110,6 +111,13 @@ function promoVitrine(string $prefixo = '../'): string
             'loja' => 'https://zohr.sistemavendadireta.com.br/loja',
             'texto' => 'Perfumaria fina em três categorias — eau de parfum, fragrâncias para ambiente e corpo & banho — '
                 . 'com dois planos de carreira independentes para consultor e distribuidor.',
+        ],
+        [
+            'logo' => 'avig360', 'alt' => 'AVIG 360',
+            'w' => 464, 'h' => 88, 'data' => 'Programa de parceiros no ar',
+            'loja' => 'https://avig360.com/',
+            'texto' => 'Plataforma de saúde mental corporativa e conformidade com a NR-01 que usa o SVD '
+                . 'como canal de parceiros: indicação, comissão e painel próprio do parceiro de negócios.',
         ],
         [
             'logo' => 'ecotrend-afiliados', 'alt' => 'Ecotrend Afiliados',
