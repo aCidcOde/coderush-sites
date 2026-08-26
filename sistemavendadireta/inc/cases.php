@@ -165,6 +165,36 @@ return [
         ],
     ],
     [
+        'slug' => 'accenti',
+        'name' => 'Accenti',
+        'segment' => 'Aromaterapia e bem-estar • Brasil',
+        'period' => 'No ar desde junho de 2026',
+        'featured' => true,
+        'logo' => 'imagens/clientes/accenti.png',
+        'logoFallback' => 'imagens/clientes/accenti.png',
+        'logoWidth' => 842,
+        'logoHeight' => 461,
+        'url' => 'https://parceiroaccenti.com.br/loja',
+        'summary' => 'Operação de aromaterapia com cinco linhas de produto e venda por rede de consultores.',
+        'highlights' => [
+            'Cinco linhas: blends, essências, aromakit, óleos essenciais e vegetais',
+            'Loja com catálogo por categoria e busca',
+            'Cadastro de revendedor integrado à rede',
+            'Escritório virtual do consultor',
+        ],
+        'details' => [
+            [
+                'title' => 'Catálogo que respeita o produto',
+                'body' => 'Aromaterapia vende por composição e volume, não por foto genérica. O catálogo foi '
+                    . 'estruturado em cinco linhas com apresentação por mililitragem, do jeito que o cliente '
+                    . 'do segmento procura.',
+            ],
+        ],
+        'metrics' => [
+            ['value' => '5', 'label' => 'linhas de produto'],
+        ],
+    ],
+    [
         'slug' => 'protech-nutritional',
         'name' => 'Protech Nutritional',
         'segment' => 'Suplementos de alta performance • Brasil',

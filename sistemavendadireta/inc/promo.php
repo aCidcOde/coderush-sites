@@ -44,6 +44,7 @@ const PROMO_INSTALL_AVISTA = 3000;
 function promoClientes(): array
 {
     return [
+        ['Accenti', 'https://parceiroaccenti.com.br/loja'],
         ["New Professional's", 'https://newprofessional.com.py/loja'],
         ['Protech', 'https://protech.sistemavendadireta.com.br/loja'],
         ['MedPlant', 'https://medplant.sistemavendadireta.com.br/loja'],
@@ -75,6 +76,13 @@ function promoClientesHtml(string $classe = 'underline decoration-white/40 under
 function promoVitrine(string $prefixo = '../'): string
 {
     $cards = [
+        [
+            'logo' => 'accenti', 'alt' => 'Accenti',
+            'w' => 842, 'h' => 461, 'data' => 'No ar desde junho de 2026',
+            'loja' => 'https://parceiroaccenti.com.br/loja',
+            'texto' => 'Aromaterapia em cinco linhas — blends, essências concentradas, óleos essenciais e '
+                . 'vegetais — com loja do consultor, cadastro de revendedor e rede integrada.',
+        ],
         [
             'logo' => 'new-professionals', 'alt' => "New Professional's",
             'w' => 480, 'h' => 130, 'data' => 'No ar desde julho de 2026',
