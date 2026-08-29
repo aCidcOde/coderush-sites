@@ -96,8 +96,94 @@ resolve com links e volume de conteúdo, não com uma página.
   4 sessões em 30 dias, medidas no GA4 pela origem `chatgpt.com / ai-assistant`.
   O `robots.txt` está liberado para todos os agentes — conferido em 25/08.
 
+## Snapshot de 29/08/2026 — fim do primeiro ciclo
+
+Fechamento do mês para comparar com setembro. Números congelados aqui porque
+relatório vivo muda embaixo do pé: em 30 dias o "últimos 14 dias" já é outro
+período.
+
+### Tráfego no site (GA4)
+
+| Canal | 02–15/08 | 16–29/08 | Variação |
+|---|---|---|---|
+| **Pago** | 34 sessões | **43** | ▲ 26% |
+| **Orgânico** | 19 | **7** | ▼ 63% |
+| Direto | 92 | 66 | ▼ 28% |
+| Outros | 26 | 21 | ▼ 19% |
+| **Total** | **175** | **137** | ▼ 22% |
+
+### Busca orgânica (Search Console)
+
+| | 02–15/08 | 16–29/08 |
+|---|---|---|
+| Impressões | 1.430 | 950 |
+| Cliques | 29 | 28 |
+| **CTR** | 2,03% | **2,95%** |
+| Posição média | 11,0 | 11,8 |
+
+Impressões caíram 34%, cliques ficaram iguais e o CTR subiu 45%. Aparecemos
+menos e somos escolhidos mais — coerente com os títulos e descriptions
+reescritos entre 17 e 25/08.
+
+**A queda de impressões não tem explicação confirmada.** Sazonalidade de fim de
+mês, flutuação de algoritmo ou efeito de alguma mudança nossa — duas semanas não
+separam as hipóteses. É a pergunta principal para setembro.
+
+Nota metodológica: o Search Console conta 28 cliques e o GA4, 7 sessões
+orgânicas. Não é divergência — parte dos cliques cai em subdomínio de cliente
+(medplant, avig360), que tem medição própria.
+
+### Mídia paga (Google Ads)
+
+| | |
+|---|---|
+| Investido (11–29/08) | R$ 190 |
+| Cliques | 39 |
+| CPC — fase de calibração (11–20/08) | R$ 5,55 |
+| CPC — fase afinada (24–29/08) | **R$ 2,19** |
+| Leads | 3 |
+| **Vendas** | **1 — VELARO, R$ 3.500** |
+| Retorno sobre a mídia | **18×** |
+
+### Sinal a confirmar
+
+`sistema mmn` saiu da posição 25,1 (baseline de 28 dias) para 8,0 nos quatro dias
+após a criação da `/sistema-mmn/`. **É uma única impressão** — pode ser o Google
+testando página nova. Confirmar em setembro; se sustentar, a hipótese "faltava
+página dedicada" está validada.
+
+## Como dividir recurso a partir de setembro
+
+A tentação é comparar custo por lead de cada canal e mover verba para o melhor.
+Isso funciona entre duas campanhas pagas — não funciona entre pago e orgânico,
+por três motivos:
+
+1. **Orgânico não se compra no curto prazo.** Tirar dinheiro do Ads não acelera
+   SEO. O que acelera é tempo e conteúdo, e o efeito aparece em 3–6 meses.
+2. **A escala atual não sustenta a conta.** 7 a 43 sessões por canal em duas
+   semanas é ruído; uma venda a mais inverte qualquer ranking.
+3. **Eles se alimentam.** A página que rankeia é a mesma que recebe o clique
+   pago, e a nota de qualidade do Ads depende da qualidade da página.
+
+O critério que faz sentido é por **função**, não por eficiência comparada:
+
+| Canal | Papel | Como medir |
+|---|---|---|
+| **Pago** | volume previsível agora | custo por lead qualificado, retorno sobre a mídia |
+| **Orgânico** | custo marginal zero no futuro | posição nos termos do núcleo, CTR |
+| **Conteúdo** | alimenta orgânico e IA | impressões dos posts, citações |
+
+Setembro deveria responder duas perguntas, não uma:
+
+- **O pago escala mantendo o CPC de R$ 2,19?** Se sim, aumentar orçamento é a
+  decisão óbvia — foi o canal que trouxe a única venda.
+- **A queda de impressões orgânicas foi ponto fora da curva?** Se as impressões
+  voltarem sem que a gente faça nada, era sazonalidade. Se continuarem caindo com
+  o CTR alto, é perda de posicionamento que nenhuma melhoria de snippet resolve.
+
 ## Histórico de leituras
 
 | Data | `sistema mmn` | CTR do núcleo | Observação |
 |---|---|---|---|
 | 25/08/2026 | pos 25,9 · 0 cliques | 1,37% | baseline, antes das mudanças |
+| 29/08/2026 | pos 8,0 · 1 impressão | 2,95% (site todo) | página nova ainda não indexada |
