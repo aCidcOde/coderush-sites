@@ -7,7 +7,7 @@ declare(strict_types=1);
 @since 2026-08-17
 
 Governa a faixa de promocao que aparece nos posts do blog e no indice. Existe pra
-resolver um risco concreto: a promocao tem prazo (31/08) e o blog tem 34 posts.
+resolver um risco concreto: a promocao tem prazo (30/09) e o blog tem 34 posts.
 Cravar o link em cada post significaria, no dia seguinte ao fim, 34 paginas
 apontando pra uma oferta que nao existe mais.
 
@@ -24,7 +24,7 @@ arquivo. Ao mudar preco ou prazo, alinhar tambem la.
 // usa. Estava no ar desde sempre e linkada em lugar nenhum.
 const DEMO_URL = 'https://painel.sistemavendadireta.com.br/primeiros-passos';
 
-const PROMO_DEADLINE = '2026-08-31';
+const PROMO_DEADLINE = '2026-09-30';
 const PROMO_NOME = 'Promoção 10 Anos';
 const PROMO_INSTALL_DE = 5000;
 const PROMO_INSTALL_PARCELADO = 3500;
