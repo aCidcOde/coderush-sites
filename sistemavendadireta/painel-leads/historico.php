@@ -20,6 +20,19 @@ Campos:
 
 return [
     [
+        'data' => '2026-08-31',
+        'area' => 'ads',
+        'titulo' => 'Lances subiram: R$ 6 para R$ 10–12 nos grupos principais',
+        'porque' => 'A operação ganhou um vendedor e precisa de mais volume. O dado mostrou que '
+            . 'aumentar orçamento não resolveria: gastávamos R$ 49 de R$ 350 disponíveis por semana, '
+            . 'com perda por orçamento em ZERO. A perda era 62,7% por RANKING — posição no leilão, '
+            . 'que se compra com lance, não com verba. O mercado comporta ~935 impressões por semana '
+            . 'e estávamos pegando 37%.',
+        'efeito' => 'Grupo Sistema MMN de R$ 6 para R$ 10, Venda Direta para R$ 9, e lance próprio '
+            . 'de R$ 11–12 nas cinco palavras com maior perda por ranking. Orçamento mantido em '
+            . 'R$ 50/dia, que estava sobrando. Meta: parcela de impressões de 38% para 55–65%.',
+    ],
+    [
         'data' => '2026-08-17',
         'area' => 'medicao',
         'titulo' => 'Primeiro lead da campanha, com atribuição completa',
