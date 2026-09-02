@@ -5,10 +5,14 @@
 @since 2026-08-11
 
 POR QUE ISSO EXISTE: enquanto o app OAuth estiver com status "Teste" na tela de
-permissao do Google Cloud, todo refresh token **expira em 7 dias** — sem aviso, e
-o cron do painel comeca a devolver invalid_grant. A correcao definitiva e publicar
-o app ("Publicar app" -> Em producao); ai o token passa a ser permanente. Enquanto
-isso nao for feito, rode este script quando o painel acusar token expirado.
+permissao do Google Cloud, todo refresh token expira em 7 dias — sem aviso, e o
+cron do painel comeca a devolver invalid_grant. O app do projeto emergency-gordon
+foi publicado ("Em producao") em 02/09/2026, entao o token passou a ser
+permanente; este script serve pra emergencia ou pra trocar de conta.
+
+ARMADILHA DA PUBLICACAO: publicar quebrou o fluxo antigo. O app usava
+urn:ietf:wg:oauth:2.0:oob, descontinuado pelo Google em 2022 — apps em modo Teste
+ainda toleravam, em producao vira erro 400 invalid_request. Trocado por loopback.
 
 Uso:
   python3 renovar-token.py            # imprime a URL, pede o codigo, grava no .env
@@ -22,7 +26,12 @@ import urllib.request
 
 ENV_PATH = "/data/coderush-sites/.env"
 ESCOPO = "https://www.googleapis.com/auth/adwords"
-REDIRECT = "urn:ietf:wg:oauth:2.0:oob"
+# O Google descontinuou o fluxo OOB (urn:ietf:wg:oauth:2.0:oob) em 2022. Apps em
+# modo "Teste" ainda toleravam; publicar o app em producao passou a bloquear com
+# erro 400 invalid_request. O substituto e o loopback: o navegador e redirecionado
+# pra localhost, a pagina nao carrega (o servidor esta noutra maquina) e o codigo
+# fica visivel na barra de endereco — que e o que colamos aqui.
+REDIRECT = "http://localhost:8765"
 TOKEN_URL = "https://oauth2.googleapis.com/token"
 
 
@@ -95,8 +104,10 @@ def main():
 
     print("\n1) Abra esta URL logado como andre.kernelpanic@gmail.com:\n")
     print(url)
-    print("\n2) Autorize e copie o codigo que aparecer na tela.\n")
-    codigo = input("Cole o codigo aqui: ").strip()
+    print("\n2) Autorize. O navegador vai tentar abrir localhost:8765 e falhar")
+    print("   ('nao foi possivel acessar') — e o esperado.")
+    print("\n3) Copie a URL INTEIRA da barra de endereco e cole aqui.\n")
+    codigo = input("Cole a URL (ou so o codigo): ").strip()
     if codigo.startswith("http"):  # aceita a URL inteira colada
         q = urllib.parse.parse_qs(urllib.parse.urlparse(codigo).query)
         codigo = (q.get("code") or [""])[0]
