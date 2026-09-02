@@ -135,7 +135,11 @@ if ($authed && isset($_GET['exportar']) && $_GET['exportar'] === 'ads') {
     $out = fopen('php://output', 'w');
     fwrite($out, "Parameters:TimeZone=America/Sao_Paulo\n");
     fputcsv($out, ['Google Click ID', 'Conversion Name', 'Conversion Time', 'Conversion Value', 'Conversion Currency']);
-    $nomes = ['qualificado' => 'Lead qualificado', 'demo' => 'Demonstração agendada', 'fechado' => 'Venda fechada'];
+    // Os nomes tem que casar EXATAMENTE com as acoes de conversao criadas no Ads,
+    // senao o upload e recusado. "Venda fechada (offline)" e do tipo UPLOAD_CLICKS,
+    // a unica que aceita gclid vindo de fora. Ver automation/ads/enviar-conversoes.py.
+    $nomes = ['qualificado' => 'Lead qualificado', 'demo' => 'Demonstração agendada',
+              'fechado' => 'Venda fechada (offline)'];
     foreach ($q as $r) {
         $quando = $r['status'] === 'fechado' && $r['closed_at'] ? $r['closed_at'] : $r['created_at'];
         $dt = new DateTimeImmutable($quando);
