@@ -843,6 +843,24 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-HOME-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/09/05/diferencas-venda-direta-marketing-multinivel/" data-blog-image="imagens/posts/diferencas-venda-direta-marketing-multinivel.jpg" data-blog-slug="diferencas-venda-direta-marketing-multinivel" data-blog-date="2026-09-22">
+  <a href="2026/09/05/diferencas-venda-direta-marketing-multinivel/">
+    <img src="imagens/posts/diferencas-venda-direta-marketing-multinivel.jpg" alt="Diferenças entre Venda Direta e Marketing Multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="2026/09/05/diferencas-venda-direta-marketing-multinivel/" class="hover:underline">Diferenças entre Venda Direta e Marketing Multinível</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda as principais distinções entre venda direta e marketing multinível para otimizar suas estratégias comerciais.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/09/05/cadastrar-consultores-distribuidores-mmn-internacional/" data-blog-image="imagens/posts/cadastrar-consultores-distribuidores-mmn-internacional.jpg" data-blog-slug="cadastrar-consultores-distribuidores-mmn-internacional" data-blog-date="2026-09-15">
+  <a href="2026/09/05/cadastrar-consultores-distribuidores-mmn-internacional/">
+    <img src="imagens/posts/cadastrar-consultores-distribuidores-mmn-internacional.jpg" alt="Como cadastrar consultores e distribuidores em MMN internacional" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="2026/09/05/cadastrar-consultores-distribuidores-mmn-internacional/" class="hover:underline">Como cadastrar consultores e distribuidores em MMN internacional</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Aprenda a cadastrar consultores e distribuidores na sua operação de marketing multinível com foco na internacionalização.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/09/05/onboarding-ativacao-distribuidores-papel-integracao-erp/" data-blog-image="imagens/posts/onboarding-ativacao-distribuidores-papel-integracao-erp.jpg" data-blog-slug="onboarding-ativacao-distribuidores-papel-integracao-erp" data-blog-date="2026-09-05">
   <a href="2026/09/05/onboarding-ativacao-distribuidores-papel-integracao-erp/">
     <img src="imagens/posts/onboarding-ativacao-distribuidores-papel-integracao-erp.jpg" alt="Onboarding e Ativação de Distribuidores: O Papel da Integração ERP" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
@@ -850,24 +868,6 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="2026/09/05/onboarding-ativacao-distribuidores-papel-integracao-erp/" class="hover:underline">Onboarding e Ativação de Distribuidores: O Papel da Integração ERP</a></h2>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como uma boa integração ERP pode otimizar o onboarding de distribuidores no marketing multinível.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/08/24/comissionamento-emissao-nf-venda-direta/" data-blog-image="imagens/posts/comissionamento-emissao-nf-venda-direta.jpg" data-blog-slug="comissionamento-emissao-nf-venda-direta" data-blog-date="2026-08-24">
-  <a href="2026/08/24/comissionamento-emissao-nf-venda-direta/">
-    <img src="imagens/posts/comissionamento-emissao-nf-venda-direta.jpg" alt="Comissionamento e Emissão de NF-e em Venda Direta" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-  </a>
-  <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="2026/08/24/comissionamento-emissao-nf-venda-direta/" class="hover:underline">Comissionamento e Emissão de NF-e em Venda Direta</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a integração fiscal impacta comissionamento em vendas diretas.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/08/21/precificar-operacoes-internacionais-mmn-moeda-local/" data-blog-image="imagens/posts/precificar-operacoes-internacionais-mmn-moeda-local.jpg" data-blog-slug="precificar-operacoes-internacionais-mmn-moeda-local" data-blog-date="2026-08-21">
-  <a href="2026/08/21/precificar-operacoes-internacionais-mmn-moeda-local/">
-    <img src="imagens/posts/precificar-operacoes-internacionais-mmn-moeda-local.jpg" alt="Como precificar operações internacionais em MMN com moeda local" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
-  </a>
-  <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="2026/08/21/precificar-operacoes-internacionais-mmn-moeda-local/" class="hover:underline">Como precificar operações internacionais em MMN com moeda local</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a moeda local afeta a precificação em vendas diretas internacionais.</p>
   </div>
 </article>
 <!-- BLOG-HOME-CARDS:END -->

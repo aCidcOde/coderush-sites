@@ -1,0 +1,63 @@
+{
+  "mode": "publish",
+  "date": "2026-09-22",
+  "timezone": "America/Sao_Paulo",
+  "focus": "ia",
+  "startedAt": "2026-09-05T10:37:34.946Z",
+  "aiProvider": "openrouter",
+  "sites": [
+    {
+      "siteId": "sistemavendadireta",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "MMN",
+      "theme": "diferenca entre venda direta e marketing multinivel",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/sistemavendadireta/2026-09-22/diferencas-venda-direta-marketing-multinivel.json",
+      "markdownPath": "automation/blog-bot/out/sistemavendadireta/2026-09-22/diferencas-venda-direta-marketing-multinivel.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "sistemavendadireta/2026/09/22/diferencas-venda-direta-marketing-multinivel/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Duas torres abstratas e geométricas se destacam, uma vertical e outra em pirâmide, em azul profundo e branco, com grande simetria",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": false,
+          "alphanumericCount": 2,
+          "sample": ""
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "sistemavendadireta/index.php",
+          "sistemavendadireta/blog/index.php",
+          "sistemavendadireta/2026/09/22/diferencas-venda-direta-marketing-multinivel/index.php"
+        ]
+      }
+    }
+  ],
+  "duplications": [],
+  "relatedRefresh": {
+    "touched": 5,
+    "unchanged": 160,
+    "errors": [],
+    "totalCards": 153,
+    "totalFiles": 165
+  },
+  "fallbackCount": 0,
+  "allFallback": false,
+  "finishedAt": "2026-09-05T10:38:48.252Z",
+  "ok": true
+}

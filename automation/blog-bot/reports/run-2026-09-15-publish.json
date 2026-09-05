@@ -1,0 +1,63 @@
+{
+  "mode": "publish",
+  "date": "2026-09-15",
+  "timezone": "America/Sao_Paulo",
+  "focus": "tecnologia",
+  "startedAt": "2026-09-05T10:35:43.172Z",
+  "aiProvider": "openrouter",
+  "sites": [
+    {
+      "siteId": "sistemavendadireta",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "internacionalizacao",
+      "theme": "como cadastrar consultores e distribuidores em uma operacao de MMN",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/sistemavendadireta/2026-09-15/cadastrar-consultores-distribuidores-mmn-internacional.json",
+      "markdownPath": "automation/blog-bot/out/sistemavendadireta/2026-09-15/cadastrar-consultores-distribuidores-mmn-internacional.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "sistemavendadireta/2026/09/15/cadastrar-consultores-distribuidores-mmn-internacional/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "openai/gpt-5-image",
+        "coverAlt": "Estrutura tridimensional de cartões de registro translúcidos dispostos em árvore, com fundo em gradiente azul profundo",
+        "coverLeakage": {
+          "skipped": false,
+          "leaked": false,
+          "alphanumericCount": 3,
+          "sample": ""
+        }
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "sistemavendadireta/index.php",
+          "sistemavendadireta/blog/index.php",
+          "sistemavendadireta/2026/09/15/cadastrar-consultores-distribuidores-mmn-internacional/index.php"
+        ]
+      }
+    }
+  ],
+  "duplications": [],
+  "relatedRefresh": {
+    "touched": 18,
+    "unchanged": 146,
+    "errors": [],
+    "totalCards": 152,
+    "totalFiles": 164
+  },
+  "fallbackCount": 0,
+  "allFallback": false,
+  "finishedAt": "2026-09-05T10:37:26.661Z",
+  "ok": true
+}

@@ -90,6 +90,24 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-INDEX-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/09/05/diferencas-venda-direta-marketing-multinivel/" data-blog-image="imagens/posts/diferencas-venda-direta-marketing-multinivel.jpg" data-blog-slug="diferencas-venda-direta-marketing-multinivel" data-blog-date="2026-09-22">
+  <a href="../2026/09/05/diferencas-venda-direta-marketing-multinivel/">
+    <img src="../imagens/posts/diferencas-venda-direta-marketing-multinivel.jpg" alt="Diferenças entre Venda Direta e Marketing Multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="../2026/09/05/diferencas-venda-direta-marketing-multinivel/" class="hover:underline">Diferenças entre Venda Direta e Marketing Multinível</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda as principais distinções entre venda direta e marketing multinível para otimizar suas estratégias comerciais.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/09/05/cadastrar-consultores-distribuidores-mmn-internacional/" data-blog-image="imagens/posts/cadastrar-consultores-distribuidores-mmn-internacional.jpg" data-blog-slug="cadastrar-consultores-distribuidores-mmn-internacional" data-blog-date="2026-09-15">
+  <a href="../2026/09/05/cadastrar-consultores-distribuidores-mmn-internacional/">
+    <img src="../imagens/posts/cadastrar-consultores-distribuidores-mmn-internacional.jpg" alt="Como cadastrar consultores e distribuidores em MMN internacional" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="../2026/09/05/cadastrar-consultores-distribuidores-mmn-internacional/" class="hover:underline">Como cadastrar consultores e distribuidores em MMN internacional</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Aprenda a cadastrar consultores e distribuidores na sua operação de marketing multinível com foco na internacionalização.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/09/05/onboarding-ativacao-distribuidores-papel-integracao-erp/" data-blog-image="imagens/posts/onboarding-ativacao-distribuidores-papel-integracao-erp.jpg" data-blog-slug="onboarding-ativacao-distribuidores-papel-integracao-erp" data-blog-date="2026-09-05">
   <a href="../2026/09/05/onboarding-ativacao-distribuidores-papel-integracao-erp/">
     <img src="../imagens/posts/onboarding-ativacao-distribuidores-papel-integracao-erp.jpg" alt="Onboarding e Ativação de Distribuidores: O Papel da Integração ERP" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
