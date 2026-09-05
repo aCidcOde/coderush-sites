@@ -1,0 +1,31 @@
+{
+  "mode": "dry-run",
+  "date": "2026-09-05",
+  "timezone": "America/Sao_Paulo",
+  "focus": "tecnologia",
+  "startedAt": "2026-09-05T10:22:04.299Z",
+  "aiProvider": "openrouter",
+  "sites": [
+    {
+      "siteId": "sistemavendadireta",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "integracao ERP",
+      "theme": "quanto custa manter uma operacao de venda direta",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/sistemavendadireta/2026-09-05/custo-manutencao-vendas-diretas-integracao-erp.json",
+      "markdownPath": "automation/blog-bot/out/sistemavendadireta/2026-09-05/custo-manutencao-vendas-diretas-integracao-erp.md"
+    }
+  ],
+  "duplications": [],
+  "fallbackCount": 0,
+  "allFallback": false,
+  "finishedAt": "2026-09-05T10:22:16.425Z",
+  "ok": true
+}

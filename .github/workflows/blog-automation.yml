@@ -2,11 +2,12 @@ name: Blog Automation
 
 on:
   schedule:
-    # A cada 3 dias as 10:00 UTC (07:00 America/Sao_Paulo).
-    # GitHub Actions nao suporta intervalo de N dias direto; usamos dias do mes
-    # multiplos de 3 (3,6,9,...,30). Ciclo se repete a cada 3 dias com pulo
-    # ocasional no virar de mes — aceitavel para cadencia editorial.
-    - cron: "0 10 3,6,9,12,15,18,21,24,27,30 * *"
+    # Semanal, as 10:00 UTC (07:00 America/Sao_Paulo), nos dias 1, 8, 15 e 22.
+    # Era a cada 3 dias ate 05/09/2026. Cadencia alta gerava volume sem retorno:
+    # 9 posts indexados renderam 25 impressoes em 30 dias, 1% do dominio. Menos
+    # posts, cada um mirando um grupo de busca real, rende mais que publicar
+    # por publicar — e sobra tempo pra revisar o que ja esta no ar.
+    - cron: "0 10 1,8,15,22 * *"
   workflow_dispatch:
 
 permissions:

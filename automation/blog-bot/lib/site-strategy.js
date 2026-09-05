@@ -451,21 +451,34 @@ const SITE_PROFILES = {
         "plataforma MMN sob medida"
       ]
     },
+    // TEMAS DERIVADOS DO SEARCH CONSOLE (trocados em 05/09/2026).
+    //
+    // A lista anterior era escrita a mao em linguagem de consultoria — "governanca
+    // comercial com dados e IA", "previsibilidade de receita". Em 30 dias os 9 posts
+    // indexados renderam 25 impressoes e 2 cliques: 1% do dominio. Nenhum tema batia
+    // com o que o publico busca.
+    //
+    // Estes vieram das buscas reais em que aparecemos MAL posicionados (>10) e que
+    // NAO contem palavra de produto — busca com "sistema/software/plataforma" tem
+    // intencao de compra e merece pagina de produto (/sistema-mmn/), nao post.
+    // Volume somado: ~605 impressoes/trimestre hoje desperdicadas.
+    //
+    // Ao revisar, rodar: python3 automation/ads/search-console.py --dias=90
     themes: [
-      "tecnologia para vendas diretas em escala",
-      "integracoes de pagamento e logistica para MMN",
-      "governanca comercial com dados e ia",
-      "plano de carreira em marketing multinivel",
-      "onboarding e ativacao de distribuidor",
-      "previsibilidade de receita em MMN",
-      "internacionalizacao de operacao de venda direta (idioma, moeda e documento fiscal)",
-      "moeda local e precificacao em operacao internacional de MMN",
+      "quais empresas de marketing multinivel existem no Brasil",
+      "o que e marketing multinivel e como funciona na pratica",
+      "diferenca entre venda direta e marketing multinivel",
+      "como saber se uma empresa de MMN e confiavel",
+      "como cadastrar consultores e distribuidores em uma operacao de MMN",
+      "marketing de rede no Brasil: panorama e regulamentacao",
+      "plano de carreira em marketing multinivel: como estruturar",
+      "MMN B2C: vender para consumidor final por meio de consultores",
+      "como montar uma operacao de marketing multinivel do zero",
+      "quanto custa manter uma operacao de venda direta",
+      "recrutamento e retencao de consultores em marketing de rede",
       "comissao por cargo versus plano de pontos em venda direta",
-      "emissao fiscal e NF-e integrada em operacao de venda direta",
       "integracao de sistema de venda direta com ERP (TOTVS, Bling)",
-      "anti-fraude e controle de clientes em e-commerce de alto volume",
-      "quando modernizar um sistema legado sem parar a operacao",
-      "implantacao de sistema assistida por ia (carga de catalogo, traducao, testes)"
+      "internacionalizacao de operacao de venda direta (idioma, moeda e documento fiscal)"
     ]
   }
 };
