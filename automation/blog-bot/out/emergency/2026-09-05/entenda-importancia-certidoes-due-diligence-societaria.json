@@ -1,0 +1,88 @@
+{
+  "date": "2026-09-05",
+  "siteId": "emergency",
+  "postType": "due-diligence-certidoes",
+  "focus": "tecnologia",
+  "theme": "compliance corporativo apoiado em certidoes cartorarias",
+  "angle": "due diligence societaria",
+  "slug": "entenda-importancia-certidoes-due-diligence-societaria",
+  "title": "Emergency Documentação: TECNOLOGIA aplicado a due diligence societaria",
+  "description": "Atualização semanal de tecnologia para Emergency Documentação, com foco em compliance corporativo apoiado em certidoes cartorarias.",
+  "sources": [
+    "https://emergency.com.br/blog/due-diligence-societaria-ma-aspectos-compliance",
+    "https://www.kronoos.com/blog/gestão-de-certidões-em-due-diligence-como-garantir-regularidade-em-m-a-e-contratos",
+    "https://www.justicaemdia.com.br/compliance/due-diligence-escudo-juridico-corporativo-brasil.html",
+    "https://paseliconsulting.com/2026/07/02/due-diligence-corporativa-muito-alem-da-analise-documental/",
+    "https://emergency.com.br/blog/due-diligence-societaria-regularizacao-documental-eficaz"
+  ],
+  "status": "draft",
+  "generatedAt": "2026-09-05T07:02:52-03:00",
+  "content": {
+    "eyebrow": "Guia prático",
+    "headline": "Entenda a importância das certidões na due diligence societária",
+    "summary": "Certidões cartorárias são essenciais para uma due diligence societária eficaz e segura.",
+    "answerBox": {
+      "question": "Por que as certidões são importantes na due diligence societária?",
+      "answer": "As certidões garantem a regularidade e a conformidade da documentação da empresa, minimizando riscos legais. Elas são fundamentais para verificar a situação fiscal, trabalhista e societária, assegurando uma análise completa e segura no processo de due diligence."
+    },
+    "tldr": [
+      "Certidões confirmam a regularidade da empresa.",
+      "Minimizam riscos legais e financeiros.",
+      "Apoiam a análise na due diligence societária."
+    ],
+    "sections": [
+      {
+        "type": "prose",
+        "title": "A relevância das certidões cartorárias",
+        "body": "Na due diligence societária, as certidões cartorárias são fundamentais para validar informações e evitar surpresas durante transações. Elas fornecem dados sobre a situação legal e fiscal da empresa, o que ajuda a identificar potenciais passivos e irregularidades. Um bom levantamento de certidões reduz riscos e traz segurança para a operação."
+      },
+      {
+        "type": "list",
+        "title": "Principais certidões a serem verificadas",
+        "items": [
+          "Certidão de Regularidade Fiscal e Trabalhista",
+          "Certidão de Distribuição de Ações",
+          "Certidão de Propriedade de Imóveis",
+          "Certidão de Protestos",
+          "Certidão de Falências e Recuperações Judiciais"
+        ]
+      },
+      {
+        "type": "callout",
+        "body": "Nós já estruturamos isso em diversos clientes e sabemos como evitar retrabalho. Vale a pena conversar sobre como podemos ajudar no seu cenário específico.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Processo de due diligence eficiente",
+        "body": "Realizar uma due diligence completa envolve mais do que apenas coletar certidões; é preciso analisar as informações obtidas e confrontá-las com a documentação da empresa. A Emergency Documentação pode auxiliar nesse processo, oferecendo suporte na obtenção de certidões e na interpretação dos dados. Isso garante uma abordagem mais assertiva e segura, evitando futuras complicações."
+      },
+      {
+        "type": "cta-inline",
+        "body": "Se você precisa de suporte na obtenção de certidões, estamos aqui para ajudar.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Cuidado com armadilhas comuns",
+        "body": "Durante a due diligence, é importante estar atento a possíveis inconsistências nas certidões. Informações desatualizadas ou divergentes podem levar a decisões equivocadas. Além disso, certidões expedidas por cartórios menos confiáveis podem comprometer a qualidade da análise. Sempre busque fontes reconhecidas e proceda com cautela."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Qual a função das certidões na due diligence?",
+        "a": "As certidões confirmam a regularidade fiscal, trabalhista e jurídica da empresa, minimizando riscos durante transações."
+      },
+      {
+        "q": "Como obter as certidões necessárias?",
+        "a": "É possível solicitar certidões online através de cartórios e plataformas especializadas, como a Emergency Documentação."
+      },
+      {
+        "q": "Quais são as certidões obrigatórias para empresas?",
+        "a": "Certidões fiscais, trabalhistas, de distribuições de ações e de propriedade de imóveis são as mais comuns e recomendadas."
+      }
+    ]
+  }
+}

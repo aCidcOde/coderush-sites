@@ -246,19 +246,19 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://sistemavendadireta.com.br/2026/08/15/integrar-sistema-venda-direta-erp/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/integrar-sistema-venda-direta-erp.jpg" alt="Como integrar seu sistema de venda direta com ERP" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://sistemavendadireta.com.br/2026/09/05/onboarding-ativacao-distribuidores-papel-integracao-erp/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/onboarding-ativacao-distribuidores-papel-integracao-erp.jpg" alt="Onboarding e Ativação de Distribuidores: O Papel da Integração ERP" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Sistema Venda Direta</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/08/15/integrar-sistema-venda-direta-erp/" rel="noopener" target="_blank" class="hover:underline">Como integrar seu sistema de venda direta com ERP</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a integração de sistemas pode otimizar seu MMN.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/09/05/onboarding-ativacao-distribuidores-papel-integracao-erp/" rel="noopener" target="_blank" class="hover:underline">Onboarding e Ativação de Distribuidores: O Papel da Integração ERP</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como uma boa integração ERP pode otimizar o onboarding de distribuidores no marketing multinível.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://bfrintelligence.com.br/2026/08/24/roi-mensuravel-agentes-ia-operacao-real/" rel="noopener" target="_blank"><img src="https://bfrintelligence.com.br/imagens/posts/roi-mensuravel-agentes-ia-operacao-real.jpg" alt="ROI Mensurável de Agentes de IA na Operação Real" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://bfrintelligence.com.br/2026/09/05/integrando-agentes-ia-resultados-mensuraveis/" rel="noopener" target="_blank"><img src="https://bfrintelligence.com.br/imagens/posts/integrando-agentes-ia-resultados-mensuraveis.jpg" alt="Integrando Agentes de IA para Resultados Mensuráveis" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">BFR Intelligence</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://bfrintelligence.com.br/2026/08/24/roi-mensuravel-agentes-ia-operacao-real/" rel="noopener" target="_blank" class="hover:underline">ROI Mensurável de Agentes de IA na Operação Real</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como implementar agentes de IA gerando resultados mensuráveis com segurança e integração.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://bfrintelligence.com.br/2026/09/05/integrando-agentes-ia-resultados-mensuraveis/" rel="noopener" target="_blank" class="hover:underline">Integrando Agentes de IA para Resultados Mensuráveis</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como agentes de IA podem ser integrados com sistemas internos para operações eficientes e mensuração de resultados.</p>
   </div>
 </article>
   </div>
