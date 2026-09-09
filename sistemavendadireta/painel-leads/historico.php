@@ -20,6 +20,18 @@ Campos:
 
 return [
     [
+        'data' => '2026-09-09',
+        'area' => 'ads',
+        'titulo' => 'Lance de R$ 9 para R$ 12 em "sistema mmn" e "sistema de venda direta"',
+        'porque' => 'Duas palavras ainda estavam em R$ 9 com 65% de perda por ranking — as que '
+            . 'mais tinham espaço. As outras ficaram como estavam de propósito: "sistema multinivel" '
+            . 'tem lance de R$ 12 e paga R$ 2,45 de CPC real, ou seja, o lance não é o gargalo dela; '
+            . 'e "software para mmn" já está com 92% de parcela, não há mais leilão para comprar.',
+        'efeito' => 'O aumento anterior (31/08) levou uma semana para assentar e a parcela saiu de '
+            . '28% para 67%, com o CPC caindo de R$ 4,90 para R$ 3,76. Orçamento segue sobrando: '
+            . 'R$ 66,78 gastos de R$ 350 disponíveis na semana, perda por orçamento em zero.',
+    ],
+    [
         'data' => '2026-08-31',
         'area' => 'ads',
         'titulo' => 'Lances subiram: R$ 6 para R$ 10–12 nos grupos principais',
