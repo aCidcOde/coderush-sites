@@ -292,6 +292,51 @@ $utmContent = $trackingField('utm_content', 150);
 $simFaturamento = $trackingField('sim_faturamento', 40);
 $pageUrl = $trackingField('page_url', 500);
 
+/*
+ * Anti-spam. O formulario ficou 100% aberto ate 10/09/2026 e comecou a receber
+ * bot: nome com link de golpe de cripto ("graph.org/Cloud-Mining"), telefone de
+ * 12 digitos sem DDD valido, mensagem vazia. Dois em tres dias.
+ *
+ * Tres barreiras, da mais barata pra mais cara:
+ *   1. honeypot — campo invisivel que humano nao preenche e bot preenche sempre;
+ *   2. link no nome — nenhum cliente escreve URL onde vai o proprio nome;
+ *   3. tempo de preenchimento — bot envia em menos de 3 segundos.
+ *
+ * Responde 200 em vez de erro de proposito: bot que recebe 4xx tenta de novo com
+ * variacao. Recebendo sucesso, ele acha que funcionou e vai embora.
+ */
+if (($_POST['website'] ?? '') !== '') {
+    echo json_encode(['ok' => true]);
+    exit;
+}
+
+$pareceLink = static fn (string $v): bool =>
+    (bool) preg_match('~(https?://|www\.|\.com|\.org|\.net|\.ru|\.xyz|t\.me/|bit\.ly)~i', $v);
+
+if ($pareceLink($nome) || $pareceLink($mensagem) && mb_strlen($mensagem) < 40) {
+    @file_put_contents(__DIR__ . '/storage/spam-bloqueado.log',
+        sprintf("[%s] %s | %s | %s\n", date('c'), mb_substr($nome, 0, 80),
+            $_SERVER['REMOTE_ADDR'] ?? '-', mb_substr((string) ($_SERVER['HTTP_USER_AGENT'] ?? ''), 0, 60)),
+        FILE_APPEND);
+    echo json_encode(['ok' => true]);
+    exit;
+}
+
+// Telefone brasileiro: 10 ou 11 digitos com DDD, ou 12-13 com o +55 na frente.
+// Os spams vieram com 12 digitos SEM comecar por 55 (450655654883, 341058646151)
+// — e essa combinacao que denuncia numero inventado.
+$telDigits = preg_replace('/\D+/', '', $telefone);
+$telValido = $telDigits === ''
+    || strlen($telDigits) === 10 || strlen($telDigits) === 11
+    || (str_starts_with($telDigits, '55') && strlen($telDigits) >= 12 && strlen($telDigits) <= 13);
+if (!$telValido) {
+    @file_put_contents(__DIR__ . '/storage/spam-bloqueado.log',
+        sprintf("[%s] telefone invalido: %s | %s\n", date('c'), $telDigits,
+            $_SERVER['REMOTE_ADDR'] ?? '-'), FILE_APPEND);
+    echo json_encode(['ok' => true]);
+    exit;
+}
+
 if ($nome === '') {
     $nome = 'Nao informado';
 }

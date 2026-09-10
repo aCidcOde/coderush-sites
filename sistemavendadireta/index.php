@@ -750,6 +750,12 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
 
             <div>
               <label for="contact-nome" class="mb-2 block text-sm font-medium text-white/90">Nome</label>
+              <!-- honeypot: invisivel pra humano, irresistivel pra bot. Nao usa
+                   display:none porque bot moderno detecta; posicao fora da tela
+                   funciona melhor. tabindex e autocomplete off evitam que o campo
+                   receba foco por engano na navegacao por teclado. -->
+              <input type="text" name="website" tabindex="-1" autocomplete="off"
+                     aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0" />
               <input id="contact-nome" name="nome" type="text" required autocomplete="name" placeholder="Seu nome" class="w-full rounded-2xl border border-white/20 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/45 focus:border-white/60 focus:outline-none focus:ring-2 focus:ring-white/20" />
             </div>
 
