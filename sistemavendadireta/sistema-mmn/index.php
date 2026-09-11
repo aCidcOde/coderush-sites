@@ -273,5 +273,57 @@ $faq = [
       </div>
     </div>
   </footer>
+
+<script>
+/*
+ * Rastreamento de lead — portado da /oferta/ em 11/09/2026.
+ *
+ * A pagina foi criada em 25/08 pra ranquear em "sistema mmn" e tinha link de
+ * WhatsApp, mas nao registrava nada: nem o evento no GA4, nem o lead no banco.
+ * Mandar trafego pago pra ca sem isso seria perder a medicao inteira.
+ *
+ * O beacon le a atribuicao da URL, nao do sessionStorage: quando o link abre
+ * dentro de app (WebView), o storage e isolado e a atribuicao se perde — foi o
+ * que aconteceu com o lead #6 em 26/08, que era uma venda de R$ 3.500.
+ */
+(function () {
+  function track(nome, params) {
+    if (window.gtag) gtag("event", nome, params || {});
+  }
+  function zapRef() {
+    try {
+      var r = window.sessionStorage.getItem("svd-zap-ref");
+      if (!r) {
+        r = Math.random().toString(36).slice(2, 7).toUpperCase().replace(/[^A-Z0-9]/g, "X");
+        while (r.length < 5) r += "X";
+        window.sessionStorage.setItem("svd-zap-ref", r);
+      }
+      return r;
+    } catch (e) { return "AAAAA"; }
+  }
+  document.addEventListener("click", function (event) {
+    var link = event.target.closest && event.target.closest('a[href*="wa.me"]');
+    if (!link) return;
+    track("whatsapp_click", { page: "pagina-sistema-mmn" });
+    var ref = zapRef();
+    if (link.href.indexOf("text=") !== -1 && link.href.indexOf("%5Bref") === -1) {
+      link.href += encodeURIComponent(" [ref " + ref + "]");
+    }
+    try {
+      var p = new URLSearchParams(window.location.search);
+      var data = new FormData();
+      data.append("ref", ref);
+      data.append("origem", "pagina-sistema-mmn");
+      data.append("ga_client_id", (document.cookie.match(/(?:^|;\s*)_ga=GA\d+\.\d+\.(\d+\.\d+)/) || [])[1] || "");
+      ["gclid", "utm_source", "utm_medium", "utm_campaign", "utm_content"].forEach(function (k) {
+        var v = p.get(k);
+        if (v) data.append(k, v);
+      });
+      data.append("page_url", window.location.href.split("#")[0]);
+      navigator.sendBeacon("/zap-lead.php", data);
+    } catch (e) {}
+  });
+})();
+</script>
 </body>
 </html>
