@@ -81,6 +81,26 @@ if (($_POST['website'] ?? '') !== '') {
     exit;
 }
 
+// O JS da home guarda gclid/UTM em sessionStorage e manda por POST. Em WebView
+// (link aberto dentro do Instagram, LinkedIn ou do proprio WhatsApp) o storage e
+// isolado e volta vazio — foi assim que o lead #6 do SVD, uma venda de R$ 3.500
+// vinda de clique pago, gravou atribuicao em branco em 26/08. A page_url sempre
+// chega e carrega os mesmos parametros, entao ela e a fonte de reserva.
+$daUrl = [];
+$queryDaPagina = parse_url($field('page_url', 500), PHP_URL_QUERY);
+if (is_string($queryDaPagina) && $queryDaPagina !== '') {
+    parse_str($queryDaPagina, $daUrl);
+}
+/** Valor enviado pelo JS; se vier vazio, cai pro que estava na URL. */
+$attr = static function (string $chave, int $max = 300) use ($field, $daUrl): ?string {
+    $v = $field($chave, $max);
+    if ($v !== '') {
+        return $v;
+    }
+    $u = $daUrl[$chave] ?? '';
+    return is_string($u) && $u !== '' ? mb_substr(trim(strip_tags($u)), 0, $max) : null;
+};
+
 $storageDir = __DIR__ . '/storage';
 if (!is_dir($storageDir)) {
     @mkdir($storageDir, 0775, true);
@@ -112,11 +132,11 @@ try {
         $field('origem', 100) ?: 'site-bfr',
         'Lead do formulário da home BFR',
         $field('ga_client_id', 64) ?: null,
-        $field('gclid') ?: null,
-        $field('utm_source', 100) ?: null,
-        $field('utm_medium', 100) ?: null,
-        $field('utm_campaign', 150) ?: null,
-        $field('utm_content', 150) ?: null,
+        $attr('gclid'),
+        $attr('utm_source', 100),
+        $attr('utm_medium', 100),
+        $attr('utm_campaign', 150),
+        $attr('utm_content', 150),
         $field('page_url', 500) ?: null,
         $_SERVER['REMOTE_ADDR'] ?? null,
         mb_substr((string) ($_SERVER['HTTP_USER_AGENT'] ?? ''), 0, 300),
@@ -139,7 +159,7 @@ $body = implode("\n", [
     'E-mail: ' . $email,
     'Telefone: ' . ($telefone !== '' ? $telefone : 'Não informado'),
     'Empresa: ' . ($empresa !== '' ? $empresa : 'Não informada'),
-    'Campanha: ' . ($field('utm_campaign', 150) ?: 'tráfego direto/orgânico'),
+    'Campanha: ' . ($attr('utm_campaign', 150) ?: 'tráfego direto/orgânico'),
     'Página: ' . ($field('page_url', 500) ?: '-'),
     '',
     'IP: ' . ($_SERVER['REMOTE_ADDR'] ?? 'desconhecido'),

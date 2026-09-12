@@ -1097,6 +1097,13 @@
           <div><b>Privacidade garantida</b><span>Seus dados nunca são compartilhados. LGPD por design em todo o processo.</span></div>
         </div>
       </div>
+      <div class="zap-cta">
+        <span>Prefere conversar agora?</span>
+        <a class="zap-btn" href="https://wa.me/5511994566726?text=Ol%C3%A1%21%20Quero%20entender%20como%20um%20agente%20de%20IA%20pode%20funcionar%20na%20minha%20empresa." rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5 4.4.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.2-.5-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 4.9L2 22l5.2-1.3C8.6 21.5 10.3 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3c-.9-1.4-1.3-3-1.3-4.6C3.5 7.3 7.3 3.5 12 3.5S20.5 7.3 20.5 12 16.7 20.2 12 20.2z"/></svg>
+          Falar no WhatsApp
+        </a>
+      </div>
     </div>
 
     <div class="contact-card">
@@ -1408,6 +1415,51 @@ form.addEventListener('submit',e=>{
     ['gclid','utm_source','utm_medium','utm_campaign','utm_content'].forEach(k=>{ const v=p.get(k); if(v){ st[k]=v; changed=true; } });
     if(changed) sessionStorage.setItem('bfr-attribution',JSON.stringify(st));
   }catch(e){}
+})();
+
+/* ── CLIQUE DE WHATSAPP ──
+   Espelha o rastreamento do SVD. Duas licoes ja pagas embutidas aqui:
+
+   1) o [ref XXXXX] vai na mensagem do wa.me E no banco: e o unico jeito de casar
+      uma conversa de WhatsApp com a campanha que a originou;
+   2) a atribuicao NAO e lida do sessionStorage. Em WebView (link aberto dentro do
+      Instagram, LinkedIn ou do proprio WhatsApp) o storage e isolado e volta
+      vazio — foi assim que uma venda de R$ 3.500 do SVD perdeu o gclid em 26/08.
+      Mandamos a page_url inteira e o PHP extrai os parametros de la. */
+(function(){
+  function zapRef(){
+    try{
+      var r=sessionStorage.getItem('bfr-zap-ref');
+      if(!r){
+        r=Math.random().toString(36).slice(2,7).toUpperCase().replace(/[^A-Z0-9]/g,'X');
+        while(r.length<5) r+='X';
+        sessionStorage.setItem('bfr-zap-ref',r);
+      }
+      return r;
+    }catch(e){ return 'AAAAA'; }
+  }
+  document.addEventListener('click',function(event){
+    var link=event.target.closest && event.target.closest('a[href*="wa.me"]');
+    if(!link) return;
+    if(typeof gtag==='function') gtag('event','whatsapp_click',{page:'site-bfr-home'});
+    var ref=zapRef();
+    if(link.href.indexOf('text=')!==-1 && link.href.indexOf('%5Bref')===-1){
+      link.href+=encodeURIComponent(' [ref '+ref+']');
+    }
+    try{
+      var p=new URLSearchParams(location.search);
+      var data=new FormData();
+      data.append('ref',ref);
+      data.append('origem','site-bfr-home');
+      var ga=document.cookie.match(/(?:^|;\s*)_ga=GA\d+\.\d+\.(\d+\.\d+)/);
+      data.append('ga_client_id',ga?ga[1]:'');
+      ['gclid','utm_source','utm_medium','utm_campaign','utm_content'].forEach(function(k){
+        var v=p.get(k); if(v) data.append(k,v);
+      });
+      data.append('page_url',location.href.split('#')[0]);
+      navigator.sendBeacon('/zap-lead.php',data);
+    }catch(e){}
+  });
 })();
 
 </script>

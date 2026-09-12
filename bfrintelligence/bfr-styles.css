@@ -474,6 +474,16 @@ nav.raised{box-shadow:0 2px 32px rgba(30,136,229,.09);}
 .perk .pic svg{width:20px;height:20px;stroke:var(--blue);fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round;}
 .perk b{display:block;font-size:14.5px;font-weight:700;color:var(--night);margin-bottom:2px;}
 .perk span{font-size:13px;color:var(--slate);line-height:1.55;}
+/* WhatsApp: caminho de conversao alternativo ao formulario. Verde da marca do
+   WhatsApp de proposito — o reconhecimento imediato vale mais aqui que a
+   coerencia cromatica com o azul da BFR. */
+.zap-cta{margin-top:28px;padding-top:26px;border-top:1px solid var(--line);}
+.zap-cta>span{display:block;font-size:13px;color:var(--slate);margin-bottom:12px;}
+.zap-btn{display:inline-flex;align-items:center;gap:10px;padding:13px 22px;border-radius:999px;background:#25D366;color:#fff;font-size:14.5px;font-weight:700;letter-spacing:-.01em;box-shadow:0 8px 24px rgba(37,211,102,.28);transition:transform .12s ease,box-shadow .18s ease,background .18s ease;}
+.zap-btn:hover{background:#1FBA59;transform:translateY(-1px);box-shadow:0 12px 30px rgba(37,211,102,.34);}
+.zap-btn svg{width:19px;height:19px;fill:currentColor;flex-shrink:0;}
+@media (max-width:760px){.zap-btn{width:100%;justify-content:center;}}
+
 .contact-card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:36px;box-shadow:0 18px 60px rgba(30,136,229,.10);}
 .form{display:flex;flex-direction:column;gap:16px;}
 .field label{display:block;font-size:12.5px;font-weight:600;color:var(--slate);margin-bottom:7px;}
