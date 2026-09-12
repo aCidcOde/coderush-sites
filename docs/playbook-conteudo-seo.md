@@ -157,6 +157,17 @@ O que faltava e passa a ser obrigatório:
 Situação em 17/08/2026: **35 posts publicados, nenhum Search Console configurado.**
 Estamos completamente cegos — não há como saber se algum traz alguém.
 
+> **Atualização 12/09/2026 — a conta ficou cara.** A BFR entrou em mídia paga
+> (`BFR - Agentes de IA`, R$ 25/dia) ainda sem Search Console. As palavras da
+> campanha tiveram de ser escolhidas por hipótese, exatamente o que este
+> documento existe para evitar — e agora a hipótese custa dinheiro por clique,
+> num nicho onde o CPC é múltiplo do de MMN.
+>
+> O passo 1 abaixo deixou de ser preparação e virou urgência: cada dia sem
+> Search Console é um dia de dado que não volta, e agora também um dia pagando
+> para descobrir o que o orgânico contaria de graça. O relatório de termos de
+> busca do Ads vira fonte provisória de vocabulário real enquanto isso não sai.
+
 Sequência recomendada, sem pular etapa:
 
 1. **Verificar a propriedade** em `search.google.com/search-console` por DNS

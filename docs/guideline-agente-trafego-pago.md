@@ -45,6 +45,34 @@ Ler na ordem errada leva a conclusão errada. A sequência correta:
 6. **Conversões** — por último, e só com amostra. Abaixo de ~15 cliques
    qualificados, zero lead não significa nada.
 
+### Armadilha: a estratégia de lance manda mais que o lance
+
+**Antes de concluir qualquer coisa sobre lance, leia
+`campaign.target_impression_share`.** Sob `TARGET_IMPRESSION_SHARE` os lances por
+palavra viram enfeite: o relatório continua exibindo
+`effective_cpc_bid_micros` com o valor que você digitou, mas quem decide o leilão
+é o teto da estratégia, no nível da campanha.
+
+Isso custou semanas de diagnóstico errado. A leitura recorrente era "quase não
+aparecemos e o concorrente aparece toda hora", e a hipótese natural era lance
+baixo. A campanha estava configurada com **meta de 20% no topo e teto de R$ 6** —
+e entregava 31% de topo. Ela já estava *acima* da meta que nós mesmos demos a
+ela; o Google segurava por instrução, com 0,0% de perda por orçamento.
+
+O sintoma que parecia confirmar folga de qualidade — `sistema mmn` com lance de
+R$ 12 pagando R$ 1,87 — era o mesmo fato visto por outro ângulo: o teto de R$ 6
+mandava, não o lance de R$ 12.
+
+Meta e teto são coisas diferentes e andam juntos:
+
+| Campo | O que diz | Sozinho |
+|---|---|---|
+| `location_fraction` | quanto **tentar** aparecer | sem teto, quer e não pode pagar |
+| `cpc_bid_ceiling` | quanto pode **pagar** para conseguir | sem meta, pode pagar e não quer |
+
+Subir um sem o outro não produz efeito. Use `estrategia.py --ver` antes de
+qualquer análise de lance.
+
 ### Armadilha: dado do dia corrente é incompleto
 
 Relatar número de "hoje" antes do fechamento gera correção no dia seguinte. Em
@@ -140,6 +168,37 @@ regra conscientemente quando as mudanças vêm do mesmo diagnóstico e se refor�
 e registre que quebrou. Mitigação: dê lance próprio à palavra que você quer
 isolar, assim ela fica mensurável separadamente.
 
+### Auditar o texto do anúncio é rotina, não arqueologia
+
+Em 12/09/2026 os **9 anúncios da conta** — cinco deles no ar — anunciavam "até
+31/08", prazo vencido havia 12 dias, enquanto o site vendia com prazo 30/09.
+Ninguém tinha olhado desde a criação.
+
+Prazo vencido não é só constrangimento: quem clica, compara com a página e
+desiste — e o clique a gente paga igual. É desperdício que não aparece em nenhum
+relatório de termo de busca, porque o tráfego estava *certo*.
+
+`anuncios.py --auditar` varre data vencida, estouro de caractere e caixa alta.
+Rodar sempre que a oferta mudar de prazo, e no fechamento de cada mês.
+
+Para corrigir, `--trocar "de" "para"` usa `AdService.mutate_ads` com FieldMask,
+preservando o histórico do anúncio. **Remover e recriar zera o aprendizado
+acumulado** — nunca faça isso só para trocar uma data.
+
+### Antes de ligar campanha parada há tempo
+
+Campanha criada e nunca veiculada acumula defeito silencioso. Checklist do que
+estava errado nas 4 do SVD, paradas desde 10/08:
+
+- **extensões: zero** (a campanha ativa tinha 12). Entram direto no Ad Rank e não
+  custam clique — subir sem elas repete a perda de 90% por ranking do primeiro dia;
+- **texto com prazo vencido** (acima);
+- **estratégia de lance defasada** em relação à campanha que já aprendeu.
+
+Ao replicar extensão, **vincule o asset existente, não clone**. `asset` é
+reaproveitável entre campanhas e consolida métrica; rodar `extensoes.py` de novo
+cria cópias e fatia o histórico entre clones. Use `vincular-extensoes.py`.
+
 ## 6. O que NÃO fazer
 
 - **Não pesquisar o próprio anúncio no Google.** Cada busca sem clique derruba o
@@ -184,6 +243,12 @@ Em `automation/ads/`, todas idempotentes:
 | `lance.py` | Lance por grupo, com parcela de impressões lado a lado. Teto de segurança. |
 | `search-console.py` | Classifica consultas em comprar / avaliar / ignorar. |
 | `renovar-token.py` | OAuth do Ads. Ver armadilha abaixo. |
+| `_conta.py` | Credencial compartilhada e `--conta=<apelido>`. Evita ID cravado no topo de cada script. |
+| `estrategia.py` | Meta e teto de parcela de impressão. **Leia antes de analisar lance.** |
+| `anuncios.py` | `--auditar` (data vencida, limite, caixa alta) e `--trocar` preservando histórico. |
+| `vincular-extensoes.py` | Replica assets de uma campanha em outras sem clonar. |
+| `conversoes-bfr.py` | Ações de conversão da BFR e o `send_to` da tag AW. |
+| `criar-campanha-bfr.py` | Primeira campanha da BFR. Valida RSA antes de enviar. |
 
 ### Armadilhas técnicas da API
 
@@ -200,8 +265,43 @@ Em `automation/ads/`, todas idempotentes:
 - **Refresh token expira em 7 dias** enquanto o app OAuth estiver em modo "Teste"
   no Cloud Console. Publicar o app resolve em definitivo.
 - **Keyword Planner exige acesso Standard**; token Basic recebe `PERMISSION_DENIED`.
+  Em 12/09/2026 o token ainda estava em *explorer access* — sem Planner e sem
+  Search Console na BFR, palavra nova é hipótese, e a compensação é negativa
+  grande na largada e leitura de termos em 48h, não no fim do teste.
+- **`contains_eu_political_advertising` é obrigatório na v25** ao criar campanha.
+  Omitir devolve `The required field was not present` apontando para o campo.
+- **Criação de campanha falha *depois* do orçamento.** O orçamento é um mutate
+  separado e anterior; se a campanha quebrar, ele fica órfão e uma nova execução
+  cria outro. Reaproveite por nome.
+- **`campaign.start_date`/`end_date` não existem na v25** — são
+  `start_date_time`/`end_date_time`.
+- **Filtrar por `campaign.name` exige `campaign.name` no SELECT** (GAQL), senão
+  `EXPECTED_REFERENCED_FIELD_IN_SELECT_CLAUSE`.
+- **`segments.conversion_action_name` não convive com `metrics.cost_micros`** na
+  mesma consulta.
+
+### Conta compartilhada: o que é de conta e o que é de campanha
+
+A `3578927161` hospeda SVD, BFR, Elibell e kernelpanic. Isso muda o alcance de
+algumas mudanças:
+
+- **ação de conversão é recurso de conta** — criar uma para a BFR aparece no
+  relatório de todos. Hoje é tolerável porque nenhuma campanha usa lance por
+  conversão (todas em `TARGET_IMPRESSION_SHARE`), então misturar não envenena
+  algoritmo nenhum; exige apenas segmentar por nome na leitura. **No dia em que
+  alguma campanha migrar para Maximize Conversions, isto vira problema real e a
+  BFR precisa de conta própria.** Prefixe o nome da ação com a marca;
+- **extensão de conta (`customer_asset`) vaza entre marcas** — sitelink do SVD
+  apareceria em anúncio de oficina mecânica. Vincule sempre por campanha.
+
+### Sitelink: query antes do fragmento
+
+`https://site.com/#contato?utm_source=...` joga tudo para dentro do fragmento —
+`location.search` fica vazio e o `gclid` nunca chega ao rastreamento. A forma
+correta é `https://site.com/?utm_source=...#contato`.
 
 ---
 
-*Última atualização: 15/08/2026 — campanha com 5 dias de operação, R$ 36,99
-investidos, 7 cliques, 52 negativas, 41 palavras.*
+*Última atualização: 12/09/2026 — 6 campanhas ativas (5 SVD + 1 BFR), R$ 101/dia
+nominal. Marco: descoberto que a meta de parcela de impressão, não o lance, era o
+freio da visibilidade.*
