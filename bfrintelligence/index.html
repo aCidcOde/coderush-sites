@@ -19,6 +19,13 @@
   gtag('js', new Date());
 
   gtag('config', 'G-BF0KGVD1LN');
+
+  // Tag de conversao do Google Ads. A BFR nao importa conversao do GA4 de
+  // proposito: no SVD a compra enviada por Measurement Protocol nunca chegou ao
+  // Ads, porque o evento ficava orfao — sem sessao e sem gclid, o Ads nao tinha
+  // como ligar aquilo a um clique de anuncio. A tag AW dispara no navegador com
+  // o gclid vivo, que e justamente o que falta no outro caminho.
+  gtag('config', 'AW-1018451768');
 </script>
 
 
@@ -1397,7 +1404,10 @@ form.addEventListener('submit',e=>{
     .then(r=>r.json().catch(()=>({ok:r.ok})))
     .then(res=>{
       if(!res.ok) throw new Error(res.message||'falha');
-      if(typeof gtag==='function') gtag('event','generate_lead',{page:'site-bfr-home'});
+      if(typeof gtag==='function'){
+        gtag('event','generate_lead',{page:'site-bfr-home'});
+        gtag('event','conversion',{send_to:'AW-1018451768/kONgCLGMlvUcELiu0eUD'});
+      }
       form.innerHTML='<div class="form-success"><div class="ok">✓</div><h4>Mensagem enviada!</h4><p>Nosso time entrará em contato em até 2 horas. Enquanto isso, explore o AgenticHUB por dentro.</p></div>';
     })
     .catch(()=>{
@@ -1441,7 +1451,10 @@ form.addEventListener('submit',e=>{
   document.addEventListener('click',function(event){
     var link=event.target.closest && event.target.closest('a[href*="wa.me"]');
     if(!link) return;
-    if(typeof gtag==='function') gtag('event','whatsapp_click',{page:'site-bfr-home'});
+    if(typeof gtag==='function'){
+      gtag('event','whatsapp_click',{page:'site-bfr-home'});
+      gtag('event','conversion',{send_to:'AW-1018451768/usybCK6MlvUcELiu0eUD'});
+    }
     var ref=zapRef();
     if(link.href.indexOf('text=')!==-1 && link.href.indexOf('%5Bref')===-1){
       link.href+=encodeURIComponent(' [ref '+ref+']');
