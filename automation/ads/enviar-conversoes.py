@@ -32,9 +32,11 @@ justificar; com 1 venda por semana, o CSV manual custa menos.
 Uso:
   python3 enviar-conversoes.py --listar          # o que ha pra enviar
   python3 enviar-conversoes.py --criar-acao      # cria a acao de upload
+  python3 enviar-conversoes.py --csv             # gera o arquivo pro upload manual
   python3 enviar-conversoes.py --dry-run
   python3 enviar-conversoes.py
 """
+import csv
 import sqlite3
 import sys
 from datetime import datetime, timezone, timedelta
@@ -109,7 +111,61 @@ def pendentes(con):
         ORDER BY l.id""").fetchall()
 
 
+def gerar_csv(con, destino):
+    """Formato de importacao do Ads (Metas -> Uploads -> Enviar arquivo).
+
+    A primeira linha e um parametro, nao cabecalho: sem ela o Google interpreta
+    o horario no fuso da CONTA e a conversao cai na hora errada — o que pode
+    joga-la pra fora da janela de atribuicao do clique e faze-la ser recusada
+    sem explicacao util.
+
+    O 'Conversion Name' precisa bater EXATAMENTE com o nome da acao criada aqui,
+    incluindo os parenteses. Divergencia de um caractere recusa a linha.
+    """
+    linhas = pendentes(con)
+    if not linhas:
+        print("  nada pendente — nenhum arquivo gerado")
+        return None
+    with open(destino, "w", newline="", encoding="utf-8") as f:
+        f.write("Parameters:TimeZone=America/Sao_Paulo\n")
+        w = csv.writer(f)
+        w.writerow(["Google Click ID", "Conversion Name", "Conversion Time",
+                    "Conversion Value", "Conversion Currency"])
+        for r in linhas:
+            quando = datetime.fromisoformat(r["closed_at"]).astimezone(
+                timezone(timedelta(hours=-3))).strftime("%Y-%m-%d %H:%M:%S")
+            w.writerow([r["gclid"], ACAO_NOME, quando,
+                        f"{r['close_value']:.2f}", "BRL"])
+            print(f"  [+] #{r['id']} {r['nome']}: R$ {r['close_value']:.2f} em {quando}")
+    print(f"\n  arquivo: {destino}")
+    print(f"  subir em: Ads -> Metas -> Uploads -> Enviar arquivo")
+    print(f"  depois marcar como enviadas: --marcar-enviadas")
+    return destino
+
+
+def marcar_enviadas(con):
+    """So depois que o upload for aceito no painel, pra --listar parar de cobrar."""
+    agora = datetime.now(timezone(timedelta(hours=-3))).isoformat(timespec="seconds")
+    n = 0
+    for r in pendentes(con):
+        con.execute(f"INSERT OR REPLACE INTO {TABELA_LOG} VALUES (?,?,?,?)",
+                    (r["id"], agora, float(r["close_value"]), "csv manual"))
+        n += 1
+    con.commit()
+    print(f"  {n} conversao(oes) marcada(s) como enviada(s)")
+
+
 def main():
+    if "--csv" in sys.argv or "--marcar-enviadas" in sys.argv:
+        con = banco()
+        if "--marcar-enviadas" in sys.argv:
+            marcar_enviadas(con)
+        else:
+            destino = next((a.split("=", 1)[1] for a in sys.argv
+                            if a.startswith("--saida=")), "/tmp/conversoes-svd.csv")
+            gerar_csv(con, destino)
+        return
+
     cli = cliente()
     ga = cli.get_service("GoogleAdsService")
     con = banco()
