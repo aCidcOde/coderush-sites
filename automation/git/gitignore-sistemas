@@ -1,0 +1,103 @@
+# .gitignore para os sistemas de cliente (avig360, forone, emergency, medplant,
+# protech, velaro, henovar, new, site_svd)
+#
+# Copiar para a raiz de cada repositorio como .gitignore.
+#
+# POR QUE: sem isto, limpar o historico e um ciclo — o lixo volta no proximo
+# commit e em seis meses o repositorio esta pesado de novo. O que motivou:
+# 22 MB de .phar no avig360, 25 arquivos .psd e um nohup.out de 6,5 MB no forone,
+# e 105 MB de dump .sql no emergency (com dado pessoal dentro).
+#
+# ATENCAO: isto NAO remove nada que ja esta versionado. Para arquivo ja
+# rastreado, alem desta linha e preciso `git rm --cached <arquivo>`. E para
+# limpar o historico, limpar-repo.sh.
+
+# ─── ferramentas de desenvolvimento empacotadas ───
+# phpDocumentor.phar sozinho eram 17 MB dentro de um vendor/ de biblioteca.
+# Ferramenta de dev nao roda em producao; quem precisa baixa.
+*.phar
+
+# ─── dumps e backups de banco ───
+# O caso mais grave que encontramos: dump apagado do HEAD continua recuperavel
+# por qualquer pessoa com acesso de clone, e o do emergency referencia nascimento
+# e RG. Dump de banco nao entra em repositorio, nunca — nem "so pra guardar".
+*.sql
+*.sql.gz
+*.sql.zip
+*.dump
+*.dmp
+*.bak
+
+# ─── logs e saida de execucao ───
+# nohup.out de 6,5 MB no forone: saida de job que foi crescendo e sendo commitada.
+*.log
+nohup.out
+error_log
+storage/logs/*
+!storage/logs/.gitkeep
+
+# ─── fontes de arte ───
+# .psd e arquivo de trabalho do designer, nao entregavel do sistema.
+*.psd
+*.ai
+*.sketch
+*.fig
+*.xcf
+
+# ─── binarios e pacotes ───
+*.exe
+*.msi
+*.dll
+*.zip
+*.rar
+*.7z
+*.tar
+*.tar.gz
+*.iso
+
+# ─── midia pesada ───
+# Video em git e o pior caso: binario grande que muda inteiro a cada versao.
+*.mp4
+*.mov
+*.avi
+*.mkv
+
+# ─── credenciais ───
+# Nunca versionar. Se ja foi commitado uma vez, considerar a credencial vazada e
+# ROTACIONAR — remover do historico nao desfaz quem ja clonou.
+.env
+.env.*
+!.env.example
+*credentials*.json
+*service-account*.json
+*.pem
+*.key
+!*.pub
+
+# ─── dependencias ───
+# NAO habilitado nestes repositorios: nao existe composer.json na raiz. As libs
+# foram copiadas a mao pra not_public/class/, cada uma com seu vendor, e o deploy
+# nao roda composer — ignorar quebraria a aplicacao, porque nada restauraria.
+# Descomentar SOMENTE depois de centralizar as dependencias num composer.json de
+# raiz e o deploy passar a rodar `composer install`.
+# /vendor/
+# **/vendor/
+node_modules/
+
+# ─── upload de usuario ───
+# Arquivo que o cliente envia pelo sistema nao e codigo; cresce sem limite e nao
+# tem por que viajar no clone.
+public/uploads/*
+!public/uploads/.gitkeep
+arquivos/temp/*
+/tmp/
+
+# ─── sistema operacional e editor ───
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
