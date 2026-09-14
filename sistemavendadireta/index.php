@@ -601,7 +601,11 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
           <article class="flex flex-col rounded-2xl border border-white/20 bg-white/5 p-5">
             <div class="flex items-center justify-center rounded-xl bg-white px-5 py-4">
               <picture>
+                <?php /* source so quando o arquivo existe: <source> apontando pra 404 NAO
+         cai no <img>, mostra imagem quebrada */ ?>
+                <?php if (is_file(__DIR__ . '/' . $case['logo'])): ?>
                 <source srcset="<?= htmlspecialchars($case['logo'], ENT_QUOTES, 'UTF-8') ?>" type="image/webp" />
+                <?php endif; ?>
                 <img
                   src="<?= htmlspecialchars($case['logoFallback'], ENT_QUOTES, 'UTF-8') ?>"
                   alt="<?= htmlspecialchars($case['name'], ENT_QUOTES, 'UTF-8') ?>"

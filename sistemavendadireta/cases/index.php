@@ -152,7 +152,11 @@ $seoLdGraph = [
           <div class="grid gap-6 lg:grid-cols-[auto_1fr] lg:items-center">
             <div class="flex w-full max-w-[360px] items-center justify-center rounded-2xl bg-white px-6 py-5">
               <picture>
+                <?php /* source so quando o arquivo existe: <source> apontando pra 404 NAO
+         cai no <img>, mostra imagem quebrada */ ?>
+                <?php if (is_file(__DIR__ . '/../' . $case['logo'])): ?>
                 <source srcset="../<?= htmlspecialchars($case['logo'], ENT_QUOTES, 'UTF-8') ?>" type="image/webp" />
+                <?php endif; ?>
                 <img
                   src="../<?= htmlspecialchars($case['logoFallback'], ENT_QUOTES, 'UTF-8') ?>"
                   alt="<?= htmlspecialchars($case['name'], ENT_QUOTES, 'UTF-8') ?>"
