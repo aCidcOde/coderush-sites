@@ -45,12 +45,12 @@ BASE = "https://sistemavendadireta.com.br"
 # cada pagina com o termo que ela deveria capturar; None = sem alvo definido
 PAGINAS = [
     (f"{BASE}/", "sistema venda direta"),
-    (f"{BASE}/oferta/", "sistema venda direta"),
+    (f"{BASE}/sistema-venda-direta/", "sistema venda direta"),
     (f"{BASE}/sistema-mmn/", "sistema mmn"),
-    (f"{BASE}/oferta/afiliados/", "plataforma de afiliados"),
-    (f"{BASE}/oferta/parceiros/", "programa de parceiros"),
-    (f"{BASE}/oferta/cosmeticos/", "sistema para revenda de cosmeticos"),
-    (f"{BASE}/oferta/suplementos/", "sistema para distribuidora de suplementos"),
+    (f"{BASE}/sistema-venda-direta/afiliados/", "plataforma de afiliados"),
+    (f"{BASE}/sistema-venda-direta/parceiros/", "programa de parceiros"),
+    (f"{BASE}/sistema-venda-direta/cosmeticos/", "sistema para revenda de cosmeticos"),
+    (f"{BASE}/sistema-venda-direta/suplementos/", "sistema para distribuidora de suplementos"),
     (f"{BASE}/cases/", None),
     (f"{BASE}/simulador/", "simulador de plano de marketing multinivel"),
     (f"{BASE}/inteligencia-artificial/", None),
