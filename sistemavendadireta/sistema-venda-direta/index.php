@@ -24,7 +24,9 @@ $promoInstallTo = 3500;            // valor promocional em 2x (R$)
 $promoInstallCash = 3000;          // valor promocional a vista (R$)
 $promoDeadline = '2026-09-30';     // ultimo dia da promocao (America/Sao_Paulo)
 $promoSlots = 10;                  // vagas de implantacao no periodo (tema: 10 anos)
-$promoSlotsFilled = 6;             // ja fechadas: Accenti, New Professional's, Protech, MedPlant, Zohr e AVIG 360
+// Atualizado 14/09/2026: Zohr saiu (nao fechou) e entraram Velaro e Henovar, as
+// duas vindas da campanha do Google Ads.
+$promoSlotsFilled = 7;             // Accenti, New Professional's, Protech, MedPlant, AVIG 360, Velaro e Henovar
 $promoSlotsLeft = max(0, $promoSlots - $promoSlotsFilled);
 $whatsappPhone = '5511994566726';
 $whatsappMessage = 'Ola! Vim pela Promocao 10 Anos do Sistema Venda Direta. Quero garantir minha vaga.';
@@ -502,9 +504,13 @@ $seoDescription = 'Sistema de marketing multinível (MMN) e venda direta: escrit
       <div class="rounded-[30px] border border-sky-300/40 bg-sky-400/[0.08] p-6 sm:p-8">
         <div class="grid gap-8 lg:grid-cols-[1.15fr_1fr] lg:items-center">
           <div>
-            <p class="inline-flex rounded-full border border-sky-300/50 bg-sky-400/15 px-3 py-1 text-xs font-bold uppercase tracking-[0.14em] text-sky-200">
-              Parceria BFR Intelligence
-            </p>
+            <div class="flex flex-wrap items-center gap-4">
+              <picture>
+                <source srcset="../imagens/parceiros-bfr.webp" type="image/webp" />
+                <img src="../imagens/parceiros-bfr.png" alt="BFR Intelligence" class="h-12 w-auto" width="360" height="205" loading="lazy" decoding="async" />
+              </picture>
+              <p class="inline-flex rounded-full border border-sky-300/50 bg-sky-400/15 px-3 py-1 text-xs font-bold uppercase tracking-[0.14em] text-sky-200">Parceria oficial</p>
+            </div>
             <h2 class="mt-4 font-[var(--font-heading)] text-2xl font-bold sm:text-[32px]">
               Agentes de IA para a sua rede, <span class="text-sky-200">em degustação</span>
             </h2>
@@ -658,9 +664,18 @@ $seoDescription = 'Sistema de marketing multinível (MMN) e venda direta: escrit
     <div class="mx-auto max-w-[1140px] px-4 py-8 sm:px-6">
       <div class="flex flex-wrap items-center justify-between gap-4">
         <a href="../" target="_blank" rel="noopener" aria-label="Abrir o site do Sistema Venda Direta em nova aba"><img decoding="async" src="../imagens/Logo-Branco-1.webp" alt="Sistema Venda Direta" class="h-auto w-[150px]" width="1000" height="300" loading="lazy" /></a>
-        <p class="text-sm text-white/85">
-          contato@sistemavendadireta.com.br · 11 99456-6726
-        </p>
+        <?php /* Endereco fisico na LP de trafego pago nao e formalidade: quem
+                 chega por anuncio nao conhece a empresa, e endereco verificavel
+                 e um dos poucos sinais de que existe alguem atras da pagina.
+                 itemprop casa com o PostalAddress do JSON-LD da home. */ ?>
+        <div class="text-sm leading-relaxed text-white/85">
+          <p>contato@sistemavendadireta.com.br · 11 99456-6726</p>
+          <address class="mt-1 not-italic text-white/70" itemscope itemtype="https://schema.org/PostalAddress">
+            <span itemprop="streetAddress">Rua Oscar Gomes Cardim, 161</span> — Vila Cordeiro ·
+            <span itemprop="addressLocality">São Paulo</span>/<span itemprop="addressRegion">SP</span> ·
+            CEP <span itemprop="postalCode">04580-040</span>
+          </address>
+        </div>
       </div>
       <p class="mt-6 text-xs text-white/60">
         © Sistema Venda Direta — Todos os direitos reservados.

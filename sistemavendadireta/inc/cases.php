@@ -272,8 +272,11 @@ return [
         'segment' => 'Colchões tecnológicos • Brasil',
         'period' => 'Escritório virtual no ar',
         'featured' => false,
-        'logo' => 'imagens/clientes/haiflex.webp',
-        'logoFallback' => 'imagens/clientes/haiflex.png',
+        // logo so existe em versao branca util; no card branco sumia (so aparecia
+        // o "J" verde). 'logoBg' => 'escuro' resolve sem depender de arte nova.
+        'logo' => 'imagens/clientes/haiflex-branca.webp',
+        'logoFallback' => 'imagens/clientes/haiflex-branca.png',
+        'logoBg' => 'escuro',
         'logoWidth' => 350,
         'logoHeight' => 100,
         'url' => 'https://escritoriovirtual.haiflex.com.br/',

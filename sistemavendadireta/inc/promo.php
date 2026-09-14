@@ -95,7 +95,7 @@ function promoVitrine(string $prefixo = '../'): string
                 . 'ferramenta de pedido liberados só depois que o cadastro do revendedor é aprovado.',
         ],
         [
-            'logo' => 'haiflex', 'alt' => 'Haiflex',
+            'logo' => 'haiflex-branca', 'alt' => 'Haiflex', 'fundo' => 'escuro',
             'w' => 350, 'h' => 100, 'data' => 'Escritório virtual no ar',
             'loja' => 'https://escritoriovirtual.haiflex.com.br/',
             'texto' => 'Indústria de colchões que usa o escritório virtual para a rede de revendedores, '
@@ -149,7 +149,11 @@ function promoVitrine(string $prefixo = '../'): string
     foreach ($cards as $c) {
         $e = static fn ($v) => htmlspecialchars((string) $v, ENT_QUOTES, 'UTF-8');
         $html .= '<article class="flex flex-col rounded-2xl border border-white/20 bg-white/5 p-5">'
-            . '<div class="flex items-center rounded-xl bg-white px-4 py-3">'
+            // justify-center: sem isso o logo cola na esquerda da caixa e a fileira de
+            // cards fica desalinhada. 'fundo' => 'escuro' existe pra logo em versao
+            // branca, que sumiria no branco — caso da Haiflex.
+            . '<div class="flex items-center justify-center rounded-xl px-4 py-3 '
+                . (($c['fundo'] ?? '') === 'escuro' ? 'bg-slate-900' : 'bg-white') . '">'
             // so aponta o webp se o arquivo existir — medplant e zohr vieram so em png
             . (is_file(__DIR__ . '/../imagens/clientes/' . $c['logo'] . '.webp')
                 ? '<picture><source srcset="' . $e($prefixo . 'imagens/clientes/' . $c['logo'] . '.webp') . '" type="image/webp" />'

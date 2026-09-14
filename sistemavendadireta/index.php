@@ -519,36 +519,66 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
       </div>
     </section>
 
+    <?php
+    /*
+     * PARCERIA BFR INTELLIGENCE — substituiu o bloco generico de "IA para MMN"
+     * em 14/09/2026.
+     *
+     * O texto anterior prometia categoria ("frente dedicada de IA", "reduzir
+     * custo, diminuir retrabalho") sem dizer o que a pessoa leva. Promessa de
+     * categoria nao vende software: quem compara fornecedor quer saber o que
+     * recebe e quando.
+     *
+     * O id="ia-mmn" foi mantido de proposito — o menu e links externos apontam
+     * pra essa ancora, e trocar quebraria todos sem aviso.
+     *
+     * A /inteligencia-artificial/ NAO ficou orfa: segue linkada do rodape, dos
+     * cases, do blog e da pagina WordPress. Conferido antes de remover os dois
+     * botoes daqui — ela tambem tem zero impressao organica em 30 dias.
+     */
+    ?>
     <section id="ia-mmn" class="scroll-mt-28 py-10">
-      <div class="rounded-[30px] border border-white/30 bg-white/[0.08] p-6 sm:p-8">
+      <div class="rounded-[30px] border border-sky-300/40 bg-sky-400/[0.08] p-6 sm:p-8">
         <div class="grid items-center gap-6 lg:grid-cols-[1fr_auto]">
           <div>
-            <h4 class="font-[var(--font-heading)] text-[30px] font-semibold leading-tight">Inteligência Artificial para Multinível e Vendas Direta</h4>
-            <div class="mt-2 h-1 w-[72px] rounded-full bg-white"></div>
+            <div class="flex flex-wrap items-center gap-4">
+              <picture>
+                <source srcset="imagens/parceiros-bfr.webp" type="image/webp" />
+                <img src="imagens/parceiros-bfr.png" alt="BFR Intelligence" class="h-12 w-auto" width="360" height="205" loading="lazy" decoding="async" />
+              </picture>
+              <p class="inline-flex rounded-full border border-sky-300/50 bg-sky-400/15 px-3 py-1 text-xs font-bold uppercase tracking-[0.14em] text-sky-200">Parceria oficial</p>
+            </div>
+            <h4 class="mt-4 font-[var(--font-heading)] text-[30px] font-semibold leading-tight">
+              Agentes de IA atendendo a sua rede
+            </h4>
+            <div class="mt-2 h-1 w-[72px] rounded-full bg-sky-300"></div>
             <p class="mt-4 max-w-3xl text-base leading-relaxed text-white/90">
-              Criamos uma frente dedicada de IA para empresas de MMN e vendas direta com foco em resultado operacional:
-              reduzir custo, diminuir retrabalho e acelerar a tomada de decisão.
+              O gargalo de uma operação de rede não é vender — é responder a mesma pergunta mil vezes.
+              Quanto ganhei, quando cai, por que meu bônus mudou, como cadastro alguém. Isso consome o
+              dia do suporte e trava a duplicação.
             </p>
             <p class="mt-3 max-w-3xl text-base leading-relaxed text-white/85">
-              Essa abordagem conecta tecnologia, processo e operação comercial para escalar com mais previsibilidade.
+              Em parceria com a <strong>BFR Intelligence</strong>, seu sistema ganha um agente que conhece
+              o seu plano e responde no WhatsApp, no mesmo minuto. O time humano volta a cuidar do que
+              precisa de gente.
             </p>
           </div>
 
           <div class="flex flex-col items-stretch gap-3 sm:min-w-[300px]">
-            <a href="inteligencia-artificial/" class="inline-flex items-center justify-center rounded-full border border-white/75 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10">
-              Ver IA para MMN
+            <a href="sistema-venda-direta/#ia-bfr" class="inline-flex items-center justify-center rounded-full bg-sky-400 px-5 py-2.5 text-sm font-bold uppercase tracking-wide text-brand hover:bg-sky-300">
+              Ver a degustação
             </a>
-            <a href="inteligencia-artificial/#contato" class="inline-flex items-center justify-center rounded-full border border-white/35 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10">
-              Solicitar diagnóstico de IA
+            <a href="https://bfrintelligence.com.br/?utm_source=svd&amp;utm_medium=home&amp;utm_campaign=parceria-ia" target="_blank" rel="noopener" class="inline-flex items-center justify-center rounded-full border border-sky-300/60 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide text-sky-100 hover:bg-sky-400/15">
+              Conhecer a BFR
             </a>
           </div>
         </div>
 
         <div class="mt-6 grid gap-3 text-sm text-white/90 sm:grid-cols-2 lg:grid-cols-4">
-          <div class="rounded-2xl border border-white/20 bg-white/5 px-4 py-3">Automação de processos de rede</div>
-          <div class="rounded-2xl border border-white/20 bg-white/5 px-4 py-3">Mais produtividade comercial</div>
-          <div class="rounded-2xl border border-white/20 bg-white/5 px-4 py-3">Menor custo operacional</div>
-          <div class="rounded-2xl border border-white/20 bg-white/5 px-4 py-3">Escalabilidade com governança</div>
+          <div class="rounded-2xl border border-sky-300/25 bg-sky-400/10 px-4 py-3">Responde sobre plano e comissão</div>
+          <div class="rounded-2xl border border-sky-300/25 bg-sky-400/10 px-4 py-3">Atende no WhatsApp do consultor</div>
+          <div class="rounded-2xl border border-sky-300/25 bg-sky-400/10 px-4 py-3">Treinado na sua base</div>
+          <div class="rounded-2xl border border-sky-300/25 bg-sky-400/10 px-4 py-3">Com registro para auditoria</div>
         </div>
       </div>
     </section>
@@ -599,7 +629,7 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
       <div class="mt-6 grid gap-4 md:grid-cols-2">
         <?php foreach ($clientCases as $case): ?>
           <article class="flex flex-col rounded-2xl border border-white/20 bg-white/5 p-5">
-            <div class="flex items-center justify-center rounded-xl bg-white px-5 py-4">
+            <div class="flex items-center justify-center rounded-xl <?= (($case['logoBg'] ?? '') === 'escuro') ? 'bg-slate-900' : 'bg-white' ?> px-5 py-4">
               <picture>
                 <?php /* source so quando o arquivo existe: <source> apontando pra 404 NAO
          cai no <img>, mostra imagem quebrada */ ?>

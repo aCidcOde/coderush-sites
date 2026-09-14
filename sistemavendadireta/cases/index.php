@@ -150,7 +150,7 @@ $seoLdGraph = [
       <section id="<?= htmlspecialchars($case['slug'], ENT_QUOTES, 'UTF-8') ?>" class="scroll-mt-28 py-6">
         <article class="rounded-[30px] border border-white/25 bg-white/[0.06] p-6 sm:p-8">
           <div class="grid gap-6 lg:grid-cols-[auto_1fr] lg:items-center">
-            <div class="flex w-full max-w-[360px] items-center justify-center rounded-2xl bg-white px-6 py-5">
+            <div class="flex w-full max-w-[360px] items-center justify-center rounded-2xl <?= (($case['logoBg'] ?? '') === 'escuro') ? 'bg-slate-900' : 'bg-white' ?> px-6 py-5">
               <picture>
                 <?php /* source so quando o arquivo existe: <source> apontando pra 404 NAO
          cai no <img>, mostra imagem quebrada */ ?>
