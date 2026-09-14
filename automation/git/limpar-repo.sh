@@ -60,8 +60,27 @@ command -v git-filter-repo >/dev/null || {
 
 rm -rf "$TRAB"; mkdir -p "$TRAB"
 
+# ---------------------------------------------------------------------------
+# CLONA DO REMOTO, NAO DA COPIA LOCAL. Isto quase custou caro: em 14/09 o
+# /data/emergency estava 2.686 commits ATRAS do Bitbucket. Limpar a copia local e
+# empurrar com --mirror teria APAGADO esses 2.686 commits do servidor — o mirror
+# nao mescla, ele substitui. O diretorio de trabalho de uma maquina nao e a fonte
+# da verdade; o remoto e.
+# ---------------------------------------------------------------------------
 echo "=== 1. espelho (o repositorio original nao e tocado) ==="
-git clone --mirror "$REPO" "$ESPELHO" -q
+ORIGEM_REMOTA=$(cd "$REPO" && git remote get-url origin 2>/dev/null || true)
+if [ -n "$ORIGEM_REMOTA" ]; then
+  echo "    clonando do REMOTO: $ORIGEM_REMOTA"
+  git clone --mirror "$ORIGEM_REMOTA" "$ESPELHO" -q
+  # deixa registrado o quanto a copia local estava defasada — se for muito, e
+  # sinal de que alguem trabalha nesse repo por outro caminho
+  ATRAS=$(cd "$REPO" && git rev-list --count HEAD..origin/HEAD 2>/dev/null || echo "?")
+  [ "$ATRAS" != "0" ] && [ "$ATRAS" != "?" ] && \
+    echo "    (a copia em $REPO esta $ATRAS commit(s) atras do remoto — usando o remoto)"
+else
+  echo "    sem remoto configurado; clonando de $REPO"
+  git clone --mirror "$REPO" "$ESPELHO" -q
+fi
 ANTES=$(du -sm "$ESPELHO" | cut -f1)
 echo "    $ESPELHO — $ANTES MB"
 
