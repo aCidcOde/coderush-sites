@@ -146,22 +146,28 @@ def auditar(url, alvo):
         achados.append(("AVISO", f"{len(h1s)} H1 na pagina"))
 
     # ── termo alvo ──
+    # Exigir a frase contigua e estrito demais: "Sistema de Marketing Multinivel e
+    # Venda Direta" atende quem busca "sistema venda direta", mesmo sem as tres
+    # palavras coladas. O que importa e se as palavras significativas estao la.
     if alvo:
         corpo = texto_visivel(html)
-        alvo_n = normalizar(alvo)
+        vazias = {"de", "da", "do", "para", "e", "com", "em", "a", "o"}
+        palavras = [p for p in normalizar(alvo).split() if p not in vazias]
         primeiro = " ".join(corpo.split()[:120])
-        onde = []
-        if alvo_n in normalizar(title):
-            onde.append("title")
-        if alvo_n in normalizar(h1):
-            onde.append("H1")
-        if alvo_n in normalizar(primeiro):
-            onde.append("inicio")
+        onde, faltando = [], []
+        for rotulo, texto in (("title", title), ("H1", h1), ("inicio", primeiro)):
+            tn = normalizar(texto)
+            ausentes = [p for p in palavras if p not in tn]
+            if not ausentes:
+                onde.append(rotulo)
+            elif rotulo == "title":
+                faltando = ausentes
         info["alvo"] = f"{alvo} -> {', '.join(onde) or 'EM LUGAR NENHUM'}"
         if not onde:
             achados.append(("ERRO", f"termo alvo '{alvo}' nao aparece em title, H1 nem no inicio"))
         elif "title" not in onde:
-            achados.append(("AVISO", f"termo alvo '{alvo}' fora do title (esta em: {', '.join(onde)})"))
+            achados.append(("AVISO", f"falta '{' '.join(faltando)}' no title "
+                                     f"(alvo '{alvo}'; presente em: {', '.join(onde)})"))
 
     # ── JSON-LD ──
     blocos = re.findall(r'<script[^>]+type=["\']application/ld\+json["\'][^>]*>(.*?)</script>',

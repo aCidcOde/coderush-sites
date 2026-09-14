@@ -55,7 +55,11 @@ $whatsappHref = 'https://wa.me/' . $whatsappPhone . '?text=' . rawurlencode($wha
 
 $seoBase = 'https://www.sistemavendadireta.com.br';
 $seoUrl = $seoBase . '/oferta/afiliados/';
-$seoTitle = 'Sistema para afiliados e influenciadores | Sistema Venda Direta';
+// "Programa de afiliados" e nao "afiliados" seco: o relatorio de termos mostrou
+// que quem busca so "afiliados" quer SER afiliado da Shopee ou da Amazon. O
+// cliente daqui e a empresa que quer MONTAR o programa — o titulo precisa deixar
+// isso claro na primeira linha, antes do clique.
+$seoTitle = 'Plataforma para criar seu programa de afiliados | SVD';
 $seoDescription = 'Cadastre afiliados e influenciadores com link e cupom próprios; o sistema rastreia, calcula e paga os bônus. Instalação promocional até ' . promoPrazoCurto() . '.';
 ?>
 <!doctype html>
