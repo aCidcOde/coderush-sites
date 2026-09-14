@@ -37,14 +37,17 @@ const PROMO_INSTALL_AVISTA = 3000;
  * QUEM preencheu e deixa a pessoa abrir a loja e ver o sistema rodando de
  * verdade, em cliente real. Vale mais que qualquer selo.
  *
- * ATENCAO comercial (26/08/2026): a Zohr segue em negociacao e a MedPlant ainda
- * nao pagou. Aparecem aqui como argumento de venda apenas — nao entram em
- * receita, conversao nem orcamento de midia enquanto o pagamento nao cair.
- * A VELARO, primeira venda vinda da campanha, ja pagou e esta no funil do painel.
+ * ATENCAO comercial (atualizado 14/09/2026): a Zohr foi dada como PERDIDA (parou
+ * de responder) e a MedPlant segue sem pagar. As duas continuam aqui como
+ * argumento de venda — as lojas estao no ar e sao prova real — mas NAO entram em
+ * receita, conversao nem orcamento de midia.
+ * Ja pagaram e estao no funil do painel: VELARO (R$ 3.500, 26/08) e Henovar
+ * (R$ 5.000, 05/09) — as duas vindas da campanha do Google Ads.
  */
 function promoClientes(): array
 {
     return [
+        ['Henovar Energy', 'https://henovar.sistemavendadireta.com.br/loja'],
         ['Accenti', 'https://parceiroaccenti.com.br/loja'],
         ["New Professional's", 'https://newprofessional.com.py/loja'],
         ['Protech', 'https://protech.sistemavendadireta.com.br/loja'],
@@ -78,6 +81,13 @@ function promoClientesHtml(string $classe = 'underline decoration-white/40 under
 function promoVitrine(string $prefixo = '../'): string
 {
     $cards = [
+        [
+            'logo' => 'henovar', 'alt' => 'Henovar Energy',
+            'w' => 520, 'h' => 126, 'data' => 'No ar desde setembro de 2026',
+            'loja' => 'https://henovar.sistemavendadireta.com.br/loja',
+            'texto' => 'Assinatura de energia renovável e marketplace na mesma rede: plano de carreira em 12 níveis, '
+                . 'venda direta de 30% e desconto de afiliado aplicado pelo próprio sistema.',
+        ],
         [
             'logo' => 'accenti', 'alt' => 'Accenti',
             'w' => 842, 'h' => 461, 'data' => 'No ar desde junho de 2026',

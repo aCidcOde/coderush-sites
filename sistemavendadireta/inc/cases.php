@@ -223,6 +223,47 @@ return [
         ],
     ],
     [
+        // Fechado em 05/09/2026 pela campanha do Google Ads (grupo Sistema MMN).
+        // Catalogo ainda com produtos de exemplo na instalacao — por isso o case
+        // fala de ESTRUTURA e plano, nao de sortimento. Quando o catalogo real
+        // subir, vale revisar highlights e metrics.
+        'slug' => 'henovar',
+        'name' => 'Henovar Energy',
+        'segment' => 'Energia renovável e marketplace • Brasil',
+        'period' => 'No ar desde setembro de 2026',
+        'featured' => true,
+        'logo' => 'imagens/clientes/henovar.webp',
+        'logoFallback' => 'imagens/clientes/henovar.png',
+        'logoWidth' => 520,
+        'logoHeight' => 126,
+        'url' => 'https://henovar.sistemavendadireta.com.br/loja',
+        'summary' => 'Assinatura de energia renovável e marketplace na mesma rede, com plano de carreira de 12 níveis.',
+        'highlights' => [
+            'Assinatura de energia e venda de produto no mesmo cadastro',
+            'Plano de carreira em 12 níveis',
+            'Venda direta de 30% e rede em até nove níveis',
+            'Escritório virtual com treinamento e páginas de negócio',
+        ],
+        'details' => [
+            [
+                'title' => 'Duas naturezas de receita na mesma rede',
+                'body' => 'Assinatura de energia é recorrente e contínua; produto de marketplace é avulso e '
+                    . 'pontual. Remunerar as duas no mesmo plano, sem dois sistemas e sem planilha de '
+                    . 'conciliação, foi o que o projeto resolveu — o afiliado vê um extrato só.',
+            ],
+            [
+                'title' => 'Desconto do afiliado como regra, não como cupom',
+                'body' => 'Os 50% na compra de produto físico valem para quem é afiliado, aplicados pelo '
+                    . 'próprio sistema no momento da compra. Evita a gambiarra de cupom manual, que sempre '
+                    . 'vaza para quem não deveria ter.',
+            ],
+        ],
+        'metrics' => [
+            ['value' => '12', 'label' => 'níveis de carreira'],
+            ['value' => '9', 'label' => 'níveis de rede'],
+        ],
+    ],
+    [
         'slug' => 'protech-nutritional',
         'name' => 'Protech Nutritional',
         'segment' => 'Suplementos de alta performance • Brasil',
