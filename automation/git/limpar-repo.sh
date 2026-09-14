@@ -66,19 +66,48 @@ ANTES=$(du -sm "$ESPELHO" | cut -f1)
 echo "    $ESPELHO — $ANTES MB"
 
 REGRAS="$TRAB/remover.txt"
+# Regra por TAMANHO foi descartada: --strip-blobs-bigger-than 1M apagaria
+# cat_2.png, NoovCalm_Art_01.jpg e a webfont do tema — arquivos de 1 a 2 MB que o
+# site usa de verdade. Aqui so entra o que foi conferido caso a caso.
 cat > "$REGRAS" <<'EOF'
 glob:*.phar
 glob:*.psd
 glob:*.exe
-glob:*.sql
-glob:*.sql.zip
-glob:*.zip
 glob:*.log
 glob:*nohup.out
 glob:*.mp4
 glob:*.dmp
 glob:*.bak
+glob:*.BAK
+glob:*dist/summernote-*.zip
 EOF
+
+# ATENCAO AO .sql: o primeiro rascunho usava glob:*.sql e teria apagado
+# database/migrations/*.sql do emergency — que sao MIGRACOES, parte do codigo, nao
+# dump. Aqui removemos so os dumps grandes, escolhidos pelo tamanho do blob no
+# historico, e o caminho e listado antes de sumir.
+#
+# Tamanho tambem nao basta como criterio: migrar_rede_binario.sql tem 584 KB e e
+# o script da migracao de rede binaria do avig360 — documentacao de uma operacao
+# real, nao backup. Caminho que cheire a migracao fica, independente do tamanho.
+LIMITE_SQL=$((512 * 1024))
+PROTEGIDOS='migration|migrations|migrar|migracao|snippets|seed|schema|estrutura'
+cd "$ESPELHO"
+git rev-list --objects --all 2>/dev/null \
+  | git cat-file --batch-check='%(objecttype) %(objectname) %(objectsize) %(rest)' 2>/dev/null \
+  | awk -v lim="$LIMITE_SQL" '$1=="blob" && $3>lim && $4 ~ /\.(sql|sql\.zip|sql\.gz)$/ {print $4}' \
+  | { grep -viE "$PROTEGIDOS" || true; } \
+  | sort -u > "$TRAB/dumps.txt"
+# o || true acima nao e enfeite: com set -e + pipefail, um grep que nao acha nada
+# devolve 1 e mata o script. Foi o que aconteceu no avig360 — o unico .sql grande
+# era justamente o protegido, o filtro esvaziou, e a limpeza inteira nao rodou
+# sem dizer uma palavra. Falha silenciosa e pior que erro.
+if [ -s "$TRAB/dumps.txt" ]; then
+  echo ""
+  echo "    dumps de banco a remover (>512 KB; migracoes ficam):"
+  sed 's/^/      /' "$TRAB/dumps.txt"
+  sed 's/^/literal:/' "$TRAB/dumps.txt" >> "$REGRAS"
+fi
 
 if [ "$COM_FONTES" -eq 1 ]; then
   # Fontes CJK que o mpdf empacota. Num sistema brasileiro nao sao usadas —
@@ -96,13 +125,25 @@ fi
 
 echo ""
 echo "=== 2. o que sai (maiores, do historico inteiro) ==="
+# O preview usa AS MESMAS regras do filtro. Uma versao anterior listava por
+# extensao e mostrava migrar_rede_binario.sql como se fosse sair, quando ele e
+# protegido — preview que mente sobre o que uma ferramenta destrutiva vai fazer e
+# pior que nao ter preview.
 cd "$ESPELHO"
+PREV_RE=$(grep '^glob:' "$REGRAS" | sed 's|^glob:||; s|\.|\\.|g; s|\*|.*|g' | paste -sd'|')
 git rev-list --objects --all 2>/dev/null \
   | git cat-file --batch-check='%(objecttype) %(objectname) %(objectsize) %(rest)' 2>/dev/null \
   | awk '$1=="blob" && $4!=""{print $3, $4}' \
-  | grep -iE '\.(phar|psd|exe|sql|zip|log|mp4|dmp|bak)$|nohup\.out' \
+  | { grep -iE "(${PREV_RE})$" || true; } \
   | sort -rn | head -12 \
   | awk '{printf "    %7.2f MB  %s\n", $1/1048576, $2}'
+if [ -s "$TRAB/dumps.txt" ]; then
+  while read -r d; do
+    sz=$(git rev-list --objects --all | grep -F " $d" | head -1 | cut -d' ' -f1 \
+         | xargs -r git cat-file -s 2>/dev/null || echo 0)
+    printf "    %7.2f MB  %s\n" "$(echo "${sz:-0}/1048576" | bc -l)" "$d"
+  done < "$TRAB/dumps.txt"
+fi
 
 echo ""
 echo "=== 3. reescrevendo ==="
