@@ -74,7 +74,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
         <div class="hidden items-center gap-5 text-sm font-medium md:flex">
           <a href="../" class="text-white/90 hover:text-white">Site principal</a>
           <a href="../inteligencia-artificial/" class="text-white/90 hover:text-white">IA para MMN</a>
-          <a href="../codafacil/" class="text-white/90 hover:text-white">Codafacil</a>
+          <a href="https://codafacil.dev" target="_blank" rel="noopener" class="text-white/90 hover:text-white">Codafacil</a>
         </div>
       </nav>
     </div>

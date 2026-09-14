@@ -195,9 +195,26 @@ function promoDescontoPct(): int
  */
 function promoLink(string $origem = 'blog'): string
 {
-    $destino = promoAtiva() ? '/oferta/' : '/';
-    return $destino . '?utm_source=blog&utm_medium=conteudo&utm_campaign='
-        . (promoAtiva() ? 'promo-10-anos' : 'organico-blog')
+    // A home usa a mesma faixa dos posts, mas nao e blog: cravar utm_source=blog
+    // faria o painel contar visita da home como se viesse de conteudo, e a
+    // leitura de origem de lead deixaria de valer.
+    $naHome = $origem === 'home';
+    $fonte = $naHome ? 'site' : 'blog';
+    $meio = $naHome ? 'interno' : 'conteudo';
+
+    if (promoAtiva()) {
+        $destino = '/oferta/';
+        $campanha = 'promo-10-anos';
+    } else {
+        // Sem promocao, mandar pra "/" seria autolink quando a faixa esta NA
+        // home. A demonstracao e o destino que sempre faz sentido: e o convite
+        // concreto que a faixa ja anuncia no texto.
+        $destino = $naHome ? DEMO_URL : '/';
+        $campanha = $naHome ? 'organico-site' : 'organico-blog';
+    }
+
+    return $destino . '?utm_source=' . $fonte . '&utm_medium=' . $meio
+        . '&utm_campaign=' . $campanha
         . '&utm_content=' . rawurlencode($origem);
 }
 

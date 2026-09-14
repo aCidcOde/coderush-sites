@@ -186,7 +186,7 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
           <a href="#contato" class="inline-flex items-center gap-2 rounded-full border border-white/70 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10">
             Quero diagnóstico de IA
           </a>
-          <a href="../codafacil/" class="inline-flex items-center gap-2 rounded-full border border-white/35 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10">
+          <a href="https://codafacil.dev" target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-full border border-white/35 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10">
             Conhecer Codafacil
           </a>
         </div>
@@ -299,7 +299,7 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
           </div>
 
           <div class="flex flex-col items-stretch gap-3 sm:min-w-[280px]">
-            <a href="../codafacil/" class="inline-flex items-center justify-center rounded-full border border-white/75 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10">
+            <a href="https://codafacil.dev" target="_blank" rel="noopener" class="inline-flex items-center justify-center rounded-full border border-white/75 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10">
               Abrir Codafacil local
             </a>
             <a href="https://www.codafacil.dev/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-full border border-white/35 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10">
@@ -440,7 +440,7 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
           <nav class="grid gap-2 text-sm text-white/90" aria-label="Menu institucional">
             <a href="../" class="hover:underline">Sistema Venda Direta</a>
             <a href="../wordpress/" class="hover:underline">WordPress</a>
-            <a href="../codafacil/" class="hover:underline">Desenvolvimento com IA</a>
+            <a href="https://codafacil.dev" target="_blank" rel="noopener" class="hover:underline">Desenvolvimento com IA</a>
             <a href="../inteligencia-artificial/" class="hover:underline">Multinível com IA</a>
             <a href="../blog/" class="hover:underline">Blog</a>
           </nav>

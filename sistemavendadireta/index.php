@@ -323,6 +323,22 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
       </div>
     </section>
 
+    <?php
+    /*
+     * A home nao tinha NENHUM link pra /oferta/ — a promocao que encerra em
+     * 30/09 era invisivel pra quem chegava aqui, e a home e a maior porta de
+     * entrada organica (posicao 1,6 em "sistema venda direta"). Agora o grupo
+     * Venda Direta dos anuncios tambem aponta pra ca, entao a oferta precisa
+     * estar no caminho.
+     *
+     * Reaproveita o promoStrip dos posts em vez de criar componente novo: ele ja
+     * se auto-desliga quando o prazo passa (vira convite neutro pro produto) e
+     * as classes dele ja estao no safelist do Tailwind deste site.
+     */
+    require_once __DIR__ . '/inc/promo.php';
+    echo promoStrip('home');
+    ?>
+
     <section id="funcionalidades" class="scroll-mt-28 py-10">
       <h2 class="font-[var(--font-heading)] text-3xl font-semibold sm:text-[42px]">Funcionalidades</h2>
       <div class="mt-2 h-1 w-[72px] rounded-full bg-white"></div>
@@ -467,7 +483,7 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
           </div>
 
           <div class="flex flex-col items-stretch gap-3 sm:min-w-[280px]">
-            <a href="codafacil/" class="inline-flex items-center justify-center rounded-full border border-white/75 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10">
+            <a href="https://codafacil.dev" target="_blank" rel="noopener" class="inline-flex items-center justify-center rounded-full border border-white/75 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10">
               Conhecer Codafacil
             </a>
           </div>
@@ -898,7 +914,7 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
           <nav class="grid gap-2 text-sm text-white/90" aria-label="Menu institucional">
             <a href="/" class="hover:underline">Sistema Venda Direta</a>
             <a href="wordpress/" class="hover:underline">WordPress</a>
-            <a href="codafacil/" class="hover:underline">Desenvolvimento com IA</a>
+            <a href="https://codafacil.dev" target="_blank" rel="noopener" class="hover:underline">Desenvolvimento com IA</a>
             <a href="inteligencia-artificial/" class="hover:underline">Multinível com IA</a>
             <a href="cases/" class="hover:underline">Cases</a>
             <a href="blog/" class="hover:underline">Blog</a>
