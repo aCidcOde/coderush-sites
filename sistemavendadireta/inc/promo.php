@@ -37,22 +37,21 @@ const PROMO_INSTALL_AVISTA = 3000;
  * QUEM preencheu e deixa a pessoa abrir a loja e ver o sistema rodando de
  * verdade, em cliente real. Vale mais que qualquer selo.
  *
- * ATENCAO comercial (atualizado 14/09/2026): a Zohr foi dada como PERDIDA (parou
- * de responder) e a MedPlant segue sem pagar. As duas continuam aqui como
- * argumento de venda — as lojas estao no ar e sao prova real — mas NAO entram em
- * receita, conversao nem orcamento de midia.
- * Ja pagaram e estao no funil do painel: VELARO (R$ 3.500, 26/08) e Henovar
+ * ATENCAO comercial (atualizado 14/09/2026): a Zohr FOI REMOVIDA — nao fechou.
+ * A MedPlant segue sem pagar; continua aqui como argumento de venda, com a loja
+ * no ar, mas NAO entra em receita, conversao nem orcamento de midia.
+ * Ja pagaram e estao no funil do painel: Velaro (R$ 3.500, 26/08) e Henovar
  * (R$ 5.000, 05/09) — as duas vindas da campanha do Google Ads.
  */
 function promoClientes(): array
 {
     return [
         ['Henovar Energy', 'https://henovar.sistemavendadireta.com.br/loja'],
+        ['Velaro Alianças', 'https://velaro.sistemavendadireta.com.br/'],
         ['Accenti', 'https://parceiroaccenti.com.br/loja'],
         ["New Professional's", 'https://newprofessional.com.py/loja'],
-        ['Protech', 'https://protech.sistemavendadireta.com.br/loja'],
+        ['Protech', 'https://loja.protechnutritional.com.br/loja'],
         ['MedPlant', 'https://medplant.sistemavendadireta.com.br/loja'],
-        ['Zohr Parfums', 'https://zohr.sistemavendadireta.com.br/loja'],
         ['AVIG 360', 'https://avig360.com/'],
     ];
 }
@@ -89,6 +88,20 @@ function promoVitrine(string $prefixo = '../'): string
                 . 'venda direta de 30% e desconto de afiliado aplicado pelo próprio sistema.',
         ],
         [
+            'logo' => 'velaro', 'alt' => 'Velaro Alianças',
+            'w' => 520, 'h' => 126, 'data' => 'No ar desde agosto de 2026',
+            'loja' => 'https://velaro.sistemavendadireta.com.br/',
+            'texto' => 'Atacado de alianças exclusivo para lojistas: catálogo público sem preço interno, com custo e '
+                . 'ferramenta de pedido liberados só depois que o cadastro do revendedor é aprovado.',
+        ],
+        [
+            'logo' => 'haiflex', 'alt' => 'Haiflex',
+            'w' => 222, 'h' => 50, 'data' => 'Escritório virtual no ar',
+            'loja' => 'https://escritoriovirtual.haiflex.com.br/',
+            'texto' => 'Indústria de colchões que usa o escritório virtual para a rede de revendedores, '
+                . 'em subdomínio próprio e separado do site institucional.',
+        ],
+        [
             'logo' => 'accenti', 'alt' => 'Accenti',
             'w' => 842, 'h' => 461, 'data' => 'No ar desde junho de 2026',
             'loja' => 'https://parceiroaccenti.com.br/loja',
@@ -105,7 +118,7 @@ function promoVitrine(string $prefixo = '../'): string
         [
             'logo' => 'protech-nutritional', 'alt' => 'Protech Nutritional',
             'w' => 480, 'h' => 102, 'data' => 'No ar desde julho de 2026',
-            'loja' => 'https://protech.sistemavendadireta.com.br/loja',
+            'loja' => 'https://loja.protechnutritional.com.br/loja',
             'texto' => 'Suplementos com distribuição exclusiva por consultor: entrada na loja pelo fluxo de indicação, '
                 . 'catálogo em 9 linhas, escritório virtual e plano com três formas de ganho.',
         ],
@@ -115,13 +128,6 @@ function promoVitrine(string $prefixo = '../'): string
             'loja' => 'https://medplant.sistemavendadireta.com.br/loja',
             'texto' => 'Cosméticos e suplementos naturais em quatro linhas — encapsulados, óleos, chás e cosméticos — '
                 . 'com rede de consultores, recompra e centro de distribuição integrados.',
-        ],
-        [
-            'logo' => 'zohr', 'alt' => 'Zohr Parfums',
-            'w' => 800, 'h' => 277, 'data' => 'No ar desde agosto de 2026',
-            'loja' => 'https://zohr.sistemavendadireta.com.br/loja',
-            'texto' => 'Perfumaria fina em três categorias — eau de parfum, fragrâncias para ambiente e corpo & banho — '
-                . 'com dois planos de carreira independentes para consultor e distribuidor.',
         ],
         [
             'logo' => 'avig360', 'alt' => 'AVIG 360',
@@ -213,7 +219,7 @@ function promoLink(string $origem = 'blog'): string
     $meio = $naHome ? 'interno' : 'conteudo';
 
     if (promoAtiva()) {
-        $destino = '/oferta/';
+        $destino = '/sistema-venda-direta/';
         $campanha = 'promo-10-anos';
     } else {
         // Sem promocao, mandar pra "/" seria autolink quando a faixa esta NA

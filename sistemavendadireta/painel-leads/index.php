@@ -760,11 +760,11 @@ if ($gaSite && !empty($gaSite['eventos'])) {
       <span class="ql-label"><?= icon('megaphone') ?> LPs da campanha:</span>
       <?php
       $lps = [
-          ['Geral', '/oferta/'],
-          ['Suplementos', '/oferta/suplementos/'],
-          ['Cosméticos', '/oferta/cosmeticos/'],
-          ['Afiliados', '/oferta/afiliados/'],
-          ['Parceiros', '/oferta/parceiros/'],
+          ['Geral', '/sistema-venda-direta/'],
+          ['Suplementos', '/sistema-venda-direta/suplementos/'],
+          ['Cosméticos', '/sistema-venda-direta/cosmeticos/'],
+          ['Afiliados', '/sistema-venda-direta/afiliados/'],
+          ['Parceiros', '/sistema-venda-direta/parceiros/'],
           ['Cases', '/cases/'],
           ['Site', '/'],
       ];

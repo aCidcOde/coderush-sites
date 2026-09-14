@@ -27,7 +27,7 @@ $promoSlots = 10;                  // vagas de implantacao no periodo (tema: 10 
 $promoSlotsFilled = 6;             // ja fechadas: Accenti, New Professional's, Protech, MedPlant, Zohr e AVIG 360
 $promoSlotsLeft = max(0, $promoSlots - $promoSlotsFilled);
 $whatsappPhone = '5511994566726';
-$whatsappMessage = 'Ola! Quero montar um programa de afiliados e vim pela Promocao 10 Anos. Quero ver o sistema.';
+$whatsappMessage = 'Ola! Tenho uma marca de cosmeticos e vim pela Promocao 10 Anos. Quero ver o sistema.';
 
 $monthlyTiers = [
     ['revenue' => 'até R$ 50 mil', 'price' => 'R$ 500'],
@@ -54,13 +54,9 @@ $discountCashPct = (int) round((1 - $promoInstallCash / $promoInstallFrom) * 100
 $whatsappHref = 'https://wa.me/' . $whatsappPhone . '?text=' . rawurlencode($whatsappMessage);
 
 $seoBase = 'https://www.sistemavendadireta.com.br';
-$seoUrl = $seoBase . '/oferta/afiliados/';
-// "Programa de afiliados" e nao "afiliados" seco: o relatorio de termos mostrou
-// que quem busca so "afiliados" quer SER afiliado da Shopee ou da Amazon. O
-// cliente daqui e a empresa que quer MONTAR o programa — o titulo precisa deixar
-// isso claro na primeira linha, antes do clique.
-$seoTitle = 'Plataforma para criar seu programa de afiliados | SVD';
-$seoDescription = 'Cadastre afiliados e influenciadores com link e cupom próprios; o sistema rastreia, calcula e paga os bônus. Instalação promocional até ' . promoPrazoCurto() . '.';
+$seoUrl = $seoBase . '/sistema-venda-direta/cosmeticos/';
+$seoTitle = 'Sistema para revenda de cosméticos | Sistema Venda Direta';
+$seoDescription = 'Sistema para marca de cosméticos com consultoras: catálogo por linhas, comissões e loja. Instalação promocional até ' . promoPrazoCurto() . '.';
 ?>
 <!doctype html>
 <html lang="pt-BR">
@@ -80,7 +76,7 @@ $seoDescription = 'Cadastre afiliados e influenciadores com link e cupom própri
 
   <meta property="og:locale" content="pt_BR" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Sistema para programa de afiliados — Promoção 10 Anos" />
+  <meta property="og:title" content="Sistema para revenda de cosméticos  — instalação em oferta" />
   <meta property="og:description" content="<?= htmlspecialchars($seoDescription, ENT_QUOTES, 'UTF-8') ?>" />
   <meta property="og:url" content="<?= htmlspecialchars($seoUrl, ENT_QUOTES, 'UTF-8') ?>" />
   <meta property="og:site_name" content="Sistema Venda Direta" />
@@ -138,10 +134,10 @@ $seoDescription = 'Cadastre afiliados e influenciadores com link e cupom própri
           Celebrando 10 anos
         </p>
         <h1 class="mt-4 font-[var(--font-heading)] text-3xl font-bold leading-[1.1] sm:text-4xl lg:text-[46px]">
-          Sistema para <span class="text-amber-300">afiliados, influenciadores e parcerias</span>
+          Sistema para <span class="text-amber-300">revenda de cosméticos</span> com rede de consultoras
         </h1>
         <p class="mt-4 max-w-3xl text-base leading-relaxed text-white/90 sm:text-lg">
-          Sua empresa cadastra <strong class="text-amber-300">afiliados e influenciadores</strong> — cada um com link e cupom próprios — e o sistema rastreia as vendas, calcula e paga os bônus. Escritório do <strong class="text-amber-300">parceiro</strong>, extrato transparente e regras de comissão editáveis: a mesma plataforma que roda <strong class="text-amber-300">programas de parceria</strong> há mais de 10 anos.
+          Catálogo por linhas técnicas, escritório da consultora com metas e ranking, comissões automáticas e loja integrada. A mesma plataforma que roda hoje uma operação internacional de cosmética capilar em três idiomas.
         </p>
 
       </div>
@@ -208,35 +204,6 @@ $seoDescription = 'Cadastre afiliados e influenciadores com link e cupom própri
           <p class="mt-1 text-sm text-white/85">atendidos pela plataforma — Brasil, Paraguai, Bolívia, Estados Unidos e Portugal — em três idiomas e moeda local.</p>
         </div>
       </div>
-    </section>
-
-    <section class="py-10">
-      <h2 class="font-[var(--font-heading)] text-2xl font-bold sm:text-[32px]">Parcerias com <span class="text-amber-300">influenciadores</span> no YouTube, TikTok e Instagram</h2>
-      <div class="mt-2 h-1 w-[72px] rounded-full bg-amber-300"></div>
-      <p class="mt-4 max-w-3xl text-base leading-relaxed text-white/90">
-        Cada <strong class="text-amber-300">influenciador</strong> recebe um <strong>link rastreável</strong> e um <strong>cupom com o próprio nome</strong>.
-        Não importa onde a venda nasce — vídeo, bio ou stories — o sistema identifica quem indicou,
-        calcula o bônus e mostra tudo no extrato da <strong class="text-amber-300">parceria</strong>.
-      </p>
-
-      <div class="mt-6 grid gap-4 md:grid-cols-3">
-        <div class="rounded-2xl border border-white/20 bg-white/5 p-5">
-          <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-amber-400/15 text-amber-300"><svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4"/><polygon points="10 9 15 12 10 15 10 9" fill="currentColor" stroke="none"/></svg></div>
-          <h3 class="mt-3 font-semibold">YouTube</h3>
-          <p class="mt-2 text-sm leading-relaxed text-white/85">Link na descrição e cupom falado no vídeo — a venda do review de ontem e a do vídeo de 2 anos atrás caem pro mesmo criador.</p>
-        </div>
-        <div class="rounded-2xl border border-white/20 bg-white/5 p-5">
-          <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-amber-400/15 text-amber-300"><svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18a4 4 0 1 0 4 4V6a5 5 0 0 0 5 5"/></svg></div>
-          <h3 class="mt-3 font-semibold">TikTok</h3>
-          <p class="mt-2 text-sm leading-relaxed text-white/85">Cupom curto e memorável pro público que vê o vídeo e digita na loja — rastreio funciona mesmo sem clique no link.</p>
-        </div>
-        <div class="rounded-2xl border border-white/20 bg-white/5 p-5">
-          <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-amber-400/15 text-amber-300"><svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></div>
-          <h3 class="mt-3 font-semibold">Instagram</h3>
-          <p class="mt-2 text-sm leading-relaxed text-white/85">Link na bio e cupom nos stories — influenciadora acompanha as próprias vendas e o bônus a receber no escritório dela.</p>
-        </div>
-      </div>
-      <p class="mt-4 text-sm text-white/70">E o que vale pra <strong class="text-amber-300">influenciador</strong> vale pra qualquer <strong class="text-amber-300">parceria</strong>: site parceiro, indicação boca a boca ou equipe de vendas — o link e o cupom identificam a venda, não a plataforma.</p>
     </section>
 
     <section class="py-10">
@@ -356,7 +323,7 @@ $seoDescription = 'Cadastre afiliados e influenciadores com link e cupom própri
         <div class="rounded-[24px] border border-white/20 bg-white/5 p-5 sm:p-6">
           <div>
             <div class="flex items-center justify-between gap-3">
-              <label for="sim-consultores" class="text-sm font-semibold text-white/90">Afiliados ativos</label>
+              <label for="sim-consultores" class="text-sm font-semibold text-white/90">Consultores ativos</label>
               <span id="sim-consultores-out" class="rounded-full bg-white/10 px-3 py-1 text-sm font-bold text-amber-300">100</span>
             </div>
             <input id="sim-consultores" type="range" min="10" max="3000" step="10" value="100" class="mt-3 w-full" style="accent-color:#fcd34d" />
@@ -364,7 +331,7 @@ $seoDescription = 'Cadastre afiliados e influenciadores com link e cupom própri
 
           <div class="mt-6">
             <div class="flex items-center justify-between gap-3">
-              <label for="sim-ticket" class="text-sm font-semibold text-white/90">Venda média mensal por afiliado</label>
+              <label for="sim-ticket" class="text-sm font-semibold text-white/90">Compra média mensal por consultor</label>
               <span id="sim-ticket-out" class="rounded-full bg-white/10 px-3 py-1 text-sm font-bold text-amber-300">R$ 300</span>
             </div>
             <input id="sim-ticket" type="range" min="50" max="2000" step="50" value="300" class="mt-3 w-full" style="accent-color:#fcd34d" />
@@ -386,7 +353,7 @@ $seoDescription = 'Cadastre afiliados e influenciadores com link e cupom própri
             <p id="sim-faturamento" class="mt-1 font-[var(--font-heading)] text-3xl font-bold text-white">R$ 30.000</p>
           </div>
           <div class="rounded-2xl border border-white/20 bg-white/5 px-5 py-4">
-            <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/60">Comissões e bônus distribuídos</p>
+            <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/60">Comissões distribuídas pela rede</p>
             <p id="sim-comissoes" class="mt-1 font-[var(--font-heading)] text-3xl font-bold text-white">R$ 12.000</p>
             <p class="mt-1 text-xs text-white/60">calculadas e pagas automaticamente pelo sistema</p>
           </div>
@@ -427,7 +394,7 @@ $seoDescription = 'Cadastre afiliados e influenciadores com link e cupom própri
               $("sim-mensalidade").textContent = brl.format(fee);
               $("sim-percentual").textContent = pct.format(fee / fat * 100) + "% do faturamento projetado";
             }
-            if (!used) { used = true; if (typeof window.gtag === "function") { window.gtag("event", "simulator_use", { page: "lp-oferta-afiliados" }); } }
+            if (!used) { used = true; if (typeof window.gtag === "function") { window.gtag("event", "simulator_use", { page: "lp-oferta-cosmeticos" }); } }
           }
           ["sim-consultores","sim-ticket","sim-payout"].forEach(function(id){ $(id).addEventListener("input", calc); });
           calc(); used = false;
@@ -523,10 +490,10 @@ $seoDescription = 'Cadastre afiliados e influenciadores com link e cupom própri
               data-whatsapp-phone="<?= htmlspecialchars($whatsappPhone, ENT_QUOTES, 'UTF-8') ?>"
               data-whatsapp-message-template="Ola, vim pela Promocao 10 Anos. Meu nome e {nome} e meu WhatsApp e {whatsapp}."
             >
-              <input type="hidden" name="redirect" value="/oferta/afiliados/" />
-              <input type="hidden" name="origem" value="lp-oferta-afiliados" />
-              <input type="hidden" name="servico" value="Sistema Venda Direta — instalacao promocional (lp-oferta-afiliados)" />
-              <input type="hidden" name="mensagem" value="Lead da LP lp-oferta-afiliados" />
+              <input type="hidden" name="redirect" value="/sistema-venda-direta/cosmeticos/" />
+              <input type="hidden" name="origem" value="lp-oferta-cosmeticos" />
+              <input type="hidden" name="servico" value="Sistema Venda Direta — instalacao promocional (lp-oferta-cosmeticos)" />
+              <input type="hidden" name="mensagem" value="Lead da LP lp-oferta-cosmeticos" />
 
               <div>
                 <label for="contact-nome" class="mb-2 block text-sm font-medium text-white/90">Nome</label>
@@ -647,7 +614,7 @@ $seoDescription = 'Cadastre afiliados e influenciadores com link e cupom própri
       document.addEventListener("click", function (event) {
         var link = event.target.closest && event.target.closest('a[href*="wa.me"]');
         if (!link) return;
-        track("whatsapp_click", { page: "lp-oferta-afiliados" });
+        track("whatsapp_click", { page: "lp-oferta-cosmeticos" });
         var ref = zapRef();
         // embute o codigo de referencia na mensagem pre-preenchida do WhatsApp
         if (link.href.indexOf("text=") !== -1 && link.href.indexOf("%5Bref") === -1) {
@@ -659,7 +626,7 @@ $seoDescription = 'Cadastre afiliados e influenciadores com link e cupom própri
           try { stored = JSON.parse(window.sessionStorage.getItem("svd-attribution") || "{}"); } catch (e) {}
           var data = new FormData();
           data.append("ref", ref);
-          data.append("origem", "lp-oferta-instalacao");
+          data.append("origem", "lp-oferta-cosmeticos");
           data.append("ga_client_id", (document.cookie.match(/(?:^|;\s*)_ga=GA\d+\.\d+\.(\d+\.\d+)/) || [])[1] || "");
           if (stored.gclid) data.append("gclid", stored.gclid);
           if (stored.utm_source) data.append("utm_source", stored.utm_source);
@@ -674,7 +641,7 @@ $seoDescription = 'Cadastre afiliados e influenciadores com link e cupom própri
       var form = document.getElementById("contact-lead-form");
       if (form) {
         form.addEventListener("submit", function () {
-          track("generate_lead", { page: "lp-oferta-afiliados" });
+          track("generate_lead", { page: "lp-oferta-cosmeticos" });
         });
       }
     })();

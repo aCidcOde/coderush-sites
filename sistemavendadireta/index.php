@@ -170,6 +170,27 @@ $seoLdGraph = [
                 'https://www.youtube.com/@andregomes8954',
                 'https://coderush.com.br/',
             ],
+            // Endereco fisico entrou em 14/09/2026 — antes o site nao tinha
+            // nenhum. Nao e formalidade: para software B2B de ticket alto, o
+            // Google trata endereco e telefone verificaveis como sinal de que
+            // existe empresa atras da pagina. Quem compara fornecedor tambem
+            // procura isso antes de assinar.
+            'address' => [
+                '@type' => 'PostalAddress',
+                'streetAddress' => 'Rua Oscar Gomes Cardim, 161',
+                'addressLocality' => 'São Paulo',
+                'addressRegion' => 'SP',
+                'postalCode' => '04580-040',
+                'addressCountry' => 'BR',
+            ],
+            'contactPoint' => [
+                '@type' => 'ContactPoint',
+                'contactType' => 'sales',
+                'telephone' => '+55-11-99456-6726',
+                'email' => 'contato@sistemavendadireta.com.br',
+                'areaServed' => 'BR',
+                'availableLanguage' => ['Portuguese', 'Spanish'],
+            ],
         ],
         [
             '@type' => 'WebSite',
@@ -907,6 +928,13 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
           </p>
           <p class="text-sm text-white/90">Telefone: <a href="tel:+5511994566726" class="font-semibold hover:underline">11 99456-6726</a></p>
           <p class="text-sm text-white/90">Email: <a href="mailto:contato@sistemavendadireta.com.br" class="font-semibold hover:underline">contato@sistemavendadireta.com.br</a></p>
+          <?php /* itemprop casa o endereco visivel com o PostalAddress do JSON-LD:
+                   dado estruturado que contradiz o que esta na tela vale menos. */ ?>
+          <address class="text-sm not-italic leading-relaxed text-white/90" itemscope itemtype="https://schema.org/PostalAddress">
+            <span itemprop="streetAddress">Rua Oscar Gomes Cardim, 161</span> — Vila Cordeiro<br />
+            <span itemprop="addressLocality">São Paulo</span>/<span itemprop="addressRegion">SP</span>,
+            CEP <span itemprop="postalCode">04580-040</span>
+          </address>
         </div>
 
         <div class="space-y-3">
@@ -971,7 +999,7 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
         <p class="mt-1 text-sm font-semibold text-white/90">ou <span class="text-amber-300 font-bold"><?= htmlspecialchars($promoModal['cash'], ENT_QUOTES, 'UTF-8') ?></span> à vista</p>
         <p class="mt-3 text-xs text-white/70">Válida até <?= htmlspecialchars($promoModalDeadlineLabel, ENT_QUOTES, 'UTF-8') ?> · mensalidade proporcional ao faturamento</p>
 
-        <a id="promo-modal-cta" href="oferta/?utm_source=site&utm_medium=modal&utm_campaign=promo-10-anos" class="mt-5 inline-flex w-full items-center justify-center rounded-full bg-amber-400 px-6 py-3.5 text-sm font-bold uppercase tracking-wide text-brand transition hover:-translate-y-0.5 hover:bg-amber-300">
+        <a id="promo-modal-cta" href="sistema-venda-direta/?utm_source=site&utm_medium=modal&utm_campaign=promo-10-anos" class="mt-5 inline-flex w-full items-center justify-center rounded-full bg-amber-400 px-6 py-3.5 text-sm font-bold uppercase tracking-wide text-brand transition hover:-translate-y-0.5 hover:bg-amber-300">
           Ver a oferta completa
         </a>
         <button id="promo-modal-depois" type="button" class="mt-3 text-xs font-semibold text-white/60 hover:text-white/85">

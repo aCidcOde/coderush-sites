@@ -133,7 +133,7 @@ $faq = [
         <?php /* atalho pro fechamento: quem chega pelo anuncio e ja decidiu nao
                  deveria ter que rolar a pagina inteira pra achar onde falar */ ?>
         <a href="#falar" class="hidden text-sm font-semibold text-white/90 hover:text-white sm:inline">Falar com o time</a>
-        <a href="../oferta/?utm_source=site&amp;utm_medium=sistema-mmn&amp;utm_campaign=promo-10-anos" class="rounded-full bg-amber-400 px-4 py-2 text-sm font-bold text-brand hover:bg-amber-300">Ver a promoção</a>
+        <a href="../sistema-venda-direta/?utm_source=site&amp;utm_medium=sistema-mmn&amp;utm_campaign=promo-10-anos" class="rounded-full bg-amber-400 px-4 py-2 text-sm font-bold text-brand hover:bg-amber-300">Ver a promoção</a>
       </div>
     </div>
   </header>
@@ -348,7 +348,7 @@ $faq = [
         <a href="../cases/" class="text-white/85 hover:text-white">Cases</a>
         <a href="../simulador/" class="text-white/85 hover:text-white">Simulador</a>
         <a href="../blog/" class="text-white/85 hover:text-white">Blog</a>
-        <a href="../oferta/" class="text-amber-300 hover:text-amber-200">Promoção 10 Anos</a>
+        <a href="../sistema-venda-direta/" class="text-amber-300 hover:text-amber-200">Promoção 10 Anos</a>
       </div>
     </div>
   </footer>

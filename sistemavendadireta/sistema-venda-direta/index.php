@@ -54,7 +54,7 @@ $discountCashPct = (int) round((1 - $promoInstallCash / $promoInstallFrom) * 100
 $whatsappHref = 'https://wa.me/' . $whatsappPhone . '?text=' . rawurlencode($whatsappMessage);
 
 $seoBase = 'https://www.sistemavendadireta.com.br';
-$seoUrl = $seoBase . '/oferta/';
+$seoUrl = $seoBase . '/sistema-venda-direta/';
 // SEO/Ads: o titulo precisa nomear o PRODUTO que a pessoa buscou, nao so a oferta.
 // O Indice de Qualidade do Google marcou a experiencia desta pagina como "abaixo da
 // media" (nota 5/10) — a palavra "multinivel" nao aparecia nenhuma vez, embora a
@@ -71,7 +71,22 @@ $seoDescription = 'Sistema de marketing multinível (MMN) e venda direta: escrit
   <title><?= htmlspecialchars($seoTitle, ENT_QUOTES, 'UTF-8') ?></title>
   <link rel="canonical" href="<?= htmlspecialchars($seoUrl, ENT_QUOTES, 'UTF-8') ?>" />
   <meta name="description" content="<?= htmlspecialchars($seoDescription, ENT_QUOTES, 'UTF-8') ?>" />
-  <meta name="robots" content="noindex, follow" />
+  <?php /*
+  INDEXAVEL desde 14/09/2026, quando /oferta/ virou /sistema-venda-direta/.
+  Enquanto o endereco nomeava a promocao, manter fora do indice fazia sentido:
+  promocao acaba, pagina indexada de oferta vencida vira lixo. Agora a URL nomeia
+  o PRODUTO, que e permanente e e o que a pessoa busca — entao ela entra.
+
+  As 4 LPs por segmento (afiliados, parceiros, cosmeticos, suplementos) seguem
+  noindex de proposito: sao 91% a 97% identicas entre si e a esta, medido por
+  shingles de 8 palavras. Indexar as cinco seria pedir pro Google escolher uma e
+  descartar as outras — canibalizacao. Enquanto vivem so como destino de anuncio,
+  a duplicacao nao chega ao indice e nao custa nada.
+
+  Para tirar o noindex de alguma delas, o conteudo precisa ser realmente proprio
+  antes — nao basta trocar o titulo e o segmento.
+  */ ?>
+  <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#004AAD" />
   <meta name="author" content="Sistema Venda Direta" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
@@ -464,6 +479,73 @@ $seoDescription = 'Sistema de marketing multinível (MMN) e venda direta: escrit
       </div>
     </section>
 
+    <?php
+    /*
+     * PARCERIA BFR INTELLIGENCE — agentes de IA para degustacao.
+     *
+     * Entra ANTES do bloco de preco de proposito: e argumento pra decidir, nao
+     * item de nota fiscal. Quem esta comparando fornecedor de sistema de rede
+     * costuma decidir por preco; um agente de IA atendendo a rede e algo que o
+     * concorrente nao tem como igualar na mesma proposta.
+     *
+     * Amarrado ao mesmo PROMO_DEADLINE do resto: uma segunda data pra controlar
+     * seria mais uma coisa pra vencer sem ninguem perceber — foi exatamente o
+     * que aconteceu com o "ate 31/08" que ficou 12 dias no ar depois do prazo.
+     * Some junto com a promocao, sozinho.
+     *
+     * "Degustacao" e o termo do combinado: periodo de uso pra sentir o valor,
+     * nao teste tecnico. Por isso o texto fala em agente rodando na operacao,
+     * nao em "trial".
+     */
+    if (promoAtiva()): ?>
+    <section id="ia-bfr" class="scroll-mt-24 py-10">
+      <div class="rounded-[30px] border border-sky-300/40 bg-sky-400/[0.08] p-6 sm:p-8">
+        <div class="grid gap-8 lg:grid-cols-[1.15fr_1fr] lg:items-center">
+          <div>
+            <p class="inline-flex rounded-full border border-sky-300/50 bg-sky-400/15 px-3 py-1 text-xs font-bold uppercase tracking-[0.14em] text-sky-200">
+              Parceria BFR Intelligence
+            </p>
+            <h2 class="mt-4 font-[var(--font-heading)] text-2xl font-bold sm:text-[32px]">
+              Agentes de IA para a sua rede, <span class="text-sky-200">em degustação</span>
+            </h2>
+            <p class="mt-3 max-w-2xl text-base leading-relaxed text-white/90">
+              Quem fechar a instalação dentro da promoção leva também um agente de IA da
+              <strong>BFR Intelligence</strong> rodando na operação, por tempo limitado. Não é
+              demonstração gravada: é agente atendendo de verdade, com a sua base de conhecimento.
+            </p>
+            <ul class="mt-5 grid gap-2 text-sm text-white/85 sm:grid-cols-2">
+              <li class="flex gap-2"><span class="text-sky-300">•</span> Responde dúvida de consultor sobre plano e comissão</li>
+              <li class="flex gap-2"><span class="text-sky-300">•</span> Atende no WhatsApp, sem trocar de ferramenta</li>
+              <li class="flex gap-2"><span class="text-sky-300">•</span> Treinado na sua base, não em resposta genérica</li>
+              <li class="flex gap-2"><span class="text-sky-300">•</span> Com registro do que respondeu, para auditoria</li>
+            </ul>
+            <p class="mt-4 text-sm text-white/70">
+              Disponível para quem fechar até <?= promoPrazoCurto() ?>. Depois da degustação você decide se
+              continua — sem multa e sem ficar preso a contrato.
+            </p>
+          </div>
+          <div class="rounded-[24px] border border-white/20 bg-brand-dark/40 p-6">
+            <p class="text-sm font-semibold text-sky-200">Por que isso importa numa rede</p>
+            <p class="mt-3 text-sm leading-relaxed text-white/85">
+              O maior gargalo de uma operação de rede não é vender: é responder a mesma pergunta
+              mil vezes. Quanto ganhei, quando cai, por que meu bônus mudou, como cadastro alguém.
+              Isso consome o dia do suporte e trava a duplicação.
+            </p>
+            <p class="mt-3 text-sm leading-relaxed text-white/85">
+              Um agente que conhece o seu plano responde no mesmo minuto, no canal onde o consultor
+              já está — e o time humano volta a cuidar do que precisa de gente.
+            </p>
+            <a href="https://bfrintelligence.com.br/?utm_source=svd&utm_medium=parceria&utm_campaign=degustacao-ia"
+               target="_blank" rel="noopener"
+               class="mt-5 inline-flex items-center justify-center rounded-full border border-sky-300/60 px-5 py-2.5 text-sm font-bold uppercase tracking-wide text-sky-100 hover:bg-sky-400/15">
+              Conhecer a BFR Intelligence
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <?php endif; ?>
+
     <section id="garantir" class="scroll-mt-24 py-10">
       <div class="rounded-[30px] border border-amber-300/40 bg-white/[0.07] p-6 sm:p-8">
         <div class="grid gap-8 lg:grid-cols-[1fr_1fr]">
@@ -496,7 +578,7 @@ $seoDescription = 'Sistema de marketing multinível (MMN) e venda direta: escrit
               data-whatsapp-phone="<?= htmlspecialchars($whatsappPhone, ENT_QUOTES, 'UTF-8') ?>"
               data-whatsapp-message-template="Ola, vim pela Promocao 10 Anos. Meu nome e {nome} e meu WhatsApp e {whatsapp}."
             >
-              <input type="hidden" name="redirect" value="/oferta/" />
+              <input type="hidden" name="redirect" value="/sistema-venda-direta/" />
               <input type="hidden" name="origem" value="lp-oferta-instalacao" />
               <input type="hidden" name="servico" value="Sistema Venda Direta — instalacao promocional" />
               <input type="hidden" name="mensagem" value="Lead da LP de oferta (instalacao promocional)" />

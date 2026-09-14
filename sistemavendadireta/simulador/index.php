@@ -93,7 +93,7 @@ $demoHref = DEMO_URL . '?utm_source=site&utm_medium=simulador&utm_campaign=demo'
       <a href="../"><img decoding="async" src="../imagens/Logo-Branco-1.webp" alt="Sistema Venda Direta" class="h-auto w-[150px] sm:w-[190px]" width="1000" height="300" loading="eager" /></a>
       <div class="flex items-center gap-4">
         <a href="<?= htmlspecialchars($demoHref, ENT_QUOTES, 'UTF-8') ?>" target="_blank" rel="noopener" class="hidden text-sm font-semibold text-amber-300 hover:text-amber-200 sm:inline">Ver demonstração</a>
-        <a href="../oferta/?utm_source=site&amp;utm_medium=simulador&amp;utm_campaign=promo-10-anos" class="rounded-full bg-amber-400 px-4 py-2 text-sm font-bold text-brand hover:bg-amber-300">Ver a promoção</a>
+        <a href="../sistema-venda-direta/?utm_source=site&amp;utm_medium=simulador&amp;utm_campaign=promo-10-anos" class="rounded-full bg-amber-400 px-4 py-2 text-sm font-bold text-brand hover:bg-amber-300">Ver a promoção</a>
       </div>
     </div>
   </header>

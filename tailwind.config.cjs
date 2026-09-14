@@ -6,7 +6,9 @@ module.exports = {
     "./sistemavendadireta/inc/**/*.php",
     "./sistemavendadireta/blog/**/*.php",
     "./sistemavendadireta/cases/**/*.php",
-    "./sistemavendadireta/oferta/**/*.php",
+    // renomeado de oferta/ em 14/09/2026 — glob desatualizado aqui nao da erro
+    // nenhum no build: o CSS sai menor e a pagina quebra so em producao
+    "./sistemavendadireta/sistema-venda-direta/**/*.php",
     "./sistemavendadireta/simulador/**/*.php",
     "./sistemavendadireta/sistema-mmn/**/*.php",
     "./sistemavendadireta/inteligencia-artificial/**/*.php",

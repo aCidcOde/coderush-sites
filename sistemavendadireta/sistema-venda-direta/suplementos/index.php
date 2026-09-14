@@ -27,7 +27,7 @@ $promoSlots = 10;                  // vagas de implantacao no periodo (tema: 10 
 $promoSlotsFilled = 6;             // ja fechadas: Accenti, New Professional's, Protech, MedPlant, Zohr e AVIG 360
 $promoSlotsLeft = max(0, $promoSlots - $promoSlotsFilled);
 $whatsappPhone = '5511994566726';
-$whatsappMessage = 'Ola! Tenho uma marca de cosmeticos e vim pela Promocao 10 Anos. Quero ver o sistema.';
+$whatsappMessage = 'Ola! Tenho uma operacao de suplementos e vim pela Promocao 10 Anos. Quero ver o sistema.';
 
 $monthlyTiers = [
     ['revenue' => 'até R$ 50 mil', 'price' => 'R$ 500'],
@@ -54,9 +54,9 @@ $discountCashPct = (int) round((1 - $promoInstallCash / $promoInstallFrom) * 100
 $whatsappHref = 'https://wa.me/' . $whatsappPhone . '?text=' . rawurlencode($whatsappMessage);
 
 $seoBase = 'https://www.sistemavendadireta.com.br';
-$seoUrl = $seoBase . '/oferta/cosmeticos/';
-$seoTitle = 'Sistema para revenda de cosméticos | Sistema Venda Direta';
-$seoDescription = 'Sistema para marca de cosméticos com consultoras: catálogo por linhas, comissões e loja. Instalação promocional até ' . promoPrazoCurto() . '.';
+$seoUrl = $seoBase . '/sistema-venda-direta/suplementos/';
+$seoTitle = 'Sistema para distribuidora de suplementos | Sistema Venda Direta';
+$seoDescription = 'Sistema para distribuidora de suplementos com consultores: escritório, rede, comissões e loja. Instalação promocional até ' . promoPrazoCurto() . '.';
 ?>
 <!doctype html>
 <html lang="pt-BR">
@@ -76,7 +76,7 @@ $seoDescription = 'Sistema para marca de cosméticos com consultoras: catálogo 
 
   <meta property="og:locale" content="pt_BR" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Sistema para revenda de cosméticos  — instalação em oferta" />
+  <meta property="og:title" content="Sistema para distribuidora de suplementos  — instalação em oferta" />
   <meta property="og:description" content="<?= htmlspecialchars($seoDescription, ENT_QUOTES, 'UTF-8') ?>" />
   <meta property="og:url" content="<?= htmlspecialchars($seoUrl, ENT_QUOTES, 'UTF-8') ?>" />
   <meta property="og:site_name" content="Sistema Venda Direta" />
@@ -134,10 +134,10 @@ $seoDescription = 'Sistema para marca de cosméticos com consultoras: catálogo 
           Celebrando 10 anos
         </p>
         <h1 class="mt-4 font-[var(--font-heading)] text-3xl font-bold leading-[1.1] sm:text-4xl lg:text-[46px]">
-          Sistema para <span class="text-amber-300">revenda de cosméticos</span> com rede de consultoras
+          Sistema para <span class="text-amber-300">distribuidora de suplementos</span> que vende por consultores
         </h1>
         <p class="mt-4 max-w-3xl text-base leading-relaxed text-white/90 sm:text-lg">
-          Catálogo por linhas técnicas, escritório da consultora com metas e ranking, comissões automáticas e loja integrada. A mesma plataforma que roda hoje uma operação internacional de cosmética capilar em três idiomas.
+          ERP genérico não entende rede: consultores, patrocinador, comissão, recompra. Nossa plataforma nasceu pra isso — escritório virtual, fluxo de indicação, catálogo por linhas de produto e financeiro — e já roda hoje em operação de suplementos no Brasil.
         </p>
 
       </div>
@@ -394,7 +394,7 @@ $seoDescription = 'Sistema para marca de cosméticos com consultoras: catálogo 
               $("sim-mensalidade").textContent = brl.format(fee);
               $("sim-percentual").textContent = pct.format(fee / fat * 100) + "% do faturamento projetado";
             }
-            if (!used) { used = true; if (typeof window.gtag === "function") { window.gtag("event", "simulator_use", { page: "lp-oferta-cosmeticos" }); } }
+            if (!used) { used = true; if (typeof window.gtag === "function") { window.gtag("event", "simulator_use", { page: "lp-oferta-suplementos" }); } }
           }
           ["sim-consultores","sim-ticket","sim-payout"].forEach(function(id){ $(id).addEventListener("input", calc); });
           calc(); used = false;
@@ -490,10 +490,10 @@ $seoDescription = 'Sistema para marca de cosméticos com consultoras: catálogo 
               data-whatsapp-phone="<?= htmlspecialchars($whatsappPhone, ENT_QUOTES, 'UTF-8') ?>"
               data-whatsapp-message-template="Ola, vim pela Promocao 10 Anos. Meu nome e {nome} e meu WhatsApp e {whatsapp}."
             >
-              <input type="hidden" name="redirect" value="/oferta/cosmeticos/" />
-              <input type="hidden" name="origem" value="lp-oferta-cosmeticos" />
-              <input type="hidden" name="servico" value="Sistema Venda Direta — instalacao promocional (lp-oferta-cosmeticos)" />
-              <input type="hidden" name="mensagem" value="Lead da LP lp-oferta-cosmeticos" />
+              <input type="hidden" name="redirect" value="/sistema-venda-direta/suplementos/" />
+              <input type="hidden" name="origem" value="lp-oferta-suplementos" />
+              <input type="hidden" name="servico" value="Sistema Venda Direta — instalacao promocional (lp-oferta-suplementos)" />
+              <input type="hidden" name="mensagem" value="Lead da LP lp-oferta-suplementos" />
 
               <div>
                 <label for="contact-nome" class="mb-2 block text-sm font-medium text-white/90">Nome</label>
@@ -614,7 +614,7 @@ $seoDescription = 'Sistema para marca de cosméticos com consultoras: catálogo 
       document.addEventListener("click", function (event) {
         var link = event.target.closest && event.target.closest('a[href*="wa.me"]');
         if (!link) return;
-        track("whatsapp_click", { page: "lp-oferta-cosmeticos" });
+        track("whatsapp_click", { page: "lp-oferta-suplementos" });
         var ref = zapRef();
         // embute o codigo de referencia na mensagem pre-preenchida do WhatsApp
         if (link.href.indexOf("text=") !== -1 && link.href.indexOf("%5Bref") === -1) {
@@ -626,7 +626,7 @@ $seoDescription = 'Sistema para marca de cosméticos com consultoras: catálogo 
           try { stored = JSON.parse(window.sessionStorage.getItem("svd-attribution") || "{}"); } catch (e) {}
           var data = new FormData();
           data.append("ref", ref);
-          data.append("origem", "lp-oferta-cosmeticos");
+          data.append("origem", "lp-oferta-suplementos");
           data.append("ga_client_id", (document.cookie.match(/(?:^|;\s*)_ga=GA\d+\.\d+\.(\d+\.\d+)/) || [])[1] || "");
           if (stored.gclid) data.append("gclid", stored.gclid);
           if (stored.utm_source) data.append("utm_source", stored.utm_source);
@@ -641,7 +641,7 @@ $seoDescription = 'Sistema para marca de cosméticos com consultoras: catálogo 
       var form = document.getElementById("contact-lead-form");
       if (form) {
         form.addEventListener("submit", function () {
-          track("generate_lead", { page: "lp-oferta-cosmeticos" });
+          track("generate_lead", { page: "lp-oferta-suplementos" });
         });
       }
     })();

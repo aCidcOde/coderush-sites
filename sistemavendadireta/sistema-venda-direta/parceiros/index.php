@@ -54,7 +54,7 @@ $discountCashPct = (int) round((1 - $promoInstallCash / $promoInstallFrom) * 100
 $whatsappHref = 'https://wa.me/' . $whatsappPhone . '?text=' . rawurlencode($whatsappMessage);
 
 $seoBase = 'https://www.sistemavendadireta.com.br';
-$seoUrl = $seoBase . '/oferta/parceiros/';
+$seoUrl = $seoBase . '/sistema-venda-direta/parceiros/';
 $seoTitle = 'Sistema para programa de parceiros e indicações | Sistema Venda Direta';
 $seoDescription = 'Programa de parceiros com link e cupom por indicador: o sistema rastreia indicações, calcula e paga comissões. Instalação promocional até ' . promoPrazoCurto() . '.';
 ?>
@@ -490,7 +490,7 @@ $seoDescription = 'Programa de parceiros com link e cupom por indicador: o siste
               data-whatsapp-phone="<?= htmlspecialchars($whatsappPhone, ENT_QUOTES, 'UTF-8') ?>"
               data-whatsapp-message-template="Ola, vim pela Promocao 10 Anos. Meu nome e {nome} e meu WhatsApp e {whatsapp}."
             >
-              <input type="hidden" name="redirect" value="/oferta/parceiros/" />
+              <input type="hidden" name="redirect" value="/sistema-venda-direta/parceiros/" />
               <input type="hidden" name="origem" value="lp-oferta-parceiros" />
               <input type="hidden" name="servico" value="Sistema Venda Direta — instalacao promocional (lp-oferta-parceiros)" />
               <input type="hidden" name="mensagem" value="Lead da LP lp-oferta-parceiros" />

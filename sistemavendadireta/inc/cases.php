@@ -223,6 +223,81 @@ return [
         ],
     ],
     [
+        // Primeira venda vinda da campanha do Google Ads (R$ 3.500, 26/08/2026).
+        // NAO e instalacao do SVD: e sistema B2B proprio, feito em Laravel sobre o
+        // CodaFacil. Fica junto da MauaSinc na leitura — sistema sob medida — e nao
+        // junto das lojas de rede.
+        'slug' => 'velaro',
+        'name' => 'Velaro Alianças',
+        'segment' => 'Atacado de alianças B2B • Brasil',
+        'period' => 'No ar desde agosto de 2026',
+        'featured' => true,
+        'logo' => 'imagens/clientes/velaro.webp',
+        'logoFallback' => 'imagens/clientes/velaro.png',
+        'logoWidth' => 520,
+        'logoHeight' => 126,
+        'url' => 'https://velaro.sistemavendadireta.com.br/',
+        'summary' => 'Plataforma B2B de alianças para lojistas: catálogo público sem preço e condição comercial liberada só após aprovação do cadastro.',
+        'highlights' => [
+            'Exclusivo para lojistas — sem venda ao consumidor final',
+            'Catálogo público sem preço interno exposto',
+            'Preço e pedido liberados após aprovação do cadastro',
+            'Cinco coleções, incluindo personalizadas',
+        ],
+        'details' => [
+            [
+                'title' => 'O catálogo mostra sem entregar o preço',
+                'body' => 'Atacado tem um problema que varejo não tem: o preço de lojista não pode ficar '
+                    . 'visível para o consumidor final, nem para o concorrente. A vitrine é pública para '
+                    . 'atrair o revendedor, mas custo, condição e ferramenta de pedido só aparecem depois '
+                    . 'que o cadastro é aprovado — a régua é do sistema, não do vendedor.',
+            ],
+            [
+                'title' => 'Sob medida, não instalação',
+                'body' => 'Diferente das operações de rede deste portfólio, a Velaro é sistema próprio em '
+                    . 'Laravel construído sobre o CodaFácil. O modelo de negócio é atacado com cadastro '
+                    . 'aprovado, não plano de carreira — e a plataforma foi feita para isso.',
+            ],
+        ],
+        'metrics' => [
+            ['value' => '5', 'label' => 'coleções no catálogo'],
+            ['value' => 'B2B', 'label' => 'sem venda ao consumidor'],
+        ],
+    ],
+    [
+        // Marca de colchoes que usa o SVD como escritorio virtual da rede de
+        // revendedores; o site institucional (WordPress) segue separado.
+        'slug' => 'haiflex',
+        'name' => 'Haiflex',
+        'segment' => 'Colchões tecnológicos • Brasil',
+        'period' => 'Escritório virtual no ar',
+        'featured' => false,
+        'logo' => 'imagens/clientes/haiflex.webp',
+        'logoFallback' => 'imagens/clientes/haiflex.png',
+        'logoWidth' => 222,
+        'logoHeight' => 50,
+        'url' => 'https://escritoriovirtual.haiflex.com.br/',
+        'summary' => 'Escritório virtual da rede de revendedores de uma indústria de colchões, separado do site institucional.',
+        'highlights' => [
+            'Escritório virtual do revendedor com acesso próprio',
+            'Cadastro e primeiro acesso pelo próprio revendedor',
+            'Convive com o site institucional em WordPress',
+            'Venda direta da fábrica ao revendedor',
+        ],
+        'details' => [
+            [
+                'title' => 'Cada coisa no seu lugar',
+                'body' => 'O site institucional vende colchão para quem compra; o escritório virtual '
+                    . 'atende quem revende. São públicos e objetivos diferentes, e forçar os dois no '
+                    . 'mesmo sistema costuma piorar os dois. Aqui o WordPress seguiu como vitrine e a '
+                    . 'operação de rede entrou em subdomínio próprio.',
+            ],
+        ],
+        'metrics' => [
+            ['value' => 'Fábrica', 'label' => 'venda direta ao revendedor'],
+        ],
+    ],
+    [
         // Fechado em 05/09/2026 pela campanha do Google Ads (grupo Sistema MMN).
         // Catalogo ainda com produtos de exemplo na instalacao — por isso o case
         // fala de ESTRUTURA e plano, nao de sortimento. Quando o catalogo real
@@ -273,7 +348,7 @@ return [
         'logoFallback' => 'imagens/clientes/protech-nutritional.png',
         'logoWidth' => 480,
         'logoHeight' => 102,
-        'url' => 'https://protech.sistemavendadireta.com.br/',
+        'url' => 'https://loja.protechnutritional.com.br/loja',
         'summary' => 'Venda direta com distribuição exclusiva por consultores: toda compra nasce vinculada a um patrocinador.',
         'highlights' => [
             'Fluxo de indicação obrigatório na entrada da loja',
