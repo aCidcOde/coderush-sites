@@ -96,7 +96,7 @@ function promoVitrine(string $prefixo = '../'): string
         ],
         [
             'logo' => 'haiflex', 'alt' => 'Haiflex',
-            'w' => 222, 'h' => 50, 'data' => 'Escritório virtual no ar',
+            'w' => 350, 'h' => 100, 'data' => 'Escritório virtual no ar',
             'loja' => 'https://escritoriovirtual.haiflex.com.br/',
             'texto' => 'Indústria de colchões que usa o escritório virtual para a rede de revendedores, '
                 . 'em subdomínio próprio e separado do site institucional.',

@@ -274,8 +274,8 @@ return [
         'featured' => false,
         'logo' => 'imagens/clientes/haiflex.webp',
         'logoFallback' => 'imagens/clientes/haiflex.png',
-        'logoWidth' => 222,
-        'logoHeight' => 50,
+        'logoWidth' => 350,
+        'logoHeight' => 100,
         'url' => 'https://escritoriovirtual.haiflex.com.br/',
         'summary' => 'Escritório virtual da rede de revendedores de uma indústria de colchões, separado do site institucional.',
         'highlights' => [

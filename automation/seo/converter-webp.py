@@ -64,7 +64,15 @@ def converter(origem, largura, dry):
     if dry:
         return (origem, destino, antes, None, dim_antes, img.size)
     img.save(destino, "WEBP", quality=QUALIDADE, method=6)
-    return (origem, destino, antes, os.path.getsize(destino), dim_antes, img.size)
+    depois = os.path.getsize(destino)
+    # WebP nem sempre ganha: em PNG pequeno e ja otimizado ele sai MAIOR. Foi o
+    # caso do logo da Haiflex — 2,6 KB de PNG viraram 3,3 KB de WebP. Manter o
+    # arquivo faria o <picture> servir a versao pior de proposito, entao ele e
+    # descartado e a pagina segue no original.
+    if depois >= antes:
+        os.remove(destino)
+        return (origem, None, antes, depois, dim_antes, img.size)
+    return (origem, destino, antes, depois, dim_antes, img.size)
 
 
 def main():
@@ -79,32 +87,40 @@ def main():
         sys.exit(f"nenhuma imagem em {alvo}")
 
     total_antes = total_depois = 0
-    feitos = 0
+    feitos = descartados = 0
     for nome in arquivos:
         r = converter(os.path.join(alvo, nome), largura, dry)
         if r is None:
             continue
         origem, destino, antes, depois, da, dd = r
-        feitos += 1
-        total_antes += antes
         dim = f"{da[0]}x{da[1]}" + (f" -> {dd[0]}x{dd[1]}" if da != dd else "")
         if depois is None:
+            feitos += 1
             print(f"  [dry] {os.path.basename(origem):52} {antes/1024:7.1f} KB  {dim}")
+        elif destino is None:
+            # nao entra na conta de economia: nada foi convertido
+            descartados += 1
+            print(f"  [=] {os.path.basename(origem):40} WebP sairia MAIOR "
+                  f"({antes/1024:.1f} -> {depois/1024:.1f} KB) — mantido o original")
         else:
+            feitos += 1
+            total_antes += antes
             total_depois += depois
-            economia = (1 - depois / antes) * 100
             print(f"  [+] {os.path.basename(destino):52} {antes/1024:7.1f} -> "
-                  f"{depois/1024:6.1f} KB  (-{economia:.0f}%)  {dim}")
+                  f"{depois/1024:6.1f} KB  (-{(1 - depois/antes)*100:.0f}%)  {dim}")
 
-    if not feitos:
+    if not feitos and not descartados:
         print("  tudo ja convertido e atualizado")
         return
     if dry:
         print(f"\n  (dry-run — {feitos} arquivo(s) seriam convertidos)")
-    else:
+        return
+    if feitos:
         print(f"\n  {feitos} convertido(s): {total_antes/1024:.0f} KB -> {total_depois/1024:.0f} KB "
-              f"(-{(1-total_depois/total_antes)*100:.0f}%)")
+              f"(-{(1 - total_depois/total_antes)*100:.0f}%)")
         print("  lembre de apontar o markup pro .webp — gerar sem referenciar nao economiza nada")
+    if descartados:
+        print(f"  {descartados} descartado(s) por nao compensar")
 
 
 if __name__ == "__main__":
