@@ -130,6 +130,9 @@ $faq = [
       <a href="../"><img decoding="async" src="../imagens/Logo-Branco-1.webp" alt="Sistema Venda Direta" class="h-auto w-[150px] sm:w-[190px]" width="1000" height="300" loading="eager" /></a>
       <div class="flex items-center gap-4">
         <a href="<?= htmlspecialchars($demoHref, ENT_QUOTES, 'UTF-8') ?>" target="_blank" rel="noopener" class="hidden text-sm font-semibold text-amber-300 hover:text-amber-200 sm:inline">Ver demonstração</a>
+        <?php /* atalho pro fechamento: quem chega pelo anuncio e ja decidiu nao
+                 deveria ter que rolar a pagina inteira pra achar onde falar */ ?>
+        <a href="#falar" class="hidden text-sm font-semibold text-white/90 hover:text-white sm:inline">Falar com o time</a>
         <a href="../oferta/?utm_source=site&amp;utm_medium=sistema-mmn&amp;utm_campaign=promo-10-anos" class="rounded-full bg-amber-400 px-4 py-2 text-sm font-bold text-brand hover:bg-amber-300">Ver a promoção</a>
       </div>
     </div>
@@ -258,6 +261,80 @@ $faq = [
           <a href="../cases/" class="inline-flex items-center justify-center rounded-full border border-white/50 px-6 py-3.5 text-sm font-bold uppercase tracking-wide hover:bg-white/10">
             Ver os cases
           </a>
+        </div>
+      </div>
+    </section>
+
+    <?php
+    /*
+     * FECHAMENTO — o que faltava pra esta ser uma landing page, e nao so uma
+     * pagina de produto.
+     *
+     * Ate 14/09 esta pagina recebia o grupo Sistema MMN (306 das 349 impressoes
+     * da conta) com ZERO formulario, ZERO CTA de fechamento e 2 links de zap,
+     * contra 5 links, formulario e 2 CTAs da /oferta/. E TODOS os leads que o
+     * negocio ja teve — os 5, R$ 8.500 fechados — sairam da /oferta/. Mandar o
+     * grosso do trafego pago pra ca sem isto era trocar conversao provada por
+     * relevancia hipotetica.
+     *
+     * Por que nao virou copia da /oferta/: esta pagina e INDEXAVEL e rankeia
+     * organicamente pro termo (posicao 25,9 -> 6,0 desde 25/08). Encher de
+     * contagem regressiva a transformaria na LP promocional que o Google ja
+     * avalia como experiencia abaixo da media. Conteudo primeiro, oferta no fim
+     * — que e o que uma boa LP de produto faz.
+     *
+     * origem="lp-sistema-mmn" separa o lead no painel: e assim que saberemos se
+     * a hipotese de mandar o grupo pra ca se paga, comparando com
+     * lp-oferta-instalacao.
+     */
+    ?>
+    <section id="falar" class="scroll-mt-24 border-t border-white/15 py-10">
+      <div class="grid gap-8 lg:grid-cols-[1fr_420px]">
+        <div>
+          <h2 class="font-[var(--font-heading)] text-2xl font-bold sm:text-3xl">
+            Quer o sistema MMN rodando com a sua marca?
+          </h2>
+          <p class="mt-3 max-w-2xl text-base leading-relaxed text-white/90">
+            Parametrizamos o seu plano — binário, unilevel ou comissão por cargo — com escritório do
+            consultor, loja e financeiro integrados. Implantação assistida, sem você montar time de TI.
+          </p>
+          <?php if (promoAtiva()): ?>
+            <p class="mt-4 inline-flex rounded-full border border-amber-300/50 bg-amber-400/15 px-4 py-2 text-sm font-semibold text-amber-200">
+              Instalação por R$ <?= number_format(PROMO_INSTALL_AVISTA, 0, ',', '.') ?> à vista até <?= promoPrazoCurto() ?>
+            </p>
+          <?php endif; ?>
+          <a href="<?= htmlspecialchars($whatsappHref, ENT_QUOTES, 'UTF-8') ?>" target="_blank" rel="noopener noreferrer"
+             class="mt-5 inline-flex w-full items-center justify-center rounded-full bg-[#25D366] px-5 py-3.5 text-sm font-bold uppercase tracking-wide text-white sm:w-auto sm:px-8">
+            Prefiro falar no WhatsApp
+          </a>
+          <p class="mt-3 text-sm text-white/70">Telefone: 11 99456-6726</p>
+        </div>
+
+        <div class="rounded-[24px] border border-white/20 bg-brand-dark/40 p-5 sm:p-6">
+          <form id="contact-lead-form" action="../enviar-contato.php" method="post" class="space-y-4">
+            <input type="hidden" name="redirect" value="/sistema-mmn/" />
+            <input type="hidden" name="origem" value="lp-sistema-mmn" />
+            <input type="hidden" name="servico" value="Sistema MMN — implantacao" />
+            <input type="hidden" name="mensagem" value="Lead da pagina de sistema MMN" />
+            <!-- honeypot: bot preenche, gente nao ve. Mesmo campo do enviar-contato.php -->
+            <input type="text" name="website" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true" />
+
+            <div>
+              <label for="mmn-nome" class="mb-2 block text-sm font-medium text-white/90">Nome</label>
+              <input id="mmn-nome" name="nome" type="text" required autocomplete="name" placeholder="Seu nome"
+                     class="w-full rounded-2xl border border-white/20 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/45 focus:border-white/60 focus:outline-none focus:ring-2 focus:ring-white/20" />
+            </div>
+            <div>
+              <label for="mmn-whatsapp" class="mb-2 block text-sm font-medium text-white/90">WhatsApp</label>
+              <input id="mmn-whatsapp" name="whatsapp" type="tel" required autocomplete="tel" inputmode="tel" placeholder="(11) 99999-9999"
+                     class="w-full rounded-2xl border border-white/20 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/45 focus:border-white/60 focus:outline-none focus:ring-2 focus:ring-white/20" />
+            </div>
+            <button type="submit"
+                    class="inline-flex w-full items-center justify-center rounded-full bg-amber-400 px-5 py-3.5 text-sm font-bold uppercase tracking-wide text-brand transition hover:-translate-y-0.5 hover:bg-amber-300">
+              Quero uma proposta
+            </button>
+            <p class="text-center text-xs text-white/60">Sem compromisso. Respondemos em horário comercial.</p>
+          </form>
         </div>
       </div>
     </section>
