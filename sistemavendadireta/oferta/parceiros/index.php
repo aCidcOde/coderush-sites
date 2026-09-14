@@ -56,7 +56,7 @@ $whatsappHref = 'https://wa.me/' . $whatsappPhone . '?text=' . rawurlencode($wha
 $seoBase = 'https://www.sistemavendadireta.com.br';
 $seoUrl = $seoBase . '/oferta/parceiros/';
 $seoTitle = 'Sistema para programa de parceiros e indicações | Sistema Venda Direta';
-$seoDescription = 'Programa de parceiros com link e cupom por indicador: o sistema rastreia indicações, calcula e paga comissões. Instalação promocional até 31/08.';
+$seoDescription = 'Programa de parceiros com link e cupom por indicador: o sistema rastreia indicações, calcula e paga comissões. Instalação promocional até ' . promoPrazoCurto() . '.';
 ?>
 <!doctype html>
 <html lang="pt-BR">
@@ -64,6 +64,7 @@ $seoDescription = 'Programa de parceiros com link e cupom por indicador: o siste
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title><?= htmlspecialchars($seoTitle, ENT_QUOTES, 'UTF-8') ?></title>
+  <link rel="canonical" href="<?= htmlspecialchars($seoUrl, ENT_QUOTES, 'UTF-8') ?>" />
   <meta name="description" content="<?= htmlspecialchars($seoDescription, ENT_QUOTES, 'UTF-8') ?>" />
   <meta name="robots" content="noindex, follow" />
   <meta name="theme-color" content="#004AAD" />
@@ -82,7 +83,7 @@ $seoDescription = 'Programa de parceiros com link e cupom por indicador: o siste
   <meta property="og:image" content="<?= htmlspecialchars($seoBase . '/imagens/og-oferta.jpg?v=3', ENT_QUOTES, 'UTF-8') ?>" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="Instalação do Sistema Venda Direta com até 40% OFF — R$ 3.500 em 2x ou R$ 3.000 à vista até 31/08" />
+  <meta property="og:image:alt" content="Instalação do Sistema Venda Direta com até 40% OFF — R$ 3.500 em 2x ou R$ 3.000 à vista até <?= promoPrazoCurto() ?>" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="<?= htmlspecialchars($seoBase . '/imagens/og-oferta.jpg?v=3', ENT_QUOTES, 'UTF-8') ?>" />
 

@@ -56,7 +56,7 @@ $whatsappHref = 'https://wa.me/' . $whatsappPhone . '?text=' . rawurlencode($wha
 $seoBase = 'https://www.sistemavendadireta.com.br';
 $seoUrl = $seoBase . '/oferta/afiliados/';
 $seoTitle = 'Sistema para afiliados e influenciadores | Sistema Venda Direta';
-$seoDescription = 'Cadastre afiliados e influenciadores com link e cupom próprios; o sistema rastreia, calcula e paga os bônus. Instalação promocional até 31/08.';
+$seoDescription = 'Cadastre afiliados e influenciadores com link e cupom próprios; o sistema rastreia, calcula e paga os bônus. Instalação promocional até ' . promoPrazoCurto() . '.';
 ?>
 <!doctype html>
 <html lang="pt-BR">
@@ -64,6 +64,7 @@ $seoDescription = 'Cadastre afiliados e influenciadores com link e cupom própri
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title><?= htmlspecialchars($seoTitle, ENT_QUOTES, 'UTF-8') ?></title>
+  <link rel="canonical" href="<?= htmlspecialchars($seoUrl, ENT_QUOTES, 'UTF-8') ?>" />
   <meta name="description" content="<?= htmlspecialchars($seoDescription, ENT_QUOTES, 'UTF-8') ?>" />
   <meta name="robots" content="noindex, follow" />
   <meta name="theme-color" content="#004AAD" />
@@ -82,7 +83,7 @@ $seoDescription = 'Cadastre afiliados e influenciadores com link e cupom própri
   <meta property="og:image" content="<?= htmlspecialchars($seoBase . '/imagens/og-oferta.jpg?v=3', ENT_QUOTES, 'UTF-8') ?>" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="Instalação do Sistema Venda Direta com até 40% OFF — R$ 3.500 em 2x ou R$ 3.000 à vista até 31/08" />
+  <meta property="og:image:alt" content="Instalação do Sistema Venda Direta com até 40% OFF — R$ 3.500 em 2x ou R$ 3.000 à vista até <?= promoPrazoCurto() ?>" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="<?= htmlspecialchars($seoBase . '/imagens/og-oferta.jpg?v=3', ENT_QUOTES, 'UTF-8') ?>" />
 

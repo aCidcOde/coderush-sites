@@ -168,6 +168,21 @@ function promoDiasRestantes(): int
     return (int) $hoje->diff($fim)->format('%r%a');
 }
 
+/**
+ * Prazo em dd/mm, para uso em texto de SEO e anuncio.
+ *
+ * Existe porque a data estava digitada a mao em cinco paginas de oferta e nos
+ * nove anuncios da conta. Quando a promocao foi de 31/08 pra 30/09, tudo isso
+ * ficou para tras: em 12/09 o site vendia com prazo 30/09 enquanto as meta
+ * descriptions e os anuncios ainda diziam "ate 31/08". Prazo vencido nao e so
+ * constrangimento — quem clica, compara e desiste, e no anuncio o clique a gente
+ * paga do mesmo jeito. Derivar da constante e o que impede repetir.
+ */
+function promoPrazoCurto(): string
+{
+    return (new DateTimeImmutable(PROMO_DEADLINE))->format('d/m');
+}
+
 /** Desconto a vista, em % inteiro — calculado, nunca digitado. */
 function promoDescontoPct(): int
 {

@@ -60,8 +60,8 @@ $seoUrl = $seoBase . '/oferta/';
 // media" (nota 5/10) — a palavra "multinivel" nao aparecia nenhuma vez, embora a
 // campanha compre exatamente "sistema multinivel" e "sistema marketing multinivel".
 $seoTitle = 'Sistema de Marketing Multinível e Venda Direta | Promoção 10 Anos';
-$seoDescription = 'Sistema de marketing multinível (MMN) e venda direta completo: escritório '
-    . 'do consultor, rede binária e unilevel, loja e financeiro. Instalação a partir de R$ 3.000.';
+$seoDescription = 'Sistema de marketing multinível (MMN) e venda direta: escritório do '
+    . 'consultor, rede binária e unilevel, loja e financeiro. A partir de R$ 3.000.';
 ?>
 <!doctype html>
 <html lang="pt-BR">
@@ -69,6 +69,7 @@ $seoDescription = 'Sistema de marketing multinível (MMN) e venda direta complet
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title><?= htmlspecialchars($seoTitle, ENT_QUOTES, 'UTF-8') ?></title>
+  <link rel="canonical" href="<?= htmlspecialchars($seoUrl, ENT_QUOTES, 'UTF-8') ?>" />
   <meta name="description" content="<?= htmlspecialchars($seoDescription, ENT_QUOTES, 'UTF-8') ?>" />
   <meta name="robots" content="noindex, follow" />
   <meta name="theme-color" content="#004AAD" />
@@ -87,7 +88,7 @@ $seoDescription = 'Sistema de marketing multinível (MMN) e venda direta complet
   <meta property="og:image" content="<?= htmlspecialchars($seoBase . '/imagens/og-oferta.jpg?v=3', ENT_QUOTES, 'UTF-8') ?>" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="Instalação do Sistema Venda Direta com até 40% OFF — R$ 3.500 em 2x ou R$ 3.000 à vista até 31/08" />
+  <meta property="og:image:alt" content="Instalação do Sistema Venda Direta com até 40% OFF — R$ 3.500 em 2x ou R$ 3.000 à vista até <?= promoPrazoCurto() ?>" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="<?= htmlspecialchars($seoBase . '/imagens/og-oferta.jpg?v=3', ENT_QUOTES, 'UTF-8') ?>" />
 

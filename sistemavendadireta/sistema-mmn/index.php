@@ -25,8 +25,10 @@ require_once __DIR__ . '/../inc/promo.php';
 $seoBase = 'https://www.sistemavendadireta.com.br';
 $seoUrl = $seoBase . '/sistema-mmn/';
 $seoTitle = 'Sistema MMN: plataforma de marketing multinível pronta para operar';
-$seoDescription = 'Sistema MMN completo com rede unilevel, escritório do consultor, loja virtual e '
-    . 'financeiro integrados. Instalação a partir de R$ 3.000. Veja a demonstração sem cadastro.';
+// 160 chars e onde o Google corta no desktop. Passar disso entrega a frase pra
+// ele reescrever — e a promessa que traz o clique deixa de ser nossa.
+$seoDescription = 'Sistema MMN com rede unilevel, escritório do consultor, loja e '
+    . 'financeiro integrados. A partir de R$ 3.000. Veja a demonstração sem cadastro.';
 
 $whatsappHref = 'https://wa.me/5511994566726?text=' . rawurlencode(
     'Ola! Vi a pagina de Sistema MMN no site e quero saber mais.');

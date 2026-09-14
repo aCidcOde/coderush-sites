@@ -441,5 +441,6 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
     <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-white/20 text-base leading-none">W</span>
     <span class="sm:hidden">WhatsApp</span>
   </a>
+  <?php $zapOrigem = 'blog-index'; include __DIR__ . '/../inc/zap-tracking.php'; ?>
 </body>
 </html>

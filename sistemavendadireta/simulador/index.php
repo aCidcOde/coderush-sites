@@ -580,5 +580,6 @@ $demoHref = DEMO_URL . '?utm_source=site&utm_medium=simulador&utm_campaign=demo'
   calc();
 })();
 </script>
+  <?php $zapOrigem = 'simulador'; include __DIR__ . '/../inc/zap-tracking.php'; ?>
 </body>
 </html>

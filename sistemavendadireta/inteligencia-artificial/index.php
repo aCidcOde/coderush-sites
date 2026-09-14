@@ -473,5 +473,6 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
   <script src="../js/lottie.min.js" defer></script>
 
   <script src="../js/inteligencia-artificial.js" defer></script>
+  <?php $zapOrigem = 'pagina-ia'; include __DIR__ . '/../inc/zap-tracking.php'; ?>
 </body>
 </html>

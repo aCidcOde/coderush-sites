@@ -997,5 +997,6 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
   <script src="js/lottie.min.js" defer></script>
 
   <script src="js/scripts.js" defer></script>
+  <?php $zapOrigem = 'home'; include __DIR__ . '/inc/zap-tracking.php'; ?>
 </body>
 </html>
