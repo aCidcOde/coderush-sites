@@ -367,7 +367,49 @@ function buildCardRecord(contract) {
   };
 }
 
-function renderCard(card, context) {
+/**
+ * <picture> servindo WebP com o original como fallback.
+ *
+ * As capas saem do gerador em JPG de ~190 KB e o card exibe 176px de altura;
+ * convertidas dao -78%. Isso nao e capricho: o Indice de Qualidade do Google
+ * marcava "experiencia da pagina" abaixo da media em quase toda palavra da
+ * campanha, e velocidade entra nessa nota — nota baixa custa posicao pelo mesmo
+ * lance.
+ *
+ * ARMADILHA: <source> apontando pra arquivo inexistente NAO cai no <img>. O
+ * navegador confia no srcset, tenta baixar e mostra imagem quebrada. Por isso o
+ * source so e emitido quando o .webp existe de fato no disco.
+ *
+ * O og:image continua em JPG de proposito: crawler de rede social costuma nao
+ * interpretar WebP.
+ */
+function imagemComWebp(imageSrc, alt, siteRootAbs, imagePath) {
+  const img = `<img src="${imageSrc}" alt="${alt}" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />`;
+  if (!siteRootAbs || !imagePath) return img;
+  const webpRel = imagePath.replace(/\.(jpe?g|png)$/i, ".webp");
+  if (webpRel === imagePath) return img;
+  if (!fs.existsSync(path.resolve(siteRootAbs, webpRel))) return img;
+  const webpSrc = imageSrc.replace(/\.(jpe?g|png)$/i, ".webp");
+  return `<picture><source srcset="${webpSrc}" type="image/webp" />${img}</picture>`;
+}
+
+/**
+ * Capa grande no topo do post. Mesma regra do card, com duas diferencas:
+ * loading="eager" (e o LCP da pagina — adiar seria piorar de proposito) e classe
+ * variavel, porque cada template do hub estiliza o hero de um jeito.
+ */
+function heroComWebp(root, site, contract, relativeRoot, alt, extraAttrs) {
+  const jpg = `${relativeRoot}imagens/posts/${contract.slug}.jpg`;
+  const img = `<img src="${jpg}" alt="${alt}"${extraAttrs} width="1200" height="630" loading="eager" decoding="async" />`;
+  // sem root/site no escopo (template que nao recebeu), serve o JPG e segue:
+  // capa quebrada por otimizacao seria pior que capa pesada
+  if (!root || !site?.siteRoot) return img;
+  const webpAbs = path.resolve(root, site.siteRoot, `imagens/posts/${contract.slug}.webp`);
+  if (!fs.existsSync(webpAbs)) return img;
+  return `<picture><source srcset="${relativeRoot}imagens/posts/${contract.slug}.webp" type="image/webp" />${img}</picture>`;
+}
+
+function renderCard(card, context, siteRootAbs) {
   const prefix = relativeAssetPrefix(context);
   const href = `${prefix}${card.postPath}`;
   const imageSrc = `${prefix}${card.imagePath}`;
@@ -378,7 +420,7 @@ function renderCard(card, context) {
       card.postPath
     )}" data-blog-image="${esc(card.imagePath)}" data-blog-slug="${esc(card.slug)}" data-blog-date="${esc(card.date)}">`,
     `  <a href="${href}">`,
-    `    <img src="${imageSrc}" alt="${esc(card.title)}" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />`,
+    `    ${imagemComWebp(imageSrc, esc(card.title), siteRootAbs, card.imagePath)}`,
     "  </a>",
     '  <div class="p-4">',
     `    <${headingTag} class="text-base font-semibold leading-snug"><a href="${href}" class="hover:underline">${esc(
@@ -692,7 +734,7 @@ function renderBfrSections(contract, relativeRoot, copy) {
   return parts.join("\n\n");
 }
 
-function renderBfrPostTemplate({ relativeRoot, contract, copy, site, seoTitle, metaDescription, canonicalUrl, imageUrl, faqJsonLd }) {
+function renderBfrPostTemplate({ root, relativeRoot, contract, copy, site, seoTitle, metaDescription, canonicalUrl, imageUrl, faqJsonLd }) {
   const content = contract.content || {};
   const dateBr = brDate(contract.date);
   const hay = `${contract.theme || ""} ${contract.angle || ""}`.toLowerCase();
@@ -764,7 +806,7 @@ ${faqJsonLd}
       <p class="bfr-meta">BFR Intelligence · ${esc(dateBr)}</p>
       <p class="bfr-excerpt">${esc(content.summary || contract.description || "")}</p>
       <figure class="bfr-cover">
-        <img src="${relativeRoot}imagens/posts/${contract.slug}.jpg" alt="${esc(contract.coverAlt || content.headline || contract.title)}" width="1200" height="630" loading="eager" decoding="async" />
+        ${heroComWebp(root, site, contract, relativeRoot, esc(contract.coverAlt || content.headline || contract.title), "")}
       </figure>
       <div class="bfr-content">
 ${renderBfrSections(contract, relativeRoot, copy)}
@@ -796,6 +838,7 @@ ${renderRelatedSection()}
 }
 
 function renderFluxoPostTemplate({
+  root,
   relativeRoot,
   contract,
   copy,
@@ -876,7 +919,7 @@ ${faqJsonLd}
   <main class="container post-wrap" id="main">
     <article class="rv rv-scale post-article">
       <div class="cover cover-interactive">
-        <img src="${relativeRoot}imagens/posts/${contract.slug}.jpg" alt="${esc(contract.coverAlt || contract.content.headline)}" width="1200" height="630" loading="eager" decoding="async" />
+        ${heroComWebp(root, site, contract, relativeRoot, esc(contract.coverAlt || contract.content.headline), "")}
       </div>
       <div class="article-read-track" aria-hidden="true">
         <div class="article-read-fill"></div>
@@ -992,7 +1035,7 @@ ${renderFooterLinks(copy, relativeRoot)}
   const metaDescription = buildMetaDescription(contract);
   const faqJsonLd = buildFaqJsonLd(contract);
   if (isBfr) {
-    return renderBfrPostTemplate({ relativeRoot, contract, copy, site, seoTitle, metaDescription, canonicalUrl, imageUrl, faqJsonLd });
+    return renderBfrPostTemplate({ root, relativeRoot, contract, copy, site, seoTitle, metaDescription, canonicalUrl, imageUrl, faqJsonLd });
   }
   const gaSnippet = site.ga4Id
     ? `
@@ -1007,6 +1050,7 @@ ${renderFooterLinks(copy, relativeRoot)}
     : "";
   if (isFluxo) {
     return renderFluxoPostTemplate({
+      root,
       relativeRoot,
       contract,
       copy,
@@ -1062,7 +1106,7 @@ ${faqJsonLd}
 
     <article class="mt-5 overflow-hidden rounded-3xl border border-white/15 bg-white/5">
       <figure class="relative">
-        <img src="${relativeRoot}imagens/posts/${contract.slug}.jpg" alt="${esc(contract.coverAlt || contract.content.headline)}" class="block w-full object-cover" style="aspect-ratio:1200/630" width="1200" height="630" loading="eager" decoding="async" />
+        ${heroComWebp(root, site, contract, relativeRoot, esc(contract.coverAlt || contract.content.headline), ' class="block w-full object-cover" style="aspect-ratio:1200/630"')}
         <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/85 via-black/45 to-transparent" aria-hidden="true"></div>
         <figcaption class="absolute inset-x-0 bottom-0 p-5 sm:p-8 lg:p-10">
           <span class="block h-1 w-12 rounded-full ${copy.headingBarClass}" aria-hidden="true"></span>
@@ -1185,11 +1229,11 @@ function readCardsFromFile(filePath, markers) {
   return parseCards(markup);
 }
 
-function updateCardsInFile(filePath, markers, cards, context, maxItems) {
+function updateCardsInFile(filePath, markers, cards, context, maxItems, siteRootAbs) {
   const content = fs.readFileSync(filePath, "utf8");
   const existingCards = readCardsFromFile(filePath, markers);
   const nextCards = mergeCards([...cards, ...existingCards], maxItems);
-  const replacement = nextCards.map((card) => renderCard(card, context)).join("\n");
+  const replacement = nextCards.map((card) => renderCard(card, context, siteRootAbs)).join("\n");
   const updatedContent = replaceMarkedSegment(content, markers, replacement);
   const updated = updatedContent !== content;
 
@@ -1236,6 +1280,35 @@ async function ensureCoverImage(root, site, contract, aiConfig) {
 
   fs.copyFileSync(fallbackPath, targetPath);
   return { path: targetPath, source: "fallback-raw", warning, altText: "", leakage: null };
+}
+
+/**
+ * Gera o .webp ao lado do .jpg da capa.
+ *
+ * O JPG continua sendo a fonte da verdade — e ele que vai no og:image, porque
+ * crawler de rede social costuma nao ler WebP. O WebP existe so pro <picture>
+ * da pagina, onde vale -78% de bytes.
+ *
+ * Sai por Python/Pillow em vez de sharp: o projeto nao tem lib de imagem em Node
+ * e adicionar sharp (binario nativo, ~30 MB) pra converter uma imagem por post
+ * nao se paga. Pillow ja esta na maquina e serve os scripts de SEO.
+ *
+ * Falha aqui NAO derruba a publicacao: sem o .webp o <picture> simplesmente nao
+ * e emitido e a pagina serve o JPG, como antes.
+ */
+function ensureCoverWebp(jpgPath) {
+  const webpPath = jpgPath.replace(/\.jpe?g$/i, ".webp");
+  if (webpPath === jpgPath || fs.existsSync(webpPath)) return webpPath;
+  try {
+    const { execFileSync } = require("node:child_process");
+    execFileSync("python3", ["-c",
+      "import sys;from PIL import Image;i=Image.open(sys.argv[1]).convert('RGB');" +
+      "i.save(sys.argv[2],'WEBP',quality=82,method=6)", jpgPath, webpPath],
+      { stdio: "pipe", timeout: 60000 });
+    return fs.existsSync(webpPath) ? webpPath : null;
+  } catch (error) {
+    return null;
+  }
 }
 
 function writePostFile(root, site, contract, relatedCards) {
@@ -1358,14 +1431,18 @@ async function publishSitePost(root, site, contract, aiConfig) {
   const relatedCards = mergeCards(existingBlogCards.filter((card) => card.slug !== contract.slug), 3);
 
   const cover = await ensureCoverImage(root, site, contract, aiConfig);
+  // precisa vir ANTES de montar os cards: imagemComWebp so emite o <source> se
+  // o arquivo ja existir no disco
+  ensureCoverWebp(cover.path);
   if (cover.altText) {
     contract.coverAlt = cover.altText;
   }
   const post = writePostFile(root, site, contract, relatedCards);
 
   const homeFile = path.resolve(root, site.siteRoot, site.homePath);
-  const home = updateCardsInFile(homeFile, HOME_MARKERS, [newCard], "home", 3);
-  const blog = updateCardsInFile(blogIndexFile, INDEX_MARKERS, [newCard], "blog-index", Infinity);
+  const siteRootAbs = path.resolve(root, site.siteRoot);
+  const home = updateCardsInFile(homeFile, HOME_MARKERS, [newCard], "home", 3, siteRootAbs);
+  const blog = updateCardsInFile(blogIndexFile, INDEX_MARKERS, [newCard], "blog-index", Infinity, siteRootAbs);
   const sitemap = updateSitemap(root, site, blog.cards);
   const robots = updateRobots(root, site);
 

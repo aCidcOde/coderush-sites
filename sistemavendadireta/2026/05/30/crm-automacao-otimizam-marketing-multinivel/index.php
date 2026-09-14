@@ -105,7 +105,7 @@
 
     <article class="mt-5 overflow-hidden rounded-3xl border border-white/15 bg-white/5">
       <figure class="relative">
-        <img src="../../../../imagens/posts/crm-automacao-otimizam-marketing-multinivel.jpg" alt="Capa de artigo com fundo azul profundo e azul corporativo, destacando elementos gráficos que simbolizam CRM e automação em marketing" class="block w-full object-cover" style="aspect-ratio:1200/630" width="1200" height="630" loading="eager" decoding="async" />
+        <picture><source srcset="../../../../imagens/posts/crm-automacao-otimizam-marketing-multinivel.webp" type="image/webp" /><img src="../../../../imagens/posts/crm-automacao-otimizam-marketing-multinivel.jpg" alt="Capa de artigo com fundo azul profundo e azul corporativo, destacando elementos gráficos que simbolizam CRM e automação em marketing" class="block w-full object-cover" style="aspect-ratio:1200/630" width="1200" height="630" loading="eager" decoding="async" /></picture>
         <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/85 via-black/45 to-transparent" aria-hidden="true"></div>
         <figcaption class="absolute inset-x-0 bottom-0 p-5 sm:p-8 lg:p-10">
           <span class="block h-1 w-12 rounded-full bg-white" aria-hidden="true"></span>
@@ -210,21 +210,21 @@
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/06/27/crm-automacao-impulsionam-marketing-multinivel/"><img src="../../../../imagens/posts/crm-automacao-impulsionam-marketing-multinivel.jpg" alt="Como CRM e automação impulsionam o marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/06/27/crm-automacao-impulsionam-marketing-multinivel/"><picture><source srcset="../../../../imagens/posts/crm-automacao-impulsionam-marketing-multinivel.webp" type="image/webp" /><img src="../../../../imagens/posts/crm-automacao-impulsionam-marketing-multinivel.jpg" alt="Como CRM e automação impulsionam o marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/27/crm-automacao-impulsionam-marketing-multinivel/" class="hover:underline">Como CRM e automação impulsionam o marketing multinível</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como utilizar CRM e automação para otimizar vendas diretas e resultados no marketing multinível.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/05/18/crm-automacao-marketing-multinivel-usar/"><img src="../../../../imagens/posts/crm-automacao-marketing-multinivel-usar.jpg" alt="CRM e Automação no Marketing Multinível: Como Usar?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/05/18/crm-automacao-marketing-multinivel-usar/"><picture><source srcset="../../../../imagens/posts/crm-automacao-marketing-multinivel-usar.webp" type="image/webp" /><img src="../../../../imagens/posts/crm-automacao-marketing-multinivel-usar.jpg" alt="CRM e Automação no Marketing Multinível: Como Usar?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/18/crm-automacao-marketing-multinivel-usar/" class="hover:underline">CRM e Automação no Marketing Multinível: Como Usar?</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como CRM e automação podem otimizar processos no marketing multinível.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/05/15/crm-automacao-comissionamento-mmn/"><img src="../../../../imagens/posts/crm-automacao-comissionamento-mmn.jpg" alt="CRM e automação no comissionamento para MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/05/15/crm-automacao-comissionamento-mmn/"><picture><source srcset="../../../../imagens/posts/crm-automacao-comissionamento-mmn.webp" type="image/webp" /><img src="../../../../imagens/posts/crm-automacao-comissionamento-mmn.jpg" alt="CRM e automação no comissionamento para MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/15/crm-automacao-comissionamento-mmn/" class="hover:underline">CRM e automação no comissionamento para MMN</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como CRM e automação podem otimizar comissionamento em marketing multinível.</p>

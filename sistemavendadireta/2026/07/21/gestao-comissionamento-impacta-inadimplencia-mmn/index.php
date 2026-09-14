@@ -105,7 +105,7 @@
 
     <article class="mt-5 overflow-hidden rounded-3xl border border-white/15 bg-white/5">
       <figure class="relative">
-        <img src="../../../../imagens/posts/gestao-comissionamento-impacta-inadimplencia-mmn.jpg" alt="Abstrações geométricas em camadas formando uma rede comercial em tons de azul profundo e corporativo, simbolizando estrutura e fluidez" class="block w-full object-cover" style="aspect-ratio:1200/630" width="1200" height="630" loading="eager" decoding="async" />
+        <picture><source srcset="../../../../imagens/posts/gestao-comissionamento-impacta-inadimplencia-mmn.webp" type="image/webp" /><img src="../../../../imagens/posts/gestao-comissionamento-impacta-inadimplencia-mmn.jpg" alt="Abstrações geométricas em camadas formando uma rede comercial em tons de azul profundo e corporativo, simbolizando estrutura e fluidez" class="block w-full object-cover" style="aspect-ratio:1200/630" width="1200" height="630" loading="eager" decoding="async" /></picture>
         <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/85 via-black/45 to-transparent" aria-hidden="true"></div>
         <figcaption class="absolute inset-x-0 bottom-0 p-5 sm:p-8 lg:p-10">
           <span class="block h-1 w-12 rounded-full bg-white" aria-hidden="true"></span>
@@ -210,21 +210,21 @@
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/06/09/comissionamento-gerenciar-inadimplencia-eficazmente/"><img src="../../../../imagens/posts/comissionamento-gerenciar-inadimplencia-eficazmente.jpg" alt="Comissionamento: Como Gerenciar a Inadimplência Eficazmente" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/06/09/comissionamento-gerenciar-inadimplencia-eficazmente/"><picture><source srcset="../../../../imagens/posts/comissionamento-gerenciar-inadimplencia-eficazmente.webp" type="image/webp" /><img src="../../../../imagens/posts/comissionamento-gerenciar-inadimplencia-eficazmente.jpg" alt="Comissionamento: Como Gerenciar a Inadimplência Eficazmente" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/09/comissionamento-gerenciar-inadimplencia-eficazmente/" class="hover:underline">Comissionamento: Como Gerenciar a Inadimplência Eficazmente</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como o comissionamento impacta a gestão de inadimplência em vendas diretas e marketing multinível.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/06/18/crm-ia-pode-potencializar-mmn/"><img src="../../../../imagens/posts/crm-ia-pode-potencializar-mmn.jpg" alt="Como o CRM com IA pode potencializar seu MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/06/18/crm-ia-pode-potencializar-mmn/"><picture><source srcset="../../../../imagens/posts/crm-ia-pode-potencializar-mmn.webp" type="image/webp" /><img src="../../../../imagens/posts/crm-ia-pode-potencializar-mmn.jpg" alt="Como o CRM com IA pode potencializar seu MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/18/crm-ia-pode-potencializar-mmn/" class="hover:underline">Como o CRM com IA pode potencializar seu MMN</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como um CRM com inteligência artificial apoia distribuidores em campo no marketing multinível.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/07/30/integracoes-pagamento-logistica-marketing-multinivel/"><img src="../../../../imagens/posts/integracoes-pagamento-logistica-marketing-multinivel.jpg" alt="Integrações de pagamento e logística no marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/07/30/integracoes-pagamento-logistica-marketing-multinivel/"><picture><source srcset="../../../../imagens/posts/integracoes-pagamento-logistica-marketing-multinivel.webp" type="image/webp" /><img src="../../../../imagens/posts/integracoes-pagamento-logistica-marketing-multinivel.jpg" alt="Integrações de pagamento e logística no marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/07/30/integracoes-pagamento-logistica-marketing-multinivel/" class="hover:underline">Integrações de pagamento e logística no marketing multinível</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como integrar pagamentos e logística para otimizar seu CRM no MMN.</p>

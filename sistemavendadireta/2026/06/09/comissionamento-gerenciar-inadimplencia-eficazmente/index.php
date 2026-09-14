@@ -105,7 +105,7 @@
 
     <article class="mt-5 overflow-hidden rounded-3xl border border-white/15 bg-white/5">
       <figure class="relative">
-        <img src="../../../../imagens/posts/comissionamento-gerenciar-inadimplencia-eficazmente.jpg" alt="Pilha vertical de painéis translúcidos representando registros de comissões, emergindo de uma névoa densa em tons de azul" class="block w-full object-cover" style="aspect-ratio:1200/630" width="1200" height="630" loading="eager" decoding="async" />
+        <picture><source srcset="../../../../imagens/posts/comissionamento-gerenciar-inadimplencia-eficazmente.webp" type="image/webp" /><img src="../../../../imagens/posts/comissionamento-gerenciar-inadimplencia-eficazmente.jpg" alt="Pilha vertical de painéis translúcidos representando registros de comissões, emergindo de uma névoa densa em tons de azul" class="block w-full object-cover" style="aspect-ratio:1200/630" width="1200" height="630" loading="eager" decoding="async" /></picture>
         <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/85 via-black/45 to-transparent" aria-hidden="true"></div>
         <figcaption class="absolute inset-x-0 bottom-0 p-5 sm:p-8 lg:p-10">
           <span class="block h-1 w-12 rounded-full bg-white" aria-hidden="true"></span>
@@ -210,21 +210,21 @@
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/07/21/gestao-comissionamento-impacta-inadimplencia-mmn/"><img src="../../../../imagens/posts/gestao-comissionamento-impacta-inadimplencia-mmn.jpg" alt="Como a gestão de comissionamento impacta a inadimplência no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/07/21/gestao-comissionamento-impacta-inadimplencia-mmn/"><picture><source srcset="../../../../imagens/posts/gestao-comissionamento-impacta-inadimplencia-mmn.webp" type="image/webp" /><img src="../../../../imagens/posts/gestao-comissionamento-impacta-inadimplencia-mmn.jpg" alt="Como a gestão de comissionamento impacta a inadimplência no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/07/21/gestao-comissionamento-impacta-inadimplencia-mmn/" class="hover:underline">Como a gestão de comissionamento impacta a inadimplência no MMN</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda a relação entre comissionamento e inadimplência em vendas diretas.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/08/24/comissionamento-emissao-nf-venda-direta/"><img src="../../../../imagens/posts/comissionamento-emissao-nf-venda-direta.jpg" alt="Comissionamento e Emissão de NF-e em Venda Direta" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/08/24/comissionamento-emissao-nf-venda-direta/"><picture><source srcset="../../../../imagens/posts/comissionamento-emissao-nf-venda-direta.webp" type="image/webp" /><img src="../../../../imagens/posts/comissionamento-emissao-nf-venda-direta.jpg" alt="Comissionamento e Emissão de NF-e em Venda Direta" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/08/24/comissionamento-emissao-nf-venda-direta/" class="hover:underline">Comissionamento e Emissão de NF-e em Venda Direta</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a integração fiscal impacta comissionamento em vendas diretas.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/06/27/crm-automacao-impulsionam-marketing-multinivel/"><img src="../../../../imagens/posts/crm-automacao-impulsionam-marketing-multinivel.jpg" alt="Como CRM e automação impulsionam o marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/06/27/crm-automacao-impulsionam-marketing-multinivel/"><picture><source srcset="../../../../imagens/posts/crm-automacao-impulsionam-marketing-multinivel.webp" type="image/webp" /><img src="../../../../imagens/posts/crm-automacao-impulsionam-marketing-multinivel.jpg" alt="Como CRM e automação impulsionam o marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/27/crm-automacao-impulsionam-marketing-multinivel/" class="hover:underline">Como CRM e automação impulsionam o marketing multinível</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como utilizar CRM e automação para otimizar vendas diretas e resultados no marketing multinível.</p>

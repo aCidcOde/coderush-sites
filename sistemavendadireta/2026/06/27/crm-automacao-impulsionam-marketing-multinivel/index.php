@@ -105,7 +105,7 @@
 
     <article class="mt-5 overflow-hidden rounded-3xl border border-white/15 bg-white/5">
       <figure class="relative">
-        <img src="../../../../imagens/posts/crm-automacao-impulsionam-marketing-multinivel.jpg" alt="Uma torre monumental vertical formada por segmentos interligados de pipeline de CRM e nós de automação, com anéis geométricos empilhados em hierarquia, envolta " class="block w-full object-cover" style="aspect-ratio:1200/630" width="1200" height="630" loading="eager" decoding="async" />
+        <picture><source srcset="../../../../imagens/posts/crm-automacao-impulsionam-marketing-multinivel.webp" type="image/webp" /><img src="../../../../imagens/posts/crm-automacao-impulsionam-marketing-multinivel.jpg" alt="Uma torre monumental vertical formada por segmentos interligados de pipeline de CRM e nós de automação, com anéis geométricos empilhados em hierarquia, envolta " class="block w-full object-cover" style="aspect-ratio:1200/630" width="1200" height="630" loading="eager" decoding="async" /></picture>
         <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/85 via-black/45 to-transparent" aria-hidden="true"></div>
         <figcaption class="absolute inset-x-0 bottom-0 p-5 sm:p-8 lg:p-10">
           <span class="block h-1 w-12 rounded-full bg-white" aria-hidden="true"></span>
@@ -210,21 +210,21 @@
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/05/30/crm-automacao-otimizam-marketing-multinivel/"><img src="../../../../imagens/posts/crm-automacao-otimizam-marketing-multinivel.jpg" alt="Como CRM e automação otimizam seu marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/05/30/crm-automacao-otimizam-marketing-multinivel/"><picture><source srcset="../../../../imagens/posts/crm-automacao-otimizam-marketing-multinivel.webp" type="image/webp" /><img src="../../../../imagens/posts/crm-automacao-otimizam-marketing-multinivel.jpg" alt="Como CRM e automação otimizam seu marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/30/crm-automacao-otimizam-marketing-multinivel/" class="hover:underline">Como CRM e automação otimizam seu marketing multinível</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como ferramentas de CRM e automação podem impulsionar sua operação de marketing multinível.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/05/18/crm-automacao-marketing-multinivel-usar/"><img src="../../../../imagens/posts/crm-automacao-marketing-multinivel-usar.jpg" alt="CRM e Automação no Marketing Multinível: Como Usar?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/05/18/crm-automacao-marketing-multinivel-usar/"><picture><source srcset="../../../../imagens/posts/crm-automacao-marketing-multinivel-usar.webp" type="image/webp" /><img src="../../../../imagens/posts/crm-automacao-marketing-multinivel-usar.jpg" alt="CRM e Automação no Marketing Multinível: Como Usar?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/18/crm-automacao-marketing-multinivel-usar/" class="hover:underline">CRM e Automação no Marketing Multinível: Como Usar?</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como CRM e automação podem otimizar processos no marketing multinível.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/09/05/cadastrar-consultores-distribuidores-mmn-internacional/"><img src="../../../../imagens/posts/cadastrar-consultores-distribuidores-mmn-internacional.jpg" alt="Como cadastrar consultores e distribuidores em MMN internacional" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/09/05/cadastrar-consultores-distribuidores-mmn-internacional/"><picture><source srcset="../../../../imagens/posts/cadastrar-consultores-distribuidores-mmn-internacional.webp" type="image/webp" /><img src="../../../../imagens/posts/cadastrar-consultores-distribuidores-mmn-internacional.jpg" alt="Como cadastrar consultores e distribuidores em MMN internacional" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/09/05/cadastrar-consultores-distribuidores-mmn-internacional/" class="hover:underline">Como cadastrar consultores e distribuidores em MMN internacional</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Aprenda a cadastrar consultores e distribuidores na sua operação de marketing multinível com foco na internacionalização.</p>

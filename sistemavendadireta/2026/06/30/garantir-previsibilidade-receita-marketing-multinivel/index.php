@@ -105,7 +105,7 @@
 
     <article class="mt-5 overflow-hidden rounded-3xl border border-white/15 bg-white/5">
       <figure class="relative">
-        <img src="../../../../imagens/posts/garantir-previsibilidade-receita-marketing-multinivel.jpg" alt="Pipeline de módulos de previsão de receita em uma hierarquia limpa, com elementos em azul profundo e linhas iluminadas conectando os nós" class="block w-full object-cover" style="aspect-ratio:1200/630" width="1200" height="630" loading="eager" decoding="async" />
+        <picture><source srcset="../../../../imagens/posts/garantir-previsibilidade-receita-marketing-multinivel.webp" type="image/webp" /><img src="../../../../imagens/posts/garantir-previsibilidade-receita-marketing-multinivel.jpg" alt="Pipeline de módulos de previsão de receita em uma hierarquia limpa, com elementos em azul profundo e linhas iluminadas conectando os nós" class="block w-full object-cover" style="aspect-ratio:1200/630" width="1200" height="630" loading="eager" decoding="async" /></picture>
         <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/85 via-black/45 to-transparent" aria-hidden="true"></div>
         <figcaption class="absolute inset-x-0 bottom-0 p-5 sm:p-8 lg:p-10">
           <span class="block h-1 w-12 rounded-full bg-white" aria-hidden="true"></span>
@@ -210,21 +210,21 @@
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/08/18/garantir-previsibilidade-receita-mmn/"><img src="../../../../imagens/posts/garantir-previsibilidade-receita-mmn.jpg" alt="Como garantir previsibilidade de receita em MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/08/18/garantir-previsibilidade-receita-mmn/"><picture><source srcset="../../../../imagens/posts/garantir-previsibilidade-receita-mmn.webp" type="image/webp" /><img src="../../../../imagens/posts/garantir-previsibilidade-receita-mmn.jpg" alt="Como garantir previsibilidade de receita em MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/08/18/garantir-previsibilidade-receita-mmn/" class="hover:underline">Como garantir previsibilidade de receita em MMN</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a tecnologia pode ajudar na previsibilidade de receita em marketing multinível.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/06/27/crm-automacao-impulsionam-marketing-multinivel/"><img src="../../../../imagens/posts/crm-automacao-impulsionam-marketing-multinivel.jpg" alt="Como CRM e automação impulsionam o marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/06/27/crm-automacao-impulsionam-marketing-multinivel/"><picture><source srcset="../../../../imagens/posts/crm-automacao-impulsionam-marketing-multinivel.webp" type="image/webp" /><img src="../../../../imagens/posts/crm-automacao-impulsionam-marketing-multinivel.jpg" alt="Como CRM e automação impulsionam o marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/27/crm-automacao-impulsionam-marketing-multinivel/" class="hover:underline">Como CRM e automação impulsionam o marketing multinível</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como utilizar CRM e automação para otimizar vendas diretas e resultados no marketing multinível.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/06/21/ia-pode-fortalecer-governanca-comercial-mmn/"><img src="../../../../imagens/posts/ia-pode-fortalecer-governanca-comercial-mmn.jpg" alt="Como a IA pode fortalecer a governança comercial no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/06/21/ia-pode-fortalecer-governanca-comercial-mmn/"><picture><source srcset="../../../../imagens/posts/ia-pode-fortalecer-governanca-comercial-mmn.webp" type="image/webp" /><img src="../../../../imagens/posts/ia-pode-fortalecer-governanca-comercial-mmn.jpg" alt="Como a IA pode fortalecer a governança comercial no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/21/ia-pode-fortalecer-governanca-comercial-mmn/" class="hover:underline">Como a IA pode fortalecer a governança comercial no MMN</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como dados e inteligência artificial podem otimizar a governança em vendas diretas e marketing multinível.</p>

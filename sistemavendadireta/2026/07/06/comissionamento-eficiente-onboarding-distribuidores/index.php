@@ -105,7 +105,7 @@
 
     <article class="mt-5 overflow-hidden rounded-3xl border border-white/15 bg-white/5">
       <figure class="relative">
-        <img src="../../../../imagens/posts/comissionamento-eficiente-onboarding-distribuidores.jpg" alt="Abstrações geométricas em camadas formando uma rede comercial, com predominância de azul profundo e acentos brancos" class="block w-full object-cover" style="aspect-ratio:1200/630" width="1200" height="630" loading="eager" decoding="async" />
+        <picture><source srcset="../../../../imagens/posts/comissionamento-eficiente-onboarding-distribuidores.webp" type="image/webp" /><img src="../../../../imagens/posts/comissionamento-eficiente-onboarding-distribuidores.jpg" alt="Abstrações geométricas em camadas formando uma rede comercial, com predominância de azul profundo e acentos brancos" class="block w-full object-cover" style="aspect-ratio:1200/630" width="1200" height="630" loading="eager" decoding="async" /></picture>
         <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/85 via-black/45 to-transparent" aria-hidden="true"></div>
         <figcaption class="absolute inset-x-0 bottom-0 p-5 sm:p-8 lg:p-10">
           <span class="block h-1 w-12 rounded-full bg-white" aria-hidden="true"></span>
@@ -210,21 +210,21 @@
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/08/15/integrar-sistema-venda-direta-erp/"><img src="../../../../imagens/posts/integrar-sistema-venda-direta-erp.jpg" alt="Como integrar seu sistema de venda direta com ERP" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/08/15/integrar-sistema-venda-direta-erp/"><picture><source srcset="../../../../imagens/posts/integrar-sistema-venda-direta-erp.webp" type="image/webp" /><img src="../../../../imagens/posts/integrar-sistema-venda-direta-erp.jpg" alt="Como integrar seu sistema de venda direta com ERP" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/08/15/integrar-sistema-venda-direta-erp/" class="hover:underline">Como integrar seu sistema de venda direta com ERP</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a integração de sistemas pode otimizar seu MMN.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/06/06/crm-pode-acelerar-onboarding-distribuidores/"><img src="../../../../imagens/posts/crm-pode-acelerar-onboarding-distribuidores.jpg" alt="Como um CRM pode acelerar o onboarding de distribuidores" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/06/06/crm-pode-acelerar-onboarding-distribuidores/"><picture><source srcset="../../../../imagens/posts/crm-pode-acelerar-onboarding-distribuidores.webp" type="image/webp" /><img src="../../../../imagens/posts/crm-pode-acelerar-onboarding-distribuidores.jpg" alt="Como um CRM pode acelerar o onboarding de distribuidores" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/06/crm-pode-acelerar-onboarding-distribuidores/" class="hover:underline">Como um CRM pode acelerar o onboarding de distribuidores</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como utilizar um CRM para otimizar o onboarding e a ativação de distribuidores em vendas diretas.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/09/05/onboarding-ativacao-distribuidores-papel-integracao-erp/"><img src="../../../../imagens/posts/onboarding-ativacao-distribuidores-papel-integracao-erp.jpg" alt="Onboarding e Ativação de Distribuidores: O Papel da Integração ERP" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/09/05/onboarding-ativacao-distribuidores-papel-integracao-erp/"><picture><source srcset="../../../../imagens/posts/onboarding-ativacao-distribuidores-papel-integracao-erp.webp" type="image/webp" /><img src="../../../../imagens/posts/onboarding-ativacao-distribuidores-papel-integracao-erp.jpg" alt="Onboarding e Ativação de Distribuidores: O Papel da Integração ERP" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/09/05/onboarding-ativacao-distribuidores-papel-integracao-erp/" class="hover:underline">Onboarding e Ativação de Distribuidores: O Papel da Integração ERP</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como uma boa integração ERP pode otimizar o onboarding de distribuidores no marketing multinível.</p>

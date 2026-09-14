@@ -851,7 +851,7 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
 <!-- BLOG-HOME-CARDS:START -->
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/09/05/diferencas-venda-direta-marketing-multinivel/" data-blog-image="imagens/posts/diferencas-venda-direta-marketing-multinivel.jpg" data-blog-slug="diferencas-venda-direta-marketing-multinivel" data-blog-date="2026-09-22">
   <a href="2026/09/05/diferencas-venda-direta-marketing-multinivel/">
-    <img src="imagens/posts/diferencas-venda-direta-marketing-multinivel.jpg" alt="Diferenças entre Venda Direta e Marketing Multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+    <picture><source srcset="imagens/posts/diferencas-venda-direta-marketing-multinivel.webp" type="image/webp" /><img src="imagens/posts/diferencas-venda-direta-marketing-multinivel.jpg" alt="Diferenças entre Venda Direta e Marketing Multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
   </a>
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="2026/09/05/diferencas-venda-direta-marketing-multinivel/" class="hover:underline">Diferenças entre Venda Direta e Marketing Multinível</a></h2>
@@ -860,7 +860,7 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/09/05/cadastrar-consultores-distribuidores-mmn-internacional/" data-blog-image="imagens/posts/cadastrar-consultores-distribuidores-mmn-internacional.jpg" data-blog-slug="cadastrar-consultores-distribuidores-mmn-internacional" data-blog-date="2026-09-15">
   <a href="2026/09/05/cadastrar-consultores-distribuidores-mmn-internacional/">
-    <img src="imagens/posts/cadastrar-consultores-distribuidores-mmn-internacional.jpg" alt="Como cadastrar consultores e distribuidores em MMN internacional" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+    <picture><source srcset="imagens/posts/cadastrar-consultores-distribuidores-mmn-internacional.webp" type="image/webp" /><img src="imagens/posts/cadastrar-consultores-distribuidores-mmn-internacional.jpg" alt="Como cadastrar consultores e distribuidores em MMN internacional" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
   </a>
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="2026/09/05/cadastrar-consultores-distribuidores-mmn-internacional/" class="hover:underline">Como cadastrar consultores e distribuidores em MMN internacional</a></h2>
@@ -869,7 +869,7 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/09/05/onboarding-ativacao-distribuidores-papel-integracao-erp/" data-blog-image="imagens/posts/onboarding-ativacao-distribuidores-papel-integracao-erp.jpg" data-blog-slug="onboarding-ativacao-distribuidores-papel-integracao-erp" data-blog-date="2026-09-05">
   <a href="2026/09/05/onboarding-ativacao-distribuidores-papel-integracao-erp/">
-    <img src="imagens/posts/onboarding-ativacao-distribuidores-papel-integracao-erp.jpg" alt="Onboarding e Ativação de Distribuidores: O Papel da Integração ERP" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+    <picture><source srcset="imagens/posts/onboarding-ativacao-distribuidores-papel-integracao-erp.webp" type="image/webp" /><img src="imagens/posts/onboarding-ativacao-distribuidores-papel-integracao-erp.jpg" alt="Onboarding e Ativação de Distribuidores: O Papel da Integração ERP" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
   </a>
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="2026/09/05/onboarding-ativacao-distribuidores-papel-integracao-erp/" class="hover:underline">Onboarding e Ativação de Distribuidores: O Papel da Integração ERP</a></h2>

@@ -112,7 +112,7 @@
 
     <article class="mt-5 overflow-hidden rounded-3xl border border-white/15 bg-white/5">
       <figure class="relative">
-        <img src="../../../../imagens/posts/comissao-cargo-vs-plano-pontos-venda-direta.jpg" alt="Estrutura bifurcada imponente com colunas geométricas, uma em camadas hierárquicas e outra em nós interligados, sobre fundo azul profundo" class="block w-full object-cover" style="aspect-ratio:1200/630" width="1200" height="630" loading="eager" decoding="async" />
+        <picture><source srcset="../../../../imagens/posts/comissao-cargo-vs-plano-pontos-venda-direta.webp" type="image/webp" /><img src="../../../../imagens/posts/comissao-cargo-vs-plano-pontos-venda-direta.jpg" alt="Estrutura bifurcada imponente com colunas geométricas, uma em camadas hierárquicas e outra em nós interligados, sobre fundo azul profundo" class="block w-full object-cover" style="aspect-ratio:1200/630" width="1200" height="630" loading="eager" decoding="async" /></picture>
         <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/85 via-black/45 to-transparent" aria-hidden="true"></div>
         <figcaption class="absolute inset-x-0 bottom-0 p-5 sm:p-8 lg:p-10">
           <span class="block h-1 w-12 rounded-full bg-white" aria-hidden="true"></span>
@@ -217,21 +217,21 @@
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/08/02/levar-operacao-venda-direta-para-outro-pais/"><img src="../../../../imagens/posts/levar-operacao-venda-direta-para-outro-pais.jpg" alt="Levar a venda direta para outro país: o que muda no sistema" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/08/02/levar-operacao-venda-direta-para-outro-pais/"><picture><source srcset="../../../../imagens/posts/levar-operacao-venda-direta-para-outro-pais.webp" type="image/webp" /><img src="../../../../imagens/posts/levar-operacao-venda-direta-para-outro-pais.jpg" alt="Levar a venda direta para outro país: o que muda no sistema" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/08/02/levar-operacao-venda-direta-para-outro-pais/" class="hover:underline">Levar a venda direta para outro país: o que muda no sistema</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Traduzir a loja é a parte fácil. O que trava uma operação de venda direta fora do Brasil é moeda, documento fiscal, endereço e plano de comissões — e cada um...</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/09/05/diferencas-venda-direta-marketing-multinivel/"><img src="../../../../imagens/posts/diferencas-venda-direta-marketing-multinivel.jpg" alt="Diferenças entre Venda Direta e Marketing Multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/09/05/diferencas-venda-direta-marketing-multinivel/"><picture><source srcset="../../../../imagens/posts/diferencas-venda-direta-marketing-multinivel.webp" type="image/webp" /><img src="../../../../imagens/posts/diferencas-venda-direta-marketing-multinivel.jpg" alt="Diferenças entre Venda Direta e Marketing Multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/09/05/diferencas-venda-direta-marketing-multinivel/" class="hover:underline">Diferenças entre Venda Direta e Marketing Multinível</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda as principais distinções entre venda direta e marketing multinível para otimizar suas estratégias comerciais.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/08/24/comissionamento-emissao-nf-venda-direta/"><img src="../../../../imagens/posts/comissionamento-emissao-nf-venda-direta.jpg" alt="Comissionamento e Emissão de NF-e em Venda Direta" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/08/24/comissionamento-emissao-nf-venda-direta/"><picture><source srcset="../../../../imagens/posts/comissionamento-emissao-nf-venda-direta.webp" type="image/webp" /><img src="../../../../imagens/posts/comissionamento-emissao-nf-venda-direta.jpg" alt="Comissionamento e Emissão de NF-e em Venda Direta" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/08/24/comissionamento-emissao-nf-venda-direta/" class="hover:underline">Comissionamento e Emissão de NF-e em Venda Direta</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a integração fiscal impacta comissionamento em vendas diretas.</p>

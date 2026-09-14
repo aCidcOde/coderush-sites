@@ -105,7 +105,7 @@
 
     <article class="mt-5 overflow-hidden rounded-3xl border border-white/15 bg-white/5">
       <figure class="relative">
-        <img src="../../../../imagens/posts/tecnologia-vendas-diretas-escala-considerar.jpg" alt="Capa de artigo com fundo em azul profundo e azul corporativo, transmitindo confiança e maturidade, com elementos em branco" class="block w-full object-cover" style="aspect-ratio:1200/630" width="1200" height="630" loading="eager" decoding="async" />
+        <picture><source srcset="../../../../imagens/posts/tecnologia-vendas-diretas-escala-considerar.webp" type="image/webp" /><img src="../../../../imagens/posts/tecnologia-vendas-diretas-escala-considerar.jpg" alt="Capa de artigo com fundo em azul profundo e azul corporativo, transmitindo confiança e maturidade, com elementos em branco" class="block w-full object-cover" style="aspect-ratio:1200/630" width="1200" height="630" loading="eager" decoding="async" /></picture>
         <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/85 via-black/45 to-transparent" aria-hidden="true"></div>
         <figcaption class="absolute inset-x-0 bottom-0 p-5 sm:p-8 lg:p-10">
           <span class="block h-1 w-12 rounded-full bg-white" aria-hidden="true"></span>
@@ -210,21 +210,21 @@
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/07/03/tecnologia-escalar-vendas-diretas-mmn/"><img src="../../../../imagens/posts/tecnologia-escalar-vendas-diretas-mmn.jpg" alt="Tecnologia para Escalar Vendas Diretas no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/07/03/tecnologia-escalar-vendas-diretas-mmn/"><picture><source srcset="../../../../imagens/posts/tecnologia-escalar-vendas-diretas-mmn.webp" type="image/webp" /><img src="../../../../imagens/posts/tecnologia-escalar-vendas-diretas-mmn.jpg" alt="Tecnologia para Escalar Vendas Diretas no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/07/03/tecnologia-escalar-vendas-diretas-mmn/" class="hover:underline">Tecnologia para Escalar Vendas Diretas no MMN</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Como a tecnologia pode impulsionar suas operações em marketing multinível.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/05/21/tecnologia-vendas-diretas-escala-mmn-ia/"><img src="../../../../imagens/posts/tecnologia-vendas-diretas-escala-mmn-ia.jpg" alt="Tecnologia para Vendas Diretas em Escala: MMN e IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/05/21/tecnologia-vendas-diretas-escala-mmn-ia/"><picture><source srcset="../../../../imagens/posts/tecnologia-vendas-diretas-escala-mmn-ia.webp" type="image/webp" /><img src="../../../../imagens/posts/tecnologia-vendas-diretas-escala-mmn-ia.jpg" alt="Tecnologia para Vendas Diretas em Escala: MMN e IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/21/tecnologia-vendas-diretas-escala-mmn-ia/" class="hover:underline">Tecnologia para Vendas Diretas em Escala: MMN e IA</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a tecnologia e a IA podem otimizar processos em marketing multinível.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/06/09/comissionamento-gerenciar-inadimplencia-eficazmente/"><img src="../../../../imagens/posts/comissionamento-gerenciar-inadimplencia-eficazmente.jpg" alt="Comissionamento: Como Gerenciar a Inadimplência Eficazmente" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/06/09/comissionamento-gerenciar-inadimplencia-eficazmente/"><picture><source srcset="../../../../imagens/posts/comissionamento-gerenciar-inadimplencia-eficazmente.webp" type="image/webp" /><img src="../../../../imagens/posts/comissionamento-gerenciar-inadimplencia-eficazmente.jpg" alt="Comissionamento: Como Gerenciar a Inadimplência Eficazmente" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/09/comissionamento-gerenciar-inadimplencia-eficazmente/" class="hover:underline">Comissionamento: Como Gerenciar a Inadimplência Eficazmente</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como o comissionamento impacta a gestão de inadimplência em vendas diretas e marketing multinível.</p>

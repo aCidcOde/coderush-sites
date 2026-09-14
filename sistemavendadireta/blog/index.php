@@ -92,7 +92,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 <!-- BLOG-INDEX-CARDS:START -->
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/09/05/diferencas-venda-direta-marketing-multinivel/" data-blog-image="imagens/posts/diferencas-venda-direta-marketing-multinivel.jpg" data-blog-slug="diferencas-venda-direta-marketing-multinivel" data-blog-date="2026-09-22">
   <a href="../2026/09/05/diferencas-venda-direta-marketing-multinivel/">
-    <img src="../imagens/posts/diferencas-venda-direta-marketing-multinivel.jpg" alt="Diferenças entre Venda Direta e Marketing Multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+    <picture><source srcset="../imagens/posts/diferencas-venda-direta-marketing-multinivel.webp" type="image/webp" /><img src="../imagens/posts/diferencas-venda-direta-marketing-multinivel.jpg" alt="Diferenças entre Venda Direta e Marketing Multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
   </a>
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="../2026/09/05/diferencas-venda-direta-marketing-multinivel/" class="hover:underline">Diferenças entre Venda Direta e Marketing Multinível</a></h2>
@@ -101,7 +101,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/09/05/cadastrar-consultores-distribuidores-mmn-internacional/" data-blog-image="imagens/posts/cadastrar-consultores-distribuidores-mmn-internacional.jpg" data-blog-slug="cadastrar-consultores-distribuidores-mmn-internacional" data-blog-date="2026-09-15">
   <a href="../2026/09/05/cadastrar-consultores-distribuidores-mmn-internacional/">
-    <img src="../imagens/posts/cadastrar-consultores-distribuidores-mmn-internacional.jpg" alt="Como cadastrar consultores e distribuidores em MMN internacional" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+    <picture><source srcset="../imagens/posts/cadastrar-consultores-distribuidores-mmn-internacional.webp" type="image/webp" /><img src="../imagens/posts/cadastrar-consultores-distribuidores-mmn-internacional.jpg" alt="Como cadastrar consultores e distribuidores em MMN internacional" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
   </a>
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="../2026/09/05/cadastrar-consultores-distribuidores-mmn-internacional/" class="hover:underline">Como cadastrar consultores e distribuidores em MMN internacional</a></h2>
@@ -110,7 +110,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/09/05/onboarding-ativacao-distribuidores-papel-integracao-erp/" data-blog-image="imagens/posts/onboarding-ativacao-distribuidores-papel-integracao-erp.jpg" data-blog-slug="onboarding-ativacao-distribuidores-papel-integracao-erp" data-blog-date="2026-09-05">
   <a href="../2026/09/05/onboarding-ativacao-distribuidores-papel-integracao-erp/">
-    <img src="../imagens/posts/onboarding-ativacao-distribuidores-papel-integracao-erp.jpg" alt="Onboarding e Ativação de Distribuidores: O Papel da Integração ERP" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+    <picture><source srcset="../imagens/posts/onboarding-ativacao-distribuidores-papel-integracao-erp.webp" type="image/webp" /><img src="../imagens/posts/onboarding-ativacao-distribuidores-papel-integracao-erp.jpg" alt="Onboarding e Ativação de Distribuidores: O Papel da Integração ERP" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
   </a>
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="../2026/09/05/onboarding-ativacao-distribuidores-papel-integracao-erp/" class="hover:underline">Onboarding e Ativação de Distribuidores: O Papel da Integração ERP</a></h2>
@@ -119,7 +119,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/08/24/comissionamento-emissao-nf-venda-direta/" data-blog-image="imagens/posts/comissionamento-emissao-nf-venda-direta.jpg" data-blog-slug="comissionamento-emissao-nf-venda-direta" data-blog-date="2026-08-24">
   <a href="../2026/08/24/comissionamento-emissao-nf-venda-direta/">
-    <img src="../imagens/posts/comissionamento-emissao-nf-venda-direta.jpg" alt="Comissionamento e Emissão de NF-e em Venda Direta" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+    <picture><source srcset="../imagens/posts/comissionamento-emissao-nf-venda-direta.webp" type="image/webp" /><img src="../imagens/posts/comissionamento-emissao-nf-venda-direta.jpg" alt="Comissionamento e Emissão de NF-e em Venda Direta" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
   </a>
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="../2026/08/24/comissionamento-emissao-nf-venda-direta/" class="hover:underline">Comissionamento e Emissão de NF-e em Venda Direta</a></h2>
@@ -128,7 +128,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/08/21/precificar-operacoes-internacionais-mmn-moeda-local/" data-blog-image="imagens/posts/precificar-operacoes-internacionais-mmn-moeda-local.jpg" data-blog-slug="precificar-operacoes-internacionais-mmn-moeda-local" data-blog-date="2026-08-21">
   <a href="../2026/08/21/precificar-operacoes-internacionais-mmn-moeda-local/">
-    <img src="../imagens/posts/precificar-operacoes-internacionais-mmn-moeda-local.jpg" alt="Como precificar operações internacionais em MMN com moeda local" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+    <picture><source srcset="../imagens/posts/precificar-operacoes-internacionais-mmn-moeda-local.webp" type="image/webp" /><img src="../imagens/posts/precificar-operacoes-internacionais-mmn-moeda-local.jpg" alt="Como precificar operações internacionais em MMN com moeda local" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
   </a>
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="../2026/08/21/precificar-operacoes-internacionais-mmn-moeda-local/" class="hover:underline">Como precificar operações internacionais em MMN com moeda local</a></h2>
@@ -137,7 +137,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/08/18/garantir-previsibilidade-receita-mmn/" data-blog-image="imagens/posts/garantir-previsibilidade-receita-mmn.jpg" data-blog-slug="garantir-previsibilidade-receita-mmn" data-blog-date="2026-08-18">
   <a href="../2026/08/18/garantir-previsibilidade-receita-mmn/">
-    <img src="../imagens/posts/garantir-previsibilidade-receita-mmn.jpg" alt="Como garantir previsibilidade de receita em MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+    <picture><source srcset="../imagens/posts/garantir-previsibilidade-receita-mmn.webp" type="image/webp" /><img src="../imagens/posts/garantir-previsibilidade-receita-mmn.jpg" alt="Como garantir previsibilidade de receita em MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
   </a>
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="../2026/08/18/garantir-previsibilidade-receita-mmn/" class="hover:underline">Como garantir previsibilidade de receita em MMN</a></h2>
@@ -146,7 +146,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/08/15/integrar-sistema-venda-direta-erp/" data-blog-image="imagens/posts/integrar-sistema-venda-direta-erp.jpg" data-blog-slug="integrar-sistema-venda-direta-erp" data-blog-date="2026-08-15">
   <a href="../2026/08/15/integrar-sistema-venda-direta-erp/">
-    <img src="../imagens/posts/integrar-sistema-venda-direta-erp.jpg" alt="Como integrar seu sistema de venda direta com ERP" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+    <picture><source srcset="../imagens/posts/integrar-sistema-venda-direta-erp.webp" type="image/webp" /><img src="../imagens/posts/integrar-sistema-venda-direta-erp.jpg" alt="Como integrar seu sistema de venda direta com ERP" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
   </a>
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="../2026/08/15/integrar-sistema-venda-direta-erp/" class="hover:underline">Como integrar seu sistema de venda direta com ERP</a></h2>
@@ -155,7 +155,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/08/12/governanca-comercial-dados-ia-marketing-multinivel/" data-blog-image="imagens/posts/governanca-comercial-dados-ia-marketing-multinivel.jpg" data-blog-slug="governanca-comercial-dados-ia-marketing-multinivel" data-blog-date="2026-08-12">
   <a href="../2026/08/12/governanca-comercial-dados-ia-marketing-multinivel/">
-    <img src="../imagens/posts/governanca-comercial-dados-ia-marketing-multinivel.jpg" alt="Governança Comercial com Dados e IA no Marketing Multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+    <picture><source srcset="../imagens/posts/governanca-comercial-dados-ia-marketing-multinivel.webp" type="image/webp" /><img src="../imagens/posts/governanca-comercial-dados-ia-marketing-multinivel.jpg" alt="Governança Comercial com Dados e IA no Marketing Multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
   </a>
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="../2026/08/12/governanca-comercial-dados-ia-marketing-multinivel/" class="hover:underline">Governança Comercial com Dados e IA no Marketing Multinível</a></h2>
@@ -164,7 +164,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/08/09/evitar-fraudes-commerce-alto-volume/" data-blog-image="imagens/posts/evitar-fraudes-commerce-alto-volume.jpg" data-blog-slug="evitar-fraudes-commerce-alto-volume" data-blog-date="2026-08-09">
   <a href="../2026/08/09/evitar-fraudes-commerce-alto-volume/">
-    <img src="../imagens/posts/evitar-fraudes-commerce-alto-volume.jpg" alt="Como evitar fraudes em e-commerce de alto volume" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+    <picture><source srcset="../imagens/posts/evitar-fraudes-commerce-alto-volume.webp" type="image/webp" /><img src="../imagens/posts/evitar-fraudes-commerce-alto-volume.jpg" alt="Como evitar fraudes em e-commerce de alto volume" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
   </a>
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="../2026/08/09/evitar-fraudes-commerce-alto-volume/" class="hover:underline">Como evitar fraudes em e-commerce de alto volume</a></h2>
@@ -173,7 +173,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/08/06/comissao-cargo-vs-plano-pontos-venda-direta/" data-blog-image="imagens/posts/comissao-cargo-vs-plano-pontos-venda-direta.jpg" data-blog-slug="comissao-cargo-vs-plano-pontos-venda-direta" data-blog-date="2026-08-06">
   <a href="../2026/08/06/comissao-cargo-vs-plano-pontos-venda-direta/">
-    <img src="../imagens/posts/comissao-cargo-vs-plano-pontos-venda-direta.jpg" alt="Comissão por cargo vs plano de pontos em venda direta" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+    <picture><source srcset="../imagens/posts/comissao-cargo-vs-plano-pontos-venda-direta.webp" type="image/webp" /><img src="../imagens/posts/comissao-cargo-vs-plano-pontos-venda-direta.jpg" alt="Comissão por cargo vs plano de pontos em venda direta" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
   </a>
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="../2026/08/06/comissao-cargo-vs-plano-pontos-venda-direta/" class="hover:underline">Comissão por cargo vs plano de pontos em venda direta</a></h2>
@@ -182,7 +182,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/08/02/levar-operacao-venda-direta-para-outro-pais/" data-blog-image="imagens/posts/levar-operacao-venda-direta-para-outro-pais.jpg" data-blog-slug="levar-operacao-venda-direta-para-outro-pais" data-blog-date="2026-08-02">
   <a href="../2026/08/02/levar-operacao-venda-direta-para-outro-pais/">
-    <img src="../imagens/posts/levar-operacao-venda-direta-para-outro-pais.jpg" alt="Levar a venda direta para outro país: o que muda no sistema" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+    <picture><source srcset="../imagens/posts/levar-operacao-venda-direta-para-outro-pais.webp" type="image/webp" /><img src="../imagens/posts/levar-operacao-venda-direta-para-outro-pais.jpg" alt="Levar a venda direta para outro país: o que muda no sistema" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
   </a>
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="../2026/08/02/levar-operacao-venda-direta-para-outro-pais/" class="hover:underline">Levar a venda direta para outro país: o que muda no sistema</a></h2>
@@ -191,7 +191,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/07/30/integracoes-pagamento-logistica-marketing-multinivel/" data-blog-image="imagens/posts/integracoes-pagamento-logistica-marketing-multinivel.jpg" data-blog-slug="integracoes-pagamento-logistica-marketing-multinivel" data-blog-date="2026-07-30">
   <a href="../2026/07/30/integracoes-pagamento-logistica-marketing-multinivel/">
-    <img src="../imagens/posts/integracoes-pagamento-logistica-marketing-multinivel.jpg" alt="Integrações de pagamento e logística no marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+    <picture><source srcset="../imagens/posts/integracoes-pagamento-logistica-marketing-multinivel.webp" type="image/webp" /><img src="../imagens/posts/integracoes-pagamento-logistica-marketing-multinivel.jpg" alt="Integrações de pagamento e logística no marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
   </a>
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="../2026/07/30/integracoes-pagamento-logistica-marketing-multinivel/" class="hover:underline">Integrações de pagamento e logística no marketing multinível</a></h2>
@@ -200,7 +200,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/07/21/gestao-comissionamento-impacta-inadimplencia-mmn/" data-blog-image="imagens/posts/gestao-comissionamento-impacta-inadimplencia-mmn.jpg" data-blog-slug="gestao-comissionamento-impacta-inadimplencia-mmn" data-blog-date="2026-07-21">
   <a href="../2026/07/21/gestao-comissionamento-impacta-inadimplencia-mmn/">
-    <img src="../imagens/posts/gestao-comissionamento-impacta-inadimplencia-mmn.jpg" alt="Como a gestão de comissionamento impacta a inadimplência no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+    <picture><source srcset="../imagens/posts/gestao-comissionamento-impacta-inadimplencia-mmn.webp" type="image/webp" /><img src="../imagens/posts/gestao-comissionamento-impacta-inadimplencia-mmn.jpg" alt="Como a gestão de comissionamento impacta a inadimplência no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
   </a>
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="../2026/07/21/gestao-comissionamento-impacta-inadimplencia-mmn/" class="hover:underline">Como a gestão de comissionamento impacta a inadimplência no MMN</a></h2>
@@ -209,7 +209,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/07/18/ia-pode-otimizar-suporte-distribuidor-mmn/" data-blog-image="imagens/posts/ia-pode-otimizar-suporte-distribuidor-mmn.jpg" data-blog-slug="ia-pode-otimizar-suporte-distribuidor-mmn" data-blog-date="2026-07-18">
   <a href="../2026/07/18/ia-pode-otimizar-suporte-distribuidor-mmn/">
-    <img src="../imagens/posts/ia-pode-otimizar-suporte-distribuidor-mmn.jpg" alt="Como a IA pode otimizar o suporte ao distribuidor no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+    <picture><source srcset="../imagens/posts/ia-pode-otimizar-suporte-distribuidor-mmn.webp" type="image/webp" /><img src="../imagens/posts/ia-pode-otimizar-suporte-distribuidor-mmn.jpg" alt="Como a IA pode otimizar o suporte ao distribuidor no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
   </a>
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="../2026/07/18/ia-pode-otimizar-suporte-distribuidor-mmn/" class="hover:underline">Como a IA pode otimizar o suporte ao distribuidor no MMN</a></h2>
@@ -218,7 +218,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/07/15/crm-pode-potencializar-plano-carreira-mmn/" data-blog-image="imagens/posts/crm-pode-potencializar-plano-carreira-mmn.jpg" data-blog-slug="crm-pode-potencializar-plano-carreira-mmn" data-blog-date="2026-07-15">
   <a href="../2026/07/15/crm-pode-potencializar-plano-carreira-mmn/">
-    <img src="../imagens/posts/crm-pode-potencializar-plano-carreira-mmn.jpg" alt="Como um CRM pode potencializar seu plano de carreira em MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+    <picture><source srcset="../imagens/posts/crm-pode-potencializar-plano-carreira-mmn.webp" type="image/webp" /><img src="../imagens/posts/crm-pode-potencializar-plano-carreira-mmn.jpg" alt="Como um CRM pode potencializar seu plano de carreira em MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
   </a>
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="../2026/07/15/crm-pode-potencializar-plano-carreira-mmn/" class="hover:underline">Como um CRM pode potencializar seu plano de carreira em MMN</a></h2>
@@ -227,7 +227,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/07/12/estrategias-expansao-internacional-marketing-multinivel/" data-blog-image="imagens/posts/estrategias-expansao-internacional-marketing-multinivel.jpg" data-blog-slug="estrategias-expansao-internacional-marketing-multinivel" data-blog-date="2026-07-12">
   <a href="../2026/07/12/estrategias-expansao-internacional-marketing-multinivel/">
-    <img src="../imagens/posts/estrategias-expansao-internacional-marketing-multinivel.jpg" alt="Estratégias para expansão internacional no marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+    <picture><source srcset="../imagens/posts/estrategias-expansao-internacional-marketing-multinivel.webp" type="image/webp" /><img src="../imagens/posts/estrategias-expansao-internacional-marketing-multinivel.jpg" alt="Estratégias para expansão internacional no marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
   </a>
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="../2026/07/12/estrategias-expansao-internacional-marketing-multinivel/" class="hover:underline">Estratégias para expansão internacional no marketing multinível</a></h2>
@@ -236,7 +236,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/07/06/comissionamento-eficiente-onboarding-distribuidores/" data-blog-image="imagens/posts/comissionamento-eficiente-onboarding-distribuidores.jpg" data-blog-slug="comissionamento-eficiente-onboarding-distribuidores" data-blog-date="2026-07-06">
   <a href="../2026/07/06/comissionamento-eficiente-onboarding-distribuidores/">
-    <img src="../imagens/posts/comissionamento-eficiente-onboarding-distribuidores.jpg" alt="Comissionamento eficiente no onboarding de distribuidores" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+    <picture><source srcset="../imagens/posts/comissionamento-eficiente-onboarding-distribuidores.webp" type="image/webp" /><img src="../imagens/posts/comissionamento-eficiente-onboarding-distribuidores.jpg" alt="Comissionamento eficiente no onboarding de distribuidores" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
   </a>
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="../2026/07/06/comissionamento-eficiente-onboarding-distribuidores/" class="hover:underline">Comissionamento eficiente no onboarding de distribuidores</a></h2>
@@ -245,7 +245,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/07/03/tecnologia-escalar-vendas-diretas-mmn/" data-blog-image="imagens/posts/tecnologia-escalar-vendas-diretas-mmn.jpg" data-blog-slug="tecnologia-escalar-vendas-diretas-mmn" data-blog-date="2026-07-03">
   <a href="../2026/07/03/tecnologia-escalar-vendas-diretas-mmn/">
-    <img src="../imagens/posts/tecnologia-escalar-vendas-diretas-mmn.jpg" alt="Tecnologia para Escalar Vendas Diretas no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+    <picture><source srcset="../imagens/posts/tecnologia-escalar-vendas-diretas-mmn.webp" type="image/webp" /><img src="../imagens/posts/tecnologia-escalar-vendas-diretas-mmn.jpg" alt="Tecnologia para Escalar Vendas Diretas no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
   </a>
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="../2026/07/03/tecnologia-escalar-vendas-diretas-mmn/" class="hover:underline">Tecnologia para Escalar Vendas Diretas no MMN</a></h2>
@@ -254,7 +254,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/30/garantir-previsibilidade-receita-marketing-multinivel/" data-blog-image="imagens/posts/garantir-previsibilidade-receita-marketing-multinivel.jpg" data-blog-slug="garantir-previsibilidade-receita-marketing-multinivel" data-blog-date="2026-06-30">
   <a href="../2026/06/30/garantir-previsibilidade-receita-marketing-multinivel/">
-    <img src="../imagens/posts/garantir-previsibilidade-receita-marketing-multinivel.jpg" alt="Como garantir previsibilidade de receita no marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+    <picture><source srcset="../imagens/posts/garantir-previsibilidade-receita-marketing-multinivel.webp" type="image/webp" /><img src="../imagens/posts/garantir-previsibilidade-receita-marketing-multinivel.jpg" alt="Como garantir previsibilidade de receita no marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
   </a>
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="../2026/06/30/garantir-previsibilidade-receita-marketing-multinivel/" class="hover:underline">Como garantir previsibilidade de receita no marketing multinível</a></h2>
@@ -263,7 +263,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/27/crm-automacao-impulsionam-marketing-multinivel/" data-blog-image="imagens/posts/crm-automacao-impulsionam-marketing-multinivel.jpg" data-blog-slug="crm-automacao-impulsionam-marketing-multinivel" data-blog-date="2026-06-27">
   <a href="../2026/06/27/crm-automacao-impulsionam-marketing-multinivel/">
-    <img src="../imagens/posts/crm-automacao-impulsionam-marketing-multinivel.jpg" alt="Como CRM e automação impulsionam o marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+    <picture><source srcset="../imagens/posts/crm-automacao-impulsionam-marketing-multinivel.webp" type="image/webp" /><img src="../imagens/posts/crm-automacao-impulsionam-marketing-multinivel.jpg" alt="Como CRM e automação impulsionam o marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
   </a>
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="../2026/06/27/crm-automacao-impulsionam-marketing-multinivel/" class="hover:underline">Como CRM e automação impulsionam o marketing multinível</a></h2>
@@ -272,7 +272,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/24/integracoes-pagamento-logistica-impactam-mmn/" data-blog-image="imagens/posts/integracoes-pagamento-logistica-impactam-mmn.jpg" data-blog-slug="integracoes-pagamento-logistica-impactam-mmn" data-blog-date="2026-06-24">
   <a href="../2026/06/24/integracoes-pagamento-logistica-impactam-mmn/">
-    <img src="../imagens/posts/integracoes-pagamento-logistica-impactam-mmn.jpg" alt="Como as integrações de pagamento e logística impactam o MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+    <picture><source srcset="../imagens/posts/integracoes-pagamento-logistica-impactam-mmn.webp" type="image/webp" /><img src="../imagens/posts/integracoes-pagamento-logistica-impactam-mmn.jpg" alt="Como as integrações de pagamento e logística impactam o MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
   </a>
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="../2026/06/24/integracoes-pagamento-logistica-impactam-mmn/" class="hover:underline">Como as integrações de pagamento e logística impactam o MMN</a></h2>
@@ -281,7 +281,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/21/ia-pode-fortalecer-governanca-comercial-mmn/" data-blog-image="imagens/posts/ia-pode-fortalecer-governanca-comercial-mmn.jpg" data-blog-slug="ia-pode-fortalecer-governanca-comercial-mmn" data-blog-date="2026-06-21">
   <a href="../2026/06/21/ia-pode-fortalecer-governanca-comercial-mmn/">
-    <img src="../imagens/posts/ia-pode-fortalecer-governanca-comercial-mmn.jpg" alt="Como a IA pode fortalecer a governança comercial no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+    <picture><source srcset="../imagens/posts/ia-pode-fortalecer-governanca-comercial-mmn.webp" type="image/webp" /><img src="../imagens/posts/ia-pode-fortalecer-governanca-comercial-mmn.jpg" alt="Como a IA pode fortalecer a governança comercial no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
   </a>
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="../2026/06/21/ia-pode-fortalecer-governanca-comercial-mmn/" class="hover:underline">Como a IA pode fortalecer a governança comercial no MMN</a></h2>
@@ -290,7 +290,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/18/crm-ia-pode-potencializar-mmn/" data-blog-image="imagens/posts/crm-ia-pode-potencializar-mmn.jpg" data-blog-slug="crm-ia-pode-potencializar-mmn" data-blog-date="2026-06-18">
   <a href="../2026/06/18/crm-ia-pode-potencializar-mmn/">
-    <img src="../imagens/posts/crm-ia-pode-potencializar-mmn.jpg" alt="Como o CRM com IA pode potencializar seu MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+    <picture><source srcset="../imagens/posts/crm-ia-pode-potencializar-mmn.webp" type="image/webp" /><img src="../imagens/posts/crm-ia-pode-potencializar-mmn.jpg" alt="Como o CRM com IA pode potencializar seu MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
   </a>
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="../2026/06/18/crm-ia-pode-potencializar-mmn/" class="hover:underline">Como o CRM com IA pode potencializar seu MMN</a></h2>
@@ -299,7 +299,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/15/construindo-plano-carreira-marketing-multinivel/" data-blog-image="imagens/posts/construindo-plano-carreira-marketing-multinivel.jpg" data-blog-slug="construindo-plano-carreira-marketing-multinivel" data-blog-date="2026-06-15">
   <a href="../2026/06/15/construindo-plano-carreira-marketing-multinivel/">
-    <img src="../imagens/posts/construindo-plano-carreira-marketing-multinivel.jpg" alt="Construindo um plano de carreira em marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+    <picture><source srcset="../imagens/posts/construindo-plano-carreira-marketing-multinivel.webp" type="image/webp" /><img src="../imagens/posts/construindo-plano-carreira-marketing-multinivel.jpg" alt="Construindo um plano de carreira em marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
   </a>
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="../2026/06/15/construindo-plano-carreira-marketing-multinivel/" class="hover:underline">Construindo um plano de carreira em marketing multinível</a></h2>
@@ -308,7 +308,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/12/expandir-internacionalmente-marketing-multinivel/" data-blog-image="imagens/posts/expandir-internacionalmente-marketing-multinivel.jpg" data-blog-slug="expandir-internacionalmente-marketing-multinivel" data-blog-date="2026-06-12">
   <a href="../2026/06/12/expandir-internacionalmente-marketing-multinivel/">
-    <img src="../imagens/posts/expandir-internacionalmente-marketing-multinivel.jpg" alt="Como Expandir Internacionalmente no Marketing Multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+    <picture><source srcset="../imagens/posts/expandir-internacionalmente-marketing-multinivel.webp" type="image/webp" /><img src="../imagens/posts/expandir-internacionalmente-marketing-multinivel.jpg" alt="Como Expandir Internacionalmente no Marketing Multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
   </a>
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="../2026/06/12/expandir-internacionalmente-marketing-multinivel/" class="hover:underline">Como Expandir Internacionalmente no Marketing Multinível</a></h2>
@@ -317,7 +317,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/09/comissionamento-gerenciar-inadimplencia-eficazmente/" data-blog-image="imagens/posts/comissionamento-gerenciar-inadimplencia-eficazmente.jpg" data-blog-slug="comissionamento-gerenciar-inadimplencia-eficazmente" data-blog-date="2026-06-09">
   <a href="../2026/06/09/comissionamento-gerenciar-inadimplencia-eficazmente/">
-    <img src="../imagens/posts/comissionamento-gerenciar-inadimplencia-eficazmente.jpg" alt="Comissionamento: Como Gerenciar a Inadimplência Eficazmente" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+    <picture><source srcset="../imagens/posts/comissionamento-gerenciar-inadimplencia-eficazmente.webp" type="image/webp" /><img src="../imagens/posts/comissionamento-gerenciar-inadimplencia-eficazmente.jpg" alt="Comissionamento: Como Gerenciar a Inadimplência Eficazmente" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
   </a>
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="../2026/06/09/comissionamento-gerenciar-inadimplencia-eficazmente/" class="hover:underline">Comissionamento: Como Gerenciar a Inadimplência Eficazmente</a></h2>
@@ -326,7 +326,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/06/crm-pode-acelerar-onboarding-distribuidores/" data-blog-image="imagens/posts/crm-pode-acelerar-onboarding-distribuidores.jpg" data-blog-slug="crm-pode-acelerar-onboarding-distribuidores" data-blog-date="2026-06-06">
   <a href="../2026/06/06/crm-pode-acelerar-onboarding-distribuidores/">
-    <img src="../imagens/posts/crm-pode-acelerar-onboarding-distribuidores.jpg" alt="Como um CRM pode acelerar o onboarding de distribuidores" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+    <picture><source srcset="../imagens/posts/crm-pode-acelerar-onboarding-distribuidores.webp" type="image/webp" /><img src="../imagens/posts/crm-pode-acelerar-onboarding-distribuidores.jpg" alt="Como um CRM pode acelerar o onboarding de distribuidores" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
   </a>
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="../2026/06/06/crm-pode-acelerar-onboarding-distribuidores/" class="hover:underline">Como um CRM pode acelerar o onboarding de distribuidores</a></h2>
@@ -335,7 +335,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/03/tecnologia-vendas-diretas-escala-considerar/" data-blog-image="imagens/posts/tecnologia-vendas-diretas-escala-considerar.jpg" data-blog-slug="tecnologia-vendas-diretas-escala-considerar" data-blog-date="2026-06-03">
   <a href="../2026/06/03/tecnologia-vendas-diretas-escala-considerar/">
-    <img src="../imagens/posts/tecnologia-vendas-diretas-escala-considerar.jpg" alt="Tecnologia para Vendas Diretas em Escala: O que Considerar" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+    <picture><source srcset="../imagens/posts/tecnologia-vendas-diretas-escala-considerar.webp" type="image/webp" /><img src="../imagens/posts/tecnologia-vendas-diretas-escala-considerar.jpg" alt="Tecnologia para Vendas Diretas em Escala: O que Considerar" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
   </a>
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="../2026/06/03/tecnologia-vendas-diretas-escala-considerar/" class="hover:underline">Tecnologia para Vendas Diretas em Escala: O que Considerar</a></h2>
@@ -344,7 +344,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/30/crm-automacao-otimizam-marketing-multinivel/" data-blog-image="imagens/posts/crm-automacao-otimizam-marketing-multinivel.jpg" data-blog-slug="crm-automacao-otimizam-marketing-multinivel" data-blog-date="2026-05-30">
   <a href="../2026/05/30/crm-automacao-otimizam-marketing-multinivel/">
-    <img src="../imagens/posts/crm-automacao-otimizam-marketing-multinivel.jpg" alt="Como CRM e automação otimizam seu marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+    <picture><source srcset="../imagens/posts/crm-automacao-otimizam-marketing-multinivel.webp" type="image/webp" /><img src="../imagens/posts/crm-automacao-otimizam-marketing-multinivel.jpg" alt="Como CRM e automação otimizam seu marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
   </a>
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="../2026/05/30/crm-automacao-otimizam-marketing-multinivel/" class="hover:underline">Como CRM e automação otimizam seu marketing multinível</a></h2>
@@ -353,7 +353,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/27/integrando-pagamentos-logistica-marketing-multinivel/" data-blog-image="imagens/posts/integrando-pagamentos-logistica-marketing-multinivel.jpg" data-blog-slug="integrando-pagamentos-logistica-marketing-multinivel" data-blog-date="2026-05-27">
   <a href="../2026/05/27/integrando-pagamentos-logistica-marketing-multinivel/">
-    <img src="../imagens/posts/integrando-pagamentos-logistica-marketing-multinivel.jpg" alt="Integrando Pagamentos e Logística no Marketing Multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+    <picture><source srcset="../imagens/posts/integrando-pagamentos-logistica-marketing-multinivel.webp" type="image/webp" /><img src="../imagens/posts/integrando-pagamentos-logistica-marketing-multinivel.jpg" alt="Integrando Pagamentos e Logística no Marketing Multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
   </a>
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="../2026/05/27/integrando-pagamentos-logistica-marketing-multinivel/" class="hover:underline">Integrando Pagamentos e Logística no Marketing Multinível</a></h2>
@@ -362,7 +362,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/21/tecnologia-vendas-diretas-escala-mmn-ia/" data-blog-image="imagens/posts/tecnologia-vendas-diretas-escala-mmn-ia.jpg" data-blog-slug="tecnologia-vendas-diretas-escala-mmn-ia" data-blog-date="2026-05-21">
   <a href="../2026/05/21/tecnologia-vendas-diretas-escala-mmn-ia/">
-    <img src="../imagens/posts/tecnologia-vendas-diretas-escala-mmn-ia.jpg" alt="Tecnologia para Vendas Diretas em Escala: MMN e IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+    <picture><source srcset="../imagens/posts/tecnologia-vendas-diretas-escala-mmn-ia.webp" type="image/webp" /><img src="../imagens/posts/tecnologia-vendas-diretas-escala-mmn-ia.jpg" alt="Tecnologia para Vendas Diretas em Escala: MMN e IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
   </a>
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="../2026/05/21/tecnologia-vendas-diretas-escala-mmn-ia/" class="hover:underline">Tecnologia para Vendas Diretas em Escala: MMN e IA</a></h2>
@@ -371,7 +371,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/18/crm-automacao-marketing-multinivel-usar/" data-blog-image="imagens/posts/crm-automacao-marketing-multinivel-usar.jpg" data-blog-slug="crm-automacao-marketing-multinivel-usar" data-blog-date="2026-05-18">
   <a href="../2026/05/18/crm-automacao-marketing-multinivel-usar/">
-    <img src="../imagens/posts/crm-automacao-marketing-multinivel-usar.jpg" alt="CRM e Automação no Marketing Multinível: Como Usar?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+    <picture><source srcset="../imagens/posts/crm-automacao-marketing-multinivel-usar.webp" type="image/webp" /><img src="../imagens/posts/crm-automacao-marketing-multinivel-usar.jpg" alt="CRM e Automação no Marketing Multinível: Como Usar?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
   </a>
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="../2026/05/18/crm-automacao-marketing-multinivel-usar/" class="hover:underline">CRM e Automação no Marketing Multinível: Como Usar?</a></h2>
@@ -380,7 +380,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/15/crm-automacao-comissionamento-mmn/" data-blog-image="imagens/posts/crm-automacao-comissionamento-mmn.jpg" data-blog-slug="crm-automacao-comissionamento-mmn" data-blog-date="2026-05-15">
   <a href="../2026/05/15/crm-automacao-comissionamento-mmn/">
-    <img src="../imagens/posts/crm-automacao-comissionamento-mmn.jpg" alt="CRM e automação no comissionamento para MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+    <picture><source srcset="../imagens/posts/crm-automacao-comissionamento-mmn.webp" type="image/webp" /><img src="../imagens/posts/crm-automacao-comissionamento-mmn.jpg" alt="CRM e automação no comissionamento para MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
   </a>
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="../2026/05/15/crm-automacao-comissionamento-mmn/" class="hover:underline">CRM e automação no comissionamento para MMN</a></h2>
@@ -389,7 +389,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/12/governanca-comercial-dados-ia-podem-melhorar-resultados/" data-blog-image="imagens/posts/governanca-comercial-dados-ia-podem-melhorar-resultados.jpg" data-blog-slug="governanca-comercial-dados-ia-podem-melhorar-resultados" data-blog-date="2026-05-12">
   <a href="../2026/05/12/governanca-comercial-dados-ia-podem-melhorar-resultados/">
-    <img src="../imagens/posts/governanca-comercial-dados-ia-podem-melhorar-resultados.jpg" alt="Governança Comercial: Como Dados e IA Podem Melhorar Resultados" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+    <picture><source srcset="../imagens/posts/governanca-comercial-dados-ia-podem-melhorar-resultados.webp" type="image/webp" /><img src="../imagens/posts/governanca-comercial-dados-ia-podem-melhorar-resultados.jpg" alt="Governança Comercial: Como Dados e IA Podem Melhorar Resultados" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
   </a>
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="../2026/05/12/governanca-comercial-dados-ia-podem-melhorar-resultados/" class="hover:underline">Governança Comercial: Como Dados e IA Podem Melhorar Resultados</a></h2>
@@ -398,7 +398,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/06/integracoes-pagamento-logistica-mmn/" data-blog-image="imagens/posts/integracoes-pagamento-logistica-mmn.jpg" data-blog-slug="integracoes-pagamento-logistica-mmn" data-blog-date="2026-05-06">
   <a href="../2026/05/06/integracoes-pagamento-logistica-mmn/">
-    <img src="../imagens/posts/integracoes-pagamento-logistica-mmn.jpg" alt="Integrações de Pagamento e Logística no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+    <picture><source srcset="../imagens/posts/integracoes-pagamento-logistica-mmn.webp" type="image/webp" /><img src="../imagens/posts/integracoes-pagamento-logistica-mmn.jpg" alt="Integrações de Pagamento e Logística no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
   </a>
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="../2026/05/06/integracoes-pagamento-logistica-mmn/" class="hover:underline">Integrações de Pagamento e Logística no MMN</a></h2>
@@ -407,7 +407,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/03/crm-pode-potencializar-governanca-comercial/" data-blog-image="imagens/posts/crm-pode-potencializar-governanca-comercial.jpg" data-blog-slug="crm-pode-potencializar-governanca-comercial" data-blog-date="2026-05-03">
   <a href="../2026/05/03/crm-pode-potencializar-governanca-comercial/">
-    <img src="../imagens/posts/crm-pode-potencializar-governanca-comercial.jpg" alt="Como um CRM pode potencializar sua governança comercial" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+    <picture><source srcset="../imagens/posts/crm-pode-potencializar-governanca-comercial.webp" type="image/webp" /><img src="../imagens/posts/crm-pode-potencializar-governanca-comercial.jpg" alt="Como um CRM pode potencializar sua governança comercial" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
   </a>
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="../2026/05/03/crm-pode-potencializar-governanca-comercial/" class="hover:underline">Como um CRM pode potencializar sua governança comercial</a></h2>
@@ -416,7 +416,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/02/integrar-pagamentos-logistica-marketing-multinivel/" data-blog-image="imagens/posts/integrar-pagamentos-logistica-marketing-multinivel.jpg" data-blog-slug="integrar-pagamentos-logistica-marketing-multinivel" data-blog-date="2026-05-02">
   <a href="../2026/05/02/integrar-pagamentos-logistica-marketing-multinivel/">
-    <img src="../imagens/posts/integrar-pagamentos-logistica-marketing-multinivel.jpg" alt="Como integrar pagamentos e logística em marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+    <picture><source srcset="../imagens/posts/integrar-pagamentos-logistica-marketing-multinivel.webp" type="image/webp" /><img src="../imagens/posts/integrar-pagamentos-logistica-marketing-multinivel.jpg" alt="Como integrar pagamentos e logística em marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
   </a>
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="../2026/05/02/integrar-pagamentos-logistica-marketing-multinivel/" class="hover:underline">Como integrar pagamentos e logística em marketing multinível</a></h2>
@@ -425,7 +425,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/04/30/crm-automacao-marketing-multinivel/" data-blog-image="imagens/posts/crm-automacao-marketing-multinivel.jpg" data-blog-slug="crm-automacao-marketing-multinivel" data-blog-date="2026-04-30">
   <a href="../2026/04/30/crm-automacao-marketing-multinivel/">
-    <img src="../imagens/posts/crm-automacao-marketing-multinivel.jpg" alt="CRM e Automação para Marketing Multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" />
+    <picture><source srcset="../imagens/posts/crm-automacao-marketing-multinivel.webp" type="image/webp" /><img src="../imagens/posts/crm-automacao-marketing-multinivel.jpg" alt="CRM e Automação para Marketing Multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
   </a>
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="../2026/04/30/crm-automacao-marketing-multinivel/" class="hover:underline">CRM e Automação para Marketing Multinível</a></h2>
