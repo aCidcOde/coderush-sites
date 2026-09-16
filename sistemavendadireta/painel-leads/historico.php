@@ -20,6 +20,94 @@ Campos:
 
 return [
     [
+        'data' => '2026-09-16',
+        'area' => 'medicao',
+        'titulo' => 'Relatório diário da campanha por e-mail, às 7h',
+        'porque' => 'A leitura diária era feita à mão, e o valor dela é justamente não depender de '
+            . 'alguém lembrar. Dois erros que isso teria pego cedo: o "até 31/08" ficou 12 dias no ar '
+            . 'depois de vencido, e a meta de parcela em 70% levou quatro dias para mostrar que dobrava '
+            . 'o CPC sem trazer clique.',
+        'efeito' => 'Só alerta quando há motivo — perda por orçamento acima de 30%, cliques sem '
+            . 'conversão ou CPC acima de R$ 8. Canal separado do conteúdo: quando houver provedor de '
+            . 'WhatsApp, entra só a chamada HTTP e a análise não muda. Descoberto no caminho que o '
+            . 'msmtp da máquina estava com a senha revogada; passou a usar o SMTP do site.',
+    ],
+    [
+        'data' => '2026-09-16',
+        'area' => 'ads',
+        'titulo' => 'Meta de parcela revertida de 70% para 40%, teto de R$ 12 para R$ 7',
+        'porque' => 'A subida para 70% em 12/09 não se pagou. Em 11 dias antes: R$ 89,97 e 24 cliques '
+            . '(CPC R$ 3,75). Nos 4 dias depois: R$ 168,63 e 23 cliques (CPC R$ 7,33). Praticamente o '
+            . 'mesmo número de cliques por quase o dobro do dinheiro, e zero lead. O que faltou pesar é '
+            . 'que o volume de busca é pequeno e FIXO — cerca de 35 impressões por dia no nicho inteiro. '
+            . 'Parcela de impressão redistribui quem aparece dentro de um bolo que não cresce; ir de 30% '
+            . 'para 55% de topo compra exposição marginal, e justamente a mais cara.',
+        'efeito' => 'Baseline congelado nos dois períodos para medir. Leitura em 19/09. O sintoma de que '
+            . 'havia passado do ponto apareceu em 14/09: a perda migrou de "ranking" para "orçamento" '
+            . '(50%) sem os cliques aumentarem.',
+    ],
+    [
+        'data' => '2026-09-14',
+        'area' => 'ads',
+        'titulo' => 'Pausadas as 4 campanhas por segmento; só a Promoção 10 Anos no ar',
+        'porque' => 'Parceiros, Cosméticos e Suplementos tiveram ZERO impressão desde que subiram — o '
+            . 'nicho não é buscado, e isso não é problema de anúncio. A Afiliados tinha volume real (137 '
+            . 'impressões em 2 dias) mas era gente querendo SER afiliado da Shopee e da Amazon, não '
+            . 'empresa querendo montar programa: R$ 25 gastos e zero lead.',
+        'efeito' => 'A palavra "plataforma de afiliados" foi pausada antes, não filtrada: nenhuma '
+            . 'negativa conserta palavra cuja raiz mira o público oposto. A campanha estava 90% limitada '
+            . 'por orçamento — se a leitura tivesse sido "tem volume, sobe a verba", teria multiplicado o '
+            . 'desperdício por dez.',
+    ],
+    [
+        'data' => '2026-09-14',
+        'area' => 'site',
+        'titulo' => '/oferta/ virou /sistema-venda-direta/, com 301 da árvore inteira',
+        'porque' => 'O endereço antigo nomeava a promoção, e a promoção acaba em 30/09 — a URL não pode '
+            . 'acabar junto. O novo nomeia o produto, que é o que a pessoa busca. A página também passou a '
+            . 'ser indexável: enquanto era "oferta", manter fora do índice fazia sentido.',
+        'efeito' => 'Atualizados 31 links internos, sitemap, 8 anúncios e 3 sitelinks — apontar para o '
+            . 'endereço velho custaria um salto extra em cada clique pago. As 4 LPs por segmento seguem '
+            . 'noindex: são 91% a 97% idênticas entre si, e indexar cinco páginas quase iguais é pedir '
+            . 'para o Google escolher uma e descartar as outras.',
+    ],
+    [
+        'data' => '2026-09-14',
+        'area' => 'medicao',
+        'titulo' => 'Cinco páginas tinham WhatsApp e nenhuma medição',
+        'porque' => 'Home, /cases/, /simulador/, /inteligencia-artificial/ e /blog/ tinham link de zap sem '
+            . 'evento, sem beacon, sem nada. A home é a maior porta de entrada orgânica e a /cases/ é '
+            . 'destino de sitelink dos anúncios — ou seja, tráfego pago também caía ali e sumia.',
+        'efeito' => 'Não dava para concluir que o orgânico não converte, porque a conversão do orgânico '
+            . 'nunca tinha sido contada. O script virou include único (inc/zap-tracking.php), já com a '
+            . 'leitura da atribuição pela URL — a lição do WebView que custou o gclid da venda de R$ 3.500.',
+    ],
+    [
+        'data' => '2026-09-12',
+        'area' => 'ads',
+        'titulo' => 'Meta de parcela de impressão subiu de 20% para 70% (revertido em 16/09)',
+        'porque' => 'Durante semanas a leitura foi "quase não aparecemos e o concorrente aparece toda '
+            . 'hora", e a hipótese era lance baixo. Era falso: sob TARGET_IMPRESSION_SHARE os lances por '
+            . 'palavra viram enfeite, e a campanha estava configurada com meta de 20% no topo — entregando '
+            . '31%, ou seja, ACIMA da própria meta. O Google segurava por instrução nossa, com 0% de perda '
+            . 'por orçamento.',
+        'efeito' => 'A parcela de topo subiu de 30% para 53%, mas o CPC dobrou (R$ 3,75 para R$ 7,33) sem '
+            . 'aumentar cliques. Revertido em 16/09. O diagnóstico do freio estava certo; a conclusão sobre '
+            . 'o remédio, não — ver a entrada de 16/09.',
+    ],
+    [
+        'data' => '2026-09-12',
+        'area' => 'ads',
+        'titulo' => 'Prazo vencido nos 9 anúncios da conta, cinco deles no ar',
+        'porque' => 'Todos anunciavam "até 31/08" — vencido havia 12 dias — enquanto o site vendia com '
+            . 'prazo 30/09. Ninguém tinha olhado desde a criação. Prazo vencido não é só constrangimento: '
+            . 'quem clica, compara com a página e desiste, e o clique a gente paga igual.',
+        'efeito' => 'É desperdício que não aparece em nenhum relatório de termo de busca, porque o tráfego '
+            . 'estava certo. Corrigido preservando o histórico dos anúncios, e a varredura virou rotina '
+            . '(anuncios.py --auditar). O mesmo prazo estava cravado à mão nas 5 páginas de oferta; agora '
+            . 'deriva da constante PROMO_DEADLINE.',
+    ],
+    [
         'data' => '2026-09-09',
         'area' => 'ads',
         'titulo' => 'Lance de R$ 9 para R$ 12 em "sistema mmn" e "sistema de venda direta"',
