@@ -73,6 +73,38 @@ Meta e teto são coisas diferentes e andam juntos:
 Subir um sem o outro não produz efeito. Use `estrategia.py --ver` antes de
 qualquer análise de lance.
 
+### Meta de parcela alta não cria demanda — só encarece a que existe
+
+Em 12/09/2026 subi a meta de topo de 20% para 70% e o teto de R$ 6 para R$ 12,
+porque a campanha estava entregando menos do que podia. O diagnóstico do freio
+estava certo; a conclusão sobre o remédio, não.
+
+| | Gasto | Cliques | CPC |
+|---|---|---|---|
+| 11 dias antes | R$ 89,97 | 24 | R$ 3,75 |
+| 4 dias depois | R$ 168,63 | 23 | **R$ 7,33** |
+
+**Praticamente o mesmo número de cliques por quase o dobro do dinheiro**, e zero
+lead nos quatro dias.
+
+O que faltou pesar: **o volume de busca é pequeno e fixo** — cerca de 35
+impressões por dia no nicho inteiro. Parcela de impressão redistribui quem
+aparece dentro de um bolo que não cresce. Ir de 30% para 55% de topo compra um
+punhado de exposições marginais, e são justamente as mais caras: as que a gente
+perdia por ser a oferta menos competitiva naquele leilão.
+
+**Regra:** meta de parcela alta só se paga quando há volume não atendido. Antes
+de subir, olhe o total de impressões elegíveis (`impressions / impression_share`).
+Se o mercado inteiro tem dezenas de buscas por dia, o teto de crescimento é
+baixo e o custo marginal sobe rápido — o dinheiro rende mais em palavra nova,
+página melhor ou outro canal.
+
+**Sintoma de que passou do ponto:** a perda migra de "ranking" para "orçamento"
+sem que os cliques aumentem. Foi o que aconteceu em 14/09 — 50% de perda por
+orçamento com os mesmos 6 cliques do dia anterior.
+
+Revertido em 16/09 para meta 40% / teto R$ 7.
+
 ### Armadilha: dado do dia corrente é incompleto
 
 Relatar número de "hoje" antes do fechamento gera correção no dia seguinte. Em
