@@ -59,6 +59,42 @@ $faq = [
     ['O sistema funciona em outros países?',
      'Sim. Há operações rodando no Brasil, no Paraguai e na Bolívia, com múltiplos idiomas, '
      . 'múltiplas moedas e documento fiscal por país (CPF/CNPJ, C.I./RUC).'],
+
+    // As perguntas abaixo entraram em 20/09/2026, depois de comparar com o FAQ
+    // do concorrente que mais aparece na busca. O dele nao e SEO — e a lista de
+    // objecoes que travam a venda, respondidas antes de a pessoa perguntar:
+    // "preciso de equipe tecnica?", "vale migrar do sistema atual?", "serve pra
+    // servico recorrente?". O nosso respondia o que e conveniente contar.
+    ['Preciso de equipe técnica para mexer nas regras de comissão?',
+     'Não. As faixas, percentuais e condições de graduação são configuradas no administrativo, '
+     . 'não no código. Mudar o plano é tarefa de quem entende do negócio, não de desenvolvedor — '
+     . 'e isso importa porque plano de marketing muda: ele é ajustado conforme a rede reage.'],
+    ['Vale a pena migrar de planilha ou de um sistema antigo?',
+     'Migramos o seu sistema atual como parte da implantação: cadastro de consultores, a rede com '
+     . 'a estrutura preservada, histórico de pedidos e saldos. O medo legítimo aqui é perder a '
+     . 'genealogia no caminho — é o ativo da operação. A árvore vem inteira, com a posição de cada '
+     . 'distribuidor onde estava.'],
+    ['Serve para serviço recorrente ou só para produto físico?',
+     'Os dois, e são modelos diferentes. Produto físico usa catálogo, margem por consultor, frete e '
+     . 'recompra. Serviço recorrente usa comissão residual mês a mês enquanto o contrato durar, '
+     . 'portal do assinante e acompanhamento de cancelamento. A plataforma trata cada um com as '
+     . 'ferramentas do seu modelo, em vez de forçar assinatura dentro de uma loja de produto.'],
+    ['O sistema é white label? Aparece a marca de vocês?',
+     'A operação roda com a sua marca, suas cores e seu domínio. O consultor e o cliente final não '
+     . 'veem o Sistema Venda Direta em lugar nenhum — veem a sua empresa.'],
+    ['E se a rede crescer rápido? O sistema aguenta?',
+     'A base instalada inclui operação com mais de dez anos de rede ativa e centro de distribuição '
+     . 'integrado. A mensalidade acompanha o faturamento em faixas, então crescer não gera '
+     . 'renegociação de contrato nem migração de plataforma no meio do caminho.'],
+    ['Com quais sistemas de pagamento e gestão vocês integram?',
+     'Pagamento por Pix, boleto e cartão via Efí (Gerencianet) e outros adquirentes conforme a '
+     . 'operação; emissão de NF-e e NFS-e; e integração com ERP por API — há cliente rodando com '
+     . 'TOTVS sincronizando produtos, clientes e vendas. Integração fora dessa lista é avaliada '
+     . 'caso a caso, e a plataforma expõe API para o que for específico da sua operação.'],
+    ['Quem cuida do sistema depois que entra no ar?',
+     'A mesma equipe que implanta. Há operações que acompanhamos há mais de dez anos, com evolução '
+     . 'contínua — não é entrega de projeto e adeus. Suporte em português, no horário comercial do '
+     . 'Brasil.'],
 ];
 ?>
 <!doctype html>
@@ -181,13 +217,44 @@ $faq = [
       <div class="mt-2 h-1 w-[72px] rounded-full bg-amber-300"></div>
       <div class="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
         <?php
+        /*
+         * Cada item nomeia UMA situação concreta da operação, não uma categoria
+         * de software. "Rede e genealogia" não diz nada para quem decide;
+         * "o consultor vê a downline sem abrir chamado no suporte" diz.
+         *
+         * O padrão veio de medir o concorrente que mais aparece na busca: a
+         * página de multinível da Eloss tem 3.483 palavras e 53 subtítulos, cada
+         * um um caso de uso. A nossa tinha 1.030 palavras e 12. Não é o visual
+         * deles que ranqueia — é a profundidade.
+         */
         $recursos = [
-            ['Rede e genealogia', 'Árvore unilevel, binário com troca de perna preferencial e comissão por cargo — a regra é configurada na implantação.'],
-            ['Escritório do consultor', 'Dashboard de ganhos, saldo, ativação, metas e ranking. É a tela em que o distribuidor vive.'],
-            ['Comissões automáticas', 'Cálculo, fechamento e pagamento sem planilha. Bônus de indicação, níveis e graduação.'],
-            ['Loja virtual integrada', 'Vitrine própria por consultor, carrinho com lucro calculado, frete e recompra em padrão e-commerce.'],
-            ['Financeiro completo', 'Extrato, saque, aprovação de pedido com saldo e pagamento com bônus.'],
-            ['Multi-idioma e multimoeda', 'PT, EN e ES, moeda local e documento fiscal por país. Operações no Paraguai e na Bolívia comprovam.'],
+            ['Downline visível sem abrir chamado',
+             'O consultor abre o escritório e vê a própria rede em tempo real: quem entrou, quem ativou, quem parou de comprar. '
+             . 'Enquanto isso mora numa planilha do administrativo, cada dúvida vira uma mensagem para o suporte — e é isso que trava a duplicação.'],
+            ['Comissão calculada e paga sem planilha',
+             'Fechamento automático de bônus de indicação, níveis, graduação e residual. O erro de cálculo em rede não custa só dinheiro: '
+             . 'custa a confiança do distribuidor, que é o ativo que faz a rede crescer.'],
+            ['Qualquer plano, parametrizado na implantação',
+             'Unilevel, binário com troca de perna preferencial, comissão por cargo ou combinação dos três. A regra é configurada, '
+             . 'não improvisada em código — mudar faixa de comissão não vira projeto de desenvolvimento.'],
+            ['Loja com rastreio de venda por consultor',
+             'Cada consultor tem vitrine própria e link rastreado. A venda cai na conta de quem indicou, com margem visível no carrinho, '
+             . 'sem cupom manual — que sempre acaba vazando para quem não deveria ter.'],
+            ['Recompra e ativação mensal no mesmo lugar',
+             'O distribuidor renova o pedido, acompanha a ativação e vê o que falta para bater a meta sem sair do escritório. '
+             . 'Recompra é o que separa rede que fatura de rede que só cadastra gente.'],
+            ['Financeiro que fecha o ciclo',
+             'Extrato por consultor, solicitação de saque, aprovação de pedido com saldo e pagamento usando bônus acumulado. '
+             . 'O dinheiro entra, circula e sai dentro do sistema.'],
+            ['Serviço recorrente, não só produto físico',
+             'Operação de assinatura tem comissão residual mês a mês enquanto o cliente mantém o contrato, portal do assinante e '
+             . 'visão de cancelamento. É um modelo diferente do de produto, e a plataforma trata os dois.'],
+            ['Capacitação dentro da plataforma',
+             'Materiais de divulgação atualizados e treinamento por módulos no próprio escritório. Rede que não é treinada não duplica, '
+             . 'e material espalhado em grupo de WhatsApp envelhece sem ninguém perceber.'],
+            ['Multi-idioma, multimoeda e documento por país',
+             'PT, EN e ES, moeda local sem casas decimais quando o país exige, e CPF/CNPJ, C.I./RUC ou SSN/EIN conforme a operação. '
+             . 'Rodando hoje no Brasil, no Paraguai e na Bolívia — não é promessa de roadmap.'],
         ];
         foreach ($recursos as [$titulo, $texto]): ?>
           <article class="rounded-2xl border border-white/20 bg-white/5 p-5">
@@ -203,6 +270,47 @@ $faq = [
       <div class="mt-2 h-1 w-[72px] rounded-full bg-amber-300"></div>
       <p class="mt-3 text-base text-white/85">Cada uma dessas operações usa a plataforma. As lojas estão no ar — abra e confira.</p>
       <?= promoVitrine('../') ?>
+    </section>
+
+    <?php
+    /*
+     * INTEGRACOES COM NOME PROPRIO.
+     *
+     * Na comparacao de 20/09/2026, o Maxnivel era o unico concorrente que nomeava
+     * adquirente e ERP — Bling, Cielo, GetNet, PagSeguro, NF-e. Os outros diziam
+     * "integra com tudo", que nao prova nada. Nos temos as integracoes e nao
+     * listavamos: a pagina citava 6 marcas soltas no meio do texto.
+     *
+     * Nomear e o que transforma promessa em verificavel. Quem ja usa Bling quer
+     * ler "Bling", nao "integracao com seu ERP".
+     */
+    ?>
+    <section class="border-t border-white/15 py-10">
+      <h2 class="font-[var(--font-heading)] text-2xl font-bold sm:text-[30px]">Com o que o sistema conversa</h2>
+      <div class="mt-2 h-1 w-[72px] rounded-full bg-amber-300"></div>
+      <p class="mt-3 max-w-3xl text-base leading-relaxed text-white/85">
+        Operação de rede não vive sozinha: precisa receber pagamento, emitir nota e conversar com o
+        ERP que já existe. O que está em produção hoje, em cliente real:
+      </p>
+      <div class="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+        <?php
+        $integracoes = [
+            ['Pagamento', 'Pix, boleto e cartão via Efí (Gerencianet), Mercado Pago e PayPal. Pagamento com saldo de bônus é nativo.'],
+            ['Nota fiscal', 'NF-e e DANFE emitidos dentro do sistema, com NFS-e para operação de serviço.'],
+            ['ERP', 'Sincronização de produtos, clientes e vendas — há cliente rodando com TOTVS. Outros ERPs entram por API.'],
+            ['Logística', 'Cálculo de frete e rastreio pelos Correios, com centro de distribuição integrado ao estoque.'],
+            ['WhatsApp', 'Contato do consultor e do cliente pelo canal que eles já usam, com rastreio de origem do lead.'],
+            ['Google', 'GA4 e Ads com medição de conversão ponta a ponta — inclusive venda fechada fora do site.'],
+            ['API própria', 'Endpoints REST para o que for específico da operação, sem depender da nossa fila de desenvolvimento.'],
+            ['Multimoeda', 'Guarani, boliviano e real, com documento fiscal por país (CPF/CNPJ, C.I./RUC).'],
+        ];
+        foreach ($integracoes as [$titulo, $texto]): ?>
+          <article class="rounded-2xl border border-white/20 bg-white/5 p-5">
+            <h3 class="font-semibold text-amber-300"><?= htmlspecialchars($titulo, ENT_QUOTES, 'UTF-8') ?></h3>
+            <p class="mt-2 text-sm leading-relaxed text-white/85"><?= htmlspecialchars($texto, ENT_QUOTES, 'UTF-8') ?></p>
+          </article>
+        <?php endforeach; ?>
+      </div>
     </section>
 
     <section class="border-t border-white/15 py-10">
