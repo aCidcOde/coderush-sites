@@ -217,24 +217,24 @@
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/08/06/comissao-cargo-vs-plano-pontos-venda-direta/"><picture><source srcset="../../../../imagens/posts/comissao-cargo-vs-plano-pontos-venda-direta.webp" type="image/webp" /><img src="../../../../imagens/posts/comissao-cargo-vs-plano-pontos-venda-direta.jpg" alt="Comissão por cargo vs plano de pontos em venda direta" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture></a>
+  <a href="../../../../2026/08/06/comissao-cargo-vs-plano-pontos-venda-direta/"><img src="../../../../imagens/posts/comissao-cargo-vs-plano-pontos-venda-direta.jpg" alt="Comissão por cargo vs plano de pontos em venda direta" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/08/06/comissao-cargo-vs-plano-pontos-venda-direta/" class="hover:underline">Comissão por cargo vs plano de pontos em venda direta</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda as diferenças e como a integração ERP pode otimizar sua operação.</p>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Comissão por cargo vs plano de pontos em venda direta Comissão por cargo vs plano de pontos em venda direta Entenda as diferenças e como a integração ERP pod...</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/09/05/diferencas-venda-direta-marketing-multinivel/"><picture><source srcset="../../../../imagens/posts/diferencas-venda-direta-marketing-multinivel.webp" type="image/webp" /><img src="../../../../imagens/posts/diferencas-venda-direta-marketing-multinivel.jpg" alt="Diferenças entre Venda Direta e Marketing Multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture></a>
+  <a href="../../../../2026/09/05/diferencas-venda-direta-marketing-multinivel/"><img src="../../../../imagens/posts/diferencas-venda-direta-marketing-multinivel.jpg" alt="Diferenças entre Venda Direta e Marketing Multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/09/05/diferencas-venda-direta-marketing-multinivel/" class="hover:underline">Diferenças entre Venda Direta e Marketing Multinível</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda as principais distinções entre venda direta e marketing multinível para otimizar suas estratégias comerciais.</p>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Diferenças entre Venda Direta e Marketing Multinível Diferenças entre Venda Direta e Marketing Multinível Entenda as principais distinções entre venda direta...</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/08/02/levar-operacao-venda-direta-para-outro-pais/"><picture><source srcset="../../../../imagens/posts/levar-operacao-venda-direta-para-outro-pais.webp" type="image/webp" /><img src="../../../../imagens/posts/levar-operacao-venda-direta-para-outro-pais.jpg" alt="Levar a venda direta para outro país: o que muda no sistema" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture></a>
+  <a href="../../../../2026/08/02/levar-operacao-venda-direta-para-outro-pais/"><img src="../../../../imagens/posts/levar-operacao-venda-direta-para-outro-pais.jpg" alt="Levar a venda direta para outro país: o que muda no sistema" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/08/02/levar-operacao-venda-direta-para-outro-pais/" class="hover:underline">Levar a venda direta para outro país: o que muda no sistema</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Traduzir a loja é a parte fácil. O que trava uma operação de venda direta fora do Brasil é moeda, documento fiscal, endereço e plano de comissões — e cada um...</p>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Levar a venda direta para outro país: o que muda no sistema Levar a venda direta para outro país: o que muda no sistema Traduzir a loja é a parte fácil. O qu...</p>
   </div>
 </article>
   </div>

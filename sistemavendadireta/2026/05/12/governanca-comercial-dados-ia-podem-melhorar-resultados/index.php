@@ -210,24 +210,24 @@
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/06/21/ia-pode-fortalecer-governanca-comercial-mmn/"><picture><source srcset="../../../../imagens/posts/ia-pode-fortalecer-governanca-comercial-mmn.webp" type="image/webp" /><img src="../../../../imagens/posts/ia-pode-fortalecer-governanca-comercial-mmn.jpg" alt="Como a IA pode fortalecer a governança comercial no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture></a>
+  <a href="../../../../2026/06/21/ia-pode-fortalecer-governanca-comercial-mmn/"><img src="../../../../imagens/posts/ia-pode-fortalecer-governanca-comercial-mmn.jpg" alt="Como a IA pode fortalecer a governança comercial no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/21/ia-pode-fortalecer-governanca-comercial-mmn/" class="hover:underline">Como a IA pode fortalecer a governança comercial no MMN</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como dados e inteligência artificial podem otimizar a governança em vendas diretas e marketing multinível.</p>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Como a IA pode fortalecer a governança comercial no MMN Como a IA pode fortalecer a governança comercial no MMN Entenda como dados e inteligência artificial...</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/08/12/governanca-comercial-dados-ia-marketing-multinivel/"><picture><source srcset="../../../../imagens/posts/governanca-comercial-dados-ia-marketing-multinivel.webp" type="image/webp" /><img src="../../../../imagens/posts/governanca-comercial-dados-ia-marketing-multinivel.jpg" alt="Governança Comercial com Dados e IA no Marketing Multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture></a>
+  <a href="../../../../2026/08/12/governanca-comercial-dados-ia-marketing-multinivel/"><img src="../../../../imagens/posts/governanca-comercial-dados-ia-marketing-multinivel.jpg" alt="Governança Comercial com Dados e IA no Marketing Multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/08/12/governanca-comercial-dados-ia-marketing-multinivel/" class="hover:underline">Governança Comercial com Dados e IA no Marketing Multinível</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a governança comercial pode ser otimizada com dados e IA para resultados mais consistentes.</p>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Governança Comercial com Dados e IA no Marketing Multinível Governança Comercial com Dados e IA no Marketing Multinível Entenda como a governança comercial p...</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/06/18/crm-ia-pode-potencializar-mmn/"><picture><source srcset="../../../../imagens/posts/crm-ia-pode-potencializar-mmn.webp" type="image/webp" /><img src="../../../../imagens/posts/crm-ia-pode-potencializar-mmn.jpg" alt="Como o CRM com IA pode potencializar seu MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture></a>
+  <a href="../../../../2026/06/18/crm-ia-pode-potencializar-mmn/"><img src="../../../../imagens/posts/crm-ia-pode-potencializar-mmn.jpg" alt="Como o CRM com IA pode potencializar seu MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/18/crm-ia-pode-potencializar-mmn/" class="hover:underline">Como o CRM com IA pode potencializar seu MMN</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como um CRM com inteligência artificial apoia distribuidores em campo no marketing multinível.</p>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Como o CRM com IA pode potencializar seu MMN Como o CRM com IA pode potencializar seu MMN Descubra como um CRM com inteligência artificial apoia distribuidor...</p>
   </div>
 </article>
   </div>
@@ -258,11 +258,11 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://bfrintelligence.com.br/2026/09/05/integrando-agentes-ia-resultados-mensuraveis/" rel="noopener" target="_blank"><img src="https://bfrintelligence.com.br/imagens/posts/integrando-agentes-ia-resultados-mensuraveis.jpg" alt="Integrando Agentes de IA para Resultados Mensuráveis" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://bfrintelligence.com.br/2026/09/22/orquestracao-multiplos-agentes-ia-governanca/" rel="noopener" target="_blank"><img src="https://bfrintelligence.com.br/imagens/posts/orquestracao-multiplos-agentes-ia-governanca.jpg" alt="Orquestração de Múltiplos Agentes de IA na Governança" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">BFR Intelligence</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://bfrintelligence.com.br/2026/09/05/integrando-agentes-ia-resultados-mensuraveis/" rel="noopener" target="_blank" class="hover:underline">Integrando Agentes de IA para Resultados Mensuráveis</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como agentes de IA podem ser integrados com sistemas internos para operações eficientes e mensuração de resultados.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://bfrintelligence.com.br/2026/09/22/orquestracao-multiplos-agentes-ia-governanca/" rel="noopener" target="_blank" class="hover:underline">Orquestração de Múltiplos Agentes de IA na Governança</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Orquestração de Múltiplos Agentes de IA na Governança Entenda como orquestrar agentes de IA para operações seguras e eficientes.</p>
   </div>
 </article>
   </div>

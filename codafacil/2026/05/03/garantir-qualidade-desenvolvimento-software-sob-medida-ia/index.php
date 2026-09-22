@@ -242,7 +242,7 @@
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Sistema Venda Direta</p>
     <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/08/18/garantir-previsibilidade-receita-mmn/" rel="noopener" target="_blank" class="hover:underline">Como garantir previsibilidade de receita em MMN</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a tecnologia pode ajudar na previsibilidade de receita em marketing multinível.</p>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Como garantir previsibilidade de receita em MMN Como garantir previsibilidade de receita em MMN Entenda como a tecnologia pode ajudar na...</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">

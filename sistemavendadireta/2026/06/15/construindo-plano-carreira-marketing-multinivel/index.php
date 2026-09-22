@@ -210,24 +210,24 @@
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/08/18/garantir-previsibilidade-receita-mmn/"><picture><source srcset="../../../../imagens/posts/garantir-previsibilidade-receita-mmn.webp" type="image/webp" /><img src="../../../../imagens/posts/garantir-previsibilidade-receita-mmn.jpg" alt="Como garantir previsibilidade de receita em MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture></a>
+  <a href="../../../../2026/08/18/garantir-previsibilidade-receita-mmn/"><img src="../../../../imagens/posts/garantir-previsibilidade-receita-mmn.jpg" alt="Como garantir previsibilidade de receita em MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/08/18/garantir-previsibilidade-receita-mmn/" class="hover:underline">Como garantir previsibilidade de receita em MMN</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a tecnologia pode ajudar na previsibilidade de receita em marketing multinível.</p>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Como garantir previsibilidade de receita em MMN Como garantir previsibilidade de receita em MMN Entenda como a tecnologia pode ajudar na previsibilidade de r...</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/07/15/crm-pode-potencializar-plano-carreira-mmn/"><picture><source srcset="../../../../imagens/posts/crm-pode-potencializar-plano-carreira-mmn.webp" type="image/webp" /><img src="../../../../imagens/posts/crm-pode-potencializar-plano-carreira-mmn.jpg" alt="Como um CRM pode potencializar seu plano de carreira em MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture></a>
+  <a href="../../../../2026/07/15/crm-pode-potencializar-plano-carreira-mmn/"><img src="../../../../imagens/posts/crm-pode-potencializar-plano-carreira-mmn.jpg" alt="Como um CRM pode potencializar seu plano de carreira em MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/07/15/crm-pode-potencializar-plano-carreira-mmn/" class="hover:underline">Como um CRM pode potencializar seu plano de carreira em MMN</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como um CRM eficaz pode impulsionar seu desenvolvimento e resultados no marketing multinível.</p>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Como um CRM pode potencializar seu plano de carreira em MMN Como um CRM pode potencializar seu plano de carreira em MMN Descubra como um CRM eficaz pode impu...</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/06/30/garantir-previsibilidade-receita-marketing-multinivel/"><picture><source srcset="../../../../imagens/posts/garantir-previsibilidade-receita-marketing-multinivel.webp" type="image/webp" /><img src="../../../../imagens/posts/garantir-previsibilidade-receita-marketing-multinivel.jpg" alt="Como garantir previsibilidade de receita no marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture></a>
+  <a href="../../../../2026/06/30/garantir-previsibilidade-receita-marketing-multinivel/"><img src="../../../../imagens/posts/garantir-previsibilidade-receita-marketing-multinivel.jpg" alt="Como garantir previsibilidade de receita no marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/30/garantir-previsibilidade-receita-marketing-multinivel/" class="hover:underline">Como garantir previsibilidade de receita no marketing multinível</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como um CRM eficiente pode ajudar a prever receitas em MMN.</p>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Como garantir previsibilidade de receita no marketing multinível Como garantir previsibilidade de receita no marketing multinível Entenda como um CRM eficien...</p>
   </div>
 </article>
   </div>

@@ -210,24 +210,24 @@
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/07/21/gestao-comissionamento-impacta-inadimplencia-mmn/"><picture><source srcset="../../../../imagens/posts/gestao-comissionamento-impacta-inadimplencia-mmn.webp" type="image/webp" /><img src="../../../../imagens/posts/gestao-comissionamento-impacta-inadimplencia-mmn.jpg" alt="Como a gestão de comissionamento impacta a inadimplência no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture></a>
+  <a href="../../../../2026/07/21/gestao-comissionamento-impacta-inadimplencia-mmn/"><img src="../../../../imagens/posts/gestao-comissionamento-impacta-inadimplencia-mmn.jpg" alt="Como a gestão de comissionamento impacta a inadimplência no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/07/21/gestao-comissionamento-impacta-inadimplencia-mmn/" class="hover:underline">Como a gestão de comissionamento impacta a inadimplência no MMN</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda a relação entre comissionamento e inadimplência em vendas diretas.</p>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Como a gestão de comissionamento impacta a inadimplência no MMN Como a gestão de comissionamento impacta a inadimplência no MMN Entenda a relação entre comis...</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/08/24/comissionamento-emissao-nf-venda-direta/"><picture><source srcset="../../../../imagens/posts/comissionamento-emissao-nf-venda-direta.webp" type="image/webp" /><img src="../../../../imagens/posts/comissionamento-emissao-nf-venda-direta.jpg" alt="Comissionamento e Emissão de NF-e em Venda Direta" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture></a>
+  <a href="../../../../2026/08/24/comissionamento-emissao-nf-venda-direta/"><img src="../../../../imagens/posts/comissionamento-emissao-nf-venda-direta.jpg" alt="Comissionamento e Emissão de NF-e em Venda Direta" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/08/24/comissionamento-emissao-nf-venda-direta/" class="hover:underline">Comissionamento e Emissão de NF-e em Venda Direta</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a integração fiscal impacta comissionamento em vendas diretas.</p>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Comissionamento e Emissão de NF-e em Venda Direta Comissionamento e Emissão de NF-e em Venda Direta Entenda como a integração fiscal impacta comissionamento...</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/06/27/crm-automacao-impulsionam-marketing-multinivel/"><picture><source srcset="../../../../imagens/posts/crm-automacao-impulsionam-marketing-multinivel.webp" type="image/webp" /><img src="../../../../imagens/posts/crm-automacao-impulsionam-marketing-multinivel.jpg" alt="Como CRM e automação impulsionam o marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture></a>
+  <a href="../../../../2026/06/27/crm-automacao-impulsionam-marketing-multinivel/"><img src="../../../../imagens/posts/crm-automacao-impulsionam-marketing-multinivel.jpg" alt="Como CRM e automação impulsionam o marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/27/crm-automacao-impulsionam-marketing-multinivel/" class="hover:underline">Como CRM e automação impulsionam o marketing multinível</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como utilizar CRM e automação para otimizar vendas diretas e resultados no marketing multinível.</p>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Como CRM e automação impulsionam o marketing multinível Como CRM e automação impulsionam o marketing multinível Entenda como utilizar CRM e automação para ot...</p>
   </div>
 </article>
   </div>

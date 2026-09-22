@@ -210,24 +210,24 @@
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/08/24/comissionamento-emissao-nf-venda-direta/"><picture><source srcset="../../../../imagens/posts/comissionamento-emissao-nf-venda-direta.webp" type="image/webp" /><img src="../../../../imagens/posts/comissionamento-emissao-nf-venda-direta.jpg" alt="Comissionamento e Emissão de NF-e em Venda Direta" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture></a>
+  <a href="../../../../2026/09/22/diferenca-venda-direta-marketing-multinivel/"><img src="../../../../imagens/posts/diferenca-venda-direta-marketing-multinivel.jpg" alt="Diferença entre Venda Direta e Marketing Multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/09/22/diferenca-venda-direta-marketing-multinivel/" class="hover:underline">Diferença entre Venda Direta e Marketing Multinível</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Diferença entre Venda Direta e Marketing Multinível Entenda as distinções entre venda direta e marketing multinível com foco em resultados comerciais.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/08/24/comissionamento-emissao-nf-venda-direta/"><img src="../../../../imagens/posts/comissionamento-emissao-nf-venda-direta.jpg" alt="Comissionamento e Emissão de NF-e em Venda Direta" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/08/24/comissionamento-emissao-nf-venda-direta/" class="hover:underline">Comissionamento e Emissão de NF-e em Venda Direta</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a integração fiscal impacta comissionamento em vendas diretas.</p>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Comissionamento e Emissão de NF-e em Venda Direta Comissionamento e Emissão de NF-e em Venda Direta Entenda como a integração fiscal impacta comissionamento...</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/08/06/comissao-cargo-vs-plano-pontos-venda-direta/"><picture><source srcset="../../../../imagens/posts/comissao-cargo-vs-plano-pontos-venda-direta.webp" type="image/webp" /><img src="../../../../imagens/posts/comissao-cargo-vs-plano-pontos-venda-direta.jpg" alt="Comissão por cargo vs plano de pontos em venda direta" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture></a>
+  <a href="../../../../2026/08/06/comissao-cargo-vs-plano-pontos-venda-direta/"><img src="../../../../imagens/posts/comissao-cargo-vs-plano-pontos-venda-direta.jpg" alt="Comissão por cargo vs plano de pontos em venda direta" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/08/06/comissao-cargo-vs-plano-pontos-venda-direta/" class="hover:underline">Comissão por cargo vs plano de pontos em venda direta</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda as diferenças e como a integração ERP pode otimizar sua operação.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/06/09/comissionamento-gerenciar-inadimplencia-eficazmente/"><picture><source srcset="../../../../imagens/posts/comissionamento-gerenciar-inadimplencia-eficazmente.webp" type="image/webp" /><img src="../../../../imagens/posts/comissionamento-gerenciar-inadimplencia-eficazmente.jpg" alt="Comissionamento: Como Gerenciar a Inadimplência Eficazmente" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture></a>
-  <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/09/comissionamento-gerenciar-inadimplencia-eficazmente/" class="hover:underline">Comissionamento: Como Gerenciar a Inadimplência Eficazmente</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como o comissionamento impacta a gestão de inadimplência em vendas diretas e marketing multinível.</p>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Comissão por cargo vs plano de pontos em venda direta Comissão por cargo vs plano de pontos em venda direta Entenda as diferenças e como a integração ERP pod...</p>
   </div>
 </article>
   </div>
@@ -250,11 +250,11 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://bfrintelligence.com.br/2026/09/05/integrando-agentes-ia-resultados-mensuraveis/" rel="noopener" target="_blank"><img src="https://bfrintelligence.com.br/imagens/posts/integrando-agentes-ia-resultados-mensuraveis.jpg" alt="Integrando Agentes de IA para Resultados Mensuráveis" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://bfrintelligence.com.br/2026/09/22/orquestracao-multiplos-agentes-ia-governanca/" rel="noopener" target="_blank"><img src="https://bfrintelligence.com.br/imagens/posts/orquestracao-multiplos-agentes-ia-governanca.jpg" alt="Orquestração de Múltiplos Agentes de IA na Governança" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">BFR Intelligence</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://bfrintelligence.com.br/2026/09/05/integrando-agentes-ia-resultados-mensuraveis/" rel="noopener" target="_blank" class="hover:underline">Integrando Agentes de IA para Resultados Mensuráveis</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como agentes de IA podem ser integrados com sistemas internos para operações eficientes e mensuração de resultados.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://bfrintelligence.com.br/2026/09/22/orquestracao-multiplos-agentes-ia-governanca/" rel="noopener" target="_blank" class="hover:underline">Orquestração de Múltiplos Agentes de IA na Governança</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Orquestração de Múltiplos Agentes de IA na Governança Entenda como orquestrar agentes de IA para operações seguras e eficientes.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">

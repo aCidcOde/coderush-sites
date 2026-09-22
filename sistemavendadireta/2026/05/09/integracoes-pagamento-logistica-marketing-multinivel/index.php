@@ -210,24 +210,24 @@
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/07/30/integracoes-pagamento-logistica-marketing-multinivel/"><picture><source srcset="../../../../imagens/posts/integracoes-pagamento-logistica-marketing-multinivel.webp" type="image/webp" /><img src="../../../../imagens/posts/integracoes-pagamento-logistica-marketing-multinivel.jpg" alt="Integrações de pagamento e logística no marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture></a>
+  <a href="../../../../2026/07/30/integracoes-pagamento-logistica-marketing-multinivel/"><img src="../../../../imagens/posts/integracoes-pagamento-logistica-marketing-multinivel.jpg" alt="Integrações de pagamento e logística no marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/07/30/integracoes-pagamento-logistica-marketing-multinivel/" class="hover:underline">Integrações de pagamento e logística no marketing multinível</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como integrar pagamentos e logística para otimizar seu CRM no MMN.</p>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Integrações de pagamento e logística no marketing multinível Integrações de pagamento e logística no marketing multinível Entenda como integrar pagamentos e...</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/05/27/integrando-pagamentos-logistica-marketing-multinivel/"><picture><source srcset="../../../../imagens/posts/integrando-pagamentos-logistica-marketing-multinivel.webp" type="image/webp" /><img src="../../../../imagens/posts/integrando-pagamentos-logistica-marketing-multinivel.jpg" alt="Integrando Pagamentos e Logística no Marketing Multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture></a>
+  <a href="../../../../2026/05/27/integrando-pagamentos-logistica-marketing-multinivel/"><img src="../../../../imagens/posts/integrando-pagamentos-logistica-marketing-multinivel.jpg" alt="Integrando Pagamentos e Logística no Marketing Multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/27/integrando-pagamentos-logistica-marketing-multinivel/" class="hover:underline">Integrando Pagamentos e Logística no Marketing Multinível</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como as integrações de pagamento e logística impactam as vendas diretas.</p>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Integrando Pagamentos e Logística no Marketing Multinível Integrando Pagamentos e Logística no Marketing Multinível Entenda como as integrações de pagamento...</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/05/02/integrar-pagamentos-logistica-marketing-multinivel/"><picture><source srcset="../../../../imagens/posts/integrar-pagamentos-logistica-marketing-multinivel.webp" type="image/webp" /><img src="../../../../imagens/posts/integrar-pagamentos-logistica-marketing-multinivel.jpg" alt="Como integrar pagamentos e logística em marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture></a>
+  <a href="../../../../2026/05/02/integrar-pagamentos-logistica-marketing-multinivel/"><img src="../../../../imagens/posts/integrar-pagamentos-logistica-marketing-multinivel.jpg" alt="Como integrar pagamentos e logística em marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/02/integrar-pagamentos-logistica-marketing-multinivel/" class="hover:underline">Como integrar pagamentos e logística em marketing multinível</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como otimizar suas operações de MMN com CRM e integrações eficazes.</p>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Como integrar pagamentos e logística em marketing multinível Como integrar pagamentos e logística em marketing multinível Descubra como otimizar suas operaçõ...</p>
   </div>
 </article>
   </div>
@@ -250,11 +250,11 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://bfrintelligence.com.br/2026/08/09/implementar-agentes-ia-operacao-empresarial/" rel="noopener" target="_blank"><img src="https://bfrintelligence.com.br/imagens/posts/implementar-agentes-ia-operacao-empresarial.jpg" alt="Como implementar agentes de IA na operação empresarial" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://bfrintelligence.com.br/2026/09/22/orquestracao-multiplos-agentes-ia-governanca/" rel="noopener" target="_blank"><img src="https://bfrintelligence.com.br/imagens/posts/orquestracao-multiplos-agentes-ia-governanca.jpg" alt="Orquestração de Múltiplos Agentes de IA na Governança" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">BFR Intelligence</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://bfrintelligence.com.br/2026/08/09/implementar-agentes-ia-operacao-empresarial/" rel="noopener" target="_blank" class="hover:underline">Como implementar agentes de IA na operação empresarial</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como integrar e operar agentes de IA com resultados mensuráveis em sua empresa.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://bfrintelligence.com.br/2026/09/22/orquestracao-multiplos-agentes-ia-governanca/" rel="noopener" target="_blank" class="hover:underline">Orquestração de Múltiplos Agentes de IA na Governança</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Orquestração de Múltiplos Agentes de IA na Governança Entenda como orquestrar agentes de IA para operações seguras e eficientes.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">

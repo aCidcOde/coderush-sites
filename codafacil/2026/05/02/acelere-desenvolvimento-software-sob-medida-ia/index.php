@@ -250,7 +250,7 @@
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Sistema Venda Direta</p>
     <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/05/12/governanca-comercial-dados-ia-podem-melhorar-resultados/" rel="noopener" target="_blank" class="hover:underline">Governança Comercial: Como Dados e IA Podem Melhorar Resultados</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a governança comercial, aliada à IA, pode otimizar processos e resultados em vendas diretas.</p>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Governança Comercial: Como Dados e IA Podem Melhorar Resultados Governança Comercial: Como Dados e IA Podem Melhorar Resultados Entenda c...</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">

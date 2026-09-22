@@ -1,0 +1,88 @@
+{
+  "date": "2026-09-22",
+  "siteId": "emergency",
+  "postType": "due-diligence-certidoes",
+  "focus": "ia",
+  "theme": "riscos ocultos em aquisicao de imovel",
+  "angle": "M&A",
+  "slug": "identificando-riscos-ocultos-aquisicoes-imobiliarias",
+  "title": "Emergency Documentação: IA aplicado a M&A",
+  "description": "Atualização semanal de ia para Emergency Documentação, com foco em riscos ocultos em aquisicao de imovel.",
+  "sources": [
+    "https://detetiveparticular.net/2026/09/04/due-diligence-ma-avaliacao-de-riscos-ocultos/",
+    "https://uplexis.com.br/blog/artigos/riscos-ocultos-em-mea-como-detectar/",
+    "https://blog.zooxsmart.com/pt-br/due-diligence-em-ma-como-mitigar-riscos-em-fusões-e-aquisições",
+    "https://helpinghand.com.br/blog/due-diligence-em-fusoes-e-aquisicoes-como-identificar-riscos-ocultos-antes-do-fechamento/",
+    "https://helpinghand.com.br/blog/due-diligence-imobiliaria-15-verificacoes-essenciais-para-mitigar-riscos-em-ma-e-valuation/"
+  ],
+  "status": "draft",
+  "generatedAt": "2026-09-22T11:16:12-03:00",
+  "content": {
+    "eyebrow": "Guia prático",
+    "headline": "Identificando riscos ocultos em aquisições imobiliárias",
+    "summary": "Saiba como realizar uma due diligence eficaz para evitar surpresas na compra de imóveis.",
+    "answerBox": {
+      "question": "Quais são os riscos ocultos ao adquirir um imóvel?",
+      "answer": "Os riscos ocultos em aquisições imobiliárias incluem problemas de titularidade, dívidas, pendências judiciais e questões ambientais. Uma due diligence completa é essencial para descobrir essas ameaças e garantir uma compra segura e sem surpresas."
+    },
+    "tldr": [
+      "Riscos ocultos podem impactar aquisições imobiliárias.",
+      "Uma due diligence completa é fundamental.",
+      "Certidões online ajudam a mitigar riscos."
+    ],
+    "sections": [
+      {
+        "type": "prose",
+        "title": "Entenda os riscos ocultos na compra de imóveis",
+        "body": "A aquisição de imóveis envolve diversos riscos ocultos que podem comprometer o sucesso do negócio. Problemas como dívidas não quitadas, disputas judiciais ou até mesmo questões ambientais podem surgir após a compra. Por isso, é essencial realizar uma due diligence minuciosa, que inclua a verificação de certidões e documentos relevantes. A Emergency Documentação está aqui para ajudar nesse processo."
+      },
+      {
+        "type": "list",
+        "title": "Principais riscos a verificar na due diligence imobiliária",
+        "items": [
+          "Dívidas e ônus sobre o imóvel",
+          "Ações judiciais em andamento",
+          "Irregularidades na documentação",
+          "Questões ambientais pendentes",
+          "Problemas de titularidade"
+        ]
+      },
+      {
+        "type": "callout",
+        "body": "Já estruturamos isso em diversos clientes. Vale a pena conversar sobre como podemos ajudar a evitar surpresas na sua aquisição.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "A importância das certidões online na due diligence",
+        "body": "As certidões online são ferramentas valiosas na due diligence imobiliária, pois permitem acesso rápido e seguro a informações essenciais sobre o imóvel. Elas podem revelar pendências e problemas que poderiam passar despercebidos em uma análise superficial. Com a experiência da Emergency Documentação, você pode ter certeza de que está recebendo informações precisas e atualizadas, fundamentais para decisões informadas."
+      },
+      {
+        "type": "cta-inline",
+        "body": "Considere uma abordagem estratégica para sua due diligence.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Cuidado com as armadilhas na aquisição imobiliária",
+        "body": "Evitar riscos na compra de imóveis requer atenção a detalhes. Por exemplo, confiar apenas em informações verbais ou não verificar as certidões pode levar a problemas sérios. Uma abordagem proativa, utilizando serviços especializados, como os da Emergency Documentação, pode fazer toda a diferença para garantir uma compra segura e tranquila."
+      }
+    ],
+    "faq": [
+      {
+        "q": "O que é due diligence imobiliária?",
+        "a": "Due diligence imobiliária é o processo de investigação e análise de informações sobre um imóvel antes da compra, visando identificar riscos e problemas ocultos."
+      },
+      {
+        "q": "Quais certidões são obrigatórias na compra de imóvel?",
+        "a": "As certidões obrigatórias podem incluir certidão de ônus, certidão negativa de débitos e certidão de ações judiciais, entre outras."
+      },
+      {
+        "q": "Como realizar uma due diligence eficaz?",
+        "a": "Uma due diligence eficaz envolve a coleta de documentos, verificação de certidões e análise minuciosa da situação legal do imóvel."
+      }
+    ]
+  }
+}

@@ -210,24 +210,24 @@
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/07/30/integracoes-pagamento-logistica-marketing-multinivel/"><picture><source srcset="../../../../imagens/posts/integracoes-pagamento-logistica-marketing-multinivel.webp" type="image/webp" /><img src="../../../../imagens/posts/integracoes-pagamento-logistica-marketing-multinivel.jpg" alt="Integrações de pagamento e logística no marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture></a>
+  <a href="../../../../2026/07/30/integracoes-pagamento-logistica-marketing-multinivel/"><img src="../../../../imagens/posts/integracoes-pagamento-logistica-marketing-multinivel.jpg" alt="Integrações de pagamento e logística no marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/07/30/integracoes-pagamento-logistica-marketing-multinivel/" class="hover:underline">Integrações de pagamento e logística no marketing multinível</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como integrar pagamentos e logística para otimizar seu CRM no MMN.</p>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Integrações de pagamento e logística no marketing multinível Integrações de pagamento e logística no marketing multinível Entenda como integrar pagamentos e...</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/06/27/crm-automacao-impulsionam-marketing-multinivel/"><picture><source srcset="../../../../imagens/posts/crm-automacao-impulsionam-marketing-multinivel.webp" type="image/webp" /><img src="../../../../imagens/posts/crm-automacao-impulsionam-marketing-multinivel.jpg" alt="Como CRM e automação impulsionam o marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture></a>
+  <a href="../../../../2026/06/27/crm-automacao-impulsionam-marketing-multinivel/"><img src="../../../../imagens/posts/crm-automacao-impulsionam-marketing-multinivel.jpg" alt="Como CRM e automação impulsionam o marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/27/crm-automacao-impulsionam-marketing-multinivel/" class="hover:underline">Como CRM e automação impulsionam o marketing multinível</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como utilizar CRM e automação para otimizar vendas diretas e resultados no marketing multinível.</p>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Como CRM e automação impulsionam o marketing multinível Como CRM e automação impulsionam o marketing multinível Entenda como utilizar CRM e automação para ot...</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/06/12/expandir-internacionalmente-marketing-multinivel/"><picture><source srcset="../../../../imagens/posts/expandir-internacionalmente-marketing-multinivel.webp" type="image/webp" /><img src="../../../../imagens/posts/expandir-internacionalmente-marketing-multinivel.jpg" alt="Como Expandir Internacionalmente no Marketing Multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture></a>
+  <a href="../../../../2026/06/12/expandir-internacionalmente-marketing-multinivel/"><img src="../../../../imagens/posts/expandir-internacionalmente-marketing-multinivel.jpg" alt="Como Expandir Internacionalmente no Marketing Multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/12/expandir-internacionalmente-marketing-multinivel/" class="hover:underline">Como Expandir Internacionalmente no Marketing Multinível</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como a tecnologia pode impulsionar sua expansão internacional em vendas diretas.</p>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Como Expandir Internacionalmente no Marketing Multinível Como Expandir Internacionalmente no Marketing Multinível Descubra como a tecnologia pode impulsionar...</p>
   </div>
 </article>
   </div>

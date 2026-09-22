@@ -250,7 +250,7 @@
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Sistema Venda Direta</p>
     <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/06/24/integracoes-pagamento-logistica-impactam-mmn/" rel="noopener" target="_blank" class="hover:underline">Como as integrações de pagamento e logística impactam o MMN</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda a importância das integrações para otimizar operações no marketing multinível.</p>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Como as integrações de pagamento e logística impactam o MMN Como as integrações de pagamento e logística impactam o MMN Entenda a importâ...</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">

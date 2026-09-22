@@ -241,7 +241,7 @@
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Sistema Venda Direta</p>
     <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/07/18/ia-pode-otimizar-suporte-distribuidor-mmn/" rel="noopener" target="_blank" class="hover:underline">Como a IA pode otimizar o suporte ao distribuidor no MMN</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a inteligência artificial melhora o suporte ao distribuidor em vendas diretas.</p>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Como a IA pode otimizar o suporte ao distribuidor no MMN Como a IA pode otimizar o suporte ao distribuidor no MMN Entenda como a inteligê...</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">

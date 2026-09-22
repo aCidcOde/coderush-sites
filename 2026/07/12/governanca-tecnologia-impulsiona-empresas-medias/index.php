@@ -245,7 +245,7 @@
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Sistema Venda Direta</p>
     <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/05/21/tecnologia-vendas-diretas-escala-mmn-ia/" rel="noopener" target="_blank" class="hover:underline">Tecnologia para Vendas Diretas em Escala: MMN e IA</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a tecnologia e a IA podem otimizar processos em marketing multinível.</p>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Tecnologia para Vendas Diretas em Escala: MMN e IA Tecnologia para Vendas Diretas em Escala: MMN e IA Entenda como a tecnologia e a IA po...</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">

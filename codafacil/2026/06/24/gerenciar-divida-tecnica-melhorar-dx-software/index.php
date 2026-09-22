@@ -250,7 +250,7 @@
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Sistema Venda Direta</p>
     <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/08/09/evitar-fraudes-commerce-alto-volume/" rel="noopener" target="_blank" class="hover:underline">Como evitar fraudes em e-commerce de alto volume</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como o controle de clientes e a prevenção de fraudes podem impulsionar seu e-commerce.</p>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Como evitar fraudes em e-commerce de alto volume Como evitar fraudes em e-commerce de alto volume Entenda como o controle de clientes e a...</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">

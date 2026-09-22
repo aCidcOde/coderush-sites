@@ -251,24 +251,24 @@
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/08/24/comissionamento-emissao-nf-venda-direta/"><picture><source srcset="../../../../imagens/posts/comissionamento-emissao-nf-venda-direta.webp" type="image/webp" /><img src="../../../../imagens/posts/comissionamento-emissao-nf-venda-direta.jpg" alt="Comissionamento e Emissão de NF-e em Venda Direta" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture></a>
+  <a href="../../../../2026/08/24/comissionamento-emissao-nf-venda-direta/"><img src="../../../../imagens/posts/comissionamento-emissao-nf-venda-direta.jpg" alt="Comissionamento e Emissão de NF-e em Venda Direta" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/08/24/comissionamento-emissao-nf-venda-direta/" class="hover:underline">Comissionamento e Emissão de NF-e em Venda Direta</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a integração fiscal impacta comissionamento em vendas diretas.</p>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Comissionamento e Emissão de NF-e em Venda Direta Comissionamento e Emissão de NF-e em Venda Direta Entenda como a integração fiscal impacta comissionamento...</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/08/15/integrar-sistema-venda-direta-erp/"><picture><source srcset="../../../../imagens/posts/integrar-sistema-venda-direta-erp.webp" type="image/webp" /><img src="../../../../imagens/posts/integrar-sistema-venda-direta-erp.jpg" alt="Como integrar seu sistema de venda direta com ERP" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture></a>
+  <a href="../../../../2026/08/15/integrar-sistema-venda-direta-erp/"><img src="../../../../imagens/posts/integrar-sistema-venda-direta-erp.jpg" alt="Como integrar seu sistema de venda direta com ERP" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/08/15/integrar-sistema-venda-direta-erp/" class="hover:underline">Como integrar seu sistema de venda direta com ERP</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a integração de sistemas pode otimizar seu MMN.</p>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Como integrar seu sistema de venda direta com ERP Como integrar seu sistema de venda direta com ERP Entenda como a integração de sistemas pode otimizar seu MMN.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/08/06/comissao-cargo-vs-plano-pontos-venda-direta/"><picture><source srcset="../../../../imagens/posts/comissao-cargo-vs-plano-pontos-venda-direta.webp" type="image/webp" /><img src="../../../../imagens/posts/comissao-cargo-vs-plano-pontos-venda-direta.jpg" alt="Comissão por cargo vs plano de pontos em venda direta" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture></a>
+  <a href="../../../../2026/08/06/comissao-cargo-vs-plano-pontos-venda-direta/"><img src="../../../../imagens/posts/comissao-cargo-vs-plano-pontos-venda-direta.jpg" alt="Comissão por cargo vs plano de pontos em venda direta" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/08/06/comissao-cargo-vs-plano-pontos-venda-direta/" class="hover:underline">Comissão por cargo vs plano de pontos em venda direta</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda as diferenças e como a integração ERP pode otimizar sua operação.</p>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Comissão por cargo vs plano de pontos em venda direta Comissão por cargo vs plano de pontos em venda direta Entenda as diferenças e como a integração ERP pod...</p>
   </div>
 </article>
   </div>

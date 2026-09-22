@@ -210,24 +210,24 @@
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/07/12/estrategias-expansao-internacional-marketing-multinivel/"><picture><source srcset="../../../../imagens/posts/estrategias-expansao-internacional-marketing-multinivel.webp" type="image/webp" /><img src="../../../../imagens/posts/estrategias-expansao-internacional-marketing-multinivel.jpg" alt="Estratégias para expansão internacional no marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture></a>
+  <a href="../../../../2026/07/12/estrategias-expansao-internacional-marketing-multinivel/"><img src="../../../../imagens/posts/estrategias-expansao-internacional-marketing-multinivel.jpg" alt="Estratégias para expansão internacional no marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/07/12/estrategias-expansao-internacional-marketing-multinivel/" class="hover:underline">Estratégias para expansão internacional no marketing multinível</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como otimizar processos de vendas diretas internacionalmente.</p>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Estratégias para expansão internacional no marketing multinível Estratégias para expansão internacional no marketing multinível Descubra como otimizar proces...</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/06/18/crm-ia-pode-potencializar-mmn/"><picture><source srcset="../../../../imagens/posts/crm-ia-pode-potencializar-mmn.webp" type="image/webp" /><img src="../../../../imagens/posts/crm-ia-pode-potencializar-mmn.jpg" alt="Como o CRM com IA pode potencializar seu MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture></a>
+  <a href="../../../../2026/06/18/crm-ia-pode-potencializar-mmn/"><img src="../../../../imagens/posts/crm-ia-pode-potencializar-mmn.jpg" alt="Como o CRM com IA pode potencializar seu MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/18/crm-ia-pode-potencializar-mmn/" class="hover:underline">Como o CRM com IA pode potencializar seu MMN</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como um CRM com inteligência artificial apoia distribuidores em campo no marketing multinível.</p>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Como o CRM com IA pode potencializar seu MMN Como o CRM com IA pode potencializar seu MMN Descubra como um CRM com inteligência artificial apoia distribuidor...</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/05/21/tecnologia-vendas-diretas-escala-mmn-ia/"><picture><source srcset="../../../../imagens/posts/tecnologia-vendas-diretas-escala-mmn-ia.webp" type="image/webp" /><img src="../../../../imagens/posts/tecnologia-vendas-diretas-escala-mmn-ia.jpg" alt="Tecnologia para Vendas Diretas em Escala: MMN e IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture></a>
+  <a href="../../../../2026/05/21/tecnologia-vendas-diretas-escala-mmn-ia/"><img src="../../../../imagens/posts/tecnologia-vendas-diretas-escala-mmn-ia.jpg" alt="Tecnologia para Vendas Diretas em Escala: MMN e IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/21/tecnologia-vendas-diretas-escala-mmn-ia/" class="hover:underline">Tecnologia para Vendas Diretas em Escala: MMN e IA</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a tecnologia e a IA podem otimizar processos em marketing multinível.</p>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Tecnologia para Vendas Diretas em Escala: MMN e IA Tecnologia para Vendas Diretas em Escala: MMN e IA Entenda como a tecnologia e a IA podem otimizar process...</p>
   </div>
 </article>
   </div>

@@ -245,11 +245,11 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://bfrintelligence.com.br/2026/09/05/integrando-agentes-ia-resultados-mensuraveis/" rel="noopener" target="_blank"><img src="https://bfrintelligence.com.br/imagens/posts/integrando-agentes-ia-resultados-mensuraveis.jpg" alt="Integrando Agentes de IA para Resultados Mensuráveis" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://bfrintelligence.com.br/2026/09/22/orquestracao-multiplos-agentes-ia-governanca/" rel="noopener" target="_blank"><img src="https://bfrintelligence.com.br/imagens/posts/orquestracao-multiplos-agentes-ia-governanca.jpg" alt="Orquestração de Múltiplos Agentes de IA na Governança" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">BFR Intelligence</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://bfrintelligence.com.br/2026/09/05/integrando-agentes-ia-resultados-mensuraveis/" rel="noopener" target="_blank" class="hover:underline">Integrando Agentes de IA para Resultados Mensuráveis</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como agentes de IA podem ser integrados com sistemas internos para operações eficientes e mensuração de resultados.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://bfrintelligence.com.br/2026/09/22/orquestracao-multiplos-agentes-ia-governanca/" rel="noopener" target="_blank" class="hover:underline">Orquestração de Múltiplos Agentes de IA na Governança</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Orquestração de Múltiplos Agentes de IA na Governança Entenda como orquestrar agentes de IA para operações seguras e eficientes.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
@@ -257,7 +257,7 @@
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Sistema Venda Direta</p>
     <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/08/15/integrar-sistema-venda-direta-erp/" rel="noopener" target="_blank" class="hover:underline">Como integrar seu sistema de venda direta com ERP</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a integração de sistemas pode otimizar seu MMN.</p>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Como integrar seu sistema de venda direta com ERP Como integrar seu sistema de venda direta com ERP Entenda como a integração de sistemas...</p>
   </div>
 </article>
   </div>
