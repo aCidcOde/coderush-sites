@@ -171,28 +171,40 @@
         "sitemapPath": "sitemap.xml",
         "extraPaths": [
           {
-            "path": "/cases/",
-            "lastmod": "2026-08-02",
-            "changefreq": "monthly",
+            "path": "/sistema-mmn/",
+            "lastmod": "2026-09-20",
+            "changefreq": "weekly",
             "priority": "0.9"
           },
           {
-            "path": "/codafacil/",
-            "lastmod": "2026-02-10",
+            "path": "/sistema-venda-direta/",
+            "lastmod": "2026-09-14",
             "changefreq": "weekly",
+            "priority": "0.9"
+          },
+          {
+            "path": "/simulador/",
+            "lastmod": "2026-09-01",
+            "changefreq": "monthly",
+            "priority": "0.8"
+          },
+          {
+            "path": "/cases/",
+            "lastmod": "2026-09-20",
+            "changefreq": "monthly",
             "priority": "0.9"
           },
           {
             "path": "/inteligencia-artificial/",
             "lastmod": "2026-02-10",
-            "changefreq": "weekly",
-            "priority": "0.9"
+            "changefreq": "monthly",
+            "priority": "0.7"
           },
           {
             "path": "/wordpress/",
             "lastmod": "2026-02-10",
-            "changefreq": "weekly",
-            "priority": "0.9"
+            "changefreq": "monthly",
+            "priority": "0.7"
           }
         ]
       },

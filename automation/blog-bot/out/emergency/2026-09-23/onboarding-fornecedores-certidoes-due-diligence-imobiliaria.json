@@ -1,0 +1,88 @@
+{
+  "date": "2026-09-23",
+  "siteId": "emergency",
+  "postType": "due-diligence-certidoes",
+  "focus": "php",
+  "theme": "habilitacao e onboarding de fornecedor com certidoes",
+  "angle": "due diligence imobiliaria",
+  "slug": "onboarding-fornecedores-certidoes-due-diligence-imobiliaria",
+  "title": "Emergency Documentação: PHP aplicado a due diligence imobiliaria",
+  "description": "Atualização semanal de php para Emergency Documentação, com foco em habilitacao e onboarding de fornecedor com certidoes.",
+  "sources": [
+    "https://emergency.com.br/blog/habilitacao-onboarding-fornecedores-ma",
+    "https://emergency.com.br/blog/habilitacao-fornecedor-due-diligence-imobiliaria-eficaz",
+    "https://www.cadenio.com/pt-br/blog/onboarding-fornecedor-qualificacao-due-diligence-auditavel",
+    "https://ooligo.com/pt-BR/learn/vendor-due-diligence-workflow/",
+    "https://furtadoresende.com.br/due-diligence-imobiliaria-checklist-executivo/"
+  ],
+  "status": "draft",
+  "generatedAt": "2026-09-23T10:22:21-03:00",
+  "content": {
+    "eyebrow": "Guia Prático",
+    "headline": "Onboarding de Fornecedores e Certidões na Due Diligence Imobiliária",
+    "summary": "Entenda como habilitar fornecedores usando certidões online e garantir uma due diligence imobiliária eficaz.",
+    "answerBox": {
+      "question": "Como habilitar fornecedores na due diligence imobiliária?",
+      "answer": "Para habilitar fornecedores na due diligence imobiliária, é essencial coletar certidões online que comprovem a regularidade fiscal e jurídica. Utilize ferramentas que ofereçam suporte integral, evitando retrabalho e garantindo prazos mais curtos."
+    },
+    "tldr": [
+      "Certidões online agilitam a habilitação de fornecedores.",
+      "Due diligence imobiliária requer atenção a detalhes.",
+      "Apoio humano é fundamental em casos complexos."
+    ],
+    "sections": [
+      {
+        "type": "prose",
+        "title": "Importância das Certidões na Due Diligence",
+        "body": "A due diligence imobiliária é um passo crucial para qualquer transação. As certidões online garantem que a documentação do fornecedor esteja em ordem. Isso não só acelera o processo, mas também minimiza os riscos legais e financeiros que podem surgir de uma documentação irregular. Com a experiência da Emergency Documentação, é possível navegar por esse processo com segurança."
+      },
+      {
+        "type": "list",
+        "title": "Checklist para Habilitação de Fornecedores",
+        "items": [
+          "Verifique certidões de regularidade fiscal.",
+          "Solicite certidões de ações judiciais.",
+          "Confirme a situação cadastral da empresa.",
+          "Analise a idoneidade do fornecedor.",
+          "Documente todo o processo para auditoria."
+        ]
+      },
+      {
+        "type": "callout",
+        "body": "Em cenários onde a pressão por prazos é alta, já estruturamos isso em diversos clientes. Vale uma conversa sobre como podemos ajudar.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Como Funciona o Processo de Onboarding",
+        "body": "O onboarding de fornecedores deve ser metódico. Comece pela coleta de documentação necessária e siga para a análise das certidões. O uso de tecnologias que centralizam informações e permitem acompanhamento em tempo real pode facilitar muito essa etapa. Emergency Documentação oferece um painel de acompanhamento que ajuda a visualizá-las de forma clara e eficiente, evitando surpresas no futuro."
+      },
+      {
+        "type": "cta-inline",
+        "body": "Aproveite para alinhar seus processos de habilitação conosco.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Evite Armadilhas Comuns na Due Diligence",
+        "body": "Um erro comum é não validar todas as certidões. Além disso, a falta de acompanhamento e a dependência excessiva de processos automatizados podem deixar lacunas. É essencial ter suporte humano para situações complexas, garantindo que nenhuma etapa seja negligenciada. No final, a due diligence imobiliária bem feita é um investimento na segurança da sua operação."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Quais certidões são obrigatórias na due diligence imobiliária?",
+        "a": "As certidões obrigatórias incluem a de regularidade fiscal, certidões de ações judiciais e a situação cadastral do fornecedor."
+      },
+      {
+        "q": "Como fazer uma due diligence imobiliária de matrícula?",
+        "a": "Para isso, é necessário verificar a matrícula do imóvel, consultar registros públicos e analisar a situação jurídica do bem."
+      },
+      {
+        "q": "O que é habilitação de fornecedor?",
+        "a": "Habilitação de fornecedor é o processo de verificar a idoneidade e regularidade da empresa antes de uma contratação."
+      }
+    ]
+  }
+}

@@ -160,14 +160,14 @@
         </ul>
       </section>
       <aside class="my-8 rounded-2xl border-l-4 border-white bg-white/10 p-5 sm:p-6">
-        <p class="text-sm leading-7 text-white/90 sm:text-base">Já estruturamos isso em diversas operações de MMN. Vale a pena explorar como dados e IA podem simplificar sua governança. <a href="../../../../?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Solicite um orcamento →</a></p>
+        <p class="text-sm leading-7 text-white/90 sm:text-base">Já estruturamos isso em diversas operações de MMN. Vale a pena explorar como dados e IA podem simplificar sua governança. <a href="../../../../sistema-mmn/?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Solicite um orcamento →</a></p>
       </aside>
       <section class="mt-8">
         <h2 class="text-xl font-semibold text-white sm:text-2xl">Como a IA pode ser aplicada na governança</h2>
         <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">A IA pode ser aplicada na governança comercial para melhorar a análise de dados, permitindo identificar tendências e prever comportamentos de compra. Ferramentas de machine learning podem otimizar o comissionamento, automatizando a distribuição de comissões e assegurando maior precisão. Isso não só economiza tempo, mas também reduz erros, aumentando a confiança dos distribuidores no sistema.</p>
       </section>
       <p class="my-6 text-sm leading-7 text-white/85 sm:text-base">
-        Se você quer otimizar sua governança, é hora de considerar uma análise mais profunda. <a href="../../../../?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Solicite um orcamento →</a>
+        Se você quer otimizar sua governança, é hora de considerar uma análise mais profunda. <a href="../../../../sistema-mmn/?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Solicite um orcamento →</a>
       </p>
       <section class="mt-8">
         <h2 class="text-xl font-semibold text-white sm:text-2xl">Cuidado com armadilhas comuns</h2>
@@ -194,9 +194,13 @@
     <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
       <h2 class="text-xl font-semibold text-white">Precisa de um sistema de marketing multinível pronto para operar?</h2>
       <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">O Sistema Venda Direta já roda no Brasil, Paraguai e Bolívia: rede binária e unilevel, escritório do consultor, loja virtual e financeiro integrados, parametrizados para o seu plano.</p>
-      <a href="../../../../?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="mt-4 inline-flex rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/10">
-        Conhecer o sistema
+      <a href="../../../../sistema-mmn/?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="mt-4 inline-flex rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/10">
+        Conhecer o sistema MMN
       </a>
+      <p class="mt-4 text-sm text-white/70">
+        Veja também:
+        <a href="../../../../sistema-mmn/" class="underline decoration-white/40 underline-offset-4 hover:text-white">Sistema MMN por dentro</a> · <a href="../../../../simulador/" class="underline decoration-white/40 underline-offset-4 hover:text-white">Simular o plano de comissões</a> · <a href="../../../../cases/" class="underline decoration-white/40 underline-offset-4 hover:text-white">Operações que já usam</a>
+      </p>
     </section>
 
     <section class="mt-6 flex items-center justify-center">
@@ -294,8 +298,8 @@
         <div>
           <h3 class="text-lg font-semibold text-white">Próximo passo</h3>
           <p class="mt-3 text-sm leading-7 text-white/80">Resposta humana, sem fila generica. Fale com o time comercial do site.</p>
-          <a href="../../../../?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="mt-4 inline-flex rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/10">
-            Conhecer o sistema
+          <a href="../../../../sistema-mmn/?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="mt-4 inline-flex rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/10">
+            Conhecer o sistema MMN
           </a>
         </div>
       </div>

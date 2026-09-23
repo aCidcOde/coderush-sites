@@ -157,14 +157,14 @@
         </ul>
       </section>
       <aside class="my-8 rounded-2xl border-l-4 border-white bg-white/10 p-5 sm:p-6">
-        <p class="text-sm leading-7 text-white/90 sm:text-base">Já estruturamos isso em diversas empresas de MMN. Vale uma conversa para entender como podemos ajudar no seu cenário específico. <a href="../../../../?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Solicite um orcamento →</a></p>
+        <p class="text-sm leading-7 text-white/90 sm:text-base">Já estruturamos isso em diversas empresas de MMN. Vale uma conversa para entender como podemos ajudar no seu cenário específico. <a href="../../../../sistema-mmn/?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Solicite um orcamento →</a></p>
       </aside>
       <section class="mt-8">
         <h2 class="text-xl font-semibold text-white sm:text-2xl">Integrações que potencializam resultados</h2>
         <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">A integração de CRM com outros sistemas, como pagamentos e logística, é um diferencial. Por exemplo, ao conectar um sistema de comissionamento ao CRM, a visibilidade sobre as compensações torna-se imediata, evitando erros e aumentando a satisfação dos distribuidores. Isso se alinha com as práticas descritas em [CRM e Automação para Marketing](https://sistemavendadireta.com.br/2026/04/30/crm-automacao-marketing-multinivel/) e [CRM e Automação no Marketing](https://sistemavendadireta.com.br/2026/05/18/crm-automacao-marketing-multinivel-usar/).</p>
       </section>
       <p class="my-6 text-sm leading-7 text-white/85 sm:text-base">
-        Vamos discutir como um CRM pode se adaptar às necessidades da sua equipe. <a href="../../../../?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Solicite um orcamento →</a>
+        Vamos discutir como um CRM pode se adaptar às necessidades da sua equipe. <a href="../../../../sistema-mmn/?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Solicite um orcamento →</a>
       </p>
       <section class="mt-8">
         <h2 class="text-xl font-semibold text-white sm:text-2xl">Desafios a evitar na implementação</h2>
@@ -191,9 +191,13 @@
     <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
       <h2 class="text-xl font-semibold text-white">Precisa de um sistema de marketing multinível pronto para operar?</h2>
       <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">O Sistema Venda Direta já roda no Brasil, Paraguai e Bolívia: rede binária e unilevel, escritório do consultor, loja virtual e financeiro integrados, parametrizados para o seu plano.</p>
-      <a href="../../../../?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="mt-4 inline-flex rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/10">
-        Conhecer o sistema
+      <a href="../../../../sistema-mmn/?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="mt-4 inline-flex rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/10">
+        Conhecer o sistema MMN
       </a>
+      <p class="mt-4 text-sm text-white/70">
+        Veja também:
+        <a href="../../../../sistema-mmn/" class="underline decoration-white/40 underline-offset-4 hover:text-white">Sistema MMN por dentro</a> · <a href="../../../../simulador/" class="underline decoration-white/40 underline-offset-4 hover:text-white">Simular o plano de comissões</a> · <a href="../../../../cases/" class="underline decoration-white/40 underline-offset-4 hover:text-white">Operações que já usam</a>
+      </p>
     </section>
 
     <section class="mt-6 flex items-center justify-center">
@@ -291,8 +295,8 @@
         <div>
           <h3 class="text-lg font-semibold text-white">Próximo passo</h3>
           <p class="mt-3 text-sm leading-7 text-white/80">Resposta humana, sem fila generica. Fale com o time comercial do site.</p>
-          <a href="../../../../?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="mt-4 inline-flex rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/10">
-            Conhecer o sistema
+          <a href="../../../../sistema-mmn/?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="mt-4 inline-flex rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/10">
+            Conhecer o sistema MMN
           </a>
         </div>
       </div>

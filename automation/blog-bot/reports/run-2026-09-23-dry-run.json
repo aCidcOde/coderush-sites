@@ -1,0 +1,83 @@
+{
+  "mode": "dry-run",
+  "date": "2026-09-23",
+  "timezone": "America/Sao_Paulo",
+  "focus": "php",
+  "startedAt": "2026-09-23T13:22:08.169Z",
+  "aiProvider": "openrouter",
+  "sites": [
+    {
+      "siteId": "coderush",
+      "skipped": true,
+      "reason": "site disabled"
+    },
+    {
+      "siteId": "codafacil",
+      "skipped": true,
+      "reason": "site disabled"
+    },
+    {
+      "siteId": "fluxointeligenteia",
+      "skipped": true,
+      "reason": "site disabled"
+    },
+    {
+      "siteId": "sistemavendadireta",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "fiscal",
+      "theme": "recrutamento e retencao de consultores em marketing de rede",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/sistemavendadireta/2026-09-23/recrutamento-retencao-consultores-mmn.json",
+      "markdownPath": "automation/blog-bot/out/sistemavendadireta/2026-09-23/recrutamento-retencao-consultores-mmn.md"
+    },
+    {
+      "siteId": "emergency",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "due diligence imobiliaria",
+      "theme": "habilitacao e onboarding de fornecedor com certidoes",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": [
+          {
+            "url": "https://capitalaberto.com.br/feed/",
+            "error": "HTTP 404"
+          }
+        ]
+      },
+      "outputPath": "automation/blog-bot/out/emergency/2026-09-23/onboarding-fornecedores-certidoes-due-diligence-imobiliaria.json",
+      "markdownPath": "automation/blog-bot/out/emergency/2026-09-23/onboarding-fornecedores-certidoes-due-diligence-imobiliaria.md"
+    },
+    {
+      "siteId": "bfrintelligence",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "RAG",
+      "theme": "agentes com RAG e contexto do negocio",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/bfrintelligence/2026-09-23/agentes-ia-rag-implementar-sucesso.json",
+      "markdownPath": "automation/blog-bot/out/bfrintelligence/2026-09-23/agentes-ia-rag-implementar-sucesso.md"
+    }
+  ],
+  "duplications": [],
+  "fallbackCount": 0,
+  "allFallback": false,
+  "finishedAt": "2026-09-23T13:22:55.247Z",
+  "ok": true
+}

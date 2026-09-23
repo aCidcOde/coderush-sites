@@ -152,8 +152,21 @@ const SITE_COPY = {
     ctaBody:
       "O Sistema Venda Direta já roda no Brasil, Paraguai e Bolívia: rede binária e unilevel, "
       + "escritório do consultor, loja virtual e financeiro integrados, parametrizados para o seu plano.",
-    ctaPath: "?utm_source=blog&utm_medium=post&utm_campaign=cta-artigo",
-    ctaLabel: "Conhecer o sistema",
+    // Passou a apontar pra /sistema-mmn/ em 23/09/2026. O CTA levava pra home,
+    // que fala de tudo; quem acabou de ler sobre comissionamento ou rede quer a
+    // pagina do produto, nao a institucional. E a home ja recebe link de sobra
+    // do cabecalho e do rodape de cada post.
+    ctaPath: "sistema-mmn/?utm_source=blog&utm_medium=post&utm_campaign=cta-artigo",
+    ctaLabel: "Conhecer o sistema MMN",
+    // Links de apoio no rodape do artigo. Os 39 posts publicados nao tinham
+    // NENHUM link pras paginas de produto — so pra home, blog e outros posts.
+    // Pagina que ninguem linka o Google trata como periferica, e a /sistema-mmn/
+    // ficou um mes sem receber uma unica impressao.
+    ctaLinks: [
+      { path: "sistema-mmn/", label: "Sistema MMN por dentro" },
+      { path: "simulador/", label: "Simular o plano de comissões" },
+      { path: "cases/", label: "Operações que já usam" },
+    ],
     phone: "11 99456-6726",
     email: "contato@sistemavendadireta.com.br",
     accentLinkClass: "text-white hover:text-white/80",
@@ -1133,6 +1146,10 @@ ${renderFaq(contract.content.faq)}
       <a href="${relativeLink(relativeRoot, copy.ctaPath)}" class="mt-4 inline-flex rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/10">
         ${esc(copy.ctaLabel)}
       </a>
+${(copy.ctaLinks || []).length ? `      <p class="mt-4 text-sm text-white/70">
+        Veja também:
+        ${copy.ctaLinks.map((l) => `<a href="${relativeRoot}${esc(l.path)}" class="underline decoration-white/40 underline-offset-4 hover:text-white">${esc(l.label)}</a>`).join(" · ")}
+      </p>` : ""}
     </section>
 
     <section class="mt-6 flex items-center justify-center">
@@ -1461,6 +1478,11 @@ async function publishSitePost(root, site, contract, aiConfig) {
 }
 
 module.exports = {
+  // exportado pra dar pra regerar o sitemap sem publicar post:
+  // o sitemap e derivado de seo.extraPaths + cards, e mudar so o config
+  // nao reescreve o XML ate a proxima rodada do bot
+  updateSitemap,
+  readCardsFromFile,
   HOME_MARKERS,
   INDEX_MARKERS,
   publishSitePost,
