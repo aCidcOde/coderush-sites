@@ -417,7 +417,7 @@ $seoDescription = 'Sistema de marketing multinível (MMN) e venda direta: escrit
               $("sim-mensalidade").textContent = brl.format(fee);
               $("sim-percentual").textContent = pct.format(fee / fat * 100) + "% do faturamento projetado";
             }
-            if (!used) { used = true; if (typeof window.gtag === "function") { window.gtag("event", "simulator_use", { page: "lp-oferta-instalacao" }); } }
+            if (!used) { used = true; if (typeof window.gtag === "function") { window.gtag("event", "simulator_use", { page: "lp-sistema-venda-direta" }); } }
           }
           ["sim-consultores","sim-ticket","sim-payout"].forEach(function(id){ $(id).addEventListener("input", calc); });
           calc(); used = false;
@@ -585,7 +585,7 @@ $seoDescription = 'Sistema de marketing multinível (MMN) e venda direta: escrit
               data-whatsapp-message-template="Ola, vim pela Promocao 10 Anos. Meu nome e {nome} e meu WhatsApp e {whatsapp}."
             >
               <input type="hidden" name="redirect" value="/sistema-venda-direta/" />
-              <input type="hidden" name="origem" value="lp-oferta-instalacao" />
+              <input type="hidden" name="origem" value="lp-sistema-venda-direta" />
               <input type="hidden" name="servico" value="Sistema Venda Direta — instalacao promocional" />
               <input type="hidden" name="mensagem" value="Lead da LP de oferta (instalacao promocional)" />
 
@@ -717,7 +717,7 @@ $seoDescription = 'Sistema de marketing multinível (MMN) e venda direta: escrit
       document.addEventListener("click", function (event) {
         var link = event.target.closest && event.target.closest('a[href*="wa.me"]');
         if (!link) return;
-        track("whatsapp_click", { page: "lp-oferta-instalacao" });
+        track("whatsapp_click", { page: "lp-sistema-venda-direta" });
         var ref = zapRef();
         // embute o codigo de referencia na mensagem pre-preenchida do WhatsApp
         if (link.href.indexOf("text=") !== -1 && link.href.indexOf("%5Bref") === -1) {
@@ -729,7 +729,7 @@ $seoDescription = 'Sistema de marketing multinível (MMN) e venda direta: escrit
           try { stored = JSON.parse(window.sessionStorage.getItem("svd-attribution") || "{}"); } catch (e) {}
           var data = new FormData();
           data.append("ref", ref);
-          data.append("origem", "lp-oferta-instalacao");
+          data.append("origem", "lp-sistema-venda-direta");
           data.append("ga_client_id", (document.cookie.match(/(?:^|;\s*)_ga=GA\d+\.\d+\.(\d+\.\d+)/) || [])[1] || "");
           if (stored.gclid) data.append("gclid", stored.gclid);
           if (stored.utm_source) data.append("utm_source", stored.utm_source);
@@ -744,9 +744,42 @@ $seoDescription = 'Sistema de marketing multinível (MMN) e venda direta: escrit
       var form = document.getElementById("contact-lead-form");
       if (form) {
         form.addEventListener("submit", function () {
-          track("generate_lead", { page: "lp-oferta-instalacao" });
+          track("generate_lead", { page: "lp-sistema-venda-direta" });
         });
       }
+    })();
+  </script>
+
+  <?php /*
+    O formulario nao enviava page_url nem gclid: o lead #20 (23/09) entrou pelo
+    form e ficou SEM ORIGEM NENHUMA no painel, enquanto o clique de WhatsApp da
+    mesma pagina chegava com tudo. A diferenca era so que o beacon do zap mandava
+    esses campos e o form nao.
+
+    Preenchido por JS no envio, e nao como campo fixo no HTML, porque o valor
+    depende da URL de quem chegou — que e onde vem o gclid e as UTMs do anuncio.
+  */ ?>
+  <script>
+    (function () {
+      var f = document.getElementById("contact-lead-form");
+      if (!f) return;
+      f.addEventListener("submit", function () {
+        var p = new URLSearchParams(location.search);
+        var guardado = {};
+        try { guardado = JSON.parse(sessionStorage.getItem("svd-attribution") || "{}"); } catch (e) {}
+        function põe(nome, valor) {
+          if (!valor) return;
+          var i = document.createElement("input");
+          i.type = "hidden"; i.name = nome; i.value = valor;
+          f.appendChild(i);
+        }
+        põe("page_url", location.href.split("#")[0]);
+        ["gclid", "utm_source", "utm_medium", "utm_campaign", "utm_content"].forEach(function (k) {
+          põe(k, p.get(k) || guardado[k] || "");
+        });
+        var ga = document.cookie.match(/(?:^|;\s*)_ga=GA\d+\.\d+\.(\d+\.\d+)/);
+        põe("ga_client_id", ga ? ga[1] : "");
+      });
     })();
   </script>
 </body>

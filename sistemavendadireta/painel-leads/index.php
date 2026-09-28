@@ -235,6 +235,63 @@ function e(?string $v): string
     return htmlspecialchars((string) ($v ?? ''), ENT_QUOTES, 'UTF-8');
 }
 
+/**
+ * Traduz a atribuicao crua do lead numa linha que se le de relance.
+ *
+ * O card mostrava so utm_campaign — que e "promo-10-anos" em TODO lead pago,
+ * portanto nao distingue nada — e um selo "Ads". Lead vindo do ChatGPT ou de
+ * acesso direto nao mostrava origem nenhuma, e era exatamente esse o problema:
+ * "entra lead mas nao da pra saber de onde".
+ *
+ * A ordem do if importa: gclid e o sinal mais forte (veio de clique pago e da
+ * pra devolver a conversao ao Google), entao vem primeiro mesmo quando ha utm.
+ */
+function origemLegivel(array $lead): array
+{
+    $fonte = trim((string) ($lead['utm_source'] ?? ''));
+    $meio = trim((string) ($lead['utm_medium'] ?? ''));
+    $grupo = trim((string) ($lead['utm_content'] ?? ''));
+    $pagina = trim((string) ($lead['origem'] ?? ''));
+
+    // nome amigavel da pagina; a chave e o que o rastreamento grava
+    $paginas = [
+        'pagina-sistema-mmn' => 'Sistema MMN',
+        'lp-sistema-mmn' => 'Sistema MMN (formulário)',
+        'lp-oferta-instalacao' => 'Landing de oferta',
+        'home' => 'Home',
+        'cases' => 'Cases',
+        'simulador' => 'Simulador',
+        'pagina-ia' => 'Página de IA',
+        'blog-index' => 'Blog',
+        'site' => 'Site',
+    ];
+    $ondeLabel = $paginas[$pagina] ?? ($pagina !== '' ? $pagina : 'não identificada');
+
+    if (!empty($lead['gclid'])) {
+        $g = $grupo !== '' ? ' · grupo ' . $grupo : '';
+        return ['rotulo' => 'Google Ads' . $g, 'classe' => 'ads', 'onde' => $ondeLabel];
+    }
+    if ($fonte === 'chatgpt.com' || str_contains($fonte, 'chatgpt') || str_contains($fonte, 'perplexity')) {
+        return ['rotulo' => 'IA (' . $fonte . ')', 'classe' => 'ia', 'onde' => $ondeLabel];
+    }
+    if ($meio === 'cpc' || $fonte === 'google' && $meio !== '') {
+        return ['rotulo' => 'Google Ads (sem gclid)', 'classe' => 'ads', 'onde' => $ondeLabel];
+    }
+    if ($fonte === 'blog' || $meio === 'conteudo' || $meio === 'post') {
+        return ['rotulo' => 'Blog', 'classe' => '', 'onde' => $ondeLabel];
+    }
+    if ($fonte === 'site' || $meio === 'interno' || $meio === 'sistema-mmn') {
+        return ['rotulo' => 'Navegação no site', 'classe' => '', 'onde' => $ondeLabel];
+    }
+    if ($fonte !== '') {
+        return ['rotulo' => $fonte, 'classe' => '', 'onde' => $ondeLabel];
+    }
+    // Sem utm e sem gclid: digitou o endereco, veio de favorito, de app ou de
+    // busca organica (o Google nao passa o termo desde 2011). Nao e "sem origem"
+    // — e origem que o navegador nao conta, e chamar de direto e mais honesto.
+    return ['rotulo' => 'Direto ou orgânico', 'classe' => 'direto', 'onde' => $ondeLabel];
+}
+
 function brDateTime(?string $iso): string
 {
     if (!$iso) {
@@ -515,6 +572,10 @@ if ($gaSite && !empty($gaSite['eventos'])) {
     .mini-tag { font-size: 10px; font-weight: 700; padding: 2px 7px; border-radius: 99px;
       background: rgba(255,255,255,.1); color: rgba(255,255,255,.7); }
     .mini-tag.ads { background: rgba(252,211,77,.18); color: var(--amber); }
+    .mini-tag.ia { background: rgba(125,211,252,.18); color: #7dd3fc; }
+    .mini-tag.direto { background: rgba(255,255,255,.08); color: rgba(255,255,255,.55); }
+    .card-origem { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 8px; }
+    .card-onde { font-size: 11px; color: rgba(255,255,255,.55); }
     .card-acoes { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 10px;
       padding-top: 9px; border-top: 1px solid rgba(255,255,255,.08); }
     .form-nome { display: flex; gap: 4px; margin-top: 8px; }
@@ -1209,9 +1270,13 @@ if ($gaSite && !empty($gaSite['eventos'])) {
                   <?php if ($lead['close_value'] !== null): ?><br />fechado por <b>R$ <?= num((float) $lead['close_value']) ?></b><?php endif; ?>
                 </p>
 
+                <?php $org = origemLegivel($lead); ?>
+                <p class="card-origem">
+                  <span class="mini-tag <?= e($org['classe']) ?>"><?= e($org['rotulo']) ?></span>
+                  <span class="card-onde">na <?= e($org['onde']) ?></span>
+                </p>
                 <div class="card-tags">
                   <?php if (!empty($lead['utm_campaign'])): ?><span class="mini-tag"><?= e($lead['utm_campaign']) ?></span><?php endif; ?>
-                  <?php if (!empty($lead['gclid'])): ?><span class="mini-tag ads" title="veio de clique em anúncio — dá pra mandar a conversão de volta ao Google">Ads</span><?php endif; ?>
                   <?php if (!empty($lead['sim_faturamento'])): ?><span class="mini-tag">simulou <?= e($lead['sim_faturamento']) ?></span><?php endif; ?>
                 </div>
 

@@ -512,5 +512,38 @@ $faq = [
   });
 })();
 </script>
+
+  <?php /*
+    O formulario nao enviava page_url nem gclid: o lead #20 (23/09) entrou pelo
+    form e ficou SEM ORIGEM NENHUMA no painel, enquanto o clique de WhatsApp da
+    mesma pagina chegava com tudo. A diferenca era so que o beacon do zap mandava
+    esses campos e o form nao.
+
+    Preenchido por JS no envio, e nao como campo fixo no HTML, porque o valor
+    depende da URL de quem chegou — que e onde vem o gclid e as UTMs do anuncio.
+  */ ?>
+  <script>
+    (function () {
+      var f = document.getElementById("contact-lead-form");
+      if (!f) return;
+      f.addEventListener("submit", function () {
+        var p = new URLSearchParams(location.search);
+        var guardado = {};
+        try { guardado = JSON.parse(sessionStorage.getItem("svd-attribution") || "{}"); } catch (e) {}
+        function põe(nome, valor) {
+          if (!valor) return;
+          var i = document.createElement("input");
+          i.type = "hidden"; i.name = nome; i.value = valor;
+          f.appendChild(i);
+        }
+        põe("page_url", location.href.split("#")[0]);
+        ["gclid", "utm_source", "utm_medium", "utm_campaign", "utm_content"].forEach(function (k) {
+          põe(k, p.get(k) || guardado[k] || "");
+        });
+        var ga = document.cookie.match(/(?:^|;\s*)_ga=GA\d+\.\d+\.(\d+\.\d+)/);
+        põe("ga_client_id", ga ? ga[1] : "");
+      });
+    })();
+  </script>
 </body>
 </html>
