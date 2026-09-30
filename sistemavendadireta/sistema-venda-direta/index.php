@@ -22,7 +22,10 @@ $mailStatus = in_array($mailStatus, ['ok', 'erro'], true) ? $mailStatus : '';
 $promoInstallFrom = 5000;          // valor cheio da instalacao (R$)
 $promoInstallTo = 3500;            // valor promocional em 2x (R$)
 $promoInstallCash = 3000;          // valor promocional a vista (R$)
-$promoDeadline = '2026-09-30';     // ultimo dia da promocao (America/Sao_Paulo)
+// Vinha cravado em cada uma das 5 LPs. Estender o prazo virava seis edicoes,
+// e bastava esquecer uma pra pagina vender oferta vencida — foi assim que o
+// "ate 31/08" sobreviveu 12 dias. Agora le da constante.
+$promoDeadline = PROMO_DEADLINE;
 $promoSlots = 10;                  // vagas de implantacao no periodo (tema: 10 anos)
 // Atualizado 14/09/2026: Zohr saiu (nao fechou) e entraram Velaro e Henovar, as
 // duas vindas da campanha do Google Ads.
