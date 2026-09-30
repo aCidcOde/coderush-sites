@@ -1140,6 +1140,13 @@ ${renderFaq(contract.content.faq)}
       </div>
     </article>
 
+${site.id === "sistemavendadireta" ? `
+    <?php /* Faixa da promocao vigente. Some sozinha quando PROMO_DEADLINE passa,
+             virando convite neutro — nenhum post fica anunciando oferta vencida.
+             Voltou ao template em 30/09/2026: os 7 posts mais recentes tinham
+             saido SEM ela, e sao justamente os mais lidos. */ ?>
+    <?php require_once __DIR__ . '/${relativeRoot.replace(/\/$/, "")}/inc/promo.php'; echo promoStrip('${contract.slug}'); ?>
+` : ""}
     <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
       <h2 class="text-xl font-semibold text-white">${esc(copy.ctaTitle)}</h2>
       <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">${esc(copy.ctaBody)}</p>

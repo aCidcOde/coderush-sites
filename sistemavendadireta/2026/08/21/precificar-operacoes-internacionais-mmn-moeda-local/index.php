@@ -191,6 +191,7 @@
       </section>
       </div>
     </article>
+<?php require_once __DIR__ . '/../../../../inc/promo.php'; echo promoStrip('precificar-operacoes-internacionais-mmn-moeda-local'); ?>
 
     <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
       <h2 class="text-xl font-semibold text-white">Precisa de um sistema de marketing multinível pronto para operar?</h2>

@@ -1,0 +1,31 @@
+{
+  "mode": "dry-run",
+  "date": "2026-09-30",
+  "timezone": "America/Sao_Paulo",
+  "focus": "php",
+  "startedAt": "2026-09-30T09:21:06.707Z",
+  "aiProvider": "openrouter",
+  "sites": [
+    {
+      "siteId": "sistemavendadireta",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "vendas diretas",
+      "theme": "como montar uma operacao de marketing multinivel do zero",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/sistemavendadireta/2026-09-30/montar-operacao-marketing-multinivel-zero.json",
+      "markdownPath": "automation/blog-bot/out/sistemavendadireta/2026-09-30/montar-operacao-marketing-multinivel-zero.md"
+    }
+  ],
+  "duplications": [],
+  "fallbackCount": 0,
+  "allFallback": false,
+  "finishedAt": "2026-09-30T09:21:21.800Z",
+  "ok": true
+}
