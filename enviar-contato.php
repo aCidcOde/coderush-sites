@@ -234,6 +234,64 @@ $interesse = trim((string) ($_POST['interesse'] ?? ($_POST['servico'] ?? 'Nao in
 $mensagem = trim((string) ($_POST['mensagem'] ?? ''));
 $origem = trim((string) ($_POST['origem'] ?? 'coderush-hub'));
 
+/*
+ * Barreiras portadas do enviar-contato.php do SVD em 01/10/2026, durante ataque.
+ *
+ * Este arquivo atende a home do CodeRush, o CodaFacil e o FluxoInteligente, e
+ * tinha so o honeypot — as outras duas barreiras foram adicionadas ao SVD em
+ * 10/09 e nunca vieram pra ca. Resultado: uma varredura de SQL injection mandou
+ * 848 requisicoes e 43 e-mails passaram, porque o payload nao preenche o campo
+ * invisivel e nao parece link.
+ *
+ * Nenhuma injecao funcionou (nada aqui monta SQL), mas o canal de e-mail virou
+ * megafone do atacante. A licao e que endurecer um formulario e nao os irmaos
+ * so muda por onde entram.
+ *
+ * Responde sucesso em vez de erro de proposito: bot que recebe 4xx tenta de novo
+ * com variacao; recebendo 200, acha que funcionou e vai embora.
+ */
+$registraBloqueio = static function (string $motivo, string $amostra): void {
+    @file_put_contents(__DIR__ . '/storage/spam-bloqueado.log',
+        sprintf("[%s] %s: %s | %s | %s\n", date('c'), $motivo, mb_substr($amostra, 0, 80),
+            $_SERVER['REMOTE_ADDR'] ?? '-',
+            mb_substr((string) ($_SERVER['HTTP_USER_AGENT'] ?? ''), 0, 60)),
+        FILE_APPEND);
+};
+
+// 1. Link onde vai o nome: nenhum cliente escreve URL ali.
+$pareceLink = static fn (string $v): bool =>
+    (bool) preg_match('~(https?://|www\.|\.com|\.org|\.net|\.ru|\.xyz|t\.me/|bit\.ly)~i', $v);
+
+if ($pareceLink($nome) || ($pareceLink($mensagem) && mb_strlen($mensagem) < 40)) {
+    $registraBloqueio('link no nome', $nome);
+    safeRedirect($redirect, true);
+}
+
+// 2. Sintaxe de SQL/script em campo de texto. Cliente nenhum escreve SELECT no
+//    nome; foi exatamente o que chegou nos 43 e-mails de 01/10.
+$pareceAtaque = static fn (string $v): bool =>
+    (bool) preg_match('~(\bselect\b|\bunion\b|\bdrop\b|\binsert\s+into\b|\bupdate\b.{0,20}\bset\b'
+        . '|\bor\b[\s(\'"]*\w+[\s\'")]*=[\s(\'"]*\w+'
+        . '|;\s*\w+\s*\(|\bsleep\s*\(|\bbenchmark\s*\(|\bwaitfor\s+delay\b|\bpg_sleep\b'
+        . '|<script|javascript:|\bonerror\s*=|--\s*$|/\*.*\*/)~i', $v);
+
+foreach ([$nome, $email, $telefone, $empresa, $mensagem] as $campo) {
+    if ($campo !== '' && $pareceAtaque($campo)) {
+        $registraBloqueio('sintaxe de ataque', $campo);
+        safeRedirect($redirect, true);
+    }
+}
+
+// 3. Telefone brasileiro: 10 ou 11 digitos com DDD, ou 12-13 comecando por 55.
+$telDigits = preg_replace('/\D+/', '', $telefone);
+$telValido = $telDigits === ''
+    || strlen($telDigits) === 10 || strlen($telDigits) === 11
+    || (str_starts_with($telDigits, '55') && strlen($telDigits) >= 12 && strlen($telDigits) <= 13);
+if (!$telValido) {
+    $registraBloqueio('telefone invalido', $telDigits);
+    safeRedirect($redirect, true);
+}
+
 if ($nome === '') {
     $nome = 'Nao informado';
 }
