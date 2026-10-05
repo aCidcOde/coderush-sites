@@ -20,6 +20,73 @@ Campos:
 
 return [
     [
+        'data' => '2026-10-05',
+        'area' => 'site',
+        'titulo' => 'Canonical de 13 páginas apontava para www, que redireciona para non-www',
+        'porque' => 'Cada página escrita à mão declarava "a versão oficial é www.sistemavendadireta.com.br/..." '
+            . 'e o servidor responde 301 de www para non-www. O sitemap sempre listou non-www. Os dois '
+            . 'sinais que mais pesam na escolha da URL canônica se contradiziam em todo o site, e a home '
+            . 'estava em posição média 14,4 com 894 impressões em 28 dias.',
+        'efeito' => 'Os 41 posts do blog nunca tiveram o problema — o publisher usa o baseUrl do '
+            . 'sites.json, que é non-www. O erro estava só no que foi escrito à mão, e justamente nas '
+            . 'páginas comerciais: home, LP da promoção, /sistema-mmn/, /cases/, /simulador/, /blog/, '
+            . '/inteligencia-artificial/, /wordpress/ e as 4 LPs de segmento. Leitura em ~3 semanas, '
+            . 'que é o tempo de recrawl.',
+    ],
+    [
+        'data' => '2026-10-05',
+        'area' => 'medicao',
+        'titulo' => '/sistema-mmn/ não disparava generate_lead — 30 dias de "0 conversões" falso',
+        'porque' => 'A página tem cópia própria do script de rastreamento (não usa inc/zap-tracking.php) '
+            . 'e só mandava whatsapp_click. O envio do formulário gravava no banco e não emitia evento '
+            . 'nenhum. Como ela recebe o grupo de anúncio mais caro, o Ads marcou 0 conversões por 30 '
+            . 'dias enquanto Karina (22/09), Francisco (23/09) e Alex Shimoda (01/10) entravam pelo form.',
+        'efeito' => 'Quem lia o painel do Ads concluía que a campanha não converte; quem lia o banco via '
+            . 'três leads. A ação generate_lead do GA4 está marcada como primária na conta — o lugar que '
+            . 'deveria contar esperava um evento que ninguém enviava. Segue pendente na conta: a ação '
+            . 'whatsapp_click está como NÃO primária, então os 6 cliques de zap de setembro caem em '
+            . '"todas as conversões" e não na coluna que o relatório diário lê.',
+    ],
+    [
+        'data' => '2026-10-05',
+        'area' => 'site',
+        'titulo' => 'LP da promoção era a única página indexável com preço e sem dado estruturado',
+        'porque' => 'A /sistema-mmn/ emite SoftwareApplication, Offer e FAQPage desde que nasceu. A LP da '
+            . 'promoção, destino de 3 dos 4 grupos de anúncio, não emitia nada — o preço e o prazo '
+            . 'estavam escritos no corpo e no título do anúncio, mas em nenhum lugar que o Google leia '
+            . 'como dado. Eloss e Aliadus, os dois concorrentes que mais aparecem na busca, publicam '
+            . 'FAQPage e Offer.',
+        'efeito' => 'As 7 perguntas do FAQ já existiam em HTML; faltava marcar. O priceValidUntil lê de '
+            . 'PROMO_DEADLINE em vez de data cravada — foi data cravada em seis lugares que deixou o '
+            . '"até 31/08" sobreviver 12 dias vencido. Fora da promoção a marcação volta ao valor cheio '
+            . 'em vez de calar o preço.',
+    ],
+    [
+        'data' => '2026-10-05',
+        'area' => 'ads',
+        'titulo' => '14 negativas novas; "shopee" era o termo que mais gastava',
+        'porque' => '"sistema de venda direta na shopee" e "sistema de venda direta shopee" somaram 69 '
+            . 'impressões, 11 cliques e R$ 41,81 em 14 dias — o maior gasto de termo da campanha, e é '
+            . 'gente querendo vender dentro do marketplace, não empresa querendo montar operação de '
+            . 'rede. Mesma raiz do erro da campanha Afiliados, pausada em 14/09.',
+        'efeito' => 'Entraram em frase: shopee, kaiross, kairos, compradiretaempresas, dealerclub, '
+            . 'polishop, pre lancamento/lançamento, clube multinivel/multinível. Em exata: marketing de '
+            . 'rede, rede de marketing, multi seller, mlm network. Exata nos dois primeiros de propósito '
+            . '— em frase matariam a palavra "sistema de marketing de rede", que é nossa e tem clique.',
+    ],
+    [
+        'data' => '2026-10-05',
+        'area' => 'site',
+        'titulo' => 'Formulário das páginas do include não enviava atribuição',
+        'porque' => 'O clique de WhatsApp manda gclid e UTM desde 14/09; o formulário das páginas que '
+            . 'usam inc/zap-tracking.php (home, /cases/, /simulador/, /blog/, /inteligencia-artificial/) '
+            . 'mandava só o que a pessoa digitou. Foi assim que o lead #24 (27/09) entrou pela home sem '
+            . 'gclid, sem campanha e sem page_url.',
+        'efeito' => 'Mesma rede de segurança do beacon: lê a URL primeiro e o sessionStorage depois, e '
+            . 'manda a page_url sempre, porque em WebView o storage volta vazio. Não sobrescreve campo '
+            . 'que a página já declara — a home continua marcando origem "home-svd".',
+    ],
+    [
         'data' => '2026-09-16',
         'area' => 'medicao',
         'titulo' => 'Relatório diário da campanha por e-mail, às 7h',
