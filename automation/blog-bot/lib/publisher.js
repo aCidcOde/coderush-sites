@@ -1285,6 +1285,26 @@ function updateCardsInFile(filePath, markers, cards, context, maxItems, siteRoot
  * Copiar a capa de um post anterior seria mais simples e e pior: duas materias
  * diferentes com a mesma arte no indice do blog. A capa local muda com o titulo.
  */
+/**
+ * A capa passa pela IA? Hoje NAO — e isso e escolha, nao limitacao.
+ *
+ * Decidido em 05/10/2026, depois de duas semanas de evidencia:
+ *  - custava dinheiro e o saldo acabou no meio do mes, parando a publicacao;
+ *  - falhava e, falhando, derrubava o post inteiro no destino de API;
+ *  - vazava texto alucinado na arte ("Orquestragao Multipols Agentes") em 3 dos
+ *    3 posts do run de 22/09 — o relatorio registrou coverLeakage nos tres.
+ *
+ * E, principalmente: nao e a ilustracao que faz a pessoa clicar num resultado de
+ * busca ou num card de blog — e o titulo. Uma capa tipografica legivel entrega o
+ * titulo DUAS vezes (no texto do card e dentro da imagem) e custa zero.
+ *
+ * BLOG_BOT_COVER=ia religa a geracao por IA sem tocar em codigo, pra quando o
+ * saldo voltar e houver vontade de comparar as duas em CTR.
+ */
+function capaPorIaLigada(env = process.env) {
+  return String(env.BLOG_BOT_COVER || "local").trim().toLowerCase() === "ia";
+}
+
 function coverLocalFallback({ site, contract, targetPath }) {
   const perfil = siteProfile(site.id) || {};
   const paleta = (perfil.coverArt?.paletteHex || []).join(",")
@@ -1317,7 +1337,7 @@ async function ensureCoverImage(root, site, contract, aiConfig) {
   }
 
   let warning = null;
-  if (aiConfig) {
+  if (aiConfig && capaPorIaLigada()) {
     try {
       const result = await agentGenerateCover({ aiConfig, site, contract, targetPath });
       const leakageWarning = result.leakage?.leaked
@@ -1550,6 +1570,7 @@ async function publishSitePost(root, site, contract, aiConfig) {
 
 module.exports = {
   coverLocalFallback,
+  capaPorIaLigada,
   // exportado pra dar pra regerar o sitemap sem publicar post:
   // o sitemap e derivado de seo.extraPaths + cards, e mudar so o config
   // nao reescreve o XML ate a proxima rodada do bot

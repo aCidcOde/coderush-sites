@@ -46,8 +46,8 @@ const PROMO_INSTALL_AVISTA = 3000;
 function promoClientes(): array
 {
     return [
-        ['Henovar Energy', 'https://henovar.sistemavendadireta.com.br/loja'],
-        ['Velaro Alianças', 'https://velaro.sistemavendadireta.com.br/'],
+        ['Henovar Energy', 'https://henovar.com.br/loja'],
+        ['Velaro Alianças', 'https://velaroaliancas.com.br/'],
         ['Accenti', 'https://parceiroaccenti.com.br/loja'],
         ["New Professional's", 'https://newprofessional.com.py/loja'],
         ['Protech', 'https://loja.protechnutritional.com.br/loja'],
@@ -83,14 +83,14 @@ function promoVitrine(string $prefixo = '../'): string
         [
             'logo' => 'henovar', 'alt' => 'Henovar Energy',
             'w' => 520, 'h' => 126, 'data' => 'No ar desde setembro de 2026',
-            'loja' => 'https://henovar.sistemavendadireta.com.br/loja',
+            'loja' => 'https://henovar.com.br/loja',
             'texto' => 'Assinatura de energia renovável e marketplace na mesma rede: plano de carreira em 12 níveis, '
                 . 'venda direta de 30% e desconto de afiliado aplicado pelo próprio sistema.',
         ],
         [
             'logo' => 'velaro', 'alt' => 'Velaro Alianças',
             'w' => 520, 'h' => 126, 'data' => 'No ar desde agosto de 2026',
-            'loja' => 'https://velaro.sistemavendadireta.com.br/',
+            'loja' => 'https://velaroaliancas.com.br/',
             'texto' => 'Atacado de alianças exclusivo para lojistas: catálogo público sem preço interno, com custo e '
                 . 'ferramenta de pedido liberados só depois que o cadastro do revendedor é aprovado.',
         ],

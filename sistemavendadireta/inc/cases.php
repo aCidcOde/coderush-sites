@@ -236,7 +236,7 @@ return [
         'logoFallback' => 'imagens/clientes/velaro.png',
         'logoWidth' => 520,
         'logoHeight' => 126,
-        'url' => 'https://velaro.sistemavendadireta.com.br/',
+        'url' => 'https://velaroaliancas.com.br/',
         'summary' => 'Plataforma B2B de alianças para lojistas: catálogo público sem preço e condição comercial liberada só após aprovação do cadastro.',
         'highlights' => [
             'Exclusivo para lojistas — sem venda ao consumidor final',
@@ -314,7 +314,7 @@ return [
         'logoFallback' => 'imagens/clientes/henovar.png',
         'logoWidth' => 520,
         'logoHeight' => 126,
-        'url' => 'https://henovar.sistemavendadireta.com.br/loja',
+        'url' => 'https://henovar.com.br/loja',
         'summary' => 'Assinatura de energia renovável e marketplace na mesma rede, com plano de carreira de 12 níveis.',
         'highlights' => [
             'Assinatura de energia e venda de produto no mesmo cadastro',

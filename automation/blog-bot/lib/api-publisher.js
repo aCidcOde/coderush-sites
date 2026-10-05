@@ -1,7 +1,7 @@
 const fs = require("node:fs");
 const path = require("node:path");
 const { generateCover } = require("./cover-agent");
-const { smartTruncate, coverLocalFallback } = require("./publisher");
+const { smartTruncate, coverLocalFallback, capaPorIaLigada } = require("./publisher");
 
 const SEO_TITLE_LIMIT = 70;
 const COVER_SIZE_LIMIT = 500 * 1024;
@@ -74,6 +74,23 @@ async function ensureCoverFile({ root, site, contract, aiConfig }) {
   }
   if (!aiConfig) {
     throw new Error(`aiConfig ausente para gerar cover do site ${site.id}`);
+  }
+
+  // caminho padrao hoje: capa local, sem chamada de IA. Ver capaPorIaLigada().
+  if (!capaPorIaLigada()) {
+    coverLocalFallback({ site, contract, targetPath });
+    const alt = contract.coverAlt || contract.content?.headline || "";
+    if (alt) {
+      fs.writeFileSync(altPath, alt, "utf8");
+    }
+    return {
+      path: targetPath,
+      source: "local-tipografica",
+      altText: alt,
+      warning: null,
+      leakage: null,
+      prompt: ""
+    };
   }
 
   let result;
