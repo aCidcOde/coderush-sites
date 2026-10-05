@@ -89,7 +89,38 @@ $zapOrigem = isset($zapOrigem) && $zapOrigem !== '' ? $zapOrigem : 'site';
 
     var form = document.getElementById("contact-lead-form");
     if (form) {
-      form.addEventListener("submit", function () { track("generate_lead", { page: ORIGEM }); });
+      form.addEventListener("submit", function () {
+        track("generate_lead", { page: ORIGEM });
+
+        /*
+         * 05/10/2026 — o evento ia, a atribuicao nao. O clique de WhatsApp
+         * mandava gclid e UTM desde 14/09; o FORMULARIO das paginas que usam
+         * este include (home, cases, simulador, blog) mandava so os campos que
+         * o visitante digitou. Resultado: o lead #24 (27/09) entrou pela home
+         * sem gclid, sem campanha e sem page_url, e ficou sem origem no painel.
+         *
+         * Mesma rede de seguranca do beacon: le a URL primeiro e o
+         * sessionStorage depois, e manda a page_url sempre — em WebView o
+         * storage volta vazio e o servidor extrai os parametros dela.
+         */
+        var daUrl = new URLSearchParams(window.location.search);
+        var guardado = {};
+        try { guardado = JSON.parse(window.sessionStorage.getItem("svd-attribution") || "{}"); } catch (e) {}
+        function põe(nome, valor) {
+          if (!valor || form.querySelector('[name="' + nome + '"]')) { return; }
+          var i = document.createElement("input");
+          i.type = "hidden"; i.name = nome; i.value = valor;
+          form.appendChild(i);
+        }
+        põe("page_url", window.location.href.split("#")[0]);
+        põe("origem", ORIGEM);
+        ["gclid", "utm_source", "utm_medium", "utm_campaign", "utm_content"].forEach(function (k) {
+          põe(k, daUrl.get(k) || guardado[k] || "");
+        });
+        var ga = document.cookie.match(/(?:^|;\s*)_ga=GA\d+\.\d+\.(\d+\.\d+)/);
+        põe("ga_client_id", ga ? ga[1] : "");
+        if (window.__svdSimBucket) { põe("sim_faturamento", window.__svdSimBucket); }
+      });
     }
   })();
 </script>

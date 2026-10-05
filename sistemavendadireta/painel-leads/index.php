@@ -830,7 +830,7 @@ if ($gaSite && !empty($gaSite['eventos'])) {
           ['Site', '/'],
       ];
       foreach ($lps as [$nome, $path]): ?>
-        <a class="ql" href="https://www.sistemavendadireta.com.br<?= e($path) ?>" target="_blank" rel="noopener"><?= e($nome) ?></a>
+        <a class="ql" href="https://sistemavendadireta.com.br<?= e($path) ?>" target="_blank" rel="noopener"><?= e($nome) ?></a>
       <?php endforeach; ?>
     </div>
     <?php endif; /* fim da aba visao */ ?>

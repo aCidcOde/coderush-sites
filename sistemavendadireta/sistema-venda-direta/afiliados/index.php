@@ -56,7 +56,7 @@ $discountCashPct = (int) round((1 - $promoInstallCash / $promoInstallFrom) * 100
 
 $whatsappHref = 'https://wa.me/' . $whatsappPhone . '?text=' . rawurlencode($whatsappMessage);
 
-$seoBase = 'https://www.sistemavendadireta.com.br';
+$seoBase = 'https://sistemavendadireta.com.br';
 $seoUrl = $seoBase . '/sistema-venda-direta/afiliados/';
 // "Programa de afiliados" e nao "afiliados" seco: o relatorio de termos mostrou
 // que quem busca so "afiliados" quer SER afiliado da Shopee ou da Amazon. O

@@ -22,7 +22,7 @@ cloaking. O teste aqui e temporal, com baseline congelado.
 
 require_once __DIR__ . '/../inc/promo.php';
 
-$seoBase = 'https://www.sistemavendadireta.com.br';
+$seoBase = 'https://sistemavendadireta.com.br';
 $seoUrl = $seoBase . '/sistema-mmn/';
 $seoTitle = 'Sistema MMN: plataforma de marketing multinível pronta para operar';
 // 160 chars e onde o Google corta no desktop. Passar disso entrega a frase pra
@@ -521,12 +521,22 @@ $faq = [
 
     Preenchido por JS no envio, e nao como campo fixo no HTML, porque o valor
     depende da URL de quem chegou — que e onde vem o gclid e as UTMs do anuncio.
+
+    05/10/2026 — faltava disparar generate_lead. O clique de WhatsApp desta pagina
+    mandava whatsapp_click desde 11/09, mas o ENVIO DO FORMULARIO nao mandava
+    evento nenhum: so gravava no banco. Como esta e a pagina que recebe o grupo de
+    anuncio mais caro, o Google Ads ficou 30 dias marcando "0 conversoes" enquanto
+    Karina (22/09), Francisco (23/09) e Alex Shimoda (01/10) chegavam pelo form.
+    Quem le o painel conclui que a campanha nao converte; quem le o banco ve tres
+    leads. A acao generate_lead do GA4 esta marcada como primaria na conta — ou
+    seja, o lugar que deveria contar estava esperando um evento que ninguem enviava.
   */ ?>
   <script>
     (function () {
       var f = document.getElementById("contact-lead-form");
       if (!f) return;
       f.addEventListener("submit", function () {
+        if (window.gtag) gtag("event", "generate_lead", { page: "pagina-sistema-mmn" });
         var p = new URLSearchParams(location.search);
         var guardado = {};
         try { guardado = JSON.parse(sessionStorage.getItem("svd-attribution") || "{}"); } catch (e) {}

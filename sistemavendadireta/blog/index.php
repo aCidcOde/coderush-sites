@@ -17,25 +17,25 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
   <meta name="theme-color" content="#004AAD" />
   <meta name="author" content="Sistema Venda Direta" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
-  <link rel="canonical" href="https://www.sistemavendadireta.com.br/blog/" />
+  <link rel="canonical" href="https://sistemavendadireta.com.br/blog/" />
   <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
   <link rel="alternate icon" href="../favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
-  <link rel="alternate" hreflang="pt-BR" href="https://www.sistemavendadireta.com.br/blog/" />
-  <link rel="alternate" hreflang="x-default" href="https://www.sistemavendadireta.com.br/blog/" />
+  <link rel="alternate" hreflang="pt-BR" href="https://sistemavendadireta.com.br/blog/" />
+  <link rel="alternate" hreflang="x-default" href="https://sistemavendadireta.com.br/blog/" />
 
   <meta property="og:locale" content="pt_BR" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Blog SVD | Todos os posts" />
   <meta property="og:description" content="Conteúdo sobre vendas diretas, MMN e IA para operação comercial." />
-  <meta property="og:url" content="https://www.sistemavendadireta.com.br/blog/" />
+  <meta property="og:url" content="https://sistemavendadireta.com.br/blog/" />
   <meta property="og:site_name" content="Sistema Venda Direta" />
-  <meta property="og:image" content="https://www.sistemavendadireta.com.br/wp-content/uploads/2023/04/Screenshot-2023-04-26-at-14.38.02.png" />
+  <meta property="og:image" content="https://sistemavendadireta.com.br/wp-content/uploads/2023/04/Screenshot-2023-04-26-at-14.38.02.png" />
   <meta property="og:image:alt" content="Blog SVD | Todos os posts" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Blog SVD | Todos os posts" />
   <meta name="twitter:description" content="Blog do Sistema Venda Direta com todos os posts sobre vendas diretas, marketing multinível e inteligência artificial aplicada ao negócio." />
-  <meta name="twitter:image" content="https://www.sistemavendadireta.com.br/wp-content/uploads/2023/04/Screenshot-2023-04-26-at-14.38.02.png" />
+  <meta name="twitter:image" content="https://sistemavendadireta.com.br/wp-content/uploads/2023/04/Screenshot-2023-04-26-at-14.38.02.png" />
   <meta name="twitter:site" content="@sistemavendadireta" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -51,13 +51,13 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
       "@context": "https://schema.org",
       "@type": "Blog",
       "name": "Blog SVD",
-      "url": "https://www.sistemavendadireta.com.br/blog/",
+      "url": "https://sistemavendadireta.com.br/blog/",
       "publisher": {
         "@type": "Organization",
         "name": "Sistema Venda Direta",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://www.sistemavendadireta.com.br/wp-content/uploads/2023/04/Logo-Azul-004AAD-1.png"
+          "url": "https://sistemavendadireta.com.br/wp-content/uploads/2023/04/Logo-Azul-004AAD-1.png"
         }
       }
     }

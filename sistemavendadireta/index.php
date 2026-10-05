@@ -8,7 +8,7 @@ $scriptDir = dirname($_SERVER['SCRIPT_NAME'] ?? '/');
 $scriptDir = str_replace('\\', '/', is_string($scriptDir) ? $scriptDir : '/');
 $contactRedirect = ($scriptDir === '/' || $scriptDir === '') ? '/' : rtrim($scriptDir, '/') . '/';
 
-$seoBase = 'https://www.sistemavendadireta.com.br';
+$seoBase = 'https://sistemavendadireta.com.br';
 $seoUrl = $seoBase . '/';
 
 // Modal da promocao de instalacao — mesmos parametros da LP /oferta/.

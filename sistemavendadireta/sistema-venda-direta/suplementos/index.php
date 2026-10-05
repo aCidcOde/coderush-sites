@@ -56,7 +56,7 @@ $discountCashPct = (int) round((1 - $promoInstallCash / $promoInstallFrom) * 100
 
 $whatsappHref = 'https://wa.me/' . $whatsappPhone . '?text=' . rawurlencode($whatsappMessage);
 
-$seoBase = 'https://www.sistemavendadireta.com.br';
+$seoBase = 'https://sistemavendadireta.com.br';
 $seoUrl = $seoBase . '/sistema-venda-direta/suplementos/';
 $seoTitle = 'Sistema para distribuidora de suplementos | Sistema Venda Direta';
 $seoDescription = 'Sistema para distribuidora de suplementos com consultores: escritório, rede, comissões e loja. Instalação promocional até ' . promoPrazoCurto() . '.';

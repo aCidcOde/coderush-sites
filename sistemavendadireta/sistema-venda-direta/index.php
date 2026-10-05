@@ -44,6 +44,24 @@ $monthlyTiers = [
     ['revenue' => 'até R$ 1 milhão', 'price' => 'R$ 9.000'],
 ];
 
+/*
+ * O FAQ vive aqui, e nao na section que o desenha, porque o head precisa dele
+ * antes do body pra emitir o FAQPage. Ate 05/10/2026 o array nascia no meio da
+ * pagina e, por isso, as 7 perguntas existiam SO como HTML: o Google lia o texto
+ * mas nao tinha dado estruturado nenhum nesta pagina. Eloss e Aliadus, os dois
+ * concorrentes que mais aparecem na busca, publicam FAQPage e Offer — a gente
+ * tinha a resposta escrita e nao estava marcando.
+ */
+$faq = [
+    ['Já tenho um sistema. Dá para migrar os dados?', 'Sim, desde que tenhamos acesso a eles de forma organizada. A migração entra no escopo da parametrização.'],
+    ['Posso usar minha marca e meu domínio?', 'Sim. O sistema roda com a identidade da sua empresa e no seu domínio — é um dos diferenciais da plataforma.'],
+    ['Meu plano de negócio é diferente. Serve?', 'A instalação contempla a parametrização do seu plano. Binário, unilevel, comissão por cargo ou modelo próprio: a regra é configurada, não improvisada.'],
+    ['O que não está incluso?', 'Integrações de ERP e gateway de pagamento são orçadas separadamente, porque dependem do provedor que você já usa.'],
+    ['Existe outro custo além da mensalidade?', 'Não. Novas funcionalidades pedidas depois são acordadas antes de qualquer cobrança.'],
+    ['Onde o sistema fica hospedado?', 'Em infraestrutura dedicada Linux, atrás de proteção Cloudflare, com certificado SSL automático e backups replicados. Sua operação não divide servidor com terceiros.'],
+    ['Como funciona o suporte?', 'Direto por WhatsApp e telefone, com a mesma equipe que fez a implantação.'],
+];
+
 $tz = new DateTimeZone('America/Sao_Paulo');
 $deadline = new DateTimeImmutable($promoDeadline . ' 23:59:59', $tz);
 $today = new DateTimeImmutable('now', $tz);
@@ -58,7 +76,7 @@ $discountCashPct = (int) round((1 - $promoInstallCash / $promoInstallFrom) * 100
 
 $whatsappHref = 'https://wa.me/' . $whatsappPhone . '?text=' . rawurlencode($whatsappMessage);
 
-$seoBase = 'https://www.sistemavendadireta.com.br';
+$seoBase = 'https://sistemavendadireta.com.br';
 $seoUrl = $seoBase . '/sistema-venda-direta/';
 // SEO/Ads: o titulo precisa nomear o PRODUTO que a pessoa buscou, nao so a oferta.
 // O Indice de Qualidade do Google marcou a experiencia desta pagina como "abaixo da
@@ -119,6 +137,72 @@ $seoDescription = 'Sistema de marketing multinível (MMN) e venda direta: escrit
   <link rel="stylesheet" href="../css/site-tailwind.css?v=<?= htmlspecialchars($cssVersion, ENT_QUOTES, 'UTF-8') ?>" />
   <link rel="stylesheet" href="../css/site-optimizations.css?v=<?= htmlspecialchars($cssVersion, ENT_QUOTES, 'UTF-8') ?>" />
   <link rel="stylesheet" href="../css/styles.css?v=<?= htmlspecialchars($cssVersion, ENT_QUOTES, 'UTF-8') ?>" />
+
+  <?php /*
+  DADO ESTRUTURADO — ausente nesta pagina ate 05/10/2026.
+
+  A /sistema-mmn/ emitia SoftwareApplication, Offer e FAQPage desde que nasceu;
+  esta, que e o destino de 3 dos 4 grupos de anuncio e a unica indexavel com
+  preco promocional, nao emitia NADA. O preco e o prazo estavam escritos no
+  corpo e no titulo do anuncio, mas nao em lugar nenhum que o Google leia como
+  dado — ou seja, a oferta nao podia aparecer como resultado rico.
+
+  priceValidUntil usa a MESMA constante do rodape e do anuncio (PROMO_DEADLINE).
+  Cravar a data aqui repetiria o erro do "ate 31/08", que sobreviveu 12 dias
+  vencido porque estava escrito em seis lugares diferentes.
+
+  Fora da promocao a marcacao volta ao valor cheio em vez de calar o preco:
+  Offer sem preco e pior que Offer com o preco real.
+  */ ?>
+  <script type="application/ld+json">
+  <?= json_encode([
+      '@context' => 'https://schema.org',
+      '@type' => 'SoftwareApplication',
+      'name' => 'Sistema Venda Direta — plataforma de marketing multinível e venda direta',
+      'applicationCategory' => 'BusinessApplication',
+      'operatingSystem' => 'Web',
+      'description' => $seoDescription,
+      'url' => $seoUrl,
+      'inLanguage' => 'pt-BR',
+      'offers' => array_filter([
+          '@type' => 'Offer',
+          'price' => (string) ($promoActive ? $promoInstallCash : $promoInstallFrom),
+          'priceCurrency' => 'BRL',
+          'availability' => 'https://schema.org/InStock',
+          'url' => $seoUrl,
+          'priceValidUntil' => $promoActive ? $deadline->format('Y-m-d') : null,
+          'description' => $promoActive
+              ? 'Promoção 10 Anos: instalação por ' . $moneyCash . ' à vista ou '
+                  . $moneyTo . ' em 2x, de ' . $moneyFrom . '. Mensalidade a partir de R$ 500.'
+              : 'Instalação a partir de ' . $moneyFrom . '. Mensalidade a partir de R$ 500.',
+      ], static fn ($v) => $v !== null),
+      'provider' => ['@type' => 'Organization', 'name' => 'Sistema Venda Direta', 'url' => $seoBase],
+  ], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) ?>
+  </script>
+
+  <script type="application/ld+json">
+  <?= json_encode([
+      '@context' => 'https://schema.org',
+      '@type' => 'FAQPage',
+      'mainEntity' => array_map(static fn ($p) => [
+          '@type' => 'Question',
+          'name' => $p[0],
+          'acceptedAnswer' => ['@type' => 'Answer', 'text' => $p[1]],
+      ], $faq),
+  ], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) ?>
+  </script>
+
+  <script type="application/ld+json">
+  <?= json_encode([
+      '@context' => 'https://schema.org',
+      '@type' => 'BreadcrumbList',
+      'itemListElement' => [
+          ['@type' => 'ListItem', 'position' => 1, 'name' => 'Sistema Venda Direta', 'item' => $seoBase . '/'],
+          ['@type' => 'ListItem', 'position' => 2, 'name' => 'Sistema de marketing multinível e venda direta', 'item' => $seoUrl],
+      ],
+  ], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) ?>
+  </script>
+
   <?php include __DIR__ . '/../inc/analytics.php'; ?>
 </head>
 <body class="bg-brand text-white antialiased font-[var(--font-body)] site-optimized">
@@ -631,17 +715,8 @@ $seoDescription = 'Sistema de marketing multinível (MMN) e venda direta: escrit
       <div class="mt-2 h-1 w-[72px] rounded-full bg-amber-300"></div>
 
       <div class="mt-6 grid gap-3">
-        <?php
-        $faq = [
-            ['Já tenho um sistema. Dá para migrar os dados?', 'Sim, desde que tenhamos acesso a eles de forma organizada. A migração entra no escopo da parametrização.'],
-            ['Posso usar minha marca e meu domínio?', 'Sim. O sistema roda com a identidade da sua empresa e no seu domínio — é um dos diferenciais da plataforma.'],
-            ['Meu plano de negócio é diferente. Serve?', 'A instalação contempla a parametrização do seu plano. Binário, unilevel, comissão por cargo ou modelo próprio: a regra é configurada, não improvisada.'],
-            ['O que não está incluso?', 'Integrações de ERP e gateway de pagamento são orçadas separadamente, porque dependem do provedor que você já usa.'],
-            ['Existe outro custo além da mensalidade?', 'Não. Novas funcionalidades pedidas depois são acordadas antes de qualquer cobrança.'],
-            ['Onde o sistema fica hospedado?', 'Em infraestrutura dedicada Linux, atrás de proteção Cloudflare, com certificado SSL automático e backups replicados. Sua operação não divide servidor com terceiros.'],
-            ['Como funciona o suporte?', 'Direto por WhatsApp e telefone, com a mesma equipe que fez a implantação.'],
-        ];
-        foreach ($faq as $pair): ?>
+        <?php /* $faq esta no bloco de configuracao, no topo — o head usa pro FAQPage */ ?>
+        <?php foreach ($faq as $pair): ?>
           <details class="rounded-2xl border border-white/20 bg-white/5 p-4">
             <summary class="cursor-pointer font-semibold"><?= htmlspecialchars($pair[0], ENT_QUOTES, 'UTF-8') ?></summary>
             <p class="mt-2 text-sm leading-relaxed text-white/90"><?= htmlspecialchars($pair[1], ENT_QUOTES, 'UTF-8') ?></p>

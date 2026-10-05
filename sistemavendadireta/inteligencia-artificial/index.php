@@ -17,23 +17,23 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
   <meta name="theme-color" content="#004AAD" />
   <meta name="author" content="Sistema Venda Direta" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
-  <link rel="canonical" href="https://www.sistemavendadireta.com.br/inteligencia-artificial/" />
+  <link rel="canonical" href="https://sistemavendadireta.com.br/inteligencia-artificial/" />
   <link rel="icon" type="image/png" href="../logo-icone.png" />
-  <link rel="alternate" hreflang="pt-BR" href="https://www.sistemavendadireta.com.br/inteligencia-artificial/" />
-  <link rel="alternate" hreflang="x-default" href="https://www.sistemavendadireta.com.br/inteligencia-artificial/" />
+  <link rel="alternate" hreflang="pt-BR" href="https://sistemavendadireta.com.br/inteligencia-artificial/" />
+  <link rel="alternate" hreflang="x-default" href="https://sistemavendadireta.com.br/inteligencia-artificial/" />
 
   <meta property="og:locale" content="pt_BR" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Sistema Venda Direta com IA" />
   <meta property="og:description" content="Plataforma de venda direta com IA aplicada: custo operacional sob controle, governança e resultado previsível." />
-  <meta property="og:url" content="https://www.sistemavendadireta.com.br/inteligencia-artificial/" />
+  <meta property="og:url" content="https://sistemavendadireta.com.br/inteligencia-artificial/" />
   <meta property="og:site_name" content="Sistema Venda Direta" />
-  <meta property="og:image" content="https://www.sistemavendadireta.com.br/wp-content/uploads/2023/04/Screenshot-2023-04-26-at-14.38.02.png" />
+  <meta property="og:image" content="https://sistemavendadireta.com.br/wp-content/uploads/2023/04/Screenshot-2023-04-26-at-14.38.02.png" />
   <meta property="og:image:alt" content="Sistema Venda Direta com IA | Custo Operacional Sob Controle e Operação Escalável" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Sistema Venda Direta com IA | Custo Operacional Sob Controle e Operação Escalável" />
   <meta name="twitter:description" content="Sistema Venda Direta com abordagem orientada por IA: custo operacional controlado com governança, produtividade e evolução contínua com apoio do Codafacil." />
-  <meta name="twitter:image" content="https://www.sistemavendadireta.com.br/wp-content/uploads/2023/04/Screenshot-2023-04-26-at-14.38.02.png" />
+  <meta name="twitter:image" content="https://sistemavendadireta.com.br/wp-content/uploads/2023/04/Screenshot-2023-04-26-at-14.38.02.png" />
   <meta name="twitter:site" content="@sistemavendadireta" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -51,7 +51,7 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
         {
           "@type": "Organization",
           "name": "Sistema Venda Direta",
-          "url": "https://www.sistemavendadireta.com.br/",
+          "url": "https://sistemavendadireta.com.br/",
           "sameAs": [
             "https://facebook.com/sistemavendadireta",
             "https://www.youtube.com/@andregomes8954"

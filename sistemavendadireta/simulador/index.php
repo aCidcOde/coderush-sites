@@ -31,7 +31,7 @@ proposito — e isca de conteudo, nao LP de campanha.
 
 require_once __DIR__ . '/../inc/promo.php';
 
-$seoBase = 'https://www.sistemavendadireta.com.br';
+$seoBase = 'https://sistemavendadireta.com.br';
 $seoUrl = $seoBase . '/simulador/';
 $seoTitle = 'Simulador de Plano de Marketing Multinível | Veja se o seu plano fecha';
 $seoDescription = 'Calcule o payout real do seu plano de MMN: bônus de indicação, unilevel por nível '

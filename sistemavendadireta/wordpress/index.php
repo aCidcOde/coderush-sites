@@ -17,23 +17,23 @@ Pagina de servicos WordPress/WooCommerce e Laravel com foco em conversao e quali
   <meta name="theme-color" content="#004AAD" />
   <meta name="author" content="Sistema Venda Direta" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
-  <link rel="canonical" href="https://www.sistemavendadireta.com.br/wordpress/" />
+  <link rel="canonical" href="https://sistemavendadireta.com.br/wordpress/" />
   <link rel="icon" type="image/png" href="../logo-icone.png" />
-  <link rel="alternate" hreflang="pt-BR" href="https://www.sistemavendadireta.com.br/wordpress/" />
-  <link rel="alternate" hreflang="x-default" href="https://www.sistemavendadireta.com.br/wordpress/" />
+  <link rel="alternate" hreflang="pt-BR" href="https://sistemavendadireta.com.br/wordpress/" />
+  <link rel="alternate" hreflang="x-default" href="https://sistemavendadireta.com.br/wordpress/" />
 
   <meta property="og:locale" content="pt_BR" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Serviços WordPress, WooCommerce e Laravel" />
   <meta property="og:description" content="Projetos web com foco em resultado: WordPress, WooCommerce, integrações e infraestrutura para crescimento consistente." />
-  <meta property="og:url" content="https://www.sistemavendadireta.com.br/wordpress/" />
+  <meta property="og:url" content="https://sistemavendadireta.com.br/wordpress/" />
   <meta property="og:site_name" content="Sistema Venda Direta" />
-  <meta property="og:image" content="https://www.sistemavendadireta.com.br/wp-content/uploads/2023/04/Screenshot-2023-04-26-at-14.38.02.png" />
+  <meta property="og:image" content="https://sistemavendadireta.com.br/wp-content/uploads/2023/04/Screenshot-2023-04-26-at-14.38.02.png" />
   <meta property="og:image:alt" content="Serviços WordPress, WooCommerce e Laravel | Sistema Venda Direta" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Serviços WordPress, WooCommerce e Laravel | Sistema Venda Direta" />
   <meta name="twitter:description" content="Desenvolvimento WordPress, WooCommerce e sistemas sob medida com PHP/Laravel. Projetos com foco em performance, conversão, integrações e estabilidade." />
-  <meta name="twitter:image" content="https://www.sistemavendadireta.com.br/wp-content/uploads/2023/04/Screenshot-2023-04-26-at-14.38.02.png" />
+  <meta name="twitter:image" content="https://sistemavendadireta.com.br/wp-content/uploads/2023/04/Screenshot-2023-04-26-at-14.38.02.png" />
   <meta name="twitter:site" content="@sistemavendadireta" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -48,7 +48,7 @@ Pagina de servicos WordPress/WooCommerce e Laravel com foco em conversao e quali
       "@context": "https://schema.org",
       "@type": "ProfessionalService",
       "name": "Sistema Venda Direta - Serviços WordPress",
-      "url": "https://www.sistemavendadireta.com.br/wordpress/",
+      "url": "https://sistemavendadireta.com.br/wordpress/",
       "telephone": "+55 11 99456-6726",
       "email": "contato@sistemavendadireta.com.br",
       "areaServed": "BR",

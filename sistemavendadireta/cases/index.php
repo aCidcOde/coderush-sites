@@ -12,7 +12,7 @@ $clientCases = array_values(array_filter(
     static fn (array $case): bool => empty($case['hidden'])
 ));
 
-$seoBase = 'https://www.sistemavendadireta.com.br';
+$seoBase = 'https://sistemavendadireta.com.br';
 $seoUrl = $seoBase . '/cases/';
 $seoTitle = 'Cases de clientes | Sistema Venda Direta';
 $seoDescription = 'Sistemas em produção: venda direta e MMN, e-commerce, ERP e SaaS — com operações no Brasil, Paraguai e Bolívia.';
