@@ -62,7 +62,7 @@ function parseSiteIndex(filePath) {
       const titleMatch =
         html.match(/<h[23][^>]*>\s*<a[^>]*>([\s\S]*?)<\/a>\s*<\/h[23]>/i) ||
         html.match(/<a[^>]*class="[^"]*hover:underline[^"]*"[^>]*>([\s\S]*?)<\/a>/i);
-      const excerptMatch = html.match(/<p[^>]*>([\s\S]*?)<\/p>/i);
+      const excerptMatch = html.match(/<p(?=[\s>])[^>]*>([\s\S]*?)<\/p>/i);
       const href =
         html.match(/data-blog-path="([^"]+)"/i)?.[1] ||
         html.match(/<a[^>]+href="([^"]+)"/i)?.[1] ||

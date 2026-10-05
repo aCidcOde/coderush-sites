@@ -214,24 +214,24 @@
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/06/09/comissionamento-gerenciar-inadimplencia-eficazmente/"><img src="../../../../imagens/posts/comissionamento-gerenciar-inadimplencia-eficazmente.jpg" alt="Comissionamento: Como Gerenciar a Inadimplência Eficazmente" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/05/06/integracoes-pagamento-logistica-mmn/"><img src="../../../../imagens/posts/integracoes-pagamento-logistica-mmn.jpg" alt="Integrações de Pagamento e Logística no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/09/comissionamento-gerenciar-inadimplencia-eficazmente/" class="hover:underline">Comissionamento: Como Gerenciar a Inadimplência Eficazmente</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Comissionamento: Como Gerenciar a Inadimplência Eficazmente Comissionamento: Como Gerenciar a Inadimplência Eficazmente Entenda como o comissionamento impact...</p>
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/06/integracoes-pagamento-logistica-mmn/" class="hover:underline">Integrações de Pagamento e Logística no MMN</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Para otimizar integrações de pagamento e logística no marketing multinível (MMN), é fundamental implementar um software robusto. Ele deve permitir conexões e...</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/06/18/crm-ia-pode-potencializar-mmn/"><img src="../../../../imagens/posts/crm-ia-pode-potencializar-mmn.jpg" alt="Como o CRM com IA pode potencializar seu MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/06/24/integracoes-pagamento-logistica-impactam-mmn/"><img src="../../../../imagens/posts/integracoes-pagamento-logistica-impactam-mmn.jpg" alt="Como as integrações de pagamento e logística impactam o MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/18/crm-ia-pode-potencializar-mmn/" class="hover:underline">Como o CRM com IA pode potencializar seu MMN</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Como o CRM com IA pode potencializar seu MMN Como o CRM com IA pode potencializar seu MMN Descubra como um CRM com inteligência artificial apoia distribuidor...</p>
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/24/integracoes-pagamento-logistica-impactam-mmn/" class="hover:underline">Como as integrações de pagamento e logística impactam o MMN</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">As integrações de pagamento e logística no marketing multinível (MMN) aprimoram a eficiência operacional, facilitam a gestão de comissionamento e melhoram a...</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/07/30/integracoes-pagamento-logistica-marketing-multinivel/"><img src="../../../../imagens/posts/integracoes-pagamento-logistica-marketing-multinivel.jpg" alt="Integrações de pagamento e logística no marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/06/12/expandir-internacionalmente-marketing-multinivel/"><img src="../../../../imagens/posts/expandir-internacionalmente-marketing-multinivel.jpg" alt="Como Expandir Internacionalmente no Marketing Multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/07/30/integracoes-pagamento-logistica-marketing-multinivel/" class="hover:underline">Integrações de pagamento e logística no marketing multinível</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Integrações de pagamento e logística no marketing multinível Integrações de pagamento e logística no marketing multinível Entenda como integrar pagamentos e...</p>
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/12/expandir-internacionalmente-marketing-multinivel/" class="hover:underline">Como Expandir Internacionalmente no Marketing Multinível</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Para expandir internacionalmente no marketing multinível, é crucial adaptar seu sistema de vendas diretas às legislações locais, integrar soluções de pagamen...</p>
   </div>
 </article>
   </div>
@@ -262,11 +262,11 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://bfrintelligence.com.br/2026/09/05/integrando-agentes-ia-resultados-mensuraveis/" rel="noopener" target="_blank"><img src="https://bfrintelligence.com.br/imagens/posts/integrando-agentes-ia-resultados-mensuraveis.jpg" alt="Integrando Agentes de IA para Resultados Mensuráveis" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://bfrintelligence.com.br/2026/10/05/agentes-ia-atendimento-integrar-sucesso/" rel="noopener" target="_blank"><img src="https://bfrintelligence.com.br/imagens/posts/agentes-ia-atendimento-integrar-sucesso.jpg" alt="Agentes de IA no Atendimento: Como Integrar com Sucesso" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">BFR Intelligence</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://bfrintelligence.com.br/2026/09/05/integrando-agentes-ia-resultados-mensuraveis/" rel="noopener" target="_blank" class="hover:underline">Integrando Agentes de IA para Resultados Mensuráveis</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como agentes de IA podem ser integrados com sistemas internos para operações eficientes e mensuração de resultados.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://bfrintelligence.com.br/2026/10/05/agentes-ia-atendimento-integrar-sucesso/" rel="noopener" target="_blank" class="hover:underline">Agentes de IA no Atendimento: Como Integrar com Sucesso</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como operar agentes de IA integrados a sistemas internos para resultados mensuráveis.</p>
   </div>
 </article>
   </div>

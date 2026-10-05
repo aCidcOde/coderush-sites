@@ -238,19 +238,19 @@
   <p class="mt-2 text-sm text-white/70">Conteúdo recente dos outros sites do ecossistema.</p>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="https://sistemavendadireta.com.br/2026/08/24/comissionamento-emissao-nf-venda-direta/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/comissionamento-emissao-nf-venda-direta.jpg" alt="Comissionamento e Emissão de NF-e em Venda Direta" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Sistema Venda Direta</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/08/24/comissionamento-emissao-nf-venda-direta/" rel="noopener" target="_blank" class="hover:underline">Comissionamento e Emissão de NF-e em Venda Direta</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">A emissão de NF-e integrada ao processo de venda direta garante uma gestão mais eficiente e transparente. Isso assegura que os comissiona...</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="https://bfrintelligence.com.br/2026/08/24/roi-mensuravel-agentes-ia-operacao-real/" rel="noopener" target="_blank"><img src="https://bfrintelligence.com.br/imagens/posts/roi-mensuravel-agentes-ia-operacao-real.jpg" alt="ROI Mensurável de Agentes de IA na Operação Real" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">BFR Intelligence</p>
     <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://bfrintelligence.com.br/2026/08/24/roi-mensuravel-agentes-ia-operacao-real/" rel="noopener" target="_blank" class="hover:underline">ROI Mensurável de Agentes de IA na Operação Real</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como implementar agentes de IA gerando resultados mensuráveis com segurança e integração.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://sistemavendadireta.com.br/2026/07/30/integracoes-pagamento-logistica-marketing-multinivel/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/integracoes-pagamento-logistica-marketing-multinivel.jpg" alt="Integrações de pagamento e logística no marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Sistema Venda Direta</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/07/30/integracoes-pagamento-logistica-marketing-multinivel/" rel="noopener" target="_blank" class="hover:underline">Integrações de pagamento e logística no marketing multinível</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Integrações de pagamento e logística no marketing multinível Integrações de pagamento e logística no marketing multinível Entenda como in...</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">

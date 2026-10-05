@@ -238,19 +238,19 @@
   <p class="mt-2 text-sm text-white/70">Conteúdo recente dos outros sites do ecossistema.</p>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://sistemavendadireta.com.br/2026/08/15/integrar-sistema-venda-direta-erp/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/integrar-sistema-venda-direta-erp.jpg" alt="Como integrar seu sistema de venda direta com ERP" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://sistemavendadireta.com.br/2026/05/02/integrar-pagamentos-logistica-marketing-multinivel/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/integrar-pagamentos-logistica-marketing-multinivel.jpg" alt="Como integrar pagamentos e logística em marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Sistema Venda Direta</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/08/15/integrar-sistema-venda-direta-erp/" rel="noopener" target="_blank" class="hover:underline">Como integrar seu sistema de venda direta com ERP</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Como integrar seu sistema de venda direta com ERP Como integrar seu sistema de venda direta com ERP Entenda como a integração de sistemas...</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/05/02/integrar-pagamentos-logistica-marketing-multinivel/" rel="noopener" target="_blank" class="hover:underline">Como integrar pagamentos e logística em marketing multinível</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Integrar pagamentos e logística em marketing multinível envolve a escolha de um software que possibilite conexões diretas com sistemas de...</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://bfrintelligence.com.br/2026/08/09/implementar-agentes-ia-operacao-empresarial/" rel="noopener" target="_blank"><img src="https://bfrintelligence.com.br/imagens/posts/implementar-agentes-ia-operacao-empresarial.jpg" alt="Como implementar agentes de IA na operação empresarial" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://bfrintelligence.com.br/2026/10/05/agentes-ia-atendimento-integrar-sucesso/" rel="noopener" target="_blank"><img src="https://bfrintelligence.com.br/imagens/posts/agentes-ia-atendimento-integrar-sucesso.jpg" alt="Agentes de IA no Atendimento: Como Integrar com Sucesso" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">BFR Intelligence</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://bfrintelligence.com.br/2026/08/09/implementar-agentes-ia-operacao-empresarial/" rel="noopener" target="_blank" class="hover:underline">Como implementar agentes de IA na operação empresarial</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como integrar e operar agentes de IA com resultados mensuráveis em sua empresa.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://bfrintelligence.com.br/2026/10/05/agentes-ia-atendimento-integrar-sucesso/" rel="noopener" target="_blank" class="hover:underline">Agentes de IA no Atendimento: Como Integrar com Sucesso</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como operar agentes de IA integrados a sistemas internos para resultados mensuráveis.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">

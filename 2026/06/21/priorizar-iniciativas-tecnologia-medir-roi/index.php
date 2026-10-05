@@ -237,11 +237,11 @@
   <p class="mt-2 text-sm text-white/70">Conteúdo recente dos outros sites do ecossistema.</p>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://sistemavendadireta.com.br/2026/08/18/garantir-previsibilidade-receita-mmn/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/garantir-previsibilidade-receita-mmn.jpg" alt="Como garantir previsibilidade de receita em MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://sistemavendadireta.com.br/2026/06/03/tecnologia-vendas-diretas-escala-considerar/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/tecnologia-vendas-diretas-escala-considerar.jpg" alt="Tecnologia para Vendas Diretas em Escala: O que Considerar" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Sistema Venda Direta</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/08/18/garantir-previsibilidade-receita-mmn/" rel="noopener" target="_blank" class="hover:underline">Como garantir previsibilidade de receita em MMN</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Como garantir previsibilidade de receita em MMN Como garantir previsibilidade de receita em MMN Entenda como a tecnologia pode ajudar na...</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/06/03/tecnologia-vendas-diretas-escala-considerar/" rel="noopener" target="_blank" class="hover:underline">Tecnologia para Vendas Diretas em Escala: O que Considerar</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">A tecnologia facilita a automação de processos, melhora a gestão de comissionamento e proporciona suporte ao distribuidor. Com um softwar...</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">

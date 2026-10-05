@@ -1,0 +1,90 @@
+{
+  "mode": "publish",
+  "date": "2026-10-05",
+  "timezone": "America/Sao_Paulo",
+  "focus": "php",
+  "startedAt": "2026-10-05T13:54:19.016Z",
+  "aiProvider": "openrouter",
+  "sites": [
+    {
+      "siteId": "sistemavendadireta",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Cover agent falhou: Cover agent falhou em todos os modelos. openai/gpt-5-image: OpenRouter openai/gpt-5-image (402): {\"error\":{\"message\":\"This request requires at least $1.00 in balance for image or video output\",\"code\":402,\"metadata\":{\"limit_source\":\"openrouter_credits\",\"remedy_hint\":\"Add credits at https://openrouter.ai/settings/credits, or lower max_tokens / prompt size to fit your remaining balance.\",\"provider_name\":null}},\"user_id\":\"user_399ke79NyrlXInPYSK0jENmpnQF\"} | google/gemini-3-pro-image-preview: OpenRouter google/gemini-3-pro-image-preview (402): {\"error\":{\"message\":\"This request requires at least $1.00 in balance for image or video output\",\"code\":402,\"metadata\":{\"limit_source\":\"openrouter_credits\",\"remedy_hint\":\"Add credits at https://openrouter.ai/settings/credits, or lower max_tokens / prompt size to fit your remaining balance.\",\"provider_name\":null}},\"user_id\":\"user_399ke79NyrlXInPYSK0jENmpnQF\"} | google/gemini-2.5-flash-image: OpenRouter google/gemini-2.5-flash-image (402): {\"error\":{\"message\":\"This request requires at least $1.00 in balance for image or video output\",\"code\":402,\"metadata\":{\"limit_source\":\"openrouter_credits\",\"remedy_hint\":\"Add credits at https://openrouter.ai/settings/credits, or lower max_tokens / prompt size to fit your remaining balance.\",\"provider_name\":null}},\"user_id\":\"user_399ke79NyrlXInPYSK0jENmpnQF\"}",
+      "angle": "comissionamento",
+      "theme": "quais empresas de marketing multinivel existem no Brasil",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/sistemavendadireta/2026-10-05/empresas-marketing-multinivel-brasil-comissionamento.json",
+      "markdownPath": "automation/blog-bot/out/sistemavendadireta/2026-10-05/empresas-marketing-multinivel-brasil-comissionamento.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "sistemavendadireta/2026/10/05/empresas-marketing-multinivel-brasil-comissionamento/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "fallback-raw",
+        "coverAlt": "",
+        "coverLeakage": null
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "sistemavendadireta/index.php",
+          "sistemavendadireta/blog/index.php",
+          "sistemavendadireta/2026/10/05/empresas-marketing-multinivel-brasil-comissionamento/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "bfrintelligence",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": "Cover agent falhou: Cover agent falhou em todos os modelos. openai/gpt-5-image: OpenRouter openai/gpt-5-image (402): {\"error\":{\"message\":\"This request requires at least $1.00 in balance for image or video output\",\"code\":402,\"metadata\":{\"limit_source\":\"openrouter_credits\",\"remedy_hint\":\"Add credits at https://openrouter.ai/settings/credits, or lower max_tokens / prompt size to fit your remaining balance.\",\"provider_name\":null}},\"user_id\":\"user_399ke79NyrlXInPYSK0jENmpnQF\"} | google/gemini-3-pro-image-preview: OpenRouter google/gemini-3-pro-image-preview (402): {\"error\":{\"message\":\"This request requires at least $1.00 in balance for image or video output\",\"code\":402,\"metadata\":{\"limit_source\":\"openrouter_credits\",\"remedy_hint\":\"Add credits at https://openrouter.ai/settings/credits, or lower max_tokens / prompt size to fit your remaining balance.\",\"provider_name\":null}},\"user_id\":\"user_399ke79NyrlXInPYSK0jENmpnQF\"} | google/gemini-2.5-flash-image: OpenRouter google/gemini-2.5-flash-image (402): {\"error\":{\"message\":\"This request requires at least $1.00 in balance for image or video output\",\"code\":402,\"metadata\":{\"limit_source\":\"openrouter_credits\",\"remedy_hint\":\"Add credits at https://openrouter.ai/settings/credits, or lower max_tokens / prompt size to fit your remaining balance.\",\"provider_name\":null}},\"user_id\":\"user_399ke79NyrlXInPYSK0jENmpnQF\"}",
+      "angle": "engenharia de agentes",
+      "theme": "agentes de IA no atendimento com canais integrados",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/bfrintelligence/2026-10-05/agentes-ia-atendimento-integrar-sucesso.json",
+      "markdownPath": "automation/blog-bot/out/bfrintelligence/2026-10-05/agentes-ia-atendimento-integrar-sucesso.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "bfrintelligence/2026/10/05/agentes-ia-atendimento-integrar-sucesso/index.html",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "fallback-raw",
+        "coverAlt": "",
+        "coverLeakage": null
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    }
+  ],
+  "duplications": [],
+  "relatedRefresh": {
+    "touched": 163,
+    "unchanged": 6,
+    "errors": [],
+    "totalCards": 157,
+    "totalFiles": 169
+  },
+  "fallbackCount": 0,
+  "allFallback": false,
+  "finishedAt": "2026-10-05T13:54:58.256Z",
+  "ok": true
+}

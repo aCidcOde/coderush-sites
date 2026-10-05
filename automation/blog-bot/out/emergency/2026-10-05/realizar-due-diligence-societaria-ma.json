@@ -1,0 +1,88 @@
+{
+  "date": "2026-10-05",
+  "siteId": "emergency",
+  "postType": "due-diligence-certidoes",
+  "focus": "php",
+  "theme": "due diligence societaria em M&A no mercado brasileiro",
+  "angle": "regularizacao",
+  "slug": "realizar-due-diligence-societaria-ma",
+  "title": "Emergency Documentação: PHP aplicado a regularizacao",
+  "description": "Atualização semanal de php para Emergency Documentação, com foco em due diligence societaria em M&A no mercado brasileiro.",
+  "sources": [
+    "https://emergency.com.br/blog/due-diligence-societaria-ma-brasil",
+    "https://www.jusbrasil.com.br/artigos/due-diligence-em-operacoes-societarias-etapas-relevancia-juridica-e-estrategia-empresarial/3813212023",
+    "https://www.jusbrasil.com.br/artigos/fusoes-aquisicoes-e-incorporacoes-m-a-etapas-juridicas-due-diligence-e-contratos-de-compra-e-venda-de-participacao-societaria/5447938281",
+    "https://www.pontesvieiraadvogados.com.br/post/m-a-no-brasil-para-investidores-estrangeiros-guia-juridico-completo-due-diligence-mou-contratos-10",
+    "https://www.novotny.com.br/publicacoes/due-diligence-operacacoes-ma"
+  ],
+  "status": "draft",
+  "generatedAt": "2026-10-05T10:48:52-03:00",
+  "content": {
+    "eyebrow": "Orientações Práticas",
+    "headline": "Como realizar due diligence societária em M&A",
+    "summary": "Entenda o processo de due diligence societária e como regularizar a documentação necessária.",
+    "answerBox": {
+      "question": "Quais são os passos para fazer due diligence societária em M&A?",
+      "answer": "Para realizar uma due diligence societária em M&A, é essencial revisar documentos legais, certidões, contratos e situações fiscais da empresa-alvo. A regularização da documentação é crucial para mitigar riscos e facilitar o fechamento do negócio."
+    },
+    "tldr": [
+      "Due diligence é essencial para aquisições seguras.",
+      "Certidões online facilitam o processo de regularização.",
+      "Apoio humano é importante para casos complexos."
+    ],
+    "sections": [
+      {
+        "type": "prose",
+        "title": "A Importância da Due Diligence Societária",
+        "body": "A due diligence societária é uma etapa crítica em fusões e aquisições, pois permite que o comprador avalie a saúde financeira e legal da empresa-alvo. A regularização da documentação é fundamental para evitar surpresas durante o processo de negociação, garantindo que todas as informações estejam corretas e atualizadas."
+      },
+      {
+        "type": "list",
+        "title": "Principais Documentos a Serem Revisados",
+        "items": [
+          "Contratos sociais e alterações contratuais",
+          "Certidões de regularidade fiscal e trabalhista",
+          "Documentos de propriedade intelectual e patentes",
+          "Registros de ativos e passivos da empresa",
+          "Comprovantes de licenças e autorizações"
+        ]
+      },
+      {
+        "type": "callout",
+        "body": "Já estruturamos esse processo em diversos clientes. Vale uma conversa para entender como podemos ajudar você a evitar retrabalho e fechar negócios mais seguros.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Como Facilitar a Regularização",
+        "body": "Para facilitar a regularização na due diligence, recomenda-se utilizar serviços de emissão de certidões online. Com a Emergency Documentação, você pode obter certidões cartorárias e forenses de forma rápida e prática, além de contar com suporte humano para esclarecer dúvidas e lidar com pedidos complexos."
+      },
+      {
+        "type": "cta-inline",
+        "body": "Estamos prontos para ajudar na sua due diligence societária.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Cuidado com os Riscos",
+        "body": "Durante a due diligence, é preciso estar atento a possíveis riscos legais e financeiros. Documentação inconsistente ou pendências jurídicas podem atrasar o processo de aquisição. A regularização antecipada e o suporte de especialistas minimizam esses riscos, assegurando um fechamento mais tranquilo."
+      }
+    ],
+    "faq": [
+      {
+        "q": "O que é due diligence societária?",
+        "a": "Due diligence societária é um processo de verificação e análise dos documentos legais e financeiros de uma empresa-alvo antes de uma fusão ou aquisição."
+      },
+      {
+        "q": "Como regularizar a documentação durante a due diligence?",
+        "a": "A regularização pode ser feita através da emissão de certidões online e revisão de documentos essenciais, garantindo que tudo esteja em conformidade."
+      },
+      {
+        "q": "Quais são os principais riscos em uma due diligence?",
+        "a": "Os principais riscos incluem inconsistências documentais, pendências fiscais e jurídicas, que podem impactar o fechamento da transação."
+      }
+    ]
+  }
+}

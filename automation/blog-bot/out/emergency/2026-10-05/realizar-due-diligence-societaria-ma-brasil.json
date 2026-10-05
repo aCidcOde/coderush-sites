@@ -1,0 +1,88 @@
+{
+  "date": "2026-10-05",
+  "siteId": "emergency",
+  "postType": "due-diligence-certidoes",
+  "focus": "php",
+  "theme": "due diligence societaria em M&A no mercado brasileiro",
+  "angle": "regularizacao",
+  "slug": "realizar-due-diligence-societaria-ma-brasil",
+  "title": "Emergency Documentação: PHP aplicado a regularizacao",
+  "description": "Atualização semanal de php para Emergency Documentação, com foco em due diligence societaria em M&A no mercado brasileiro.",
+  "sources": [
+    "https://emergency.com.br/blog/due-diligence-societaria-ma-brasil",
+    "https://www.jusbrasil.com.br/artigos/due-diligence-em-operacoes-societarias-etapas-relevancia-juridica-e-estrategia-empresarial/3813212023",
+    "https://www.jusbrasil.com.br/artigos/fusoes-aquisicoes-e-incorporacoes-m-a-etapas-juridicas-due-diligence-e-contratos-de-compra-e-venda-de-participacao-societaria/5447938281",
+    "https://www.pontesvieiraadvogados.com.br/post/m-a-no-brasil-para-investidores-estrangeiros-guia-juridico-completo-due-diligence-mou-contratos-10",
+    "https://www.novotny.com.br/publicacoes/due-diligence-operacacoes-ma"
+  ],
+  "status": "draft",
+  "generatedAt": "2026-10-05T10:52:56-03:00",
+  "content": {
+    "eyebrow": "Guia Prático",
+    "headline": "Como realizar due diligence societária em M&A no Brasil",
+    "summary": "Entenda como a regularização de certidões impacta na due diligence societária em M&A.",
+    "answerBox": {
+      "question": "Como fazer due diligence societária em fusões e aquisições?",
+      "answer": "Para realizar due diligence societária em M&A, é essencial coletar e analisar certidões, contratos e documentos relevantes, garantindo a regularização. O suporte de uma empresa experiente pode acelerar o processo e mitigar riscos, evitando retrabalho."
+    },
+    "tldr": [
+      "Certidões são cruciais na due diligence societária.",
+      "Regularização evita riscos em M&A.",
+      "Apoio especializado pode acelerar processos."
+    ],
+    "sections": [
+      {
+        "type": "prose",
+        "title": "Importância da regularização na due diligence",
+        "body": "A regularização de documentos e certidões é um passo fundamental na due diligence societária durante fusões e aquisições. Isso não só garante a conformidade legal, mas também permite que as partes envolvidas identifiquem possíveis riscos associados à transação. Um processo bem estruturado economiza tempo e recursos, além de aumentar a confiança entre compradores e vendedores."
+      },
+      {
+        "type": "list",
+        "title": "Passos essenciais na due diligence societária",
+        "items": [
+          "Coletar certidões cartorárias e forenses atualizadas.",
+          "Analisar contratos e obrigações existentes da empresa.",
+          "Verificar a regularidade fiscal e trabalhista.",
+          "Identificar passivos ocultos que podem impactar a negociação.",
+          "Consultar especialistas em M&A para orientação."
+        ]
+      },
+      {
+        "type": "callout",
+        "body": "Já estruturamos isso em diversos clientes, facilitando a regularização de certidões em processos complexos. Vale uma conversa para entender seu cenário.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Riscos de uma due diligence mal conduzida",
+        "body": "Uma due diligence insuficiente pode resultar em surpresas desagradáveis, como passivos ocultos ou irregularidades que afetam a viabilidade da aquisição. Por isso, é vital contar com um suporte especializado, como o da Emergency Documentação, que oferece um painel de acompanhamento e análise detalhada, assegurando que nada seja negligenciado."
+      },
+      {
+        "type": "cta-inline",
+        "body": "Para evitar problemas futuros, considere o suporte de especialistas na área.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "O que evitar na due diligence societária",
+        "body": "Evite a tentação de acelerar o processo sem a devida verificação. Ignorar certidões ou não realizar uma análise completa pode levar a desvios significativos e riscos financeiros. Lembre-se de que cada detalhe conta, e ter um suporte humano para pedidos complexos pode fazer toda a diferença."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Quais certidões são obrigatórias na due diligence societária?",
+        "a": "As certidões obrigatórias incluem certidão de objeto e pé, certidão de regularidade fiscal e trabalhista, e certidão negativa de débitos. Cada uma delas fornece informações cruciais sobre a situação da empresa."
+      },
+      {
+        "q": "Como validar fornecedor pessoa jurídica antes de contratar?",
+        "a": "Para validar fornecedores, é importante verificar sua regularidade fiscal e consultar certidões que confirmem a legalidade e a idoneidade da empresa. Uma due diligence adequada ajuda a mitigar riscos."
+      },
+      {
+        "q": "Qual o prazo ideal para uma due diligence completa?",
+        "a": "O prazo ideal varia conforme a complexidade da transação, mas geralmente, uma due diligence completa deve ser realizada em 2 a 4 semanas, dependendo da disponibilidade de documentos e informações."
+      }
+    ]
+  }
+}

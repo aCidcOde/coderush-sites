@@ -1,5 +1,7 @@
 const fs = require("node:fs");
 const path = require("node:path");
+const { spawnSync } = require("node:child_process");
+const { siteProfile } = require("./site-strategy");
 const { generateCover: agentGenerateCover } = require("./cover-agent");
 
 const HOME_MARKERS = {
@@ -307,7 +309,7 @@ function parseCard(articleHtml) {
   const titleMatch =
     articleHtml.match(/<h[23][^>]*>\s*<a[^>]*>([\s\S]*?)<\/a>\s*<\/h[23]>/i) ||
     articleHtml.match(/<a[^>]*class="[^"]*hover:underline[^"]*"[^>]*>([\s\S]*?)<\/a>/i);
-  const excerptMatch = articleHtml.match(/<p[^>]*>([\s\S]*?)<\/p>/i);
+  const excerptMatch = articleHtml.match(/<p(?=[\s>])[^>]*>([\s\S]*?)<\/p>/i);
   const href =
     articleHtml.match(/data-blog-path="([^"]+)"/i)?.[1] ||
     articleHtml.match(/<a[^>]+href="([^"]+)"/i)?.[1] ||
@@ -1268,6 +1270,43 @@ function updateCardsInFile(filePath, markers, cards, context, maxItems, siteRoot
   return { updated, cards: nextCards };
 }
 
+/**
+ * Capa tipografica local, usada SO quando a capa de IA falha.
+ *
+ * O publisher.js (sites file-based) sempre teve essa rede: se o agente de capa
+ * estoura, ele copia a fallbackCover do proprio site e o post sai. O destino de
+ * API nao tinha equivalente — chamava generateCover sem try/catch, entao qualquer
+ * tropeco na imagem derrubava o post inteiro.
+ *
+ * Nao e hipotese: em 01/10/2026 o saldo do OpenRouter zerou e a geracao de imagem
+ * passou a responder 402. O emergency parou de publicar, o run saiu com codigo 1,
+ * e levou junto os posts do SVD e da BFR que ja estavam gravados em disco.
+ *
+ * Copiar a capa de um post anterior seria mais simples e e pior: duas materias
+ * diferentes com a mesma arte no indice do blog. A capa local muda com o titulo.
+ */
+function coverLocalFallback({ site, contract, targetPath }) {
+  const perfil = siteProfile(site.id) || {};
+  const paleta = (perfil.coverArt?.paletteHex || []).join(",")
+    || "#0d1118,#0f172a,#d89b1a,#f3c65a";
+  const script = path.resolve(__dirname, "..", "scripts", "capa-local.py");
+  const r = spawnSync("python3", [
+    script,
+    `--saida=${targetPath}`,
+    `--titulo=${contract.content?.headline || contract.theme || site.name || site.id}`,
+    `--eyebrow=${contract.content?.eyebrow || contract.angle || ""}`,
+    `--marca=${site.name || site.id}`,
+    `--paleta=${paleta}`
+  ], { encoding: "utf8" });
+
+  if (r.status !== 0 || !fs.existsSync(targetPath)) {
+    throw new Error(
+      `capa local tambem falhou: ${(r.stderr || r.error?.message || "sem detalhe").trim()}`
+    );
+  }
+  return targetPath;
+}
+
 async function ensureCoverImage(root, site, contract, aiConfig) {
   const postsDir = path.resolve(root, site.siteRoot, site.assets.postsDir);
   ensureDir(postsDir);
@@ -1295,6 +1334,31 @@ async function ensureCoverImage(root, site, contract, aiConfig) {
     } catch (error) {
       warning = `Cover agent falhou: ${String(error.message || error)}`;
     }
+  }
+
+  /*
+   * Antes da fallbackCover estatica, tenta a capa tipografica local.
+   *
+   * A fallbackCover e a MESMA imagem em todo post que cai nela. Com a IA de
+   * imagem fora do ar — e em 05/10/2026 ela ficou, por saldo zerado no
+   * OpenRouter — isso significa um indice de blog inteiro com a mesma arte
+   * repetida. A capa local leva o titulo do proprio post, entao cada uma e
+   * diferente, e sai na paleta da marca.
+   *
+   * A estatica continua existindo como ultimo degrau: se o Python ou o Pillow
+   * nao estiverem na maquina, melhor capa repetida que post sem capa.
+   */
+  try {
+    coverLocalFallback({ site, contract, targetPath });
+    return {
+      path: targetPath,
+      source: "local-tipografica",
+      warning,
+      altText: contract.content?.headline || "",
+      leakage: null
+    };
+  } catch (error) {
+    warning = `${warning || ""} Capa local tambem falhou: ${String(error.message || error)}`.trim();
   }
 
   const fallbackPath = path.resolve(root, site.siteRoot, site.assets.fallbackCover);
@@ -1485,6 +1549,7 @@ async function publishSitePost(root, site, contract, aiConfig) {
 }
 
 module.exports = {
+  coverLocalFallback,
   // exportado pra dar pra regerar o sitemap sem publicar post:
   // o sitemap e derivado de seo.extraPaths + cards, e mudar so o config
   // nao reescreve o XML ate a proxima rodada do bot

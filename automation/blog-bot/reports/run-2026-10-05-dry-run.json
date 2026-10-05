@@ -1,0 +1,83 @@
+{
+  "mode": "dry-run",
+  "date": "2026-10-05",
+  "timezone": "America/Sao_Paulo",
+  "focus": "php",
+  "startedAt": "2026-10-05T13:39:10.107Z",
+  "aiProvider": "openrouter",
+  "sites": [
+    {
+      "siteId": "coderush",
+      "skipped": true,
+      "reason": "site disabled"
+    },
+    {
+      "siteId": "codafacil",
+      "skipped": true,
+      "reason": "site disabled"
+    },
+    {
+      "siteId": "fluxointeligenteia",
+      "skipped": true,
+      "reason": "site disabled"
+    },
+    {
+      "siteId": "sistemavendadireta",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "comissionamento",
+      "theme": "quais empresas de marketing multinivel existem no Brasil",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/sistemavendadireta/2026-10-05/empresas-marketing-multinivel-brasil-comissionamento.json",
+      "markdownPath": "automation/blog-bot/out/sistemavendadireta/2026-10-05/empresas-marketing-multinivel-brasil-comissionamento.md"
+    },
+    {
+      "siteId": "emergency",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "regularizacao",
+      "theme": "due diligence societaria em M&A no mercado brasileiro",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": [
+          {
+            "url": "https://capitalaberto.com.br/feed/",
+            "error": "HTTP 404"
+          }
+        ]
+      },
+      "outputPath": "automation/blog-bot/out/emergency/2026-10-05/regularizacao-impacta-due-diligence-societaria-ma.json",
+      "markdownPath": "automation/blog-bot/out/emergency/2026-10-05/regularizacao-impacta-due-diligence-societaria-ma.md"
+    },
+    {
+      "siteId": "bfrintelligence",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "engenharia de agentes",
+      "theme": "agentes de IA no atendimento com canais integrados",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/bfrintelligence/2026-10-05/agentes-ia-integra-los-operacao-real.json",
+      "markdownPath": "automation/blog-bot/out/bfrintelligence/2026-10-05/agentes-ia-integra-los-operacao-real.md"
+    }
+  ],
+  "duplications": [],
+  "fallbackCount": 0,
+  "allFallback": false,
+  "finishedAt": "2026-10-05T13:40:01.535Z",
+  "ok": true
+}

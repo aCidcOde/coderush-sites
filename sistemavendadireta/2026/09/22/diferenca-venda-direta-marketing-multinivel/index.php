@@ -222,21 +222,21 @@
   <a href="../../../../2026/09/05/diferencas-venda-direta-marketing-multinivel/"><img src="../../../../imagens/posts/diferencas-venda-direta-marketing-multinivel.jpg" alt="Diferenças entre Venda Direta e Marketing Multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/09/05/diferencas-venda-direta-marketing-multinivel/" class="hover:underline">Diferenças entre Venda Direta e Marketing Multinível</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Diferenças entre Venda Direta e Marketing Multinível Diferenças entre Venda Direta e Marketing Multinível Entenda as principais distinções entre venda direta...</p>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">A venda direta foca na comercialização de produtos diretamente ao consumidor, enquanto o marketing multinível envolve uma estrutura de comissionamento</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/09/05/onboarding-ativacao-distribuidores-papel-integracao-erp/"><img src="../../../../imagens/posts/onboarding-ativacao-distribuidores-papel-integracao-erp.jpg" alt="Onboarding e Ativação de Distribuidores: O Papel da Integração ERP" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/06/03/tecnologia-vendas-diretas-escala-considerar/"><img src="../../../../imagens/posts/tecnologia-vendas-diretas-escala-considerar.jpg" alt="Tecnologia para Vendas Diretas em Escala: O que Considerar" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/09/05/onboarding-ativacao-distribuidores-papel-integracao-erp/" class="hover:underline">Onboarding e Ativação de Distribuidores: O Papel da Integração ERP</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Onboarding e Ativação de Distribuidores: O Papel da Integração ERP Onboarding e Ativação de Distribuidores: O Papel da Integração ERP Entenda como uma boa in...</p>
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/03/tecnologia-vendas-diretas-escala-considerar/" class="hover:underline">Tecnologia para Vendas Diretas em Escala: O que Considerar</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">A tecnologia facilita a automação de processos, melhora a gestão de comissionamento e proporciona suporte ao distribuidor. Com um software adequado, como o S...</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/09/05/cadastrar-consultores-distribuidores-mmn-internacional/"><img src="../../../../imagens/posts/cadastrar-consultores-distribuidores-mmn-internacional.jpg" alt="Como cadastrar consultores e distribuidores em MMN internacional" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/08/06/comissao-cargo-vs-plano-pontos-venda-direta/"><img src="../../../../imagens/posts/comissao-cargo-vs-plano-pontos-venda-direta.jpg" alt="Comissão por cargo vs plano de pontos em venda direta" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/09/05/cadastrar-consultores-distribuidores-mmn-internacional/" class="hover:underline">Como cadastrar consultores e distribuidores em MMN internacional</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Como cadastrar consultores e distribuidores em MMN internacional Como cadastrar consultores e distribuidores em MMN internacional Aprenda a cadastrar consult...</p>
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/08/06/comissao-cargo-vs-plano-pontos-venda-direta/" class="hover:underline">Comissão por cargo vs plano de pontos em venda direta</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">A comissão por cargo oferece uma taxa fixa baseada na posição do distribuidor, enquanto o plano de pontos é mais flexível, permitindo que os ganhos variem</p>
   </div>
 </article>
   </div>
@@ -267,11 +267,11 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://bfrintelligence.com.br/2026/09/22/orquestracao-multiplos-agentes-ia-governanca/" rel="noopener" target="_blank"><img src="https://bfrintelligence.com.br/imagens/posts/orquestracao-multiplos-agentes-ia-governanca.jpg" alt="Orquestração de Múltiplos Agentes de IA na Governança" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://bfrintelligence.com.br/2026/10/05/agentes-ia-atendimento-integrar-sucesso/" rel="noopener" target="_blank"><img src="https://bfrintelligence.com.br/imagens/posts/agentes-ia-atendimento-integrar-sucesso.jpg" alt="Agentes de IA no Atendimento: Como Integrar com Sucesso" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">BFR Intelligence</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://bfrintelligence.com.br/2026/09/22/orquestracao-multiplos-agentes-ia-governanca/" rel="noopener" target="_blank" class="hover:underline">Orquestração de Múltiplos Agentes de IA na Governança</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Orquestração de Múltiplos Agentes de IA na Governança Entenda como orquestrar agentes de IA para operações seguras e eficientes.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://bfrintelligence.com.br/2026/10/05/agentes-ia-atendimento-integrar-sucesso/" rel="noopener" target="_blank" class="hover:underline">Agentes de IA no Atendimento: Como Integrar com Sucesso</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como operar agentes de IA integrados a sistemas internos para resultados mensuráveis.</p>
   </div>
 </article>
   </div>

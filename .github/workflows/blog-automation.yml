@@ -46,7 +46,20 @@ jobs:
           BFR_CONTENT_TOKEN: ${{ secrets.BFR_CONTENT_TOKEN }}
         run: npm run blogbot:publish
 
+      # 05/10/2026 — ROda mesmo quando o bot sai com codigo 1.
+      #
+      # Sem o `if: always()` este passo era pulado por padrao, e o que ja estava
+      # escrito em disco ia pro lixo. Foi exatamente o que aconteceu entre 22/09 e
+      # 05/10: o saldo do OpenRouter zerou, a capa do emergency passou a falhar com
+      # 402, o run saiu 1 — e os posts do SVD e da BFR, que tinham sido gerados e
+      # gravados COM SUCESSO, nunca foram commitados. 13 dias sem publicar por
+      # causa de um site de tres.
+      #
+      # `git add -A` so pega o que existe: se nada foi gerado, o passo detecta e sai
+      # sem commitar. Entao rodar sempre nao publica lixo — so impede que a falha de
+      # um destino apague o trabalho dos outros.
       - name: Commit and push to main
+        if: always()
         id: commit
         run: |
           git config user.name "github-actions[bot]"

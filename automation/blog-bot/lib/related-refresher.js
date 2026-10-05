@@ -97,7 +97,7 @@ function extractTitle(content) {
 function extractSummary(content) {
   const descMatch = content.match(/<meta\s+name="description"\s+content="([^"]+)"/i);
   if (descMatch) return descMatch[1];
-  const firstP = content.match(/<p[^>]*>([\s\S]*?)<\/p>/i);
+  const firstP = content.match(/<p(?=[\s>])[^>]*>([\s\S]*?)<\/p>/i);
   if (firstP) return firstP[1].replace(/<[^>]+>/g, " ").trim();
   return "";
 }
