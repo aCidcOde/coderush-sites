@@ -1,0 +1,148 @@
+{
+  "mode": "publish",
+  "date": "2026-10-08",
+  "timezone": "America/Sao_Paulo",
+  "focus": "php",
+  "startedAt": "2026-10-08T17:05:28.009Z",
+  "aiProvider": "openrouter",
+  "sites": [
+    {
+      "siteId": "coderush",
+      "skipped": true,
+      "reason": "site disabled"
+    },
+    {
+      "siteId": "codafacil",
+      "skipped": true,
+      "reason": "site disabled"
+    },
+    {
+      "siteId": "fluxointeligenteia",
+      "skipped": true,
+      "reason": "site disabled"
+    },
+    {
+      "siteId": "sistemavendadireta",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "internacionalizacao",
+      "theme": "internacionalizacao de operacao de venda direta (idioma, moeda e documento fiscal)",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": [
+          {
+            "url": "https://blog.rdstation.com/feed/",
+            "error": "This operation was aborted"
+          }
+        ]
+      },
+      "outputPath": "automation/blog-bot/out/sistemavendadireta/2026-10-08/internacionalizacao-venda-direta-desafios-estrategias.json",
+      "markdownPath": "automation/blog-bot/out/sistemavendadireta/2026-10-08/internacionalizacao-venda-direta-desafios-estrategias.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "sistemavendadireta/2026/10/08/internacionalizacao-venda-direta-desafios-estrategias/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "local-tipografica",
+        "coverAlt": "Internacionalização em venda direta: desafios e estratégias",
+        "coverLeakage": null
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "sistemavendadireta/index.php",
+          "sistemavendadireta/blog/index.php",
+          "sistemavendadireta/2026/10/08/internacionalizacao-venda-direta-desafios-estrategias/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "emergency",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "habilitacao de fornecedor",
+      "theme": "LGPD e tratamento de dados em diligencia",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": [
+          {
+            "url": "https://capitalaberto.com.br/feed/",
+            "error": "HTTP 404"
+          }
+        ]
+      },
+      "outputPath": "automation/blog-bot/out/emergency/2026-10-08/habilitacao-fornecedores-due-diligence-imobiliaria.json",
+      "markdownPath": "automation/blog-bot/out/emergency/2026-10-08/habilitacao-fornecedores-due-diligence-imobiliaria.md",
+      "publishResult": {
+        "target": "api",
+        "apiStatus": 201,
+        "apiUrl": "https://emergency.com.br/blog/habilitacao-fornecedores-due-diligence-imobiliaria",
+        "apiId": 73,
+        "apiPublishedAt": "2026-10-08T14:05:50-03:00",
+        "coverPath": "automation/blog-bot/out/emergency/covers/habilitacao-fornecedores-due-diligence-imobiliaria.jpg",
+        "coverSize": 47331,
+        "coverSource": "local-tipografica",
+        "coverAlt": "Habilitação de Fornecedores na Due Diligence Imobiliária",
+        "coverLeakage": null
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    },
+    {
+      "siteId": "bfrintelligence",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "ROI",
+      "theme": "observabilidade e logs de agentes em producao",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/bfrintelligence/2026-10-08/garantir-roi-operacao-agentes-ia.json",
+      "markdownPath": "automation/blog-bot/out/bfrintelligence/2026-10-08/garantir-roi-operacao-agentes-ia.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "bfrintelligence/2026/10/08/garantir-roi-operacao-agentes-ia/index.html",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "local-tipografica",
+        "coverAlt": "Como garantir ROI na operação com agentes de IA?",
+        "coverLeakage": null
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    }
+  ],
+  "duplications": [],
+  "relatedRefresh": {
+    "touched": 36,
+    "unchanged": 135,
+    "errors": [],
+    "totalCards": 159,
+    "totalFiles": 171
+  },
+  "fallbackCount": 0,
+  "allFallback": false,
+  "finishedAt": "2026-10-08T17:06:21.527Z",
+  "ok": true
+}
