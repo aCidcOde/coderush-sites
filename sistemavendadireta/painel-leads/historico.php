@@ -20,6 +20,39 @@ Campos:
 
 return [
     [
+        'data' => '2026-10-10',
+        'area' => 'ads',
+        'titulo' => 'Não era "plataforma": era "plataforma + venda direta". Duas palavras pausadas',
+        'porque' => 'As 5 palavras com "plataforma" gastaram R$ 156,79 em 7 dias com ZERO conversão, '
+            . 'contra R$ 85,47 e 3 conversões das com "sistema". A tentação era pausar as cinco. Antes '
+            . 'disso, olhei QUE BUSCA cada uma capturou em 30 dias — dado que já estava pago e respondia '
+            . 'sem precisar de teste.',
+        'efeito' => 'A separação é limpa. "plataforma de venda direta": R$ 148,36, 35 cliques, zero '
+            . 'conversão, e 70% do gasto em marca ou marketplace (vdi R$ 46,71, shopee R$ 41,81, kaiross, '
+            . 'dealers club, vendadireta.com.br). O resto é "venda direta online", pesquisa sobre o '
+            . 'conceito. Nenhuma busca de produto, nenhuma. "plataforma venda direta": R$ 18,19, 100% '
+            . 'marca. Já "plataforma mmn", "plataforma de mmn" e "plataforma marketing multinivel" '
+            . 'capturaram só busca de produto ("sistema de mmn pronto", "erp mmn", "sites para mmn") e '
+            . 'uma delas converteu. Pausadas as duas de venda direta; as três de MMN seguem. Em '
+            . 'português, "plataforma de venda direta" é onde a pessoa VENDE (marketplace); "sistema de '
+            . 'venda direta" é o software que ela OPERA — e esta última entrega clique a R$ 1,06 e foi '
+            . 'de onde vieram as 2 conversas de 05/10.',
+    ],
+    [
+        'data' => '2026-10-10',
+        'area' => 'ads',
+        'titulo' => '"vdi venda direta" era o termo que mais gastava — e eu tinha decidido não negativar',
+        'porque' => 'R$ 46,71 em 10 cliques nos últimos 30 dias, zero lead. É busca de marca: alguém '
+            . 'procurando a VDI, uma empresa de venda direta. Em 05/10 eu vi esse termo no relatório '
+            . '(26 impressões, 4 cliques, R$ 14,19), considerei negativar e decidi NÃO, anotando que era '
+            . '"arguably intenção relevante". Era navegacional. A decisão errada custou mais R$ 32 em '
+            . 'quatro dias e puxou o dia 09/10 para R$ 74,81, o maior da campanha.',
+        'efeito' => 'Negativadas vdi, dealers club, wedrop e atommn. A lição é de método: termo que é '
+            . 'nome de empresa não se avalia por "parece relevante" — se a busca nomeia um concorrente '
+            . 'ou um portal, a pessoa já sabe aonde quer ir e não é a nós. No mesmo dia o Google filtrou '
+            . 'ZERO cliques inválidos, então o gasto foi todo de tráfego legítimo e mal mirado.',
+    ],
+    [
         'data' => '2026-10-05',
         'area' => 'site',
         'titulo' => 'Canonical de 13 páginas apontava para www, que redireciona para non-www',
