@@ -22,6 +22,7 @@ Uso:
   python3 relatorio-diario.py                  # imprime na tela
   python3 relatorio-diario.py --email          # manda por e-mail
   python3 relatorio-diario.py --email --para=alguem@dominio.com
+  python3 relatorio-diario.py --dia=2026-10-05   # reprocessa um dia passado
 """
 import sys
 import warnings
@@ -48,7 +49,7 @@ def brl(v):
 
 def coletar(ga, cid, ini, fim):
     q = f"""SELECT campaign.name, metrics.impressions, metrics.clicks,
-            metrics.cost_micros, metrics.conversions,
+            metrics.cost_micros, metrics.conversions, metrics.all_conversions, metrics.invalid_clicks,
             metrics.search_impression_share,
             metrics.search_top_impression_share,
             metrics.search_budget_lost_impression_share,
@@ -63,6 +64,7 @@ def coletar(ga, cid, ini, fim):
         linhas.append({
             "nome": r.campaign.name, "impr": m.impressions, "cliques": int(m.clicks),
             "custo": m.cost_micros / 1e6, "conv": m.conversions,
+            "conv_all": m.all_conversions, "invalidos": int(m.invalid_clicks),
             "is": m.search_impression_share * 100,
             "topo": m.search_top_impression_share * 100,
             "p_orc": m.search_budget_lost_impression_share * 100,
@@ -71,10 +73,44 @@ def coletar(ga, cid, ini, fim):
     return linhas
 
 
+
+def dias_sem_lead(ref=None):
+    """
+    Dias desde o ultimo lead no sqlite — formulario OU clique de WhatsApp.
+
+    O Ads nao sabe responder isso: a acao de conversao da conta conta clique de
+    zap, mas nao conta lead que chegou pelo organico nem pelo formulario. Quem
+    tem a verdade e o banco do site. Entre 06 e 09/10 foram quatro dias secos a
+    R$ 172 e nada avisou, porque ninguem estava olhando essa tabela de manha.
+
+    `ref` e a data do relatorio. Sem ela, reprocessar 05/10 hoje diria "5 dias sem
+    lead" — numero de hoje carimbado num dia em que entraram quatro. Relatorio
+    antigo tem que contar o que se sabia naquele dia.
+    """
+    import sqlite3
+    base = ref or date.today()
+    caminho = "/data/coderush-sites/sistemavendadireta/storage/leads.sqlite"
+    try:
+        db = sqlite3.connect(f"file:{caminho}?mode=ro", uri=True)
+        ultimo = db.execute(
+            "SELECT MAX(created_at) FROM leads WHERE date(created_at) <= ?",
+            [base.isoformat()]).fetchone()[0]
+        db.close()
+        if not ultimo:
+            return 0
+        return (base - date.fromisoformat(str(ultimo)[:10])).days
+    except Exception:
+        return 0  # banco fora do ar nao pode derrubar o relatorio
+
+
 def montar(ga, cid):
     hoje = date.today()
-    ontem = hoje - timedelta(days=1)
-    sete = hoje - timedelta(days=7)
+    # --dia=AAAA-MM-DD reprocessa um dia passado. Serve pra conferir um alerta que
+    # a gente so entendeu depois (foi assim com os 29% de invalidos de 05/10) sem
+    # ter que esperar o proximo caso acontecer.
+    escolhido = arg("dia")
+    ontem = date.fromisoformat(escolhido) if escolhido else hoje - timedelta(days=1)
+    sete = ontem - timedelta(days=6)
 
     ont = coletar(ga, cid, ontem.isoformat(), ontem.isoformat())
     if not ont:
@@ -91,7 +127,8 @@ def montar(ga, cid):
         ctr = c["cliques"] / c["impr"] * 100
         L += [f"{c['nome']}",
               f"  {c['impr']} impressoes · {c['cliques']} cliques · {brl(c['custo'])}",
-              f"  CPC {brl(cpc)} · CTR {ctr:.1f}% · conversoes {c['conv']:.0f}",
+              f"  CPC {brl(cpc)} · CTR {ctr:.1f}% · cliques de WhatsApp {c['conv_all']:.0f}"
+              + (f" · invalidos {c['invalidos']}" if c["invalidos"] else ""),
               f"  parcela {c['is']:.0f}% (topo {c['topo']:.0f}%) · "
               f"perda: orcamento {c['p_orc']:.0f}%, ranking {c['p_rank']:.0f}%", ""]
     if len(ont) > 1:
@@ -99,7 +136,7 @@ def montar(ga, cid):
               f"CPC {brl(tcu / tk if tk else 0)}", ""]
 
     # ── comparacao com a semana, pra dizer se ontem foi fora da curva ──
-    sem = coletar(ga, cid, sete.isoformat(), (hoje - timedelta(days=1)).isoformat())
+    sem = coletar(ga, cid, sete.isoformat(), ontem.isoformat())
     if sem:
         s_cu = sum(c["custo"] for c in sem)
         s_k = sum(c["cliques"] for c in sem)
@@ -130,17 +167,52 @@ def montar(ga, cid):
         L.append("")
 
     # ── alertas: so o que exige acao ──
+    #
+    # Revisto em 10/10/2026. O relatorio de 09/10 estava CERTO — mostrou "gastou 82%
+    # acima da media" e o "vdi venda direta" no topo dos termos. Mesmo assim o dia de
+    # R$ 74,81 so foi notado quando o Andre perguntou.
+    #
+    # A culpa e da secao de alerta, que disparava "N cliques e nenhuma conversao"
+    # TODO santo dia: a acao whatsapp_click esta como nao-primaria na conta, entao
+    # metrics.conversions e sempre 0, aconteca o que acontecer. Alerta que toca todo
+    # dia nao e alerta, e barulho — e ensina a pular a secao onde o resto aparece.
     al = []
     for c in ont:
         if c["p_orc"] > 30:
             al.append(f"{c['nome']}: {c['p_orc']:.0f}% de perda por ORCAMENTO — "
                       f"o teto diario esta cortando entrega")
-        if c["cliques"] >= MIN_CLIQUES_P_CONCLUSAO and c["conv"] == 0:
-            al.append(f"{c['nome']}: {c['cliques']} cliques e nenhuma conversao")
+        # all_conversions inclui o clique de WhatsApp; conversions nao, enquanto a
+        # acao nao for marcada como primaria. Sem isso o alerta nunca cala.
+        if c["cliques"] >= MIN_CLIQUES_P_CONCLUSAO and c["conv_all"] == 0:
+            al.append(f"{c['nome']}: {c['cliques']} cliques e nenhum clique de WhatsApp")
         cpc = c["custo"] / c["cliques"] if c["cliques"] else 0
         if cpc > 8:
             al.append(f"{c['nome']}: CPC de {brl(cpc)} — conferir se o lance nao "
                       f"esta comprando exposicao marginal cara")
+        # 09/10: o Google filtrou 0 invalidos, mas em 05/10 filtrou 29% e ninguem viu.
+        # Taxa alta e sinal de trafego ruim no leilao, mesmo com o reembolso feito.
+        if c["invalidos"] and c["cliques"]:
+            taxa = c["invalidos"] / (c["cliques"] + c["invalidos"]) * 100
+            if taxa > 15:
+                al.append(f"{c['nome']}: {c['invalidos']} cliques invalidos "
+                          f"({taxa:.0f}%) filtrados pelo Google — trafego de baixa "
+                          f"qualidade no leilao")
+
+    # concentracao de termo: um unico termo levando a maior parte do dia e o padrao
+    # do "vdi venda direta" (36% de 09/10) e do "shopee" antes dele. Quase sempre e
+    # busca de marca entrando por correspondencia ampla demais.
+    if termos and tcu > 0:
+        t_top, k_top, c_top = termos[0]
+        fatia = c_top / tcu * 100
+        if fatia > 25 and c_top > 10:
+            al.append(f'"{t_top}" levou {brl(c_top)} = {fatia:.0f}% do dia — '
+                      f"conferir se e intencao de produto ou nome de empresa")
+
+    dias_sem = dias_sem_lead(ontem)
+    if dias_sem >= 3:
+        al.append(f"{dias_sem} dias sem nenhum lead no banco (nem formulario, "
+                  f"nem clique de WhatsApp)")
+
     if al:
         L.append("PRECISA DE OLHO")
         L += [f"  - {a}" for a in al]
