@@ -83,11 +83,42 @@ try {
         return is_string($u) && $u !== '' ? mb_substr(trim(strip_tags($u)), 0, $max) : null;
     };
 
+    /*
+     * Deteccao de rajada — 13/10/2026.
+     *
+     * Entre 21h de 11/10 e 02h50 de 12/10 entraram 18 cliques de WhatsApp, um a
+     * cada 1 a 40 minutos, madrugada adentro. Nenhum virou mensagem ou e-mail.
+     * No GA4 daqueles dias: 70 usos do simulador para 79 pageviews, 6 scrolls,
+     * 16 segundos de sessao media e visitante novo em 67 das 74 sessoes. E
+     * navegador de verdade dirigido por script, nao gente.
+     *
+     * O limiar vem do historico, nao de palpite. Nos 18 leads legitimos
+     * anteriores ao pico, o maximo em uma hora foi 2. No pico chegou a 8.
+     * Barrar a partir do terceiro em 60 minutos nao teria dado um falso
+     * positivo sequer — e teria cortado a rajada pela metade.
+     *
+     * NAO DESCARTA O REGISTRO. Grava com status "robo": sai do funil e dos
+     * totais do painel, mas fica para estudar o padrao. Jogar fora a unica
+     * amostra que temos seria perder a base da proxima deteccao.
+     *
+     * O IP seria o sinal mais forte e nao esta disponivel: o nginx registra o
+     * endereco do Cloudflare e o PHP recebe o gateway do Docker (172.21.0.1 em
+     * todo lead desde agosto). Enquanto isso nao for corrigido, a frequencia e
+     * o que sobra.
+     */
+    $janela = $pdo->prepare(
+        "SELECT COUNT(*) FROM leads
+          WHERE status IN ('zap','robo')
+            AND created_at >= datetime('now', '-60 minutes')"
+    );
+    $janela->execute();
+    $statusLead = ((int) $janela->fetchColumn()) >= 3 ? 'robo' : 'zap';
+
     $stmt = $pdo->prepare('INSERT INTO leads (
         created_at, nome, origem, servico, mensagem,
         ga_client_id, gclid, utm_source, utm_medium, utm_campaign, utm_content,
         sim_faturamento, page_url, ip, user_agent, status
-    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, "zap")');
+    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
     $stmt->execute([
         date('c'),
         '(clique WhatsApp)',
@@ -104,6 +135,7 @@ try {
         $field('page_url', 500),
         $_SERVER['REMOTE_ADDR'] ?? null,
         mb_substr((string) ($_SERVER['HTTP_USER_AGENT'] ?? ''), 0, 300),
+        $statusLead,
     ]);
     http_response_code(201);
 } catch (Throwable $e) {

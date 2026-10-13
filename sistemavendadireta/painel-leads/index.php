@@ -196,15 +196,15 @@ if ($authed) {
             } else {
                 $leads = $pdo->query('SELECT * FROM leads ORDER BY id DESC LIMIT 200')->fetchAll(PDO::FETCH_ASSOC);
             }
-            $totals['total'] = (int) $pdo->query('SELECT COUNT(*) FROM leads WHERE status NOT IN ("teste","zap")')->fetchColumn();
+            $totals['total'] = (int) $pdo->query('SELECT COUNT(*) FROM leads WHERE status NOT IN ("teste","zap","robo")')->fetchColumn();
             $totals['zap'] = (int) $pdo->query('SELECT COUNT(*) FROM leads WHERE status = "zap"')->fetchColumn();
-            $totals['ultimos7'] = (int) $pdo->query('SELECT COUNT(*) FROM leads WHERE status NOT IN ("teste","zap") AND created_at >= datetime("now", "-7 days")')->fetchColumn();
+            $totals['ultimos7'] = (int) $pdo->query('SELECT COUNT(*) FROM leads WHERE status NOT IN ("teste","zap","robo") AND created_at >= datetime("now", "-7 days")')->fetchColumn();
             $totals['fechados'] = (int) $pdo->query('SELECT COUNT(*) FROM leads WHERE status = "fechado"')->fetchColumn();
-            foreach ($pdo->query('SELECT status, COUNT(*) AS qtd FROM leads WHERE status != "teste" GROUP BY status') as $r) {
+            foreach ($pdo->query('SELECT status, COUNT(*) AS qtd FROM leads WHERE status NOT IN ("teste","robo") GROUP BY status') as $r) {
                 $funil[$r['status']] = (int) $r['qtd'];
             }
             $totals['receita'] = (float) $pdo->query('SELECT COALESCE(SUM(close_value), 0) FROM leads WHERE status = "fechado"')->fetchColumn();
-            foreach ($pdo->query('SELECT COALESCE(origem, "sem origem") AS origem, COUNT(*) AS qtd FROM leads WHERE status != "teste" GROUP BY origem ORDER BY qtd DESC LIMIT 8') as $row) {
+            foreach ($pdo->query('SELECT COALESCE(origem, "sem origem") AS origem, COUNT(*) AS qtd FROM leads WHERE status NOT IN ("teste","robo") GROUP BY origem ORDER BY qtd DESC LIMIT 8') as $row) {
                 $porOrigem[] = $row;
             }
         } catch (Throwable $e) {
@@ -1203,7 +1203,7 @@ if ($gaSite && !empty($gaSite['eventos'])) {
       <span class="bf-grupo">
         <?php
         $filtrosEtapa = ['' => 'Todos', 'novo' => 'Novos', 'zap' => 'WhatsApp', 'qualificado' => 'Qualificados',
-                         'demo' => 'Reunião', 'fechado' => 'Vendas', 'perdido' => 'Perdidos', 'teste' => 'Testes'];
+                         'demo' => 'Reunião', 'fechado' => 'Vendas', 'perdido' => 'Perdidos', 'teste' => 'Testes', 'robo' => 'Robô'];
         foreach ($filtrosEtapa as $chave => $rot): ?>
           <a class="chip-filtro <?= $etapaSel === $chave ? 'ativo' : '' ?>"
              href="<?= e(abaUrl('funil', ['etapa' => $chave])) ?>"><?= $rot ?></a>
