@@ -92,8 +92,12 @@ def dias_sem_lead(ref=None):
     caminho = "/data/coderush-sites/sistemavendadireta/storage/leads.sqlite"
     try:
         db = sqlite3.connect(f"file:{caminho}?mode=ro", uri=True)
+        # exclui robo e teste: desde 13/10 o clique automatizado fica gravado com
+        # status "robo" em vez de apagado, e sem este filtro ele contaria como
+        # lead — o alerta de seca ficaria mudo justamente quando so entra robo.
         ultimo = db.execute(
-            "SELECT MAX(created_at) FROM leads WHERE date(created_at) <= ?",
+            "SELECT MAX(created_at) FROM leads"
+            " WHERE date(created_at) <= ? AND status NOT IN ('robo','teste')",
             [base.isoformat()]).fetchone()[0]
         db.close()
         if not ultimo:
@@ -101,6 +105,32 @@ def dias_sem_lead(ref=None):
         return (base - date.fromisoformat(str(ultimo)[:10])).days
     except Exception:
         return 0  # banco fora do ar nao pode derrubar o relatorio
+
+
+
+def prazo_da_promocao(ref=None):
+    """
+    Dias ate o fim da promocao, lidos da MESMA constante que o site usa.
+
+    O prazo nao vive so na pagina: esta em tres arquivos do site e em cinco
+    descricoes de anuncio. Quando venceu em 31/08/2026 ninguem percebeu e o
+    "ate 31/08" ficou 12 dias no ar vendendo oferta morta — em anuncio pago,
+    com dinheiro rodando atras.
+
+    Le o PHP por regex em vez de executar: este script roda no host, fora do
+    container, e nao tem o bootstrap do site disponivel.
+    """
+    import re
+    caminho = "/data/coderush-sites/sistemavendadireta/inc/promo.php"
+    try:
+        with open(caminho, encoding="utf-8") as fh:
+            m = re.search(r"PROMO_DEADLINE\s*=\s*['\"](\d{4}-\d{2}-\d{2})['\"]", fh.read())
+        if not m:
+            return None, None
+        fim = date.fromisoformat(m.group(1))
+        return (fim - (ref or date.today())).days, fim
+    except Exception:
+        return None, None
 
 
 def montar(ga, cid):
@@ -207,6 +237,17 @@ def montar(ga, cid):
         if fatia > 25 and c_top > 10:
             al.append(f'"{t_top}" levou {brl(c_top)} = {fatia:.0f}% do dia — '
                       f"conferir se e intencao de produto ou nome de empresa")
+
+    # o prazo da promocao e o unico alerta com relogio: vence sozinho
+    faltam, fim_promo = prazo_da_promocao(ontem)
+    if faltam is not None:
+        if faltam < 0:
+            al.append(f"PROMOCAO VENCIDA ha {abs(faltam)} dia(s) (prazo era "
+                      f"{fim_promo.strftime('%d/%m')}) — o site e 5 descricoes de anuncio "
+                      f"ainda anunciam essa data")
+        elif faltam <= 10:
+            al.append(f"promocao termina em {faltam} dia(s) ({fim_promo.strftime('%d/%m')}) — "
+                      f"decidir entre estender, trocar a oferta ou encerrar")
 
     dias_sem = dias_sem_lead(ontem)
     if dias_sem >= 3:
