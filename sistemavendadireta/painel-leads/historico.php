@@ -20,6 +20,85 @@ Campos:
 
 return [
     [
+        'data' => '2026-10-15',
+        'area' => 'site',
+        'titulo' => 'A queda no orgânico é migração de endereço, não perda — e eu subestimei o efeito',
+        'porque' => 'As impressões caíram de ~120/dia para 42 no dia 12/10, batendo exatamente na '
+            . 'troca de canonical do dia 10. Fui ver qual versão o Google tinha indexada: entre 25/09 '
+            . 'e 09/10, 66% das impressões vinham do endereço COM www. Ou seja, ele estava mesmo '
+            . 'indexando o www, apesar do 301 que mandava pra non-www.',
+        'efeito' => 'Em quatro dias o www caiu de 66% para 18% das impressões — a migração está '
+            . 'rápida e no sentido certo. Mas é troca de endereço de dois terços do site, e durante '
+            . 'ela as páginas rendem menos. Quando fiz a correção eu tratei como "só um sinal '
+            . 'contraditório, o sitemap já aponta pra non-www" e não avisei que haveria queda '
+            . 'temporária. Estava certo no diagnóstico e errado no tamanho. Leitura só em 24/10: '
+            . 'o que acompanhar é a proporção www/non-www chegar perto de 0/100, as impressões '
+            . 'voltarem pra faixa de 100-140 e a posição média voltar pra ~8-9.',
+    ],
+    [
+        'data' => '2026-10-13',
+        'area' => 'site',
+        'titulo' => 'Espaço de URL infinito queimava o orçamento de rastreamento: 13.998 respostas 200 em um dia',
+        'porque' => 'Em 10/10 corrigi o try_files do sistemavendadireta pra devolver 404 em caminho '
+            . 'inexistente, mas deixei os blocos do coderush.com.br e do codafacil.dev com o fallback '
+            . 'antigo, que serve a HOME com status 200 pra qualquer endereço. Sozinho seria soft-404. '
+            . 'Combinado com os links relativos da home (2026/07/18/x/, blog/, sem barra inicial) vira '
+            . 'recursão infinita: caminho inexistente devolve a home, a home tem link relativo, o link '
+            . 'vira o próximo nível do mesmo caminho, e assim por diante.',
+        'efeito' => 'Em um único dia foram 13.908 respostas 200 nesse padrão — 12.065 do '
+            . 'SERankingBacklinksBot e 1.886 do MJ12bot seguindo as próprias pegadas. Nenhuma pessoa. '
+            . 'Provavelmente é parte da explicação de 26 dos 43 posts não terem uma impressão sequer: '
+            . 'o Google gastava o orçamento de rastreamento no labirinto em vez das páginas reais. '
+            . 'Depois do 404 e do bloqueio desses crawlers, caiu de 13.998 para 57 por dia. Googlebot '
+            . 'e Bingbot não foram bloqueados — é o tráfego deles que paga a conta.',
+    ],
+    [
+        'data' => '2026-10-13',
+        'area' => 'medicao',
+        'titulo' => 'Robô fez 59 cliques e queimou R$ 53,75 em seis horas',
+        'porque' => 'Entre 21h de 11/10 e 02h50 de 12/10 entraram 18 cliques de WhatsApp, um a cada '
+            . '1 a 40 minutos, madrugada adentro, e pararam de vez. Nenhum virou mensagem nem e-mail. '
+            . 'O GA4 daqueles dias: 70 usos do simulador para 79 pageviews, 6 scrolls, 16 segundos de '
+            . 'sessão média e visitante novo em 67 das 74 sessões. Pessoa real faz o contrário.',
+        'efeito' => 'O Google filtrou ZERO cliques inválidos nesse dia — no dia 05/10 ele tinha pego '
+            . '7 de 24. A diferença é que este tráfego usava navegador de verdade, cookie novo a cada '
+            . 'visita e user agents variados de celular mediano: foi montado pra passar. Os 18 ficaram '
+            . 'gravados com status "robo" em vez de apagados — descartar a única amostra do padrão '
+            . 'seria perder a base da próxima detecção. A trava automática barra a partir do terceiro '
+            . 'clique de zap em 60 minutos; o limiar veio do histórico, onde o máximo legítimo em uma '
+            . 'hora sempre foi 2, contra 8 no pico.',
+    ],
+    [
+        'data' => '2026-10-13',
+        'area' => 'medicao',
+        'titulo' => 'IP real do visitante nunca chegava ao sistema — corrigido nas duas pontas',
+        'porque' => 'Todo lead do banco gravava 172.21.0.1 desde agosto, o gateway do Docker. A cadeia '
+            . 'é Cloudflare -> nginx do host -> container, e nenhuma das duas pontas resolvia o endereço '
+            . 'de origem. Sem isso não dá pra bloquear abuso nem pra abrir reclamação de clique inválido '
+            . 'no Google com evidência de onde os cliques vieram.',
+        'efeito' => 'A primeira tentativa configurou só o container e não funcionou — ele enxerga o IP '
+            . 'do host, nunca o do Cloudflare. Precisava das duas pontas, cada uma confiando numa fonte '
+            . 'diferente: o host lê CF-Connecting-IP das faixas do Cloudflare, o container lê X-Real-IP '
+            . 'só da rede do Docker. X-Real-IP e não X-Forwarded-For de propósito: o primeiro sobrescreve '
+            . 'o que o cliente enviar, o segundo acumula e deixaria alguém se passar pelo IP de origem. '
+            . 'Conferido ponta a ponta: log do host e campo ip do lead passaram a gravar o endereço real.',
+    ],
+    [
+        'data' => '2026-10-15',
+        'area' => 'ads',
+        'titulo' => 'Teto de CPC de R$ 7 para R$ 4 — a previsão do corte anterior não se confirmou',
+        'porque' => 'Ao pausar as palavras com "plataforma venda direta" em 10/10, eu previ gasto de '
+            . 'R$ 20-25/dia e CPC caindo pra faixa de R$ 2-3, porque "sistema de venda direta" entregava '
+            . 'clique a R$ 1,06. O gasto caiu mais do que eu disse (R$ 13/dia) mas o CPC quase não se '
+            . 'mexeu: de R$ 3,94 pra R$ 3,31, e nos dias 13 e 14 subiu pra R$ 6,55 e R$ 6,11.',
+        'efeito' => 'O erro foi de leitura: assumi que o CPC histórico da palavra barata representaria '
+            . 'o novo mix. Não representa. Quem sobrou gastando é o grupo Sistema MMN a R$ 5,73-6,96 o '
+            . 'clique — a palavra barata trouxe 6 cliques, as caras trouxeram 5 por R$ 33. O teto em '
+            . 'R$ 4 corta as caras sem mexer em palavra nenhuma, e é reversível num comando. Se em uma '
+            . 'semana o volume continuar em 2-4 cliques/dia, o problema é que cortei demanda demais e '
+            . 'alguma das palavras pausadas precisa voltar.',
+    ],
+    [
         'data' => '2026-10-10',
         'area' => 'ads',
         'titulo' => 'Não era "plataforma": era "plataforma + venda direta". Duas palavras pausadas',
