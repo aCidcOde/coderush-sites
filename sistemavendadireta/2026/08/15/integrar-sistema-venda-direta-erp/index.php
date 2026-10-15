@@ -235,10 +235,10 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/09/05/onboarding-ativacao-distribuidores-papel-integracao-erp/"><img src="../../../../imagens/posts/onboarding-ativacao-distribuidores-papel-integracao-erp.jpg" alt="Onboarding e Ativação de Distribuidores: O Papel da Integração ERP" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/10/15/comissao-cargo-plano-pontos-venda-direta/"><img src="../../../../imagens/posts/comissao-cargo-plano-pontos-venda-direta.jpg" alt="Comissão por cargo ou plano de pontos em venda direta?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/09/05/onboarding-ativacao-distribuidores-papel-integracao-erp/" class="hover:underline">Onboarding e Ativação de Distribuidores: O Papel da Integração ERP</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">A integração ERP facilita o onboarding de distribuidores ao automatizar processos, eliminar erros de dados e acelerar a ativação. Isso gera maior eficiência</p>
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/10/15/comissao-cargo-plano-pontos-venda-direta/" class="hover:underline">Comissão por cargo ou plano de pontos em venda direta?</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda as diferenças e como a integração ERP pode impactar suas vendas.</p>
   </div>
 </article>
   </div>

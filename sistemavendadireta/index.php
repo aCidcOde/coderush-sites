@@ -920,6 +920,15 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-HOME-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/10/15/comissao-cargo-plano-pontos-venda-direta/" data-blog-image="imagens/posts/comissao-cargo-plano-pontos-venda-direta.jpg" data-blog-slug="comissao-cargo-plano-pontos-venda-direta" data-blog-date="2026-10-15">
+  <a href="2026/10/15/comissao-cargo-plano-pontos-venda-direta/">
+    <picture><source srcset="imagens/posts/comissao-cargo-plano-pontos-venda-direta.webp" type="image/webp" /><img src="imagens/posts/comissao-cargo-plano-pontos-venda-direta.jpg" alt="Comissão por cargo ou plano de pontos em venda direta?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="2026/10/15/comissao-cargo-plano-pontos-venda-direta/" class="hover:underline">Comissão por cargo ou plano de pontos em venda direta?</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda as diferenças e como a integração ERP pode impactar suas vendas.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/10/08/internacionalizacao-venda-direta-desafios-estrategias/" data-blog-image="imagens/posts/internacionalizacao-venda-direta-desafios-estrategias.jpg" data-blog-slug="internacionalizacao-venda-direta-desafios-estrategias" data-blog-date="2026-10-08">
   <a href="2026/10/08/internacionalizacao-venda-direta-desafios-estrategias/">
     <picture><source srcset="imagens/posts/internacionalizacao-venda-direta-desafios-estrategias.webp" type="image/webp" /><img src="imagens/posts/internacionalizacao-venda-direta-desafios-estrategias.jpg" alt="Internacionalização em venda direta: desafios e estratégias" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
@@ -936,15 +945,6 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="2026/10/05/empresas-marketing-multinivel-brasil-comissionamento/" class="hover:underline">Empresas de marketing multinível no Brasil e comissionamento</a></h2>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra as principais empresas de marketing multinível no Brasil e como o comissionamento impacta seus resultados.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/09/22/diferenca-venda-direta-marketing-multinivel/" data-blog-image="imagens/posts/diferenca-venda-direta-marketing-multinivel.jpg" data-blog-slug="diferenca-venda-direta-marketing-multinivel" data-blog-date="2026-09-22">
-  <a href="2026/09/22/diferenca-venda-direta-marketing-multinivel/">
-    <picture><source srcset="imagens/posts/diferenca-venda-direta-marketing-multinivel.webp" type="image/webp" /><img src="imagens/posts/diferenca-venda-direta-marketing-multinivel.jpg" alt="Diferença entre Venda Direta e Marketing Multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
-  </a>
-  <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="2026/09/22/diferenca-venda-direta-marketing-multinivel/" class="hover:underline">Diferença entre Venda Direta e Marketing Multinível</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Venda direta se concentra na comercialização de produtos diretamente ao consumidor, enquanto o marketing multinível envolve a construção de uma rede</p>
   </div>
 </article>
 <!-- BLOG-HOME-CARDS:END -->

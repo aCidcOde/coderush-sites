@@ -90,6 +90,15 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-INDEX-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/10/15/comissao-cargo-plano-pontos-venda-direta/" data-blog-image="imagens/posts/comissao-cargo-plano-pontos-venda-direta.jpg" data-blog-slug="comissao-cargo-plano-pontos-venda-direta" data-blog-date="2026-10-15">
+  <a href="../2026/10/15/comissao-cargo-plano-pontos-venda-direta/">
+    <picture><source srcset="../imagens/posts/comissao-cargo-plano-pontos-venda-direta.webp" type="image/webp" /><img src="../imagens/posts/comissao-cargo-plano-pontos-venda-direta.jpg" alt="Comissão por cargo ou plano de pontos em venda direta?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="../2026/10/15/comissao-cargo-plano-pontos-venda-direta/" class="hover:underline">Comissão por cargo ou plano de pontos em venda direta?</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda as diferenças e como a integração ERP pode impactar suas vendas.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/10/08/internacionalizacao-venda-direta-desafios-estrategias/" data-blog-image="imagens/posts/internacionalizacao-venda-direta-desafios-estrategias.jpg" data-blog-slug="internacionalizacao-venda-direta-desafios-estrategias" data-blog-date="2026-10-08">
   <a href="../2026/10/08/internacionalizacao-venda-direta-desafios-estrategias/">
     <picture><source srcset="../imagens/posts/internacionalizacao-venda-direta-desafios-estrategias.webp" type="image/webp" /><img src="../imagens/posts/internacionalizacao-venda-direta-desafios-estrategias.jpg" alt="Internacionalização em venda direta: desafios e estratégias" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>

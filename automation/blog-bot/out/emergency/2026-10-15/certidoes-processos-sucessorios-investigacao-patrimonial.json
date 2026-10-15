@@ -1,0 +1,87 @@
+{
+  "date": "2026-10-15",
+  "siteId": "emergency",
+  "postType": "due-diligence-certidoes",
+  "focus": "php",
+  "theme": "certidoes em processos sucessorios e inventarios",
+  "angle": "investigacao patrimonial",
+  "slug": "certidoes-processos-sucessorios-investigacao-patrimonial",
+  "title": "Emergency Documentação: PHP aplicado a investigacao patrimonial",
+  "description": "Atualização semanal de php para Emergency Documentação, com foco em certidoes em processos sucessorios e inventarios.",
+  "sources": [
+    "https://emergency.com.br/blog/certidoes-processos-sucessorios-saber",
+    "https://edossie.com.br/diferenca-investigacao-patrimonial-due-diligence/",
+    "https://edossie.com.br/investigacao-patrimonial-execucao-judicial/",
+    "https://emergency.com.br/blog/due-diligence-mais-seguranca-para-decidir-com-confianca",
+    "https://blog.documentonobrasil.com.br/due-diligence-documental-como-documentos-ajudam-decisoes-melhores/"
+  ],
+  "status": "draft",
+  "generatedAt": "2026-10-15T11:33:25-03:00",
+  "content": {
+    "eyebrow": "Guia prático",
+    "headline": "Certidões em Processos Sucessórios e Investigação Patrimonial",
+    "summary": "Entenda a importância das certidões na due diligence imobiliária e como elas impactam processos sucessórios.",
+    "answerBox": {
+      "question": "Como as certidões impactam a due diligence em processos sucessórios?",
+      "answer": "Certidões são cruciais na due diligence de processos sucessórios, pois validam a situação patrimonial e jurídica dos bens envolvidos. Elas ajudam a evitar surpresas em aquisições e garantem a conformidade legal durante a transferência de bens."
+    },
+    "tldr": [
+      "Certidões são essenciais em processos sucessórios.",
+      "Due diligence imobiliária minimiza riscos legais.",
+      "Emergency Documentação oferece suporte especializado."
+    ],
+    "sections": [
+      {
+        "type": "prose",
+        "title": "A Importância das Certidões na Due Diligence",
+        "body": "As certidões desempenham um papel central na due diligence imobiliária em processos sucessórios. Elas fornecem informações essenciais sobre a situação dos bens, como ônus, pendências e registros. Ao realizar uma investigação patrimonial, é crucial coletar certidões cartorárias e forenses que confirmem a regularidade dos imóveis e a titularidade dos bens. Isso evita surpresas e garante que a transação ocorra dentro da legalidade."
+      },
+      {
+        "type": "list",
+        "title": "Principais Certidões Para Considerar",
+        "items": [
+          "Certidão de óbito do falecido.",
+          "Certidão de propriedade do imóvel.",
+          "Certidão de ações e dívidas pendentes.",
+          "Certidão de distribuição de inventário."
+        ]
+      },
+      {
+        "type": "callout",
+        "body": "Em situações complexas, já estruturamos isso em diversos clientes. Um olhar atento pode fazer toda a diferença na sua diligência.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Como Realizar Uma Investigação Patrimonial Eficiente",
+        "body": "Para uma investigação patrimonial eficaz, comece mapeando todos os bens do falecido e suas respectivas certidões. Considere a criação de um checklist de certidões obrigatórias que devem ser obtidas. Além disso, é relevante verificar a existência de litígios ou pendências legais que possam afetar a transferência dos bens. Assim, você não apenas cumpre a diligência, mas protege os interesses envolvidos na transação."
+      },
+      {
+        "type": "cta-inline",
+        "body": "Se você precisa de suporte na emissão de certidões, estamos prontos para ajudar.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Evite Armadilhas Comuns na Due Diligence",
+        "body": "Não subestime a necessidade de certidões atualizadas. Falhar em obter informações recentes pode resultar em riscos legais significativos. Fique atento a certidões que podem não estar disponíveis em cartórios locais, especialmente em zonas rurais. A Emergency Documentação é especializada em garantir que você tenha acesso a todos os documentos necessários, evitando assim qualquer complicação futura."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Quais certidões são obrigatórias em um inventário?",
+        "a": "As certidões obrigatórias incluem a certidão de óbito, certidão de propriedade e certidões de ações judiciais relacionadas ao falecido."
+      },
+      {
+        "q": "Como validar um fornecedor pessoa jurídica antes de contratar?",
+        "a": "Para validar um fornecedor, solicite certidões que comprovem a regularidade fiscal e trabalhista da empresa, além de verificar referências."
+      },
+      {
+        "q": "Qual a diferença entre investigação patrimonial e due diligence?",
+        "a": "A investigação patrimonial foca na análise de ativos e passivos de uma pessoa ou empresa, enquanto a due diligence é um processo mais abrangente, que avalia riscos legais e financeiros em transações."
+      }
+    ]
+  }
+}
