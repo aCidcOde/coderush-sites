@@ -27,6 +27,12 @@ Uso:
   python3 anuncios.py --auditar                      # datas vencidas e textos
   python3 anuncios.py --trocar "31/08" "30/09"       # troca em todos os anuncios
   python3 anuncios.py --trocar "31/08" "30/09" --dry-run
+  python3 anuncios.py --trocar "de" "para" --anuncio=820539928292   # so esse
+
+--anuncio existe porque reprovacao de politica e por anuncio, nao por texto: em
+19/10/2026 "Comissões Automáticas" estava REPROVADO (MISLEADING_CONTENT) no
+anuncio do grupo Venda Direta e APROVADO no do Sistema MMN, que gera lead. Trocar
+em todos teria mandado o anuncio bom pra revisao sem motivo.
 """
 import re
 import sys
@@ -101,11 +107,13 @@ def auditar(ga, cid):
     print(f"\n  {problemas} anuncio(s) com problema" if problemas else "\n  tudo certo")
 
 
-def trocar(cli, ga, cid, de, para, dry):
+def trocar(cli, ga, cid, de, para, dry, so_anuncio=None):
     print(f"=== trocando {de!r} -> {para!r} ===")
     ops = []
     for r in anuncios(ga, cid):
         a = r.ad_group_ad.ad
+        if so_anuncio and str(a.id) != so_anuncio:
+            continue
         rsa = a.responsive_search_ad
         tit = [h.text for h in rsa.headlines]
         des = [d.text for d in rsa.descriptions]
@@ -130,12 +138,17 @@ def trocar(cli, ga, cid, de, para, dry):
         op = cli.get_type("AdOperation")
         novo = op.update
         novo.resource_name = a.resource_name
-        # o array inteiro vai junto: mandar so o item alterado apaga os outros
-        for texto, destino in ((novos_t, novo.responsive_search_ad.headlines),
-                               (novos_d, novo.responsive_search_ad.descriptions)):
-            for t in texto:
+        # o array inteiro vai junto: mandar so o item alterado apaga os outros.
+        # O pinned_field tambem: montar o asset so com texto solta a fixacao — foi
+        # assim que o pin do "Até 40% de Desconto" sumiu nas trocas de data.
+        for texto, originais, destino in (
+                (novos_t, rsa.headlines, novo.responsive_search_ad.headlines),
+                (novos_d, rsa.descriptions, novo.responsive_search_ad.descriptions)):
+            for t, orig in zip(texto, originais):
                 asset = cli.get_type("AdTextAsset")
                 asset.text = t
+                if orig.pinned_field:
+                    asset.pinned_field = orig.pinned_field
                 destino.append(asset)
         # FieldMask explicita: o helper automatico descarta valores default
         from google.protobuf.field_mask_pb2 import FieldMask
@@ -163,7 +176,8 @@ def main():
             de, para = sys.argv[i + 1], sys.argv[i + 2]
         except IndexError:
             sys.exit('uso: --trocar "de" "para"')
-        trocar(cli, ga, cid, de, para, "--dry-run" in sys.argv)
+        so = next((x.split("=", 1)[1] for x in sys.argv if x.startswith("--anuncio=")), None)
+        trocar(cli, ga, cid, de, para, "--dry-run" in sys.argv, so)
     else:
         auditar(ga, cid)
 
