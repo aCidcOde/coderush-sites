@@ -73,6 +73,27 @@ Meta e teto são coisas diferentes e andam juntos:
 Subir um sem o outro não produz efeito. Use `estrategia.py --ver` antes de
 qualquer análise de lance.
 
+### Quando o teto vira o freio — e como reconhecer
+
+O caso de 12/09 (abaixo) ensina que subir meta sem volume sobrando só encarece.
+O de 19/10/2026 é o oposto, e os sinais que separam os dois são objetivos:
+
+| Sinal | Como medir | 19/10 |
+|---|---|---|
+| Mercado estável | `impressions / search_impression_share` por dia, duas semanas | ~75 buscas elegíveis/dia no MMN, antes e depois |
+| Fatia abaixo da meta | `search_top_impression_share` vs `location_fraction` | 18-44% de topo contra meta de 40% |
+| CPC encostado no teto | `average_cpc` vs `cpc_bid_ceiling` | R$ 5,97-6,96 com teto de R$ 7 |
+| Qualidade, extensões e página descartadas | `historical_quality_score` por dia, `campaign_asset`, AdsBot no log | QS estável, tudo aprovado, 200 |
+
+Os quatro juntos querem dizer que o leilão encareceu e o Google quer cumprir a
+meta mas não pode pagar. O remédio é **subir só o teto, com a meta parada**: o
+gasto extra fica limitado ao que falta pra voltar à meta. Se o mercado tivesse
+encolhido, ou se a fatia estivesse acima da meta, subir o teto seria o erro de
+12/09 repetido.
+
+Fixe o critério de reversão na hora da mudança: CPC subindo sem clique subindo é
+a assinatura de exposição marginal cara — volta o teto anterior.
+
 ### Meta de parcela alta não cria demanda — só encarece a que existe
 
 Em 12/09/2026 subi a meta de topo de 20% para 70% e o teto de R$ 6 para R$ 12,
@@ -182,6 +203,22 @@ provando que negativar foi acerto.
 **Lance no nível da palavra** é a ferramenta para essa assimetria: concentre verba
 onde o orgânico não salva, não onde ele já entrega.
 
+### Antes de religar palavra por volume, pergunte o que vendeu
+
+Quando o volume cai, a tentação é religar a palavra que trazia impressão. Em
+19/10/2026 isso teria devolvido "plataforma de venda direta" — R$ 156 em 7 dias
+e zero lead quando foi pausada.
+
+O banco do site guarda o `gclid` de cada lead, e o `click_view` do Ads diz qual
+palavra gerou aquele clique exato. Cruzando os dois: os 11 leads pagos vieram de
+**7 palavras**, nenhuma delas de "plataforma de venda direta". A pergunta certa
+é "quais palavras vendem e quanto da busca delas a gente está perdendo", não "o
+que tinha volume".
+
+`click_view` só aceita filtro de **um único dia** (`segments.date = '...'`).
+Procure no dia do lead e nos três anteriores, porque a conversa pode vir dias
+depois do clique.
+
 ## 5. Quando mexer no quê
 
 Ordem de alavancas, da mais barata para a mais cara:
@@ -246,6 +283,11 @@ cria cópias e fatia o histórico entre clones. Use `vincular-extensoes.py`.
   pouco tráfego em cinco frentes impede qualquer uma de acumular histórico.
 - **Não subir lance para resolver perda por ranking sem antes checar extensões e
   qualidade.** Costuma ser o mais caro dos três.
+- **Não reverter sem registrar.** Desfazer uma mudança também é mudança. Em
+  16/10/2026 o teto voltou de R$ 4 para R$ 7 e o histórico seguiu dizendo R$ 4 por
+  três dias, até o `change_event` da conta mostrar a reversão. Quem lê o painel
+  conclui a partir do estado errado. Na dúvida sobre o que mudou, consulte
+  `change_event` antes de explicar qualquer variação.
 
 ## 7. Rotina
 
@@ -277,7 +319,7 @@ Em `automation/ads/`, todas idempotentes:
 | `renovar-token.py` | OAuth do Ads. Ver armadilha abaixo. |
 | `_conta.py` | Credencial compartilhada e `--conta=<apelido>`. Evita ID cravado no topo de cada script. |
 | `estrategia.py` | Meta e teto de parcela de impressão. **Leia antes de analisar lance.** |
-| `anuncios.py` | `--auditar` (data vencida, limite, caixa alta) e `--trocar` preservando histórico. |
+| `anuncios.py` | `--auditar` (data vencida, limite, caixa alta) e `--trocar` preservando histórico e pin; `--anuncio=<id>` restringe a um anúncio. |
 | `vincular-extensoes.py` | Replica assets de uma campanha em outras sem clonar. |
 | `conversoes-bfr.py` | Ações de conversão da BFR e o `send_to` da tag AW. |
 | `criar-campanha-bfr.py` | Primeira campanha da BFR. Valida RSA antes de enviar. |
@@ -311,6 +353,14 @@ Em `automation/ads/`, todas idempotentes:
   `EXPECTED_REFERENCED_FIELD_IN_SELECT_CLAUSE`.
 - **`segments.conversion_action_name` não convive com `metrics.cost_micros`** na
   mesma consulta.
+- **"Aprovado (limitado)" esconde título reprovado.** A política é avaliada por
+  texto e por anúncio: em 19/10/2026 "Comissões Automáticas" estava reprovado
+  (`MISLEADING_CONTENT`) num anúncio e aprovado em outro. O status do anúncio não
+  diz qual texto caiu; leia `responsive_search_ad.headlines[].policy_summary_info`
+  título a título. `ad_group_ad_asset_view.policy_summary` não existe na v25.
+- **Trocar texto de RSA soltava o pin.** Montar o `AdTextAsset` só com `text`
+  descarta o `pinned_field`; o pin do "Até 40% de Desconto" sumiu assim nas trocas
+  de data. `anuncios.py --trocar` agora copia a fixação do original.
 
 ### Conta compartilhada: o que é de conta e o que é de campanha
 
@@ -334,6 +384,7 @@ correta é `https://site.com/?utm_source=...#contato`.
 
 ---
 
-*Última atualização: 12/09/2026 — 6 campanhas ativas (5 SVD + 1 BFR), R$ 101/dia
-nominal. Marco: descoberto que a meta de parcela de impressão, não o lance, era o
-freio da visibilidade.*
+*Última atualização: 19/10/2026 — 1 campanha ativa (SVD - Promoção 10 Anos, R$ 40/dia,
+termina 31/10). Marco: a queda de volume tinha duas causas sobrepostas, uma
+esperada (pausa de palavra sem lead) e outra de leilão (teto abaixo do preço do
+MMN), e o cruzamento gclid × click_view mostrou quais 7 palavras vendem.*

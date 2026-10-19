@@ -20,6 +20,79 @@ Campos:
 
 return [
     [
+        'data' => '2026-10-19',
+        'area' => 'ads',
+        'titulo' => 'A queda não veio do nada: o leilão do Sistema MMN encareceu e o teto de R$ 7 virou freio',
+        'porque' => 'As impressões caíram de ~100/dia para 24-54 a partir de 12/10, com duas causas '
+            . 'sobrepostas. No grupo Venda Direta, a pausa de 10/10 tirou 90% do volume (de 30-74 para '
+            . '2-9 impressões/dia) — esperado, e sem custo de lead. No Sistema MMN, de onde vieram 8 dos '
+            . '11 leads pagos, a procura não mudou: ~75 buscas elegíveis por dia nas duas semanas '
+            . '(impressões divididas pela parcela). O que caiu foi a nossa fatia do topo, de 40-75% '
+            . '(28/09 a 10/10) para 18-44% (11 a 18/10), com o CPC médio encostado no teto: R$ 5,97 a '
+            . 'R$ 6,96 entre 13 e 16/10. A meta da estratégia é 40% de topo; abaixo dela e pagando o '
+            . 'teto, quem freia é o teto. Descartados antes: índice de qualidade estável no período (5 a '
+            . '8 nas palavras que vendem), extensões todas aprovadas e veiculando, AdsBot recebendo 200 '
+            . 'nas duas páginas de destino.',
+        'efeito' => 'Teto de R$ 7 para R$ 9, meta mantida em 40%. É diferente de 12/09, quando subi meta '
+            . '(20% para 70%) E teto (R$ 6 para R$ 12) e o CPC dobrou sem trazer clique: lá não havia '
+            . 'volume sobrando; aqui sobram ~40 buscas/dia no MMN, e com a meta parada o Google só paga '
+            . 'mais até recuperar os 40%. Leitura em 22-23/10, com dias úteis fechados: topo do MMN de '
+            . 'volta a 40% ou mais e 3+ cliques/dia. Se o CPC passar de R$ 8 sem os cliques subirem — a '
+            . 'assinatura de 12/09 — volta para R$ 7.',
+    ],
+    [
+        'data' => '2026-10-19',
+        'area' => 'ads',
+        'titulo' => 'Os 11 leads pagos vieram de 7 palavras — "plataforma de venda direta" segue pausada',
+        'porque' => 'Diante da queda de volume, a tentação era religar o que trazia impressão. Antes, '
+            . 'cruzei o gclid de cada lead do banco com o click_view do Ads, que diz qual palavra gerou '
+            . 'aquele clique exato — a pergunta é "o que vendeu", não "o que tinha volume".',
+        'efeito' => 'sistema de venda direta (3 leads, um fechado), sistema multinivel (2), plataforma de '
+            . 'mmn (2, um fechado), sistema mmn, software mmn, script mmn e site de marketing multinivel. '
+            . 'Nenhum veio de "plataforma de venda direta" nem de "plataforma venda direta" desde agosto. '
+            . 'Religá-las devolveria impressão, não lead. O esforço vai para a parcela das sete que '
+            . 'vendem — por isso o teto, na entrada acima.',
+    ],
+    [
+        'data' => '2026-10-19',
+        'area' => 'ads',
+        'titulo' => '"Comissões Automáticas" estava reprovado como conteúdo enganoso no anúncio do Venda Direta',
+        'porque' => 'O anúncio aparecia como "aprovado (limitado)" com MISLEADING_CONTENT e ninguém tinha '
+            . 'notado — o status do anúncio não diz qual texto caiu. Lendo título a título, era um só: '
+            . '"Comissões Automáticas". Em anúncio de MMN o Google lê como promessa de ganho fácil. O '
+            . 'mesmo título está APROVADO no anúncio do Sistema MMN.',
+        'efeito' => 'Trocado por "Cálculo de Comissão por Cargo" só nesse anúncio — "comissão por cargo" '
+            . 'já passava numa descrição aprovada. O do Sistema MMN não foi tocado: é o que gera lead, e '
+            . 'editar manda o anúncio pra revisão. O anúncio segue no ar com os outros 14 títulos '
+            . 'enquanto o novo é revisado. De quebra: o pin do "Até 40% de Desconto" tinha sumido de '
+            . 'todos os anúncios, porque o anuncios.py --trocar remontava os títulos só com o texto e '
+            . 'soltava a fixação a cada troca de data. Corrigido no script.',
+    ],
+    [
+        'data' => '2026-10-19',
+        'area' => 'ads',
+        'titulo' => 'Negativas entrar, login e amway — gente procurando acessar outro site',
+        'porque' => '"amway entrar", "www amway do brasil entrar", "clubemultinivel login", "mmn login": '
+            . 'buscas de navegação, a pessoa já sabe aonde quer ir. Em 69 dias somaram 34 impressões, 2 '
+            . 'cliques e R$ 9,59, nenhuma conversão. Impressão sem clique não custa, mas puxa o CTR para '
+            . 'baixo, e o CTR esperado entra no índice de qualidade.',
+        'efeito' => 'Em frase, total de 102 negativas na campanha. Conferido antes que nenhuma busca com '
+            . 'essas três palavras trouxe lead.',
+    ],
+    [
+        'data' => '2026-10-16',
+        'area' => 'ads',
+        'titulo' => 'Teto voltou de R$ 4 para R$ 7 — o corte de 15/10 tirou o MMN do topo',
+        'porque' => 'Em 15/10 o Sistema MMN fez 21 impressões, 0 clique e 20% de parcela: o leilão dele '
+            . 'cobrava R$ 5,73-6,96 e o teto de R$ 4 deixou o anúncio fora das posições que recebem '
+            . 'clique. Revertido às 16h43 de 16/10. Esta entrada só foi escrita em 19/10: a reversão '
+            . 'apareceu no log de alterações da conta sem registro aqui, e o painel continuou dizendo '
+            . 'R$ 4 por três dias.',
+        'efeito' => 'Depois da reversão vieram 4 cliques entre 19h e 23h de 16/10. Mas o fim de semana '
+            . 'fechou em 0 clique (29 e 24 impressões) já com R$ 7, contra 3 a 10 cliques nos fins de '
+            . 'semana anteriores. O teto de R$ 4 explicava o dia 15, não a queda — ver 19/10.',
+    ],
+    [
         'data' => '2026-10-15',
         'area' => 'site',
         'titulo' => 'A queda no orgânico é migração de endereço, não perda — e eu subestimei o efeito',
