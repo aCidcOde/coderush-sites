@@ -22,6 +22,20 @@ return [
     [
         'data' => '2026-10-19',
         'area' => 'ads',
+        'titulo' => 'Pin do "Até 40% de Desconto" de volta na posição 1, nos 9 anúncios',
+        'porque' => 'Na criação (10/08) o título da oferta foi fixado na posição 1: é o argumento que '
+            . 'separa o anúncio dos concorrentes na mesma página. As trocas de data pelo anuncios.py '
+            . 'remontavam os títulos só com o texto e soltavam a fixação. Em 19/10 nenhum anúncio tinha '
+            . 'pin, e o título da oferta era sorteado como qualquer um dos 15.',
+        'efeito' => 'Refixado com o --fixar novo, que manda a lista inteira de títulos e preserva fixação '
+            . 'existente. Conferido depois: 15 títulos e 4 descrições em cada anúncio, os 9 aprovados. A '
+            . 'promoção vai até 31/10 sem extensão (decidido em 19/10); depois entra oferta nova. Quebra '
+            . 'a regra de uma variável por vez — pin e teto mudaram no mesmo dia. A separação na leitura '
+            . 'de 22-23/10 é pelo indicador: o teto mexe na parcela de topo, o pin no CTR.',
+    ],
+    [
+        'data' => '2026-10-19',
+        'area' => 'ads',
         'titulo' => 'A queda não veio do nada: o leilão do Sistema MMN encareceu e o teto de R$ 7 virou freio',
         'porque' => 'As impressões caíram de ~100/dia para 24-54 a partir de 12/10, com duas causas '
             . 'sobrepostas. No grupo Venda Direta, a pausa de 10/10 tirou 90% do volume (de 30-74 para '
@@ -64,7 +78,8 @@ return [
         'efeito' => 'Trocado por "Cálculo de Comissão por Cargo" só nesse anúncio — "comissão por cargo" '
             . 'já passava numa descrição aprovada. O do Sistema MMN não foi tocado: é o que gera lead, e '
             . 'editar manda o anúncio pra revisão. O anúncio segue no ar com os outros 14 títulos '
-            . 'enquanto o novo é revisado. De quebra: o pin do "Até 40% de Desconto" tinha sumido de '
+            . 'enquanto o novo é revisado — aprovado no mesmo dia, e o anúncio saiu de "aprovado '
+            . '(limitado)" para aprovado sem restrição. De quebra: o pin do "Até 40% de Desconto" tinha sumido de '
             . 'todos os anúncios, porque o anuncios.py --trocar remontava os títulos só com o texto e '
             . 'soltava a fixação a cada troca de data. Corrigido no script.',
     ],

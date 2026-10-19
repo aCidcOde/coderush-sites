@@ -28,11 +28,16 @@ Uso:
   python3 anuncios.py --trocar "31/08" "30/09"       # troca em todos os anuncios
   python3 anuncios.py --trocar "31/08" "30/09" --dry-run
   python3 anuncios.py --trocar "de" "para" --anuncio=820539928292   # so esse
+  python3 anuncios.py --fixar "Até 40% de Desconto" --posicao=1 [--dry-run]
 
 --anuncio existe porque reprovacao de politica e por anuncio, nao por texto: em
 19/10/2026 "Comissões Automáticas" estava REPROVADO (MISLEADING_CONTENT) no
 anuncio do grupo Venda Direta e APROVADO no do Sistema MMN, que gera lead. Trocar
 em todos teria mandado o anuncio bom pra revisao sem motivo.
+
+--fixar existe porque o pin do "Até 40% de Desconto" (criado na posicao 1 em
+10/08) sumiu de todos os anuncios nas trocas de data, e nada avisou: a RSA segue
+aprovada, so passa a sortear o titulo da oferta como qualquer outro.
 """
 import re
 import sys
@@ -166,6 +171,55 @@ def trocar(cli, ga, cid, de, para, dry, so_anuncio=None):
     print(f"\n  {len(res.results)} anuncio(s) atualizado(s) — historico preservado")
 
 
+def fixar(cli, ga, cid, texto, posicao, dry, so_anuncio=None):
+    """Fixa o titulo `texto` na posicao 1, 2 ou 3 em todo anuncio que o tiver.
+
+    So o array de headlines vai na mascara, inteiro e com os pins que ja existem:
+    mandar so o titulo alterado apagaria os outros 14.
+    """
+    from google.protobuf.field_mask_pb2 import FieldMask
+    campo = cli.enums.ServedAssetFieldTypeEnum[f"HEADLINE_{posicao}"]
+    print(f"=== fixando {texto!r} na posicao {posicao} ===")
+    ops = []
+    for r in anuncios(ga, cid):
+        a = r.ad_group_ad.ad
+        if so_anuncio and str(a.id) != so_anuncio:
+            continue
+        tit = list(a.responsive_search_ad.headlines)
+        alvo = next((h for h in tit if h.text == texto), None)
+        if alvo is None:
+            continue
+        if alvo.pinned_field == campo:
+            print(f"  [=] {r.campaign.name} / {r.ad_group.name} — ja fixado")
+            continue
+        print(f"  [+] {r.campaign.name} / {r.ad_group.name} (ad {a.id})")
+        if dry:
+            continue
+
+        op = cli.get_type("AdOperation")
+        novo = op.update
+        novo.resource_name = a.resource_name
+        for h in tit:
+            asset = cli.get_type("AdTextAsset")
+            asset.text = h.text
+            if h.text == texto:
+                asset.pinned_field = campo
+            elif h.pinned_field:
+                asset.pinned_field = h.pinned_field
+            novo.responsive_search_ad.headlines.append(asset)
+        op.update_mask.CopyFrom(FieldMask(paths=["responsive_search_ad.headlines"]))
+        ops.append(op)
+
+    if dry:
+        print("\n  (dry-run — nada foi enviado)")
+        return
+    if not ops:
+        print("  nada a fixar")
+        return
+    res = cli.get_service("AdService").mutate_ads(customer_id=cid, operations=ops)
+    print(f"\n  {len(res.results)} anuncio(s) atualizado(s) — historico preservado")
+
+
 def main():
     cid = resolver(sys.argv)
     cli = cliente()
@@ -178,6 +232,15 @@ def main():
             sys.exit('uso: --trocar "de" "para"')
         so = next((x.split("=", 1)[1] for x in sys.argv if x.startswith("--anuncio=")), None)
         trocar(cli, ga, cid, de, para, "--dry-run" in sys.argv, so)
+    elif "--fixar" in sys.argv:
+        i = sys.argv.index("--fixar")
+        if i + 1 >= len(sys.argv):
+            sys.exit('uso: --fixar "titulo" --posicao=1')
+        pos = next((x.split("=", 1)[1] for x in sys.argv if x.startswith("--posicao=")), "1")
+        if pos not in ("1", "2", "3"):
+            sys.exit("--posicao aceita 1, 2 ou 3")
+        so = next((x.split("=", 1)[1] for x in sys.argv if x.startswith("--anuncio=")), None)
+        fixar(cli, ga, cid, sys.argv[i + 1], pos, "--dry-run" in sys.argv, so)
     else:
         auditar(ga, cid)
 

@@ -319,7 +319,7 @@ Em `automation/ads/`, todas idempotentes:
 | `renovar-token.py` | OAuth do Ads. Ver armadilha abaixo. |
 | `_conta.py` | Credencial compartilhada e `--conta=<apelido>`. Evita ID cravado no topo de cada script. |
 | `estrategia.py` | Meta e teto de parcela de impressão. **Leia antes de analisar lance.** |
-| `anuncios.py` | `--auditar` (data vencida, limite, caixa alta) e `--trocar` preservando histórico e pin; `--anuncio=<id>` restringe a um anúncio. |
+| `anuncios.py` | `--auditar` (data vencida, limite, caixa alta) e `--trocar` preservando histórico e pin; `--fixar` fixa título em posição; `--anuncio=<id>` restringe a um anúncio. |
 | `vincular-extensoes.py` | Replica assets de uma campanha em outras sem clonar. |
 | `conversoes-bfr.py` | Ações de conversão da BFR e o `send_to` da tag AW. |
 | `criar-campanha-bfr.py` | Primeira campanha da BFR. Valida RSA antes de enviar. |
@@ -360,7 +360,9 @@ Em `automation/ads/`, todas idempotentes:
   título a título. `ad_group_ad_asset_view.policy_summary` não existe na v25.
 - **Trocar texto de RSA soltava o pin.** Montar o `AdTextAsset` só com `text`
   descarta o `pinned_field`; o pin do "Até 40% de Desconto" sumiu assim nas trocas
-  de data. `anuncios.py --trocar` agora copia a fixação do original.
+  de data. `anuncios.py --trocar` agora copia a fixação do original, e
+  `--fixar "texto" --posicao=1` refixa. Nada avisa quando o pin some: a RSA
+  continua aprovada e só passa a sortear o título da oferta como qualquer outro.
 
 ### Conta compartilhada: o que é de conta e o que é de campanha
 
