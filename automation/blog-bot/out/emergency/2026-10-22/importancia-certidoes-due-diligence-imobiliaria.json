@@ -1,0 +1,87 @@
+{
+  "date": "2026-10-22",
+  "siteId": "emergency",
+  "postType": "due-diligence-certidoes",
+  "focus": "php",
+  "theme": "due diligence imobiliaria com certidoes orientadas",
+  "angle": "compliance",
+  "slug": "importancia-certidoes-due-diligence-imobiliaria",
+  "title": "Emergency Documentação: PHP aplicado a compliance",
+  "description": "Atualização semanal de php para Emergency Documentação, com foco em due diligence imobiliaria com certidoes orientadas.",
+  "sources": [
+    "https://www.barbieriadvogados.com/due-diligence-imobiliaria/",
+    "https://zsassociados.com/pt/blog/due-diligence-imobiliaria-checklist/",
+    "https://emergency.com.br/blog/due-diligence-imobiliaria-certidoes-compliance",
+    "https://apartamentolivre.com.br/due-diligence-imobiliaria",
+    "https://hentzadvocacia.adv.br/blog/due-diligence-imobiliaria-guia-pratico/"
+  ],
+  "status": "draft",
+  "generatedAt": "2026-10-22T11:51:08-03:00",
+  "content": {
+    "eyebrow": "Guia prático",
+    "headline": "Importância das Certidões na Due Diligence Imobiliária",
+    "summary": "Entenda como certidões podem mitigar riscos na due diligence imobiliária.",
+    "answerBox": {
+      "question": "Quais certidões são essenciais na due diligence imobiliária?",
+      "answer": "As certidões essenciais incluem a de ônus reais, de ações reais, de propriedade e de tributos. Elas ajudam a identificar riscos e garantias no processo de compra, assegurando que não haja pendências ou problemas legais com o imóvel."
+    },
+    "tldr": [
+      "Certidões ajudam a mitigar riscos na compra de imóveis.",
+      "Due diligence imobiliária requer atenção a detalhes.",
+      "Apoio especializado pode facilitar o processo."
+    ],
+    "sections": [
+      {
+        "type": "prose",
+        "title": "O papel das certidões na due diligence",
+        "body": "As certidões são documentos fundamentais na due diligence imobiliária. Elas fornecem informações críticas sobre a situação legal do imóvel, como ônus, dívidas e ações judiciais. Sem essas informações, o comprador pode enfrentar surpresas desagradáveis, como disputas de propriedade ou débitos que não foram considerados na negociação."
+      },
+      {
+        "type": "list",
+        "title": "Certidões essenciais para a due diligence imobiliária",
+        "items": [
+          "Certidão de ônus reais, que mostra pendências sobre o imóvel.",
+          "Certidão de ações reais, que revela ações judiciais em andamento.",
+          "Certidão de propriedade, que confirma a titularidade do bem.",
+          "Certidão de tributos, que indica possíveis débitos fiscais."
+        ]
+      },
+      {
+        "type": "callout",
+        "body": "Já estruturamos isso em diversos clientes. Vale uma conversa para entender melhor seu cenário.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Como evitar riscos na aquisição imobiliária",
+        "body": "Na aquisição de um imóvel, é crucial que as certidões sejam obtidas antes da compra. Isso evita retrabalho e garante que todos os aspectos legais estejam claros. A Emergency Documentação pode auxiliar nesse processo, oferecendo um painel de acompanhamento e suporte para pedidos complexos, garantindo que tudo esteja em ordem antes da finalização do negócio."
+      },
+      {
+        "type": "cta-inline",
+        "body": "Considere um suporte especializado para garantir a segurança do seu investimento.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Cuidado com as armadilhas comuns",
+        "body": "É fácil subestimar a importância das certidões. Muitos compradores costumam ignorar pendências que podem custar caro no futuro. Além disso, a falta de um acompanhamento adequado pode resultar em atrasos inesperados. Estar ciente dessas armadilhas é essencial para uma due diligence eficaz."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Qual a importância da certidão de ônus reais?",
+        "a": "A certidão de ônus reais é crucial, pois revela se existem dívidas ou hipotecas relacionadas ao imóvel, evitando surpresas no futuro."
+      },
+      {
+        "q": "Como as certidões ajudam no processo de compra?",
+        "a": "As certidões oferecem garantias sobre a situação legal do imóvel, reduzindo riscos e assegurando que tudo esteja regularizado antes da compra."
+      },
+      {
+        "q": "Quais são as consequências de não realizar uma due diligence?",
+        "a": "Não realizar uma due diligence pode resultar em problemas legais, financeiros e atrasos na transação, além de possíveis perdas financeiras."
+      }
+    ]
+  }
+}

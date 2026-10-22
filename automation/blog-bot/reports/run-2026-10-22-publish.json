@@ -1,0 +1,143 @@
+{
+  "mode": "publish",
+  "date": "2026-10-22",
+  "timezone": "America/Sao_Paulo",
+  "focus": "php",
+  "startedAt": "2026-10-22T14:50:51.693Z",
+  "aiProvider": "openrouter",
+  "sites": [
+    {
+      "siteId": "coderush",
+      "skipped": true,
+      "reason": "site disabled"
+    },
+    {
+      "siteId": "codafacil",
+      "skipped": true,
+      "reason": "site disabled"
+    },
+    {
+      "siteId": "fluxointeligenteia",
+      "skipped": true,
+      "reason": "site disabled"
+    },
+    {
+      "siteId": "sistemavendadireta",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "integracao ERP",
+      "theme": "plano de carreira em marketing multinivel: como estruturar",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/sistemavendadireta/2026-10-22/estruturar-plano-carreira-marketing-multinivel.json",
+      "markdownPath": "automation/blog-bot/out/sistemavendadireta/2026-10-22/estruturar-plano-carreira-marketing-multinivel.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "sistemavendadireta/2026/10/22/estruturar-plano-carreira-marketing-multinivel/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "local-tipografica",
+        "coverAlt": "Como estruturar um plano de carreira em marketing multinível",
+        "coverLeakage": null
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "sistemavendadireta/index.php",
+          "sistemavendadireta/blog/index.php",
+          "sistemavendadireta/2026/10/22/estruturar-plano-carreira-marketing-multinivel/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "emergency",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "compliance",
+      "theme": "due diligence imobiliaria com certidoes orientadas",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": [
+          {
+            "url": "https://capitalaberto.com.br/feed/",
+            "error": "HTTP 404"
+          }
+        ]
+      },
+      "outputPath": "automation/blog-bot/out/emergency/2026-10-22/importancia-certidoes-due-diligence-imobiliaria.json",
+      "markdownPath": "automation/blog-bot/out/emergency/2026-10-22/importancia-certidoes-due-diligence-imobiliaria.md",
+      "publishResult": {
+        "target": "api",
+        "apiStatus": 201,
+        "apiUrl": "https://emergency.com.br/blog/importancia-certidoes-due-diligence-imobiliaria",
+        "apiId": 75,
+        "apiPublishedAt": "2026-10-22T11:51:08-03:00",
+        "coverPath": "automation/blog-bot/out/emergency/covers/importancia-certidoes-due-diligence-imobiliaria.jpg",
+        "coverSize": 43884,
+        "coverSource": "local-tipografica",
+        "coverAlt": "Importância das Certidões na Due Diligence Imobiliária",
+        "coverLeakage": null
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    },
+    {
+      "siteId": "bfrintelligence",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "ROI",
+      "theme": "engenharia de agentes: do piloto a producao",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/bfrintelligence/2026-10-22/operar-agentes-ia-resultados-mensuraveis.json",
+      "markdownPath": "automation/blog-bot/out/bfrintelligence/2026-10-22/operar-agentes-ia-resultados-mensuraveis.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "bfrintelligence/2026/10/22/operar-agentes-ia-resultados-mensuraveis/index.html",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "local-tipografica",
+        "coverAlt": "Como operar agentes de IA com resultados mensuráveis",
+        "coverLeakage": null
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    }
+  ],
+  "duplications": [],
+  "relatedRefresh": {
+    "touched": 19,
+    "unchanged": 156,
+    "errors": [],
+    "totalCards": 163,
+    "totalFiles": 175
+  },
+  "fallbackCount": 0,
+  "allFallback": false,
+  "finishedAt": "2026-10-22T14:51:46.580Z",
+  "ok": true
+}

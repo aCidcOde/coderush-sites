@@ -90,6 +90,15 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-INDEX-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/10/22/estruturar-plano-carreira-marketing-multinivel/" data-blog-image="imagens/posts/estruturar-plano-carreira-marketing-multinivel.jpg" data-blog-slug="estruturar-plano-carreira-marketing-multinivel" data-blog-date="2026-10-22">
+  <a href="../2026/10/22/estruturar-plano-carreira-marketing-multinivel/">
+    <picture><source srcset="../imagens/posts/estruturar-plano-carreira-marketing-multinivel.webp" type="image/webp" /><img src="../imagens/posts/estruturar-plano-carreira-marketing-multinivel.jpg" alt="Como estruturar um plano de carreira em marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="../2026/10/22/estruturar-plano-carreira-marketing-multinivel/" class="hover:underline">Como estruturar um plano de carreira em marketing multinível</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Aprenda a montar um plano de carreira eficaz para sua equipe de MMN.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/10/15/comissao-cargo-plano-pontos-venda-direta/" data-blog-image="imagens/posts/comissao-cargo-plano-pontos-venda-direta.jpg" data-blog-slug="comissao-cargo-plano-pontos-venda-direta" data-blog-date="2026-10-15">
   <a href="../2026/10/15/comissao-cargo-plano-pontos-venda-direta/">
     <picture><source srcset="../imagens/posts/comissao-cargo-plano-pontos-venda-direta.webp" type="image/webp" /><img src="../imagens/posts/comissao-cargo-plano-pontos-venda-direta.jpg" alt="Comissão por cargo ou plano de pontos em venda direta?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
