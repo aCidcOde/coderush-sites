@@ -33,7 +33,9 @@ return [
             . 'cliques, R$ 400 e zero lead, e de 22/09 a 05/10 vieram 7. Achado no caminho: 2 dos 7 '
             . 'links da vitrine "quem já fechou" estão quebrados — parceiroaccenti.com.br expirou em '
             . '07/10 e não resolve, e a loja da MedPlant pede senha. É a prova que a página manda o '
-            . 'visitante abrir pra ver o sistema rodando.',
+            . 'visitante abrir pra ver o sistema rodando. Accenti passou pra '
+            . 'accenti.sistemavendadireta.com.br no mesmo dia; a senha da MedPlant é de pré-lançamento '
+            . 'e fica, porque a loja abre em poucos dias.',
     ],
     [
         'data' => '2026-10-19',

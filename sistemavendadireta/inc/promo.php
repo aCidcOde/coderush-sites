@@ -48,7 +48,7 @@ function promoClientes(): array
     return [
         ['Henovar Energy', 'https://henovar.com.br/loja'],
         ['Velaro Alianças', 'https://velaroaliancas.com.br/'],
-        ['Accenti', 'https://parceiroaccenti.com.br/loja'],
+        ['Accenti', 'https://accenti.sistemavendadireta.com.br/loja'],
         ["New Professional's", 'https://newprofessional.com.py/loja'],
         ['Protech', 'https://loja.protechnutritional.com.br/loja'],
         ['MedPlant', 'https://medplant.sistemavendadireta.com.br/loja'],
@@ -104,7 +104,7 @@ function promoVitrine(string $prefixo = '../'): string
         [
             'logo' => 'accenti', 'alt' => 'Accenti',
             'w' => 842, 'h' => 461, 'data' => 'No ar desde junho de 2026',
-            'loja' => 'https://parceiroaccenti.com.br/loja',
+            'loja' => 'https://accenti.sistemavendadireta.com.br/loja',
             'texto' => 'Aromaterapia em cinco linhas — blends, essências concentradas, óleos essenciais e '
                 . 'vegetais — com loja do consultor, cadastro de revendedor e rede integrada.',
         ],

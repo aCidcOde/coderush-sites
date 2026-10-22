@@ -155,8 +155,11 @@ lead chega em rajada, e semana boa não é a média.
 | Prova social de pé | todo link da vitrine de clientes (`promoClientes()`) abrindo |
 
 O último elo é o que ninguém olha: em 22/10 o domínio da Accenti tinha expirado em
-07/10 e a loja da MedPlant pedia senha — 2 dos 7 links que a página manda o
-visitante abrir "para ver o sistema rodando".
+07/10 — um dos 7 links que a página manda o visitante abrir "para ver o sistema
+rodando". Confira com redirecionamento seguido até o fim (`curl -L --max-redirs`):
+o subdomínio novo dela respondia 308 para ele mesmo, e um `curl -I` sozinho
+mostraria só "redireciona", não o loop. Senha na loja (MedPlant) pode ser
+pré-lançamento — pergunte antes de tratar como quebrado.
 
 **Lance não conserta conversão.** O teto de R$ 9 levou o topo do MMN de 30% para
 56% em três dias e os cliques foram de 1,4 para 2,3 por dia. Se o problema é a

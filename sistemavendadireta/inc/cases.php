@@ -202,7 +202,7 @@ return [
         'logoFallback' => 'imagens/clientes/accenti.png',
         'logoWidth' => 842,
         'logoHeight' => 461,
-        'url' => 'https://parceiroaccenti.com.br/loja',
+        'url' => 'https://accenti.sistemavendadireta.com.br/loja',
         'summary' => 'Operação de aromaterapia com cinco linhas de produto e venda por rede de consultores.',
         'highlights' => [
             'Cinco linhas: blends, essências, aromakit, óleos essenciais e vegetais',
