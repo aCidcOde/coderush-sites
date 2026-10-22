@@ -133,6 +133,35 @@ Relatar número de "hoje" antes do fechamento gera correção no dia seguinte. E
 **Analisar sempre o dia anterior fechado**; o dia corrente serve só para detectar
 anomalia grosseira (zero impressão, gasto explodindo).
 
+### Seca de lead: medir o tamanho antes de chamar de queda
+
+Em 22/10/2026 a campanha completou 16 dias sem lead, depois da melhor semana da
+história (01-05/10: 4 leads pagos em 53 cliques). A sensação foi "caiu do nada".
+Antes de mexer em lance, duas perguntas:
+
+**1. A seca é grande para a taxa de sempre?** 11 leads pagos em ~270 cliques até
+05/10 dá ~4%. Com 70 cliques e zero lead, a chance de ser azar é ~7% (0,96^70):
+improvável, não impossível. E já tinha acontecido igual — 05/09 a 21/09: 71
+cliques, R$ 400, zero lead; de 22/09 a 05/10 vieram 7. Com 2-5 cliques por dia,
+lead chega em rajada, e semana boa não é a média.
+
+**2. O funil está de pé?** Conferir ponta a ponta, nesta ordem:
+
+| Elo | Como conferir |
+|---|---|
+| Gente chegando | chegadas com `gclid` nas LPs no log do nginx do host |
+| Clique registrando | Chrome headless na LP com `sendBeacon` interceptado: tem que sair `whatsapp_click` e beacon pra `/zap-lead.php`, sem erro de JS |
+| Endpoint vivo | `GET /zap-lead.php` = 405, `POST` vazio = 422 |
+| Prova social de pé | todo link da vitrine de clientes (`promoClientes()`) abrindo |
+
+O último elo é o que ninguém olha: em 22/10 o domínio da Accenti tinha expirado em
+07/10 e a loja da MedPlant pedia senha — 2 dos 7 links que a página manda o
+visitante abrir "para ver o sistema rodando".
+
+**Lance não conserta conversão.** O teto de R$ 9 levou o topo do MMN de 30% para
+56% em três dias e os cliques foram de 1,4 para 2,3 por dia. Se o problema é a
+pessoa chegar e não chamar, mais exposição só compra mais gente que não chama.
+
 ## 3. Termos de busca — o campo de batalha
 
 Concentre 80% do tempo aqui.
@@ -386,7 +415,7 @@ correta é `https://site.com/?utm_source=...#contato`.
 
 ---
 
-*Última atualização: 19/10/2026 — 1 campanha ativa (SVD - Promoção 10 Anos, R$ 40/dia,
-termina 31/10). Marco: a queda de volume tinha duas causas sobrepostas, uma
-esperada (pausa de palavra sem lead) e outra de leilão (teto abaixo do preço do
-MMN), e o cruzamento gclid × click_view mostrou quais 7 palavras vendem.*
+*Última atualização: 22/10/2026 — 1 campanha ativa (SVD - Promoção 10 Anos, R$ 40/dia,
+termina 31/10). Marco: 16 dias sem lead com o funil conferido de pé ponta a ponta;
+a seca tem precedente do mesmo tamanho em setembro, e a vitrine de clientes tinha
+2 de 7 links quebrados.*

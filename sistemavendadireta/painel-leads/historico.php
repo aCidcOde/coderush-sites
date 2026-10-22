@@ -20,6 +20,22 @@ Campos:
 
 return [
     [
+        'data' => '2026-10-22',
+        'area' => 'medicao',
+        'titulo' => '16 dias sem lead: o funil está de pé, e a seca tem precedente do mesmo tamanho',
+        'porque' => 'Último lead real em 05/10. Desde 06/10, 70 cliques pagos (fora o robô de 11/10) e '
+            . 'R$ 301 sem lead nenhum, nem pago nem orgânico. Conferido ponta a ponta: o anúncio traz '
+            . 'gente (3 a 19 chegadas com gclid por dia no log), o clique simulado no Chrome dispara '
+            . 'whatsapp_click e o beacon pro /zap-lead.php nas duas LPs, sem erro de JavaScript, e o '
+            . 'endpoint responde. Não é medição quebrada: a pessoa chega e não chama.',
+        'efeito' => 'Na taxa histórica (11 leads em ~270 cliques, ~4%) eram esperados 2-3 leads; zero por '
+            . 'azar acontece ~7% das vezes. Improvável, mas já aconteceu: de 05/09 a 21/09 foram 71 '
+            . 'cliques, R$ 400 e zero lead, e de 22/09 a 05/10 vieram 7. Achado no caminho: 2 dos 7 '
+            . 'links da vitrine "quem já fechou" estão quebrados — parceiroaccenti.com.br expirou em '
+            . '07/10 e não resolve, e a loja da MedPlant pede senha. É a prova que a página manda o '
+            . 'visitante abrir pra ver o sistema rodando.',
+    ],
+    [
         'data' => '2026-10-19',
         'area' => 'ads',
         'titulo' => 'Pin do "Até 40% de Desconto" de volta na posição 1, nos 9 anúncios',
