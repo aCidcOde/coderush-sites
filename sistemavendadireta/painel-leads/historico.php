@@ -20,6 +20,20 @@ Campos:
 
 return [
     [
+        'data' => '2026-10-23',
+        'area' => 'ads',
+        'titulo' => 'Leitura do teto de R$ 9: o topo voltou e o clique subiu, mas devagar — mantido até 31/10',
+        'porque' => 'Leitura combinada em 19/10. Quatro dias fechados (19-22/10) contra os sete anteriores, '
+            . 'só no Sistema MMN: topo de 18-44% para 30-56% (meta 40% batida desde o dia 21), cliques '
+            . 'de 1,4 para 2,5 por dia, gasto de R$ 8,40 para R$ 15,10 por dia. O CPC subiu todo dia — '
+            . 'R$ 1,42, 5,23, 8,12, 8,58 — e passou de R$ 8 nos dois últimos.',
+        'efeito' => 'O critério de reversão era "CPC acima de R$ 8 SEM o clique subir". O clique subiu 75%, '
+            . 'abaixo da meta de 3 por dia, e cada clique a mais custou ~R$ 6, perto do CPC médio: não é '
+            . 'a exposição marginal cara de 12/09. Mantido até o fim da campanha em 31/10 — mexer a oito '
+            . 'dias do fim zera a calibração por pouco ganho. CTR do MMN foi de 4,7% para 5,4% com o pin, '
+            . 'dentro do ruído. Zero lead nos quatro dias: 18 dias secos.',
+    ],
+    [
         'data' => '2026-10-22',
         'area' => 'medicao',
         'titulo' => '16 dias sem lead: o funil está de pé, e a seca tem precedente do mesmo tamanho',
