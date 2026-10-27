@@ -36,3 +36,27 @@ conexoes, uma anonima pro preconnect e outra pro download, e o ganho vira zero.
   gtag('config', '<?= htmlspecialchars(SVD_GA4_ID, ENT_QUOTES, 'UTF-8') ?>');
 </script>
 <?php endif; ?>
+<?php /*
+ATRIBUICAO GUARDADA NA ENTRADA, em qualquer pagina — 27/10/2026.
+
+Quem gravava gclid e UTMs na sessao era o js/scripts.js, que a /sistema-mmn/ nao
+carrega. Resultado: o lead #50 (26/10) clicou no anuncio do grupo MMN, leu a
+pagina por 9 minutos, foi pra home e chamou no WhatsApp — e entrou no banco como
+"home", sem gclid, sem campanha. Primeiro lead em 21 dias, contado como organico.
+
+Aqui porque este include esta no head de TODA pagina; o scripts.js continua
+fazendo o mesmo, e repetir e inofensivo (so acrescenta chave que veio na URL).
+*/ ?>
+<script>
+  (function () {
+    try {
+      var p = new URLSearchParams(location.search), chave = "svd-attribution", s = {}, mudou = false;
+      try { s = JSON.parse(sessionStorage.getItem(chave) || "{}"); } catch (e) {}
+      ["gclid", "utm_source", "utm_medium", "utm_campaign", "utm_content"].forEach(function (k) {
+        var v = p.get(k);
+        if (v) { s[k] = v; mudou = true; }
+      });
+      if (mudou) sessionStorage.setItem(chave, JSON.stringify(s));
+    } catch (e) {}
+  })();
+</script>
