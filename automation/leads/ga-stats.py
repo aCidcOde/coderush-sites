@@ -16,7 +16,9 @@ from google.analytics.data_v1beta import (BetaAnalyticsDataClient, RunReportRequ
 
 OUT = "/data/coderush-sites/sistemavendadireta/storage/ga-stats.json"
 PROPS = [("properties/379315278", "sistemavendadireta.com.br")]
-FOCUS_EVENTS = ["generate_lead", "whatsapp_click", "simulator_use", "form_start", "purchase"]
+# demo_click (27/10/2026): a Promocao de Fim de Ano anuncia a demonstracao sem
+# cadastro — e o clique que ela promete, entao precisa aparecer no painel.
+FOCUS_EVENTS = ["generate_lead", "whatsapp_click", "demo_click", "simulator_use", "form_start", "purchase"]
 
 c = BetaAnalyticsDataClient()
 

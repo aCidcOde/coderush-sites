@@ -251,6 +251,16 @@ que tinha volume".
 Procure no dia do lead e nos três anteriores, porque a conversa pode vir dias
 depois do clique.
 
+### Parceiros de pesquisa: medir por lead antes de desligar
+
+A intuição manda desligar a rede de parceiros ("tráfego barato é tráfego
+ruim"). O mesmo cruzamento gclid × `click_view`, com `segments.ad_network_type`,
+mostrou o contrário em 27/10/2026: **3 dos 11 leads pagos vieram de
+SEARCH_PARTNERS** — 108 cliques e R$ 99,60 ali (~R$ 33 por lead) contra R$ 1.557
+no Google para 8 leads (~R$ 195). Os três eram "sistema de venda direta".
+Volume pequeno, mas a direção é clara o bastante para não cortar o canal mais
+barato da conta por preconceito. A Fim de Ano nasceu com parceiros ligados.
+
 ## 5. Quando mexer no quê
 
 Ordem de alavancas, da mais barata para a mais cara:
@@ -295,6 +305,23 @@ estava errado nas 4 do SVD, paradas desde 10/08:
   custam clique — subir sem elas repete a perda de 90% por ranking do primeiro dia;
 - **texto com prazo vencido** (acima);
 - **estratégia de lance defasada** em relação à campanha que já aprendeu.
+
+### Trocar de promoção: o site vira pela data, a campanha nasce nova
+
+Na virada 10 Anos → Fim de Ano (01/11/2026) o nome da promoção estava escrito à
+mão em ~50 linhas de 7 páginas, e o card de compartilhamento (og:image) tinha o
+prazo **desenhado na imagem** — dizia "ATÉ 31/08" dois meses depois de vencer.
+
+- **Site:** `PROMO_CALENDARIO` em `inc/promo.php` lista as promoções em ordem; a
+  vigente é a primeira cujo `fim` não passou. Nome, slug (utm_campaign), selo,
+  contador de vagas e og:image saem dali. A troca acontece à meia-noite, sem
+  deploy. Promoção nova = uma linha no calendário + `imagens/og-oferta-<slug>.jpg`.
+- **Vagas não passam de uma promoção para outra.** "7 das 10 preenchidas" eram da
+  10 Anos; repetir na seguinte seria escassez inventada (`'vagas' => null`).
+- **Campanha:** uma por promoção, com a data de fim igual à do calendário.
+  Sitelink **não** se reaproveita entre promoções quando carrega `utm_campaign`
+  na URL — o lead viria atribuído à promoção errada. Frase de destaque e telefone
+  (sem URL) se vinculam normalmente.
 
 Ao replicar extensão, **vincule o asset existente, não clone**. `asset` é
 reaproveitável entre campanhas e consolida métrica; rodar `extensoes.py` de novo
@@ -355,6 +382,7 @@ Em `automation/ads/`, todas idempotentes:
 | `vincular-extensoes.py` | Replica assets de uma campanha em outras sem clonar. |
 | `conversoes-bfr.py` | Ações de conversão da BFR e o `send_to` da tag AW. |
 | `criar-campanha-bfr.py` | Primeira campanha da BFR. Valida RSA antes de enviar. |
+| `criar-campanha-fim-de-ano.py` | Promoção de Fim de Ano (Maximizar cliques com teto, parceiros ligados). Herda negativas e destaques de outra campanha; idempotente. |
 
 ### Armadilhas técnicas da API
 
@@ -403,7 +431,7 @@ algumas mudanças:
 
 - **ação de conversão é recurso de conta** — criar uma para a BFR aparece no
   relatório de todos. Hoje é tolerável porque nenhuma campanha usa lance por
-  conversão (todas em `TARGET_IMPRESSION_SHARE`), então misturar não envenena
+  conversão (parcela de impressão ou Maximizar cliques), então misturar não envenena
   algoritmo nenhum; exige apenas segmentar por nome na leitura. **No dia em que
   alguma campanha migrar para Maximize Conversions, isto vira problema real e a
   BFR precisa de conta própria.** Prefixe o nome da ação com a marca;
@@ -418,7 +446,8 @@ correta é `https://site.com/?utm_source=...#contato`.
 
 ---
 
-*Última atualização: 22/10/2026 — 1 campanha ativa (SVD - Promoção 10 Anos, R$ 40/dia,
-termina 31/10). Marco: 16 dias sem lead com o funil conferido de pé ponta a ponta;
-a seca tem precedente do mesmo tamanho em setembro, e a vitrine de clientes tinha
-2 de 7 links quebrados.*
+*Última atualização: 27/10/2026 — SVD - Promoção 10 Anos no ar até 31/10; a
+SVD - Promocao Fim de Ano (R$ 20/dia, Maximizar cliques com teto R$ 8, Google +
+parceiros) começa sozinha em 01/11 e vai até 31/12. Marco: a seca de outubro foi
+lida como problema de conversão, não de leilão — a campanha nova muda o lance e
+põe a demonstração sem cadastro no anúncio.*

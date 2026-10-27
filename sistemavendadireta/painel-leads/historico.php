@@ -21,6 +21,38 @@ Campos:
 return [
     [
         'data' => '2026-10-27',
+        'area' => 'ads',
+        'titulo' => 'Campanha nova "SVD - Promocao Fim de Ano" (01/11 a 31/12): Maximizar cliques, parceiros ligados, demonstração no anúncio',
+        'porque' => 'A 10 Anos termina em 31/10 e foi decidido não estender. A leitura de outubro mostrou '
+            . 'que o problema não era aparecer: de 06 a 25/10 foram 70 cliques e R$ 301 sem lead, com a '
+            . 'meta de topo batida. Parcela de impressão otimiza pra ser visto; o gargalo era a pessoa '
+            . 'chegar e não chamar. Cruzando os 11 gclids dos leads pagos com o click_view: 3 vieram de '
+            . 'parceiros de pesquisa (108 cliques, R$ 99,60 — ~R$ 33 por lead) contra 8 do Google '
+            . '(R$ 1.557 — ~R$ 195 por lead).',
+        'efeito' => 'Criada pelo automation/ads/criar-campanha-fim-de-ano.py, ativa com início em 01/11: '
+            . 'R$ 20/dia, Maximizar cliques com teto R$ 8, Google + parceiros. Só os grupos com busca '
+            . '(Sistema MMN, 24 palavras; Venda Direta, 8) — Concorrentes e Fundo de Funil ficaram de fora '
+            . 'por falta de volume. Título 1 fixo no produto, título 2 alterna "Até 40% de Desconto" e '
+            . '"Demonstração sem Cadastro". 102 negativas e destaques herdados; sitelinks e promoção '
+            . '(até 40%) novos, com utm_campaign=promo-fim-de-ano. No site, a promoção vira sozinha à '
+            . 'meia-noite de 01/11 (calendário em inc/promo.php), sem herdar as "7 das 10 vagas". '
+            . 'Leitura: 08/11 (cliques/dia, CPC, parcela de parceiros, demo_click) e 15/11 (lead).',
+    ],
+    [
+        'data' => '2026-10-27',
+        'area' => 'site',
+        'titulo' => 'Card de compartilhamento da oferta dizia "ATÉ 31/08" havia dois meses',
+        'porque' => 'O og:image das LPs era uma imagem só, com o prazo desenhado nela. A data no texto da '
+            . 'página vinha da constante; a da imagem, ninguém atualizou. Todo link da oferta mandado no '
+            . 'WhatsApp desde setembro abria com uma promoção vencida no card.',
+        'efeito' => 'Uma imagem por promoção (imagens/og-oferta-<slug>.jpg), escolhida pelo calendário. '
+            . 'Também: a demonstração sem cadastro ganhou chamada no primeiro bloco da /sistema-venda-direta/ '
+            . '(antes só no cabeçalho), e o GA4 passou a registrar demo_click (evento-chave), que aparece '
+            . 'no painel. Público GA4 novo pro remarketing: "Visitou LP do SVD sem chamar (60d)" — o '
+            . 'antigo filtrava /oferta/, que não existe desde 14/09.',
+    ],
+    [
+        'data' => '2026-10-27',
         'area' => 'medicao',
         'titulo' => 'Primeiro lead em 21 dias veio do anúncio — e entrou no banco como "home"',
         'porque' => 'Lead #50, 26/10: clique no anúncio do grupo Sistema MMN às 15h21, 9 minutos na '
@@ -30,7 +62,8 @@ return [
             . 'contou o clique de WhatsApp (pelo GA4); o painel contou orgânico.',
         'efeito' => 'A captura foi pro inc/analytics.php, que está no head de toda página. Testado no '
             . 'Chrome: entrada na /sistema-mmn/ com gclid, clique de zap na home, e o beacon leva gclid '
-            . 'e UTMs. O lead #50 continua sem origem no banco — a correção retroativa ficou pendente.',
+            . 'e UTMs. O lead #50 foi corrigido no banco em 27/10 (gclid, google/cpc, promo-10-anos, mmn), '
+            . 'com o gclid tirado do log do nginx.',
     ],
     [
         'data' => '2026-10-23',

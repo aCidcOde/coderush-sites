@@ -441,6 +441,7 @@ if ($gaSite && !empty($gaSite['eventos'])) {
     $nomes = [
         'generate_lead' => 'Leads (formulário)',
         'whatsapp_click' => 'Cliques WhatsApp',
+        'demo_click' => 'Entradas na demonstração',
         'simulator_use' => 'Uso do simulador',
         'form_start' => 'Começou o formulário',
         'purchase' => 'Vendas (purchase)',

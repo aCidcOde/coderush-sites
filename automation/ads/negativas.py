@@ -26,7 +26,9 @@ import sys
 
 CUSTOMER_ID = "3578927161"
 ENV_PATH = "/data/coderush-sites/.env"
-CAMPANHA_PADRAO = "SVD - Promocao 10 Anos"
+# a 10 Anos termina em 31/10; desde 01/11 quem roda e a Fim de Ano. Pra mexer na
+# antiga, --campanha="SVD - Promocao 10 Anos".
+CAMPANHA_PADRAO = "SVD - Promocao Fim de Ano"
 
 
 def cliente():
