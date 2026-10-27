@@ -20,6 +20,19 @@ Campos:
 
 return [
     [
+        'data' => '2026-10-27',
+        'area' => 'medicao',
+        'titulo' => 'Primeiro lead em 21 dias veio do anúncio — e entrou no banco como "home"',
+        'porque' => 'Lead #50, 26/10: clique no anúncio do grupo Sistema MMN às 15h21, 9 minutos na '
+            . '/sistema-mmn/, foi pra home e chamou no WhatsApp às 15h30 (o log do nginx mostra a '
+            . 'sequência pelo IP). Gravou sem gclid e sem campanha porque quem guardava a atribuição na '
+            . 'sessão era o js/scripts.js, e a /sistema-mmn/ não carrega esse arquivo. O Google Ads '
+            . 'contou o clique de WhatsApp (pelo GA4); o painel contou orgânico.',
+        'efeito' => 'A captura foi pro inc/analytics.php, que está no head de toda página. Testado no '
+            . 'Chrome: entrada na /sistema-mmn/ com gclid, clique de zap na home, e o beacon leva gclid '
+            . 'e UTMs. O lead #50 continua sem origem no banco — a correção retroativa ficou pendente.',
+    ],
+    [
         'data' => '2026-10-23',
         'area' => 'ads',
         'titulo' => 'Leitura do teto de R$ 9: o topo voltou e o clique subiu, mas devagar — mantido até 31/10',
