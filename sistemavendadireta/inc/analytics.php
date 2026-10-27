@@ -60,3 +60,19 @@ fazendo o mesmo, e repetir e inofensivo (so acrescenta chave que veio na URL).
     } catch (e) {}
   })();
 </script>
+<?php /*
+CLIQUE NA DEMONSTRACAO, em qualquer pagina — 27/10/2026.
+
+A Promocao de Fim de Ano poe a demonstracao sem cadastro como chamada principal
+do anuncio. Ela abre em outro dominio (painel.), onde o GA4 do site nao existe:
+sem este evento, o clique que a campanha nova promete seria invisivel, e a
+leitura de novembro voltaria a contar so WhatsApp. Delegado no document porque
+o link aparece em lugar diferente em cada pagina (cabecalho, hero, faixa do blog).
+*/ ?>
+<script>
+  document.addEventListener("click", function (ev) {
+    var a = ev.target.closest && ev.target.closest('a[href*="painel.sistemavendadireta.com.br/primeiros-passos"]');
+    if (!a || typeof window.gtag !== "function") return;
+    window.gtag("event", "demo_click", { page: location.pathname, link_url: a.href.split("?")[0] });
+  });
+</script>

@@ -26,13 +26,12 @@ $promoInstallCash = 3000;          // valor promocional a vista (R$)
 // e bastava esquecer uma pra pagina vender oferta vencida — foi assim que o
 // "ate 31/08" sobreviveu 12 dias. Agora le da constante.
 $promoDeadline = PROMO_DEADLINE;
-$promoSlots = 10;                  // vagas de implantacao no periodo (tema: 10 anos)
-// Atualizado 14/09/2026: Zohr saiu (nao fechou) e entraram Velaro e Henovar, as
-// duas vindas da campanha do Google Ads.
-$promoSlotsFilled = 7;             // Accenti, New Professional's, Protech, MedPlant, AVIG 360, Velaro e Henovar
+// Contador de vagas vem do calendario em inc/promo.php: a promocao seguinte
+// nao herda as vagas fechadas na anterior (ver la por que).
+[$promoSlots, $promoSlotsFilled] = promoVagas() ?? [0, 0];
 $promoSlotsLeft = max(0, $promoSlots - $promoSlotsFilled);
 $whatsappPhone = '5511994566726';
-$whatsappMessage = 'Ola! Vim pela Promocao 10 Anos do Sistema Venda Direta. Quero garantir minha vaga.';
+$whatsappMessage = 'Ola! Vim pela ' . promoNomeAscii() . ' do Sistema Venda Direta. Quero garantir minha vaga.';
 
 $monthlyTiers = [
     ['revenue' => 'até R$ 50 mil', 'price' => 'R$ 500'],
@@ -82,7 +81,7 @@ $seoUrl = $seoBase . '/sistema-venda-direta/';
 // O Indice de Qualidade do Google marcou a experiencia desta pagina como "abaixo da
 // media" (nota 5/10) — a palavra "multinivel" nao aparecia nenhuma vez, embora a
 // campanha compre exatamente "sistema multinivel" e "sistema marketing multinivel".
-$seoTitle = 'Sistema de Marketing Multinível e Venda Direta | Promoção 10 Anos';
+$seoTitle = 'Sistema de Marketing Multinível e Venda Direta | ' . PROMO_NOME;
 $seoDescription = 'Sistema de marketing multinível (MMN) e venda direta: escritório do '
     . 'consultor, rede binária e unilevel, loja e financeiro. A partir de R$ 3.000.';
 ?>
@@ -119,16 +118,16 @@ $seoDescription = 'Sistema de marketing multinível (MMN) e venda direta: escrit
 
   <meta property="og:locale" content="pt_BR" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Promoção 10 Anos — Sistema Venda Direta" />
+  <meta property="og:title" content="<?= htmlspecialchars(PROMO_NOME, ENT_QUOTES, 'UTF-8') ?> — Sistema Venda Direta" />
   <meta property="og:description" content="<?= htmlspecialchars($seoDescription, ENT_QUOTES, 'UTF-8') ?>" />
   <meta property="og:url" content="<?= htmlspecialchars($seoUrl, ENT_QUOTES, 'UTF-8') ?>" />
   <meta property="og:site_name" content="Sistema Venda Direta" />
-  <meta property="og:image" content="<?= htmlspecialchars($seoBase . '/imagens/og-oferta.jpg?v=3', ENT_QUOTES, 'UTF-8') ?>" />
+  <meta property="og:image" content="<?= htmlspecialchars($seoBase . promoOgImagem(), ENT_QUOTES, 'UTF-8') ?>" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="Instalação do Sistema Venda Direta com até 40% OFF — R$ 3.500 em 2x ou R$ 3.000 à vista até <?= promoPrazoCurto() ?>" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="<?= htmlspecialchars($seoBase . '/imagens/og-oferta.jpg?v=3', ENT_QUOTES, 'UTF-8') ?>" />
+  <meta name="twitter:image" content="<?= htmlspecialchars($seoBase . promoOgImagem(), ENT_QUOTES, 'UTF-8') ?>" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -172,7 +171,7 @@ $seoDescription = 'Sistema de marketing multinível (MMN) e venda direta: escrit
           'url' => $seoUrl,
           'priceValidUntil' => $promoActive ? $deadline->format('Y-m-d') : null,
           'description' => $promoActive
-              ? 'Promoção 10 Anos: instalação por ' . $moneyCash . ' à vista ou '
+              ? PROMO_NOME . ': instalação por ' . $moneyCash . ' à vista ou '
                   . $moneyTo . ' em 2x, de ' . $moneyFrom . '. Mensalidade a partir de R$ 500.'
               : 'Instalação a partir de ' . $moneyFrom . '. Mensalidade a partir de R$ 500.',
       ], static fn ($v) => $v !== null),
@@ -211,7 +210,7 @@ $seoDescription = 'Sistema de marketing multinível (MMN) e venda direta: escrit
     <div class="sticky top-0 z-50 border-b border-amber-300/40 bg-amber-400 text-brand">
       <div class="mx-auto flex max-w-[1140px] flex-nowrap items-center justify-between gap-3 px-4 py-2 sm:px-6">
         <p class="min-w-0 text-xs font-bold uppercase leading-tight tracking-wide sm:text-sm">
-          Promoção 10 Anos: até <?= (int) $discountCashPct ?>% OFF<span class="hidden md:inline"> na instalação · encerra <?= htmlspecialchars($deadlineLabel, ENT_QUOTES, 'UTF-8') ?></span>
+          <?= htmlspecialchars(PROMO_NOME, ENT_QUOTES, 'UTF-8') ?>: até <?= (int) $discountCashPct ?>% OFF<span class="hidden md:inline"> na instalação · encerra <?= htmlspecialchars($deadlineLabel, ENT_QUOTES, 'UTF-8') ?></span>
           <span class="ml-1 whitespace-nowrap rounded-full bg-brand px-2 py-0.5 text-[10px] font-bold text-white sm:text-xs"><?= (int) $daysLeft ?> dia<?= $daysLeft === 1 ? '' : 's' ?></span>
         </p>
         <a href="#garantir" class="shrink-0 whitespace-nowrap rounded-full bg-brand px-3 py-1.5 text-[11px] font-bold uppercase tracking-wide text-white hover:bg-brand-dark sm:px-4 sm:text-xs">
@@ -240,7 +239,7 @@ $seoDescription = 'Sistema de marketing multinível (MMN) e venda direta: escrit
     <section class="py-10 lg:py-14">
       <div>
         <p class="inline-flex rounded-full border border-amber-300/50 bg-amber-400/15 px-3 py-1 text-xs font-bold uppercase tracking-[0.18em] text-amber-200">
-          Celebrando 10 anos
+          <?= htmlspecialchars(PROMO_SELO, ENT_QUOTES, 'UTF-8') ?>
         </p>
         <h1 class="mt-4 font-[var(--font-heading)] text-3xl font-bold leading-[1.1] sm:text-4xl lg:text-[46px]">
           Sistema de marketing multinível e venda direta no ar com <span class="text-amber-300">até <?= (int) $discountCashPct ?>% de desconto</span> na instalação
@@ -271,13 +270,26 @@ $seoDescription = 'Sistema de marketing multinível (MMN) e venda direta: escrit
               Chamar no WhatsApp
             </a>
           </div>
-          <?php if ($promoActive): ?>
+          <?php /* A Promocao de Fim de Ano anuncia a demonstracao ("entre e teste,
+                   sem cadastro"); quem clica por isso tem que achar ela aqui, no
+                   primeiro bloco, e nao so no link pequeno do cabecalho. Pedir
+                   contato era o UNICO caminho desta dobra — e a seca de lead de
+                   outubro parou justamente nesse passo. */ ?>
+          <a href="<?= htmlspecialchars(DEMO_URL . '?utm_source=site&utm_medium=oferta&utm_campaign=demo&utm_content=hero', ENT_QUOTES, 'UTF-8') ?>" target="_blank" rel="noopener"
+             class="mt-3 inline-flex items-center justify-center text-sm font-semibold text-amber-200 underline decoration-amber-300/50 underline-offset-4 hover:text-white">
+            Quer ver antes? Entre na demonstração — loja, escritório e painel, sem cadastro &rarr;
+          </a>
+          <?php if ($promoActive && $promoSlots > 0): ?>
             <p class="mt-3 text-center text-xs text-white/70">
               <?= (int) $promoSlotsFilled ?> das <?= (int) $promoSlots ?> vagas já preenchidas (<?= promoClientesHtml() ?>) — restam <strong class="text-amber-300"><?= (int) $promoSlotsLeft ?></strong> até <?= htmlspecialchars($deadlineLabel, ENT_QUOTES, 'UTF-8') ?>.
             </p>
             <div class="mx-auto mt-2 h-1.5 w-full max-w-[260px] overflow-hidden rounded-full bg-white/15">
               <div class="h-full rounded-full bg-amber-400" style="width: <?= (int) round($promoSlotsFilled / max(1, $promoSlots) * 100) ?>%"></div>
             </div>
+          <?php elseif ($promoActive): ?>
+            <p class="mt-3 text-center text-xs text-white/70">
+              Já operam com o SVD: <?= promoClientesHtml() ?>.
+            </p>
           <?php endif; ?>
         </div>
 
@@ -669,7 +681,7 @@ $seoDescription = 'Sistema de marketing multinível (MMN) e venda direta: escrit
               method="post"
               class="space-y-4"
               data-whatsapp-phone="<?= htmlspecialchars($whatsappPhone, ENT_QUOTES, 'UTF-8') ?>"
-              data-whatsapp-message-template="Ola, vim pela Promocao 10 Anos. Meu nome e {nome} e meu WhatsApp e {whatsapp}."
+              data-whatsapp-message-template="Ola, vim pela <?= htmlspecialchars(promoNomeAscii(), ENT_QUOTES, 'UTF-8') ?>. Meu nome e {nome} e meu WhatsApp e {whatsapp}."
             >
               <input type="hidden" name="redirect" value="/sistema-venda-direta/" />
               <input type="hidden" name="origem" value="lp-sistema-venda-direta" />
@@ -727,7 +739,7 @@ $seoDescription = 'Sistema de marketing multinível (MMN) e venda direta: escrit
 
     <section class="py-12 text-center">
       <h2 class="font-[var(--font-heading)] text-2xl font-bold sm:text-3xl">
-        Promoção 10 Anos: <?= htmlspecialchars($moneyFrom, ENT_QUOTES, 'UTF-8') ?> viram <?= htmlspecialchars($moneyCash, ENT_QUOTES, 'UTF-8') ?> à vista<?= $promoActive ? ' até ' . htmlspecialchars($deadlineLabel, ENT_QUOTES, 'UTF-8') : '' ?>
+        <?= htmlspecialchars(PROMO_NOME, ENT_QUOTES, 'UTF-8') ?>: <?= htmlspecialchars($moneyFrom, ENT_QUOTES, 'UTF-8') ?> viram <?= htmlspecialchars($moneyCash, ENT_QUOTES, 'UTF-8') ?> à vista<?= $promoActive ? ' até ' . htmlspecialchars($deadlineLabel, ENT_QUOTES, 'UTF-8') : '' ?>
       </h2>
       <p class="mx-auto mt-3 max-w-2xl text-base leading-relaxed text-white/90">
         Depois disso, a instalação volta ao valor cheio. Se a sua operação vai começar este ano, começar agora sai bem mais barato.
@@ -757,8 +769,8 @@ $seoDescription = 'Sistema de marketing multinível (MMN) e venda direta: escrit
       </div>
       <p class="mt-6 text-xs text-white/60">
         © Sistema Venda Direta — Todos os direitos reservados.
-        Promoção 10 Anos — condição promocional de instalação (<?= htmlspecialchars($moneyTo, ENT_QUOTES, 'UTF-8') ?> em duas parcelas ou <?= htmlspecialchars($moneyCash, ENT_QUOTES, 'UTF-8') ?> à vista) válida para contratos fechados até <?= htmlspecialchars($deadlineLabel, ENT_QUOTES, 'UTF-8') ?>,
-        limitada a <?= (int) $promoSlots ?> implantações no período. Não cumulativa com outras condições comerciais.
+        <?= htmlspecialchars(PROMO_NOME, ENT_QUOTES, 'UTF-8') ?> — condição promocional de instalação (<?= htmlspecialchars($moneyTo, ENT_QUOTES, 'UTF-8') ?> em duas parcelas ou <?= htmlspecialchars($moneyCash, ENT_QUOTES, 'UTF-8') ?> à vista) válida para contratos fechados até <?= htmlspecialchars($deadlineLabel, ENT_QUOTES, 'UTF-8') ?>,
+        <?= $promoSlots > 0 ? 'limitada a ' . (int) $promoSlots . ' implantações no período. ' : '' ?>Não cumulativa com outras condições comerciais.
       </p>
     </div>
   </footer>

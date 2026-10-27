@@ -115,7 +115,7 @@ $faq = [
   <meta property="og:description" content="<?= htmlspecialchars($seoDescription, ENT_QUOTES, 'UTF-8') ?>" />
   <meta property="og:url" content="<?= htmlspecialchars($seoUrl, ENT_QUOTES, 'UTF-8') ?>" />
   <meta property="og:site_name" content="Sistema Venda Direta" />
-  <meta property="og:image" content="<?= htmlspecialchars($seoBase . '/imagens/og-oferta.jpg?v=3', ENT_QUOTES, 'UTF-8') ?>" />
+  <meta property="og:image" content="<?= htmlspecialchars($seoBase . promoOgImagem(), ENT_QUOTES, 'UTF-8') ?>" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -169,7 +169,7 @@ $faq = [
         <?php /* atalho pro fechamento: quem chega pelo anuncio e ja decidiu nao
                  deveria ter que rolar a pagina inteira pra achar onde falar */ ?>
         <a href="#falar" class="hidden text-sm font-semibold text-white/90 hover:text-white sm:inline">Falar com o time</a>
-        <a href="../sistema-venda-direta/?utm_source=site&amp;utm_medium=sistema-mmn&amp;utm_campaign=promo-10-anos" class="rounded-full bg-amber-400 px-4 py-2 text-sm font-bold text-brand hover:bg-amber-300">Ver a promoção</a>
+        <a href="../sistema-venda-direta/?utm_source=site&amp;utm_medium=sistema-mmn&amp;utm_campaign=<?= PROMO_SLUG ?>" class="rounded-full bg-amber-400 px-4 py-2 text-sm font-bold text-brand hover:bg-amber-300">Ver a promoção</a>
       </div>
     </div>
   </header>
@@ -456,7 +456,7 @@ $faq = [
         <a href="../cases/" class="text-white/85 hover:text-white">Cases</a>
         <a href="../simulador/" class="text-white/85 hover:text-white">Simulador</a>
         <a href="../blog/" class="text-white/85 hover:text-white">Blog</a>
-        <a href="../sistema-venda-direta/" class="text-amber-300 hover:text-amber-200">Promoção 10 Anos</a>
+        <a href="../sistema-venda-direta/" class="text-amber-300 hover:text-amber-200"><?= htmlspecialchars(PROMO_NOME, ENT_QUOTES, 'UTF-8') ?></a>
       </div>
     </div>
   </footer>

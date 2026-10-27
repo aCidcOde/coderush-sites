@@ -124,11 +124,15 @@ def prazo_da_promocao(ref=None):
     caminho = "/data/coderush-sites/sistemavendadireta/inc/promo.php"
     try:
         with open(caminho, encoding="utf-8") as fh:
-            m = re.search(r"PROMO_DEADLINE\s*=\s*['\"](\d{4}-\d{2}-\d{2})['\"]", fh.read())
-        if not m:
+            # desde 27/10/2026 o prazo vive num calendario de promocoes: vale a
+            # primeira cujo fim ainda nao passou (mesma regra de promoVigente())
+            fins = sorted(date.fromisoformat(x) for x in
+                          re.findall(r"'fim'\s*=>\s*'(\d{4}-\d{2}-\d{2})'", fh.read()))
+        if not fins:
             return None, None
-        fim = date.fromisoformat(m.group(1))
-        return (fim - (ref or date.today())).days, fim
+        hoje = ref or date.today()
+        fim = next((f for f in fins if f >= hoje), fins[-1])
+        return (fim - hoje).days, fim
     except Exception:
         return None, None
 

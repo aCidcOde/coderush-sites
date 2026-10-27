@@ -24,8 +24,50 @@ arquivo. Ao mudar preco ou prazo, alinhar tambem la.
 // usa. Estava no ar desde sempre e linkada em lugar nenhum.
 const DEMO_URL = 'https://painel.sistemavendadireta.com.br/primeiros-passos';
 
-const PROMO_DEADLINE = '2026-10-31';
-const PROMO_NOME = 'Promoção 10 Anos';
+/*
+ * CALENDARIO DE PROMOCOES — 27/10/2026.
+ *
+ * Ate aqui havia UMA promocao por vez, com nome e prazo em constante. Trocar de
+ * promocao significava deploy no dia exato da virada; esquecer era repetir o
+ * "ate 31/08" que ficou 12 dias vencido no ar. Agora a fila fica escrita e a
+ * data escolhe: a vigente e a primeira cujo 'fim' ainda nao passou. A 10 Anos
+ * vira Fim de Ano a meia-noite de 01/11 sem ninguem tocar no servidor.
+ *
+ * Depois da ultima, PROMO_DEADLINE fica com o 'fim' dela e promoAtiva() volta
+ * false — o comportamento de "promocao encerrada" de sempre.
+ *
+ * 'vagas' => [total, ja fechadas] liga o contador "7 das 10 vagas". null desliga:
+ * as vagas fechadas na 10 Anos NAO sao da promocao seguinte, e repetir o numero
+ * seria escassez inventada. Sem vagas, a LP mostra quem ja opera, sem contagem.
+ *
+ * O relatorio diario (automation/ads/relatorio-diario.py) le o 'fim' daqui por
+ * regex — manter o formato 'fim' => 'AAAA-MM-DD'.
+ */
+const PROMO_CALENDARIO = [
+    ['fim' => '2026-10-31', 'nome' => 'Promoção 10 Anos', 'slug' => 'promo-10-anos',
+     'selo' => 'Celebrando 10 anos', 'vagas' => [10, 7]],
+    ['fim' => '2026-12-31', 'nome' => 'Promoção de Fim de Ano', 'slug' => 'promo-fim-de-ano',
+     'selo' => 'Condição de fim de ano', 'vagas' => null],
+];
+
+/** A promocao que vale hoje — ou a ultima, ja vencida, se o calendario acabou. */
+function promoVigente(): array
+{
+    $hoje = (new DateTimeImmutable('now', new DateTimeZone('America/Sao_Paulo')))->format('Y-m-d');
+    foreach (PROMO_CALENDARIO as $p) {
+        if ($p['fim'] >= $hoje) {
+            return $p;
+        }
+    }
+    return PROMO_CALENDARIO[array_key_last(PROMO_CALENDARIO)];
+}
+
+define('PROMO_DEADLINE', promoVigente()['fim']);
+define('PROMO_NOME', promoVigente()['nome']);
+// vai no utm_campaign dos links internos e do anuncio: separa no painel o lead
+// de cada promocao sem depender da data do clique
+define('PROMO_SLUG', promoVigente()['slug']);
+define('PROMO_SELO', promoVigente()['selo']);
 const PROMO_INSTALL_DE = 5000;
 const PROMO_INSTALL_PARCELADO = 3500;
 const PROMO_INSTALL_AVISTA = 3000;
@@ -173,6 +215,37 @@ function promoVitrine(string $prefixo = '../'): string
     return $html . '</div>';
 }
 
+/** [total, ja fechadas] da promocao vigente, ou null quando ela nao tem contador. */
+function promoVagas(): ?array
+{
+    return promoVigente()['vagas'];
+}
+
+/**
+ * Nome da promocao sem acento, pra mensagem pre-preenchida do WhatsApp — as
+ * mensagens do site sempre foram escritas assim ("Ola, vim pela Promocao...").
+ */
+function promoNomeAscii(): string
+{
+    return strtr(PROMO_NOME, ['ç' => 'c', 'ã' => 'a', 'á' => 'a', 'â' => 'a', 'é' => 'e', 'ê' => 'e',
+        'í' => 'i', 'ó' => 'o', 'ô' => 'o', 'õ' => 'o', 'ú' => 'u']);
+}
+
+/**
+ * Imagem de compartilhamento (og:image) da promocao vigente.
+ *
+ * Era um og-oferta.jpg so, com o prazo DESENHADO na imagem — e o desenho dizia
+ * "ATE 31/08" ate 27/10, dois meses depois de vencer: todo link da oferta mandado
+ * no WhatsApp abria com promocao morta no card. Agora cada promocao tem a sua
+ * (imagens/og-oferta-<slug>.jpg) e a troca acompanha o calendario. Sem o arquivo,
+ * volta pra imagem antiga em vez de quebrar o card.
+ */
+function promoOgImagem(): string
+{
+    $arquivo = 'og-oferta-' . PROMO_SLUG . '.jpg';
+    return is_file(__DIR__ . '/../imagens/' . $arquivo) ? '/imagens/' . $arquivo : '/imagens/og-oferta.jpg?v=3';
+}
+
 /** A promocao ainda esta valendo hoje? */
 function promoAtiva(): bool
 {
@@ -224,7 +297,7 @@ function promoLink(string $origem = 'blog'): string
 
     if (promoAtiva()) {
         $destino = '/sistema-venda-direta/';
-        $campanha = 'promo-10-anos';
+        $campanha = PROMO_SLUG;
     } else {
         // Sem promocao, mandar pra "/" seria autolink quando a faixa esta NA
         // home. A demonstracao e o destino que sempre faz sentido: e o convite
