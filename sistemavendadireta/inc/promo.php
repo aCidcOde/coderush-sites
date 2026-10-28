@@ -47,7 +47,7 @@ const PROMO_CALENDARIO = [
     ['fim' => '2026-10-31', 'nome' => 'Promoção 10 Anos', 'slug' => 'promo-10-anos',
      'selo' => 'Celebrando 10 anos', 'vagas' => [10, 7]],
     ['fim' => '2026-12-31', 'nome' => 'Promoção de Fim de Ano', 'slug' => 'promo-fim-de-ano',
-     'selo' => 'Condição de fim de ano', 'vagas' => null],
+     'selo' => 'Comece 2027 com sistema novo', 'vagas' => null],
 ];
 
 /** A promocao que vale hoje — ou a ultima, ja vencida, se o calendario acabou. */
