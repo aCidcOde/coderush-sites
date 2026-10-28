@@ -53,6 +53,23 @@ const PROMO_CALENDARIO = [
 /** A promocao que vale hoje — ou a ultima, ja vencida, se o calendario acabou. */
 function promoVigente(): array
 {
+    /*
+     * PREVIA — 28/10/2026. A promocao seguinte so aparece no dia da virada, e
+     * validar texto e preco na meia-noite de 01/11 nao e validar. Com
+     * ?previa=fim-de-ano (ou o slug inteiro) a pagina monta como se ja fosse a
+     * vez dela. So aceita slug do calendario; noindex pra a URL com parametro
+     * nao concorrer com a canonica.
+     */
+    $previa = (string) ($_GET['previa'] ?? '');
+    foreach (PROMO_CALENDARIO as $p) {
+        if ($previa !== '' && ($p['slug'] === $previa || $p['slug'] === 'promo-' . $previa)) {
+            if (!headers_sent()) {
+                header('X-Robots-Tag: noindex');
+            }
+            return $p;
+        }
+    }
+
     $hoje = (new DateTimeImmutable('now', new DateTimeZone('America/Sao_Paulo')))->format('Y-m-d');
     foreach (PROMO_CALENDARIO as $p) {
         if ($p['fim'] >= $hoje) {
