@@ -920,6 +920,15 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-HOME-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/11/01/cadastrar-consultores-operacao-mmn/" data-blog-image="imagens/posts/cadastrar-consultores-operacao-mmn.jpg" data-blog-slug="cadastrar-consultores-operacao-mmn" data-blog-date="2026-11-01">
+  <a href="2026/11/01/cadastrar-consultores-operacao-mmn/">
+    <picture><source srcset="imagens/posts/cadastrar-consultores-operacao-mmn.webp" type="image/webp" /><img src="imagens/posts/cadastrar-consultores-operacao-mmn.jpg" alt="Como cadastrar consultores em uma operação de MMN?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="2026/11/01/cadastrar-consultores-operacao-mmn/" class="hover:underline">Como cadastrar consultores em uma operação de MMN?</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda o processo de cadastro de consultores e distribuidores em marketing multinível, focando na internacionalização.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/10/22/estruturar-plano-carreira-marketing-multinivel/" data-blog-image="imagens/posts/estruturar-plano-carreira-marketing-multinivel.jpg" data-blog-slug="estruturar-plano-carreira-marketing-multinivel" data-blog-date="2026-10-22">
   <a href="2026/10/22/estruturar-plano-carreira-marketing-multinivel/">
     <picture><source srcset="imagens/posts/estruturar-plano-carreira-marketing-multinivel.webp" type="image/webp" /><img src="imagens/posts/estruturar-plano-carreira-marketing-multinivel.jpg" alt="Como estruturar um plano de carreira em marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
@@ -936,15 +945,6 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="2026/10/15/comissao-cargo-plano-pontos-venda-direta/" class="hover:underline">Comissão por cargo ou plano de pontos em venda direta?</a></h2>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda as diferenças e como a integração ERP pode impactar suas vendas.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/10/08/internacionalizacao-venda-direta-desafios-estrategias/" data-blog-image="imagens/posts/internacionalizacao-venda-direta-desafios-estrategias.jpg" data-blog-slug="internacionalizacao-venda-direta-desafios-estrategias" data-blog-date="2026-10-08">
-  <a href="2026/10/08/internacionalizacao-venda-direta-desafios-estrategias/">
-    <picture><source srcset="imagens/posts/internacionalizacao-venda-direta-desafios-estrategias.webp" type="image/webp" /><img src="imagens/posts/internacionalizacao-venda-direta-desafios-estrategias.jpg" alt="Internacionalização em venda direta: desafios e estratégias" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
-  </a>
-  <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="2026/10/08/internacionalizacao-venda-direta-desafios-estrategias/" class="hover:underline">Internacionalização em venda direta: desafios e estratégias</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como adaptar sua operação de venda direta para novos mercados internacionais.</p>
   </div>
 </article>
 <!-- BLOG-HOME-CARDS:END -->

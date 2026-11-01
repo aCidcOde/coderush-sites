@@ -1,0 +1,143 @@
+{
+  "mode": "publish",
+  "date": "2026-11-01",
+  "timezone": "America/Sao_Paulo",
+  "focus": "php",
+  "startedAt": "2026-11-01T16:31:12.290Z",
+  "aiProvider": "openrouter",
+  "sites": [
+    {
+      "siteId": "coderush",
+      "skipped": true,
+      "reason": "site disabled"
+    },
+    {
+      "siteId": "codafacil",
+      "skipped": true,
+      "reason": "site disabled"
+    },
+    {
+      "siteId": "fluxointeligenteia",
+      "skipped": true,
+      "reason": "site disabled"
+    },
+    {
+      "siteId": "sistemavendadireta",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "internacionalizacao",
+      "theme": "como cadastrar consultores e distribuidores em uma operacao de MMN",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/sistemavendadireta/2026-11-01/cadastrar-consultores-operacao-mmn.json",
+      "markdownPath": "automation/blog-bot/out/sistemavendadireta/2026-11-01/cadastrar-consultores-operacao-mmn.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "sistemavendadireta/2026/11/01/cadastrar-consultores-operacao-mmn/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "local-tipografica",
+        "coverAlt": "Como cadastrar consultores em uma operação de MMN?",
+        "coverLeakage": null
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "sistemavendadireta/index.php",
+          "sistemavendadireta/blog/index.php",
+          "sistemavendadireta/2026/11/01/cadastrar-consultores-operacao-mmn/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "emergency",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "due diligence societaria",
+      "theme": "investigacao patrimonial em contencioso",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": [
+          {
+            "url": "https://capitalaberto.com.br/feed/",
+            "error": "HTTP 404"
+          }
+        ]
+      },
+      "outputPath": "automation/blog-bot/out/emergency/2026-11-01/conduzir-due-diligence-societaria-eficazmente.json",
+      "markdownPath": "automation/blog-bot/out/emergency/2026-11-01/conduzir-due-diligence-societaria-eficazmente.md",
+      "publishResult": {
+        "target": "api",
+        "apiStatus": 201,
+        "apiUrl": "https://emergency.com.br/blog/conduzir-due-diligence-societaria-eficazmente",
+        "apiId": 76,
+        "apiPublishedAt": "2026-11-01T13:31:25-03:00",
+        "coverPath": "automation/blog-bot/out/emergency/covers/conduzir-due-diligence-societaria-eficazmente.jpg",
+        "coverSize": 44212,
+        "coverSource": "local-tipografica",
+        "coverAlt": "Como conduzir due diligence societária eficazmente",
+        "coverLeakage": null
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    },
+    {
+      "siteId": "bfrintelligence",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "seguranca",
+      "theme": "ROI mensuravel de IA na operacao",
+      "research": {
+        "used": 5,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/bfrintelligence/2026-11-01/operar-agentes-ia-seguranca-roi-mensuravel.json",
+      "markdownPath": "automation/blog-bot/out/bfrintelligence/2026-11-01/operar-agentes-ia-seguranca-roi-mensuravel.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "bfrintelligence/2026/11/01/operar-agentes-ia-seguranca-roi-mensuravel/index.html",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "local-tipografica",
+        "coverAlt": "Como operar agentes de IA com segurança e ROI mensurável",
+        "coverLeakage": null
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    }
+  ],
+  "duplications": [],
+  "relatedRefresh": {
+    "touched": 22,
+    "unchanged": 155,
+    "errors": [],
+    "totalCards": 165,
+    "totalFiles": 177
+  },
+  "fallbackCount": 0,
+  "allFallback": false,
+  "finishedAt": "2026-11-01T16:31:46.144Z",
+  "ok": true
+}
