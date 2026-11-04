@@ -20,6 +20,22 @@ Campos:
 
 return [
     [
+        'data' => '2026-11-04',
+        'area' => 'ads',
+        'titulo' => 'Campanha "SVD - Promocao Fim de Ano" pausada até dezembro, a pedido',
+        'porque' => 'Decisão do usuário: pausa pra entregar outros trabalhos, volta em dezembro com '
+            . 'campanha nova. Nenhum lead desde o #50 (26/10). Pausada só no nível da campanha — '
+            . 'grupos e anúncios seguem ativos, religar é um clique. O e-mail diário de Ads foi '
+            . 'comentado no cron (#PAUSA-ADS) pra não mandar "R$ 0,00" todo dia.',
+        'efeito' => 'Leitura dos 4 primeiros dias (01 a 04/11, contra 25 a 31/10 da 10 Anos): 18 cliques '
+            . 'e R$ 78,10 — CPC R$ 4,34 (era R$ 5,63), ~5 cliques/dia (eram ~3), CTR 14% (era 7%). '
+            . 'A demonstração funcionou como chamada: 4 demo_click em 17 sessões pagas, todos vindos '
+            . 'da /sistema-mmn/. Zero WhatsApp e zero lead. As 7 sessões pagas da /sistema-venda-direta/ '
+            . 'ficaram em média 12 s (na semana anterior, 5 min) — amostra pequena, mas é a primeira '
+            . 'coisa a olhar na volta. Parceiros: 2 cliques, R$ 1,95. Negativas "ltda" e '
+            . '"componentes de metal" (busca por empresa homônima, R$ 3,34).',
+    ],
+    [
         'data' => '2026-10-27',
         'area' => 'ads',
         'titulo' => 'Campanha nova "SVD - Promocao Fim de Ano" (01/11 a 31/12): Maximizar cliques, parceiros ligados, demonstração no anúncio',

@@ -327,6 +327,30 @@ Ao replicar extensão, **vincule o asset existente, não clone**. `asset` é
 reaproveitável entre campanhas e consolida métrica; rodar `extensoes.py` de novo
 cria cópias e fatia o histórico entre clones. Use `vincular-extensoes.py`.
 
+### Demonstração no anúncio: dobra o clique, não garante a conversa
+
+Primeiros 4 dias da Fim de Ano (01 a 04/11/2026), contra a semana anterior da
+10 Anos: CTR de 7% para 14%, CPC de R$ 5,63 para R$ 4,34, ~5 cliques/dia em vez
+de ~3. Um em cada quatro visitantes pagos clicou na demonstração (4 de 17
+sessões) — e nenhum chamou no WhatsApp. A demonstração abre em outro domínio
+(painel.), então **o que acontece lá dentro não aparece no GA4 do site**: sem
+medir quem entrou na loja ou no escritório da demo, "clicou na demonstração" é
+o fim da trilha.
+
+- Ao voltar com campanha, medir a demo por dentro (GA4 ou log no painel.) antes de
+  julgar a chamada.
+- Na mesma leitura, as sessões pagas da /sistema-venda-direta/ duraram em média
+  **12 s** contra 3,5 min na /sistema-mmn/. Amostra de 7, mas é a primeira página a
+  revisar.
+
+### Pausar sem desmontar
+
+Pausa longa (04/11 a dezembro de 2026, decisão do usuário): **pausar só a
+campanha**, não grupos e anúncios — religar vira um clique e não sobra grupo
+pausado esquecido. Comentar no cron o `relatorio-diario.py` (`#PAUSA-ADS`) pra ele
+não mandar "R$ 0,00" todo dia. O blog-bot e o `ga-stats.py` continuam: GA4 e
+Search Console guardam o histórico, a leitura da pausa se faz na volta.
+
 ## 6. O que NÃO fazer
 
 - **Não pesquisar o próprio anúncio no Google.** Cada busca sem clique derruba o
@@ -446,8 +470,7 @@ correta é `https://site.com/?utm_source=...#contato`.
 
 ---
 
-*Última atualização: 27/10/2026 — SVD - Promoção 10 Anos no ar até 31/10; a
-SVD - Promocao Fim de Ano (R$ 20/dia, Maximizar cliques com teto R$ 8, Google +
-parceiros) começa sozinha em 01/11 e vai até 31/12. Marco: a seca de outubro foi
-lida como problema de conversão, não de leilão — a campanha nova muda o lance e
-põe a demonstração sem cadastro no anúncio.*
+*Última atualização: 04/11/2026 — SVD - Promocao Fim de Ano PAUSADA pelo usuário
+até dezembro (só a campanha; grupos e anúncios ativos). Rodou de 01 a 04/11: CTR e
+custo por clique bem melhores que a 10 Anos, 4 entradas na demonstração, zero lead.
+A volta é com campanha nova.*
