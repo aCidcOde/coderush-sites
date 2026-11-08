@@ -90,6 +90,15 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-INDEX-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/11/08/vender-diretamente-consumidor-final-mmn/" data-blog-image="imagens/posts/vender-diretamente-consumidor-final-mmn.jpg" data-blog-slug="vender-diretamente-consumidor-final-mmn" data-blog-date="2026-11-08">
+  <a href="../2026/11/08/vender-diretamente-consumidor-final-mmn/">
+    <picture><source srcset="../imagens/posts/vender-diretamente-consumidor-final-mmn.webp" type="image/webp" /><img src="../imagens/posts/vender-diretamente-consumidor-final-mmn.jpg" alt="Como vender diretamente para o consumidor final com MMN?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="../2026/11/08/vender-diretamente-consumidor-final-mmn/" class="hover:underline">Como vender diretamente para o consumidor final com MMN?</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como o marketing multinível pode impulsionar suas vendas diretas ao consumidor final.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/11/01/cadastrar-consultores-operacao-mmn/" data-blog-image="imagens/posts/cadastrar-consultores-operacao-mmn.jpg" data-blog-slug="cadastrar-consultores-operacao-mmn" data-blog-date="2026-11-01">
   <a href="../2026/11/01/cadastrar-consultores-operacao-mmn/">
     <picture><source srcset="../imagens/posts/cadastrar-consultores-operacao-mmn.webp" type="image/webp" /><img src="../imagens/posts/cadastrar-consultores-operacao-mmn.jpg" alt="Como cadastrar consultores em uma operação de MMN?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>

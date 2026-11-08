@@ -229,10 +229,10 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/07/21/gestao-comissionamento-impacta-inadimplencia-mmn/"><img src="../../../../imagens/posts/gestao-comissionamento-impacta-inadimplencia-mmn.jpg" alt="Como a gestão de comissionamento impacta a inadimplência no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/11/08/vender-diretamente-consumidor-final-mmn/"><img src="../../../../imagens/posts/vender-diretamente-consumidor-final-mmn.jpg" alt="Como vender diretamente para o consumidor final com MMN?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/07/21/gestao-comissionamento-impacta-inadimplencia-mmn/" class="hover:underline">Como a gestão de comissionamento impacta a inadimplência no MMN</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Gerenciar a inadimplência no marketing multinível envolve um comissionamento claro e transparente. Utilize sistemas que integrem pagamento e logística, além...</p>
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/11/08/vender-diretamente-consumidor-final-mmn/" class="hover:underline">Como vender diretamente para o consumidor final com MMN?</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como o marketing multinível pode impulsionar suas vendas diretas ao consumidor final.</p>
   </div>
 </article>
   </div>
@@ -255,11 +255,11 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://bfrintelligence.com.br/2026/11/01/operar-agentes-ia-seguranca-roi-mensuravel/" rel="noopener" target="_blank"><img src="https://bfrintelligence.com.br/imagens/posts/operar-agentes-ia-seguranca-roi-mensuravel.jpg" alt="Como operar agentes de IA com segurança e ROI mensurável" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://bfrintelligence.com.br/2026/11/08/governanca-auditoria-agentes-ia-operacao/" rel="noopener" target="_blank"><img src="https://bfrintelligence.com.br/imagens/posts/governanca-auditoria-agentes-ia-operacao.jpg" alt="Governança e auditoria de agentes de IA na operação" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">BFR Intelligence</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://bfrintelligence.com.br/2026/11/01/operar-agentes-ia-seguranca-roi-mensuravel/" rel="noopener" target="_blank" class="hover:underline">Como operar agentes de IA com segurança e ROI mensurável</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como implementar agentes de IA na operação com foco em segurança e resultados.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://bfrintelligence.com.br/2026/11/08/governanca-auditoria-agentes-ia-operacao/" rel="noopener" target="_blank" class="hover:underline">Governança e auditoria de agentes de IA na operação</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como implementar governança eficaz para agentes de IA e garantir resultados mensuráveis na operação.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">

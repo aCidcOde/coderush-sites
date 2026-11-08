@@ -1,0 +1,88 @@
+{
+  "date": "2026-11-08",
+  "siteId": "emergency",
+  "postType": "due-diligence-certidoes",
+  "focus": "tecnologia",
+  "theme": "diligencia em operacoes de credito e financiamento",
+  "angle": "M&A",
+  "slug": "realizar-due-diligence-operacoes-credito-ma",
+  "title": "Emergency Documentação: TECNOLOGIA aplicado a M&A",
+  "description": "Atualização semanal de tecnologia para Emergency Documentação, com foco em diligencia em operacoes de credito e financiamento.",
+  "sources": [
+    "https://www.ey.com/pt_br/services/strategy-transactions/mergers-acquisitions-due-diligence",
+    "https://www.vp.adv.br/blog/estruturacao-de-ma-o-papel-da-due-diligence-na-avaliacao-de-riscos-e-tomada-de-decisao/",
+    "https://leituraestrategica.com.br/a-diligencia-em-operacoes-de-credito/",
+    "https://judit.io/blog/compliance-risco-due-diligence/due-diligence-juridica-passo-a-passo/",
+    "https://pgsconsult.com/servicos/due-diligence-ma/"
+  ],
+  "status": "draft",
+  "generatedAt": "2026-11-08T13:27:56-03:00",
+  "content": {
+    "eyebrow": "Guia prático",
+    "headline": "Como realizar due diligence em operações de crédito e M&A",
+    "summary": "Entenda os passos essenciais para a due diligence em crédito e fusões, minimizando riscos e otimizando prazos.",
+    "answerBox": {
+      "question": "Quais os passos para fazer due diligence em operações de crédito?",
+      "answer": "Os passos incluem a análise de documentação financeira, verificação de certidões online, e avaliação de riscos jurídicos. A due diligence detalhada é fundamental para garantir a segurança nas operações de crédito e M&A."
+    },
+    "tldr": [
+      "Due diligence é essencial em operações de crédito.",
+      "Certidões online ajudam a minimizar riscos.",
+      "Acompanhamento humano é importante em casos complexos."
+    ],
+    "sections": [
+      {
+        "type": "prose",
+        "title": "A importância da due diligence em M&A",
+        "body": "Realizar uma due diligence eficaz em operações de M&A e crédito é crucial para identificar riscos e garantir transparência. Uma análise minuciosa pode evitar problemas futuros e assegurar que todos os aspectos legais e financeiros estejam alinhados. Em um mercado competitivo, a agilidade na obtenção de informações é um diferencial."
+      },
+      {
+        "type": "list",
+        "title": "Passos para uma due diligence eficaz",
+        "items": [
+          "Reunir toda a documentação financeira e legal relevante.",
+          "Verificar certidões cartorárias e forenses online.",
+          "Analisar contratos e obrigações existentes.",
+          "Avaliar a situação fiscal e trabalhista da empresa.",
+          "Realizar investigações patrimoniais e de compliance."
+        ]
+      },
+      {
+        "type": "callout",
+        "body": "Já estruturamos isso em vários clientes, e a experiência mostra que um suporte humano faz toda a diferença. Vale uma conversa para entender melhor seu cenário.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Desafios comuns na due diligence",
+        "body": "Um dos principais desafios na due diligence é a falta de informações claras e precisas, que podem atrasar processos decisivos. Além disso, a complexidade de algumas operações pode exigir um olhar atento sobre detalhes que, à primeira vista, parecem irrelevantes. Nesse tipo de cenário, Emergency Documentação costuma oferecer apoio estratégico, garantindo que nada passe despercebido."
+      },
+      {
+        "type": "cta-inline",
+        "body": "Se você busca agilidade e segurança em suas operações, estamos aqui para ajudar.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Evitando armadilhas na due diligence",
+        "body": "Evite a pressa na coleta de informações, pois isso pode levar a erros. Também é importante não negligenciar a análise de certidões, pois elas revelam aspectos que podem impactar o negócio. Sempre cheque a regularidade fiscal e as pendências trabalhistas, pois são fatores que podem comprometer o fechamento de um acordo."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Quais certidões são necessárias na due diligence?",
+        "a": "As certidões essenciais incluem certidão de ônus reais, certidão negativa de débitos, e certidões trabalhistas, que garantem a regularidade da empresa."
+      },
+      {
+        "q": "Como validar um fornecedor antes de contratar?",
+        "a": "A validação de fornecedores envolve a análise de certidões, histórico de compliance, e a verificação de referências comerciais."
+      },
+      {
+        "q": "Qual a diferença entre due diligence imobiliária e societária?",
+        "a": "A due diligence imobiliária foca na análise de bens imóveis e suas documentações, enquanto a societária examina a saúde legal e financeira de empresas."
+      }
+    ]
+  }
+}
