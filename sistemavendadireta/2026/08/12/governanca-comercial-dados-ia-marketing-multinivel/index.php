@@ -265,11 +265,11 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://bfrintelligence.com.br/2026/11/08/governanca-auditoria-agentes-ia-operacao/" rel="noopener" target="_blank"><img src="https://bfrintelligence.com.br/imagens/posts/governanca-auditoria-agentes-ia-operacao.jpg" alt="Governança e auditoria de agentes de IA na operação" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://bfrintelligence.com.br/2026/11/15/integrando-agentes-ia-operacoes-eficientes/" rel="noopener" target="_blank"><img src="https://bfrintelligence.com.br/imagens/posts/integrando-agentes-ia-operacoes-eficientes.jpg" alt="Integrando agentes de IA para operações eficientes" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">BFR Intelligence</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://bfrintelligence.com.br/2026/11/08/governanca-auditoria-agentes-ia-operacao/" rel="noopener" target="_blank" class="hover:underline">Governança e auditoria de agentes de IA na operação</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como implementar governança eficaz para agentes de IA e garantir resultados mensuráveis na operação.</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://bfrintelligence.com.br/2026/11/15/integrando-agentes-ia-operacoes-eficientes/" rel="noopener" target="_blank" class="hover:underline">Integrando agentes de IA para operações eficientes</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como implementar agentes de IA na operação com foco em governança e resultados mensuráveis.</p>
   </div>
 </article>
   </div>

@@ -246,6 +246,14 @@
   <p class="mt-2 text-sm text-white/70">Conteúdo recente dos outros sites do ecossistema.</p>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="https://bfrintelligence.com.br/2026/11/15/integrando-agentes-ia-operacoes-eficientes/" rel="noopener" target="_blank"><img src="https://bfrintelligence.com.br/imagens/posts/integrando-agentes-ia-operacoes-eficientes.jpg" alt="Integrando agentes de IA para operações eficientes" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">BFR Intelligence</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://bfrintelligence.com.br/2026/11/15/integrando-agentes-ia-operacoes-eficientes/" rel="noopener" target="_blank" class="hover:underline">Integrando agentes de IA para operações eficientes</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como implementar agentes de IA na operação com foco em governança e resultados mensuráveis.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="https://codafacil.dev/2026/07/21/ia-pode-acelerar-desenvolvimento-software-sob-medida/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/ia-pode-acelerar-desenvolvimento-software-sob-medida.jpg" alt="Como a IA pode acelerar o desenvolvimento de software sob medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
@@ -259,14 +267,6 @@
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">CodeRush</p>
     <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/06/24/arquitetura-software-operacoes-criticas-governanca/" rel="noopener" target="_blank" class="hover:underline">Arquitetura de Software para Operações Críticas e Governança</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como uma boa arquitetura de software pode garantir governança em operações críticas.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://bfrintelligence.com.br/2026/11/08/governanca-auditoria-agentes-ia-operacao/" rel="noopener" target="_blank"><img src="https://bfrintelligence.com.br/imagens/posts/governanca-auditoria-agentes-ia-operacao.jpg" alt="Governança e auditoria de agentes de IA na operação" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">BFR Intelligence</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://bfrintelligence.com.br/2026/11/08/governanca-auditoria-agentes-ia-operacao/" rel="noopener" target="_blank" class="hover:underline">Governança e auditoria de agentes de IA na operação</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como implementar governança eficaz para agentes de IA e garantir resultados mensuráveis na operação.</p>
   </div>
 </article>
   </div>

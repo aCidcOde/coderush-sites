@@ -920,6 +920,15 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-HOME-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/11/15/marketing-rede-brasil-regulamentacao-oportunidades/" data-blog-image="imagens/posts/marketing-rede-brasil-regulamentacao-oportunidades.jpg" data-blog-slug="marketing-rede-brasil-regulamentacao-oportunidades" data-blog-date="2026-11-15">
+  <a href="2026/11/15/marketing-rede-brasil-regulamentacao-oportunidades/">
+    <picture><source srcset="imagens/posts/marketing-rede-brasil-regulamentacao-oportunidades.webp" type="image/webp" /><img src="imagens/posts/marketing-rede-brasil-regulamentacao-oportunidades.jpg" alt="Marketing de rede no Brasil: regulamentação e oportunidades" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="2026/11/15/marketing-rede-brasil-regulamentacao-oportunidades/" class="hover:underline">Marketing de rede no Brasil: regulamentação e oportunidades</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda o cenário do marketing multinível no Brasil e as possibilidades de internacionalização.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/11/08/vender-diretamente-consumidor-final-mmn/" data-blog-image="imagens/posts/vender-diretamente-consumidor-final-mmn.jpg" data-blog-slug="vender-diretamente-consumidor-final-mmn" data-blog-date="2026-11-08">
   <a href="2026/11/08/vender-diretamente-consumidor-final-mmn/">
     <picture><source srcset="imagens/posts/vender-diretamente-consumidor-final-mmn.webp" type="image/webp" /><img src="imagens/posts/vender-diretamente-consumidor-final-mmn.jpg" alt="Como vender diretamente para o consumidor final com MMN?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
@@ -936,15 +945,6 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="2026/11/01/cadastrar-consultores-operacao-mmn/" class="hover:underline">Como cadastrar consultores em uma operação de MMN?</a></h2>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda o processo de cadastro de consultores e distribuidores em marketing multinível, focando na internacionalização.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/10/22/estruturar-plano-carreira-marketing-multinivel/" data-blog-image="imagens/posts/estruturar-plano-carreira-marketing-multinivel.jpg" data-blog-slug="estruturar-plano-carreira-marketing-multinivel" data-blog-date="2026-10-22">
-  <a href="2026/10/22/estruturar-plano-carreira-marketing-multinivel/">
-    <picture><source srcset="imagens/posts/estruturar-plano-carreira-marketing-multinivel.webp" type="image/webp" /><img src="imagens/posts/estruturar-plano-carreira-marketing-multinivel.jpg" alt="Como estruturar um plano de carreira em marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
-  </a>
-  <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="2026/10/22/estruturar-plano-carreira-marketing-multinivel/" class="hover:underline">Como estruturar um plano de carreira em marketing multinível</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Aprenda a montar um plano de carreira eficaz para sua equipe de MMN.</p>
   </div>
 </article>
 <!-- BLOG-HOME-CARDS:END -->
