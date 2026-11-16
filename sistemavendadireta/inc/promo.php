@@ -97,14 +97,27 @@ const PROMO_INSTALL_AVISTA = 3000;
  * verdade, em cliente real. Vale mais que qualquer selo.
  *
  * ATENCAO comercial (atualizado 14/09/2026): a Zohr FOI REMOVIDA — nao fechou.
- * A MedPlant segue sem pagar; continua aqui como argumento de venda, com a loja
- * no ar, mas NAO entra em receita, conversao nem orcamento de midia.
+ * A MedPlant segue sem pagar e NAO entra em receita, conversao nem orcamento de
+ * midia. Desde 16/11 ela e a Accenti estao fora da vitrine (CLIENTES_OCULTOS).
  * Ja pagaram e estao no funil do painel: Velaro (R$ 3.500, 26/08) e Henovar
  * (R$ 5.000, 05/09) — as duas vindas da campanha do Google Ads.
  */
+/*
+ * FORA DAS VITRINES — 16/11/2026. As duas listas abaixo (promoClientes e
+ * promoVitrine) aparecem nas 5 LPs e na /sistema-mmn/; este filtro vale pras duas.
+ *
+ * MedPlant: o cliente pediu embargo (inc/cases.php ja a escondia da home e da
+ * /cases/), mas as LPs seguiam mostrando nome, logo e link da loja.
+ * Accenti: a loja responde 522 do Cloudflare depois de 20 s (origem fora do ar);
+ * "ja opera com o SVD" com link que nao abre e prova ao contrario.
+ *
+ * Voltar a mostrar = tirar o nome daqui.
+ */
+const CLIENTES_OCULTOS = ['MedPlant', 'Accenti'];
+
 function promoClientes(): array
 {
-    return [
+    return array_values(array_filter([
         ['Henovar Energy', 'https://henovar.com.br/loja'],
         ['Velaro Alianças', 'https://velaroaliancas.com.br/'],
         ['Accenti', 'https://accenti.sistemavendadireta.com.br/loja'],
@@ -112,7 +125,7 @@ function promoClientes(): array
         ['Protech', 'https://loja.protechnutritional.com.br/loja'],
         ['MedPlant', 'https://medplant.sistemavendadireta.com.br/loja'],
         ['AVIG 360', 'https://avig360.com/'],
-    ];
+    ], static fn (array $c): bool => !in_array($c[0], CLIENTES_OCULTOS, true)));
 }
 
 /** Os nomes das vagas fechadas, cada um linkando pra loja do cliente. */
@@ -204,6 +217,8 @@ function promoVitrine(string $prefixo = '../'): string
         ],
     ];
 
+    $cards = array_filter($cards, static fn (array $c): bool => !in_array($c['alt'], CLIENTES_OCULTOS, true));
+
     $html = '<div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">';
     foreach ($cards as $c) {
         $e = static fn ($v) => htmlspecialchars((string) $v, ENT_QUOTES, 'UTF-8');
@@ -259,8 +274,48 @@ function promoNomeAscii(): string
  */
 function promoOgImagem(): string
 {
+    // sem promocao vigente, o card da oferta (com prazo desenhado) nao serve: usa o da home
+    if (!promoAtiva()) {
+        return '/imagens/og-sistema-venda-direta.jpg';
+    }
     $arquivo = 'og-oferta-' . PROMO_SLUG . '.jpg';
     return is_file(__DIR__ . '/../imagens/' . $arquivo) ? '/imagens/' . $arquivo : '/imagens/og-oferta.jpg?v=3';
+}
+
+/*
+ * DEPOIS DO FIM — 16/11/2026. Quando a ultima promocao do calendario vence,
+ * promoVigente() continua devolvendo ela (o prazo serve pro rodape e pro
+ * relatorio), mas as LPs nao podem continuar vendendo o desconto: titulo, H1,
+ * preco riscado, "garantir o desconto" e o rodape legal seguiam no ar. Oferta
+ * publicada obriga (CDC art. 30) — e o "ate 31/08" ja ficou 12 dias vencido.
+ * Estas tres funcoes sao o texto neutro de cada lugar; o resto das LPs usa
+ * $promoActive direto.
+ */
+
+/** Nome da promocao vigente, ou o texto neutro quando nao ha promocao. */
+function promoRotulo(string $semPromocao = 'Sistema Venda Direta'): string
+{
+    return promoAtiva() ? PROMO_NOME : $semPromocao;
+}
+
+/** "pela Promocao X" na mensagem do WhatsApp; "pelo site" sem promocao. */
+function promoOrigemZap(): string
+{
+    return promoAtiva() ? 'pela ' . promoNomeAscii() : 'pelo site';
+}
+
+/** Menor preco de instalacao que a pagina pode anunciar hoje (a vista na promocao; cheio sem ela). */
+function promoPrecoInstalacao(): string
+{
+    return 'R$ ' . number_format(promoAtiva() ? PROMO_INSTALL_AVISTA : PROMO_INSTALL_DE, 0, ',', '.');
+}
+
+/** Texto alternativo do card de compartilhamento. */
+function promoOgAlt(): string
+{
+    return promoAtiva()
+        ? 'Instalação do Sistema Venda Direta com até ' . promoDescontoPct() . '% OFF — R$ 3.500 em 2x ou R$ 3.000 à vista até ' . promoPrazoCurto()
+        : 'Sistema Venda Direta — sistema de marketing multinível e venda direta';
 }
 
 /** A promocao ainda esta valendo hoje? */
@@ -269,12 +324,20 @@ function promoAtiva(): bool
     return promoDiasRestantes() >= 0;
 }
 
-/** Dias ate o fim (negativo se ja passou). */
+/**
+ * Dias ate o fim (0 = ultimo dia; negativo se ja passou).
+ *
+ * Conta em DIAS DE CALENDARIO, de meia-noite a meia-noite. Ate 16/11/2026 era
+ * agora -> 23:59:59 do prazo com '%r%a', e o %a trunca: as 10h do dia seguinte
+ * ao fim a diferenca e -10 horas, que vira "-0" e (int) 0 — a promocao seguia
+ * "ativa", com "0 dias" e "ultimo dia", por um dia inteiro depois de vencer.
+ * As 5 LPs tinham a mesma conta copiada; agora todas chamam esta.
+ */
 function promoDiasRestantes(): int
 {
     $tz = new DateTimeZone('America/Sao_Paulo');
-    $fim = new DateTimeImmutable(PROMO_DEADLINE . ' 23:59:59', $tz);
-    $hoje = new DateTimeImmutable('now', $tz);
+    $hoje = new DateTimeImmutable((new DateTimeImmutable('now', $tz))->format('Y-m-d'), $tz);
+    $fim = new DateTimeImmutable(PROMO_DEADLINE, $tz);
     return (int) $hoje->diff($fim)->format('%r%a');
 }
 

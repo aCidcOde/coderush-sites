@@ -31,7 +31,7 @@ $promoDeadline = PROMO_DEADLINE;
 [$promoSlots, $promoSlotsFilled] = promoVagas() ?? [0, 0];
 $promoSlotsLeft = max(0, $promoSlots - $promoSlotsFilled);
 $whatsappPhone = '5511994566726';
-$whatsappMessage = 'Ola! Quero montar um programa de afiliados e vim pela ' . promoNomeAscii() . '. Quero ver o sistema.';
+$whatsappMessage = 'Ola! Quero montar um programa de afiliados e vim ' . promoOrigemZap() . '. Quero ver o sistema.';
 
 $monthlyTiers = [
     ['revenue' => 'até R$ 50 mil', 'price' => 'R$ 500'],
@@ -46,7 +46,7 @@ $monthlyTiers = [
 $tz = new DateTimeZone('America/Sao_Paulo');
 $deadline = new DateTimeImmutable($promoDeadline . ' 23:59:59', $tz);
 $today = new DateTimeImmutable('now', $tz);
-$daysLeft = (int) $today->diff($deadline)->format('%r%a');
+$daysLeft = promoDiasRestantes();   // conta por dia de calendario (ver inc/promo.php)
 $promoActive = $daysLeft >= 0;
 $deadlineLabel = $deadline->format('d/m/Y');
 
@@ -64,7 +64,7 @@ $seoUrl = $seoBase . '/sistema-venda-direta/afiliados/';
 // cliente daqui e a empresa que quer MONTAR o programa — o titulo precisa deixar
 // isso claro na primeira linha, antes do clique.
 $seoTitle = 'Plataforma para criar seu programa de afiliados | SVD';
-$seoDescription = 'Cadastre afiliados e influenciadores com link e cupom próprios; o sistema rastreia, calcula e paga os bônus. Instalação promocional até ' . promoPrazoCurto() . '.';
+$seoDescription = 'Cadastre afiliados e influenciadores com link e cupom próprios; o sistema rastreia, calcula e paga os bônus. ' . (promoAtiva() ? 'Instalação promocional até ' . promoPrazoCurto() . '.' : 'Instalação a partir de ' . promoPrecoInstalacao() . '.');
 ?>
 <!doctype html>
 <html lang="pt-BR">
@@ -84,14 +84,14 @@ $seoDescription = 'Cadastre afiliados e influenciadores com link e cupom própri
 
   <meta property="og:locale" content="pt_BR" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Sistema para programa de afiliados — <?= htmlspecialchars(PROMO_NOME, ENT_QUOTES, 'UTF-8') ?>" />
+  <meta property="og:title" content="Sistema para programa de afiliados — <?= htmlspecialchars(promoRotulo(), ENT_QUOTES, 'UTF-8') ?>" />
   <meta property="og:description" content="<?= htmlspecialchars($seoDescription, ENT_QUOTES, 'UTF-8') ?>" />
   <meta property="og:url" content="<?= htmlspecialchars($seoUrl, ENT_QUOTES, 'UTF-8') ?>" />
   <meta property="og:site_name" content="Sistema Venda Direta" />
   <meta property="og:image" content="<?= htmlspecialchars($seoBase . promoOgImagem(), ENT_QUOTES, 'UTF-8') ?>" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="Instalação do Sistema Venda Direta com até 40% OFF — R$ 3.500 em 2x ou R$ 3.000 à vista até <?= promoPrazoCurto() ?>" />
+  <meta property="og:image:alt" content="<?= htmlspecialchars(promoOgAlt(), ENT_QUOTES, 'UTF-8') ?>" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="<?= htmlspecialchars($seoBase . promoOgImagem(), ENT_QUOTES, 'UTF-8') ?>" />
 
@@ -138,9 +138,11 @@ $seoDescription = 'Cadastre afiliados e influenciadores com link e cupom própri
 
     <section class="py-10 lg:py-14">
       <div>
+        <?php if ($promoActive): ?>
         <p class="inline-flex rounded-full border border-amber-300/50 bg-amber-400/15 px-3 py-1 text-xs font-bold uppercase tracking-[0.18em] text-amber-200">
           <?= htmlspecialchars(PROMO_SELO, ENT_QUOTES, 'UTF-8') ?>
         </p>
+        <?php endif; ?>
         <h1 class="mt-4 font-[var(--font-heading)] text-3xl font-bold leading-[1.1] sm:text-4xl lg:text-[46px]">
           Sistema para <span class="text-amber-300">afiliados, influenciadores e parcerias</span>
         </h1>
@@ -154,16 +156,16 @@ $seoDescription = 'Cadastre afiliados e influenciadores com link e cupom própri
         <div class="flex flex-col justify-center rounded-3xl border border-amber-300/40 bg-white/[0.07] p-5 sm:p-6">
           <p class="text-sm font-semibold uppercase tracking-[0.18em] text-white/70">Instalação</p>
           <div class="mt-2 flex flex-wrap items-end gap-3">
-            <span class="text-2xl font-semibold text-white/50 line-through"><?= htmlspecialchars($moneyFrom, ENT_QUOTES, 'UTF-8') ?></span>
-            <span class="font-[var(--font-heading)] text-5xl font-bold text-amber-300"><?= htmlspecialchars($moneyTo, ENT_QUOTES, 'UTF-8') ?></span>
-            <span class="pb-1 text-sm font-semibold text-white/85">em 2x &nbsp;·&nbsp; ou <span class="text-amber-300 font-bold"><?= htmlspecialchars($moneyCash, ENT_QUOTES, 'UTF-8') ?></span> à vista</span>
+            <?php if ($promoActive): ?><span class="text-2xl font-semibold text-white/50 line-through"><?= htmlspecialchars($moneyFrom, ENT_QUOTES, 'UTF-8') ?></span><?php endif; ?>
+            <span class="font-[var(--font-heading)] text-5xl font-bold text-amber-300"><?= htmlspecialchars($promoActive ? $moneyTo : $moneyFrom, ENT_QUOTES, 'UTF-8') ?></span>
+            <?php if ($promoActive): ?><span class="pb-1 text-sm font-semibold text-white/85">em 2x &nbsp;·&nbsp; ou <span class="text-amber-300 font-bold"><?= htmlspecialchars($moneyCash, ENT_QUOTES, 'UTF-8') ?></span> à vista</span><?php endif; ?>
           </div>
           <p class="mt-2 text-sm text-white/85">
-            Parcelado: metade no fechamento, metade na entrega. À vista: <strong><?= htmlspecialchars($moneyCash, ENT_QUOTES, 'UTF-8') ?></strong> no fechamento. Mensalidade a partir de <strong>R$ 500</strong>, proporcional ao seu faturamento.
+            <?php if ($promoActive): ?>Parcelado: metade no fechamento, metade na entrega. À vista: <strong><?= htmlspecialchars($moneyCash, ENT_QUOTES, 'UTF-8') ?></strong> no fechamento. <?php endif; ?>Mensalidade a partir de <strong>R$ 500</strong>, proporcional ao seu faturamento.
           </p>
           <div class="mt-5 grid gap-3 sm:grid-cols-2">
             <a href="#garantir" class="inline-flex items-center justify-center rounded-full bg-amber-400 px-6 py-3.5 text-sm font-bold uppercase tracking-wide text-brand transition hover:-translate-y-0.5 hover:bg-amber-300">
-              Quero garantir o desconto
+              <?= $promoActive ? 'Quero garantir o desconto' : 'Quero uma proposta' ?>
             </a>
             <a href="<?= htmlspecialchars($whatsappHref, ENT_QUOTES, 'UTF-8') ?>" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-full bg-[#25D366] px-6 py-3.5 text-sm font-bold uppercase tracking-wide text-white transition hover:-translate-y-0.5">
               Chamar no WhatsApp
@@ -504,7 +506,7 @@ $seoDescription = 'Cadastre afiliados e influenciadores com link e cupom própri
         <div class="grid gap-8 lg:grid-cols-[1fr_1fr]">
           <div>
             <h2 class="font-[var(--font-heading)] text-2xl font-bold sm:text-[32px]">
-              Garanta a instalação por <span class="text-amber-300"><?= htmlspecialchars($moneyTo, ENT_QUOTES, 'UTF-8') ?></span> — ou <span class="text-amber-300"><?= htmlspecialchars($moneyCash, ENT_QUOTES, 'UTF-8') ?></span> à vista
+              <?php if ($promoActive): ?>Garanta a instalação por <span class="text-amber-300"><?= htmlspecialchars($moneyTo, ENT_QUOTES, 'UTF-8') ?></span> — ou <span class="text-amber-300"><?= htmlspecialchars($moneyCash, ENT_QUOTES, 'UTF-8') ?></span> à vista<?php else: ?>Receba uma proposta para a sua operação<?php endif; ?>
             </h2>
             <p class="mt-3 text-base leading-relaxed text-white/90">
               Deixe seu WhatsApp. Uma pessoa da equipe entra em contato, entende seu plano de negócio
@@ -529,7 +531,7 @@ $seoDescription = 'Cadastre afiliados e influenciadores com link e cupom própri
               method="post"
               class="space-y-4"
               data-whatsapp-phone="<?= htmlspecialchars($whatsappPhone, ENT_QUOTES, 'UTF-8') ?>"
-              data-whatsapp-message-template="Ola, vim pela <?= htmlspecialchars(promoNomeAscii(), ENT_QUOTES, 'UTF-8') ?>. Meu nome e {nome} e meu WhatsApp e {whatsapp}."
+              data-whatsapp-message-template="Ola, vim <?= htmlspecialchars(promoOrigemZap(), ENT_QUOTES, 'UTF-8') ?>. Meu nome e {nome} e meu WhatsApp e {whatsapp}."
             >
               <input type="hidden" name="redirect" value="/sistema-venda-direta/afiliados/" />
               <input type="hidden" name="origem" value="lp-oferta-afiliados" />
@@ -547,7 +549,7 @@ $seoDescription = 'Cadastre afiliados e influenciadores com link e cupom própri
               </div>
 
               <button type="submit" class="inline-flex w-full items-center justify-center rounded-full bg-amber-400 px-5 py-3.5 text-sm font-bold uppercase tracking-wide text-brand transition hover:-translate-y-0.5 hover:bg-amber-300">
-                Quero garantir o desconto
+                <?= $promoActive ? 'Quero garantir o desconto' : 'Quero uma proposta' ?>
               </button>
               <p class="text-center text-xs text-white/60">Sem compromisso. Respondemos em horário comercial.</p>
             </form>
@@ -594,6 +596,8 @@ $seoDescription = 'Cadastre afiliados e influenciadores com link e cupom própri
       </div>
     </section>
 
+    <?php if ($promoActive): ?>
+
     <section class="py-12 text-center">
       <h2 class="font-[var(--font-heading)] text-2xl font-bold sm:text-3xl">
         <?= htmlspecialchars(PROMO_NOME, ENT_QUOTES, 'UTF-8') ?>: <?= htmlspecialchars($moneyFrom, ENT_QUOTES, 'UTF-8') ?> viram <?= htmlspecialchars($moneyCash, ENT_QUOTES, 'UTF-8') ?> à vista<?= $promoActive ? ' até ' . htmlspecialchars($deadlineLabel, ENT_QUOTES, 'UTF-8') : '' ?>
@@ -605,6 +609,8 @@ $seoDescription = 'Cadastre afiliados e influenciadores com link e cupom própri
         Garantir minha vaga
       </a>
     </section>
+
+    <?php endif; ?>
   </main>
 
   <footer class="border-t border-white/15 bg-brand-dark/40">
@@ -617,8 +623,8 @@ $seoDescription = 'Cadastre afiliados e influenciadores com link e cupom própri
       </div>
       <p class="mt-6 text-xs text-white/60">
         © Sistema Venda Direta — Todos os direitos reservados.
-        <?= htmlspecialchars(PROMO_NOME, ENT_QUOTES, 'UTF-8') ?> — condição promocional de instalação (<?= htmlspecialchars($moneyTo, ENT_QUOTES, 'UTF-8') ?> em duas parcelas ou <?= htmlspecialchars($moneyCash, ENT_QUOTES, 'UTF-8') ?> à vista) válida para contratos fechados até <?= htmlspecialchars($deadlineLabel, ENT_QUOTES, 'UTF-8') ?>,
-        <?= $promoSlots > 0 ? 'limitada a ' . (int) $promoSlots . ' implantações no período. ' : '' ?>Não cumulativa com outras condições comerciais.
+        <?php if ($promoActive): ?><?= htmlspecialchars(PROMO_NOME, ENT_QUOTES, 'UTF-8') ?> — condição promocional de instalação (<?= htmlspecialchars($moneyTo, ENT_QUOTES, 'UTF-8') ?> em duas parcelas ou <?= htmlspecialchars($moneyCash, ENT_QUOTES, 'UTF-8') ?> à vista) válida para contratos fechados até <?= htmlspecialchars($deadlineLabel, ENT_QUOTES, 'UTF-8') ?>,
+        <?= $promoSlots > 0 ? 'limitada a ' . (int) $promoSlots . ' implantações no período. ' : '' ?>Não cumulativa com outras condições comerciais.<?php endif; ?>
       </p>
     </div>
   </footer>

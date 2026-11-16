@@ -28,7 +28,7 @@ $seoTitle = 'Sistema MMN: plataforma de marketing multinível pronta para operar
 // 160 chars e onde o Google corta no desktop. Passar disso entrega a frase pra
 // ele reescrever — e a promessa que traz o clique deixa de ser nossa.
 $seoDescription = 'Sistema MMN com rede unilevel, escritório do consultor, loja e '
-    . 'financeiro integrados. A partir de R$ 3.000. Veja a demonstração sem cadastro.';
+    . 'financeiro integrados. A partir de ' . promoPrecoInstalacao() . '. Veja a demonstração sem cadastro.';
 
 $whatsappHref = 'https://wa.me/5511994566726?text=' . rawurlencode(
     'Ola! Vi a pagina de Sistema MMN no site e quero saber mais.');
@@ -42,7 +42,7 @@ $faq = [
      . 'distribuidor, loja para venda ao consumidor e o financeiro que paga tudo isso. Sem ele, '
      . 'a rede é controlada em planilha — o que funciona até a primeira dezena de consultores.'],
     ['Quanto custa um sistema MMN?',
-     'No Sistema Venda Direta a instalação parte de R$ 3.000 e a mensalidade começa em R$ 500, '
+     'No Sistema Venda Direta a instalação parte de ' . promoPrecoInstalacao() . ' e a mensalidade começa em R$ 500, '
      . 'escalando conforme o faturamento da operação. A instalação inclui a parametrização do seu '
      . 'plano de negócio: a regra de comissão é configurada, não improvisada.'],
     ['Quanto tempo leva para colocar no ar?',
@@ -136,9 +136,9 @@ $faq = [
       'url' => $seoUrl,
       'offers' => [
           '@type' => 'Offer',
-          'price' => (string) PROMO_INSTALL_AVISTA,
+          'price' => (string) (promoAtiva() ? PROMO_INSTALL_AVISTA : PROMO_INSTALL_DE),
           'priceCurrency' => 'BRL',
-          'description' => 'Instalação a partir de R$ ' . number_format(PROMO_INSTALL_AVISTA, 0, ',', '.')
+          'description' => 'Instalação a partir de ' . promoPrecoInstalacao()
               . '; mensalidade a partir de R$ 500.',
       ],
       'provider' => ['@type' => 'Organization', 'name' => 'Sistema Venda Direta', 'url' => $seoBase],
@@ -234,7 +234,7 @@ $faq = [
             ['Comissão calculada e paga sem planilha',
              'Fechamento automático de bônus de indicação, níveis, graduação e residual. O erro de cálculo em rede não custa só dinheiro: '
              . 'custa a confiança do distribuidor, que é o ativo que faz a rede crescer.'],
-            ['Qualquer plano, parametrizado na implantação',
+            ['Plano configurado conforme as regras da sua empresa',
              'Unilevel, binário com troca de perna preferencial, comissão por cargo ou combinação dos três. A regra é configurada, '
              . 'não improvisada em código — mudar faixa de comissão não vira projeto de desenvolvimento.'],
             ['Loja com rastreio de venda por consultor',
@@ -319,7 +319,7 @@ $faq = [
       <div class="mt-6 grid gap-4 sm:grid-cols-2">
         <div class="rounded-2xl border border-amber-300/40 bg-white/[0.07] p-5">
           <p class="text-xs font-semibold uppercase tracking-[0.16em] text-white/60">Instalação</p>
-          <p class="mt-1 font-[var(--font-heading)] text-3xl font-bold text-amber-300">a partir de R$ <?= number_format(PROMO_INSTALL_AVISTA, 0, ',', '.') ?></p>
+          <p class="mt-1 font-[var(--font-heading)] text-3xl font-bold text-amber-300">a partir de <?= promoPrecoInstalacao() ?></p>
           <p class="mt-2 text-sm leading-relaxed text-white/85">
             Inclui a parametrização do seu plano de negócio, carga de catálogo, identidade da marca e
             o domínio no ar com certificado.
@@ -456,7 +456,7 @@ $faq = [
         <a href="../cases/" class="text-white/85 hover:text-white">Cases</a>
         <a href="../simulador/" class="text-white/85 hover:text-white">Simulador</a>
         <a href="../blog/" class="text-white/85 hover:text-white">Blog</a>
-        <a href="../sistema-venda-direta/" class="text-amber-300 hover:text-amber-200"><?= htmlspecialchars(PROMO_NOME, ENT_QUOTES, 'UTF-8') ?></a>
+        <a href="../sistema-venda-direta/" class="text-amber-300 hover:text-amber-200"><?= htmlspecialchars(promoRotulo('Planos e instalação'), ENT_QUOTES, 'UTF-8') ?></a>
       </div>
     </div>
   </footer>

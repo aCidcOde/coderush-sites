@@ -193,11 +193,13 @@ return [
         'metrics' => [],
     ],
     [
+        // 16/11/2026: loja fora do ar (Cloudflare 522). Volta quando a loja responder.
         'slug' => 'accenti',
         'name' => 'Accenti',
         'segment' => 'Aromaterapia e bem-estar • Brasil',
         'period' => 'No ar desde junho de 2026',
         'featured' => true,
+        'hidden' => true,
         'logo' => 'imagens/clientes/accenti.webp',
         'logoFallback' => 'imagens/clientes/accenti.png',
         'logoWidth' => 842,

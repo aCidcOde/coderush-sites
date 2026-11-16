@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+require_once __DIR__ . '/inc/promo.php';   // DEMO_URL do hero + calendario do modal
+
 $mailStatus = $_GET['mail'] ?? '';
 $mailStatus = in_array($mailStatus, ['ok', 'erro'], true) ? $mailStatus : '';
 
@@ -11,16 +13,26 @@ $contactRedirect = ($scriptDir === '/' || $scriptDir === '') ? '/' : rtrim($scri
 $seoBase = 'https://sistemavendadireta.com.br';
 $seoUrl = $seoBase . '/';
 
-// Modal da promocao de instalacao — mesmos parametros da LP /oferta/.
-// Some sozinho depois do prazo; valores atualizados aqui e em oferta/index.php.
+/*
+ * Modal da promocao — 16/11/2026: le o calendario de inc/promo.php (nome, selo,
+ * prazo, slug e precos). Antes tinha tudo cravado, inclusive "Promocao 10 Anos"
+ * e prazo 31/08 — e por isso saiu do ar sozinho em 31/08 e ninguem percebeu.
+ *
+ * DESLIGADO de proposito. Abre por cima do conteudo 2,2 s depois da chegada; no
+ * celular, e o tipo de pop-up que o Google rebaixa em pagina vinda da busca — e
+ * esta home e a principal porta organica. Em agosto: 102 aberturas, 9 cliques.
+ * Religar = true (ele se desliga sozinho quando a promocao vigente vence).
+ */
+$promoModalLigado = false;
 $promoModal = [
-    'from' => 'R$ 5.000',
-    'to' => 'R$ 3.500',
-    'cash' => 'R$ 3.000',
-    'deadline' => '2026-08-31',
+    'from' => 'R$ ' . number_format(PROMO_INSTALL_DE, 0, ',', '.'),
+    'to' => 'R$ ' . number_format(PROMO_INSTALL_PARCELADO, 0, ',', '.'),
+    'cash' => 'R$ ' . number_format(PROMO_INSTALL_AVISTA, 0, ',', '.'),
+    'deadline' => PROMO_DEADLINE,
 ];
 $promoModalDeadline = new DateTimeImmutable($promoModal['deadline'] . ' 23:59:59', new DateTimeZone('America/Sao_Paulo'));
-$promoModalActive = new DateTimeImmutable('now', new DateTimeZone('America/Sao_Paulo')) <= $promoModalDeadline;
+$promoModalActive = $promoModalLigado
+    && new DateTimeImmutable('now', new DateTimeZone('America/Sao_Paulo')) <= $promoModalDeadline;
 $promoModalDeadlineLabel = $promoModalDeadline->format('d/m/Y');
 // Esta home carrega 711 impressoes organicas em 90 dias e rankeia entre a 1a e a
 // 3a posicao pras buscas comerciais do nicho — e levava 10 cliques. O title ja
@@ -66,6 +78,10 @@ $faqPairs = [
     [
         'POSSO USAR MINHA MARCA E MEU DOMÍNIO?',
         'Sim, um dos diferenciais deste sistema para venda direta é exatamente você utilizar o sistema personalizado com a marca de sua empresa.',
+    ],
+    [
+        'COMO FUNCIONA O ASSISTENTE DE IA?',
+        'É um assistente dentro do escritório virtual que ajuda o consultor a consultar as próprias informações — pedidos, pontos e rede — e a entender as regras do plano em linguagem simples. O acesso respeita a conta e as permissões de cada usuário, e alterações e decisões financeiras continuam nos fluxos autorizados do sistema. Escopo e disponibilidade são definidos em cada implantação.',
     ],
     [
         'COMO É FEITO O SUPORTE',
@@ -335,9 +351,18 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
           Sistema, Escritório Virtual, Administrador, Loja Virtual, Site, Centro de Distribuição,
           MULTI-Idioma ( PT-BR, ES e EN ), Dólar, Real, Euro e Matrizes de todos os tipos.
         </p>
-        <a href="#contato" class="inline-flex items-center gap-2 rounded-full border border-white/70 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10">
-          Quero testar uma demonstração
-        </a>
+        <?php /* 16/11/2026: o botao dizia "Quero testar uma demonstracao" e levava pro
+           formulario de contato. A demonstracao existe e abre sem cadastro — e foi o
+           que os visitantes pagos de novembro clicaram (4 de 17; formulario, zero). */ ?>
+        <div class="flex flex-wrap gap-3">
+          <a href="<?= htmlspecialchars(DEMO_URL . '?utm_source=site&utm_medium=home&utm_campaign=demo&utm_content=hero', ENT_QUOTES, 'UTF-8') ?>" target="_blank" rel="noopener" class="inline-flex items-center justify-center rounded-full bg-amber-400 px-5 py-2.5 text-sm font-bold uppercase tracking-wide text-brand hover:bg-amber-300">
+            Entrar na demonstração
+          </a>
+          <a href="#contato" class="inline-flex items-center gap-2 rounded-full border border-white/70 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10">
+            Falar com um especialista
+          </a>
+        </div>
+        <p class="text-sm text-white/70">Loja, escritório virtual e painel administrativo, sem cadastro.</p>
       </div>
       <div class="mx-auto w-full max-w-[520px] rounded-2xl bg-brand-soft/25 p-2 ring-1 ring-white/15">
         <div class="lottie-box h-[220px] w-full sm:h-[300px]" data-lottie-src="imagens/lottie-hero.json" aria-label="Animação demonstrativa do sistema"></div>
@@ -390,9 +415,9 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
         </article>
 
         <article class="rounded-[30px] border border-white/55 bg-brand p-5 text-center">
-          <img decoding="async" src="imagens/mapa-do-site.webp" alt="Qualquer Plano de Compensação" class="mx-auto h-14 w-14" width="512" height="512" loading="lazy" />
-          <h3 class="mt-3 font-[var(--font-heading)] text-base font-semibold">Qualquer Plano de Compensação</h3>
-          <p class="mt-2 text-sm text-white/85">Personalize o plano ideal para a sua empresa.</p>
+          <img decoding="async" src="imagens/mapa-do-site.webp" alt="Plano de compensação configurável" class="mx-auto h-14 w-14" width="512" height="512" loading="lazy" />
+          <h3 class="mt-3 font-[var(--font-heading)] text-base font-semibold">Plano de Compensação</h3>
+          <p class="mt-2 text-sm text-white/85">Configurado conforme as regras da sua empresa.</p>
         </article>
 
         <article class="rounded-[30px] border border-white/55 bg-brand p-5 text-center">
@@ -475,7 +500,7 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
         <article class="rounded-2xl border border-white/25 bg-white/5 p-5 text-center">
           <div class="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-white/15 text-xl">🧩</div>
           <h5 class="mt-3 font-[var(--font-heading)] text-lg font-semibold">Sob Medida</h5>
-          <p class="mt-2 text-sm text-white/85">Se você tem alguma idéia ou uma visão diferente, criamos um sistema sob medida para você.</p>
+          <p class="mt-2 text-sm text-white/85">Se você tem alguma ideia ou uma visão diferente, criamos um sistema sob medida para você.</p>
         </article>
 
         <article class="rounded-2xl border border-white/25 bg-white/5 p-5 text-center">
@@ -490,16 +515,16 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
       <div class="rounded-[30px] border border-white/30 bg-white/[0.06] p-6 sm:p-8">
         <div class="grid items-center gap-6 lg:grid-cols-[1fr_auto]">
           <div>
-            <h4 class="font-[var(--font-heading)] text-[30px] font-semibold leading-tight">Desenvolvimento com IA para acelerar sua operação</h4>
+            <h4 class="font-[var(--font-heading)] text-[30px] font-semibold leading-tight">Tecnologia que evolui com o seu negócio</h4>
             <div class="mt-2 h-1 w-[72px] rounded-full bg-white"></div>
             <p class="mt-4 max-w-3xl text-base leading-relaxed text-white/90">
-              O <strong>codafacil.dev</strong> é o subproduto da SVD focado em software sob medida orientado por IA.
-              Atuamos com desenvolvimento, consultoria, sustentação e complementação de equipe, com processo claro:
-              levantamento de requisitos, engenharia de processos, desenvolvimento incremental, revisão, testes e deploy.
+              Usamos IA para acelerar a análise de demandas e o desenvolvimento de funcionalidades. Nossa equipe
+              define as regras com a empresa, revisa a implementação, testa os fluxos e acompanha a publicação.
+              Isso permite evoluir a plataforma com novos módulos, integrações e experiências específicas para cada operação.
             </p>
             <p class="mt-3 max-w-3xl text-base leading-relaxed text-white/85">
-              Isso cria sinergia direta com o Sistema Venda Direta: enquanto o SVD entrega o produto consolidado de MMN,
-              o Codafacil acelera projetos customizados, integrações e novas frentes tecnológicas da sua empresa.
+              Para projetos sob medida fora da plataforma — sistemas internos, integrações e novas frentes —,
+              o <strong>codafacil.dev</strong> é o braço da SVD de desenvolvimento orientado por IA.
             </p>
           </div>
 
@@ -511,10 +536,51 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
         </div>
 
         <div class="mt-6 grid gap-3 text-sm text-white/90 sm:grid-cols-2 lg:grid-cols-4">
-          <div class="rounded-2xl border border-white/20 bg-white/5 px-4 py-3">Desenvolvimento de software sob medida</div>
-          <div class="rounded-2xl border border-white/20 bg-white/5 px-4 py-3">Consultoria técnica e arquitetura</div>
-          <div class="rounded-2xl border border-white/20 bg-white/5 px-4 py-3">Sustentação e evolução contínua</div>
-          <div class="rounded-2xl border border-white/20 bg-white/5 px-4 py-3">IA aplicada com governança e qualidade</div>
+          <div class="rounded-2xl border border-white/20 bg-white/5 px-4 py-3">Regras definidas com a empresa</div>
+          <div class="rounded-2xl border border-white/20 bg-white/5 px-4 py-3">Implementação revisada pela equipe</div>
+          <div class="rounded-2xl border border-white/20 bg-white/5 px-4 py-3">Fluxos testados antes de publicar</div>
+          <div class="rounded-2xl border border-white/20 bg-white/5 px-4 py-3">Publicação acompanhada</div>
+        </div>
+      </div>
+    </section>
+
+    <?php /*
+     * ASSISTENTE DE IA NO ESCRITORIO — 16/11/2026.
+     * Separado da secao da BFR logo abaixo de proposito: la e agente no WhatsApp
+     * (parceria); aqui e o assistente DENTRO do escritorio virtual. Juntos, davam a
+     * entender que o Medinho responde no WhatsApp — e nao responde. Medinho entra so
+     * como nome de exemplo, sem citar o cliente que o usa. Escopo e disponibilidade
+     * variam por implantacao: nada aqui promete que vem em todo plano.
+     */ ?>
+    <section id="assistente-ia" class="scroll-mt-28 py-10">
+      <div class="rounded-[30px] border border-white/30 bg-white/[0.06] p-6 sm:p-8">
+        <div class="grid items-center gap-6 lg:grid-cols-[1fr_auto]">
+          <div>
+            <h4 class="font-[var(--font-heading)] text-[30px] font-semibold leading-tight">Assistente de IA no escritório virtual</h4>
+            <div class="mt-2 h-1 w-[72px] rounded-full bg-white"></div>
+            <p class="mt-4 max-w-3xl text-base leading-relaxed text-white/90">
+              Respostas mais rápidas para a sua rede. O <strong>Medinho</strong> é um exemplo de assistente integrado ao
+              escritório virtual: ele ajuda o consultor a consultar as próprias informações e a entender pedidos, pontos,
+              rede e regras do plano de negócios em linguagem simples.
+            </p>
+            <p class="mt-3 max-w-3xl text-base leading-relaxed text-white/85">
+              O acesso às informações respeita a conta e as permissões de cada usuário. Alterações operacionais e
+              decisões financeiras continuam nos fluxos autorizados do sistema.
+            </p>
+          </div>
+
+          <div class="flex flex-col items-stretch gap-3 sm:min-w-[280px]">
+            <a href="#form" class="inline-flex items-center justify-center rounded-full border border-white/75 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10">
+              Falar com um especialista
+            </a>
+          </div>
+        </div>
+
+        <div class="mt-6 grid gap-3 text-sm text-white/90 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="rounded-2xl border border-white/20 bg-white/5 px-4 py-3">Consulta pedidos, pontos e rede</div>
+          <div class="rounded-2xl border border-white/20 bg-white/5 px-4 py-3">Explica o plano em linguagem simples</div>
+          <div class="rounded-2xl border border-white/20 bg-white/5 px-4 py-3">Respeita conta e permissões</div>
+          <div class="rounded-2xl border border-white/20 bg-white/5 px-4 py-3">Alterações só nos fluxos autorizados</div>
         </div>
       </div>
     </section>
@@ -549,7 +615,7 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
               <p class="inline-flex rounded-full border border-sky-300/50 bg-sky-400/15 px-3 py-1 text-xs font-bold uppercase tracking-[0.14em] text-sky-200">Parceria oficial</p>
             </div>
             <h4 class="mt-4 font-[var(--font-heading)] text-[30px] font-semibold leading-tight">
-              Agentes de IA atendendo a sua rede
+              Agentes de IA no WhatsApp da sua rede
             </h4>
             <div class="mt-2 h-1 w-[72px] rounded-full bg-sky-300"></div>
             <p class="mt-4 max-w-3xl text-base leading-relaxed text-white/90">
@@ -589,7 +655,7 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
       </h4>
       <div class="mt-2 h-1 w-[72px] rounded-full bg-white"></div>
       <h2 class="mt-4 font-[var(--font-heading)] text-xl font-semibold sm:text-2xl">
-        Não se preocupe com desenvolvimento, já temos todas as integrações que você vai precisar!
+        Integrações disponíveis e desenvolvimento conforme o projeto.
       </h2>
       <div class="integration-carousel mt-6 rounded-2xl border border-white/25 bg-brand-dark/40 p-4 sm:p-5" aria-label="Parceiros integrados ao sistema">
         <div class="integration-row">
@@ -1020,10 +1086,10 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
         <button id="promo-modal-fechar" type="button" aria-label="Fechar" class="absolute right-4 top-4 inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/30 text-lg leading-none text-white/80 hover:bg-white/10">&times;</button>
 
         <p class="inline-flex rounded-full border border-amber-300/50 bg-amber-400/15 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.18em] text-amber-200">
-          Celebrando 10 anos
+          <?= htmlspecialchars(PROMO_SELO, ENT_QUOTES, 'UTF-8') ?>
         </p>
         <h2 id="promo-modal-titulo" class="mt-4 font-[var(--font-heading)] text-2xl font-bold leading-tight sm:text-[28px]">
-          Promoção 10 Anos: <span class="text-amber-300">até 40% OFF</span> na instalação
+          <?= htmlspecialchars(PROMO_NOME, ENT_QUOTES, 'UTF-8') ?>: <span class="text-amber-300">até 40% OFF</span> na instalação
         </h2>
         <div class="mt-4 flex flex-wrap items-end justify-center gap-2">
           <span class="text-lg font-semibold text-white/50 line-through"><?= htmlspecialchars($promoModal['from'], ENT_QUOTES, 'UTF-8') ?></span>
@@ -1033,7 +1099,7 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
         <p class="mt-1 text-sm font-semibold text-white/90">ou <span class="text-amber-300 font-bold"><?= htmlspecialchars($promoModal['cash'], ENT_QUOTES, 'UTF-8') ?></span> à vista</p>
         <p class="mt-3 text-xs text-white/70">Válida até <?= htmlspecialchars($promoModalDeadlineLabel, ENT_QUOTES, 'UTF-8') ?> · mensalidade proporcional ao faturamento</p>
 
-        <a id="promo-modal-cta" href="sistema-venda-direta/?utm_source=site&utm_medium=modal&utm_campaign=promo-10-anos" class="mt-5 inline-flex w-full items-center justify-center rounded-full bg-amber-400 px-6 py-3.5 text-sm font-bold uppercase tracking-wide text-brand transition hover:-translate-y-0.5 hover:bg-amber-300">
+        <a id="promo-modal-cta" href="sistema-venda-direta/?utm_source=site&utm_medium=modal&utm_campaign=<?= PROMO_SLUG ?>" class="mt-5 inline-flex w-full items-center justify-center rounded-full bg-amber-400 px-6 py-3.5 text-sm font-bold uppercase tracking-wide text-brand transition hover:-translate-y-0.5 hover:bg-amber-300">
           Ver a oferta completa
         </a>
         <button id="promo-modal-depois" type="button" class="mt-3 text-xs font-semibold text-white/60 hover:text-white/85">

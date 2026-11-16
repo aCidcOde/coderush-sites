@@ -20,6 +20,26 @@ Campos:
 
 return [
     [
+        'data' => '2026-11-16',
+        'area' => 'site',
+        'titulo' => 'Preparação para dezembro: promoção que não sobrevive ao prazo, vitrine sem MedPlant/Accenti, IA na home',
+        'porque' => 'Simulando 01/01/2027, as LPs seguiam vendendo a Fim de Ano: a conta de dias truncava '
+            . '"10 horas depois do prazo" pra 0 e mantinha a promoção ativa um dia inteiro; e, mesmo '
+            . 'desligada, título, H1, preço riscado, "garantir o desconto" e rodapé legal continuavam no ar. '
+            . 'A MedPlant estava sob embargo do cliente mas aparecia nas 6 LPs (lista e card com loja); a '
+            . 'loja da Accenti responde 522 do Cloudflare. Na home, o botão "Quero testar uma demonstração" '
+            . 'levava ao formulário, e o texto prometia "qualquer plano de compensação" e "todas as '
+            . 'integrações que você vai precisar".',
+        'efeito' => 'Dias contados por calendário (promoDiasRestantes, usado pelas 5 LPs). Sem promoção '
+            . 'vigente as LPs mostram preço cheio (R$ 5.000), "Quero uma proposta", card da home e nenhum '
+            . 'texto de desconto — conferido renderizando em 01/01/2027. CLIENTES_OCULTOS em inc/promo.php '
+            . 'tira MedPlant e Accenti das vitrines. Home: "Entrar na demonstração" (sem cadastro) + "Falar '
+            . 'com um especialista"; seção nova do assistente de IA no escritório (Medinho como exemplo, sem '
+            . 'citar cliente), separada do agente de WhatsApp da BFR; "Tecnologia que evolui com o seu '
+            . 'negócio" com revisão humana explícita; pergunta do assistente no FAQ. O modal da home, morto '
+            . 'desde 31/08 por prazo cravado, agora lê o calendário mas segue desligado (interstitial no celular).',
+    ],
+    [
         'data' => '2026-11-04',
         'area' => 'ads',
         'titulo' => 'Campanha "SVD - Promocao Fim de Ano" pausada até dezembro, a pedido',
