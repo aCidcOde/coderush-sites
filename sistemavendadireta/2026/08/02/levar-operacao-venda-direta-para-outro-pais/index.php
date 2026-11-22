@@ -255,6 +255,13 @@
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/11/22/integrar-sistemas-venda-direta-erp-fiscal/"><img src="../../../../imagens/posts/integrar-sistemas-venda-direta-erp-fiscal.jpg" alt="Como integrar sistemas de venda direta com ERP fiscal?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/11/22/integrar-sistemas-venda-direta-erp-fiscal/" class="hover:underline">Como integrar sistemas de venda direta com ERP fiscal?</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como integrar seu sistema de venda direta com ERPs como TOTVS e Bling para otimizar processos fiscais.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="../../../../2026/10/15/comissao-cargo-plano-pontos-venda-direta/"><img src="../../../../imagens/posts/comissao-cargo-plano-pontos-venda-direta.jpg" alt="Comissão por cargo ou plano de pontos em venda direta?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/10/15/comissao-cargo-plano-pontos-venda-direta/" class="hover:underline">Comissão por cargo ou plano de pontos em venda direta?</a></h3>
@@ -266,13 +273,6 @@
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/08/15/integrar-sistema-venda-direta-erp/" class="hover:underline">Como integrar seu sistema de venda direta com ERP</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Integrar seu sistema de venda direta com um ERP, como TOTVS ou Bling, permite otimizar processos, automatizar comissionamentos e melhorar a visibilidade</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/08/06/comissao-cargo-vs-plano-pontos-venda-direta/"><img src="../../../../imagens/posts/comissao-cargo-vs-plano-pontos-venda-direta.jpg" alt="Comissão por cargo vs plano de pontos em venda direta" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/08/06/comissao-cargo-vs-plano-pontos-venda-direta/" class="hover:underline">Comissão por cargo vs plano de pontos em venda direta</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">A comissão por cargo oferece uma taxa fixa baseada na posição do distribuidor, enquanto o plano de pontos é mais flexível, permitindo que os ganhos variem</p>
   </div>
 </article>
   </div>

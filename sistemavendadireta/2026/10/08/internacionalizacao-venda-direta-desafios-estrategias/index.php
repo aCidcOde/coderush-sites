@@ -225,6 +225,13 @@
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/11/22/integrar-sistemas-venda-direta-erp-fiscal/"><img src="../../../../imagens/posts/integrar-sistemas-venda-direta-erp-fiscal.jpg" alt="Como integrar sistemas de venda direta com ERP fiscal?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/11/22/integrar-sistemas-venda-direta-erp-fiscal/" class="hover:underline">Como integrar sistemas de venda direta com ERP fiscal?</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como integrar seu sistema de venda direta com ERPs como TOTVS e Bling para otimizar processos fiscais.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="../../../../2026/07/12/estrategias-expansao-internacional-marketing-multinivel/"><img src="../../../../imagens/posts/estrategias-expansao-internacional-marketing-multinivel.jpg" alt="Estratégias para expansão internacional no marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/07/12/estrategias-expansao-internacional-marketing-multinivel/" class="hover:underline">Estratégias para expansão internacional no marketing multinível</a></h3>
@@ -236,13 +243,6 @@
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/02/integrar-pagamentos-logistica-marketing-multinivel/" class="hover:underline">Como integrar pagamentos e logística em marketing multinível</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Integrar pagamentos e logística em marketing multinível envolve a escolha de um software que possibilite conexões diretas com sistemas de pagamento e gestão...</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/08/15/integrar-sistema-venda-direta-erp/"><img src="../../../../imagens/posts/integrar-sistema-venda-direta-erp.jpg" alt="Como integrar seu sistema de venda direta com ERP" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/08/15/integrar-sistema-venda-direta-erp/" class="hover:underline">Como integrar seu sistema de venda direta com ERP</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Integrar seu sistema de venda direta com um ERP, como TOTVS ou Bling, permite otimizar processos, automatizar comissionamentos e melhorar a visibilidade</p>
   </div>
 </article>
   </div>

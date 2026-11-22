@@ -986,6 +986,15 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-HOME-CARDS:START -->
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/11/22/integrar-sistemas-venda-direta-erp-fiscal/" data-blog-image="imagens/posts/integrar-sistemas-venda-direta-erp-fiscal.jpg" data-blog-slug="integrar-sistemas-venda-direta-erp-fiscal" data-blog-date="2026-11-22">
+  <a href="2026/11/22/integrar-sistemas-venda-direta-erp-fiscal/">
+    <picture><source srcset="imagens/posts/integrar-sistemas-venda-direta-erp-fiscal.webp" type="image/webp" /><img src="imagens/posts/integrar-sistemas-venda-direta-erp-fiscal.jpg" alt="Como integrar sistemas de venda direta com ERP fiscal?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
+  </a>
+  <div class="p-4">
+    <h2 class="text-base font-semibold leading-snug"><a href="2026/11/22/integrar-sistemas-venda-direta-erp-fiscal/" class="hover:underline">Como integrar sistemas de venda direta com ERP fiscal?</a></h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como integrar seu sistema de venda direta com ERPs como TOTVS e Bling para otimizar processos fiscais.</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/11/15/marketing-rede-brasil-regulamentacao-oportunidades/" data-blog-image="imagens/posts/marketing-rede-brasil-regulamentacao-oportunidades.jpg" data-blog-slug="marketing-rede-brasil-regulamentacao-oportunidades" data-blog-date="2026-11-15">
   <a href="2026/11/15/marketing-rede-brasil-regulamentacao-oportunidades/">
     <picture><source srcset="imagens/posts/marketing-rede-brasil-regulamentacao-oportunidades.webp" type="image/webp" /><img src="imagens/posts/marketing-rede-brasil-regulamentacao-oportunidades.jpg" alt="Marketing de rede no Brasil: regulamentação e oportunidades" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
@@ -1002,15 +1011,6 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
   <div class="p-4">
     <h2 class="text-base font-semibold leading-snug"><a href="2026/11/08/vender-diretamente-consumidor-final-mmn/" class="hover:underline">Como vender diretamente para o consumidor final com MMN?</a></h2>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como o marketing multinível pode impulsionar suas vendas diretas ao consumidor final.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/11/01/cadastrar-consultores-operacao-mmn/" data-blog-image="imagens/posts/cadastrar-consultores-operacao-mmn.jpg" data-blog-slug="cadastrar-consultores-operacao-mmn" data-blog-date="2026-11-01">
-  <a href="2026/11/01/cadastrar-consultores-operacao-mmn/">
-    <picture><source srcset="imagens/posts/cadastrar-consultores-operacao-mmn.webp" type="image/webp" /><img src="imagens/posts/cadastrar-consultores-operacao-mmn.jpg" alt="Como cadastrar consultores em uma operação de MMN?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
-  </a>
-  <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="2026/11/01/cadastrar-consultores-operacao-mmn/" class="hover:underline">Como cadastrar consultores em uma operação de MMN?</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda o processo de cadastro de consultores e distribuidores em marketing multinível, focando na internacionalização.</p>
   </div>
 </article>
 <!-- BLOG-HOME-CARDS:END -->

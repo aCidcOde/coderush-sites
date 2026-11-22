@@ -1,0 +1,82 @@
+{
+  "date": "2026-11-22",
+  "siteId": "emergency",
+  "postType": "due-diligence-certidoes",
+  "focus": "php",
+  "theme": "riscos ocultos em aquisicao de imovel",
+  "angle": "due diligence imobiliaria",
+  "slug": "identificando-riscos-ocultos-aquisicao-imovel",
+  "title": "Emergency Documentação: PHP aplicado a due diligence imobiliaria",
+  "description": "Atualização semanal de php para Emergency Documentação, com foco em riscos ocultos em aquisicao de imovel.",
+  "sources": [],
+  "status": "draft",
+  "generatedAt": "2026-11-22T14:30:20-03:00",
+  "content": {
+    "eyebrow": "Dicas Práticas",
+    "headline": "Identificando Riscos Ocultos em Aquisição de Imóvel",
+    "summary": "Saiba como conduzir uma due diligence imobiliária eficaz e evitar surpresas indesejadas.",
+    "answerBox": {
+      "question": "Quais são os riscos ocultos em uma compra de imóvel?",
+      "answer": "Riscos ocultos em imóveis incluem pendências judiciais, problemas de regularização, dívidas de IPTU, e questões ambientais. Uma due diligence imobiliária completa ajuda a identificar essas questões antes da aquisição."
+    },
+    "tldr": [
+      "Riscos ocultos podem comprometer a aquisição de imóveis.",
+      "Due diligence imobiliária é essencial para segurança.",
+      "Certidões online facilitam o processo de verificação."
+    ],
+    "sections": [
+      {
+        "type": "prose",
+        "title": "Entendendo a Due Diligence Imobiliária",
+        "body": "A due diligence imobiliária é um passo crucial antes de qualquer compra. Envolve a investigação detalhada do imóvel, incluindo sua documentação e situação jurídica. Ignorar essa etapa pode resultar em surpresas desagradáveis, como dívidas ou litígios. Portanto, o suporte de profissionais experientes, como os da Emergency Documentação, é fundamental para mitigar riscos."
+      },
+      {
+        "type": "list",
+        "title": "Principais Riscos Ocultos a Considerar",
+        "items": [
+          "Pendências judiciais que afetam a propriedade.",
+          "Dívidas de IPTU ou taxas de condomínio.",
+          "Irregularidades na documentação do imóvel.",
+          "Questões ambientais que podem gerar problemas futuros.",
+          "Falta de autorização em construção ou reformas."
+        ]
+      },
+      {
+        "type": "callout",
+        "body": "Já estruturamos isso em diversos clientes, e o resultado é sempre positivo. Vale uma conversa para entender melhor seu cenário.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "A Importância das Certidões Online",
+        "body": "Utilizar certidões online é uma forma eficiente de agilizar a due diligence. Elas fornecem informações atualizadas e precisas sobre a situação legal do imóvel, permitindo uma análise rápida e segura. A Emergency Documentação oferece um painel de acompanhamento para que você possa monitorar o progresso e garantir que todas as informações sejam verificadas adequadamente."
+      },
+      {
+        "type": "cta-inline",
+        "body": "Para evitar riscos desnecessários, entre em contato e saiba mais sobre nosso suporte.",
+        "ctaLabel": "Fale com a Emergency",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Evitando Armadilhas na Aquisição de Imóveis",
+        "body": "É importante evitar confiar apenas em informações de fontes não oficiais ou em promessas de vendedores. Verifique sempre a documentação e, se possível, consulte um especialista. Lembre-se que uma due diligence eficaz pode evitar problemas futuros e garantir uma compra tranquila."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Quais certidões são essenciais na due diligence imobiliária?",
+        "a": "As certidões essenciais incluem a certidão de ônus reais, certidão de ações reais e a certidão de registro de imóveis. Elas ajudam a identificar problemas legais e pendências."
+      },
+      {
+        "q": "Como fazer due diligence imobiliária de matrícula?",
+        "a": "Para fazer a due diligence de matrícula, verifique a matrícula do imóvel no cartório, busque por registros de ações e certidões que comprovem a regularidade."
+      },
+      {
+        "q": "O que é investigação patrimonial?",
+        "a": "Investigação patrimonial envolve a análise detalhada dos bens de uma pessoa ou empresa para identificar ativos e passivos, importante em processos de due diligence."
+      }
+    ]
+  }
+}

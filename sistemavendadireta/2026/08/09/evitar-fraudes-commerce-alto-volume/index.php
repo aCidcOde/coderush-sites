@@ -228,17 +228,17 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/11/22/integrar-sistemas-venda-direta-erp-fiscal/"><img src="../../../../imagens/posts/integrar-sistemas-venda-direta-erp-fiscal.jpg" alt="Como integrar sistemas de venda direta com ERP fiscal?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/11/22/integrar-sistemas-venda-direta-erp-fiscal/" class="hover:underline">Como integrar sistemas de venda direta com ERP fiscal?</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como integrar seu sistema de venda direta com ERPs como TOTVS e Bling para otimizar processos fiscais.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="../../../../2026/06/03/tecnologia-vendas-diretas-escala-considerar/"><img src="../../../../imagens/posts/tecnologia-vendas-diretas-escala-considerar.jpg" alt="Tecnologia para Vendas Diretas em Escala: O que Considerar" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/03/tecnologia-vendas-diretas-escala-considerar/" class="hover:underline">Tecnologia para Vendas Diretas em Escala: O que Considerar</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">A tecnologia facilita a automação de processos, melhora a gestão de comissionamento e proporciona suporte ao distribuidor. Com um software adequado, como o S...</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/05/27/integrando-pagamentos-logistica-marketing-multinivel/"><img src="../../../../imagens/posts/integrando-pagamentos-logistica-marketing-multinivel.jpg" alt="Integrando Pagamentos e Logística no Marketing Multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/05/27/integrando-pagamentos-logistica-marketing-multinivel/" class="hover:underline">Integrando Pagamentos e Logística no Marketing Multinível</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">As integrações de pagamento e logística são essenciais para o sucesso das vendas diretas. Elas garantem transações rápidas e eficientes, melhorando a experiê...</p>
   </div>
 </article>
   </div>

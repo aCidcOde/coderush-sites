@@ -1,0 +1,135 @@
+{
+  "mode": "publish",
+  "date": "2026-11-22",
+  "timezone": "America/Sao_Paulo",
+  "focus": "php",
+  "startedAt": "2026-11-22T17:30:06.288Z",
+  "aiProvider": "openrouter",
+  "sites": [
+    {
+      "siteId": "coderush",
+      "skipped": true,
+      "reason": "site disabled"
+    },
+    {
+      "siteId": "codafacil",
+      "skipped": true,
+      "reason": "site disabled"
+    },
+    {
+      "siteId": "fluxointeligenteia",
+      "skipped": true,
+      "reason": "site disabled"
+    },
+    {
+      "siteId": "sistemavendadireta",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "fiscal",
+      "theme": "integracao de sistema de venda direta com ERP (TOTVS, Bling)",
+      "research": {
+        "used": 0,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/sistemavendadireta/2026-11-22/integrar-sistemas-venda-direta-erp-fiscal.json",
+      "markdownPath": "automation/blog-bot/out/sistemavendadireta/2026-11-22/integrar-sistemas-venda-direta-erp-fiscal.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "sistemavendadireta/2026/11/22/integrar-sistemas-venda-direta-erp-fiscal/index.php",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "local-tipografica",
+        "coverAlt": "Como integrar sistemas de venda direta com ERP fiscal?",
+        "coverLeakage": null
+      },
+      "lint": {
+        "ok": true,
+        "skipped": false,
+        "targets": [
+          "sistemavendadireta/index.php",
+          "sistemavendadireta/blog/index.php",
+          "sistemavendadireta/2026/11/22/integrar-sistemas-venda-direta-erp-fiscal/index.php"
+        ]
+      }
+    },
+    {
+      "siteId": "emergency",
+      "ok": false,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "due diligence imobiliaria",
+      "theme": "riscos ocultos em aquisicao de imovel",
+      "research": {
+        "used": 0,
+        "skipped": false,
+        "errors": [
+          {
+            "url": "https://capitalaberto.com.br/feed/",
+            "error": "HTTP 404"
+          }
+        ]
+      },
+      "outputPath": "automation/blog-bot/out/emergency/2026-11-22/identificando-riscos-ocultos-aquisicao-imovel.json",
+      "markdownPath": "automation/blog-bot/out/emergency/2026-11-22/identificando-riscos-ocultos-aquisicao-imovel.md",
+      "publishResult": {
+        "target": "api",
+        "error": "API 422 ao publicar emergency/identificando-riscos-ocultos-aquisicao-imovel: Preencha o campo payload.sources."
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    },
+    {
+      "siteId": "bfrintelligence",
+      "ok": true,
+      "aiUsed": true,
+      "aiProvider": "openrouter",
+      "warning": null,
+      "angle": "RAG",
+      "theme": "orquestracao de multiplos agentes",
+      "research": {
+        "used": 0,
+        "skipped": false,
+        "errors": []
+      },
+      "outputPath": "automation/blog-bot/out/bfrintelligence/2026-11-22/orquestracao-multiplos-agentes-ia-operacao.json",
+      "markdownPath": "automation/blog-bot/out/bfrintelligence/2026-11-22/orquestracao-multiplos-agentes-ia-operacao.md",
+      "publishResult": {
+        "target": "files",
+        "postPath": "bfrintelligence/2026/11/22/orquestracao-multiplos-agentes-ia-operacao/index.html",
+        "homeUpdated": true,
+        "blogUpdated": true,
+        "sitemapUpdated": true,
+        "robotsUpdated": false,
+        "coverSource": "local-tipografica",
+        "coverAlt": "Orquestração de múltiplos agentes de IA na operação",
+        "coverLeakage": null
+      },
+      "lint": {
+        "ok": true,
+        "skipped": true,
+        "targets": []
+      }
+    }
+  ],
+  "duplications": [],
+  "relatedRefresh": {
+    "touched": 40,
+    "unchanged": 143,
+    "errors": [],
+    "totalCards": 171,
+    "totalFiles": 183
+  },
+  "fallbackCount": 0,
+  "allFallback": false,
+  "finishedAt": "2026-11-22T17:30:45.262Z",
+  "ok": false
+}
