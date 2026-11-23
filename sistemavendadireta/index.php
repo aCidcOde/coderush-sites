@@ -343,13 +343,23 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
   <main id="conteudo" class="mx-auto max-w-[1140px] px-4 sm:px-6">
     <section id="secao1" class="grid items-center gap-6 py-8 md:py-10 lg:grid-cols-2 lg:gap-10">
       <div class="space-y-5">
+        <?php /* 23/11/2026: o H1 fica como esta — a home e top 3 organico em "sistema
+                 venda direta" e mexer nele arrisca a posicao. Muda o que vem embaixo:
+                 a lista solta ("Sistema, Escritorio Virtual, Administrador... Matrizes
+                 de todos os tipos") virou frase de beneficio, e o selo da promocao
+                 vigente entra acima do titulo (some sozinho quando ela acaba). */ ?>
+        <?php if (promoAtiva()): ?>
+        <p class="inline-flex rounded-full border border-amber-300/50 bg-amber-400/15 px-3 py-1 text-xs font-bold uppercase tracking-[0.18em] text-amber-200">
+          <?= htmlspecialchars(PROMO_SELO, ENT_QUOTES, 'UTF-8') ?>
+        </p>
+        <?php endif; ?>
         <h1 class="font-[var(--font-heading)] text-3xl font-bold leading-[1.15] sm:text-4xl lg:text-[40px]">
           Sistema completo de marketing<br />
           multinível e venda direta
         </h1>
         <p class="max-w-[620px] text-base leading-relaxed text-white/90 sm:text-lg">
-          Sistema, Escritório Virtual, Administrador, Loja Virtual, Site, Centro de Distribuição,
-          MULTI-Idioma ( PT-BR, ES e EN ), Dólar, Real, Euro e Matrizes de todos os tipos.
+          Loja virtual, escritório do consultor, rede e comissões no mesmo sistema — em português, espanhol e inglês,
+          com real, dólar e euro. Agora com <a href="#assistente-ia" class="font-semibold text-amber-200 underline decoration-amber-300/50 underline-offset-4 hover:text-white">assistente de IA no escritório virtual</a>.
         </p>
         <?php /* 16/11/2026: o botao dizia "Quero testar uma demonstracao" e levava pro
            formulario de contato. A demonstracao existe e abre sem cadastro — e foi o
@@ -428,122 +438,6 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
       </div>
     </section>
 
-    <section class="py-8">
-      <h3 class="font-[var(--font-heading)] text-xl font-semibold">Veja abaixo um video explicando o funcionamento básico do sistema</h3>
-      <div class="mt-4 overflow-hidden rounded-2xl border border-white/20 bg-brand-dark/30">
-        <div class="aspect-video">
-          <iframe
-            class="h-full w-full"
-            title="YouTube video player"
-            src="https://www.youtube.com/embed/b1-JqxgRhas"
-            loading="lazy"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </div>
-    </section>
-
-    <section id="porque" class="scroll-mt-28 py-10">
-      <div class="grid items-center gap-6 lg:grid-cols-2">
-        <div class="mx-auto w-full max-w-[420px] rounded-2xl bg-brand-soft/25 p-2 ring-1 ring-white/15">
-          <div class="lottie-box h-[240px] w-full sm:h-[320px]" data-lottie-src="imagens/lottie-porque.json" data-lottie-mobile="false" aria-label="Animação de gestão"></div>
-        </div>
-
-        <div>
-          <h4 class="font-[var(--font-heading)] text-[30px] font-semibold leading-tight">Por que escolher a Sistema Venda Direta?</h4>
-          <div class="mt-2 h-1 w-[72px] rounded-full bg-white"></div>
-          <p class="mt-4 text-base leading-relaxed text-white/90">
-            Nosso sistema venda direta é a escolha ideal para empresas que buscam um software flexível, confiável e fácil de usar.
-            Com experiência em sistemas desde 2002, oferecemos recursos avançados, como integração com ERP, relatórios em tempo real
-            e planos de compensação personalizados.
-          </p>
-          <a href="#form" class="mt-6 inline-flex rounded-full border border-white/70 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10">
-            Orçamento
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section id="secao4" class="py-10">
-      <div class="grid items-center gap-6 lg:grid-cols-2">
-        <div>
-          <h3 class="font-[var(--font-heading)] text-2xl font-semibold">Características do Sistema</h3>
-          <h4 class="mt-2 font-[var(--font-heading)] text-xl font-semibold">Sistema de Gestão de Marketing Multinível</h4>
-          <div class="mt-2 h-1 w-[72px] rounded-full bg-white"></div>
-          <p class="mt-4 text-base leading-relaxed text-white/90">
-            O sistema venda direta foi primariamente desenhado para empresas de marketing multinível, vendas direta ou marketing de rede,
-            como queira chamar, hoje funciona com quatro módulos: Administração, Centro de Distribuição, Escritório Virtual e Loja Virtual.
-          </p>
-        </div>
-        <div class="mx-auto w-full max-w-[420px] rounded-2xl bg-brand-soft/25 p-2 ring-1 ring-white/15">
-          <div class="lottie-box h-[240px] w-full sm:h-[320px]" data-lottie-src="imagens/lottie-caracteristicas.json" aria-label="Animação de características"></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="vantagens" class="scroll-mt-28 py-10">
-      <h4 class="font-[var(--font-heading)] text-[30px] font-semibold">Aumente seus pedidos, automatize as vendas.</h4>
-      <div class="mt-2 h-1 w-[72px] rounded-full bg-white"></div>
-      <h2 class="mt-4 font-[var(--font-heading)] text-xl font-semibold sm:text-2xl">
-        São muitas vantagens usar o Sistema Venda Direta, veja mais algumas
-      </h2>
-
-      <div class="mt-6 grid gap-4 md:grid-cols-3">
-        <article class="rounded-2xl border border-white/25 bg-white/5 p-5 text-center">
-          <div class="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-white/15 text-xl">💰</div>
-          <h5 class="mt-3 font-[var(--font-heading)] text-lg font-semibold">Economia</h5>
-          <p class="mt-2 text-sm text-white/85">Um sistema online integrado com diversas ferramentas para te auxiliar na administração e controle.</p>
-        </article>
-
-        <article class="rounded-2xl border border-white/25 bg-white/5 p-5 text-center">
-          <div class="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-white/15 text-xl">🧩</div>
-          <h5 class="mt-3 font-[var(--font-heading)] text-lg font-semibold">Sob Medida</h5>
-          <p class="mt-2 text-sm text-white/85">Se você tem alguma ideia ou uma visão diferente, criamos um sistema sob medida para você.</p>
-        </article>
-
-        <article class="rounded-2xl border border-white/25 bg-white/5 p-5 text-center">
-          <div class="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-white/15 text-xl">😊</div>
-          <h5 class="mt-3 font-[var(--font-heading)] text-lg font-semibold">Facilidade</h5>
-          <p class="mt-2 text-sm text-white/85">Sistema simples e descomplicado, tanto para o consultor como para o administrador.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="desenvolvimento-ia" class="scroll-mt-28 py-10">
-      <div class="rounded-[30px] border border-white/30 bg-white/[0.06] p-6 sm:p-8">
-        <div class="grid items-center gap-6 lg:grid-cols-[1fr_auto]">
-          <div>
-            <h4 class="font-[var(--font-heading)] text-[30px] font-semibold leading-tight">Tecnologia que evolui com o seu negócio</h4>
-            <div class="mt-2 h-1 w-[72px] rounded-full bg-white"></div>
-            <p class="mt-4 max-w-3xl text-base leading-relaxed text-white/90">
-              Usamos IA para acelerar a análise de demandas e o desenvolvimento de funcionalidades. Nossa equipe
-              define as regras com a empresa, revisa a implementação, testa os fluxos e acompanha a publicação.
-              Isso permite evoluir a plataforma com novos módulos, integrações e experiências específicas para cada operação.
-            </p>
-            <p class="mt-3 max-w-3xl text-base leading-relaxed text-white/85">
-              Para projetos sob medida fora da plataforma — sistemas internos, integrações e novas frentes —,
-              o <strong>codafacil.dev</strong> é o braço da SVD de desenvolvimento orientado por IA.
-            </p>
-          </div>
-
-          <div class="flex flex-col items-stretch gap-3 sm:min-w-[280px]">
-            <a href="https://codafacil.dev" target="_blank" rel="noopener" class="inline-flex items-center justify-center rounded-full border border-white/75 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10">
-              Conhecer Codafacil
-            </a>
-          </div>
-        </div>
-
-        <div class="mt-6 grid gap-3 text-sm text-white/90 sm:grid-cols-2 lg:grid-cols-4">
-          <div class="rounded-2xl border border-white/20 bg-white/5 px-4 py-3">Regras definidas com a empresa</div>
-          <div class="rounded-2xl border border-white/20 bg-white/5 px-4 py-3">Implementação revisada pela equipe</div>
-          <div class="rounded-2xl border border-white/20 bg-white/5 px-4 py-3">Fluxos testados antes de publicar</div>
-          <div class="rounded-2xl border border-white/20 bg-white/5 px-4 py-3">Publicação acompanhada</div>
-        </div>
-      </div>
-    </section>
-
     <?php /*
      * ASSISTENTE DE IA NO ESCRITORIO — 16/11/2026.
      * Separado da secao da BFR logo abaixo de proposito: la e agente no WhatsApp
@@ -584,6 +478,153 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
         </div>
       </div>
     </section>
+
+    <section id="cases" class="scroll-mt-28 py-10">
+      <h4 class="font-[var(--font-heading)] text-[30px] font-semibold">Operações no ar</h4>
+      <div class="mt-2 h-1 w-[72px] rounded-full bg-white"></div>
+      <h2 class="mt-4 font-[var(--font-heading)] text-xl font-semibold sm:text-2xl">
+        Sistemas desenvolvidos e mantidos pela Sistema Venda Direta — de venda direta e e-commerce a ERP, SaaS e IA.
+      </h2>
+
+      <div class="mt-6 grid gap-4 md:grid-cols-2">
+        <?php foreach ($clientCases as $case): ?>
+          <article class="flex flex-col rounded-2xl border border-white/20 bg-white/5 p-5">
+            <div class="flex items-center justify-center rounded-xl <?= (($case['logoBg'] ?? '') === 'escuro') ? 'bg-slate-900' : 'bg-white' ?> px-5 py-4">
+              <picture>
+                <?php /* source so quando o arquivo existe: <source> apontando pra 404 NAO
+         cai no <img>, mostra imagem quebrada */ ?>
+                <?php if (is_file(__DIR__ . '/' . $case['logo'])): ?>
+                <source srcset="<?= htmlspecialchars($case['logo'], ENT_QUOTES, 'UTF-8') ?>" type="image/webp" />
+                <?php endif; ?>
+                <img
+                  src="<?= htmlspecialchars($case['logoFallback'], ENT_QUOTES, 'UTF-8') ?>"
+                  alt="<?= htmlspecialchars($case['name'], ENT_QUOTES, 'UTF-8') ?>"
+                  class="h-14 w-auto max-w-full object-contain sm:h-14"
+                  width="<?= (int) $case['logoWidth'] ?>"
+                  height="<?= (int) $case['logoHeight'] ?>"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+
+            <p class="mt-4 text-xs font-semibold uppercase tracking-[0.18em] text-white/70"><?= htmlspecialchars($case['segment'], ENT_QUOTES, 'UTF-8') ?></p>
+            <h3 class="mt-1 font-[var(--font-heading)] text-lg font-semibold"><?= htmlspecialchars($case['name'], ENT_QUOTES, 'UTF-8') ?></h3>
+            <p class="mt-2 text-sm leading-relaxed text-white/90"><?= htmlspecialchars($case['summary'], ENT_QUOTES, 'UTF-8') ?></p>
+
+            <ul class="mt-4 grid gap-2 text-sm text-white/90">
+              <?php foreach ($case['highlights'] as $highlight): ?>
+                <li class="flex items-start gap-2 rounded-xl border border-white/20 bg-white/5 px-3 py-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-amber-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span><?= htmlspecialchars($highlight, ENT_QUOTES, 'UTF-8') ?></span></li>
+              <?php endforeach; ?>
+            </ul>
+
+            <?php if (!empty($case['url'])): ?>
+              <a
+                href="<?= htmlspecialchars($case['url'], ENT_QUOTES, 'UTF-8') ?>"
+                target="_blank"
+                rel="noopener"
+                class="mt-5 inline-flex items-center justify-center rounded-full border border-white/70 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10"
+              >
+                Visitar operação
+              </a>
+            <?php else: ?>
+              <a
+                href="cases/#<?= htmlspecialchars($case['slug'], ENT_QUOTES, 'UTF-8') ?>"
+                class="mt-5 inline-flex items-center justify-center rounded-full border border-white/70 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10"
+              >
+                Ver o case completo
+              </a>
+            <?php endif; ?>
+          </article>
+        <?php endforeach; ?>
+      </div>
+
+      <a href="cases/" class="mt-6 inline-flex rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10">
+        Ver todos os cases
+      </a>
+    </section>
+
+    <section class="py-8">
+      <h3 class="font-[var(--font-heading)] text-xl font-semibold">Veja abaixo um video explicando o funcionamento básico do sistema</h3>
+      <div class="mt-4 overflow-hidden rounded-2xl border border-white/20 bg-brand-dark/30">
+        <div class="aspect-video">
+          <iframe
+            class="h-full w-full"
+            title="YouTube video player"
+            src="https://www.youtube.com/embed/b1-JqxgRhas"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <?php /* 23/11/2026: "Por que escolher", "Caracteristicas do Sistema" e
+             "Vantagens" eram tres secoes genericas seguidas (duas animacoes so de
+             enfeite) entre as funcionalidades e o que diferencia de verdade. Viraram
+             uma. "sistema venda direta" segue no texto: a home e top 3 nessa busca.
+             id="vantagens" mantido no grid porque o menu mobile aponta pra ele. */ ?>
+    <section id="porque" class="scroll-mt-28 py-10">
+      <div class="grid items-center gap-6 lg:grid-cols-2">
+        <div class="mx-auto w-full max-w-[420px] rounded-2xl bg-brand-soft/25 p-2 ring-1 ring-white/15">
+          <div class="lottie-box h-[240px] w-full sm:h-[320px]" data-lottie-src="imagens/lottie-porque.json" data-lottie-mobile="false" aria-label="Animação de gestão"></div>
+        </div>
+
+        <div>
+          <h4 class="font-[var(--font-heading)] text-[30px] font-semibold leading-tight">Por que escolher a Sistema Venda Direta?</h4>
+          <div class="mt-2 h-1 w-[72px] rounded-full bg-white"></div>
+          <p class="mt-4 text-base leading-relaxed text-white/90">
+            O sistema venda direta foi desenhado para empresas de marketing multinível, venda direta e marketing de rede, por um
+            time que desenvolve sistemas desde 2002. Funciona com quatro módulos — Administração, Centro de Distribuição,
+            Escritório Virtual e Loja Virtual —, com integração com ERP, relatórios em tempo real e plano de compensação
+            configurado conforme as regras da sua empresa.
+          </p>
+          <div id="vantagens" class="mt-5 grid gap-3 text-sm text-white/90 sm:grid-cols-3">
+            <div class="rounded-2xl border border-white/20 bg-white/5 px-4 py-3"><strong>Economia:</strong> administração e controle no mesmo sistema online.</div>
+            <div class="rounded-2xl border border-white/20 bg-white/5 px-4 py-3"><strong>Sob medida:</strong> visão diferente? Desenvolvemos para você.</div>
+            <div class="rounded-2xl border border-white/20 bg-white/5 px-4 py-3"><strong>Facilidade:</strong> simples para o consultor e para o administrador.</div>
+          </div>
+          <a href="#form" class="mt-6 inline-flex rounded-full border border-white/70 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10">
+            Orçamento
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="desenvolvimento-ia" class="scroll-mt-28 py-10">
+      <div class="rounded-[30px] border border-white/30 bg-white/[0.06] p-6 sm:p-8">
+        <div class="grid items-center gap-6 lg:grid-cols-[1fr_auto]">
+          <div>
+            <h4 class="font-[var(--font-heading)] text-[30px] font-semibold leading-tight">Tecnologia que evolui com o seu negócio</h4>
+            <div class="mt-2 h-1 w-[72px] rounded-full bg-white"></div>
+            <p class="mt-4 max-w-3xl text-base leading-relaxed text-white/90">
+              Usamos IA para acelerar a análise de demandas e o desenvolvimento de funcionalidades. Nossa equipe
+              define as regras com a empresa, revisa a implementação, testa os fluxos e acompanha a publicação.
+              Isso permite evoluir a plataforma com novos módulos, integrações e experiências específicas para cada operação.
+            </p>
+            <p class="mt-3 max-w-3xl text-base leading-relaxed text-white/85">
+              Para projetos sob medida fora da plataforma — sistemas internos, integrações e novas frentes —,
+              o <strong>codafacil.dev</strong> é o braço da SVD de desenvolvimento orientado por IA.
+            </p>
+          </div>
+
+          <div class="flex flex-col items-stretch gap-3 sm:min-w-[280px]">
+            <a href="https://codafacil.dev" target="_blank" rel="noopener" class="inline-flex items-center justify-center rounded-full border border-white/75 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10">
+              Conhecer Codafacil
+            </a>
+          </div>
+        </div>
+
+        <div class="mt-6 grid gap-3 text-sm text-white/90 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="rounded-2xl border border-white/20 bg-white/5 px-4 py-3">Regras definidas com a empresa</div>
+          <div class="rounded-2xl border border-white/20 bg-white/5 px-4 py-3">Implementação revisada pela equipe</div>
+          <div class="rounded-2xl border border-white/20 bg-white/5 px-4 py-3">Fluxos testados antes de publicar</div>
+          <div class="rounded-2xl border border-white/20 bg-white/5 px-4 py-3">Publicação acompanhada</div>
+        </div>
+      </div>
+    </section>
+
 
     <?php
     /*
@@ -685,69 +726,6 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
       </a>
     </section>
 
-    <section id="cases" class="scroll-mt-28 py-10">
-      <h4 class="font-[var(--font-heading)] text-[30px] font-semibold">Operações no ar</h4>
-      <div class="mt-2 h-1 w-[72px] rounded-full bg-white"></div>
-      <h2 class="mt-4 font-[var(--font-heading)] text-xl font-semibold sm:text-2xl">
-        Sistemas desenvolvidos e mantidos pela Sistema Venda Direta — de venda direta e e-commerce a ERP, SaaS e IA.
-      </h2>
-
-      <div class="mt-6 grid gap-4 md:grid-cols-2">
-        <?php foreach ($clientCases as $case): ?>
-          <article class="flex flex-col rounded-2xl border border-white/20 bg-white/5 p-5">
-            <div class="flex items-center justify-center rounded-xl <?= (($case['logoBg'] ?? '') === 'escuro') ? 'bg-slate-900' : 'bg-white' ?> px-5 py-4">
-              <picture>
-                <?php /* source so quando o arquivo existe: <source> apontando pra 404 NAO
-         cai no <img>, mostra imagem quebrada */ ?>
-                <?php if (is_file(__DIR__ . '/' . $case['logo'])): ?>
-                <source srcset="<?= htmlspecialchars($case['logo'], ENT_QUOTES, 'UTF-8') ?>" type="image/webp" />
-                <?php endif; ?>
-                <img
-                  src="<?= htmlspecialchars($case['logoFallback'], ENT_QUOTES, 'UTF-8') ?>"
-                  alt="<?= htmlspecialchars($case['name'], ENT_QUOTES, 'UTF-8') ?>"
-                  class="h-14 w-auto max-w-full object-contain sm:h-14"
-                  width="<?= (int) $case['logoWidth'] ?>"
-                  height="<?= (int) $case['logoHeight'] ?>"
-                  loading="lazy"
-                />
-              </picture>
-            </div>
-
-            <p class="mt-4 text-xs font-semibold uppercase tracking-[0.18em] text-white/70"><?= htmlspecialchars($case['segment'], ENT_QUOTES, 'UTF-8') ?></p>
-            <h3 class="mt-1 font-[var(--font-heading)] text-lg font-semibold"><?= htmlspecialchars($case['name'], ENT_QUOTES, 'UTF-8') ?></h3>
-            <p class="mt-2 text-sm leading-relaxed text-white/90"><?= htmlspecialchars($case['summary'], ENT_QUOTES, 'UTF-8') ?></p>
-
-            <ul class="mt-4 grid gap-2 text-sm text-white/90">
-              <?php foreach ($case['highlights'] as $highlight): ?>
-                <li class="flex items-start gap-2 rounded-xl border border-white/20 bg-white/5 px-3 py-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-amber-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span><?= htmlspecialchars($highlight, ENT_QUOTES, 'UTF-8') ?></span></li>
-              <?php endforeach; ?>
-            </ul>
-
-            <?php if (!empty($case['url'])): ?>
-              <a
-                href="<?= htmlspecialchars($case['url'], ENT_QUOTES, 'UTF-8') ?>"
-                target="_blank"
-                rel="noopener"
-                class="mt-5 inline-flex items-center justify-center rounded-full border border-white/70 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10"
-              >
-                Visitar operação
-              </a>
-            <?php else: ?>
-              <a
-                href="cases/#<?= htmlspecialchars($case['slug'], ENT_QUOTES, 'UTF-8') ?>"
-                class="mt-5 inline-flex items-center justify-center rounded-full border border-white/70 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10"
-              >
-                Ver o case completo
-              </a>
-            <?php endif; ?>
-          </article>
-        <?php endforeach; ?>
-      </div>
-
-      <a href="cases/" class="mt-6 inline-flex rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10">
-        Ver todos os cases
-      </a>
-    </section>
 
     <section id="clientes" class="scroll-mt-28 py-10">
       <h4 class="font-[var(--font-heading)] text-[30px] font-semibold">Quem usa e recomenda!</h4>

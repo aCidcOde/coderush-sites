@@ -5,7 +5,7 @@ declare(strict_types=1);
 [Modulo Landing de Oferta SVD — trafego pago]
 @Author: André Gomes ( @acidcode )
 @since 2026-08-02
-Landing dedicada a campanha patrocinada: instalacao promocional (2x ou a vista) + implantacao assistida por IA.
+Landing do grupo Venda Direta: demonstracao (aberta e guiada), instalacao promocional e assistente de IA no escritorio.
 Nao e linkada pelo index (trafego pago). noindex por ser pagina de campanha com prazo.
 
 Parametros da campanha ficam no bloco de configuracao abaixo — alterar so aqui.
@@ -31,7 +31,7 @@ $promoDeadline = PROMO_DEADLINE;
 [$promoSlots, $promoSlotsFilled] = promoVagas() ?? [0, 0];
 $promoSlotsLeft = max(0, $promoSlots - $promoSlotsFilled);
 $whatsappPhone = '5511994566726';
-$whatsappMessage = 'Ola! vim ' . promoOrigemZap() . ' do Sistema Venda Direta. Quero garantir minha vaga.';
+$whatsappMessage = 'Ola! vim ' . promoOrigemZap() . ' do Sistema Venda Direta. Quero ver o sistema rodando com o meu plano.';
 
 $monthlyTiers = [
     ['revenue' => 'até R$ 50 mil', 'price' => 'R$ 500'],
@@ -243,14 +243,39 @@ $seoDescription = 'Sistema de marketing multinível (MMN) e venda direta: escrit
           <?= htmlspecialchars(PROMO_SELO, ENT_QUOTES, 'UTF-8') ?>
         </p>
         <?php endif; ?>
+        <?php /* 23/11/2026: o H1 abria com "Sistema de marketing multinivel..." e o
+                 paragrafo com "Plataforma completa de MMN... binaria e unilevel".
+                 Desde a Fim de Ano esta pagina e destino SO do grupo Venda Direta
+                 (o grupo MMN vai pra /sistema-mmn/), e quem buscou "sistema de venda
+                 direta" lia multinivel antes de qualquer outra coisa — as sessoes
+                 pagas daqui duraram 12 s em media contra 3,5 min na /sistema-mmn/.
+                 "Multinivel" continua no paragrafo e no <title>: foi a falta dela
+                 que derrubou o Indice de Qualidade desta pagina em setembro.
+
+                 A demonstracao virou botao do topo, como na /sistema-mmn/; o preco
+                 desceu pro cartao logo abaixo. */ ?>
         <h1 class="mt-4 font-[var(--font-heading)] text-3xl font-bold leading-[1.1] sm:text-4xl lg:text-[46px]">
-          Sistema de marketing multinível e venda direta <?php if ($promoActive): ?>no ar com <span class="text-amber-300">até <?= (int) $discountCashPct ?>% de desconto</span> na instalação<?php else: ?>pronto para operar<?php endif; ?>
+          Sistema de venda direta para a sua rede de consultores
         </h1>
         <p class="mt-4 max-w-3xl text-base leading-relaxed text-white/90 sm:text-lg">
-          Plataforma completa de MMN (marketing multinível): escritório virtual do consultor, rede binária e unilevel, loja, pedidos,
-          financeiro e relatórios. Sem construir nada do zero — o sistema já existe, roda hoje e é parametrizado para a sua regra de negócio.
+          <?php if ($promoActive): ?><strong class="text-amber-200">Feche 2026 na planilha pela última vez.</strong> <?php endif; ?>Pedidos, comissão, loja e escritório do consultor no mesmo
+          sistema — com rede unilevel ou binária quando a operação é de marketing multinível. O sistema já existe, roda hoje
+          e é configurado com a regra da sua empresa.
         </p>
 
+        <div class="mt-6 grid max-w-3xl gap-3 sm:grid-cols-2">
+          <a href="<?= htmlspecialchars(DEMO_URL . '?utm_source=site&utm_medium=oferta&utm_campaign=demo&utm_content=hero', ENT_QUOTES, 'UTF-8') ?>" target="_blank" rel="noopener"
+             class="inline-flex items-center justify-center rounded-full bg-amber-400 px-6 py-3.5 text-sm font-bold uppercase tracking-wide text-brand transition hover:-translate-y-0.5 hover:bg-amber-300">
+            Entrar na demonstração
+          </a>
+          <a href="<?= htmlspecialchars($whatsappHref, ENT_QUOTES, 'UTF-8') ?>" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-full bg-[#25D366] px-6 py-3.5 text-sm font-bold uppercase tracking-wide text-white transition hover:-translate-y-0.5">
+            Falar no WhatsApp
+          </a>
+        </div>
+        <p class="mt-3 text-sm text-white/70">
+          Loja, escritório e painel, sem cadastro. Prefere ver com o seu plano?
+          <a href="#garantir" class="font-semibold text-amber-200 underline decoration-amber-300/50 underline-offset-4 hover:text-white">Peça a demonstração guiada</a>.
+        </p>
       </div>
 
       <div class="mt-8 grid items-stretch gap-6 lg:grid-cols-2">
@@ -264,22 +289,8 @@ $seoDescription = 'Sistema de marketing multinível (MMN) e venda direta: escrit
           <p class="mt-2 text-sm text-white/85">
             <?php if ($promoActive): ?>Parcelado: metade no fechamento, metade na entrega. À vista: <strong><?= htmlspecialchars($moneyCash, ENT_QUOTES, 'UTF-8') ?></strong> no fechamento. <?php endif; ?>Mensalidade a partir de <strong>R$ 500</strong>, proporcional ao seu faturamento.
           </p>
-          <div class="mt-5 grid gap-3 sm:grid-cols-2">
-            <a href="#garantir" class="inline-flex items-center justify-center rounded-full bg-amber-400 px-6 py-3.5 text-sm font-bold uppercase tracking-wide text-brand transition hover:-translate-y-0.5 hover:bg-amber-300">
-              <?= $promoActive ? 'Quero garantir o desconto' : 'Quero uma proposta' ?>
-            </a>
-            <a href="<?= htmlspecialchars($whatsappHref, ENT_QUOTES, 'UTF-8') ?>" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-full bg-[#25D366] px-6 py-3.5 text-sm font-bold uppercase tracking-wide text-white transition hover:-translate-y-0.5">
-              Chamar no WhatsApp
-            </a>
-          </div>
-          <?php /* A Promocao de Fim de Ano anuncia a demonstracao ("entre e teste,
-                   sem cadastro"); quem clica por isso tem que achar ela aqui, no
-                   primeiro bloco, e nao so no link pequeno do cabecalho. Pedir
-                   contato era o UNICO caminho desta dobra — e a seca de lead de
-                   outubro parou justamente nesse passo. */ ?>
-          <a href="<?= htmlspecialchars(DEMO_URL . '?utm_source=site&utm_medium=oferta&utm_campaign=demo&utm_content=hero', ENT_QUOTES, 'UTF-8') ?>" target="_blank" rel="noopener"
-             class="mt-3 inline-flex items-center justify-center text-sm font-semibold text-amber-200 underline decoration-amber-300/50 underline-offset-4 hover:text-white">
-            Quer ver antes? Entre na demonstração — loja, escritório e painel, sem cadastro &rarr;
+          <a href="#garantir" class="mt-5 inline-flex items-center justify-center rounded-full border border-amber-300/60 px-6 py-3 text-sm font-bold uppercase tracking-wide text-amber-200 hover:bg-white/10">
+            <?= $promoActive ? 'Quero garantir o desconto' : 'Quero uma proposta' ?>
           </a>
           <?php if ($promoActive && $promoSlots > 0): ?>
             <p class="mt-3 text-center text-xs text-white/70">
@@ -331,36 +342,7 @@ $seoDescription = 'Sistema de marketing multinível (MMN) e venda direta: escrit
     </section>
 
     <section class="py-10">
-      <h2 class="font-[var(--font-heading)] text-2xl font-bold sm:text-[32px]">Implantação assistida por IA</h2>
-      <div class="mt-2 h-1 w-[72px] rounded-full bg-amber-300"></div>
-      <p class="mt-4 max-w-3xl text-base leading-relaxed text-white/90">
-        A parte lenta de colocar um sistema de venda direta no ar nunca foi o sistema — é a carga de dados, a tradução,
-        a parametrização do plano e os testes. É exatamente aí que aplicamos IA no nosso processo de implantação,
-        com revisão humana em cima de tudo que entra em produção.
-      </p>
-
-      <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-        <div class="rounded-2xl border border-white/20 bg-white/5 p-5">
-          <h3 class="font-semibold">Carga de catálogo</h3>
-          <p class="mt-2 text-sm leading-relaxed text-white/85">Descrição, categoria e preço tratados em lote. Na última implantação foram 170 SKUs carregados e reagrupados em 6 famílias.</p>
-        </div>
-        <div class="rounded-2xl border border-white/20 bg-white/5 p-5">
-          <h3 class="font-semibold">Tradução da plataforma</h3>
-          <p class="mt-2 text-sm leading-relaxed text-white/85">Cerca de 900 chaves em português, espanhol e inglês cobrindo loja, cadastro, escritório e login.</p>
-        </div>
-        <div class="rounded-2xl border border-white/20 bg-white/5 p-5">
-          <h3 class="font-semibold">Textos da marca</h3>
-          <p class="mt-2 text-sm leading-relaxed text-white/85">Conteúdo institucional escrito a partir do seu material técnico, no lugar do texto genérico de sistema.</p>
-        </div>
-        <div class="rounded-2xl border border-white/20 bg-white/5 p-5">
-          <h3 class="font-semibold">Testes e revisão</h3>
-          <p class="mt-2 text-sm leading-relaxed text-white/85">Varredura de moeda, formulários e segurança antes do primeiro consultor entrar no sistema.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="py-10">
-      <h2 class="font-[var(--font-heading)] text-2xl font-bold sm:text-[32px]">O que o sistema de marketing multinível já traz pronto</h2>
+      <h2 class="font-[var(--font-heading)] text-2xl font-bold sm:text-[32px]">O que o sistema já traz pronto — venda direta e multinível</h2>
       <div class="mt-2 h-1 w-[72px] rounded-full bg-amber-300"></div>
 
       <div class="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -392,17 +374,70 @@ $seoDescription = 'Sistema de marketing multinível (MMN) e venda direta: escrit
       </p>
     </section>
 
-    <section class="py-6">
-      <h2 class="font-[var(--font-heading)] text-xl font-bold sm:text-2xl">Tecnologia por trás da sua operação</h2>
-      <div class="mt-2 h-1 w-[56px] rounded-full bg-amber-300"></div>
-      <div class="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-        <div class="flex items-start gap-3 rounded-2xl border border-white/20 bg-white/5 px-4 py-3"><svg class="h-5 w-5 shrink-0 text-amber-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span class="text-sm leading-relaxed text-white/90"><strong>Proteção Cloudflare</strong> contra ataques e sobrecarga</span></div>
-        <div class="flex items-start gap-3 rounded-2xl border border-white/20 bg-white/5 px-4 py-3"><svg class="h-5 w-5 shrink-0 text-amber-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg><span class="text-sm leading-relaxed text-white/90"><strong>Infraestrutura dedicada</strong> — nada compartilhado com terceiros</span></div>
-        <div class="flex items-start gap-3 rounded-2xl border border-white/20 bg-white/5 px-4 py-3"><svg class="h-5 w-5 shrink-0 text-amber-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg><span class="text-sm leading-relaxed text-white/90"><strong>SSL automático</strong> e cookies de sessão endurecidos</span></div>
-        <div class="flex items-start gap-3 rounded-2xl border border-white/20 bg-white/5 px-4 py-3"><svg class="h-5 w-5 shrink-0 text-amber-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg><span class="text-sm leading-relaxed text-white/90"><strong>Backups replicados</strong> em ambiente externo</span></div>
+    <?php /* 23/11/2026: substitui "Implantacao assistida por IA", que falava de
+             como A GENTE usa IA (170 SKUs, 900 chaves de traducao de uma implantacao
+             so). Quem compra quer saber o que a rede DELE ganha. Texto alinhado com
+             a secao #assistente-ia da home; Medinho so como exemplo, sem cliente. */ ?>
+    <section class="py-10">
+      <h2 class="font-[var(--font-heading)] text-2xl font-bold sm:text-[32px]">Assistente de IA no escritório do consultor</h2>
+      <div class="mt-2 h-1 w-[72px] rounded-full bg-amber-300"></div>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-white/90">
+        Menos dúvida repetida no suporte. O assistente ajuda o consultor a consultar as próprias informações e a entender
+        pedidos, pontos, rede e regras do plano em linguagem simples, dentro do escritório virtual. O <strong>Medinho</strong>
+        é um exemplo de assistente integrado assim.
+      </p>
+      <div class="mt-6 grid gap-3 text-sm text-white/90 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="rounded-2xl border border-white/20 bg-white/5 px-4 py-3">Consulta pedidos, pontos e rede</div>
+        <div class="rounded-2xl border border-white/20 bg-white/5 px-4 py-3">Explica o plano em linguagem simples</div>
+        <div class="rounded-2xl border border-white/20 bg-white/5 px-4 py-3">Respeita conta e permissões</div>
+        <div class="rounded-2xl border border-white/20 bg-white/5 px-4 py-3">Alterações só nos fluxos autorizados</div>
       </div>
+      <p class="mt-4 text-sm text-white/70">
+        Decisões financeiras e alterações operacionais continuam nos fluxos autorizados do sistema. Escopo e disponibilidade
+        são definidos em cada implantação.
+      </p>
     </section>
 
+    <?php /* 23/11/2026: junta tres blocos que falavam do nosso processo
+             (implantacao com IA, tecnologia, "10 dias / migracao / Bling") num so,
+             contado do lado de quem contrata. Hospedagem e seguranca ficaram no FAQ. */ ?>
+    <section class="py-10">
+      <h2 class="font-[var(--font-heading)] text-2xl font-bold sm:text-[32px]">Como o sistema entra no ar</h2>
+      <div class="mt-2 h-1 w-[72px] rounded-full bg-amber-300"></div>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-white/90">
+        O sistema já existe — o trabalho é colocar a sua operação dentro dele. A IA acelera a carga de dados e a tradução;
+        a equipe revisa e testa tudo antes de publicar.
+      </p>
+      <div class="mt-6 grid gap-4 md:grid-cols-3">
+        <div class="rounded-2xl border border-amber-300/40 bg-white/[0.07] p-5">
+          <p class="font-[var(--font-heading)] text-lg font-bold text-amber-300">1. Seu plano configurado</p>
+          <p class="mt-2 text-sm leading-relaxed text-white/90">Comissão, bônus, cargos e qualificação parametrizados com a regra da sua empresa — binário, unilevel, por cargo ou modelo próprio.</p>
+        </div>
+        <div class="rounded-2xl border border-amber-300/40 bg-white/[0.07] p-5">
+          <p class="font-[var(--font-heading)] text-lg font-bold text-amber-300">2. Seus dados migrados</p>
+          <p class="mt-2 text-sm leading-relaxed text-white/90">Vindo de planilha ou de outro sistema, trazemos cadastro, rede e catálogo com escopo e preço definidos antes do contrato.</p>
+        </div>
+        <div class="rounded-2xl border border-amber-300/40 bg-white/[0.07] p-5">
+          <p class="font-[var(--font-heading)] text-lg font-bold text-amber-300">3. No ar com a sua marca</p>
+          <p class="mt-2 text-sm leading-relaxed text-white/90">Loja, escritório e administrativo no seu domínio, testados antes do primeiro consultor entrar. Integração com o Bling, nosso ERP parceiro, ou com o que você já usa.</p>
+        </div>
+      </div>
+
+      <figure class="mt-6 rounded-2xl border border-white/20 bg-white/5 p-5 sm:p-6">
+        <blockquote class="text-base leading-relaxed text-white/90">
+          "Há mais de 10 anos usamos o sistema venda direta, que nos ajuda a gerenciar nossa rede de distribuidores
+          e a aumentar nossas vendas com perfeição, eu recomendo!"
+        </blockquote>
+        <figcaption class="mt-3 text-sm font-semibold text-white/80">Leandro Sato — Ecotrend South America <span class="ml-2 text-amber-300">★★★★★</span></figcaption>
+      </figure>
+    </section>
+
+    <section class="py-10">
+      <h2 class="font-[var(--font-heading)] text-2xl font-bold sm:text-[32px]">Não é promessa — é operação rodando</h2>
+      <div class="mt-2 h-1 w-[72px] rounded-full bg-amber-300"></div>
+
+      <?= promoVitrine("../") ?>
+    </section>
 
     <section class="py-10">
       <h2 class="font-[var(--font-heading)] text-2xl font-bold sm:text-[32px]">Mensalidade proporcional ao seu faturamento</h2>
@@ -526,62 +561,6 @@ $seoDescription = 'Sistema de marketing multinível (MMN) e venda direta: escrit
       </script>
     </section>
 
-    <section class="py-10">
-      <h2 class="font-[var(--font-heading)] text-2xl font-bold sm:text-[32px]">Não é promessa — é operação rodando</h2>
-      <div class="mt-2 h-1 w-[72px] rounded-full bg-amber-300"></div>
-
-      <?= promoVitrine("../") ?>
-    </section>
-
-
-
-    <section class="py-6">
-      <div class="grid gap-4 md:grid-cols-3">
-        <div class="rounded-2xl border border-amber-300/40 bg-white/[0.07] p-5">
-          <p class="font-[var(--font-heading)] text-lg font-bold text-amber-300">No ar em dias, não meses</p>
-          <p class="mt-2 text-sm leading-relaxed text-white/90">A última implantação internacional entrou em produção em 10 dias — loja, escritório e administrativo. O sistema já existe; o trabalho é parametrizar a sua regra.</p>
-        </div>
-        <div class="rounded-2xl border border-amber-300/40 bg-white/[0.07] p-5">
-          <p class="font-[var(--font-heading)] text-lg font-bold text-amber-300">Migração com valor fechado</p>
-          <p class="mt-2 text-sm leading-relaxed text-white/90">Vindo de outro sistema? Migramos seus dados com escopo e preço definidos antes do contrato — sem surpresa no meio do caminho.</p>
-        </div>
-        <div class="rounded-2xl border border-amber-300/40 bg-white/[0.07] p-5">
-          <p class="font-[var(--font-heading)] text-lg font-bold text-amber-300">Integração com Bling</p>
-          <p class="mt-2 text-sm leading-relaxed text-white/90">Pedidos, estoque e faturamento sincronizados com o Bling, nosso ERP parceiro — e se você já usa outro ERP, integramos com ele.</p>
-        </div>
-      </div>
-
-      <figure class="mt-6 rounded-2xl border border-white/20 bg-white/5 p-5 sm:p-6">
-        <blockquote class="text-base leading-relaxed text-white/90">
-          "Há mais de 10 anos usamos o sistema venda direta, que nos ajuda a gerenciar nossa rede de distribuidores
-          e a aumentar nossas vendas com perfeição, eu recomendo!"
-        </blockquote>
-        <figcaption class="mt-3 text-sm font-semibold text-white/80">Leandro Sato — Ecotrend South America <span class="ml-2 text-amber-300">★★★★★</span></figcaption>
-      </figure>
-    </section>
-
-    <section class="py-6">
-      <div class="rounded-[30px] border border-white/30 bg-white/[0.08] p-6 sm:p-8">
-        <div class="grid items-center gap-6 lg:grid-cols-[1fr_auto]">
-          <div>
-            <h2 class="font-[var(--font-heading)] text-2xl font-bold sm:text-[28px]">Quer conhecer a plataforma por completo?</h2>
-            <p class="mt-3 max-w-2xl text-base leading-relaxed text-white/90">
-              Entre no ambiente de demonstração e navegue pelo sistema inteiro: loja, escritório do
-              consultor e painel administrativo, com dados de uma operação real. Sem cadastro.
-            </p>
-          </div>
-          <div class="flex flex-col items-stretch gap-3 sm:min-w-[280px]">
-            <a href="https://painel.sistemavendadireta.com.br/primeiros-passos?utm_source=site&utm_medium=oferta&utm_campaign=demo" target="_blank" rel="noopener" class="inline-flex items-center justify-center rounded-full border border-white/75 px-6 py-3 text-sm font-bold uppercase tracking-wide hover:bg-white/10">
-              Conhecer o Sistema Venda Direta
-            </a>
-            <a href="../cases/" class="inline-flex items-center justify-center rounded-full border border-white/35 px-6 py-3 text-sm font-semibold uppercase tracking-wide hover:bg-white/10">
-              Ver os cases
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <?php
     /*
      * PARCERIA BFR INTELLIGENCE — agentes de IA para degustacao.
@@ -658,15 +637,15 @@ $seoDescription = 'Sistema de marketing multinível (MMN) e venda direta: escrit
         <div class="grid gap-8 lg:grid-cols-[1fr_1fr]">
           <div>
             <h2 class="font-[var(--font-heading)] text-2xl font-bold sm:text-[32px]">
-              <?php if ($promoActive): ?>Garanta a instalação por <span class="text-amber-300"><?= htmlspecialchars($moneyTo, ENT_QUOTES, 'UTF-8') ?></span> — ou <span class="text-amber-300"><?= htmlspecialchars($moneyCash, ENT_QUOTES, 'UTF-8') ?></span> à vista<?php else: ?>Receba uma proposta para a sua operação<?php endif; ?>
+              Veja o sistema rodando com <span class="text-amber-300">o seu plano</span>
             </h2>
             <p class="mt-3 text-base leading-relaxed text-white/90">
-              Deixe seu WhatsApp. Uma pessoa da equipe entra em contato, entende seu plano de negócio
-              e te mostra o sistema rodando — sem apresentação genérica.
+              Deixe seu WhatsApp. Na demonstração guiada, de 20 minutos, alguém da equipe entende o seu plano
+              e mostra o sistema rodando com as regras da sua empresa — sem apresentação genérica.
             </p>
             <?php if ($promoActive): ?>
               <p class="mt-4 inline-flex rounded-full border border-amber-300/50 bg-amber-400/15 px-4 py-2 text-sm font-semibold text-amber-200">
-                Condição válida até <?= htmlspecialchars($deadlineLabel, ENT_QUOTES, 'UTF-8') ?>
+                Instalação por <?= htmlspecialchars($moneyTo, ENT_QUOTES, 'UTF-8') ?> em 2x ou <?= htmlspecialchars($moneyCash, ENT_QUOTES, 'UTF-8') ?> à vista até <?= htmlspecialchars($deadlineLabel, ENT_QUOTES, 'UTF-8') ?>
               </p>
             <?php endif; ?>
 
@@ -687,8 +666,9 @@ $seoDescription = 'Sistema de marketing multinível (MMN) e venda direta: escrit
             >
               <input type="hidden" name="redirect" value="/sistema-venda-direta/" />
               <input type="hidden" name="origem" value="lp-sistema-venda-direta" />
-              <input type="hidden" name="servico" value="Sistema Venda Direta — instalacao promocional" />
-              <input type="hidden" name="mensagem" value="Lead da LP de oferta (instalacao promocional)" />
+              <?php /* A equipe precisa saber o que foi prometido: demonstracao guiada com o plano da pessoa. */ ?>
+              <input type="hidden" name="servico" value="Sistema Venda Direta — demonstração guiada" />
+              <input type="hidden" name="mensagem" value="Pediu demonstração guiada com o próprio plano (LP venda direta)" />
 
               <div>
                 <label for="contact-nome" class="mb-2 block text-sm font-medium text-white/90">Nome</label>
@@ -701,7 +681,7 @@ $seoDescription = 'Sistema de marketing multinível (MMN) e venda direta: escrit
               </div>
 
               <button type="submit" class="inline-flex w-full items-center justify-center rounded-full bg-amber-400 px-5 py-3.5 text-sm font-bold uppercase tracking-wide text-brand transition hover:-translate-y-0.5 hover:bg-amber-300">
-                <?= $promoActive ? 'Quero garantir o desconto' : 'Quero uma proposta' ?>
+                Quero a demonstração guiada
               </button>
               <p class="text-center text-xs text-white/60">Sem compromisso. Respondemos em horário comercial.</p>
             </form>
@@ -746,10 +726,10 @@ $seoDescription = 'Sistema de marketing multinível (MMN) e venda direta: escrit
         <?= htmlspecialchars(PROMO_NOME, ENT_QUOTES, 'UTF-8') ?>: <?= htmlspecialchars($moneyFrom, ENT_QUOTES, 'UTF-8') ?> viram <?= htmlspecialchars($moneyCash, ENT_QUOTES, 'UTF-8') ?> à vista<?= $promoActive ? ' até ' . htmlspecialchars($deadlineLabel, ENT_QUOTES, 'UTF-8') : '' ?>
       </h2>
       <p class="mx-auto mt-3 max-w-2xl text-base leading-relaxed text-white/90">
-        Depois disso, a instalação volta ao valor cheio. Se a sua operação vai começar este ano, começar agora sai bem mais barato.
+        Depois disso, a instalação volta ao valor cheio. Se a sua operação vai rodar em 2027, fechar agora sai bem mais barato.
       </p>
       <a href="#garantir" class="mt-6 inline-flex rounded-full bg-amber-400 px-8 py-3.5 text-sm font-bold uppercase tracking-wide text-brand transition hover:-translate-y-0.5 hover:bg-amber-300">
-        Garantir minha vaga
+        Garantir o desconto
       </a>
     </section>
 

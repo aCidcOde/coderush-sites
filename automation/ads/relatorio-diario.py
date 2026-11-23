@@ -34,6 +34,8 @@ from _conta import cliente, env, resolver  # noqa: E402
 
 # abaixo disso, variacao e ruido: 35 impressoes/dia nao sustentam conclusao diaria
 MIN_CLIQUES_P_CONCLUSAO = 5
+# dia em que o painel de leads foi zerado (ver dias_sem_lead)
+CONTAGEM_DESDE = date(2026, 11, 23)
 
 
 def arg(nome, padrao=None):
@@ -101,7 +103,10 @@ def dias_sem_lead(ref=None):
             [base.isoformat()]).fetchone()[0]
         db.close()
         if not ultimo:
-            return 0
+            # 23/11/2026: o painel foi zerado pra contar so a campanha de dezembro
+            # (historico em /data/backup/svd-leads e no Drive). Banco vazio nao e
+            # "lead hoje": conta a seca a partir do dia em que a contagem recomecou.
+            return max((base - CONTAGEM_DESDE).days, 0)
         return (base - date.fromisoformat(str(ultimo)[:10])).days
     except Exception:
         return 0  # banco fora do ar nao pode derrubar o relatorio

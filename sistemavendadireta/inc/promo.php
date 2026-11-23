@@ -406,6 +406,13 @@ function promoStrip(string $origem = 'blog'): string
             . number_format(PROMO_INSTALL_AVISTA, 0, ',', '.');
         $texto = PROMO_NOME . ': até ' . promoDescontoPct() . '% de desconto na instalação — ' . $prazo . '.';
         $rotulo = 'Ver a promoção';
+        if ($origem === 'home') {
+            // Na home o H1 logo acima ja diz "sistema de marketing multinivel e
+            // venda direta"; repetir virava eco. A faixa fala so da oferta.
+            $titulo = PROMO_NOME . ': instalação de R$ ' . number_format(PROMO_INSTALL_DE, 0, ',', '.')
+                . ' por R$ ' . number_format(PROMO_INSTALL_AVISTA, 0, ',', '.') . ' à vista';
+            $texto = 'Condição válida até ' . promoPrazoCurto() . ' — ' . $prazo . '.';
+        }
     } else {
         $titulo = 'Sistema de marketing multinível e venda direta pronto para operar';
         $texto = 'Rede binária e unilevel, escritório do consultor, loja e financeiro integrados. '
@@ -423,8 +430,11 @@ function promoStrip(string $origem = 'blog'): string
     return '<aside class="mt-6 flex flex-col gap-3 rounded-2xl border border-amber-300/40 bg-amber-400/10 p-4 sm:flex-row sm:items-center sm:justify-between">'
         . '<div><p class="font-semibold text-amber-200">' . htmlspecialchars($titulo, ENT_QUOTES, 'UTF-8') . '</p>'
         . '<p class="mt-1 text-sm text-white/80">' . htmlspecialchars($texto, ENT_QUOTES, 'UTF-8') . '</p>'
-        . '<p class="mt-2 text-sm"><a href="' . $demo . '" class="font-semibold text-amber-200 underline decoration-amber-300/50 underline-offset-4 hover:text-white">'
-        . 'Ou entre na demonstração agora</a> <span class="text-white/60">— loja, escritório e painel, sem cadastro.</span></p></div>'
+        // Na home o botao "Entrar na demonstracao" esta logo acima, no topo: a
+        // segunda chamada pra mesma coisa so disputava atencao com a oferta.
+        . ($origem === 'home' ? '' : '<p class="mt-2 text-sm"><a href="' . $demo . '" class="font-semibold text-amber-200 underline decoration-amber-300/50 underline-offset-4 hover:text-white">'
+        . 'Ou entre na demonstração agora</a> <span class="text-white/60">— loja, escritório e painel, sem cadastro.</span></p>')
+        . '</div>'
         . '<a href="' . $href . '" class="inline-flex flex-shrink-0 items-center justify-center rounded-full bg-amber-300 px-5 py-2.5 text-sm font-bold uppercase tracking-[0.12em] text-brand hover:bg-amber-200">'
         . htmlspecialchars($rotulo, ENT_QUOTES, 'UTF-8') . '</a>'
         . '</aside>';
