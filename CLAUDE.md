@@ -4,12 +4,12 @@ Repositório multi-site (5 marcas) com automação de blog via OpenRouter + GitH
 
 ## Arquitetura do blog-bot
 
-`automation/blog-bot/` gera posts editoriais. **Ativos hoje (2026-11-23): `sistemavendadireta` e `bfrintelligence`** — os demais estão com `enabled: false` em `automation/blog-bot/config/sites.json` (reativar é trocar a flag). Dois tipos de destino:
+`automation/blog-bot/` gera posts editoriais. **Ativo hoje (2026-11-23): só `sistemavendadireta`** — decisão do usuário ("deixa só o sistemavendadireta"); os demais estão com `enabled: false` em `automation/blog-bot/config/sites.json` (reativar é trocar a flag). Dois tipos de destino:
 
 **File-based** (escreve PHP/HTML local + atualiza home/blog index/sitemap, deploy via push):
 - `sistemavendadireta` (Sistema Venda Direta) — **ativo**
 - ~~`coderush`~~ e ~~`codafacil`~~ — pausados em 2026-08-05 (`enabled: false`)
-- `bfrintelligence` (BFR Intelligence) — **ativo**. **Migrado de API pra file-based em 2026-08-05**. Site estático no repo, posts em `/AAAA/MM/DD/slug/index.html` com template claro próprio (`conteudos/blog.css`, branch `isBfr` no publisher). Blog index é `conteudos/index.html`. `api.php` responde 410 e `/data/` é negado; `/conteudos/artigo.html?slug=X` faz 301 pro path datado via `docker/nginx/bfr-artigo-map.conf` (regenerado por `scripts/import-bfr-legacy.py`). Embed de YouTube automático no corpo do post.
+- ~~`bfrintelligence`~~ (BFR Intelligence) — **desligado em 2026-11-23** (só o SVD segue gerando conteúdo; posts já publicados continuam no ar). Migrado de API pra file-based em 2026-08-05. Site estático no repo, posts em `/AAAA/MM/DD/slug/index.html` com template claro próprio (`conteudos/blog.css`, branch `isBfr` no publisher). Blog index é `conteudos/index.html`. `api.php` responde 410 e `/data/` é negado; `/conteudos/artigo.html?slug=X` faz 301 pro path datado via `docker/nginx/bfr-artigo-map.conf` (regenerado por `scripts/import-bfr-legacy.py`). Embed de YouTube automático no corpo do post.
 - ~~`fluxointeligenteia`~~ — **descontinuado em 2026-08-03** (`enabled: false` no sites.json): a marca foi absorvida pela BFR Intelligence. Nginx responde 301 pra `bfrintelligence.com.br` (posts → `/conteudos/artigo.html?slug=...`), EXCETO `/imagens/posts/` que continua servindo as capas referenciadas pelos artigos migrados. Os 28 posts foram migrados via `POST https://bfrintelligence.com.br/api.php` (Bearer token; exige User-Agent de navegador por causa do Cloudflare).
 
 **API target** (POST multipart cover+payload pra API externa):

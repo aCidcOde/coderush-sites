@@ -260,7 +260,7 @@
       "name": "BFR Intelligence",
       "postType": "agentes-ia-operacao",
       "language": "pt-BR",
-      "enabled": true,
+      "enabled": false,
       "baseUrl": "https://bfrintelligence.com.br",
       "outputRoot": "automation/blog-bot/out/bfrintelligence",
       "coverModel": {
