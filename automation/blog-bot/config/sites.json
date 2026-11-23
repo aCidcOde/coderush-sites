@@ -226,7 +226,7 @@
       "name": "Emergency Documentação",
       "postType": "due-diligence-certidoes",
       "language": "pt-BR",
-      "enabled": true,
+      "enabled": false,
       "baseUrl": "https://emergency.com.br",
       "target": "api",
       "api": {

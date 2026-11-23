@@ -4,7 +4,7 @@ Repositório multi-site (5 marcas) com automação de blog via OpenRouter + GitH
 
 ## Arquitetura do blog-bot
 
-`automation/blog-bot/` gera posts editoriais. **Ativos hoje (2026-08-05): `sistemavendadireta`, `bfrintelligence` e `emergency`** — os demais estão com `enabled: false` no sites.json (reativar é trocar a flag). Dois tipos de destino:
+`automation/blog-bot/` gera posts editoriais. **Ativos hoje (2026-11-23): `sistemavendadireta` e `bfrintelligence`** — os demais estão com `enabled: false` em `automation/blog-bot/config/sites.json` (reativar é trocar a flag). Dois tipos de destino:
 
 **File-based** (escreve PHP/HTML local + atualiza home/blog index/sitemap, deploy via push):
 - `sistemavendadireta` (Sistema Venda Direta) — **ativo**
@@ -13,7 +13,7 @@ Repositório multi-site (5 marcas) com automação de blog via OpenRouter + GitH
 - ~~`fluxointeligenteia`~~ — **descontinuado em 2026-08-03** (`enabled: false` no sites.json): a marca foi absorvida pela BFR Intelligence. Nginx responde 301 pra `bfrintelligence.com.br` (posts → `/conteudos/artigo.html?slug=...`), EXCETO `/imagens/posts/` que continua servindo as capas referenciadas pelos artigos migrados. Os 28 posts foram migrados via `POST https://bfrintelligence.com.br/api.php` (Bearer token; exige User-Agent de navegador por causa do Cloudflare).
 
 **API target** (POST multipart cover+payload pra API externa):
-- `emergency` (Emergency Documentação) → `https://app-hml.emergency.com.br/api/blog/posts` — **ativo** (segue publicando pela API).
+- ~~`emergency`~~ (Emergency Documentação) → `https://app-hml.emergency.com.br/api/blog/posts` — **desligado em 2026-11-23** a pedido do usuário ("não vamos mais criar conteúdo lá"). Os posts já publicados continuam no site deles. As duas últimas execuções (15 e 22/11) já falhavam com API 422 "Preencha o campo payload.sources": a pesquisa RSS voltava vazia.
 
 > Padrão de qualidade: qualquer site do hub deve passar na bateria de revisão (status, links internos, title ≤70 real, description ≤160, canonical, JSON-LD válido, gtag, segurança e pesos) antes de ir pro ar — referência é o SVD.
 
@@ -31,7 +31,7 @@ FluxoInteligente IA deve ser tratada como empresa de **agentes corporativos inte
 
 ## Cadência
 
-Cron a cada 3 dias (`0 10 3,6,9,12,15,18,21,24,27,30 * *` UTC = 07:00 SP) em `.github/workflows/blog-automation.yml`. 1 batch publica em todos os 5 sites. Manual via `workflow_dispatch`.
+Semanal: dias 1, 8, 15 e 22 (`0 10 1,8,15,22 * *` UTC = 07:00 SP) em `.github/workflows/blog-automation.yml`. 1 batch publica em todos os sites com `enabled: true`. Manual via `workflow_dispatch`.
 
 ## Modelo editorial (todos os sites)
 
