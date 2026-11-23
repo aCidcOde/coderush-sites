@@ -22,7 +22,7 @@ return [
     [
         'data' => '2026-11-23',
         'area' => 'ads',
-        'titulo' => 'Campanha de dezembro montada: plot "Feche 2026 na planilha pela última vez", volta agendada pra 01/12',
+        'titulo' => 'Fim de Ano religada em 23/11 com o plot "Feche 2026 na planilha pela última vez"',
         'porque' => 'Na pausa (05–22/11) o site teve ~2 visitas reais por dia e nenhum lead: das 115 sessões do '
             . 'GA4, 33 eram reais — o resto, robô (inclusive "Paid Search" com gclid da promoção vindo da '
             . 'Albânia e dos EUA, com gasto zero). No Search Console, "sistema venda direta" segue top 3 e '
@@ -32,8 +32,9 @@ return [
             . 'processo num só, assistente de IA no escritório e formulário de "demonstração guiada com o seu '
             . 'plano". Home: selo da promoção, frase de benefício no topo, IA e cases subindo. Anúncios: '
             . '"Comece 2027 com Sistema Novo", "Comissão sem Planilha em 2027", "Assistente de IA no '
-            . 'Escritório" e contagem regressiva a partir de 15/12. Agenda no crontab: liga 01/12, verba '
-            . 'R$ 10 em 24/12, relatório pausado em 02/01.',
+            . 'Escritório" e contagem regressiva a partir de 15/12. Religada no mesmo dia a pedido do '
+            . 'usuário ("pra gente ir alinhando até 01/12"), com o relatório diário; no crontab ficaram '
+            . 'verba R$ 10 em 24/12 e relatório pausado em 02/01.',
     ],
     [
         'data' => '2026-11-23',

@@ -55,7 +55,7 @@ avisar() {  # $1 assunto, $2 corpo
 case "$ETAPA" in
     ligar)
         saida=$("$PY" "$ADS/ligar-campanha.py" --campanha="$CAMP" --fim=2026-12-31 2>&1 | grep -v -i warning)
-        assunto="[Ads SVD] Promocao de Fim de Ano ligada — primeiro relatorio diario chega em 02/12"
+        assunto="[Ads SVD] Promocao de Fim de Ano ligada"
         ;;
     relatorio)
         crontab -l | sed 's/^#PAUSA-ADS //' | crontab -

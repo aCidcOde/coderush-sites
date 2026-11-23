@@ -378,7 +378,13 @@ dezembro:
 
 O retorno foi agendado (`automation/ads/agenda-fim-de-ano.sh` no crontab): liga,
 religa o relatório, reduz a verba no Natal e pausa o relatório depois do fim —
-cada etapa manda e-mail com o estado lido da API.
+cada etapa manda e-mail com o estado lido da API. O usuário antecipou a volta
+para 23/11; as etapas de ligar viraram execução manual do mesmo script.
+
+No checklist de religar: o campo da API que liga os **parceiros de pesquisa** é
+`network_settings.target_search_network`. O `target_partner_search_network` é
+outra coisa (rede de parceiros do Google, reservada) e vem `False` — lê-lo como
+"parceiros desligados" é alarme falso.
 
 ## 6. O que NÃO fazer
 
@@ -503,7 +509,8 @@ correta é `https://site.com/?utm_source=...#contato`.
 
 ---
 
-*Última atualização: 23/11/2026 — Fim de Ano volta em 01/12 (agendado): títulos
+*Última atualização: 23/11/2026 — Fim de Ano RELIGADA em 23/11 (o usuário antecipou
+para ajustar até 01/12; verba R$ 10 em 24/12 e fim do relatório seguem agendados): títulos
 "Comece 2027 com Sistema Novo", "Comissão sem Planilha em 2027", "Assistente de IA no
 Escritório" e contagem regressiva a partir de 15/12; LP de venda direta e home
 reescritas no plot "Feche 2026 na planilha pela última vez"; painel de leads zerado
