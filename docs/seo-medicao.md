@@ -187,3 +187,30 @@ Setembro deveria responder duas perguntas, não uma:
 |---|---|---|---|
 | 25/08/2026 | pos 25,9 · 0 cliques | 1,37% | baseline, antes das mudanças |
 | 29/08/2026 | pos 8,0 · 1 impressão | 2,95% (site todo) | página nova ainda não indexada |
+| 23/11/2026 | pos 12,8 (90d) · 2 cliques — **caindo na home, não na /sistema-mmn/** | — | ver seção abaixo |
+
+## 23/11/2026 — reforço da /sistema-mmn/ e blog de 49 para 20 posts
+
+**Linha de base (Search Console, 90 dias até 21/11):** todas as buscas de compra de
+MMN caem na **home**, não na /sistema-mmn/ — `sistema mmn` 153 impr · pos 12,8;
+`sistema de marketing multinivel` 135 · 15,0; `sistema marketing multinivel` 123 ·
+14,6; `software para marketing multinivel` 62 · 19,7; `software mmn` 58 · 17,9;
+`plataforma mmn` 59 · 13,0. Nos últimos 28 dias a /sistema-mmn/ teve 18 impressões
+nesses termos. Blog: 989 impressões e 7 cliques em 28 dias, 66% num post só.
+
+**O que mudou:**
+- home: dois links no corpo pra /sistema-mmn/ ("sistema de marketing multinível" e
+  "sistema MMN") — antes só o menu;
+- /sistema-mmn/: "software" no title e "software/plataforma" no primeiro parágrafo;
+- posts: as 18 âncoras "Solicite um orçamento" que levavam à /sistema-mmn/ viraram
+  "Conhecer o sistema MMN";
+- blog: 29 posts repetidos juntados em 13 com 301 (`automation/blog-bot/scripts/juntar-posts.js`);
+- bot: não repete tema publicado; 10 temas novos do Search Console.
+
+**Ler em 21/12/2026** (4 semanas — o Google leva de 2 a 4 pra reprocessar links):
+1. qual URL aparece pra `sistema mmn` e variantes — a meta é a /sistema-mmn/ assumir
+   o lugar da home, e a posição sair de 12-15 pra primeira página;
+2. impressões dos 13 posts que ficaram vs. a soma do que o grupo fazia antes;
+3. se a home perdeu posição em `sistema venda direta` (top 3 hoje) — não deveria:
+   a home não foi desotimizada, só passou a apontar pra página certa.
+

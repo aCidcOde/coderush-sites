@@ -157,14 +157,14 @@
         </ul>
       </section>
       <aside class="my-8 rounded-2xl border-l-4 border-white bg-white/10 p-5 sm:p-6">
-        <p class="text-sm leading-7 text-white/90 sm:text-base">Já estruturamos isso em diversos clientes. Se faz sentido para o seu cenário, vale uma conversa sobre como podemos ajudar. <a href="../../../../sistema-mmn/?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Solicite um orcamento →</a></p>
+        <p class="text-sm leading-7 text-white/90 sm:text-base">Já estruturamos isso em diversos clientes. Se faz sentido para o seu cenário, vale uma conversa sobre como podemos ajudar. <a href="../../../../sistema-mmn/?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Conhecer o sistema MMN →</a></p>
       </aside>
       <section class="mt-8">
         <h2 class="text-xl font-semibold text-white sm:text-2xl">Desafios enfrentados sem integrações</h2>
         <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">A falta de integrações pode gerar desafios significativos para empresas de MMN. Processos manuais levam a erros, aumento de custos e insatisfação dos distribuidores. Além disso, a dificuldade em acompanhar comissões e pedidos pode resultar em perda de vendas e desmotivação na equipe. Para evitar esses problemas, investir em um software que integre todas as operações é essencial.</p>
       </section>
       <p class="my-6 text-sm leading-7 text-white/85 sm:text-base">
-        Se você busca otimizar suas operações de MMN, considere uma conversa com nossos especialistas. <a href="../../../../sistema-mmn/?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Solicite um orcamento →</a>
+        Se você busca otimizar suas operações de MMN, considere uma conversa com nossos especialistas. <a href="../../../../sistema-mmn/?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Conhecer o sistema MMN →</a>
       </p>
       <section class="mt-8">
         <h2 class="text-xl font-semibold text-white sm:text-2xl">O papel da tecnologia nas operações de campo</h2>

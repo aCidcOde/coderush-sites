@@ -157,14 +157,14 @@
         </ul>
       </section>
       <aside class="my-8 rounded-2xl border-l-4 border-white bg-white/10 p-5 sm:p-6">
-        <p class="text-sm leading-7 text-white/90 sm:text-base">Já estruturamos isso em diversos clientes. A aplicação prática da IA no suporte pode mudar a dinâmica de atuação do seu time. Vale uma conversa para entender como isso se encaixa no seu cenário. <a href="../../../../sistema-mmn/?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Solicite um orcamento →</a></p>
+        <p class="text-sm leading-7 text-white/90 sm:text-base">Já estruturamos isso em diversos clientes. A aplicação prática da IA no suporte pode mudar a dinâmica de atuação do seu time. Vale uma conversa para entender como isso se encaixa no seu cenário. <a href="../../../../sistema-mmn/?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Conhecer o sistema MMN →</a></p>
       </aside>
       <section class="mt-8">
         <h2 class="text-xl font-semibold text-white sm:text-2xl">Exemplos práticos de IA em ação</h2>
         <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">Empresas que adotaram IA para suporte já reportaram melhorias significativas. Por exemplo, a [Jenkon](https://www.jenkon.com/pt/ai-transforming-direct-selling-industry/) destaca que a automação de respostas a perguntas frequentes reduziu o tempo de espera em 30%. Além disso, a análise de dados permite antecipar necessidades e ajustar ofertas, tornando o suporte mais proativo. O Sistema Venda Direta pode ser uma aliada nesse processo, facilitando a integração de tecnologias de IA.</p>
       </section>
       <p class="my-6 text-sm leading-7 text-white/85 sm:text-base">
-        Vamos explorar como a IA pode se aplicar ao seu modelo de negócio. <a href="../../../../sistema-mmn/?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Solicite um orcamento →</a>
+        Vamos explorar como a IA pode se aplicar ao seu modelo de negócio. <a href="../../../../sistema-mmn/?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Conhecer o sistema MMN →</a>
       </p>
       <section class="mt-8">
         <h2 class="text-xl font-semibold text-white sm:text-2xl">Desafios a considerar</h2>

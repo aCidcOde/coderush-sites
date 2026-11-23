@@ -157,14 +157,14 @@
         </ul>
       </section>
       <aside class="my-8 rounded-2xl border-l-4 border-white bg-white/10 p-5 sm:p-6">
-        <p class="text-sm leading-7 text-white/90 sm:text-base">Já estruturamos isso em diversas empresas de MMN, e os resultados são claros. Vale a pena explorar como essas soluções podem se encaixar no seu cenário. <a href="../../../../sistema-mmn/?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Solicite um orcamento →</a></p>
+        <p class="text-sm leading-7 text-white/90 sm:text-base">Já estruturamos isso em diversas empresas de MMN, e os resultados são claros. Vale a pena explorar como essas soluções podem se encaixar no seu cenário. <a href="../../../../sistema-mmn/?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Conhecer o sistema MMN →</a></p>
       </aside>
       <section class="mt-8">
         <h2 class="text-xl font-semibold text-white sm:text-2xl">IA aplicada ao campo de vendas</h2>
         <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">A inteligência artificial (IA) pode transformar a forma como as empresas de vendas diretas atuam. Por meio de análises preditivas, é possível entender padrões de comportamento dos distribuidores e clientes. Isso permite uma abordagem mais personalizada e eficaz, aumentando a retenção e o engajamento. Além disso, ferramentas de IA auxiliam na automação de tarefas repetitivas, liberando os colaboradores para focar em atividades estratégicas.</p>
       </section>
       <p class="my-6 text-sm leading-7 text-white/85 sm:text-base">
-        Se você deseja melhorar a eficiência da sua operação de MMN, considere uma análise detalhada das suas ferramentas atuais. <a href="../../../../sistema-mmn/?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Solicite um orcamento →</a>
+        Se você deseja melhorar a eficiência da sua operação de MMN, considere uma análise detalhada das suas ferramentas atuais. <a href="../../../../sistema-mmn/?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Conhecer o sistema MMN →</a>
       </p>
       <section class="mt-8">
         <h2 class="text-xl font-semibold text-white sm:text-2xl">Desafios a evitar na automação</h2>

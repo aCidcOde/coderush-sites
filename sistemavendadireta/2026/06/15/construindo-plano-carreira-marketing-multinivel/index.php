@@ -157,14 +157,14 @@
         </ul>
       </section>
       <aside class="my-8 rounded-2xl border-l-4 border-white bg-white/10 p-5 sm:p-6">
-        <p class="text-sm leading-7 text-white/90 sm:text-base">Já ajudamos diversas empresas a estruturar seus planos de carreira. Vale uma conversa para entender como isso aplica ao seu cenário. <a href="../../../../sistema-mmn/?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Solicite um orcamento →</a></p>
+        <p class="text-sm leading-7 text-white/90 sm:text-base">Já ajudamos diversas empresas a estruturar seus planos de carreira. Vale uma conversa para entender como isso aplica ao seu cenário. <a href="../../../../sistema-mmn/?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Conhecer o sistema MMN →</a></p>
       </aside>
       <section class="mt-8">
         <h2 class="text-xl font-semibold text-white sm:text-2xl">Tecnologia e suporte ao distribuidor</h2>
         <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">A implementação de um software para MMN pode ser um divisor de águas. Sistemas como o Sistema Venda Direta oferecem integrações robustas que auxiliam no gerenciamento de comissionamento e no acompanhamento do desempenho dos distribuidores. Além disso, a inteligência artificial aplicada pode fornecer insights valiosos para otimizar as estratégias de vendas e suporte.</p>
       </section>
       <p class="my-6 text-sm leading-7 text-white/85 sm:text-base">
-        Explore como a tecnologia pode potencializar seu plano de carreira em MMN. <a href="../../../../sistema-mmn/?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Solicite um orcamento →</a>
+        Explore como a tecnologia pode potencializar seu plano de carreira em MMN. <a href="../../../../sistema-mmn/?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Conhecer o sistema MMN →</a>
       </p>
       <section class="mt-8">
         <h2 class="text-xl font-semibold text-white sm:text-2xl">Desafios a evitar no MMN</h2>

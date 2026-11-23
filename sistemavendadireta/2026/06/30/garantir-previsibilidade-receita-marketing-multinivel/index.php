@@ -157,14 +157,14 @@
         </ul>
       </section>
       <aside class="my-8 rounded-2xl border-l-4 border-white bg-white/10 p-5 sm:p-6">
-        <p class="text-sm leading-7 text-white/90 sm:text-base">Já estruturamos soluções para previsibilidade de receitas em diversos clientes. Vale uma conversa para entender como podemos ajudar no seu cenário específico. <a href="../../../../sistema-mmn/?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Solicite um orcamento →</a></p>
+        <p class="text-sm leading-7 text-white/90 sm:text-base">Já estruturamos soluções para previsibilidade de receitas em diversos clientes. Vale uma conversa para entender como podemos ajudar no seu cenário específico. <a href="../../../../sistema-mmn/?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Conhecer o sistema MMN →</a></p>
       </aside>
       <section class="mt-8">
         <h2 class="text-xl font-semibold text-white sm:text-2xl">Integrações que potencializam a operação</h2>
         <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">Para otimizar ainda mais o uso do CRM, integrar sistemas de pagamento e logística é fundamental. Essas integrações garantem que as informações fluam de maneira eficiente entre as áreas, permitindo um acompanhamento em tempo real das vendas e a consistência no pagamento das comissões. O Sistema Venda Direta oferece essas integrações, facilitando a operação comercial e aumentando a previsibilidade das receitas.</p>
       </section>
       <p class="my-6 text-sm leading-7 text-white/85 sm:text-base">
-        Uma conversa pode abrir novas possibilidades para sua operação. <a href="../../../../sistema-mmn/?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Solicite um orcamento →</a>
+        Uma conversa pode abrir novas possibilidades para sua operação. <a href="../../../../sistema-mmn/?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Conhecer o sistema MMN →</a>
       </p>
       <section class="mt-8">
         <h2 class="text-xl font-semibold text-white sm:text-2xl">Cuidado com armadilhas na implementação</h2>

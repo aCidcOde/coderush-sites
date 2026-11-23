@@ -157,14 +157,14 @@
         </ul>
       </section>
       <aside class="my-8 rounded-2xl border-l-4 border-white bg-white/10 p-5 sm:p-6">
-        <p class="text-sm leading-7 text-white/90 sm:text-base">Já estruturamos isso em vários clientes e os resultados foram positivos. Avaliar seu sistema de comissionamento pode ser o primeiro passo para resolver a inadimplência. <a href="../../../../sistema-mmn/?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Solicite um orcamento →</a></p>
+        <p class="text-sm leading-7 text-white/90 sm:text-base">Já estruturamos isso em vários clientes e os resultados foram positivos. Avaliar seu sistema de comissionamento pode ser o primeiro passo para resolver a inadimplência. <a href="../../../../sistema-mmn/?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Conhecer o sistema MMN →</a></p>
       </aside>
       <section class="mt-8">
         <h2 class="text-xl font-semibold text-white sm:text-2xl">Integração de sistemas e sua importância</h2>
         <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">A integração de sistemas de pagamento e gestão é fundamental para a operação do marketing multinível. Um software para MMN que conecte todas as partes envolvidas — desde vendedores até clientes — pode facilitar a comunicação e o fluxo de informações. Em um estudo recente, foi apontado que empresas que utilizam sistemas integrados têm uma inadimplência até 30% menor ([Sistema Venda Direta](https://sistemavendadireta.com.br/2026/07/21/gestao-comissionamento-impacta-inadimplencia-mmn/)).</p>
       </section>
       <p class="my-6 text-sm leading-7 text-white/85 sm:text-base">
-        Vamos conversar sobre como melhorar seu comissionamento. <a href="../../../../sistema-mmn/?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Solicite um orcamento →</a>
+        Vamos conversar sobre como melhorar seu comissionamento. <a href="../../../../sistema-mmn/?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Conhecer o sistema MMN →</a>
       </p>
       <section class="mt-8">
         <h2 class="text-xl font-semibold text-white sm:text-2xl">O que evitar na gestão de comissionamento</h2>

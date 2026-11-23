@@ -21,6 +21,20 @@ Campos:
 return [
     [
         'data' => '2026-11-23',
+        'area' => 'site',
+        'titulo' => 'Blog de 49 para 20 posts (repetidos juntados com 301), temas novos e reforço da /sistema-mmn/',
+        'porque' => 'O blog fez 989 impressões e 7 cliques em 28 dias, 66% num post só: 13 grupos de post '
+            . 'repetido (6 sobre pagamento e logística, 6 sobre CRM, 5 sobre governança — dois com o mesmo '
+            . 'título) dividiam as impressões, porque o bot sorteava de lista fixa e só evitava os 8 últimos '
+            . 'temas. E as buscas de compra ("sistema mmn", "sistema de marketing multinível"…, ~1.000 '
+            . 'impressões em 90 dias) caíam todas na home, posição 12-15, e não na /sistema-mmn/.',
+        'efeito' => '29 posts viraram 301 para o melhor do grupo (scripts/juntar-posts.js, mapa no nginx). O '
+            . 'bot passou a excluir todo tema já publicado e ganhou 10 temas novos do Search Console. Home com '
+            . 'dois links no corpo para a /sistema-mmn/; "software" no title dela; âncoras dos posts '
+            . 'nomeando o produto. Leitura marcada para 21/12 em docs/seo-medicao.md.',
+    ],
+    [
+        'data' => '2026-11-23',
         'area' => 'medicao',
         'titulo' => 'Cadastro obrigatório antes de abrir o WhatsApp (nome + WhatsApp, e-mail opcional)',
         'porque' => 'Todo botão de WhatsApp abria o app direto e o painel ganhava só uma linha "zap" anônima, '

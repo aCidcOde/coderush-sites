@@ -398,6 +398,15 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
     <section id="funcionalidades" class="scroll-mt-28 py-10">
       <h2 class="font-[var(--font-heading)] text-3xl font-semibold sm:text-[42px]">Funcionalidades</h2>
       <div class="mt-2 h-1 w-[72px] rounded-full bg-white"></div>
+      <?php /* 23/11/2026: "sistema mmn", "sistema de marketing multinivel" e variantes
+               (~1.000 impressoes em 90 dias) caem TODAS na home, na posicao 12-15, e
+               nao na /sistema-mmn/, que e a pagina sobre isso. A home so citava a
+               /sistema-mmn/ no menu. Link no corpo, com as palavras da busca, e o
+               sinal que diz ao Google qual pagina responde essa pergunta. */ ?>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-white/90">
+        Tudo o que um <a href="sistema-mmn/" class="font-semibold text-amber-200 underline decoration-amber-300/50 underline-offset-4 hover:text-white">sistema de marketing multinível</a>
+        precisa — rede, comissões e escritório do consultor —, mais a loja e o financeiro da venda direta.
+      </p>
 
       <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         <article class="rounded-[30px] border border-white/55 bg-brand p-5 text-center">
@@ -576,7 +585,9 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
           <div class="mt-2 h-1 w-[72px] rounded-full bg-white"></div>
           <p class="mt-4 text-base leading-relaxed text-white/90">
             O sistema venda direta foi desenhado para empresas de marketing multinível, venda direta e marketing de rede, por um
-            time que desenvolve sistemas desde 2002. Funciona com quatro módulos — Administração, Centro de Distribuição,
+            time que desenvolve sistemas desde 2002. Para operação em rede, o
+            <a href="sistema-mmn/" class="font-semibold text-amber-200 underline decoration-amber-300/50 underline-offset-4 hover:text-white">sistema MMN</a>
+            traz unilevel e binário, comissão automática e escritório do consultor. Funciona com quatro módulos — Administração, Centro de Distribuição,
             Escritório Virtual e Loja Virtual —, com integração com ERP, relatórios em tempo real e plano de compensação
             configurado conforme as regras da sua empresa.
           </p>

@@ -157,14 +157,14 @@
         </ul>
       </section>
       <aside class="my-8 rounded-2xl border-l-4 border-white bg-white/10 p-5 sm:p-6">
-        <p class="text-sm leading-7 text-white/90 sm:text-base">Já estruturamos isso em diversos clientes com resultados positivos. Vale uma conversa para entender como isso se aplica ao seu cenário. <a href="../../../../sistema-mmn/?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Solicite um orcamento →</a></p>
+        <p class="text-sm leading-7 text-white/90 sm:text-base">Já estruturamos isso em diversos clientes com resultados positivos. Vale uma conversa para entender como isso se aplica ao seu cenário. <a href="../../../../sistema-mmn/?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Conhecer o sistema MMN →</a></p>
       </aside>
       <section class="mt-8">
         <h2 class="text-xl font-semibold text-white sm:text-2xl">Desafios na implementação de CRM</h2>
         <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">Embora o uso de um CRM integrado com IA ofereça diversas vantagens, é importante estar ciente dos desafios que podem surgir. A resistência à mudança por parte da equipe, a necessidade de treinamento e a integração com sistemas existentes são pontos a serem considerados. Um planejamento cuidadoso e comunicação clara são essenciais para garantir uma transição suave e eficaz.</p>
       </section>
       <p class="my-6 text-sm leading-7 text-white/85 sm:text-base">
-        Avalie como um CRM pode se adequar às suas necessidades específicas. <a href="../../../../sistema-mmn/?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Solicite um orcamento →</a>
+        Avalie como um CRM pode se adequar às suas necessidades específicas. <a href="../../../../sistema-mmn/?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Conhecer o sistema MMN →</a>
       </p>
       <section class="mt-8">
         <h2 class="text-xl font-semibold text-white sm:text-2xl">O futuro da governança comercial com IA</h2>

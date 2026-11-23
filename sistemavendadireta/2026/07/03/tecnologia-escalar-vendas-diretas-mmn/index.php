@@ -157,14 +157,14 @@
         </ul>
       </section>
       <aside class="my-8 rounded-2xl border-l-4 border-white bg-white/10 p-5 sm:p-6">
-        <p class="text-sm leading-7 text-white/90 sm:text-base">Já estruturamos isso em várias empresas de MMN, e os resultados são animadores. Vale uma conversa para entender como isso se aplica ao seu cenário. <a href="../../../../sistema-mmn/?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Solicite um orcamento →</a></p>
+        <p class="text-sm leading-7 text-white/90 sm:text-base">Já estruturamos isso em várias empresas de MMN, e os resultados são animadores. Vale uma conversa para entender como isso se aplica ao seu cenário. <a href="../../../../sistema-mmn/?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Conhecer o sistema MMN →</a></p>
       </aside>
       <section class="mt-8">
         <h2 class="text-xl font-semibold text-white sm:text-2xl">Implementando Soluções Tecnológicas</h2>
         <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">Para implementar soluções tecnológicas eficazes no MMN, é crucial escolher um software que se adapte às necessidades da sua operação. O sistema deve integrar com ferramentas de CRM, facilitar o comissionamento e ser flexível o suficiente para escalar conforme a empresa cresce. Plataformas como a [ATOMMN](https://atommn.com.br/) oferecem soluções sob medida, enquanto o [Mediaw](https://www.mediaw.com.br/) proporciona um ecossistema completo para canais próprios.</p>
       </section>
       <p class="my-6 text-sm leading-7 text-white/85 sm:text-base">
-        Considere como a tecnologia pode alavancar suas vendas diretas. <a href="../../../../sistema-mmn/?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Solicite um orcamento →</a>
+        Considere como a tecnologia pode alavancar suas vendas diretas. <a href="../../../../sistema-mmn/?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Conhecer o sistema MMN →</a>
       </p>
       <section class="mt-8">
         <h2 class="text-xl font-semibold text-white sm:text-2xl">Desafios a Evitar na Adoção de Tecnologia</h2>

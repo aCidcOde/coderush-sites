@@ -24,7 +24,11 @@ require_once __DIR__ . '/../inc/promo.php';
 
 $seoBase = 'https://sistemavendadireta.com.br';
 $seoUrl = $seoBase . '/sistema-mmn/';
-$seoTitle = 'Sistema MMN: plataforma de marketing multinível pronta para operar';
+// 23/11/2026: "software" entrou no title. No Search Console (90 dias) as buscas de
+// compra somam ~300 impressoes so nas variantes com "software" (software mmn,
+// software para/de marketing multinivel) — e todas caiam na home, nao aqui.
+// "plataforma" desceu pro primeiro paragrafo, onde continua sendo lida.
+$seoTitle = 'Sistema MMN: software de marketing multinível pronto para operar';
 // 160 chars e onde o Google corta no desktop. Passar disso entrega a frase pra
 // ele reescrever — e a promessa que traz o clique deixa de ser nossa.
 $seoDescription = 'Sistema MMN com rede unilevel, escritório do consultor, loja e '
@@ -185,7 +189,8 @@ $faq = [
           Sistema MMN pronto<br />para operar
         </h1>
         <p class="mt-4 text-base leading-relaxed text-white/90 sm:text-lg">
-          Um sistema MMN administra o que a planilha não dá conta: a rede de consultores, o cálculo
+          Um sistema MMN — o software de marketing multinível, também chamado de plataforma MMN —
+          administra o que a planilha não dá conta: a rede de consultores, o cálculo
           automático das comissões, o escritório virtual de cada distribuidor, a loja e o financeiro.
           O Sistema Venda Direta faz isso há 10 anos — a plataforma já existe, roda hoje e é
           parametrizada para o seu plano de negócio.
