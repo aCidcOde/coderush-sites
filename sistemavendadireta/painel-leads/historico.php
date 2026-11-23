@@ -20,6 +20,35 @@ Campos:
 
 return [
     [
+        'data' => '2026-11-23',
+        'area' => 'ads',
+        'titulo' => 'Campanha de dezembro montada: plot "Feche 2026 na planilha pela última vez", volta agendada pra 01/12',
+        'porque' => 'Na pausa (05–22/11) o site teve ~2 visitas reais por dia e nenhum lead: das 115 sessões do '
+            . 'GA4, 33 eram reais — o resto, robô (inclusive "Paid Search" com gclid da promoção vindo da '
+            . 'Albânia e dos EUA, com gasto zero). No Search Console, "sistema venda direta" segue top 3 e '
+            . '"sistema mmn" caiu pra posição 20–30. A /sistema-venda-direta/, destino do grupo Venda Direta, '
+            . 'abria falando de multinível e segurava o visitante pago 12 s (3,5 min na /sistema-mmn/).',
+        'efeito' => 'LP de venda direta: H1 de venda direta, demonstração como botão do topo, três blocos de '
+            . 'processo num só, assistente de IA no escritório e formulário de "demonstração guiada com o seu '
+            . 'plano". Home: selo da promoção, frase de benefício no topo, IA e cases subindo. Anúncios: '
+            . '"Comece 2027 com Sistema Novo", "Comissão sem Planilha em 2027", "Assistente de IA no '
+            . 'Escritório" e contagem regressiva a partir de 15/12. Agenda no crontab: liga 01/12, verba '
+            . 'R$ 10 em 24/12, relatório pausado em 02/01.',
+    ],
+    [
+        'data' => '2026-11-23',
+        'area' => 'painel',
+        'titulo' => 'Painel de leads zerado para contar só a campanha de dezembro',
+        'porque' => 'Pedido do usuário: começar a contagem de novo. Os 44 registros (ago–nov: 2 vendas '
+            . 'fechadas, R$ 8.500; 4 qualificados e 2 em demonstração ainda abertos; 25 robôs) misturavam '
+            . 'campanhas encerradas com o que vem agora. Sete deles eram spam "Free AI API" de 22–23/11.',
+        'efeito' => 'Histórico arquivado em /data/backup/svd-leads (sqlite + CSV) e no Drive '
+            . '(backup:backup/svd-leads). Numeração segue do 58, sem colidir com o arquivo. Filtro do '
+            . 'formulário barra mensagem com 2+ links e celular sem o 9. Relatório diário conta a seca a '
+            . 'partir de 23/11 enquanto o banco estiver vazio. Abas de tráfego e investimento usam janelas '
+            . 'móveis do GA4/Ads e não precisaram de reset.',
+    ],
+    [
         'data' => '2026-11-16',
         'area' => 'site',
         'titulo' => 'Preparação para dezembro: promoção que não sobrevive ao prazo, vitrine sem MedPlant/Accenti, IA na home',

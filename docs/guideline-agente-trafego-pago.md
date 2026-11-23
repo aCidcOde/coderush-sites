@@ -351,6 +351,35 @@ pausado esquecido. Comentar no cron o `relatorio-diario.py` (`#PAUSA-ADS`) pra e
 não mandar "R$ 0,00" todo dia. O blog-bot e o `ga-stats.py` continuam: GA4 e
 Search Console guardam o histórico, a leitura da pausa se faz na volta.
 
+### Voltar da pausa: ler o mês parado antes de montar a campanha
+
+Leitura de 05 a 22/11/2026, com a campanha parada, feita antes de montar a de
+dezembro:
+
+- **O GA4 mostrou 115 sessões; reais eram 33.** O resto era robô: tráfego
+  "direto" dos EUA e da China com 11% de engajamento, e sessões **"Paid Search" com
+  o gclid da promoção vindas da Albânia, EUA e Emirados — com a campanha pausada e
+  gasto zero**. Robô reaproveitando URL de anúncio aparece como mídia paga.
+  Filtrar por país (Brasil) antes de comparar período.
+- **Sem anúncio, o site faz ~2 visitas reais por dia e nenhum lead.** É a linha de
+  base: o que passar disso em dezembro é da campanha.
+- **Search Console separa onde pagar.** "sistema (de/para) venda direta" ficou no
+  top 3 orgânico; a família "sistema/software mmn" caiu da posição ~12 para 20–30.
+  Mesmo assim o grupo Venda Direta não perde verba: "sistema de venda direta" é a
+  palavra que mais vendeu no histórico (seção 4).
+- **Página de destino tem que falar a língua do grupo.** A /sistema-venda-direta/,
+  destino só do grupo Venda Direta, abria com "Sistema de marketing multinível" e
+  "rede binária e unilevel" — sessões pagas de 12 s contra 3,5 min na /sistema-mmn/.
+  Em 23/11 o H1 passou a falar de venda direta (multinível ficou no parágrafo e no
+  title, por causa do Índice de Qualidade).
+- **Formulário vazio de lead real enche de spam.** 7 envios "Free AI API" em dois
+  dias, com um `prompt.txt` de isca pra agente de IA que lê lead — nunca abrir os
+  links. Spam marcado como `robo` não conta no relatório; o filtro foi reforçado.
+
+O retorno foi agendado (`automation/ads/agenda-fim-de-ano.sh` no crontab): liga,
+religa o relatório, reduz a verba no Natal e pausa o relatório depois do fim —
+cada etapa manda e-mail com o estado lido da API.
+
 ## 6. O que NÃO fazer
 
 - **Não pesquisar o próprio anúncio no Google.** Cada busca sem clique derruba o
@@ -418,6 +447,10 @@ Em `automation/ads/`, todas idempotentes:
   palavra. Aceitável quando o histórico é de tráfego errado.
 - **Caixa alta reprova o anúncio inteiro** (`policy topic CAPITALIZATION`).
   Siglas passam; palavra inteira em maiúscula, não. `OFF` derrubou um RSA.
+- **Contagem regressiva em RSA**: `{COUNTDOWN(2026-12-31 23:59:00,16)}` dentro do
+  título (o último número é quantos dias antes do fim ela começa a aparecer). A API
+  aceitou com `validate_only` antes de gravar; o título passa de 30 caracteres no
+  texto cru, mas o limite vale para o texto exibido.
 - **`campaign.primary_status` fica defasado** por até 24h após ativar. O campo
   autoritativo é `serving_status`.
 - **Refresh token expira em 7 dias** enquanto o app OAuth estiver em modo "Teste"
@@ -470,7 +503,8 @@ correta é `https://site.com/?utm_source=...#contato`.
 
 ---
 
-*Última atualização: 04/11/2026 — SVD - Promocao Fim de Ano PAUSADA pelo usuário
-até dezembro (só a campanha; grupos e anúncios ativos). Rodou de 01 a 04/11: CTR e
-custo por clique bem melhores que a 10 Anos, 4 entradas na demonstração, zero lead.
-A volta é com campanha nova.*
+*Última atualização: 23/11/2026 — Fim de Ano volta em 01/12 (agendado): títulos
+"Comece 2027 com Sistema Novo", "Comissão sem Planilha em 2027", "Assistente de IA no
+Escritório" e contagem regressiva a partir de 15/12; LP de venda direta e home
+reescritas no plot "Feche 2026 na planilha pela última vez"; painel de leads zerado
+(histórico em /data/backup/svd-leads e no Drive).*
