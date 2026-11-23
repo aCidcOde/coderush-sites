@@ -265,5 +265,6 @@ Pagina de servicos WordPress/WooCommerce e Laravel com foco em conversao e quali
     <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-white/20 text-base leading-none">W</span>
     <span class="sm:hidden">WhatsApp</span>
   </a>
+  <?php $zapOrigem = 'wordpress'; include __DIR__ . '/../inc/zap-gate.php'; ?>
 </body>
 </html>

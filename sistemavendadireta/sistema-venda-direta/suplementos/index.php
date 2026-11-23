@@ -660,5 +660,6 @@ $seoDescription = 'Sistema para distribuidora de suplementos com consultores: es
       }
     })();
   </script>
+  <?php $zapOrigem = 'lp-oferta-suplementos'; include __DIR__ . '/../../inc/zap-gate.php'; ?>
 </body>
 </html>

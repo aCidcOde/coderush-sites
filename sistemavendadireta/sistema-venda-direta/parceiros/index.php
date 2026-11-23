@@ -660,5 +660,6 @@ $seoDescription = 'Programa de parceiros com link e cupom por indicador: o siste
       }
     })();
   </script>
+  <?php $zapOrigem = 'lp-oferta-instalacao'; include __DIR__ . '/../../inc/zap-gate.php'; ?>
 </body>
 </html>

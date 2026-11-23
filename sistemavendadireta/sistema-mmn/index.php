@@ -555,5 +555,6 @@ $faq = [
       });
     })();
   </script>
+  <?php $zapOrigem = 'pagina-sistema-mmn'; include __DIR__ . '/../inc/zap-gate.php'; ?>
 </body>
 </html>

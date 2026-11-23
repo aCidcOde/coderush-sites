@@ -858,5 +858,6 @@ $seoDescription = 'Sistema de marketing multinível (MMN) e venda direta: escrit
       });
     })();
   </script>
+  <?php $zapOrigem = 'lp-sistema-venda-direta'; include __DIR__ . '/../inc/zap-gate.php'; ?>
 </body>
 </html>

@@ -660,5 +660,6 @@ $seoDescription = 'Sistema para marca de cosméticos com consultoras: catálogo 
       }
     })();
   </script>
+  <?php $zapOrigem = 'lp-oferta-cosmeticos'; include __DIR__ . '/../../inc/zap-gate.php'; ?>
 </body>
 </html>

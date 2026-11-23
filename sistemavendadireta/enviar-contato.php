@@ -63,6 +63,15 @@ function envValue(array $env, array $keys, string $default = ''): string
 
 function safeRedirect(string $location, bool $success): void
 {
+    // 23/11/2026: o cadastro antes do WhatsApp (inc/zap-gate.php) envia por fetch
+    // e nao segue redirect — responde JSON pra ele. O formulario comum continua
+    // recebendo o 303 de sempre.
+    if (($_POST['resposta'] ?? '') === 'json') {
+        header('Content-Type: application/json; charset=UTF-8');
+        echo json_encode(['ok' => $success]);
+        exit;
+    }
+
     $target = $location;
     if ($target === '' || !str_starts_with($target, '/')) {
         $target = '/';
@@ -368,7 +377,7 @@ $defaultHost = $_SERVER['HTTP_HOST'] ?? 'localhost';
 $fromEmail = envValue($env, ['MAIL_FROM_ADDRESS', 'CONTACT_EMAIL_FROM'], 'no-reply@' . $defaultHost);
 $fromName = envValue($env, ['MAIL_FROM_NAME', 'APP_NAME'], 'Site SVD');
 
-$subject = '[SVD] Novo contato via formulario - ' . $origem;
+$subject = (($_POST['canal'] ?? '') === 'whatsapp' ? '[SVD] Novo lead antes do WhatsApp - ' : '[SVD] Novo contato via formulario - ') . $origem;
 $body = implode("\n", [
     'Novo contato recebido:',
     '',

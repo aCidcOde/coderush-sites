@@ -124,3 +124,4 @@ $zapOrigem = isset($zapOrigem) && $zapOrigem !== '' ? $zapOrigem : 'site';
     }
   })();
 </script>
+<?php /* 23/11/2026: cadastro obrigatorio antes de abrir o WhatsApp (ver inc/zap-gate.php) */ include __DIR__ . '/zap-gate.php'; ?>

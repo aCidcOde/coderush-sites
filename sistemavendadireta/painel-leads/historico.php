@@ -21,6 +21,20 @@ Campos:
 return [
     [
         'data' => '2026-11-23',
+        'area' => 'medicao',
+        'titulo' => 'Cadastro obrigatório antes de abrir o WhatsApp (nome + WhatsApp, e-mail opcional)',
+        'porque' => 'Todo botão de WhatsApp abria o app direto e o painel ganhava só uma linha "zap" anônima, '
+            . 'com um código [ref] e mais nada: sem nome, sem telefone, sem como retornar se a pessoa '
+            . 'desistisse antes de mandar a mensagem, e sem dado pra remarketing. Decisão do usuário: "se ele '
+            . 'não der alguma informação, é que ele não tem interesse" — sem botão de pular.',
+        'efeito' => 'inc/zap-gate.php nas 12 páginas com WhatsApp (home, ofertas, MMN, cases, simulador, IA, '
+            . 'blog, WordPress). Cada cadastro vira lead com nome no painel (mesmos filtros de spam e mesmo '
+            . 'e-mail pra equipe), dispara generate_lead — a conversão principal no Ads, sem contagem dupla — '
+            . 'com telefone/e-mail no user_data da tag, e abre o WhatsApp com "Olá! Sou {nome}" e o [ref]. '
+            . 'Quem já se identificou passa direto. Evento whatsapp_gate_aberto mede quem desiste no cadastro.',
+    ],
+    [
+        'data' => '2026-11-23',
         'area' => 'ads',
         'titulo' => 'Fim de Ano religada em 23/11 com o plot "Feche 2026 na planilha pela última vez"',
         'porque' => 'Na pausa (05–22/11) o site teve ~2 visitas reais por dia e nenhum lead: das 115 sessões do '

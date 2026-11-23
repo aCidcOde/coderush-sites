@@ -693,5 +693,6 @@ $seoDescription = 'Cadastre afiliados e influenciadores com link e cupom própri
       }
     })();
   </script>
+  <?php $zapOrigem = 'lp-oferta-instalacao'; include __DIR__ . '/../../inc/zap-gate.php'; ?>
 </body>
 </html>

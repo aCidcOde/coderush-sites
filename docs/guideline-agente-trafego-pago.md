@@ -343,6 +343,22 @@ o fim da trilha.
   **12 s** contra 3,5 min na /sistema-mmn/. Amostra de 7, mas é a primeira página a
   revisar.
 
+### Cadastro antes do WhatsApp: lead com nome em vez de clique anônimo
+
+Desde 23/11/2026 nenhum botão de WhatsApp do site abre o app sem nome e WhatsApp
+(e-mail opcional) — `inc/zap-gate.php`, decisão do usuário: quem não deixa contato
+não tem interesse. Para a leitura da campanha isso muda três coisas:
+
+- **"Cliques de WhatsApp" anônimos (status `zap`) param de entrar no painel.** O
+  que entra é lead com nome, status `novo`, serviço "WhatsApp — cadastro antes da
+  conversa". Comparar com outubro pede somar `zap` antigo com esses leads novos.
+- **Conversão no Ads:** o cadastro dispara `generate_lead` (principal, importada
+  do GA4) e `whatsapp_click` (secundária). Não há contagem dupla na coluna
+  Conversões.
+- **Atrito medido:** `whatsapp_gate_aberto` (abriu o cadastro) contra
+  `generate_lead` — se a diferença for grande, o problema é o pedido de dado, não
+  o anúncio.
+
 ### Pausar sem desmontar
 
 Pausa longa (04/11 a dezembro de 2026, decisão do usuário): **pausar só a
