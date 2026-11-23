@@ -225,13 +225,6 @@
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/08/06/comissao-cargo-vs-plano-pontos-venda-direta/"><img src="../../../../imagens/posts/comissao-cargo-vs-plano-pontos-venda-direta.jpg" alt="Comissão por cargo vs plano de pontos em venda direta" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/08/06/comissao-cargo-vs-plano-pontos-venda-direta/" class="hover:underline">Comissão por cargo vs plano de pontos em venda direta</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">A comissão por cargo oferece uma taxa fixa baseada na posição do distribuidor, enquanto o plano de pontos é mais flexível, permitindo que os ganhos variem</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="../../../../2026/09/22/diferenca-venda-direta-marketing-multinivel/"><img src="../../../../imagens/posts/diferenca-venda-direta-marketing-multinivel.jpg" alt="Diferença entre Venda Direta e Marketing Multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/09/22/diferenca-venda-direta-marketing-multinivel/" class="hover:underline">Diferença entre Venda Direta e Marketing Multinível</a></h3>
@@ -239,10 +232,17 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/09/05/diferencas-venda-direta-marketing-multinivel/"><img src="../../../../imagens/posts/diferencas-venda-direta-marketing-multinivel.jpg" alt="Diferenças entre Venda Direta e Marketing Multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/08/02/levar-operacao-venda-direta-para-outro-pais/"><img src="../../../../imagens/posts/levar-operacao-venda-direta-para-outro-pais.jpg" alt="Levar a venda direta para outro país: o que muda no sistema" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/09/05/diferencas-venda-direta-marketing-multinivel/" class="hover:underline">Diferenças entre Venda Direta e Marketing Multinível</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">A venda direta foca na comercialização de produtos diretamente ao consumidor, enquanto o marketing multinível envolve uma estrutura de comissionamento</p>
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/08/02/levar-operacao-venda-direta-para-outro-pais/" class="hover:underline">Levar a venda direta para outro país: o que muda no sistema</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">O que muda no sistema quando a venda direta cruza a fronteira: idioma, moeda, documento fiscal, endereço e plano de comissões — com um case real no Paraguai.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/11/22/integrar-sistemas-venda-direta-erp-fiscal/"><img src="../../../../imagens/posts/integrar-sistemas-venda-direta-erp-fiscal.jpg" alt="Como integrar sistemas de venda direta com ERP fiscal?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/11/22/integrar-sistemas-venda-direta-erp-fiscal/" class="hover:underline">Como integrar sistemas de venda direta com ERP fiscal?</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como integrar seu sistema de venda direta com ERPs como TOTVS e Bling para otimizar processos fiscais.</p>
   </div>
 </article>
   </div>

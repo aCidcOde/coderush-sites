@@ -241,19 +241,19 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://sistemavendadireta.com.br/2026/05/02/integrar-pagamentos-logistica-marketing-multinivel/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/integrar-pagamentos-logistica-marketing-multinivel.jpg" alt="Como integrar pagamentos e logística em marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Sistema Venda Direta</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/05/02/integrar-pagamentos-logistica-marketing-multinivel/" rel="noopener" target="_blank" class="hover:underline">Como integrar pagamentos e logística em marketing multinível</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Integrar pagamentos e logística em marketing multinível envolve a escolha de um software que possibilite conexões diretas com sistemas de...</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="https://codafacil.dev/2026/07/18/garantir-qualidade-desenvolvimento-software-sob-medida/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/garantir-qualidade-desenvolvimento-software-sob-medida.jpg" alt="Como garantir qualidade no desenvolvimento de software sob medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
     <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/07/18/garantir-qualidade-desenvolvimento-software-sob-medida/" rel="noopener" target="_blank" class="hover:underline">Como garantir qualidade no desenvolvimento de software sob medida</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a governança técnica pode acelerar entregas mantendo a qualidade do código.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="https://sistemavendadireta.com.br/2026/11/22/integrar-sistemas-venda-direta-erp-fiscal/" rel="noopener" target="_blank"><img src="https://sistemavendadireta.com.br/imagens/posts/integrar-sistemas-venda-direta-erp-fiscal.jpg" alt="Como integrar sistemas de venda direta com ERP fiscal?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Sistema Venda Direta</p>
+    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/11/22/integrar-sistemas-venda-direta-erp-fiscal/" rel="noopener" target="_blank" class="hover:underline">Como integrar sistemas de venda direta com ERP fiscal?</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como integrar seu sistema de venda direta com ERPs como TOTVS e Bling para otimizar processos fiscais.</p>
   </div>
 </article>
   </div>

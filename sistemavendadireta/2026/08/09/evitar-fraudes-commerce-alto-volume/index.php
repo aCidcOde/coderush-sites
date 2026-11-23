@@ -221,13 +221,6 @@
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/06/09/comissionamento-gerenciar-inadimplencia-eficazmente/"><img src="../../../../imagens/posts/comissionamento-gerenciar-inadimplencia-eficazmente.jpg" alt="Comissionamento: Como Gerenciar a Inadimplência Eficazmente" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/09/comissionamento-gerenciar-inadimplencia-eficazmente/" class="hover:underline">Comissionamento: Como Gerenciar a Inadimplência Eficazmente</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Gerenciar a inadimplência em vendas diretas envolve a implementação de sistemas de comissionamento eficientes e a integração de ferramentas de CRM. A automaç...</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="../../../../2026/11/22/integrar-sistemas-venda-direta-erp-fiscal/"><img src="../../../../imagens/posts/integrar-sistemas-venda-direta-erp-fiscal.jpg" alt="Como integrar sistemas de venda direta com ERP fiscal?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/11/22/integrar-sistemas-venda-direta-erp-fiscal/" class="hover:underline">Como integrar sistemas de venda direta com ERP fiscal?</a></h3>
@@ -235,10 +228,17 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/06/03/tecnologia-vendas-diretas-escala-considerar/"><img src="../../../../imagens/posts/tecnologia-vendas-diretas-escala-considerar.jpg" alt="Tecnologia para Vendas Diretas em Escala: O que Considerar" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="../../../../2026/10/15/comissao-cargo-plano-pontos-venda-direta/"><img src="../../../../imagens/posts/comissao-cargo-plano-pontos-venda-direta.jpg" alt="Comissão por cargo ou plano de pontos em venda direta?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/03/tecnologia-vendas-diretas-escala-considerar/" class="hover:underline">Tecnologia para Vendas Diretas em Escala: O que Considerar</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">A tecnologia facilita a automação de processos, melhora a gestão de comissionamento e proporciona suporte ao distribuidor. Com um software adequado, como o S...</p>
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/10/15/comissao-cargo-plano-pontos-venda-direta/" class="hover:underline">Comissão por cargo ou plano de pontos em venda direta?</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda as diferenças e como a integração ERP pode impactar suas vendas.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/09/22/diferenca-venda-direta-marketing-multinivel/"><img src="../../../../imagens/posts/diferenca-venda-direta-marketing-multinivel.jpg" alt="Diferença entre Venda Direta e Marketing Multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/09/22/diferenca-venda-direta-marketing-multinivel/" class="hover:underline">Diferença entre Venda Direta e Marketing Multinível</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">Venda direta se concentra na comercialização de produtos diretamente ao consumidor, enquanto o marketing multinível envolve a construção de uma rede</p>
   </div>
 </article>
   </div>

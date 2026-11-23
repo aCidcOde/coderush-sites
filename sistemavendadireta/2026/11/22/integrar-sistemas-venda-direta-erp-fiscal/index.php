@@ -225,13 +225,6 @@
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/08/15/integrar-sistema-venda-direta-erp/"><img src="../../../../imagens/posts/integrar-sistema-venda-direta-erp.jpg" alt="Como integrar seu sistema de venda direta com ERP" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
-  <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/08/15/integrar-sistema-venda-direta-erp/" class="hover:underline">Como integrar seu sistema de venda direta com ERP</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Integrar seu sistema de venda direta com um ERP, como TOTVS ou Bling, permite otimizar processos, automatizar comissionamentos e melhorar a visibilidade</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <a href="../../../../2026/10/15/comissao-cargo-plano-pontos-venda-direta/"><img src="../../../../imagens/posts/comissao-cargo-plano-pontos-venda-direta.jpg" alt="Comissão por cargo ou plano de pontos em venda direta?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/10/15/comissao-cargo-plano-pontos-venda-direta/" class="hover:underline">Comissão por cargo ou plano de pontos em venda direta?</a></h3>
@@ -243,6 +236,13 @@
   <div class="p-4">
     <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/08/02/levar-operacao-venda-direta-para-outro-pais/" class="hover:underline">Levar a venda direta para outro país: o que muda no sistema</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">O que muda no sistema quando a venda direta cruza a fronteira: idioma, moeda, documento fiscal, endereço e plano de comissões — com um case real no Paraguai.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <a href="../../../../2026/07/18/ia-pode-otimizar-suporte-distribuidor-mmn/"><img src="../../../../imagens/posts/ia-pode-otimizar-suporte-distribuidor-mmn.jpg" alt="Como a IA pode otimizar o suporte ao distribuidor no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/07/18/ia-pode-otimizar-suporte-distribuidor-mmn/" class="hover:underline">Como a IA pode otimizar o suporte ao distribuidor no MMN</a></h3>
+    <p class="mt-2 text-sm leading-relaxed text-white/80">A IA pode analisar dados em tempo real, automatizar processos e fornecer insights para otimizar a operação do distribuidor. Isso resulta em maior eficiência,...</p>
   </div>
 </article>
   </div>
