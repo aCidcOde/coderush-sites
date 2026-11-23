@@ -313,7 +313,14 @@ if (($_POST['website'] ?? '') !== '') {
 $pareceLink = static fn (string $v): bool =>
     (bool) preg_match('~(https?://|www\.|\.com|\.org|\.net|\.ru|\.xyz|t\.me/|bit\.ly)~i', $v);
 
-if ($pareceLink($nome) || $pareceLink($mensagem) && mb_strlen($mensagem) < 40) {
+// 22-23/11/2026: nova leva, sete em dois dias — nome "Free AI API" (sem link),
+// mensagem LONGA com dois links (o segundo aponta um "prompt.txt": isca pra agente
+// de IA que le lead) e celular chines de 11 digitos. Passava nas tres barreiras
+// acima, porque a regra de link so olhava mensagem curta. Cliente pode colar o
+// site da empresa na mensagem; dois links ou mais, nenhum colou ate hoje.
+$linksNaMensagem = preg_match_all('~https?://~i', $mensagem);
+
+if ($pareceLink($nome) || $pareceLink($mensagem) && mb_strlen($mensagem) < 40 || $linksNaMensagem >= 2) {
     @file_put_contents(__DIR__ . '/storage/spam-bloqueado.log',
         sprintf("[%s] %s | %s | %s\n", date('c'), mb_substr($nome, 0, 80),
             $_SERVER['REMOTE_ADDR'] ?? '-', mb_substr((string) ($_SERVER['HTTP_USER_AGENT'] ?? ''), 0, 60)),
@@ -325,10 +332,16 @@ if ($pareceLink($nome) || $pareceLink($mensagem) && mb_strlen($mensagem) < 40) {
 // Telefone brasileiro: 10 ou 11 digitos com DDD, ou 12-13 com o +55 na frente.
 // Os spams vieram com 12 digitos SEM comecar por 55 (450655654883, 341058646151)
 // — e essa combinacao que denuncia numero inventado.
+// Celular brasileiro de 11 digitos e sempre DDD + 9: o "15676623223" de 22/11
+// (celular da China) passava como DDD 15. O zero de discagem a frente ("011...")
+// e tirado antes, pra nao barrar fixo digitado do jeito antigo.
 $telDigits = preg_replace('/\D+/', '', $telefone);
+$telBr = ltrim($telDigits, '0');
 $telValido = $telDigits === ''
-    || strlen($telDigits) === 10 || strlen($telDigits) === 11
-    || (str_starts_with($telDigits, '55') && strlen($telDigits) >= 12 && strlen($telDigits) <= 13);
+    || strlen($telBr) === 10
+    || (strlen($telBr) === 11 && $telBr[2] === '9')
+    || (str_starts_with($telBr, '55')
+        && (strlen($telBr) === 12 || (strlen($telBr) === 13 && $telBr[4] === '9')));
 if (!$telValido) {
     @file_put_contents(__DIR__ . '/storage/spam-bloqueado.log',
         sprintf("[%s] telefone invalido: %s | %s\n", date('c'), $telDigits,
