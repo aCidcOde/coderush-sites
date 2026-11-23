@@ -6,7 +6,7 @@ const crypto = require("node:crypto");
 const { execSync } = require("node:child_process");
 const { loadEnvFiles } = require("./lib/env-loader");
 const { pickSiteTheme, pickAngle, siteProfile, sitePromptStyle } = require("./lib/site-strategy");
-const { loadRecentPosts, recentThemes, recentAngles } = require("./lib/recent-posts");
+const { loadRecentPosts, recentThemes, recentAngles, publishedThemes } = require("./lib/recent-posts");
 const {
   resolveAiConfig,
   generateWithOpenAI,
@@ -512,7 +512,13 @@ async function run() {
     }
 
     const recents = loadRecentPosts(site.id, { beforeDate: date, limit: 8 });
-    const excludeThemes = recentThemes(recents);
+    // todo tema ja publicado sai do sorteio, nao so os dos 8 ultimos (ver publishedThemes)
+    const excludeThemes = Array.from(new Set([
+      ...recentThemes(recents),
+      ...publishedThemes(site.id, site.siteRoot ? path.resolve(ROOT, site.siteRoot) : null)
+    ]));
+    const temasDaLista = (siteProfile(site.id)?.themes || []).map((t) => String(t).trim().toLowerCase());
+    const temasLivres = temasDaLista.filter((t) => !excludeThemes.includes(t));
     const excludeAngles = recentAngles(recents);
     const angle = pickAngle(site.id, date, { exclude: excludeAngles });
     let contract = buildPostContract(site, focus, date, angle, { excludeThemes });
@@ -522,6 +528,14 @@ async function run() {
     let aiProvider = "fallback";
     let warning = null;
     let research = { items: [], errors: [], skipped: true };
+    // Lista esgotada: o sorteio cai de volta em tema ja publicado (repete). Avisa no
+    // relatorio/e-mail em vez de repetir calado — e a hora de renovar a lista pelo
+    // Search Console (python3 automation/ads/search-console.py --dias=90).
+    const avisoTemas = temasDaLista.length && temasLivres.length === 0
+      ? "Lista de temas ESGOTADA: todos ja viraram post — este repete tema. Renovar os temas pelo Search Console."
+      : (temasDaLista.length && temasLivres.length <= 2
+        ? `Restam ${temasLivres.length} tema(s) inedito(s) na lista — renovar pelo Search Console em breve.`
+        : null);
 
     if (existingDraft) {
       contract = existingDraft;
@@ -595,7 +609,8 @@ async function run() {
       ok: true,
       aiUsed,
       aiProvider,
-      warning,
+      warning: [warning, avisoTemas].filter(Boolean).join(" ") || null,
+      temasLivres: temasLivres.length,
       angle: contract.angle,
       theme: contract.theme,
       research: {

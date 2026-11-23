@@ -451,34 +451,45 @@ const SITE_PROFILES = {
         "plataforma MMN sob medida"
       ]
     },
-    // TEMAS DERIVADOS DO SEARCH CONSOLE (trocados em 05/09/2026).
+    // TEMAS DERIVADOS DO SEARCH CONSOLE — renovados em 23/11/2026.
     //
-    // A lista anterior era escrita a mao em linguagem de consultoria — "governanca
-    // comercial com dados e IA", "previsibilidade de receita". Em 30 dias os 9 posts
-    // indexados renderam 25 impressoes e 2 cliques: 1% do dominio. Nenhum tema batia
-    // com o que o publico busca.
+    // Historia: em 05/09 a lista de consultoria ("governanca comercial com dados e
+    // IA") deu lugar a buscas reais, e funcionou — os posts dessa safra sao os unicos
+    // com volume (empresas de MMN no Brasil: 649 impressoes em 28 dias; diferenca
+    // venda direta x MMN na posicao 5). Mas a lista nunca foi renovada e o bot so
+    // excluia os 8 ultimos temas: em novembro ja estava repetindo. Desde 23/11 todo
+    // tema publicado sai do sorteio (lib/recent-posts.js publishedThemes) e o
+    // relatorio avisa quando restarem 2 ou menos.
     //
-    // Estes vieram das buscas reais em que aparecemos MAL posicionados (>10) e que
-    // NAO contem palavra de produto — busca com "sistema/software/plataforma" tem
-    // intencao de compra e merece pagina de produto (/sistema-mmn/), nao post.
-    // Volume somado: ~605 impressoes/trimestre hoje desperdicadas.
+    // Regra mantida: busca com "sistema/software/plataforma" e intencao de compra e
+    // vai pra pagina de produto (/sistema-mmn/), nao pra post. As de "gratis" e as de
+    // nome de concorrente sao excecao de proposito: quem busca isso esta COMPARANDO,
+    // e um post que responde a duvida leva pra pagina de produto.
     //
-    // Ao revisar, rodar: python3 automation/ads/search-console.py --dias=90
+    // Origem de cada tema (Search Console, 90 dias ate 21/11/2026):
+    //   1-5  da lista de 05/09 que nunca viraram post (execucoes de 14, 23 e 30/09
+    //        falharam antes de publicar)
+    //   6    "plataforma mmn gratis" + "plataforma marketing multinivel gratis" +
+    //        "site de mmn gratis" — 37 impressoes, posicao 16-19
+    //   7    "sistema binario multinivel" — 12 impressoes, posicao 51
+    //   8    "aliadus mmn" + "vantus mmn" (concorrentes) — 17 impressoes; o post
+    //        NAO cita concorrente: ensina a comparar
+    //   9    "vendas diretas e marketing" + "marketing de vendas diretas" — 57
+    //        impressoes, posicao 14-19, caindo na home
+    //   10   "simulacao de marketing" — 15 impressoes, posicao 35, caindo no /simulador/
+    //
+    // Ao renovar de novo: python3 automation/ads/search-console.py --dias=90
     themes: [
-      "quais empresas de marketing multinivel existem no Brasil",
       "o que e marketing multinivel e como funciona na pratica",
-      "diferenca entre venda direta e marketing multinivel",
       "como saber se uma empresa de MMN e confiavel",
-      "como cadastrar consultores e distribuidores em uma operacao de MMN",
-      "marketing de rede no Brasil: panorama e regulamentacao",
-      "plano de carreira em marketing multinivel: como estruturar",
-      "MMN B2C: vender para consumidor final por meio de consultores",
       "como montar uma operacao de marketing multinivel do zero",
       "quanto custa manter uma operacao de venda direta",
       "recrutamento e retencao de consultores em marketing de rede",
-      "comissao por cargo versus plano de pontos em venda direta",
-      "integracao de sistema de venda direta com ERP (TOTVS, Bling)",
-      "internacionalizacao de operacao de venda direta (idioma, moeda e documento fiscal)"
+      "existe sistema de MMN gratis? o que vem de graca e o que custa depois",
+      "como funciona o plano binario no marketing multinivel (perna menor e perna preferencial)",
+      "como escolher o fornecedor de sistema de MMN: o que comparar antes de contratar",
+      "marketing de vendas diretas: como divulgar a operacao e atrair consultores",
+      "simulacao de plano de compensacao: projetar comissao, payout e margem antes de lancar"
     ]
   }
 };

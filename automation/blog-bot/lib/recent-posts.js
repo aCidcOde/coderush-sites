@@ -60,6 +60,49 @@ function recentThemes(recents) {
   return Array.from(uniqueLowerSet(recents.map((r) => r.theme)));
 }
 
+/*
+ * Temas que JA viraram post publicado, em toda a historia do site.
+ *
+ * POR QUE (23/11/2026): a exclusao olhava so os 8 rascunhos mais recentes. Com 14
+ * temas na lista, o sorteio voltava aos antigos antes de esgota-la — e o SVD
+ * publicou duas vezes "comissao por cargo x pontos" (06/08 e 15/10), "integracao
+ * com ERP" (15/08 e 22/11), "diferenca venda direta x MMN" (05 e 22/09). Posts
+ * repetidos dividem as impressoes do Google e nenhum sobe.
+ *
+ * "Publicado" = existe pasta com o slug do rascunho em qualquer data do site:
+ * rascunho de execucao que falhou nao conta (o de 22/09 virou o post de 05/09, e
+ * os de 14, 23 e 30/09 nunca foram ao ar). Sites de API (sem siteRoot) nao tem
+ * como conferir: ali todo rascunho conta como publicado.
+ */
+function publishedThemes(siteId, siteRootAbs) {
+  const siteOut = path.join(OUT_ROOT, siteId);
+  if (!fs.existsSync(siteOut)) return [];
+  const slugsNoSite = new Set();
+  if (siteRootAbs && fs.existsSync(siteRootAbs)) {
+    for (const ano of fs.readdirSync(siteRootAbs).filter((n) => /^\d{4}$/.test(n))) {
+      const pAno = path.join(siteRootAbs, ano);
+      for (const mes of fs.readdirSync(pAno).filter((n) => /^\d{2}$/.test(n))) {
+        const pMes = path.join(pAno, mes);
+        for (const dia of fs.readdirSync(pMes).filter((n) => /^\d{2}$/.test(n))) {
+          for (const slug of fs.readdirSync(path.join(pMes, dia))) slugsNoSite.add(slug);
+        }
+      }
+    }
+  }
+  const temas = new Set();
+  for (const dateDir of fs.readdirSync(siteOut).filter((n) => /^\d{4}-\d{2}-\d{2}$/.test(n))) {
+    const dir = path.join(siteOut, dateDir);
+    if (!fs.statSync(dir).isDirectory()) continue;
+    for (const file of fs.readdirSync(dir).filter((n) => n.endsWith(".json"))) {
+      const draft = readDraft(path.join(dir, file));
+      if (!draft || !draft.theme) continue;
+      if (siteRootAbs && !slugsNoSite.has(draft.slug)) continue;
+      temas.add(String(draft.theme).trim().toLowerCase());
+    }
+  }
+  return Array.from(temas);
+}
+
 function recentAngles(recents) {
   return Array.from(uniqueLowerSet(recents.map((r) => r.angle)));
 }
@@ -95,5 +138,6 @@ module.exports = {
   loadRecentPosts,
   loadRecentCoverAlts,
   recentThemes,
+  publishedThemes,
   recentAngles
 };
