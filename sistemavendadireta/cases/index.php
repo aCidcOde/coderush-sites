@@ -8,6 +8,9 @@ Fonte de dados unica: ../inc/cases.php (mesma usada pela secao #cases da home).
 */
 
 $todosCases = require __DIR__ . '/../inc/cases.php';
+// do mais novo pro mais velho (pedido do usuario em 26/11/2026): 'desde' = quando o projeto entrou
+// no ar, AAAA-MM. usort e estavel no PHP 8, entao empate mantem a ordem do arquivo.
+usort($todosCases, static fn (array $a, array $b): int => strcmp($b['desde'] ?? '0000-00', $a['desde'] ?? '0000-00'));
 $clientCases = array_values(array_filter(
     $todosCases,
     static fn (array $case): bool => empty($case['hidden']) && ($case['status'] ?? 'producao') !== 'desenvolvimento'

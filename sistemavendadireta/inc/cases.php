@@ -50,6 +50,7 @@ return [
             ['value' => '10', 'label' => 'dias até entrar no ar'],
         ],
         'highlightsLabel' => 'Implementações recentes',
+        'desde' => '2026-07',
     ],
     [
         'slug' => 'forone',
@@ -86,12 +87,13 @@ return [
             ['value' => '5', 'label' => 'níveis de carreira'],
             ['value' => 'Bs', 'label' => 'moeda local adaptada'],
         ],
+        'desde' => '2024-06',
     ],
     [
         'slug' => 'mauasinc',
         'name' => 'MauaSinc',
-        'segment' => 'ERP de gestão multi-lojas • Vestuário e produção',
-        'period' => 'Em evolução contínua',
+        'segment' => 'ERP e plataforma de operação • Varejo, finanças e seguros',
+        'period' => 'Em evolução contínua · versão 1.114',
         // 26/11/2026: saiu da home — ERP de vestuario sem link publico prova menos pra quem busca sistema de venda direta; segue em /cases/
         'featured' => false,
         'logo' => 'imagens/clientes/mauasinc.webp',
@@ -99,30 +101,66 @@ return [
         'logoWidth' => 154,
         'logoHeight' => 82,
         'url' => null,
-        'summary' => 'ERP que faz a gestão e o espelhamento de várias lojas do setor de vestuário e produção — '
-            . 'atendendo operações de marcas como Lojas Leader e Vila Romana no norte do país.',
+        'summary' => 'Plataforma única de operação de um grupo com rede de lojas de vestuário, braço financeiro e seguros: TOTVS, CRM, financeiro multiempresa, RH, chamados, carta fiança e seguro de proteção num só lugar, com permissão por papel, pessoa e empresa. Atende operações de marcas como Lojas Leader e Vila Romana no norte do país.',
         'highlights' => [
-            'Gestão e espelhamento de múltiplas lojas',
-            'Sincronização com o TOTVS: produtos, clientes e vendas',
-            'Financeiro multi-empresa, folha e CRM comercial',
-            'Permissões em duas camadas com auditoria de tudo',
+            'Painéis da rede de lojas trazidos do Power BI para dentro do sistema',
+            'Metas das lojas com proposta, atingimento e ranking por % da meta',
+            'Distribuição do que o CD recebeu entre as lojas',
+            'Relatório semanal e e-mail diário de pedidos pendentes automáticos',
+            'Painel analítico de vendas sobre o TOTVS, com margem e carga a cada 3 horas',
+            'Folha de pagamento mensal por loja, ligada ao cadastro de pessoas',
+            'Férias, viagem, reembolso e contratação com assinatura eletrônica',
+            'Chamados com SLA em hora útil, filas por departamento e tempo real',
+            'Seguro de proteção: venda pelo vendedor, adesão por vida e bilhete automático',
+            'Carta fiança: cotação, proposta, contrato e comissão automática',
+            'CRM com automações, WhatsApp e chat do site atendido no sistema',
+            'Fluxo de caixa com saldo real e contas a pagar e receber por empresa',
         ],
         'details' => [
             [
-                'title' => 'Uma plataforma no lugar de planilhas',
-                'body' => 'Pipeline comercial, integração TOTVS, contas a pagar/receber por empresa, desconto em folha '
-                    . 'e dashboards analíticos — a operação inteira num só lugar, com dado confiável.',
+                'title' => 'Do Power BI para dentro do sistema',
+                'body' => 'Os painéis da rede de lojas que viviam fora do sistema passaram para dentro do Mauá Sinc, com permissão por empresa: vendas e estoque, metas com proposta e ranking por atingimento, financeiro, clientes, mapa e fichas das lojas, distribuição do CD e relatório semanal.',
+            ],
+            [
+                'title' => 'RH e chamados sem papel',
+                'body' => 'Férias, viagem, reembolso, contratação e mudança de cargo viraram esteiras de chamado com assinatura eletrônica — desenhada ou digitada — e documento com a marca da empresa. O SLA conta hora útil, e a folha mensal é lançada por loja a partir do cadastro de pessoas.',
+            ],
+            [
+                'title' => 'Produtos financeiros na mesma plataforma',
+                'body' => 'O seguro de proteção é vendido pelo próprio vendedor, com adesão vida a vida nos contratos de empresa, bilhete e kit de boas-vindas automáticos e conferência mensal da fatura da seguradora. A carta fiança vai da cotação ao contrato em contas a receber, com a comissão calculada sozinha.',
             ],
             [
                 'title' => 'Governança nativa',
-                'body' => 'Papel define o que a pessoa faz; módulo define onde. Toda alteração registrada em log de '
-                    . 'atividade, com changelog versionado e comunicado de release por e-mail a cada entrega.',
+                'body' => 'Papel define o que a pessoa faz; módulo define onde; e o administrador ajusta permissões por papel e por pessoa. Toda alteração fica registrada, e cada versão sai com changelog e comunicado de release.',
             ],
         ],
         'metrics' => [
-            ['value' => '7', 'label' => 'módulos integrados'],
-            ['value' => 'TOTVS', 'label' => 'ERP sincronizado'],
+            [
+                'value' => '183',
+                'label' => 'versões publicadas desde julho de 2026',
+            ],
+            [
+                'value' => '200+',
+                'label' => 'funcionalidades novas no período',
+            ],
+            [
+                'value' => '32',
+                'label' => 'lojas no painel analítico',
+            ],
+            [
+                'value' => 'TOTVS',
+                'label' => 'ERP sincronizado',
+            ],
         ],
+        'shots' => [
+            [
+                'src' => 'imagens/clientes/telas/mauasinc-faturas.webp',
+                'alt' => 'Tela de faturas das empresas no Mauá Sinc, preenchida com dados de exemplo',
+                'legenda' => 'Mauá Sinc com dados de exemplo: faturas recorrentes dos contratos de empresa.',
+            ],
+        ],
+        'highlightsLabel' => 'Implementações recentes',
+        'desde' => '2026-07',
     ],
     [
         'slug' => 'ecotrend-afiliados',
@@ -160,6 +198,7 @@ return [
             ['value' => 'NF-e', 'label' => 'emissão fiscal integrada'],
             ['value' => 'CD', 'label' => 'centro de distribuição'],
         ],
+        'desde' => '2013-12',
     ],
     [
         'slug' => 'avig360',
@@ -191,6 +230,7 @@ return [
             ],
         ],
         'metrics' => [],
+        'desde' => '2026-03',
     ],
     [
         // 16/11/2026: loja fora do ar (Cloudflare 522). Volta quando a loja responder.
@@ -223,6 +263,7 @@ return [
         'metrics' => [
             ['value' => '5', 'label' => 'linhas de produto'],
         ],
+        'desde' => '2026-06',
     ],
     [
         // Primeira venda vinda da campanha do Google Ads (R$ 3.500, 26/08/2026).
@@ -264,6 +305,7 @@ return [
             ['value' => 'B2B', 'label' => 'sem venda ao consumidor'],
         ],
         'highlightsLabel' => 'Implementações recentes',
+        'desde' => '2026-08',
     ],
     [
         // Marca de colchoes que usa o SVD como escritorio virtual da rede de
@@ -300,6 +342,7 @@ return [
         'metrics' => [
             ['value' => 'Fábrica', 'label' => 'venda direta ao revendedor'],
         ],
+        'desde' => '2020-03',
     ],
     [
         // Fechado em 05/09/2026 pela campanha do Google Ads (grupo Sistema MMN).
@@ -343,6 +386,7 @@ return [
             ['value' => '9', 'label' => 'níveis de rede'],
         ],
         'highlightsLabel' => 'Implementações recentes',
+        'desde' => '2026-09',
     ],
     [
         'slug' => 'protech-nutritional',
@@ -383,6 +427,7 @@ return [
             ['value' => '3', 'label' => 'formas de ganho no plano'],
         ],
         'highlightsLabel' => 'Implementações recentes',
+        'desde' => '2026-07',
     ],
     [
         // 26/11/2026: embargo levantado pelo usuario (briefing dos cases: "MEDPLANT — ADICIONAR NOVO CASE").
@@ -430,6 +475,7 @@ return [
             ],
         ],
         'highlightsLabel' => 'Destaques',
+        'desde' => '2026-08',
     ],
     [
         'slug' => 'emergency-saas',
@@ -471,6 +517,7 @@ return [
             ['value' => '24/7', 'label' => 'acesso aos documentos'],
         ],
         'highlightsLabel' => 'Implementações recentes',
+        'desde' => '2025-06',
     ],
     [
         'slug' => 'emergency-erp',
@@ -523,6 +570,7 @@ return [
             ],
         ],
         'highlightsLabel' => 'Implementações recentes',
+        'desde' => '2006-01',
     ],
     [
         'slug' => 'gordon-codafacil',
@@ -568,6 +616,7 @@ return [
             ],
         ],
         'highlightsLabel' => 'Implementações recentes',
+        'desde' => '2026-01',
     ],
     // ---- 26/11/2026: cases do grupo trazidos de coderush.com.br, codafacil.dev e dos produtos proprios
     // (pedido do usuario: "copia os clientes e resultados desses sites todos ... vamos por bastante case la").
@@ -619,6 +668,7 @@ return [
             ['value' => 'RAG', 'label' => 'base de conhecimento dedicada'],
             ['value' => 'LGPD', 'label' => 'logs auditáveis'],
         ],
+        'desde' => '2026-06',
     ],
     [
         'slug' => 'wellby',
@@ -665,6 +715,7 @@ return [
             ['value' => '14 dias', 'label' => 'de teste no plano completo'],
             ['value' => 'Watch', 'label' => 'app próprio no relógio'],
         ],
+        'desde' => '2026-11',
     ],
     [
         'slug' => 'isy-middleware',
@@ -694,6 +745,7 @@ return [
             ],
         ],
         'metrics' => [],
+        'desde' => '2025-01',
     ],
     [
         'slug' => 'hub-payments',
@@ -722,6 +774,7 @@ return [
             ],
         ],
         'metrics' => [],
+        'desde' => '2025-01',
     ],
     [
         // OCULTO ate confirmar: em 26/11/2026 liquitudo.com.br respondia 403 pro nosso servidor e pra
@@ -743,6 +796,7 @@ return [
         'highlights' => [],
         'details' => [],
         'metrics' => [],
+        'desde' => '2026-01',
     ],
     // 26/11/2026: produto em desenvolvimento — vai em secao propria de /cases/, nunca na lista de producao
     [
@@ -781,5 +835,6 @@ return [
             ],
         ],
         'metrics' => [],
+        'desde' => '2026-11',
     ],
 ];

@@ -173,6 +173,8 @@ $clientCases = array_values(array_filter(
     require __DIR__ . '/inc/cases.php',
     static fn (array $case): bool => empty($case['hidden']) && !empty($case['featured'])
 ));
+// mesma ordem de /cases/: do mais novo pro mais velho ('desde', AAAA-MM)
+usort($clientCases, static fn (array $a, array $b): int => strcmp($b['desde'] ?? '0000-00', $a['desde'] ?? '0000-00'));
 $clientCompaniesTop = array_slice($clientCompanies, 0, (int) ceil(count($clientCompanies) / 2));
 $clientCompaniesBottom = array_slice($clientCompanies, (int) ceil(count($clientCompanies) / 2));
 
