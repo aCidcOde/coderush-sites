@@ -130,6 +130,10 @@
         <h2 class="text-xl font-semibold text-white sm:text-2xl">O Papel da Tecnologia no Marketing Multinível</h2>
         <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">O marketing multinível (MMN) se beneficia enormemente da tecnologia. Sistemas de venda direta permitem integrar diferentes áreas, desde o comissionamento até a logística. Isso garante que os distribuidores tenham acesso a informações em tempo real, aumentando a eficiência e a satisfação do cliente. Por exemplo, soluções como o Sistema Venda Direta oferecem ferramentas que automatizam processos e melhoram a gestão do relacionamento com o cliente.</p>
       </section>
+      <figure class="tela-produto mt-8 overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+        <img src="../../../../imagens/posts/telas/admin-painel.webp" alt="Painel da administração do Sistema Venda Direta com gráfico de receitas e despesas por mês" class="block w-full" style="height:auto" width="1200" height="750" loading="lazy" decoding="async" />
+        <figcaption class="px-4 py-3 text-xs leading-6 text-white/70 sm:text-sm">Painel da administração: receitas e despesas mês a mês, sem montar planilha. <a href="https://painel.sistemavendadireta.com.br/primeiros-passos?utm_source=blog&amp;utm_medium=tela&amp;utm_campaign=demo&amp;utm_content=tecnologia-escalar-vendas-diretas-mmn" target="_blank" rel="noopener" class="font-semibold text-white underline decoration-white/40 underline-offset-4" onclick="window.gtag&amp;&amp;gtag('event','demo_click',{page:location.pathname,link_url:this.href.split('?')[0]})">Ver na demonstração →</a></figcaption>
+      </figure>
       <section class="mt-8">
         <h2 class="text-xl font-semibold text-white sm:text-2xl">Benefícios da Tecnologia para MMN</h2>
         <ul class="mt-4 space-y-2 text-sm leading-7 text-white/85 sm:text-base">
@@ -162,6 +166,10 @@
         <h2 class="text-xl font-semibold text-white sm:text-2xl">Implementando Soluções Tecnológicas</h2>
         <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">Para implementar soluções tecnológicas eficazes no MMN, é crucial escolher um software que se adapte às necessidades da sua operação. O sistema deve integrar com ferramentas de CRM, facilitar o comissionamento e ser flexível o suficiente para escalar conforme a empresa cresce. Plataformas como a [ATOMMN](https://atommn.com.br/) oferecem soluções sob medida, enquanto o [Mediaw](https://www.mediaw.com.br/) proporciona um ecossistema completo para canais próprios.</p>
       </section>
+      <figure class="tela-produto mt-8 overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+        <img src="../../../../imagens/posts/telas/consultor-rede.webp" alt="Tela da rede do consultor com resumo de ativos e inativos e distribuição por nível" class="block w-full" style="height:auto" width="1200" height="750" loading="lazy" decoding="async" />
+        <figcaption class="px-4 py-3 text-xs leading-6 text-white/70 sm:text-sm">A rede do consultor: ativos, inativos e quantas pessoas em cada nível. <a href="https://painel.sistemavendadireta.com.br/primeiros-passos?utm_source=blog&amp;utm_medium=tela&amp;utm_campaign=demo&amp;utm_content=tecnologia-escalar-vendas-diretas-mmn" target="_blank" rel="noopener" class="font-semibold text-white underline decoration-white/40 underline-offset-4" onclick="window.gtag&amp;&amp;gtag('event','demo_click',{page:location.pathname,link_url:this.href.split('?')[0]})">Ver na demonstração →</a></figcaption>
+      </figure>
       <p class="my-6 text-sm leading-7 text-white/85 sm:text-base">
         Considere como a tecnologia pode alavancar suas vendas diretas. <a href="../../../../sistema-mmn/?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Conhecer o sistema MMN →</a>
       </p>

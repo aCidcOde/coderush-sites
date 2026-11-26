@@ -134,6 +134,10 @@
         <h2 class="text-xl font-semibold text-white sm:text-2xl">O desafio da precificação internacional</h2>
         <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">Ao expandir operações de marketing multinível (MMN) para outros países, a precificação se torna um desafio relevante. Diferentes moedas podem impactar custos, margens de lucro e a percepção de valor do produto. É essencial ter uma estratégia que considere as variações cambiais e as expectativas do consumidor local para manter a competitividade.</p>
       </section>
+      <figure class="tela-produto mt-8 overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+        <img src="../../../../imagens/posts/telas/consultor-recompra.webp" alt="Catálogo de recompra no escritório virtual com produtos, preços e botão comprar" class="block w-full" style="height:auto" width="1200" height="750" loading="lazy" decoding="async" />
+        <figcaption class="px-4 py-3 text-xs leading-6 text-white/70 sm:text-sm">Recompra pelo escritório: o consultor pede com o desconto do nível dele já aplicado. <a href="https://painel.sistemavendadireta.com.br/primeiros-passos?utm_source=blog&amp;utm_medium=tela&amp;utm_campaign=demo&amp;utm_content=precificar-operacoes-internacionais-mmn-moeda-local" target="_blank" rel="noopener" class="font-semibold text-white underline decoration-white/40 underline-offset-4" onclick="window.gtag&amp;&amp;gtag('event','demo_click',{page:location.pathname,link_url:this.href.split('?')[0]})">Ver na demonstração →</a></figcaption>
+      </figure>
       <section class="mt-8">
         <h2 class="text-xl font-semibold text-white sm:text-2xl">Fatores a considerar na precificação</h2>
         <ul class="mt-4 space-y-2 text-sm leading-7 text-white/85 sm:text-base">
@@ -166,6 +170,10 @@
         <h2 class="text-xl font-semibold text-white sm:text-2xl">A importância da tecnologia na precificação</h2>
         <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">Implementar um sistema de venda direta que integre tecnologia e IA pode facilitar a adaptação da precificação em tempo real. Softwares especializados permitem ajustes automáticos conforme as flutuações cambiais, garantindo que sua empresa mantenha a competitividade. Além disso, o uso de CRM para venda direta possibilita um melhor acompanhamento das vendas e das expectativas dos clientes, permitindo ajustes mais precisos.</p>
       </section>
+      <figure class="tela-produto mt-8 overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+        <img src="../../../../imagens/posts/telas/loja-virtual.webp" alt="Loja virtual do consultor com vitrine, menu de categorias e carrinho" class="block w-full" style="height:auto" width="1200" height="750" loading="lazy" decoding="async" />
+        <figcaption class="px-4 py-3 text-xs leading-6 text-white/70 sm:text-sm">Loja virtual de cada consultor: o cliente final compra e a venda cai na conta de quem indicou. <a href="https://painel.sistemavendadireta.com.br/primeiros-passos?utm_source=blog&amp;utm_medium=tela&amp;utm_campaign=demo&amp;utm_content=precificar-operacoes-internacionais-mmn-moeda-local" target="_blank" rel="noopener" class="font-semibold text-white underline decoration-white/40 underline-offset-4" onclick="window.gtag&amp;&amp;gtag('event','demo_click',{page:location.pathname,link_url:this.href.split('?')[0]})">Ver na demonstração →</a></figcaption>
+      </figure>
       <p class="my-6 text-sm leading-7 text-white/85 sm:text-base">
         Um software para empresa de venda direta pode ajudar na implementação dessas soluções. <a href="../../../../#contato" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Solicite um orcamento →</a>
       </p>

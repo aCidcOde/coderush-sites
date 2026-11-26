@@ -134,6 +134,10 @@
         <h2 class="text-xl font-semibold text-white sm:text-2xl">Entendendo os Modelos</h2>
         <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">A venda direta é um método onde as empresas vendem produtos diretamente ao consumidor, sem intermediários. Já o marketing multinível (MMN) envolve a criação de uma rede de distribuidores, que não só vendem produtos, mas também recrutam novos vendedores. Isso gera uma estrutura em que os ganhos são proporcionais ao volume de vendas da rede. Um estudo da S4DS explica que essa distinção é crucial para o planejamento estratégico de negócios.</p>
       </section>
+      <figure class="tela-produto mt-8 overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+        <img src="../../../../imagens/posts/telas/consultor-inicio.webp" alt="Tela inicial do escritório virtual do consultor com nível atual, total recebido e total da rede" class="block w-full" style="height:auto" width="1200" height="750" loading="lazy" decoding="async" />
+        <figcaption class="px-4 py-3 text-xs leading-6 text-white/70 sm:text-sm">Escritório virtual: o consultor abre e já vê nível, ganhos e tamanho da rede. <a href="https://painel.sistemavendadireta.com.br/primeiros-passos?utm_source=blog&amp;utm_medium=tela&amp;utm_campaign=demo&amp;utm_content=diferenca-venda-direta-marketing-multinivel" target="_blank" rel="noopener" class="font-semibold text-white underline decoration-white/40 underline-offset-4" onclick="window.gtag&amp;&amp;gtag('event','demo_click',{page:location.pathname,link_url:this.href.split('?')[0]})">Ver na demonstração →</a></figcaption>
+      </figure>
       <section class="mt-8">
         <h2 class="text-xl font-semibold text-white sm:text-2xl">Características Distintivas</h2>
         <ul class="mt-4 space-y-2 text-sm leading-7 text-white/85 sm:text-base">
@@ -166,6 +170,10 @@
         <h2 class="text-xl font-semibold text-white sm:text-2xl">A Importância da IA</h2>
         <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">A aplicação de IA em vendas diretas e MMN pode oferecer insights valiosos. Por exemplo, o uso de softwares para análise de dados pode identificar padrões de compra e preferências dos consumidores, permitindo uma abordagem mais direcionada. Além disso, sistemas de comissionamento para MMN podem ser otimizados utilizando IA para calcular comissões de forma precisa e em tempo real. Isso torna os processos mais eficientes e previsíveis, como discutido em um artigo recente na [Wikipédia](https://pt.wikipedia.org/wiki/Marketing_multinível).</p>
       </section>
+      <figure class="tela-produto mt-8 overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+        <img src="../../../../imagens/posts/telas/consultor-rede.webp" alt="Tela da rede do consultor com resumo de ativos e inativos e distribuição por nível" class="block w-full" style="height:auto" width="1200" height="750" loading="lazy" decoding="async" />
+        <figcaption class="px-4 py-3 text-xs leading-6 text-white/70 sm:text-sm">A rede do consultor: ativos, inativos e quantas pessoas em cada nível. <a href="https://painel.sistemavendadireta.com.br/primeiros-passos?utm_source=blog&amp;utm_medium=tela&amp;utm_campaign=demo&amp;utm_content=diferenca-venda-direta-marketing-multinivel" target="_blank" rel="noopener" class="font-semibold text-white underline decoration-white/40 underline-offset-4" onclick="window.gtag&amp;&amp;gtag('event','demo_click',{page:location.pathname,link_url:this.href.split('?')[0]})">Ver na demonstração →</a></figcaption>
+      </figure>
       <p class="my-6 text-sm leading-7 text-white/85 sm:text-base">
         Uma consultoria pode ajudar a entender qual modelo se adapta melhor ao seu negócio. <a href="../../../../#contato" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Solicite um orcamento →</a>
       </p>

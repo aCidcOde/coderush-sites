@@ -134,6 +134,10 @@
         <h2 class="text-xl font-semibold text-white sm:text-2xl">A importância da NF-e em vendas diretas</h2>
         <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">A Nota Fiscal Eletrônica (NF-e) é um componente essencial na operação de vendas diretas e marketing multinível. Ela não apenas assegura a conformidade fiscal, mas também facilita a integração de dados entre o sistema de vendas e a contabilidade. A utilização de um software para MMN que integre a emissão de NF-e permite que os diretores comerciais tenham uma visão clara das transações e do comissionamento, reduzindo riscos de erro e aumentando a eficiência operacional.</p>
       </section>
+      <figure class="tela-produto mt-8 overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+        <img src="../../../../imagens/posts/telas/admin-estoque.webp" alt="Tela de gerenciamento de estoque com produtos, quantidades e código do ERP" class="block w-full" style="height:auto" width="1200" height="750" loading="lazy" decoding="async" />
+        <figcaption class="px-4 py-3 text-xs leading-6 text-white/70 sm:text-sm">Estoque com o código do ERP amarrado a cada produto — a base da integração fiscal e logística. <a href="https://painel.sistemavendadireta.com.br/primeiros-passos?utm_source=blog&amp;utm_medium=tela&amp;utm_campaign=demo&amp;utm_content=comissionamento-emissao-nf-venda-direta" target="_blank" rel="noopener" class="font-semibold text-white underline decoration-white/40 underline-offset-4" onclick="window.gtag&amp;&amp;gtag('event','demo_click',{page:location.pathname,link_url:this.href.split('?')[0]})">Ver na demonstração →</a></figcaption>
+      </figure>
       <section class="mt-8">
         <h2 class="text-xl font-semibold text-white sm:text-2xl">Aspectos a considerar na emissão de NF-e</h2>
         <ul class="mt-4 space-y-2 text-sm leading-7 text-white/85 sm:text-base">
@@ -162,6 +166,10 @@
         <h2 class="text-xl font-semibold text-white sm:text-2xl">Desafios do comissionamento sem integração fiscal</h2>
         <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">Gerenciar comissões em vendas diretas sem uma integração adequada pode ser um grande desafio. Sem a emissão correta de NF-e, os dados podem ficar desencontrados, levando a erros nos cálculos e possíveis conflitos entre distribuidores. Além disso, isso pode afetar a confiança na operação, resultando em desmotivação da equipe. Um sistema de marketing multinível que integre todos esses processos é fundamental para garantir a precisão e a satisfação dos envolvidos.</p>
       </section>
+      <figure class="tela-produto mt-8 overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+        <img src="../../../../imagens/posts/telas/admin-plano-comercial.webp" alt="Tela de plano comercial com níveis, metas anuais, metas mensais e desconto de cada nível" class="block w-full" style="height:auto" width="1200" height="750" loading="lazy" decoding="async" />
+        <figcaption class="px-4 py-3 text-xs leading-6 text-white/70 sm:text-sm">Plano comercial configurado na tela: nível, meta e desconto — mudar a regra não vira projeto de programação. <a href="https://painel.sistemavendadireta.com.br/primeiros-passos?utm_source=blog&amp;utm_medium=tela&amp;utm_campaign=demo&amp;utm_content=comissionamento-emissao-nf-venda-direta" target="_blank" rel="noopener" class="font-semibold text-white underline decoration-white/40 underline-offset-4" onclick="window.gtag&amp;&amp;gtag('event','demo_click',{page:location.pathname,link_url:this.href.split('?')[0]})">Ver na demonstração →</a></figcaption>
+      </figure>
       <p class="my-6 text-sm leading-7 text-white/85 sm:text-base">
         Vamos discutir como um sistema de comissionamento pode facilitar sua operação. <a href="../../../../#contato" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Solicite um orcamento →</a>
       </p>

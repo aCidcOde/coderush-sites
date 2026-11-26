@@ -134,6 +134,10 @@
         <h2 class="text-xl font-semibold text-white sm:text-2xl">A Importância da Integração ERP</h2>
         <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">A integração de sistemas ERP com ferramentas de onboarding é fundamental para empresas de marketing multinível. Ao conectar dados de vendas, comissionamento e logística, é possível minimizar erros e otimizar processos. Com um sistema de venda direta adequado, você garante que as informações fluam corretamente entre as plataformas, resultando em uma experiência melhor para os distribuidores.</p>
       </section>
+      <figure class="tela-produto mt-8 overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+        <img src="../../../../imagens/posts/telas/consultor-inicio.webp" alt="Tela inicial do escritório virtual do consultor com nível atual, total recebido e total da rede" class="block w-full" style="height:auto" width="1200" height="750" loading="lazy" decoding="async" />
+        <figcaption class="px-4 py-3 text-xs leading-6 text-white/70 sm:text-sm">Escritório virtual: o consultor abre e já vê nível, ganhos e tamanho da rede. <a href="https://painel.sistemavendadireta.com.br/primeiros-passos?utm_source=blog&amp;utm_medium=tela&amp;utm_campaign=demo&amp;utm_content=onboarding-ativacao-distribuidores-papel-integracao-erp" target="_blank" rel="noopener" class="font-semibold text-white underline decoration-white/40 underline-offset-4" onclick="window.gtag&amp;&amp;gtag('event','demo_click',{page:location.pathname,link_url:this.href.split('?')[0]})">Ver na demonstração →</a></figcaption>
+      </figure>
       <section class="mt-8">
         <h2 class="text-xl font-semibold text-white sm:text-2xl">Sinais de que sua integração não está funcionando</h2>
         <ul class="mt-4 space-y-2 text-sm leading-7 text-white/85 sm:text-base">
@@ -162,6 +166,10 @@
         <h2 class="text-xl font-semibold text-white sm:text-2xl">Tecnologias de Suporte ao Onboarding</h2>
         <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">Além da integração ERP, o uso de softwares específicos para gestão de onboarding pode potencializar os resultados. Esses sistemas permitem a padronização de cadastros, acelerando a ativação e monitorando o progresso dos novos distribuidores. Ferramentas que utilizam IA podem ainda oferecer suporte personalizado, guiando os distribuidores em cada etapa do processo. Recentemente, a [Distribuidora Eficaz](https://www.distribuidoraeficaz.com.br/blog/checklist-integracao-forca-de-vendas-erp-sem-traumas) destacou a importância de um checklist na integração de forças de vendas com ERP.</p>
       </section>
+      <figure class="tela-produto mt-8 overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+        <img src="../../../../imagens/posts/telas/admin-estoque.webp" alt="Tela de gerenciamento de estoque com produtos, quantidades e código do ERP" class="block w-full" style="height:auto" width="1200" height="750" loading="lazy" decoding="async" />
+        <figcaption class="px-4 py-3 text-xs leading-6 text-white/70 sm:text-sm">Estoque com o código do ERP amarrado a cada produto — a base da integração fiscal e logística. <a href="https://painel.sistemavendadireta.com.br/primeiros-passos?utm_source=blog&amp;utm_medium=tela&amp;utm_campaign=demo&amp;utm_content=onboarding-ativacao-distribuidores-papel-integracao-erp" target="_blank" rel="noopener" class="font-semibold text-white underline decoration-white/40 underline-offset-4" onclick="window.gtag&amp;&amp;gtag('event','demo_click',{page:location.pathname,link_url:this.href.split('?')[0]})">Ver na demonstração →</a></figcaption>
+      </figure>
       <p class="my-6 text-sm leading-7 text-white/85 sm:text-base">
         Se você está revisando suas estratégias de onboarding, considere uma integração mais robusta. <a href="../../../../#contato" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Solicite um orcamento →</a>
       </p>

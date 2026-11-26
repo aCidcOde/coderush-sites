@@ -3,6 +3,7 @@ const path = require("node:path");
 const { spawnSync } = require("node:child_process");
 const { siteProfile } = require("./site-strategy");
 const { generateCover: agentGenerateCover } = require("./cover-agent");
+const { inserirTelas } = require("./telas-produto");
 
 const HOME_MARKERS = {
   start: "<!-- BLOG-HOME-CARDS:START -->",
@@ -1451,7 +1452,13 @@ function writePostFile(root, site, contract, relatedCards) {
 
   const fileName = `index.${site.renderExtension}`;
   const filePath = path.resolve(dirPath, fileName);
-  fs.writeFileSync(filePath, buildPostTemplate(root, site, contract, relatedCards), "utf8");
+  let html = buildPostTemplate(root, site, contract, relatedCards);
+  // telas do sistema no meio do texto (26/11/2026) — so o SVD tem banco de
+  // telas; ver lib/telas-produto.js
+  if (site.id === "sistemavendadireta") {
+    html = inserirTelas(html, { slug: contract.slug, relativeRoot: "../../../../" });
+  }
+  fs.writeFileSync(filePath, html, "utf8");
 
   return {
     filePath,

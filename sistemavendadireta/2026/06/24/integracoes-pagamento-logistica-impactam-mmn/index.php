@@ -130,6 +130,10 @@
         <h2 class="text-xl font-semibold text-white sm:text-2xl">A importância das integrações no MMN</h2>
         <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">As integrações de pagamento e logística são fundamentais para o sucesso em marketing multinível. Elas permitem um fluxo de trabalho mais suave, com informações precisas e em tempo real. Em um cenário onde o tempo é crucial, essas integrações ajudam a evitar erros e atrasos, impactando diretamente na satisfação do distribuidor e no desempenho das vendas.</p>
       </section>
+      <figure class="tela-produto mt-8 overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+        <img src="../../../../imagens/posts/telas/admin-estoque.webp" alt="Tela de gerenciamento de estoque com produtos, quantidades e código do ERP" class="block w-full" style="height:auto" width="1200" height="750" loading="lazy" decoding="async" />
+        <figcaption class="px-4 py-3 text-xs leading-6 text-white/70 sm:text-sm">Estoque com o código do ERP amarrado a cada produto — a base da integração fiscal e logística. <a href="https://painel.sistemavendadireta.com.br/primeiros-passos?utm_source=blog&amp;utm_medium=tela&amp;utm_campaign=demo&amp;utm_content=integracoes-pagamento-logistica-impactam-mmn" target="_blank" rel="noopener" class="font-semibold text-white underline decoration-white/40 underline-offset-4" onclick="window.gtag&amp;&amp;gtag('event','demo_click',{page:location.pathname,link_url:this.href.split('?')[0]})">Ver na demonstração →</a></figcaption>
+      </figure>
       <section class="mt-8">
         <h2 class="text-xl font-semibold text-white sm:text-2xl">Benefícios das integrações para MMN</h2>
         <ul class="mt-4 space-y-2 text-sm leading-7 text-white/85 sm:text-base">
@@ -162,6 +166,10 @@
         <h2 class="text-xl font-semibold text-white sm:text-2xl">Desafios enfrentados sem integrações</h2>
         <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">A falta de integrações pode gerar desafios significativos para empresas de MMN. Processos manuais levam a erros, aumento de custos e insatisfação dos distribuidores. Além disso, a dificuldade em acompanhar comissões e pedidos pode resultar em perda de vendas e desmotivação na equipe. Para evitar esses problemas, investir em um software que integre todas as operações é essencial.</p>
       </section>
+      <figure class="tela-produto mt-8 overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+        <img src="../../../../imagens/posts/telas/consultor-rede.webp" alt="Tela da rede do consultor com resumo de ativos e inativos e distribuição por nível" class="block w-full" style="height:auto" width="1200" height="750" loading="lazy" decoding="async" />
+        <figcaption class="px-4 py-3 text-xs leading-6 text-white/70 sm:text-sm">A rede do consultor: ativos, inativos e quantas pessoas em cada nível. <a href="https://painel.sistemavendadireta.com.br/primeiros-passos?utm_source=blog&amp;utm_medium=tela&amp;utm_campaign=demo&amp;utm_content=integracoes-pagamento-logistica-impactam-mmn" target="_blank" rel="noopener" class="font-semibold text-white underline decoration-white/40 underline-offset-4" onclick="window.gtag&amp;&amp;gtag('event','demo_click',{page:location.pathname,link_url:this.href.split('?')[0]})">Ver na demonstração →</a></figcaption>
+      </figure>
       <p class="my-6 text-sm leading-7 text-white/85 sm:text-base">
         Se você busca otimizar suas operações de MMN, considere uma conversa com nossos especialistas. <a href="../../../../sistema-mmn/?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Conhecer o sistema MMN →</a>
       </p>

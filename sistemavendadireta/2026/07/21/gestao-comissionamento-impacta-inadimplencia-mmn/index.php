@@ -130,6 +130,10 @@
         <h2 class="text-xl font-semibold text-white sm:text-2xl">O papel do comissionamento na inadimplência</h2>
         <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">A gestão de comissionamento é crucial para controlar a inadimplência nas vendas diretas. Um plano de comissionamento bem estruturado não apenas motiva os distribuidores, mas também ajuda a alinhar expectativas e responsabilidades. Quando os distribuidores sabem exatamente como suas comissões são calculadas, a transparência se traduz em maior comprometimento e menor taxa de inadimplência.</p>
       </section>
+      <figure class="tela-produto mt-8 overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+        <img src="../../../../imagens/posts/telas/admin-painel.webp" alt="Painel da administração do Sistema Venda Direta com gráfico de receitas e despesas por mês" class="block w-full" style="height:auto" width="1200" height="750" loading="lazy" decoding="async" />
+        <figcaption class="px-4 py-3 text-xs leading-6 text-white/70 sm:text-sm">Painel da administração: receitas e despesas mês a mês, sem montar planilha. <a href="https://painel.sistemavendadireta.com.br/primeiros-passos?utm_source=blog&amp;utm_medium=tela&amp;utm_campaign=demo&amp;utm_content=gestao-comissionamento-impacta-inadimplencia-mmn" target="_blank" rel="noopener" class="font-semibold text-white underline decoration-white/40 underline-offset-4" onclick="window.gtag&amp;&amp;gtag('event','demo_click',{page:location.pathname,link_url:this.href.split('?')[0]})">Ver na demonstração →</a></figcaption>
+      </figure>
       <section class="mt-8">
         <h2 class="text-xl font-semibold text-white sm:text-2xl">Sinais de comissionamento ineficaz</h2>
         <ul class="mt-4 space-y-2 text-sm leading-7 text-white/85 sm:text-base">
@@ -162,6 +166,10 @@
         <h2 class="text-xl font-semibold text-white sm:text-2xl">Integração de sistemas e sua importância</h2>
         <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">A integração de sistemas de pagamento e gestão é fundamental para a operação do marketing multinível. Um software para MMN que conecte todas as partes envolvidas — desde vendedores até clientes — pode facilitar a comunicação e o fluxo de informações. Em um estudo recente, foi apontado que empresas que utilizam sistemas integrados têm uma inadimplência até 30% menor ([Sistema Venda Direta](https://sistemavendadireta.com.br/2026/07/21/gestao-comissionamento-impacta-inadimplencia-mmn/)).</p>
       </section>
+      <figure class="tela-produto mt-8 overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+        <img src="../../../../imagens/posts/telas/admin-estoque.webp" alt="Tela de gerenciamento de estoque com produtos, quantidades e código do ERP" class="block w-full" style="height:auto" width="1200" height="750" loading="lazy" decoding="async" />
+        <figcaption class="px-4 py-3 text-xs leading-6 text-white/70 sm:text-sm">Estoque com o código do ERP amarrado a cada produto — a base da integração fiscal e logística. <a href="https://painel.sistemavendadireta.com.br/primeiros-passos?utm_source=blog&amp;utm_medium=tela&amp;utm_campaign=demo&amp;utm_content=gestao-comissionamento-impacta-inadimplencia-mmn" target="_blank" rel="noopener" class="font-semibold text-white underline decoration-white/40 underline-offset-4" onclick="window.gtag&amp;&amp;gtag('event','demo_click',{page:location.pathname,link_url:this.href.split('?')[0]})">Ver na demonstração →</a></figcaption>
+      </figure>
       <p class="my-6 text-sm leading-7 text-white/85 sm:text-base">
         Vamos conversar sobre como melhorar seu comissionamento. <a href="../../../../sistema-mmn/?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Conhecer o sistema MMN →</a>
       </p>

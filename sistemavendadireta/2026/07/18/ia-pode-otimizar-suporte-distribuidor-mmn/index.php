@@ -130,6 +130,10 @@
         <h2 class="text-xl font-semibold text-white sm:text-2xl">O papel da IA no suporte ao distribuidor</h2>
         <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">A implementação da inteligência artificial no suporte ao distribuidor é uma estratégia que vem ganhando destaque. Com a capacidade de processar grandes volumes de dados, a IA permite identificar padrões de comportamento e necessidades dos distribuidores, proporcionando um atendimento mais personalizado e eficaz. Nesse cenário, o Sistema Venda Direta se destaca ao integrar soluções que exploram essa tecnologia, oferecendo suporte contínuo aos distribuidores.</p>
       </section>
+      <figure class="tela-produto mt-8 overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+        <img src="../../../../imagens/posts/telas/consultor-inicio.webp" alt="Tela inicial do escritório virtual do consultor com nível atual, total recebido e total da rede" class="block w-full" style="height:auto" width="1200" height="750" loading="lazy" decoding="async" />
+        <figcaption class="px-4 py-3 text-xs leading-6 text-white/70 sm:text-sm">Escritório virtual: o consultor abre e já vê nível, ganhos e tamanho da rede. <a href="https://painel.sistemavendadireta.com.br/primeiros-passos?utm_source=blog&amp;utm_medium=tela&amp;utm_campaign=demo&amp;utm_content=ia-pode-otimizar-suporte-distribuidor-mmn" target="_blank" rel="noopener" class="font-semibold text-white underline decoration-white/40 underline-offset-4" onclick="window.gtag&amp;&amp;gtag('event','demo_click',{page:location.pathname,link_url:this.href.split('?')[0]})">Ver na demonstração →</a></figcaption>
+      </figure>
       <section class="mt-8">
         <h2 class="text-xl font-semibold text-white sm:text-2xl">Benefícios da IA para o distribuidor</h2>
         <ul class="mt-4 space-y-2 text-sm leading-7 text-white/85 sm:text-base">
@@ -162,6 +166,10 @@
         <h2 class="text-xl font-semibold text-white sm:text-2xl">Exemplos práticos de IA em ação</h2>
         <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">Empresas que adotaram IA para suporte já reportaram melhorias significativas. Por exemplo, a [Jenkon](https://www.jenkon.com/pt/ai-transforming-direct-selling-industry/) destaca que a automação de respostas a perguntas frequentes reduziu o tempo de espera em 30%. Além disso, a análise de dados permite antecipar necessidades e ajustar ofertas, tornando o suporte mais proativo. O Sistema Venda Direta pode ser uma aliada nesse processo, facilitando a integração de tecnologias de IA.</p>
       </section>
+      <figure class="tela-produto mt-8 overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+        <img src="../../../../imagens/posts/telas/consultor-escalada.webp" alt="Tela Minha Escalada mostrando nível atual, desconto vigente, próximo nível e régua de níveis" class="block w-full" style="height:auto" width="1200" height="750" loading="lazy" decoding="async" />
+        <figcaption class="px-4 py-3 text-xs leading-6 text-white/70 sm:text-sm">Minha Escalada: quanto falta para o próximo nível e o ritmo do mês, à vista do consultor. <a href="https://painel.sistemavendadireta.com.br/primeiros-passos?utm_source=blog&amp;utm_medium=tela&amp;utm_campaign=demo&amp;utm_content=ia-pode-otimizar-suporte-distribuidor-mmn" target="_blank" rel="noopener" class="font-semibold text-white underline decoration-white/40 underline-offset-4" onclick="window.gtag&amp;&amp;gtag('event','demo_click',{page:location.pathname,link_url:this.href.split('?')[0]})">Ver na demonstração →</a></figcaption>
+      </figure>
       <p class="my-6 text-sm leading-7 text-white/85 sm:text-base">
         Vamos explorar como a IA pode se aplicar ao seu modelo de negócio. <a href="../../../../sistema-mmn/?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Conhecer o sistema MMN →</a>
       </p>

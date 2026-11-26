@@ -134,6 +134,10 @@
         <h2 class="text-xl font-semibold text-white sm:text-2xl">Cenário do Marketing Multinível no Brasil</h2>
         <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">O marketing multinível (MMN) no Brasil tem se expandido significativamente nos últimos anos, com empresas que adotam diferentes estratégias e modelos de negócios. Com uma variedade de produtos e serviços oferecidos, o MMN se tornou uma alternativa viável para muitos empreendedores. Segundo [Epixel](https://www.epixelmlmsoftware.com/pt/blog/lista-empresas-marketing-multinivel-brasil), existem centenas de empresas atuando no setor, cada uma com suas particularidades e abordagens de comissionamento.</p>
       </section>
+      <figure class="tela-produto mt-8 overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+        <img src="../../../../imagens/posts/telas/admin-plano-comercial.webp" alt="Tela de plano comercial com níveis, metas anuais, metas mensais e desconto de cada nível" class="block w-full" style="height:auto" width="1200" height="750" loading="lazy" decoding="async" />
+        <figcaption class="px-4 py-3 text-xs leading-6 text-white/70 sm:text-sm">Plano comercial configurado na tela: nível, meta e desconto — mudar a regra não vira projeto de programação. <a href="https://painel.sistemavendadireta.com.br/primeiros-passos?utm_source=blog&amp;utm_medium=tela&amp;utm_campaign=demo&amp;utm_content=empresas-marketing-multinivel-brasil-comissionamento" target="_blank" rel="noopener" class="font-semibold text-white underline decoration-white/40 underline-offset-4" onclick="window.gtag&amp;&amp;gtag('event','demo_click',{page:location.pathname,link_url:this.href.split('?')[0]})">Ver na demonstração →</a></figcaption>
+      </figure>
       <section class="mt-8">
         <h2 class="text-xl font-semibold text-white sm:text-2xl">Principais empresas de MMN no Brasil</h2>
         <ul class="mt-4 space-y-2 text-sm leading-7 text-white/85 sm:text-base">
@@ -166,6 +170,10 @@
         <h2 class="text-xl font-semibold text-white sm:text-2xl">Comissionamento e seu impacto nas vendas</h2>
         <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">O comissionamento é um dos fatores mais críticos em um sistema de marketing multinível. Ele não apenas determina a remuneração dos distribuidores, mas também influencia a motivação e a retenção de talentos. Um plano de comissionamento bem estruturado pode aumentar a produtividade e a previsibilidade nos resultados. Por exemplo, empresas que oferecem bônus por desempenho frequentemente veem um aumento nas vendas, conforme a pesquisa da [Universidade Multinível](https://www.universidademultinivel.com/).</p>
       </section>
+      <figure class="tela-produto mt-8 overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+        <img src="../../../../imagens/posts/telas/consultor-rede.webp" alt="Tela da rede do consultor com resumo de ativos e inativos e distribuição por nível" class="block w-full" style="height:auto" width="1200" height="750" loading="lazy" decoding="async" />
+        <figcaption class="px-4 py-3 text-xs leading-6 text-white/70 sm:text-sm">A rede do consultor: ativos, inativos e quantas pessoas em cada nível. <a href="https://painel.sistemavendadireta.com.br/primeiros-passos?utm_source=blog&amp;utm_medium=tela&amp;utm_campaign=demo&amp;utm_content=empresas-marketing-multinivel-brasil-comissionamento" target="_blank" rel="noopener" class="font-semibold text-white underline decoration-white/40 underline-offset-4" onclick="window.gtag&amp;&amp;gtag('event','demo_click',{page:location.pathname,link_url:this.href.split('?')[0]})">Ver na demonstração →</a></figcaption>
+      </figure>
       <p class="my-6 text-sm leading-7 text-white/85 sm:text-base">
         Entender seu plano de comissionamento pode fazer a diferença nos resultados da sua equipe. <a href="../../../../#contato" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Solicite um orcamento →</a>
       </p>

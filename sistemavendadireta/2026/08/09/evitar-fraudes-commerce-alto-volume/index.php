@@ -137,6 +137,10 @@
         <h2 class="text-xl font-semibold text-white sm:text-2xl">A importância do controle de clientes</h2>
         <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">No e-commerce, especialmente em operações de alto volume, o controle eficaz de clientes é vital. Isso não apenas reduz o risco de fraudes, mas também melhora a experiência do usuário. Sistemas de venda direta como o Sistema Venda Direta podem ajudar a monitorar e analisar transações em tempo real, permitindo decisões informadas.</p>
       </section>
+      <figure class="tela-produto mt-8 overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+        <img src="../../../../imagens/posts/telas/admin-relatorios.webp" alt="Lista de relatórios da administração: escalada, ranking de parceiros, usuários por estado e saldo liberado" class="block w-full" style="height:auto" width="1200" height="750" loading="lazy" decoding="async" />
+        <figcaption class="px-4 py-3 text-xs leading-6 text-white/70 sm:text-sm">Relatórios prontos: ranking, mapa de consultores, aniversariantes e saldo liberado. <a href="https://painel.sistemavendadireta.com.br/primeiros-passos?utm_source=blog&amp;utm_medium=tela&amp;utm_campaign=demo&amp;utm_content=evitar-fraudes-commerce-alto-volume" target="_blank" rel="noopener" class="font-semibold text-white underline decoration-white/40 underline-offset-4" onclick="window.gtag&amp;&amp;gtag('event','demo_click',{page:location.pathname,link_url:this.href.split('?')[0]})">Ver na demonstração →</a></figcaption>
+      </figure>
       <section class="mt-8">
         <h2 class="text-xl font-semibold text-white sm:text-2xl">Sinais de alerta para fraudes</h2>
         <ul class="mt-4 space-y-2 text-sm leading-7 text-white/85 sm:text-base">
@@ -169,6 +173,10 @@
         <h2 class="text-xl font-semibold text-white sm:text-2xl">Estratégias de prevenção eficazes</h2>
         <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">Implementar um sistema antifraude e integrar soluções de pagamento é crucial. De acordo com a [JivoChat](https://www.jivochat.com.br/blog/ferramentas/antifraude-para-ecommerce.html), existem sistemas que podem reduzir chargebacks em até 95%. Além disso, a aplicação de IA para detectar padrões de comportamento suspeitos pode ser um diferencial significativo.</p>
       </section>
+      <figure class="tela-produto mt-8 overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+        <img src="../../../../imagens/posts/telas/loja-virtual.webp" alt="Loja virtual do consultor com vitrine, menu de categorias e carrinho" class="block w-full" style="height:auto" width="1200" height="750" loading="lazy" decoding="async" />
+        <figcaption class="px-4 py-3 text-xs leading-6 text-white/70 sm:text-sm">Loja virtual de cada consultor: o cliente final compra e a venda cai na conta de quem indicou. <a href="https://painel.sistemavendadireta.com.br/primeiros-passos?utm_source=blog&amp;utm_medium=tela&amp;utm_campaign=demo&amp;utm_content=evitar-fraudes-commerce-alto-volume" target="_blank" rel="noopener" class="font-semibold text-white underline decoration-white/40 underline-offset-4" onclick="window.gtag&amp;&amp;gtag('event','demo_click',{page:location.pathname,link_url:this.href.split('?')[0]})">Ver na demonstração →</a></figcaption>
+      </figure>
       <p class="my-6 text-sm leading-7 text-white/85 sm:text-base">
         Vamos explorar como um software especializado pode atender suas necessidades. <a href="../../../../sistema-mmn/?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Conhecer o sistema MMN →</a>
       </p>

@@ -134,6 +134,10 @@
         <h2 class="text-xl font-semibold text-white sm:text-2xl">Desafios do marketing multinível no Brasil</h2>
         <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">O marketing multinível no Brasil é regulado pela Lei 9612/98, que estabelece diretrizes para operações legais. No entanto, muitas empresas ainda enfrentam desafios relacionados à confiança do consumidor e à imagem do setor, que pode ser negativa devido a práticas inadequadas. Além disso, a concorrência se intensifica à medida que novas empresas entram no mercado, forçando as já estabelecidas a se adaptarem rapidamente.</p>
       </section>
+      <figure class="tela-produto mt-8 overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+        <img src="../../../../imagens/posts/telas/consultor-rede.webp" alt="Tela da rede do consultor com resumo de ativos e inativos e distribuição por nível" class="block w-full" style="height:auto" width="1200" height="750" loading="lazy" decoding="async" />
+        <figcaption class="px-4 py-3 text-xs leading-6 text-white/70 sm:text-sm">A rede do consultor: ativos, inativos e quantas pessoas em cada nível. <a href="https://painel.sistemavendadireta.com.br/primeiros-passos?utm_source=blog&amp;utm_medium=tela&amp;utm_campaign=demo&amp;utm_content=marketing-rede-brasil-regulamentacao-oportunidades" target="_blank" rel="noopener" class="font-semibold text-white underline decoration-white/40 underline-offset-4" onclick="window.gtag&amp;&amp;gtag('event','demo_click',{page:location.pathname,link_url:this.href.split('?')[0]})">Ver na demonstração →</a></figcaption>
+      </figure>
       <section class="mt-8">
         <h2 class="text-xl font-semibold text-white sm:text-2xl">Principais fatores a considerar na internacionalização</h2>
         <ul class="mt-4 space-y-2 text-sm leading-7 text-white/85 sm:text-base">
@@ -166,6 +170,10 @@
         <h2 class="text-xl font-semibold text-white sm:text-2xl">O papel da tecnologia na escalabilidade do MMN</h2>
         <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">A tecnologia é um fator essencial para escalar operações de marketing multinível. Sistemas robustos de CRM para venda direta e softwares para MMN ajudam a otimizar processos, desde o comissionamento até a gestão de distribuidores. Por exemplo, a automação de processos de comissionamento pode reduzir erros e aumentar a satisfação dos distribuidores, resultando em um crescimento mais sustentável e previsível. O Sistema Venda Direta oferece integrações que potencializam essa eficiência.</p>
       </section>
+      <figure class="tela-produto mt-8 overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+        <img src="../../../../imagens/posts/telas/admin-relatorios.webp" alt="Lista de relatórios da administração: escalada, ranking de parceiros, usuários por estado e saldo liberado" class="block w-full" style="height:auto" width="1200" height="750" loading="lazy" decoding="async" />
+        <figcaption class="px-4 py-3 text-xs leading-6 text-white/70 sm:text-sm">Relatórios prontos: ranking, mapa de consultores, aniversariantes e saldo liberado. <a href="https://painel.sistemavendadireta.com.br/primeiros-passos?utm_source=blog&amp;utm_medium=tela&amp;utm_campaign=demo&amp;utm_content=marketing-rede-brasil-regulamentacao-oportunidades" target="_blank" rel="noopener" class="font-semibold text-white underline decoration-white/40 underline-offset-4" onclick="window.gtag&amp;&amp;gtag('event','demo_click',{page:location.pathname,link_url:this.href.split('?')[0]})">Ver na demonstração →</a></figcaption>
+      </figure>
       <p class="my-6 text-sm leading-7 text-white/85 sm:text-base">
         A tecnologia pode ser a chave para o sucesso no MMN. <a href="../../../../#contato" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Solicite um orcamento →</a>
       </p>
