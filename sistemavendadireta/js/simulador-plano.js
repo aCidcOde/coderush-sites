@@ -9,7 +9,13 @@
  *
  * VERSOES: cada plano publicado fica congelado em PLANOS[versao]. O link
  * compartilhado leva a versao e so a diferenca em relacao a ela; mudar o plano
- * no futuro cria uma versao nova e nao altera simulacao ja enviada.
+ * no futuro cria uma versao nova e nao altera simulacao ja enviada. Campo novo
+ * com valor neutro (bloco desligado, numero que reproduz a regra antiga) pode
+ * entrar na versao vigente: link antigo continua dando o mesmo numero.
+ *
+ * MODELOS (27/11/2026): a pessoa monta o plano dela a partir de um modelo —
+ * Plano SVD, unilevel simples, binario ou do zero. Modelo troca so as regras do
+ * plano (adesao, ativacao, bonus, titulos); rede e custos ficam como estao.
  *
  * O QUE E ESTIMATIVA: a rede e uma estrutura sintetica (linhas fundadoras,
  * largura media, arvore equilibrada). Onde ela nao permite precisao — compressao
@@ -27,7 +33,9 @@
   var PLANOS = {
     "svd-2026.11": {
       versao: "svd-2026.11",
+      modelo: "svd",
       nomePlano: "Plano SVD",
+      nomes: {}, // nome que a pessoa da a cada bonus no plano dela
       empresa: "",
       economia: { reaisPorPB: 3, valorPB: 1 },
       // % sobre o preco ao consumidor
@@ -38,10 +46,14 @@
         opcoes: [{ pb: 80, peso: 50 }, { pb: 100, peso: 50 }],
         promo: { ligada: false, pb: 50, inicio: 1, fim: 3 }
       },
-      ativacao: { pbCinco: 50, pbDez: 65, diaCorte: 25, compressao: true },
+      // pbCinco libera os primeiros `niveisCinco` niveis; pbDez libera a tabela toda
+      // (os nomes vem do Plano SVD, onde sao 5 e 10 niveis)
+      ativacao: { pbCinco: 50, pbDez: 65, niveisCinco: 5, diaCorte: 25, compressao: true },
       bonus: {
         inicio: { ligado: true, niveis: [50, 5, 5, 5, 5, 3, 3, 3, 3, 3], exigeAtivacao: true },
-        rede: { ligado: true, niveis: [10, 8, 7, 6, 5, 4, 3, 3, 2, 2] },
+        rede: { ligado: true, niveis: [10, 8, 7, 6, 5, 4, 3, 3, 2, 2], exigeAtivacao: true },
+        // fora do Plano SVD: bloco do construtor, desligado aqui
+        binario: { ligado: false, taxa: 10, teto: 3000, equilibrio: 50 },
         carreira: { ligado: true },
         lideranca: { ligado: true, geracoes: [3, 1, 0.5, 0.5], tituloLider: 2 },
         conquistas: { ligado: true, fundo: 5, tituloMinimo: 2 },
@@ -150,11 +162,17 @@
   // ------------------------------------------------------ regras unitarias
   // Profundidade liberada pela MAIOR compra unica paga na competencia.
   // Pedidos separados nao se somam.
-  function profundidadePorCompras(pedidosPB, ativ) {
+  function profundidadePorCompras(pedidosPB, ativ, totalNiveis) {
     var maior = pedidosPB.length ? Math.max.apply(null, pedidosPB) : 0;
-    if (maior >= ativ.pbDez) return 10;
-    if (maior >= ativ.pbCinco) return 5;
+    var todos = totalNiveis || 10, primeiros = Math.min(ativ.niveisCinco || 5, todos);
+    if (maior >= ativ.pbDez) return todos;
+    if (maior >= ativ.pbCinco) return primeiros;
     return 0;
+  }
+  // Binario: paga a taxa sobre a perna menor, limitado ao teto do consultor.
+  function valorBinario(pernaA, pernaB, taxa, teto, valorPB) {
+    var v = Math.min(pernaA, pernaB) * taxa / 100 * (valorPB || 1);
+    return teto > 0 ? Math.min(teto, v) : v;
   }
   // Valor que um pedido gera na tabela, olhando so os niveis liberados.
   function valorPedidoNaTabela(pb, tabela, niveisLiberados, valorPB) {
@@ -224,11 +242,11 @@
   }
 
   // elegibilidade por nivel: fracao do PB de um pedido que chega a alguem apto
-  function elegibilidadeNiveis(est, ativos, dez, comCompressao, exigeAtivacao) {
+  function elegibilidadeNiveis(est, ativos, dez, comCompressao, exigeAtivacao, total, primeiros) {
     var out = [];
-    for (var k = 1; k <= 10; k++) {
+    for (var k = 1; k <= total; k++) {
       if (!exigeAtivacao) { out.push(est.X(k)); continue; }
-      var apto = k <= 5 ? ativos : dez; // apto = ativo com profundidade >= k
+      var apto = k <= primeiros ? ativos : dez; // apto = ativo com profundidade >= k
       if (comCompressao) {
         // inativo e pulado: o k-esimo ATIVO acima recebe, se tiver profundidade
         var existe = ativos > 0 ? est.Xf(k / ativos) : 0;
@@ -315,11 +333,12 @@
       var comp = !!cfg.ativacao.compressao;
 
       function tabelaPaga(pb, tabela, exige) {
-        var semC = elegibilidadeNiveis(est, ativosPct, dezPct, false, exige);
-        var comC = elegibilidadeNiveis(est, ativosPct, dezPct, true, exige);
-        var exist = elegibilidadeNiveis(est, 1, 1, false, false);
+        var n = tabela.length, prim = cfg.ativacao.niveisCinco || 5;
+        var semC = elegibilidadeNiveis(est, ativosPct, dezPct, false, exige, n, prim);
+        var comC = elegibilidadeNiveis(est, ativosPct, dezPct, true, exige, n, prim);
+        var exist = elegibilidadeNiveis(est, 1, 1, false, false, n, prim);
         var pot = 0, eleg = 0, sem = 0, com = 0;
-        for (var k = 0; k < 10; k++) {
+        for (var k = 0; k < n; k++) {
           var t = (tabela[k] || 0) / 100;
           pot += pb * t; eleg += pb * t * exist[k]; sem += pb * t * semC[k]; com += pb * t * comC[k];
         }
@@ -330,7 +349,7 @@
 
       var b = {};
       b.inicio = B.inicio.ligado ? tabelaPaga(pbBonifAdesao, B.inicio.niveis, B.inicio.exigeAtivacao) : zero();
-      b.rede = B.rede.ligado ? tabelaPaga(pbBonifRede, B.rede.niveis, true) : zero();
+      b.rede = B.rede.ligado ? tabelaPaga(pbBonifRede, B.rede.niveis, B.rede.exigeAtivacao !== false) : zero();
 
       // titulos na estrutura sintetica
       var q = ativos > 0 ? pbQual / ativos : 0;
@@ -342,7 +361,8 @@
 
       // carreira: diferencial. Teto = maior taxa acima; piso = taxa do titulado mais proximo
       var carMax = 0, carMin = 0, lidMax = 0, lidMin = 0;
-      var G = B.lideranca.geracoes;
+      var G = B.lideranca.geracoes, ultimoTit = cfg.titulos.length - 1;
+      var tituloLider = Math.min(B.lideranca.tituloLider, ultimoTit), tituloConq = Math.min(B.conquistas.tituloMinimo, ultimoTit);
       for (var d = 1; d < est.niveis.length; d++) {
         var frac = est.niveis[d] / est.n, maior = 0, prox = 0;
         for (var j = d - 1; j >= 0; j--) {
@@ -353,10 +373,10 @@
       }
       for (var d2 = 0; d2 < est.niveis.length; d2++) {
         var lideres = 0;
-        for (var j2 = 0; j2 <= d2; j2++) if (tit[j2] >= B.lideranca.tituloLider) lideres++;
+        for (var j2 = 0; j2 <= d2; j2++) if (tit[j2] >= tituloLider) lideres++;
         var acima = Math.max(0, lideres - 1);
         var fr = est.niveis[d2] / est.n;
-        lidMax += fr * soma(G.slice(0, Math.min(4, acima))) / 100;
+        lidMax += fr * soma(G.slice(0, Math.min(G.length, acima))) / 100;
         lidMin += fr * (acima >= 1 ? G[0] / 100 : 0);
       }
       var usaCarreira = B.carreira.ligado && !poolAtivo;
@@ -373,7 +393,7 @@
         projetado: pbBonifTotal * lidMax * vpb,
         faixa: [pbBonifTotal * lidMin * vpb, pbBonifTotal * lidMax * vpb]
       } : zero();
-      var qualificadosConq = soma(contTit.slice(B.conquistas.tituloMinimo));
+      var qualificadosConq = soma(contTit.slice(tituloConq));
       var fundoConq = pbBonifTotal * B.conquistas.fundo / 100 * vpb;
       var usaConq = B.conquistas.ligado && !poolAtivo;
       b.conquistas = usaConq ? {
@@ -384,6 +404,27 @@
       b.pool = poolAtivo ? (function () {
         var f = pbBonifTotal * B.pool.fundo / 100 * vpb;
         return { potencial: f, elegivel: f, projetado: f, faixa: [f, f] };
+      })() : zero();
+
+      // binario: arvore de posicionamento propria (duas pernas por consultor), uma
+      // por linha fundadora. Cada pedido conta na perna de todos os de cima; paga a
+      // perna menor, ate o teto, so a quem esta ativo. Sem acumulo de pontos.
+      var BB = B.binario || {};
+      b.binario = BB.ligado ? (function () {
+        var eb = estrutura(ativos, 2, op.linhasFundadoras);
+        var qb = ativos > 0 ? pbBonifTotal / ativos : 0;
+        var e = lim(+BB.equilibrio || 0, 1, 100) / 100, menor = e / (1 + e);
+        var pot = 0, eleg = 0;
+        for (var d = 0; d < eb.niveis.length; d++) {
+          var nos = eb.niveis[d] * eb.linhas;
+          var duasPernas = lim(eb.filhos(d) - 1, 0, 1); // ultima camada nao tem as duas
+          var abaixo = Math.max(0, eb.sub(d) - 1) * qb;
+          var v = abaixo * menor * BB.taxa / 100 * vpb;
+          pot += nos * duasPernas * v;
+          eleg += nos * duasPernas * (BB.teto > 0 ? Math.min(BB.teto, v) : v);
+        }
+        var proj = eleg * ativosPct;
+        return { potencial: pot, elegivel: eleg, projetado: proj, faixa: [proj, proj], profundidade: eb.profundidade };
       })() : zero();
 
       // digital: em reais, fora da base de PB (sem contagem dupla)
@@ -480,15 +521,123 @@
        comPool.bonus.carreira.projetado + comPool.bonus.lideranca.projetado + comPool.bonus.conquistas.projetado, 0);
     ok("Venda digital não entra na base de PB do SVD Rede",
        semPool.pbBonifRede - (simular(semDigital(cfg), "base", 12).meses[11].pbBonifRede), 0);
+    // blocos do construtor, fora do Plano SVD
+    var tres = clone(cfg.ativacao); tres.niveisCinco = 3;
+    ok("Plano próprio: compra de 50 PB configurada para liberar 3 níveis", profundidadePorCompras([50], tres, 6), 3,
+       "bloco de ativação do construtor; no Plano SVD são 5");
+    ok("Binário: pernas de 1.000 e 600 PB a 10% pagam a perna menor", valorBinario(1000, 600, 10, 0, 1), 60,
+       "bloco opcional, fora do Plano SVD");
+    ok("Binário com teto de R$ 50 por consultor", valorBinario(1000, 600, 10, 50, 1), 50);
     return out;
     function semDigital(c) { var x = clone(c); x.operacao.consumidores = 0; return x; }
+  }
+
+
+  // ------------------------------------------------------------- modelos
+  // Ponto de partida para a pessoa montar o plano dela. So as regras do plano
+  // mudam; rede, custos e cenarios ficam como a pessoa deixou.
+  var NOMES_SVD = { inicio: "SVD Início", rede: "SVD Rede", binario: "SVD Binário", carreira: "SVD Carreira",
+    lideranca: "SVD Liderança", conquistas: "SVD Conquistas", link: "SVD Link", liderancaDigital: "SVD Liderança Digital",
+    prime: "SVD Prime", pool: "SVD Pool" };
+  var NOMES_GENERICOS = { inicio: "Bônus de início", rede: "Unilevel", binario: "Binário", carreira: "Bônus de carreira",
+    lideranca: "Bônus de liderança", conquistas: "Fundo de conquistas", link: "Comissão do link", liderancaDigital: "Liderança digital",
+    prime: "Assinatura", pool: "Pool" };
+  var REGRAS = ["modelo", "nomePlano", "nomes", "adesao", "ativacao", "bonus", "titulos", "digital"];
+  function regrasDoPlano(cfg) {
+    var r = {};
+    REGRAS.forEach(function (k) { r[k] = clone(cfg[k] === undefined ? null : cfg[k]); });
+    return r;
+  }
+  function desligarTudo(B) {
+    ["inicio", "rede", "binario", "carreira", "lideranca", "conquistas", "link", "liderancaDigital", "prime"].forEach(function (k) { B[k].ligado = false; });
+    B.pool.cenarioAlternativo = false;
+  }
+  var MODELOS = {
+    svd: { nome: "Plano SVD", resumo: "O plano completo: início e unilevel em 10 níveis, carreira, liderança, conquistas e vendas pelo link.",
+      regras: function () { return regrasDoPlano(planoPadrao(VERSAO_ATUAL)); } },
+    unilevel: { nome: "Unilevel simples", resumo: "Indicação direta, unilevel de 6 níveis, carreira com 4 títulos e comissão no link.",
+      regras: function () {
+        var r = regrasDoPlano(planoPadrao(VERSAO_ATUAL)), B = r.bonus;
+        r.modelo = "unilevel"; r.nomePlano = "Plano unilevel"; r.nomes = clone(NOMES_GENERICOS);
+        desligarTudo(B);
+        B.inicio = { ligado: true, niveis: [25], exigeAtivacao: false };
+        B.rede = { ligado: true, niveis: [8, 6, 5, 4, 3, 2], exigeAtivacao: true };
+        B.carreira.ligado = true; B.link.ligado = true; B.link.taxa = 20;
+        r.ativacao.niveisCinco = 3;
+        r.titulos = r.titulos.slice(0, 4);
+        B.lideranca.tituloLider = 1; B.conquistas.tituloMinimo = 2;
+        return r;
+      } },
+    binario: { nome: "Binário", resumo: "Indicação direta, binário de 10% na perna menor com teto, residual de 4 níveis e fundo de conquistas.",
+      regras: function () {
+        var r = regrasDoPlano(planoPadrao(VERSAO_ATUAL)), B = r.bonus;
+        r.modelo = "binario"; r.nomePlano = "Plano binário"; r.nomes = clone(NOMES_GENERICOS);
+        r.nomes.rede = "Residual unilevel";
+        desligarTudo(B);
+        B.inicio = { ligado: true, niveis: [20], exigeAtivacao: false };
+        B.binario = { ligado: true, taxa: 10, teto: 3000, equilibrio: 50 };
+        B.rede = { ligado: true, niveis: [4, 3, 2, 1], exigeAtivacao: true };
+        B.conquistas = { ligado: true, fundo: 3, tituloMinimo: 2 };
+        B.link.ligado = true; B.link.taxa = 15;
+        r.ativacao.niveisCinco = 2;
+        r.titulos = r.titulos.slice(0, 5);
+        B.lideranca.tituloLider = 1;
+        return r;
+      } },
+    zero: { nome: "Do zero", resumo: "Todas as regras desligadas. Ligue uma a uma e veja o efeito de cada bônus.",
+      regras: function () {
+        var r = regrasDoPlano(planoPadrao(VERSAO_ATUAL));
+        r.modelo = "zero"; r.nomePlano = "Meu plano"; r.nomes = clone(NOMES_GENERICOS);
+        desligarTudo(r.bonus);
+        return r;
+      } }
+  };
+  function aplicarModelo(cfg, nome) {
+    var out = clone(cfg), r = (MODELOS[nome] || MODELOS.svd).regras();
+    Object.keys(r).forEach(function (k) { out[k] = r[k]; });
+    return normalizar(out);
+  }
+  function planoMudou(cfg) {
+    var m = MODELOS[cfg.modelo] || MODELOS.svd;
+    return diferenca(m.regras(), regrasDoPlano(cfg)) !== undefined;
+  }
+  function nomeBonus(cfg, k) {
+    var n = cfg.nomes && cfg.nomes[k] && String(cfg.nomes[k]).trim();
+    return n || (cfg.modelo && cfg.modelo !== "svd" ? NOMES_GENERICOS[k] : NOMES_SVD[k]) || k;
+  }
+  // indices e tamanhos dentro do que o motor e a tela suportam
+  var LIMITES = { niveis: 15, geracoes: 6, titulos: 8, kits: 4 };
+  function normalizar(cfg) {
+    var B = cfg.bonus, t = Math.max(1, cfg.titulos.length);
+    if (!cfg.nomes || typeof cfg.nomes !== "object") cfg.nomes = {};
+    if (!B.binario) B.binario = clone(PLANOS[VERSAO_ATUAL].bonus.binario);
+    B.lideranca.tituloLider = lim(Math.round(+B.lideranca.tituloLider || 0), 0, t - 1);
+    B.conquistas.tituloMinimo = lim(Math.round(+B.conquistas.tituloMinimo || 0), 0, t - 1);
+    cfg.ativacao.niveisCinco = lim(Math.round(+cfg.ativacao.niveisCinco || 5), 1, LIMITES.niveis);
+    return cfg;
+  }
+  // o que um pedido de 100 PB distribui, no maximo, pela tabela de cada bonus
+  function tetoPorPedido(cfg, tipo) {
+    var B = cfg.bonus, pool = !!B.pool.cenarioAlternativo, itens = [];
+    var bonif = (tipo === "adesao" ? cfg.pbBonifSobreQual.adesao : cfg.pbBonifSobreQual.recompra) / 100;
+    function add(k, taxa) { if (taxa > 0) itens.push({ k: k, valor: 100 * bonif * taxa / 100 * cfg.economia.valorPB }); }
+    if (tipo === "adesao" && B.inicio.ligado) add("inicio", soma(B.inicio.niveis));
+    if (tipo !== "adesao" && B.rede.ligado) add("rede", soma(B.rede.niveis));
+    if (B.carreira.ligado && !pool) add("carreira", Math.max.apply(null, cfg.titulos.map(function (x) { return +x.taxa || 0; }).concat([0])));
+    if (B.lideranca.ligado && !pool) add("lideranca", soma(B.lideranca.geracoes));
+    if (B.conquistas.ligado && !pool) add("conquistas", B.conquistas.fundo);
+    if (pool) add("pool", B.pool.fundo);
+    var total = soma(itens.map(function (i) { return i.valor; })), pago = 100 * cfg.economia.reaisPorPB;
+    return { itens: itens, total: total, pago: pago, pct: pago > 0 ? total / pago * 100 : 0, binario: !!B.binario.ligado };
   }
 
   var SIM = {
     PLANOS: PLANOS, VERSAO_ATUAL: VERSAO_ATUAL, planoPadrao: planoPadrao, diferenca: diferenca, aplicar: aplicar,
     simular: simular, veredito: veredito, verificacoes: verificacoes, estrutura: estrutura,
     tituloAlcancado: tituloAlcancado, volumeQualificado: volumeQualificado, valorPedidoNaTabela: valorPedidoNaTabela,
-    profundidadePorCompras: profundidadePorCompras, operacaoDoCenario: operacaoDoCenario
+    profundidadePorCompras: profundidadePorCompras, operacaoDoCenario: operacaoDoCenario, valorBinario: valorBinario,
+    MODELOS: MODELOS, aplicarModelo: aplicarModelo, planoMudou: planoMudou, regrasDoPlano: regrasDoPlano,
+    nomeBonus: nomeBonus, normalizar: normalizar, LIMITES: LIMITES, tetoPorPedido: tetoPorPedido
   };
   if (typeof module !== "undefined" && module.exports) module.exports = SIM;
   raiz.SIM = SIM;

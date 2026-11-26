@@ -6,6 +6,7 @@ declare(strict_types=1);
 @Author: André Gomes ( @acidcode )
 @since 2026-08-18
 @updated 2026-11-26 (Plano SVD como modelo inicial: rede, carreira, 12 meses, 3 cenarios)
+@updated 2026-11-27 (aba Seu plano: a pessoa monta o plano dela por blocos)
 
 POR QUE MUDOU: ate 26/11/2026 a pagina so respondia "o seu plano fecha a conta?"
 com 9 numeros soltos. O usuario decidiu que o plano de referencia do sistema vira
@@ -15,6 +16,15 @@ dados de producao NAO aparecem em nada publico (texto, JS, PDF, metadado). Os
 bonus foram renomeados SVD Inicio, SVD Rede, SVD Carreira, SVD Lideranca, SVD
 Conquistas, SVD Link, SVD Lideranca Digital, SVD Prime e SVD Pool; o titulo mais
 alto e "Imperial Elite".
+
+SEU PLANO (27/11/2026): a primeira versao abria o Plano SVD pronto e as regras
+ficavam escondidas dentro do detalhe de cada bonus — "ficou so uma simulacao,
+nao tem como o cara fazer a dele" (usuario). Agora a primeira aba monta o plano:
+parte de um modelo (Plano SVD, unilevel simples, binario ou do zero) e cada bloco
+(adesao, ativacao, inicio, unilevel, binario, titulos, carreira, lideranca,
+conquistas, pool, link, lideranca digital, assinatura) liga, desliga e muda
+niveis, geracoes, titulos e kits. A aba Sua rede junta as premissas da operacao
+com a previa da arvore. Binario nao faz parte do Plano SVD: e bloco do construtor.
 
 O QUE FICOU DO SIMULADOR ANTIGO: o veredito de viabilidade (fecha / no limite /
 nao se sustenta / quebra), agora calculado sobre a margem de contribuicao do
@@ -42,8 +52,8 @@ require_once __DIR__ . '/../inc/promo.php';
 $seoBase = 'https://sistemavendadireta.com.br';
 $seoUrl = $seoBase . '/simulador/';
 $seoTitle = 'Simulador de plano de marketing multinível | Plano SVD';
-$seoDescription = 'Simule um plano de marketing multinível completo: adesão, rede em 10 níveis, carreira e '
-    . 'vendas digitais, com 12 meses em três cenários. Sem cadastro.';
+$seoDescription = 'Monte e simule o seu plano de marketing multinível: unilevel, binário, carreira e vendas '
+    . 'pelo link, 12 meses em três cenários. Parte do Plano SVD. Sem cadastro.';
 
 $demoHref = DEMO_URL . '?utm_source=site&utm_medium=simulador&utm_campaign=demo';
 $v = static fn (string $arq): string => (string) @filemtime(__DIR__ . '/../' . $arq);
@@ -62,7 +72,7 @@ $v = static fn (string $arq): string => (string) @filemtime(__DIR__ . '/../' . $
 
   <meta property="og:locale" content="pt_BR" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Simulador do Plano SVD: desenhe sua rede" />
+  <meta property="og:title" content="Simulador do Plano SVD: monte o seu plano" />
   <meta property="og:description" content="<?= htmlspecialchars($seoDescription, ENT_QUOTES, 'UTF-8') ?>" />
   <meta property="og:url" content="<?= htmlspecialchars($seoUrl, ENT_QUOTES, 'UTF-8') ?>" />
   <meta property="og:site_name" content="Sistema Venda Direta" />
@@ -122,7 +132,7 @@ $v = static fn (string $arq): string => (string) @filemtime(__DIR__ . '/../' . $
 
     <div class="so-impressao" style="border-bottom:1px solid #cbd5e1;padding-bottom:10px;margin-bottom:12px">
       <p style="font-size:11px;letter-spacing:.14em;text-transform:uppercase">Sistema Venda Direta</p>
-      <p style="font-size:21px;font-weight:800;margin-top:4px">Simulação do Plano SVD — <span class="sim-nome-empresa">sua empresa</span></p>
+      <p style="font-size:21px;font-weight:800;margin-top:4px">Simulação: <span id="pdf-plano">Plano SVD</span> — <span class="sim-nome-empresa">sua empresa</span></p>
       <p id="pdf-data" style="font-size:11px;margin-top:4px"></p>
       <p style="font-size:9px;margin-top:2px;word-break:break-all">Abrir esta simulação: <span id="pdf-link"></span></p>
     </div>
@@ -130,11 +140,11 @@ $v = static fn (string $arq): string => (string) @filemtime(__DIR__ . '/../' . $
     <section class="sim-hero">
       <div>
         <span class="sim-selo nao-imprime">Plano SVD · simulador sem cadastro</span>
-        <h1>Desenhe sua rede com o <em>Plano SVD</em></h1>
+        <h1>Monte o <em>seu plano</em> e veja a rede crescer</h1>
         <p class="lead">
-          Um plano de marketing multinível completo, já preenchido e funcionando: adesão, rede em 10 níveis,
-          carreira, liderança, conquistas e vendas pelo link. Troque qualquer regra e descubra como o seu plano
-          se comporta em cada fase, mês a mês, em três cenários.
+          Comece pelo Plano SVD, já preenchido e funcionando, ou por um modelo unilevel, binário ou do zero.
+          Ligue e desligue cada bônus, mude níveis, títulos e porcentagens, diga como a sua rede cresce
+          e veja 12 meses em três cenários.
         </p>
         <div class="sim-empresa nao-imprime">
           <label for="sim-empresa">Nome da sua empresa</label>
@@ -162,16 +172,85 @@ $v = static fn (string $arq): string => (string) @filemtime(__DIR__ . '/../' . $
 
     <nav class="sim-abas" aria-label="Partes do simulador">
       <div role="tablist">
-        <button type="button" role="tab" data-aba="rede" aria-selected="true">Potencial da rede</button>
+        <span class="sim-abas-rot" aria-hidden="true">Monte</span>
+        <button type="button" role="tab" data-aba="plano" aria-selected="true">Seu plano</button>
+        <button type="button" role="tab" data-aba="operacao" aria-selected="false">Sua rede</button>
+        <span class="sim-abas-rot" aria-hidden="true">Veja</span>
+        <button type="button" role="tab" data-aba="rede" aria-selected="false">Potencial da rede</button>
         <button type="button" role="tab" data-aba="saude" aria-selected="false">Saúde da operação</button>
-        <button type="button" role="tab" data-aba="bonus" aria-selected="false">Bônus do plano</button>
-        <button type="button" role="tab" data-aba="premissas" aria-selected="false">Premissas</button>
+        <button type="button" role="tab" data-aba="bonus" aria-selected="false">Bônus em detalhe</button>
         <button type="button" role="tab" data-aba="verificacoes" aria-selected="false">Verificações</button>
       </div>
     </nav>
 
+    <!-- SEU PLANO -->
+    <section id="aba-plano" class="sim-painel sim-sec" role="tabpanel" aria-label="Seu plano">
+      <header>
+        <div>
+          <h2>Monte o seu plano</h2>
+          <div class="sim-barra"></div>
+          <p>Escolha um modelo para começar e ajuste bloco a bloco: ligue o que o seu plano paga, desligue o que não paga e mude níveis, títulos e porcentagens. A projeção recalcula a cada mudança.</p>
+        </div>
+      </header>
+      <p class="sim-grupo-tit nao-imprime">Comece de um modelo</p>
+      <div class="sim-modelos nao-imprime" id="pl-modelos" role="group" aria-label="Modelos de plano"></div>
+      <div class="sim-montar">
+        <div id="pl-blocos" class="nao-imprime"></div>
+        <aside class="sim-resumo" aria-label="Resumo do seu plano">
+          <div class="sim-card">
+            <p class="rot">Seu plano agora</p>
+            <h3 id="pl-nome" style="margin-top:6px">Plano SVD</h3>
+            <p class="sim-aviso" id="pl-base" style="margin-top:4px"></p>
+            <p class="sim-grupo-tit" style="margin:16px 0 0">O que um pedido distribui, no máximo</p>
+            <div class="sim-teto" id="pl-teto"></div>
+            <p class="sim-grupo-tit" style="margin:16px 0 0">O que o plano tem</p>
+            <ul class="sim-ficha" id="pl-ficha"></ul>
+            <p class="sim-aviso" id="pl-fora"></p>
+            <label class="sim-campo nao-imprime" style="margin-top:14px"><span>Nome do plano</span><input class="sim-in" data-path="nomePlano" data-texto="1" maxlength="60" /></label>
+          </div>
+          <div id="pl-result" class="sim-veredito mini"></div>
+          <button type="button" class="sim-btn forte nao-imprime" data-ir="rede">Ver a rede crescer</button>
+        </aside>
+      </div>
+    </section>
+
+    <!-- SUA REDE -->
+    <section id="aba-operacao" class="sim-painel sim-sec" role="tabpanel" aria-label="Sua rede" hidden>
+      <header>
+        <div>
+          <h2>Sua rede e a operação</h2>
+          <div class="sim-barra"></div>
+          <p>Como a rede começa e cresce, o que consultores e clientes compram, o preço do produto e quanto custa operar. São os números do cenário base; o conservador e o de expansão saem deles.</p>
+        </div>
+      </header>
+      <div class="sim-montar">
+        <div>
+          <div id="p-grupos" class="sim-grid sim-g2"></div>
+          <div class="sim-card" style="margin-top:14px">
+            <h3>O que muda nos cenários conservador e expansão</h3>
+            <p>Multiplicadores e pontos aplicados sobre o cenário base.</p>
+            <div class="sim-tabela-wrap" style="margin-top:10px" id="p-cenarios"></div>
+          </div>
+        </div>
+        <aside class="sim-resumo nao-imprime" aria-label="Prévia da rede">
+          <div class="sim-card">
+            <p class="rot">Sua rede no mês 12 · <span id="o-cenario">cenário base</span></p>
+            <div class="sim-grid sim-kpis3">
+              <div class="sim-kpi mini"><div class="rot">Ativos</div><div class="val" id="o-ativos">—</div></div>
+              <div class="sim-kpi mini"><div class="rot">Níveis</div><div class="val" id="o-niveis">—</div></div>
+              <div class="sim-kpi mini"><div class="rot">Com título</div><div class="val" id="o-titulos">—</div></div>
+            </div>
+            <p class="sim-aviso" id="o-texto"></p>
+            <div class="sim-graf sim-arvore" id="g-arvore-op" style="margin-top:10px"></div>
+            <p class="sim-aviso">Uma linha fundadora, ilustrada.</p>
+          </div>
+          <button type="button" class="sim-btn forte" data-ir="rede">Ver o potencial da rede</button>
+        </aside>
+      </div>
+    </section>
+
     <!-- POTENCIAL DA REDE -->
-    <section id="aba-rede" class="sim-painel sim-sec" role="tabpanel" aria-label="Potencial da rede">
+    <section id="aba-rede" class="sim-painel sim-sec" role="tabpanel" aria-label="Potencial da rede" hidden>
       <header>
         <div>
           <h2>Potencial da rede da <span class="sim-nome-empresa">sua empresa</span></h2>
@@ -272,30 +351,13 @@ $v = static fn (string $arq): string => (string) @filemtime(__DIR__ . '/../' . $
     <section id="aba-bonus" class="sim-painel sim-sec" role="tabpanel" aria-label="Bônus do plano" hidden>
       <header>
         <div>
-          <h2>Bônus do Plano SVD</h2>
+          <h2>Os bônus em detalhe</h2>
           <div class="sim-barra"></div>
-          <p>Abra cada bônus para ver a fórmula, os requisitos e o efeito de mudar uma variável. <strong>Potencial</strong> é a tabela cheia; <strong>elegível</strong>, o que tem quem receba na rede; <strong>projetado</strong>, o que sai do caixa.</p>
+          <p>Abra cada bônus para ver a fórmula, os requisitos e o efeito de mudar uma variável. As regras se mudam na aba Seu plano. <strong>Potencial</strong> é a tabela cheia; <strong>elegível</strong>, o que tem quem receba na rede; <strong>projetado</strong>, o que sai do caixa.</p>
         </div>
         <label class="sim-campo nao-imprime" style="min-width:150px"><span>Valores do</span><select class="sim-in sim-mes" aria-label="Mês dos valores"></select></label>
       </header>
       <div id="b-lista" class="sim-grid"></div>
-    </section>
-
-    <!-- PREMISSAS -->
-    <section id="aba-premissas" class="sim-painel sim-sec" role="tabpanel" aria-label="Premissas" hidden>
-      <header>
-        <div>
-          <h2>Premissas da operação</h2>
-          <div class="sim-barra"></div>
-          <p>Os números do cenário base. Troque pelos da sua empresa: o simulador recalcula os três cenários a cada mudança.</p>
-        </div>
-      </header>
-      <div id="p-grupos" class="sim-grid sim-g2"></div>
-      <div class="sim-card" style="margin-top:14px">
-        <h3>O que muda nos cenários conservador e expansão</h3>
-        <p>Multiplicadores e pontos aplicados sobre o cenário base.</p>
-        <div class="sim-tabela-wrap" style="margin-top:10px" id="p-cenarios"></div>
-      </div>
     </section>
 
     <!-- VERIFICACOES -->
@@ -304,7 +366,7 @@ $v = static fn (string $arq): string => (string) @filemtime(__DIR__ . '/../' . $
         <div>
           <h2>Verificações do cálculo</h2>
           <div class="sim-barra"></div>
-          <p>Casos simples, conferidos no seu navegador contra as regras do Plano SVD original, para você confiar nos números.</p>
+          <p>Casos simples, conferidos no seu navegador contra as regras do Plano SVD original e dos blocos do construtor, para você confiar nos números.</p>
         </div>
       </header>
       <p id="v-resumo" style="font-weight:700"></p>
@@ -317,8 +379,8 @@ $v = static fn (string $arq): string => (string) @filemtime(__DIR__ . '/../' . $
           <h2>Quer esse plano rodando na <span class="sim-nome-empresa">sua empresa</span>?</h2>
           <div class="sim-barra"></div>
           <p style="margin-top:10px;color:var(--sim-text-2);max-width:760px;line-height:1.55">
-            O Plano SVD já roda no Sistema Venda Direta. Na conversa a gente adapta as regras ao seu negócio,
-            a partir desta simulação: o link vai junto com a mensagem.
+            O Plano SVD já roda no Sistema Venda Direta, e o plano que você montou aqui também pode rodar.
+            Na conversa a gente parte desta simulação: o link vai junto com a mensagem.
           </p>
         </div>
         <div style="display:flex;flex-wrap:wrap;gap:10px">
