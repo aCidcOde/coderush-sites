@@ -66,7 +66,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 </head>
 <body class="bg-brand text-white antialiased font-[var(--font-body)] site-optimized">
   <header class="sticky top-0 z-40 border-b border-white/10 bg-brand/95 backdrop-blur">
-    <div class="mx-auto max-w-[1140px] px-4 sm:px-6">
+    <div class="mx-auto max-w-site px-4 sm:px-6">
       <nav class="flex items-center justify-between gap-4 py-3" aria-label="Menu principal">
         <a href="../" class="block" aria-label="Sistema Venda Direta">
           <img decoding="async" src="../imagens/Logo-Branco-1.webp" alt="Sistema Venda Direta" class="h-auto w-[165px] sm:w-[210px] lg:w-[260px]" width="1000" height="300" />
@@ -80,7 +80,7 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
     </div>
   </header>
 
-  <main class="mx-auto max-w-[1140px] px-4 py-8 sm:px-6 sm:py-10">
+  <main class="mx-auto max-w-site px-4 py-8 sm:px-6 sm:py-10">
     <a href="../" class="inline-flex rounded-full border border-white/60 px-4 py-2 text-xs font-semibold uppercase tracking-wide hover:bg-white/10">Voltar para o site principal</a>
 
     <section class="py-6">

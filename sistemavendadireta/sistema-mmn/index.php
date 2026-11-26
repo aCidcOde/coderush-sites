@@ -178,7 +178,7 @@ $faq = [
     </div>
   </header>
 
-  <main class="mx-auto max-w-[1000px] px-4 sm:px-6">
+  <main class="mx-auto max-w-site px-4 sm:px-6">
 
     <section class="grid items-center gap-8 py-10 lg:grid-cols-[1.1fr_1fr] lg:py-14">
       <div>
@@ -457,7 +457,7 @@ $faq = [
   </main>
 
   <footer class="border-t border-white/15 bg-brand-dark/40">
-    <div class="mx-auto flex max-w-[1000px] flex-col gap-3 px-4 py-8 sm:flex-row sm:items-center sm:justify-between sm:px-6">
+    <div class="mx-auto flex max-w-site flex-col gap-3 px-4 py-8 sm:flex-row sm:items-center sm:justify-between sm:px-6">
       <p class="text-sm text-white/70">Sistema Venda Direta · sistema MMN e de venda direta há 10 anos.</p>
       <div class="flex flex-wrap gap-4 text-sm font-semibold">
         <a href="../" class="text-white/85 hover:text-white">Site</a>

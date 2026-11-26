@@ -208,7 +208,7 @@ $seoDescription = 'Sistema de marketing multinível (MMN) e venda direta: escrit
 
   <?php if ($promoActive): ?>
     <div class="sticky top-0 z-50 border-b border-amber-300/40 bg-amber-400 text-brand">
-      <div class="mx-auto flex max-w-[1140px] flex-nowrap items-center justify-between gap-3 px-4 py-2 sm:px-6">
+      <div class="mx-auto flex max-w-site flex-nowrap items-center justify-between gap-3 px-4 py-2 sm:px-6">
         <p class="min-w-0 text-xs font-bold uppercase leading-tight tracking-wide sm:text-sm">
           <?= htmlspecialchars(PROMO_NOME, ENT_QUOTES, 'UTF-8') ?>: até <?= (int) $discountCashPct ?>% OFF<span class="hidden md:inline"> na instalação · encerra <?= htmlspecialchars($deadlineLabel, ENT_QUOTES, 'UTF-8') ?></span>
           <span class="ml-1 whitespace-nowrap rounded-full bg-brand px-2 py-0.5 text-[10px] font-bold text-white sm:text-xs"><?= (int) $daysLeft ?> dia<?= $daysLeft === 1 ? '' : 's' ?></span>
@@ -234,7 +234,7 @@ $seoDescription = 'Sistema de marketing multinível (MMN) e venda direta: escrit
     </div>
   </header>
 
-  <main class="mx-auto max-w-[1140px] px-4 sm:px-6">
+  <main class="mx-auto max-w-site px-4 sm:px-6">
 
     <section class="py-10 lg:py-14">
       <div>
@@ -748,7 +748,7 @@ $seoDescription = 'Sistema de marketing multinível (MMN) e venda direta: escrit
   </main>
 
   <footer class="border-t border-white/15 bg-brand-dark/40">
-    <div class="mx-auto max-w-[1140px] px-4 py-8 sm:px-6">
+    <div class="mx-auto max-w-site px-4 py-8 sm:px-6">
       <div class="flex flex-wrap items-center justify-between gap-4">
         <a href="../" target="_blank" rel="noopener" aria-label="Abrir o site do Sistema Venda Direta em nova aba"><img decoding="async" src="../imagens/Logo-Branco-1.webp" alt="Sistema Venda Direta" class="h-auto w-[150px]" width="1000" height="300" loading="lazy" /></a>
         <?php /* Endereco fisico na LP de trafego pago nao e formalidade: quem

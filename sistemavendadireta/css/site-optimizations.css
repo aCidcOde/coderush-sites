@@ -221,3 +221,13 @@ Ajustes de responsividade e performance para paginas publicas estaticas.
     flex-wrap: wrap;
   }
 }
+
+/* Largura total (26/11/2026, pedido do usuario: "o site ta boxed, com margens nos
+   cantos, deixa ele pagina 100%"). Substitui o max-w-[1140px]/[1000px] dos conteineres
+   de pagina. 1920px so segura monitor ultralargo; a margem lateral cresce com a tela
+   (16px no celular, ate 72px no desktop grande) pra conteudo nao colar na borda. */
+.max-w-site {
+  max-width: 1920px;
+  padding-left: clamp(16px, 4vw, 72px) !important;
+  padding-right: clamp(16px, 4vw, 72px) !important;
+}

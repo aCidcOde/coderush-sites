@@ -115,7 +115,7 @@ $seoLdGraph = [
   </a>
 
   <header class="sticky top-0 z-40 border-b border-white/10 bg-brand/95 backdrop-blur">
-    <div class="mx-auto max-w-[1140px] px-4 sm:px-6">
+    <div class="mx-auto max-w-site px-4 sm:px-6">
       <nav class="flex items-center justify-between gap-4 py-3" aria-label="Menu principal">
         <a href="../" class="block" aria-label="Sistema Venda Direta">
           <img decoding="async"
@@ -141,7 +141,7 @@ $seoLdGraph = [
     </div>
   </header>
 
-  <main id="conteudo" class="mx-auto max-w-[1140px] px-4 sm:px-6">
+  <main id="conteudo" class="mx-auto max-w-site px-4 sm:px-6">
     <section class="py-10">
       <p class="text-xs font-semibold uppercase tracking-[0.22em] text-white/70">Cases de clientes</p>
       <h1 class="mt-3 font-[var(--font-heading)] text-3xl font-semibold leading-tight sm:text-4xl">
@@ -205,7 +205,7 @@ $seoLdGraph = [
   </main>
 
   <footer class="mt-10 border-t border-white/15 bg-brand-dark/40">
-    <div class="mx-auto max-w-[1140px] px-4 py-10 sm:px-6">
+    <div class="mx-auto max-w-site px-4 py-10 sm:px-6">
       <div class="grid gap-8 md:grid-cols-3">
         <div class="space-y-3">
           <img decoding="async" src="../imagens/Logo-Branco-1.webp" alt="Sistema Venda Direta" class="h-auto w-[180px]" width="1000" height="300" loading="lazy" />

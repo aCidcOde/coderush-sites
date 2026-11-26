@@ -98,7 +98,7 @@ $demoHref = DEMO_URL . '?utm_source=site&utm_medium=simulador&utm_campaign=demo'
     </div>
   </header>
 
-  <main class="mx-auto max-w-[1000px] px-4 pb-36 sm:px-6">
+  <main class="mx-auto max-w-site px-4 pb-36 sm:px-6">
 
     <div class="so-impressao mb-6 border-b border-gray-300 pb-4">
       <p style="font-size:11px;letter-spacing:.14em;text-transform:uppercase;">Sistema Venda Direta</p>
@@ -359,7 +359,7 @@ $demoHref = DEMO_URL . '?utm_source=site&utm_medium=simulador&utm_campaign=demo'
   </main>
 
   <div class="nao-imprime fixed inset-x-0 bottom-0 z-50 border-t border-white/20 bg-brand-dark/95 backdrop-blur">
-    <div class="mx-auto flex max-w-[1000px] flex-wrap items-center gap-x-6 gap-y-2 px-4 py-3 sm:px-6">
+    <div class="mx-auto flex max-w-site flex-wrap items-center gap-x-6 gap-y-2 px-4 py-3 sm:px-6">
       <div class="flex items-baseline gap-2">
         <span class="text-[11px] uppercase tracking-[0.14em] text-white/55">Payout real</span>
         <span id="b-payout" class="font-[var(--font-heading)] text-lg font-bold">22,2%</span>

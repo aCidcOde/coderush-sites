@@ -68,7 +68,7 @@ Pagina de servicos WordPress/WooCommerce e Laravel com foco em conversao e quali
 </head>
 <body class="bg-brand font-[var(--font-body)] text-white antialiased selection:bg-white selection:text-brand site-optimized">
   <header class="border-b border-white/15 bg-brand-dark/30">
-    <div class="mx-auto flex w-full max-w-[1140px] items-center justify-between px-4 py-4 sm:px-6">
+    <div class="mx-auto flex w-full max-w-site items-center justify-between px-4 py-4 sm:px-6">
       <a href="../" class="block" aria-label="Sistema Venda Direta">
         <img decoding="async" src="../imagens/Logo-Branco-1.webp" alt="Sistema Venda Direta" class="h-auto w-[165px] sm:w-[210px]" width="1000" height="300" />
       </a>
@@ -77,7 +77,7 @@ Pagina de servicos WordPress/WooCommerce e Laravel com foco em conversao e quali
       </a>
     </div>
 
-    <nav class="mx-auto flex w-full max-w-[1140px] flex-wrap items-center gap-3 px-4 pb-4 text-sm text-white/90 sm:px-6" aria-label="Navegação da página de serviços">
+    <nav class="mx-auto flex w-full max-w-site flex-wrap items-center gap-3 px-4 pb-4 text-sm text-white/90 sm:px-6" aria-label="Navegação da página de serviços">
       <a href="#servicos" class="rounded-full border border-white/30 px-3 py-1.5 hover:bg-white/10">Serviços</a>
       <a href="#processo" class="rounded-full border border-white/30 px-3 py-1.5 hover:bg-white/10">Processo</a>
       <a href="#cases" class="rounded-full border border-white/30 px-3 py-1.5 hover:bg-white/10">Cases</a>
@@ -87,7 +87,7 @@ Pagina de servicos WordPress/WooCommerce e Laravel com foco em conversao e quali
     </nav>
   </header>
 
-  <main class="mx-auto w-full max-w-[1140px] px-4 py-8 sm:px-6 sm:py-10">
+  <main class="mx-auto w-full max-w-site px-4 py-8 sm:px-6 sm:py-10">
     <section class="rounded-3xl border border-white/20 bg-white/5 p-6 sm:p-10">
       <p class="text-xs font-semibold uppercase tracking-[0.2em] text-white/80">Serviços</p>
       <h1 class="mt-4 font-[var(--font-heading)] text-3xl font-bold leading-tight sm:text-5xl">Desenvolvimento WordPress, WooCommerce e Sistemas sob medida (PHP/Laravel)</h1>
@@ -227,7 +227,7 @@ Pagina de servicos WordPress/WooCommerce e Laravel com foco em conversao e quali
   </main>
 
   <footer class="mt-10 border-t border-white/15 bg-brand-dark/40">
-    <div class="mx-auto max-w-[1140px] px-4 py-10 sm:px-6">
+    <div class="mx-auto max-w-site px-4 py-10 sm:px-6">
       <div class="grid gap-8 md:grid-cols-3">
         <div class="space-y-3">
           <img decoding="async" src="../imagens/Logo-Branco-1.webp" alt="Sistema Venda Direta" class="h-auto w-[180px]" width="1000" height="300" loading="lazy" />

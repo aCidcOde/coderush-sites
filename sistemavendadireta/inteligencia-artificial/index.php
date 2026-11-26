@@ -115,7 +115,7 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
   </a>
 
   <header class="sticky top-0 z-40 border-b border-white/10 bg-brand/95 backdrop-blur">
-    <div class="mx-auto max-w-[1140px] px-4 sm:px-6">
+    <div class="mx-auto max-w-site px-4 sm:px-6">
       <nav class="flex items-center justify-between gap-4 py-3" aria-label="Menu principal">
         <a href="/" class="block" aria-label="Sistema Venda Direta">
           <img decoding="async"
@@ -161,7 +161,7 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
     </div>
   </header>
 
-  <main id="conteudo" class="mx-auto max-w-[1140px] px-4 sm:px-6">
+  <main id="conteudo" class="mx-auto max-w-site px-4 sm:px-6">
     <section class="grid items-center gap-6 py-8 md:py-10 lg:grid-cols-2 lg:gap-10">
       <div class="space-y-5">
         <p class="inline-flex rounded-full border border-white/40 bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide">
@@ -424,7 +424,7 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
 
   <!-- BLOG-FOOTER START -->
   <footer class="mt-10 border-t border-white/15 bg-brand-dark/40">
-    <div class="mx-auto max-w-[1140px] px-4 py-10 sm:px-6">
+    <div class="mx-auto max-w-site px-4 py-10 sm:px-6">
       <div class="grid gap-8 md:grid-cols-3">
         <div class="space-y-3">
           <img decoding="async" src="../imagens/Logo-Branco-1.webp" alt="Sistema Venda Direta" class="h-auto w-[180px]" width="1000" height="300" loading="lazy" />
