@@ -472,7 +472,14 @@ Em `automation/ads/`, todas idempotentes:
 - **Contagem regressiva em RSA**: `{COUNTDOWN(2026-12-31 23:59:00,16)}` dentro do
   título (o último número é quantos dias antes do fim ela começa a aparecer). A API
   aceitou com `validate_only` antes de gravar; o título passa de 30 caracteres no
-  texto cru, mas o limite vale para o texto exibido.
+  texto cru, mas o limite vale para o texto exibido. Consequência (26/11/2026): o
+  `anuncios.py --trocar` recusava QUALQUER edição dos anúncios com contagem
+  regressiva, porque contava a sintaxe crua (53). Agora `tamanho_exibido()` conta
+  o customizador como 8 caracteres.
+- **Suporte 24h com IA (26/11/2026)**: entrou no lugar de "10 Anos de Mercado" (o
+  título menos exibido sem pin: 2 e 0 impressões) nos dois RSAs da Fim de Ano, e
+  como frase de destaque. O texto do site não promete canal nem correção
+  automática — só "agente de IA no servidor, com permissões de suporte".
 - **`campaign.primary_status` fica defasado** por até 24h após ativar. O campo
   autoritativo é `serving_status`.
 - **Refresh token expira em 7 dias** enquanto o app OAuth estiver em modo "Teste"

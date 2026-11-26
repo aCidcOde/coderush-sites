@@ -85,7 +85,7 @@ $faqPairs = [
     ],
     [
         'COMO É FEITO O SUPORTE',
-        'Oferecemos suporte direto pelo WhatsApp e telefone.',
+        'Pelo WhatsApp e telefone com a nossa equipe — e 24 horas por dia com um agente de IA ligado no servidor do seu sistema, com permissões de suporte.',
     ],
 ];
 
@@ -372,7 +372,7 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
         </h1>
         <p class="max-w-[620px] text-base leading-relaxed text-white/90 sm:text-lg">
           Loja virtual, escritório do consultor, rede e comissões no mesmo sistema — em português, espanhol e inglês,
-          com real, dólar e euro. Agora com <a href="#assistente-ia" class="font-semibold text-amber-200 underline decoration-amber-300/50 underline-offset-4 hover:text-white">assistente de IA no escritório virtual</a>.
+          com real, dólar e euro. Agora com <a href="#assistente-ia" class="font-semibold text-amber-200 underline decoration-amber-300/50 underline-offset-4 hover:text-white">assistente de IA no escritório virtual</a> e <a href="#suporte-ia" class="font-semibold text-amber-200 underline decoration-amber-300/50 underline-offset-4 hover:text-white">suporte 24h com IA</a>.
         </p>
         <?php /* 16/11/2026: o botao dizia "Quero testar uma demonstracao" e levava pro
            formulario de contato. A demonstracao existe e abre sem cadastro — e foi o
@@ -497,6 +497,42 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
           <div class="rounded-2xl border border-white/20 bg-white/5 px-4 py-3">Explica o plano em linguagem simples</div>
           <div class="rounded-2xl border border-white/20 bg-white/5 px-4 py-3">Respeita conta e permissões</div>
           <div class="rounded-2xl border border-white/20 bg-white/5 px-4 py-3">Alterações só nos fluxos autorizados</div>
+        </div>
+      </div>
+
+      <?php /* Suporte 24h com IA (26/11/2026, pedido do usuario: "tem que ter na home, na pagina do
+               sistema e na campanha"). Como funciona, nas palavras dele: "a gente liga o Claude Code no
+               servidor com permissoes pra suporte, e o cliente interage com ele". Nao prometer canal
+               (WhatsApp/chat) nem que ele corrige sozinho — nao foi confirmado. */ ?>
+      <div id="suporte-ia" class="mt-6 scroll-mt-28 rounded-[30px] border border-amber-300/40 bg-white/[0.06] p-6 sm:p-8">
+        <div class="grid items-center gap-6 lg:grid-cols-[1fr_auto]">
+          <div>
+            <p class="text-xs font-semibold uppercase tracking-[0.22em] text-amber-200">Novo</p>
+            <h4 class="mt-2 font-[var(--font-heading)] text-[30px] font-semibold leading-tight">Suporte 24h com IA</h4>
+            <div class="mt-2 h-1 w-[72px] rounded-full bg-white"></div>
+            <p class="mt-4 max-w-3xl text-base leading-relaxed text-white/90">
+              Fechamento de comissão no domingo, dúvida de pedido de madrugada: a sua operação não espera o horário
+              comercial. Um <strong>agente de IA (Claude)</strong> fica ligado no servidor do seu sistema, com permissões
+              de suporte, e a sua equipe conversa com ele a qualquer hora.
+            </p>
+            <p class="mt-3 max-w-3xl text-base leading-relaxed text-white/85">
+              Ele trabalha sobre o seu sistema de verdade — não sobre um manual genérico — e só dentro das permissões de
+              suporte que a gente libera. A nossa equipe continua no WhatsApp e no telefone.
+            </p>
+          </div>
+
+          <div class="flex flex-col items-stretch gap-3 sm:min-w-[280px]">
+            <a href="#form" class="inline-flex items-center justify-center rounded-full border border-white/75 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10">
+              Quero conhecer
+            </a>
+          </div>
+        </div>
+
+        <div class="mt-6 grid gap-3 text-sm text-white/90 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="rounded-2xl border border-white/20 bg-white/5 px-4 py-3">Atende 24h, inclusive fim de semana</div>
+          <div class="rounded-2xl border border-white/20 bg-white/5 px-4 py-3">Conhece o seu sistema, não um manual</div>
+          <div class="rounded-2xl border border-white/20 bg-white/5 px-4 py-3">Só com permissões de suporte</div>
+          <div class="rounded-2xl border border-white/20 bg-white/5 px-4 py-3">Equipe humana no WhatsApp e telefone</div>
         </div>
       </div>
     </section>
@@ -973,7 +1009,7 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
 
         <details class="rounded-lg border border-white/20 bg-white/5 p-4">
           <summary class="cursor-pointer font-semibold">COMO É FEITO O SUPORTE</summary>
-          <p class="mt-2 text-sm text-white/90">Oferecemos suporte direto pelo WhatsApp e telefone.</p>
+          <p class="mt-2 text-sm text-white/90">Pelo WhatsApp e telefone com a nossa equipe — e 24 horas por dia com um agente de IA ligado no servidor do seu sistema, com permissões de suporte.</p>
         </details>
       </div>
     </section>

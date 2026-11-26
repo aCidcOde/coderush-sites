@@ -97,8 +97,8 @@ $faq = [
      . 'caso a caso, e a plataforma expõe API para o que for específico da sua operação.'],
     ['Quem cuida do sistema depois que entra no ar?',
      'A mesma equipe que implanta. Há operações que acompanhamos há mais de dez anos, com evolução '
-     . 'contínua — não é entrega de projeto e adeus. Suporte em português, no horário comercial do '
-     . 'Brasil.'],
+     . 'contínua — não é entrega de projeto e adeus. Suporte em português com a nossa equipe no horário '
+     . 'comercial e, a qualquer hora, um agente de IA ligado no servidor do seu sistema, com permissões de suporte.'],
 ];
 ?>
 <!doctype html>
@@ -257,6 +257,9 @@ $faq = [
             ['Capacitação dentro da plataforma',
              'Materiais de divulgação atualizados e treinamento por módulos no próprio escritório. Rede que não é treinada não duplica, '
              . 'e material espalhado em grupo de WhatsApp envelhece sem ninguém perceber.'],
+            ['Suporte 24h com IA',
+             'Um agente de IA (Claude) fica ligado no servidor do seu sistema, com permissões de suporte, e a sua equipe conversa '
+             . 'com ele a qualquer hora — inclusive no fechamento de comissão do fim de semana. Ele trabalha sobre o seu sistema de verdade, não sobre um manual genérico.'],
             ['Multi-idioma, multimoeda e documento por país',
              'PT, EN e ES, moeda local sem casas decimais quando o país exige, e CPF/CNPJ, C.I./RUC ou SSN/EIN conforme a operação. '
              . 'Rodando hoje no Brasil, no Paraguai e na Bolívia — não é promessa de roadmap.'],

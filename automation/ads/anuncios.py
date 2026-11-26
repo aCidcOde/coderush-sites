@@ -48,6 +48,17 @@ from _conta import cliente, resolver  # noqa: E402
 
 MAX_TITULO = 30
 MAX_DESCRICAO = 90
+
+
+def tamanho_exibido(txt):
+    """
+    Tamanho que o Google conta. Customizador ({COUNTDOWN(...)}, {KeyWord:...})
+    vira texto curto na hora de exibir — contar a sintaxe crua (53 chars) fazia
+    o --trocar recusar QUALQUER edicao de anuncio que tivesse contagem regressiva
+    (26/11/2026). 8 = folga pra "16 dias"; quem valida de verdade e a API.
+    """
+    import re
+    return len(re.sub(r"\{[A-Za-z]+[:(][^}]*\}", "x" * 8, txt))
 # datas escritas por extenso ou em dd/mm que ja passaram viram alerta no --auditar
 PADRAO_DATA = re.compile(r"\b(\d{2})/(\d{2})\b")
 MESES = ("janeiro", "fevereiro", "marco", "março", "abril", "maio", "junho",
@@ -95,8 +106,8 @@ def auditar(ga, cid):
             venc = data_vencida(txt)
             if venc:
                 alertas.append(f"{tipo} DATA VENCIDA ({venc}): {txt}")
-            if len(txt) > limite:
-                alertas.append(f"{tipo} ESTOURA {len(txt)}/{limite}: {txt}")
+            if tamanho_exibido(txt) > limite:
+                alertas.append(f"{tipo} ESTOURA {tamanho_exibido(txt)}/{limite}: {txt}")
             # all-caps derruba a RSA inteira na revisao de politica
             for palavra in txt.split():
                 if len(palavra) > 3 and palavra.isupper() and palavra.isalpha():
@@ -126,8 +137,8 @@ def trocar(cli, ga, cid, de, para, dry, so_anuncio=None):
         novos_d = [t.replace(de, para) for t in des]
         if novos_t == tit and novos_d == des:
             continue
-        estouro = ([f"titulo {len(t)}/{MAX_TITULO}: {t}" for t in novos_t if len(t) > MAX_TITULO] +
-                   [f"descricao {len(t)}/{MAX_DESCRICAO}: {t}" for t in novos_d if len(t) > MAX_DESCRICAO])
+        estouro = ([f"titulo {tamanho_exibido(t)}/{MAX_TITULO}: {t}" for t in novos_t if tamanho_exibido(t) > MAX_TITULO] +
+                   [f"descricao {tamanho_exibido(t)}/{MAX_DESCRICAO}: {t}" for t in novos_d if tamanho_exibido(t) > MAX_DESCRICAO])
         if estouro:
             print(f"  [PULADO] ad {a.id} ({r.campaign.name}) — texto estoura o limite:")
             for e in estouro:

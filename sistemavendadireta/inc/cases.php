@@ -99,7 +99,8 @@ return [
         'name' => 'MauaSinc',
         'segment' => 'ERP de gestão multi-lojas • Vestuário e produção',
         'period' => 'Em evolução contínua',
-        'featured' => true,
+        // 26/11/2026: saiu da home — ERP de vestuario sem link publico prova menos pra quem busca sistema de venda direta; segue em /cases/
+        'featured' => false,
         'logo' => 'imagens/clientes/mauasinc.webp',
         'logoFallback' => 'imagens/clientes/mauasinc.png',
         'logoWidth' => 154,
@@ -360,7 +361,8 @@ return [
         'name' => 'Protech Nutritional',
         'segment' => 'Suplementos de alta performance • Brasil',
         'period' => 'Operação no ar',
-        'featured' => false,
+        // 26/11/2026: entrou na home no lugar do MauaSinc — rede de suplementos com loja no ar (e tem LP propria de suplementos)
+        'featured' => true,
         'logo' => 'imagens/clientes/protech-nutritional.webp',
         'logoFallback' => 'imagens/clientes/protech-nutritional.png',
         'logoWidth' => 480,

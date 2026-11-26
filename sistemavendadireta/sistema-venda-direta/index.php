@@ -58,7 +58,7 @@ $faq = [
     ['O que não está incluso?', 'Integrações de ERP e gateway de pagamento são orçadas separadamente, porque dependem do provedor que você já usa.'],
     ['Existe outro custo além da mensalidade?', 'Não. Novas funcionalidades pedidas depois são acordadas antes de qualquer cobrança.'],
     ['Onde o sistema fica hospedado?', 'Em infraestrutura dedicada Linux, atrás de proteção Cloudflare, com certificado SSL automático e backups replicados. Sua operação não divide servidor com terceiros.'],
-    ['Como funciona o suporte?', 'Direto por WhatsApp e telefone, com a mesma equipe que fez a implantação.'],
+    ['Como funciona o suporte?', 'Direto por WhatsApp e telefone, com a mesma equipe que fez a implantação — e 24 horas por dia com um agente de IA ligado no servidor do seu sistema, com permissões de suporte.'],
 ];
 
 $tz = new DateTimeZone('America/Sao_Paulo');
@@ -396,6 +396,17 @@ $seoDescription = 'Sistema de marketing multinível (MMN) e venda direta: escrit
         Decisões financeiras e alterações operacionais continuam nos fluxos autorizados do sistema. Escopo e disponibilidade
         são definidos em cada implantação.
       </p>
+
+      <?php /* Suporte 24h com IA (26/11/2026) — mesmo texto-base da home (#suporte-ia). Sem prometer canal
+               nem correcao automatica: nao foi confirmado. */ ?>
+      <div class="mt-8 rounded-2xl border border-amber-300/40 bg-white/5 p-5 sm:p-6">
+        <h3 class="font-[var(--font-heading)] text-xl font-bold sm:text-2xl">E suporte 24h com IA para a sua equipe</h3>
+        <p class="mt-3 max-w-3xl text-base leading-relaxed text-white/90">
+          Um <strong>agente de IA (Claude)</strong> fica ligado no servidor do seu sistema, com permissões de suporte, e a sua
+          equipe conversa com ele a qualquer hora — inclusive no fechamento de comissão do fim de semana. Ele trabalha sobre o
+          seu sistema de verdade, não sobre um manual genérico. A nossa equipe continua no WhatsApp e no telefone.
+        </p>
+      </div>
     </section>
 
     <?php /* 23/11/2026: junta tres blocos que falavam do nosso processo
