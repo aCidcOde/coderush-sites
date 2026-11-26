@@ -1,0 +1,219 @@
+/* Simulador do Plano SVD — estilos proprios (o Tailwind do site e pre-compilado:
+   classe nova nao existe la, entao a tela usa as classes sim-* daqui). */
+.sim {
+  --sim-surface: #0a1628;       /* fundo dos graficos: azul-noite, neutro pra serie azul */
+  --sim-surface-2: #0f2140;
+  --sim-line: rgba(255, 255, 255, .14);
+  --sim-grid: rgba(255, 255, 255, .09);
+  --sim-text: #f3f6fb;
+  --sim-text-2: rgba(243, 246, 251, .78);
+  --sim-muted: rgba(243, 246, 251, .56);
+  --sim-accent: #fcd34d;
+  --s1: #3987e5; --s2: #d95926; --s3: #199e70; --s4: #c98500;
+  --s5: #d55181; --s6: #008300; --s7: #9085e9; --s8: #e66767;
+  --good: #0ca30c; --warning: #fab219; --serious: #ec835a; --critical: #d03b3b;
+  --t0: #4b5563; --t1: #184f95; --t2: #256abf; --t3: #2a78d6; --t4: #3987e5;
+  --t5: #6da7ec; --t6: #86b6ef; --t7: #b7d3f6; --t8: #e3eefc;
+  color: var(--sim-text);
+}
+.sim *, .sim *::before, .sim *::after { box-sizing: border-box; }
+.sim h2 { font-family: var(--font-heading, Montserrat, sans-serif); font-size: 1.5rem; font-weight: 700; line-height: 1.2; margin: 0; }
+.sim h3 { font-family: var(--font-heading, Montserrat, sans-serif); font-size: 1.05rem; font-weight: 700; margin: 0; }
+.sim p { margin: 0; }
+.sim-sec { padding: 28px 0; border-top: 1px solid var(--sim-line); }
+.sim-sec > header { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 12px; margin-bottom: 18px; }
+.sim-sec > header p { color: var(--sim-text-2); max-width: 760px; margin-top: 6px; line-height: 1.55; }
+.sim-barra { height: 4px; width: 72px; border-radius: 4px; background: var(--sim-accent); margin-top: 8px; }
+
+.sim-grid { display: grid; gap: 14px; }
+.sim-g2 { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+.sim-g3 { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.sim-g4 { grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); }
+
+.sim-card { background: rgba(255, 255, 255, .055); border: 1px solid var(--sim-line); border-radius: 20px; padding: 18px; min-width: 0; }
+.sim-card.escuro { background: var(--sim-surface); }
+.sim-card h3 + p { margin-top: 6px; color: var(--sim-text-2); font-size: .92rem; line-height: 1.5; }
+
+/* hero */
+.sim-hero { display: grid; gap: 22px; padding: 30px 0 22px; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); align-items: center; }
+.sim-hero h1 { font-family: var(--font-heading, Montserrat, sans-serif); font-weight: 800; font-size: clamp(2rem, 4.2vw, 3rem); line-height: 1.08; margin: 14px 0 0; }
+.sim-hero h1 em { font-style: normal; color: var(--sim-accent); }
+.sim-hero .lead { margin-top: 14px; color: var(--sim-text-2); font-size: 1.05rem; line-height: 1.6; }
+.sim-selo { display: inline-flex; border: 1px solid rgba(252, 211, 77, .5); background: rgba(252, 211, 77, .14); color: #fde68a; border-radius: 999px; padding: 5px 12px; font-size: .72rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
+.sim-empresa { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.sim-empresa label { font-size: .85rem; color: var(--sim-text-2); }
+
+/* entradas */
+.sim-in { width: 100%; background: rgba(255, 255, 255, .09); border: 1px solid rgba(255, 255, 255, .24); color: var(--sim-text); border-radius: 12px; padding: 9px 11px; font: inherit; font-size: .95rem; min-width: 0; }
+.sim-in:focus { outline: 2px solid var(--sim-accent); outline-offset: 1px; }
+.sim-in.curto { width: 92px; }
+select.sim-in option { color: #111; }
+.sim-campo { display: block; }
+.sim-campo > span { display: flex; justify-content: space-between; gap: 8px; font-size: .82rem; color: var(--sim-text-2); margin-bottom: 5px; }
+.sim-campo > span small { color: var(--sim-muted); }
+.sim-campo .ajuda { display: block; margin-top: 4px; font-size: .75rem; color: var(--sim-muted); line-height: 1.4; }
+.sim-check { display: inline-flex; align-items: center; gap: 8px; font-size: .9rem; cursor: pointer; }
+.sim-check input { width: 18px; height: 18px; accent-color: var(--sim-accent); }
+
+/* botoes */
+.sim-btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; border-radius: 999px; padding: 10px 18px; font-weight: 700; font-size: .82rem; letter-spacing: .04em; text-transform: uppercase; border: 1px solid rgba(255, 255, 255, .45); color: var(--sim-text); background: transparent; cursor: pointer; text-decoration: none; }
+.sim-btn:hover { background: rgba(255, 255, 255, .1); }
+.sim-btn.forte { background: #fbbf24; border-color: #fbbf24; color: #062a63; }
+.sim-btn.forte:hover { background: #fcd34d; }
+.sim-btn.zap { background: #25d366; border-color: #25d366; color: #fff; }
+
+/* cenario (controle segmentado) */
+.sim-seg { display: inline-flex; flex-wrap: wrap; gap: 4px; background: rgba(0, 0, 0, .22); border: 1px solid var(--sim-line); border-radius: 999px; padding: 4px; }
+.sim-seg button { border: 0; background: transparent; color: var(--sim-text-2); font: inherit; font-weight: 700; font-size: .85rem; border-radius: 999px; padding: 8px 14px; cursor: pointer; }
+.sim-seg button[aria-pressed="true"] { background: #fbbf24; color: #062a63; }
+
+/* KPIs */
+.sim-kpi { background: rgba(255, 255, 255, .06); border: 1px solid var(--sim-line); border-radius: 18px; padding: 14px 16px; min-width: 0; }
+.sim-kpi .rot { font-size: .78rem; color: var(--sim-text-2); }
+.sim-kpi .val { font-family: var(--font-heading, Montserrat, sans-serif); font-weight: 700; font-size: 1.55rem; margin-top: 4px; line-height: 1.15; overflow-wrap: anywhere; }
+.sim-kpi .sub { font-size: .78rem; color: var(--sim-muted); margin-top: 4px; }
+.sim-aviso { font-size: .8rem; color: var(--sim-muted); margin-top: 12px; line-height: 1.5; }
+
+/* abas */
+.sim-abas { position: sticky; top: 0; z-index: 40; background: rgba(0, 63, 145, .96); backdrop-filter: blur(6px); border-bottom: 1px solid var(--sim-line); margin: 0 -16px; padding: 10px 16px; }
+.sim-abas div { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; }
+.sim-abas button { flex: 0 0 auto; border: 1px solid rgba(255, 255, 255, .25); background: transparent; color: var(--sim-text-2); font: inherit; font-weight: 700; font-size: .85rem; border-radius: 999px; padding: 8px 15px; cursor: pointer; }
+.sim-abas button[aria-selected="true"] { background: #fbbf24; border-color: #fbbf24; color: #062a63; }
+.sim-painel[hidden] { display: none; }
+
+/* tabelas */
+.sim-tabela-wrap { overflow-x: auto; border: 1px solid var(--sim-line); border-radius: 14px; }
+.sim-tabela { width: 100%; border-collapse: collapse; font-size: .85rem; min-width: 560px; }
+.sim-tabela th, .sim-tabela td { padding: 8px 10px; text-align: right; border-bottom: 1px solid var(--sim-grid); white-space: nowrap; }
+.sim-tabela th:first-child, .sim-tabela td:first-child { text-align: left; }
+.sim-tabela thead th { font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; color: var(--sim-muted); font-weight: 700; background: rgba(0, 0, 0, .15); }
+.sim-tabela tr.total td { font-weight: 700; border-top: 1px solid var(--sim-line); }
+.sim-tabela tr.sub td { color: var(--sim-text-2); }
+.sim-tabela td.neg { color: #fca5a5; }
+.sim-tabela td.pos { color: #fde68a; }
+
+/* graficos */
+.sim-graf { position: relative; background: var(--sim-surface); border-radius: 16px; padding: 12px; }
+.sim-graf svg { display: block; width: 100%; height: auto; overflow: visible; }
+.sim-graf .eixo { fill: var(--sim-muted); font-size: 11px; }
+.sim-graf .grade { stroke: var(--sim-grid); stroke-width: 1; }
+.sim-graf .zero { stroke: rgba(255, 255, 255, .35); stroke-width: 1; }
+.sim-graf .rotulo { fill: var(--sim-text); font-size: 11px; font-weight: 700; }
+.sim-legenda { display: flex; flex-wrap: wrap; gap: 6px 14px; margin: 0 0 10px; padding: 0; list-style: none; font-size: .8rem; color: var(--sim-text-2); }
+.sim-legenda li { display: inline-flex; align-items: center; gap: 6px; }
+.sim-legenda i { width: 10px; height: 10px; border-radius: 3px; display: inline-block; }
+.sim-legenda i.linha { height: 3px; width: 14px; border-radius: 2px; }
+.sim-dica { position: absolute; pointer-events: none; z-index: 5; background: #0b1220; border: 1px solid var(--sim-line); border-radius: 10px; padding: 8px 10px; font-size: .78rem; color: var(--sim-text); box-shadow: 0 8px 24px rgba(0, 0, 0, .4); min-width: 160px; }
+.sim-dica b { display: block; margin-bottom: 4px; }
+.sim-dica div { display: flex; justify-content: space-between; gap: 12px; }
+.sim-dica i { display: inline-block; width: 8px; height: 8px; border-radius: 2px; margin-right: 6px; }
+.sim-link { background: none; border: 0; color: #fde68a; text-decoration: underline; text-underline-offset: 3px; font: inherit; font-size: .82rem; cursor: pointer; padding: 0; }
+
+/* arvore */
+.sim-arvore svg text { fill: var(--sim-text-2); font-size: 12px; }
+.sim-arvore svg text.forte { fill: var(--sim-text); font-weight: 700; }
+
+/* bonus */
+.sim-bonus { border: 1px solid var(--sim-line); border-radius: 18px; background: rgba(255, 255, 255, .045); }
+.sim-bonus > summary { list-style: none; cursor: pointer; padding: 14px 16px; display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; align-items: center; }
+.sim-bonus > summary::-webkit-details-marker { display: none; }
+.sim-bonus > summary .nome { font-weight: 700; font-size: 1rem; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.sim-bonus > summary .valor { font-family: var(--font-heading, Montserrat, sans-serif); font-weight: 700; text-align: right; }
+.sim-bonus > summary .desc { grid-column: 1 / -1; font-size: .85rem; color: var(--sim-text-2); line-height: 1.45; }
+.sim-bonus > summary .seta { font-size: .78rem; color: #fde68a; }
+.sim-bonus > summary .seta::after { content: "Ver fórmula e regras"; }
+.sim-bonus[open] > summary .seta::after { content: "Fechar"; }
+.sim-bonus .corpo { padding: 0 16px 16px; display: grid; gap: 14px; }
+.sim-cor { width: 10px; height: 10px; border-radius: 3px; display: inline-block; }
+.sim-status { font-size: .68rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; border-radius: 999px; padding: 3px 8px; border: 1px solid; }
+.sim-status.ativo { color: #bbf7d0; border-color: rgba(12, 163, 12, .6); }
+.sim-status.opcional { color: #fde68a; border-color: rgba(250, 178, 25, .6); }
+.sim-status.estudo { color: #fecaca; border-color: rgba(236, 131, 90, .7); }
+.sim-formula { background: rgba(0, 0, 0, .22); border-radius: 12px; padding: 10px 12px; font-size: .85rem; line-height: 1.5; color: var(--sim-text-2); }
+.sim-formula code { color: var(--sim-text); font-family: inherit; font-weight: 700; }
+.sim-tres { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.sim-tres div { background: rgba(0, 0, 0, .18); border-radius: 12px; padding: 10px; }
+.sim-tres span { display: block; font-size: .72rem; color: var(--sim-muted); }
+.sim-tres strong { display: block; margin-top: 3px; font-size: 1rem; overflow-wrap: anywhere; }
+.sim-niveis { display: grid; grid-template-columns: repeat(auto-fill, minmax(72px, 1fr)); gap: 6px; }
+.sim-niveis label span { display: block; font-size: .7rem; color: var(--sim-muted); margin-bottom: 3px; }
+.sim-niveis .sim-in { padding: 7px 8px; }
+.sim-alerta { border: 1px solid rgba(236, 131, 90, .6); background: rgba(236, 131, 90, .1); border-radius: 12px; padding: 10px 12px; font-size: .85rem; line-height: 1.5; }
+.sim-alerta strong { color: #fed7aa; }
+
+/* veredito */
+.sim-veredito { border-radius: 20px; padding: 18px; border: 1px solid; }
+.sim-veredito.fecha { border-color: rgba(12, 163, 12, .55); background: rgba(12, 163, 12, .09); }
+.sim-veredito.limite { border-color: rgba(250, 178, 25, .6); background: rgba(250, 178, 25, .09); }
+.sim-veredito.fragil { border-color: rgba(236, 131, 90, .6); background: rgba(236, 131, 90, .1); }
+.sim-veredito.quebra { border-color: rgba(208, 59, 59, .65); background: rgba(208, 59, 59, .12); }
+.sim-veredito .tit { font-family: var(--font-heading, Montserrat, sans-serif); font-weight: 800; font-size: 1.6rem; display: flex; gap: 10px; align-items: center; }
+.sim-veredito p { margin-top: 8px; color: var(--sim-text-2); line-height: 1.55; }
+
+/* carreira */
+.sim-medidor { height: 10px; border-radius: 10px; background: rgba(57, 135, 229, .22); overflow: hidden; }
+.sim-medidor i { display: block; height: 100%; border-radius: 10px; background: var(--s1); }
+.sim-marco { display: flex; gap: 10px; align-items: baseline; padding: 6px 0; border-bottom: 1px solid var(--sim-grid); font-size: .9rem; }
+.sim-marco b { min-width: 64px; color: var(--sim-text-2); font-weight: 700; }
+
+/* verificacoes */
+.sim-verif li { display: grid; grid-template-columns: 26px 1fr auto; gap: 8px; padding: 8px 0; border-bottom: 1px solid var(--sim-grid); font-size: .9rem; align-items: start; }
+.sim-verif ul { list-style: none; margin: 0; padding: 0; }
+.sim-verif .marca { font-weight: 800; }
+.sim-verif .marca.ok { color: #86efac; }
+.sim-verif .marca.erro { color: #fca5a5; }
+.sim-verif small { display: block; color: var(--sim-muted); }
+
+/* barra fixa */
+.sim-rodape { position: fixed; inset: auto 0 0 0; z-index: 50; border-top: 1px solid var(--sim-line); background: rgba(0, 46, 110, .97); backdrop-filter: blur(6px); }
+.sim-rodape > div { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 18px; padding: 10px 16px; max-width: 1920px; margin: 0 auto; }
+.sim-rodape .item { display: flex; align-items: baseline; gap: 6px; }
+.sim-rodape .item span { font-size: .68rem; letter-spacing: .12em; text-transform: uppercase; color: var(--sim-muted); }
+.sim-rodape .item strong { font-family: var(--font-heading, Montserrat, sans-serif); font-size: 1.05rem; }
+.sim-rodape .acoes { margin-left: auto; display: flex; gap: 6px; flex-wrap: wrap; }
+.sim-rodape .sim-btn { padding: 7px 12px; font-size: .72rem; }
+.sim-toast { position: fixed; left: 50%; bottom: 84px; transform: translateX(-50%); background: #0b1220; border: 1px solid var(--sim-line); border-radius: 999px; padding: 9px 16px; font-size: .85rem; z-index: 60; }
+
+@media (max-width: 900px) {
+  .sim-hero { grid-template-columns: 1fr; }
+  .sim-tres { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .sim-rodape .item.opc { display: none; }
+  .sim-rodape .acoes { margin-left: 0; width: 100%; }
+  .sim-rodape .acoes .sim-btn { flex: 1 1 auto; }
+  .sim-kpi .val { font-size: 1.3rem; }
+  .sim h2 { font-size: 1.3rem; }
+}
+
+/* PDF: impressao do proprio navegador. Abre todos os paineis e troca os
+   graficos para a versao clara da paleta. */
+.so-impressao { display: none; }
+@media print {
+  body { background: #fff !important; color: #111 !important; }
+  .nao-imprime, .sim-abas, .sim-rodape, .sim-toast, .sim-dica { display: none !important; }
+  .so-impressao { display: block !important; }
+  .sim { --sim-surface: #fff; --sim-surface-2: #fff; --sim-line: #cbd5e1; --sim-grid: #e2e8f0; --sim-text: #111; --sim-text-2: #333; --sim-muted: #555;
+         --s1: #2a78d6; --s2: #eb6834; --s3: #1baf7a; --s4: #eda100; --s5: #e87ba4; --s6: #008300; --s7: #6250d6; --s8: #e34948; }
+  .sim-painel[hidden] { display: block !important; }
+  .sim-card, .sim-kpi, .sim-bonus, .sim-graf, .sim-veredito { background: #fff !important; border-color: #cbd5e1 !important; break-inside: avoid; }
+  .sim-bonus .corpo { display: grid !important; }
+  .sim-bonus:not([open]) > .corpo { display: none !important; }
+  .sim-tabela-wrap { overflow: visible; }
+  .sim-tabela { min-width: 0; width: 100%; font-size: 7.5pt; }
+  .sim-tabela th, .sim-tabela td { padding: 3px 4px; }
+  .sim-hero { grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr) !important; padding-top: 6px; }
+  .sim-graf svg { width: auto; max-width: 100%; }
+  .sim-tabela td.pos { color: #111 !important; }
+  .sim-tabela td.neg { color: #b91c1c !important; }
+  .sim-tabela { min-width: 0 !important; }
+  #aba-saude .sim-g2 { grid-template-columns: 1fr !important; }
+  main { max-width: none !important; padding: 0 !important; }
+  .sim-sec { break-inside: auto; }
+  .sim-bonus .seta { display: none; }
+  .sim-tres div, .sim-formula { background: #f3f4f6 !important; }
+  .sim-status.ativo { color: #166534; border-color: #166534; }
+  .sim-status.opcional { color: #92400e; border-color: #92400e; }
+  .sim-status.estudo { color: #9a3412; border-color: #9a3412; }
+  @page { size: A4 landscape; margin: 10mm; }
+}
