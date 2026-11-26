@@ -570,7 +570,9 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
             <p class="mt-2 text-sm leading-relaxed text-white/90"><?= htmlspecialchars($case['summary'], ENT_QUOTES, 'UTF-8') ?></p>
 
             <ul class="mt-4 grid gap-2 text-sm text-white/90">
-              <?php foreach ($case['highlights'] as $highlight): ?>
+              <?php /* home mostra 4: desde 26/11/2026 os cases trazem 7 a 12 implementacoes
+                       recentes, e a lista inteira fica em /cases/ */ ?>
+              <?php foreach (array_slice($case['highlights'], 0, 4) as $highlight): ?>
                 <li class="flex items-start gap-2 rounded-xl border border-white/20 bg-white/5 px-3 py-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-amber-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span><?= htmlspecialchars($highlight, ENT_QUOTES, 'UTF-8') ?></span></li>
               <?php endforeach; ?>
             </ul>

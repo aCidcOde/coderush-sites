@@ -18,7 +18,7 @@ return [
         'slug' => 'new-professionals',
         'name' => "New Professional's",
         'segment' => 'Cosmética capilar profissional • Paraguai',
-        'period' => 'Entrega: julho de 2026',
+        'period' => 'Plataforma em produção',
         'featured' => true,
         'logo' => 'imagens/clientes/new-professionals.webp',
         'logoFallback' => 'imagens/clientes/new-professionals.png',
@@ -28,28 +28,20 @@ return [
         'shots' => [
             ['src' => 'imagens/clientes/telas/new-professionals.webp', 'alt' => "Loja da New Professional's no ar, com domínio próprio", 'legenda' => "Loja da New Professional's no ar, em domínio próprio."],
         ],
-        'summary' => 'Plataforma de venda direta no Paraguai: três idiomas, preço em guarani e comissões por cargo.',
+        'summary' => 'Plataforma internacional de venda direta com loja, escritório virtual e gestão comercial em português, espanhol e inglês. Além da adaptação ao Paraguai, a operação agora possui uma estrutura mais completa de catálogo, estoque, hierarquia comercial e integração com ERP.',
         'highlights' => [
-            'Loja, escritório e cadastro em PT / ES / EN',
-            '170 SKUs em guarani, catálogo por linhas técnicas',
-            'Comissões por cargo editáveis no admin',
-            'Endereço via base postal oficial do país (8.644 zonas)',
+            'Cadastro de catálogo físico com SKU e composição dos produtos',
+            'Estoque inicial, reservas e baixa automática após as vendas',
+            'API de ERP com leitura e gravação auditadas',
+            'Controle de lastro e movimentação logística',
+            'Ranking por nível e consolidação das vendas das gestoras',
+            'Gestão separada de salões, gestoras e consultoras',
+            'Relatórios comerciais e de atendimento',
         ],
         'details' => [
             [
-                'title' => 'Internacionalização de verdade',
-                'body' => 'Moeda sem casas decimais, documento por país (C.I./RUC, CPF/CNPJ, SSN/EIN) e ~900 chaves de '
-                    . 'tradução — a plataforma inteira operando no padrão local.',
-            ],
-            [
-                'title' => 'Identidade e experiência',
-                'body' => 'Reskin completo na identidade da marca, escritório da consultora com metas Bronze a Diamante, '
-                    . 'ranking mensal e recompra em padrão e-commerce.',
-            ],
-            [
-                'title' => 'Segurança de lançamento',
-                'body' => 'Domínio próprio com certificado automático e auditoria pré-lançamento: cookies seguros, '
-                    . 'formulários blindados e redirecionamentos corrigidos. No ar em 10 dias.',
+                'title' => 'Internacionalização além da tradução',
+                'body' => 'A internacionalização não ficou limitada à tradução. Moeda, documentos, endereços, catálogo, estoque e hierarquia comercial foram adaptados à operação paraguaia. A evolução mais recente conecta produto, composição, reserva e baixa de estoque dentro de um fluxo auditável, integrado ao ERP.',
             ],
         ],
         'metrics' => [
@@ -57,6 +49,7 @@ return [
             ['value' => '3', 'label' => 'idiomas na plataforma'],
             ['value' => '10', 'label' => 'dias até entrar no ar'],
         ],
+        'highlightsLabel' => 'Implementações recentes',
     ],
     [
         'slug' => 'forone',
@@ -239,7 +232,7 @@ return [
         'slug' => 'velaro',
         'name' => 'Velaro Alianças',
         'segment' => 'Atacado de alianças B2B • Brasil',
-        'period' => 'No ar desde agosto de 2026',
+        'period' => 'Plataforma em produção',
         'featured' => true,
         'logo' => 'imagens/clientes/velaro.webp',
         'logoFallback' => 'imagens/clientes/velaro.png',
@@ -249,32 +242,28 @@ return [
         'shots' => [
             ['src' => 'imagens/clientes/telas/velaro.webp', 'alt' => 'Plataforma B2B da Velaro para lojistas e revendedores', 'legenda' => 'Plataforma exclusiva para lojistas e revendedores da Velaro.'],
         ],
-        'summary' => 'Plataforma B2B de alianças para lojistas: catálogo público sem preço e condição comercial liberada só após aprovação do cadastro.',
+        'summary' => 'Plataforma B2B para lojistas e revendedores, com catálogo público sem exposição de preços e acesso comercial liberado somente após análise do cadastro.',
         'highlights' => [
-            'Exclusivo para lojistas — sem venda ao consumidor final',
-            'Catálogo público sem preço interno exposto',
-            'Preço e pedido liberados após aprovação do cadastro',
-            'Cinco coleções, incluindo personalizadas',
+            'Consulta empresarial e triagem de elegibilidade por CNPJ e CNAE',
+            'Aprovação e verificação de revendedores',
+            'Tabelas e condições comerciais por revendedor',
+            'Pedidos agrupados em lotes',
+            'Pagamento pelo Mercado Pago',
+            'Webhooks assinados, histórico de tentativas e auditoria dos pagamentos',
+            'Portal financeiro e administrativo',
+            'Cadastro de usuários internos com controle de acesso',
         ],
         'details' => [
             [
-                'title' => 'O catálogo mostra sem entregar o preço',
-                'body' => 'Atacado tem um problema que varejo não tem: o preço de lojista não pode ficar '
-                    . 'visível para o consumidor final, nem para o concorrente. A vitrine é pública para '
-                    . 'atrair o revendedor, mas custo, condição e ferramenta de pedido só aparecem depois '
-                    . 'que o cadastro é aprovado — a régua é do sistema, não do vendedor.',
-            ],
-            [
-                'title' => 'Sob medida, não instalação',
-                'body' => 'Diferente das operações de rede deste portfólio, a Velaro é sistema próprio em '
-                    . 'Laravel construído sobre o CodaFácil. O modelo de negócio é atacado com cadastro '
-                    . 'aprovado, não plano de carreira — e a plataforma foi feita para isso.',
+                'title' => 'Jornada B2B de ponta a ponta',
+                'body' => 'O sistema controla toda a jornada B2B: atração pelo catálogo público, análise empresarial, aprovação do lojista, liberação da condição comercial, montagem do pedido e pagamento. As integrações financeiras registram eventos e tentativas, permitindo acompanhar problemas sem perder o histórico da operação.',
             ],
         ],
         'metrics' => [
             ['value' => '5', 'label' => 'coleções no catálogo'],
             ['value' => 'B2B', 'label' => 'sem venda ao consumidor'],
         ],
+        'highlightsLabel' => 'Implementações recentes',
     ],
     [
         // Marca de colchoes que usa o SVD como escritorio virtual da rede de
@@ -319,8 +308,8 @@ return [
         // subir, vale revisar highlights e metrics.
         'slug' => 'henovar',
         'name' => 'Henovar Energy',
-        'segment' => 'Energia renovável e marketplace • Brasil',
-        'period' => 'No ar desde setembro de 2026',
+        'segment' => 'Energia renovável, serviços e marketplace • Brasil',
+        'period' => 'Plataforma em produção',
         'featured' => true,
         'logo' => 'imagens/clientes/henovar.webp',
         'logoFallback' => 'imagens/clientes/henovar.png',
@@ -330,37 +319,36 @@ return [
         'shots' => [
             ['src' => 'imagens/clientes/telas/henovar.webp', 'alt' => 'Site da Henovar Energy com loja e escritório virtual', 'legenda' => 'Henovar Energy: site, loja e escritório virtual no mesmo ecossistema.'],
         ],
-        'summary' => 'Assinatura de energia renovável e marketplace na mesma rede, com plano de carreira de 12 níveis.',
+        'summary' => 'Ecossistema de venda direta que combina contratação de energia, serviços financeiros, marketplace e plano de carreira em um único cadastro e extrato.',
         'highlights' => [
-            'Assinatura de energia e venda de produto no mesmo cadastro',
-            'Plano de carreira em 12 níveis',
-            'Venda direta de 30% e rede em até nove níveis',
-            'Escritório virtual com treinamento e páginas de negócio',
+            'Jornada completa de contratação de energia',
+            'Cadastro e validação da unidade consumidora',
+            'Geração de proposta e contrato',
+            'Bases específicas para cálculo das comissões de energia',
+            'Separação entre comissão provisória e liberada',
+            'Graduação automática na virada do período',
+            'Saques com validação documental',
+            'Tratamento de estornos e correções financeiras',
+            'Integração dos serviços Limpa Nome e Clube Certo',
+            'Pagamentos via PIX',
         ],
         'details' => [
             [
-                'title' => 'Duas naturezas de receita na mesma rede',
-                'body' => 'Assinatura de energia é recorrente e contínua; produto de marketplace é avulso e '
-                    . 'pontual. Remunerar as duas no mesmo plano, sem dois sistemas e sem planilha de '
-                    . 'conciliação, foi o que o projeto resolveu — o afiliado vê um extrato só.',
-            ],
-            [
-                'title' => 'Desconto do afiliado como regra, não como cupom',
-                'body' => 'Os 50% na compra de produto físico valem para quem é afiliado, aplicados pelo '
-                    . 'próprio sistema no momento da compra. Evita a gambiarra de cupom manual, que sempre '
-                    . 'vaza para quem não deveria ter.',
+                'title' => 'Contrato recorrente virando rede rastreável',
+                'body' => 'O desafio não era apenas vender energia, mas transformar contratos recorrentes em uma operação de rede rastreável. A plataforma acompanha a unidade consumidora, proposta, contrato, comissão, carreira e saque, enquanto mantém marketplace e serviços adicionais dentro do mesmo ecossistema.',
             ],
         ],
         'metrics' => [
             ['value' => '12', 'label' => 'níveis de carreira'],
             ['value' => '9', 'label' => 'níveis de rede'],
         ],
+        'highlightsLabel' => 'Implementações recentes',
     ],
     [
         'slug' => 'protech-nutritional',
         'name' => 'Protech Nutritional',
         'segment' => 'Suplementos de alta performance • Brasil',
-        'period' => 'Operação no ar',
+        'period' => 'Plataforma em produção',
         // 26/11/2026: entrou na home no lugar do MauaSinc — rede de suplementos com loja no ar (e tem LP propria de suplementos)
         'featured' => true,
         'logo' => 'imagens/clientes/protech-nutritional.webp',
@@ -371,30 +359,83 @@ return [
         'shots' => [
             ['src' => 'imagens/clientes/telas/protech-nutritional.webp', 'alt' => 'Loja virtual da Protech Nutritional', 'legenda' => 'Loja da Protech Nutritional no ar.'],
         ],
-        'summary' => 'Venda direta com distribuição exclusiva por consultores: toda compra nasce vinculada a um patrocinador.',
+        'summary' => 'Operação de venda direta exclusiva por consultores, com loja, escritório virtual, centros de distribuição e integração com o ERP Bling.',
         'highlights' => [
-            'Fluxo de indicação obrigatório na entrada da loja',
-            'Catálogo em 9 linhas de produto',
-            'Escritório virtual e pontos de entrega',
-            'Plano com 3 formas de ganho',
+            'Integração dos pedidos de loja e escritório com a API do Bling',
+            'Sincronização e associação segura dos produtos do ERP',
+            'Tratamento dos erros devolvidos pelo Bling',
+            'Romaneio imprimível para separação de produtos',
+            'Controle de estoque por centro de distribuição',
+            'Proteção contra saldo negativo durante vendas simultâneas',
+            'Centro de distribuição padrão configurável pelo consultor',
+            'Retirada gratuita na matriz',
+            'Confirmação do Mercado Pago por webhook, retorno e reconciliação automática',
+            'Desconto configurável para compras do escritório',
         ],
         'details' => [
             [
-                'title' => 'A regra do negócio no software',
-                'body' => 'Quem chega sem patrocinador é direcionado a encontrar um consultor antes de comprar — '
-                    . 'a exclusividade da rede garantida pelo próprio fluxo da loja.',
+                'title' => 'Exclusividade da indicação à expedição',
+                'body' => 'A regra de exclusividade da rede começa na indicação do consultor e continua até a expedição. Pedido, pagamento, centro de distribuição, estoque, envio ao Bling e romaneio de separação fazem parte do mesmo fluxo operacional, com proteção contra estoque negativo e tratamento de erros de integração.',
             ],
         ],
         'metrics' => [
             ['value' => '9', 'label' => 'linhas de produto'],
             ['value' => '3', 'label' => 'formas de ganho no plano'],
         ],
+        'highlightsLabel' => 'Implementações recentes',
+    ],
+    [
+        // 26/11/2026: embargo levantado pelo usuario (briefing dos cases: "MEDPLANT — ADICIONAR NOVO CASE").
+        'slug' => 'medplant',
+        'name' => 'MedPlant',
+        'segment' => 'Saúde e bem-estar • Venda direta • Brasil',
+        'period' => 'Plataforma em produção',
+        'featured' => false,
+        'logo' => 'imagens/clientes/medplant.webp',
+        'logoFallback' => 'imagens/clientes/medplant.png',
+        'logoWidth' => 480,
+        'logoHeight' => 123,
+        'url' => 'https://medplant.sistemavendadireta.com.br/loja',
+        'summary' => 'Plataforma de venda direta com loja virtual, escritório do consultor, consumidores, plano de carreira, bonificações, estoque e pontos de distribuição.',
+        'highlights' => [
+            'Loja virtual e escritório do consultor integrados',
+            'Rede unilevel, carreira, qualificação e bonificações',
+            'Fluxos separados para consumidor e consultor',
+            'Conversão automática em consultor após o pagamento da adesão',
+            'Controle de desconto ao longo do ciclo anual',
+            'Campanhas de pontos e promoções',
+            'Gestão de estoque, matriz, CDs e pontos de distribuição',
+            'Registro da origem dos saldos utilizados nas compras dos CDs',
+            'Ranking de vendas dos pontos de distribuição',
+            'Integração com o Bling para pedidos, rastreio e informações fiscais',
+            'Carteira, extrato, saques e movimentações auditáveis',
+            'Med Club Prime e benefícios exclusivos para consultores',
+        ],
+        'details' => [
+            [
+                'title' => 'Venda, relacionamento e distribuição',
+                'body' => 'A MedPlant reúne venda, relacionamento e distribuição em uma única plataforma. O sistema diferencia consumidor, consultor e ponto de distribuição, acompanha adesão e carreira, calcula bonificações e mantém o fluxo de estoque e expedição integrado ao ERP.',
+            ],
+            [
+                'title' => 'Modernização estrutural',
+                'body' => 'A operação também recebeu uma modernização estrutural para versões atuais de PHP e MySQL, preservando os cadastros, a rede e o histórico da empresa.',
+            ],
+        ],
+        'metrics' => [],
+        'shots' => [
+            [
+                'src' => 'imagens/clientes/telas/medplant.webp',
+                'alt' => 'Loja virtual da MedPlant com banner do MedShake, menu de categorias e acesso ao escritório',
+                'legenda' => 'Loja e escritório virtual da MedPlant',
+            ],
+        ],
+        'highlightsLabel' => 'Destaques',
     ],
     [
         'slug' => 'emergency-saas',
         'name' => 'Emergency',
-        'segment' => 'SaaS de certidões e documentos • Laravel',
-        'period' => 'Em produção',
+        'segment' => 'SaaS de certidões e documentos • Brasil',
+        'period' => 'Plataforma em produção',
         'featured' => false,
         'logo' => 'imagens/clientes/planeta-emergency.webp',
         'logoFallback' => 'imagens/clientes/planeta-emergency.png',
@@ -404,19 +445,24 @@ return [
         'shots' => [
             ['src' => 'imagens/clientes/telas/emergency-saas.webp', 'alt' => 'Página da Emergency com certidões à venda online', 'legenda' => 'Emergency: catálogo de certidões com compra e entrega digital.'],
         ],
-        'summary' => 'Desenvolvimento do SaaS emergency.com.br em Laravel, com a infraestrutura montada por nós — '
-            . 'do servidor à produção.',
+        'summary' => 'Plataforma de compra, emissão, acompanhamento e entrega digital de certidões, com automação comercial, pagamentos, assinaturas e recursos de inteligência artificial.',
         'highlights' => [
-            'SaaS em Laravel + Livewire com login 2FA',
-            'Wizard de pedido em 3 etapas e carteira com saldo',
-            'Infraestrutura completa: do servidor ao deploy',
-            'Suporte por ticket dentro da plataforma',
+            'Vitrine pública com certidões, pacotes e jogos de diligência',
+            'Compra rápida e pedidos com múltiplos titulares',
+            'Recuperação de carrinho abandonado',
+            'Relatório do funil para acompanhamento das campanhas de marketing',
+            'Pagamentos e assinaturas pelo Mercado Pago',
+            'Crédito mensal de assinatura aplicado aos serviços',
+            'Pedidos internos liberados pela equipe, sem exibição de valores ao cliente',
+            'Acesso temporário do cliente aos documentos',
+            'Rastreamento de envio e abertura dos e-mails',
+            'Pré-análise de certidões com inteligência artificial',
+            'API mobile para pedidos, pagamentos, clientes, carteira e suporte',
         ],
         'details' => [
             [
-                'title' => 'Tecnologia de ponta, operação real',
-                'body' => 'Catálogo de certidões, pedidos guiados, pagamentos por carteira e autenticação reforçada — '
-                    . 'construído em Laravel moderno e publicado numa infraestrutura que também montamos e operamos.',
+                'title' => 'De fluxo de pedidos a ecossistema comercial',
+                'body' => 'A plataforma evoluiu de um fluxo de pedidos para um ecossistema comercial completo. O cliente pode comprar certidões avulsas ou pacotes, pagar, acompanhar e receber digitalmente. A operação possui automações de recuperação, funil de marketing, pedidos internos e pré-análise assistida por IA, mantendo controle administrativo sobre cada etapa.',
             ],
         ],
         'metrics' => [
@@ -424,53 +470,64 @@ return [
             ['value' => '3', 'label' => 'etapas no wizard de pedido'],
             ['value' => '24/7', 'label' => 'acesso aos documentos'],
         ],
+        'highlightsLabel' => 'Implementações recentes',
     ],
     [
         'slug' => 'emergency-erp',
         'name' => 'Emergency ERP',
         'segment' => 'ERP de gestão • Documentação imobiliária',
-        'period' => 'Mantido e evoluído desde 2006',
+        'period' => 'Evoluído continuamente desde 2006',
         'featured' => false,
         'logo' => 'imagens/clientes/emergency-erp.webp',
         'logoFallback' => 'imagens/clientes/emergency-erp.png',
         'logoWidth' => 86,
         'logoHeight' => 98,
         'url' => 'https://sistemaemergency.com.br/',
-        'summary' => 'ERP que roda a operação de ponta a ponta há quase 20 anos — refatorado e evoluído sem parar a empresa.',
+        'summary' => 'ERP que sustenta a operação financeira, comercial, jurídica e fiscal da Emergency, modernizado continuamente sem interromper a empresa.',
         'highlights' => [
-            'Refatoração do código-fonte sem parar a operação',
-            'NFS-e de São Paulo no layout novo, com IBS e CBS',
-            'Faturamento e boletos com integração bancária (Itaú)',
-            'Financeiro integrado à Kamino e ao Salesforce',
-            'Módulos financeiro, jurídico e fiscal',
-            'Estoque, expedição e centro de custo',
+            'Emissão de NFS-e no Padrão Nacional',
+            'Geração e consulta de DANFSe',
+            'Integração operacional com Salesforce',
+            'Integração de contratos e recebimentos com Kamino',
+            'Auditoria do status dos contratos',
+            'Relatórios financeiros por departamento',
+            'Exibição de valor bruto, retenções e CNPJ nos relatórios',
+            'Emissão e conciliação de recibos de adiantamento',
+            'Evolução dos boletos e rotinas bancárias do Itaú',
         ],
         'details' => [
             [
-                'title' => 'Legado que virou vantagem',
-                'body' => 'Sistema de 2006 refatorado para versões modernas de PHP e MySQL, ganhando módulos novos '
-                    . '— do comercial ao faturamento — sem um dia de operação parada.',
-            ],
-            [
-                // 26/11/2026, pedido do usuario: "fala tb das integracoes das novas notas fiscais".
-                // Conferido no codigo (classes/lib/NFP, nfpModel): layout 2 da PMSP com NBS, cClassTrib e cIndOp.
-                'title' => 'Notas fiscais da reforma tributária',
-                'body' => 'A NFS-e de São Paulo sai direto do ERP no layout 2, o que já traz o IBS e a CBS: código NBS, '
-                    . 'classificação tributária e indicador de operação vêm do cadastro de cada serviço, e a nota é assinada e '
-                    . 'enviada à prefeitura sem passar pelo portal. O recebimento segue para o financeiro em fluxo separado da nota.',
+                'title' => 'Modernização com a operação rodando',
+                'body' => 'A modernização acontece enquanto a operação continua funcionando. Além dos módulos históricos, o ERP agora conversa com plataformas comerciais e financeiras modernas, atende ao Padrão Nacional da NFS-e e mantém auditoria dos contratos, pagamentos, retenções e documentos fiscais.',
             ],
         ],
         'metrics' => [
-            ['value' => '2006', 'label' => 'ano de origem do sistema'],
-            ['value' => '15+', 'label' => 'anos de sustentação contínua'],
-            ['value' => 'Itaú', 'label' => 'integração bancária'],
-            ['value' => 'IBS/CBS', 'label' => 'na NFS-e de São Paulo'],
+            [
+                'value' => '2006',
+                'label' => 'ano de origem do sistema',
+            ],
+            [
+                'value' => '15+',
+                'label' => 'anos de sustentação contínua',
+            ],
+            [
+                'value' => 'Itaú',
+                'label' => 'integração bancária',
+            ],
         ],
+        'shots' => [
+            [
+                'src' => 'imagens/clientes/telas/emergency-erp-marca.webp',
+                'alt' => 'Marca da Emergency Documentação',
+                'legenda' => 'Emergency Documentação: o ERP sustenta a operação interna da empresa.',
+            ],
+        ],
+        'highlightsLabel' => 'Implementações recentes',
     ],
     [
         'slug' => 'gordon-codafacil',
         'name' => 'Agente Gordon',
-        'segment' => 'Harness de IA com regras de negócio',
+        'segment' => 'Inteligência artificial corporativa • Agentes, documentos e integrações',
         'period' => 'Produto interno em uso',
         'featured' => false,
         'logo' => 'imagens/clientes/gordon-codafacil.webp',
@@ -479,20 +536,23 @@ return [
         'logoHeight' => 175,
         // gordon.emergency.com.br respondia HTTP 500 em 26/11/2026 — sem link ate voltar
         'url' => null,
-        'summary' => 'Harness de acesso a modelos de IA de ponta, com as regras do negócio no controle: fluxo, '
-            . 'organização, mobile e auditoria completa.',
+        'summary' => 'Ambiente de agentes de IA com regras de negócio, bases de conhecimento, ferramentas internas, canais de atendimento e governança de uso.',
         'highlights' => [
-            'Acesso a modelos de ponta sob regras de negócio',
-            'Controle de fluxo e organização das conversas',
-            'API mobile nativa desde o primeiro dia',
-            'Auditoria e governança completas',
+            'Bases de conhecimento com documentos e busca RAG',
+            'Respostas com fontes e controle de prioridade das referências',
+            'Pesquisa de jurisprudência com indicação da origem',
+            'Upload e análise de documentos dentro da conversa',
+            'Canais web, mobile, e-mail e WhatsApp',
+            'Ferramentas integradas a sistemas internos e ERPs',
+            'Permissões por usuário, empresa e agente',
+            'Templates, skills, versões e experimentos de agentes',
+            'Orçamento, consumo e custo auditáveis',
+            'Insights automáticos e fluxos em segundo plano',
         ],
         'details' => [
             [
-                'title' => 'IA com rédea curta',
-                'body' => 'O agente não improvisa: cada acesso a modelo passa pelo harness, que aplica as regras do '
-                    . 'negócio, registra tudo pra auditoria e mantém a governança — com conversas persistidas, uploads '
-                    . 'e processamento assíncrono.',
+                'title' => 'IA corporativa governada',
+                'body' => 'O Gordon transforma modelos de IA em agentes corporativos governados. Cada agente recebe permissões, conhecimento, ferramentas e orçamento próprios. Documentos, integrações e conversas permanecem rastreáveis, permitindo automação sem perder controle, contexto ou auditoria.',
             ],
         ],
         'metrics' => [
@@ -500,6 +560,14 @@ return [
             ['value' => 'API', 'label' => 'mobile nativa'],
             ['value' => '100%', 'label' => 'auditável'],
         ],
+        'shots' => [
+            [
+                'src' => 'imagens/clientes/telas/gordon-agentes.webp',
+                'alt' => 'Base de conhecimento de um agente de IA com documentos indexados e prontos para consulta',
+                'legenda' => 'Ecossistema de agentes do grupo: base de conhecimento de um agente (tela do AgenticHUB).',
+            ],
+        ],
+        'highlightsLabel' => 'Implementações recentes',
     ],
     // ---- 26/11/2026: cases do grupo trazidos de coderush.com.br, codafacil.dev e dos produtos proprios
     // (pedido do usuario: "copia os clientes e resultados desses sites todos ... vamos por bastante case la").
@@ -676,26 +744,42 @@ return [
         'details' => [],
         'metrics' => [],
     ],
+    // 26/11/2026: produto em desenvolvimento — vai em secao propria de /cases/, nunca na lista de producao
     [
-        // Embargo do cliente: NAO publicar ate liberacao. Trocar 'hidden' para false quando autorizado.
-        'slug' => 'medplant',
-        'name' => 'MedPlant',
-        'segment' => 'Produtos naturais / saúde e bem-estar • Venda direta',
-        'period' => 'No ar desde agosto de 2026',
+        'slug' => 'monittora-pgr',
+        'name' => 'Monittora PGR',
+        'status' => 'desenvolvimento',
+        'badge' => 'Protótipo funcional / prova de conceito',
+        'segment' => 'Gestão de risco no transporte • Inteligência artificial',
+        'period' => 'Prova de conceito em evolução',
         'featured' => false,
-        'hidden' => true,
-        'logo' => 'imagens/clientes/medplant.webp',
-        'logoFallback' => 'imagens/clientes/medplant.png',
+        'logo' => '',
+        'logoFallback' => '',
         'logoWidth' => 480,
-        'logoHeight' => 123,
-        'url' => 'https://medplant.sistemavendadireta.com.br/',
-        'summary' => 'Escritório virtual e loja para venda direta: catálogo, pedidos, rede, extrato e comissões integrados.',
+        'logoHeight' => 130,
+        'url' => null,
+        'semLinkLabel' => 'Acesso restrito ao piloto',
+        'summary' => 'Plataforma que transforma apólices de seguro de transporte em Planos de Gerenciamento de Risco estruturados, revisáveis e aplicáveis à avaliação das viagens.',
+        'highlightsLabel' => 'Destaques',
         'highlights' => [
-            'Loja com catálogo e carrinho integrados',
-            'Escritório virtual com extrato e comissões',
-            'Gestão de rede de consultores',
+            'Leitura de apólices em PDF com OCR e inteligência artificial',
+            'Extração estruturada das regras de gerenciamento de risco',
+            'Revisão humana de cada regra antes da publicação',
+            'Indicação da cláusula e da página que originaram a regra',
+            'Motor determinístico para liberar, alertar ou bloquear viagens',
+            'Score de risco explicado em português',
+            'Avaliação da viagem antes da saída e durante o trajeto',
+            'Simulação de telemetria, perda de sinal, parada, atraso e jammer',
+            'Visualização do trajeto e dos eventos em mapa',
+            'Registro do resultado e geração de relatório auditável',
         ],
-        'details' => [],
+        'detailsLabel' => 'O que está sendo desenvolvido',
+        'details' => [
+            [
+                'title' => 'Do documento de seguro à regra operacional',
+                'body' => 'A proposta é transformar documentos extensos de seguro em regras operacionais utilizáveis. A IA ajuda a localizar e estruturar as exigências, mas a decisão permanece com o gestor. Depois de aprovado, o PGR passa a alimentar o motor que avalia cada viagem e revalida as condições durante o trajeto.',
+            ],
+        ],
         'metrics' => [],
     ],
 ];
