@@ -154,6 +154,19 @@ $clientCompanies = [
     ['name' => 'Protech Nutritional'],
     ['name' => "New Professional's"],
     ['name' => 'ForOne'],
+    // 26/11/2026: nomes que estavam em coderush.com.br e nos cases, mas faltavam aqui.
+    // BBom ficou de fora de proposito (ver historico) ate o usuario confirmar.
+    ['name' => 'AVIG 360'],
+    ['name' => 'Velaro Alianças'],
+    ['name' => 'Henovar Energy'],
+    ['name' => 'RAASA Advogados'],
+    ['name' => 'Top Pericias'],
+    ['name' => 'Lojas Leader'],
+    ['name' => 'Retech Engenharia'],
+    ['name' => 'Sublimity'],
+    ['name' => 'Isy Sistemas'],
+    ['name' => 'BFR Intelligence'],
+    ['name' => 'Wellby'],
 ];
 
 $clientCases = array_values(array_filter(

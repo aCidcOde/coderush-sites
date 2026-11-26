@@ -25,6 +25,9 @@ return [
         'logoWidth' => 480,
         'logoHeight' => 130,
         'url' => 'https://newprofessional.com.py/',
+        'shots' => [
+            ['src' => 'imagens/clientes/telas/new-professionals.webp', 'alt' => "Loja da New Professional's no ar, com domínio próprio", 'legenda' => "Loja da New Professional's no ar, em domínio próprio."],
+        ],
         'summary' => 'Plataforma de venda direta no Paraguai: três idiomas, preço em guarani e comissões por cargo.',
         'highlights' => [
             'Loja, escritório e cadastro em PT / ES / EN',
@@ -175,6 +178,9 @@ return [
         'logoWidth' => 464,
         'logoHeight' => 88,
         'url' => 'https://avig360.com/',
+        'shots' => [
+            ['src' => 'imagens/clientes/telas/avig360.webp', 'alt' => 'Site da AVIG 360 no ar', 'legenda' => 'Site da AVIG 360 no ar, em vários idiomas.'],
+        ],
         'summary' => 'Plataforma de conformidade com a NR-01 que usa o SVD como canal de parceiros de negócio.',
         'highlights' => [
             'Programa de parceiros com painel próprio',
@@ -239,6 +245,9 @@ return [
         'logoWidth' => 520,
         'logoHeight' => 126,
         'url' => 'https://velaroaliancas.com.br/',
+        'shots' => [
+            ['src' => 'imagens/clientes/telas/velaro.webp', 'alt' => 'Plataforma B2B da Velaro para lojistas e revendedores', 'legenda' => 'Plataforma exclusiva para lojistas e revendedores da Velaro.'],
+        ],
         'summary' => 'Plataforma B2B de alianças para lojistas: catálogo público sem preço e condição comercial liberada só após aprovação do cadastro.',
         'highlights' => [
             'Exclusivo para lojistas — sem venda ao consumidor final',
@@ -317,6 +326,9 @@ return [
         'logoWidth' => 520,
         'logoHeight' => 126,
         'url' => 'https://henovar.com.br/loja',
+        'shots' => [
+            ['src' => 'imagens/clientes/telas/henovar.webp', 'alt' => 'Site da Henovar Energy com loja e escritório virtual', 'legenda' => 'Henovar Energy: site, loja e escritório virtual no mesmo ecossistema.'],
+        ],
         'summary' => 'Assinatura de energia renovável e marketplace na mesma rede, com plano de carreira de 12 níveis.',
         'highlights' => [
             'Assinatura de energia e venda de produto no mesmo cadastro',
@@ -354,6 +366,9 @@ return [
         'logoWidth' => 480,
         'logoHeight' => 102,
         'url' => 'https://loja.protechnutritional.com.br/loja',
+        'shots' => [
+            ['src' => 'imagens/clientes/telas/protech-nutritional.webp', 'alt' => 'Loja virtual da Protech Nutritional', 'legenda' => 'Loja da Protech Nutritional no ar.'],
+        ],
         'summary' => 'Venda direta com distribuição exclusiva por consultores: toda compra nasce vinculada a um patrocinador.',
         'highlights' => [
             'Fluxo de indicação obrigatório na entrada da loja',
@@ -384,6 +399,9 @@ return [
         'logoWidth' => 420,
         'logoHeight' => 322,
         'url' => 'https://emergency.com.br/',
+        'shots' => [
+            ['src' => 'imagens/clientes/telas/emergency-saas.webp', 'alt' => 'Página da Emergency com certidões à venda online', 'legenda' => 'Emergency: catálogo de certidões com compra e entrega digital.'],
+        ],
         'summary' => 'Desenvolvimento do SaaS emergency.com.br em Laravel, com a infraestrutura montada por nós — '
             . 'do servidor à produção.',
         'highlights' => [
@@ -446,7 +464,8 @@ return [
         'logoFallback' => 'imagens/clientes/gordon-codafacil.png',
         'logoWidth' => 480,
         'logoHeight' => 175,
-        'url' => 'https://gordon.emergency.com.br/',
+        // gordon.emergency.com.br respondia HTTP 500 em 26/11/2026 — sem link ate voltar
+        'url' => null,
         'summary' => 'Harness de acesso a modelos de IA de ponta, com as regras do negócio no controle: fluxo, '
             . 'organização, mobile e auditoria completa.',
         'highlights' => [
@@ -468,6 +487,181 @@ return [
             ['value' => 'API', 'label' => 'mobile nativa'],
             ['value' => '100%', 'label' => 'auditável'],
         ],
+    ],
+    // ---- 26/11/2026: cases do grupo trazidos de coderush.com.br, codafacil.dev e dos produtos proprios
+    // (pedido do usuario: "copia os clientes e resultados desses sites todos ... vamos por bastante case la").
+    // Nenhum numero aqui e resultado inventado: so o que os proprios sites publicam.
+    [
+        'slug' => 'agentichub',
+        'name' => 'AgenticHUB',
+        'segment' => 'Plataforma corporativa de agentes de IA • BFR Intelligence',
+        'period' => 'Produto do grupo em operação',
+        'featured' => false,
+        'logo' => 'imagens/clientes/agentichub.webp',
+        'logoFallback' => 'imagens/clientes/agentichub.png',
+        'logoWidth' => 480,
+        'logoHeight' => 132,
+        'url' => 'https://bfrintelligence.com.br/',
+        'shots' => [
+            ['src' => 'imagens/clientes/telas/agentichub-integracoes.webp', 'alt' => 'Tela de integrações do AgenticHUB com Google Drive, OneDrive, Slack, SMTP, Webhook e ERP', 'legenda' => 'Integrações: cada conexão com escopo e permissão próprios.'],
+            ['src' => 'imagens/clientes/telas/agentichub-chat.webp', 'alt' => 'Conversa com um agente do AgenticHUB ajudando a criar um novo agente', 'legenda' => 'Agente conversando e guiando a criação de outro agente.'],
+        ],
+        'summary' => 'Harness corporativo de agentes de IA com governança: a empresa cria, opera e controla agentes '
+            . 'conectados aos sistemas internos, à base de conhecimento e aos canais de atendimento — com custo e '
+            . 'permissão sob controle.',
+        'highlights' => [
+            'Multiempresa: dados isolados e limite de custo por filial',
+            'Whitelabel: logo, cores e domínio do cliente',
+            'Canais Web, Mobile e WhatsApp com o contexto preservado',
+            'Base de conhecimento com busca RAG (PDF, Word, planilhas, Drive)',
+        ],
+        'details' => [
+            [
+                'title' => 'Governança de verdade',
+                'body' => 'Permissões por usuário, orçamento e métricas por agente, logs auditáveis e conformidade com a '
+                    . 'LGPD. A empresa pode usar a própria chave de modelo (BYOK) — GPT-4o, Claude, Gemini ou modelo '
+                    . 'privado — e há opção on-premise.',
+            ],
+            [
+                'title' => 'Do pedido ao agente no ar',
+                'body' => 'Criação de agente guiada por IA, com o prompt gerado a partir de poucas perguntas, teste A/B '
+                    . 'entre versões e integração com APIs, bancos de dados, documentos, CRM/ERP e BI.',
+            ],
+            [
+                'title' => 'Selecionada por Microsoft e AWS',
+                'body' => 'A BFR Intelligence foi selecionada para os programas de startups Microsoft for Startups e '
+                    . 'AWS Activate.',
+            ],
+        ],
+        'metrics' => [
+            ['value' => 'BYOK', 'label' => 'chave própria de modelo'],
+            ['value' => 'RAG', 'label' => 'base de conhecimento dedicada'],
+            ['value' => 'LGPD', 'label' => 'logs auditáveis'],
+        ],
+    ],
+    [
+        'slug' => 'wellby',
+        'name' => 'Wellby',
+        'segment' => 'Aplicativo de cuidado de idosos • iPhone e Apple Watch',
+        'period' => 'Lançamento: novembro de 2026',
+        'featured' => false,
+        // sem logo em arquivo: o card mostra o nome em texto (ver cases/index.php)
+        'logo' => '',
+        'logoFallback' => '',
+        'logoWidth' => 480,
+        'logoHeight' => 130,
+        'url' => 'https://wellby.com.br/',
+        'shots' => [
+            ['src' => 'imagens/clientes/telas/wellby.webp', 'alt' => 'Página do aplicativo Wellby com o check-in diário no iPhone e no Apple Watch', 'legenda' => 'Wellby: check-in no celular e no relógio, aviso à família quando algo foge do normal.'],
+        ],
+        'summary' => 'Aplicativo próprio do grupo para a família acompanhar à distância, sem câmera, o idoso que mora '
+            . 'sozinho: check-in nos horários combinados e aviso em minutos quando algo foge do normal.',
+        'highlights' => [
+            'Check-in diário nos horários que a família combina',
+            'Confirmação silenciosa por movimento e rotina',
+            'Família avisada por WhatsApp, SMS e ligação',
+            'Detecção de queda no celular e no Apple Watch',
+        ],
+        'details' => [
+            [
+                'title' => 'Feito para quem não usa aplicativo',
+                'body' => 'O idoso responde pelo app, pelo relógio, por SMS, ligação ou WhatsApp. O alarme insiste até '
+                    . 'ter resposta e respeita o horário de descanso, das 22h às 7h.',
+            ],
+            [
+                'title' => 'Saúde no mesmo painel',
+                'body' => 'Lembrete de remédio com aviso de quando vai acabar, relatório de batimento, oxigenação, sono e '
+                    . 'passos, e integração com Oura, Whoop, Garmin e Fitbit.',
+            ],
+            [
+                'title' => 'Assinatura e lançamento por etapas',
+                'body' => 'Planos por assinatura com teste grátis, site em português, inglês e alemão, iPhone primeiro e '
+                    . 'Android na sequência.',
+            ],
+        ],
+        'metrics' => [
+            ['value' => '3', 'label' => 'canais de aviso: WhatsApp, SMS e ligação'],
+            ['value' => '14 dias', 'label' => 'de teste no plano completo'],
+            ['value' => 'Watch', 'label' => 'app próprio no relógio'],
+        ],
+    ],
+    [
+        'slug' => 'isy-middleware',
+        'name' => 'Isy Middleware',
+        'segment' => 'Integração de lojas online com estoque centralizado',
+        'period' => 'Em operação',
+        'featured' => false,
+        'logo' => '',
+        'logoFallback' => '',
+        'logoWidth' => 480,
+        'logoHeight' => 130,
+        // o sistema so tem tela de login publica
+        'url' => null,
+        'summary' => 'Middleware que integra os sistemas de vendas, estoque e financeiro de lojas online distribuídas, '
+            . 'com estoque centralizado e processamento de grandes volumes de dados em tempo real.',
+        'highlights' => [
+            'Lojas online distribuídas, estoque centralizado',
+            'Vendas, estoque e financeiro no mesmo fluxo',
+            'Grandes volumes de dados em tempo real',
+            'Múltiplas integrações e rotinas numa plataforma só',
+        ],
+        'details' => [
+            [
+                'title' => 'Integração no centro da operação',
+                'body' => 'As integrações e rotinas da operação passam pelo middleware: os sistemas de vendas, estoque e '
+                    . 'financeiro conversam por ele, com processamento em tempo real mesmo em volume alto.',
+            ],
+        ],
+        'metrics' => [],
+    ],
+    [
+        'slug' => 'hub-payments',
+        'name' => 'Hub Payments',
+        'segment' => 'Gateway de pagamentos e conciliação financeira',
+        'period' => 'Em operação',
+        'featured' => false,
+        'logo' => 'imagens/clientes/hub-payments.webp',
+        'logoFallback' => 'imagens/clientes/hub-payments.png',
+        'logoBg' => 'escuro',
+        'logoWidth' => 480,
+        'logoHeight' => 156,
+        'url' => null,
+        'summary' => 'Sistema de gestão de pagamentos e conciliação financeira para empresas de médio e grande porte.',
+        'highlights' => [
+            'Gestão de pagamentos num só lugar',
+            'Conciliação financeira integrada',
+            'Feito para empresas de médio e grande porte',
+            'Múltiplas tecnologias financeiras conectadas',
+        ],
+        'details' => [
+            [
+                'title' => 'Pagamento e conciliação juntos',
+                'body' => 'Gateway de pagamentos com a conciliação financeira no mesmo sistema, para empresas que operam '
+                    . 'com várias tecnologias financeiras ao mesmo tempo.',
+            ],
+        ],
+        'metrics' => [],
+    ],
+    [
+        // OCULTO ate confirmar: em 26/11/2026 liquitudo.com.br respondia 403 pro nosso servidor e pra
+        // ferramenta de leitura, e a ultima versao legivel (Wayback, 17/05/2026) era pagina de outlet
+        // fisico, nao loja online. O usuario descreve como e-commerce — liberar com prints/confirmacao.
+        'slug' => 'liquitudo',
+        'name' => 'Liquitudo',
+        'segment' => 'Outlet das principais marcas • E-commerce',
+        'period' => 'Em operação',
+        'featured' => false,
+        'hidden' => true,
+        'logo' => '',
+        'logoFallback' => '',
+        'logoWidth' => 480,
+        'logoHeight' => 130,
+        'url' => 'https://liquitudo.com.br/',
+        'summary' => 'Outlet das principais marcas — eletrônicos, eletrodomésticos e móveis — com cada produto '
+            . 'classificado pelo estado de conservação.',
+        'highlights' => [],
+        'details' => [],
+        'metrics' => [],
     ],
     [
         // Embargo do cliente: NAO publicar ate liberacao. Trocar 'hidden' para false quando autorizado.

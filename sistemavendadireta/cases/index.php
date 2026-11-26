@@ -144,6 +144,21 @@ $seoLdGraph = [
         moeda, idioma, documento fiscal, plano de comissões, integração — e abaixo está o que foi entregue em cada uma,
         sem generalização, com o escopo real de cada projeto.
       </p>
+      <?php /* numeros do grupo, os mesmos publicados em coderush.com.br (26/11/2026) */ ?>
+      <div class="mt-6 grid max-w-3xl gap-3 sm:grid-cols-3">
+        <div class="rounded-2xl border border-white/20 bg-white/5 px-4 py-3">
+          <p class="font-[var(--font-heading)] text-2xl font-semibold">+40</p>
+          <p class="mt-1 text-sm text-white/80">projetos entregues pelo grupo nos últimos anos</p>
+        </div>
+        <div class="rounded-2xl border border-white/20 bg-white/5 px-4 py-3">
+          <p class="font-[var(--font-heading)] text-2xl font-semibold">+24</p>
+          <p class="mt-1 text-sm text-white/80">anos de experiência da equipe</p>
+        </div>
+        <div class="rounded-2xl border border-white/20 bg-white/5 px-4 py-3">
+          <p class="font-[var(--font-heading)] text-2xl font-semibold">5</p>
+          <p class="mt-1 text-sm text-white/80">países com operação de cliente</p>
+        </div>
+      </div>
     </section>
 
     <?php foreach ($clientCases as $case): ?>
@@ -151,6 +166,11 @@ $seoLdGraph = [
         <article class="rounded-[30px] border border-white/25 bg-white/[0.06] p-6 sm:p-8">
           <div class="grid gap-6 lg:grid-cols-[auto_1fr] lg:items-center">
             <div class="flex w-full max-w-[360px] items-center justify-center rounded-2xl <?= (($case['logoBg'] ?? '') === 'escuro') ? 'bg-slate-900' : 'bg-white' ?> px-6 py-5">
+              <?php if (empty($case['logoFallback'])): ?>
+                <?php /* sem logo em arquivo (26/11/2026: Isy Middleware, Wellby) — o nome
+                         em texto e melhor que logo inventado */ ?>
+                <span class="font-[var(--font-heading)] text-2xl font-semibold" style="color:<?= (($case['logoBg'] ?? '') === 'escuro') ? '#fff' : '#0f172a' ?>"><?= htmlspecialchars($case['name'], ENT_QUOTES, 'UTF-8') ?></span>
+              <?php else: ?>
               <picture>
                 <?php /* source so quando o arquivo existe: <source> apontando pra 404 NAO
          cai no <img>, mostra imagem quebrada */ ?>
@@ -166,6 +186,7 @@ $seoLdGraph = [
                   loading="lazy"
                 />
               </picture>
+              <?php endif; ?>
             </div>
 
             <div>
@@ -206,6 +227,22 @@ $seoLdGraph = [
                   <p class="font-[var(--font-heading)] text-2xl font-semibold"><?= htmlspecialchars($metric['value'], ENT_QUOTES, 'UTF-8') ?></p>
                   <p class="mt-1 text-sm text-white/80"><?= htmlspecialchars($metric['label'], ENT_QUOTES, 'UTF-8') ?></p>
                 </div>
+              <?php endforeach; ?>
+            </div>
+          <?php endif; ?>
+
+          <?php /* Fotos do projeto no ar (26/11/2026, pedido do usuario: "tira fotos dos
+                   projetos pra completar o conteudo"). So paginas publicas — tela de login
+                   nao entra, e nenhuma foto mostra dado pessoal. */ ?>
+          <?php if (!empty($case['shots'])): ?>
+            <div class="mt-7 grid gap-4<?= count($case['shots']) > 1 ? ' md:grid-cols-2' : ' max-w-3xl' ?>">
+              <?php foreach ($case['shots'] as $shot): ?>
+                <figure class="overflow-hidden rounded-2xl border border-white/20 bg-white/5">
+                  <img src="../<?= htmlspecialchars($shot['src'], ENT_QUOTES, 'UTF-8') ?>" alt="<?= htmlspecialchars($shot['alt'], ENT_QUOTES, 'UTF-8') ?>" class="block w-full" style="height:auto" width="1200" height="750" loading="lazy" decoding="async" />
+                  <?php if (!empty($shot['legenda'])): ?>
+                    <figcaption class="px-4 py-3 text-xs leading-6 text-white/70 sm:text-sm"><?= htmlspecialchars($shot['legenda'], ENT_QUOTES, 'UTF-8') ?></figcaption>
+                  <?php endif; ?>
+                </figure>
               <?php endforeach; ?>
             </div>
           <?php endif; ?>
