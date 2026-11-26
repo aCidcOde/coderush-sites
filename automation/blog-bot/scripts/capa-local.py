@@ -212,6 +212,12 @@ def main():
     ap.add_argument("--eyebrow", default="")
     ap.add_argument("--marca", default="")
     ap.add_argument("--paleta", default="#0d1118,#0f172a,#d89b1a,#f3c65a")
+    # --sem-texto: so o fundo (gradiente, halos, malha, vinheta), sem titulo nem
+    # faixas. E o fundo do topo do post (26/11/2026): o titulo vai em HTML por
+    # cima, e capa com titulo desenhado embaixo do titulo em HTML repetia a
+    # mesma frase duas vezes na tela. Mesma semente do titulo = mesma malha da
+    # capa do card, entao card e post continuam parecendo a mesma peca.
+    ap.add_argument("--sem-texto", action="store_true")
     args = ap.parse_args()
 
     try:
@@ -233,6 +239,14 @@ def main():
     halos(img, mistura(meio, acento, 0.22), rnd)
     malha(img, acento, rnd)
     vinheta(img, escuro)
+
+    if args.sem_texto:
+        if args.saida.lower().endswith(".webp"):
+            img.save(args.saida, "WEBP", quality=80, method=6)
+        else:
+            img.save(args.saida, "JPEG", quality=86, optimize=True, progressive=True)
+        print(args.saida)
+        return 0
 
     d = ImageDraw.Draw(img)
     tinta = legivel_sobre(mistura(meio, escuro, 0.5))

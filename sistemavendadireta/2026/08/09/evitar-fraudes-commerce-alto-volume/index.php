@@ -111,16 +111,15 @@
 <!-- PROMO-STRIP END -->
 
     <article class="mt-5 overflow-hidden rounded-3xl border border-white/15 bg-white/5">
-      <figure class="relative">
-        <picture><source srcset="../../../../imagens/posts/evitar-fraudes-commerce-alto-volume.webp" type="image/webp" /><img src="../../../../imagens/posts/evitar-fraudes-commerce-alto-volume.jpg" alt="Um cadeado tridimensional azul profundo com um detalhe de linha diagonal quebrando o arco, simbolizando a interceptação de fraudes em e-commerce" class="block w-full object-cover" style="aspect-ratio:1200/630" width="1200" height="630" loading="eager" decoding="async" /></picture>
-        <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/85 via-black/45 to-transparent" aria-hidden="true"></div>
-        <figcaption class="absolute inset-x-0 bottom-0 p-5 sm:p-8 lg:p-10">
+      <header class="relative overflow-hidden" style="background:#040c1e url('../../../../imagens/posts/fundos/evitar-fraudes-commerce-alto-volume.webp') center/cover no-repeat">
+        <div class="pointer-events-none absolute inset-0" style="background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.25) 65%,rgba(4,12,30,0) 100%)" aria-hidden="true"></div>
+        <div class="relative p-5 sm:p-8 lg:p-10" style="min-height:260px;display:flex;flex-direction:column;justify-content:flex-end">
           <span class="block h-1 w-12 rounded-full bg-white" aria-hidden="true"></span>
           <p class="mt-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-white/85 sm:text-xs">Guia prático • 09/08/2026</p>
           <h1 class="mt-2 text-2xl font-semibold leading-tight text-white sm:text-3xl lg:text-4xl">Como evitar fraudes em e-commerce de venda direta</h1>
           <p class="mt-3 max-w-3xl text-sm leading-6 text-white/90 sm:text-base sm:leading-7">Entenda como o controle de clientes e a prevenção de fraudes podem impulsionar seu e-commerce.</p>
-        </figcaption>
-      </figure>
+        </div>
+      </header>
       <div class="p-5 sm:p-8">
       <aside class="mt-6 rounded-2xl border-l-4 border-white bg-white/[0.04] p-5 sm:p-6">
         <h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-white">Como prevenir fraudes em e-commerce de alto volume?</h3>

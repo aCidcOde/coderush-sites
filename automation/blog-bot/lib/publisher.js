@@ -1120,10 +1120,9 @@ ${faqJsonLd}
     </a>
 
     <article class="mt-5 overflow-hidden rounded-3xl border border-white/15 bg-white/5">
-      <figure class="relative">
-        ${heroComWebp(root, site, contract, relativeRoot, esc(contract.coverAlt || contract.content.headline), ' class="block w-full object-cover" style="aspect-ratio:1200/630"')}
-        <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/85 via-black/45 to-transparent" aria-hidden="true"></div>
-        <figcaption class="absolute inset-x-0 bottom-0 p-5 sm:p-8 lg:p-10">
+      <header class="relative overflow-hidden" style="background:#040c1e url('${relativeRoot}imagens/posts/fundos/${contract.slug}.webp') center/cover no-repeat">
+        <div class="pointer-events-none absolute inset-0" style="background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.25) 65%,rgba(4,12,30,0) 100%)" aria-hidden="true"></div>
+        <div class="relative p-5 sm:p-8 lg:p-10" style="min-height:260px;display:flex;flex-direction:column;justify-content:flex-end">
           <span class="block h-1 w-12 rounded-full ${copy.headingBarClass}" aria-hidden="true"></span>
           <p class="mt-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-white/85 sm:text-xs">${esc(contract.content.eyebrow || copy.articleLabel)} • ${brDate(
             contract.date
@@ -1132,8 +1131,8 @@ ${faqJsonLd}
             contract.content.headline
           )}</h1>
           <p class="mt-3 max-w-3xl text-sm leading-6 text-white/90 sm:text-base sm:leading-7">${esc(contract.content.summary)}</p>
-        </figcaption>
-      </figure>
+        </div>
+      </header>
       <div class="p-5 sm:p-8">
 ${renderAnswerBox(contract.content.answerBox, accentFor(site.id))}
 ${renderTldr(contract.content.tldr)}
@@ -1325,6 +1324,31 @@ function coverLocalFallback({ site, contract, targetPath }) {
     );
   }
   return targetPath;
+}
+
+/**
+ * Fundo do topo do post (26/11/2026): o topo deixou de ser a capa. A capa e
+ * tipografica (titulo desenhado na imagem) e o titulo em HTML por cima repetia
+ * a frase duas vezes. Agora o topo e so texto sobre este fundo — mesma malha da
+ * capa (semente = titulo), sem nenhuma letra. Ver scripts/topo-sem-capa.py,
+ * que aplicou o mesmo markup nos posts ja publicados.
+ */
+function ensureHeroBackground(root, site, contract) {
+  if (!root || !site?.siteRoot) return null;
+  const alvo = path.resolve(root, site.siteRoot, "imagens/posts/fundos", `${contract.slug}.webp`);
+  if (fs.existsSync(alvo)) return alvo;
+  ensureDir(path.dirname(alvo));
+  const perfil = siteProfile(site.id) || {};
+  const paleta = (perfil.coverArt?.heroPaletteHex || ["#040c1e", "#0b3a8a", "#7cb8ff"]).join(",");
+  const r = spawnSync("python3", [
+    path.resolve(__dirname, "..", "scripts", "capa-local.py"),
+    `--saida=${alvo}`,
+    `--titulo=${contract.content?.headline || contract.theme || site.name || site.id}`,
+    `--paleta=${paleta}`,
+    "--sem-texto"
+  ], { encoding: "utf8" });
+  // sem fundo o topo cai na cor solida do style (#040c1e) — feio nao, so liso
+  return r.status === 0 && fs.existsSync(alvo) ? alvo : null;
 }
 
 async function ensureCoverImage(root, site, contract, aiConfig) {
@@ -1542,6 +1566,7 @@ async function publishSitePost(root, site, contract, aiConfig) {
   // precisa vir ANTES de montar os cards: imagemComWebp so emite o <source> se
   // o arquivo ja existir no disco
   ensureCoverWebp(cover.path);
+  ensureHeroBackground(root, site, contract);
   if (cover.altText) {
     contract.coverAlt = cover.altText;
   }
