@@ -101,30 +101,56 @@ foreach ($faqPairs as $pair) {
     ];
 }
 
+// 26/11/2026, pedido do usuario: "procure os logos e ponha eles, so o texto fica ruim".
+// Logos capturados do cabecalho do site de cada marca e convertidos pra branco
+// monocromatico (faixa azul, mesmo peso visual pra todos) — imagens/integracoes/.
+// 'icone': a marca so existe como simbolo (Simple Icons) e vai com o nome do lado.
+// Sem arquivo (Jadlog, Pepipost — site nao entregou logo), fica so o nome.
 $integrationPartners = [
-    ['name' => 'PayPal'],
-    ['name' => 'Mercado Pago'],
-    ['name' => 'DocuSign'],
-    ['name' => 'Twilio'],
-    ['name' => 'SendGrid'],
-    ['name' => 'RD Station'],
-    ['name' => 'Itaú'],
-    ['name' => 'Bling'],
-    ['name' => 'Cielo'],
-    ['name' => 'Nuvemshop'],
-    ['name' => 'Asaas'],
-    ['name' => 'Pagar.me'],
-    ['name' => 'Getnet'],
-    ['name' => 'Melhor Envio'],
+    ['name' => 'PayPal', 'icone' => 'imagens/integracoes/paypal.svg'],
+    ['name' => 'Mercado Pago', 'icone' => 'imagens/integracoes/mercado-pago.svg'],
+    ['name' => 'DocuSign', 'logo' => 'imagens/integracoes/docusign.webp'],
+    ['name' => 'Twilio', 'logo' => 'imagens/integracoes/twilio.webp'],
+    ['name' => 'SendGrid', 'logo' => 'imagens/integracoes/sendgrid.webp'],
+    ['name' => 'RD Station', 'logo' => 'imagens/integracoes/rd-station.webp'],
+    ['name' => 'Itaú', 'logo' => 'imagens/integracoes/itau.webp'],
+    ['name' => 'Bling', 'logo' => 'imagens/integracoes/bling.webp'],
+    ['name' => 'Cielo', 'logo' => 'imagens/integracoes/cielo.webp'],
+    ['name' => 'Nuvemshop', 'logo' => 'imagens/integracoes/nuvemshop.webp'],
+    ['name' => 'Asaas', 'logo' => 'imagens/integracoes/asaas.webp'],
+    ['name' => 'Pagar.me', 'logo' => 'imagens/integracoes/pagar-me.webp'],
+    ['name' => 'Getnet', 'logo' => 'imagens/integracoes/getnet.webp'],
+    ['name' => 'Melhor Envio', 'logo' => 'imagens/integracoes/melhor-envio.webp'],
     ['name' => 'Pepipost'],
-    ['name' => 'D4Sign'],
+    ['name' => 'D4Sign', 'logo' => 'imagens/integracoes/d4sign.webp'],
     ['name' => 'Jadlog'],
-    ['name' => 'Gerencianet'],
-    ['name' => 'Rede'],
-    ['name' => 'PagSeguro'],
+    ['name' => 'Efí (Gerencianet)', 'logo' => 'imagens/integracoes/gerencianet.webp'],
+    ['name' => 'Rede', 'logo' => 'imagens/integracoes/rede.webp'],
+    ['name' => 'PagSeguro', 'icone' => 'imagens/integracoes/pagseguro.svg'],
 ];
 $integrationPartnersTop = array_slice($integrationPartners, 0, (int) ceil(count($integrationPartners) / 2));
 $integrationPartnersBottom = array_slice($integrationPartners, (int) ceil(count($integrationPartners) / 2));
+
+/** Um item da faixa de integracoes: logo, icone + nome, ou so o nome. A copia
+    duplicada do carrossel (repetir=true) sai sem texto alternativo pra leitor de tela. */
+function integrationChip(array $partner, bool $repetir): void
+{
+    $nome = htmlspecialchars($partner['name'], ENT_QUOTES, 'UTF-8');
+    $oculto = $repetir ? ' aria-hidden="true"' : '';
+    $alt = $repetir ? '' : $nome;
+    if (!empty($partner['logo'])) {
+        echo '<span class="integration-name integration-logo"' . $oculto . ' title="' . $nome . '"><img src="'
+            . htmlspecialchars($partner['logo'], ENT_QUOTES, 'UTF-8') . '" alt="' . $alt . '" height="28" loading="lazy" decoding="async" /></span>';
+        return;
+    }
+    if (!empty($partner['icone'])) {
+        echo '<span class="integration-name integration-logo"' . $oculto . '><img class="integration-icone" src="'
+            . htmlspecialchars($partner['icone'], ENT_QUOTES, 'UTF-8') . '" alt="" width="22" height="22" loading="lazy" decoding="async" />'
+            . $nome . '</span>';
+        return;
+    }
+    echo '<span class="integration-name"' . $oculto . '>' . $nome . '</span>';
+}
 
 $clientCompanies = [
     ['name' => 'Maua Bank S/A'],
@@ -766,20 +792,20 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
         <div class="integration-row">
           <div class="integration-track integration-track-top">
             <?php foreach ($integrationPartnersTop as $partner): ?>
-              <span class="integration-name"><?= htmlspecialchars($partner['name'], ENT_QUOTES, 'UTF-8') ?></span>
+              <?php integrationChip($partner, false); ?>
             <?php endforeach; ?>
             <?php foreach ($integrationPartnersTop as $partner): ?>
-              <span class="integration-name" aria-hidden="true"><?= htmlspecialchars($partner['name'], ENT_QUOTES, 'UTF-8') ?></span>
+              <?php integrationChip($partner, true); ?>
             <?php endforeach; ?>
           </div>
         </div>
         <div class="integration-row mt-3">
           <div class="integration-track integration-track-bottom">
             <?php foreach ($integrationPartnersBottom as $partner): ?>
-              <span class="integration-name"><?= htmlspecialchars($partner['name'], ENT_QUOTES, 'UTF-8') ?></span>
+              <?php integrationChip($partner, false); ?>
             <?php endforeach; ?>
             <?php foreach ($integrationPartnersBottom as $partner): ?>
-              <span class="integration-name" aria-hidden="true"><?= htmlspecialchars($partner['name'], ENT_QUOTES, 'UTF-8') ?></span>
+              <?php integrationChip($partner, true); ?>
             <?php endforeach; ?>
           </div>
         </div>

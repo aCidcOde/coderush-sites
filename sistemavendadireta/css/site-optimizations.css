@@ -231,3 +231,29 @@ Ajustes de responsividade e performance para paginas publicas estaticas.
   padding-left: clamp(16px, 4vw, 72px) !important;
   padding-right: clamp(16px, 4vw, 72px) !important;
 }
+
+/* Logos na faixa de integracoes (26/11/2026): logos brancos monocromaticos, mesma
+   pilula das que so tem nome. Altura fixa, largura segue o logo. */
+.integration-logo {
+  gap: 0.55rem;
+  padding: 0.55rem 1.1rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: none;
+  color: #ffffff;
+}
+.integration-logo img {
+  display: block;
+  height: 26px;
+  width: auto;
+  max-width: none;
+}
+.integration-logo img.integration-icone {
+  height: 20px;
+  width: 20px;
+}
+@media (max-width: 768px) {
+  .integration-logo { padding: 0.45rem 0.85rem; }
+  .integration-logo img { height: 20px; }
+  .integration-logo img.integration-icone { height: 16px; width: 16px; }
+}
