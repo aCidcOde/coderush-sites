@@ -59,6 +59,37 @@ $demoHref = DEMO_URL . '?utm_source=site&utm_medium=simulador&utm_campaign=demo'
   <meta property="og:description" content="<?= htmlspecialchars($seoDescription, ENT_QUOTES, 'UTF-8') ?>" />
   <meta property="og:url" content="<?= htmlspecialchars($seoUrl, ENT_QUOTES, 'UTF-8') ?>" />
   <meta property="og:site_name" content="Sistema Venda Direta" />
+  <meta property="og:image" content="<?= htmlspecialchars('https://sistemavendadireta.com.br' . promoOgImagem(), ENT_QUOTES, 'UTF-8') ?>" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="<?= htmlspecialchars('https://sistemavendadireta.com.br' . promoOgImagem(), ENT_QUOTES, 'UTF-8') ?>" />
+  <?php /* Ferramenta gratuita: WebApplication com preco 0 e o tipo que a busca entende
+     como "calculadora/simulador". A pagina nao tinha nenhum JSON-LD (26/11/2026). */ ?>
+  <script type="application/ld+json">
+  <?= json_encode([
+      '@context' => 'https://schema.org',
+      '@graph' => [
+          [
+              '@type' => 'WebApplication',
+              'name' => 'Simulador de plano de marketing multinível',
+              'url' => $seoUrl,
+              'description' => $seoDescription,
+              'applicationCategory' => 'BusinessApplication',
+              'operatingSystem' => 'Web',
+              'inLanguage' => 'pt-BR',
+              'isAccessibleForFree' => true,
+              'offers' => ['@type' => 'Offer', 'price' => '0', 'priceCurrency' => 'BRL'],
+              'provider' => ['@type' => 'Organization', 'name' => 'Sistema Venda Direta', 'url' => 'https://sistemavendadireta.com.br/'],
+          ],
+          [
+              '@type' => 'BreadcrumbList',
+              'itemListElement' => [
+                  ['@type' => 'ListItem', 'position' => 1, 'name' => 'Sistema Venda Direta', 'item' => 'https://sistemavendadireta.com.br/'],
+                  ['@type' => 'ListItem', 'position' => 2, 'name' => 'Simulador de plano de marketing multinível', 'item' => $seoUrl],
+              ],
+          ],
+      ],
+  ], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) ?>
+  </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -93,7 +124,7 @@ $demoHref = DEMO_URL . '?utm_source=site&utm_medium=simulador&utm_campaign=demo'
       <a href="../"><img decoding="async" src="../imagens/Logo-Branco-1.webp" alt="Sistema Venda Direta" class="h-auto w-[150px] sm:w-[190px]" width="1000" height="300" loading="eager" /></a>
       <div class="flex items-center gap-4">
         <a href="<?= htmlspecialchars($demoHref, ENT_QUOTES, 'UTF-8') ?>" target="_blank" rel="noopener" class="hidden text-sm font-semibold text-amber-300 hover:text-amber-200 sm:inline">Ver demonstração</a>
-        <a href="../sistema-venda-direta/?utm_source=site&amp;utm_medium=simulador&amp;utm_campaign=<?= PROMO_SLUG ?>" class="rounded-full bg-amber-400 px-4 py-2 text-sm font-bold text-brand hover:bg-amber-300">Ver a promoção</a>
+        <a href="../sistema-venda-direta/" class="rounded-full bg-amber-400 px-4 py-2 text-sm font-bold text-brand hover:bg-amber-300">Ver a promoção</a>
       </div>
     </div>
   </header>
@@ -102,7 +133,8 @@ $demoHref = DEMO_URL . '?utm_source=site&utm_medium=simulador&utm_campaign=demo'
 
     <div class="so-impressao mb-6 border-b border-gray-300 pb-4">
       <p style="font-size:11px;letter-spacing:.14em;text-transform:uppercase;">Sistema Venda Direta</p>
-      <h1 style="font-size:21px;font-weight:800;margin-top:4px;">Simulação de plano de marketing multinível</h1>
+      <?php /* cabecalho so do PDF: <p>, nao <h1> — a pagina tinha dois H1 */ ?>
+      <p style="font-size:21px;font-weight:800;margin-top:4px;">Simulação de plano de marketing multinível</p>
       <p id="pdf-data" style="font-size:11px;margin-top:4px;"></p>
     </div>
 

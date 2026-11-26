@@ -11,8 +11,8 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Blog SVD | Todos os posts</title>
-  <meta name="description" content="Blog do Sistema Venda Direta com todos os posts sobre vendas diretas, marketing multinível e inteligência artificial aplicada ao negócio." />
+  <title>Blog de venda direta e marketing multinível | SVD</title>
+  <meta name="description" content="Artigos sobre venda direta e marketing multinível: plano de comissão, cadastro de consultores, ERP, nota fiscal e IA na operação da rede." />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="theme-color" content="#004AAD" />
   <meta name="author" content="Sistema Venda Direta" />
@@ -26,8 +26,8 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
 
   <meta property="og:locale" content="pt_BR" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Blog SVD | Todos os posts" />
-  <meta property="og:description" content="Conteúdo sobre vendas diretas, MMN e IA para operação comercial." />
+  <meta property="og:title" content="Blog de venda direta e marketing multinível | SVD" />
+  <meta property="og:description" content="Artigos sobre venda direta e marketing multinível: plano de comissão, cadastro de consultores, ERP, nota fiscal e IA na operação da rede." />
   <meta property="og:url" content="https://sistemavendadireta.com.br/blog/" />
   <meta property="og:site_name" content="Sistema Venda Direta" />
   <meta property="og:image" content="https://sistemavendadireta.com.br/wp-content/uploads/2023/04/Screenshot-2023-04-26-at-14.38.02.png" />
@@ -74,7 +74,8 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
         <div class="hidden items-center gap-5 text-sm font-medium md:flex">
           <a href="../" class="text-white/90 hover:text-white">Site principal</a>
           <a href="../inteligencia-artificial/" class="text-white/90 hover:text-white">IA para MMN</a>
-          <a href="https://codafacil.dev" target="_blank" rel="noopener" class="text-white/90 hover:text-white">Codafacil</a>
+          <a href="../sistema-mmn/" class="text-white/90 hover:text-white">Sistema MMN</a>
+          <a href="../cases/" class="text-white/90 hover:text-white">Cases</a>
         </div>
       </nav>
     </div>
@@ -84,9 +85,9 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
     <a href="../" class="inline-flex rounded-full border border-white/60 px-4 py-2 text-xs font-semibold uppercase tracking-wide hover:bg-white/10">Voltar para o site principal</a>
 
     <section class="py-6">
-      <h1 class="font-[var(--font-heading)] text-3xl font-semibold sm:text-[42px]">Blog SVD</h1>
+      <h1 class="font-[var(--font-heading)] text-3xl font-semibold sm:text-[42px]">Blog de venda direta e marketing multinível</h1>
       <div class="mt-2 h-1 w-[72px] rounded-full bg-white"></div>
-      <p class="mt-4 max-w-3xl text-sm leading-relaxed text-white/90">Todos os posts publicados no ambiente local, incluindo conteúdos novos de IA, Codafacil e estratégia para vendas diretas e sistema de parceiros.</p>
+      <p class="mt-4 max-w-3xl text-sm leading-relaxed text-white/90">Como montar e operar uma rede de venda direta ou MMN — plano de comissão, consultores, loja, nota fiscal, ERP e IA —, escrito por quem mantém o Sistema Venda Direta há 10 anos.</p>
 
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-INDEX-CARDS:START -->
@@ -100,6 +101,18 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
   </div>
   <div class="p-4">
     <p class="text-sm leading-relaxed text-white/80">A reforma tributária mudou o layout das notas em 2026. Veja os campos novos, onde a integração costuma quebrar e como deixar o sistema emitindo certo.</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/11/26/api-sistema-venda-direta-integracao/" data-blog-image="imagens/posts/api-sistema-venda-direta-integracao.jpg" data-blog-slug="api-sistema-venda-direta-integracao" data-blog-date="2026-11-26">
+  <div class="relative" style="background:#040c1e url('../imagens/posts/fundos/api-sistema-venda-direta-integracao.webp') center/cover no-repeat">
+    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
+      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
+      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">26/11/2026</span>
+      <h2 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="../2026/11/26/api-sistema-venda-direta-integracao/" class="hover:underline">API do sistema de venda direta: o que perguntar antes de integrar</a></h2>
+    </div>
+  </div>
+  <div class="p-4">
+    <p class="text-sm leading-relaxed text-white/80">ERP, gateway, transportadora e nota fiscal só conversam com o sistema de venda direta por API. Veja o que a API precisa ter, as perguntas que evitam retrabalho e onde a integraç...</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/11/22/integrar-sistemas-venda-direta-erp-fiscal/" data-blog-image="imagens/posts/integrar-sistemas-venda-direta-erp-fiscal.jpg" data-blog-slug="integrar-sistemas-venda-direta-erp-fiscal" data-blog-date="2026-11-22">

@@ -10,6 +10,8 @@ var SVD_ATTR_KEY = "svd-attribution";
   try {
     var params = new URLSearchParams(window.location.search);
     var keys = ["gclid", "utm_source", "utm_medium", "utm_campaign", "utm_content"];
+    // link interno antigo (utm_source=site|blog) nao troca a campanha de quem veio do anuncio
+    if (/^(site|blog)$/.test(params.get("utm_source") || "")) keys = ["gclid"];
     var stored = {};
     try {
       stored = JSON.parse(window.sessionStorage.getItem(SVD_ATTR_KEY) || "{}");

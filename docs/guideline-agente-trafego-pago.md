@@ -423,6 +423,15 @@ outra coisa (rede de parceiros do Google, reservada) e vem `False` — lê-lo co
   conclui a partir do estado errado. Na dúvida sobre o que mudou, consulte
   `change_event` antes de explicar qualquer variação.
 
+- **Não pôr UTM em link interno.** UTM é para tráfego que chega de fora. Em link
+  do próprio site ele abre sessão nova no GA4 com a origem trocada e, no
+  `svd-attribution` (sessionStorage), sobrescrevia a campanha do lead: quem veio
+  do anúncio, leu a /sistema-mmn/ e clicou em "Use o simulador" virava lead de
+  `site / simulador`. Até 26/11/2026 eram 60 links assim nos posts
+  (`cta-artigo`) e 8 nas páginas. Hoje os links são limpos, o clique é medido
+  pelo evento `cta_interno` (`page`, `destino`) e a captura ignora
+  `utm_source=site|blog` que ainda chegue por link antigo.
+
 ## 7. Rotina
 
 **Diária** — dia anterior fechado: impressões, parcela e motivo da perda, termos
@@ -509,6 +518,42 @@ Em `automation/ads/`, todas idempotentes:
   de data. `anuncios.py --trocar` agora copia a fixação do original, e
   `--fixar "texto" --posicao=1` refixa. Nada avisa quando o pin some: a RSA
   continua aprovada e só passa a sortear o título da oferta como qualquer outro.
+
+### Revisão anúncio × site × Search Console (26/11/2026)
+
+O que a revisão de 26/11 achou e o que ficou de regra:
+
+- **Leia `ad_group_ad_asset_view` antes de trocar texto.** Ele traz impressão e
+  pin por título. Os dois RSAs fixavam 3 títulos na posição 1 e 2 na posição 2:
+  sobrava só a posição 3 para sortear. Trocamos apenas os títulos com quase
+  nenhuma impressão ("Comece 2027 com Sistema Novo", "Clientes em 5 Países") e a
+  descrição menos exibida ("Teste a demonstração...", que repetia o título fixo).
+- **O Índice de Qualidade aponta qual palavra falta no texto.**
+  `sistema de marketing multinivel` tinha IQ 3 e anúncio "abaixo": nenhum título
+  dizia "marketing multinível". Entrou "Sistema Marketing Multinível" fixado na
+  posição 1 (é o 4º candidato da posição), e "Sistema Binário Multinível" entrou
+  solto. No grupo Venda Direta entraram "Sistema para Vendas Diretas" (fixado na
+  posição 1) e "Venda Direta no Celular": a palavra `aplicativo de venda direta`
+  não tinha resposta, e o escritório é web responsivo, não app de loja.
+- **Página "abaixo da média" pode ser título desalinhado.** A /sistema-venda-direta/
+  abria o `<title>` com "Sistema de Marketing Multinível" (71 caracteres) desde
+  setembro, quando recebia as palavras de MMN. Desde a Fim de Ano o grupo MMN cai
+  na /sistema-mmn/, então o título voltou a abrir por "Sistema de Venda Direta".
+  O FAQ ganhou "Tem aplicativo para o consultor?".
+- **Extensões.** As frases de destaque sem acento ("Suporte em portugues",
+  "Implantacao com IA", "Clientes em 5 paises") foram recriadas com acento, porque
+  asset não se edita. Entrou o 6º sitelink, "Integração com ERP e NF", que aponta
+  para /sistema-mmn/#integracoes, e o primeiro snippet estruturado da campanha
+  (cabeçalho "Serviços", aceito pela API em pt-BR).
+- **Palavra nova sai do Search Console.** `plataforma venda direta` tinha 47
+  impressões orgânicas na posição 10,7 e não era comprada; idem
+  `sistema para marketing multinivel` (108, posição 20,7). As duas entraram em frase.
+- **Sitemap no Search Console.** Os sitemaps cadastrados eram de 2016 a 2023, com
+  erro (www, http, subdomínio `site.` sem DNS), e o atual nunca tinha sido
+  enviado. Hoje só o `https://sistemavendadireta.com.br/sitemap.xml` está
+  cadastrado. O `lastmod` das páginas fixas vem de `seo.extraPaths` no
+  `sites.json`: atualize a data ao mudar a página e regere o sitemap com
+  `updateSitemap`.
 
 ### Conta compartilhada: o que é de conta e o que é de campanha
 

@@ -52,9 +52,12 @@ fazendo o mesmo, e repetir e inofensivo (so acrescenta chave que veio na URL).
     try {
       var p = new URLSearchParams(location.search), chave = "svd-attribution", s = {}, mudou = false;
       try { s = JSON.parse(sessionStorage.getItem(chave) || "{}"); } catch (e) {}
+      // utm_source=site|blog e etiqueta de link INTERNO antigo (cache, post compartilhado):
+      // nao pode sobrescrever a campanha de quem chegou pelo anuncio.
+      var interno = /^(site|blog)$/.test(p.get("utm_source") || "");
       ["gclid", "utm_source", "utm_medium", "utm_campaign", "utm_content"].forEach(function (k) {
         var v = p.get(k);
-        if (v) { s[k] = v; mudou = true; }
+        if (v && !(interno && k !== "gclid")) { s[k] = v; mudou = true; }
       });
       if (mudou) sessionStorage.setItem(chave, JSON.stringify(s));
     } catch (e) {}
@@ -69,6 +72,24 @@ sem este evento, o clique que a campanha nova promete seria invisivel, e a
 leitura de novembro voltaria a contar so WhatsApp. Delegado no document porque
 o link aparece em lugar diferente em cada pagina (cabecalho, hero, faixa do blog).
 */ ?>
+<?php /*
+CLIQUE EM CHAMADA INTERNA — 26/11/2026.
+
+Os links do site e dos posts pra /sistema-mmn/, /sistema-venda-direta/ e
+/simulador/ levavam UTM (utm_source=site|blog). UTM em link interno abre sessao
+nova no GA4 com a origem trocada e, no svd-attribution acima, sobrescrevia a
+campanha de quem veio do anuncio — o lead do Google Ads entrava como "simulador"
+ou "cta-artigo". Os links ficaram limpos; quem mede o clique agora e este evento.
+*/ ?>
+<script>
+  document.addEventListener("click", function (ev) {
+    var a = ev.target.closest && ev.target.closest("a[href]");
+    if (!a || typeof window.gtag !== "function" || a.host !== location.host) return;
+    var destino = (a.pathname.match(/^\/(sistema-mmn|sistema-venda-direta|simulador|cases|blog)\//) || [])[1];
+    if (!destino || a.pathname === location.pathname) return;
+    window.gtag("event", "cta_interno", { page: location.pathname, destino: destino });
+  });
+</script>
 <script>
   document.addEventListener("click", function (ev) {
     var a = ev.target.closest && ev.target.closest('a[href*="painel.sistemavendadireta.com.br/primeiros-passos"]');

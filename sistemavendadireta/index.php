@@ -695,13 +695,13 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
             </p>
             <p class="mt-3 max-w-3xl text-base leading-relaxed text-white/85">
               Para projetos sob medida fora da plataforma — sistemas internos, integrações e novas frentes —,
-              o <strong>codafacil.dev</strong> é o braço da SVD de desenvolvimento orientado por IA.
+              o mesmo time desenvolve do zero: ERP com nota fiscal, SaaS e agentes de IA já estão em produção.
             </p>
           </div>
 
           <div class="flex flex-col items-stretch gap-3 sm:min-w-[280px]">
-            <a href="https://codafacil.dev" target="_blank" rel="noopener" class="inline-flex items-center justify-center rounded-full border border-white/75 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10">
-              Conhecer Codafacil
+            <a href="cases/" class="inline-flex items-center justify-center rounded-full border border-white/75 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10">
+              Ver os cases
             </a>
           </div>
         </div>
@@ -1066,6 +1066,18 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
     <p class="text-sm leading-relaxed text-white/80">A reforma tributária mudou o layout das notas em 2026. Veja os campos novos, onde a integração costuma quebrar e como deixar o sistema emitindo certo.</p>
   </div>
 </article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/11/26/api-sistema-venda-direta-integracao/" data-blog-image="imagens/posts/api-sistema-venda-direta-integracao.jpg" data-blog-slug="api-sistema-venda-direta-integracao" data-blog-date="2026-11-26">
+  <div class="relative" style="background:#040c1e url('imagens/posts/fundos/api-sistema-venda-direta-integracao.webp') center/cover no-repeat">
+    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
+      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
+      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">26/11/2026</span>
+      <h2 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="2026/11/26/api-sistema-venda-direta-integracao/" class="hover:underline">API do sistema de venda direta: o que perguntar antes de integrar</a></h2>
+    </div>
+  </div>
+  <div class="p-4">
+    <p class="text-sm leading-relaxed text-white/80">ERP, gateway, transportadora e nota fiscal só conversam com o sistema de venda direta por API. Veja o que a API precisa ter, as perguntas que evitam retrabalho e onde a integraç...</p>
+  </div>
+</article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/11/22/integrar-sistemas-venda-direta-erp-fiscal/" data-blog-image="imagens/posts/integrar-sistemas-venda-direta-erp-fiscal.jpg" data-blog-slug="integrar-sistemas-venda-direta-erp-fiscal" data-blog-date="2026-11-22">
   <div class="relative" style="background:#040c1e url('imagens/posts/fundos/integrar-sistemas-venda-direta-erp-fiscal.webp') center/cover no-repeat">
     <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
@@ -1076,18 +1088,6 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
   </div>
   <div class="p-4">
     <p class="text-sm leading-relaxed text-white/80">Entenda como integrar seu sistema de venda direta com ERPs como TOTVS e Bling para otimizar processos fiscais.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/11/15/marketing-rede-brasil-regulamentacao-oportunidades/" data-blog-image="imagens/posts/marketing-rede-brasil-regulamentacao-oportunidades.jpg" data-blog-slug="marketing-rede-brasil-regulamentacao-oportunidades" data-blog-date="2026-11-15">
-  <div class="relative" style="background:#040c1e url('imagens/posts/fundos/marketing-rede-brasil-regulamentacao-oportunidades.webp') center/cover no-repeat">
-    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
-      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
-      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">15/11/2026</span>
-      <h2 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="2026/11/15/marketing-rede-brasil-regulamentacao-oportunidades/" class="hover:underline">Marketing de rede no Brasil: regulamentação e oportunidades</a></h2>
-    </div>
-  </div>
-  <div class="p-4">
-    <p class="text-sm leading-relaxed text-white/80">Entenda o cenário do marketing multinível no Brasil e as possibilidades de internacionalização.</p>
   </div>
 </article>
 <!-- BLOG-HOME-CARDS:END -->
@@ -1119,7 +1119,7 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
           <nav class="grid gap-2 text-sm text-white/90" aria-label="Menu institucional">
             <a href="/" class="hover:underline">Sistema Venda Direta</a>
             <a href="wordpress/" class="hover:underline">WordPress</a>
-            <a href="https://codafacil.dev" target="_blank" rel="noopener" class="hover:underline">Desenvolvimento com IA</a>
+            <a href="cases/" class="hover:underline">Cases de clientes</a>
             <a href="inteligencia-artificial/" class="hover:underline">Multinível com IA</a>
             <a href="cases/" class="hover:underline">Cases</a>
             <a href="blog/" class="hover:underline">Blog</a>
@@ -1176,7 +1176,7 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
         <p class="mt-1 text-sm font-semibold text-white/90">ou <span class="text-amber-300 font-bold"><?= htmlspecialchars($promoModal['cash'], ENT_QUOTES, 'UTF-8') ?></span> à vista</p>
         <p class="mt-3 text-xs text-white/70">Válida até <?= htmlspecialchars($promoModalDeadlineLabel, ENT_QUOTES, 'UTF-8') ?> · mensalidade proporcional ao faturamento</p>
 
-        <a id="promo-modal-cta" href="sistema-venda-direta/?utm_source=site&utm_medium=modal&utm_campaign=<?= PROMO_SLUG ?>" class="mt-5 inline-flex w-full items-center justify-center rounded-full bg-amber-400 px-6 py-3.5 text-sm font-bold uppercase tracking-wide text-brand transition hover:-translate-y-0.5 hover:bg-amber-300">
+        <a id="promo-modal-cta" href="sistema-venda-direta/" class="mt-5 inline-flex w-full items-center justify-center rounded-full bg-amber-400 px-6 py-3.5 text-sm font-bold uppercase tracking-wide text-brand transition hover:-translate-y-0.5 hover:bg-amber-300">
           Ver a oferta completa
         </a>
         <button id="promo-modal-depois" type="button" class="mt-3 text-xs font-semibold text-white/60 hover:text-white/85">

@@ -141,9 +141,9 @@ const SITE_COPY = {
     homeSectionTitle: "Blog SVD",
     homeSectionDescription:
       "Conteúdo sobre vendas diretas, software, IA aplicada ao negócio e evolução operacional com foco em resultado.",
-    indexTitle: "Blog SVD | Todos os posts",
+    indexTitle: "Blog de venda direta e marketing multinível | SVD",
     indexDescription:
-      "Artigos do Sistema Venda Direta sobre vendas diretas, MMN, software e IA aplicada ao negócio.",
+      "Artigos sobre venda direta e marketing multinível: plano de comissão, cadastro de consultores, ERP, nota fiscal e IA na operação da rede.",
     articleLabel: "Blog SVD",
     footerBlurb:
       "A Sistema Venda Direta desenvolve soluções para operação comercial, vendas diretas e evolução tecnológica com IA aplicada.",
@@ -160,7 +160,11 @@ const SITE_COPY = {
     // que fala de tudo; quem acabou de ler sobre comissionamento ou rede quer a
     // pagina do produto, nao a institucional. E a home ja recebe link de sobra
     // do cabecalho e do rodape de cada post.
-    ctaPath: "sistema-mmn/?utm_source=blog&utm_medium=post&utm_campaign=cta-artigo",
+    // Sem UTM desde 26/11/2026: UTM em link INTERNO reescreve a origem da sessao
+    // (GA4 abre sessao nova "blog / post") e o svd-attribution trocava a campanha
+    // do lead que veio do anuncio por "cta-artigo". O clique continua medido pelo
+    // evento cta_interno (inc/analytics.php).
+    ctaPath: "sistema-mmn/",
     ctaLabel: "Conhecer o sistema MMN",
     // Links de apoio no rodape do artigo. Os 39 posts publicados nao tinham
     // NENHUM link pras paginas de produto — so pra home, blog e outros posts.
@@ -565,12 +569,15 @@ function buildSeoTitle(contract, site) {
 }
 
 function buildMetaDescription(contract) {
-  const answer = contract?.content?.answerBox?.answer;
-  const base = (typeof answer === "string" && answer.trim().length >= 80)
-    ? answer.trim()
-    : (contract.description || "");
+  const answer = typeof contract?.content?.answerBox?.answer === "string" ? contract.content.answerBox.answer.trim() : "";
+  const desc = String(contract.description || "").trim();
   // meta description longa e cortada pelo Google e polui og/twitter — teto ~160.
-  return smartTruncate(base, 160);
+  // A resposta do answerBox passa de 160 quase sempre e o corte terminava no meio
+  // da frase ("...webhooks que avisam quando", 26/11/2026): se ela nao cabe e a
+  // description do contrato cabe, vale a description, que ja e frase inteira.
+  if (answer.length >= 80 && answer.length <= 160) return answer;
+  if (desc.length >= 70 && desc.length <= 160) return desc;
+  return smartTruncate(answer.length >= 80 ? answer : desc, 160);
 }
 
 function buildJsonLd(site, contract, canonicalUrl, imageUrl) {
@@ -1080,6 +1087,14 @@ ${renderFooterLinks(copy, relativeRoot)}
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', '${site.ga4Id}');
+    // cta_interno: clique pra pagina de produto. Os links internos nao levam UTM
+    // (26/11/2026) — UTM interno reescrevia a origem do lead que veio do anuncio.
+    document.addEventListener("click", function (ev) {
+      var a = ev.target.closest && ev.target.closest("a[href]");
+      if (!a || a.host !== location.host) return;
+      var d = (a.pathname.match(/^\\/(sistema-mmn|sistema-venda-direta|simulador|cases|blog)\\//) || [])[1];
+      if (d && a.pathname !== location.pathname) gtag("event", "cta_interno", { page: location.pathname, destino: d });
+    });
   </script>`
     : "";
   if (isFluxo) {

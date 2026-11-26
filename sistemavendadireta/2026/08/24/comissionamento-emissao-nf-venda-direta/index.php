@@ -87,6 +87,13 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-4107EVTE0Q');
+    // cta_interno: clique pra pagina de produto sem UTM no link (ver inc/analytics.php)
+    document.addEventListener("click", function (ev) {
+      var a = ev.target.closest && ev.target.closest("a[href]");
+      if (!a || a.host !== location.host) return;
+      var d = (a.pathname.match(/^\/(sistema-mmn|sistema-venda-direta|simulador|cases|blog)\//) || [])[1];
+      if (d && a.pathname !== location.pathname) gtag("event", "cta_interno", { page: location.pathname, destino: d });
+    });
   </script>
 </head>
 <body class="min-h-screen bg-brand text-white antialiased">
@@ -199,7 +206,7 @@
     <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
       <h2 class="text-xl font-semibold text-white">Precisa de um sistema de marketing multinível pronto para operar?</h2>
       <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">O Sistema Venda Direta já roda no Brasil, Paraguai e Bolívia: rede binária e unilevel, escritório do consultor, loja virtual e financeiro integrados, parametrizados para o seu plano.</p>
-      <a href="../../../../sistema-mmn/?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="mt-4 inline-flex rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/10">
+      <a href="../../../../sistema-mmn/" class="mt-4 inline-flex rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/10">
         Conhecer o sistema MMN
       </a>
       <p class="mt-4 text-sm text-white/70">
@@ -261,51 +268,6 @@
 </section>
 <!-- BLOG-LEIA-TAMBEM END -->
     <!-- BLOG-CROSS-SITE START -->
-<section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
-  <div class="flex items-end justify-between gap-4">
-    <h2 class="text-2xl font-semibold text-white">Conheça também o hub CodeRush</h2>
-    <a href="https://coderush.com.br/" rel="noopener" target="_blank" class="text-sm font-semibold text-white/85 hover:text-white">Visitar a CodeRush</a>
-  </div>
-  <p class="mt-2 text-sm text-white/70">Conteúdo recente dos outros sites do ecossistema.</p>
-  <div class="mt-5 grid gap-4 md:grid-cols-3">
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <div class="relative" style="background:linear-gradient(135deg,#0b3a8a 0%,#040c1e 100%)">
-    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
-      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
-      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">BFR Intelligence</span>
-      <h3 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="https://bfrintelligence.com.br/2026/09/22/orquestracao-multiplos-agentes-ia-governanca/" rel="noopener" target="_blank" class="hover:underline">Orquestração de Múltiplos Agentes de IA na Governança</a></h3>
-    </div>
-  </div>
-  <div class="p-4">
-    <p class="text-sm leading-relaxed text-white/80">Orquestrar múltiplos agentes de IA exige integração com sistemas internos, governança eficiente e monitoramento contínuo. É fundamental g...</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <div class="relative" style="background:linear-gradient(135deg,#0b3a8a 0%,#040c1e 100%)">
-    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
-      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
-      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">CodeRush</span>
-      <h3 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="https://coderush.com.br/2026/07/30/arquitetura-software-operacoes-criticas-empresas-medias/" rel="noopener" target="_blank" class="hover:underline">Arquitetura de software para operações críticas em empresas médias</a></h3>
-    </div>
-  </div>
-  <div class="p-4">
-    <p class="text-sm leading-relaxed text-white/80">Entenda como implementar uma arquitetura de software eficiente para operações críticas.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <div class="relative" style="background:linear-gradient(135deg,#0b3a8a 0%,#040c1e 100%)">
-    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
-      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
-      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">Codafacil.dev</span>
-      <h3 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="https://codafacil.dev/2026/07/21/ia-pode-acelerar-desenvolvimento-software-sob-medida/" rel="noopener" target="_blank" class="hover:underline">Como a IA pode acelerar o desenvolvimento de software sob medida</a></h3>
-    </div>
-  </div>
-  <div class="p-4">
-    <p class="text-sm leading-relaxed text-white/80">Entenda como a inteligência artificial pode otimizar o processo de desenvolvimento de software sob medida.</p>
-  </div>
-</article>
-  </div>
-</section>
 <!-- BLOG-CROSS-SITE END -->
   </main>
 
@@ -330,7 +292,7 @@
         <div>
           <h3 class="text-lg font-semibold text-white">Próximo passo</h3>
           <p class="mt-3 text-sm leading-7 text-white/80">Resposta humana, sem fila generica. Fale com o time comercial do site.</p>
-          <a href="../../../../sistema-mmn/?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="mt-4 inline-flex rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/10">
+          <a href="../../../../sistema-mmn/" class="mt-4 inline-flex rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/10">
             Conhecer o sistema MMN
           </a>
         </div>

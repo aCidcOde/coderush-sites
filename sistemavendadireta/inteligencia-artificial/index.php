@@ -11,8 +11,8 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>IA para MMN e Vendas Diretas | Sistema Venda Direta</title>
-  <meta name="description" content="Sistema Venda Direta com abordagem orientada por IA: custo operacional controlado com governança, produtividade e evolução contínua com apoio do Codafacil." />
+  <title>IA no sistema de venda direta e MMN | Sistema Venda Direta</title>
+  <meta name="description" content="Assistente de IA no escritório do consultor, suporte 24h com IA ligado ao seu sistema e agentes sob medida com permissão e log. Veja o que já roda." />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="theme-color" content="#004AAD" />
   <meta name="author" content="Sistema Venda Direta" />
@@ -24,16 +24,16 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
 
   <meta property="og:locale" content="pt_BR" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Sistema Venda Direta com IA" />
-  <meta property="og:description" content="Plataforma de venda direta com IA aplicada: custo operacional sob controle, governança e resultado previsível." />
+  <meta property="og:title" content="IA no sistema de venda direta e MMN" />
+  <meta property="og:description" content="Assistente de IA no escritório do consultor, suporte 24h com IA ligado ao seu sistema e agentes sob medida com permissão e log." />
   <meta property="og:url" content="https://sistemavendadireta.com.br/inteligencia-artificial/" />
   <meta property="og:site_name" content="Sistema Venda Direta" />
-  <meta property="og:image" content="https://sistemavendadireta.com.br/wp-content/uploads/2023/04/Screenshot-2023-04-26-at-14.38.02.png" />
-  <meta property="og:image:alt" content="Sistema Venda Direta com IA | Custo Operacional Sob Controle e Operação Escalável" />
+  <meta property="og:image" content="https://sistemavendadireta.com.br/imagens/og-sistema-venda-direta.jpg" />
+  <meta property="og:image:alt" content="Sistema de venda direta e MMN" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Sistema Venda Direta com IA | Custo Operacional Sob Controle e Operação Escalável" />
-  <meta name="twitter:description" content="Sistema Venda Direta com abordagem orientada por IA: custo operacional controlado com governança, produtividade e evolução contínua com apoio do Codafacil." />
-  <meta name="twitter:image" content="https://sistemavendadireta.com.br/wp-content/uploads/2023/04/Screenshot-2023-04-26-at-14.38.02.png" />
+  <meta name="twitter:title" content="IA no sistema de venda direta e MMN" />
+  <meta name="twitter:description" content="Assistente de IA no escritório do consultor, suporte 24h com IA ligado ao seu sistema e agentes sob medida com permissão e log." />
+  <meta name="twitter:image" content="https://sistemavendadireta.com.br/imagens/og-sistema-venda-direta.jpg" />
   <meta name="twitter:site" content="@sistemavendadireta" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -64,7 +64,7 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
             "@type": "Organization",
             "name": "Sistema Venda Direta"
           },
-          "serviceType": "Plataforma de venda direta com automação e desenvolvimento orientado por IA",
+          "serviceType": "Sistema de venda direta e MMN com assistente de IA, suporte 24h com IA e agentes sob medida",
           "areaServed": "BR"
         },
         {
@@ -80,10 +80,10 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
             },
             {
               "@type": "Question",
-              "name": "Qual a diferença entre SVD e Codafacil?",
+              "name": "Como funciona o suporte 24h com IA?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "SVD é a plataforma principal de venda direta. Codafacil é o time de desenvolvimento para customizações e novos módulos."
+                "text": "Um agente de IA (Claude) fica ligado no servidor do seu sistema, com permissões de suporte, e a sua equipe conversa com ele a qualquer hora. A nossa equipe continua no WhatsApp e no telefone."
               }
             },
             {
@@ -131,7 +131,7 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
           <li><a href="#ia-operacao" class="rounded-md bg-white/15 px-3 py-2 text-sm font-medium">IA na Operação</a></li>
           <li><a href="#ofertas" class="text-sm font-medium text-white/90 hover:text-white">Planos</a></li>
           <li><a href="#metodo" class="text-sm font-medium text-white/90 hover:text-white">Método</a></li>
-          <li><a href="#codafacil" class="text-sm font-medium text-white/90 hover:text-white">Codafacil</a></li>
+          <li><a href="#agentes" class="text-sm font-medium text-white/90 hover:text-white">Agentes sob medida</a></li>
           <li><a href="#contato" class="text-sm font-medium text-white/90 hover:text-white">Contato</a></li>
         </ul>
 
@@ -153,7 +153,7 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
             <a href="#ia-operacao" class="rounded-lg border border-white/20 bg-white/5 px-3 py-2">IA na Operação</a>
             <a href="#ofertas" class="rounded-lg border border-white/20 bg-white/5 px-3 py-2">Planos</a>
             <a href="#metodo" class="rounded-lg border border-white/20 bg-white/5 px-3 py-2">Método</a>
-            <a href="#codafacil" class="rounded-lg border border-white/20 bg-white/5 px-3 py-2">Codafacil</a>
+            <a href="#agentes" class="rounded-lg border border-white/20 bg-white/5 px-3 py-2">Agentes sob medida</a>
             <a href="#contato" class="rounded-lg border border-white/65 px-3 py-2 text-center font-semibold">Quero diagnóstico de IA</a>
           </div>
         </details>
@@ -165,29 +165,29 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
     <section class="grid items-center gap-6 py-8 md:py-10 lg:grid-cols-2 lg:gap-10">
       <div class="space-y-5">
         <p class="inline-flex rounded-full border border-white/40 bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide">
-          Nova perspectiva SVD 2026
+          IA no Sistema Venda Direta
         </p>
         <h1 class="font-[var(--font-heading)] text-4xl font-bold leading-[1.1] sm:text-5xl lg:text-[52px]">
-          Venda Direta com IA: custo operacional sob controle e crescimento com governança
+          IA no sistema de venda direta: dentro do escritório, no suporte e na sua operação
         </h1>
         <p class="max-w-[620px] text-base leading-relaxed text-white/90 sm:text-lg">
-          Mantemos a base robusta do Sistema Venda Direta e adicionamos uma abordagem orientada por IA:
-          automação operacional, ganho de produtividade e evolução contínua com o time do Codafacil.
+          A IA entra no sistema que a sua rede já usa: um assistente no escritório do consultor, um agente de
+          suporte ligado no servidor 24 horas e, quando a operação pede, agentes sob medida com permissão e log.
         </p>
 
         <div class="grid gap-2 text-sm text-white/90 sm:grid-cols-2">
-          <div class="rounded-xl border border-white/20 bg-white/5 px-3 py-2">Menos retrabalho em processos críticos</div>
-          <div class="rounded-xl border border-white/20 bg-white/5 px-3 py-2">Mais velocidade de entrega e decisão</div>
-          <div class="rounded-xl border border-white/20 bg-white/5 px-3 py-2">Escalabilidade sem perder governança</div>
-          <div class="rounded-xl border border-white/20 bg-white/5 px-3 py-2">Customização sob demanda com IA</div>
+          <div class="rounded-xl border border-white/20 bg-white/5 px-3 py-2">Assistente de IA no escritório do consultor</div>
+          <div class="rounded-xl border border-white/20 bg-white/5 px-3 py-2">Suporte 24h com IA no seu servidor</div>
+          <div class="rounded-xl border border-white/20 bg-white/5 px-3 py-2">Agentes com permissão, custo e log</div>
+          <div class="rounded-xl border border-white/20 bg-white/5 px-3 py-2">Sob medida para a sua operação</div>
         </div>
 
         <div class="flex flex-wrap items-center gap-3">
           <a href="#contato" class="inline-flex items-center gap-2 rounded-full border border-white/70 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10">
             Quero diagnóstico de IA
           </a>
-          <a href="https://codafacil.dev" target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-full border border-white/35 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10">
-            Conhecer Codafacil
+          <a href="../cases/#agentichub" class="inline-flex items-center gap-2 rounded-full border border-white/35 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10">
+            Ver os cases de IA
           </a>
         </div>
       </div>
@@ -198,25 +198,24 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
     </section>
 
     <section id="ia-operacao" class="scroll-mt-28 py-10">
-      <h2 class="font-[var(--font-heading)] text-3xl font-semibold sm:text-[42px]">IA aplicada na operação</h2>
+      <?php /* 26/11/2026: a pagina falava de "IA aplicada" em abstrato (custo, produtividade,
+               qualidade) e prometia 20-40% de reducao de retrabalho sem fonte. Agora mostra os
+               recursos que existem — mesmo texto-base da /sistema-venda-direta/ e da home. */ ?>
+      <h2 class="font-[var(--font-heading)] text-3xl font-semibold sm:text-[42px]">O que a IA já faz no sistema</h2>
       <div class="mt-2 h-1 w-[72px] rounded-full bg-white"></div>
-      <p class="mt-4 max-w-3xl text-base leading-relaxed text-white/90">
-        A proposta é pragmática: usar IA onde ela gera retorno financeiro real para a sua empresa.
-        Foco em reduzir custo operacional, remover gargalos e aumentar previsibilidade de resultado.
-      </p>
 
       <div class="mt-8 grid gap-4 md:grid-cols-3">
         <article class="rounded-[30px] border border-white/55 bg-brand p-6">
-          <h3 class="font-[var(--font-heading)] text-xl font-semibold">Redução de custo</h3>
-          <p class="mt-3 text-sm text-white/90">Automação de tarefas repetitivas, menos trabalho manual e menos horas improdutivas no backoffice.</p>
+          <h3 class="font-[var(--font-heading)] text-xl font-semibold">Assistente de IA no escritório do consultor</h3>
+          <p class="mt-3 text-sm text-white/90">Ajuda o consultor a consultar as próprias informações e a entender pedidos, pontos, rede e regras do plano em linguagem simples. Respeita conta e permissões; decisões financeiras seguem nos fluxos autorizados. O <strong>Medinho</strong> é um exemplo de assistente integrado assim.</p>
         </article>
         <article class="rounded-[30px] border border-white/55 bg-brand p-6">
-          <h3 class="font-[var(--font-heading)] text-xl font-semibold">Ganho de produtividade</h3>
-          <p class="mt-3 text-sm text-white/90">Fluxos mais claros, menos retrabalho e melhor capacidade de atendimento para o mesmo time.</p>
+          <h3 class="font-[var(--font-heading)] text-xl font-semibold">Suporte 24h com IA</h3>
+          <p class="mt-3 text-sm text-white/90">Um agente de IA (Claude) fica ligado no servidor do seu sistema, com permissões de suporte, e a sua equipe conversa com ele a qualquer hora — inclusive no fechamento de comissão do fim de semana. A nossa equipe continua no WhatsApp e no telefone.</p>
         </article>
         <article class="rounded-[30px] border border-white/55 bg-brand p-6">
-          <h3 class="font-[var(--font-heading)] text-xl font-semibold">Qualidade e controle</h3>
-          <p class="mt-3 text-sm text-white/90">Padrões de entrega, revisão de processos e evolução contínua com governança técnica.</p>
+          <h3 class="font-[var(--font-heading)] text-xl font-semibold">Agentes sob medida</h3>
+          <p class="mt-3 text-sm text-white/90">Quando a operação pede mais — atendimento, documentos, integração com ERP ou CRM —, o agente é construído com base de conhecimento, ferramentas internas, permissão por usuário e log auditável.</p>
         </article>
       </div>
     </section>
@@ -249,7 +248,7 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
 
         <article class="rounded-3xl border border-white/25 bg-white/5 p-6">
           <h3 class="font-[var(--font-heading)] text-xl font-semibold">SVD + IA Custom</h3>
-          <p class="mt-3 text-sm text-white/90">Projeto sob medida com Codafacil para novas frentes, integrações e módulos especiais.</p>
+          <p class="mt-3 text-sm text-white/90">Projeto sob medida com o nosso time para novas frentes, integrações e módulos especiais.</p>
           <div class="mt-5 grid gap-2 text-sm text-white/90">
             <div class="rounded-lg border border-white/20 bg-white/5 px-3 py-2">Desenvolvimento dedicado</div>
             <div class="rounded-lg border border-white/20 bg-white/5 px-3 py-2">Arquitetura e consultoria</div>
@@ -283,54 +282,34 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
       </div>
     </section>
 
-    <section id="codafacil" class="scroll-mt-28 py-10">
+    <?php /* 26/11/2026: era "SVD + Codafacil", com dois botoes pra fora do site (um deles
+             "Abrir Codafacil local"). Foco no SVD: o mesmo time, mostrado pelos cases de IA. */ ?>
+    <section id="agentes" class="scroll-mt-28 py-10">
       <div class="rounded-[30px] border border-white/30 bg-white/[0.06] p-6 sm:p-8">
         <div class="grid items-center gap-6 lg:grid-cols-[1fr_auto]">
           <div>
-            <h2 class="font-[var(--font-heading)] text-3xl font-semibold sm:text-[42px]">SVD + Codafacil: sinergia direta</h2>
+            <h2 class="font-[var(--font-heading)] text-3xl font-semibold sm:text-[42px]">Agentes de IA com governança, já em produção</h2>
             <div class="mt-2 h-1 w-[72px] rounded-full bg-white"></div>
             <p class="mt-4 max-w-3xl text-base leading-relaxed text-white/90">
-              O Sistema Venda Direta segue como o produto principal para operação de venda direta.
-              O Codafacil entra como célula de engenharia para customizações, integrações e novas iniciativas com IA.
+              O mesmo time que mantém o Sistema Venda Direta construiu o <strong>AgenticHUB</strong>, plataforma corporativa
+              de agentes de IA com permissões por usuário, orçamento por agente, logs auditáveis e base de conhecimento com
+              busca RAG, e o <strong>Agente Gordon</strong>, ambiente de agentes com regras de negócio, ferramentas internas e
+              canais de atendimento.
             </p>
             <p class="mt-3 max-w-3xl text-base leading-relaxed text-white/85">
-              Resultado: você tem uma base sólida para operar hoje e um time técnico para evoluir rápido sem trocar de plataforma.
+              É essa base que entra quando a sua operação precisa de um agente próprio — sem trocar de plataforma.
             </p>
           </div>
 
           <div class="flex flex-col items-stretch gap-3 sm:min-w-[280px]">
-            <a href="https://codafacil.dev" target="_blank" rel="noopener" class="inline-flex items-center justify-center rounded-full border border-white/75 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10">
-              Abrir Codafacil local
+            <a href="../cases/#agentichub" class="inline-flex items-center justify-center rounded-full border border-white/75 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10">
+              Case AgenticHUB
             </a>
-            <a href="https://www.codafacil.dev/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-full border border-white/35 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10">
-              Abrir site oficial
+            <a href="../cases/#gordon-codafacil" class="inline-flex items-center justify-center rounded-full border border-white/35 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide hover:bg-white/10">
+              Case Agente Gordon
             </a>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="py-10">
-      <h2 class="font-[var(--font-heading)] text-3xl font-semibold sm:text-[42px]">Resultados esperados em 90 dias</h2>
-      <div class="mt-2 h-1 w-[72px] rounded-full bg-white"></div>
-
-      <div class="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-        <article class="rounded-2xl border border-white/20 bg-white/5 p-5 text-center">
-          <p class="text-sm text-white/80">Redução de retrabalho</p>
-          <p class="mt-2 font-[var(--font-heading)] text-3xl font-semibold">20% - 40%</p>
-        </article>
-        <article class="rounded-2xl border border-white/20 bg-white/5 p-5 text-center">
-          <p class="text-sm text-white/80">Ganho de produtividade</p>
-          <p class="mt-2 font-[var(--font-heading)] text-3xl font-semibold">15% - 35%</p>
-        </article>
-        <article class="rounded-2xl border border-white/20 bg-white/5 p-5 text-center">
-          <p class="text-sm text-white/80">Tempo de resposta</p>
-          <p class="mt-2 font-[var(--font-heading)] text-3xl font-semibold">Mais rápido</p>
-        </article>
-        <article class="rounded-2xl border border-white/20 bg-white/5 p-5 text-center">
-          <p class="text-sm text-white/80">Previsibilidade da operação</p>
-          <p class="mt-2 font-[var(--font-heading)] text-3xl font-semibold">Mais controle</p>
-        </article>
       </div>
     </section>
 
@@ -407,8 +386,8 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
           <p class="mt-2 text-sm text-white/90">Sim. O trabalho começa preservando o que funciona e ajustando apenas os pontos com maior impacto.</p>
         </details>
         <details class="rounded-lg border border-white/20 bg-white/5 p-4">
-          <summary class="cursor-pointer font-semibold">Quando o Codafacil entra no projeto?</summary>
-          <p class="mt-2 text-sm text-white/90">Quando existe demanda de customização, integração externa ou novos módulos estratégicos.</p>
+          <summary class="cursor-pointer font-semibold">Como funciona o suporte 24h com IA?</summary>
+          <p class="mt-2 text-sm text-white/90">Um agente de IA (Claude) fica ligado no servidor do seu sistema, com permissões de suporte, e a sua equipe conversa com ele a qualquer hora. A nossa equipe continua no WhatsApp e no telefone.</p>
         </details>
         <details class="rounded-lg border border-white/20 bg-white/5 p-4">
           <summary class="cursor-pointer font-semibold">Qual o primeiro passo para começar?</summary>
@@ -418,7 +397,7 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
     </section>
 
     <section class="py-10 text-center">
-      <h3 class="font-[var(--font-heading)] text-2xl font-semibold sm:text-3xl">SVD + IA + Codafacil para escalar seu negócio</h3>
+      <h3 class="font-[var(--font-heading)] text-2xl font-semibold sm:text-3xl">Sistema Venda Direta + IA para escalar a sua rede</h3>
     </section>
   </main>
 
@@ -440,7 +419,7 @@ Landing page v1 com a identidade visual SVD e novo posicionamento de negocio ori
           <nav class="grid gap-2 text-sm text-white/90" aria-label="Menu institucional">
             <a href="../" class="hover:underline">Sistema Venda Direta</a>
             <a href="../wordpress/" class="hover:underline">WordPress</a>
-            <a href="https://codafacil.dev" target="_blank" rel="noopener" class="hover:underline">Desenvolvimento com IA</a>
+            <a href="../cases/" class="hover:underline">Cases de clientes</a>
             <a href="../inteligencia-artificial/" class="hover:underline">Multinível com IA</a>
             <a href="../blog/" class="hover:underline">Blog</a>
           </nav>

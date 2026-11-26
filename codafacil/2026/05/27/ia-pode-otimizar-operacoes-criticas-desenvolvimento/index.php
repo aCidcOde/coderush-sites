@@ -206,9 +206,9 @@
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/04/30/integracoes-automacao-operacoes-criticas-ia/"><img src="../../../../imagens/posts/integracoes-automacao-operacoes-criticas-ia.jpg" alt="Integrações e automação para operações críticas com IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <a href="https://sistemavendadireta.com.br/2026/11/26/api-sistema-venda-direta-integracao/"><img src="../../../../imagens/posts/integracoes-automacao-operacoes-criticas-ia.jpg" alt="Integrações e automação para operações críticas com IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/04/30/integracoes-automacao-operacoes-criticas-ia/" class="hover:underline">Integrações e automação para operações críticas com IA</a></h3>
+    <h3 class="text-base font-semibold leading-snug"><a href="https://sistemavendadireta.com.br/2026/11/26/api-sistema-venda-direta-integracao/" class="hover:underline">Integrações e automação para operações críticas com IA</a></h3>
     <p class="mt-2 text-sm leading-relaxed text-white/80">Como acelerar o desenvolvimento de software sob medida sem perder qualidade.</p>
   </div>
 </article>

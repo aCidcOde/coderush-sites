@@ -173,7 +173,7 @@ $faq = [
         <?php /* atalho pro fechamento: quem chega pelo anuncio e ja decidiu nao
                  deveria ter que rolar a pagina inteira pra achar onde falar */ ?>
         <a href="#falar" class="hidden text-sm font-semibold text-white/90 hover:text-white sm:inline">Falar com o time</a>
-        <a href="../sistema-venda-direta/?utm_source=site&amp;utm_medium=sistema-mmn&amp;utm_campaign=<?= PROMO_SLUG ?>" class="rounded-full bg-amber-400 px-4 py-2 text-sm font-bold text-brand hover:bg-amber-300">Ver a promoção</a>
+        <a href="../sistema-venda-direta/" class="rounded-full bg-amber-400 px-4 py-2 text-sm font-bold text-brand hover:bg-amber-300">Ver a promoção</a>
       </div>
     </div>
   </header>
@@ -189,7 +189,7 @@ $faq = [
           Sistema MMN pronto<br />para operar
         </h1>
         <p class="mt-4 text-base leading-relaxed text-white/90 sm:text-lg">
-          Um sistema MMN — o software de marketing multinível, também chamado de plataforma MMN —
+          Um sistema MMN — o sistema de marketing multinível, também chamado de software ou plataforma MMN —
           administra o que a planilha não dá conta: a rede de consultores, o cálculo
           automático das comissões, o escritório virtual de cada distribuidor, a loja e o financeiro.
           O Sistema Venda Direta faz isso há 10 anos — a plataforma já existe, roda hoje e é
@@ -293,7 +293,7 @@ $faq = [
      * ler "Bling", nao "integracao com seu ERP".
      */
     ?>
-    <section class="border-t border-white/15 py-10">
+    <section id="integracoes" class="scroll-mt-28 border-t border-white/15 py-10">
       <h2 class="font-[var(--font-heading)] text-2xl font-bold sm:text-[30px]">Com o que o sistema conversa</h2>
       <div class="mt-2 h-1 w-[72px] rounded-full bg-amber-300"></div>
       <p class="mt-3 max-w-3xl text-base leading-relaxed text-white/85">
@@ -304,7 +304,7 @@ $faq = [
         <?php
         $integracoes = [
             ['Pagamento', 'Pix, boleto e cartão via Efí (Gerencianet), Mercado Pago e PayPal. Pagamento com saldo de bônus é nativo.'],
-            ['Nota fiscal', 'NF-e e DANFE emitidos dentro do sistema, com NFS-e para operação de serviço.'],
+            ['Nota fiscal', 'NF-e e DANFE emitidos dentro do sistema, com NFS-e para operação de serviço — e integração com os campos novos de IBS e CBS da reforma tributária.'],
             ['ERP', 'Sincronização de produtos, clientes e vendas — há cliente rodando com TOTVS. Outros ERPs entram por API.'],
             ['Logística', 'Cálculo de frete e rastreio pelos Correios, com centro de distribuição integrado ao estoque.'],
             ['WhatsApp', 'Contato do consultor e do cliente pelo canal que eles já usam, com rastreio de origem do lead.'],
@@ -344,7 +344,7 @@ $faq = [
       </div>
       <p class="mt-4 text-sm text-white/80">
         Quer conferir se o seu plano de comissões fecha a conta antes de contratar?
-        <a href="../simulador/?utm_source=site&amp;utm_medium=sistema-mmn&amp;utm_campaign=simulador" class="font-semibold text-amber-300 underline decoration-amber-300/40 underline-offset-4 hover:text-white">Use o simulador de plano</a> —
+        <a href="../simulador/" class="font-semibold text-amber-300 underline decoration-amber-300/40 underline-offset-4 hover:text-white">Use o simulador de plano</a> —
         é gratuito e não pede cadastro.
       </p>
     </section>

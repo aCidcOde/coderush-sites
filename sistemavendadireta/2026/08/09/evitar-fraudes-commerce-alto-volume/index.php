@@ -87,6 +87,13 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-4107EVTE0Q');
+    // cta_interno: clique pra pagina de produto sem UTM no link (ver inc/analytics.php)
+    document.addEventListener("click", function (ev) {
+      var a = ev.target.closest && ev.target.closest("a[href]");
+      if (!a || a.host !== location.host) return;
+      var d = (a.pathname.match(/^\/(sistema-mmn|sistema-venda-direta|simulador|cases|blog)\//) || [])[1];
+      if (d && a.pathname !== location.pathname) gtag("event", "cta_interno", { page: location.pathname, destino: d });
+    });
   </script>
 </head>
 <body class="min-h-screen bg-brand text-white antialiased">
@@ -167,7 +174,7 @@
         </ul>
       </section>
       <aside class="my-8 rounded-2xl border-l-4 border-white bg-white/10 p-5 sm:p-6">
-        <p class="text-sm leading-7 text-white/90 sm:text-base">Já estruturamos isso em várias operações de MMN. Vale a pena discutir como podemos aplicar essas práticas no seu negócio. <a href="../../../../sistema-mmn/?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Conhecer o sistema MMN →</a></p>
+        <p class="text-sm leading-7 text-white/90 sm:text-base">Já estruturamos isso em várias operações de MMN. Vale a pena discutir como podemos aplicar essas práticas no seu negócio. <a href="../../../../sistema-mmn/" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Conhecer o sistema MMN →</a></p>
       </aside>
       <section class="mt-8">
         <h2 class="text-xl font-semibold text-white sm:text-2xl">Estratégias de prevenção eficazes</h2>
@@ -178,7 +185,7 @@
         <figcaption class="px-4 py-3 text-xs leading-6 text-white/70 sm:text-sm">Loja virtual de cada consultor: o cliente final compra e a venda cai na conta de quem indicou. <a href="https://painel.sistemavendadireta.com.br/primeiros-passos?utm_source=blog&amp;utm_medium=tela&amp;utm_campaign=demo&amp;utm_content=evitar-fraudes-commerce-alto-volume" target="_blank" rel="noopener" class="font-semibold text-white underline decoration-white/40 underline-offset-4" onclick="window.gtag&amp;&amp;gtag('event','demo_click',{page:location.pathname,link_url:this.href.split('?')[0]})">Ver na demonstração →</a></figcaption>
       </figure>
       <p class="my-6 text-sm leading-7 text-white/85 sm:text-base">
-        Vamos explorar como um software especializado pode atender suas necessidades. <a href="../../../../sistema-mmn/?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Conhecer o sistema MMN →</a>
+        Vamos explorar como um software especializado pode atender suas necessidades. <a href="../../../../sistema-mmn/" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Conhecer o sistema MMN →</a>
       </p>
       <section class="mt-8">
         <h2 class="text-xl font-semibold text-white sm:text-2xl">O que evitar nas operações</h2>
@@ -205,7 +212,7 @@
     <section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
       <h2 class="text-xl font-semibold text-white">Precisa de um sistema de marketing multinível pronto para operar?</h2>
       <p class="mt-3 text-sm leading-7 text-white/85 sm:text-base">O Sistema Venda Direta já roda no Brasil, Paraguai e Bolívia: rede binária e unilevel, escritório do consultor, loja virtual e financeiro integrados, parametrizados para o seu plano.</p>
-      <a href="../../../../sistema-mmn/?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="mt-4 inline-flex rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/10">
+      <a href="../../../../sistema-mmn/" class="mt-4 inline-flex rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/10">
         Conhecer o sistema MMN
       </a>
       <p class="mt-4 text-sm text-white/70">
@@ -240,6 +247,18 @@
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
+  <div class="relative" style="background:#040c1e url('../../../../imagens/posts/fundos/api-sistema-venda-direta-integracao.webp') center/cover no-repeat">
+    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
+      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
+      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">26/11/2026</span>
+      <h3 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="../../../../2026/11/26/api-sistema-venda-direta-integracao/" class="hover:underline">API do sistema de venda direta: o que perguntar antes de integrar</a></h3>
+    </div>
+  </div>
+  <div class="p-4">
+    <p class="text-sm leading-relaxed text-white/80">ERP, gateway, transportadora e nota fiscal só conversam com o sistema de venda direta por API. Veja o que a API precisa ter, as perguntas que evitam retrabal...</p>
+  </div>
+</article>
+<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
   <div class="relative" style="background:#040c1e url('../../../../imagens/posts/fundos/comissao-cargo-plano-pontos-venda-direta.webp') center/cover no-repeat">
     <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
       <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
@@ -251,67 +270,10 @@
     <p class="text-sm leading-relaxed text-white/80">Entenda as diferenças e como a integração ERP pode impactar suas vendas.</p>
   </div>
 </article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <div class="relative" style="background:#040c1e url('../../../../imagens/posts/fundos/diferenca-venda-direta-marketing-multinivel.webp') center/cover no-repeat">
-    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
-      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
-      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">22/09/2026</span>
-      <h3 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="../../../../2026/09/22/diferenca-venda-direta-marketing-multinivel/" class="hover:underline">Diferença entre Venda Direta e Marketing Multinível</a></h3>
-    </div>
-  </div>
-  <div class="p-4">
-    <p class="text-sm leading-relaxed text-white/80">Venda direta se concentra na comercialização de produtos diretamente ao consumidor, enquanto o marketing multinível envolve a construção de uma rede</p>
-  </div>
-</article>
   </div>
 </section>
 <!-- BLOG-LEIA-TAMBEM END -->
     <!-- BLOG-CROSS-SITE START -->
-<section class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5">
-  <div class="flex items-end justify-between gap-4">
-    <h2 class="text-2xl font-semibold text-white">Conheça também o hub CodeRush</h2>
-    <a href="https://coderush.com.br/" rel="noopener" target="_blank" class="text-sm font-semibold text-white/85 hover:text-white">Visitar a CodeRush</a>
-  </div>
-  <p class="mt-2 text-sm text-white/70">Conteúdo recente dos outros sites do ecossistema.</p>
-  <div class="mt-5 grid gap-4 md:grid-cols-3">
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <div class="relative" style="background:linear-gradient(135deg,#0b3a8a 0%,#040c1e 100%)">
-    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
-      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
-      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">Codafacil.dev</span>
-      <h3 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="https://codafacil.dev/2026/06/30/acelerar-operacoes-criticas-ia-integracoes-eficientes/" rel="noopener" target="_blank" class="hover:underline">Como acelerar operações críticas com IA e integrações eficientes</a></h3>
-    </div>
-  </div>
-  <div class="p-4">
-    <p class="text-sm leading-relaxed text-white/80">Descubra como integrar automação e IA nas operações críticas para acelerar o desenvolvimento sem perder qualidade.</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <div class="relative" style="background:linear-gradient(135deg,#0b3a8a 0%,#040c1e 100%)">
-    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
-      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
-      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">BFR Intelligence</span>
-      <h3 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="https://bfrintelligence.com.br/2026/09/22/orquestracao-multiplos-agentes-ia-governanca/" rel="noopener" target="_blank" class="hover:underline">Orquestração de Múltiplos Agentes de IA na Governança</a></h3>
-    </div>
-  </div>
-  <div class="p-4">
-    <p class="text-sm leading-relaxed text-white/80">Orquestrar múltiplos agentes de IA exige integração com sistemas internos, governança eficiente e monitoramento contínuo. É fundamental g...</p>
-  </div>
-</article>
-<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <div class="relative" style="background:linear-gradient(135deg,#0b3a8a 0%,#040c1e 100%)">
-    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
-      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
-      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">CodeRush</span>
-      <h3 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="https://coderush.com.br/2026/07/15/decisoes-tecnicas-substituicao-sistemas-legados/" rel="noopener" target="_blank" class="hover:underline">Decisões Técnicas na Substituição de Sistemas Legados</a></h3>
-    </div>
-  </div>
-  <div class="p-4">
-    <p class="text-sm leading-relaxed text-white/80">Entenda os riscos e como tomar decisões informadas na substituição de sistemas legados.</p>
-  </div>
-</article>
-  </div>
-</section>
 <!-- BLOG-CROSS-SITE END -->
   </main>
 
@@ -336,7 +298,7 @@
         <div>
           <h3 class="text-lg font-semibold text-white">Próximo passo</h3>
           <p class="mt-3 text-sm leading-7 text-white/80">Resposta humana, sem fila generica. Fale com o time comercial do site.</p>
-          <a href="../../../../sistema-mmn/?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=cta-artigo" class="mt-4 inline-flex rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/10">
+          <a href="../../../../sistema-mmn/" class="mt-4 inline-flex rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/10">
             Conhecer o sistema MMN
           </a>
         </div>

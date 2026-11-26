@@ -58,6 +58,10 @@ $faq = [
     ['O que não está incluso?', 'Integrações de ERP e gateway de pagamento são orçadas separadamente, porque dependem do provedor que você já usa.'],
     ['Existe outro custo além da mensalidade?', 'Não. Novas funcionalidades pedidas depois são acordadas antes de qualquer cobrança.'],
     ['Onde o sistema fica hospedado?', 'Em infraestrutura dedicada Linux, atrás de proteção Cloudflare, com certificado SSL automático e backups replicados. Sua operação não divide servidor com terceiros.'],
+    // "aplicativo de venda direta" e palavra comprada no grupo Venda Direta e a pagina
+    // nao tinha a palavra (26/11/2026). Resposta fiel: o escritorio e web responsivo
+    // (conferido na demo em 390 px); app de loja e projeto a parte — o Wellby e nosso.
+    ['Tem aplicativo para o consultor?', 'O escritório do consultor abre no navegador do celular, já ajustado para a tela: ganhos, saldo, rede e plano sem instalar nada. Quando a operação pede aplicativo nas lojas (App Store e Google Play), ele entra como projeto à parte — desenvolvemos o Wellby, aplicativo próprio para iPhone e Apple Watch.'],
     ['Como funciona o suporte?', 'Direto por WhatsApp e telefone, com a mesma equipe que fez a implantação — e 24 horas por dia com um agente de IA ligado no servidor do seu sistema, com permissões de suporte.'],
 ];
 
@@ -78,12 +82,16 @@ $whatsappHref = 'https://wa.me/' . $whatsappPhone . '?text=' . rawurlencode($wha
 $seoBase = 'https://sistemavendadireta.com.br';
 $seoUrl = $seoBase . '/sistema-venda-direta/';
 // SEO/Ads: o titulo precisa nomear o PRODUTO que a pessoa buscou, nao so a oferta.
-// O Indice de Qualidade do Google marcou a experiencia desta pagina como "abaixo da
-// media" (nota 5/10) — a palavra "multinivel" nao aparecia nenhuma vez, embora a
-// campanha compre exatamente "sistema multinivel" e "sistema marketing multinivel".
-$seoTitle = 'Sistema de Marketing Multinível e Venda Direta | ' . promoRotulo('Instalação e Planos');
-$seoDescription = 'Sistema de marketing multinível (MMN) e venda direta: escritório do '
-    . 'consultor, rede binária e unilevel, loja e financeiro. A partir de ' . promoPrecoInstalacao() . '.';
+// Setembro/2026: o Indice de Qualidade marcou a pagina "abaixo da media" porque
+// "multinivel" nao aparecia — na epoca ela recebia as palavras de MMN.
+// 26/11/2026: desde a Fim de Ano o grupo MMN cai na /sistema-mmn/ e este grupo so
+// compra "sistema/software/aplicativo de venda direta" — e a pagina continuava
+// "abaixo" com o titulo abrindo em "Sistema de Marketing Multinivel" (71 chars,
+// cortado na busca). O titulo volta a abrir pelo que este grupo compra; MMN fica
+// na sigla, e "multinivel" segue no texto.
+$seoTitle = 'Sistema de Venda Direta e MMN | ' . promoRotulo('Instalação e Planos');
+$seoDescription = 'Sistema de venda direta com escritório do consultor no celular, loja, pedidos, '
+    . 'comissão e rede binária ou unilevel (MMN). A partir de ' . promoPrecoInstalacao() . '.';
 ?>
 <!doctype html>
 <html lang="pt-BR">
@@ -157,7 +165,7 @@ $seoDescription = 'Sistema de marketing multinível (MMN) e venda direta: escrit
   <?= json_encode([
       '@context' => 'https://schema.org',
       '@type' => 'SoftwareApplication',
-      'name' => 'Sistema Venda Direta — plataforma de marketing multinível e venda direta',
+      'name' => 'Sistema Venda Direta — software de venda direta e marketing multinível',
       'applicationCategory' => 'BusinessApplication',
       'operatingSystem' => 'Web',
       'description' => $seoDescription,
@@ -197,7 +205,7 @@ $seoDescription = 'Sistema de marketing multinível (MMN) e venda direta: escrit
       '@type' => 'BreadcrumbList',
       'itemListElement' => [
           ['@type' => 'ListItem', 'position' => 1, 'name' => 'Sistema Venda Direta', 'item' => $seoBase . '/'],
-          ['@type' => 'ListItem', 'position' => 2, 'name' => 'Sistema de marketing multinível e venda direta', 'item' => $seoUrl],
+          ['@type' => 'ListItem', 'position' => 2, 'name' => 'Sistema de venda direta', 'item' => $seoUrl],
       ],
   ], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) ?>
   </script>
@@ -225,7 +233,7 @@ $seoDescription = 'Sistema de marketing multinível (MMN) e venda direta: escrit
       <a href="../" target="_blank" rel="noopener" aria-label="Abrir o site do Sistema Venda Direta em nova aba"><img decoding="async" src="../imagens/Logo-Branco-1.webp" alt="Sistema Venda Direta" class="h-auto w-[150px] sm:w-[200px]" width="1000" height="300" loading="eager" /></a>
       <div class="flex items-center gap-5">
         <a href="https://painel.sistemavendadireta.com.br/primeiros-passos?utm_source=site&utm_medium=oferta&utm_campaign=demo" target="_blank" rel="noopener" class="text-sm font-semibold text-amber-300 hover:text-amber-200">Ver demonstração</a>
-        <a href="../simulador/?utm_source=site&amp;utm_medium=oferta&amp;utm_campaign=simulador" class="text-sm font-semibold text-white/85 hover:text-white">Simulador de plano</a>
+        <a href="../simulador/" class="text-sm font-semibold text-white/85 hover:text-white">Simulador de plano</a>
         <a href="../cases/" class="text-sm font-semibold text-white/85 hover:text-white">Cases</a>
         <a href="<?= htmlspecialchars($whatsappHref, ENT_QUOTES, 'UTF-8') ?>" target="_blank" rel="noopener noreferrer" class="hidden rounded-full bg-[#25D366] px-4 py-2 text-sm font-bold sm:inline-flex">
           Falar agora
@@ -342,7 +350,7 @@ $seoDescription = 'Sistema de marketing multinível (MMN) e venda direta: escrit
     </section>
 
     <section class="py-10">
-      <h2 class="font-[var(--font-heading)] text-2xl font-bold sm:text-[32px]">O que o sistema já traz pronto — venda direta e multinível</h2>
+      <h2 class="font-[var(--font-heading)] text-2xl font-bold sm:text-[32px]">O que o software de venda direta já traz pronto</h2>
       <div class="mt-2 h-1 w-[72px] rounded-full bg-amber-300"></div>
 
       <div class="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">

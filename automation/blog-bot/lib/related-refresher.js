@@ -150,6 +150,8 @@ function ensureCrossSiteSection(content, sectionHtml) {
   return `${content.slice(0, mainCloseIndex)}${sectionHtml}\n${content.slice(mainCloseIndex)}`;
 }
 
+const SITES_SEM_HUB = new Set(["sistemavendadireta"]);
+
 function refreshPostContent({ content, currentSite, currentPostPath, currentTitle, currentText, index, siteRootAbs }) {
   const sameCards = pickSameSiteRelated({
     currentSiteId: currentSite.id,
@@ -159,7 +161,10 @@ function refreshPostContent({ content, currentSite, currentPostPath, currentTitl
     index,
     max: 3
   });
-  const crossCards = pickRelatedFromOtherSites({
+  // SVD sem a secao "Conheca tambem o hub CodeRush" desde 26/11/2026: o usuario
+  // decidiu "focar tudo no sistema venda direta" — post do SVD nao manda o leitor
+  // (nem o link) pra Codafacil, CodeRush ou BFR. Os outros sites continuam cruzando.
+  const crossCards = SITES_SEM_HUB.has(currentSite.id) ? [] : pickRelatedFromOtherSites({
     currentSiteId: currentSite.id,
     currentTitle,
     currentText,

@@ -1,0 +1,97 @@
+{
+  "date": "2026-11-26",
+  "siteId": "sistemavendadireta",
+  "postType": "vendas-diretas-processos",
+  "focus": "integracoes",
+  "theme": "API do sistema de venda direta: o que exigir antes de integrar ERP, gateway, nota fiscal e logistica (consolida 3 posts de integracao da Codafacil, com 301)",
+  "angle": "integracoes",
+  "slug": "api-sistema-venda-direta-integracao",
+  "title": "API do sistema de venda direta: o que perguntar antes de integrar",
+  "description": "O que a API de um sistema de venda direta precisa ter, as perguntas que evitam retrabalho e onde a integração com ERP, gateway e nota fiscal quebra.",
+  "sources": [
+    "https://sistemavendadireta.com.br/sistema-mmn/#integracoes",
+    "https://sistemavendadireta.com.br/cases/#isy-middleware"
+  ],
+  "status": "draft",
+  "generatedAt": "2026-11-26T15:00:00-03:00",
+  "content": {
+    "eyebrow": "Integrações",
+    "headline": "API do sistema de venda direta: o que perguntar antes de integrar",
+    "seoTitle": "API do sistema de venda direta: o que perguntar antes de integrar",
+    "summary": "ERP, gateway, transportadora e nota fiscal só conversam com o sistema de venda direta por API. Veja o que a API precisa ter, as perguntas que evitam retrabalho e onde a integração costuma quebrar numa rede de consultores.",
+    "answerBox": {
+      "question": "O que a API de um sistema de venda direta precisa ter?",
+      "answer": "Endpoints documentados para pedido, consultor, produto, estoque e pagamento; autenticação por token com permissão por integração; webhooks que avisam quando algo muda; versionamento para não quebrar quem já integrou; e um log que mostre o que entrou e o que falhou. Sem isso, cada integração vira um projeto de desenvolvimento."
+    },
+    "tldr": [
+      "A API decide se ERP, gateway e nota fiscal conversam com a rede sem planilha no meio.",
+      "Antes de contratar, pergunte por documentação, autenticação, webhooks, versionamento e log.",
+      "Em venda direta o ponto crítico é o pedido do consultor: ele mexe em estoque, comissão e nota ao mesmo tempo."
+    ],
+    "sections": [
+      {
+        "type": "prose",
+        "title": "Por que a API pesa mais em venda direta",
+        "body": "Na venda direta, um pedido não é só uma venda: ele baixa estoque, gera pontos para a rede, entra no cálculo de comissão e precisa de nota fiscal. Cada um desses passos costuma morar num sistema diferente — o ERP, o gateway de pagamento, a transportadora, a SEFAZ. Quando o sistema de venda direta não tem uma API decente, a ligação entre eles vira exportação de planilha, e o erro aparece no fechamento de comissão, que é justamente onde a rede menos perdoa."
+      },
+      {
+        "type": "list",
+        "title": "O que a API precisa ter",
+        "items": [
+          "Endpoints documentados para pedido, consultor, produto, estoque e pagamento, com exemplo de requisição e de resposta.",
+          "Autenticação por token, com permissão por integração: o ERP não precisa enxergar o que o gateway enxerga.",
+          "Webhooks: o sistema avisa quando um pedido é pago, cancelado ou faturado, em vez de o ERP perguntar a cada cinco minutos.",
+          "Versionamento: mudar a API não pode derrubar a integração que já está rodando.",
+          "Log de integração: o que entrou, o que saiu e o que falhou, com o motivo, sem precisar abrir chamado para descobrir."
+        ]
+      },
+      {
+        "type": "prose",
+        "title": "As quatro integrações que toda rede acaba precisando",
+        "body": "Pagamento: Pix, boleto e cartão, com a baixa automática do pedido quando o dinheiro cai. ERP: produto, cliente e venda sincronizados, para o faturamento não depender de redigitação. Nota fiscal: NF-e para produto e NFS-e para serviço, agora com os campos de IBS e CBS da reforma tributária. Logística: frete calculado no carrinho e rastreio devolvido para o escritório do consultor. No Sistema Venda Direta essas quatro já rodam em cliente real — Efí, Mercado Pago e PayPal no pagamento, Bling e TOTVS no ERP, Correios no frete —, e o que é específico da operação entra pela API REST própria."
+      },
+      {
+        "type": "callout",
+        "body": "Na prática: no Isy Middleware, que desenvolvemos para lojas online distribuídas, vendas, estoque e financeiro passam por uma camada de integração única, com estoque centralizado e grandes volumes de dados em tempo real. É o mesmo princípio que vale para uma rede de consultores: um lugar só por onde tudo entra e sai.",
+        "ctaLabel": "Ver o case",
+        "ctaHref": "cases/#isy-middleware"
+      },
+      {
+        "type": "list",
+        "title": "Perguntas para fazer antes de contratar",
+        "items": [
+          "A API é documentada, e eu posso ver a documentação antes de assinar?",
+          "Quem integra: a minha equipe, a de vocês ou as duas? E quem responde quando a integração para?",
+          "O sistema avisa por webhook ou o meu ERP precisa ficar consultando?",
+          "O que acontece com um pedido que falhou na integração: ele some, trava ou fica numa fila para reenviar?",
+          "Integração nova de ERP ou gateway entra no preço ou é orçada à parte?"
+        ]
+      },
+      {
+        "type": "cta-inline",
+        "body": "Fazemos essa integração: ERP, gateway, nota fiscal e transportadora ligados ao Sistema Venda Direta, com a API REST para o que for só da sua operação.",
+        "ctaLabel": "Falar com a gente",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Conclusão",
+        "body": "Na hora de escolher um sistema de venda direta, a tela do escritório do consultor chama mais atenção, mas é a API que decide quanto trabalho manual sobra depois. Peça a documentação, pergunte pelo log e pelos webhooks e teste com um pedido de verdade: se ele chega ao ERP, gera a nota e aparece na comissão sem ninguém mexer, a integração está pronta."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Todo sistema de venda direta tem API?",
+        "a": "Não. Muitos só exportam planilha ou CSV, o que resolve um relatório mas não uma integração: alguém precisa baixar, ajustar e importar todo dia. Pergunte se há API REST documentada e se ela cobre pedido, consultor e estoque."
+      },
+      {
+        "q": "Qual a diferença entre API e webhook?",
+        "a": "Pela API, o outro sistema pergunta e o sistema de venda direta responde. Pelo webhook, é o sistema de venda direta que avisa quando algo acontece — um pedido pago, por exemplo. Os dois juntos evitam atraso e consulta repetida."
+      },
+      {
+        "q": "Dá para integrar o sistema de venda direta com o ERP que eu já uso?",
+        "a": "Na maioria dos casos, sim. No Sistema Venda Direta há cliente rodando com TOTVS e integração com Bling; outros ERPs entram pela API. A integração é orçada conforme o provedor, porque cada ERP expõe os dados de um jeito."
+      }
+    ]
+  }
+}
