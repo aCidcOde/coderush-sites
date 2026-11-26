@@ -91,192 +91,255 @@ Pagina indice do blog com listagem de todos os posts locais do projeto.
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <!-- BLOG-INDEX-CARDS:START -->
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/11/26/novas-notas-fiscais-ibs-cbs-integracao-sistema/" data-blog-image="imagens/posts/novas-notas-fiscais-ibs-cbs-integracao-sistema.jpg" data-blog-slug="novas-notas-fiscais-ibs-cbs-integracao-sistema" data-blog-date="2026-11-26">
-  <a href="../2026/11/26/novas-notas-fiscais-ibs-cbs-integracao-sistema/">
-    <picture><source srcset="../imagens/posts/novas-notas-fiscais-ibs-cbs-integracao-sistema.webp" type="image/webp" /><img src="../imagens/posts/novas-notas-fiscais-ibs-cbs-integracao-sistema.jpg" alt="Novas notas fiscais com IBS e CBS: o que muda e como integrar ao sistema" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
-  </a>
+  <div class="relative" style="background:#040c1e url('../imagens/posts/fundos/novas-notas-fiscais-ibs-cbs-integracao-sistema.webp') center/cover no-repeat">
+    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
+      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
+      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">26/11/2026</span>
+      <h2 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="../2026/11/26/novas-notas-fiscais-ibs-cbs-integracao-sistema/" class="hover:underline">Novas notas fiscais com IBS e CBS: o que muda e como integrar ao sistema</a></h2>
+    </div>
+  </div>
   <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="../2026/11/26/novas-notas-fiscais-ibs-cbs-integracao-sistema/" class="hover:underline">Novas notas fiscais com IBS e CBS: o que muda e como integrar ao sistema</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">A reforma tributária mudou o layout das notas em 2026. Veja os campos novos, onde a integração costuma quebrar e como deixar o sistema emitindo certo.</p>
+    <p class="text-sm leading-relaxed text-white/80">A reforma tributária mudou o layout das notas em 2026. Veja os campos novos, onde a integração costuma quebrar e como deixar o sistema emitindo certo.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/11/22/integrar-sistemas-venda-direta-erp-fiscal/" data-blog-image="imagens/posts/integrar-sistemas-venda-direta-erp-fiscal.jpg" data-blog-slug="integrar-sistemas-venda-direta-erp-fiscal" data-blog-date="2026-11-22">
-  <a href="../2026/11/22/integrar-sistemas-venda-direta-erp-fiscal/">
-    <picture><source srcset="../imagens/posts/integrar-sistemas-venda-direta-erp-fiscal.webp" type="image/webp" /><img src="../imagens/posts/integrar-sistemas-venda-direta-erp-fiscal.jpg" alt="Como integrar sistemas de venda direta com ERP fiscal?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
-  </a>
+  <div class="relative" style="background:#040c1e url('../imagens/posts/fundos/integrar-sistemas-venda-direta-erp-fiscal.webp') center/cover no-repeat">
+    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
+      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
+      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">22/11/2026</span>
+      <h2 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="../2026/11/22/integrar-sistemas-venda-direta-erp-fiscal/" class="hover:underline">Como integrar sistemas de venda direta com ERP fiscal?</a></h2>
+    </div>
+  </div>
   <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="../2026/11/22/integrar-sistemas-venda-direta-erp-fiscal/" class="hover:underline">Como integrar sistemas de venda direta com ERP fiscal?</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como integrar seu sistema de venda direta com ERPs como TOTVS e Bling para otimizar processos fiscais.</p>
+    <p class="text-sm leading-relaxed text-white/80">Entenda como integrar seu sistema de venda direta com ERPs como TOTVS e Bling para otimizar processos fiscais.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/11/15/marketing-rede-brasil-regulamentacao-oportunidades/" data-blog-image="imagens/posts/marketing-rede-brasil-regulamentacao-oportunidades.jpg" data-blog-slug="marketing-rede-brasil-regulamentacao-oportunidades" data-blog-date="2026-11-15">
-  <a href="../2026/11/15/marketing-rede-brasil-regulamentacao-oportunidades/">
-    <picture><source srcset="../imagens/posts/marketing-rede-brasil-regulamentacao-oportunidades.webp" type="image/webp" /><img src="../imagens/posts/marketing-rede-brasil-regulamentacao-oportunidades.jpg" alt="Marketing de rede no Brasil: regulamentação e oportunidades" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
-  </a>
+  <div class="relative" style="background:#040c1e url('../imagens/posts/fundos/marketing-rede-brasil-regulamentacao-oportunidades.webp') center/cover no-repeat">
+    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
+      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
+      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">15/11/2026</span>
+      <h2 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="../2026/11/15/marketing-rede-brasil-regulamentacao-oportunidades/" class="hover:underline">Marketing de rede no Brasil: regulamentação e oportunidades</a></h2>
+    </div>
+  </div>
   <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="../2026/11/15/marketing-rede-brasil-regulamentacao-oportunidades/" class="hover:underline">Marketing de rede no Brasil: regulamentação e oportunidades</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda o cenário do marketing multinível no Brasil e as possibilidades de internacionalização.</p>
+    <p class="text-sm leading-relaxed text-white/80">Entenda o cenário do marketing multinível no Brasil e as possibilidades de internacionalização.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/11/08/vender-diretamente-consumidor-final-mmn/" data-blog-image="imagens/posts/vender-diretamente-consumidor-final-mmn.jpg" data-blog-slug="vender-diretamente-consumidor-final-mmn" data-blog-date="2026-11-08">
-  <a href="../2026/11/08/vender-diretamente-consumidor-final-mmn/">
-    <picture><source srcset="../imagens/posts/vender-diretamente-consumidor-final-mmn.webp" type="image/webp" /><img src="../imagens/posts/vender-diretamente-consumidor-final-mmn.jpg" alt="Como vender diretamente para o consumidor final com MMN?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
-  </a>
+  <div class="relative" style="background:#040c1e url('../imagens/posts/fundos/vender-diretamente-consumidor-final-mmn.webp') center/cover no-repeat">
+    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
+      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
+      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">08/11/2026</span>
+      <h2 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="../2026/11/08/vender-diretamente-consumidor-final-mmn/" class="hover:underline">Como vender diretamente para o consumidor final com MMN?</a></h2>
+    </div>
+  </div>
   <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="../2026/11/08/vender-diretamente-consumidor-final-mmn/" class="hover:underline">Como vender diretamente para o consumidor final com MMN?</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como o marketing multinível pode impulsionar suas vendas diretas ao consumidor final.</p>
+    <p class="text-sm leading-relaxed text-white/80">Entenda como o marketing multinível pode impulsionar suas vendas diretas ao consumidor final.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/11/01/cadastrar-consultores-operacao-mmn/" data-blog-image="imagens/posts/cadastrar-consultores-operacao-mmn.jpg" data-blog-slug="cadastrar-consultores-operacao-mmn" data-blog-date="2026-11-01">
-  <a href="../2026/11/01/cadastrar-consultores-operacao-mmn/">
-    <picture><source srcset="../imagens/posts/cadastrar-consultores-operacao-mmn.webp" type="image/webp" /><img src="../imagens/posts/cadastrar-consultores-operacao-mmn.jpg" alt="Como cadastrar consultores em uma operação de MMN?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
-  </a>
+  <div class="relative" style="background:#040c1e url('../imagens/posts/fundos/cadastrar-consultores-operacao-mmn.webp') center/cover no-repeat">
+    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
+      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
+      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">01/11/2026</span>
+      <h2 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="../2026/11/01/cadastrar-consultores-operacao-mmn/" class="hover:underline">Como cadastrar consultores em uma operação de MMN?</a></h2>
+    </div>
+  </div>
   <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="../2026/11/01/cadastrar-consultores-operacao-mmn/" class="hover:underline">Como cadastrar consultores em uma operação de MMN?</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda o processo de cadastro de consultores e distribuidores em marketing multinível, focando na internacionalização.</p>
+    <p class="text-sm leading-relaxed text-white/80">Entenda o processo de cadastro de consultores e distribuidores em marketing multinível, focando na internacionalização.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/10/15/comissao-cargo-plano-pontos-venda-direta/" data-blog-image="imagens/posts/comissao-cargo-plano-pontos-venda-direta.jpg" data-blog-slug="comissao-cargo-plano-pontos-venda-direta" data-blog-date="2026-10-15">
-  <a href="../2026/10/15/comissao-cargo-plano-pontos-venda-direta/">
-    <picture><source srcset="../imagens/posts/comissao-cargo-plano-pontos-venda-direta.webp" type="image/webp" /><img src="../imagens/posts/comissao-cargo-plano-pontos-venda-direta.jpg" alt="Comissão por cargo ou plano de pontos em venda direta?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
-  </a>
+  <div class="relative" style="background:#040c1e url('../imagens/posts/fundos/comissao-cargo-plano-pontos-venda-direta.webp') center/cover no-repeat">
+    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
+      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
+      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">15/10/2026</span>
+      <h2 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="../2026/10/15/comissao-cargo-plano-pontos-venda-direta/" class="hover:underline">Comissão por cargo ou plano de pontos em venda direta?</a></h2>
+    </div>
+  </div>
   <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="../2026/10/15/comissao-cargo-plano-pontos-venda-direta/" class="hover:underline">Comissão por cargo ou plano de pontos em venda direta?</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda as diferenças e como a integração ERP pode impactar suas vendas.</p>
+    <p class="text-sm leading-relaxed text-white/80">Entenda as diferenças e como a integração ERP pode impactar suas vendas.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/10/05/empresas-marketing-multinivel-brasil-comissionamento/" data-blog-image="imagens/posts/empresas-marketing-multinivel-brasil-comissionamento.jpg" data-blog-slug="empresas-marketing-multinivel-brasil-comissionamento" data-blog-date="2026-10-05">
-  <a href="../2026/10/05/empresas-marketing-multinivel-brasil-comissionamento/">
-    <picture><source srcset="../imagens/posts/empresas-marketing-multinivel-brasil-comissionamento.webp" type="image/webp" /><img src="../imagens/posts/empresas-marketing-multinivel-brasil-comissionamento.jpg" alt="Empresas de marketing multinível no Brasil e comissionamento" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
-  </a>
+  <div class="relative" style="background:#040c1e url('../imagens/posts/fundos/empresas-marketing-multinivel-brasil-comissionamento.webp') center/cover no-repeat">
+    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
+      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
+      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">05/10/2026</span>
+      <h2 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="../2026/10/05/empresas-marketing-multinivel-brasil-comissionamento/" class="hover:underline">Empresas de marketing multinível no Brasil e comissionamento</a></h2>
+    </div>
+  </div>
   <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="../2026/10/05/empresas-marketing-multinivel-brasil-comissionamento/" class="hover:underline">Empresas de marketing multinível no Brasil e comissionamento</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra as principais empresas de marketing multinível no Brasil e como o comissionamento impacta seus resultados.</p>
+    <p class="text-sm leading-relaxed text-white/80">Descubra as principais empresas de marketing multinível no Brasil e como o comissionamento impacta seus resultados.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/09/22/diferenca-venda-direta-marketing-multinivel/" data-blog-image="imagens/posts/diferenca-venda-direta-marketing-multinivel.jpg" data-blog-slug="diferenca-venda-direta-marketing-multinivel" data-blog-date="2026-09-22">
-  <a href="../2026/09/22/diferenca-venda-direta-marketing-multinivel/">
-    <picture><source srcset="../imagens/posts/diferenca-venda-direta-marketing-multinivel.webp" type="image/webp" /><img src="../imagens/posts/diferenca-venda-direta-marketing-multinivel.jpg" alt="Diferença entre Venda Direta e Marketing Multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
-  </a>
+  <div class="relative" style="background:#040c1e url('../imagens/posts/fundos/diferenca-venda-direta-marketing-multinivel.webp') center/cover no-repeat">
+    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
+      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
+      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">22/09/2026</span>
+      <h2 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="../2026/09/22/diferenca-venda-direta-marketing-multinivel/" class="hover:underline">Diferença entre Venda Direta e Marketing Multinível</a></h2>
+    </div>
+  </div>
   <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="../2026/09/22/diferenca-venda-direta-marketing-multinivel/" class="hover:underline">Diferença entre Venda Direta e Marketing Multinível</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Venda direta se concentra na comercialização de produtos diretamente ao consumidor, enquanto o marketing multinível envolve a construção de uma rede</p>
+    <p class="text-sm leading-relaxed text-white/80">Venda direta se concentra na comercialização de produtos diretamente ao consumidor, enquanto o marketing multinível envolve a construção de uma rede</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/09/05/onboarding-ativacao-distribuidores-papel-integracao-erp/" data-blog-image="imagens/posts/onboarding-ativacao-distribuidores-papel-integracao-erp.jpg" data-blog-slug="onboarding-ativacao-distribuidores-papel-integracao-erp" data-blog-date="2026-09-05">
-  <a href="../2026/09/05/onboarding-ativacao-distribuidores-papel-integracao-erp/">
-    <picture><source srcset="../imagens/posts/onboarding-ativacao-distribuidores-papel-integracao-erp.webp" type="image/webp" /><img src="../imagens/posts/onboarding-ativacao-distribuidores-papel-integracao-erp.jpg" alt="Onboarding e Ativação de Distribuidores: O Papel da Integração ERP" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
-  </a>
+  <div class="relative" style="background:#040c1e url('../imagens/posts/fundos/onboarding-ativacao-distribuidores-papel-integracao-erp.webp') center/cover no-repeat">
+    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
+      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
+      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">05/09/2026</span>
+      <h2 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="../2026/09/05/onboarding-ativacao-distribuidores-papel-integracao-erp/" class="hover:underline">Onboarding e Ativação de Distribuidores: O Papel da Integração ERP</a></h2>
+    </div>
+  </div>
   <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="../2026/09/05/onboarding-ativacao-distribuidores-papel-integracao-erp/" class="hover:underline">Onboarding e Ativação de Distribuidores: O Papel da Integração ERP</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">A integração ERP facilita o onboarding de distribuidores ao automatizar processos, eliminar erros de dados e acelerar a ativação. Isso gera maior eficiência</p>
+    <p class="text-sm leading-relaxed text-white/80">A integração ERP facilita o onboarding de distribuidores ao automatizar processos, eliminar erros de dados e acelerar a ativação. Isso gera maior eficiência</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/08/24/comissionamento-emissao-nf-venda-direta/" data-blog-image="imagens/posts/comissionamento-emissao-nf-venda-direta.jpg" data-blog-slug="comissionamento-emissao-nf-venda-direta" data-blog-date="2026-08-24">
-  <a href="../2026/08/24/comissionamento-emissao-nf-venda-direta/">
-    <picture><source srcset="../imagens/posts/comissionamento-emissao-nf-venda-direta.webp" type="image/webp" /><img src="../imagens/posts/comissionamento-emissao-nf-venda-direta.jpg" alt="Comissionamento e Emissão de NF-e em Venda Direta" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
-  </a>
+  <div class="relative" style="background:#040c1e url('../imagens/posts/fundos/comissionamento-emissao-nf-venda-direta.webp') center/cover no-repeat">
+    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
+      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
+      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">24/08/2026</span>
+      <h2 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="../2026/08/24/comissionamento-emissao-nf-venda-direta/" class="hover:underline">Comissionamento e Emissão de NF-e em Venda Direta</a></h2>
+    </div>
+  </div>
   <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="../2026/08/24/comissionamento-emissao-nf-venda-direta/" class="hover:underline">Comissionamento e Emissão de NF-e em Venda Direta</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">A emissão de NF-e integrada ao processo de venda direta garante uma gestão mais eficiente e transparente. Isso assegura que os comissionamentos sejam calculados</p>
+    <p class="text-sm leading-relaxed text-white/80">A emissão de NF-e integrada ao processo de venda direta garante uma gestão mais eficiente e transparente. Isso assegura que os comissionamentos sejam calculados</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/08/21/precificar-operacoes-internacionais-mmn-moeda-local/" data-blog-image="imagens/posts/precificar-operacoes-internacionais-mmn-moeda-local.jpg" data-blog-slug="precificar-operacoes-internacionais-mmn-moeda-local" data-blog-date="2026-08-21">
-  <a href="../2026/08/21/precificar-operacoes-internacionais-mmn-moeda-local/">
-    <picture><source srcset="../imagens/posts/precificar-operacoes-internacionais-mmn-moeda-local.webp" type="image/webp" /><img src="../imagens/posts/precificar-operacoes-internacionais-mmn-moeda-local.jpg" alt="Como precificar operações internacionais em MMN com moeda local" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
-  </a>
+  <div class="relative" style="background:#040c1e url('../imagens/posts/fundos/precificar-operacoes-internacionais-mmn-moeda-local.webp') center/cover no-repeat">
+    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
+      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
+      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">21/08/2026</span>
+      <h2 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="../2026/08/21/precificar-operacoes-internacionais-mmn-moeda-local/" class="hover:underline">Como precificar operações internacionais em MMN com moeda local</a></h2>
+    </div>
+  </div>
   <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="../2026/08/21/precificar-operacoes-internacionais-mmn-moeda-local/" class="hover:underline">Como precificar operações internacionais em MMN com moeda local</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">A moeda local desempenha um papel crucial na precificação de produtos em vendas diretas internacionais. Ela influencia custos, margens e comissionamento.</p>
+    <p class="text-sm leading-relaxed text-white/80">A moeda local desempenha um papel crucial na precificação de produtos em vendas diretas internacionais. Ela influencia custos, margens e comissionamento.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/08/09/evitar-fraudes-commerce-alto-volume/" data-blog-image="imagens/posts/evitar-fraudes-commerce-alto-volume.jpg" data-blog-slug="evitar-fraudes-commerce-alto-volume" data-blog-date="2026-08-09">
-  <a href="../2026/08/09/evitar-fraudes-commerce-alto-volume/">
-    <picture><source srcset="../imagens/posts/evitar-fraudes-commerce-alto-volume.webp" type="image/webp" /><img src="../imagens/posts/evitar-fraudes-commerce-alto-volume.jpg" alt="Como evitar fraudes em e-commerce de alto volume" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
-  </a>
+  <div class="relative" style="background:#040c1e url('../imagens/posts/fundos/evitar-fraudes-commerce-alto-volume.webp') center/cover no-repeat">
+    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
+      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
+      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">09/08/2026</span>
+      <h2 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="../2026/08/09/evitar-fraudes-commerce-alto-volume/" class="hover:underline">Como evitar fraudes em e-commerce de alto volume</a></h2>
+    </div>
+  </div>
   <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="../2026/08/09/evitar-fraudes-commerce-alto-volume/" class="hover:underline">Como evitar fraudes em e-commerce de alto volume</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">A prevenção de fraudes em e-commerce de alto volume exige sistemas robustos de controle de clientes, automação via IA e integrações eficientes. A implementação</p>
+    <p class="text-sm leading-relaxed text-white/80">A prevenção de fraudes em e-commerce de alto volume exige sistemas robustos de controle de clientes, automação via IA e integrações eficientes. A implementação</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/08/02/levar-operacao-venda-direta-para-outro-pais/" data-blog-image="imagens/posts/levar-operacao-venda-direta-para-outro-pais.jpg" data-blog-slug="levar-operacao-venda-direta-para-outro-pais" data-blog-date="2026-08-02">
-  <a href="../2026/08/02/levar-operacao-venda-direta-para-outro-pais/">
-    <picture><source srcset="../imagens/posts/levar-operacao-venda-direta-para-outro-pais.webp" type="image/webp" /><img src="../imagens/posts/levar-operacao-venda-direta-para-outro-pais.jpg" alt="Levar a venda direta para outro país: o que muda no sistema" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
-  </a>
+  <div class="relative" style="background:#040c1e url('../imagens/posts/fundos/levar-operacao-venda-direta-para-outro-pais.webp') center/cover no-repeat">
+    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
+      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
+      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">02/08/2026</span>
+      <h2 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="../2026/08/02/levar-operacao-venda-direta-para-outro-pais/" class="hover:underline">Levar a venda direta para outro país: o que muda no sistema</a></h2>
+    </div>
+  </div>
   <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="../2026/08/02/levar-operacao-venda-direta-para-outro-pais/" class="hover:underline">Levar a venda direta para outro país: o que muda no sistema</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">O que muda no sistema quando a venda direta cruza a fronteira: idioma, moeda, documento fiscal, endereço e plano de comissões — com um case real no Paraguai.</p>
+    <p class="text-sm leading-relaxed text-white/80">O que muda no sistema quando a venda direta cruza a fronteira: idioma, moeda, documento fiscal, endereço e plano de comissões — com um case real no Paraguai.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/07/21/gestao-comissionamento-impacta-inadimplencia-mmn/" data-blog-image="imagens/posts/gestao-comissionamento-impacta-inadimplencia-mmn.jpg" data-blog-slug="gestao-comissionamento-impacta-inadimplencia-mmn" data-blog-date="2026-07-21">
-  <a href="../2026/07/21/gestao-comissionamento-impacta-inadimplencia-mmn/">
-    <picture><source srcset="../imagens/posts/gestao-comissionamento-impacta-inadimplencia-mmn.webp" type="image/webp" /><img src="../imagens/posts/gestao-comissionamento-impacta-inadimplencia-mmn.jpg" alt="Como a gestão de comissionamento impacta a inadimplência no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
-  </a>
+  <div class="relative" style="background:#040c1e url('../imagens/posts/fundos/gestao-comissionamento-impacta-inadimplencia-mmn.webp') center/cover no-repeat">
+    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
+      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
+      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">21/07/2026</span>
+      <h2 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="../2026/07/21/gestao-comissionamento-impacta-inadimplencia-mmn/" class="hover:underline">Como a gestão de comissionamento impacta a inadimplência no MMN</a></h2>
+    </div>
+  </div>
   <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="../2026/07/21/gestao-comissionamento-impacta-inadimplencia-mmn/" class="hover:underline">Como a gestão de comissionamento impacta a inadimplência no MMN</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Gerenciar a inadimplência no marketing multinível envolve um comissionamento claro e transparente. Utilize sistemas que integrem pagamento e logística, além de aplicar inteligência artificial para monitorar e prever comportamentos dos distribuidores.</p>
+    <p class="text-sm leading-relaxed text-white/80">Gerenciar a inadimplência no marketing multinível envolve um comissionamento claro e transparente. Utilize sistemas que integrem pagamento e logística, além de aplicar inteligência artificial para monitorar e prever comportamentos dos distribuidores.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/07/18/ia-pode-otimizar-suporte-distribuidor-mmn/" data-blog-image="imagens/posts/ia-pode-otimizar-suporte-distribuidor-mmn.jpg" data-blog-slug="ia-pode-otimizar-suporte-distribuidor-mmn" data-blog-date="2026-07-18">
-  <a href="../2026/07/18/ia-pode-otimizar-suporte-distribuidor-mmn/">
-    <picture><source srcset="../imagens/posts/ia-pode-otimizar-suporte-distribuidor-mmn.webp" type="image/webp" /><img src="../imagens/posts/ia-pode-otimizar-suporte-distribuidor-mmn.jpg" alt="Como a IA pode otimizar o suporte ao distribuidor no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
-  </a>
+  <div class="relative" style="background:#040c1e url('../imagens/posts/fundos/ia-pode-otimizar-suporte-distribuidor-mmn.webp') center/cover no-repeat">
+    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
+      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
+      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">18/07/2026</span>
+      <h2 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="../2026/07/18/ia-pode-otimizar-suporte-distribuidor-mmn/" class="hover:underline">Como a IA pode otimizar o suporte ao distribuidor no MMN</a></h2>
+    </div>
+  </div>
   <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="../2026/07/18/ia-pode-otimizar-suporte-distribuidor-mmn/" class="hover:underline">Como a IA pode otimizar o suporte ao distribuidor no MMN</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">A IA pode analisar dados em tempo real, automatizar processos e fornecer insights para otimizar a operação do distribuidor. Isso resulta em maior eficiência, melhor tomada de decisões e suporte mais ágil, essencial para o sucesso em vendas diretas e marketing multinível.</p>
+    <p class="text-sm leading-relaxed text-white/80">A IA pode analisar dados em tempo real, automatizar processos e fornecer insights para otimizar a operação do distribuidor. Isso resulta em maior eficiência, melhor tomada de decisões e suporte mais ágil, essencial para o sucesso em vendas diretas e marketing multinível.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/07/03/tecnologia-escalar-vendas-diretas-mmn/" data-blog-image="imagens/posts/tecnologia-escalar-vendas-diretas-mmn.jpg" data-blog-slug="tecnologia-escalar-vendas-diretas-mmn" data-blog-date="2026-07-03">
-  <a href="../2026/07/03/tecnologia-escalar-vendas-diretas-mmn/">
-    <picture><source srcset="../imagens/posts/tecnologia-escalar-vendas-diretas-mmn.webp" type="image/webp" /><img src="../imagens/posts/tecnologia-escalar-vendas-diretas-mmn.jpg" alt="Tecnologia para Escalar Vendas Diretas no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
-  </a>
+  <div class="relative" style="background:#040c1e url('../imagens/posts/fundos/tecnologia-escalar-vendas-diretas-mmn.webp') center/cover no-repeat">
+    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
+      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
+      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">03/07/2026</span>
+      <h2 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="../2026/07/03/tecnologia-escalar-vendas-diretas-mmn/" class="hover:underline">Tecnologia para Escalar Vendas Diretas no MMN</a></h2>
+    </div>
+  </div>
   <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="../2026/07/03/tecnologia-escalar-vendas-diretas-mmn/" class="hover:underline">Tecnologia para Escalar Vendas Diretas no MMN</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">A tecnologia, especialmente softwares especializados, integra processos de vendas, comissionamento e logística, otimizando a operação em marketing multinível. Isso resulta em maior eficiência, reduzindo erros e aumentando a previsibilidade das receitas.</p>
+    <p class="text-sm leading-relaxed text-white/80">A tecnologia, especialmente softwares especializados, integra processos de vendas, comissionamento e logística, otimizando a operação em marketing multinível. Isso resulta em maior eficiência, reduzindo erros e aumentando a previsibilidade das receitas.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/30/garantir-previsibilidade-receita-marketing-multinivel/" data-blog-image="imagens/posts/garantir-previsibilidade-receita-marketing-multinivel.jpg" data-blog-slug="garantir-previsibilidade-receita-marketing-multinivel" data-blog-date="2026-06-30">
-  <a href="../2026/06/30/garantir-previsibilidade-receita-marketing-multinivel/">
-    <picture><source srcset="../imagens/posts/garantir-previsibilidade-receita-marketing-multinivel.webp" type="image/webp" /><img src="../imagens/posts/garantir-previsibilidade-receita-marketing-multinivel.jpg" alt="Como garantir previsibilidade de receita no marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
-  </a>
+  <div class="relative" style="background:#040c1e url('../imagens/posts/fundos/garantir-previsibilidade-receita-marketing-multinivel.webp') center/cover no-repeat">
+    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
+      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
+      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">30/06/2026</span>
+      <h2 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="../2026/06/30/garantir-previsibilidade-receita-marketing-multinivel/" class="hover:underline">Como garantir previsibilidade de receita no marketing multinível</a></h2>
+    </div>
+  </div>
   <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="../2026/06/30/garantir-previsibilidade-receita-marketing-multinivel/" class="hover:underline">Como garantir previsibilidade de receita no marketing multinível</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Para garantir previsibilidade de receita no marketing multinível, é essencial implementar um CRM que integre dados de vendas, comissionamento e comportamento dos distribuidores. Isso permite análises precisas e projeções financeiras confiáveis.</p>
+    <p class="text-sm leading-relaxed text-white/80">Para garantir previsibilidade de receita no marketing multinível, é essencial implementar um CRM que integre dados de vendas, comissionamento e comportamento dos distribuidores. Isso permite análises precisas e projeções financeiras confiáveis.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/24/integracoes-pagamento-logistica-impactam-mmn/" data-blog-image="imagens/posts/integracoes-pagamento-logistica-impactam-mmn.jpg" data-blog-slug="integracoes-pagamento-logistica-impactam-mmn" data-blog-date="2026-06-24">
-  <a href="../2026/06/24/integracoes-pagamento-logistica-impactam-mmn/">
-    <picture><source srcset="../imagens/posts/integracoes-pagamento-logistica-impactam-mmn.webp" type="image/webp" /><img src="../imagens/posts/integracoes-pagamento-logistica-impactam-mmn.jpg" alt="Como as integrações de pagamento e logística impactam o MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
-  </a>
+  <div class="relative" style="background:#040c1e url('../imagens/posts/fundos/integracoes-pagamento-logistica-impactam-mmn.webp') center/cover no-repeat">
+    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
+      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
+      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">24/06/2026</span>
+      <h2 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="../2026/06/24/integracoes-pagamento-logistica-impactam-mmn/" class="hover:underline">Como as integrações de pagamento e logística impactam o MMN</a></h2>
+    </div>
+  </div>
   <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="../2026/06/24/integracoes-pagamento-logistica-impactam-mmn/" class="hover:underline">Como as integrações de pagamento e logística impactam o MMN</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">As integrações de pagamento e logística no marketing multinível (MMN) aprimoram a eficiência operacional, facilitam a gestão de comissionamento e melhoram a experiência do distribuidor. Isso resulta em maior previsibilidade e controle sobre as transações comerciais.</p>
+    <p class="text-sm leading-relaxed text-white/80">As integrações de pagamento e logística no marketing multinível (MMN) aprimoram a eficiência operacional, facilitam a gestão de comissionamento e melhoram a experiência do distribuidor. Isso resulta em maior previsibilidade e controle sobre as transações comerciais.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/06/15/construindo-plano-carreira-marketing-multinivel/" data-blog-image="imagens/posts/construindo-plano-carreira-marketing-multinivel.jpg" data-blog-slug="construindo-plano-carreira-marketing-multinivel" data-blog-date="2026-06-15">
-  <a href="../2026/06/15/construindo-plano-carreira-marketing-multinivel/">
-    <picture><source srcset="../imagens/posts/construindo-plano-carreira-marketing-multinivel.webp" type="image/webp" /><img src="../imagens/posts/construindo-plano-carreira-marketing-multinivel.jpg" alt="Construindo um plano de carreira em marketing multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
-  </a>
+  <div class="relative" style="background:#040c1e url('../imagens/posts/fundos/construindo-plano-carreira-marketing-multinivel.webp') center/cover no-repeat">
+    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
+      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
+      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">15/06/2026</span>
+      <h2 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="../2026/06/15/construindo-plano-carreira-marketing-multinivel/" class="hover:underline">Construindo um plano de carreira em marketing multinível</a></h2>
+    </div>
+  </div>
   <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="../2026/06/15/construindo-plano-carreira-marketing-multinivel/" class="hover:underline">Construindo um plano de carreira em marketing multinível</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Para desenvolver um plano de carreira em marketing multinível, é essencial definir metas claras, entender as etapas de crescimento e alinhar os objetivos com um sistema de comissionamento eficiente. A tecnologia pode otimizar esse processo, oferecendo suporte e previsibilidade.</p>
+    <p class="text-sm leading-relaxed text-white/80">Para desenvolver um plano de carreira em marketing multinível, é essencial definir metas claras, entender as etapas de crescimento e alinhar os objetivos com um sistema de comissionamento eficiente. A tecnologia pode otimizar esse processo, oferecendo suporte e previsibilidade.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/05/03/crm-pode-potencializar-governanca-comercial/" data-blog-image="imagens/posts/crm-pode-potencializar-governanca-comercial.jpg" data-blog-slug="crm-pode-potencializar-governanca-comercial" data-blog-date="2026-05-03">
-  <a href="../2026/05/03/crm-pode-potencializar-governanca-comercial/">
-    <picture><source srcset="../imagens/posts/crm-pode-potencializar-governanca-comercial.webp" type="image/webp" /><img src="../imagens/posts/crm-pode-potencializar-governanca-comercial.jpg" alt="Como um CRM pode potencializar sua governança comercial" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
-  </a>
+  <div class="relative" style="background:#040c1e url('../imagens/posts/fundos/crm-pode-potencializar-governanca-comercial.webp') center/cover no-repeat">
+    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
+      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
+      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">03/05/2026</span>
+      <h2 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="../2026/05/03/crm-pode-potencializar-governanca-comercial/" class="hover:underline">Como um CRM pode potencializar sua governança comercial</a></h2>
+    </div>
+  </div>
   <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="../2026/05/03/crm-pode-potencializar-governanca-comercial/" class="hover:underline">Como um CRM pode potencializar sua governança comercial</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">A governança comercial pode ser aprimorada por meio de um CRM que integra inteligência artificial, permitindo análises de dados em tempo real, automação de processos e melhor acompanhamento de desempenho, resultando em decisões mais informadas e previsíveis.</p>
+    <p class="text-sm leading-relaxed text-white/80">A governança comercial pode ser aprimorada por meio de um CRM que integra inteligência artificial, permitindo análises de dados em tempo real, automação de processos e melhor acompanhamento de desempenho, resultando em decisões mais informadas e previsíveis.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="2026/04/30/crm-automacao-marketing-multinivel/" data-blog-image="imagens/posts/crm-automacao-marketing-multinivel.jpg" data-blog-slug="crm-automacao-marketing-multinivel" data-blog-date="2026-04-30">
-  <a href="../2026/04/30/crm-automacao-marketing-multinivel/">
-    <picture><source srcset="../imagens/posts/crm-automacao-marketing-multinivel.webp" type="image/webp" /><img src="../imagens/posts/crm-automacao-marketing-multinivel.jpg" alt="CRM e Automação para Marketing Multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></picture>
-  </a>
+  <div class="relative" style="background:#040c1e url('../imagens/posts/fundos/crm-automacao-marketing-multinivel.webp') center/cover no-repeat">
+    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
+      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
+      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">30/04/2026</span>
+      <h2 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="../2026/04/30/crm-automacao-marketing-multinivel/" class="hover:underline">CRM e Automação para Marketing Multinível</a></h2>
+    </div>
+  </div>
   <div class="p-4">
-    <h2 class="text-base font-semibold leading-snug"><a href="../2026/04/30/crm-automacao-marketing-multinivel/" class="hover:underline">CRM e Automação para Marketing Multinível</a></h2>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">O CRM e a automação são essenciais no marketing multinível, pois aumentam a eficiência das operações e melhoram a gestão do relacionamento com distribuidores. Com um sistema de vendas diretas eficaz, é possível monitorar resultados e definir estratégias precisas.</p>
+    <p class="text-sm leading-relaxed text-white/80">O CRM e a automação são essenciais no marketing multinível, pois aumentam a eficiência das operações e melhoram a gestão do relacionamento com distribuidores. Com um sistema de vendas diretas eficaz, é possível monitorar resultados e definir estratégias precisas.</p>
   </div>
 </article>
 <!-- BLOG-INDEX-CARDS:END -->

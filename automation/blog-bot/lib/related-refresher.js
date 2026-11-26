@@ -150,7 +150,7 @@ function ensureCrossSiteSection(content, sectionHtml) {
   return `${content.slice(0, mainCloseIndex)}${sectionHtml}\n${content.slice(mainCloseIndex)}`;
 }
 
-function refreshPostContent({ content, currentSite, currentPostPath, currentTitle, currentText, index }) {
+function refreshPostContent({ content, currentSite, currentPostPath, currentTitle, currentText, index, siteRootAbs }) {
   const sameCards = pickSameSiteRelated({
     currentSiteId: currentSite.id,
     currentPostPath,
@@ -173,7 +173,8 @@ function refreshPostContent({ content, currentSite, currentPostPath, currentTitl
   const focusLabel = inferFocusLabel(currentTitle, currentText);
   const sameSection = renderSameSiteSection(sameCards, sitePathPrefix, blogHref, {
     currentSiteId: currentSite.id,
-    focusLabel
+    focusLabel,
+    siteRootAbs
   });
   const crossSection = renderCrossSiteSection(crossCards, { currentSiteId: currentSite.id });
 
@@ -188,7 +189,9 @@ function refreshPostContent({ content, currentSite, currentPostPath, currentTitl
   };
 }
 
-function refreshAllPosts(rootDir, sitesConfig) {
+// opcoes.soSites: reescreve so os posts desses sites (o indice cruzado continua
+// usando todos). Existe pra mudar o desenho de um site sem mexer nos outros.
+function refreshAllPosts(rootDir, sitesConfig, opcoes = {}) {
   const index = buildCrossSiteIndex(rootDir, sitesConfig);
   const files = listPostFiles(rootDir, sitesConfig);
   const sitesById = Object.fromEntries(sitesConfig.sites.map((s) => [s.id, s]));
@@ -200,6 +203,7 @@ function refreshAllPosts(rootDir, sitesConfig) {
   for (const { siteId, filePath } of files) {
     const site = sitesById[siteId];
     if (!site) continue;
+    if (opcoes.soSites && !opcoes.soSites.includes(siteId)) continue;
 
     try {
       const content = fs.readFileSync(filePath, "utf8");
@@ -214,7 +218,8 @@ function refreshAllPosts(rootDir, sitesConfig) {
         currentPostPath,
         currentTitle,
         currentText,
-        index
+        index,
+        siteRootAbs: siteRoot
       });
 
       if (result.content !== content) {

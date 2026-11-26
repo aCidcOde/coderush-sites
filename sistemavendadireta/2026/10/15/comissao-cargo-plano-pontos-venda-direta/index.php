@@ -232,24 +232,39 @@
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/09/22/diferenca-venda-direta-marketing-multinivel/"><img src="../../../../imagens/posts/diferenca-venda-direta-marketing-multinivel.jpg" alt="Diferença entre Venda Direta e Marketing Multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="relative" style="background:#040c1e url('../../../../imagens/posts/fundos/diferenca-venda-direta-marketing-multinivel.webp') center/cover no-repeat">
+    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
+      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
+      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">22/09/2026</span>
+      <h3 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="../../../../2026/09/22/diferenca-venda-direta-marketing-multinivel/" class="hover:underline">Diferença entre Venda Direta e Marketing Multinível</a></h3>
+    </div>
+  </div>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/09/22/diferenca-venda-direta-marketing-multinivel/" class="hover:underline">Diferença entre Venda Direta e Marketing Multinível</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Venda direta se concentra na comercialização de produtos diretamente ao consumidor, enquanto o marketing multinível envolve a construção de uma rede</p>
+    <p class="text-sm leading-relaxed text-white/80">Venda direta se concentra na comercialização de produtos diretamente ao consumidor, enquanto o marketing multinível envolve a construção de uma rede</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/08/02/levar-operacao-venda-direta-para-outro-pais/"><img src="../../../../imagens/posts/levar-operacao-venda-direta-para-outro-pais.jpg" alt="Levar a venda direta para outro país: o que muda no sistema" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="relative" style="background:#040c1e url('../../../../imagens/posts/fundos/levar-operacao-venda-direta-para-outro-pais.webp') center/cover no-repeat">
+    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
+      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
+      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">02/08/2026</span>
+      <h3 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="../../../../2026/08/02/levar-operacao-venda-direta-para-outro-pais/" class="hover:underline">Levar a venda direta para outro país: o que muda no sistema</a></h3>
+    </div>
+  </div>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/08/02/levar-operacao-venda-direta-para-outro-pais/" class="hover:underline">Levar a venda direta para outro país: o que muda no sistema</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">O que muda no sistema quando a venda direta cruza a fronteira: idioma, moeda, documento fiscal, endereço e plano de comissões — com um case real no Paraguai.</p>
+    <p class="text-sm leading-relaxed text-white/80">O que muda no sistema quando a venda direta cruza a fronteira: idioma, moeda, documento fiscal, endereço e plano de comissões — com um case real no Paraguai.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/11/22/integrar-sistemas-venda-direta-erp-fiscal/"><img src="../../../../imagens/posts/integrar-sistemas-venda-direta-erp-fiscal.jpg" alt="Como integrar sistemas de venda direta com ERP fiscal?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="relative" style="background:#040c1e url('../../../../imagens/posts/fundos/integrar-sistemas-venda-direta-erp-fiscal.webp') center/cover no-repeat">
+    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
+      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
+      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">22/11/2026</span>
+      <h3 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="../../../../2026/11/22/integrar-sistemas-venda-direta-erp-fiscal/" class="hover:underline">Como integrar sistemas de venda direta com ERP fiscal?</a></h3>
+    </div>
+  </div>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/11/22/integrar-sistemas-venda-direta-erp-fiscal/" class="hover:underline">Como integrar sistemas de venda direta com ERP fiscal?</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como integrar seu sistema de venda direta com ERPs como TOTVS e Bling para otimizar processos fiscais.</p>
+    <p class="text-sm leading-relaxed text-white/80">Entenda como integrar seu sistema de venda direta com ERPs como TOTVS e Bling para otimizar processos fiscais.</p>
   </div>
 </article>
   </div>
@@ -264,27 +279,39 @@
   <p class="mt-2 text-sm text-white/70">Conteúdo recente dos outros sites do ecossistema.</p>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://bfrintelligence.com.br/2026/09/22/orquestracao-multiplos-agentes-ia-governanca/" rel="noopener" target="_blank"><img src="https://bfrintelligence.com.br/imagens/posts/orquestracao-multiplos-agentes-ia-governanca.jpg" alt="Orquestração de Múltiplos Agentes de IA na Governança" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="relative" style="background:linear-gradient(135deg,#0b3a8a 0%,#040c1e 100%)">
+    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
+      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
+      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">BFR Intelligence</span>
+      <h3 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="https://bfrintelligence.com.br/2026/09/22/orquestracao-multiplos-agentes-ia-governanca/" rel="noopener" target="_blank" class="hover:underline">Orquestração de Múltiplos Agentes de IA na Governança</a></h3>
+    </div>
+  </div>
   <div class="p-4">
-    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">BFR Intelligence</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://bfrintelligence.com.br/2026/09/22/orquestracao-multiplos-agentes-ia-governanca/" rel="noopener" target="_blank" class="hover:underline">Orquestração de Múltiplos Agentes de IA na Governança</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Orquestrar múltiplos agentes de IA exige integração com sistemas internos, governança eficiente e monitoramento contínuo. É fundamental g...</p>
+    <p class="text-sm leading-relaxed text-white/80">Orquestrar múltiplos agentes de IA exige integração com sistemas internos, governança eficiente e monitoramento contínuo. É fundamental g...</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://coderush.com.br/2026/07/30/arquitetura-software-operacoes-criticas-empresas-medias/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/arquitetura-software-operacoes-criticas-empresas-medias.jpg" alt="Arquitetura de software para operações críticas em empresas médias" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="relative" style="background:linear-gradient(135deg,#0b3a8a 0%,#040c1e 100%)">
+    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
+      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
+      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">CodeRush</span>
+      <h3 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="https://coderush.com.br/2026/07/30/arquitetura-software-operacoes-criticas-empresas-medias/" rel="noopener" target="_blank" class="hover:underline">Arquitetura de software para operações críticas em empresas médias</a></h3>
+    </div>
+  </div>
   <div class="p-4">
-    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">CodeRush</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/07/30/arquitetura-software-operacoes-criticas-empresas-medias/" rel="noopener" target="_blank" class="hover:underline">Arquitetura de software para operações críticas em empresas médias</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como implementar uma arquitetura de software eficiente para operações críticas.</p>
+    <p class="text-sm leading-relaxed text-white/80">Entenda como implementar uma arquitetura de software eficiente para operações críticas.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://codafacil.dev/2026/07/30/integrar-testes-automatizados-desenvolvimento-software-sob-medida/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/integrar-testes-automatizados-desenvolvimento-software-sob-medida.jpg" alt="Como integrar testes automatizados no desenvolvimento de software sob medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="relative" style="background:linear-gradient(135deg,#0b3a8a 0%,#040c1e 100%)">
+    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
+      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
+      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">Codafacil.dev</span>
+      <h3 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="https://codafacil.dev/2026/07/30/integrar-testes-automatizados-desenvolvimento-software-sob-medida/" rel="noopener" target="_blank" class="hover:underline">Como integrar testes automatizados no desenvolvimento de software sob medida</a></h3>
+    </div>
+  </div>
   <div class="p-4">
-    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/07/30/integrar-testes-automatizados-desenvolvimento-software-sob-medida/" rel="noopener" target="_blank" class="hover:underline">Como integrar testes automatizados no desenvolvimento de software sob medida</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda a importância dos testes automatizados na entrega de software com qualidade e agilidade.</p>
+    <p class="text-sm leading-relaxed text-white/80">Entenda a importância dos testes automatizados na entrega de software com qualidade e agilidade.</p>
   </div>
 </article>
   </div>

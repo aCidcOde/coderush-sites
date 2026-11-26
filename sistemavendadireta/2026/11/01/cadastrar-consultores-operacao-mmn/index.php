@@ -232,24 +232,39 @@
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/07/21/gestao-comissionamento-impacta-inadimplencia-mmn/"><img src="../../../../imagens/posts/gestao-comissionamento-impacta-inadimplencia-mmn.jpg" alt="Como a gestão de comissionamento impacta a inadimplência no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="relative" style="background:#040c1e url('../../../../imagens/posts/fundos/gestao-comissionamento-impacta-inadimplencia-mmn.webp') center/cover no-repeat">
+    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
+      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
+      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">21/07/2026</span>
+      <h3 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="../../../../2026/07/21/gestao-comissionamento-impacta-inadimplencia-mmn/" class="hover:underline">Como a gestão de comissionamento impacta a inadimplência no MMN</a></h3>
+    </div>
+  </div>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/07/21/gestao-comissionamento-impacta-inadimplencia-mmn/" class="hover:underline">Como a gestão de comissionamento impacta a inadimplência no MMN</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Gerenciar a inadimplência no marketing multinível envolve um comissionamento claro e transparente. Utilize sistemas que integrem pagamento e logística, além...</p>
+    <p class="text-sm leading-relaxed text-white/80">Gerenciar a inadimplência no marketing multinível envolve um comissionamento claro e transparente. Utilize sistemas que integrem pagamento e logística, além...</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/07/03/tecnologia-escalar-vendas-diretas-mmn/"><img src="../../../../imagens/posts/tecnologia-escalar-vendas-diretas-mmn.jpg" alt="Tecnologia para Escalar Vendas Diretas no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="relative" style="background:#040c1e url('../../../../imagens/posts/fundos/tecnologia-escalar-vendas-diretas-mmn.webp') center/cover no-repeat">
+    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
+      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
+      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">03/07/2026</span>
+      <h3 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="../../../../2026/07/03/tecnologia-escalar-vendas-diretas-mmn/" class="hover:underline">Tecnologia para Escalar Vendas Diretas no MMN</a></h3>
+    </div>
+  </div>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/07/03/tecnologia-escalar-vendas-diretas-mmn/" class="hover:underline">Tecnologia para Escalar Vendas Diretas no MMN</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">A tecnologia, especialmente softwares especializados, integra processos de vendas, comissionamento e logística, otimizando a operação em marketing multinível...</p>
+    <p class="text-sm leading-relaxed text-white/80">A tecnologia, especialmente softwares especializados, integra processos de vendas, comissionamento e logística, otimizando a operação em marketing multinível...</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/06/24/integracoes-pagamento-logistica-impactam-mmn/"><img src="../../../../imagens/posts/integracoes-pagamento-logistica-impactam-mmn.jpg" alt="Como as integrações de pagamento e logística impactam o MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="relative" style="background:#040c1e url('../../../../imagens/posts/fundos/integracoes-pagamento-logistica-impactam-mmn.webp') center/cover no-repeat">
+    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
+      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
+      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">24/06/2026</span>
+      <h3 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="../../../../2026/06/24/integracoes-pagamento-logistica-impactam-mmn/" class="hover:underline">Como as integrações de pagamento e logística impactam o MMN</a></h3>
+    </div>
+  </div>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/06/24/integracoes-pagamento-logistica-impactam-mmn/" class="hover:underline">Como as integrações de pagamento e logística impactam o MMN</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">As integrações de pagamento e logística no marketing multinível (MMN) aprimoram a eficiência operacional, facilitam a gestão de comissionamento e melhoram a...</p>
+    <p class="text-sm leading-relaxed text-white/80">As integrações de pagamento e logística no marketing multinível (MMN) aprimoram a eficiência operacional, facilitam a gestão de comissionamento e melhoram a...</p>
   </div>
 </article>
   </div>
@@ -264,27 +279,39 @@
   <p class="mt-2 text-sm text-white/70">Conteúdo recente dos outros sites do ecossistema.</p>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://bfrintelligence.com.br/2026/09/22/orquestracao-multiplos-agentes-ia-governanca/" rel="noopener" target="_blank"><img src="https://bfrintelligence.com.br/imagens/posts/orquestracao-multiplos-agentes-ia-governanca.jpg" alt="Orquestração de Múltiplos Agentes de IA na Governança" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="relative" style="background:linear-gradient(135deg,#0b3a8a 0%,#040c1e 100%)">
+    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
+      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
+      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">BFR Intelligence</span>
+      <h3 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="https://bfrintelligence.com.br/2026/09/22/orquestracao-multiplos-agentes-ia-governanca/" rel="noopener" target="_blank" class="hover:underline">Orquestração de Múltiplos Agentes de IA na Governança</a></h3>
+    </div>
+  </div>
   <div class="p-4">
-    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">BFR Intelligence</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://bfrintelligence.com.br/2026/09/22/orquestracao-multiplos-agentes-ia-governanca/" rel="noopener" target="_blank" class="hover:underline">Orquestração de Múltiplos Agentes de IA na Governança</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Orquestrar múltiplos agentes de IA exige integração com sistemas internos, governança eficiente e monitoramento contínuo. É fundamental g...</p>
+    <p class="text-sm leading-relaxed text-white/80">Orquestrar múltiplos agentes de IA exige integração com sistemas internos, governança eficiente e monitoramento contínuo. É fundamental g...</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://coderush.com.br/2026/07/15/decisoes-tecnicas-substituicao-sistemas-legados/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/decisoes-tecnicas-substituicao-sistemas-legados.jpg" alt="Decisões Técnicas na Substituição de Sistemas Legados" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="relative" style="background:linear-gradient(135deg,#0b3a8a 0%,#040c1e 100%)">
+    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
+      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
+      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">CodeRush</span>
+      <h3 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="https://coderush.com.br/2026/07/15/decisoes-tecnicas-substituicao-sistemas-legados/" rel="noopener" target="_blank" class="hover:underline">Decisões Técnicas na Substituição de Sistemas Legados</a></h3>
+    </div>
+  </div>
   <div class="p-4">
-    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">CodeRush</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/07/15/decisoes-tecnicas-substituicao-sistemas-legados/" rel="noopener" target="_blank" class="hover:underline">Decisões Técnicas na Substituição de Sistemas Legados</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda os riscos e como tomar decisões informadas na substituição de sistemas legados.</p>
+    <p class="text-sm leading-relaxed text-white/80">Entenda os riscos e como tomar decisões informadas na substituição de sistemas legados.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://codafacil.dev/2026/06/27/melhore-escalabilidade-qualidade-sistemas-sob-medida/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/melhore-escalabilidade-qualidade-sistemas-sob-medida.jpg" alt="Melhore a Escalabilidade e Qualidade de Sistemas Sob Medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="relative" style="background:linear-gradient(135deg,#0b3a8a 0%,#040c1e 100%)">
+    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
+      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
+      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">Codafacil.dev</span>
+      <h3 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="https://codafacil.dev/2026/06/27/melhore-escalabilidade-qualidade-sistemas-sob-medida/" rel="noopener" target="_blank" class="hover:underline">Melhore a Escalabilidade e Qualidade de Sistemas Sob Medida</a></h3>
+    </div>
+  </div>
   <div class="p-4">
-    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/06/27/melhore-escalabilidade-qualidade-sistemas-sob-medida/" rel="noopener" target="_blank" class="hover:underline">Melhore a Escalabilidade e Qualidade de Sistemas Sob Medida</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como otimizar a escalabilidade e a qualidade de código em projetos de software sob medida com IA.</p>
+    <p class="text-sm leading-relaxed text-white/80">Entenda como otimizar a escalabilidade e a qualidade de código em projetos de software sob medida com IA.</p>
   </div>
 </article>
   </div>

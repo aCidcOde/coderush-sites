@@ -4,6 +4,7 @@ const { spawnSync } = require("node:child_process");
 const { siteProfile } = require("./site-strategy");
 const { generateCover: agentGenerateCover } = require("./cover-agent");
 const { inserirTelas } = require("./telas-produto");
+const { topoDoCard, fundoDoPost } = require("./card-topo");
 
 const HOME_MARKERS = {
   start: "<!-- BLOG-HOME-CARDS:START -->",
@@ -431,10 +432,27 @@ function renderCard(card, context, siteRootAbs) {
   const imageSrc = `${prefix}${card.imagePath}`;
   const headingTag = context === "post-related" ? "h3" : "h2";
 
+  const abertura = `<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="${esc(
+    card.postPath
+  )}" data-blog-image="${esc(card.imagePath)}" data-blog-slug="${esc(card.slug)}" data-blog-date="${esc(card.date)}">`;
+
+  // 26/11/2026: com fundo gerado no disco, o card repete o topo do post (titulo
+  // uma vez so, sobre o fundo) — ver lib/card-topo.js. Sem fundo, segue o card
+  // antigo com a capa.
+  const fundoSrc = fundoDoPost(card.slug, prefix, siteRootAbs);
+  if (fundoSrc) {
+    return [
+      abertura,
+      topoDoCard({ href, title: card.title, dateIso: card.date, fundoSrc, headingTag }),
+      '  <div class="p-4">',
+      `    <p class="text-sm leading-relaxed text-white/80">${esc(card.excerpt)}</p>`,
+      "  </div>",
+      "</article>"
+    ].join("\n");
+  }
+
   return [
-    `<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5" data-blog-path="${esc(
-      card.postPath
-    )}" data-blog-image="${esc(card.imagePath)}" data-blog-slug="${esc(card.slug)}" data-blog-date="${esc(card.date)}">`,
+    abertura,
     `  <a href="${href}">`,
     `    ${imagemComWebp(imageSrc, esc(card.title), siteRootAbs, card.imagePath)}`,
     "  </a>",
@@ -1608,6 +1626,8 @@ module.exports = {
   // nao reescreve o XML ate a proxima rodada do bot
   updateSitemap,
   readCardsFromFile,
+  // exportado pra re-renderizar os cards ja publicados quando o desenho muda (scripts/cards-sem-capa.js)
+  updateCardsInFile,
   HOME_MARKERS,
   INDEX_MARKERS,
   publishSitePost,

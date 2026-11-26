@@ -1,4 +1,5 @@
 const path = require("node:path");
+const { topoDoCard, fundoDoPost } = require("./card-topo");
 
 const SAME_SITE_MARKERS = {
   start: "<!-- BLOG-LEIA-TAMBEM START -->",
@@ -37,7 +38,7 @@ function siteRelativePostPath(url, baseUrl) {
   return "";
 }
 
-function renderSameSiteCard(card, sitePathPrefix) {
+function renderSameSiteCard(card, sitePathPrefix, siteRootAbs) {
   const postPath = siteRelativePostPath(card.url, card.baseUrl);
   const imagePath = imagePathFromUrl(card.imageUrl);
   if (!postPath) return "";
@@ -45,6 +46,19 @@ function renderSameSiteCard(card, sitePathPrefix) {
   const imageSrc = imagePath ? `${sitePathPrefix}${imagePath}` : "";
   const title = escapeHtml(card.title);
   const excerpt = escapeHtml(truncate(card.excerpt, 160));
+  // 26/11/2026: mesmo topo do post (lib/card-topo.js) quando o fundo existe
+  const partes = postPath.match(/^(\d{4})\/(\d{2})\/(\d{2})\/([^/]+)\//);
+  const fundoSrc = partes ? fundoDoPost(partes[4], sitePathPrefix, siteRootAbs) : null;
+  if (fundoSrc) {
+    return [
+      `<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">`,
+      topoDoCard({ href, title: card.title, dateIso: `${partes[1]}-${partes[2]}-${partes[3]}`, fundoSrc, headingTag: "h3" }),
+      excerpt ? `  <div class="p-4">\n    <p class="text-sm leading-relaxed text-white/80">${excerpt}</p>\n  </div>` : "",
+      "</article>"
+    ]
+      .filter(Boolean)
+      .join("\n");
+  }
   return [
     `<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">`,
     imageSrc
@@ -60,13 +74,25 @@ function renderSameSiteCard(card, sitePathPrefix) {
     .join("\n");
 }
 
-function renderCrossSiteCard(card) {
+function renderCrossSiteCard(card, semCapa = false) {
   if (!card?.url) return "";
   const title = escapeHtml(card.title);
   const excerpt = escapeHtml(truncate(card.excerpt, 140));
   const siteName = escapeHtml(card.siteName);
   const url = escapeHtml(card.url);
   const imageUrl = escapeHtml(card.imageUrl || "");
+  // 26/11/2026: nos posts do SVD o card de outro site segue o desenho novo (topo
+  // em degrade, nome do site e titulo, sem a capa) — os outros sites nao mudam
+  if (semCapa) {
+    return [
+      `<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">`,
+      topoDoCard({ href: url, title: card.title, rotulo: card.siteName, fundoSrc: null, headingTag: "h3", linkAttrs: ' rel="noopener" target="_blank"' }),
+      excerpt ? `  <div class="p-4">\n    <p class="text-sm leading-relaxed text-white/80">${excerpt}</p>\n  </div>` : "",
+      "</article>"
+    ]
+      .filter(Boolean)
+      .join("\n");
+  }
   return [
     `<article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">`,
     imageUrl
@@ -121,7 +147,7 @@ function renderSameSiteSection(cards, sitePathPrefix, blogIndexHref, options = {
     `    <a href="${blogIndexHref}" class="text-sm font-semibold text-white/85 hover:text-white">${anchorText}</a>`,
     "  </div>",
     '  <div class="mt-5 grid gap-4 md:grid-cols-3">',
-    cards.map((card) => renderSameSiteCard(card, sitePathPrefix)).filter(Boolean).join("\n"),
+    cards.map((card) => renderSameSiteCard(card, sitePathPrefix, options.siteRootAbs)).filter(Boolean).join("\n"),
     "  </div>",
     "</section>",
     SAME_SITE_MARKERS.end
@@ -144,7 +170,7 @@ function renderCrossSiteSection(cards, options = {}) {
     "  </div>",
     '  <p class="mt-2 text-sm text-white/70">Conteúdo recente dos outros sites do ecossistema.</p>',
     '  <div class="mt-5 grid gap-4 md:grid-cols-3">',
-    cards.map(renderCrossSiteCard).filter(Boolean).join("\n"),
+    cards.map((card) => renderCrossSiteCard(card, options.currentSiteId === "sistemavendadireta")).filter(Boolean).join("\n"),
     "  </div>",
     "</section>",
     CROSS_SITE_MARKERS.end

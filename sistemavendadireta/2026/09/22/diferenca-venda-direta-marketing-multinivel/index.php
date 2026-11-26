@@ -226,24 +226,39 @@
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/11/08/vender-diretamente-consumidor-final-mmn/"><img src="../../../../imagens/posts/vender-diretamente-consumidor-final-mmn.jpg" alt="Como vender diretamente para o consumidor final com MMN?" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="relative" style="background:#040c1e url('../../../../imagens/posts/fundos/vender-diretamente-consumidor-final-mmn.webp') center/cover no-repeat">
+    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
+      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
+      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">08/11/2026</span>
+      <h3 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="../../../../2026/11/08/vender-diretamente-consumidor-final-mmn/" class="hover:underline">Como vender diretamente para o consumidor final com MMN?</a></h3>
+    </div>
+  </div>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/11/08/vender-diretamente-consumidor-final-mmn/" class="hover:underline">Como vender diretamente para o consumidor final com MMN?</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como o marketing multinível pode impulsionar suas vendas diretas ao consumidor final.</p>
+    <p class="text-sm leading-relaxed text-white/80">Entenda como o marketing multinível pode impulsionar suas vendas diretas ao consumidor final.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/11/15/marketing-rede-brasil-regulamentacao-oportunidades/"><img src="../../../../imagens/posts/marketing-rede-brasil-regulamentacao-oportunidades.jpg" alt="Marketing de rede no Brasil: regulamentação e oportunidades" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="relative" style="background:#040c1e url('../../../../imagens/posts/fundos/marketing-rede-brasil-regulamentacao-oportunidades.webp') center/cover no-repeat">
+    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
+      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
+      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">15/11/2026</span>
+      <h3 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="../../../../2026/11/15/marketing-rede-brasil-regulamentacao-oportunidades/" class="hover:underline">Marketing de rede no Brasil: regulamentação e oportunidades</a></h3>
+    </div>
+  </div>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/11/15/marketing-rede-brasil-regulamentacao-oportunidades/" class="hover:underline">Marketing de rede no Brasil: regulamentação e oportunidades</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda o cenário do marketing multinível no Brasil e as possibilidades de internacionalização.</p>
+    <p class="text-sm leading-relaxed text-white/80">Entenda o cenário do marketing multinível no Brasil e as possibilidades de internacionalização.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/07/21/gestao-comissionamento-impacta-inadimplencia-mmn/"><img src="../../../../imagens/posts/gestao-comissionamento-impacta-inadimplencia-mmn.jpg" alt="Como a gestão de comissionamento impacta a inadimplência no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="relative" style="background:#040c1e url('../../../../imagens/posts/fundos/gestao-comissionamento-impacta-inadimplencia-mmn.webp') center/cover no-repeat">
+    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
+      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
+      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">21/07/2026</span>
+      <h3 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="../../../../2026/07/21/gestao-comissionamento-impacta-inadimplencia-mmn/" class="hover:underline">Como a gestão de comissionamento impacta a inadimplência no MMN</a></h3>
+    </div>
+  </div>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/07/21/gestao-comissionamento-impacta-inadimplencia-mmn/" class="hover:underline">Como a gestão de comissionamento impacta a inadimplência no MMN</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Gerenciar a inadimplência no marketing multinível envolve um comissionamento claro e transparente. Utilize sistemas que integrem pagamento e logística, além...</p>
+    <p class="text-sm leading-relaxed text-white/80">Gerenciar a inadimplência no marketing multinível envolve um comissionamento claro e transparente. Utilize sistemas que integrem pagamento e logística, além...</p>
   </div>
 </article>
   </div>
@@ -258,27 +273,39 @@
   <p class="mt-2 text-sm text-white/70">Conteúdo recente dos outros sites do ecossistema.</p>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://codafacil.dev/2026/06/24/gerenciar-divida-tecnica-melhorar-dx-software/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/gerenciar-divida-tecnica-melhorar-dx-software.jpg" alt="Como gerenciar dívida técnica para melhorar a DX em software" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="relative" style="background:linear-gradient(135deg,#0b3a8a 0%,#040c1e 100%)">
+    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
+      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
+      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">Codafacil.dev</span>
+      <h3 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="https://codafacil.dev/2026/06/24/gerenciar-divida-tecnica-melhorar-dx-software/" rel="noopener" target="_blank" class="hover:underline">Como gerenciar dívida técnica para melhorar a DX em software</a></h3>
+    </div>
+  </div>
   <div class="p-4">
-    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/06/24/gerenciar-divida-tecnica-melhorar-dx-software/" rel="noopener" target="_blank" class="hover:underline">Como gerenciar dívida técnica para melhorar a DX em software</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Explore estratégias práticas para gerenciar dívida técnica e aprimorar a experiência do desenvolvedor em produtos digitais.</p>
+    <p class="text-sm leading-relaxed text-white/80">Explore estratégias práticas para gerenciar dívida técnica e aprimorar a experiência do desenvolvedor em produtos digitais.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://coderush.com.br/2026/05/06/arquitetura-software-operacoes-criticas-decisoes-fazem-diferenca/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/arquitetura-software-operacoes-criticas-decisoes-fazem-diferenca.jpg" alt="Arquitetura de software para operações críticas: decisões que fazem a diferença" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="relative" style="background:linear-gradient(135deg,#0b3a8a 0%,#040c1e 100%)">
+    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
+      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
+      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">CodeRush</span>
+      <h3 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="https://coderush.com.br/2026/05/06/arquitetura-software-operacoes-criticas-decisoes-fazem-diferenca/" rel="noopener" target="_blank" class="hover:underline">Arquitetura de software para operações críticas: decisões que fazem a diferença</a></h3>
+    </div>
+  </div>
   <div class="p-4">
-    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">CodeRush</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/05/06/arquitetura-software-operacoes-criticas-decisoes-fazem-diferenca/" rel="noopener" target="_blank" class="hover:underline">Arquitetura de software para operações críticas: decisões que fazem a diferença</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como a arquitetura de software impacta operações críticas e a importância da IA nesse cenário.</p>
+    <p class="text-sm leading-relaxed text-white/80">Entenda como a arquitetura de software impacta operações críticas e a importância da IA nesse cenário.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://bfrintelligence.com.br/2026/11/22/orquestracao-multiplos-agentes-ia-operacao/" rel="noopener" target="_blank"><img src="https://bfrintelligence.com.br/imagens/posts/orquestracao-multiplos-agentes-ia-operacao.jpg" alt="Orquestração de múltiplos agentes de IA na operação" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="relative" style="background:linear-gradient(135deg,#0b3a8a 0%,#040c1e 100%)">
+    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
+      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
+      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">BFR Intelligence</span>
+      <h3 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="https://bfrintelligence.com.br/2026/11/22/orquestracao-multiplos-agentes-ia-operacao/" rel="noopener" target="_blank" class="hover:underline">Orquestração de múltiplos agentes de IA na operação</a></h3>
+    </div>
+  </div>
   <div class="p-4">
-    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">BFR Intelligence</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://bfrintelligence.com.br/2026/11/22/orquestracao-multiplos-agentes-ia-operacao/" rel="noopener" target="_blank" class="hover:underline">Orquestração de múltiplos agentes de IA na operação</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda como integrar agentes de IA em operações reais para resultados medíveis.</p>
+    <p class="text-sm leading-relaxed text-white/80">Entenda como integrar agentes de IA em operações reais para resultados medíveis.</p>
   </div>
 </article>
   </div>

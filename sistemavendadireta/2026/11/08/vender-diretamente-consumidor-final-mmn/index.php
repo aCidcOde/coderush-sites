@@ -228,24 +228,39 @@
   </div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/07/03/tecnologia-escalar-vendas-diretas-mmn/"><img src="../../../../imagens/posts/tecnologia-escalar-vendas-diretas-mmn.jpg" alt="Tecnologia para Escalar Vendas Diretas no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="relative" style="background:#040c1e url('../../../../imagens/posts/fundos/tecnologia-escalar-vendas-diretas-mmn.webp') center/cover no-repeat">
+    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
+      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
+      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">03/07/2026</span>
+      <h3 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="../../../../2026/07/03/tecnologia-escalar-vendas-diretas-mmn/" class="hover:underline">Tecnologia para Escalar Vendas Diretas no MMN</a></h3>
+    </div>
+  </div>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/07/03/tecnologia-escalar-vendas-diretas-mmn/" class="hover:underline">Tecnologia para Escalar Vendas Diretas no MMN</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">A tecnologia, especialmente softwares especializados, integra processos de vendas, comissionamento e logística, otimizando a operação em marketing multinível...</p>
+    <p class="text-sm leading-relaxed text-white/80">A tecnologia, especialmente softwares especializados, integra processos de vendas, comissionamento e logística, otimizando a operação em marketing multinível...</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/09/22/diferenca-venda-direta-marketing-multinivel/"><img src="../../../../imagens/posts/diferenca-venda-direta-marketing-multinivel.jpg" alt="Diferença entre Venda Direta e Marketing Multinível" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="relative" style="background:#040c1e url('../../../../imagens/posts/fundos/diferenca-venda-direta-marketing-multinivel.webp') center/cover no-repeat">
+    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
+      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
+      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">22/09/2026</span>
+      <h3 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="../../../../2026/09/22/diferenca-venda-direta-marketing-multinivel/" class="hover:underline">Diferença entre Venda Direta e Marketing Multinível</a></h3>
+    </div>
+  </div>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/09/22/diferenca-venda-direta-marketing-multinivel/" class="hover:underline">Diferença entre Venda Direta e Marketing Multinível</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Venda direta se concentra na comercialização de produtos diretamente ao consumidor, enquanto o marketing multinível envolve a construção de uma rede</p>
+    <p class="text-sm leading-relaxed text-white/80">Venda direta se concentra na comercialização de produtos diretamente ao consumidor, enquanto o marketing multinível envolve a construção de uma rede</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="../../../../2026/07/21/gestao-comissionamento-impacta-inadimplencia-mmn/"><img src="../../../../imagens/posts/gestao-comissionamento-impacta-inadimplencia-mmn.jpg" alt="Como a gestão de comissionamento impacta a inadimplência no MMN" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="relative" style="background:#040c1e url('../../../../imagens/posts/fundos/gestao-comissionamento-impacta-inadimplencia-mmn.webp') center/cover no-repeat">
+    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
+      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
+      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">21/07/2026</span>
+      <h3 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="../../../../2026/07/21/gestao-comissionamento-impacta-inadimplencia-mmn/" class="hover:underline">Como a gestão de comissionamento impacta a inadimplência no MMN</a></h3>
+    </div>
+  </div>
   <div class="p-4">
-    <h3 class="text-base font-semibold leading-snug"><a href="../../../../2026/07/21/gestao-comissionamento-impacta-inadimplencia-mmn/" class="hover:underline">Como a gestão de comissionamento impacta a inadimplência no MMN</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Gerenciar a inadimplência no marketing multinível envolve um comissionamento claro e transparente. Utilize sistemas que integrem pagamento e logística, além...</p>
+    <p class="text-sm leading-relaxed text-white/80">Gerenciar a inadimplência no marketing multinível envolve um comissionamento claro e transparente. Utilize sistemas que integrem pagamento e logística, além...</p>
   </div>
 </article>
   </div>
@@ -260,27 +275,39 @@
   <p class="mt-2 text-sm text-white/70">Conteúdo recente dos outros sites do ecossistema.</p>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://coderush.com.br/2026/07/03/integrar-ia-processos-retaguarda-arquitetura-software/" rel="noopener" target="_blank"><img src="https://coderush.com.br/imagens/posts/integrar-ia-processos-retaguarda-arquitetura-software.jpg" alt="Como integrar IA em processos de retaguarda com arquitetura de software" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="relative" style="background:linear-gradient(135deg,#0b3a8a 0%,#040c1e 100%)">
+    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
+      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
+      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">CodeRush</span>
+      <h3 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="https://coderush.com.br/2026/07/03/integrar-ia-processos-retaguarda-arquitetura-software/" rel="noopener" target="_blank" class="hover:underline">Como integrar IA em processos de retaguarda com arquitetura de software</a></h3>
+    </div>
+  </div>
   <div class="p-4">
-    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">CodeRush</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://coderush.com.br/2026/07/03/integrar-ia-processos-retaguarda-arquitetura-software/" rel="noopener" target="_blank" class="hover:underline">Como integrar IA em processos de retaguarda com arquitetura de software</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como a arquitetura de software pode facilitar a integração de IA em processos de retaguarda.</p>
+    <p class="text-sm leading-relaxed text-white/80">Descubra como a arquitetura de software pode facilitar a integração de IA em processos de retaguarda.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://codafacil.dev/2026/07/30/integrar-testes-automatizados-desenvolvimento-software-sob-medida/" rel="noopener" target="_blank"><img src="https://codafacil.dev/imagens/posts/integrar-testes-automatizados-desenvolvimento-software-sob-medida.jpg" alt="Como integrar testes automatizados no desenvolvimento de software sob medida" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="relative" style="background:linear-gradient(135deg,#0b3a8a 0%,#040c1e 100%)">
+    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
+      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
+      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">Codafacil.dev</span>
+      <h3 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="https://codafacil.dev/2026/07/30/integrar-testes-automatizados-desenvolvimento-software-sob-medida/" rel="noopener" target="_blank" class="hover:underline">Como integrar testes automatizados no desenvolvimento de software sob medida</a></h3>
+    </div>
+  </div>
   <div class="p-4">
-    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Codafacil.dev</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://codafacil.dev/2026/07/30/integrar-testes-automatizados-desenvolvimento-software-sob-medida/" rel="noopener" target="_blank" class="hover:underline">Como integrar testes automatizados no desenvolvimento de software sob medida</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Entenda a importância dos testes automatizados na entrega de software com qualidade e agilidade.</p>
+    <p class="text-sm leading-relaxed text-white/80">Entenda a importância dos testes automatizados na entrega de software com qualidade e agilidade.</p>
   </div>
 </article>
 <article class="overflow-hidden rounded-2xl border border-white/15 bg-white/5">
-  <a href="https://bfrintelligence.com.br/2026/07/15/usar-n8n-implementar-agentes-corporativos-ia/" rel="noopener" target="_blank"><img src="https://bfrintelligence.com.br/imagens/posts/usar-n8n-implementar-agentes-corporativos-ia.jpg" alt="Como usar n8n para implementar agentes corporativos de IA" class="h-44 w-full object-cover" width="1200" height="630" loading="lazy" /></a>
+  <div class="relative" style="background:linear-gradient(135deg,#0b3a8a 0%,#040c1e 100%)">
+    <div class="relative p-4" style="min-height:11rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(90deg,rgba(4,12,30,.55) 0%,rgba(4,12,30,.15) 100%)">
+      <span class="block h-1 w-10 rounded-full bg-white" aria-hidden="true"></span>
+      <span class="mt-3 block text-[11px] font-semibold uppercase tracking-[0.22em] text-white/80">BFR Intelligence</span>
+      <h3 class="mt-1 text-lg font-semibold leading-snug text-white"><a href="https://bfrintelligence.com.br/2026/07/15/usar-n8n-implementar-agentes-corporativos-ia/" rel="noopener" target="_blank" class="hover:underline">Como usar n8n para implementar agentes corporativos de IA</a></h3>
+    </div>
+  </div>
   <div class="p-4">
-    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">BFR Intelligence</p>
-    <h3 class="mt-1 text-base font-semibold leading-snug"><a href="https://bfrintelligence.com.br/2026/07/15/usar-n8n-implementar-agentes-corporativos-ia/" rel="noopener" target="_blank" class="hover:underline">Como usar n8n para implementar agentes corporativos de IA</a></h3>
-    <p class="mt-2 text-sm leading-relaxed text-white/80">Descubra como integrar agentes de IA no atendimento ao cliente usando n8n com governança e segurança.</p>
+    <p class="text-sm leading-relaxed text-white/80">Descubra como integrar agentes de IA no atendimento ao cliente usando n8n com governança e segurança.</p>
   </div>
 </article>
   </div>
