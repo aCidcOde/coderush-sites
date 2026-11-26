@@ -1,0 +1,97 @@
+{
+  "date": "2026-11-26",
+  "siteId": "sistemavendadireta",
+  "postType": "vendas-diretas-processos",
+  "focus": "fiscal",
+  "theme": "novas notas fiscais com IBS e CBS (reforma tributaria) e integracao com o sistema",
+  "angle": "fiscal",
+  "slug": "novas-notas-fiscais-ibs-cbs-integracao-sistema",
+  "title": "Novas notas fiscais com IBS e CBS: o que muda e como integrar ao sistema",
+  "description": "O que mudou nas notas fiscais em 2026 com IBS e CBS, os campos novos que o sistema precisa enviar e como integrar a emissão sem travar o faturamento.",
+  "sources": [
+    "https://notadomilhao.sf.prefeitura.sp.gov.br/tipo-noticia/reforma-tributaria/",
+    "https://www.gov.br/nfse/pt-br"
+  ],
+  "status": "draft",
+  "generatedAt": "2026-11-26T12:00:00-03:00",
+  "content": {
+    "eyebrow": "Reforma tributária",
+    "headline": "Novas notas fiscais com IBS e CBS: o que muda e como integrar ao sistema",
+    "seoTitle": "Notas fiscais com IBS e CBS: o que muda e como integrar ao sistema",
+    "summary": "A reforma tributária mudou o layout das notas em 2026. Veja os campos novos, onde a integração costuma quebrar e como deixar o sistema emitindo certo.",
+    "answerBox": {
+      "question": "O que muda nas notas fiscais com o IBS e a CBS?",
+      "answer": "Em 2026, ano de transição da reforma tributária, as notas passaram a ter um grupo novo de campos para IBS e CBS: classificação tributária, indicador de operação, base e valores dos dois tributos e, na nota de serviço, o código NBS. Na NF-e, o destaque passou a ser exigido das empresas de lucro real e presumido em agosto de 2026. Em São Paulo, a NFS-e ganhou um segundo layout, com ISS, IBS e CBS, em janeiro. Quem emite pelo próprio sistema precisa atualizar a integração, não só o cadastro."
+    },
+    "tldr": [
+      "2026 é o ano de teste: IBS e CBS já aparecem nas notas, ao lado dos tributos atuais.",
+      "Os campos novos saem do cadastro de produtos e serviços — sem eles a integração falha ou a nota sai incompleta.",
+      "Emitir direto do sistema, com fila de reprocesso visível, evita faturamento travado no fim do mês."
+    ],
+    "sections": [
+      {
+        "type": "prose",
+        "title": "O que mudou nas notas em 2026",
+        "body": "A reforma tributária do consumo começou pela nota fiscal. Antes de o IBS e a CBS substituírem de fato os tributos atuais, eles passaram a ser informados nos documentos fiscais, com alíquotas de teste. Na NF-e e na NFC-e, o destaque passou a ser exigido das empresas do regime regular — lucro real e presumido — a partir de agosto de 2026, ainda com parte das regras de validação sendo ajustada pelo fisco. Na nota de serviço, os municípios passaram a ter de aderir ao padrão nacional da NFS-e, e São Paulo, que mantém sistema próprio, abriu em janeiro um segundo layout: o layout 1 continua só com ISS, e o layout 2 traz ISS, IBS e CBS, aceito pelo portal e pelo web service, mas não por arquivo TXT."
+      },
+      {
+        "type": "list",
+        "title": "Os campos novos que o sistema precisa enviar",
+        "items": [
+          "Classificação tributária do item (cClassTrib), que diz como o IBS e a CBS incidem sobre aquele produto ou serviço.",
+          "Indicador de operação (cIndOp) na nota de serviço, que identifica o tipo de operação para o novo tributo.",
+          "Código NBS do serviço, a Nomenclatura Brasileira de Serviços, que passa a acompanhar a NFS-e.",
+          "Base de cálculo, alíquota e valor de IBS e de CBS, separados dos tributos que continuam valendo.",
+          "Dados do destinatário completos — documento, nome e e-mail —, que agora pesam na validação do grupo novo."
+        ]
+      },
+      {
+        "type": "prose",
+        "title": "Onde isso pega numa operação de venda direta",
+        "body": "Venda direta emite muita nota pequena: pedido de consultor, recompra, venda da loja virtual, assinatura. Quando a nota é emitida fora do sistema, cada mudança de layout vira retrabalho manual multiplicado pelo volume do mês. Quando é emitida pelo próprio sistema, a mudança fica concentrada em dois lugares: o cadastro de produtos e serviços, que passa a carregar a classificação tributária e o NBS, e a integração com a prefeitura ou com a SEFAZ, que passa a montar e assinar o XML no layout novo. É também ali que a nota de serviço de quem cobra mensalidade ou taxa de adesão precisa ser revista."
+      },
+      {
+        "type": "callout",
+        "body": "Na prática: no Emergency ERP, sistema de gestão que mantemos para uma empresa de documentação imobiliária, a NFS-e de São Paulo passou a sair no layout 2 direto do sistema, com NBS, classificação tributária e o grupo IBS/CBS vindos do cadastro de cada serviço. O detalhe que mais custou não estava na lei: a assinatura do RPS no layout 2 seguia uma regra diferente da que o manual da prefeitura descrevia, e só o teste contra o ambiente real mostrou qual valia.",
+        "ctaLabel": "Ver o case",
+        "ctaHref": "cases/#emergency-erp"
+      },
+      {
+        "type": "list",
+        "title": "Checklist para não travar o faturamento",
+        "items": [
+          "Revise o cadastro: todo produto com classificação tributária e todo serviço com NBS, validados com o seu contador.",
+          "Teste em homologação com notas reais do seu mês, não com um exemplo só — é o caso raro que é rejeitado.",
+          "Trate a nota rejeitada como fila visível, com o motivo da prefeitura ou da SEFAZ em português, e reprocesso com um clique.",
+          "Separe emissão de nota e baixa financeira: a nota pode falhar sem segurar o recebimento, e vice-versa.",
+          "Acompanhe as notas técnicas: as regras de validação de 2026 mudaram mais de uma vez ao longo do ano."
+        ]
+      },
+      {
+        "type": "cta-inline",
+        "body": "Fazemos essa integração: NF-e, NFS-e de São Paulo no layout novo e NFS-e no padrão nacional, emitidas direto do seu sistema de venda direta ou do seu ERP.",
+        "ctaLabel": "Falar com a gente",
+        "ctaHref": "#contato"
+      },
+      {
+        "type": "prose",
+        "title": "Conclusão",
+        "body": "O IBS e a CBS chegaram primeiro como campo de nota, e quem emite pelo próprio sistema sente isso no cadastro e na integração, não só na contabilidade. Vale fazer a adequação com calma enquanto 2026 ainda é ano de transição: cadastro revisado, integração no layout novo, fila de rejeição à vista. Quando as alíquotas cheias chegarem, a operação já estará emitindo do jeito certo."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Minha empresa já precisa informar IBS e CBS nas notas?",
+        "a": "Na NF-e e na NFC-e, o destaque passou a ser exigido das empresas de lucro real e presumido em agosto de 2026. Na NFS-e, depende do município e do layout usado. Como as regras de validação foram ajustadas ao longo do ano, confirme a situação da sua empresa com o contador."
+      },
+      {
+        "q": "O que é o layout 2 da NFS-e de São Paulo?",
+        "a": "É a versão da nota de serviço paulistana que traz ISS, IBS e CBS, disponível desde janeiro de 2026 pelo portal e pelo web service. O layout 1 continua existindo só com o ISS e é o único que aceita envio por arquivo TXT."
+      },
+      {
+        "q": "Dá para emitir as notas novas direto do sistema de venda direta?",
+        "a": "Sim. A emissão é feita pela integração com a SEFAZ ou com a prefeitura, montando o XML no layout novo a partir do cadastro de produtos e serviços. Fazemos essa integração tanto no Sistema Venda Direta quanto em ERPs próprios."
+      }
+    ]
+  }
+}

@@ -439,8 +439,10 @@ return [
         'summary' => 'ERP que roda a operação de ponta a ponta há quase 20 anos — refatorado e evoluído sem parar a empresa.',
         'highlights' => [
             'Refatoração do código-fonte sem parar a operação',
-            'Módulos financeiro, jurídico e fiscal',
+            'NFS-e de São Paulo no layout novo, com IBS e CBS',
             'Faturamento e boletos com integração bancária (Itaú)',
+            'Financeiro integrado à Kamino e ao Salesforce',
+            'Módulos financeiro, jurídico e fiscal',
             'Estoque, expedição e centro de custo',
         ],
         'details' => [
@@ -449,11 +451,20 @@ return [
                 'body' => 'Sistema de 2006 refatorado para versões modernas de PHP e MySQL, ganhando módulos novos '
                     . '— do comercial ao faturamento — sem um dia de operação parada.',
             ],
+            [
+                // 26/11/2026, pedido do usuario: "fala tb das integracoes das novas notas fiscais".
+                // Conferido no codigo (classes/lib/NFP, nfpModel): layout 2 da PMSP com NBS, cClassTrib e cIndOp.
+                'title' => 'Notas fiscais da reforma tributária',
+                'body' => 'A NFS-e de São Paulo sai direto do ERP no layout 2, o que já traz o IBS e a CBS: código NBS, '
+                    . 'classificação tributária e indicador de operação vêm do cadastro de cada serviço, e a nota é assinada e '
+                    . 'enviada à prefeitura sem passar pelo portal. O recebimento segue para o financeiro em fluxo separado da nota.',
+            ],
         ],
         'metrics' => [
             ['value' => '2006', 'label' => 'ano de origem do sistema'],
             ['value' => '15+', 'label' => 'anos de sustentação contínua'],
             ['value' => 'Itaú', 'label' => 'integração bancária'],
+            ['value' => 'IBS/CBS', 'label' => 'na NFS-e de São Paulo'],
         ],
     ],
     [

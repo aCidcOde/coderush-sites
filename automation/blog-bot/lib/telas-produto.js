@@ -25,7 +25,7 @@ const TELAS = [
     id: "admin-painel",
     alt: "Painel da administração do Sistema Venda Direta com gráfico de receitas e despesas por mês",
     legenda: "Painel da administração: receitas e despesas mês a mês, sem montar planilha.",
-    chaves: ["receita", "previsibilidade", "financeiro", "gestao", "custo", "inadimplencia", "fluxo", "governanca", "escalar", "crescer", "quanto custa"]
+    chaves: ["receita", "previsibilidade", "financeiro", "gestao", "custo", "inadimplencia", "fluxo", "governanca", "escalar", "crescer", "quanto custa", "faturamento", "notas", "fiscais", "tributaria"]
   },
   {
     id: "admin-plano-comercial",
@@ -69,7 +69,8 @@ const TELAS = [
     id: "consultor-novo-cadastro",
     alt: "Formulário de novo cadastro de indicado em três etapas: dados pessoais, endereço e revisão",
     legenda: "Cadastro de indicado em três etapas, feito pelo próprio consultor — sem passar pelo escritório.",
-    chaves: ["cadastro", "cadastrar", "consultores", "recrutamento", "onboarding", "novo consultor", "ativacao", "documentos", "kyc"]
+    // "cadastro" solto casava com "cadastro de produtos" em post fiscal (26/11/2026)
+    chaves: ["cadastrar", "cadastro de consultor", "cadastro de consultores", "consultores", "recrutamento", "onboarding", "novo consultor", "ativacao", "kyc"]
   },
   {
     id: "consultor-recompra",
