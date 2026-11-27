@@ -404,7 +404,9 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
         </p>
         <?php /* 16/11/2026: o botao dizia "Quero testar uma demonstracao" e levava pro
            formulario de contato. A demonstracao existe e abre sem cadastro — e foi o
-           que os visitantes pagos de novembro clicaram (4 de 17; formulario, zero). */ ?>
+           que os visitantes pagos de novembro clicaram (4 de 17; formulario, zero).
+           27/11/2026: continua sendo a chamada principal, mas agora pede nome e
+           WhatsApp antes de abrir (inc/zap-gate.php) — sem isso ninguem virava lead. */ ?>
         <div class="flex flex-wrap gap-3">
           <a href="<?= htmlspecialchars(DEMO_URL . '?utm_source=site&utm_medium=home&utm_campaign=demo&utm_content=hero', ENT_QUOTES, 'UTF-8') ?>" target="_blank" rel="noopener" class="inline-flex items-center justify-center rounded-full bg-amber-400 px-5 py-2.5 text-sm font-bold uppercase tracking-wide text-brand hover:bg-amber-300">
             Entrar na demonstração
@@ -413,7 +415,7 @@ Landing page publica reescrita em Tailwind, sem dependencias de WordPress, com f
             Falar com um especialista
           </a>
         </div>
-        <p class="text-sm text-white/70">Loja, escritório virtual e painel administrativo, sem cadastro.</p>
+        <p class="text-sm text-white/70">Loja, escritório virtual e painel administrativo. Só nome e WhatsApp, e abre na hora.</p>
       </div>
       <div class="mx-auto w-full max-w-[520px] rounded-2xl bg-brand-soft/25 p-2 ring-1 ring-white/15">
         <div class="lottie-box h-[220px] w-full sm:h-[300px]" data-lottie-src="imagens/lottie-hero.json" aria-label="Animação demonstrativa do sistema"></div>

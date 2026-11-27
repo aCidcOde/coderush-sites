@@ -281,7 +281,7 @@ $seoDescription = 'Sistema de venda direta com escritório do consultor no celul
           </a>
         </div>
         <p class="mt-3 text-sm text-white/70">
-          Loja, escritório e painel, sem cadastro. Prefere ver com o seu plano?
+          Loja, escritório e painel: só nome e WhatsApp, e abre na hora. Prefere ver com o seu plano?
           <a href="#garantir" class="font-semibold text-amber-200 underline decoration-amber-300/50 underline-offset-4 hover:text-white">Peça a demonstração guiada</a>.
         </p>
       </div>

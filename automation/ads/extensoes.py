@@ -28,10 +28,13 @@ UTM = "utm_source=google&utm_medium=cpc&utm_campaign=promo-10-anos"
 # COM cadastro; a nossa e um ambiente inteiro (loja, escritorio do parceiro e
 # admin) com credenciais publicadas, sem cadastro nenhum. Estava linkada em
 # lugar nenhum — nem no site, nem no anuncio.
+# 27/11/2026: a demonstracao passou a pedir nome e WhatsApp antes de abrir (sem
+# isso, o clique nela nao virava lead). Texto e destino seguem a campanha de Fim
+# de Ano: "abre na hora" e a /sistema-mmn/ com ?abrir=demo.
 DEMO = "https://painel.sistemavendadireta.com.br/primeiros-passos"
 
 SITELINKS = [
-    ("Ver demonstracao", "Sistema real, sem cadastro", "Loja, escritorio e admin", f"{DEMO}?{UTM}&utm_content=sitelink-demo"),
+    ("Ver demonstracao", "Sistema real, abre na hora", "Loja, escritorio e admin", f"{BASE}/sistema-mmn/?{UTM}&utm_content=sitelink-demo&abrir=demo#demonstracao"),
     ("Cases reais", "Quem ja opera com o SVD", "Brasil, Paraguai e Bolivia", f"{BASE}/cases/?{UTM}&utm_content=sitelink-cases"),
     ("Simular comissoes", "Veja o custo por consultor", "Simulador em 30 segundos", f"{BASE}/oferta/?{UTM}&utm_content=sitelink-simulador#simulador"),
     ("Planos e mensalidade", "A partir de R$ 500/mes", "Sob medida pro seu porte", f"{BASE}/oferta/?{UTM}&utm_content=sitelink-planos#garantir"),

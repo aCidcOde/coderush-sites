@@ -377,7 +377,10 @@ $defaultHost = $_SERVER['HTTP_HOST'] ?? 'localhost';
 $fromEmail = envValue($env, ['MAIL_FROM_ADDRESS', 'CONTACT_EMAIL_FROM'], 'no-reply@' . $defaultHost);
 $fromName = envValue($env, ['MAIL_FROM_NAME', 'APP_NAME'], 'Site SVD');
 
-$subject = (($_POST['canal'] ?? '') === 'whatsapp' ? '[SVD] Novo lead antes do WhatsApp - ' : '[SVD] Novo contato via formulario - ') . $origem;
+// canal "demo" (27/11/2026): cadastro antes de abrir a demonstracao (inc/zap-gate.php)
+$canal = (string) ($_POST['canal'] ?? '');
+$subject = ($canal === 'whatsapp' ? '[SVD] Novo lead antes do WhatsApp - '
+    : ($canal === 'demo' ? '[SVD] Novo lead antes da demonstração - ' : '[SVD] Novo contato via formulario - ')) . $origem;
 $body = implode("\n", [
     'Novo contato recebido:',
     '',

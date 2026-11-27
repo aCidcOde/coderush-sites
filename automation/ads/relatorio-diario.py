@@ -88,28 +88,37 @@ def dias_sem_lead(ref=None):
     `ref` e a data do relatorio. Sem ela, reprocessar 05/10 hoje diria "5 dias sem
     lead" — numero de hoje carimbado num dia em que entraram quatro. Relatorio
     antigo tem que contar o que se sabia naquele dia.
+
+    ARQUIVO JUNTO — 27/11/2026. Em 23/11 o painel foi zerado e o historico foi
+    pro /data/backup/svd-leads. Com o banco vazio, a seca passava a contar de
+    23/11: o relatorio de 26/11 disse "3 dias sem lead" quando o ultimo lead real
+    era de 26/10 — um mes. Agora le o banco E os arquivos e fica com o mais recente.
     """
+    import glob
     import sqlite3
     base = ref or date.today()
-    caminho = "/data/coderush-sites/sistemavendadireta/storage/leads.sqlite"
-    try:
-        db = sqlite3.connect(f"file:{caminho}?mode=ro", uri=True)
-        # exclui robo e teste: desde 13/10 o clique automatizado fica gravado com
-        # status "robo" em vez de apagado, e sem este filtro ele contaria como
-        # lead — o alerta de seca ficaria mudo justamente quando so entra robo.
-        ultimo = db.execute(
-            "SELECT MAX(created_at) FROM leads"
-            " WHERE date(created_at) <= ? AND status NOT IN ('robo','teste')",
-            [base.isoformat()]).fetchone()[0]
-        db.close()
-        if not ultimo:
-            # 23/11/2026: o painel foi zerado pra contar so a campanha de dezembro
-            # (historico em /data/backup/svd-leads e no Drive). Banco vazio nao e
-            # "lead hoje": conta a seca a partir do dia em que a contagem recomecou.
-            return max((base - CONTAGEM_DESDE).days, 0)
-        return (base - date.fromisoformat(str(ultimo)[:10])).days
-    except Exception:
-        return 0  # banco fora do ar nao pode derrubar o relatorio
+    bancos = (["/data/coderush-sites/sistemavendadireta/storage/leads.sqlite"]
+              + sorted(glob.glob("/data/backup/svd-leads/*.sqlite")))
+    datas = []
+    for caminho in bancos:
+        try:
+            db = sqlite3.connect(f"file:{caminho}?mode=ro", uri=True)
+            # exclui robo e teste: desde 13/10 o clique automatizado fica gravado com
+            # status "robo" em vez de apagado, e sem este filtro ele contaria como
+            # lead — o alerta de seca ficaria mudo justamente quando so entra robo.
+            ultimo = db.execute(
+                "SELECT MAX(created_at) FROM leads"
+                " WHERE date(created_at) <= ? AND status NOT IN ('robo','teste')",
+                [base.isoformat()]).fetchone()[0]
+            db.close()
+            if ultimo:
+                datas.append(date.fromisoformat(str(ultimo)[:10]))
+        except Exception:
+            continue  # banco ou arquivo ilegivel nao pode derrubar o relatorio
+    if not datas:
+        # nem banco nem arquivo: conta a partir do dia em que a contagem recomecou
+        return max((base - CONTAGEM_DESDE).days, 0)
+    return (base - max(datas)).days
 
 
 
@@ -166,7 +175,7 @@ def montar(ga, cid):
         ctr = c["cliques"] / c["impr"] * 100
         L += [f"{c['nome']}",
               f"  {c['impr']} impressoes · {c['cliques']} cliques · {brl(c['custo'])}",
-              f"  CPC {brl(cpc)} · CTR {ctr:.1f}% · cliques de WhatsApp {c['conv_all']:.0f}"
+              f"  CPC {brl(cpc)} · CTR {ctr:.1f}% · leads/WhatsApp no Ads {c['conv_all']:.0f}"
               + (f" · invalidos {c['invalidos']}" if c["invalidos"] else ""),
               f"  parcela {c['is']:.0f}% (topo {c['topo']:.0f}%) · "
               f"perda: orcamento {c['p_orc']:.0f}%, ranking {c['p_rank']:.0f}%", ""]
@@ -222,8 +231,10 @@ def montar(ga, cid):
                       f"o teto diario esta cortando entrega")
         # all_conversions inclui o clique de WhatsApp; conversions nao, enquanto a
         # acao nao for marcada como primaria. Sem isso o alerta nunca cala.
+        # 27/11/2026: inclui tambem o generate_lead do cadastro antes da demonstracao
+        # (inc/zap-gate.php) — o rotulo deixou de ser so "clique de WhatsApp".
         if c["cliques"] >= MIN_CLIQUES_P_CONCLUSAO and c["conv_all"] == 0:
-            al.append(f"{c['nome']}: {c['cliques']} cliques e nenhum clique de WhatsApp")
+            al.append(f"{c['nome']}: {c['cliques']} cliques e nenhum lead nem WhatsApp no Ads")
         cpc = c["custo"] / c["cliques"] if c["cliques"] else 0
         if cpc > 8:
             al.append(f"{c['nome']}: CPC de {brl(cpc)} — conferir se o lance nao "
@@ -260,8 +271,9 @@ def montar(ga, cid):
 
     dias_sem = dias_sem_lead(ontem)
     if dias_sem >= 3:
-        al.append(f"{dias_sem} dias sem nenhum lead no banco (nem formulario, "
-                  f"nem clique de WhatsApp)")
+        ultimo = (ontem - timedelta(days=dias_sem)).strftime('%d/%m')
+        al.append(f"{dias_sem} dias sem nenhum lead real (ultimo em {ultimo}; nem formulario, "
+                  f"nem WhatsApp, nem demonstracao)")
 
     if al:
         L.append("PRECISA DE OLHO")

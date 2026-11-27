@@ -36,6 +36,29 @@ cliente real que errasse um digito seria descartado sem saber.
 CSS proprio com prefixo zg-: o include roda em paginas com builds de Tailwind
 diferentes, e classe que nao esta no build some sem aviso.
 
+A DEMONSTRACAO PASSA PELO MESMO CADASTRO — 27/11/2026.
+
+O ultimo lead real foi em 26/10. Nos 28 dias seguintes, dos visitantes pagos, 8
+clicaram em "ver demonstracao", 12 usaram a calculadora e NENHUM abriu o WhatsApp
+ou o formulario. O anuncio prometia "Demonstracao sem Cadastro": a pessoa entrava
+no painel (outro dominio, sem o GA4 do site) e saia sem deixar contato. Na campanha
+anterior o caminho era o WhatsApp, e foi dele que vieram os 19 leads reais e as
+duas vendas de agosto a outubro.
+
+Decisao do usuario (27/11, "pode aplicar tudo"): pedir nome e WhatsApp antes de
+abrir a demonstracao, e trocar o "sem cadastro" do anuncio e do site por "na
+hora". Mesmo formulario, mesmo banco; muda o texto da caixa, o botao (ambar,
+como os botoes de demonstracao do site), o canal do lead ("demo") e o evento
+(demo_gate_aberto). generate_lead vai com metodo=demo; demo_click so dispara
+quando a demonstracao abre de fato.
+
+Chegar com ?abrir=demo na URL abre a caixa direto, ja no modo demonstracao: e o
+destino do sitelink "Ver demonstracao", que antes apontava pro painel e pulava o
+site inteiro.
+
+Os posts do blog nao tem WhatsApp, mas tem link da demonstracao: recebem este
+include pela faixa da promocao (promoStrip, em inc/promo.php).
+
 Uso, antes do </body> (o inc/zap-tracking.php ja inclui):
     <?php $zapOrigem = 'pagina-x'; include __DIR__ . '/inc/zap-gate.php'; ?>
 */
@@ -62,6 +85,7 @@ $zapOrigemGate = isset($zapOrigem) && $zapOrigem !== '' ? $zapOrigem : 'site';
   #zg .zg-e:empty{display:none}
   #zg .zg-b{display:block;margin-top:18px;width:100%;border:0;border-radius:999px;background:#25D366;color:#fff;font:700 15px/1 Roboto,system-ui,sans-serif;padding:16px;cursor:pointer;text-transform:uppercase;letter-spacing:.04em}
   #zg .zg-b:hover{filter:brightness(1.05)}
+  #zg .zg-b.demo{background:#fbbf24;color:#0a2a66}
   #zg .zg-p{font-size:12px;line-height:1.45;color:rgba(255,255,255,.62);margin:12px 0 0;text-align:center}
   #zg .zg-x{position:absolute;top:12px;right:12px;width:36px;height:36px;border:0;border-radius:50%;background:rgba(255,255,255,.14);color:#fff;font-size:22px;line-height:36px;cursor:pointer;padding:0}
   #zg .zg-hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
@@ -70,7 +94,7 @@ $zapOrigemGate = isset($zapOrigem) && $zapOrigem !== '' ? $zapOrigem : 'site';
   <div class="zg-caixa">
     <button type="button" class="zg-x" data-zg-fechar aria-label="Fechar">&times;</button>
     <p id="zg-t" class="zg-t">Antes de abrir o WhatsApp</p>
-    <p class="zg-s">Deixe seu nome e WhatsApp. A equipe já te atende pelo nome — e, se a conversa não engatar, a gente retorna.</p>
+    <p id="zg-s" class="zg-s">Deixe seu nome e WhatsApp. A equipe já te atende pelo nome — e, se a conversa não engatar, a gente retorna.</p>
     <form id="zg-form" novalidate>
       <label class="zg-l" for="zg-nome">Nome</label>
       <input class="zg-i" id="zg-nome" name="nome" type="text" autocomplete="name" placeholder="Seu nome" required />
@@ -82,7 +106,7 @@ $zapOrigemGate = isset($zapOrigem) && $zapOrigem !== '' ? $zapOrigem : 'site';
       <input class="zg-i" id="zg-email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="voce@empresa.com.br" />
       <p class="zg-e" id="zg-email-erro"></p>
       <div class="zg-hp" aria-hidden="true"><label for="zg-website">Não preencha</label><input id="zg-website" name="website" type="text" tabindex="-1" autocomplete="off" /></div>
-      <button type="submit" class="zg-b">Abrir o WhatsApp</button>
+      <button type="submit" id="zg-b" class="zg-b">Abrir o WhatsApp</button>
       <p class="zg-p">Usamos seus dados para retornar o contato e enviar novidades do Sistema Venda Direta, inclusive em anúncios. Você pode pedir a exclusão quando quiser.</p>
     </form>
   </div>
@@ -100,7 +124,25 @@ $zapOrigemGate = isset($zapOrigem) && $zapOrigem !== '' ? $zapOrigem : 'site';
     var campoTel = document.getElementById("zg-whatsapp");
     var campoEmail = document.getElementById("zg-email");
     var pendente = null;
+    var tipoPendente = "whatsapp";
     var focoAntes = null;
+
+    var DEMO = "https://painel.sistemavendadireta.com.br/primeiros-passos";
+    var SELETOR = 'a[href*="wa.me"], a[href*="painel.sistemavendadireta.com.br/primeiros-passos"]';
+    var TEXTOS = {
+      whatsapp: {
+        t: "Antes de abrir o WhatsApp",
+        s: "Deixe seu nome e WhatsApp. A equipe já te atende pelo nome — e, se a conversa não engatar, a gente retorna.",
+        b: "Abrir o WhatsApp"
+      },
+      demo: {
+        t: "Antes de abrir a demonstração",
+        s: "Deixe seu nome e WhatsApp e a demonstração abre na hora. Se quiser ver o sistema com o seu plano, a equipe te chama.",
+        b: "Abrir a demonstração"
+      }
+    };
+
+    function tipoDe(a) { return /wa\.me/.test(a.href) ? "whatsapp" : "demo"; }
 
     function digitos(v) { return (v || "").replace(/\D+/g, ""); }
 
@@ -165,7 +207,7 @@ $zapOrigemGate = isset($zapOrigem) && $zapOrigem !== '' ? $zapOrigem : 'site';
       return base + "?text=" + encodeURIComponent((jaTemNome ? "Olá! " : "Olá! Sou " + nome.trim() + ". ") + texto);
     }
 
-    function abrirWhatsapp(url, novaAba) {
+    function abrirLink(url, novaAba) {
       var janela = null;
       if (novaAba) {
         try { janela = window.open(url, "_blank"); } catch (e) {}
@@ -204,15 +246,37 @@ $zapOrigemGate = isset($zapOrigem) && $zapOrigem !== '' ? $zapOrigem : 'site';
       if (!campoTel.value) { campoTel.value = (formTel && formTel.value) || anterior.whatsapp || ""; }
     }
 
-    function abrirGate(link) {
+    function abrirGate(link, tipo) {
       pendente = link;
+      tipoPendente = tipo;
+      var tx = TEXTOS[tipo];
+      document.getElementById("zg-t").textContent = tx.t;
+      document.getElementById("zg-s").textContent = tx.s;
+      var botao = document.getElementById("zg-b");
+      botao.textContent = tx.b;
+      botao.classList.toggle("demo", tipo === "demo");
       focoAntes = document.activeElement;
       preencher();
       caixa.hidden = false;
       document.documentElement.style.overflow = "hidden";
       var alvo = !campoNome.value ? campoNome : (!campoTel.value ? campoTel : campoEmail);
       setTimeout(function () { try { alvo.focus(); } catch (e) {} }, 30);
-      evento("whatsapp_gate_aberto", { page: ORIGEM });
+      evento(tipo === "demo" ? "demo_gate_aberto" : "whatsapp_gate_aberto", { page: ORIGEM });
+    }
+
+    // Segue pro destino de quem ja se identificou (ou acabou de se identificar).
+    // demo_click leva page=pathname, como o handler antigo do inc/analytics.php,
+    // pra serie do GA4 continuar comparavel.
+    function seguir(link, tipo, nome) {
+      var href = link ? link.href : (tipo === "demo" ? DEMO : "https://wa.me/5511994566726");
+      var novaAba = !link || link.target === "_blank";
+      if (tipo === "demo") {
+        evento("demo_click", { page: window.location.pathname, link_url: href.split("?")[0] });
+        abrirLink(href, novaAba);
+      } else {
+        evento("whatsapp_click", { page: ORIGEM });
+        abrirLink(montarUrl(href, nome), novaAba);
+      }
     }
 
     function fecharGate() {
@@ -224,19 +288,33 @@ $zapOrigemGate = isset($zapOrigem) && $zapOrigem !== '' ? $zapOrigem : 'site';
 
     // Captura na JANELA, antes dos handlers antigos (registrados no document):
     // eles mandavam o beacon do lead anonimo "zap", que este cadastro substitui.
+    // Os links da demonstracao tambem: o demo_click do inc/analytics.php e o onclick
+    // dos posts nao disparam mais (o evento sai daqui, quando a demonstracao abre).
     window.addEventListener("click", function (ev) {
-      var a = ev.target && ev.target.closest ? ev.target.closest('a[href*="wa.me"]') : null;
+      var a = ev.target && ev.target.closest ? ev.target.closest(SELETOR) : null;
       if (!a || ev.defaultPrevented) { return; }
       ev.preventDefault();
       ev.stopImmediatePropagation();
+      var tipo = tipoDe(a);
       var quem = identificado();
       if (quem) {
-        evento("whatsapp_click", { page: ORIGEM });
-        abrirWhatsapp(montarUrl(a.href, quem.nome), a.target === "_blank");
+        seguir(a, tipo, quem.nome);
         return;
       }
-      abrirGate(a);
+      abrirGate(a, tipo);
     }, true);
+
+    // ?abrir=demo: destino do sitelink "Ver demonstracao" do anuncio.
+    try {
+      if (new URLSearchParams(window.location.search).get("abrir") === "demo") {
+        setTimeout(function () {
+          var quem = identificado();
+          // sem gesto do usuario o pop-up seria bloqueado: o abrirLink cai pra
+          // navegacao na mesma aba, que nao precisa de gesto
+          if (quem) { seguir(null, "demo", quem.nome); } else { abrirGate(null, "demo"); }
+        }, 300);
+      }
+    } catch (e) {}
 
     // Quem manda o formulario da pagina ja se identificou: guarda aqui, no envio.
     // O js/scripts.js apaga o "svd-contact-lead" da sessao assim que a pagina volta
@@ -278,17 +356,22 @@ $zapOrigemGate = isset($zapOrigem) && $zapOrigem !== '' ? $zapOrigem : 'site';
 
       var ref = zapRef();
       var link = pendente;
-      var url = montarUrl(link ? link.href : "https://wa.me/5511994566726", nome);
+      var tipo = tipoPendente;
 
       var fd = new FormData();
       fd.append("nome", nome);
       fd.append("whatsapp", tel);
       if (email) { fd.append("email", email); }
       fd.append("origem", ORIGEM);
-      fd.append("canal", "whatsapp");
+      fd.append("canal", tipo);
       fd.append("resposta", "json");
-      fd.append("servico", "WhatsApp — cadastro antes da conversa");
-      fd.append("mensagem", "Pediu para falar no WhatsApp pela página " + ORIGEM + " [ref " + ref + "]. Se não chegou mensagem, retornar pelo número informado.");
+      if (tipo === "demo") {
+        fd.append("servico", "Demonstração — cadastro antes de abrir");
+        fd.append("mensagem", "Abriu a demonstração pela página " + ORIGEM + " [ref " + ref + "]. Retornar pelo WhatsApp informado e oferecer mostrar o sistema com o plano dele.");
+      } else {
+        fd.append("servico", "WhatsApp — cadastro antes da conversa");
+        fd.append("mensagem", "Pediu para falar no WhatsApp pela página " + ORIGEM + " [ref " + ref + "]. Se não chegou mensagem, retornar pelo número informado.");
+      }
       fd.append("website", document.getElementById("zg-website").value);
       atribuicao(fd);
       try {
@@ -303,14 +386,12 @@ $zapOrigemGate = isset($zapOrigem) && $zapOrigem !== '' ? $zapOrigem : 'site';
         if (email) { dados.email = email.toLowerCase(); }
         window.gtag("set", "user_data", dados);
       }
-      evento("generate_lead", { page: ORIGEM, metodo: "whatsapp" });
-      evento("whatsapp_click", { page: ORIGEM });
+      evento("generate_lead", { page: ORIGEM, metodo: tipo });
 
       try { window.localStorage.setItem(CHAVE, JSON.stringify({ nome: nome, whatsapp: tel, email: email })); } catch (e) {}
 
-      var novaAba = !link || link.target === "_blank";
       fecharGate();
-      abrirWhatsapp(url, novaAba);
+      seguir(link, tipo, nome);
     });
   })();
 </script>

@@ -439,10 +439,12 @@ function icon(string $name): string
 $gaEventos = [];
 if ($gaSite && !empty($gaSite['eventos'])) {
     $nomes = [
-        'generate_lead' => 'Leads (formulário + cadastro do WhatsApp)',
+        'generate_lead' => 'Leads (formulário + cadastros do WhatsApp e da demonstração)',
         // 23/11/2026: abriu o cadastro antes do WhatsApp. A diferenca pra
         // generate_lead e quem desistiu de deixar nome e telefone.
         'whatsapp_gate_aberto' => 'Abriu o cadastro do WhatsApp',
+        // 27/11/2026: a demonstracao tambem pede nome e WhatsApp antes de abrir
+        'demo_gate_aberto' => 'Abriu o cadastro da demonstração',
         'whatsapp_click' => 'Cliques WhatsApp',
         'demo_click' => 'Entradas na demonstração',
         'simulator_use' => 'Uso do simulador',

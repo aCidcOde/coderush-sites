@@ -20,7 +20,9 @@ PROPS = [("properties/379315278", "sistemavendadireta.com.br")]
 # cadastro — e o clique que ela promete, entao precisa aparecer no painel.
 # whatsapp_gate_aberto (23/11/2026): abriu o cadastro obrigatorio antes do WhatsApp;
 # comparado com generate_lead, mostra quantos desistem de deixar o contato.
-FOCUS_EVENTS = ["generate_lead", "whatsapp_gate_aberto", "whatsapp_click", "demo_click", "simulator_use", "form_start", "purchase"]
+# demo_gate_aberto (27/11/2026): idem, no cadastro antes de abrir a demonstracao.
+FOCUS_EVENTS = ["generate_lead", "whatsapp_gate_aberto", "demo_gate_aberto", "whatsapp_click", "demo_click",
+                "simulator_use", "form_start", "purchase"]
 
 c = BetaAnalyticsDataClient()
 

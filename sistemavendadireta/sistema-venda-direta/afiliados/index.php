@@ -486,7 +486,7 @@ $seoDescription = 'Cadastre afiliados e influenciadores com link e cupom própri
             <h2 class="font-[var(--font-heading)] text-2xl font-bold sm:text-[28px]">Quer conhecer a plataforma por completo?</h2>
             <p class="mt-3 max-w-2xl text-base leading-relaxed text-white/90">
               Entre no ambiente de demonstração e navegue pelo sistema inteiro: loja, escritório do
-              consultor e painel administrativo, com dados de uma operação real. Sem cadastro.
+              consultor e painel administrativo, com dados de uma operação real. Só nome e WhatsApp, e abre na hora.
             </p>
           </div>
           <div class="flex flex-col items-stretch gap-3 sm:min-w-[280px]">

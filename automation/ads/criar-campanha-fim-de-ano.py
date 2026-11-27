@@ -89,7 +89,12 @@ GRUPOS = {
                   '"sistema para vendas diretas"', '"escritorio virtual venda direta"']),
 }
 # disputam a posicao 2: um anuncio puxa pelo preco, outro pelo "entre e veja"
-H2 = ["Até 40% de Desconto", "Demonstração sem Cadastro"]
+# 27/11/2026: "sem cadastro" saiu de tudo (titulo, descricao, sitelink, destaque).
+# A demonstracao passou a pedir nome e WhatsApp antes de abrir: de 26/10 a 27/11
+# ela levava o interesse do visitante pago (8 cliques) e nenhum virava lead.
+# O sitelink agora cai na /sistema-mmn/ com ?abrir=demo (o cadastro abre na
+# chegada), nao mais direto no painel, que fica fora do GA4 do site.
+H2 = ["Até 40% de Desconto", "Veja a Demonstração Agora"]
 TITULOS = ["Promoção de Fim de Ano", "Instalação por R$ 3.000", "Entre e Teste o Sistema Agora",
            "Escritório Virtual Incluso", "Mensalidade desde R$ 500", "Clientes em 5 Países",
            "Migramos seu Sistema Atual", "10 Anos de Mercado", "Comece 2027 com a Rede no Ar"]
@@ -97,19 +102,19 @@ TITULOS = ["Promoção de Fim de Ano", "Instalação por R$ 3.000", "Entre e Tes
 # por MISLEADING_CONTENT no grupo Venda Direta em 19/10.
 DESCRICOES = [
     "Promoção de Fim de Ano: instalação R$ 3.000 à vista ou R$ 3.500 em 2x até 31/12.",
-    "Entre na demonstração sem cadastro: loja, escritório do consultor e painel do admin.",
+    "Entre na demonstração na hora: loja, escritório do consultor e painel do admin.",
     "Plataforma completa: escritório virtual, rede binária e unilevel, loja e financeiro.",
     "Rodando no Brasil, Paraguai e Bolívia. Multi-idioma, multimoeda e comissão por cargo.",
 ]
 # (texto, linha 1, linha 2, url) — texto <=25, linhas <=35
 SITELINKS = [
-    ("Ver demonstração", "Sistema real, sem cadastro", "Loja, escritório e painel", f"{DEMO}?{utm('sitelink-demo')}"),
+    ("Ver demonstração", "Sistema real, abre na hora", "Loja, escritório e painel", f"{BASE}/sistema-mmn/?{utm('sitelink-demo')}&abrir=demo#demonstracao"),
     ("Cases reais", "Quem já opera com o SVD", "Brasil, Paraguai e Bolívia", f"{BASE}/cases/?{utm('sitelink-cases')}"),
     ("Simular comissões", "Custo da rede por consultor", "Simulador em 30 segundos", f"{BASE}/simulador/?{utm('sitelink-simulador')}"),
     ("Planos e mensalidade", "A partir de R$ 500 por mês", "Proporcional ao faturamento", f"{BASE}/sistema-venda-direta/?{utm('sitelink-planos')}#simulador"),
     ("Falar com especialista", "Tire dúvidas sem compromisso", "Resposta no mesmo dia", f"{BASE}/sistema-venda-direta/?{utm('sitelink-contato')}#garantir"),
 ]
-DESTAQUES_NOVOS = ["Demonstração sem cadastro", "Promoção até 31/12"]   # <=25
+DESTAQUES_NOVOS = ["Demonstração na hora", "Promoção até 31/12"]   # <=25
 PROMOCAO = dict(alvo="Instalação do SVD", pct=40, url=f"{BASE}/sistema-venda-direta/?{utm('promocao')}")
 
 

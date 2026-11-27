@@ -71,6 +71,11 @@ do anuncio. Ela abre em outro dominio (painel.), onde o GA4 do site nao existe:
 sem este evento, o clique que a campanha nova promete seria invisivel, e a
 leitura de novembro voltaria a contar so WhatsApp. Delegado no document porque
 o link aparece em lugar diferente em cada pagina (cabecalho, hero, faixa do blog).
+
+27/11/2026: a demonstracao passou a pedir nome e WhatsApp antes de abrir. Nas
+paginas com o inc/zap-gate.php (todas as que tem link da demo), o cadastro
+intercepta o clique antes deste handler e ele mesmo manda o demo_click quando a
+demonstracao abre. Este fica de rede de seguranca pra pagina sem o cadastro.
 */ ?>
 <?php /*
 CLIQUE EM CHAMADA INTERNA — 26/11/2026.

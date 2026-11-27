@@ -32,7 +32,7 @@ $seoTitle = 'Sistema MMN: software de marketing multinível pronto para operar';
 // 160 chars e onde o Google corta no desktop. Passar disso entrega a frase pra
 // ele reescrever — e a promessa que traz o clique deixa de ser nossa.
 $seoDescription = 'Sistema MMN com rede unilevel, escritório do consultor, loja e '
-    . 'financeiro integrados. A partir de ' . promoPrecoInstalacao() . '. Veja a demonstração sem cadastro.';
+    . 'financeiro integrados. A partir de ' . promoPrecoInstalacao() . '. Veja a demonstração na hora.';
 
 $whatsappHref = 'https://wa.me/5511994566726?text=' . rawurlencode(
     'Ola! Vi a pagina de Sistema MMN no site e quero saber mais.');
@@ -58,7 +58,7 @@ $faq = [
      . 'por cargo. Hoje recomendamos planos baseados em unilevel e carreira — o simulador de plano '
      . 'do site mostra por que a matemática costuma fechar melhor assim.'],
     ['Dá para testar antes de contratar?',
-     'Sim, e sem cadastro. O ambiente de demonstração tem loja com produtos reais, escritório do '
+     'Sim. Você deixa nome e WhatsApp e entra na hora no ambiente de demonstração: loja com produtos reais, escritório do '
      . 'consultor e painel administrativo, com as credenciais publicadas na própria página.'],
     ['O sistema funciona em outros países?',
      'Sim. Há operações rodando no Brasil, no Paraguai e na Bolívia, com múltiplos idiomas, '
@@ -362,12 +362,12 @@ $faq = [
       </div>
     </section>
 
-    <section class="border-t border-white/15 py-10">
+    <section id="demonstracao" class="scroll-mt-20 border-t border-white/15 py-10">
       <div class="rounded-[24px] border border-amber-300/40 bg-amber-400/10 p-6 sm:p-8">
         <h2 class="font-[var(--font-heading)] text-2xl font-bold">Veja o sistema MMN funcionando agora</h2>
         <p class="mt-3 max-w-3xl text-base leading-relaxed text-white/90">
           Loja, escritório do consultor e painel administrativo, com dados de uma operação real de 12
-          meses. Sem cadastro, sem agendamento — as credenciais estão publicadas na própria página.
+          meses. Sem agendamento: deixe nome e WhatsApp e entre na hora — as credenciais estão publicadas na própria página.
         </p>
         <div class="mt-5 flex flex-wrap gap-3">
           <a href="<?= htmlspecialchars($demoHref, ENT_QUOTES, 'UTF-8') ?>" target="_blank" rel="noopener"

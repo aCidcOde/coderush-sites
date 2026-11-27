@@ -135,6 +135,17 @@ anomalia grosseira (zero impressão, gasto explodindo).
 
 ### Seca de lead: medir o tamanho antes de chamar de queda
 
+**Antes de tudo, de quando conta a seca.** Painel zerado não é lead novo: em
+26/11/2026 o relatório disse "3 dias sem lead" porque contava do zeramento (23/11);
+o último lead real era de 26/10. Desde 27/11 o `dias_sem_lead()` lê o banco e os
+arquivos de `/data/backup/svd-leads/` e mostra a data do último.
+
+**Verba é a primeira variável da taxa.** Set–out: 44–124 cliques/semana a ~R$ 250,
+2–4 leads/semana (~1 lead a cada 20 cliques). A partir de 12/10: 15–22 cliques a
+R$ 60–120, e duas semanas paradas (09–22/11). Com ~17 cliques/semana, menos de um
+lead por semana é o esperado — seca curta nessa verba não é sinal de nada; seca
+de um mês é. Em 27/11 a verba subiu de R$ 20 para R$ 30/dia.
+
 Em 22/10/2026 a campanha completou 16 dias sem lead, depois da melhor semana da
 história (01-05/10: 4 leads pagos em 53 cliques). A sensação foi "caiu do nada".
 Antes de mexer em lance, duas perguntas:
@@ -343,6 +354,15 @@ o fim da trilha.
   **12 s** contra 3,5 min na /sistema-mmn/. Amostra de 7, mas é a primeira página a
   revisar.
 
+**Leitura de 27/11/2026 — a demonstração levou o interesse embora.** De 26/10 a
+27/11 nenhum lead real (o último, 26/10). Dos visitantes pagos em 28 dias: 8
+`demo_click`, 12 `simulator_use`, zero WhatsApp e zero formulário — o funil estava
+de pé (Chrome headless nas 4 LPs, celular e desktop). O anúncio prometia
+"Demonstração sem Cadastro" e o sitelink "Ver demonstração" ia **direto pro
+painel.**, pulando o site: clique pago que não deixa nem `gclid` no nosso GA4. Na
+10 Anos, que levava ao WhatsApp, vieram 19 leads reais e 2 vendas (14/08 a 26/10).
+Decisão do usuário: a demonstração passa pelo mesmo cadastro (seção abaixo).
+
 ### Cadastro antes do WhatsApp: lead com nome em vez de clique anônimo
 
 Desde 23/11/2026 nenhum botão de WhatsApp do site abre o app sem nome e WhatsApp
@@ -358,6 +378,19 @@ não tem interesse. Para a leitura da campanha isso muda três coisas:
 - **Atrito medido:** `whatsapp_gate_aberto` (abriu o cadastro) contra
   `generate_lead` — se a diferença for grande, o problema é o pedido de dado, não
   o anúncio.
+- **Demonstração também (27/11/2026).** Os links do painel.../primeiros-passos
+  abrem o mesmo cadastro (botão âmbar, lead com `canal=demo` e serviço
+  "Demonstração — cadastro antes de abrir"). Eventos: `demo_gate_aberto` →
+  `generate_lead` (`metodo=demo`) → `demo_click` só quando a demo abre de fato.
+  Nos posts o cadastro entra pela faixa `promoStrip()`. Sitelink de demonstração
+  aponta pra `/sistema-mmn/?...&abrir=demo#demonstracao`, que abre o cadastro na
+  chegada — **nunca apontar sitelink pra domínio fora do site**: o clique some do
+  GA4 e não há onde capturar o contato. Anúncio: "Veja a Demonstração Agora"
+  (título fixo na posição 2) e destaque "Demonstração na hora". Calculadora e
+  simulador continuam sem cadastro.
+- **Comparar antes/depois com a mesma régua:** antes, `demo_click` contava todo
+  clique no link; agora conta só quem passou do cadastro. Queda de `demo_click`
+  é esperada — a medida de sucesso é `generate_lead` com `metodo=demo`.
 
 ### Pausar sem desmontar
 
@@ -577,7 +610,8 @@ correta é `https://site.com/?utm_source=...#contato`.
 
 ---
 
-*Última atualização: 23/11/2026 — Fim de Ano RELIGADA em 23/11 (o usuário antecipou
+*Última atualização: 27/11/2026 — demonstração passa pelo cadastro de nome e WhatsApp; anúncio, destaque e sitelink sem "sem cadastro" (sitelink agora na /sistema-mmn/?abrir=demo); verba R$ 30/dia; relatório conta a seca desde o último lead real.
+Anterior: 23/11/2026 — Fim de Ano RELIGADA em 23/11 (o usuário antecipou
 para ajustar até 01/12; verba R$ 10 em 24/12 e fim do relatório seguem agendados): títulos
 "Comece 2027 com Sistema Novo", "Comissão sem Planilha em 2027", "Assistente de IA no
 Escritório" e contagem regressiva a partir de 15/12; LP de venda direta e home

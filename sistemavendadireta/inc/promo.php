@@ -423,17 +423,30 @@ function promoStrip(string $origem = 'blog'): string
     // mt-6 separa do botao "Voltar para o site principal", que fica logo acima;
     // embaixo quem da o respiro e o mt-5 do <article>, entao nao leva mb aqui
     // O link da demonstracao anda junto: quem le um artigo tecnico costuma querer
-    // VER o sistema antes de falar com alguem. Sem cadastro, o atrito e zero.
+    // VER o sistema antes de falar com alguem.
     $demo = htmlspecialchars(DEMO_URL . '?utm_source=blog&utm_medium=conteudo&utm_campaign=demo&utm_content='
         . rawurlencode($origem), ENT_QUOTES, 'UTF-8');
 
-    return '<aside class="mt-6 flex flex-col gap-3 rounded-2xl border border-amber-300/40 bg-amber-400/10 p-4 sm:flex-row sm:items-center sm:justify-between">'
+    // 27/11/2026: a demonstracao pede nome e WhatsApp antes de abrir (inc/zap-gate.php).
+    // Os posts nao incluem o zap-tracking; a faixa e o unico trecho comum a todos
+    // eles (e entra nos posts novos pelo publisher do blog-bot), entao o cadastro
+    // vem junto daqui. A home ja inclui pelo zap-tracking: o guard do include
+    // impede duplicar, mas a origem certa ("home") so sai de la.
+    $gate = '';
+    if ($origem !== 'home') {
+        $zapOrigem = 'blog-' . $origem;
+        ob_start();
+        include __DIR__ . '/zap-gate.php';
+        $gate = (string) ob_get_clean();
+    }
+
+    return $gate . '<aside class="mt-6 flex flex-col gap-3 rounded-2xl border border-amber-300/40 bg-amber-400/10 p-4 sm:flex-row sm:items-center sm:justify-between">'
         . '<div><p class="font-semibold text-amber-200">' . htmlspecialchars($titulo, ENT_QUOTES, 'UTF-8') . '</p>'
         . '<p class="mt-1 text-sm text-white/80">' . htmlspecialchars($texto, ENT_QUOTES, 'UTF-8') . '</p>'
         // Na home o botao "Entrar na demonstracao" esta logo acima, no topo: a
         // segunda chamada pra mesma coisa so disputava atencao com a oferta.
         . ($origem === 'home' ? '' : '<p class="mt-2 text-sm"><a href="' . $demo . '" class="font-semibold text-amber-200 underline decoration-amber-300/50 underline-offset-4 hover:text-white">'
-        . 'Ou entre na demonstração agora</a> <span class="text-white/60">— loja, escritório e painel, sem cadastro.</span></p>')
+        . 'Ou entre na demonstração agora</a> <span class="text-white/60">— loja, escritório e painel, na hora.</span></p>')
         . '</div>'
         . '<a href="' . $href . '" class="inline-flex flex-shrink-0 items-center justify-center rounded-full bg-amber-300 px-5 py-2.5 text-sm font-bold uppercase tracking-[0.12em] text-brand hover:bg-amber-200">'
         . htmlspecialchars($rotulo, ENT_QUOTES, 'UTF-8') . '</a>'

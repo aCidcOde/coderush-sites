@@ -20,6 +20,23 @@ Campos:
 
 return [
     [
+        'data' => '2026-11-27',
+        'area' => 'medicao',
+        'titulo' => 'Demonstração passa pelo cadastro (nome + WhatsApp); anúncio troca "sem cadastro" por "agora"',
+        'porque' => 'O último lead real foi em 26/10. Em 28 dias de Fim de Ano, dos visitantes pagos, 8 clicaram '
+            . 'em "ver demonstração", 12 usaram a calculadora e nenhum abriu WhatsApp ou formulário: o anúncio '
+            . 'prometia "Demonstração sem Cadastro", a pessoa entrava no painel e saía sem deixar contato. O '
+            . 'sitelink "Ver demonstração" ia direto pro painel, pulando o site (e o GA4). A verba também tinha '
+            . 'caído de ~R$ 250/semana (set–out, quando vinham 2–4 leads por semana) para R$ 60–120.',
+        'efeito' => 'inc/zap-gate.php intercepta também os links da demonstração (caixa âmbar, lead com canal '
+            . '"demo", generate_lead com metodo=demo, evento demo_gate_aberto); posts do blog recebem o cadastro '
+            . 'pela faixa da promoção. Sitelink aponta pra /sistema-mmn/?abrir=demo, que abre o cadastro na '
+            . 'chegada. Título fixo dos dois anúncios: "Veja a Demonstração Agora"; destaque "Demonstração na '
+            . 'hora"; textos do site sem "sem cadastro" na demonstração (calculadora e simulador seguem livres). '
+            . 'Verba de R$ 20 para R$ 30/dia. Relatório diário conta a seca desde o último lead real, lendo também '
+            . 'o arquivo de 23/11.',
+    ],
+    [
         'data' => '2026-11-23',
         'area' => 'site',
         'titulo' => 'Blog de 49 para 20 posts (repetidos juntados com 301), temas novos e reforço da /sistema-mmn/',
