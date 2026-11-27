@@ -143,7 +143,7 @@
       </section>
       <figure class="tela-produto mt-8 overflow-hidden rounded-2xl border border-white/15 bg-white/5">
         <img src="../../../../imagens/posts/telas/loja-virtual.webp" alt="Loja virtual do consultor com vitrine, menu de categorias e carrinho" class="block w-full" style="height:auto" width="1200" height="750" loading="lazy" decoding="async" />
-        <figcaption class="px-4 py-3 text-xs leading-6 text-white/70 sm:text-sm">Loja virtual de cada consultor: o cliente final compra e a venda cai na conta de quem indicou. <a href="https://painel.sistemavendadireta.com.br/primeiros-passos?utm_source=blog&amp;utm_medium=tela&amp;utm_campaign=demo&amp;utm_content=vender-diretamente-consumidor-final-mmn" target="_blank" rel="noopener" class="font-semibold text-white underline decoration-white/40 underline-offset-4" onclick="window.gtag&amp;&amp;gtag('event','demo_click',{page:location.pathname,link_url:this.href.split('?')[0]})">Ver na demonstração →</a></figcaption>
+        <figcaption class="px-4 py-3 text-xs leading-6 text-white/70 sm:text-sm">Loja virtual de cada consultor: o cliente final compra e a venda cai na conta de quem indicou. <a href="/demonstracao/?de=blog-vender-diretamente-consumidor-final-mmn" target="_blank" rel="noopener" class="font-semibold text-white underline decoration-white/40 underline-offset-4">Ver na demonstração →</a></figcaption>
       </figure>
       <section class="mt-8">
         <h2 class="text-xl font-semibold text-white sm:text-2xl">Principais sinais de que sua operação precisa de um software</h2>
@@ -175,7 +175,7 @@
       </section>
       <figure class="tela-produto mt-8 overflow-hidden rounded-2xl border border-white/15 bg-white/5">
         <img src="../../../../imagens/posts/telas/consultor-novo-cadastro.webp" alt="Formulário de novo cadastro de indicado em três etapas: dados pessoais, endereço e revisão" class="block w-full" style="height:auto" width="1200" height="750" loading="lazy" decoding="async" />
-        <figcaption class="px-4 py-3 text-xs leading-6 text-white/70 sm:text-sm">Cadastro de indicado em três etapas, feito pelo próprio consultor — sem passar pelo escritório. <a href="https://painel.sistemavendadireta.com.br/primeiros-passos?utm_source=blog&amp;utm_medium=tela&amp;utm_campaign=demo&amp;utm_content=vender-diretamente-consumidor-final-mmn" target="_blank" rel="noopener" class="font-semibold text-white underline decoration-white/40 underline-offset-4" onclick="window.gtag&amp;&amp;gtag('event','demo_click',{page:location.pathname,link_url:this.href.split('?')[0]})">Ver na demonstração →</a></figcaption>
+        <figcaption class="px-4 py-3 text-xs leading-6 text-white/70 sm:text-sm">Cadastro de indicado em três etapas, feito pelo próprio consultor — sem passar pelo escritório. <a href="/demonstracao/?de=blog-vender-diretamente-consumidor-final-mmn" target="_blank" rel="noopener" class="font-semibold text-white underline decoration-white/40 underline-offset-4">Ver na demonstração →</a></figcaption>
       </figure>
       <p class="my-6 text-sm leading-7 text-white/85 sm:text-base">
         Considere uma abordagem estratégica para potencializar suas vendas de MMN. <a href="../../../../#contato" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Solicite um orcamento →</a>

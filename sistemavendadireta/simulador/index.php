@@ -55,7 +55,7 @@ $seoTitle = 'Simulador de plano de marketing multinível | Plano SVD';
 $seoDescription = 'Monte e simule o seu plano de marketing multinível: unilevel, binário, carreira e vendas '
     . 'pelo link, 12 meses em três cenários. Parte do Plano SVD. Sem cadastro.';
 
-$demoHref = DEMO_URL . '?utm_source=site&utm_medium=simulador&utm_campaign=demo';
+$demoHref = demoLink('simulador');
 $v = static fn (string $arq): string => (string) @filemtime(__DIR__ . '/../' . $arq);
 ?>
 <!doctype html>

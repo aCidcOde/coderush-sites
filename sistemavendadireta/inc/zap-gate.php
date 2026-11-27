@@ -59,6 +59,14 @@ site inteiro.
 Os posts do blog nao tem WhatsApp, mas tem link da demonstracao: recebem este
 include pela faixa da promocao (promoStrip, em inc/promo.php).
 
+NENHUM LINK APONTA PRO PAINEL — 27/11/2026, tarde. "Soh ve apresentacao quem
+deixar um contato pelo menos." Com o href direto pro painel, clique do meio,
+"abrir em nova aba" e link copiado pulavam este cadastro. Os links agora vao pra
+/demonstracao/ (pagina propria, noindex), que abre este cadastro na chegada; o
+endereco real do painel (DEMO, abaixo) so e usado depois do cadastro. Quem ja se
+identificou passa direto — inclusive quem testou o cadastro: pra ver a caixa de
+novo, janela anonima ou limpar o localStorage "svd-lead-contato".
+
 Uso, antes do </body> (o inc/zap-tracking.php ja inclui):
     <?php $zapOrigem = 'pagina-x'; include __DIR__ . '/inc/zap-gate.php'; ?>
 */
@@ -127,8 +135,12 @@ $zapOrigemGate = isset($zapOrigem) && $zapOrigem !== '' ? $zapOrigem : 'site';
     var tipoPendente = "whatsapp";
     var focoAntes = null;
 
-    var DEMO = "https://painel.sistemavendadireta.com.br/primeiros-passos";
-    var SELETOR = 'a[href*="wa.me"], a[href*="painel.sistemavendadireta.com.br/primeiros-passos"]';
+    // Endereco real do painel: so sai daqui, depois do cadastro. Os links do site
+    // apontam pra /demonstracao/ (DEMO_URL em inc/promo.php); o seletor ainda
+    // pega link direto pro painel, caso algum volte a aparecer.
+    var DEMO = "https://painel.sistemavendadireta.com.br/primeiros-passos?utm_source=site&utm_medium=cadastro&utm_campaign=demo";
+    var SELETOR = 'a[href*="wa.me"], a[href*="/demonstracao/"], a[href*="painel.sistemavendadireta.com.br/primeiros-passos"]';
+    var NA_PAGINA_DEMO = /^\/demonstracao\//.test(window.location.pathname);
     var TEXTOS = {
       whatsapp: {
         t: "Antes de abrir o WhatsApp",
@@ -207,13 +219,18 @@ $zapOrigemGate = isset($zapOrigem) && $zapOrigem !== '' ? $zapOrigem : 'site';
       return base + "?text=" + encodeURIComponent((jaTemNome ? "Olá! " : "Olá! Sou " + nome.trim() + ". ") + texto);
     }
 
-    function abrirLink(url, novaAba) {
+    // substituir: troca a pagina atual no historico (a /demonstracao/ que abre
+    // sozinha pra quem ja se identificou — senao o "voltar" cairia nela e ela
+    // mandaria de novo pro painel, em loop)
+    function abrirLink(url, novaAba, substituir) {
       var janela = null;
       if (novaAba) {
         try { janela = window.open(url, "_blank"); } catch (e) {}
         if (janela) { try { janela.opener = null; } catch (e) {} }
       }
-      if (!janela) { window.location.href = url; }
+      if (!janela) {
+        if (substituir) { window.location.replace(url); } else { window.location.href = url; }
+      }
     }
 
     function atribuicao(fd) {
@@ -267,15 +284,20 @@ $zapOrigemGate = isset($zapOrigem) && $zapOrigem !== '' ? $zapOrigem : 'site';
     // Segue pro destino de quem ja se identificou (ou acabou de se identificar).
     // demo_click leva page=pathname, como o handler antigo do inc/analytics.php,
     // pra serie do GA4 continuar comparavel.
-    function seguir(link, tipo, nome) {
-      var href = link ? link.href : (tipo === "demo" ? DEMO : "https://wa.me/5511994566726");
-      var novaAba = !link || link.target === "_blank";
+    // A demonstracao abre SEMPRE o endereco real do painel, nunca o href do link
+    // (que e a /demonstracao/). Na propria /demonstracao/ abre na mesma aba: a
+    // pagina so existe pra levar ate la.
+    // `auto`: chamada sem gesto do usuario (abertura na chegada) — o pop-up seria
+    // bloqueado, entao vai direto na mesma aba, trocando a pagina no historico.
+    function seguir(link, tipo, nome, auto) {
+      var novaAba = link ? link.target === "_blank" : !NA_PAGINA_DEMO;
+      if (auto) { novaAba = false; }
       if (tipo === "demo") {
-        evento("demo_click", { page: window.location.pathname, link_url: href.split("?")[0] });
-        abrirLink(href, novaAba);
+        evento("demo_click", { page: window.location.pathname, link_url: DEMO.split("?")[0] });
+        abrirLink(DEMO, novaAba, auto || NA_PAGINA_DEMO);
       } else {
         evento("whatsapp_click", { page: ORIGEM });
-        abrirLink(montarUrl(href, nome), novaAba);
+        abrirLink(montarUrl(link ? link.href : "https://wa.me/5511994566726", nome), novaAba);
       }
     }
 
@@ -304,15 +326,17 @@ $zapOrigemGate = isset($zapOrigem) && $zapOrigem !== '' ? $zapOrigem : 'site';
       abrirGate(a, tipo);
     }, true);
 
-    // ?abrir=demo: destino do sitelink "Ver demonstracao" do anuncio.
+    // Abre o cadastro na chegada: na /demonstracao/ (link de qualquer botao aberto
+    // em nova aba, ou copiado) e com ?abrir=demo (sitelink "Ver demonstracao").
+    // Quem ja se identificou segue direto pro painel.
     try {
-      if (new URLSearchParams(window.location.search).get("abrir") === "demo") {
-        setTimeout(function () {
-          var quem = identificado();
-          // sem gesto do usuario o pop-up seria bloqueado: o abrirLink cai pra
-          // navegacao na mesma aba, que nao precisa de gesto
-          if (quem) { seguir(null, "demo", quem.nome); } else { abrirGate(null, "demo"); }
-        }, 300);
+      if (NA_PAGINA_DEMO || new URLSearchParams(window.location.search).get("abrir") === "demo") {
+        var quemJa = identificado();
+        if (quemJa) {
+          seguir(null, "demo", quemJa.nome, true);
+        } else {
+          setTimeout(function () { abrirGate(null, "demo"); }, NA_PAGINA_DEMO ? 0 : 300);
+        }
       }
     } catch (e) {}
 

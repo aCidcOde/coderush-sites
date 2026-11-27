@@ -18,7 +18,11 @@
  * A escolha e por palavra-chave contra slug + titulo + subtitulos do post. Empate
  * desempata pelo hash do slug, pra nao sair a mesma dupla em todo post.
  */
-const DEMO_URL = "https://painel.sistemavendadireta.com.br/primeiros-passos";
+// 27/11/2026: o link da legenda vai pra pagina de cadastro do site, nunca direto
+// pro painel — so ve a demonstracao quem deixa nome e WhatsApp (inc/zap-gate.php).
+// Sem UTM (link interno) e sem onclick: o demo_click sai do cadastro, quando a
+// demonstracao abre de fato.
+const DEMO_URL = "/demonstracao/";
 
 const TELAS = [
   {
@@ -122,10 +126,10 @@ function esc(s) {
 }
 
 function figuraTela(tela, relativeRoot, slug) {
-  const link = `${DEMO_URL}?utm_source=blog&amp;utm_medium=tela&amp;utm_campaign=demo&amp;utm_content=${encodeURIComponent(slug)}`;
+  const link = `${DEMO_URL}?de=blog-${encodeURIComponent(slug)}`;
   return `      <figure class="tela-produto mt-8 overflow-hidden rounded-2xl border border-white/15 bg-white/5">
         <img src="${relativeRoot}imagens/posts/telas/${tela.id}.webp" alt="${esc(tela.alt)}" class="block w-full" style="height:auto" width="1200" height="750" loading="lazy" decoding="async" />
-        <figcaption class="px-4 py-3 text-xs leading-6 text-white/70 sm:text-sm">${esc(tela.legenda)} <a href="${link}" target="_blank" rel="noopener" class="font-semibold text-white underline decoration-white/40 underline-offset-4" onclick="window.gtag&amp;&amp;gtag('event','demo_click',{page:location.pathname,link_url:this.href.split('?')[0]})">Ver na demonstração →</a></figcaption>
+        <figcaption class="px-4 py-3 text-xs leading-6 text-white/70 sm:text-sm">${esc(tela.legenda)} <a href="${link}" target="_blank" rel="noopener" class="font-semibold text-white underline decoration-white/40 underline-offset-4">Ver na demonstração →</a></figcaption>
       </figure>`;
 }
 

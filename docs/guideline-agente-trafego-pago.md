@@ -388,6 +388,12 @@ não tem interesse. Para a leitura da campanha isso muda três coisas:
   GA4 e não há onde capturar o contato. Anúncio: "Veja a Demonstração Agora"
   (título fixo na posição 2) e destaque "Demonstração na hora". Calculadora e
   simulador continuam sem cadastro.
+- **Nenhum link aponta pro painel (27/11, tarde).** Todo botão de demonstração
+  (home, LPs, simulador, posts, blog-bot) vai pra `/demonstracao/?de=<botão>`,
+  página `noindex` que abre o cadastro na chegada; o endereço do painel só sai do
+  cadastro. Link interno sem UTM (`?de=` identifica o botão). O painel roda em
+  outro servidor e a página "primeiros passos" dele é pública: quem já tem o
+  endereço (ou acha no Google) ainda entra direto.
 - **Comparar antes/depois com a mesma régua:** antes, `demo_click` contava todo
   clique no link; agora conta só quem passou do cadastro. Queda de `demo_click`
   é esperada — a medida de sucesso é `generate_lead` com `metodo=demo`.

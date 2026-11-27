@@ -36,7 +36,7 @@ $seoDescription = 'Sistema MMN com rede unilevel, escritório do consultor, loja
 
 $whatsappHref = 'https://wa.me/5511994566726?text=' . rawurlencode(
     'Ola! Vi a pagina de Sistema MMN no site e quero saber mais.');
-$demoHref = DEMO_URL . '?utm_source=site&utm_medium=sistema-mmn&utm_campaign=demo';
+$demoHref = demoLink('sistema-mmn');
 
 // FAQ em JSON-LD: e o formato que a busca e as IAs extraem como resposta direta.
 $faq = [

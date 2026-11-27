@@ -34,7 +34,10 @@ return [
             . 'chegada. Título fixo dos dois anúncios: "Veja a Demonstração Agora"; destaque "Demonstração na '
             . 'hora"; textos do site sem "sem cadastro" na demonstração (calculadora e simulador seguem livres). '
             . 'Verba de R$ 20 para R$ 30/dia. Relatório diário conta a seca desde o último lead real, lendo também '
-            . 'o arquivo de 23/11.',
+            . 'o arquivo de 23/11. À tarde, a pedido do usuário ("só vê apresentação quem deixar um contato pelo '
+            . 'menos"): nenhum link do site aponta mais pro painel — home, LPs, simulador, 44 links em 22 posts e o '
+            . 'blog-bot vão pra /demonstracao/ (noindex), que abre o cadastro na chegada; clique do meio, nova aba e '
+            . 'link copiado deixam de pular o cadastro. As 4 LPs de segmento ganharam o botão da demonstração.',
     ],
     [
         'data' => '2026-11-23',

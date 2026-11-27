@@ -19,10 +19,25 @@ arquivo. Ao mudar preco ou prazo, alinhar tambem la.
 */
 
 // Ambiente de demonstracao navegavel (loja, escritorio do parceiro e admin), com
-// credenciais publicadas e SEM cadastro. E a oferta de menor atrito que temos:
-// concorrente dá "teste gratis 14 dias" exigindo cadastro; aqui a pessoa entra e
-// usa. Estava no ar desde sempre e linkada em lugar nenhum.
-const DEMO_URL = 'https://painel.sistemavendadireta.com.br/primeiros-passos';
+// credenciais publicadas. Estava no ar desde sempre e linkada em lugar nenhum.
+//
+// 27/11/2026 — SO VE A DEMONSTRACAO QUEM DEIXA CONTATO (usuario: "soh ve
+// apresentacao quem deixar um contato pelo menos"). Nenhum link do site aponta
+// mais pro painel: todos vao pra /demonstracao/, e o endereco real so sai do
+// cadastro (inc/zap-gate.php). Com o link direto, clique do meio, "abrir em nova
+// aba" ou link copiado pulavam o cadastro. O painel roda em outro servidor:
+// quem ja tem o endereco dele ainda entra direto.
+//
+// ?de= diz qual botao trouxe (vira a origem do lead quando a pessoa chega na
+// /demonstracao/ por nova aba). Sem UTM: UTM em link interno abre sessao nova no
+// GA4 e apaga a campanha de quem veio do anuncio (ver inc/analytics.php).
+const DEMO_PAINEL_URL = 'https://painel.sistemavendadireta.com.br/primeiros-passos';
+const DEMO_URL = '/demonstracao/';
+
+function demoLink(string $de): string
+{
+    return DEMO_URL . '?de=' . rawurlencode($de);
+}
 
 /*
  * CALENDARIO DE PROMOCOES — 27/10/2026.
@@ -382,8 +397,11 @@ function promoLink(string $origem = 'blog'): string
         // Sem promocao, mandar pra "/" seria autolink quando a faixa esta NA
         // home. A demonstracao e o destino que sempre faz sentido: e o convite
         // concreto que a faixa ja anuncia no texto.
-        $destino = $naHome ? DEMO_URL : '/';
-        $campanha = $naHome ? 'organico-site' : 'organico-blog';
+        if ($naHome) {
+            return demoLink('home-faixa');   // interno: sem UTM
+        }
+        $destino = '/';
+        $campanha = 'organico-blog';
     }
 
     return $destino . '?utm_source=' . $fonte . '&utm_medium=' . $meio
@@ -424,8 +442,7 @@ function promoStrip(string $origem = 'blog'): string
     // embaixo quem da o respiro e o mt-5 do <article>, entao nao leva mb aqui
     // O link da demonstracao anda junto: quem le um artigo tecnico costuma querer
     // VER o sistema antes de falar com alguem.
-    $demo = htmlspecialchars(DEMO_URL . '?utm_source=blog&utm_medium=conteudo&utm_campaign=demo&utm_content='
-        . rawurlencode($origem), ENT_QUOTES, 'UTF-8');
+    $demo = htmlspecialchars(demoLink('blog-' . $origem), ENT_QUOTES, 'UTF-8');
 
     // 27/11/2026: a demonstracao pede nome e WhatsApp antes de abrir (inc/zap-gate.php).
     // Os posts nao incluem o zap-tracking; a faixa e o unico trecho comum a todos

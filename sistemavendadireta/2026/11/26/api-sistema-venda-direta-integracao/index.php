@@ -144,7 +144,7 @@
       </section>
       <figure class="tela-produto mt-8 overflow-hidden rounded-2xl border border-white/15 bg-white/5">
         <img src="../../../../imagens/posts/telas/admin-estoque.webp" alt="Tela de gerenciamento de estoque com produtos, quantidades e código do ERP" class="block w-full" style="height:auto" width="1200" height="750" loading="lazy" decoding="async" />
-        <figcaption class="px-4 py-3 text-xs leading-6 text-white/70 sm:text-sm">Estoque com o código do ERP amarrado a cada produto — a base da integração fiscal e logística. <a href="https://painel.sistemavendadireta.com.br/primeiros-passos?utm_source=blog&amp;utm_medium=tela&amp;utm_campaign=demo&amp;utm_content=api-sistema-venda-direta-integracao" target="_blank" rel="noopener" class="font-semibold text-white underline decoration-white/40 underline-offset-4" onclick="window.gtag&amp;&amp;gtag('event','demo_click',{page:location.pathname,link_url:this.href.split('?')[0]})">Ver na demonstração →</a></figcaption>
+        <figcaption class="px-4 py-3 text-xs leading-6 text-white/70 sm:text-sm">Estoque com o código do ERP amarrado a cada produto — a base da integração fiscal e logística. <a href="/demonstracao/?de=blog-api-sistema-venda-direta-integracao" target="_blank" rel="noopener" class="font-semibold text-white underline decoration-white/40 underline-offset-4">Ver na demonstração →</a></figcaption>
       </figure>
       <section class="mt-8">
         <h2 class="text-xl font-semibold text-white sm:text-2xl">O que a API precisa ter</h2>
@@ -177,7 +177,7 @@
       </section>
       <figure class="tela-produto mt-8 overflow-hidden rounded-2xl border border-white/15 bg-white/5">
         <img src="../../../../imagens/posts/telas/consultor-rede.webp" alt="Tela da rede do consultor com resumo de ativos e inativos e distribuição por nível" class="block w-full" style="height:auto" width="1200" height="750" loading="lazy" decoding="async" />
-        <figcaption class="px-4 py-3 text-xs leading-6 text-white/70 sm:text-sm">A rede do consultor: ativos, inativos e quantas pessoas em cada nível. <a href="https://painel.sistemavendadireta.com.br/primeiros-passos?utm_source=blog&amp;utm_medium=tela&amp;utm_campaign=demo&amp;utm_content=api-sistema-venda-direta-integracao" target="_blank" rel="noopener" class="font-semibold text-white underline decoration-white/40 underline-offset-4" onclick="window.gtag&amp;&amp;gtag('event','demo_click',{page:location.pathname,link_url:this.href.split('?')[0]})">Ver na demonstração →</a></figcaption>
+        <figcaption class="px-4 py-3 text-xs leading-6 text-white/70 sm:text-sm">A rede do consultor: ativos, inativos e quantas pessoas em cada nível. <a href="/demonstracao/?de=blog-api-sistema-venda-direta-integracao" target="_blank" rel="noopener" class="font-semibold text-white underline decoration-white/40 underline-offset-4">Ver na demonstração →</a></figcaption>
       </figure>
       <aside class="my-8 rounded-2xl border-l-4 border-white bg-white/10 p-5 sm:p-6">
         <p class="text-sm leading-7 text-white/90 sm:text-base">Na prática: no Isy Middleware, que desenvolvemos para lojas online distribuídas, vendas, estoque e financeiro passam por uma camada de integração única, com estoque centralizado e grandes volumes de dados em tempo real. É o mesmo princípio que vale para uma rede de consultores: um lugar só por onde tudo entra e sai. <a href="../../../../cases/#isy-middleware" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Ver o case →</a></p>

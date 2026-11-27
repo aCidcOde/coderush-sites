@@ -148,7 +148,7 @@
       </section>
       <figure class="tela-produto mt-8 overflow-hidden rounded-2xl border border-white/15 bg-white/5">
         <img src="../../../../imagens/posts/telas/consultor-inicio.webp" alt="Tela inicial do escritório virtual do consultor com nível atual, total recebido e total da rede" class="block w-full" style="height:auto" width="1200" height="750" loading="lazy" decoding="async" />
-        <figcaption class="px-4 py-3 text-xs leading-6 text-white/70 sm:text-sm">Escritório virtual: o consultor abre e já vê nível, ganhos e tamanho da rede. <a href="https://painel.sistemavendadireta.com.br/primeiros-passos?utm_source=blog&amp;utm_medium=tela&amp;utm_campaign=demo&amp;utm_content=crm-automacao-marketing-multinivel" target="_blank" rel="noopener" class="font-semibold text-white underline decoration-white/40 underline-offset-4" onclick="window.gtag&amp;&amp;gtag('event','demo_click',{page:location.pathname,link_url:this.href.split('?')[0]})">Ver na demonstração →</a></figcaption>
+        <figcaption class="px-4 py-3 text-xs leading-6 text-white/70 sm:text-sm">Escritório virtual: o consultor abre e já vê nível, ganhos e tamanho da rede. <a href="/demonstracao/?de=blog-crm-automacao-marketing-multinivel" target="_blank" rel="noopener" class="font-semibold text-white underline decoration-white/40 underline-offset-4">Ver na demonstração →</a></figcaption>
       </figure>
       <section class="mt-8">
         <h2 class="text-xl font-semibold text-white sm:text-2xl">Principais benefícios da automação em MMN</h2>
@@ -184,7 +184,7 @@
       </section>
       <figure class="tela-produto mt-8 overflow-hidden rounded-2xl border border-white/15 bg-white/5">
         <img src="../../../../imagens/posts/telas/admin-relatorios.webp" alt="Lista de relatórios da administração: escalada, ranking de parceiros, usuários por estado e saldo liberado" class="block w-full" style="height:auto" width="1200" height="750" loading="lazy" decoding="async" />
-        <figcaption class="px-4 py-3 text-xs leading-6 text-white/70 sm:text-sm">Relatórios prontos: ranking, mapa de consultores, aniversariantes e saldo liberado. <a href="https://painel.sistemavendadireta.com.br/primeiros-passos?utm_source=blog&amp;utm_medium=tela&amp;utm_campaign=demo&amp;utm_content=crm-automacao-marketing-multinivel" target="_blank" rel="noopener" class="font-semibold text-white underline decoration-white/40 underline-offset-4" onclick="window.gtag&amp;&amp;gtag('event','demo_click',{page:location.pathname,link_url:this.href.split('?')[0]})">Ver na demonstração →</a></figcaption>
+        <figcaption class="px-4 py-3 text-xs leading-6 text-white/70 sm:text-sm">Relatórios prontos: ranking, mapa de consultores, aniversariantes e saldo liberado. <a href="/demonstracao/?de=blog-crm-automacao-marketing-multinivel" target="_blank" rel="noopener" class="font-semibold text-white underline decoration-white/40 underline-offset-4">Ver na demonstração →</a></figcaption>
       </figure>
       <p class="my-6 text-sm leading-7 text-white/85 sm:text-base">
         Se você deseja melhorar a eficiência da sua operação de MMN, considere uma análise detalhada das suas ferramentas atuais. <a href="../../../../sistema-mmn/" class="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:text-white">Conhecer o sistema MMN →</a>

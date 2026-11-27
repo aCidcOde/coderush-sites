@@ -232,7 +232,7 @@ $seoDescription = 'Sistema de venda direta com escritório do consultor no celul
     <div class="mx-auto flex w-full items-center justify-between gap-4 px-4 py-3 sm:px-8">
       <a href="../" target="_blank" rel="noopener" aria-label="Abrir o site do Sistema Venda Direta em nova aba"><img decoding="async" src="../imagens/Logo-Branco-1.webp" alt="Sistema Venda Direta" class="h-auto w-[150px] sm:w-[200px]" width="1000" height="300" loading="eager" /></a>
       <div class="flex items-center gap-5">
-        <a href="https://painel.sistemavendadireta.com.br/primeiros-passos?utm_source=site&utm_medium=oferta&utm_campaign=demo" target="_blank" rel="noopener" class="text-sm font-semibold text-amber-300 hover:text-amber-200">Ver demonstração</a>
+        <a href="/demonstracao/?de=venda-direta-topo" target="_blank" rel="noopener" class="text-sm font-semibold text-amber-300 hover:text-amber-200">Ver demonstração</a>
         <a href="../simulador/" class="text-sm font-semibold text-white/85 hover:text-white">Simulador de plano</a>
         <a href="../cases/" class="text-sm font-semibold text-white/85 hover:text-white">Cases</a>
         <a href="<?= htmlspecialchars($whatsappHref, ENT_QUOTES, 'UTF-8') ?>" target="_blank" rel="noopener noreferrer" class="hidden rounded-full bg-[#25D366] px-4 py-2 text-sm font-bold sm:inline-flex">
@@ -272,7 +272,7 @@ $seoDescription = 'Sistema de venda direta com escritório do consultor no celul
         </p>
 
         <div class="mt-6 grid max-w-3xl gap-3 sm:grid-cols-2">
-          <a href="<?= htmlspecialchars(DEMO_URL . '?utm_source=site&utm_medium=oferta&utm_campaign=demo&utm_content=hero', ENT_QUOTES, 'UTF-8') ?>" target="_blank" rel="noopener"
+          <a href="<?= htmlspecialchars(demoLink('venda-direta-hero'), ENT_QUOTES, 'UTF-8') ?>" target="_blank" rel="noopener"
              class="inline-flex items-center justify-center rounded-full bg-amber-400 px-6 py-3.5 text-sm font-bold uppercase tracking-wide text-brand transition hover:-translate-y-0.5 hover:bg-amber-300">
             Entrar na demonstração
           </a>
