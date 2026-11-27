@@ -391,7 +391,10 @@ não tem interesse. Para a leitura da campanha isso muda três coisas:
 - **Nenhum link aponta pro painel (27/11, tarde).** Todo botão de demonstração
   (home, LPs, simulador, posts, blog-bot) vai pra `/demonstracao/?de=<botão>`,
   página `noindex` que abre o cadastro na chegada; o endereço do painel só sai do
-  cadastro. Link interno sem UTM (`?de=` identifica o botão). O painel roda em
+  cadastro. Link interno sem UTM (`?de=` identifica o botão). **Sem atalho na
+  demonstração:** quem já se identificou vê a caixa do mesmo jeito, preenchida,
+  e abre com um clique; dados iguais não geram lead nem `generate_lead` de novo.
+  (O WhatsApp mantém o atalho.) O painel roda em
   outro servidor e a página "primeiros passos" dele é pública: quem já tem o
   endereço (ou acha no Google) ainda entra direto.
 - **Comparar antes/depois com a mesma régua:** antes, `demo_click` contava todo

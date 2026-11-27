@@ -63,9 +63,12 @@ NENHUM LINK APONTA PRO PAINEL — 27/11/2026, tarde. "Soh ve apresentacao quem
 deixar um contato pelo menos." Com o href direto pro painel, clique do meio,
 "abrir em nova aba" e link copiado pulavam este cadastro. Os links agora vao pra
 /demonstracao/ (pagina propria, noindex), que abre este cadastro na chegada; o
-endereco real do painel (DEMO, abaixo) so e usado depois do cadastro. Quem ja se
-identificou passa direto — inclusive quem testou o cadastro: pra ver a caixa de
-novo, janela anonima ou limpar o localStorage "svd-lead-contato".
+endereco real do painel (DEMO, abaixo) so e usado depois do cadastro.
+
+Na demonstracao NAO existe atalho pra quem ja se identificou (27/11, depois de o
+usuario ver o painel abrir direto no navegador dele, que tinha o cadastro de
+teste de 23/11): a caixa aparece sempre, preenchida, e abre com um clique. Dados
+iguais aos guardados nao geram lead novo. O WhatsApp mantem o atalho.
 
 Uso, antes do </body> (o inc/zap-tracking.php ja inclui):
     <?php $zapOrigem = 'pagina-x'; include __DIR__ . '/inc/zap-gate.php'; ?>
@@ -219,9 +222,8 @@ $zapOrigemGate = isset($zapOrigem) && $zapOrigem !== '' ? $zapOrigem : 'site';
       return base + "?text=" + encodeURIComponent((jaTemNome ? "Olá! " : "Olá! Sou " + nome.trim() + ". ") + texto);
     }
 
-    // substituir: troca a pagina atual no historico (a /demonstracao/ que abre
-    // sozinha pra quem ja se identificou — senao o "voltar" cairia nela e ela
-    // mandaria de novo pro painel, em loop)
+    // substituir: troca a pagina atual no historico (na /demonstracao/, o
+    // "voltar" do painel volta pra pagina de onde a pessoa veio)
     function abrirLink(url, novaAba, substituir) {
       var janela = null;
       if (novaAba) {
@@ -287,14 +289,11 @@ $zapOrigemGate = isset($zapOrigem) && $zapOrigem !== '' ? $zapOrigem : 'site';
     // A demonstracao abre SEMPRE o endereco real do painel, nunca o href do link
     // (que e a /demonstracao/). Na propria /demonstracao/ abre na mesma aba: a
     // pagina so existe pra levar ate la.
-    // `auto`: chamada sem gesto do usuario (abertura na chegada) — o pop-up seria
-    // bloqueado, entao vai direto na mesma aba, trocando a pagina no historico.
-    function seguir(link, tipo, nome, auto) {
+    function seguir(link, tipo, nome) {
       var novaAba = link ? link.target === "_blank" : !NA_PAGINA_DEMO;
-      if (auto) { novaAba = false; }
       if (tipo === "demo") {
         evento("demo_click", { page: window.location.pathname, link_url: DEMO.split("?")[0] });
-        abrirLink(DEMO, novaAba, auto || NA_PAGINA_DEMO);
+        abrirLink(DEMO, novaAba, NA_PAGINA_DEMO);
       } else {
         evento("whatsapp_click", { page: ORIGEM });
         abrirLink(montarUrl(link ? link.href : "https://wa.me/5511994566726", nome), novaAba);
@@ -318,8 +317,11 @@ $zapOrigemGate = isset($zapOrigem) && $zapOrigem !== '' ? $zapOrigem : 'site';
       ev.preventDefault();
       ev.stopImmediatePropagation();
       var tipo = tipoDe(a);
+      // Demonstracao: a caixa aparece SEMPRE, mesmo pra quem ja se identificou —
+      // vem preenchida e abre com um clique (usuario, 27/11: "ainda ta acessando
+      // sem pedir dados"). O WhatsApp segue passando direto pra quem ja se identificou.
       var quem = identificado();
-      if (quem) {
+      if (quem && tipo !== "demo") {
         seguir(a, tipo, quem.nome);
         return;
       }
@@ -328,15 +330,10 @@ $zapOrigemGate = isset($zapOrigem) && $zapOrigem !== '' ? $zapOrigem : 'site';
 
     // Abre o cadastro na chegada: na /demonstracao/ (link de qualquer botao aberto
     // em nova aba, ou copiado) e com ?abrir=demo (sitelink "Ver demonstracao").
-    // Quem ja se identificou segue direto pro painel.
+    // Sempre com a caixa, inclusive pra quem ja se identificou (vem preenchida).
     try {
       if (NA_PAGINA_DEMO || new URLSearchParams(window.location.search).get("abrir") === "demo") {
-        var quemJa = identificado();
-        if (quemJa) {
-          seguir(null, "demo", quemJa.nome, true);
-        } else {
-          setTimeout(function () { abrirGate(null, "demo"); }, NA_PAGINA_DEMO ? 0 : 300);
-        }
+        setTimeout(function () { abrirGate(null, "demo"); }, NA_PAGINA_DEMO ? 0 : 300);
       }
     } catch (e) {}
 
@@ -382,6 +379,15 @@ $zapOrigemGate = isset($zapOrigem) && $zapOrigem !== '' ? $zapOrigem : 'site';
       var link = pendente;
       var tipo = tipoPendente;
 
+      // Quem ja tinha se identificado e so confirmou os mesmos dados nao vira lead
+      // de novo: sem POST e sem generate_lead (nao duplica no painel nem infla a
+      // conversao do Ads). Mudou nome, telefone ou e-mail: e lead novo.
+      var antes = identificado();
+      var repetido = !!(antes
+        && String(antes.nome).trim().toLowerCase() === nome.toLowerCase()
+        && digitos(antes.whatsapp) === digitos(tel)
+        && String(antes.email || "").trim().toLowerCase() === email.toLowerCase());
+
       var fd = new FormData();
       fd.append("nome", nome);
       fd.append("whatsapp", tel);
@@ -398,11 +404,13 @@ $zapOrigemGate = isset($zapOrigem) && $zapOrigem !== '' ? $zapOrigem : 'site';
       }
       fd.append("website", document.getElementById("zg-website").value);
       atribuicao(fd);
-      try {
-        fetch("/enviar-contato.php", { method: "POST", body: fd, keepalive: true, credentials: "same-origin" })
-          .catch(function () { try { navigator.sendBeacon("/enviar-contato.php", fd); } catch (e) {} });
-      } catch (e) {
-        try { navigator.sendBeacon("/enviar-contato.php", fd); } catch (e2) {}
+      if (!repetido) {
+        try {
+          fetch("/enviar-contato.php", { method: "POST", body: fd, keepalive: true, credentials: "same-origin" })
+            .catch(function () { try { navigator.sendBeacon("/enviar-contato.php", fd); } catch (e) {} });
+        } catch (e) {
+          try { navigator.sendBeacon("/enviar-contato.php", fd); } catch (e2) {}
+        }
       }
 
       if (typeof window.gtag === "function") {
@@ -410,7 +418,7 @@ $zapOrigemGate = isset($zapOrigem) && $zapOrigem !== '' ? $zapOrigem : 'site';
         if (email) { dados.email = email.toLowerCase(); }
         window.gtag("set", "user_data", dados);
       }
-      evento("generate_lead", { page: ORIGEM, metodo: tipo });
+      if (!repetido) { evento("generate_lead", { page: ORIGEM, metodo: tipo }); }
 
       try { window.localStorage.setItem(CHAVE, JSON.stringify({ nome: nome, whatsapp: tel, email: email })); } catch (e) {}
 

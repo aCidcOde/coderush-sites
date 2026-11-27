@@ -13,8 +13,8 @@ pra ca, e o endereco real so sai do cadastro (inc/zap-gate.php):
 
   - sem contato: a caixa de cadastro abre na chegada; enviado, o painel abre
     nesta mesma aba;
-  - ja identificado (cadastro ou formulario antes): vai direto pro painel,
-    trocando esta pagina no historico (o "voltar" nao cai num loop);
+  - ja identificado (cadastro ou formulario antes): a caixa aparece do mesmo
+    jeito, preenchida, e abre com um clique — sem atalho (usuario, 27/11);
   - fechou a caixa: fica a pagina com o que tem na demonstracao e o botao.
 
 noindex: e uma porta, nao um conteudo — fora do sitemap e do Google.
